@@ -1,0 +1,51 @@
+{% extends 'users/base.html' %}
+{% load static  %}
+
+
+{% block content %}
+
+
+
+<section class="banner  pb-0 overflow-hidden" style="background-image: url('{% static 'assets2/images/testimonial.png' %}')">
+    <div class="container">
+    <div class="banner-in">
+    <div class="row align-items-center">
+        
+        <div class="col-lg-7 mb-4">
+            <div class="trending-topic-content">
+                <img src="{% static 'assets2/images/testimonial/safaris.png' %}" class="mb-1 d-inline-block" alt>
+                </div>
+        </div>
+        <div class="col-lg-5 mb-4">
+            <div class="col-lg-5 mb-4">
+                <div class="banner-content text-lg-start text-center">
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if message.tags == 'success' %}
+                                <div style="color: #006600; margin-bottom: 10px;">
+                                    <h6 class="theme mb-0">{{ message|safe }}</h6>
+                                </div>
+                            {% elif message.tags == 'error' %}
+                                <div style=" color: #721c24;  margin-bottom: 10px;">
+                                    <h6 class="theme mb-0">{{ message|safe }}</h6>
+                                    <br>
+                                    <h6 class="theme mb-0"><a href="{% url 'users:users-register' %}">Register</a></h6>
+
+                                </div>
+                            {% endif %}
+                            <br>
+                        
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            
+  
+    </div>
+ 
+    </div>
+    </div>
+    </section>   
+
+
+{% endblock content %}
