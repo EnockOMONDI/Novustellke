@@ -1,0 +1,110 @@
+{% extends 'users/basemain.html' %}
+{% load static  %}
+
+
+{% block content %}
+
+
+<section class="page-banner overlay pt-170 pb-60 bg_cover" style="background-image: url({% static 'assets/images/bg/page-bg.jpg' %});">    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="page-banner-content text-center text-white">
+                    <h1 class="page-title"style="background-color: #020333; padding: 15px; border-radius:10px;  display: inline-block;">Novustell Holidays</h1>
+               
+           <h6>
+            Just as we customize our other travel services, our Holidays are tailored to suit your preferences and schedule. Whether you're seeking a cultural excursion, an adventurous safari, or a tranquil escape, our offerings cater to a range of interests.
+           </h6>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-list-section black-bg pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="sidebar-widget-area">
+                    <!--=== Search Widget ===-->
+                  
+                    <!--=== Category Widget ===-->
+                    <div class="sidebar-widget category-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h4 class="widget-title">Category</h4>
+                        <ul class="category-nav">
+                            <li><a href="#">Tent Camping<i class="far fa-arrow-right"></i></a></li>
+                            <li><a href="#">Family Camping<i class="far fa-arrow-right"></i></a></li>
+                            <li><a href="#">Wild Camping<i class="far fa-arrow-right"></i></a></li>
+                            <li><a href="#">Campfire <i class="far fa-arrow-right"></i></a></li>
+                            <li><a href="#">Luxury Cabin <i class="far fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+    
+                    <!--=== Banner Widget ===-->
+                    <div class="sidebar-widget sidebar-banner-widget wow fadeInUp mb-40" style="visibility: hidden; animation-name: none;">
+                        <div class="banner-widget-content">
+                            <div class="banner-img">
+                                <img src="{% static 'assets/images/blog/banner-1.jpg' %}" alt="Post Banner">
+                                <div class="hover-overlay">
+                                    <div class="hover-content">
+                                        <h4 class="title"><a href="#">Swimming Pool</a></h4>
+                                        <p><i class="fas fa-map-marker-alt"></i>Marrakesh, Morocco</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <!--=== Blog List Wrapper ===-->
+                <div class="blog-list-wrapper">
+             
+                      <!--=== Single Blog Post ===-->
+                      <div class="single-blog-post-four mb-30 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;  background-color: #ffffff;">
+                        <div class="post-thumbnail">
+                            <img src="{% static 'assets/images/blog/blog-13.jpg' %}" alt="Post Image">
+                        </div>
+                        <div class="single-place-item ">
+                           <div class="place-content">
+                                <div class="info">
+                                    <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><a href="#">(4.9)</a></li>
+                                    </ul>
+                                    <h4 class="title"><a href="tour-details.html">Sitting on Boat Spreading Her Arms</a></h4>
+                                    <p class="location"><i class="far fa-map-marker-alt"></i>North Province, Maldives</p>
+                                    <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
+                                    <div class="meta">
+                                        <span><i class="far fa-clock"></i>05 Days</span>
+                                        <span><i class="far fa-user"></i>25</span>
+                                        <span><a href="tour-details.html">Details<i class="far fa-long-arrow-right"></i></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                 
+                 
+                </div>
+                <!--=== Pagination ===-->
+                <ul class="gowilds-pagination wow fadeInDown mt-60 mb-30" style="visibility: hidden; animation-name: none;">
+                    <li><a href="#"><i class="far fa-arrow-left"></i></a></li>
+                    <li><a href="#" class="active">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </div>
+</section>
+{% include 'users/footer.html' %}
+
+       
+{% endblock %}

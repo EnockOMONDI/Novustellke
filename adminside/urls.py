@@ -7,4 +7,5 @@ urlpatterns = [
     path('travel/',views.travel,name = 'travel'),
     path('itinerary/',views.itinerary,name = 'itinerary')
 
+
 ]
