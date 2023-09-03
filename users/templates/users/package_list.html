@@ -56,54 +56,49 @@
          
                 </div>
             </div>
-            <div class="col-xl-9">
-                <!--=== Blog List Wrapper ===-->
-                <div class="blog-list-wrapper">
-             
-                      <!--=== Single Blog Post ===-->
-                      <div class="single-blog-post-four mb-30 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;  background-color: #ffffff;">
-                        <div class="post-thumbnail">
-                            <img src="{% static 'assets/images/blog/blog-13.jpg' %}" alt="Post Image">
-                        </div>
-                        <div class="single-place-item ">
-                           <div class="place-content">
-                                <div class="info">
-                                    <ul class="ratings">
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><a href="#">(4.9)</a></li>
-                                    </ul>
-                                    <h4 class="title"><a href="tour-details.html">Sitting on Boat Spreading Her Arms</a></h4>
-                                    <p class="location"><i class="far fa-map-marker-alt"></i>North Province, Maldives</p>
-                                    <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
-                                    <div class="meta">
-                                        <span><i class="far fa-clock"></i>05 Days</span>
-                                        <span><i class="far fa-user"></i>25</span>
-                                        <span><a href="tour-details.html">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                 
-                 
-                </div>
-                <!--=== Pagination ===-->
-                <ul class="gowilds-pagination wow fadeInDown mt-60 mb-30" style="visibility: hidden; animation-name: none;">
-                    <li><a href="#"><i class="far fa-arrow-left"></i></a></li>
-                    <li><a href="#" class="active">01</a></li>
-                    <li><a href="#">02</a></li>
-                    <li><a href="#">03</a></li>
-                    <li><a href="#">04</a></li>
-                    <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
-                </ul>
+     
+
+<div class="col-xl-9">
+    <!--=== Blog List Wrapper ===-->
+    <div class="blog-list-wrapper">
+
+        {% for package in packages %}
+        <!--=== Single Blog Post ===-->
+        <div class="single-blog-post-four mb-30 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown; background-color: #ffffff;">
+            <div class="post-thumbnail">
+                <img src="{{ package.Image.cdn_url }}  "alt="Post Image">
             </div>
-          
+            <div class="single-place-item">
+                <div class="place-content">
+                    <div class="info">
+                        <ul class="ratings">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><a href="#">(4.9)</a></li>
+                        </ul>
+                        <h4 class="title"><a href="{% url 'users:users-detail-package' package.id %}">{{ package.package_name }}</a></h4>
+                        <p class="location"><i class="far fa-map-marker-alt"></i>{{ package.destination.city }}, {{ package.destination.state }}</p>
+                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">${{ package.adult_price }}</span></p>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i>{{ package.number_of_days }} Days</span>
+                            <span><i class="far fa-user"></i>{{ package.number_of_times_booked }}</span>
+                            <span><a href="{% url 'users:users-detail-package' package.id %}">Details<i class="far fa-long-arrow-right"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        {% endfor %}
+      
+    </div>
+</div>
+
     </div>
 </section>
+
 {% include 'users/footer.html' %}
 
        

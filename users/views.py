@@ -220,7 +220,7 @@ def detail_package(request, package_id):
         # Handle the case when the user is not authenticated
         return HttpResponse("<h1>You need to be logged in to view this page.</h1>")
 
-    return render(request, 'users/detailedpackage.html', context)
+    return render(request, 'users/packagedetail.html', context)
 
 
 def bookings(request):
