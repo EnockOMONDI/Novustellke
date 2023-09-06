@@ -73,6 +73,10 @@ def corporate(request):
     
     return render(request, 'users/corporate.html')
 
+def holidays(request):
+    
+    return render(request, 'users/holidays.html')
+
 def contactus(request):
     
     return render(request, 'users/contactus.html')
