@@ -81,7 +81,7 @@
                         </ul>
                         <h4 class="title"><a href="{% url 'users:users-detail-package' package.id %}">{{ package.package_name }}</a></h4>
                         <p class="location"><i class="far fa-map-marker-alt"></i>{{ package.destination.city }}, {{ package.destination.state }}</p>
-                        <p class="price"><i class="fas fa-usd-circle"></i>  <small> 2 adults From </small>  <span class="currency">  <strong> KES {{ package.adult_price }}</strong></span></p>
+                        <p class="price"><i class="fas fa-usd-circle"></i>  <small>  From </small>  <span class="currency">  <strong> KES {{ package.adult_price }}</strong></span></p>
                         <p class="price"><i class="far fa-plane"></i>  <i class="far fa-bed"></i>  <small> fly + stay (with airport transfer) #Deal </small>  <span class="currency">  <strong> KES {{ package.adult_price }}</strong></span></p>
                         <p class="price"><i class="far fa-user"></i>  <small> Number of Times Booked </small>  <span class="title">  <strong> {{ package.number_of_times_booked }}</strong></span></p>
 
