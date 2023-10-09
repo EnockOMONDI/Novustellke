@@ -101,37 +101,51 @@
                             </form>
                         </div>
                         <!--====== Main Menu ======-->
-                        <nav class="main-menu">
+                        <nav class="main-menu ">
                             <ul>
                                 <li><a href="{% url 'users:users-home'%}"> <span style="padding-right: 10px;"> Home</a></li>
 
-                                <li><a href="{% url 'users:aboutus'%}"> <span style="padding-right: 10px;"><i class="far fa-info-circle"></i> Who we are</a></li>
+                                <li><a href="{% url 'users:aboutus'%} "> <span style="padding-right: 10px;"><i class="far fa-info-circle"></i> Who we are</a></li>
 
-                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-globe"></i> Holidays</a>
+                             
+                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-map"></i> Holidays</a>
                                     <ul class="sub-menu">
-                                        <li><a href="tour.html">Tours</a></li>
-                                        <li><a href="tour-details.html">Tours Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-map"></i> Tours</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="tour.html">Tours</a></li>
-                                        <li><a href="tour-details.html">Tours Details</a></li>
+                                        <li><a href="{% url 'users:all_packages'%} "><strong>   <i class="far fa-arrow-right "></i> All Holidays</strong></a></li>
+
                                     </ul>
                                 </li>
 
+                           
+                                
+                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-bed"></i> Stays</a></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Luxury Hotels </a></li>
+                                        <li><a href="">Comfortable Stays </a></li>
+                                        <li><a href="">Affordable Lodgings</a></li>
+                                        <li><a href="">Extended Stays </a></li>
+                                        <li><a href="">Airport Convenience</a></li>
+                                        <li><a href=""><strong>   <i class="far fa-arrow-right "></i> View All</strong></a></li>
+
+
+
+                                    </ul>
+                                </li>
                                 <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-briefcase"></i> Business Travel</a>
                                     <ul class="sub-menu">
-                                        <li><a href="destination.html">Destination</a></li>
-                                        <li><a href="destination-details.html">Destination Details</a></li>
+                                        <li><a href="{% url 'users:corporatepage'%} ">Corporate Travel Management</a></li>
                                     </ul>
                                 </li>
-                               
-                                <li><a href="faqs.html"><i class="far fa-tags"></i>Deals</a></li>
-                                <li class="menu-item has-children"><a href="#">  More</a>
+                                <li class="menu-item has-children"><a href="#"><i class="far fa-plane"></i> + <i class="far fa-bed"></i> <small>save more</small> </a>
                                     <ul class="sub-menu">
-                                        <li><a href="destination.html">Destination</a></li>
-                                        <li><a href="destination-details.html">Destination Details</a></li>
+                                        <li><a href="destination.html">Flights + Stay Deals</a></li>
+                                        <li><a href="destination.html">Flight Offers</a></li>
+                                        <li><a href="destination-details.html">Hotel Deals</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-globe"></i> more</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="tour.html">Travel Insurance</a></li>
+                                        <li><a href="tour-details.html">Group travel</a></li>
                                     </ul>
                                 </li>
 

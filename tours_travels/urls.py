@@ -12,14 +12,7 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    # path('jet/', include('jet.urls', 'jet')), 
-    # path('admin/', admin.site.urls),
-    # path('tours/', include(('adminside.urls', 'adminside'), namespace='adminside')),
-    # path('users/', include(('users.urls', 'users'), namespace='users')),
-    
-    # path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
-    # path('logout/', auth_views.LogoutView.as_view(template_name='users/index.html'), name='logout'),
-    # path('mail/', tours_travels_views.mail, name='mail'),
+
     path('jet/', include('jet.urls', 'jet')), 
     path('admin/', admin.site.urls),
     #path('',tours_travels_views.home,name = 'home'),

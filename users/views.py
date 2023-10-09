@@ -69,6 +69,14 @@ def aboutus(request):
     
     return render(request, 'users/aboutus.html')
 
+def corporate(request):
+    
+    return render(request, 'users/corporate.html')
+
+def holidays(request):
+    
+    return render(request, 'users/holidays.html')
+
 def contactus(request):
     
     return render(request, 'users/contactus.html')
@@ -107,6 +115,9 @@ def home(request):
 	
 	return render(request,'users/index.html',context)
 
+
+
+
 def destination(request,id):
 	id=id
 	dest=Destination.objects.get(id=id)
@@ -136,6 +147,8 @@ def destination(request,id):
 	
 	return render(request,'users/destination.html',context)
 
+
+
 def search(request):
 	try:
 		name=request.POST.get('search','')
@@ -147,7 +160,10 @@ def search(request):
 	except:
 		messages.error(request, 'No results found for your search request')
 		return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-		
+
+def all_packages(request):
+    packages = Package.objects.all()
+    return render(request, 'users/package_list.html', {'packages': packages})		
 
 def detail_package(request, package_id):
     if request.user.is_authenticated:
@@ -208,7 +224,7 @@ def detail_package(request, package_id):
         # Handle the case when the user is not authenticated
         return HttpResponse("<h1>You need to be logged in to view this page.</h1>")
 
-    return render(request, 'users/detailedpackage.html', context)
+    return render(request, 'users/packagedetail.html', context)
 
 
 def bookings(request):

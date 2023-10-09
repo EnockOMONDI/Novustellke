@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse
+from .models import Package
 
 # Create your views here.
 
@@ -13,3 +14,5 @@ def travel(request):
 
 def accomodation(request):
     return HttpResponse('<h1>Create accomodation</h1>')
+
+
