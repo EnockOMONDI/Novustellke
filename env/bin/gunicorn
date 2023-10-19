@@ -1,4 +1,6 @@
-#!/home/novustell/Desktop/APPS/JDAFINAL/JDA-API/env/bin/python3
+#!/bin/sh
+'''exec' "/home/sean/Desktop/APPS/travel Main website/Novustellke/env/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

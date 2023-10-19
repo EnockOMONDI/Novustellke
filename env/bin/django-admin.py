@@ -1,4 +1,4 @@
-#!/home/novustell/Desktop/APPS/JDAFINAL/JDA-API/env/bin/python3
+#!/home/sean/Desktop/APPS/travel Main website/Novustellke/env/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
