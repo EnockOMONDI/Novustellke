@@ -424,6 +424,11 @@ textarea.form_control {
 .novus-bg {
   background-color: #0000e1;
 }
+.blog-list-section{
+  background-color: #0000e1;
+
+}
+
 /*===== All Button Style =====*/
 button {
   border: none;
@@ -4189,7 +4194,7 @@ button {
 }
 
 .single-blog-post-four {
-
+background-color: #e0f3ff ;
   padding: 15px;
   -webkit-box-shadow: 0px 7px 60px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 7px 60px rgba(0, 0, 0, 0.07);

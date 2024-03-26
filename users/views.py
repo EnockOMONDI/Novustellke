@@ -80,6 +80,21 @@ def holidays(request):
 def contactus(request):
     
     return render(request, 'users/contactus.html')
+
+def post_list(request):
+    posts = Post.objects.all()
+    context = {
+        'posts': posts,
+    }
+    return render(request, 'users/post_list.html', context)
+
+def post_detail(request, pk):
+    post = Post.objects.get(pk=pk)
+    context = {
+        'post': post,
+    }
+    return render(request, 'users/post_detail.html', context)
+
 		
 def home(request):
 	dests1 = Destination.objects.all()  # Retrieve all destinations from the database
