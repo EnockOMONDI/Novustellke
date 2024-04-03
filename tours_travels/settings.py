@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adminside',
     'users',
+    'blog',
+    'taggit',
     'crispy_forms',
 ]
 

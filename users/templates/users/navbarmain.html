@@ -14,19 +14,17 @@
         </div>
     </div><!--====== Search From ======-->
     <!--====== Start Hero Section ======-->
-    <header class="header-area header-three">
+    <header class="header-area header-three" style="background-color: #e0f3ff;">
         <!--====== Header Top Bar ======-->
-        <div class="header-top-bar pt-60 pb-30">
+        <div class="header-top-bar pt-30 pb-20">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-3 d-none d-xl-block">
-                        <!--====== Site Branding ======-->
+                    <div class="col-xl-2 d-none d-xl-block">
                         <div class="site-brading">
                             <a href="{% url 'users:users-home'%}" class="brand-logo"><img src="{% static 'assets/images/logo/logo-black.png' %}" alt="Logo"></a>
                         </div>
                     </div>
-                    <div class="col-xl-9 col-lg-12">
-                        <!--====== Information Wrapper ======-->
+                    <div class="col-xl-10 col-lg-12">
                         <div class="information-wrapper">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -36,8 +34,7 @@
                                                 <i class="far fa-map-marker-alt"></i>
                                             </div>
                                             <div class="info">
-                                                <span class="title">Eagle Nest House Kilimani Ndemi Rd, Kilimani Rd Junction Off Ngong Rd</span>
-                                                <!-- <h5>Eagle Nest House Kilimani Ndemi Rd, Kilimani Rd Junction Off Ngong Rd</h5> -->
+                                                <span class="title">New Peoples Media Center (Kilimani), Elgeyo Marakwet &  Kilimani Rd Junction (Off Ngong Rd)</span>
                                             </div>
                                         </div>
                                     </div>
@@ -116,7 +113,13 @@
                                 </li>
 
                            
-                                
+                             
+                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-briefcase"></i> Business Travel</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{% url 'users:corporatepage'%} ">Corporate Travel Management</a></li>
+                                    </ul>
+                                </li>
+                                   
                                 <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-bed"></i> Stays</a></a>
                                     <ul class="sub-menu">
                                         <li><a href="">Luxury Hotels </a></li>
@@ -130,24 +133,21 @@
 
                                     </ul>
                                 </li>
-                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-briefcase"></i> Business Travel</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{% url 'users:corporatepage'%} ">Corporate Travel Management</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item has-children"><a href="#"><i class="far fa-plane"></i> + <i class="far fa-bed"></i> <small>save more</small> </a>
+                                <li class="menu-item has-children"><a href="#"><i class="far fa-plane"></i> + <i class="far fa-bed"></i> <small>Deals</small> </a>
                                     <ul class="sub-menu">
                                         <li><a href="destination.html">Flights + Stay Deals</a></li>
                                         <li><a href="destination.html">Flight Offers</a></li>
                                         <li><a href="destination-details.html">Hotel Deals</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-globe"></i> more</a>
+                                <li><a href="{% url 'blog:blog-list'%}"> <span style="padding-right: 10px;"> <i class="far fa-globe"></i> Travel News</a></a></li>
+
+                                <!-- <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"><i class="far fa-globe"></i> Travel News</a>
                                     <ul class="sub-menu">
                                         <li><a href="tour.html">Travel Insurance</a></li>
                                         <li><a href="tour-details.html">Group travel</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
 
                             </ul>
                         </nav>

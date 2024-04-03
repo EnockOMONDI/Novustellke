@@ -20,3 +20,11 @@ class UserBookings(models.Model):
 
     def __str__(self):
         return f'{self.user.first_name} | {self.package.package_name} | {self.booking_date}'
+
+class Post(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    date_posted = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title

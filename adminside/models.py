@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from users.models import UserBookings
 from django.db.models import BigAutoField
 from pyuploadcare.dj.models import ImageField
+
 # Create your models here.
 
 class Destination(models.Model):
@@ -92,3 +93,5 @@ class ItineraryDescription(models.Model):
     
     def __str__(self):
         return f'{self.itinerary.itinerary_name} | Day {self.day_number}'
+
+
