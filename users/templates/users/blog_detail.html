@@ -1,4 +1,4 @@
-{% extends 'users/basemain.html' %}
+{% extends 'users/basenoheader.html' %}
 {% load static  %}
 
 
@@ -9,7 +9,8 @@
         <div class="col-lg-10">
             <div class="page-banner-content text-center text-white">
                 <h1 class="page-title"style="background-color: #020333; padding: 15px; border-radius:10px;  display: inline-block;">Unveiling Destinations</h1>
-           
+                <!-- <a href="whatsapp://send?text=Check out this blog: {{ request.build_absolute_uri }}" target="_blank">Share on WhatsApp</a> -->
+
        <h6>
             </div>
             </div>
@@ -18,47 +19,52 @@
 </div>
 </section>
 <section class="blog-details-section pt-100 pb-70">
-    <div class="container">
+    <div class="" style="margin-left: 20px; margin-right: 20px;">
         <div class="row">
             <div class="col-xl-8">
                 <!--=== Blog Details Wrapper ===-->
                 <div class="blog-details-wrapper pr-lg-50">
                     <div class="blog-post mb-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="post-thumbnail">
-                            <img src="assets/images/blog/blog-single-1.jpg" alt="Blog Image">
+                            <img src="{{ post.image.cdn_url }}" alt="Blog Image">
                         </div>
                         <div class="post-meta text-center pt-25 pb-15 mb-25">
-                            <span><i class="far fa-user"></i><a href="#">Matthew N. Davis</a></span>
-                            <span><i class="far fa-calendar-alt"></i><a href="#">November 23,2022</a></span>
+                            <span><i class="far fa-user"></i><a href="#">{{post.user}}</a></span>
+                            <span><i class="far fa-calendar-alt"></i><a href="#">{{post.date|date:"d M, Y"}}</a></span>
                             <span><i class="far fa-comment"></i><a href="#">Comments (05)</a></span>
                         </div>
                         <div class="main-post">
                             <div class="entry-content">
-                                <h3 class="title">50 Resources And Tools To Turbocharge Amazon
-                                    Product Scraper Copywriting Skills</h3>
-                                <p>Sit amet consectetur adipiscing elit. Phasellus viverra justo, orci, interdum purus purus vitae vulputate nec
-                                    Vel nunc vivamus felis sit est, mus aliquam massa volutpat. Consectetur scelerisque tincidunt vulputate quis.
-                                    Metus eu, nisi nibh et adipiscing natoque tincidunt. Sed morbi arcu integer vestibulum scelerisque tincidunt
-                                    mauris. Lectus molestie vestibulum ac, nec. Nisl rutrum cras dictum lectus molestie leoenim sapien aenean
-                                    lectus. Platea enim nunc feugiat mauris, ut in volutpat nunc. Nulla sit rhoncus consequat malesuada magna diam tempor mauris proin vulputate tortorpurus nunc elementum quam pharetra mauris Habitant massa turpis nunc eu. Aliquet at velit etiam turpis a arcu consectetur sed.</p>
-                                <h4>Build Camping Easily</h4>
-                                <p>Metus eu, nisi nibh et adipiscing natoque tincidunt. Sed morbi arcu integer vestibulum scelerisque tincidunt
-                                    mauris. Lectus molestie vestibulum ac, nec. Nisl rutrum cras dictum lectus molestie leoenim sapien aenean
-                                    lectus. Platea enim nunc feugiat mauris, ut in volutpat nunc. Nulla sit rhoncus consequat</p>
-                                <blockquote class="block-quote">
-                                    <img src="assets/images/blog/quote.png" alt="quote image">
-                                    <h3>Handling Mounting And Unmounting Given
-                                        Navigation Routes In React Native</h3>
-                                    <span>Johnny M. Martin</span>
-                                </blockquote>
+                                <h3 class="title">{{post.title}}</h3>
+                                
+                                <!-- <h4>Build Camping Easily</h4> -->
+                                <p>{{post.content}}</p>
+                                <div class="post-author-box d-flex pb-60 mb-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="author-thumb">
+                                        <img src="{% static 'assets/images/about/newsletter.png' %}"  alt="quote image">
+                                    </div>
+                                    <div class="author-content">
+                                        <h5>Bruno R. Bouchard</h5>
+                                        <span class="position">Author</span>
+                                        <p>Donec duis enim ipsum odio at cursus. Fames semper enim integer epsum ultricies faucibus augue enim semper</p>
+                                        <ul class="social-link">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                             
                             </div>
                         </div>
                         <div class="entry-footer wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                             <div class="tag-links">
                                 <h6>Popular Tags</h6>
-                                <a href="#">Camping</a>
-                                <a href="#">Tent Camp</a>
-                                <a href="#">Couple Cabin</a>
+                                {% for c in categories %}
+                                <a href="{% url 'blog:category_detail' c.slug %}">{{c.title}}</a>
+                                
+                                {% endfor %}
                             </div>
                             <div class="social-share">
                                 <h6>Share News :</h6>
@@ -70,22 +76,7 @@
                         </div>
                     </div>
                     <!--===  Post Author Box  ===-->
-                    <div class="post-author-box d-flex pb-60 mb-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="author-thumb">
-                            <img src="assets/images/blog/author-1.jpg" alt="post author">
-                        </div>
-                        <div class="author-content">
-                            <h5>Bruno R. Bouchard</h5>
-                            <span class="position">Author</span>
-                            <p>Donec duis enim ipsum odio at cursus. Fames semper enim integer epsum ultricies faucibus augue enim semper</p>
-                            <ul class="social-link">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                 
                     <!--===  Post Navigation  ===-->
                     <div class="post-navigation-item pb-30 mb-55 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="prev-post post-nav-item d-flex mb-30">
@@ -197,27 +188,7 @@
             </div>
             <div class="col-xl-4">
                 <div class="sidebar-widget-area">
-                    <!--=== Search Widget ===-->
-                    <div class="sidebar-widget search-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Search</h4>
-                        <form>
-                            <div class="form_group">
-                                <label><i class="far fa-search"></i></label>
-                                <input type="text" class="form_control" placeholder="Keywords" name="search" required="">
-                            </div>
-                        </form>
-                    </div>
-                    <!--=== Category Widget ===-->
-                    <div class="sidebar-widget category-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Category</h4>
-                        <ul class="category-nav">
-                            <li><a href="#">Tent Camping<i class="far fa-arrow-right"></i></a></li>
-                            <li><a href="#">Family Camping<i class="far fa-arrow-right"></i></a></li>
-                            <li><a href="#">Wild Camping<i class="far fa-arrow-right"></i></a></li>
-                            <li><a href="#">Campfire <i class="far fa-arrow-right"></i></a></li>
-                            <li><a href="#">Luxury Cabin <i class="far fa-arrow-right"></i></a></li>
-                        </ul>
-                    </div>
+                 
                     <!--=== Recent Post Widget ===-->
                     <div class="sidebar-widget recent-post-widget mb-40 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <h4 class="widget-title">Recent News</h4>
