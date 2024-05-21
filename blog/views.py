@@ -29,7 +29,7 @@ def blogList(request):
         "blog": blog,
         "featured_blog": featured_blog,
     }
-    return render(request, 'blog/ffless/post-lists.html', context)
+    return render(request, 'users/bloglist.html', context)
 
 def blogDetail(request, pid):
     post = Post.objects.get(status="published", pid=pid)
@@ -56,7 +56,7 @@ def blogDetail(request, pid):
         "blogs": blogs,
         "related_blogs":related_blogs
     }
-    return render(request, 'blog/post-detail.html', context)
+    return render(request, 'users/blogdetail.html', context)
 
 
 def category_detail(request, slug):
