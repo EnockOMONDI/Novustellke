@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adminside',
     'users',
+    'blog',
+    'taggit',
     'crispy_forms',
 ]
 
@@ -192,5 +194,4 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
     # Add to this list all the locations containing your static files 
 )
-
 
