@@ -70,7 +70,7 @@ def category_detail(request, slug):
         blog = blog.filter(
             Q(title__icontains=query)).distinct()
 
-    paginator = Paginator(blog, 15)
+    paginator = Paginator(blog, 2)
     page_number = request.GET.get('page')
     blog = paginator.get_page(page_number)
     
