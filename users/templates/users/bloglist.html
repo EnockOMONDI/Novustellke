@@ -9,41 +9,9 @@
     <div class="" style="margin-left: 20px; margin-right: 20px;">
         
         <div class="row">
-            <div class="col-xl-4">
-                <div class="sidebar-widget-area">
-                    <!--=== Search Widget ===-->
-                    <div class="sidebar-widget search-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Search</h4>
-                 
-                        <form action="" method="GET">
-                            <div class="form_group">
-                                <label><i class="far fa-search"></i></label>
-                                <input type="text" class="form_control" placeholder="search Articles" name="q" >
-                            </div>
-                        </form>
-                    </div>
-                    <!--=== Category Widget ===-->
-                    <div class="sidebar-widget category-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Category</h4>
-                        {% for c in categories %}
-                        <ul class="category-nav">
-                            <li><a href="{% url 'blog:category_detail' c.slug %}">{{c.title}}<i class="far fa-arrow-right"></i></a></li>
-
-                        </ul>
-                        {% endfor %}
-                    </div>
-                 
-                </div>
-            </div>
             {% for p in blog %}
             <div class="col-xl-8">
-                <div class="post-meta text-center pb-15">
-                    {% if query == "" or query == None %}
-                    {% else %}
-                    <h2 class="title" style="color: rgb(0, 32, 59);">Showing Results for "{{query}}"</h2>
-                    {% endif %}
-                    
-                </div>
+               
                 
                 <!--=== Blog List Wrapper ===-->
                 <div class="blog-list-wrapper">
@@ -75,7 +43,40 @@
                     <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
                 </ul> -->
             </div>
+
             {% endfor %}
+          
+            
+
+            <div class="col-xl-4">
+            
+                <div class="sidebar-widget-area">
+                    <!--=== Search Widget ===-->
+                    <div class="sidebar-widget search-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h4 class="widget-title">Search</h4>
+                 
+                        <form action="" method="GET">
+                            <div class="form_group">
+                                <label><i class="far fa-search"></i></label>
+                                <input type="text" class="form_control" placeholder="search Articles" name="q" >
+                            </div>
+                        </form>
+                    </div>
+                    <!--=== Category Widget ===-->
+                    <div class="sidebar-widget category-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h4 class="widget-title">Category</h4>
+                        {% for c in categories %}
+                        <ul class="category-nav">
+                            <li><a href="{% url 'blog:category_detail' c.slug %}">{{c.title}}<i class="far fa-arrow-right"></i></a></li>
+
+                        </ul>
+                        {% endfor %}
+                    </div>
+                 
+                </div>
+            </div>
+</div>
+
                <div class="row">
                     <div class="col-lg-12">
                         <div class="gowilds-pagination wow fadeInDown mt-60 mb-30" style="visibility: hidden; animation-name: none;">
