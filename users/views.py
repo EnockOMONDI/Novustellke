@@ -19,6 +19,10 @@ from django.views import View
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from .forms import UserRegisterForm
 
+from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
+
+
 
 def register(request):
     if request.method == 'POST':
@@ -64,6 +68,11 @@ def success(request):
         messages.error(request, 'Oops! Something is not right. Please start over.')
 
     return render(request, 'users/success.html')
+
+@login_required
+def my_view(request):
+    next_page = request.GET.get('next')
+    return redirect(next_page)
 
 def aboutus(request):
     
@@ -114,6 +123,7 @@ def home(request):
 
 	
 	return render(request,'users/index.html',context)
+
 
 
 
