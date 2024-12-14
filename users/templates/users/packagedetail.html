@@ -3,62 +3,31 @@
 
 
 {% block content %}
+   
+    <section 
+    class="page-banner overlay pt-170 pb-170 bg_cover" 
+    style="background-image: url({{ package.Image.cdn_url }});">
+ 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="page-banner-content text-center text-white">
+                    <h1 class="page-title">{{package_name}}</h1>
+                    <ul class="breadcrumb-link text-white">
+                     
+                        <li><i class="fas fa-map-marker-alt"></i> <a href=""> {{destination_name}}, {{ package.destination.city }}</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="place-details-section">
     <!--=== Place Slider ===-->
     
     <div class="container">
-        <div class="place-slider-area overflow-hidden wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="place-slider slick-initialized slick-slider">
-                <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 20000px; transform: translate3d(-2965px, 0px, 0px);"><div class="place-item slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-item slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" tabindex="0">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="0">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-item slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                       <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div><div class="place-slider-item slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1">
-                    <div class="place-img">
-                        <img src="{{ package.Image.cdn_url }} " alt="Place Image">
-                    </div>
-                </div></div></div>
-                
-                
-                
-            </div>
-        </div>
+       
         <!--=== Tour Details Wrapper ===-->
         <div class="tour-details-wrapper pt-80">
             <!--=== Tour Title Wrapper ===-->
@@ -159,8 +128,8 @@
                             vel eillum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
                     </div>
                     <!--=== Days Area ===-->
+                    <!--=== Days Area ===-->
                     <div class="days-area mb-55 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <ul class="nav nav-tabs mb-35" role="tablist">
                         <ul class="nav nav-tabs mb-35" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day1" aria-selected="false" role="tab" tabindex="-1">Day 1st</button>

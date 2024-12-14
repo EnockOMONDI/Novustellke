@@ -3263,8 +3263,14 @@ button {
   margin-right: 20px;
 }
 .single-place-item .place-img img {
-  width: 100%;
+  width: 80%; 
+  height: auto;
   border-radius: 15px;
+  margin-bottom: -5%;
+  display: block; /* Ensures margin auto works */
+  margin-left: auto; /* Horizontal centering */
+  margin-right: auto; /* Horizontal centering */
+  
 }
 .single-place-item .place-content {
   position: relative;
