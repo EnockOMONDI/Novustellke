@@ -69,10 +69,6 @@ def success(request):
 
     return render(request, 'users/success.html')
 
-@login_required
-def my_view(request):
-    next_page = request.GET.get('next')
-    return redirect(next_page)
 
 def aboutus(request):
     
