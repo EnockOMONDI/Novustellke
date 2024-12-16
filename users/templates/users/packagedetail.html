@@ -69,6 +69,18 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <h2 class="my-4">Booking Form</h2>
+        
+                <form method="post" action="{% url 'users:users-bookings' package_id=package.id %}"> 
+                    {% csrf_token %}
+                    {{ Form.as_p }}  <!-- Automatically generates form fields -->
+        
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </div>
+                </form>
+            </div>
             <!--=== Tour Area Nav ===-->
             <div class="tour-area-nav pt-20 pb-20 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                 <div class="row align-items-center">
@@ -88,6 +100,9 @@
                         <div class="share-nav">
                             <a href="#">Share<i class="far fa-share"></i></a>
                             <a href="#">Reviews<i class="far fa-share"></i></a>
+                            <form action="">
+                    
+                            <a href="{% url 'users:users-bookings' package_id=package.id %}" class="btn btn-primary">Book Now</a>
                             <a href="#">Whislist<i class="far fa-heart"></i></a>
                         </div>
                     </div>

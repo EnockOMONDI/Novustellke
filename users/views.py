@@ -1,10 +1,11 @@
-from django.shortcuts import render,redirect,HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.http import Http404
 
 from django.contrib import messages
 from adminside.models import *
 from users.models import *
 from .forms import UserRegisterForm
+from .forms import UserBookingsForm
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
 # Create your views here.
@@ -21,6 +22,7 @@ from .forms import UserRegisterForm
 
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -174,7 +176,7 @@ def all_packages(request):
 def detail_package(request, package_id):
     if request.user.is_authenticated:
         try:
-            package = Package.objects.get(pk=package_id)
+            package = get_object_or_404(Package, id=package_id)
             package_name = package.package_name
             destination_name = package.destination.name
             booked = package.number_of_times_booked
@@ -233,33 +235,104 @@ def detail_package(request, package_id):
     return render(request, 'users/packagedetail.html', context)
 
 
-def bookings(request):
-	user_id=request.user.id
-	context = {}
-	if request.method == 'POST':
-		user=user_id
-		package=request.POST['package_id']
-		package=Package.objects.get(pk=package)
-		number_of_adults = request.POST['adults']
-		number_of_children =request.POST['children']
-		number_of_rooms =request.POST['rooms']
-		booking_date=request.POST['date']
-		include_travelling=request.POST.get('travel')
-		if include_travelling:
-			include_travelling=True
-			total_amount=(package.adult_price * int(number_of_adults)) + (package.child_price * int(number_of_children)) + (package.travel.price_per_person *(int(number_of_adults)+int(number_of_children)))+(package.accomodation.price_per_room*int(number_of_rooms))
-			print(total_amount)
-		else:
-			include_travelling=False
-			total_amount=(package.adult_price * int(number_of_adults)) + (package.child_price * int(number_of_children)) + (package.accomodation.price_per_room*int(number_of_rooms))
-			print(total_amount)
-		bookings=UserBookings(user=request.user,package=package,number_of_adults=number_of_adults,number_of_children=number_of_children,number_of_rooms=number_of_rooms,booking_date=booking_date,include_travelling=include_travelling,paid=False,total_amount=total_amount)
-		bookings.save()
-		
-		return redirect('users:users-home')
-		
-	else:
-		return redirect('users:users-home')
+
+
+
+def bookings(request, package_id):
+    package = get_object_or_404(Package, id=package_id)
+    form = UserBookingsForm(request.POST or None)  # Simplify form initialization
+    context = {'form': form, 'package': package}
+    
+    if request.method == 'POST' and form.is_valid():
+        user = request.user
+        number_of_adults = form.cleaned_data['number_of_adults']
+        number_of_children = form.cleaned_data.get('number_of_children', 0)
+        number_of_rooms = form.cleaned_data['number_of_rooms']
+        travel_date = form.cleaned_data['travel_date']
+        include_travelling = form.cleaned_data['include_travelling']
+
+        # Calculate total amount
+        total_amount = package.adult_price * number_of_adults
+        if number_of_children:
+            total_amount += package.child_price * number_of_children
+        total_amount += package.accommodation.price_per_room * number_of_rooms
+
+        if include_travelling:
+            total_amount += package.travel.price_per_person * (number_of_adults + number_of_children)
+
+        # Create the booking
+        booking = UserBookings.objects.create(
+            user=user,
+            package=package,
+            full_name=form.cleaned_data['full_name'],
+            phone_number=form.cleaned_data['phone_number'],
+            number_of_adults=number_of_adults,
+            number_of_children=number_of_children,
+            number_of_rooms=number_of_rooms,
+            travel_date=travel_date,
+            include_travelling=include_travelling,
+            total_amount=total_amount,
+        )
+
+        return render(request, 'users/booking_success.html', {'booking': booking})
+    
+    return render(request, 'users/UserBookingsForm.html', context)
+
+
+def booking_success(request, booking_id):
+    booking = get_object_or_404(Booking,id=booking_id)
+    return render(request, 'booking/booking_success2.html', {'booking':booking})
+
+# def bookings(request):
+#     user_id = request.user.id
+#     context = {}
+#     if request.method == 'POST':
+#         form = UserBookingsForm(request.POST)
+#         if form.is_valid():
+#             user = request.user
+#             package = get_object_or_404(Package, pk=request.POST['package_id'])
+#             number_of_adults = request.POST['number_of_adults']
+#             number_of_children = request.POST['number_of_children']
+#             number_of_rooms = request.POST['number_of_rooms']
+#             travel_date = request.POST['travel_date']
+#             include_travelling = request.POST.get('include_travelling')
+
+#             if include_travelling:
+#                 include_travelling = True
+#                 total_amount = (
+#                     package.adult_price * int(number_of_adults) +
+#                     package.child_price * int(number_of_children) +
+#                     package.travel.price_per_person * (int(number_of_adults) + int(number_of_children)) +
+#                     package.accommodation.price_per_room * int(number_of_rooms)
+#                 )
+#             else:
+#                 include_travelling = False
+#                 total_amount = (
+#                     package.adult_price * int(number_of_adults) +
+#                     package.child_price * int(number_of_children) +
+#                     package.accommodation.price_per_room * int(number_of_rooms)
+#                 )
+
+#             booking = UserBookings(
+#                 user=user,
+#                 package=package,
+#                 number_of_adults=number_of_adults,
+#                 number_of_children=number_of_children,
+#                 number_of_rooms=number_of_rooms,
+#                 travel_date=travel_date,
+#                 include_travelling=include_travelling,
+#                 paid=False,
+#                 total_amount=total_amount
+#             )
+#             booking.save()
+#             print(working)
+
+#             return render(request, 'users/created.html')
+
+#     else:
+#         form = UserBookingsForm()
+        
+#     return render(request, 'users/UserBookingsForm.html', {'form': form})
 
 
 class ActivateAccountView(View):
