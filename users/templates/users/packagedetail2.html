@@ -1,11 +1,11 @@
-{% extends 'users/basemain.html' %}
+{% extends 'users/basenoheader.html' %}
 {% load static  %}
 
 
 {% block content %}
-   
-    <section 
-    class="page-banner overlay pt-170 pb-170 bg_cover" 
+
+<section 
+    class="page-banner overlay pt-170 pb-100 bg_cover" 
     style="background-image: url({{ package.Image.cdn_url }});">
  
     <div class="container">
@@ -23,11 +23,54 @@
         </div>
     </div>
 </section>
-<section class="place-details-section">
+
+<section class="place-details-section " style="margin-top: -30px;">
     <!--=== Place Slider ===-->
-    
+    <div class="place-slider-area overflow-hidden wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="place-slider slick-initialized slick-slider">
+            
+            
+            
+            
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 20000px; transform: translate3d(-2470px, 0px, 0px);"><div class="place-slider-item slick-slide slick-cloned" tabindex="-1" style="" data-slick-index="-1" id="" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-2.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide" tabindex="-1" style="" data-slick-index="0" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-1.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-item slick-slide" tabindex="-1" style="" data-slick-index="1" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-2.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide slick-current slick-active" tabindex="0" style="" data-slick-index="2" aria-hidden="false">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-3.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide" tabindex="-1" style="" data-slick-index="3" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-2.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide slick-cloned" tabindex="-1" style="" data-slick-index="4" id="" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-1.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-item slick-slide slick-cloned" tabindex="-1" style="" data-slick-index="5" id="" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-2.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide slick-cloned" tabindex="-1" style="" data-slick-index="6" id="" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-3.jpg" alt="Place Image">
+                </div>
+            </div><div class="place-slider-item slick-slide slick-cloned" tabindex="-1" style="" data-slick-index="7" id="" aria-hidden="true">
+                <div class="place-img">
+                    <img src="assets/images/place/single-place-2.jpg" alt="Place Image">
+                </div>
+            </div></div></div></div>
+    </div>
     <div class="container">
-       
         <!--=== Tour Details Wrapper ===-->
         <div class="tour-details-wrapper pt-80">
             <!--=== Tour Title Wrapper ===-->
@@ -69,7 +112,6 @@
                     </div>
                 </div>
             </div>
-        
             <!--=== Tour Area Nav ===-->
             <div class="tour-area-nav pt-20 pb-20 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                 <div class="row align-items-center">
@@ -82,7 +124,6 @@
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><a href="#"></a></li>
-                             
                             </ul>
                         </div>
                     </div>
@@ -90,8 +131,6 @@
                         <div class="share-nav">
                             <a href="#">Share<i class="far fa-share"></i></a>
                             <a href="#">Reviews<i class="far fa-share"></i></a>
-                            <form action="">
-                    
                             <a href="{% url 'users:users-bookings' package_id=package.id %}" class="btn btn-primary">Book Now</a>
                             <a href="#">Whislist<i class="far fa-heart"></i></a>
                         </div>
@@ -101,88 +140,90 @@
             <div class="row">
                 <div class="col-xl-8">
                     <!--=== Place Content Wrap ===-->
-                
+                    <div class="place-content-wrap pt-45 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h3 class="title">{{package_name}}</h3>
+                        <p>{{package.description}}</p>
+                       
+                   
+                    </div>
                     <!--=== Days Area ===-->
-                    <!--=== Days Area ===-->
-                    <div class="days-area mb-55 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <!-- <div class="days-area mb-55 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <ul class="nav nav-tabs mb-35" role="tablist">
+                            {% for day in itinerary_description %}
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day1" aria-selected="false" role="tab" tabindex="-1">Day 1st</button>
+                                <button class="nav-link {% if forloop.first %}active{% endif %}" data-bs-toggle="tab" data-bs-target="#day{{ forloop.counter }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" role="tab" tabindex="-1">Day {{ forloop.counter }}</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day2" aria-selected="false" role="tab" tabindex="-1">Day 2nd</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#day3" aria-selected="true" role="tab">Day 3rd</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day4" aria-selected="false" tabindex="-1" role="tab">Day 4th</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day5" aria-selected="false" tabindex="-1" role="tab">Day 5th</button>
-                            </li>
+                        {% endfor %}
                         </ul>
+                        
                         <div class="tab-content">
-                            <div class="tab-pane fade" id="day1" role="tabpanel">
-                                <div class="content-box">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magne doloreseos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius modi tempora incidunt</p>
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
-                                        <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
-                                        <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
-                                    </ul>
+                            {% for day in itinerary_description %}
+            <div class="tab-pane fade {% if forloop.first %}active show{% endif %}" id="day{{ forloop.counter }}" role="tabpanel">
+                <div class="content-box">
+                    <p>{{ day.itinerary_description }}</p>
+                    {% endfor %}
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="day2" role="tabpanel">
-                                <div class="content-box">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magne doloreseos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius modi tempora incidunt</p>
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
-                                        <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
-                                        <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
-                                    </ul>
-                                </div>
+                            
+                        </div>
+                        <br><br>
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-5">
+                                <ul class="check-list">
+                                    <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
+                                    <li><i class="fas fa-badge-check"></i>Pick and Drop Services</li>
+                                    <li><i class="fas fa-badge-check"></i>Washing Machines</li>
+                                    <li><i class="fas fa-badge-check"></i>Cruise Dinner &amp; Music Event</li>
+                                    <li><i class="fas fa-badge-check"></i>Visit 5 Best Places With Group</li>
+                                    <li><i class="fas fa-badge-check"></i>Motorhome service</li>
+                                    <li><i class="fas fa-badge-check"></i>1 Meal Per Day</li>
+                                </ul>
                             </div>
-                            <div class="tab-pane fade active show" id="day3" role="tabpanel">
-                                <div class="content-box">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magne doloreseos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius modi tempora incidunt</p>
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
-                                        <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
-                                        <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="day4" role="tabpanel">
-                                <div class="content-box">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magne doloreseos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius modi tempora incidunt</p>
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
-                                        <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
-                                        <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="day5" role="tabpanel">
-                                <div class="content-box">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magne doloreseos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius modi tempora incidunt</p>
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
-                                        <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
-                                        <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
-                                    </ul>
-                                </div>
+                            <div class="col-lg-7">
+                                <img src="assets/images/place/single-place-4.jpg" class="mb-20 w-100" alt="place image">
                             </div>
                         </div>
+                        <h4>Tour Plan</h4>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur 
+                            vel eillum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-badge-check"></i>Parking in the Camp</li>
+                            <li><i class="fas fa-badge-check"></i>kayaking Sport</li>
+                            <li><i class="fas fa-badge-check"></i>Mountain Hiking</li>
+                        </ul>
+                        <h4>Advance Facilities</h4>
+                        <p>Neque porro quisquam est dolorem ipsum quia dolor si amet consectetur adipisci velit sed quian numquam eius tempora incidunt labore dolore magnam aliquam quaerat voluptatem.</p>
+                    </div> -->
+                    <div class="days-area mb-55 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <ul class="nav nav-tabs mb-35" role="tablist">
+                            {% for day in itinerary_description %}
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link {% if forloop.first %}active{% endif %}" 
+                                            data-bs-toggle="tab" 
+                                            data-bs-target="#day{{ forloop.counter }}" 
+                                            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" 
+                                            role="tab" tabindex="-1">Day {{ forloop.counter }}</button>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="tab-content">
+                            {% for day in itinerary_description %}
+                                <div class="tab-pane fade {% if forloop.first %}active show{% endif %}" id="day{{ forloop.counter }}" role="tabpanel">
+                                    <div class="content-box">
+                                        <p>{{ day.itinerary_description }}</p> <!-- Displaying the description of each day -->
+                                        <h4>Tour Plan</h4>
+                                        <p>{{ day.tour_plan }}</p> <!-- Assuming tour_plan is part of your itinerary model -->
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
                     </div>
-                    <!--=== Map Box ===-->
-                  
                     <!--=== Calendar Box ===-->
-                    <div class="calendar-wrapper wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="calendar-container mb-45"><div class="calendar-box"><div class="weeks-container"><div class="buttons-container"><button class="prev-button"><i class="far fa-angle-left"></i></button><span class="label-container month-container"><span class="month-label">september</span> <span class="year-label">2023</span></span><button class="next-button"><i class="far fa-angle-right"></i></button></div><div class="weeks-wrapper header"><div class="week" data-week-no="0"><div class="day header" data-day="0">su</div><div class="day header" data-day="1">mo</div><div class="day header" data-day="2">tu</div><div class="day header highlight" data-day="3">we</div><div class="day header" data-day="4">th</div><div class="day header" data-day="5">fr</div><div class="day header" data-day="6">sa</div></div></div><div class="weeks-wrapper"><div class="week" data-week-no="1"><div class="day disabled" data-date="Sun Aug 27 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>27</span></div><div class="day disabled" data-date="Mon Aug 28 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>28</span></div><div class="day disabled" data-date="Tue Aug 29 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>29</span></div><div class="day disabled highlight" data-date="Wed Aug 30 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>30</span></div><div class="day disabled" data-date="Thu Aug 31 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>31</span></div><div class="day" data-date="Fri Sep 01 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>1</span></div><div class="day" data-date="Sat Sep 02 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>2</span></div></div><div class="week highlight" data-week-no="2"><div class="day" data-date="Sun Sep 03 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>3</span></div><div class="day" data-date="Mon Sep 04 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>4</span></div><div class="day" data-date="Tue Sep 05 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>5</span></div><div class="day selected today highlight" data-date="Wed Sep 06 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>6</span></div><div class="day" data-date="Thu Sep 07 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>7</span></div><div class="day" data-date="Fri Sep 08 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>8</span></div><div class="day" data-date="Sat Sep 09 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>9</span></div></div><div class="week" data-week-no="3"><div class="day" data-date="Sun Sep 10 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>10</span></div><div class="day" data-date="Mon Sep 11 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>11</span></div><div class="day" data-date="Tue Sep 12 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>12</span></div><div class="day highlight" data-date="Wed Sep 13 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>13</span></div><div class="day" data-date="Thu Sep 14 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>14</span></div><div class="day" data-date="Fri Sep 15 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>15</span></div><div class="day" data-date="Sat Sep 16 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>16</span></div></div><div class="week" data-week-no="4"><div class="day" data-date="Sun Sep 17 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>17</span></div><div class="day" data-date="Mon Sep 18 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>18</span></div><div class="day" data-date="Tue Sep 19 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>19</span></div><div class="day highlight" data-date="Wed Sep 20 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>20</span></div><div class="day" data-date="Thu Sep 21 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>21</span></div><div class="day" data-date="Fri Sep 22 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>22</span></div><div class="day" data-date="Sat Sep 23 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>23</span></div></div><div class="week" data-week-no="5"><div class="day" data-date="Sun Sep 24 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>24</span></div><div class="day" data-date="Mon Sep 25 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>25</span></div><div class="day" data-date="Tue Sep 26 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>26</span></div><div class="day highlight" data-date="Wed Sep 27 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>27</span></div><div class="day" data-date="Thu Sep 28 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>28</span></div><div class="day" data-date="Fri Sep 29 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>29</span></div><div class="day" data-date="Sat Sep 30 2023 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>30</span></div></div></div></div></div></div>
+                    <div class="calendar-wrapper wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="calendar-container mb-45"><div class="calendar-box"><div class="weeks-container"><div class="buttons-container"><button class="prev-button"><i class="far fa-angle-left"></i></button><span class="label-container month-container"><span class="month-label">december</span> <span class="year-label">2024</span></span><button class="next-button"><i class="far fa-angle-right"></i></button></div><div class="weeks-wrapper header"><div class="week" data-week-no="0"><div class="day header" data-day="0">su</div><div class="day header" data-day="1">mo</div><div class="day header highlight" data-day="2">tu</div><div class="day header" data-day="3">we</div><div class="day header" data-day="4">th</div><div class="day header" data-day="5">fr</div><div class="day header" data-day="6">sa</div></div></div><div class="weeks-wrapper"><div class="week" data-week-no="1"><div class="day" data-date="Sun Dec 01 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>1</span></div><div class="day" data-date="Mon Dec 02 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>2</span></div><div class="day highlight" data-date="Tue Dec 03 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>3</span></div><div class="day" data-date="Wed Dec 04 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>4</span></div><div class="day" data-date="Thu Dec 05 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>5</span></div><div class="day" data-date="Fri Dec 06 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>6</span></div><div class="day" data-date="Sat Dec 07 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>7</span></div></div><div class="week" data-week-no="2"><div class="day" data-date="Sun Dec 08 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>8</span></div><div class="day" data-date="Mon Dec 09 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>9</span></div><div class="day highlight" data-date="Tue Dec 10 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>10</span></div><div class="day" data-date="Wed Dec 11 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>11</span></div><div class="day" data-date="Thu Dec 12 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>12</span></div><div class="day" data-date="Fri Dec 13 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>13</span></div><div class="day" data-date="Sat Dec 14 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>14</span></div></div><div class="week highlight" data-week-no="3"><div class="day" data-date="Sun Dec 15 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>15</span></div><div class="day" data-date="Mon Dec 16 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>16</span></div><div class="day selected today highlight" data-date="Tue Dec 17 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>17</span></div><div class="day" data-date="Wed Dec 18 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>18</span></div><div class="day" data-date="Thu Dec 19 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>19</span></div><div class="day" data-date="Fri Dec 20 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>20</span></div><div class="day" data-date="Sat Dec 21 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>21</span></div></div><div class="week" data-week-no="4"><div class="day" data-date="Sun Dec 22 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>22</span></div><div class="day" data-date="Mon Dec 23 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>23</span></div><div class="day highlight" data-date="Tue Dec 24 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>24</span></div><div class="day" data-date="Wed Dec 25 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>25</span></div><div class="day" data-date="Thu Dec 26 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>26</span></div><div class="day" data-date="Fri Dec 27 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>27</span></div><div class="day" data-date="Sat Dec 28 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>28</span></div></div><div class="week" data-week-no="5"><div class="day" data-date="Sun Dec 29 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>29</span></div><div class="day" data-date="Mon Dec 30 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>30</span></div><div class="day highlight" data-date="Tue Dec 31 2024 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>31</span></div><div class="day disabled" data-date="Wed Jan 01 2025 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>1</span></div><div class="day disabled" data-date="Thu Jan 02 2025 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>2</span></div><div class="day disabled" data-date="Fri Jan 03 2025 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>3</span></div><div class="day disabled" data-date="Sat Jan 04 2025 00:00:00 GMT+0300 (East Africa Time)" ola=""><span>4</span></div></div></div></div></div></div>
                     </div>
                     <!--=== Releted Tour Place ===-->
-                    <div class="related-tour-place wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="related-tour-place wow fadeInUp" style="visibility: hidden; animation-name: none;">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="section-title mb-35">
@@ -195,31 +236,12 @@
                         </div>
                         <div class="recent-place-slider slick-initialized slick-slider">
                             <!--=== Single Place Item ===-->
-                            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 2904px; transform: translate3d(-1089px, 0px, 0px);"><div class="single-place-item mb-60 slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 333px;" tabindex="-1">
-                                <div class="place-img">
-                                    <img src="assets/images/place/place-2.jpg" alt="Place Image">
-                                </div>
-                                <div class="place-content">
-                                    <div class="info">
-                                        <ul class="ratings">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
-                                        </ul>
-                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Trees Under White Clouds during Daytime</a></h4>
-                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
-                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
-                                        <div class="meta">
-                                            <span><i class="far fa-clock"></i>05 Days</span>
-                                            <span><i class="far fa-user"></i>25</span>
-                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 333px;" tabindex="-1">
+                            
+                            <!--=== Single Place Item ===-->
+                            
+                            <!--=== Single Place Item ===-->
+                            
+                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 2800px; transform: translate3d(-800px, 0px, 0px); transition: transform 800ms;"><div class="single-place-item mb-60 slick-slide slick-cloned" tabindex="-1" style="width: 376px;" data-slick-index="-1" id="" aria-hidden="true">
                                 <div class="place-img">
                                     <img src="assets/images/place/place-3.jpg" alt="Place Image">
                                 </div>
@@ -243,7 +265,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><div class="single-place-item mb-60 slick-slide" data-slick-index="0" aria-hidden="true" style="width: 333px;" tabindex="-1">
+                            </div><div class="single-place-item mb-60 slick-slide" tabindex="0" style="width: 376px;" data-slick-index="0" aria-hidden="true">
                                 <div class="place-img">
                                     <img src="assets/images/place/place-1.jpg" alt="Place Image">
                                 </div>
@@ -255,33 +277,9 @@
                                             <li><i class="fas fa-star"></i></li>
                                             <li><i class="fas fa-star"></i></li>
                                             <li><i class="fas fa-star"></i></li>
-                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
-                                        </ul>
-                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Man and Woman Walks on Dock</a></h4>
-                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
-                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
-                                        <div class="meta">
-                                            <span><i class="far fa-clock"></i>05 Days</span>
-                                            <span><i class="far fa-user"></i>25</span>
-                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 333px;" tabindex="0">
-                                <div class="place-img">
-                                    <img src="assets/images/place/place-2.jpg" alt="Place Image">
-                                </div>
-                                <div class="place-content">
-                                    <div class="info">
-                                        <ul class="ratings">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
                                             <li><a href="#" tabindex="0">(4.9)</a></li>
                                         </ul>
-                                        <h4 class="title"><a href="tour-details.html" tabindex="0">Trees Under White Clouds during Daytime</a></h4>
+                                        <h4 class="title"><a href="tour-details.html" tabindex="0">Man and Woman Walks on Dock</a></h4>
                                         <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
                                         <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
                                         <div class="meta">
@@ -291,55 +289,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 333px;" tabindex="0">
-                                <div class="place-img">
-                                    <img src="assets/images/place/place-3.jpg" alt="Place Image">
-                                </div>
-                                <div class="place-content">
-                                    <div class="info">
-                                        <ul class="ratings">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><a href="#" tabindex="0">(4.9)</a></li>
-                                        </ul>
-                                        <h4 class="title"><a href="tour-details.html" tabindex="0">Body of Water Near Mountain</a></h4>
-                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
-                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
-                                        <div class="meta">
-                                            <span><i class="far fa-clock"></i>05 Days</span>
-                                            <span><i class="far fa-user"></i>25</span>
-                                            <span><a href="tour-details.html" tabindex="0">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 333px;" tabindex="-1">
-                                <div class="place-img">
-                                    <img src="assets/images/place/place-1.jpg" alt="Place Image">
-                                </div>
-                                <div class="place-content">
-                                    <div class="info">
-                                        <ul class="ratings">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
-                                        </ul>
-                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Man and Woman Walks on Dock</a></h4>
-                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
-                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
-                                        <div class="meta">
-                                            <span><i class="far fa-clock"></i>05 Days</span>
-                                            <span><i class="far fa-user"></i>25</span>
-                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 333px;" tabindex="-1">
+                            </div><div class="single-place-item mb-60 slick-slide slick-current slick-active" tabindex="-1" style="width: 376px;" data-slick-index="1" aria-hidden="false">
                                 <div class="place-img">
                                     <img src="assets/images/place/place-2.jpg" alt="Place Image">
                                 </div>
@@ -363,7 +313,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 333px;" tabindex="-1">
+                            </div><div class="single-place-item mb-60 slick-slide" tabindex="-1" style="width: 376px;" data-slick-index="2" aria-hidden="true">
                                 <div class="place-img">
                                     <img src="assets/images/place/place-3.jpg" alt="Place Image">
                                 </div>
@@ -387,15 +337,82 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div></div></div>
-                            <!--=== Single Place Item ===-->
-                            
-                            <!--=== Single Place Item ===-->
-                            
-                        </div>
+                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" tabindex="-1" style="width: 376px;" data-slick-index="3" id="" aria-hidden="true">
+                                <div class="place-img">
+                                    <img src="assets/images/place/place-1.jpg" alt="Place Image">
+                                </div>
+                                <div class="place-content">
+                                    <div class="info">
+                                        <ul class="ratings">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
+                                        </ul>
+                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Man and Woman Walks on Dock</a></h4>
+                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
+                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
+                                        <div class="meta">
+                                            <span><i class="far fa-clock"></i>05 Days</span>
+                                            <span><i class="far fa-user"></i>25</span>
+                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" tabindex="-1" style="width: 376px;" data-slick-index="4" id="" aria-hidden="true">
+                                <div class="place-img">
+                                    <img src="assets/images/place/place-2.jpg" alt="Place Image">
+                                </div>
+                                <div class="place-content">
+                                    <div class="info">
+                                        <ul class="ratings">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
+                                        </ul>
+                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Trees Under White Clouds during Daytime</a></h4>
+                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
+                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
+                                        <div class="meta">
+                                            <span><i class="far fa-clock"></i>05 Days</span>
+                                            <span><i class="far fa-user"></i>25</span>
+                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="single-place-item mb-60 slick-slide slick-cloned" tabindex="-1" style="width: 376px;" data-slick-index="5" id="" aria-hidden="true">
+                                <div class="place-img">
+                                    <img src="assets/images/place/place-3.jpg" alt="Place Image">
+                                </div>
+                                <div class="place-content">
+                                    <div class="info">
+                                        <ul class="ratings">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><a href="#" tabindex="-1">(4.9)</a></li>
+                                        </ul>
+                                        <h4 class="title"><a href="tour-details.html" tabindex="-1">Body of Water Near Mountain</a></h4>
+                                        <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
+                                        <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
+                                        <div class="meta">
+                                            <span><i class="far fa-clock"></i>05 Days</span>
+                                            <span><i class="far fa-user"></i>25</span>
+                                            <span><a href="tour-details.html" tabindex="-1">Details<i class="far fa-long-arrow-right"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div></div></div>
                     </div>
                     <!--=== Reviews Area ===-->
-                    <div class="reviews-wrapper mb-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="reviews-wrapper mb-60 wow fadeInUp" style="visibility: hidden; animation-name: none;">
                         <div class="reviews-inner-box">
                             <div class="rating-value">
                                 <h4>Clients Reviews</h4>
@@ -416,7 +433,7 @@
                                         <h6>Quality <span class="rate">4.8</span></h6>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" style="width: 85%; visibility: visible; animation-name: slideInLeft;"></div>
+                                        <div class="progress-bar wow slideInLeft" style="width: 85%; visibility: hidden; animation-name: none;"></div>
                                     </div>
                                 </div>
                                 <div class="single-progress-bar">
@@ -424,7 +441,7 @@
                                         <h6>Team Member<span class="rate">4.6</span></h6>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" style="width: 75%; visibility: visible; animation-name: slideInLeft;"></div>
+                                        <div class="progress-bar wow slideInLeft" style="width: 75%; visibility: hidden; animation-name: none;"></div>
                                     </div>
                                 </div>
                                 <div class="single-progress-bar">
@@ -432,7 +449,7 @@
                                         <h6>Locations<span class="rate">4.7</span></h6>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" style="width: 90%; visibility: visible; animation-name: slideInLeft;"></div>
+                                        <div class="progress-bar wow slideInLeft" style="width: 90%; visibility: hidden; animation-name: none;"></div>
                                     </div>
                                 </div>
                                 <div class="single-progress-bar">
@@ -440,14 +457,14 @@
                                         <h6>Cost<span class="rate">4.9</span></h6>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" style="width: 95%; visibility: visible; animation-name: slideInLeft;"></div>
+                                        <div class="progress-bar wow slideInLeft" style="width: 95%; visibility: hidden; animation-name: none;"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--=== Comments Area ===-->
-                    <div class="comments-area wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="comments-area wow fadeInUp" style="visibility: hidden; animation-name: none;">
                         <ul class="comment-list">
                             <li>
                                 <div class="comment">
@@ -625,7 +642,7 @@
                         </ul>
                     </div>
                     <!--===  Comments Form  ===-->
-                    <div class="comments-respond mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="comments-respond mb-30 wow fadeInUp" style="visibility: hidden; animation-name: none;">
                         <h3 class="comments-heading" style="margin-bottom: 15px;">Leave a Comments</h3>
                         <ul class="comment-rating-ul mb-20">
                             <li>
@@ -707,7 +724,7 @@
                                         <label>Date</label>
                                         <div class="bk-item booking-time">
                                             <i class="far fa-calendar-alt"></i>
-                                            <input type="text" placeholder="Select Date" class="datepicker hasDatepicker" id="dp1693975519902">
+                                            <input type="text" placeholder="Select Date" class="datepicker hasDatepicker" id="dp1734396503970">
                                         </div>
                                     </div>
                                     <div class="booking-item">
@@ -790,10 +807,28 @@
                                     </div>
                                 </div>
                                 <div class="submit-button">
-                                    <button class="main-btn primary-btn">Booking Now<i class="far fa-paper-plane"></i></button>
+                                    <a href="{% url 'users:users-bookings' package_id=package.id %}" class="main-btn primary-btn">Book Now</a>
                                 </div>
                             </form>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <!--=== Booking Info Widget ===-->
                         <div class="sidebar-widget booking-info-widget wow fadeInUp mb-40" style="visibility: visible; animation-name: fadeInUp;">
                             <h4 class="widget-title">Tour Information</h4>
@@ -856,7 +891,7 @@
                             </ul>
                         </div>
                         <!--=== Banner Widget ===-->
-                        <div class="sidebar-widget sidebar-banner-widget wow fadeInUp mb-40" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="sidebar-widget sidebar-banner-widget wow fadeInUp mb-40" style="visibility: hidden; animation-name: none;">
                             <div class="banner-widget-content">
                                 <div class="banner-img">
                                     <img src="assets/images/blog/banner-1.jpg" alt="Post Banner">
@@ -875,6 +910,7 @@
         </div>
     </div>
 </section>
+
 {% include 'users/footer.html' %}
 
        
