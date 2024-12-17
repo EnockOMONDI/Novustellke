@@ -100,9 +100,9 @@ class Itinerary(models.Model):
         return f'{self.itinerary_name}'
 
 class ItineraryDescription(models.Model):
-    itinerary = models.ForeignKey(Itinerary,on_delete=models.CASCADE)
-    day_number = models.PositiveIntegerField()
+    itinerary = models.ForeignKey(Itinerary, related_name='itinerarydescription_set', on_delete=models.CASCADE)    
     itinerary_description = models.TextField()
+    day_number = models.IntegerField()
     
     class Meta:
         ordering = ['day_number']
@@ -110,3 +110,5 @@ class ItineraryDescription(models.Model):
     
     def __str__(self):
         return f'{self.itinerary.itinerary_name} | Day {self.day_number}'
+    
+  

@@ -40,7 +40,7 @@
         <!--====== Style css ======-->
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     </head>
-    <body>
+    <body style="background-color: #e0f3ff;" >
           <!--====== Start Preloader ======-->
           <div class="preloader">
             <div class="loader">
@@ -48,6 +48,7 @@
                 <div class="pre-box"></div>
             </div>
         </div><!--====== End Preloader ======-->
+       <br><br>
         {% include 'users/navbarnoheader.html' %}
 
         {% block content %}

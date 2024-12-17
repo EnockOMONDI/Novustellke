@@ -79,4 +79,5 @@ class UserBookingsForm(forms.ModelForm):
             'travel_date',
             'include_travelling',
             'special_requests',
+            'paid'
         ]

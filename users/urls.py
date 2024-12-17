@@ -16,7 +16,7 @@ urlpatterns = [
     path('packages/', views.all_packages, name='all_packages'),
     path('package/<int:package_id>/', views.detail_package, name='users-detail-package'),
     path('bookings/<int:package_id>/', views.bookings, name='users-bookings'),
+    path('booking_success/<int:booking_id>/', views.booking_success, name='users-booking-success'),
     path('activate/<uid64>/<token>',views.ActivateAccountView.as_view(),name='activate'),
 
 ]
-

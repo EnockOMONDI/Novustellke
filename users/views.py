@@ -1,5 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.http import Http404
+import smtplib
+import os
+
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 from django.contrib import messages
 from adminside.models import *
@@ -22,6 +27,8 @@ from .forms import UserRegisterForm
 
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+from .utils import send_booking_confirmation_email
+
 
 
 
@@ -126,6 +133,7 @@ def home(request):
 
 
 
+
 def destination(request,id):
 	id=id
 	dest=Destination.objects.get(id=id)
@@ -188,8 +196,8 @@ def detail_package(request, package_id):
             travel_mode = package.travel.travelling_mode
             travel_price = package.travel.price_per_person
 
-            # Accommodation Details
-            hotel_name = package.accomodation.hotel_name
+            # accomodation Details
+            hotel_name = package.accomodation.hotel_name if package.accomodation else "N/A"
             hotel_description = package.accomodation.hotel_description
             price_per_room = package.accomodation.price_per_room
 
@@ -198,7 +206,7 @@ def detail_package(request, package_id):
             exclusive = package.exclusive
 
             # Itinerary
-            itinerary = Itinerary.objects.get(package=package)
+            itinerary = get_object_or_404(Itinerary, package=package)
             itinerary_description = itinerary.itinerarydescription_set.all() # list of itinerary days
 
             # Images
@@ -232,107 +240,55 @@ def detail_package(request, package_id):
         # Handle the case when the user is not authenticated
         return HttpResponse("<h1>You need to be logged in to view this page.</h1>")
 
-    return render(request, 'users/packagedetail.html', context)
+    return render(request, 'users/packagedetail2.html', context)
 
 
+ 
 
 
-
+@login_required
 def bookings(request, package_id):
     package = get_object_or_404(Package, id=package_id)
-    form = UserBookingsForm(request.POST or None)  # Simplify form initialization
+    form = UserBookingsForm(request.POST or None)
     context = {'form': form, 'package': package}
     
-    if request.method == 'POST' and form.is_valid():
-        user = request.user
-        number_of_adults = form.cleaned_data['number_of_adults']
-        number_of_children = form.cleaned_data.get('number_of_children', 0)
-        number_of_rooms = form.cleaned_data['number_of_rooms']
-        travel_date = form.cleaned_data['travel_date']
-        include_travelling = form.cleaned_data['include_travelling']
-
-        # Calculate total amount
-        total_amount = package.adult_price * number_of_adults
-        if number_of_children:
-            total_amount += package.child_price * number_of_children
-        total_amount += package.accommodation.price_per_room * number_of_rooms
-
-        if include_travelling:
-            total_amount += package.travel.price_per_person * (number_of_adults + number_of_children)
-
-        # Create the booking
-        booking = UserBookings.objects.create(
-            user=user,
-            package=package,
-            full_name=form.cleaned_data['full_name'],
-            phone_number=form.cleaned_data['phone_number'],
-            number_of_adults=number_of_adults,
-            number_of_children=number_of_children,
-            number_of_rooms=number_of_rooms,
-            travel_date=travel_date,
-            include_travelling=include_travelling,
-            total_amount=total_amount,
-        )
-
-        return render(request, 'users/booking_success.html', {'booking': booking})
+    if request.method == 'POST':
+        if form.is_valid():
+            print("Form is valid!")  # Debug print
+            try:
+                # Your existing booking creation code
+                booking = UserBookings.objects.create(
+                    user=request.user,
+                    package=package,
+                    full_name=form.cleaned_data['full_name'],
+                    phone_number=form.cleaned_data['phone_number'],
+                    number_of_adults=form.cleaned_data['number_of_adults'],
+                    number_of_children=form.cleaned_data.get('number_of_children', 0),
+                    number_of_rooms=form.cleaned_data['number_of_rooms'],
+                    travel_date=form.cleaned_data['travel_date'],
+                    include_travelling=form.cleaned_data['include_travelling'],
+                )
+                
+               
+                
+                return redirect('users:users-booking-success', booking_id=booking.id)
+            
+            except Exception as e:
+                print(f"Booking creation error: {e}")  # Debug print
+                messages.error(request, f'Error creating booking: {e}')
+        else:
+            print("Form is NOT valid!")  # Debug print
+            print(form.errors)  # Print form validation errors
+            messages.error(request, 'Please correct the form errors.')
     
     return render(request, 'users/UserBookingsForm.html', context)
 
 
 def booking_success(request, booking_id):
-    booking = get_object_or_404(Booking,id=booking_id)
-    return render(request, 'booking/booking_success2.html', {'booking':booking})
+    booking = get_object_or_404(UserBookings, id=booking_id)
+    return render(request, 'users/booking_success.html', {'booking': booking})
 
-# def bookings(request):
-#     user_id = request.user.id
-#     context = {}
-#     if request.method == 'POST':
-#         form = UserBookingsForm(request.POST)
-#         if form.is_valid():
-#             user = request.user
-#             package = get_object_or_404(Package, pk=request.POST['package_id'])
-#             number_of_adults = request.POST['number_of_adults']
-#             number_of_children = request.POST['number_of_children']
-#             number_of_rooms = request.POST['number_of_rooms']
-#             travel_date = request.POST['travel_date']
-#             include_travelling = request.POST.get('include_travelling')
 
-#             if include_travelling:
-#                 include_travelling = True
-#                 total_amount = (
-#                     package.adult_price * int(number_of_adults) +
-#                     package.child_price * int(number_of_children) +
-#                     package.travel.price_per_person * (int(number_of_adults) + int(number_of_children)) +
-#                     package.accommodation.price_per_room * int(number_of_rooms)
-#                 )
-#             else:
-#                 include_travelling = False
-#                 total_amount = (
-#                     package.adult_price * int(number_of_adults) +
-#                     package.child_price * int(number_of_children) +
-#                     package.accommodation.price_per_room * int(number_of_rooms)
-#                 )
-
-#             booking = UserBookings(
-#                 user=user,
-#                 package=package,
-#                 number_of_adults=number_of_adults,
-#                 number_of_children=number_of_children,
-#                 number_of_rooms=number_of_rooms,
-#                 travel_date=travel_date,
-#                 include_travelling=include_travelling,
-#                 paid=False,
-#                 total_amount=total_amount
-#             )
-#             booking.save()
-#             print(working)
-
-#             return render(request, 'users/created.html')
-
-#     else:
-#         form = UserBookingsForm()
-        
-#     return render(request, 'users/UserBookingsForm.html', {'form': form})
 
 
 class ActivateAccountView(View):
@@ -351,12 +307,3 @@ class ActivateAccountView(View):
 
 			return redirect('login')
 		return HttpResponse('THIS VERIFICATION CODE HAS ALREADY BEEN USED USE ANOTHER EMAIL TO CREATE AN ACCOUNT OR LOG IN WITH YOUR DETAILS')
-
-
-
-
-
-
-
-
-     

@@ -18,7 +18,8 @@ class UserBookings(models.Model):
     include_travelling = models.BooleanField(default=False)
     special_requests = models.TextField(blank=True, null=True)
     paid=models.BooleanField(default=False)
-    total_amount=models.PositiveIntegerField(default=0)
+    total_amount = models.PositiveIntegerField(default=0, blank=True, null=True)
+
 
     class Meta:
         ordering = ('-booking_date', )
