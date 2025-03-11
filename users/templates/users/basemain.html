@@ -40,7 +40,45 @@
         <!--====== Style css ======-->
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     </head>
-    <body style="background-color: #e0f3ff;">
+    <body style="background-color: #def0ff;">
+        <script>
+            var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?55090';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+            "enabled":true,
+            "chatButtonSetting":{
+                "backgroundColor":"#ff9d00",
+                "ctaText":"Chat",
+                "borderRadius":"25",
+                "marginLeft": "0",
+                "marginRight": "20",
+                "marginBottom": "20",
+                "ctaIconWATI":true,
+                "position":"right"
+            },
+            "brandSetting":{
+                "brandName":"Novustell Travel",
+                "brandSubTitle":"undefined",
+                "brandImg":"https://novustelltravel.com/static/assets/images/logo/logo-white.png",
+                "welcomeText":"Hi there!\nHow can I help you?",
+                "messageText":"Hello, %0AI'm Just from your website",
+                "backgroundColor":"#ffffff",
+                "ctaText":"Chat",
+                "borderRadius":"25",
+                "autoShow": false,
+                "phoneNumber":"254701363551"
+            }
+            };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        </script>
+
           <!--====== Start Preloader ======-->
           <div class="preloader">
             <div class="loader">

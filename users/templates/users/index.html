@@ -7,758 +7,467 @@
 
 
    
-    <section class="services-section black-bg pt-100  " style="background-color: #e0f3ff;">
+    <section class="services-section black-bg pt-100  " style="background-color: #def0ff;">
         <div class="container">
           
               
-                <div class="row ">
                  
                     
-                    <div class="col-lg-6 col-md-12">
-                        <div class="single-place-item-two mb-30 wow fadeInUp">
-                            
+            <style>
+               .check-list {
+                    list-style: none;
+                    padding: 0;
+                }
+                
+                .check-list li {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    color: #ffffff !important; /* Force white color */
+                }
+
+                .check-list li i {
+                    color: #4CAF50;
+                    margin-right: 0.75rem;
+                    font-size: 1.25rem;
+                }
+                .single-place-item-two {
+                    transition: all 0.3s ease-in-out;
+                    overflow: hidden;
+                    border-radius: 24px;
+                }
+            
+                .single-place-item-two:hover {
+                    /* transform: translateY(-5px); */
+                    transform: translateY(-8px) scale(1.01);
+                    box-shadow: 0 10px 20px rgba(6, 0, 43, 0.2);
+                    border-radius: 24px;
+                }
+            
+                .single-place-item-two .place-img {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 24x;
+                }
+            
+                .single-place-item-two .place-img img {
+                    /* transition: all 0.5s ease-in-out; */
+                    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 0.4);
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+            
+                /* .single-place-item-two:hover .place-img img {
+                    transform: scale(1.1);
+                } */
+                .single-place-item-two:hover .place-img img {
+                transform: scale(1.08);
+            }
+            
+                .single-place-item-two .place-content {
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 20px;
+                }
+            
+                .single-place-item-two:hover .place-content {
+                    background: rgba(23, 11, 44, 0.4);
+                    border-radius: 20px;
+                }
+            
+                .single-place-item-two a {
+                    text-decoration: none;
+                    display: block;
+                    border-radius: 20px;
+                }
+                .nav-tabs {
+                border: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .nav-tabs .nav-link {
+                border-radius: 50px;
+                padding: 0.75rem 1.5rem;
+                color: #170b2c;
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+                background: rgba(255,255,255,0.9);
+            }
+
+            .nav-tabs .nav-link:hover {
+                background: rgba(23, 11, 44, 0.1);
+            }
+
+            .nav-tabs .nav-link.active {
+                background: #170b2c;
+                color: white;
+                border-color: #4CAF50;
+            }
+
+            .btn-custom {
+                background: linear-gradient(135deg, #170b2c 0%, #2a1b3d 100%);
+                color: white;
+                border-radius: 50px;
+                padding: 1rem 2rem;
+                transition: all 0.3s ease;
+                border: none;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .btn-custom:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            }
+            </style>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="single-place-item-two mb-30 wow fadeInUp">
+                        <a href="{% url 'users:corporatepage' %}">
                             <div class="place-img">
                                 <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                <span class="tour-count">Corporate services</span>
+                                <span class="tour-count">Business Travel</span>
                                 <div class="place-content">
                                     <div class="info text-white">
                                         <h3 class="title mb-10"><strong>Efficient Corporate  <br> Travel Solutions</strong> </h3>
                                         <div data-animation="fadeInRight" data-delay=".6s"> 
-                                            <span class="sub-title">  <a href="{% url 'users:corporatepage'%} "> <small> For Corporate Travellers <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                        </div>                                    </div>
+                                            <span class="sub-title"> <small> For Corporate Travellers <i class="fas fa-paper-plane"></i></small> </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-               
-                  
-                    <div class="col-lg-6 col-md-12">
-                        <div class="single-place-item-two mb-30 wow fadeInUp">
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="single-place-item-two mb-30 wow fadeInUp">
+                        <a href="{% url 'users:all_packages' %}">
                             <div class="place-img">
                                 <img src="{% static 'assets/images/place/place-122.jpg' %}" alt="Place Image">
                                 <span class="tour-count">20+ Destinations</span>
-                               <div class="place-content">
+                                <div class="place-content">
                                     <div class="info text-white">
-                                        <h3 class="title mb-10"><strong>Crafting Memories <br> One Journey at a Time</strong> </h3>
+                                        <h3 class="title mb-10"><strong>Holiday Getaways<br> Great destinations, easy planning.</strong> </h3>
                                         <div data-animation="fadeInRight" data-delay=".6s"> 
-                                            <span class="sub-title">  <a href="{% url 'users:all_packages'%} "> <small> Holidays & Tours <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                        </div>                                    </div>
+                                            <span class="sub-title"> <small> Explore Holidays & Tours <i class="fas fa-paper-plane"></i></small> </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                 
                 </div>
-         
-          <!-- <div class="activity-wrapper-bgc  "> -->
-               <br>
-                <div class="container ">
-                <div class="   mb-30 wow fadeInDown">
-                    <h1 style="font-size: 60px; color: #170b2c;">Affordable Journeys,  Unforgettable Memories</h1>
-                  
-                        <p class="pt-10" style="color: #170b2c;" >Welcome to Novustell Travel, <strong>our goal is simple: </strong> We want every trip you take with us to be affordable and wonderfully memorable. We take care of all the little things to ensure your journey is smooth and effortless, creating moments you'll treasure forever.
-                            
-                        </p>
-                   
-    
-                    </div>
-            
-          
-        </div>
-        <br> <br> <br>
             </div>
+         
+       
       
        
     </section><!--====== End Services Section ======-->
-
-
-            <!--====== Start Why us Section ======-->
-            <section class="activity-section " >
-              
-                <div class="col-xl-12 pt-10"  style="  border-radius: 20px; margin-top: -70px; margin-bottom: 70px; background: linear-gradient(104deg, rgba(31,3,79,1) 0%, rgba(23,11,44,1) 22%, rgba(23,11,44,1) 75%, rgba(31,3,79,1) 100%);">
-                    <div  >
-                        <div class="container " > 
-
+<section>
+    <div class="container">
+        <div class="  pt-5 wow fadeInUp">
+            <h1  class="display-4 fw-bold mb-4" style="color: #170b2c; ">
+                Your Journey , Our Expertise
+            </h1>
+            <p class="lead mb-5" style="color: #333; max-width: 1100px;">
+                From corporate travel to MICE, student trips to NGO travel, and curated holiday packages -Novustell Travel streamlines every journey for seamless experiences.
+                Ensuring every journey is as rewarding as it is efficient.
+            </p>
            
-                
-                            <!-- <span class="sub-title" style="margin-top: -35px; background-color: #ffbb00; color: #e0f3ff;">Why Choose Novustell Travel </span> -->
-
-                            <div class="row ">
-                                <div class="col-xl-6">
-            <br><br>
-                                    <div class="section-title text-white mb-50 wow fadeInDown" style="margin-top: 5px;">
-                                        <h2> Each journey is a vivid masterpiece of savings and unforgettable moments </h2>
-                                        <p> <strong>- It's just that simple. </strong></p>
-                                        <br>
-            
-                                    </div>
-            
-                                </div>
-                                <div class="col-md-6">
-                                    <!--=== Activity Content Box ===-->
-                                    <div class="activity-content-box pl-lg-30 text-white ">
-                                    <br>
-                                    <p> We bring over 20 years of invaluable experience and a credible reputation to the table.</p>
-
-                                        <ul class="check-list">
-                                            <li><i class="fas fa-badge-check"></i>Expertise You Can Trust</li>
-                                              <li><i class="fas fa-badge-check"></i>Best Rates In the Market</li>
-                                             <li><i class="fas fa-badge-check"></i>  Customer Care 24/7</li>
-                                            <li><i class="fas fa-badge-check"></i>Innovative Travel Solutions</li>
-                                             <li><i class="fas fa-badge-check"></i>Easy & Quick Booking</li>
-                                            
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                     
-              
-            </div>
         </div>
     </div>
-        <!--=== Service Slider One ===-->
-     
-            </section>
-
-
-            <section class="services-seciton ">
-
-                <div class="container">
-           
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10 col-lg-12">
-                            <!--=== Section Title ===-->
-                            <div class="section-title text-center mb-60 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-                                <h2>Explore Hot Deals  <span class="icon"><i class="flaticon-fire"></i></span></h2>
-                            </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                        <div class="slider-active-3-item wow fadeInUp slick-initialized slick-slider" style="visibility: visible; animation-name: fadeInUp;">
-                            <!--=== Single Service Item ===-->
-                            <div class="single-service-item mb-40 slick-slide slick-cloned"   id="" aria-hidden="true">
-                                <div class="content">
-                                    <h1 style="color: #170b2c;"  class="title"><a href="{% url 'users:all_packages'%} " tabindex="-1">Holidays</a></h1>
-                                    <!-- <p>Sit amet consecteturauris natoque name
-                                        pellentue augue mattis faucibus</p> -->
-                                    <!-- <div class="meta">
-                                        <span class="icon"><i class="flaticon-blanket"></i></span>
-                                        <span class="icon"><i class="flaticon-cat"></i></span>
-                                        <span class="icon"><i class="flaticon-tent"></i></span>
-                                        <span class="icon"><i class="flaticon-fire"></i></span>
-                                    </div> -->
-                                    <a href="#" class="icon-btn" tabindex="-1"><i class="far fa-arrow-right"></i></a>
-                                </div>
-                                <div class="img-holder">
-                                    <img src="{% static 'assets/images/service/capetown.jpg' %}" alt="Service Image">
+</section>
+    <section class="features-section  py-5" style="margin-top: -20px;" >
+        <div class="container" style="background: linear-gradient(104deg, rgba(31,3,79,1) 0%, rgba(23,11,44,1) 40%); padding: 50px; border-radius: 12px;">
+            <div class="row align-items-center">
+                <!-- New Image Column (Left) -->
+                <div class="col-lg-5">
+                    <div class="about-image wow fadeInLeft">
+                        <div class="single-place-item-two mb-30">
+                            <div class="place-img">
+                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Why Choose Us" style="height: 500px; object-fit: cover;">
+                                <div class="place-content">
+                                    <div class="info text-white">
+                                        <h3 class="title mb-10"><strong>20+ Years of Excellence</strong></h3>
+                                        <div>
+                                            <span class="sub-title"><small>Your Trusted Travel Partner</small></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="slider-active-3-item wow fadeInUp slick-initialized slick-slider" style="visibility: visible; animation-name: fadeInUp;">
-                            <!--=== Single Service Item ===-->
-                            <div class="single-service-item mb-40 slick-slide slick-cloned" id="" aria-hidden="true">
-                                <div class="img-holder">
-                                    <img src="{% static 'assets/images/service/hotelsopa.jpg' %}" alt="Service Image">
-                                </div>
-                                <div class="content">
-                                    <a href="#" class="icon-btn" tabindex="-1"><i class="far fa-arrow-right"></i></a>
-
-                                    <h1 style="color: #170b2c;" class="title"><a href="{% url 'users:all_packages'%} " tabindex="-1">Hotels</a></h1>
-                                    <!-- <p>Sit amet consecteturauris natoque name
-                                        pellentue augue mattis faucibus</p> -->
-                                        
-                                    <!-- <div class="meta">
-                                        <span class="icon"><i class="flaticon-blanket"></i></span>
-                                        <span class="icon"><i class="flaticon-cat"></i></span>
-                                        <span class="icon"><i class="flaticon-tent"></i></span>
-                                        <span class="icon"><i class="flaticon-fire"></i></span>
-                                    </div> -->
-                                </div>
-                               
-                            </div>
-                </div>
-                    </div>
-                  </div>
                         </div>
                     </div>
-         
                 </div>
-            </section>            
-            <!--====== End Why us Section ======-->
-            <br>
-        <br>
-            <section class="features-section black-bg "style="margin-top: -55px;">
+            
+                <!-- Combined Content Column (Right) -->
+                <div class="col-lg-7">
+                    <div class="section-content ps-lg-5">
+                        <!-- Title Section -->
+                        <div class="section-title text-white mb-4 wow fadeInRight">
+                            <h2 class="mb-3">Why People Choose Novustell Travel?</h2>
+                            <p class="lead mb-4">We bring over two decades of expertise in crafting perfect travel experiences.</p>
+                        </div>
+            
+                        <!-- Features List -->
+                        <div class="features-list wow fadeInRight">
+                            <ul class="check-list">
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Expert Travel Consultants</strong>
+                                        <p class="mb-0">Professional guidance from seasoned travel experts</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Best Price Guarantee</strong>
+                                        <p class="mb-0">Competitive rates and value for your money</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>24/7 Customer Support</strong>
+                                        <p class="mb-0">Round-the-clock assistance for your peace of mind</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Tailored Travel Solutions</strong>
+                                        <p class="mb-0">Customized packages to match your preferences</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Seamless Booking Experience</strong>
+                                        <p class="mb-0">Easy and efficient reservation process</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add this CSS to your existing styles -->
+            <style>
+                .check-list li {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 1.5rem;
+                    color: #ffffff !important;
+                }
+            
+                .check-list li i {
+                    color: #ff9d00;
+                    margin-right: 1rem;
+                    font-size: 1.05rem;
+                    margin-top: 0.25rem;
+                }
+            
+                .check-list li div {
+                    flex: 1;
+                }
+            
+                .check-list li strong {
+                    display: block;
+                    margin-bottom: 0.20rem;
+                    font-size: 1rem;
+                }
+            
+                .check-list li p {
+                    color: rgba(255, 255, 255, 0.8) !important;
+                    font-size: 0.8rem;
+                }
+            
+                .section-content {
+                    position: relative;
+                }
+            
+                @media (max-width: 991px) {
+                    .section-content {
+                        margin-top: 2rem;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+            <!--====== Start Why us Section ======-->
+
+            <section class="why-choose-section  pt-50 pb-50" style="background-color: #def0ff;">
                 <div class="container">
-                    <br>
-                    <br>
-                    <div class="col-xl-12   "> 
-                 
-                        
-                        <div class="row ">
-                            <div class="section-title text-white text-center wow fadeInDown">
-                                <h2>Our Services</h2>
-                            </div>
-                            <!-- <div class="section-title  text-white  wow fadeInDown" style="margin-bottom: -25px; ">
-                              
-                                    <span class="  sub-title">Our Services</span>
-        
-                                </div> -->
+                    <div class="row align-items-xl-center">
+
+                        <div class="col-xl-12">
+                            <div class="choose-content-box pr-lg-70">
+                                <!-- Section Title -->
+                                <div class="section-title mb-45 wow fadeInDown">
+                                    <h2>Novustell Travel Solutions
+                                        </h2>
+                                    <p class="lead">Find the right solution for your business..</p>
+                                </div>
                       
-                                <div class="activity-nav-tab mb-30 wow fadeInLeft" style="background-color: #f6faf900; margin-top: -10px;">
-                                    <ul class="nav nav-tabs">
-                                        <li>
-                                            <a href="#tab1" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">Air Ticketing </a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab2" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">Airport Transfers</a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab3" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">Car Hire </a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab4" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">Hotel Bookings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab5" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab5">Visa Assistance</a>
-                                        </li>
-                                      
-                                        <li>
-                                            <a href="#tab7" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab6">Travel Insurance </a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab8" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab7"> Tours and Safaris</a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab9" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab8">Frequent Flyer Registration</a>
-                                        </li>
-                                        <li>
-                                            <a href="#tab10" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab9">Conference & Meetings</a>
-                                        </li>
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="fancy-icon-box-four mb-45 wow fadeInUp">
                                        
-                                    </ul>
-                                </div>
-                                
-                                
-                          
-                          
-                        </div>
-                    </div>  
-                    <div class="row">
-                 
-                        <div class="col-lg-12">
-                            <!--=== Tab Content ===-->
-                            <div class="tab-content mb-50 wow fadeInRight" style="margin-top: -40px;">
-                                  <!--=== Tab Pane ===-->
-                                  <div class="tab-pane fade show active" id="tab1">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/2.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Local & International Flights</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Book a flight <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="text">
+                                                <h4 class="title"><strong>MICE (Meetings, Incentives, Conferences & Exhibitions)</strong></h4>
+                                                <p>Flawlessly planned events, conferences, and corporate gatherings for impactful experiences.</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check" ></i> Air Ticketing Services</li>
-                                                   
-                                                </ul>
-                                               
-                                                <h4 class="title text-white pt-10"> </h4>
-                                                <p class="text-white raleway"  ><strong>We assure</strong> access to the best available discounted prices for air tickets. Whether it's a short domestic tripin Kenya  or an overseas venture. Whether it's a short domestic trip or an overseas venture.</p>
-                                              
-                                            </div>
-                                        </div>
-                                    
                                     </div>
-                                </div>
-                                <!--=== Tab Pane ===-->
-                                <div class="tab-pane fade" id="tab2">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/airporttrans.png' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Arrive in Style, Depart with Ease</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Transfer Options <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                    <!-- Expert Travel Consultants -->
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="fancy-icon-box-four mb-45 wow fadeInUp position-relative">
+                                                <div class="text">
+                                                    <h4 class="title"> <strong>Corporate Travel</strong> </h4>
+                                                    <p>Seamless business trips with tailored solutions for executives, teams, and professionals.</p>
                                                 </div>
+                                                <div class="view-more"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>Airport Transfers</li>
-                                                   
-                                                </ul>
-                                               
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway">Just as we do with air travel, we work closely with you to integrate ground transportation seamlessly into your travel itineraries. This means that from the moment you  land at you destination, you'll have a pre-arranged car rental waiting for you, ensuring a smooth transition from the airport to your destination.</p>
-                                              
-                                            </div>
-                                        </div>
-                                    
+                                        </a>
                                     </div>
-                                </div>
-                                <!--=== Tab Pane ===-->
-                                <div class="tab-pane fade" id="tab3">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Variety of Vehicle Options</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Vehicle List <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>Car Hire</li>
-                                                   
-                                                </ul>
-                                               
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway"><Strong>Reliable, comfortable, and well-maintained </Strong> vehicles for your journeys. Whether it's for local commuting or exploring a new city you visit, our car rental options are diverse and well-suited to your needs.</p>
-                                              
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                <!--=== Tab Pane ===-->
-                                <div class="tab-pane fade" id="tab4">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Our Partner <br> Hotels</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Hot Hotel deals <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>Tailored Accommodation Options</li>
-                                                   
-                                                </ul>
-                                               
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway">Understanding that different travellers have distinct preferences and needs, we offer a wide range of accommodation options.  – from luxury hotels to boutique lodgings, budget-friendly stays, and extended-stay solutions. Our commitment to securing competitive rates through partnerships with hotels ensures that regardless of your preferences or budget, you receive exceptional value without compromising on quality.
-                                                </p>
-                                              
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                   <!--=== Tab Pane ===-->
-                                   <div class="tab-pane fade" id="tab5">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Detailed Application Assistance</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small>Free Consultation <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>  Expert Guidance on Visa Requirements  </li>
-                                                   
-                                                </ul>
-                                               
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway"> Our team of visa experts is well-versed in the intricacies of different countries' visa requirements. We guide you through each stage of the visa application process, providing comprehensive instructions on filling out forms, collating necessary documents, and adhering to specific guidelines. Our goal is to make the process as straightforward as possible, reducing the potential for errors or delays.
-    
-                                                </p>
-    
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                <!--=== Tab Pane ===-->
-                                <div class="tab-pane fade" id="tab6">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content"> 
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong> Travel insurance <br> plans </strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Free Consultation <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>  Peace of Mind</li>
-                                                   
-                                                </ul>
-                                               
-                                             
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway">   Travel insurance offers more than just financial protection; it provides peace of mind. Knowing that you're covered in case of unforeseen events allows you to focus on your business objectives and enjoy your trip to the fullest.
-                                                </p>
-    
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                <!--=== Tab Pane ===-->
-                                <div class="tab-pane fade" id="tab7">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong> Unforgettable <br> Memories</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Destinations <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                                                     <!--=== Activity Content Box ===-->
-                                                                     <div class="activity-content-box pl-lg-40">
-                                                                        <ul class="check-list">
-                                                                            <li><i class="fas fa-badge-check"></i> Diverse Destinations</li>
-                                                                           
-                                                                        </ul>
-                                                                       
-                                                                        <h3 class="title text-white"></h3>
-                                                                        <p class="text-white raleway">Our team of experienced travel planners designs intricate itineraries that optimize your time and showcase the highlights of your chosen destination. From the moment you arrive, every detail is meticulously planned to ensure a seamless and memorable experience
-                                                                        </p>
-                        
-                                                                    </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                 <!--=== Tab Pane ===-->
-                                 <div class="tab-pane fade" id="tab7">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Arrive in Style, Depart with Ease</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> For Corporate Travellers <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                                <ul class="check-list">
-                                                    <li><i class="fas fa-badge-check"></i>  Expert Guidance on Visa Requirements  </li>
-                                                   
-                                                </ul>
-                                               
-                                                <h3 class="title text-white"></h3>
-                                                <p class="text-white raleway">  Understanding that different travellers have distinct preferences and needs, we offer a wide range of accommodation options.  – from luxury hotels to boutique lodgings, budget-friendly stays, and extended-stay solutions. Our commitment to securing competitive rates through partnerships with hotels ensures that regardless of your preferences or budget, you receive exceptional value without compromising on quality.
-    
-                                                </p>
-    
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                 <!--=== Tab Pane ===-->
-                                 <div class="tab-pane fade" id="tab8">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Travel-related <br> perks</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> Register <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                   <!--=== Activity Content Box ===-->
-                                   <div class="activity-content-box pl-lg-40">
-                                    <ul class="check-list">
-                                        <li><i class="fas fa-badge-check"></i> Special Offers and Discounts</li>
-                                       
-                                    </ul>
-                                
-                                    <h3 class="title text-white"></h3>
-                                    <p class="text-white raleway"> Our frequent flyer program members receive exclusive access to special offers, discounted fares, and promotional deals. These offers can significantly enhance the value of your travel experiences.
-    
-                                    </p>
-                                </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                                   <!--=== Tab Pane ===-->
-                                   <div class="tab-pane fade " id="tab9">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 order-2 order-xl-1">
-                                            <!--=== We Image Box ===-->
-                                            <div class="we-two_image-box mb-20">
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-6">
-                                                        <!--=== We Image ===-->
-                                                    
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                      
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <!--=== We Image ===-->
-                                                        <div class="single-place-item-two mb-30 ">
-                                                            <div class="place-img">
-                                                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Place Image">
-                                                                <span class="tour-count"></span>
-                                                                <div class="place-content">
-                                                                    <div class="info text-white">
-                                                                        <h3 class="title mb-10"><strong>Peace of Mind for Organizers</strong> </h3>
-                                                                        <div > 
-                                                                            <span class="sub-title">  <a href=""> <small> For Corporate Travellers <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                                                        </div>                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <!--=== Activity Content Box ===-->
-                                            <div class="activity-content-box pl-lg-40">
-                                             <ul class="check-list">
-                                                 <li><i class="fas fa-badge-check"></i> Guest Transportation & Accomodation</li>
-                                                
-                                             </ul>
+            
+                                    <!-- Best Price Guarantee -->
+                               
+            
+                                    <!-- 24/7 Customer Support -->
+                                    <div class="col-md-4">
+                                        <div class="fancy-icon-box-four mb-45 wow fadeInUp">
                                          
-                                             <h3 class="title text-white"></h3>
-                                             <p class="text-white raleway"> Convenience and comfort are paramount for attendees, which is why we offer comprehensive solutions that ensure a stress-free journey and a restful stay. From arranging transportation to and from the event venue to curating a diverse range of accommodations to suit various preferences and budgets, our dedicated team ensures that every guest's needs are met, from  coordinating airport transfers to providing comfortable lodging.
-         
-                                             </p>
-                                            
-                                         </div>
-                                                 </div>
-                                    
+                                            <div class="text">
+                                                <h4 class="title"><strong>Student Travel</strong></h4>
+                                                <p>Educational and adventure-packed trips designed for students and academic groups.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Tailored Travel Solutions -->
+                                    <div class="col-md-4">
+                                        <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                                         
+                                            <div class="text">
+                                                <h4 class="title"><strong>NGO Travel</strong></h4>
+                                                <p>Reliable travel services for humanitarian missions, volunteer groups, and field projects.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                                          
+                                            <div class="text">
+                                                <h4 class="title"><strong>Group Travel</strong></h4>
+                                                <p>Hassle-free planning for friends, families, and organizations traveling together.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                                          
+                                            <div class="text">
+                                                <h4 class="title"><strong>Holiday Packages</strong></h4>
+                                                <p>Curated getaways for relaxation, adventure, and unforgettable experiences worldwide.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
-                    </div>  
-               
+
+                    
+                      
+                      
+                    </div>
                 </div>
-                
-            </section>     
+            
+                <!-- Add this CSS to your existing styles -->
+                <style>
+                    .fancy-icon-box-four {
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 25px;
+                        background: #def0ff;
+                        border-radius: 10px;
+                        transition: all 0.3s ease;
+                        border: 2px solid #ff9d00;
+                        position: relative;
+                        overflow: hidden;
+                        
+                    }
+                    .view-more {
+                        position: absolute;
+                        bottom: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        color: white;
+                        padding: 3px 10px;
+                        border-radius: 20px;
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                    }
+
+                    .fancy-icon-box-four:hover .view-more {
+                        bottom: 15px;
+                        opacity: 1;
+                    }
+
+            
+            
+                    .fancy-icon-box-four:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                    }
+            
+                    .fancy-icon-box-four .icon {
+                        font-size: 2rem;
+                        color: #170b2c;
+                        margin-right: 20px;
+                        min-width: 60px;
+                        text-align: center;
+                    }
+            
+                    .fancy-icon-box-four .text {
+                        flex: 1;
+                    }
+            
+                    .fancy-icon-box-four .title {
+                        font-size: 1.3rem;
+                        margin-bottom: 10px;
+                        color: #170b2c;
+                    }
+            
+                    .fancy-icon-box-four p {
+                        margin: 0;
+                        color: #666;
+                    }
+            
+                    .section-title .sub-title {
+                        color: #4CAF50;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        display: block;
+                    }
+            
+                    .gray-bg {
+                        background-color: #f8f9fa;
+                    }
+                </style>
+            </section>
+          
             {% include 'users/footer.html' %}
 
        

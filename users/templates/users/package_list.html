@@ -24,51 +24,35 @@
 <section class="blog-list-section black-bg pt-100 pb-70">
     <div class="container">
         <div class="row justify-content-center">
-            
-            {% for package in packages %}
-            <div class="col-xl-4 col-md-6 col-sm-12 places-column">
-                
-                <!--=== Single Place Item ===-->
-                <div class="single-place-item mb-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                
-                    <div class="place-content">
-                        <div class="place-img">
-                            <img src="{{ package.Image.cdn_url }}" alt="Place Image">
+           
+           
+                {% for package in packages %}
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="single-event-item mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="img-holder">
+                            <img src="{{ package.Image.cdn_url }}" alt="Event Image">
                         </div>
-                       
-                        <div class="info">
-                            <br>
-                            <h4 class="title"><a href="{% url 'users:users-detail-package' package.id %}">{{ package.package_name }}</a></h4>
-                            <p class="location"><i class="far fa-map-marker-alt"></i>{{ package.destination.city }}, {{ package.destination.state }}</p> 
-                            <p class="price"><i class="fas fa-usd-circle"></i>  From <span class="currency">KES  </span> {{ package.adult_price }}</p>
-                          
-                            <br>
-                            <p class="price">  <small> (fly <i class="far fa-plane"></i> + stay <i class="far fa-bed"></i> ,  with airport transfer)  </small>  <span class="currency">  <strong> @ KES   {{ package.adult_price }} </strong></span></p>
-                           <br>
-                            <ul class="ratings">
-                                <li> <small><i class="fas fa-star"></i></small> </li>
-                                <li> <small><i class="fas fa-star"></i></small> </li>
-                                <li> <small><i class="fas fa-star"></i></small> </li>
-                                <li> <small><i class="fas fa-star"></i></small> </li>
-                                <li> <small><i class="fas fa-star"></i></small> </li>
-                                <li><a href="#">(4.9)</a></li>
-                            </ul>
+                        <div class="content">
                             <div class="meta">
-                                <span><i class="far fa-clock"></i> {{ package.number_of_days }} Days</span>
-                                <span><i class="far fa-user"></i> {{ package.number_of_times_booked }}</span>
-
-                                {% if user.is_authenticated %}
-                                <span><a href="{% url 'users:users-detail-package' package.id %}">Details<i class="far fa-long-arrow-right"></i></a></span>
-                              {% else %}
-                                <span><a href="{% url 'login' %}?next={% url 'users:users-detail-package' package.id %}"> Details<i class="far fa-long-arrow-right"></i></a></span>
-                              {% endif %}
-
+                                <span><i class="far fa-calendar-alt"></i><a href="{% url 'users:users-detail-package' package.id %}"> <strong> {{ package.number_of_days }} Days </strong> </a></span>
+                                <h3 class="title"><a href="{% url 'users:users-detail-package' package.id %}"> <strong>{{ package.package_name }} </strong>  </a></h3>
+                                <p class="location"><i class="far fa-map-marker-alt"></i> {{ package.destination.city }}, {{ package.destination.state }}</p>
+                                <p class="location"><i class="far fa-briefcase"></i> From KES {{ package.adult_price }}</p>
+                               
                             </div>
+                            <br>
+                            {% if user.is_authenticated %}
+                            
+                                    <span><a href="{% url 'users:users-detail-package' package.id %}">Details<i class="far fa-long-arrow-right"></i></a></span>
+                                  {% else %}
+                                    <span><a href="{% url 'login' %}?next={% url 'users:users-detail-package' package.id %}"> Details<i class="far fa-long-arrow-right"></i></a></span>
+                                  {% endif %}
                         </div>
                     </div>
-                </div>
+        
             </div>
             {% endfor %}
+         
             
         </div>
         <div class="row">
@@ -90,3 +74,22 @@
 
        
 {% endblock %}
+
+<div class="row justify-content-center">
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="single-event-item mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="img-holder">
+                <img src="assets/images/event/event-1.jpg" alt="Event Image">
+            </div>
+            <div class="content">
+                <div class="meta">
+                    <span><i class="far fa-calendar-alt"></i><a href="#">September 25, 2022</a></span>
+                    <h3 class="title"><a href="#">How To Enjoy Adventure
+                        Trip With Gowilds</a></h3>
+                    <p class="location"><i class="far fa-map-marker-alt"></i> Gaafu Dhaalu Atoll, Maldives</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>

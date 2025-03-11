@@ -1,7 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.http import Http404
-import smtplib
 import os
+import smtplib
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from .models import UserBookings
+
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -13,6 +18,8 @@ from .forms import UserRegisterForm
 from .forms import UserBookingsForm
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
+from django.core.mail import send_mail 
+from django.conf import settings
 # Create your views here.
 
 from tours_travels import mail as mail_f
@@ -86,6 +93,10 @@ def aboutus(request):
 def corporate(request):
     
     return render(request, 'users/corporate.html')
+
+def micepage(request):
+    
+    return render(request, 'users/mice.html')
 
 def holidays(request):
     
@@ -251,12 +262,12 @@ def bookings(request, package_id):
     package = get_object_or_404(Package, id=package_id)
     form = UserBookingsForm(request.POST or None)
     context = {'form': form, 'package': package}
-    
+
     if request.method == 'POST':
         if form.is_valid():
             print("Form is valid!")  # Debug print
             try:
-                # Your existing booking creation code
+                # Create the booking
                 booking = UserBookings.objects.create(
                     user=request.user,
                     package=package,
@@ -265,24 +276,63 @@ def bookings(request, package_id):
                     number_of_adults=form.cleaned_data['number_of_adults'],
                     number_of_children=form.cleaned_data.get('number_of_children', 0),
                     number_of_rooms=form.cleaned_data['number_of_rooms'],
-                    travel_date=form.cleaned_data['travel_date'],
                     include_travelling=form.cleaned_data['include_travelling'],
                 )
-                
-               
-                
+
+                # Send email notification
+                send_booking_email(booking)
+
                 return redirect('users:users-booking-success', booking_id=booking.id)
-            
+
             except Exception as e:
-                print(f"Booking creation error: {e}")  # Debug print
+                print(f"Booking creation error: {e}")
                 messages.error(request, f'Error creating booking: {e}')
         else:
-            print("Form is NOT valid!")  # Debug print
-            print(form.errors)  # Print form validation errors
+            print("Form is NOT valid!")
+            print(form.errors)
             messages.error(request, 'Please correct the form errors.')
-    
+
     return render(request, 'users/UserBookingsForm.html', context)
 
+
+def send_booking_email(booking):
+    """Send an email notification about the new booking."""
+    try:
+        s = smtplib.SMTP('smtp.gmail.com', 587)
+        s.starttls()
+
+        # Email credentials
+        sender_email = "novustellke@gmail.com"
+        password = "jdxozdtmtoeljezk"
+
+        s.login(sender_email, password)
+
+        # Email content
+        msg = MIMEMultipart()
+        msg['From'] = "Novustell Travel"
+        msg['To'] = "info@novustelltravel.com"
+        msg['Subject'] = f"New Booking: {booking.full_name} for {booking.package.name}"
+
+        message = f"""
+        <p><strong>New Booking Alert</strong></p>
+        <p><strong>Customer Name:</strong> {booking.full_name}</p>
+        <p><strong>Phone Number:</strong> {booking.phone_number}</p>
+        <p><strong>Package:</strong> {booking.package.name}</p>
+        <p><strong>Adults:</strong> {booking.number_of_adults}</p>
+        <p><strong>Children:</strong> {booking.number_of_children}</p>
+        <p><strong>Rooms:</strong> {booking.number_of_rooms}</p>
+        <p><strong>Include Travelling:</strong> {'Yes' if booking.include_travelling else 'No'}</p>
+        """
+
+        msg.attach(MIMEText(message, 'html'))
+
+        # Send the email
+        s.send_message(msg)
+        s.quit()
+        print("Booking email sent successfully!")
+
+    except Exception as e:
+        print(f"Error sending booking email: {e}")
 
 def booking_success(request, booking_id):
     booking = get_object_or_404(UserBookings, id=booking_id)

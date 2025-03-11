@@ -14,7 +14,6 @@ class UserBookings(models.Model):
     number_of_children = models.PositiveIntegerField(blank=True, null=True)
     number_of_rooms = models.PositiveIntegerField(default=1)
     booking_date = models.DateField(auto_now_add=True)
-    travel_date = models.DateField()
     include_travelling = models.BooleanField(default=False)
     special_requests = models.TextField(blank=True, null=True)
     paid=models.BooleanField(default=False)
@@ -25,4 +24,4 @@ class UserBookings(models.Model):
         ordering = ('-booking_date', )
 
     def __str__(self):
-        return f"Booking for {self.full_name}  {self.package.package_name} on {self.travel_date}"
+        return f"Booking for {self.full_name}  {self.package.package_name} on {self.booking_date}"

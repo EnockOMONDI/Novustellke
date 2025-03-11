@@ -29,7 +29,6 @@ def send_booking_confirmation_email(booking):
             'booking_id': booking.id,
             'full_name': booking.full_name,
             'package_name': booking.package.package_name,
-            'travel_date': booking.travel_date,
             'number_of_adults': booking.number_of_adults,
             'number_of_children': booking.number_of_children or 0,
             'number_of_rooms': booking.number_of_rooms,

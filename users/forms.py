@@ -76,7 +76,6 @@ class UserBookingsForm(forms.ModelForm):
             'number_of_adults',
             'number_of_children',
             'number_of_rooms',
-            'travel_date',
             'include_travelling',
             'special_requests',
             'paid'
