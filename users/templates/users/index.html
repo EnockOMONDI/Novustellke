@@ -7,7 +7,7 @@
 
 
    
-    <section class="services-section black-bg pt-100  " style="background-color: #def0ff;">
+    <section class="services-section black-bg pt-100  " style="background-color: #e4eff9;">
         <div class="container">
           
               
@@ -173,8 +173,7 @@
                 Your Journey , Our Expertise
             </h1>
             <p class="lead mb-5" style="color: #333; max-width: 1100px;">
-                From corporate travel to MICE, student trips to NGO travel, and curated holiday packages -Novustell Travel streamlines every journey for seamless experiences.
-                Ensuring every journey is as rewarding as it is efficient.
+             <strong>Our goal is simple: to make your trips affordable and unforgettable.</strong> Novustell Travel makes every trip smooth and hassle-free.  From M.I.C.E, Corporate, NGO, Student travel to your dream holiday package, we ensure every journey is as rewarding as it is efficient.
             </p>
            
         </div>
@@ -207,10 +206,11 @@
                     <div class="section-content ps-lg-5">
                         <!-- Title Section -->
                         <div class="section-title text-white mb-4 wow fadeInRight">
-                            <h2 class="mb-3">Why People Choose Novustell Travel?</h2>
+                            <h2>Think Convinience Think Novustell</h2>
+                            <br>
                             <p class="lead mb-4">We bring over two decades of expertise in crafting perfect travel experiences.</p>
                         </div>
-            
+         
                         <!-- Features List -->
                         <div class="features-list wow fadeInRight">
                             <ul class="check-list">
@@ -250,6 +250,13 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="info text-white">
+                                <div data-animation="fadeInRight" data-delay=".6s"> 
+                                    <a href="{% url 'users:all_packages' %}" class="contact-link">
+                                        <span class="sub-title"> <small> Contact Us <i class="fas fa-paper-plane"></i></small> </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,6 +264,29 @@
             
             <!-- Add this CSS to your existing styles -->
             <style>
+                // ... existing styles ...
+                    .contact-link {
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        display: inline-block;
+                    }
+                
+                    .contact-link:hover {
+                        color: #ff9d00;
+                        transform: translateX(5px);
+                    }
+                
+                    .contact-link:hover i {
+                        animation: fly 0.6s ease-in-out;
+                    }
+                
+                    @keyframes fly {
+                        0% { transform: translateX(0); }
+                        50% { transform: translateX(10px); }
+                        100% { transform: translateX(0); }
+                    }
+            
                 .check-list li {
                     display: flex;
                     align-items: flex-start;
@@ -308,9 +338,9 @@
                             <div class="choose-content-box pr-lg-70">
                                 <!-- Section Title -->
                                 <div class="section-title mb-45 wow fadeInDown">
-                                    <h2>Novustell Travel Solutions
+                                    <h2>Novustell Travel
                                         </h2>
-                                    <p class="lead">Find the right solution for your business..</p>
+                                    <p class="lead">We have the right travel solution for your business.</p>
                                 </div>
                       
 
@@ -384,6 +414,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="text-center mt-4">
+                                    <a href="{% url 'users:all_packages' %}" class="custom-button">
+                                        Explore All Services <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
@@ -395,6 +430,54 @@
             
                 <!-- Add this CSS to your existing styles -->
                 <style>
+                    .custom-button {
+                                        display: inline-block;
+                                        padding: 15px 35px;
+                                        color: rgb(8, 1, 49);
+                                        border-radius: 50px;
+                                        text-decoration: none;
+                                        transition: all 0.3s ease;
+                                    }
+
+                                    .custom-button:hover {
+                                        background: #ff9d00;
+                                        transform: translateY(-3px);
+                                        box-shadow: 0 5px 15px rgba(255, 157, 0, 0.3);
+                                        color: #170b2c;
+                                        border-color: #ff9d00;
+                                    }
+
+                                    .custom-button i {
+                                        margin-left: 8px;
+                                        transition: transform 0.3s ease;
+                                    }
+
+                                    .custom-button:hover i {
+                                        transform: translateX(5px);
+                                        color: #170b2c;
+                                    }
+                    
+                    .contact-link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .contact-link:hover {
+        color: #ff9d00;
+        transform: translateX(5px);
+    }
+
+    .contact-link:hover i {
+        animation: fly 0.6s ease-in-out;
+    }
+
+    @keyframes fly {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(10px); }
+        100% { transform: translateX(0); }
+    }
                     .fancy-icon-box-four {
                         display: flex;
                         align-items: flex-start;
@@ -464,6 +547,140 @@
             
                     .gray-bg {
                         background-color: #f8f9fa;
+                    }
+                </style>
+            </section>
+
+            <section class="promo-section py-5">
+                <div class="container">
+                    <div class="promo-card">
+                        <div class="row g-0">
+                            <div class="col-lg-4 promo-content text-white">
+                                <h2 class="mb-2">Diani Easter Deals</h2>
+                                <h3 class="display-5 fw-bold mb-4"><strong>Up to 40% Discount!</strong> </h3>
+                                <a href="{% url 'users:all_packages' %}" class="promo-btn">
+                                    Book Now <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-8 promo-image">
+                                <div class="blue-overlay"></div>
+                                <div class="overlay-text">
+                                    <h2 class="script-text">Let's Discover</h2>
+                                    <h2 class="script-text">The Whole World!</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <style>
+                    .promo-image {
+        background: url('{% static "assets/images/place/place-12.jpg" %}') center/cover;
+        position: relative;
+        min-height: 300px;
+    }
+
+    .blue-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(205, 126, 0, 0.156); /* Blue color with 0.5 opacity */
+        z-index: 1;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        z-index: 2; /* Make sure text appears above the overlay */
+    }
+                    .promo-card {
+                        background: #fff;
+                        border-radius: 24px;
+                        overflow: hidden;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    }
+            
+                    .promo-content {
+                        background: linear-gradient(104deg, #0300a0 0%, #0300a0 100%);
+                        padding: 3rem 2rem;
+                        color: white;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+            
+                    .promo-content h2 {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+            
+                    .promo-btn {
+                        display: inline-block;
+                        background: #0300a0;
+                        color: white;
+                        padding: 12px 30px;
+                        border-radius: 50px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                        width: fit-content;
+                    }
+            
+                    .promo-btn:hover {
+                        background: #ff9d00;
+                        transform: translateY(-3px);
+                        color: #170b2c;
+                        box-shadow: 0 5px 15px rgba(107, 59, 255, 0.2);
+                    }
+            
+                    .promo-btn i {
+                        margin-left: 8px;
+                        transition: transform 0.3s ease;
+                    }
+            
+                    .promo-btn:hover i {
+                        transform: translateX(5px);
+                    }
+            
+                    .promo-image {
+                        background: url('{% static "assets/images/place/place-12.jpg" %}') center/cover;
+                        position: relative;
+                        min-height: 300px;
+                    }
+            
+                    .overlay-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        width: 100%;
+                    }
+            
+                    .script-text {
+                        color: white;
+                        font-size: 3rem;
+                        font-family: 'Dancing Script', cursive;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                        margin: 0;
+                        line-height: 1.2;
+                    }
+            
+                    @media (max-width: 991px) {
+                        .promo-image {
+                            min-height: 200px;
+                        }
+                        
+                        .script-text {
+                            font-size: 2rem;
+                        }
                     }
                 </style>
             </section>
