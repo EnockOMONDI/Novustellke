@@ -328,6 +328,7 @@
             </style>
         </div>
     </section>
+    
             <!--====== Start Why us Section ======-->
 
             <section class="why-choose-section  pt-50 pb-50" style="background-color: #def0ff;">
@@ -569,6 +570,140 @@
                                     <h2 class="script-text">The Whole World!</h2>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <style>
+                    .promo-image {
+        background: url('{% static "assets/images/place/place-12.jpg" %}') center/cover;
+        position: relative;
+        min-height: 300px;
+    }
+
+    .blue-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(205, 126, 0, 0.156); /* Blue color with 0.5 opacity */
+        z-index: 1;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        z-index: 2; /* Make sure text appears above the overlay */
+    }
+                    .promo-card {
+                        background: #fff;
+                        border-radius: 24px;
+                        overflow: hidden;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    }
+            
+                    .promo-content {
+                        background: linear-gradient(104deg, #0300a0 0%, #0300a0 100%);
+                        padding: 3rem 2rem;
+                        color: white;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+            
+                    .promo-content h2 {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+            
+                    .promo-btn {
+                        display: inline-block;
+                        background: #0300a0;
+                        color: white;
+                        padding: 12px 30px;
+                        border-radius: 50px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                        width: fit-content;
+                    }
+            
+                    .promo-btn:hover {
+                        background: #ff9d00;
+                        transform: translateY(-3px);
+                        color: #170b2c;
+                        box-shadow: 0 5px 15px rgba(107, 59, 255, 0.2);
+                    }
+            
+                    .promo-btn i {
+                        margin-left: 8px;
+                        transition: transform 0.3s ease;
+                    }
+            
+                    .promo-btn:hover i {
+                        transform: translateX(5px);
+                    }
+            
+                    .promo-image {
+                        background: url('{% static "assets/images/place/place-12.jpg" %}') center/cover;
+                        position: relative;
+                        min-height: 300px;
+                    }
+            
+                    .overlay-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        width: 100%;
+                    }
+            
+                    .script-text {
+                        color: white;
+                        font-size: 3rem;
+                        font-family: 'Dancing Script', cursive;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                        margin: 0;
+                        line-height: 1.2;
+                    }
+            
+                    @media (max-width: 991px) {
+                        .promo-image {
+                            min-height: 200px;
+                        }
+                        
+                        .script-text {
+                            font-size: 2rem;
+                        }
+                    }
+                </style>
+            </section>
+            <section class="promo-section py-5">
+                <div class="container">
+                    <div class="promo-card">
+                        <div class="row g-0">
+                            <div class="col-lg-8 promo-image">
+                                <div class="blue-overlay"></div>
+                                <div class="overlay-text">
+                                    <h2 class="script-text">Let's Discover</h2>
+                                    <h2 class="script-text">The Whole World!</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 promo-content text-white">
+                                <h2 class="mb-2">Diani Easter Deals</h2>
+                                <h3 class="display-5 fw-bold mb-4"><strong>Up to 40% Discount!</strong> </h3>
+                                <a href="{% url 'users:all_packages' %}" class="promo-btn">
+                                    Book Now <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                          
                         </div>
                     </div>
                 </div>
