@@ -44,7 +44,7 @@ PyYAML==6.0.1
 html5lib==1.1
 bleach==6.0.0
 python-slugify==8.0.1
-shortuuid==4.0.0
+shortuuid==1.0.13  # Updated to latest stable version
 
 # Email
 django-smtp-ssl==1.0
