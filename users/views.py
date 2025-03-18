@@ -40,6 +40,8 @@ from .utils import send_booking_confirmation_email
 
 
 
+
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -89,6 +91,8 @@ def success(request):
 def aboutus(request):
     
     return render(request, 'users/aboutus.html')
+
+
 
 def corporate(request):
     
@@ -339,6 +343,50 @@ def booking_success(request, booking_id):
     return render(request, 'users/booking_success.html', {'booking': booking})
 
 
+
+def send_mice_email(request):
+    if request.method == 'POST':
+        # Get form data
+        company_name = request.POST.get('company_name')
+        contact_person = request.POST.get('contact_person')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        event_type = request.POST.get('event_type')
+        attendees = request.POST.get('attendees')
+        event_details = request.POST.get('event_details')
+
+        # Compose email message
+        subject = f'New MICE Inquiry from {company_name}'
+        message = f"""
+        New MICE Event Request Details:
+        
+        Company Name: {company_name}
+        Contact Person: {contact_person}
+        Email: {email}
+        Phone: {phone}
+        Event Type: {event_type}
+        Expected Attendees: {attendees}
+        
+        Event Details:
+        {event_details}
+        """
+
+        try:
+            # Send email
+            send_mail(
+                subject,
+                message,
+                settings.EMAIL_HOST_USER,
+                ['info@novustelltravel.com'],
+                fail_silently=False,
+            )
+            messages.success(request, 'Thank you! Your request has been submitted successfully. We will contact you soon.')
+        except Exception as e:
+            messages.error(request, 'Sorry, there was an error sending your request. Please try again later.')
+            
+        return redirect('users:homepage')
+
+    return redirect('users:micepage')
 
 
 class ActivateAccountView(View):

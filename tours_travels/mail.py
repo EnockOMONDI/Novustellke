@@ -36,3 +36,5 @@ def verification_mail(link, user):
     s.send_message(msg)
     s.quit()
 
+    
+
