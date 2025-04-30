@@ -153,7 +153,7 @@
         </div>
     </div>
 </section>
-
+<!-- users/templates/users/mice.html -->
 <section id="contact-form" class="mice-contact-section">
     <div class="container">
         <div class="row justify-content-center">
@@ -176,48 +176,42 @@
                     </div>
                     {% endif %}
 
-                    <form class="mice-contact-form" method="POST" action="{% url 'users:send_mice_email' %}">
+                    <form class="mice-contact-form" method="POST">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="company_name" placeholder="Company Name" required>
+                                    {{ form.company_name }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="contact_person" placeholder="Contact Person" required>
+                                    {{ form.contact_person }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    {{ form.email }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                                    {{ form.phone_number }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select name="event_type" required>
-                                        <option value="">Select Event Type</option>
-                                        <option value="Meeting">Meeting</option>
-                                        <option value="Incentive">Incentive</option>
-                                        <option value="Conference">Conference</option>
-                                        <option value="Exhibition">Exhibition</option>
-                                    </select>
+                                    {{ form.event_type }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" name="attendees" placeholder="Expected Attendees" required>
+                                    {{ form.attendees }}
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea name="event_details" rows="4" placeholder="Event Details" required></textarea>
+                                    {{ form.event_details }}
                                 </div>
                             </div>
                             <div class="col-12">

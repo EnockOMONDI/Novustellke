@@ -11,14 +11,14 @@ from .models import UserBookings
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from django.contrib import messages
+
 from adminside.models import *
 from users.models import *
 from .forms import UserRegisterForm
 from .forms import UserBookingsForm
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
-from django.core.mail import send_mail 
+from django.core.mail import send_mail
 from django.conf import settings
 # Create your views here.
 
@@ -26,7 +26,7 @@ from tours_travels import mail as mail_f
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode,urlsafe_base64_decode
-from django.utils.encoding import force_bytes, DjangoUnicodeDecodeError 
+from django.utils.encoding import force_bytes, DjangoUnicodeDecodeError
 from .utils import generate_token
 from django.views import View
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -35,7 +35,7 @@ from .forms import UserRegisterForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .utils import send_booking_confirmation_email
-
+from .forms import MICEInquiryForm
 
 
 
@@ -89,27 +89,89 @@ def success(request):
 
 
 def aboutus(request):
-    
+
     return render(request, 'users/aboutus.html')
 
 
 
 def corporate(request):
-    
+
     return render(request, 'users/corporate.html')
 
+# users/views.py
+
+
 def micepage(request):
-    
-    return render(request, 'users/mice.html')
+    if request.method == 'POST':
+        form = MICEInquiryForm(request.POST)
+        if form.is_valid():
+            inquiry = form.save()
+
+            try:
+                # Setup SMTP
+                s = smtplib.SMTP('smtp.gmail.com', 587)
+                s.starttls()
+
+                # Use email credentials from settings
+                sender_email = settings.EMAIL_HOST_USER
+                password = settings.EMAIL_HOST_PASSWORD
+
+                s.login(sender_email, password)
+                msg = MIMEMultipart()
+
+                # Email headers
+                msg['From'] = f"Novustell Travel <{sender_email}>"
+                msg['To'] = "info@novustelltravel.com"
+                msg['Subject'] = f"New MICE Inquiry from {inquiry.company_name}"
+
+                # Create HTML content with better formatting
+                html_content = f"""
+                <html>
+                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+                    <h2 style="color: #170b2c;">New MICE Inquiry</h2>
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
+                        <p><strong>Company Name:</strong> {inquiry.company_name}</p>
+                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
+                        <p><strong>Email:</strong> {inquiry.email}</p>
+                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
+                        <p><strong>Event Type:</strong> {inquiry.event_type}</p>
+                        <p><strong>Expected Attendees:</strong> {inquiry.attendees}</p>
+                        <h3 style="color: #170b2c;">Event Details:</h3>
+                        <p style="white-space: pre-wrap;">{inquiry.event_details}</p>
+                    </div>
+                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
+                        This inquiry was submitted through the MICE form on Novustell Travel website.
+                    </p>
+                </body>
+                </html>
+                """
+
+                # Attach HTML content
+                msg.attach(MIMEText(html_content, 'html'))
+
+                # Send email
+                s.send_message(msg)
+                s.quit()
+
+                messages.success(request, 'Thank you! Your MICE inquiry has been submitted successfully. We will contact you soon.')
+                return redirect('users:micepage')
+
+            except Exception as e:
+                messages.error(request, 'There was an error sending your inquiry. Please try again.')
+                print(f"Email error: {e}")
+    else:
+        form = MICEInquiryForm()
+
+    return render(request, 'users/mice.html', {'form': form})
 
 def holidays(request):
-    
+
     return render(request, 'users/holidays.html')
 
 def contactus(request):
-    
+
     return render(request, 'users/contactus.html')
-		
+
 def home(request):
 	dests1 = Destination.objects.all()  # Retrieve all destinations from the database
 	dests=Destination.objects.all()
@@ -118,8 +180,8 @@ def home(request):
 	nights=[]
 	price=[]
 	travel=[]
-	
-		
+
+
 	destinations=zip(dests)
 
 	for i in packs:
@@ -132,16 +194,16 @@ def home(request):
 			travel.append("Flight")
 		else:
 			travel.append("Bus")
-		
 
-	
+
+
 	packages=zip(packs,nights,price,travel)
-	
+
 
 	context={'dests':destinations,'dests1': dests1, 'package1':package1, 'packages':packages}
 	print(packs)
 
-	
+
 	return render(request,'users/index.html',context)
 
 
@@ -156,7 +218,7 @@ def destination(request,id):
 	nights=[]
 	price=[]
 	travel=[]
-	
+
 	for i in packs:
 		nights.append(i.number_of_days-1)
 		price.append(i.adult_price+i.accomodation.price_per_room)
@@ -167,15 +229,15 @@ def destination(request,id):
 			travel.append("Flight")
 		else:
 			travel.append("Bus")
-	
-	
+
+
 	packages=zip(packs,nights,price,travel)
 
 
 
 
 	context={'dest':dest,'packages':packages}
-	
+
 	return render(request,'users/destination.html',context)
 
 
@@ -185,7 +247,7 @@ def search(request):
 		name=request.POST.get('search','')
 		name=name.lstrip()
 		name=name.rstrip()
-		dest=Destination.objects.filter(city__icontains=name) | Destination.objects.filter(state__icontains=name) | Destination.objects.filter(city__icontains=name)	
+		dest=Destination.objects.filter(city__icontains=name) | Destination.objects.filter(state__icontains=name) | Destination.objects.filter(city__icontains=name)
 		print(dest[0].id)
 		return redirect('users-destination', id=dest[0].id)
 	except:
@@ -194,7 +256,7 @@ def search(request):
 
 def all_packages(request):
     packages = Package.objects.all()
-    return render(request, 'users/package_list.html', {'packages': packages})		
+    return render(request, 'users/package_list.html', {'packages': packages})
 
 def detail_package(request, package_id):
     if request.user.is_authenticated:
@@ -258,7 +320,7 @@ def detail_package(request, package_id):
     return render(request, 'users/packagedetail2.html', context)
 
 
- 
+
 
 
 @login_required
@@ -305,15 +367,15 @@ def send_booking_email(booking):
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
 
-        # Email credentials
-        sender_email = "novustellke@gmail.com"
-        password = "jdxozdtmtoeljezk"
+        # Use email credentials from settings
+        sender_email = settings.EMAIL_HOST_USER
+        password = settings.EMAIL_HOST_PASSWORD
 
         s.login(sender_email, password)
 
         # Email content
         msg = MIMEMultipart()
-        msg['From'] = "Novustell Travel"
+        msg['From'] = f"Novustell Travel <{sender_email}>"
         msg['To'] = "info@novustelltravel.com"
         msg['Subject'] = f"New Booking: {booking.full_name} for {booking.package.name}"
 
@@ -334,9 +396,11 @@ def send_booking_email(booking):
         s.send_message(msg)
         s.quit()
         print("Booking email sent successfully!")
+        return True
 
     except Exception as e:
         print(f"Error sending booking email: {e}")
+        return False
 
 def booking_success(request, booking_id):
     booking = get_object_or_404(UserBookings, id=booking_id)
@@ -344,49 +408,7 @@ def booking_success(request, booking_id):
 
 
 
-def send_mice_email(request):
-    if request.method == 'POST':
-        # Get form data
-        company_name = request.POST.get('company_name')
-        contact_person = request.POST.get('contact_person')
-        email = request.POST.get('email')
-        phone = request.POST.get('phone')
-        event_type = request.POST.get('event_type')
-        attendees = request.POST.get('attendees')
-        event_details = request.POST.get('event_details')
 
-        # Compose email message
-        subject = f'New MICE Inquiry from {company_name}'
-        message = f"""
-        New MICE Event Request Details:
-        
-        Company Name: {company_name}
-        Contact Person: {contact_person}
-        Email: {email}
-        Phone: {phone}
-        Event Type: {event_type}
-        Expected Attendees: {attendees}
-        
-        Event Details:
-        {event_details}
-        """
-
-        try:
-            # Send email
-            send_mail(
-                subject,
-                message,
-                settings.EMAIL_HOST_USER,
-                ['info@novustelltravel.com'],
-                fail_silently=False,
-            )
-            messages.success(request, 'Thank you! Your request has been submitted successfully. We will contact you soon.')
-        except Exception as e:
-            messages.error(request, 'Sorry, there was an error sending your request. Please try again later.')
-            
-        return redirect('users:homepage')
-
-    return redirect('users:micepage')
 
 
 class ActivateAccountView(View):
@@ -399,7 +421,7 @@ class ActivateAccountView(View):
 			user=None
 
 		if user is not None and generate_token.check_token(user,token):
-			user.is_active=True 
+			user.is_active=True
 			user.save()
 			messages.success(request, 'account activated successfully')
 

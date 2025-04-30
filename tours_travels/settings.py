@@ -19,13 +19,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent 
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # Import all constants to use throughout our application
 try:
     from ecommerce.constants import *
@@ -51,7 +47,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'pyuploadcare.dj',
+
     'jet',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,11 +55,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'import_export',
     'adminside',
     'users',
     'blog',
     'taggit',
     'crispy_forms',
+    'pyuploadcare.dj'
 ]
 
 MIDDLEWARE = [
@@ -104,7 +102,7 @@ WSGI_APPLICATION = 'tours_travels.wsgi.application'
 
 # DATABASES = {
 #     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    
+
 
 # }
 
@@ -124,8 +122,8 @@ DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-     
-    
+
+
 #     }
 # }
 
@@ -194,21 +192,24 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 UPLOADCARE = {
   # Don’t forget to set real keys when it gets real :)
 
-  'pub_key': 'f914008525312051b54c',
-  'secret': '06f605e3fa31437f2a51',
+  'pub_key': '00899c0e755748af0d32',
+  'secret': '21797878cc7df3a2c044',
 }
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
-    # Add to this list all the locations containing your static files 
+    # Add to this list all the locations containing your static files
 )
 
 
+# Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Or your SMTP server
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-# Use app password for security
-DEFAULT_FROM_EMAIL = 'novustellke@gmail.co'
-EMAIL_HOST_USER='your_email@gmail.com'
-EMAIL_HOST_PASSWORD='your_app_password'
+
+# Email credentials - using environment variables if available, otherwise fallback to hardcoded values
+# For production, always use environment variables for security
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'iagtyanshoydpavg')
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

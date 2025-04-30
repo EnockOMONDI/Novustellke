@@ -1,107 +1,232 @@
 {% extends 'users/basemain.html' %}
-{% load static  %}
-
+{% load static %}
 
 {% block content %}
+<section class="blog-list-section pt-70 pb-70">
+    <div class="container">
+        <!-- Page Title -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Our Blog</h2>
+                <p class="section-subtitle">Latest News & Articles</p>
+            </div>
+        </div>
 
-
-<section class="blog-list-section pt-70 pb-70" style="background-color: ;">
-    <div class="" style="margin-left: 20px; margin-right: 20px;">
-        
         <div class="row">
-            {% for p in blog %}
+            <!-- Blog Posts Column -->
             <div class="col-xl-8">
-               
-                
-                <!--=== Blog List Wrapper ===-->
-                <div class="blog-list-wrapper">
-                    <!--=== Single Blog Post ===-->
-                    <div class="single-blog-post-four mb-30 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-                        <div class="post-thumbnail">
-                            <img src="{{ p.image.cdn_url }}" alt="Post Image">
-                        </div>
-                        <div class="entry-content">
-                            <div class="post-meta">
-                                <span><i class="far fa-calendar-alt"></i><a href="#">{{p.date|date:"d M, Y"}}</a></span>
-                            </div>
-                            <h3 class="title"><a href="{% url 'blog:blog-detail' p.pid %}">
-                                {{p.title|truncatechars:110}}</a></h3>
-                            <h6 class="author"><i class="far fa-user"></i><a href="#">{{p.user}}</a></h6>
-                            <a href="{% url 'blog:blog-detail' p.pid %}" class="main-btn filled-btn">Read More<i class="fas fa-paper-plane"></i></a>
-                        </div>
+                <!-- Blog Posts Loop -->
+                {% for p in blog %}
+                <article class="single-blog-post-four mb-4">
+                    <div class="post-thumbnail">
+                        <a href="{% url 'blog:blog-detail' p.pid %}">
+                            <img src="{{ p.image.cdn_url }}" alt="{{ p.title }}" class="img-fluid">
+                        </a>
                     </div>
-          
+                    <div class="entry-content p-4">
+                        <!-- Post Meta -->
+                        <div class="post-meta mb-3">
+                            <span class="me-3">
+                                <i class="far fa-calendar-alt me-2"></i>
+                                <a href="#">{{p.date|date:"d M, Y"}}</a>
+                            </span>
+                            <span>
+                                <i class="far fa-user me-2"></i>
+                                <a href="#">{{p.user}}</a>
+                            </span>
+                        </div>
+                        
+                        <!-- Post Title -->
+                        <h3 class="title mb-3">
+                            <a href="{% url 'blog:blog-detail' p.pid %}" class="text-decoration-none">
+                                {{p.title|truncatechars:110}}
+                            </a>
+                        </h3>
+                        
+                        <!-- Read More Button -->
+                        <a href="{% url 'blog:blog-detail' p.pid %}" class="main-btn filled-btn">
+                            Read More <i class="fas fa-paper-plane ms-2"></i>
+                        </a>
+                    </div>
+                </article>
+                {% endfor %}
+
+                <!-- Pagination -->
+                <div class="gowilds-pagination mt-5">
+                    <ul class="page_navigation d-flex justify-content-center">
+                        {% if blog.has_previous %}
+                        <li>
+                            <a href="{% url 'blog:blog-list' %}?page={{ blog.previous_page_number }}" class="page-link">
+                                <i class="far fa-arrow-left"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        
+                        {% for page_number in blog.paginator.page_range %}
+                        <li>
+                            <a href="{% url 'blog:blog-list' %}?page={{ page_number }}" 
+                               class="page-link {% if page_number == blog.number %}active{% endif %}">
+                                {{ page_number }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                        
+                        {% if blog.has_next %}
+                        <li>
+                            <a href="{% url 'blog:blog-list' %}?page={{ blog.next_page_number }}" class="page-link">
+                                <i class="far fa-arrow-right"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
                 </div>
-             
-                <!--=== Pagination ===-->
-                <!-- <ul class="gowilds-pagination wow fadeInDown mt-60 mb-30" style="visibility: hidden; animation-name: none;">
-                    <li><a href="#"><i class="far fa-arrow-left"></i></a></li>
-                    <li><a href="#" class="active">01</a></li>
-                    <li><a href="#">02</a></li>
-                    <li><a href="#">03</a></li>
-                    <li><a href="#">04</a></li>
-                    <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
-                </ul> -->
             </div>
 
-            {% endfor %}
-          
-            
-
+            <!-- Sidebar Column -->
             <div class="col-xl-4">
-            
                 <div class="sidebar-widget-area">
-                    <!--=== Search Widget ===-->
-                    <div class="sidebar-widget search-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Search</h4>
-                 
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget mb-4">
+                        <h4 class="widget-title mb-3">Search</h4>
                         <form action="" method="GET">
                             <div class="form_group">
-                                <label><i class="far fa-search"></i></label>
-                                <input type="text" class="form_control" placeholder="search Articles" name="q" >
+                                <input type="text" class="form_control" placeholder="Search Articles" name="q">
+                                <button type="submit" class="search-btn">
+                                    <i class="far fa-search"></i>
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <!--=== Category Widget ===-->
-                    <div class="sidebar-widget category-widget mb-30 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h4 class="widget-title">Category</h4>
-                        {% for c in categories %}
-                        <ul class="category-nav">
-                            <li><a href="{% url 'blog:category_detail' c.slug %}">{{c.title}}<i class="far fa-arrow-right"></i></a></li>
 
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget category-widget mb-4">
+                        <h4 class="widget-title mb-3">Categories</h4>
+                        <ul class="category-nav list-unstyled">
+                            {% for c in categories %}
+                            <li class="mb-2">
+                                <a href="{% url 'blog:category_detail' c.slug %}" class="d-flex justify-content-between align-items-center">
+                                    {{c.title}}
+                                    <i class="far fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
                         </ul>
-                        {% endfor %}
                     </div>
-                 
                 </div>
             </div>
-</div>
-
-               <div class="row">
-                    <div class="col-lg-12">
-                        <div class="gowilds-pagination wow fadeInDown mt-60 mb-30" style="visibility: hidden; animation-name: none;">
-                            <ul class="page_navigation">
-                              {% if blog.has_previous %}
-                                <li><a href="{% url 'blog:blog-list' %}?page={{ blog.previous_page_number }}"><i class="far fa-arrow-left"></i></a></li>
-                              {% endif %}
-                              
-                              {% for page_number in blog.paginator.page_range %}
-                                <li><a href="{% url 'blog:blog-list' %}?page={{ page_number }}" {% if page_number == blog.number %}class="active"{% endif %}>{{ page_number }}</a></li>
-                              {% endfor %}
-                              
-                              {% if blog.has_next %}
-                                <li><a href="{% url 'blog:blog-list' %}?page={{ blog.next_page_number }}"><i class="far fa-arrow-right"></i></a></li>
-                              {% endif %}
-                            </ul>
-                          </div>
-                          
-                    </div>
-                  </div>
-           
-        
         </div>
     </div>
 </section>
+<style>
+    /* Blog List Styles */
+.blog-list-section {
+    background-color: #e4eff9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.single-blog-post-four {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.single-blog-post-four:hover {
+    transform: translateY(-5px);
+}
+
+.single-blog-post-four .post-thumbnail img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.single-blog-post-four .entry-content {
+    border-radius: 0 0 10px 10px;
+}
+
+.post-meta a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-meta a:hover {
+    color: #007bff;
+}
+
+.title a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.title a:hover {
+    color: #007bff;
+}
+
+/* Sidebar Styles */
+.sidebar-widget {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.widget-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.widget-title:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+}
+
+.search-widget .form_group {
+    position: relative;
+}
+
+.search-widget .search-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+}
+
+.category-nav a {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.category-nav a:hover {
+    background: #f8f9fa;
+    color: #007bff;
+}
+</style>
 
 {% include 'users/footer.html' %}
 {% endblock %}

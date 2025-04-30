@@ -1,29 +1,32 @@
 from django.contrib import admin
 from blog.models import Post, Comment, Category
-from import_export.admin import ImportExportModelAdmin
 
+@admin.register(Post)
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('get_title', 'status', 'category', 'user', 'featured', 'trending', 'date')
+    list_editable = ['status', 'category', 'featured', 'trending']
+    list_filter = ('category', 'status', 'featured', 'trending')
+    search_fields = ['title', 'content']
+    readonly_fields = ['views', 'date', 'pid']
+    
+    def get_title(self, obj):
+        return obj.title[:50] + '...' if len(obj.title) > 50 else obj.title
+    get_title.short_description = 'Title'
 
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('title', 'slug', 'active')
+    list_editable = ['active']
+    prepopulated_fields = {'slug': ('title',)}
+    search_fields = ['title']
 
-class ArticleAdmin(ImportExportModelAdmin):
-	search_fields = ['title']
-	list_editable = ['status', 'category']
-	list_filter = ('category', 'status')
-	list_display = ('title', 'status', 'category', 'user', 'featured', 'trending')
-
-	def title(self):
-		return self.title[0:10]
-
-class CategoryAdmin(ImportExportModelAdmin):
-	prepopulated_fields = {'slug':('title',)}
-	list_display = ('title', 'active')
-
-class CommentAdmin(ImportExportModelAdmin):
-	search_fields = ['comment']
-	list_editable = ('active',)
-	list_filter = ('active',)
-	list_display = ('post', 'active')
-
-
-admin.site.register(Post, ArticleAdmin)
-admin.site.register(Comment, CommentAdmin)
-admin.site.register(Category, CategoryAdmin)
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('get_comment', 'post', 'full_name', 'email', 'date', 'active')
+    list_editable = ('active',)
+    list_filter = ('active', 'date')
+    search_fields = ['comment', 'full_name', 'email']
+    
+    def get_comment(self, obj):
+        return obj.comment[:50] + '...' if len(obj.comment) > 50 else obj.comment
+    get_comment.short_description = 'Comment'
