@@ -35,7 +35,7 @@ from .forms import UserRegisterForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .utils import send_booking_confirmation_email
-from .forms import MICEInquiryForm
+from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm
 
 
 
@@ -163,6 +163,137 @@ def micepage(request):
         form = MICEInquiryForm()
 
     return render(request, 'users/mice.html', {'form': form})
+
+
+def student_travel(request):
+    if request.method == 'POST':
+        form = StudentTravelInquiryForm(request.POST)
+        if form.is_valid():
+            inquiry = form.save()
+
+            try:
+                # Setup SMTP
+                s = smtplib.SMTP('smtp.gmail.com', 587)
+                s.starttls()
+
+                # Use email credentials from settings
+                sender_email = settings.EMAIL_HOST_USER
+                password = settings.EMAIL_HOST_PASSWORD
+
+                s.login(sender_email, password)
+                msg = MIMEMultipart()
+
+                # Email headers
+                msg['From'] = f"Novustell Travel <{sender_email}>"
+                msg['To'] = "info@novustelltravel.com"
+                msg['Subject'] = f"New Student Travel Inquiry from {inquiry.school_name}"
+
+                # Create HTML content with better formatting
+                html_content = f"""
+                <html>
+                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+                    <h2 style="color: #170b2c;">New Student Travel Inquiry</h2>
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
+                        <p><strong>School Name:</strong> {inquiry.school_name}</p>
+                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
+                        <p><strong>Email:</strong> {inquiry.email}</p>
+                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
+                        <p><strong>Program Stage:</strong> {inquiry.program_stage}</p>
+                        <p><strong>Number of Students:</strong> {inquiry.number_of_students}</p>
+                        <h3 style="color: #170b2c;">Travel Details:</h3>
+                        <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
+                    </div>
+                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
+                        This inquiry was submitted through the Student Travel form on Novustell Travel website.
+                    </p>
+                </body>
+                </html>
+                """
+
+                # Attach HTML content
+                msg.attach(MIMEText(html_content, 'html'))
+
+                # Send email
+                s.send_message(msg)
+                s.quit()
+
+                messages.success(request, 'Thank you! Your student travel inquiry has been submitted successfully. We will contact you soon.')
+                return redirect('users:student-travel')
+
+            except Exception as e:
+                messages.error(request, 'There was an error sending your inquiry. Please try again.')
+                print(f"Email error: {e}")
+    else:
+        form = StudentTravelInquiryForm()
+
+    return render(request, 'users/student_travel.html', {'form': form})
+
+
+def ngo_travel(request):
+    if request.method == 'POST':
+        form = NGOTravelInquiryForm(request.POST)
+        if form.is_valid():
+            inquiry = form.save()
+
+            try:
+                # Setup SMTP
+                s = smtplib.SMTP('smtp.gmail.com', 587)
+                s.starttls()
+
+                # Use email credentials from settings
+                sender_email = settings.EMAIL_HOST_USER
+                password = settings.EMAIL_HOST_PASSWORD
+
+                s.login(sender_email, password)
+                msg = MIMEMultipart()
+
+                # Email headers
+                msg['From'] = f"Novustell Travel <{sender_email}>"
+                msg['To'] = "info@novustelltravel.com"
+                msg['Subject'] = f"New NGO Travel Inquiry from {inquiry.organization_name}"
+
+                # Create HTML content with better formatting
+                html_content = f"""
+                <html>
+                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+                    <h2 style="color: #170b2c;">New NGO Travel Inquiry</h2>
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
+                        <p><strong>Organization Name:</strong> {inquiry.organization_name}</p>
+                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
+                        <p><strong>Email:</strong> {inquiry.email}</p>
+                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
+                        <p><strong>Organization Type:</strong> {inquiry.organization_type}</p>
+                        <p><strong>Travel Purpose:</strong> {inquiry.travel_purpose}</p>
+                        <p><strong>Number of Travelers:</strong> {inquiry.number_of_travelers}</p>
+                        <p><strong>Sustainability Requirements:</strong> {'Yes' if inquiry.sustainability_requirements else 'No'}</p>
+                        <h3 style="color: #170b2c;">Travel Details:</h3>
+                        <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
+                    </div>
+                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
+                        This inquiry was submitted through the NGO Travel form on Novustell Travel website.
+                    </p>
+                </body>
+                </html>
+                """
+
+                # Attach HTML content
+                msg.attach(MIMEText(html_content, 'html'))
+
+                # Send email
+                s.send_message(msg)
+                s.quit()
+
+                messages.success(request, 'Thank you! Your NGO travel inquiry has been submitted successfully. We will contact you soon.')
+                return redirect('users:ngo-travel')
+
+            except Exception as e:
+                messages.error(request, 'There was an error sending your inquiry. Please try again.')
+                print(f"Email error: {e}")
+    else:
+        form = NGOTravelInquiryForm()
+
+    return render(request, 'users/ngo_travel.html', {'form': form})
+
 
 def holidays(request):
 

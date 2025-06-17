@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import UserBookings
 from django import forms
 from django.contrib.auth.models import User
-from .models import MICEInquiry
+from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry
 
 
 class UserRegisterForm(UserCreationForm):
@@ -48,9 +48,9 @@ class UserBookingsForm(forms.ModelForm):
 class MICEInquiryForm(forms.ModelForm):
     class Meta:
         model = MICEInquiry
-        fields = ['company_name', 'contact_person', 'email', 'phone_number', 
+        fields = ['company_name', 'contact_person', 'email', 'phone_number',
                  'event_type', 'attendees', 'event_details']
-        
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Add classes and placeholders to form fields
@@ -59,3 +59,41 @@ class MICEInquiryForm(forms.ModelForm):
                 'class': 'form-control',
                 'placeholder': field.replace('_', ' ').title()
             })
+
+
+class StudentTravelInquiryForm(forms.ModelForm):
+    class Meta:
+        model = StudentTravelInquiry
+        fields = ['school_name', 'contact_person', 'email', 'phone_number',
+                 'program_stage', 'number_of_students', 'travel_details']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Add classes and placeholders to form fields
+        for field in self.fields:
+            self.fields[field].widget.attrs.update({
+                'class': 'form-control',
+                'placeholder': field.replace('_', ' ').title()
+            })
+
+
+class NGOTravelInquiryForm(forms.ModelForm):
+    class Meta:
+        model = NGOTravelInquiry
+        fields = ['organization_name', 'contact_person', 'email', 'phone_number',
+                 'organization_type', 'travel_purpose', 'number_of_travelers',
+                 'travel_details', 'sustainability_requirements']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Add classes and placeholders to form fields
+        for field in self.fields:
+            if field == 'sustainability_requirements':
+                self.fields[field].widget.attrs.update({
+                    'class': 'form-check-input'
+                })
+            else:
+                self.fields[field].widget.attrs.update({
+                    'class': 'form-control',
+                    'placeholder': field.replace('_', ' ').title()
+                })

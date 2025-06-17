@@ -1,5 +1,5 @@
 from django.urls import path,include
-from . import views 
+from . import views
 
 app_name = 'users'
 
@@ -9,6 +9,8 @@ urlpatterns = [
     path('corporate/', views.corporate, name='corporatepage'),
     path('holidays/', views.holidays, name='holidayspage'),
     path('mice/', views.micepage, name='micepage'),
+    path('student-travel/', views.student_travel, name='student-travel'),
+    path('ngo-travel/', views.ngo_travel, name='ngo-travel'),
     path('contactus/', views.contactus, name='contactus'),
     path('register/',views.register,name='users-register'),
     path('success/', views.success, name='success'),
@@ -19,4 +21,4 @@ urlpatterns = [
     path('bookings/<int:package_id>/', views.bookings, name='users-bookings'),
     path('booking_success/<int:booking_id>/', views.booking_success, name='users-booking-success'),
     path('activate/<uid64>/<token>',views.ActivateAccountView.as_view(),name='activate'),
-] 
+]

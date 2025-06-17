@@ -25,7 +25,7 @@ class UserBookings(models.Model):
 
     def __str__(self):
         return f"Booking for {self.full_name}  {self.package.package_name} on {self.booking_date}"
-    
+
 
 # users/models.py
 class MICEInquiry(models.Model):
@@ -45,3 +45,53 @@ class MICEInquiry(models.Model):
 
     def __str__(self):
         return f"{self.company_name} - {self.event_type}"
+
+
+class StudentTravelInquiry(models.Model):
+    school_name = models.CharField(max_length=200)
+    contact_person = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone_number = models.CharField(max_length=15)
+    program_stage = models.CharField(max_length=50, choices=[
+        ('Registration & Training', 'Registration & Training'),
+        ('Regional Round', 'Regional Round'),
+        ('Global Round', 'Global Round'),
+        ('Tournament of Champions', 'Tournament of Champions')
+    ])
+    number_of_students = models.PositiveIntegerField()
+    travel_details = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.school_name} - {self.program_stage}"
+
+
+class NGOTravelInquiry(models.Model):
+    organization_name = models.CharField(max_length=200)
+    contact_person = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone_number = models.CharField(max_length=15)
+    organization_type = models.CharField(max_length=50, choices=[
+        ('NGO', 'Non-Governmental Organization'),
+        ('Humanitarian', 'Humanitarian Organization'),
+        ('Charity', 'Charity Organization'),
+        ('Development', 'Development Agency'),
+        ('Relief', 'Relief Organization'),
+        ('Other', 'Other')
+    ])
+    travel_purpose = models.CharField(max_length=100, choices=[
+        ('Emergency Response', 'Emergency Response'),
+        ('Field Operations', 'Field Operations'),
+        ('Volunteer Coordination', 'Volunteer Coordination'),
+        ('Project Implementation', 'Project Implementation'),
+        ('Capacity Building', 'Capacity Building'),
+        ('Monitoring & Evaluation', 'Monitoring & Evaluation'),
+        ('Other', 'Other')
+    ])
+    number_of_travelers = models.PositiveIntegerField()
+    travel_details = models.TextField()
+    sustainability_requirements = models.BooleanField(default=False, help_text="Do you require sustainable travel options?")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.organization_name} - {self.travel_purpose}"

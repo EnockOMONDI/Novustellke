@@ -1,5 +1,5 @@
 {% load static %}
-    
+
     <!--====== Search From ======-->
      <div class="modal fade search-modal" id="search-modal">
         <div class="modal-dialog modal-dialog-centered">
@@ -105,36 +105,32 @@
                                 <li><a href="{% url 'users:aboutus'%} "> <span style="padding-right: 10px;"> Who we are</a></li>
 
 
-                           
-                             
+
+
                                 <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"> Business Travel</a>
                                     <ul class="sub-menu">
                                         <li><a href="{% url 'users:corporatepage'%} ">Corporate Travel Management</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{% url 'users:micepage'%} "> <span style="padding-right: 10px;"> M.I.C.E</a></li>
-                             
-         
-                               
+
+
+
                                 <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"> NGO Travel</a></a>
                                     <ul class="sub-menu">
-                                        <li><a href="">Luxury Hotels </a></li>
-                                        <li><a href="">Comfortable Stays </a></li>
-                                        <li><a href="">Affordable Lodgings</a></li>
-                                        <li><a href="">Extended Stays </a></li>
-                                        <li><a href="">Airport Convenience</a></li>
-                                        <li><a href=""><strong>   <i class="far fa-arrow-right "></i> View All</strong></a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#humanitarian-travel">Humanitarian Travel</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#emergency-response">Emergency Response</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#field-operations">Field Operations</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#volunteer-coordination">Volunteer Coordination</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#sustainable-travel">Sustainable Travel</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}#services"><strong>   <i class="far fa-arrow-right "></i> View All Services</strong></a></li>
 
 
 
                                     </ul>
                                 </li>
-                                <li class="menu-item has-children"><a href="#"> <span style="padding-right: 10px;"> Student Travel</a></a>
-                                    <ul class="sub-menu">
-                                        <li><a href=""> Sports Travel </a></li>
-                                        <li><a href="">  World Scholars</a></li>
+                                <li><a href="{% url 'users:student-travel' %}"> <span style="padding-right: 10px;"> Student Travel</a>
 
-                                    </ul>
                                 </li>
 
                                 <!-- <li class="menu-item has-children"><a href="#"><i class="far fa-plane"></i> + <i class="far fa-bed"></i> <small>
