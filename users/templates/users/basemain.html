@@ -101,31 +101,29 @@
 
         {% endblock %}
 
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'assets/vendor/jquery-3.6.0.min.js' %}"></script>
+        <!--====== jQuery (Load First) ======-->
+        <script src="{% static 'assets/vendor/jquery-3.6.0.min.js' %}"></script>
+
         <!--====== Bootstrap js ======-->
         <script src="{% static 'assets/vendor/popper/popper.min.js' %}"></script>
-        <!--====== Bootstrap js ======-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-        <!--====== Slick js ======-->
+
+        <!--====== Slick js (Load after jQuery) ======-->
         <script src="{% static 'assets/vendor/slick/slick.min.js' %}"></script>
-        <!--====== Magnific js ======-->
+
+        <!--====== WOW js (Load before theme.js) ======-->
+        <script src="{% static 'assets/vendor/wow.min.js' %}"></script>
+
+        <!--====== Other jQuery plugins ======-->
         <script defer src="{% static 'assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js' %}"></script>
-        <!--====== Isotope js ======-->
         <script defer src="{% static 'assets/vendor/isotope.min.js' %}"></script>
-        <!--====== Imagesloaded js ======-->
         <script defer src="{% static 'assets/vendor/imagesloaded.min.js' %}"></script>
-        <!--====== Counterup js ======-->
         <script defer src="{% static 'assets/vendor/jquery.counterup.min.js' %}"></script>
-        <!--====== Waypoints js ======-->
         <script defer src="{% static 'assets/vendor/jquery.waypoints.js' %}"></script>
-        <!--====== Nice-select js ======-->
         <script defer src="{% static 'assets/vendor/nice-select/js/jquery.nice-select.min.js' %}"></script>
-        <!--====== jquery UI js ======-->
         <script defer src="{% static 'assets/vendor/jquery-ui/jquery-ui.min.js' %}"></script>
-        <!--====== WOW js ======-->
-        <script defer src="{% static 'assets/vendor/wow.min.js' %}"></script>
-        <!--====== Main js ======-->
+
+        <!--====== Main js (Load after WOW.js) ======-->
         <script src="{% static 'assets/js/theme.js' %}"></script>
     </body>
 
