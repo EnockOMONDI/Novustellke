@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from django.db.models import BigAutoField
+from ckeditor.fields import RichTextField
 
 
 
@@ -15,7 +16,7 @@ class UserBookings(models.Model):
     number_of_rooms = models.PositiveIntegerField(default=1)
     booking_date = models.DateField(auto_now_add=True)
     include_travelling = models.BooleanField(default=False)
-    special_requests = models.TextField(blank=True, null=True)
+    special_requests = RichTextField(config_name='minimal', blank=True, null=True, help_text="Any special requests or requirements")
     paid=models.BooleanField(default=False)
     total_amount = models.PositiveIntegerField(default=0, blank=True, null=True)
 
@@ -40,7 +41,7 @@ class MICEInquiry(models.Model):
         ('Exhibition', 'Exhibition')
     ])
     attendees = models.PositiveIntegerField()
-    event_details = models.TextField()
+    event_details = RichTextField(config_name='default', help_text="Detailed event information and requirements")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -59,7 +60,7 @@ class StudentTravelInquiry(models.Model):
         ('Tournament of Champions', 'Tournament of Champions')
     ])
     number_of_students = models.PositiveIntegerField()
-    travel_details = models.TextField()
+    travel_details = RichTextField(config_name='default', help_text="Detailed travel requirements and information")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -89,7 +90,7 @@ class NGOTravelInquiry(models.Model):
         ('Other', 'Other')
     ])
     number_of_travelers = models.PositiveIntegerField()
-    travel_details = models.TextField()
+    travel_details = RichTextField(config_name='default', help_text="Detailed travel requirements and information")
     sustainability_requirements = models.BooleanField(default=False, help_text="Do you require sustainable travel options?")
     created_at = models.DateTimeField(auto_now_add=True)
 

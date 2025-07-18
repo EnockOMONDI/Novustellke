@@ -47,7 +47,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-
     'jet',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,13 +54,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
+    'ckeditor_uploader',
     'import_export',
     'adminside',
     'users',
     'blog',
     'taggit',
     'crispy_forms',
-    'pyuploadcare.dj'
+    'pyuploadcare.dj',
 ]
 
 MIDDLEWARE = [
@@ -187,7 +188,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 UPLOADCARE = {
   # Don’t forget to set real keys when it gets real :)
@@ -213,3 +215,85 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'iagtyanshoydpavg')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# CKEditor Configuration
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+# CKEditor Configurations for different content types
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+        'extraPlugins': ','.join([
+            'uploadimage',
+            'div',
+            'autolink',
+            'autoembed',
+            'embedsemantic',
+            'autogrow',
+            'widget',
+            'lineutils',
+            'clipboard',
+            'dialog',
+            'dialogui',
+            'elementspath'
+        ]),
+    },
+    'blog': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Undo', 'Redo'],
+            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink', 'Anchor'],
+            ['Image', 'Flash', 'Table', 'HorizontalRule'],
+            ['TextColor', 'BGColor'],
+            ['Smiley', 'SpecialChar'],
+            ['Source'],
+            '/',
+            ['Styles', 'Format', 'Font', 'FontSize'],
+            ['Maximize', 'ShowBlocks'],
+        ],
+        'height': 400,
+        'width': '100%',
+        'extraPlugins': ','.join([
+            'uploadimage',
+            'div',
+            'autolink',
+            'autoembed',
+            'embedsemantic',
+            'autogrow',
+            'widget',
+            'lineutils',
+            'clipboard',
+            'dialog',
+            'dialogui',
+            'elementspath'
+        ]),
+        'stylesSet': [
+            {'name': 'Blog Heading', 'element': 'h2', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'margin-bottom': '15px'}},
+            {'name': 'Travel Highlight', 'element': 'span', 'styles': {'background-color': '#ff9d00', 'color': 'white', 'padding': '2px 8px', 'border-radius': '3px'}},
+            {'name': 'Destination Name', 'element': 'span', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'font-size': '1.1em'}},
+            {'name': 'Travel Tip', 'element': 'div', 'styles': {'background-color': '#f8f9fa', 'border-left': '4px solid #0f238d', 'padding': '15px', 'margin': '15px 0'}},
+        ],
+    },
+    'minimal': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat'],
+        ],
+        'height': 200,
+        'width': '100%',
+    },
+}
+
+# Django Jet Configuration
+JET_DEFAULT_THEME = 'default'
+JET_SIDE_MENU_COMPACT = True
+

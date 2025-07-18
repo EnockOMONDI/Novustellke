@@ -6,6 +6,8 @@ from html import unescape
 from django.utils.html import strip_tags
 from shortuuid.django_fields import ShortUUIDField
 from pyuploadcare.dj.models import ImageField
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 BLOG_PUBLISH_STATUS = (
@@ -33,7 +35,8 @@ class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     image = ImageField(blank=True, null=True, manual_crop="4:4",)
     title = models.CharField(max_length=1000)
-    content = models.TextField()
+    excerpt = RichTextField(config_name='minimal', max_length=500, blank=True, null=True, help_text="Brief description of the post (max 500 characters)")
+    content = RichTextField(config_name='blog', help_text="Main blog content with rich text formatting")
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tags = TaggableManager()
     status = models.CharField(choices=BLOG_PUBLISH_STATUS, max_length=100, default="in_review")
@@ -59,11 +62,19 @@ class Post(models.Model):
 
         return round(total_words / 200)
 
+    def get_excerpt(self):
+        """Return excerpt if available, otherwise generate from content"""
+        if self.excerpt:
+            return self.excerpt
+        # Auto-generate excerpt from content (first 150 characters)
+        clean_content = strip_tags(self.content)
+        return clean_content[:150] + "..." if len(clean_content) > 150 else clean_content
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     full_name = models.CharField(max_length=1000)
     email = models.EmailField()
-    comment = models.TextField()
+    comment = RichTextField(config_name='minimal', help_text="Comment content with basic formatting")
     date = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
 

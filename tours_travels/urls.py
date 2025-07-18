@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include, re_path
 from . import views as tours_travels_views
 from django.contrib.auth import views as auth_views
 from django.conf import settings
@@ -12,9 +12,9 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-
-    path('jet/', include('jet.urls', 'jet')), 
+    path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
+    path('ckeditor/', include('ckeditor_uploader.urls')),  # <-- Enable CKEditor uploads
     #path('',tours_travels_views.home,name = 'home'),
   
     path('', include(('users.urls', 'users'), namespace='home')),
@@ -23,6 +23,7 @@ urlpatterns = [
     path('login/',auth_views.LoginView.as_view(template_name='users/login.html'),name='login'),
     path('logout/',auth_views.LogoutView.as_view(template_name='users/index.html'),name='logout'),
     path('mail/',tours_travels_views.mail,name='mail'),
+
     path('', include('users.urls')),
     
 

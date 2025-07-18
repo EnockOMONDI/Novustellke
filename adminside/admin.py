@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django import forms
 from django.utils.html import format_html
 from .models import (
     Destination,
@@ -9,13 +10,71 @@ from .models import (
     ItineraryDescription
 )
 from users.models import UserBookings
+from ckeditor_uploader.widgets import CKEditorUploadingWidget
+from ckeditor.widgets import CKEditorWidget
+
+class DestinationAdminForm(forms.ModelForm):
+    class Meta:
+        model = Destination
+        fields = '__all__'
+        widgets = {
+            'dtn_description': CKEditorWidget(config_name='default'),
+        }
+
+class AccomodationAdminForm(forms.ModelForm):
+    class Meta:
+        model = Accomodation
+        fields = '__all__'
+        widgets = {
+            'hotel_description': CKEditorWidget(config_name='default'),
+        }
+
+class PackageAdminForm(forms.ModelForm):
+    class Meta:
+        model = Package
+        fields = '__all__'
+        widgets = {
+            'description': CKEditorWidget(config_name='default'),
+            'inclusive': CKEditorWidget(config_name='default'),
+            'exclusive': CKEditorWidget(config_name='default'),
+        }
+
+class ItineraryDescriptionAdminForm(forms.ModelForm):
+    class Meta:
+        model = ItineraryDescription
+        fields = '__all__'
+        widgets = {
+            'itinerary_description': CKEditorWidget(config_name='default'),
+        }
 
 @admin.register(Destination)
 class DestinationAdmin(admin.ModelAdmin):
+    form = DestinationAdminForm
     list_display = ('name', 'state', 'city', 'display_image', 'parent', 'is_country')
     list_filter = ('state', 'parent')
     search_fields = ('name', 'state', 'city', 'dtn_description')
     list_per_page = 20
+
+    fieldsets = (
+        ('Basic Information', {
+            'fields': ('name', 'state', 'city', 'parent')
+        }),
+        ('Media', {
+            'fields': ('Image',)
+        }),
+        ('Description', {
+            'fields': ('dtn_description',),
+            'classes': ('wide',)
+        }),
+    )
+
+    class Media:
+        css = {
+            'all': ('admin/css/ckeditor-admin.css',)
+        }
+        js = (
+            'ckeditor/ckeditor/ckeditor.js',
+        )
     
     def display_image(self, obj):
         if obj.Image:
@@ -25,10 +84,29 @@ class DestinationAdmin(admin.ModelAdmin):
 
 @admin.register(Accomodation)
 class AccomodationAdmin(admin.ModelAdmin):
+    form = AccomodationAdminForm
     list_display = ('hotel_name', 'price_per_room', 'short_description')
     search_fields = ('hotel_name', 'hotel_description')
     list_filter = ('price_per_room',)
-    
+
+    fieldsets = (
+        ('Hotel Information', {
+            'fields': ('hotel_name', 'price_per_room')
+        }),
+        ('Description', {
+            'fields': ('hotel_description',),
+            'classes': ('wide',)
+        }),
+    )
+
+    class Media:
+        css = {
+            'all': ('admin/css/ckeditor-admin.css',)
+        }
+        js = (
+            'ckeditor/ckeditor/ckeditor.js',
+        )
+
     def short_description(self, obj):
         return obj.hotel_description[:100] + '...' if len(obj.hotel_description) > 100 else obj.hotel_description
     short_description.short_description = 'Description'
@@ -42,9 +120,18 @@ class TravelAdmin(admin.ModelAdmin):
     date_hierarchy = 'start_time'
 
 class ItineraryDescriptionInline(admin.TabularInline):
+    form = ItineraryDescriptionAdminForm
     model = ItineraryDescription
     extra = 1
     ordering = ['day_number']
+
+    class Media:
+        css = {
+            'all': ('admin/css/ckeditor-admin.css',)
+        }
+        js = (
+            'ckeditor/ckeditor/ckeditor.js',
+        )
 
 @admin.register(Itinerary)
 class ItineraryAdmin(admin.ModelAdmin):
@@ -67,17 +154,22 @@ class UserBookingsInline(admin.TabularInline):
 
 @admin.register(Package)
 class PackageAdmin(admin.ModelAdmin):
-    list_display = ('package_name', 'display_image', 'main_destination', 'adult_price', 
+    form = PackageAdminForm
+    list_display = ('package_name', 'display_image', 'main_destination', 'adult_price',
                    'child_price', 'number_of_days', 'number_of_times_booked')
     list_filter = ('main_destination', 'number_of_days', 'accomodation')
     search_fields = ('package_name', 'description', 'inclusive', 'exclusive')
     filter_horizontal = ('sub_destinations',)
     readonly_fields = ('number_of_times_booked',)
     inlines = [UserBookingsInline]
-    
+
     fieldsets = (
         ('Basic Information', {
-            'fields': ('package_name', 'Image', 'description', 'number_of_days')
+            'fields': ('package_name', 'Image', 'number_of_days')
+        }),
+        ('Description', {
+            'fields': ('description',),
+            'classes': ('wide',)
         }),
         ('Destinations', {
             'fields': ('main_destination', 'sub_destinations')
@@ -88,14 +180,23 @@ class PackageAdmin(admin.ModelAdmin):
         ('Services', {
             'fields': ('accomodation', 'travel')
         }),
-        ('Details', {
-            'fields': ('inclusive', 'exclusive')
+        ('Package Details', {
+            'fields': ('inclusive', 'exclusive'),
+            'classes': ('wide',)
         }),
         ('Statistics', {
             'fields': ('number_of_times_booked',),
             'classes': ('collapse',)
         }),
     )
+
+    class Media:
+        css = {
+            'all': ('admin/css/ckeditor-admin.css',)
+        }
+        js = (
+            'ckeditor/ckeditor/ckeditor.js',
+        )
     
     def display_image(self, obj):
         if obj.Image:

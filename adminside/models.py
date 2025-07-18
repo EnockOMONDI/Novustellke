@@ -3,13 +3,15 @@ from django.contrib.auth.models import User
 from users.models import UserBookings
 from django.db.models import BigAutoField
 from pyuploadcare.dj.models import ImageField
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
 
 class Destination(models.Model):
     name = models.CharField(max_length=200)
     state = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
-    dtn_description = models.TextField()
+    dtn_description = RichTextField(config_name='default', help_text="Detailed description of the destination with rich text formatting")
     Image = ImageField(blank=False, null=False, manual_crop="4:4")
     parent = models.ForeignKey(
         'self',  # Self-referential relationship
@@ -30,7 +32,7 @@ class Destination(models.Model):
 
 class Accomodation(models.Model):
     hotel_name = models.CharField(max_length=200)
-    hotel_description = models.TextField()
+    hotel_description = RichTextField(config_name='default', help_text="Detailed description of the accommodation with rich text formatting")
     price_per_room = models.PositiveIntegerField()
 
     def __str__(self):
@@ -82,9 +84,9 @@ class Package(models.Model):
     package_name = models.CharField(max_length=200,default="NULL") # ye dalna
     adult_price = models.IntegerField()
     child_price = models.IntegerField() 
-    description = models.TextField(default="NO DESCRIPTION ADDED")  
-    inclusive = models.TextField()
-    exclusive = models.TextField()
+    description = RichTextField(config_name='default', default="NO DESCRIPTION ADDED", help_text="Detailed package description with rich text formatting")
+    inclusive = RichTextField(config_name='default', help_text="What's included in the package")
+    exclusive = RichTextField(config_name='default', help_text="What's excluded from the package")
     number_of_days = models.PositiveIntegerField()
     number_of_times_booked = models.PositiveIntegerField(default=0)
 
@@ -101,7 +103,7 @@ class Itinerary(models.Model):
 
 class ItineraryDescription(models.Model):
     itinerary = models.ForeignKey(Itinerary, related_name='itinerarydescription_set', on_delete=models.CASCADE)    
-    itinerary_description = models.TextField()
+    itinerary_description = RichTextField(config_name='default', help_text="Day-by-day itinerary description with rich text formatting")
     day_number = models.IntegerField()
     
     class Meta:

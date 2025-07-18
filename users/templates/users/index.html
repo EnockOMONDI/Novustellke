@@ -7,13 +7,87 @@
 
 
    
-    <section class="services-section black-bg pt-100  " style="background-color: #ffffff;">
+    <section class="services-section black-bg pt-100  "style="background-color: #f8f3fc;">
         <div class="container">
           
               
                  
                     
             <style>
+                /* Custom Font Declarations with Performance Optimization */
+                @font-face {
+                    font-family: 'Fonarto';
+                    font-style: normal;
+                    font-weight: 400;
+                    src: local('Fonarto Regular'),
+                         local('FonartoRegular-8Mon2'),
+                         url('{% static "fonts/FonartoRegular-8Mon2.woff" %}') format('woff');
+                    font-display: swap;
+                }
+
+                @font-face {
+                    font-family: 'Fonarto';
+                    font-style: normal;
+                    font-weight: 300;
+                    src: local('Fonarto Light'),
+                         local('FonartoLight-BWxv3'),
+                         url('{% static "fonts/FonartoLight-BWxv3.woff" %}') format('woff');
+                    font-display: swap;
+                }
+
+                @font-face {
+                    font-family: 'Fonarto';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Fonarto Bold'),
+                         local('FonartoBold-RpYOo'),
+                         url('{% static "fonts/FonartoBold-RpYOo.woff" %}') format('woff');
+                    font-display: swap;
+                }
+
+                /* H1 Custom Font Styling with Enhanced Typography */
+                h1 {
+                    font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                    font-weight: 700 !important;
+                    letter-spacing: -0.02em;
+                    line-height: 1.2;
+                    text-rendering: optimizeLegibility;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-feature-settings: 'kern' 1;
+                }
+
+                .section-header h1 {
+                    font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                    font-weight: 500 !important;
+                    text-rendering: optimizeLegibility;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                /* Ensure font loading doesn't cause layout shift */
+                .section-header h1,
+                h1 {
+                    font-synthesis: none;
+                    font-variant-ligatures: common-ligatures;
+                }
+
+                /* Enhanced H1 styling for better visual impact */
+                h1.display-4 {
+                    font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                    font-weight: 700 !important;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                /* Ensure consistent styling across all H1 elements */
+                .section-title h1 {
+                    font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                    font-weight: 700 !important;
+                    text-rendering: optimizeLegibility;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
                .check-list {
                     list-style: none;
                     padding: 0;
@@ -90,7 +164,7 @@
             .nav-tabs .nav-link {
                 border-radius: 50px;
                 padding: 0.75rem 1.5rem;
-                color: #170b2c;
+                color: #0f238d;
                 transition: all 0.3s ease;
                 border: 2px solid transparent;
                 background: rgba(255,255,255,0.9);
@@ -101,13 +175,13 @@
             }
 
             .nav-tabs .nav-link.active {
-                background: #170b2c;
+                background: #0f238d;
                 color: white;
                 border-color: #4CAF50;
             }
 
             .btn-custom {
-                background: linear-gradient(135deg, #170b2c 0%, #2a1b3d 100%);
+                background: linear-gradient(135deg, #0f238d 0%, #2a1b3d 100%);
                 color: white;
                 border-radius: 50px;
                 padding: 1rem 2rem;
@@ -166,182 +240,246 @@
       
        
     </section><!--====== End Services Section ======-->
-<section>
+<section class="expertise-features-section py-5" style="background-color: #f8f3fc;">
     <div class="container">
-        <div class="  pt-5 wow fadeInUp">
-            <h1  class="display-4 fw-bold mb-4" style="color: #170b2c; ">
-                Your Journey , Our Expertise
-            </h1>
-            <p class="lead mb-5" style="color: #333; max-width: 1100px;">
-             <strong>Our goal is simple: to make your trips affordable and unforgettable.</strong> Novustell Travel makes every trip smooth and hassle-free.  From M.I.C.E, Corporate, NGO, Student travel to your dream holiday package, we ensure every journey is as rewarding as it is efficient.
-            </p>
-           
-        </div>
-    </div>
-</section>
-    <section class="features-section  py-5" style="margin-top: -20px;" >
-        <div class="container" style="background: linear-gradient(104deg, rgba(31,3,79,1) 0%, rgba(23,11,44,1) 40%); padding: 50px; border-radius: 12px;">
-            <div class="row align-items-center">
-                <!-- New Image Column (Left) -->
-                <div class="col-lg-5">
-                    <div class="about-image wow fadeInLeft">
-                        <div class="single-place-item-two mb-30">
-                            <div class="place-img">
-                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Why Choose Us" style="height: 500px; object-fit: cover;">
-                                <div class="place-content">
-                                    <div class="info text-white">
-                                        <h3 class="title mb-10"><strong>20+ Years of Excellence</strong></h3>
-                                        <div>
-                                            <span class="sub-title"><small>Your Trusted Travel Partner</small></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Combined Content Column (Right) -->
-                <div class="col-lg-7">
-                    <div class="section-content ps-lg-5">
-                        <!-- Title Section -->
-                        <div class="section-title text-white mb-4 wow fadeInRight">
-                            <h2>Think Convinience Think Novustell</h2>
-                            <br>
-                            <p class="lead mb-4">We bring over two decades of expertise in crafting perfect travel experiences.</p>
-                        </div>
-         
-                        <!-- Features List -->
-                        <div class="features-list wow fadeInRight">
-                            <ul class="check-list">
-                                <li class="text-white">
-                                    <i class="fas fa-check"></i>
-                                    <div>
-                                        <strong>Expert Travel Consultants</strong>
-                                        <p class="mb-0">Professional guidance from seasoned travel experts</p>
-                                    </div>
-                                </li>
-                                <li class="text-white">
-                                    <i class="fas fa-check"></i>
-                                    <div>
-                                        <strong>Best Price Guarantee</strong>
-                                        <p class="mb-0">Competitive rates and value for your money</p>
-                                    </div>
-                                </li>
-                                <li class="text-white">
-                                    <i class="fas fa-check"></i>
-                                    <div>
-                                        <strong>24/7 Customer Support</strong>
-                                        <p class="mb-0">Round-the-clock assistance for your peace of mind</p>
-                                    </div>
-                                </li>
-                                <li class="text-white">
-                                    <i class="fas fa-check"></i>
-                                    <div>
-                                        <strong>Tailored Travel Solutions</strong>
-                                        <p class="mb-0">Customized packages to match your preferences</p>
-                                    </div>
-                                </li>
-                                <li class="text-white">
-                                    <i class="fas fa-check"></i>
-                                    <div>
-                                        <strong>Seamless Booking Experience</strong>
-                                        <p class="mb-0">Easy and efficient reservation process</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="info text-white">
-                                <div data-animation="fadeInRight" data-delay=".6s"> 
-                                    <a href="{% url 'users:all_packages' %}" class="contact-link">
-                                        <span class="sub-title"> <small> Contact Us <i class="fas fa-paper-plane"></i></small> </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Header Content -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10 text-center">
+                <div class="section-header wow fadeInUp">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #0f238d;">
+                     Our mission is simple: to make your Travels Affordable, Memorable, and Stress-free.
+                    </h1>
+                    <p class="lead mb-0" style="color: #333; ; margin: 0 auto;">
+                        <strong>Our mission is simple: to make your travels affordable, memorable, and stress-free.</strong>
+                        <br>
+                       At Novustell Travel, we handle every detail so your trip goes smoothly from start to finish. Whether it’s M.I.C.E., corporate, NGO, student travel, or your dream holiday, we make every journey as rewarding as it is efficient.
+                    </p>
                 </div>
             </div>
-            
-            <!-- Add this CSS to your existing styles -->
-            <style>
-                // ... existing styles ...
-                    .contact-link {
-                        color: white;
-                        text-decoration: none;
-                        transition: all 0.3s ease;
-                        display: inline-block;
-                    }
-                
-                    .contact-link:hover {
-                        color: #ff9d00;
-                        transform: translateX(5px);
-                    }
-                
-                    .contact-link:hover i {
-                        animation: fly 0.6s ease-in-out;
-                    }
-                
-                    @keyframes fly {
-                        0% { transform: translateX(0); }
-                        50% { transform: translateX(10px); }
-                        100% { transform: translateX(0); }
-                    }
-            
-                .check-list li {
-                    display: flex;
-                    align-items: flex-start;
-                    margin-bottom: 1.5rem;
-                    color: #ffffff !important;
-                }
-            
-                .check-list li i {
-                    color: #ff9d00;
-                    margin-right: 1rem;
-                    font-size: 1.05rem;
-                    margin-top: 0.25rem;
-                }
-            
-                .check-list li div {
-                    flex: 1;
-                }
-            
-                .check-list li strong {
-                    display: block;
-                    margin-bottom: 0.20rem;
-                    font-size: 1rem;
-                }
-            
-                .check-list li p {
-                    color: rgba(255, 255, 255, 0.8) !important;
-                    font-size: 0.8rem;
-                }
-            
-                .section-content {
-                    position: relative;
-                }
-            
-                @media (max-width: 991px) {
-                    .section-content {
-                        margin-top: 2rem;
-                    }
-                }
-            </style>
         </div>
-    </section>
-    
-            <!--====== Start Why us Section ======-->
 
-            <section class="why-choose-section  pt-50 pb-50" style="background-color: #ffffff;">
+      
+    </div>
+
+    <!-- Enhanced CSS Styles -->
+    <style>
+        .expertise-features-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header {
+            position: relative;
+            z-index: 2;
+        }
+
+        .features-container {
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .features-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-link:hover {
+            color: #ff9d00;
+            transform: translateX(5px);
+            background: rgba(255, 157, 0, 0.1);
+            border-color: #ff9d00;
+        }
+
+        .contact-link:hover i {
+            animation: fly 0.6s ease-in-out;
+        }
+
+        @keyframes fly {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            color: #ffffff !important;
+            transition: transform 0.2s ease;
+        }
+
+        .check-list li:hover {
+            transform: translateX(5px);
+        }
+
+        .check-list li i {
+            color: #ff9d00;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+            margin-top: 0.25rem;
+            transition: color 0.3s ease;
+        }
+
+        .check-list li:hover i {
+            color: #ffb84d;
+        }
+
+        .check-list li div {
+            flex: 1;
+        }
+
+        .check-list li strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .check-list li p {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .section-content {
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 991px) {
+            .section-content {
+                margin-top: 3rem;
+            }
+
+            .features-container {
+                padding: 40px 30px;
+                margin-top: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .place-img img {
+                height: 350px !important;
+            }
+
+            /* H1 responsive styling for tablets */
+            h1 {
+                font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                font-weight: 700 !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .features-container {
+                padding: 30px 20px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+                font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                font-weight: 700 !important;
+                line-height: 1.1;
+            }
+
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+
+            /* H1 responsive styling for mobile */
+            h1 {
+                font-family: 'Fonarto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                font-weight: 700 !important;
+                letter-spacing: -0.01em;
+            }
+        }
+
+        /* Font Loading Optimization */
+        .font-loading h1 {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .font-loaded h1 {
+            opacity: 1;
+        }
+
+        /* Ensure graceful fallback */
+        .no-js h1 {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Font Loading Script -->
+    <script>
+        // Remove no-js class if JavaScript is enabled
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('font-loading');
+
+        // Check if fonts are loaded
+        if ('fonts' in document) {
+            Promise.all([
+                document.fonts.load('700 1em Fonarto'),
+                document.fonts.load('400 1em Fonarto'),
+                document.fonts.load('300 1em Fonarto')
+            ]).then(function() {
+                document.documentElement.classList.remove('font-loading');
+                document.documentElement.classList.add('font-loaded');
+            }).catch(function() {
+                // Fallback if fonts fail to load
+                document.documentElement.classList.remove('font-loading');
+                document.documentElement.classList.add('font-loaded');
+            });
+        } else {
+            // Fallback for browsers that don't support Font Loading API
+            setTimeout(function() {
+                document.documentElement.classList.remove('font-loading');
+                document.documentElement.classList.add('font-loaded');
+            }, 2000);
+        }
+    </script>
+</section>
+<section class="why-choose-section pt-50 pb-50" style="
+    background-image: linear-gradient(rgba(15, 35, 141, 0.7), rgba(15, 35, 141, 0.7)), url('{% static "assets/images/place/place-12.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+">
                 <div class="container">
                     <div class="row align-items-xl-center">
 
                         <div class="col-xl-12">
                             <div class="choose-content-box pr-lg-70">
                                 <!-- Section Title -->
-                                <div class="section-title mb-45 wow fadeInDown">
-                                    <h2>Novustell Travel
-                                        </h2>
-                                    <p class="lead">We have the right travel solution for your business.</p>
+                                <div class="section-title mb-45 wow fadeInDown ">
+                                   
+                                        <h1 class="display-4 fw-bold mb-4" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                                            Our Travel Solutions
+                                        </h1>
                                 </div>
                       
 
@@ -434,17 +572,22 @@
                     .custom-button {
                                         display: inline-block;
                                         padding: 15px 35px;
-                                        color: rgb(8, 1, 49);
+                                        color: #ffffff;
+                                        background: rgba(255, 157, 0, 0.9);
+                                        border: 2px solid #ff9d00;
                                         border-radius: 50px;
                                         text-decoration: none;
                                         transition: all 0.3s ease;
+                                        font-weight: 600;
+                                        backdrop-filter: blur(10px);
+                                        box-shadow: 0 4px 15px rgba(255, 157, 0, 0.3);
                                     }
 
                                     .custom-button:hover {
-                                        background: #ff9d00;
+                                        background: #ffffff;
                                         transform: translateY(-3px);
-                                        box-shadow: 0 5px 15px rgba(255, 157, 0, 0.3);
-                                        color: #170b2c;
+                                        box-shadow: 0 8px 25px rgba(255, 157, 0, 0.4);
+                                        color: #0f238d;
                                         border-color: #ff9d00;
                                     }
 
@@ -455,11 +598,11 @@
 
                                     .custom-button:hover i {
                                         transform: translateX(5px);
-                                        color: #170b2c;
+                                        color: #0f238d;
                                     }
                     
                     .contact-link {
-        color: white;
+        color: #ff9d00;
         text-decoration: none;
         transition: all 0.3s ease;
         display: inline-block;
@@ -483,13 +626,14 @@
                         display: flex;
                         align-items: flex-start;
                         padding: 25px;
-                        background: #ffffff;
-                        border-radius: 10px;
+                        background: rgba(255, 255, 255, 0.95);
+                        border-radius: 15px;
                         transition: all 0.3s ease;
                         border: 2px solid #ff9d00;
                         position: relative;
                         overflow: hidden;
-                        
+                        backdrop-filter: blur(10px);
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
                     }
                     .view-more {
                         position: absolute;
@@ -511,13 +655,15 @@
             
             
                     .fancy-icon-box-four:hover {
-                        transform: translateY(-5px);
-                        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                        transform: translateY(-8px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+                        background: rgba(255, 255, 255, 1);
+                        border-color: #ff9d00;
                     }
             
                     .fancy-icon-box-four .icon {
                         font-size: 2rem;
-                        color: #170b2c;
+                        color: #0f238d;
                         margin-right: 20px;
                         min-width: 60px;
                         text-align: center;
@@ -530,7 +676,7 @@
                     .fancy-icon-box-four .title {
                         font-size: 1.3rem;
                         margin-bottom: 10px;
-                        color: #170b2c;
+                        color: #0f238d;
                     }
             
                     .fancy-icon-box-four p {
@@ -549,8 +695,142 @@
                     .gray-bg {
                         background-color: #f8f9fa;
                     }
+
+                    /* Enhanced styling for the background image section */
+                    .why-choose-section {
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .why-choose-section::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(15, 35, 141, 0.1);
+                        z-index: 1;
+                        pointer-events: none;
+                    }
+
+                    .why-choose-section .container {
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    /* Responsive background adjustments */
+                    @media (max-width: 768px) {
+                        .why-choose-section {
+                            background-attachment: scroll;
+                        }
+
+                        .fancy-icon-box-four {
+                            background: rgba(255, 255, 255, 0.98);
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        .why-choose-section {
+                            padding: 40px 0;
+                        }
+
+                        .custom-button {
+                            padding: 12px 25px;
+                            font-size: 0.9rem;
+                        }
+                    }
                 </style>
             </section>
+    
+      <section>
+        <!-- Features Content -->
+        <div class="features-container" style="background: linear-gradient((95deg,rgba(15, 35, 141, 1) 0%, rgba(15, 35, 141, 1) 25%, rgba(23, 11, 44, 1) 100%)); padding: 60px 50px; border-radius: 15px; margin-top: 40px;">
+            <div class="row align-items-center">
+                <!-- Image Column (Left) -->
+                <div class="col-lg-5">
+                    <div class="about-image wow fadeInLeft">
+                        <div class="single-place-item-two mb-30">
+                            <div class="place-img">
+                                <img src="{% static 'assets/images/place/place-12.jpg' %}" alt="Why Choose Us" style="height: 500px; object-fit: cover; border-radius: 10px;">
+                                <div class="place-content">
+                                    <div class="info text-white">
+                                        <h3 class="title mb-10"><strong>20+ Years of Excellence</strong></h3>
+                                        <div>
+                                            <span class="sub-title"><small>Your Trusted Travel Partner</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column (Right) -->
+                <div class="col-lg-7">
+                    <div class="section-content ps-lg-5">
+                        <!-- Title Section -->
+                        <div class="section-title text-white mb-4 wow fadeInRight">
+                        
+                            <p class="lead mb-4"></p>
+                        <h2 class="mb-3" style="color: blue;">We bring over two decades of expertise in crafting perfect travel experiences.</h2>
+                        </div>
+
+                        <!-- Features List -->
+                        <div class="features-list wow fadeInRight">
+                            <ul class="check-list">
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Expert Travel Consultants</strong>
+                                        <p class="mb-0">Professional guidance from seasoned travel experts</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Best Price Guarantee</strong>
+                                        <p class="mb-0">Competitive rates and value for your money</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>24/7 Customer Support</strong>
+                                        <p class="mb-0">Round-the-clock assistance for your peace of mind</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Tailored Travel Solutions</strong>
+                                        <p class="mb-0">Customized packages to match your preferences</p>
+                                    </div>
+                                </li>
+                                <li class="text-white">
+                                    <i class="fas fa-check"></i>
+                                    <div>
+                                        <strong>Seamless Booking Experience</strong>
+                                        <p class="mb-0">Easy and efficient reservation process</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="info text-white mt-4">
+                                <div data-animation="fadeInRight" data-delay=".6s">
+                                    <a href="{% url 'users:all_packages' %}" class="contact-link">
+                                        <span class="sub-title"><small>Contact Us <i class="fas fa-paper-plane"></i></small></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>      <!--====== Start Why us Section ======-->
+
+       
 
           
             {% include 'users/footer.html' %}

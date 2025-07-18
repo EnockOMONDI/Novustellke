@@ -59,7 +59,7 @@
 }
 
 .single-activity-item .content .main-btn i, .header-two .header-navigation.sticky, .header-one .header-navigation.sticky, .black-bg {
-  background-color: #170b2c;
+  background-color: #0f238d;
 }
 
 .skill-wrapper, .footer-newsletter-widget .footer-content form .form_control, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item .nice-select, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item input, .sidebar-widget-area .sidebar-widget, .single-blog-post-four .entry-content .main-btn.filled-btn:hover i, .gw-testimonial-item-two, .destination-details-wrapper .destination-info .features-list li span, .single-place-item-three .place-content .meta .icon-btn, .single-place-item-three:hover, .single-place-item .place-content .info, .booking-form .nice-select:focus, .booking-form .form_control:focus, .booking-form-wrapper, .activity-nav-tab, .single-service-item-four .content .icon-btn, .single-service-item-four:hover, .single-service-item-three .content .meta span.rate, .single-service-item-three:hover, .single-service-item .content .icon-btn, .single-service-item, .video-popup, .single-event-item, .single-activity-item .content .meta, .single-counter-item-two .icon, .single-counter-item, .single-team-item, .fancy-icon-box-three .icon, .fancy-icon-box-two, .fancy-icon-box .icon, .single-features-list .icon-inner .icon, .single-features-item-three .content, .single-features-item .img-holder .content, .about-two_content-box .card-list .card-item, .hero-search-form, .hero-wrapper-three .hero-arrows .slick-arrow:hover, .navigation-white.header-navigation .navbar-toggler span, .header-four .header-navigation.sticky, .header-navigation.breakpoint-on .nav-menu, .header-navigation .main-menu ul > li .sub-menu, .preloader, .main-btn.filled-btn:hover i, .main-btn i, .white-bg {
@@ -422,7 +422,7 @@ textarea.form_control {
   background-color: #272C28;
 }
 .novus-bg {
-  background-color: #170b2c;
+  background-color: #0f238d;
 }
 /*===== All Button Style =====*/
 button {
@@ -2071,7 +2071,7 @@ button {
   display: flex;
   padding: 30px;
   border-radius: 10px;
-  background-color: #f0f9fffff;
+  background-color: #f8f3fc;
 }
 .fancy-icon-box-four .icon {
   -webkit-box-flex: 0;
