@@ -106,10 +106,38 @@
 
 
     //===== Preloader
-    
+
+    function hidePreloader() {
+        const preloader = $('.preloader');
+        if (preloader.length) {
+            preloader.addClass('fade-out');
+            // Remove from DOM after transition completes
+            setTimeout(function() {
+                preloader.remove();
+            }, 300);
+        }
+    }
+
+    // Hide preloader when page is fully loaded
     $(window).on('load', function(event) {
-        $('.preloader').delay(500).fadeOut('500');
-    })
+        setTimeout(hidePreloader, 200);
+    });
+
+    // Fallback timeout to ensure preloader doesn't stay forever
+    setTimeout(function() {
+        if ($('.preloader').length) {
+            console.warn('Preloader fallback timeout triggered');
+            hidePreloader();
+        }
+    }, 5000);
+
+    // Early hide for fast connections (when DOM is ready and basic assets loaded)
+    $(document).ready(function() {
+        // Check if critical resources are already loaded
+        if (document.readyState === 'complete') {
+            setTimeout(hidePreloader, 100);
+        }
+    });
     
     //===== Sticky
 

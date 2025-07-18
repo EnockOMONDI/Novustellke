@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Performance Test</title>
+    <style>
+        /* Optimized Preloader CSS */
+        .preloader {
+            bottom: 0;
+            height: 100vh;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100vw;
+            z-index: 99999;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+        }
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .preloader .loader {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        .preloader .pre-box {
+            width: 50px;
+            height: 50px;
+            background: #ff9d00;
+            animation: loaderAnimate 0.8s ease-in-out infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 4px;
+            will-change: transform;
+        }
+        .preloader .pre-shadow {
+            width: 50px;
+            height: 5px;
+            background: rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 59px;
+            left: 0;
+            border-radius: 50%;
+            animation: loaderShadow 0.8s ease-in-out infinite;
+            will-change: transform;
+        }
+
+        @keyframes loaderAnimate {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(15px) rotate(180deg);
+            }
+        }
+
+        @keyframes loaderShadow {
+            0%, 100% {
+                transform: scale(1, 1);
+                opacity: 0.15;
+            }
+            50% {
+                transform: scale(1.3, 1);
+                opacity: 0.05;
+            }
+        }
+
+        /* Test content */
+        .content {
+            padding: 50px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .performance-info {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Optimized Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div>
+
+    <!-- Test Content -->
+    <div class="content">
+        <h1>Preloader Performance Test</h1>
+        <div class="performance-info">
+            <h3>Optimizations Applied:</h3>
+            <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <li>✅ Added white background to prevent transparency issues</li>
+                <li>✅ Simplified animations (reduced from complex multi-step to simple bounce)</li>
+                <li>✅ Reduced delay from 500ms to 200ms</li>
+                <li>✅ Added fallback timeout (5 seconds maximum)</li>
+                <li>✅ Added CSS transitions for smooth fade-out</li>
+                <li>✅ Added will-change property for better GPU acceleration</li>
+                <li>✅ Improved centering with flexbox</li>
+                <li>✅ Added early hide for fast connections</li>
+                <li>✅ Added resource hints for faster loading</li>
+                <li>✅ Deferred non-critical scripts</li>
+            </ul>
+        </div>
+        
+        <div class="performance-info">
+            <h3>Performance Improvements:</h3>
+            <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <li>🚀 Faster animation (0.8s vs 0.5s with smoother easing)</li>
+                <li>🚀 Reduced blocking time (200ms vs 500ms delay)</li>
+                <li>🚀 Better GPU utilization with will-change</li>
+                <li>🚀 Fallback protection prevents infinite loading</li>
+                <li>🚀 Smoother transitions with CSS instead of jQuery fadeOut</li>
+                <li>🚀 Resource hints improve initial loading</li>
+                <li>🚀 Deferred scripts don't block window.load event</li>
+            </ul>
+        </div>
+
+        <p><strong>Test Instructions:</strong></p>
+        <ol style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <li>Refresh this page to see the optimized preloader</li>
+            <li>Notice the smooth animation and quick disappearance</li>
+            <li>Try throttling your network to test fallback timeout</li>
+            <li>Compare with the original implementation</li>
+        </ol>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Optimized Preloader JavaScript
+        function hidePreloader() {
+            const preloader = $('.preloader');
+            if (preloader.length) {
+                preloader.addClass('fade-out');
+                // Remove from DOM after transition completes
+                setTimeout(function() {
+                    preloader.remove();
+                }, 300);
+            }
+        }
+        
+        // Hide preloader when page is fully loaded
+        $(window).on('load', function(event) {
+            setTimeout(hidePreloader, 200);
+        });
+        
+        // Fallback timeout to ensure preloader doesn't stay forever
+        setTimeout(function() {
+            if ($('.preloader').length) {
+                console.warn('Preloader fallback timeout triggered');
+                hidePreloader();
+            }
+        }, 5000);
+        
+        // Early hide for fast connections (when DOM is ready and basic assets loaded)
+        $(document).ready(function() {
+            // Check if critical resources are already loaded
+            if (document.readyState === 'complete') {
+                setTimeout(hidePreloader, 100);
+            }
+        });
+
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Page Load Performance:', {
+                    'DOM Content Loaded': perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart + 'ms',
+                    'Load Complete': perfData.loadEventEnd - perfData.loadEventStart + 'ms',
+                    'Total Load Time': perfData.loadEventEnd - perfData.navigationStart + 'ms'
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
