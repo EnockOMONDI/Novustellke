@@ -694,90 +694,88 @@ button {
   top: 0;
   width: 100vw;
   z-index: 99999;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+.preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
 }
 .preloader .loader {
-  margin: 0 auto;
   position: relative;
-  text-align: center;
+  width: 50px;
+  height: 50px;
 }
 .preloader .pre-box {
   width: 50px;
   height: 50px;
   background: #ff9d00;
-  -webkit-animation: loaderAnimate 0.5s linear infinite;
-          animation: loaderAnimate 0.5s linear infinite;
+  -webkit-animation: loaderAnimate 0.8s ease-in-out infinite;
+          animation: loaderAnimate 0.8s ease-in-out infinite;
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 3px;
+  border-radius: 4px;
+  will-change: transform;
 }
 .preloader .pre-shadow {
   width: 50px;
   height: 5px;
-  background: #000;
-  opacity: 0.1;
+  background: rgba(0, 0, 0, 0.15);
   position: absolute;
   top: 59px;
   left: 0;
   border-radius: 50%;
-  -webkit-animation: loaderShadow 0.5s linear infinite;
-          animation: loaderShadow 0.5s linear infinite;
+  -webkit-animation: loaderShadow 0.8s ease-in-out infinite;
+          animation: loaderShadow 0.8s ease-in-out infinite;
+  will-change: transform;
 }
 
 @-webkit-keyframes loaderAnimate {
-  17% {
-    border-bottom-right-radius: 3px;
-  }
-  25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-            transform: translateY(9px) rotate(22.5deg);
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-            transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-  75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-            transform: translateY(9px) rotate(67.5deg);
-  }
-  100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-            transform: translateY(0) rotate(90deg);
+    -webkit-transform: translateY(15px) rotate(180deg);
+            transform: translateY(15px) rotate(180deg);
   }
 }
 @keyframes loaderAnimate {
-  17% {
-    border-bottom-right-radius: 3px;
-  }
-  25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-            transform: translateY(9px) rotate(22.5deg);
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-            transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-  75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-            transform: translateY(9px) rotate(67.5deg);
-  }
-  100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-            transform: translateY(0) rotate(90deg);
+    -webkit-transform: translateY(15px) rotate(180deg);
+            transform: translateY(15px) rotate(180deg);
   }
 }
 @-webkit-keyframes loaderShadow {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.15;
+  }
   50% {
-    -webkit-transform: scale(1.2, 1);
-            transform: scale(1.2, 1);
+    -webkit-transform: scale(1.3, 1);
+            transform: scale(1.3, 1);
+    opacity: 0.05;
   }
 }
 @keyframes loaderShadow {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.15;
+  }
   50% {
-    -webkit-transform: scale(1.2, 1);
-            transform: scale(1.2, 1);
+    -webkit-transform: scale(1.3, 1);
+            transform: scale(1.3, 1);
+    opacity: 0.05;
   }
 }
 /*====== Start Back to top css ======*/
