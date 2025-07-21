@@ -35,7 +35,7 @@ class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     image = ImageField(blank=True, null=True, manual_crop="4:4",)
     title = models.CharField(max_length=1000)
-    excerpt = RichTextField(config_name='minimal', max_length=500, blank=True, null=True, help_text="Brief description of the post (max 500 characters)")
+    excerpt = RichTextField(config_name='minimal', blank=True, null=True, help_text="Brief description of the post")
     content = RichTextField(config_name='blog', help_text="Main blog content with rich text formatting")
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tags = TaggableManager()

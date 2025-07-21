@@ -25,7 +25,7 @@ class Destination(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     destination_type = models.CharField(max_length=10, choices=DESTINATION_TYPES)
-    description = models.TextField()
+    description = RichTextField(config_name='default', help_text="Detailed destination description with rich text formatting")
     image = ImageField(blank=False, null=False, manual_crop="4:4")
     
     # Hierarchical relationship
@@ -123,7 +123,7 @@ class Accommodation(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     accommodation_type = models.CharField(max_length=20, choices=ACCOMMODATION_TYPES, default=HOTEL)
-    description = models.TextField()
+    description = RichTextField(config_name='default', help_text="Detailed accommodation description with rich text formatting")
     
     # Location
     destination = models.ForeignKey(
@@ -251,8 +251,8 @@ class Package(models.Model):
     # Basic information
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    description = models.TextField()
-    
+    description = RichTextField(config_name='default', help_text="Detailed package description with rich text formatting")
+
     # Destinations - simplified to main destination only
     # Sub-destinations will be handled through itinerary
     main_destination = models.ForeignKey(
@@ -261,18 +261,18 @@ class Package(models.Model):
         related_name='packages',
         help_text="Primary destination for this package"
     )
-    
+
     # Package details
     duration_days = models.PositiveIntegerField()
     duration_nights = models.PositiveIntegerField()
-    
+
     # Pricing
     adult_price = models.PositiveIntegerField()
     child_price = models.PositiveIntegerField()
-    
+
     # Package content
-    inclusions = models.TextField(help_text="What's included in the package")
-    exclusions = models.TextField(help_text="What's NOT included in the package")
+    inclusions = RichTextField(config_name='default', help_text="What's included in the package")
+    exclusions = RichTextField(config_name='default', help_text="What's NOT included in the package")
     
     # Media
     featured_image = ImageField(blank=False, null=False, manual_crop="4:4")

@@ -47,15 +47,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'jet',
+    'unfold',  # Django Unfold admin interface
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ckeditor',
-    'ckeditor_uploader',
+    'ckeditor',  # CKEditor for rich text editing
+    'ckeditor_uploader',  # CKEditor file upload support
     'import_export',
     'adminside',
     'users',
@@ -216,19 +216,152 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'iagtyanshoydpavg')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+# Django Unfold Configuration
+from django.templatetags.static import static
+from django.urls import reverse_lazy
+
+UNFOLD = {
+    "SITE_TITLE": "Novustell Travel Admin",
+    "SITE_HEADER": "Novustell Travel Administration",
+    "SITE_URL": "/",
+    "SITE_ICON": lambda request: static("assets/images/favicon_io/favicon-32x32.png"),
+    "SITE_LOGO": lambda request: static("assets/images/logo/websitelogo.png"),
+    "SITE_SYMBOL": "🌍",  # Travel symbol
+    "SHOW_HISTORY": True,
+    "SHOW_VIEW_ON_SITE": True,
+    "ENVIRONMENT": "tours_travels.settings.environment_callback",
+    "DASHBOARD_CALLBACK": "tours_travels.settings.dashboard_callback",
+    "LOGIN": {
+        "image": lambda request: static("assets/images/place/place-1.jpg"),
+        "redirect_after": lambda request: reverse_lazy("admin:index"),
+    },
+    "STYLES": [
+        lambda request: static("assets/css/unfold-custom.css"),
+    ],
+    "SCRIPTS": [
+        lambda request: static("assets/js/unfold-custom.js"),
+    ],
+    "COLORS": {
+        "primary": {
+            "50": "250 245 255",
+            "100": "243 232 255",
+            "200": "233 213 255",
+            "300": "196 181 253",
+            "400": "147 51 234",
+            "500": "15 35 141",  # Novustell primary blue
+            "600": "12 28 113",
+            "700": "10 23 94",
+            "800": "8 18 75",
+            "900": "6 14 56",
+            "950": "4 9 37"
+        },
+    },
+    "EXTENSIONS": {
+        "modeltranslation": {
+            "flags": {
+                "en": "🇺🇸",
+                "fr": "🇫🇷",
+                "nl": "🇳🇱",
+            },
+        },
+    },
+    "SIDEBAR": {
+        "show_search": True,
+        "show_all_applications": True,
+        "navigation": [
+            {
+                "title": "Navigation",
+                "separator": True,
+                "items": [
+                    {
+                        "title": "Dashboard",
+                        "icon": "dashboard",
+                        "link": reverse_lazy("admin:index"),
+                    },
+                ],
+            },
+            {
+                "title": "Travel Management",
+                "separator": True,
+                "items": [
+                    {
+                        "title": "Destinations",
+                        "icon": "place",
+                        "link": reverse_lazy("admin:adminside_destination_changelist"),
+                    },
+                    {
+                        "title": "Packages",
+                        "icon": "card_travel",
+                        "link": reverse_lazy("admin:adminside_package_changelist"),
+                    },
+                    {
+                        "title": "Accommodations",
+                        "icon": "hotel",
+                        "link": reverse_lazy("admin:adminside_accommodation_changelist"),
+                    },
+                    {
+                        "title": "Travel Modes",
+                        "icon": "directions",
+                        "link": reverse_lazy("admin:adminside_travelmode_changelist"),
+                    },
+                ],
+            },
+            {
+                "title": "Content Management",
+                "separator": True,
+                "items": [
+                    {
+                        "title": "Blog Posts",
+                        "icon": "article",
+                        "link": reverse_lazy("admin:blog_post_changelist"),
+                    },
+                    {
+                        "title": "Blog Categories",
+                        "icon": "category",
+                        "link": reverse_lazy("admin:blog_category_changelist"),
+                    },
+                ],
+            },
+        ],
+    },
+}
+
 # CKEditor Configuration
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+CKEDITOR_RESTRICT_BY_USER = True
+CKEDITOR_BROWSE_SHOW_DIRS = True
+CKEDITOR_RESTRICT_BY_DATE = True
+CKEDITOR_ALLOW_NONIMAGE_FILES = False
+
+# Custom CKEditor CSS and JS
+CKEDITOR_CUSTOM_CSS = [
+    '/static/assets/css/ckeditor-admin.css',
+]
 
 # CKEditor Configurations for different content types
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'full',
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Undo', 'Redo'],
+            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink', 'Anchor'],
+            ['Image', 'Flash', 'Table', 'HorizontalRule'],
+            ['TextColor', 'BGColor'],
+            ['Blockquote', 'CodeSnippet'],
+            ['Source'],
+            '/',
+            ['Format', 'Font', 'FontSize'],
+            ['Maximize', 'ShowBlocks'],
+        ],
         'height': 300,
         'width': '100%',
         'extraPlugins': ','.join([
             'uploadimage',
+            'image2',
             'div',
             'autolink',
             'autoembed',
@@ -239,8 +372,19 @@ CKEDITOR_CONFIGS = {
             'clipboard',
             'dialog',
             'dialogui',
-            'elementspath'
+            'elementspath',
+            'codesnippet',
+            'colorbutton',
+            'colordialog',
+            'font',
+            'justify',
+            'tableresize',
+            'tabletools',
+            'tableselection'
         ]),
+        'removePlugins': 'stylesheetparser',
+        'allowedContent': True,
+        'extraAllowedContent': 'div(*);span(*);p(*);h1(*);h2(*);h3(*);h4(*);h5(*);h6(*)',
     },
     'blog': {
         'toolbar': 'Custom',
@@ -261,6 +405,7 @@ CKEDITOR_CONFIGS = {
         'width': '100%',
         'extraPlugins': ','.join([
             'uploadimage',
+            'image2',
             'div',
             'autolink',
             'autoembed',
@@ -271,29 +416,56 @@ CKEDITOR_CONFIGS = {
             'clipboard',
             'dialog',
             'dialogui',
-            'elementspath'
+            'elementspath',
+            'codesnippet',
+            'colorbutton',
+            'colordialog',
+            'font',
+            'justify',
+            'tableresize',
+            'tabletools',
+            'tableselection',
+            'stylescombo'
         ]),
+        'removePlugins': 'stylesheetparser',
+        'allowedContent': True,
+        'extraAllowedContent': 'div(*);span(*);p(*);h1(*);h2(*);h3(*);h4(*);h5(*);h6(*)',
         'stylesSet': [
             {'name': 'Blog Heading', 'element': 'h2', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'margin-bottom': '15px'}},
             {'name': 'Travel Highlight', 'element': 'span', 'styles': {'background-color': '#ff9d00', 'color': 'white', 'padding': '2px 8px', 'border-radius': '3px'}},
             {'name': 'Destination Name', 'element': 'span', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'font-size': '1.1em'}},
             {'name': 'Travel Tip', 'element': 'div', 'styles': {'background-color': '#f8f9fa', 'border-left': '4px solid #0f238d', 'padding': '15px', 'margin': '15px 0'}},
+            {'name': 'Quote Box', 'element': 'blockquote', 'styles': {'background': '#f9f9f9', 'border-left': '4px solid #ff9d00', 'padding': '10px 20px', 'margin': '20px 0', 'font-style': 'italic'}},
+            {'name': 'Important Note', 'element': 'div', 'styles': {'background-color': '#fff3cd', 'border': '1px solid #ffeaa7', 'color': '#856404', 'padding': '12px', 'border-radius': '5px', 'margin': '10px 0'}},
         ],
     },
     'minimal': {
         'toolbar': 'Custom',
         'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline'],
+            ['Undo', 'Redo'],
+            ['Bold', 'Italic', 'Underline', '-', 'RemoveFormat'],
             ['NumberedList', 'BulletedList'],
             ['Link', 'Unlink'],
-            ['RemoveFormat'],
+            ['Source'],
         ],
         'height': 200,
         'width': '100%',
+        'extraPlugins': ','.join([
+            'autolink',
+            'autogrow',
+            'elementspath'
+        ]),
+        'removePlugins': 'stylesheetparser',
+        'allowedContent': True,
     },
 }
 
-# Django Jet Configuration
-JET_DEFAULT_THEME = 'default'
-JET_SIDE_MENU_COMPACT = True
+# Environment and Dashboard callbacks for Unfold
+def environment_callback(request):
+    """Return environment info for Unfold admin"""
+    return ["Development", "warning"] if DEBUG else ["Production", "success"]
+
+def dashboard_callback(request, context):
+    """Return dashboard data for Unfold admin"""
+    return context
 

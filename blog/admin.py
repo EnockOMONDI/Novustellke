@@ -3,6 +3,7 @@ from django import forms
 from django.db import models
 from blog.models import Post, Comment, Category
 from ckeditor.widgets import CKEditorWidget
+from ckeditor.fields import RichTextField
 
 @admin.register(Post)
 class ArticleAdmin(admin.ModelAdmin):
@@ -31,9 +32,14 @@ class ArticleAdmin(admin.ModelAdmin):
         }),
     )
 
-    formfield_overrides = {
-        models.TextField: {'widget': CKEditorWidget(config_name='blog')},
-    }
+    # RichTextField widgets are automatically handled by the field configuration
+    # No formfield_overrides needed for RichTextField
+
+    class Media:
+        js = ('ckeditor/ckeditor/ckeditor.js',)
+        css = {
+            'all': ('assets/css/ckeditor-admin.css',)
+        }
 
     def get_title(self, obj):
         return obj.title[:50] + '...' if len(obj.title) > 50 else obj.title
@@ -67,9 +73,8 @@ class CommentAdmin(admin.ModelAdmin):
         }),
     )
 
-    formfield_overrides = {
-        models.TextField: {'widget': CKEditorWidget(config_name='minimal')},
-    }
+    # RichTextField widgets are automatically handled by the field configuration
+    # No formfield_overrides needed for RichTextField
 
     def get_comment(self, obj):
         return obj.comment[:50] + '...' if len(obj.comment) > 50 else obj.comment

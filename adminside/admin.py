@@ -10,42 +10,32 @@ from .models import (
     ItineraryDay,
     PackageBooking
 )
-from ckeditor_uploader.widgets import CKEditorUploadingWidget
-from ckeditor.widgets import CKEditorWidget
+# RichTextField automatically handles CKEditor widgets based on config_name
+# No need for explicit widget overrides
 
 class DestinationAdminForm(forms.ModelForm):
     class Meta:
         model = Destination
         fields = '__all__'
-        widgets = {
-            'description': CKEditorWidget(config_name='default'),
-        }
+        # RichTextField widgets are automatically configured
 
 class AccommodationAdminForm(forms.ModelForm):
     class Meta:
         model = Accommodation
         fields = '__all__'
-        widgets = {
-            'description': CKEditorWidget(config_name='default'),
-        }
+        # RichTextField widgets are automatically configured
 
 class PackageAdminForm(forms.ModelForm):
     class Meta:
         model = Package
         fields = '__all__'
-        widgets = {
-            'description': CKEditorWidget(config_name='default'),
-            'inclusions': CKEditorWidget(config_name='default'),
-            'exclusions': CKEditorWidget(config_name='default'),
-        }
+        # RichTextField widgets are automatically configured
 
 class ItineraryDayAdminForm(forms.ModelForm):
     class Meta:
         model = ItineraryDay
         fields = '__all__'
-        widgets = {
-            'description': CKEditorWidget(config_name='default'),
-        }
+        # RichTextField widgets are automatically configured
 
 @admin.register(Destination)
 class DestinationAdmin(admin.ModelAdmin):
@@ -53,6 +43,12 @@ class DestinationAdmin(admin.ModelAdmin):
     list_display = ('name', 'destination_type', 'parent', 'display_image', 'display_order', 'is_featured', 'is_active')
     list_filter = ('destination_type', 'is_featured', 'is_active', 'parent')
     search_fields = ('name', 'description', 'meta_title')
+
+    class Media:
+        js = ('ckeditor/ckeditor/ckeditor.js',)
+        css = {
+            'all': ('assets/css/ckeditor-admin.css',)
+        }
     list_per_page = 20
     prepopulated_fields = {'slug': ('name',)}
     list_editable = ('display_order', 'is_featured', 'is_active')

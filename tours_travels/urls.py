@@ -12,9 +12,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
-    path('ckeditor/', include('ckeditor_uploader.urls')),  # <-- Enable CKEditor uploads
+    path('ckeditor/', include('ckeditor_uploader.urls')),  # CKEditor file uploads
     #path('',tours_travels_views.home,name = 'home'),
   
     path('', include(('users.urls', 'users'), namespace='home')),
