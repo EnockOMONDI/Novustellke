@@ -6,6 +6,14 @@ from pyuploadcare.dj.models import ImageField
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
+from django.db import models
+from django.contrib.auth.models import User
+from django.urls import reverse
+from django.core.exceptions import ValidationError
+from users.models import UserBookings
+from pyuploadcare.dj.models import ImageField
+
+
 
 class Destination(models.Model):
     name = models.CharField(max_length=200)
