@@ -6,7 +6,7 @@
 
 <section 
     class="page-banner overlay pt-170 pb-100 bg_cover" 
-    style="background-image: url({{ package.Image.cdn_url }});">
+    style="background-image: url({{ package.featured_image.cdn_url }});">
  
     <div class="container">
         <div class="row justify-content-center">
@@ -15,7 +15,7 @@
                     <h1 class="page-title">{{package_name}}</h1>
                     <ul class="breadcrumb-link text-white">
                      
-                        <li><i class="fas fa-map-marker-alt"></i> <a href=""> {{destination_name}}, {{ package.destination.city }} {{package.accommodation.hotel_name}}</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href=""> {{destination_name}}</a></li>
                         
                     </ul>
                 </div>
@@ -198,11 +198,11 @@
                         <ul class="nav nav-tabs mb-35" role="tablist">
                             {% for day in itinerary_description %}
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link {% if forloop.first %}active{% endif %}" 
-                                            data-bs-toggle="tab" 
-                                            data-bs-target="#day{{ forloop.counter }}" 
-                                            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" 
-                                            role="tab" tabindex="-1">Day {{ forloop.counter }}</button>
+                                    <button class="nav-link {% if forloop.first %}active{% endif %}"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#day{{ forloop.counter }}"
+                                            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                                            role="tab" tabindex="-1">Day {{ day.day_number }}</button>
                                 </li>
                             {% endfor %}
                         </ul>
@@ -210,9 +210,14 @@
                             {% for day in itinerary_description %}
                                 <div class="tab-pane fade {% if forloop.first %}active show{% endif %}" id="day{{ forloop.counter }}" role="tabpanel">
                                     <div class="content-box">
-                                        <p>{{ day.itinerary_description }}</p> <!-- Displaying the description of each day -->
-                                        <h4>Tour Plan</h4>
-                                        <p>{{ day.tour_plan }}</p> <!-- Assuming tour_plan is part of your itinerary model -->
+                                        <h4>{{ day.title }}</h4>
+                                        <p>{{ day.description }}</p> <!-- Displaying the description of each day -->
+                                        {% if day.destination %}
+                                        <p><strong>Destination:</strong> {{ day.destination.name }}</p>
+                                        {% endif %}
+                                        {% if day.accommodation %}
+                                        <p><strong>Accommodation:</strong> {{ day.accommodation.name }}</p>
+                                        {% endif %}
                                     </div>
                                 </div>
                             {% endfor %}

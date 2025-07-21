@@ -1,0 +1,305 @@
+{% extends 'adminside/base.html' %}
+{% load static %}
+
+{% block title %}{{ package.name }} - Novustell Travel{% endblock %}
+{% block meta_description %}{{ package.description|truncatewords:30 }}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .package-hero {
+        position: relative;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .package-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(23, 11, 44, 0.6);
+        z-index: 1;
+    }
+    
+    .package-hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+    
+    .package-hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .package-hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    .package-info {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-top: -100px;
+        position: relative;
+        z-index: 3;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .package-stats {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .stat-item {
+        flex: 1;
+        padding: 1rem;
+    }
+    
+    .stat-item i {
+        font-size: 2rem;
+        color: #ff9d00;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-item h4 {
+        color: #170b2c;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-item p {
+        color: #666;
+        margin: 0;
+    }
+    
+    .price-tag {
+        background: linear-gradient(135deg, #ff9d00, #ffb347);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    .package-content {
+        margin-top: 3rem;
+    }
+    
+    .content-section {
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 15px;
+    }
+    
+    .content-section h3 {
+        color: #170b2c;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .itinerary-day {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-left: 4px solid #ff9d00;
+    }
+    
+    .itinerary-day h5 {
+        color: #170b2c;
+        margin-bottom: 1rem;
+    }
+    
+    .accommodation-item, .travel-item {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .accommodation-item img, .travel-item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 1rem;
+    }
+    
+    .book-now-btn {
+        background: linear-gradient(135deg, #170b2c, #2d1b4e);
+        color: white;
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    
+    .book-now-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(23, 11, 44, 0.3);
+        color: white;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Package Hero Section -->
+<div class="package-hero" style="background-image: url('{{ package.featured_image.cdn_url }}');">
+    <div class="package-hero-content">
+        <h1>{{ package.name }}</h1>
+        <p>{{ package.description|truncatewords:25 }}</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="badge badge-primary me-3">
+                <i class="fas fa-map-marker-alt"></i> {{ package.main_destination.name }}
+            </span>
+            <span class="badge badge-success">
+                <i class="fas fa-calendar-alt"></i> {{ package.duration_days }} Days
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Package Info Card -->
+    <div class="package-info">
+        <div class="package-stats">
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h4>Duration</h4>
+                <p>{{ package.duration_days }} Days</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h4>Group Size</h4>
+                <p>{{ package.max_group_size }} People</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-star"></i>
+                <h4>Rating</h4>
+                <p>{{ package.rating }}/5.0</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-bookmark"></i>
+                <h4>Bookings</h4>
+                <p>{{ package.total_bookings }}</p>
+            </div>
+        </div>
+        
+        <div class="price-tag">
+            Starting from ${{ package.adult_price }}
+        </div>
+        
+        <div class="text-center">
+            <a href="#" class="book-now-btn">
+                <i class="fas fa-plane"></i> Book This Package
+            </a>
+        </div>
+    </div>
+    
+    <!-- Package Content -->
+    <div class="package-content">
+        <!-- Description -->
+        <div class="content-section">
+            <h3><i class="fas fa-info-circle me-2"></i>About This Package</h3>
+            <div>{{ package.description|safe }}</div>
+        </div>
+        
+        <!-- Itinerary -->
+        {% if package.itinerary.days.exists %}
+        <div class="content-section">
+            <h3><i class="fas fa-route me-2"></i>Itinerary</h3>
+            {% for day in package.itinerary.days.all %}
+            <div class="itinerary-day">
+                <h5>Day {{ day.day_number }}: {{ day.title }}</h5>
+                <p>{{ day.description }}</p>
+                {% if day.destination %}
+                <small class="text-muted">
+                    <i class="fas fa-map-marker-alt"></i> {{ day.destination.name }}
+                </small>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        <!-- Accommodations -->
+        {% if package.available_accommodations.exists %}
+        <div class="content-section">
+            <h3><i class="fas fa-bed me-2"></i>Accommodations</h3>
+            {% for accommodation in package.available_accommodations.all %}
+            <div class="accommodation-item">
+                <img src="{{ accommodation.image.cdn_url }}" alt="{{ accommodation.name }}">
+                <div>
+                    <h5>{{ accommodation.name }}</h5>
+                    <p>{{ accommodation.description|truncatewords:20 }}</p>
+                    <small class="text-muted">
+                        <i class="fas fa-dollar-sign"></i> From ${{ accommodation.price_per_room_per_night }}/night
+                    </small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        <!-- Travel Options -->
+        {% if package.available_travel_modes.exists %}
+        <div class="content-section">
+            <h3><i class="fas fa-plane me-2"></i>Travel Options</h3>
+            {% for travel in package.available_travel_modes.all %}
+            <div class="travel-item">
+                <i class="fas fa-{{ travel.transport_type }} fa-3x text-primary me-3"></i>
+                <div>
+                    <h5>{{ travel.name }}</h5>
+                    <p>{{ travel.departure_location }} → {{ travel.arrival_location }}</p>
+                    <small class="text-muted">
+                        <i class="fas fa-dollar-sign"></i> ${{ travel.price_per_person }}/person
+                    </small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        <!-- Inclusions & Exclusions -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-section">
+                    <h3><i class="fas fa-check-circle me-2 text-success"></i>Inclusions</h3>
+                    <div>{{ package.inclusions|safe }}</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-section">
+                    <h3><i class="fas fa-times-circle me-2 text-danger"></i>Exclusions</h3>
+                    <div>{{ package.exclusions|safe }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

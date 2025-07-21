@@ -25,7 +25,7 @@ class UserBookings(models.Model):
         ordering = ('-booking_date', )
 
     def __str__(self):
-        return f"Booking for {self.full_name}  {self.package.package_name} on {self.booking_date}"
+        return f"Booking for {self.full_name}  {self.package.name} on {self.booking_date}"
 
 
 # users/models.py

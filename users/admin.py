@@ -40,7 +40,7 @@ class UserBookingsAdmin(admin.ModelAdmin):
     form = UserBookingsAdminForm
     list_display = ('full_name', 'package', 'user', 'booking_date', 'paid')
     list_filter = ('paid', 'booking_date', 'package')
-    search_fields = ('full_name', 'phone_number', 'user__username', 'package__package_name')
+    search_fields = ('full_name', 'phone_number', 'user__username', 'package__name')
     readonly_fields = ('booking_date',)
     date_hierarchy = 'booking_date'
 

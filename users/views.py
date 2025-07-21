@@ -307,7 +307,7 @@ def home(request):
 	dests1 = Destination.objects.all()  # Retrieve all destinations from the database
 	dests=Destination.objects.all()
 	package1=Package.objects.all()
-	packs=Package.objects.all().order_by('number_of_times_booked')
+	packs=Package.objects.filter(status=Package.PUBLISHED).order_by('total_bookings')
 	nights=[]
 	price=[]
 	travel=[]
@@ -316,15 +316,20 @@ def home(request):
 	destinations=zip(dests)
 
 	for i in packs:
-		nights.append(i.number_of_days-1)
-		price.append(i.adult_price+i.accomodation.price_per_room)
-		mode=i.travel.travelling_mode
-		if(mode=="TN"):
-			travel.append("Train")
-		elif(mode=="FT"):
-			travel.append("Flight")
+		nights.append(i.duration_days-1)
+		first_accommodation = i.available_accommodations.first()
+		accommodation_price = first_accommodation.price_per_room_per_night if first_accommodation else 0
+		price.append(i.adult_price + accommodation_price)
+		first_travel = i.available_travel_modes.first()
+		if first_travel:
+			if first_travel.transport_type == "train":
+				travel.append("Train")
+			elif first_travel.transport_type == "flight":
+				travel.append("Flight")
+			else:
+				travel.append("Bus")
 		else:
-			travel.append("Bus")
+			travel.append("N/A")
 
 
 
@@ -345,21 +350,26 @@ def home(request):
 def destination(request,id):
 	id=id
 	dest=Destination.objects.get(id=id)
-	packs=dest.package_set.all()
+	packs=Package.objects.filter(main_destination=dest, status=Package.PUBLISHED)
 	nights=[]
 	price=[]
 	travel=[]
 
 	for i in packs:
-		nights.append(i.number_of_days-1)
-		price.append(i.adult_price+i.accomodation.price_per_room)
-		mode=i.travel.travelling_mode
-		if(mode=="TN"):
-			travel.append("Train")
-		elif(mode=="FT"):
-			travel.append("Flight")
+		nights.append(i.duration_days-1)
+		first_accommodation = i.available_accommodations.first()
+		accommodation_price = first_accommodation.price_per_room_per_night if first_accommodation else 0
+		price.append(i.adult_price + accommodation_price)
+		first_travel = i.available_travel_modes.first()
+		if first_travel:
+			if first_travel.transport_type == "train":
+				travel.append("Train")
+			elif first_travel.transport_type == "flight":
+				travel.append("Flight")
+			else:
+				travel.append("Bus")
 		else:
-			travel.append("Bus")
+			travel.append("N/A")
 
 
 	packages=zip(packs,nights,price,travel)
@@ -378,7 +388,7 @@ def search(request):
 		name=request.POST.get('search','')
 		name=name.lstrip()
 		name=name.rstrip()
-		dest=Destination.objects.filter(city__icontains=name) | Destination.objects.filter(state__icontains=name) | Destination.objects.filter(city__icontains=name)
+		dest=Destination.objects.filter(name__icontains=name) | Destination.objects.filter(description__icontains=name)
 		print(dest[0].id)
 		return redirect('users-destination', id=dest[0].id)
 	except:
@@ -393,32 +403,36 @@ def detail_package(request, package_id):
     if request.user.is_authenticated:
         try:
             package = get_object_or_404(Package, id=package_id)
-            package_name = package.package_name
-            destination_name = package.destination.name
-            booked = package.number_of_times_booked
-            no_of_days = package.number_of_days
-            destination_description = package.destination.dtn_description
+            package_name = package.name
+            destination_name = package.main_destination.name
+            booked = package.total_bookings
+            no_of_days = package.duration_days
+            destination_description = package.main_destination.description
             package_description = package.description
 
-            # Travelling details
-            travel_mode = package.travel.travelling_mode
-            travel_price = package.travel.price_per_person
+            # Travelling details - get first available travel mode
+            travel_mode = package.available_travel_modes.first().name if package.available_travel_modes.exists() else "N/A"
+            travel_price = package.available_travel_modes.first().price_per_person if package.available_travel_modes.exists() else 0
 
-            # accomodation Details
-            hotel_name = package.accomodation.hotel_name if package.accomodation else "N/A"
-            hotel_description = package.accomodation.hotel_description
-            price_per_room = package.accomodation.price_per_room
+            # accommodation Details - get first available accommodation
+            first_accommodation = package.available_accommodations.first()
+            hotel_name = first_accommodation.name if first_accommodation else "N/A"
+            hotel_description = first_accommodation.description if first_accommodation else "N/A"
+            price_per_room = first_accommodation.price_per_room_per_night if first_accommodation else 0
 
             # Inclusive
-            inclusive = package.inclusive
-            exclusive = package.exclusive
+            inclusive = package.inclusions
+            exclusive = package.exclusions
 
             # Itinerary
-            itinerary = get_object_or_404(Itinerary, package=package)
-            itinerary_description = itinerary.itinerarydescription_set.all() # list of itinerary days
+            try:
+                itinerary = Itinerary.objects.get(package=package)
+                itinerary_description = itinerary.days.all().order_by('day_number') # list of itinerary days
+            except Itinerary.DoesNotExist:
+                itinerary_description = []
 
             # Images
-            package_image = package.Image
+            package_image = package.featured_image
 
             context = {
                 'package': package,

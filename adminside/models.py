@@ -1,124 +1,460 @@
 from django.db import models
 from django.contrib.auth.models import User
-from users.models import UserBookings
-from django.db.models import BigAutoField
+from django.urls import reverse
+from django.core.exceptions import ValidationError
 from pyuploadcare.dj.models import ImageField
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
-# Create your models here.
-from django.db import models
-from django.contrib.auth.models import User
-from django.urls import reverse
-from django.core.exceptions import ValidationError
-from users.models import UserBookings
-from pyuploadcare.dj.models import ImageField
 
 
 
 class Destination(models.Model):
-    name = models.CharField(max_length=200)
-    state = models.CharField(max_length=100)
-    city = models.CharField(max_length=100)
-    dtn_description = RichTextField(config_name='default', help_text="Detailed description of the destination with rich text formatting")
-    Image = ImageField(blank=False, null=False, manual_crop="4:4")
-    parent = models.ForeignKey(
-        'self',  # Self-referential relationship
-        on_delete=models.CASCADE,
-        null=True, 
-        blank=True, 
-        related_name='sub_destinations'
-    )
-
-    def __str__(self):
-        return f'{self.name}'
+    """
+    Hierarchical destination model: Country -> City -> Place
+    """
+    COUNTRY = 'country'
+    CITY = 'city'
+    PLACE = 'place'
     
-    def is_country(self):
-        """Check if this destination is a country (has no parent)."""
-        return self.parent is None
-
-
-
-class Accomodation(models.Model):
-    hotel_name = models.CharField(max_length=200)
-    hotel_description = RichTextField(config_name='default', help_text="Detailed description of the accommodation with rich text formatting")
-    price_per_room = models.PositiveIntegerField()
-
-    def __str__(self):
-        return f'{self.hotel_name}'
-
-class Travel(models.Model):
-    
-    departure = models.CharField(max_length=100)
-    arrival = models.CharField(max_length=100)
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    price_per_person = models.PositiveIntegerField()
-
-    ## For Travelling Choices
-    TRAIN = 'TN'
-    FLIGHT = 'FT'
-    BUS = 'BS'
-
-    TRAVELLING_CHOICES = [
-        (TRAIN, 'Train'),
-        (FLIGHT, 'Flight'),
-        (BUS, 'Bus')
+    DESTINATION_TYPES = [
+        (COUNTRY, 'Country'),
+        (CITY, 'City'),
+        (PLACE, 'Place'),
     ]
+    
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=200, unique=True)
+    destination_type = models.CharField(max_length=10, choices=DESTINATION_TYPES)
+    description = models.TextField()
+    image = ImageField(blank=False, null=False, manual_crop="4:4")
+    
+    # Hierarchical relationship
+    parent = models.ForeignKey(
+        'self',
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name='children'
+    )
+    
+    # SEO and metadata
+    meta_title = models.CharField(max_length=200, blank=True)
+    meta_description = models.TextField(max_length=300, blank=True)
+    
+    # Display order and featured status
+    display_order = models.PositiveIntegerField(default=0)
+    is_featured = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    travelling_mode = models.CharField(max_length=2,choices=TRAVELLING_CHOICES,default=FLIGHT)
+    class Meta:
+        ordering = ['display_order', 'name']
+        indexes = [
+            models.Index(fields=['destination_type', 'is_active']),
+            models.Index(fields=['parent', 'is_active']),
+        ]
+
+    def clean(self):
+        """Validate destination hierarchy"""
+        if self.destination_type == self.COUNTRY and self.parent:
+            raise ValidationError("Countries cannot have parent destinations")
+        if self.destination_type == self.CITY and (not self.parent or self.parent.destination_type != self.COUNTRY):
+            raise ValidationError("Cities must have a country as parent")
+        if self.destination_type == self.PLACE and (not self.parent or self.parent.destination_type != self.CITY):
+            raise ValidationError("Places must have a city as parent")
 
     def __str__(self):
-        return f'{self.departure} to {self.arrival} | {self.travelling_mode}'
+        return self.get_full_name()
+
+    def get_full_name(self):
+        """Return full hierarchical name"""
+        if self.parent:
+            return f"{self.parent.get_full_name()}, {self.name}"
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('destination_detail', kwargs={'slug': self.slug})
+
+    def get_all_children(self):
+        """Get all descendant destinations recursively"""
+        children = []
+        for child in self.children.filter(is_active=True):
+            children.append(child)
+            children.extend(child.get_all_children())
+        return children
+
+    @property
+    def country(self):
+        """Get the country for this destination"""
+        if self.destination_type == self.COUNTRY:
+            return self
+        elif self.parent:
+            return self.parent.country
+        return None
+
+    def get_all_children(self):
+        """Get all descendant destinations"""
+        children = list(self.children.filter(is_active=True))
+        for child in list(children):
+            children.extend(child.get_all_children())
+        return children
 
 
+class Accommodation(models.Model):
+    """
+    Hotel/Lodge accommodation model
+    """
+    HOTEL = 'hotel'
+    LODGE = 'lodge'
+    RESORT = 'resort'
+    GUESTHOUSE = 'guesthouse'
+    AIRBNB = 'airbnb'
 
+    ACCOMMODATION_TYPES = [
+        (HOTEL, 'Hotel'),
+        (LODGE, 'Lodge'),
+        (RESORT, 'Resort'),
+        (GUESTHOUSE, 'Guest House'),
+        (AIRBNB, 'Airbnb'),
+    ]
     
-class Package(models.Model):
-    main_destination = models.ForeignKey(
-        Destination, 
-        on_delete=models.CASCADE, 
-        related_name='main_packages'
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=200, unique=True)
+    accommodation_type = models.CharField(max_length=20, choices=ACCOMMODATION_TYPES, default=HOTEL)
+    description = models.TextField()
+    
+    # Location
+    destination = models.ForeignKey(
+        Destination,
+        on_delete=models.CASCADE,
+        related_name='accommodations'
     )
-    sub_destinations = models.ManyToManyField(
-        Destination, 
-        related_name='sub_packages', 
+    address = models.TextField(blank=True)
+    
+    # Pricing and capacity
+    price_per_room_per_night = models.PositiveIntegerField()
+    max_occupancy_per_room = models.PositiveIntegerField(default=2)
+    total_rooms = models.PositiveIntegerField(default=1)
+    
+    # Media
+    image = ImageField(blank=False, null=False, manual_crop="4:4")
+    
+    # Features and amenities
+    amenities = models.TextField(help_text="Comma-separated list of amenities")
+    
+    # Status
+    is_active = models.BooleanField(default=True)
+    is_featured = models.BooleanField(default=False)
+    
+    # Ratings
+    rating = models.DecimalField(max_digits=3, decimal_places=1, default=0.0)
+    total_reviews = models.PositiveIntegerField(default=0)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-is_featured', '-rating', 'name']
+        indexes = [
+            models.Index(fields=['destination', 'is_active']),
+            models.Index(fields=['accommodation_type', 'is_active']),
+        ]
+
+    def __str__(self):
+        return f"{self.name} - {self.destination.name}"
+
+    def get_absolute_url(self):
+        return reverse('accommodation_detail', kwargs={'slug': self.slug})
+
+
+class TravelMode(models.Model):
+    """
+    Renamed from Travel - represents transportation options
+    """
+    FLIGHT = 'flight'
+    TRAIN = 'train'
+    BUS = 'bus'
+    CAR = 'car'
+    BOAT = 'boat'
+    CRUISER = 'cruiser'
+
+    TRANSPORT_TYPES = [
+        (FLIGHT, 'Flight'),
+        (TRAIN, 'Train'),
+        (BUS, 'Bus'),
+        (CAR, 'Car/Private Vehicle'),
+        (BOAT, 'Boat/Ferry'),
+        (CRUISER, 'Cruiser'),
+    ]
+    
+    name = models.CharField(max_length=200)  # e.g., "Kenya Airways Morning Flight"
+    transport_type = models.CharField(max_length=20, choices=TRANSPORT_TYPES)
+    
+    # Route information
+    departure_location = models.CharField(max_length=200)
+    arrival_location = models.CharField(max_length=200)
+    
+    # Timing
+    departure_time = models.TimeField()
+    arrival_time = models.TimeField()
+    duration_minutes = models.PositiveIntegerField()
+    
+    # Pricing
+    price_per_person = models.PositiveIntegerField()
+    child_discount_percentage = models.PositiveIntegerField(default=0)
+    
+    # Additional info
+    description = models.TextField(blank=True)
+    terms_and_conditions = models.TextField(blank=True)
+    
+    # Capacity and availability
+    total_capacity = models.PositiveIntegerField(default=50)
+    
+    # Status
+    is_active = models.BooleanField(default=True)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['transport_type', 'departure_time']
+        indexes = [
+            models.Index(fields=['transport_type', 'is_active']),
+            models.Index(fields=['departure_location', 'arrival_location']),
+        ]
+
+    def __str__(self):
+        return f"{self.name} - {self.departure_location} to {self.arrival_location}"
+
+    @property
+    def child_price(self):
+        """Calculate child price based on discount"""
+        return self.price_per_person * (100 - self.child_discount_percentage) // 100
+
+
+class Package(models.Model):
+    """
+    Main travel package model with improved structure
+    """
+    DRAFT = 'draft'
+    PUBLISHED = 'published'
+    ARCHIVED = 'archived'
+    
+    STATUS_CHOICES = [
+        (DRAFT, 'Draft'),
+        (PUBLISHED, 'Published'),
+        (ARCHIVED, 'Archived'),
+    ]
+    
+    # Basic information
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField()
+    
+    # Destinations - simplified to main destination only
+    # Sub-destinations will be handled through itinerary
+    main_destination = models.ForeignKey(
+        Destination,
+        on_delete=models.CASCADE,
+        related_name='packages',
+        help_text="Primary destination for this package"
+    )
+    
+    # Package details
+    duration_days = models.PositiveIntegerField()
+    duration_nights = models.PositiveIntegerField()
+    
+    # Pricing
+    adult_price = models.PositiveIntegerField()
+    child_price = models.PositiveIntegerField()
+    
+    # Package content
+    inclusions = models.TextField(help_text="What's included in the package")
+    exclusions = models.TextField(help_text="What's NOT included in the package")
+    
+    # Media
+    featured_image = ImageField(blank=False, null=False, manual_crop="4:4")
+    
+    # Accommodation and travel options
+    available_accommodations = models.ManyToManyField(
+        Accommodation,
+        related_name='packages',
         blank=True
     )
-    destination = models.ForeignKey(Destination,on_delete=models.CASCADE)
-    accomodation = models.ForeignKey(Accomodation,on_delete=models.CASCADE)
-    travel = models.ForeignKey(Travel,on_delete=models.CASCADE)
-    bookings = models.ManyToManyField(User,through=UserBookings)
-    Image = ImageField(blank=False, null=False, manual_crop="4:4",)
-    package_name = models.CharField(max_length=200,default="NULL") # ye dalna
-    adult_price = models.IntegerField()
-    child_price = models.IntegerField() 
-    description = RichTextField(config_name='default', default="NO DESCRIPTION ADDED", help_text="Detailed package description with rich text formatting")
-    inclusive = RichTextField(config_name='default', help_text="What's included in the package")
-    exclusive = RichTextField(config_name='default', help_text="What's excluded from the package")
-    number_of_days = models.PositiveIntegerField()
-    number_of_times_booked = models.PositiveIntegerField(default=0)
+    available_travel_modes = models.ManyToManyField(
+        TravelMode,
+        related_name='packages',
+        blank=True
+    )
+    
+    # Bookings - handled through PackageBooking model
+    
+    # Statistics
+    total_bookings = models.PositiveIntegerField(default=0)
+    rating = models.DecimalField(max_digits=3, decimal_places=1, default=0.0)
+    total_reviews = models.PositiveIntegerField(default=0)
+    
+    # Status and visibility
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=DRAFT)
+    is_featured = models.BooleanField(default=False)
+    
+    # SEO
+    meta_title = models.CharField(max_length=200, blank=True)
+    meta_description = models.TextField(max_length=300, blank=True)
+    
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    published_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['-is_featured', '-published_at', '-created_at']
+        indexes = [
+            models.Index(fields=['main_destination', 'status']),
+            models.Index(fields=['status', 'is_featured']),
+        ]
 
     def __str__(self):
-        return f'{self.package_name}'
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('package_detail', kwargs={'slug': self.slug})
+
+    @property
+    def is_published(self):
+        return self.status == self.PUBLISHED
 
 
 class Itinerary(models.Model):
-    package = models.OneToOneField(Package,on_delete=models.CASCADE,default=1)
-    itinerary_name = models.CharField(max_length=200,default="NULL")
+    """
+    One-to-one relationship with Package for detailed day-by-day planning
+    """
+    package = models.OneToOneField(
+        Package,
+        on_delete=models.CASCADE,
+        related_name='itinerary'
+    )
+    title = models.CharField(max_length=200)
+    overview = models.TextField(blank=True, help_text="Brief overview of the itinerary")
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name_plural = "Itineraries"
 
     def __str__(self):
-        return f'{self.itinerary_name}'
+        return f"Itinerary for {self.package.name}"
 
-class ItineraryDescription(models.Model):
-    itinerary = models.ForeignKey(Itinerary, related_name='itinerarydescription_set', on_delete=models.CASCADE)    
-    itinerary_description = RichTextField(config_name='default', help_text="Day-by-day itinerary description with rich text formatting")
-    day_number = models.IntegerField()
+
+class ItineraryDay(models.Model):
+    """
+    Renamed from ItineraryDescription for clarity
+    """
+    itinerary = models.ForeignKey(
+        Itinerary,
+        on_delete=models.CASCADE,
+        related_name='days'
+    )
+    day_number = models.PositiveIntegerField()
+    title = models.CharField(max_length=200)
+    description = models.TextField()
     
+    # Optional destination for this day
+    destination = models.ForeignKey(
+        Destination,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='itinerary_days'
+    )
+    
+    # Accommodation for this day (if different from package default)
+    accommodation = models.ForeignKey(
+        Accommodation,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='itinerary_days'
+    )
+    
+    # Meals included
+    breakfast = models.BooleanField(default=False)
+    lunch = models.BooleanField(default=False)
+    dinner = models.BooleanField(default=False)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     class Meta:
         ordering = ['day_number']
+        unique_together = ['itinerary', 'day_number']
+        indexes = [
+            models.Index(fields=['itinerary', 'day_number']),
+        ]
 
-    
     def __str__(self):
-        return f'{self.itinerary.itinerary_name} | Day {self.day_number}'
+        return f"Day {self.day_number}: {self.title}"
+
+
+class PackageBooking(models.Model):
+    """
+    Enhanced booking model to track selected options
+    """
+    PENDING = 'pending'
+    CONFIRMED = 'confirmed'
+    CANCELLED = 'cancelled'
+    COMPLETED = 'completed'
     
-  
+    STATUS_CHOICES = [
+        (PENDING, 'Pending'),
+        (CONFIRMED, 'Confirmed'),
+        (CANCELLED, 'Cancelled'),
+        (COMPLETED, 'Completed'),
+    ]
+    
+    # Basic booking info
+    package = models.ForeignKey(Package, on_delete=models.CASCADE, related_name='package_bookings')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='package_bookings')
+    
+    # Selected options
+    selected_accommodation = models.ForeignKey(
+        Accommodation,
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name='bookings'
+    )
+    selected_travel_mode = models.ForeignKey(
+        TravelMode,
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name='bookings'
+    )
+    
+    # Guest details
+    adults_count = models.PositiveIntegerField(default=1)
+    children_count = models.PositiveIntegerField(default=0)
+    
+    # Dates
+    travel_date = models.DateField()
+    
+    # Pricing
+    total_amount = models.PositiveIntegerField()
+    
+    # Status
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=PENDING)
+    
+    # Additional info
+    special_requests = models.TextField(blank=True)
+    
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"Booking {self.id} - {self.package.name} by {self.user.username}"
