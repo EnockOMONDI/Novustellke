@@ -2,8 +2,8 @@ from django.contrib import admin
 from django import forms
 from django.db import models
 from blog.models import Post, Comment, Category
-from ckeditor.widgets import CKEditorWidget
-from ckeditor.fields import RichTextField
+from django_ckeditor_5.widgets import CKEditor5Widget
+from django_ckeditor_5.fields import CKEditor5Field
 
 @admin.register(Post)
 class ArticleAdmin(admin.ModelAdmin):
@@ -36,9 +36,8 @@ class ArticleAdmin(admin.ModelAdmin):
     # No formfield_overrides needed for RichTextField
 
     class Media:
-        js = ('ckeditor/ckeditor/ckeditor.js',)
         css = {
-            'all': ('assets/css/ckeditor-admin.css',)
+            'all': ('assets/css/ckeditor5-admin.css',)
         }
 
     def get_title(self, obj):

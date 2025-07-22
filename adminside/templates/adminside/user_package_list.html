@@ -1,5 +1,6 @@
 {% extends 'adminside/base.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}Holiday Packages - Novustell Travel{% endblock %}
 {% block meta_description %}Discover amazing holiday packages with Novustell Travel. From safari adventures to beach getaways, find your perfect travel experience with our customized holiday packages.{% endblock %}
@@ -592,7 +593,7 @@
                 {% for package in destination_group.list %}
                 <div class="package-card">
                     <div class="package-image">
-                        <img src="{{ package.featured_image.cdn_url }}" alt="{{ package.name }}">
+                        {% image_with_placeholder package.featured_image "" package.name %}
                         {% if package.is_featured %}
                         <div class="featured-badge">
                             <i class="fas fa-star me-1"></i>Featured

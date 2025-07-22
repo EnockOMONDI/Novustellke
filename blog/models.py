@@ -6,8 +6,7 @@ from html import unescape
 from django.utils.html import strip_tags
 from shortuuid.django_fields import ShortUUIDField
 from pyuploadcare.dj.models import ImageField
-from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
+from django_ckeditor_5.fields import CKEditor5Field
 
 
 BLOG_PUBLISH_STATUS = (
@@ -35,8 +34,8 @@ class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     image = ImageField(blank=True, null=True, manual_crop="4:4",)
     title = models.CharField(max_length=1000)
-    excerpt = RichTextField(config_name='minimal', blank=True, null=True, help_text="Brief description of the post")
-    content = RichTextField(config_name='blog', help_text="Main blog content with rich text formatting")
+    excerpt = CKEditor5Field(config_name='default', blank=True, null=True, help_text="Brief description of the post")
+    content = CKEditor5Field(config_name='default', help_text="Main blog content with rich text formatting")
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tags = TaggableManager()
     status = models.CharField(choices=BLOG_PUBLISH_STATUS, max_length=100, default="in_review")
@@ -74,7 +73,7 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     full_name = models.CharField(max_length=1000)
     email = models.EmailField()
-    comment = RichTextField(config_name='minimal', help_text="Comment content with basic formatting")
+    comment = CKEditor5Field(config_name='default', help_text="Comment content with basic formatting")
     date = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
 

@@ -10,7 +10,7 @@ from .models import (
     ItineraryDay,
     PackageBooking
 )
-# RichTextField automatically handles CKEditor widgets based on config_name
+# CKEditor5Field automatically handles CKEditor 5 widgets based on config_name
 # No need for explicit widget overrides
 
 class DestinationAdminForm(forms.ModelForm):
@@ -40,14 +40,13 @@ class ItineraryDayAdminForm(forms.ModelForm):
 @admin.register(Destination)
 class DestinationAdmin(admin.ModelAdmin):
     form = DestinationAdminForm
-    list_display = ('name', 'destination_type', 'parent', 'display_image', 'display_order', 'is_featured', 'is_active')
+    list_display = ('name', 'destination_type', 'parent', 'display_image', 'starting_price', 'display_order', 'is_featured', 'is_active')
     list_filter = ('destination_type', 'is_featured', 'is_active', 'parent')
     search_fields = ('name', 'description', 'meta_title')
 
     class Media:
-        js = ('ckeditor/ckeditor/ckeditor.js',)
         css = {
-            'all': ('assets/css/ckeditor-admin.css',)
+            'all': ('assets/css/ckeditor5-admin.css',)
         }
     list_per_page = 20
     prepopulated_fields = {'slug': ('name',)}
@@ -64,6 +63,10 @@ class DestinationAdmin(admin.ModelAdmin):
             'fields': ('description',),
             'classes': ('wide',)
         }),
+        ('Pricing', {
+            'fields': ('starting_price',),
+            'description': 'Set the starting price for packages to this destination'
+        }),
         ('SEO', {
             'fields': ('meta_title', 'meta_description'),
             'classes': ('collapse',)
@@ -75,11 +78,8 @@ class DestinationAdmin(admin.ModelAdmin):
 
     class Media:
         css = {
-            'all': ('admin/css/ckeditor-admin.css',)
+            'all': ('admin/css/ckeditor5-admin.css',)
         }
-        js = (
-            'ckeditor/ckeditor/ckeditor.js',
-        )
 
     def display_image(self, obj):
         if obj.image:
@@ -124,11 +124,8 @@ class AccommodationAdmin(admin.ModelAdmin):
 
     class Media:
         css = {
-            'all': ('admin/css/ckeditor-admin.css',)
+            'all': ('admin/css/ckeditor5-admin.css',)
         }
-        js = (
-            'ckeditor/ckeditor/ckeditor.js',
-        )
 
     def short_description(self, obj):
         return obj.description[:100] + '...' if len(obj.description) > 100 else obj.description
@@ -172,11 +169,8 @@ class ItineraryDayInline(admin.TabularInline):
 
     class Media:
         css = {
-            'all': ('admin/css/ckeditor-admin.css',)
+            'all': ('admin/css/ckeditor5-admin.css',)
         }
-        js = (
-            'ckeditor/ckeditor/ckeditor.js',
-        )
 
 @admin.register(Itinerary)
 class ItineraryAdmin(admin.ModelAdmin):
@@ -252,11 +246,8 @@ class PackageAdmin(admin.ModelAdmin):
 
     class Media:
         css = {
-            'all': ('admin/css/ckeditor-admin.css',)
+            'all': ('admin/css/ckeditor5-admin.css',)
         }
-        js = (
-            'ckeditor/ckeditor/ckeditor.js',
-        )
 
     def display_image(self, obj):
         if obj.featured_image:

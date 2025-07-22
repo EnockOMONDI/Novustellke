@@ -3,8 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.core.exceptions import ValidationError
 from pyuploadcare.dj.models import ImageField
-from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
+from django_ckeditor_5.fields import CKEditor5Field
 
 
 
@@ -25,7 +24,7 @@ class Destination(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     destination_type = models.CharField(max_length=10, choices=DESTINATION_TYPES)
-    description = RichTextField(config_name='default', help_text="Detailed destination description with rich text formatting")
+    description = CKEditor5Field(config_name='default', help_text="Detailed destination description with rich text formatting")
     image = ImageField(blank=False, null=False, manual_crop="4:4")
     
     # Hierarchical relationship
@@ -41,6 +40,15 @@ class Destination(models.Model):
     meta_title = models.CharField(max_length=200, blank=True)
     meta_description = models.TextField(max_length=300, blank=True)
     
+    # Pricing information
+    starting_price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        null=True,
+        blank=True,
+        help_text="Starting price for packages to this destination (in USD)"
+    )
+
     # Display order and featured status
     display_order = models.PositiveIntegerField(default=0)
     is_featured = models.BooleanField(default=False)
@@ -123,7 +131,7 @@ class Accommodation(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     accommodation_type = models.CharField(max_length=20, choices=ACCOMMODATION_TYPES, default=HOTEL)
-    description = RichTextField(config_name='default', help_text="Detailed accommodation description with rich text formatting")
+    description = CKEditor5Field(config_name='default', help_text="Detailed accommodation description with rich text formatting")
     
     # Location
     destination = models.ForeignKey(
@@ -251,7 +259,7 @@ class Package(models.Model):
     # Basic information
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    description = RichTextField(config_name='default', help_text="Detailed package description with rich text formatting")
+    description = CKEditor5Field(config_name='default', help_text="Detailed package description with rich text formatting")
 
     # Destinations - simplified to main destination only
     # Sub-destinations will be handled through itinerary
@@ -271,8 +279,8 @@ class Package(models.Model):
     child_price = models.PositiveIntegerField()
 
     # Package content
-    inclusions = RichTextField(config_name='default', help_text="What's included in the package")
-    exclusions = RichTextField(config_name='default', help_text="What's NOT included in the package")
+    inclusions = CKEditor5Field(config_name='default', help_text="What's included in the package")
+    exclusions = CKEditor5Field(config_name='default', help_text="What's NOT included in the package")
     
     # Media
     featured_image = ImageField(blank=False, null=False, manual_crop="4:4")

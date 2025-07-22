@@ -54,8 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ckeditor',  # CKEditor for rich text editing
-    'ckeditor_uploader',  # CKEditor file upload support
+    'django_ckeditor_5',  # CKEditor 5 for modern rich text editing
     'import_export',
     'adminside',
     'users',
@@ -326,139 +325,103 @@ UNFOLD = {
     },
 }
 
-# CKEditor Configuration
-CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_IMAGE_BACKEND = "pillow"
-CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
-CKEDITOR_RESTRICT_BY_USER = True
-CKEDITOR_BROWSE_SHOW_DIRS = True
-CKEDITOR_RESTRICT_BY_DATE = True
-CKEDITOR_ALLOW_NONIMAGE_FILES = False
-
-# Custom CKEditor CSS and JS
-CKEDITOR_CUSTOM_CSS = [
-    '/static/assets/css/ckeditor-admin.css',
+# CKEditor 5 Configuration
+customColorPalette = [
+    {
+        'color': 'hsl(4, 90%, 58%)',
+        'label': 'Red'
+    },
+    {
+        'color': 'hsl(340, 82%, 52%)',
+        'label': 'Pink'
+    },
+    {
+        'color': 'hsl(291, 64%, 42%)',
+        'label': 'Purple'
+    },
+    {
+        'color': 'hsl(262, 52%, 47%)',
+        'label': 'Deep Purple'
+    },
+    {
+        'color': 'hsl(231, 48%, 48%)',
+        'label': 'Indigo'
+    },
+    {
+        'color': 'hsl(207, 90%, 54%)',
+        'label': 'Blue'
+    },
+    {
+        'color': '#170b2c',  # Novustell primary color
+        'label': 'Novustell Primary'
+    },
+    {
+        'color': '#ff9d00',  # Novustell accent color
+        'label': 'Novustell Accent'
+    },
 ]
 
-# CKEditor Configurations for different content types
-CKEDITOR_CONFIGS = {
+CKEDITOR_5_CONFIGS = {
     'default': {
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Undo', 'Redo'],
-            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink', 'Anchor'],
-            ['Image', 'Flash', 'Table', 'HorizontalRule'],
-            ['TextColor', 'BGColor'],
-            ['Blockquote', 'CodeSnippet'],
-            ['Source'],
-            '/',
-            ['Format', 'Font', 'FontSize'],
-            ['Maximize', 'ShowBlocks'],
-        ],
-        'height': 300,
-        'width': '100%',
-        'extraPlugins': ','.join([
-            'uploadimage',
-            'image2',
-            'div',
-            'autolink',
-            'autoembed',
-            'embedsemantic',
-            'autogrow',
-            'widget',
-            'lineutils',
-            'clipboard',
-            'dialog',
-            'dialogui',
-            'elementspath',
-            'codesnippet',
-            'colorbutton',
-            'colordialog',
-            'font',
-            'justify',
-            'tableresize',
-            'tabletools',
-            'tableselection'
-        ]),
-        'removePlugins': 'stylesheetparser',
-        'allowedContent': True,
-        'extraAllowedContent': 'div(*);span(*);p(*);h1(*);h2(*);h3(*);h4(*);h5(*);h6(*)',
+        'toolbar': ['heading', '|', 'bold', 'italic', 'link',
+                    'bulletedList', 'numberedList', 'blockQuote', 'imageUpload', ],
     },
-    'blog': {
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Undo', 'Redo'],
-            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink', 'Anchor'],
-            ['Image', 'Flash', 'Table', 'HorizontalRule'],
-            ['TextColor', 'BGColor'],
-            ['Smiley', 'SpecialChar'],
-            ['Source'],
-            '/',
-            ['Styles', 'Format', 'Font', 'FontSize'],
-            ['Maximize', 'ShowBlocks'],
+    'extends': {
+        'blockToolbar': [
+            'paragraph', 'heading1', 'heading2', 'heading3',
+            '|',
+            'bulletedList', 'numberedList',
+            '|',
+            'blockQuote',
         ],
-        'height': 400,
-        'width': '100%',
-        'extraPlugins': ','.join([
-            'uploadimage',
-            'image2',
-            'div',
-            'autolink',
-            'autoembed',
-            'embedsemantic',
-            'autogrow',
-            'widget',
-            'lineutils',
-            'clipboard',
-            'dialog',
-            'dialogui',
-            'elementspath',
-            'codesnippet',
-            'colorbutton',
-            'colordialog',
-            'font',
-            'justify',
-            'tableresize',
-            'tabletools',
-            'tableselection',
-            'stylescombo'
-        ]),
-        'removePlugins': 'stylesheetparser',
-        'allowedContent': True,
-        'extraAllowedContent': 'div(*);span(*);p(*);h1(*);h2(*);h3(*);h4(*);h5(*);h6(*)',
-        'stylesSet': [
-            {'name': 'Blog Heading', 'element': 'h2', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'margin-bottom': '15px'}},
-            {'name': 'Travel Highlight', 'element': 'span', 'styles': {'background-color': '#ff9d00', 'color': 'white', 'padding': '2px 8px', 'border-radius': '3px'}},
-            {'name': 'Destination Name', 'element': 'span', 'styles': {'color': '#0f238d', 'font-weight': 'bold', 'font-size': '1.1em'}},
-            {'name': 'Travel Tip', 'element': 'div', 'styles': {'background-color': '#f8f9fa', 'border-left': '4px solid #0f238d', 'padding': '15px', 'margin': '15px 0'}},
-            {'name': 'Quote Box', 'element': 'blockquote', 'styles': {'background': '#f9f9f9', 'border-left': '4px solid #ff9d00', 'padding': '10px 20px', 'margin': '20px 0', 'font-style': 'italic'}},
-            {'name': 'Important Note', 'element': 'div', 'styles': {'background-color': '#fff3cd', 'border': '1px solid #ffeaa7', 'color': '#856404', 'padding': '12px', 'border-radius': '5px', 'margin': '10px 0'}},
-        ],
+        'toolbar': ['heading', '|', 'outdent', 'indent', '|', 'bold', 'italic', 'link', 'underline', 'strikethrough',
+        'code','subscript', 'superscript', 'highlight', '|', 'codeBlock', 'sourceEditing', 'insertImage',
+                    'bulletedList', 'numberedList', 'todoList', '|',  'blockQuote', 'imageUpload', '|',
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'mediaEmbed', 'removeFormat',
+                    'insertTable',],
+        'image': {
+            'toolbar': ['imageTextAlternative', '|', 'imageStyle:alignLeft',
+                        'imageStyle:alignRight', 'imageStyle:alignCenter', 'imageStyle:side',  ],
+        },
+        'table': {
+            'contentToolbar': [ 'tableColumn', 'tableRow', 'mergeTableCells',
+            'tableProperties', 'tableCellProperties' ],
+            'tableProperties': {
+                'borderColors': customColorPalette,
+                'backgroundColors': customColorPalette
+            },
+            'tableCellProperties': {
+                'borderColors': customColorPalette,
+                'backgroundColors': customColorPalette
+            }
+        },
+        'fontColor': {
+            'colors': customColorPalette
+        },
+        'fontBackgroundColor': {
+            'colors': customColorPalette
+        },
+        'heading' : {
+            'options': [
+                { 'model': 'paragraph', 'title': 'Paragraph', 'class': 'ck-heading_paragraph' },
+                { 'model': 'heading1', 'view': 'h1', 'title': 'Heading 1', 'class': 'ck-heading_heading1' },
+                { 'model': 'heading2', 'view': 'h2', 'title': 'Heading 2', 'class': 'ck-heading_heading2' },
+                { 'model': 'heading3', 'view': 'h3', 'title': 'Heading 3', 'class': 'ck-heading_heading3' }
+            ]
+        }
     },
-    'minimal': {
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Undo', 'Redo'],
-            ['Bold', 'Italic', 'Underline', '-', 'RemoveFormat'],
-            ['NumberedList', 'BulletedList'],
-            ['Link', 'Unlink'],
-            ['Source'],
-        ],
-        'height': 200,
-        'width': '100%',
-        'extraPlugins': ','.join([
-            'autolink',
-            'autogrow',
-            'elementspath'
-        ]),
-        'removePlugins': 'stylesheetparser',
-        'allowedContent': True,
-    },
+    'list': {
+        'properties': {
+            'styles': 'true',
+            'startIndex': 'true',
+            'reversed': 'true',
+        }
+    }
 }
+
+# CKEditor 5 Upload settings
+CKEDITOR_5_UPLOAD_PATH = "uploads/"
+CKEDITOR_5_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"
 
 # Environment and Dashboard callbacks for Unfold
 def environment_callback(request):

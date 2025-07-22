@@ -21,4 +21,5 @@ urlpatterns = [
     path('bookings/<int:package_id>/', views.bookings, name='users-bookings'),
     path('booking_success/<int:booking_id>/', views.booking_success, name='users-booking-success'),
     path('activate/<uid64>/<token>',views.ActivateAccountView.as_view(),name='activate'),
+    path('docs/', views.documentation, name='documentation'),
 ]

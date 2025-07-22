@@ -1,5 +1,6 @@
 {% extends 'adminside/base.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}Travel Packages - Novustell Travel{% endblock %}
 {% block meta_description %}Discover amazing travel packages and holiday deals with Novustell Travel. From luxury resorts to adventure tours, find your perfect getaway.{% endblock %}
@@ -1025,16 +1026,7 @@
     <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="package-card">
             <div class="package-image{% if not package.featured_image or not package.featured_image.cdn_url %} has-placeholder{% endif %}">
-                {% if package.featured_image and package.featured_image.cdn_url %}
-                    <img src="{{ package.featured_image.cdn_url }}"
-                         alt="{{ package.name }}"
-                         class="img-fluid package-main-image"
-                         onerror="handleImageError(this)">
-                {% else %}
-                    <img src="{% static 'assets/images/place/place-1.jpg' %}"
-                         alt="Default package image for {{ package.name }}"
-                         class="img-fluid placeholder-image">
-                {% endif %}
+                {% image_with_placeholder package.featured_image "img-fluid package-main-image" package.name %}
 
                 {% if package.is_featured %}
                 <div class="featured-badge">

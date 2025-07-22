@@ -1,5 +1,6 @@
 {% extends 'adminside/base.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}Accommodations - Novustell Travel{% endblock %}
 {% block meta_description %}Find the perfect accommodation for your stay with Novustell Travel. From luxury hotels to cozy guesthouses, discover amazing places to stay.{% endblock %}
@@ -719,7 +720,7 @@
     <div class="col-lg-4 col-md-6">
         <div class="accommodation-card">
             <div class="accommodation-image">
-                <img src="{{ accommodation.image.cdn_url }}" alt="{{ accommodation.name }}" class="img-fluid">
+                {% image_with_placeholder accommodation.image "img-fluid" accommodation.name %}
                 {% if accommodation.is_featured %}
                 <div class="featured-badge">
                     <i class="fas fa-star me-1"></i>Featured

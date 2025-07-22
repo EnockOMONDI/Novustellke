@@ -36,6 +36,9 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .utils import send_booking_confirmation_email
 from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm
+from django.contrib.auth.models import User
+from blog.models import Post, Category
+from adminside.models import Destination, Package, Accommodation
 
 
 
@@ -335,8 +338,10 @@ def home(request):
 
 	packages=zip(packs,nights,price,travel)
 
+	# Get featured destinations for homepage
+	featured_destinations = Destination.objects.filter(is_featured=True, is_active=True).order_by('name')
 
-	context={'dests':destinations,'dests1': dests1, 'package1':package1, 'packages':packages}
+	context={'dests':destinations,'dests1': dests1, 'package1':package1, 'packages':packages, 'featured_destinations': featured_destinations}
 	print(packs)
 
 
@@ -572,3 +577,35 @@ class ActivateAccountView(View):
 
 			return redirect('login')
 		return HttpResponse('THIS VERIFICATION CODE HAS ALREADY BEEN USED USE ANOTHER EMAIL TO CREATE AN ACCOUNT OR LOG IN WITH YOUR DETAILS')
+
+
+def documentation(request):
+    """
+    Documentation page for Novustell Travel Django project
+    """
+    # Get project statistics for the documentation
+    stats = {
+        'total_destinations': Destination.objects.count(),
+        'total_packages': Package.objects.count(),
+        'total_accommodations': Accommodation.objects.count(),
+        'total_blog_posts': Post.objects.count(),
+        'total_categories': Category.objects.count(),
+        'total_users': User.objects.count(),
+        'published_posts': Post.objects.filter(status='published').count(),
+        'featured_packages': Package.objects.filter(is_featured=True).count(),
+        'active_destinations': Destination.objects.filter(is_active=True).count(),
+    }
+
+    # Get recent activity for dashboard
+    recent_posts = Post.objects.filter(status='published').order_by('-date')[:5]
+    recent_packages = Package.objects.filter(status='published').order_by('-created_at')[:5]
+
+    context = {
+        'stats': stats,
+        'recent_posts': recent_posts,
+        'recent_packages': recent_packages,
+        'page_title': 'Project Documentation',
+        'page_description': 'Comprehensive documentation for the Novustell Travel Django project including architecture, user guides, and technical specifications.',
+    }
+
+    return render(request, 'users/documentation.html', context)

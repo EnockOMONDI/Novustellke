@@ -560,8 +560,12 @@
     }
     
     //===== Wow js
-    
-    new WOW().init();
+
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    } else {
+        console.warn('WOW.js is not loaded');
+    }
 
 
     //======= Price Quantity

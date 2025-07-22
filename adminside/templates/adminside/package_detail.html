@@ -1,5 +1,6 @@
 {% extends 'adminside/base.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}{{ package.name }} - Novustell Travel{% endblock %}
 {% block meta_description %}{{ package.description|truncatewords:30 }}{% endblock %}
@@ -253,7 +254,7 @@
             <h3><i class="fas fa-bed me-2"></i>Accommodations</h3>
             {% for accommodation in package.available_accommodations.all %}
             <div class="accommodation-item">
-                <img src="{{ accommodation.image.cdn_url }}" alt="{{ accommodation.name }}">
+                {% image_with_placeholder accommodation.image "" accommodation.name %}
                 <div>
                     <h5>{{ accommodation.name }}</h5>
                     <p>{{ accommodation.description|truncatewords:20 }}</p>

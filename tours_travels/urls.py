@@ -13,7 +13,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ckeditor/', include('ckeditor_uploader.urls')),  # CKEditor file uploads
+    path("ckeditor5/", include('django_ckeditor_5.urls')),  # CKEditor 5 file uploads
     #path('',tours_travels_views.home,name = 'home'),
   
     path('', include(('users.urls', 'users'), namespace='home')),

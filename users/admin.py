@@ -1,14 +1,14 @@
 from django.contrib import admin
 from django import forms
 from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry
-from ckeditor.widgets import CKEditorWidget
+from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
     class Meta:
         model = UserBookings
         fields = '__all__'
         widgets = {
-            'special_requests': CKEditorWidget(config_name='minimal'),
+            'special_requests': CKEditor5Widget(config_name='default'),
         }
 
 class MICEInquiryAdminForm(forms.ModelForm):
@@ -16,7 +16,7 @@ class MICEInquiryAdminForm(forms.ModelForm):
         model = MICEInquiry
         fields = '__all__'
         widgets = {
-            'event_details': CKEditorWidget(config_name='default'),
+            'event_details': CKEditor5Widget(config_name='default'),
         }
 
 class StudentTravelInquiryAdminForm(forms.ModelForm):
@@ -24,7 +24,7 @@ class StudentTravelInquiryAdminForm(forms.ModelForm):
         model = StudentTravelInquiry
         fields = '__all__'
         widgets = {
-            'travel_details': CKEditorWidget(config_name='default'),
+            'travel_details': CKEditor5Widget(config_name='default'),
         }
 
 class NGOTravelInquiryAdminForm(forms.ModelForm):
@@ -32,7 +32,7 @@ class NGOTravelInquiryAdminForm(forms.ModelForm):
         model = NGOTravelInquiry
         fields = '__all__'
         widgets = {
-            'travel_details': CKEditorWidget(config_name='default'),
+            'travel_details': CKEditor5Widget(config_name='default'),
         }
 
 @admin.register(UserBookings)
