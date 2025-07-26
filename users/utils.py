@@ -41,7 +41,7 @@ def send_booking_confirmation_email(booking):
             subject,
             email_body,
             settings.DEFAULT_FROM_EMAIL,
-            ['info@novustelltravel.com'],  # Recipient email
+            ['technical@novustelltravel.com'],  # Recipient email
             html_message=email_body,  # Optional: HTML email
             fail_silently=False,
         )

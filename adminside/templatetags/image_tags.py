@@ -161,3 +161,22 @@ def currency_format(value):
             return f"${value:,.2f}"
     except (ValueError, TypeError, Exception):
         return ""
+
+@register.filter
+def split(value, delimiter=","):
+    """
+    Split a string by delimiter and return a list
+
+    Usage:
+    {% load image_tags %}
+    {% for item in amenities|split:"," %}
+        {{ item }}
+    {% endfor %}
+    """
+    if not value:
+        return []
+
+    try:
+        return [item.strip() for item in str(value).split(delimiter) if item.strip()]
+    except (AttributeError, TypeError):
+        return []

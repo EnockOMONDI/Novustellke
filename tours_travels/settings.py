@@ -43,6 +43,8 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+# Site URL for email links
+SITE_URL = config('SITE_URL', default='http://localhost:8000')
 
 # Application definition
 
@@ -203,17 +205,22 @@ TEMPLATE_DIRS = (
 )
 
 
-# Email settings
+# Email settings for Novustell Travel
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-# Email credentials - using environment variables if available, otherwise fallback to hardcoded values
-# For production, always use environment variables for security
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'iagtyanshoydpavg')
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# Novustell Travel email credentials
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'dedeexpeditions@gmail.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'roqu frlt wvof rqxk')
+DEFAULT_FROM_EMAIL = 'NOVUSTELL TRAVEL'
+
+# Admin email for notifications
+ADMIN_EMAIL = 'technical@novustelltravel.com'
+
+# Cart session configuration
+CART_SESSION_ID = 'cart'
 
 # Django Unfold Configuration
 from django.templatetags.static import static

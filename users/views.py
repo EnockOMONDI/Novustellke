@@ -5,7 +5,11 @@ import smtplib
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import UserBookings
+from .models import UserBookings, UserProfile, BucketList, Booking
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
+from django.db.models import Q
+from django.http import JsonResponse
 
 
 from email.mime.multipart import MIMEMultipart
@@ -124,7 +128,7 @@ def micepage(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
+                msg['To'] = "technical@novustelltravel.com"
                 msg['Subject'] = f"New MICE Inquiry from {inquiry.company_name}"
 
                 # Create HTML content with better formatting
@@ -188,7 +192,7 @@ def student_travel(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
+                msg['To'] = "technical@novustelltravel.com"
                 msg['Subject'] = f"New Student Travel Inquiry from {inquiry.school_name}"
 
                 # Create HTML content with better formatting
@@ -252,7 +256,7 @@ def ngo_travel(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
+                msg['To'] = "technical@novustelltravel.com"
                 msg['Subject'] = f"New NGO Travel Inquiry from {inquiry.organization_name}"
 
                 # Create HTML content with better formatting
@@ -526,7 +530,7 @@ def send_booking_email(booking):
         # Email content
         msg = MIMEMultipart()
         msg['From'] = f"Novustell Travel <{sender_email}>"
-        msg['To'] = "info@novustelltravel.com"
+        msg['To'] = "technical@novustelltravel.com"
         msg['Subject'] = f"New Booking: {booking.full_name} for {booking.package.name}"
 
         message = f"""
@@ -609,3 +613,316 @@ def documentation(request):
     }
 
     return render(request, 'users/documentation.html', context)
+
+
+@login_required
+def user_profile(request):
+    """
+    User profile dashboard with booking history and account management
+    """
+    user = request.user
+    profile, created = UserProfile.objects.get_or_create(user=user)
+
+    # Get user's bookings
+    bookings = Booking.objects.filter(user=user).order_by('-created_at')
+
+    # Get bucket list items
+    bucket_list = BucketList.objects.filter(user=user).order_by('-created_at')
+
+    # Calculate statistics
+    total_bookings = bookings.count()
+    total_spent = sum(booking.total_amount for booking in bookings if booking.total_amount)
+    upcoming_bookings = bookings.filter(status__in=['pending', 'confirmed']).count()
+
+    context = {
+        'user': user,
+        'profile': profile,
+        'bookings': bookings[:10],  # Show latest 10 bookings
+        'bucket_list': bucket_list[:5],  # Show latest 5 bucket list items
+        'total_bookings': total_bookings,
+        'total_spent': total_spent,
+        'upcoming_bookings': upcoming_bookings,
+        'page_title': 'My Profile',
+    }
+
+    return render(request, 'users/user_profile.html', context)
+
+
+@login_required
+def edit_profile(request):
+    """
+    Edit user profile information
+    """
+    user = request.user
+    profile, created = UserProfile.objects.get_or_create(user=user)
+
+    if request.method == 'POST':
+        # Update user basic info
+        user.first_name = request.POST.get('first_name', '')
+        user.last_name = request.POST.get('last_name', '')
+        user.email = request.POST.get('email', '')
+        user.save()
+
+        # Update profile info
+        profile.phone_number = request.POST.get('phone_number', '')
+        profile.date_of_birth = request.POST.get('date_of_birth') or None
+        profile.nationality = request.POST.get('nationality', '')
+        profile.passport_number = request.POST.get('passport_number', '')
+        profile.emergency_contact_name = request.POST.get('emergency_contact_name', '')
+        profile.emergency_contact_phone = request.POST.get('emergency_contact_phone', '')
+        profile.preferred_travel_style = request.POST.get('preferred_travel_style', '')
+        profile.dietary_requirements = request.POST.get('dietary_requirements', '')
+        profile.special_needs = request.POST.get('special_needs', '')
+        profile.email_notifications = request.POST.get('email_notifications') == 'on'
+        profile.marketing_emails = request.POST.get('marketing_emails') == 'on'
+        profile.save()
+
+        messages.success(request, 'Your profile has been updated successfully!')
+        return redirect('users:user_profile')
+
+    context = {
+        'user': user,
+        'profile': profile,
+        'page_title': 'Edit Profile',
+    }
+
+    return render(request, 'users/edit_profile.html', context)
+
+
+@login_required
+def change_password(request):
+    """
+    Change user password
+    """
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(request, 'Your password was successfully updated!')
+            return redirect('users:user_profile')
+        else:
+            messages.error(request, 'Please correct the errors below.')
+    else:
+        form = PasswordChangeForm(request.user)
+
+    context = {
+        'form': form,
+        'page_title': 'Change Password',
+    }
+
+    return render(request, 'users/change_password.html', context)
+
+
+@login_required
+def booking_history(request):
+    """
+    Detailed booking history for the user
+    """
+    user = request.user
+    bookings = Booking.objects.filter(user=user).order_by('-created_at')
+
+    # Filter by status if provided
+    status_filter = request.GET.get('status')
+    if status_filter:
+        bookings = bookings.filter(status=status_filter)
+
+    # Search functionality
+    search_query = request.GET.get('search')
+    if search_query:
+        bookings = bookings.filter(
+            Q(package__name__icontains=search_query) |
+            Q(booking_reference__icontains=search_query) |
+            Q(package__main_destination__name__icontains=search_query)
+        )
+
+    context = {
+        'bookings': bookings,
+        'status_filter': status_filter,
+        'search_query': search_query,
+        'page_title': 'Booking History',
+    }
+
+    return render(request, 'users/booking_history.html', context)
+
+
+@login_required
+def bucket_list_view(request):
+    """
+    User's travel bucket list
+    """
+    user = request.user
+    bucket_list = BucketList.objects.filter(user=user).order_by('-created_at')
+
+    # Filter by item type if provided
+    item_type = request.GET.get('type')
+    if item_type:
+        bucket_list = bucket_list.filter(item_type=item_type)
+
+    context = {
+        'bucket_list': bucket_list,
+        'item_type': item_type,
+        'page_title': 'My Bucket List',
+    }
+
+    return render(request, 'users/bucket_list.html', context)
+
+
+@login_required
+def add_to_bucket_list(request):
+    """
+    Add item to user's bucket list via AJAX
+    """
+    if request.method == 'POST':
+        item_type = request.POST.get('item_type')
+        item_id = request.POST.get('item_id')
+        notes = request.POST.get('notes', '')
+        priority = request.POST.get('priority', 'medium')
+
+        try:
+            # Check if item already exists in bucket list
+            existing_item = None
+            if item_type == 'package':
+                existing_item = BucketList.objects.filter(user=request.user, package_id=item_id).first()
+            elif item_type == 'accommodation':
+                existing_item = BucketList.objects.filter(user=request.user, accommodation_id=item_id).first()
+            elif item_type == 'destination':
+                existing_item = BucketList.objects.filter(user=request.user, destination_id=item_id).first()
+
+            if existing_item:
+                return JsonResponse({'success': False, 'message': 'Item already in your bucket list!'})
+
+            # Create new bucket list item
+            bucket_item = BucketList.objects.create(
+                user=request.user,
+                item_type=item_type,
+                notes=notes,
+                priority=priority
+            )
+
+            # Set the appropriate foreign key
+            if item_type == 'package':
+                bucket_item.package_id = item_id
+            elif item_type == 'accommodation':
+                bucket_item.accommodation_id = item_id
+            elif item_type == 'destination':
+                bucket_item.destination_id = item_id
+
+            bucket_item.save()
+
+            return JsonResponse({'success': True, 'message': 'Added to your bucket list!'})
+
+        except Exception as e:
+            return JsonResponse({'success': False, 'message': f'Error: {str(e)}'})
+
+    return JsonResponse({'success': False, 'message': 'Invalid request method'})
+
+
+@login_required
+def remove_from_bucket_list(request, item_id):
+    """
+    Remove item from user's bucket list
+    """
+    try:
+        bucket_item = BucketList.objects.get(id=item_id, user=request.user)
+        bucket_item.delete()
+        messages.success(request, 'Item removed from your bucket list!')
+    except BucketList.DoesNotExist:
+        messages.error(request, 'Item not found in your bucket list.')
+
+    return redirect('users:bucket_list')
+
+
+@login_required
+def booking_detail(request, booking_reference):
+    """
+    Detailed view of a specific booking
+    """
+    booking = get_object_or_404(Booking, booking_reference=booking_reference, user=request.user)
+
+    context = {
+        'booking': booking,
+        'page_title': f'Booking {booking.booking_reference}',
+    }
+
+    return render(request, 'users/booking_detail.html', context)
+
+
+@login_required
+def add_to_bucket_list(request):
+    """
+    Add item to user's bucket list via AJAX
+    """
+    if request.method == 'POST':
+        item_type = request.POST.get('item_type')
+        item_id = request.POST.get('item_id')
+        notes = request.POST.get('notes', '')
+        priority = request.POST.get('priority', 'medium')
+
+        try:
+            # Check if item already exists in bucket list
+            existing_item = None
+            if item_type == 'package':
+                existing_item = BucketList.objects.filter(user=request.user, package_id=item_id).first()
+            elif item_type == 'accommodation':
+                existing_item = BucketList.objects.filter(user=request.user, accommodation_id=item_id).first()
+            elif item_type == 'destination':
+                existing_item = BucketList.objects.filter(user=request.user, destination_id=item_id).first()
+
+            if existing_item:
+                return JsonResponse({'success': False, 'message': 'Item already in your bucket list!'})
+
+            # Create new bucket list item
+            bucket_item = BucketList.objects.create(
+                user=request.user,
+                item_type=item_type,
+                notes=notes,
+                priority=priority
+            )
+
+            # Set the appropriate foreign key
+            if item_type == 'package':
+                bucket_item.package_id = item_id
+            elif item_type == 'accommodation':
+                bucket_item.accommodation_id = item_id
+            elif item_type == 'destination':
+                bucket_item.destination_id = item_id
+
+            bucket_item.save()
+
+            return JsonResponse({'success': True, 'message': 'Added to your bucket list!'})
+
+        except Exception as e:
+            return JsonResponse({'success': False, 'message': f'Error: {str(e)}'})
+
+    return JsonResponse({'success': False, 'message': 'Invalid request method'})
+
+
+@login_required
+def remove_from_bucket_list(request, item_id):
+    """
+    Remove item from user's bucket list
+    """
+    try:
+        bucket_item = BucketList.objects.get(id=item_id, user=request.user)
+        bucket_item.delete()
+        messages.success(request, 'Item removed from your bucket list!')
+    except BucketList.DoesNotExist:
+        messages.error(request, 'Item not found in your bucket list.')
+
+    return redirect('users:bucket_list')
+
+
+@login_required
+def booking_detail(request, booking_reference):
+    """
+    Detailed view of a specific booking
+    """
+    booking = get_object_or_404(Booking, booking_reference=booking_reference, user=request.user)
+
+    context = {
+        'booking': booking,
+        'page_title': f'Booking {booking.booking_reference}',
+    }
+
+    return render(request, 'users/booking_detail.html', context)

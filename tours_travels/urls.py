@@ -5,6 +5,10 @@ from . import views as tours_travels_views
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
+from .health_check import (
+    health_check, health_detailed, readiness_check,
+    liveness_check, metrics, csp_report, version_info
+)
 
 
 
@@ -14,8 +18,18 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("ckeditor5/", include('django_ckeditor_5.urls')),  # CKEditor 5 file uploads
+
+    # Health check endpoints
+    path('health/', health_check, name='health_check'),
+    path('health/detailed/', health_detailed, name='health_detailed'),
+    path('health/ready/', readiness_check, name='readiness_check'),
+    path('health/live/', liveness_check, name='liveness_check'),
+    path('metrics/', metrics, name='metrics'),
+    path('csp-report/', csp_report, name='csp_report'),
+    path('version/', version_info, name='version_info'),
+
     #path('',tours_travels_views.home,name = 'home'),
-  
+
     path('', include(('users.urls', 'users'), namespace='home')),
     path('adminside/', include(('adminside.urls', 'adminside'), namespace='adminside')),
     path('blog/', include(('blog.urls', 'blog'), namespace='blog')),
@@ -24,7 +38,7 @@ urlpatterns = [
     path('mail/',tours_travels_views.mail,name='mail'),
 
     path('', include('users.urls')),
-    
+
 
 ]
 

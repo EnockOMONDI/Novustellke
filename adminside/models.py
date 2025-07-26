@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.core.exceptions import ValidationError
+from django.utils.text import slugify
 from pyuploadcare.dj.models import ImageField
 from django_ckeditor_5.fields import CKEditor5Field
 
@@ -72,6 +73,15 @@ class Destination(models.Model):
             raise ValidationError("Cities must have a country as parent")
         if self.destination_type == self.PLACE and (not self.parent or self.parent.destination_type != self.CITY):
             raise ValidationError("Places must have a city as parent")
+
+    def save(self, *args, **kwargs):
+        """Clean slug before saving"""
+        if self.slug:
+            # Replace special characters that aren't allowed in Django slugs
+            self.slug = self.slug.replace('&', 'and').replace(' ', '-')
+            # Ensure slug only contains valid characters
+            self.slug = slugify(self.slug, allow_unicode=False)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.get_full_name()
@@ -169,6 +179,15 @@ class Accommodation(models.Model):
             models.Index(fields=['destination', 'is_active']),
             models.Index(fields=['accommodation_type', 'is_active']),
         ]
+
+    def save(self, *args, **kwargs):
+        """Clean slug before saving"""
+        if self.slug:
+            # Replace special characters that aren't allowed in Django slugs
+            self.slug = self.slug.replace('&', 'and').replace(' ', '-')
+            # Ensure slug only contains valid characters
+            self.slug = slugify(self.slug, allow_unicode=False)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.name} - {self.destination.name}"
@@ -323,6 +342,15 @@ class Package(models.Model):
             models.Index(fields=['main_destination', 'status']),
             models.Index(fields=['status', 'is_featured']),
         ]
+
+    def save(self, *args, **kwargs):
+        """Clean slug before saving"""
+        if self.slug:
+            # Replace special characters that aren't allowed in Django slugs
+            self.slug = self.slug.replace('&', 'and').replace(' ', '-')
+            # Ensure slug only contains valid characters
+            self.slug = slugify(self.slug, allow_unicode=False)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.name

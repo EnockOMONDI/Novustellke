@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django import forms
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.auth.models import User
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -161,3 +163,64 @@ class NGOTravelInquiryAdmin(admin.ModelAdmin):
         js = (
             'ckeditor/ckeditor/ckeditor.js',
         )
+
+
+# User Profile Admin
+class UserProfileInline(admin.StackedInline):
+    model = UserProfile
+    can_delete = False
+    verbose_name_plural = 'Profile'
+    fields = (
+        'phone_number', 'date_of_birth', 'nationality', 'passport_number',
+        'emergency_contact_name', 'emergency_contact_phone',
+        'preferred_travel_style', 'dietary_requirements', 'special_needs',
+        'email_notifications', 'marketing_emails'
+    )
+
+
+class UserAdmin(BaseUserAdmin):
+    inlines = (UserProfileInline,)
+    list_display = ('username', 'email', 'first_name', 'last_name', 'is_staff', 'date_joined')
+    list_filter = ('is_staff', 'is_superuser', 'is_active', 'date_joined')
+
+
+@admin.register(Booking)
+class BookingAdmin(admin.ModelAdmin):
+    list_display = ('booking_reference', 'full_name', 'package', 'status', 'total_amount', 'created_at')
+    list_filter = ('status', 'created_at', 'travel_date')
+    search_fields = ('booking_reference', 'full_name', 'email', 'package__name')
+    readonly_fields = ('booking_reference', 'created_at', 'updated_at')
+    fieldsets = (
+        ('Booking Information', {
+            'fields': ('booking_reference', 'package', 'user', 'status')
+        }),
+        ('Guest Details', {
+            'fields': ('full_name', 'email', 'phone_number', 'number_of_adults', 'number_of_children', 'number_of_rooms')
+        }),
+        ('Travel Details', {
+            'fields': ('travel_date', 'selected_accommodations', 'selected_travel_modes')
+        }),
+        ('Pricing', {
+            'fields': ('package_price', 'accommodation_price', 'travel_price', 'total_amount')
+        }),
+        ('Additional Information', {
+            'fields': ('special_requests',)
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+
+@admin.register(BucketList)
+class BucketListAdmin(admin.ModelAdmin):
+    list_display = ('user', 'item_type', 'item_name', 'priority', 'created_at')
+    list_filter = ('item_type', 'priority', 'created_at')
+    search_fields = ('user__username', 'user__email', 'notes')
+    readonly_fields = ('created_at',)
+
+
+# Re-register UserAdmin
+admin.site.unregister(User)
+admin.site.register(User, UserAdmin)
