@@ -319,20 +319,23 @@ def send_job_application_emails(job_application):
     from django.template.loader import render_to_string
     from django.conf import settings
 
-    # Email to admin
+    # Email to admin (send to both careers and info email addresses)
     admin_subject = f'New Job Application - {job_application.get_position_display()}'
     admin_message = render_to_string('users/emails/job_application_admin.html', {
         'application': job_application
     })
 
-    admin_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
+    # Send to both careers and info email addresses
+    careers_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
+    info_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
+    recipient_list = [careers_email, info_email]
 
     send_mail(
         subject=admin_subject,
         message='',  # Plain text version
         html_message=admin_message,
         from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[admin_email],
+        recipient_list=recipient_list,
         fail_silently=False,
     )
 

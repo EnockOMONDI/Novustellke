@@ -94,35 +94,32 @@ class EmailTester:
     def test_basic_email_sending(self):
         """Test basic email sending functionality"""
         self.print_header("Basic Email Sending Test")
-        
+
         try:
-            # Send a simple test email
-            subject = f"Novustell Travel Email Test - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-            message = """
-            This is a test email from the Novustell Travel application.
-            
-            Email functionality test results:
-            - SMTP connection: Working
-            - Email authentication: Successful
-            - Email sending: Functional
-            
-            This email was sent automatically by the email testing script.
-            """
-            
-            from_email = settings.DEFAULT_FROM_EMAIL
-            recipient_list = [settings.ADMIN_EMAIL]
-            
-            send_mail(
-                subject=subject,
-                message=message,
-                from_email=from_email,
-                recipient_list=recipient_list,
-                fail_silently=False,
+            # Test using the working verification_mail function approach
+            from tours_travels.mail import verification_mail
+            from django.contrib.auth.models import User
+
+            # Create a test user (don't save to database)
+            test_user = User(
+                username="emailtest",
+                email=settings.ADMIN_EMAIL,
+                first_name="Email",
+                last_name="Test"
             )
-            
-            self.print_test("Basic Email Sending", "PASS", 
-                          f"Test email sent to {settings.ADMIN_EMAIL}")
-            
+
+            # Test verification email to admin
+            test_link = "http://localhost:8000/test-email-functionality"
+
+            result = verification_mail(test_link, test_user)
+
+            if result:
+                self.print_test("Basic Email Sending", "PASS",
+                              f"Test email sent to {settings.ADMIN_EMAIL}")
+            else:
+                self.print_test("Basic Email Sending", "FAIL",
+                              "Failed to send test email")
+
         except Exception as e:
             self.print_test("Basic Email Sending", "FAIL", f"Error: {str(e)}")
     
@@ -192,8 +189,11 @@ class EmailTester:
     def test_job_application_email(self):
         """Test job application email functionality"""
         self.print_header("Job Application Email Test")
-        
+
         try:
+            # Test the actual send_job_application_emails function
+            from users.views import send_job_application_emails
+
             # Create a test job application
             test_application = JobApplication(
                 full_name="Test Applicant",
@@ -204,45 +204,19 @@ class EmailTester:
                 availability_date="2025-09-01",
                 cover_letter="This is a test cover letter for email functionality testing."
             )
-            
-            # Test admin notification email
-            admin_subject = f'New Job Application - {test_application.get_position_applied_for_display()}'
-            admin_message = render_to_string('users/emails/job_application_admin.html', {
-                'application': test_application
-            })
-            
-            jobs_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
-            
-            send_mail(
-                subject=admin_subject,
-                message='',
-                html_message=admin_message,
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[jobs_email],
-                fail_silently=False,
-            )
-            
-            self.print_test("Job Application Admin Email", "PASS", 
-                          f"Admin notification sent to {jobs_email}")
-            
-            # Test applicant confirmation email
-            applicant_subject = f'Application Received - {test_application.get_position_applied_for_display()}'
-            applicant_message = render_to_string('users/emails/job_application_confirmation.html', {
-                'application': test_application
-            })
-            
-            send_mail(
-                subject=applicant_subject,
-                message='',
-                html_message=applicant_message,
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[test_application.email],
-                fail_silently=False,
-            )
-            
-            self.print_test("Job Application Confirmation Email", "PASS", 
+
+            # Test the actual function that sends to both email addresses
+            send_job_application_emails(test_application)
+
+            careers_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
+            info_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
+
+            self.print_test("Job Application Admin Email", "PASS",
+                          f"Admin notifications sent to {careers_email} and {info_email}")
+
+            self.print_test("Job Application Confirmation Email", "PASS",
                           f"Confirmation email sent to {test_application.email}")
-            
+
         except Exception as e:
             self.print_test("Job Application Email Test", "FAIL", f"Error: {str(e)}")
     

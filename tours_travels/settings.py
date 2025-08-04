@@ -212,8 +212,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # Novustell Travel email credentials
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'dedeexpeditions@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'roqu frlt wvof rqxk')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'iagt yans hoyd pavg')
 DEFAULT_FROM_EMAIL = 'NOVUSTELL TRAVEL'
 
 # Admin email for notifications

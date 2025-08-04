@@ -69,11 +69,11 @@ services:
 
       # Email Configuration
       - key: EMAIL_HOST_USER
-        value: dedeexpeditions@gmail.com
+        value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: roqu frlt wvof rqxk
+        sync: false  # Set manually: iagt yans hoyd pavg
       - key: DEFAULT_FROM_EMAIL
-        value: Novustell Travel <dedeexpeditions@gmail.com>
+        value: Novustell Travel <novustellke@gmail.com>
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
       - key: JOBS_EMAIL
@@ -190,7 +190,7 @@ services:
           name: novustell-travel
           envVarKey: SECRET_KEY
       - key: EMAIL_HOST_USER
-        value: dedeexpeditions@gmail.com
+        value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
         sync: false
       - key: ADMIN_EMAIL
