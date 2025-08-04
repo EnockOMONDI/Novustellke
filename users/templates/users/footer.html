@@ -28,19 +28,20 @@
                                 <h4 class="widget-title">Services</h4>
                                 <div class="footer-content">
                                     <ul class="footer-widget-nav">
-                                        <li><a href="#">Air Ticketing </a></li>
-                                        <li><a href="#"> Hotel Bookings</a></li>
-                                        <li><a href="#">Tours and Safaris </a></li>
-                                        <li><a href="#">Visa Assistance</a></li>
-                                        <li><a href="#"> Travel Insurance </a></li>
-                                        <li><a href="#">Car Hire </a></li>
-                                        <li><a href="#"> Frequent Flyer Registration</a></li>
+                                        <li><a href="{% url 'adminside:destination_list' %}">Destinations</a></li>
+                                        <li><a href="{% url 'adminside:user_package_list' %}">Travel Packages</a></li>
+                                        <li><a href="{% url 'adminside:accommodation_list' %}">Accommodations</a></li>
+                                        <li><a href="{% url 'users:corporatepage' %}">Corporate Travel</a></li>
+                                        <li><a href="{% url 'users:micepage' %}">MICE Services</a></li>
+                                        <li><a href="{% url 'users:student-travel' %}">Student Travel</a></li>
+                                        <li><a href="{% url 'users:ngo-travel' %}">NGO Travel</a></li>
                                     </ul>
                                     <ul class="footer-widget-nav">
-                                        <li><a href="#">We are Hiring</a></li>
-                                        <li><a href="#">Latest News & Blog</a></li>
-                                        <li><a href="#">Our Clients</a></li>
-                                        <li><a href="#">Meet Our team</a></li>
+                                        <li><a href="{% url 'users:aboutus' %}">About Us</a></li>
+                                        <li><a href="{% url 'users:contactus' %}">Contact Us</a></li>
+                                        <li><a href="{% url 'blog:blog-list' %}">Travel Blog</a></li>
+                                        <li><a href="{% url 'users:careers' %}">Careers</a></li>
+                                        <li><a href="{% url 'users:documentation' %}">Documentation</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,10 +52,27 @@
                                 <h4 class="widget-title">Newsletter</h4>
                                 <div class="footer-content">
                                     <p>Stay in the loop with the latest travel tips, exclusive offers, and expert insights delivered directly to your inbox.</p>
-                                    <form>
+
+                                    <!-- Newsletter Subscription Messages -->
+                                    <div id="newsletter-messages" class="mb-3" style="display: none;">
+                                        <div id="newsletter-success" class="alert alert-success" style="display: none;">
+                                            <i class="fas fa-check-circle me-2"></i>
+                                            <span id="success-message"></span>
+                                        </div>
+                                        <div id="newsletter-error" class="alert alert-danger" style="display: none;">
+                                            <i class="fas fa-exclamation-triangle me-2"></i>
+                                            <span id="error-message"></span>
+                                        </div>
+                                    </div>
+
+                                    <form id="newsletter-form" method="post" action="{% url 'users:newsletter_subscribe' %}">
+                                        {% csrf_token %}
                                         <div class="form_group">
                                             <label><i class="far fa-paper-plane"></i></label>
-                                            <input type="email" class="form_control" placeholder="Email Address" name="email" required>
+                                            <input type="email" class="form_control" placeholder="Email Address" name="email" required id="newsletter-email">
+                                            <button type="submit" class="btn btn-primary" id="newsletter-submit" style="margin-top: 10px; background: linear-gradient(135deg, #170b2c, #ff9d00); border: none; padding: 10px 20px; border-radius: 25px;">
+                                                <i class="fas fa-paper-plane me-2"></i>Subscribe
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
@@ -75,8 +93,9 @@
                             <!--=== Footer Nav ===-->
                             <div class="footer-nav float-lg-end">
                                 <ul>
-                                    <li><a href="#">Faqs</a></li>
-                                    <li><a href="#">Support</a></li>
+                                    <li><a href="{% url 'users:contactus' %}">Support</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#terms">Terms of Service</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,6 +103,74 @@
                 </div>
             </div>
         </footer><!--====== End Footer ======-->
+
+        <!-- Newsletter Subscription JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const newsletterForm = document.getElementById('newsletter-form');
+                const messagesDiv = document.getElementById('newsletter-messages');
+                const successDiv = document.getElementById('newsletter-success');
+                const errorDiv = document.getElementById('newsletter-error');
+                const successMessage = document.getElementById('success-message');
+                const errorMessage = document.getElementById('error-message');
+                const submitButton = document.getElementById('newsletter-submit');
+                const emailInput = document.getElementById('newsletter-email');
+
+                if (newsletterForm) {
+                    newsletterForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        // Show loading state
+                        const originalText = submitButton.innerHTML;
+                        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Subscribing...';
+                        submitButton.disabled = true;
+
+                        // Hide previous messages
+                        messagesDiv.style.display = 'none';
+                        successDiv.style.display = 'none';
+                        errorDiv.style.display = 'none';
+
+                        // Get form data
+                        const formData = new FormData(newsletterForm);
+
+                        // Send AJAX request
+                        fetch(newsletterForm.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'X-Requested-With': 'XMLHttpRequest',
+                                'X-CSRFToken': formData.get('csrfmiddlewaretoken')
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            messagesDiv.style.display = 'block';
+
+                            if (data.success) {
+                                successMessage.textContent = data.message;
+                                successDiv.style.display = 'block';
+                                emailInput.value = ''; // Clear the form
+                            } else {
+                                errorMessage.textContent = data.message;
+                                errorDiv.style.display = 'block';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            messagesDiv.style.display = 'block';
+                            errorMessage.textContent = 'An error occurred. Please try again later.';
+                            errorDiv.style.display = 'block';
+                        })
+                        .finally(() => {
+                            // Restore button state
+                            submitButton.innerHTML = originalText;
+                            submitButton.disabled = false;
+                        });
+                    });
+                }
+            });
+        </script>
+
         <!--====== Back To Top  ======-->
         <a href="#" class="back-to-top" ><i class="far fa-angle-up"></i></a>
         <!--====== Jquery js ======-->

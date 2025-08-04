@@ -382,6 +382,114 @@ class BucketList(models.Model):
         return None
 
 
+class JobApplication(models.Model):
+    """Model for job applications submitted through the careers page"""
+
+    POSITION_CHOICES = [
+        ('accountant', 'Accountant'),
+        ('travel_consultant', 'Travel Consultant'),
+        ('graphic_designer', 'Graphic Designer'),
+        ('marketing_specialist', 'Marketing Specialist'),
+        ('customer_service', 'Customer Service Representative'),
+        ('tour_guide', 'Tour Guide'),
+        ('operations_manager', 'Operations Manager'),
+    ]
+
+    # Personal Information
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone_number = models.CharField(max_length=20)
+
+    # Position Information
+    position_applied_for = models.CharField(max_length=50, choices=POSITION_CHOICES)
+    years_of_experience = models.PositiveIntegerField()
+    availability_date = models.DateField()
+
+    # Application Content
+    cover_letter = models.TextField(help_text="Tell us why you're interested in this position")
+    resume = models.FileField(upload_to='job_applications/resumes/', help_text="Upload your resume (PDF preferred)")
+
+    # System Information
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    # Email tracking
+    admin_notification_sent = models.BooleanField(default=False)
+    applicant_confirmation_sent = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = "Job Application"
+        verbose_name_plural = "Job Applications"
+
+    def __str__(self):
+        return f"{self.full_name} - {self.get_position_applied_for_display()}"
+
+    def get_position_display(self):
+        """Get human-readable position name"""
+        return self.get_position_applied_for_display()
+
+
+class NewsletterSubscription(models.Model):
+    """Model for newsletter subscriptions"""
+
+    email = models.EmailField(unique=True, help_text="Subscriber's email address")
+    is_active = models.BooleanField(default=True, help_text="Whether the subscription is active")
+    is_confirmed = models.BooleanField(default=False, help_text="Whether the email has been confirmed")
+
+    # Subscription preferences
+    travel_tips = models.BooleanField(default=True, help_text="Receive travel tips and guides")
+    special_offers = models.BooleanField(default=True, help_text="Receive special offers and deals")
+    destination_updates = models.BooleanField(default=True, help_text="Receive destination updates")
+
+    # Tracking information
+    subscription_date = models.DateTimeField(auto_now_add=True)
+    confirmation_date = models.DateTimeField(null=True, blank=True)
+    last_email_sent = models.DateTimeField(null=True, blank=True)
+
+    # Email tracking
+    confirmation_email_sent = models.BooleanField(default=False)
+    admin_notification_sent = models.BooleanField(default=False)
+
+    # Unsubscribe token for secure unsubscribe links
+    unsubscribe_token = models.CharField(max_length=64, unique=True, blank=True)
+
+    class Meta:
+        ordering = ['-subscription_date']
+        verbose_name = "Newsletter Subscription"
+        verbose_name_plural = "Newsletter Subscriptions"
+
+    def __str__(self):
+        status = "Active" if self.is_active else "Inactive"
+        confirmed = "Confirmed" if self.is_confirmed else "Unconfirmed"
+        return f"{self.email} - {status} ({confirmed})"
+
+    def save(self, *args, **kwargs):
+        if not self.unsubscribe_token:
+            self.unsubscribe_token = self.generate_unsubscribe_token()
+        super().save(*args, **kwargs)
+
+    def generate_unsubscribe_token(self):
+        """Generate unique unsubscribe token"""
+        import secrets
+        while True:
+            token = secrets.token_urlsafe(32)
+            if not NewsletterSubscription.objects.filter(unsubscribe_token=token).exists():
+                return token
+
+    def confirm_subscription(self):
+        """Confirm the subscription"""
+        from django.utils import timezone
+        self.is_confirmed = True
+        self.confirmation_date = timezone.now()
+        self.save()
+
+    def unsubscribe(self):
+        """Unsubscribe the user"""
+        self.is_active = False
+        self.save()
+
+
 # Signal to create UserProfile when User is created
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

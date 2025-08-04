@@ -2,7 +2,7 @@ from django.contrib import admin
 from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -219,6 +219,111 @@ class BucketListAdmin(admin.ModelAdmin):
     list_filter = ('item_type', 'priority', 'created_at')
     search_fields = ('user__username', 'user__email', 'notes')
     readonly_fields = ('created_at',)
+
+
+@admin.register(JobApplication)
+class JobApplicationAdmin(admin.ModelAdmin):
+    list_display = ('full_name', 'position_applied_for', 'email', 'years_of_experience', 'created_at')
+    list_filter = ('position_applied_for', 'years_of_experience', 'created_at', 'admin_notification_sent', 'applicant_confirmation_sent')
+    search_fields = ('full_name', 'email', 'phone_number')
+    readonly_fields = ('created_at', 'updated_at')
+    date_hierarchy = 'created_at'
+
+    fieldsets = (
+        ('Personal Information', {
+            'fields': ('full_name', 'email', 'phone_number')
+        }),
+        ('Position Details', {
+            'fields': ('position_applied_for', 'years_of_experience', 'availability_date')
+        }),
+        ('Application Content', {
+            'fields': ('cover_letter', 'resume'),
+            'classes': ('wide',)
+        }),
+        ('Email Tracking', {
+            'fields': ('admin_notification_sent', 'applicant_confirmation_sent'),
+            'classes': ('collapse',)
+        }),
+        ('System Information', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def get_queryset(self, request):
+        """Optimize queryset for admin list view"""
+        return super().get_queryset(request).select_related()
+
+
+@admin.register(NewsletterSubscription)
+class NewsletterSubscriptionAdmin(admin.ModelAdmin):
+    list_display = ('email', 'is_active', 'is_confirmed', 'subscription_date', 'get_preferences_summary')
+    list_filter = ('is_active', 'is_confirmed', 'travel_tips', 'special_offers', 'destination_updates', 'subscription_date')
+    search_fields = ('email',)
+    readonly_fields = ('subscription_date', 'confirmation_date', 'last_email_sent', 'unsubscribe_token')
+    date_hierarchy = 'subscription_date'
+    actions = ['activate_subscriptions', 'deactivate_subscriptions', 'send_confirmation_emails']
+
+    fieldsets = (
+        ('Subscription Information', {
+            'fields': ('email', 'is_active', 'is_confirmed')
+        }),
+        ('Preferences', {
+            'fields': ('travel_tips', 'special_offers', 'destination_updates'),
+            'description': 'Select which types of content the subscriber wants to receive'
+        }),
+        ('Tracking Information', {
+            'fields': ('subscription_date', 'confirmation_date', 'last_email_sent'),
+            'classes': ('collapse',)
+        }),
+        ('Email Tracking', {
+            'fields': ('confirmation_email_sent', 'admin_notification_sent'),
+            'classes': ('collapse',)
+        }),
+        ('System Information', {
+            'fields': ('unsubscribe_token',),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def get_preferences_summary(self, obj):
+        """Display a summary of subscription preferences"""
+        preferences = []
+        if obj.travel_tips:
+            preferences.append('Tips')
+        if obj.special_offers:
+            preferences.append('Offers')
+        if obj.destination_updates:
+            preferences.append('Updates')
+        return ', '.join(preferences) if preferences else 'None'
+    get_preferences_summary.short_description = 'Preferences'
+
+    def activate_subscriptions(self, request, queryset):
+        """Bulk activate subscriptions"""
+        updated = queryset.update(is_active=True)
+        self.message_user(request, f'{updated} subscriptions activated.')
+    activate_subscriptions.short_description = 'Activate selected subscriptions'
+
+    def deactivate_subscriptions(self, request, queryset):
+        """Bulk deactivate subscriptions"""
+        updated = queryset.update(is_active=False)
+        self.message_user(request, f'{updated} subscriptions deactivated.')
+    deactivate_subscriptions.short_description = 'Deactivate selected subscriptions'
+
+    def send_confirmation_emails(self, request, queryset):
+        """Send confirmation emails to unconfirmed subscriptions"""
+        from users.views import send_newsletter_subscription_emails
+        count = 0
+        for subscription in queryset.filter(is_confirmed=False):
+            try:
+                send_newsletter_subscription_emails(subscription)
+                count += 1
+            except Exception as e:
+                self.message_user(request, f'Error sending email to {subscription.email}: {e}', level='ERROR')
+
+        if count > 0:
+            self.message_user(request, f'Confirmation emails sent to {count} subscribers.')
+    send_confirmation_emails.short_description = 'Send confirmation emails'
 
 
 # Re-register UserAdmin

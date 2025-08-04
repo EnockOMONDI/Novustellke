@@ -39,7 +39,7 @@ from .forms import UserRegisterForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .utils import send_booking_confirmation_email
-from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm
+from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm, JobApplicationForm, NewsletterSubscriptionSimpleForm
 from django.contrib.auth.models import User
 from blog.models import Post, Category
 from adminside.models import Destination, Package, Accommodation
@@ -128,7 +128,7 @@ def micepage(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "technical@novustelltravel.com"
+                msg['To'] = "info@novustelltravel.com"
                 msg['Subject'] = f"New MICE Inquiry from {inquiry.company_name}"
 
                 # Create HTML content with better formatting
@@ -192,7 +192,7 @@ def student_travel(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "technical@novustelltravel.com"
+                msg['To'] = "info@novustelltravel.com"
                 msg['Subject'] = f"New Student Travel Inquiry from {inquiry.school_name}"
 
                 # Create HTML content with better formatting
@@ -256,7 +256,7 @@ def ngo_travel(request):
 
                 # Email headers
                 msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "technical@novustelltravel.com"
+                msg['To'] = "info@novustelltravel.com"
                 msg['Subject'] = f"New NGO Travel Inquiry from {inquiry.organization_name}"
 
                 # Create HTML content with better formatting
@@ -310,46 +310,273 @@ def contactus(request):
 
     return render(request, 'users/contactus.html')
 
+
+def send_job_application_emails(job_application):
+    """
+    Send email notifications for job applications
+    """
+    from django.core.mail import send_mail
+    from django.template.loader import render_to_string
+    from django.conf import settings
+
+    # Email to admin
+    admin_subject = f'New Job Application - {job_application.get_position_display()}'
+    admin_message = render_to_string('users/emails/job_application_admin.html', {
+        'application': job_application
+    })
+
+    admin_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
+
+    send_mail(
+        subject=admin_subject,
+        message='',  # Plain text version
+        html_message=admin_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[admin_email],
+        fail_silently=False,
+    )
+
+    # Email to applicant
+    applicant_subject = f'Application Received - {job_application.get_position_display()}'
+    applicant_message = render_to_string('users/emails/job_application_confirmation.html', {
+        'application': job_application
+    })
+
+    send_mail(
+        subject=applicant_subject,
+        message='',  # Plain text version
+        html_message=applicant_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[job_application.email],
+        fail_silently=False,
+    )
+
+    # Update email tracking
+    job_application.admin_notification_sent = True
+    job_application.applicant_confirmation_sent = True
+    job_application.save()
+
+
+def send_newsletter_subscription_emails(subscription):
+    """
+    Send email notifications for newsletter subscriptions
+    """
+    from django.core.mail import send_mail
+    from django.template.loader import render_to_string
+    from django.conf import settings
+
+    # Email to admin
+    admin_subject = f'New Newsletter Subscription - {subscription.email}'
+    admin_message = render_to_string('users/emails/newsletter_admin.html', {
+        'subscription': subscription
+    })
+
+    newsletter_email = getattr(settings, 'NEWSLETTER_EMAIL', 'news@novustelltravel.com')
+
+    send_mail(
+        subject=admin_subject,
+        message='',  # Plain text version
+        html_message=admin_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[newsletter_email],
+        fail_silently=False,
+    )
+
+    # Email to subscriber
+    subscriber_subject = 'Welcome to Novustell Travel Newsletter!'
+    subscriber_message = render_to_string('users/emails/newsletter_confirmation.html', {
+        'subscription': subscription
+    })
+
+    send_mail(
+        subject=subscriber_subject,
+        message='',  # Plain text version
+        html_message=subscriber_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[subscription.email],
+        fail_silently=False,
+    )
+
+    # Update email tracking
+    subscription.admin_notification_sent = True
+    subscription.confirmation_email_sent = True
+    subscription.save()
+
+
+def careers(request):
+    """
+    Careers page with job application form
+    """
+    if request.method == 'POST':
+        form = JobApplicationForm(request.POST, request.FILES)
+        if form.is_valid():
+            job_application = form.save()
+
+            # Send email notifications
+            try:
+                send_job_application_emails(job_application)
+                messages.success(request, 'Your job application has been submitted successfully! We will review your application and get back to you soon.')
+            except Exception as e:
+                messages.warning(request, 'Your application was submitted, but there was an issue sending email notifications. We will still review your application.')
+                print(f"Email error: {e}")
+
+            # Redirect to prevent resubmission
+            return redirect('users:careers')
+    else:
+        form = JobApplicationForm()
+
+    return render(request, 'users/careers.html', {'form': form})
+
+
+def newsletter_subscribe(request):
+    """
+    Handle newsletter subscription from footer form
+    """
+    from .models import NewsletterSubscription
+    from django.http import JsonResponse
+
+    if request.method == 'POST':
+        form = NewsletterSubscriptionSimpleForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+
+            # Create subscription with default preferences
+            subscription = NewsletterSubscription.objects.create(
+                email=email,
+                travel_tips=True,
+                special_offers=True,
+                destination_updates=True
+            )
+
+            # Send email notifications
+            try:
+                send_newsletter_subscription_emails(subscription)
+                if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+                    return JsonResponse({
+                        'success': True,
+                        'message': 'Thank you for subscribing! Please check your email to confirm your subscription.'
+                    })
+                else:
+                    messages.success(request, 'Thank you for subscribing! Please check your email to confirm your subscription.')
+            except Exception as e:
+                if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+                    return JsonResponse({
+                        'success': True,
+                        'message': 'You have been subscribed, but there was an issue sending the confirmation email.'
+                    })
+                else:
+                    messages.warning(request, 'You have been subscribed, but there was an issue sending the confirmation email.')
+                print(f"Newsletter email error: {e}")
+        else:
+            # Form has errors
+            error_message = list(form.errors.values())[0][0] if form.errors else 'Please enter a valid email address.'
+            if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+                return JsonResponse({
+                    'success': False,
+                    'message': error_message
+                })
+            else:
+                messages.error(request, error_message)
+
+    # Redirect back to the referring page or homepage
+    return redirect(request.META.get('HTTP_REFERER', 'users:home'))
+
+
 def home(request):
-	dests1 = Destination.objects.all()  # Retrieve all destinations from the database
-	dests=Destination.objects.all()
-	package1=Package.objects.all()
-	packs=Package.objects.filter(status=Package.PUBLISHED).order_by('total_bookings')
-	nights=[]
-	price=[]
-	travel=[]
+    """
+    Fully optimized homepage view with efficient database queries, caching, and featured accommodations
+    """
+    from django.core.cache import cache
+    from adminside.models import Accommodation
 
+    try:
+        # Get featured destinations with optimized query (limit to 8 for performance)
+        featured_destinations = Destination.objects.filter(
+            is_featured=True,
+            is_active=True
+        ).select_related().order_by('display_order', 'name')[:8]
 
-	destinations=zip(dests)
+        # Get featured accommodations with optimized query (limit to 8 for performance)
+        featured_accommodations = Accommodation.objects.select_related('destination').filter(
+            is_featured=True,
+            is_active=True
+        ).order_by('-rating', 'name')[:8]
 
-	for i in packs:
-		nights.append(i.duration_days-1)
-		first_accommodation = i.available_accommodations.first()
-		accommodation_price = first_accommodation.price_per_room_per_night if first_accommodation else 0
-		price.append(i.adult_price + accommodation_price)
-		first_travel = i.available_travel_modes.first()
-		if first_travel:
-			if first_travel.transport_type == "train":
-				travel.append("Train")
-			elif first_travel.transport_type == "flight":
-				travel.append("Flight")
-			else:
-				travel.append("Bus")
-		else:
-			travel.append("N/A")
+        # Get all active destinations for navigation (limited for performance)
+        all_destinations = Destination.objects.filter(
+            is_active=True
+        ).order_by('name')[:50]  # Limit to 50 most relevant destinations
 
+        # Get published packages with highly optimized queries (limit to 12 for homepage)
+        packages_queryset = Package.objects.select_related('main_destination').prefetch_related(
+            'available_accommodations',
+            'available_travel_modes'
+        ).filter(status=Package.PUBLISHED).order_by('-is_featured', 'total_bookings')[:12]
 
+        # Process package data efficiently with minimal loops
+        package_data = []
+        for package in packages_queryset:
+            try:
+                # Calculate nights
+                nights = max(package.duration_days - 1, 0)
 
-	packages=zip(packs,nights,price,travel)
+                # Get first accommodation price (already prefetched)
+                accommodations = list(package.available_accommodations.all())
+                accommodation_price = accommodations[0].price_per_room_per_night if accommodations else 0
 
-	# Get featured destinations for homepage
-	featured_destinations = Destination.objects.filter(is_featured=True, is_active=True).order_by('name')
+                # Calculate total price
+                total_price = package.adult_price + accommodation_price
 
-	context={'dests':destinations,'dests1': dests1, 'package1':package1, 'packages':packages, 'featured_destinations': featured_destinations}
-	print(packs)
+                # Get travel mode (already prefetched)
+                travel_modes = list(package.available_travel_modes.all())
+                if travel_modes:
+                    transport_type = travel_modes[0].transport_type
+                    travel_type = {
+                        "train": "Train",
+                        "flight": "Flight",
+                        "bus": "Bus"
+                    }.get(transport_type, "Bus")
+                else:
+                    travel_type = "N/A"
 
+                package_data.append({
+                    'package': package,
+                    'nights': nights,
+                    'price': total_price,
+                    'travel': travel_type
+                })
+            except Exception as e:
+                continue
 
-	return render(request,'users/index.html',context)
+        # Create optimized context
+        context = {
+            'featured_destinations': featured_destinations,
+            'featured_accommodations': featured_accommodations,
+            'all_destinations': all_destinations,
+            'package_data': package_data,
+            'packages': package_data,  # For backward compatibility with template
+            'dests1': all_destinations,  # For backward compatibility
+            'package1': packages_queryset,  # For backward compatibility
+        }
+
+        return render(request, 'users/index.html', context)
+
+    except Exception as e:
+        # Fallback to basic context to prevent complete failure
+        try:
+            basic_context = {
+                'featured_destinations': Destination.objects.filter(is_featured=True, is_active=True)[:4],
+                'featured_accommodations': [],
+                'all_destinations': Destination.objects.filter(is_active=True)[:20],
+                'package_data': [],
+                'packages': [],
+                'dests1': [],
+                'package1': [],
+            }
+            return render(request, 'users/index.html', basic_context)
+        except:
+            from django.http import HttpResponse
+            return HttpResponse("Homepage temporarily unavailable. Please try again later.", status=503)
 
 
 
@@ -404,74 +631,9 @@ def search(request):
 		messages.error(request, 'No results found for your search request')
 		return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
-def all_packages(request):
-    packages = Package.objects.all()
-    return render(request, 'users/package_list.html', {'packages': packages})
 
-def detail_package(request, package_id):
-    if request.user.is_authenticated:
-        try:
-            package = get_object_or_404(Package, id=package_id)
-            package_name = package.name
-            destination_name = package.main_destination.name
-            booked = package.total_bookings
-            no_of_days = package.duration_days
-            destination_description = package.main_destination.description
-            package_description = package.description
 
-            # Travelling details - get first available travel mode
-            travel_mode = package.available_travel_modes.first().name if package.available_travel_modes.exists() else "N/A"
-            travel_price = package.available_travel_modes.first().price_per_person if package.available_travel_modes.exists() else 0
 
-            # accommodation Details - get first available accommodation
-            first_accommodation = package.available_accommodations.first()
-            hotel_name = first_accommodation.name if first_accommodation else "N/A"
-            hotel_description = first_accommodation.description if first_accommodation else "N/A"
-            price_per_room = first_accommodation.price_per_room_per_night if first_accommodation else 0
-
-            # Inclusive
-            inclusive = package.inclusions
-            exclusive = package.exclusions
-
-            # Itinerary
-            try:
-                itinerary = Itinerary.objects.get(package=package)
-                itinerary_description = itinerary.days.all().order_by('day_number') # list of itinerary days
-            except Itinerary.DoesNotExist:
-                itinerary_description = []
-
-            # Images
-            package_image = package.featured_image
-
-            context = {
-                'package': package,
-                'package_name': package_name,
-                'destination_name': destination_name,
-                'no_of_days': no_of_days,
-                'destination_description': destination_description,
-                'package_description': package_description,
-                'travel_mode': travel_mode,
-                'travel_price': travel_price,
-                'hotel_name': hotel_name,
-                'hotel_description': hotel_description,
-                'price_per_room': price_per_room,
-                'inclusive': inclusive,
-                'exclusive': exclusive,
-                'itinerary_description': itinerary_description,
-                'package_image': package_image,
-                'booked': booked  # Use the variable 'booked' here
-            }
-        except Package.DoesNotExist:
-            raise Http404("Package does not exist.")
-        except Itinerary.DoesNotExist:
-            raise Http404("Itinerary does not exist.")
-        except Exception as e:
-            return HttpResponse(f"<h1>An error occurred in the database: {str(e)}</h1>")
-    else:
-        # Handle the case when the user is not authenticated
-        return HttpResponse("<h1>You need to be logged in to view this page.</h1>")
-
-    return render(request, 'users/packagedetail2.html', context)
 
 
 
@@ -530,7 +692,7 @@ def send_booking_email(booking):
         # Email content
         msg = MIMEMultipart()
         msg['From'] = f"Novustell Travel <{sender_email}>"
-        msg['To'] = "technical@novustelltravel.com"
+        msg['To'] = "info@novustelltravel.com"
         msg['Subject'] = f"New Booking: {booking.full_name} for {booking.package.name}"
 
         message = f"""

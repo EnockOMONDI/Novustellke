@@ -217,7 +217,13 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'roqu frlt wvof rqxk')
 DEFAULT_FROM_EMAIL = 'NOVUSTELL TRAVEL'
 
 # Admin email for notifications
-ADMIN_EMAIL = 'technical@novustelltravel.com'
+ADMIN_EMAIL = 'info@novustelltravel.com'
+
+# Jobs email for career applications
+JOBS_EMAIL = 'careers@novustelltravel.com'
+
+# Newsletter email for subscriptions
+NEWSLETTER_EMAIL = 'news@novustelltravel.com'
 
 # Cart session configuration
 CART_SESSION_ID = 'cart'

@@ -178,6 +178,8 @@ class Accommodation(models.Model):
         indexes = [
             models.Index(fields=['destination', 'is_active']),
             models.Index(fields=['accommodation_type', 'is_active']),
+            models.Index(fields=['is_featured', 'is_active']),
+            models.Index(fields=['rating', 'is_active']),
         ]
 
     def save(self, *args, **kwargs):

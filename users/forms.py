@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import UserBookings
 from django import forms
 from django.contrib.auth.models import User
-from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry
+from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, NewsletterSubscription
 
 
 class UserRegisterForm(UserCreationForm):
@@ -97,3 +97,141 @@ class NGOTravelInquiryForm(forms.ModelForm):
                     'class': 'form-control',
                     'placeholder': field.replace('_', ' ').title()
                 })
+
+
+class JobApplicationForm(forms.ModelForm):
+    """Form for job applications on the careers page"""
+
+    class Meta:
+        model = JobApplication
+        fields = [
+            'full_name', 'email', 'phone_number', 'position_applied_for',
+            'years_of_experience', 'availability_date', 'cover_letter', 'resume'
+        ]
+        widgets = {
+            'full_name': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter your full name'
+            }),
+            'email': forms.EmailInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter your email address'
+            }),
+            'phone_number': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter your phone number'
+            }),
+            'position_applied_for': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'years_of_experience': forms.NumberInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Years of experience',
+                'min': '0',
+                'max': '50'
+            }),
+            'availability_date': forms.DateInput(attrs={
+                'class': 'form-control',
+                'type': 'date'
+            }),
+            'cover_letter': forms.Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Tell us why you\'re interested in this position and what makes you a great fit...',
+                'rows': 6
+            }),
+            'resume': forms.FileInput(attrs={
+                'class': 'form-control',
+                'accept': '.pdf,.doc,.docx'
+            })
+        }
+
+    def clean_resume(self):
+        """Validate resume file upload"""
+        resume = self.cleaned_data.get('resume')
+        if resume:
+            # Check file size (max 5MB)
+            if resume.size > 5 * 1024 * 1024:
+                raise forms.ValidationError('Resume file size must be less than 5MB.')
+
+            # Check file extension
+            allowed_extensions = ['.pdf', '.doc', '.docx']
+            file_extension = resume.name.lower().split('.')[-1]
+            if f'.{file_extension}' not in allowed_extensions:
+                raise forms.ValidationError('Resume must be a PDF, DOC, or DOCX file.')
+
+        return resume
+
+    def clean_email(self):
+        """Validate email format"""
+        email = self.cleaned_data.get('email')
+        if email:
+            # Basic email validation (Django already does this, but we can add custom logic)
+            if not '@' in email or not '.' in email.split('@')[-1]:
+                raise forms.ValidationError('Please enter a valid email address.')
+        return email
+
+
+class NewsletterSubscriptionForm(forms.ModelForm):
+    """Form for newsletter subscriptions"""
+
+    class Meta:
+        model = NewsletterSubscription
+        fields = ['email', 'travel_tips', 'special_offers', 'destination_updates']
+        widgets = {
+            'email': forms.EmailInput(attrs={
+                'class': 'form_control',
+                'placeholder': 'Enter your email address',
+                'required': True
+            }),
+            'travel_tips': forms.CheckboxInput(attrs={
+                'class': 'form-check-input'
+            }),
+            'special_offers': forms.CheckboxInput(attrs={
+                'class': 'form-check-input'
+            }),
+            'destination_updates': forms.CheckboxInput(attrs={
+                'class': 'form-check-input'
+            })
+        }
+
+    def clean_email(self):
+        """Validate email and check for existing subscriptions"""
+        email = self.cleaned_data.get('email')
+        if email:
+            # Check if email is already subscribed and active
+            existing_subscription = NewsletterSubscription.objects.filter(
+                email=email,
+                is_active=True
+            ).first()
+
+            if existing_subscription:
+                raise forms.ValidationError('This email is already subscribed to our newsletter.')
+
+        return email
+
+
+class NewsletterSubscriptionSimpleForm(forms.Form):
+    """Simple form for footer newsletter subscription"""
+
+    email = forms.EmailField(
+        widget=forms.EmailInput(attrs={
+            'class': 'form_control',
+            'placeholder': 'Email Address',
+            'required': True
+        })
+    )
+
+    def clean_email(self):
+        """Validate email and check for existing subscriptions"""
+        email = self.cleaned_data.get('email')
+        if email:
+            # Check if email is already subscribed and active
+            existing_subscription = NewsletterSubscription.objects.filter(
+                email=email,
+                is_active=True
+            ).first()
+
+            if existing_subscription:
+                raise forms.ValidationError('This email is already subscribed to our newsletter.')
+
+        return email

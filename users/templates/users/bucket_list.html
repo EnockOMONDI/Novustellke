@@ -350,7 +350,7 @@
                         
                         <div class="bucket-actions">
                             {% if item.package %}
-                                <a href="{% url 'users:users-detail-package' item.package.id %}" class="btn-view">
+                                <a href="{% url 'adminside:package_detail' item.package.slug %}" class="btn-view">
                                     <i class="fas fa-eye me-1"></i> View Package
                                 </a>
                             {% elif item.destination %}

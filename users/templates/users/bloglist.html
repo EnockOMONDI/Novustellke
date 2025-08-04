@@ -1,6 +1,48 @@
 {% extends 'users/basemain.html' %}
 {% load static %}
 
+{% block title %}{{ page_title|default:"Travel Blog - Novustell Travel" }}{% endblock %}
+
+{% block meta_description %}{{ meta_description|default:"Discover amazing travel stories, tips, and guides from Novustell Travel. Explore destinations, get travel advice, and plan your next adventure." }}{% endblock %}
+
+{% block extra_head %}
+<!-- SEO Meta Tags -->
+<meta name="keywords" content="travel blog, travel tips, destination guides, travel stories, adventure travel, Novustell Travel">
+<meta name="author" content="Novustell Travel">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="{{ page_title|default:'Travel Blog - Novustell Travel' }}">
+<meta property="og:description" content="{{ meta_description|default:'Discover amazing travel stories, tips, and guides from Novustell Travel.' }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta property="og:site_name" content="Novustell Travel">
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title|default:'Travel Blog - Novustell Travel' }}">
+<meta name="twitter:description" content="{{ meta_description|default:'Discover amazing travel stories, tips, and guides from Novustell Travel.' }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ request.build_absolute_uri }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Novustell Travel Blog",
+  "description": "Travel stories, tips, and destination guides",
+  "url": "{{ request.build_absolute_uri }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Novustell Travel",
+    "url": "{{ request.scheme }}://{{ request.get_host }}"
+  }
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <section class="blog-hero-section" style="
@@ -15,6 +57,14 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <div class="hero-content text-white">
+                    <!-- Breadcrumb Navigation -->
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb justify-content-center bg-transparent">
+                            <li class="breadcrumb-item"><a href="/" class="text-white-50">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+                        </ol>
+                    </nav>
+
                     <h1 class="hero-title mb-4">Travel Stories & Insights</h1>
                     <p class="hero-subtitle mb-4">Discover amazing destinations, travel tips, and inspiring stories from around the world</p>
                     <div class="hero-stats d-flex justify-content-center gap-4 flex-wrap">
@@ -64,7 +114,7 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="{% url 'blog:blog-list' %}">All Categories</a></li>
                                         {% for c in categories %}
-                                        <li><a class="dropdown-item" href="{% url 'blog:category_detail' c.slug %}">{{ c.title }}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'blog:category-detail' slug=c.slug %}">{{ c.title }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </div>
@@ -91,7 +141,7 @@
                         <div class="col-lg-4 col-md-6 mb-4">
                             <article class="featured-post-card">
                                 <div class="post-image">
-                                    <a href="{% url 'blog:blog-detail' fp.pid %}">
+                                    <a href="{% url 'blog:blog-detail' slug=fp.slug %}">
                                         <img src="{{ fp.image.cdn_url }}" alt="{{ fp.title }}" class="img-fluid">
                                         <div class="post-overlay">
                                             <span class="featured-badge">Featured</span>
@@ -110,7 +160,7 @@
                                         <span class="read-time">{{ fp.get_read_time }} min read</span>
                                     </div>
                                     <h4 class="post-title">
-                                        <a href="{% url 'blog:blog-detail' fp.pid %}">{{ fp.title|truncatechars:60 }}</a>
+                                        <a href="{% url 'blog:blog-detail' slug=fp.slug %}">{{ fp.title|truncatechars:60 }}</a>
                                     </h4>
                                 </div>
                             </article>
@@ -131,7 +181,7 @@
                         <div class="col-lg-6 col-md-6 mb-4 blog-post-item">
                             <article class="modern-blog-card">
                                 <div class="post-image-wrapper">
-                                    <a href="{% url 'blog:blog-detail' p.pid %}">
+                                    <a href="{% url 'blog:blog-detail' slug=p.slug %}">
                                         <img src="{{ p.image.cdn_url }}" alt="{{ p.title }}" class="post-image">
                                         <div class="image-overlay">
                                             <div class="overlay-content">
@@ -159,7 +209,7 @@
                                         </div>
                                     </div>
                                     <h3 class="post-title">
-                                        <a href="{% url 'blog:blog-detail' p.pid %}">{{ p.title|truncatechars:80 }}</a>
+                                        <a href="{% url 'blog:blog-detail' slug=p.slug %}">{{ p.title|truncatechars:80 }}</a>
                                     </h3>
                                     <div class="post-excerpt">
                                         {{ p.get_excerpt }}
@@ -175,7 +225,7 @@
                                                 {% endif %}
                                             </span>
                                         </div>
-                                        <a href="{% url 'blog:blog-detail' p.pid %}" class="read-more-btn">
+                                        <a href="{% url 'blog:blog-detail' slug=p.slug %}" class="read-more-btn">
                                             Read More <i class="fas fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
@@ -280,7 +330,7 @@
                         </h4>
                         <div class="categories-list">
                             {% for c in categories %}
-                            <a href="{% url 'blog:category_detail' c.slug %}" class="category-item">
+                            <a href="{% url 'blog:category-detail' slug=c.slug %}" class="category-item">
                                 <span class="category-name">{{ c.title }}</span>
                                 <span class="category-count">{{ c.post_count|default:0 }}</span>
                             </a>
@@ -298,13 +348,13 @@
                             {% for rp in featured_blog|slice:":4" %}
                             <div class="recent-post-item">
                                 <div class="post-thumb">
-                                    <a href="{% url 'blog:blog-detail' rp.pid %}">
+                                    <a href="{% url 'blog:blog-detail' slug=rp.slug %}">
                                         <img src="{{ rp.image.cdn_url }}" alt="{{ rp.title }}">
                                     </a>
                                 </div>
                                 <div class="post-info">
                                     <h6 class="post-title">
-                                        <a href="{% url 'blog:blog-detail' rp.pid %}">{{ rp.title|truncatechars:50 }}</a>
+                                        <a href="{% url 'blog:blog-detail' slug=rp.slug %}">{{ rp.title|truncatechars:50 }}</a>
                                     </h6>
                                     <div class="post-meta">
                                         <span class="post-date">{{ rp.date|date:"M d, Y" }}</span>

@@ -27,7 +27,9 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'dedeexpeditions@gmail.com')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <dedeexpeditions@gmail.com>')
-ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'dedeexpeditions@gmail.com')
+ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
+JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')
+NEWSLETTER_EMAIL = os.getenv('NEWSLETTER_EMAIL', 'news@novustelltravel.com')
 
 # Production allowed hosts
 ALLOWED_HOSTS = [
@@ -140,7 +142,7 @@ UPLOADCARE = {
 }
 
 # Production site URL
-SITE_URL = os.getenv('SITE_URL', 'https://novustelltravel.onrender.com')
+SITE_URL = os.getenv('SITE_URL', 'https://www.novustelltravel.com')
 
 # Production WhatsApp settings
 WHATSAPP_PHONE = os.getenv('WHATSAPP_PHONE', '+254701363551')
@@ -178,7 +180,7 @@ CSP_CONNECT_SRC = ("'self'", "https://api.uploadcare.com")
 
 # Production error reporting
 ADMINS = [
-    ('Admin', os.getenv('ADMIN_EMAIL', 'dedeexpeditions@gmail.com')),
+    ('Admin', os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')),
 ]
 MANAGERS = ADMINS
 

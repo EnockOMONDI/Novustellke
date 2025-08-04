@@ -132,7 +132,7 @@
                         <div class="share-nav">
                             <a href="#">Share<i class="far fa-share"></i></a>
                             <a href="#">Reviews<i class="far fa-share"></i></a>
-                            <a href="{% url 'users:users-bookings' package_id=package.id %}" class="btn btn-primary">Book Now</a>
+                            <a href="{% url 'users:add_to_cart' package.id %}" class="btn btn-primary">Book Now</a>
                             <a href="#">Whislist<i class="far fa-heart"></i></a>
                         </div>
                     </div>
@@ -725,7 +725,7 @@
                             <h4 class="widget-title">Booking Tour</h4>
                             <form class="sidebar-booking-form">
                                
-                                    <a href="{% url 'users:users-bookings' package_id=package.id %}" class="main-btn primary-btn">Book Now <i class="far fa-paper-plane"></i></a>
+                                    <a href="{% url 'users:add_to_cart' package.id %}" class="main-btn primary-btn">Book Now <i class="far fa-paper-plane"></i></a>
            
                             
                             </form>

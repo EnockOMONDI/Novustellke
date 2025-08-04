@@ -1,6 +1,72 @@
 {% extends 'users/basemain.html' %}
 {% load static %}
 
+{% block title %}{{ page_title|default:post.title }}{% endblock %}
+
+{% block meta_description %}{{ meta_description|default:post.get_meta_description }}{% endblock %}
+
+{% block extra_head %}
+<!-- SEO Meta Tags -->
+<meta name="keywords" content="{% for tag in post.tags.all %}{{ tag.name }}{% if not forloop.last %}, {% endif %}{% endfor %}{% if post.category %}, {{ post.category.title }}{% endif %}, travel blog, Novustell Travel">
+<meta name="author" content="{% if post.user %}{{ post.user.get_full_name|default:post.user.username }}{% else %}Novustell Travel{% endif %}">
+<meta name="robots" content="index, follow">
+<meta name="article:published_time" content="{{ post.date|date:'c' }}">
+<meta name="article:modified_time" content="{{ post.updated|date:'c' }}">
+{% if post.category %}<meta name="article:section" content="{{ post.category.title }}">{% endif %}
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="{{ post.title }}">
+<meta property="og:description" content="{{ post.get_meta_description }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ canonical_url|default:request.build_absolute_uri }}">
+<meta property="og:site_name" content="Novustell Travel">
+{% if post.image %}<meta property="og:image" content="{{ post.image.cdn_url }}">{% endif %}
+<meta property="article:published_time" content="{{ post.date|date:'c' }}">
+<meta property="article:modified_time" content="{{ post.updated|date:'c' }}">
+{% if post.user %}<meta property="article:author" content="{{ post.user.get_full_name|default:post.user.username }}">{% endif %}
+{% if post.category %}<meta property="article:section" content="{{ post.category.title }}">{% endif %}
+{% for tag in post.tags.all %}<meta property="article:tag" content="{{ tag.name }}">{% endfor %}
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ post.title }}">
+<meta name="twitter:description" content="{{ post.get_meta_description }}">
+{% if post.image %}<meta name="twitter:image" content="{{ post.image.cdn_url }}">{% endif %}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ canonical_url|default:request.build_absolute_uri }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ post.title|escapejs }}",
+  "description": "{{ post.get_meta_description|escapejs }}",
+  "image": {% if post.image %}"{{ post.image.cdn_url }}"{% else %}null{% endif %},
+  "author": {
+    "@type": "Person",
+    "name": "{% if post.user %}{{ post.user.get_full_name|default:post.user.username|escapejs }}{% else %}Novustell Travel{% endif %}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Novustell Travel",
+    "url": "{{ request.scheme }}://{{ request.get_host }}"
+  },
+  "datePublished": "{{ post.date|date:'c' }}",
+  "dateModified": "{{ post.updated|date:'c' }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ canonical_url|default:request.build_absolute_uri }}"
+  },
+  {% if post.category %}"articleSection": "{{ post.category.title|escapejs }}",{% endif %}
+  "keywords": [{% for tag in post.tags.all %}"{{ tag.name|escapejs }}"{% if not forloop.last %},{% endif %}{% endfor %}],
+  "wordCount": {{ post.content|wordcount }},
+  "timeRequired": "PT{{ post.get_read_time }}M"
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <!-- Breadcrumb Navigation -->
 <section class="breadcrumb-section py-3" style="background: #f8f9fa;">
@@ -17,7 +83,7 @@
                 </li>
                 {% if post.category %}
                 <li class="breadcrumb-item">
-                    <a href="{% url 'blog:category_detail' post.category.slug %}" class="text-decoration-none">
+                    <a href="{% url 'blog:category-detail' slug=post.category.slug %}" class="text-decoration-none">
                         {{ post.category.title }}
                     </a>
                 </li>
@@ -263,7 +329,7 @@
                             <h4 class="form-title mb-4">
                                 <i class="fas fa-edit me-2"></i>Join the Discussion
                             </h4>
-                            <form class="modern-comment-form" method="POST" action="{% url 'blog:blog-detail' post.pid %}">
+                            <form class="modern-comment-form" method="POST" action="{% url 'blog:blog-detail' slug=post.slug %}">
                                 {% csrf_token %}
                                 <div class="form-grid">
                                     <div class="form-group">
@@ -298,7 +364,7 @@
                         <div class="nav-container">
                             {% if previous_post %}
                             <div class="nav-item prev-post">
-                                <a href="{% url 'blog:blog-detail' previous_post.pid %}" class="nav-link">
+                                <a href="{% url 'blog:blog-detail' slug=previous_post.slug %}" class="nav-link">
                                     <div class="nav-direction">
                                         <i class="fas fa-arrow-left me-2"></i>Previous Article
                                     </div>
@@ -309,7 +375,7 @@
 
                             {% if next_post %}
                             <div class="nav-item next-post">
-                                <a href="{% url 'blog:blog-detail' next_post.pid %}" class="nav-link">
+                                <a href="{% url 'blog:blog-detail' slug=next_post.slug %}" class="nav-link">
                                     <div class="nav-direction">
                                         Next Article<i class="fas fa-arrow-right ms-2"></i>
                                     </div>
@@ -376,13 +442,13 @@
                             {% for rp in related_blogs|slice:":4" %}
                             <div class="related-post-item">
                                 <div class="post-thumb">
-                                    <a href="{% url 'blog:blog-detail' rp.pid %}">
+                                    <a href="{% url 'blog:blog-detail' slug=rp.slug %}">
                                         <img src="{{ rp.image.cdn_url }}" alt="{{ rp.title }}">
                                     </a>
                                 </div>
                                 <div class="post-info">
                                     <h6 class="post-title">
-                                        <a href="{% url 'blog:blog-detail' rp.pid %}">{{ rp.title|truncatechars:60 }}</a>
+                                        <a href="{% url 'blog:blog-detail' slug=rp.slug %}">{{ rp.title|truncatechars:60 }}</a>
                                     </h6>
                                     <div class="post-meta">
                                         <span class="post-date">{{ rp.date|date:"M d, Y" }}</span>
@@ -405,7 +471,7 @@
                                 <i class="fas fa-list me-2"></i>All Articles
                             </a>
                             {% if post.category %}
-                            <a href="{% url 'blog:category_detail' post.category.slug %}" class="nav-btn">
+                            <a href="{% url 'blog:category-detail' slug=post.category.slug %}" class="nav-btn">
                                 <i class="fas fa-folder me-2"></i>{{ post.category.title }}
                             </a>
                             {% endif %}

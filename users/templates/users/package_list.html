@@ -473,8 +473,8 @@
                                 </div>
                                 <div class="content">
                                     <div class="meta">
-                                        <span><i class="far fa-calendar-alt"></i><a href="{% url 'users:users-detail-package' package.id %}"> <strong> {{ package.duration_days }} Days </strong> </a></span>
-                                        <h3 class="title"><a href="{% url 'users:users-detail-package' package.id %}"> <strong>{{ package.name }} </strong>  </a></h3>
+                                        <span><i class="far fa-calendar-alt"></i><a href="{% url 'adminside:package_detail' package.slug %}"> <strong> {{ package.duration_days }} Days </strong> </a></span>
+                                        <h3 class="title"><a href="{% url 'adminside:package_detail' package.slug %}"> <strong>{{ package.name }} </strong>  </a></h3>
                                         <p class="location"><i class="far fa-map-marker-alt"></i> {{ package.main_destination.name }}</p>
                                         <p class="location"><i class="far fa-briefcase"></i> From KES {{ package.adult_price }}</p>
                                         {% if package.rating %}
@@ -482,11 +482,7 @@
                                         {% endif %}
                                     </div>
                                     <br>
-                                    {% if user.is_authenticated %}
-                                        <span><a href="{% url 'users:users-detail-package' package.id %}" class="package-details-btn">Details<i class="far fa-long-arrow-right"></i></a></span>
-                                    {% else %}
-                                        <span><a href="{% url 'login' %}?next={% url 'users:users-detail-package' package.id %}" class="package-details-btn"> Details<i class="far fa-long-arrow-right"></i></a></span>
-                                    {% endif %}
+                                    <span><a href="{% url 'adminside:package_detail' package.slug %}" class="package-details-btn">Details<i class="far fa-long-arrow-right"></i></a></span>
                                 </div>
                             </div>
                         </div>
