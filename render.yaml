@@ -71,7 +71,7 @@ services:
       - key: EMAIL_HOST_USER
         value: dedeexpeditions@gmail.com
       - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: iagt yans hoyd pavg
+        sync: false  # Set manually: roqu frlt wvof rqxk
       - key: DEFAULT_FROM_EMAIL
         value: Novustell Travel <dedeexpeditions@gmail.com>
       - key: ADMIN_EMAIL
