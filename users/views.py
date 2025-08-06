@@ -135,7 +135,7 @@ def micepage(request):
                 html_content = f"""
                 <html>
                 <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #170b2c;">New MICE Inquiry</h2>
+                    <h2 style="color: #0f238d;">New MICE Inquiry</h2>
                     <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
                         <p><strong>Company Name:</strong> {inquiry.company_name}</p>
                         <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
@@ -143,7 +143,7 @@ def micepage(request):
                         <p><strong>Phone:</strong> {inquiry.phone_number}</p>
                         <p><strong>Event Type:</strong> {inquiry.event_type}</p>
                         <p><strong>Expected Attendees:</strong> {inquiry.attendees}</p>
-                        <h3 style="color: #170b2c;">Event Details:</h3>
+                        <h3 style="color: #0f238d;">Event Details:</h3>
                         <p style="white-space: pre-wrap;">{inquiry.event_details}</p>
                     </div>
                     <p style="color: #666; font-size: 12px; margin-top: 20px;">
@@ -199,7 +199,7 @@ def student_travel(request):
                 html_content = f"""
                 <html>
                 <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #170b2c;">New Student Travel Inquiry</h2>
+                    <h2 style="color: #0f238d;">New Student Travel Inquiry</h2>
                     <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
                         <p><strong>School Name:</strong> {inquiry.school_name}</p>
                         <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
@@ -207,7 +207,7 @@ def student_travel(request):
                         <p><strong>Phone:</strong> {inquiry.phone_number}</p>
                         <p><strong>Program Stage:</strong> {inquiry.program_stage}</p>
                         <p><strong>Number of Students:</strong> {inquiry.number_of_students}</p>
-                        <h3 style="color: #170b2c;">Travel Details:</h3>
+                        <h3 style="color: #0f238d;">Travel Details:</h3>
                         <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
                     </div>
                     <p style="color: #666; font-size: 12px; margin-top: 20px;">
@@ -263,7 +263,7 @@ def ngo_travel(request):
                 html_content = f"""
                 <html>
                 <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #170b2c;">New NGO Travel Inquiry</h2>
+                    <h2 style="color: #0f238d;">New NGO Travel Inquiry</h2>
                     <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
                         <p><strong>Organization Name:</strong> {inquiry.organization_name}</p>
                         <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
@@ -273,7 +273,7 @@ def ngo_travel(request):
                         <p><strong>Travel Purpose:</strong> {inquiry.travel_purpose}</p>
                         <p><strong>Number of Travelers:</strong> {inquiry.number_of_travelers}</p>
                         <p><strong>Sustainability Requirements:</strong> {'Yes' if inquiry.sustainability_requirements else 'No'}</p>
-                        <h3 style="color: #170b2c;">Travel Details:</h3>
+                        <h3 style="color: #0f238d;">Travel Details:</h3>
                         <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
                     </div>
                     <p style="color: #666; font-size: 12px; margin-top: 20px;">

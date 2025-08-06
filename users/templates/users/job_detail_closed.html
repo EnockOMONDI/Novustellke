@@ -5,7 +5,7 @@
 
 {% block content %}
 <!-- Job Closed Hero Section -->
-<section class="job-closed-hero py-5" style="background-color: #170b2c; position: relative; overflow: hidden;">
+<section class="job-closed-hero py-5" style="background-color: #0f238d; position: relative; overflow: hidden;">
     <!-- Background Pattern -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 50%); pointer-events: none;"></div>
     
@@ -67,7 +67,7 @@
             <div class="col-lg-8 mx-auto">
                 <div class="card border-0 shadow-sm" style="border-radius: 15px;">
                     <div class="card-body p-5">
-                        <h3 class="mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+                        <h3 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                             <i class="fas fa-info-circle me-2" style="color: #ff9d00;"></i>About This Position
                         </h3>
                         
@@ -116,10 +116,10 @@
                         
                         <!-- Action Buttons -->
                         <div class="text-center mt-5">
-                            <a href="{% url 'users:careers' %}" class="btn btn-primary btn-lg px-5 py-3 me-3" style="background: linear-gradient(135deg, #170b2c, #ff9d00); border: none; border-radius: 25px;">
+                            <a href="{% url 'users:careers' %}" class="btn btn-primary btn-lg px-5 py-3 me-3" style="background: linear-gradient(135deg, #0f238d, #ff9d00); border: none; border-radius: 25px;">
                                 <i class="fas fa-search me-2"></i>View Open Positions
                             </a>
-                            <a href="{% url 'users:careers' %}#application" class="btn btn-outline-primary btn-lg px-5 py-3" style="border-color: #170b2c; color: #170b2c; border-radius: 25px;">
+                            <a href="{% url 'users:careers' %}#application" class="btn btn-outline-primary btn-lg px-5 py-3" style="border-color: #0f238d; color: #0f238d; border-radius: 25px;">
                                 <i class="fas fa-bell me-2"></i>Get Job Alerts
                             </a>
                         </div>
@@ -134,7 +134,7 @@
 <section class="other-opportunities py-5">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+            <h2 class="display-5 fw-bold" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                 Other Opportunities
             </h2>
             <p class="lead text-muted">
@@ -148,7 +148,7 @@
                 <div class="card h-100 border-0 shadow-sm" style="border-radius: 15px; transition: transform 0.3s ease;">
                     <div class="card-body p-4">
                         <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h5 class="card-title fw-bold" style="color: #170b2c;">{{ open_job.title }}</h5>
+                            <h5 class="card-title fw-bold" style="color: #0f238d;">{{ open_job.title }}</h5>
                             <span class="badge bg-success">Open</span>
                         </div>
                         
@@ -160,7 +160,7 @@
                             </small>
                         </div>
                         
-                        <a href="{{ open_job.get_absolute_url }}" class="btn btn-outline-primary w-100" style="border-color: #170b2c; color: #170b2c; border-radius: 25px;">
+                        <a href="{{ open_job.get_absolute_url }}" class="btn btn-outline-primary w-100" style="border-color: #0f238d; color: #0f238d; border-radius: 25px;">
                             <i class="fas fa-eye me-2"></i>View Details
                         </a>
                     </div>

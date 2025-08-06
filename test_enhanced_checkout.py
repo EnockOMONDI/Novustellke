@@ -72,7 +72,7 @@ def test_enhanced_checkout_features():
             if response.status_code == 200:
                 content = response.text
                 has_expected = expected_content.lower() in content.lower()
-                has_novustell = '#170b2c' in content and '#ff9d00' in content
+                has_novustell = '#0f238d' in content and '#ff9d00' in content
                 has_responsive = '@media' in content
                 
                 print(f"      - Expected content: {'✅' if has_expected else '❌'}")
@@ -220,7 +220,7 @@ def test_enhanced_checkout_features():
                 content = response.text
                 
                 design_elements = {
-                    'Novustell Colors': '#170b2c' in content and '#ff9d00' in content,
+                    'Novustell Colors': '#0f238d' in content and '#ff9d00' in content,
                     'Progress Steps': 'progress-step' in content,
                     'Responsive Design': '@media' in content,
                     'FontAwesome Icons': 'fas fa-' in content,

@@ -120,7 +120,7 @@
 }
 
 .cke_dialog_title {
-    background: linear-gradient(135deg, #0f238d 0%, #170b2c 100%) !important;
+    background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%) !important;
     color: white !important;
     font-weight: bold !important;
     padding: 15px !important;

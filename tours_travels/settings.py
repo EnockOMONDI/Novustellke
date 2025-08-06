@@ -365,7 +365,7 @@ customColorPalette = [
         'label': 'Blue'
     },
     {
-        'color': '#170b2c',  # Novustell primary color
+        'color': '#0f238d',  # Novustell primary color
         'label': 'Novustell Primary'
     },
     {

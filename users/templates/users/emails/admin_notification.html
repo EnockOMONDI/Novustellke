@@ -58,7 +58,7 @@
         }
         
         .booking-summary {
-            background: linear-gradient(135deg, #170b2c, #2a1a4a);
+            background: linear-gradient(135deg, #0f238d, #2a1a4a);
             color: white;
             padding: 25px;
             border-radius: 10px;
@@ -105,7 +105,7 @@
         }
         
         .section-title {
-            color: #170b2c;
+            color: #0f238d;
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 15px;
@@ -129,7 +129,7 @@
         .details-table th {
             background: #f8f9fa;
             font-weight: 600;
-            color: #170b2c;
+            color: #0f238d;
             width: 30%;
         }
         
@@ -145,7 +145,7 @@
         }
         
         .package-title {
-            color: #170b2c;
+            color: #0f238d;
             font-size: 20px;
             font-weight: 700;
             margin-bottom: 10px;
@@ -429,7 +429,7 @@
                 <div class="section-title">🎯 Selected Add-ons</div>
                 
                 {% if booking.selected_accommodations.exists %}
-                <h4 style="color: #170b2c; margin: 15px 0 10px 0;">🏨 Accommodations:</h4>
+                <h4 style="color: #0f238d; margin: 15px 0 10px 0;">🏨 Accommodations:</h4>
                 <ul style="margin: 0 0 15px 20px; color: #666;">
                     {% for accommodation in booking.selected_accommodations.all %}
                     <li>{{ accommodation.name }} - ${{ accommodation.price_per_room_per_night }}/night</li>
@@ -438,7 +438,7 @@
                 {% endif %}
                 
                 {% if booking.selected_travel_modes.exists %}
-                <h4 style="color: #170b2c; margin: 15px 0 10px 0;">✈️ Travel Services:</h4>
+                <h4 style="color: #0f238d; margin: 15px 0 10px 0;">✈️ Travel Services:</h4>
                 <ul style="margin: 0 0 15px 20px; color: #666;">
                     {% for travel_mode in booking.selected_travel_modes.all %}
                     <li>{{ travel_mode.name }} - ${{ travel_mode.price_per_person }}/person</li>
