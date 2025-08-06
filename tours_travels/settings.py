@@ -195,8 +195,8 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 UPLOADCARE = {
   # Don’t forget to set real keys when it gets real :)
 
-  'pub_key': '00899c0e755748af0d32',
-  'secret': '21797878cc7df3a2c044',
+  'pub_key': 'ee9d364d0155cae58db7',
+  'secret': '23d12b50d22b09097026',
 }
 
 TEMPLATE_DIRS = (

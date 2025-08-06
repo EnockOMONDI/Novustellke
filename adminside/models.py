@@ -26,7 +26,7 @@ class Destination(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     destination_type = models.CharField(max_length=10, choices=DESTINATION_TYPES)
     description = CKEditor5Field(config_name='default', help_text="Detailed destination description with rich text formatting")
-    image = ImageField(blank=False, null=False, manual_crop="4:4")
+    image = ImageField(blank=True, null=True, manual_crop="4:4")
     
     # Hierarchical relationship
     parent = models.ForeignKey(
