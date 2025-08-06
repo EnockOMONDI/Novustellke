@@ -45,9 +45,10 @@ urlpatterns = [
 
 if settings.DEBUG == True:
     # static function below returns a list of url patterns of static path
-    urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)  
+    urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 
-
-
-
-    
+# Custom error handlers for production
+handler400 = 'tours_travels.views.custom_400_view'
+handler403 = 'tours_travels.views.custom_403_view'
+handler404 = 'tours_travels.views.custom_404_view'
+handler500 = 'tours_travels.views.custom_500_view'

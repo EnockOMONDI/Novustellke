@@ -790,7 +790,7 @@ We make your travels affordable, memorable, and completely stress-free.         
                                         {% else %}
                                             <div class="destination-price">Get Quote</div>
                                         {% endif %}
-                                        <a href="{% url 'adminside:user_package_list' %}" class="destination-btn">
+                                        <a href="{% url 'adminside:destination_detail' destination.slug %}" class="destination-btn">
                                             <i class="fas fa-arrow-right"></i> Explore
                                         </a>
                                     </div>

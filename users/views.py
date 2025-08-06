@@ -488,12 +488,28 @@ def careers(request):
 
 def job_detail(request, slug):
     """
-    Individual job detail page
+    Individual job detail page with access control for closed jobs
     """
     from .models import JobListing
     from django.shortcuts import get_object_or_404
 
     job = get_object_or_404(JobListing, slug=slug, is_active=True)
+
+    # Check if job applications are closed
+    if job.application_status == 'closed':
+        # Get other open jobs to show as alternatives
+        open_jobs = JobListing.objects.filter(
+            application_status='open',
+            is_active=True
+        ).exclude(id=job.id)[:3]
+
+        # Render a special template for closed jobs
+        context = {
+            'job': job,
+            'is_closed': True,
+            'open_jobs': open_jobs,
+        }
+        return render(request, 'users/job_detail_closed.html', context)
 
     # Get related jobs (same type, excluding current job)
     related_jobs = JobListing.objects.filter(
@@ -504,6 +520,7 @@ def job_detail(request, slug):
     context = {
         'job': job,
         'related_jobs': related_jobs,
+        'is_closed': False,
     }
 
     return render(request, 'users/job_detail.html', context)
@@ -1169,3 +1186,11 @@ def booking_detail(request, booking_reference):
     }
 
     return render(request, 'users/booking_detail.html', context)
+
+
+def test_500_error(request):
+    """
+    Test view to trigger a 500 error for testing purposes
+    Only works when DEBUG=False
+    """
+    raise Exception("This is a test 500 error for testing error pages")

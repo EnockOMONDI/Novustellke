@@ -1,0 +1,165 @@
+{% extends 'users/basemain.html' %}
+{% load static %}
+
+{% block title %}Page Not Found - 404 | Novustell Travel{% endblock %}
+
+{% block meta_description %}The page you're looking for doesn't exist. Explore our travel packages, destinations, and services at Novustell Travel.{% endblock %}
+
+{% block content %}
+<!-- 404 Error Page -->
+<section class="error-page-section" style="background: linear-gradient(135deg, #0f238d 0%, #1a3ba8 100%); min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255,157,0,0.1) 0%, transparent 50%); pointer-events: none;"></div>
+    
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <!-- Error Code -->
+                <div class="error-code mb-4">
+                    <h1 class="display-1 fw-bold text-white mb-0" style="font-size: 8rem; font-family: 'Fonarto', sans-serif; text-shadow: 0 0 30px rgba(255,157,0,0.5);">
+                        404
+                    </h1>
+                    <div class="error-icon mb-4">
+                        <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: #ff9d00; animation: pulse 2s infinite;"></i>
+                    </div>
+                </div>
+                
+                <!-- Error Message -->
+                <div class="error-message mb-5">
+                    <h2 class="h3 text-white mb-3" style="font-family: 'Fonarto', sans-serif;">
+                        Oops! This destination doesn't exist
+                    </h2>
+                    <p class="lead text-light mb-4" style="opacity: 0.9;">
+                        It looks like you've wandered off the beaten path. The page you're looking for might have been moved, deleted, or never existed in the first place.
+                    </p>
+                    <p class="text-light" style="opacity: 0.8;">
+                        Don't worry though - there are plenty of amazing destinations waiting for you to explore!
+                    </p>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="error-actions mb-5">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-auto">
+                            <a href="{% url 'users:users-home' %}" class="btn btn-lg px-4 py-3" style="background: linear-gradient(135deg, #ff9d00, #ffb84d); border: none; border-radius: 25px; color: #0f238d; font-weight: 600; box-shadow: 0 8px 25px rgba(255,157,0,0.3);">
+                                <i class="fas fa-home me-2"></i>Back to Home
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="{% url 'adminside:destination_list' %}" class="btn btn-outline-light btn-lg px-4 py-3" style="border-radius: 25px; border-width: 2px;">
+                                <i class="fas fa-globe-americas me-2"></i>Explore Destinations
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row g-3 justify-content-center mt-3">
+                        <div class="col-auto">
+                            <a href="{% url 'adminside:user_package_list' %}" class="btn btn-outline-light btn-lg px-4 py-3" style="border-radius: 25px; border-width: 2px;">
+                                <i class="fas fa-suitcase-rolling me-2"></i>View Packages
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="{% url 'users:careers' %}" class="btn btn-outline-light btn-lg px-4 py-3" style="border-radius: 25px; border-width: 2px;">
+                                <i class="fas fa-briefcase me-2"></i>Careers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="error-search mb-5">
+                    <div class="card border-0 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px;">
+                        <div class="card-body p-4">
+                            <h5 class="text-white mb-3">
+                                <i class="fas fa-search me-2" style="color: #ff9d00;"></i>
+                                Looking for something specific?
+                            </h5>
+                            <form action="{% url 'users:search' %}" method="post" class="d-flex gap-3">
+                                {% csrf_token %}
+                                <input type="text" name="search" class="form-control form-control-lg" placeholder="Search destinations, packages, or services..." style="border-radius: 15px; border: 2px solid rgba(255,157,0,0.3); background: rgba(255,255,255,0.9);">
+                                <button type="submit" class="btn btn-lg px-4" style="background: #ff9d00; border: none; border-radius: 15px; color: #0f238d; font-weight: 600;">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="error-contact">
+                    <div class="card border-0 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px;">
+                        <div class="card-body p-4">
+                            <h5 class="text-white mb-3">
+                                <i class="fas fa-headset me-2" style="color: #ff9d00;"></i>
+                                Need Help? We're Here for You!
+                            </h5>
+                            <div class="row g-3 text-center">
+                                <div class="col-md-4">
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone-alt mb-2" style="color: #ff9d00; font-size: 1.5rem;"></i>
+                                        <p class="text-light mb-1">Call Us</p>
+                                        <a href="tel:+254701363551" class="text-white text-decoration-none">
+                                            +254 701 363 551
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope mb-2" style="color: #ff9d00; font-size: 1.5rem;"></i>
+                                        <p class="text-light mb-1">Email Us</p>
+                                        <a href="mailto:info@novustelltravel.com" class="text-white text-decoration-none">
+                                            info@novustelltravel.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-item">
+                                        <i class="fab fa-whatsapp mb-2" style="color: #ff9d00; font-size: 1.5rem;"></i>
+                                        <p class="text-light mb-1">WhatsApp</p>
+                                        <a href="https://wa.me/254701363551" class="text-white text-decoration-none" target="_blank">
+                                            Chat with Us
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom Styles -->
+<style>
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .error-page-section .btn:hover {
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+    }
+    
+    .contact-item:hover {
+        transform: translateY(-3px);
+        transition: all 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+        .error-code h1 {
+            font-size: 5rem !important;
+        }
+        
+        .error-icon i {
+            font-size: 2.5rem !important;
+        }
+        
+        .btn-lg {
+            padding: 12px 20px !important;
+            font-size: 1rem !important;
+        }
+    }
+</style>
+{% endblock %}

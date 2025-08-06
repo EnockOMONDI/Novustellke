@@ -326,32 +326,63 @@ class NewsletterSubscriptionAdmin(admin.ModelAdmin):
     send_confirmation_emails.short_description = 'Send confirmation emails'
 
 
+class JobListingAdminForm(forms.ModelForm):
+    """Custom form for JobListing admin with CKEditor5 widgets"""
+    class Meta:
+        model = JobListing
+        fields = '__all__'
+        widgets = {
+            'description': CKEditor5Widget(config_name='default'),
+            'requirements': CKEditor5Widget(config_name='default'),
+            'responsibilities': CKEditor5Widget(config_name='default'),
+            'benefits': CKEditor5Widget(config_name='default'),
+        }
+
+
 @admin.register(JobListing)
 class JobListingAdmin(admin.ModelAdmin):
+    form = JobListingAdminForm
     list_display = ('title', 'job_type', 'application_status', 'location', 'featured', 'is_active', 'posted_date', 'application_deadline')
     list_filter = ('job_type', 'application_status', 'featured', 'is_active', 'posted_date', 'location')
     search_fields = ('title', 'description', 'requirements', 'location')
     readonly_fields = ('posted_date', 'updated_at', 'slug')
     date_hierarchy = 'posted_date'
     actions = ['mark_as_featured', 'mark_as_not_featured', 'open_applications', 'close_applications']
+    list_editable = ('featured', 'is_active', 'application_status')
+    list_per_page = 20
 
     fieldsets = (
         ('Basic Information', {
-            'fields': ('title', 'slug', 'description', 'job_image')
+            'fields': ('title', 'slug', 'job_image'),
+            'description': 'Basic job information and branding'
+        }),
+        ('Job Content', {
+            'fields': ('description',),
+            'description': 'Main job description with rich text formatting',
+            'classes': ('wide',)
         }),
         ('Job Details', {
-            'fields': ('job_type', 'application_status', 'location', 'salary_range')
+            'fields': ('job_type', 'application_status', 'location', 'salary_range'),
+            'description': 'Job classification and compensation details'
         }),
         ('Requirements & Responsibilities', {
-            'fields': ('requirements', 'responsibilities', 'benefits'),
+            'fields': ('requirements', 'responsibilities'),
+            'description': 'Job requirements and key responsibilities with rich text formatting',
+            'classes': ('wide',)
+        }),
+        ('Benefits & Perks', {
+            'fields': ('benefits',),
+            'description': 'Employee benefits and perks with rich text formatting',
             'classes': ('wide',)
         }),
         ('Dates & Deadlines', {
             'fields': ('application_deadline', 'posted_date', 'updated_at'),
+            'description': 'Important dates and deadlines',
             'classes': ('collapse',)
         }),
         ('Display Options', {
             'fields': ('featured', 'is_active'),
+            'description': 'Control job visibility and featured status',
             'classes': ('collapse',)
         }),
     )
@@ -383,6 +414,14 @@ class JobListingAdmin(admin.ModelAdmin):
     def get_queryset(self, request):
         """Optimize queryset for admin list view"""
         return super().get_queryset(request).select_related()
+
+    class Media:
+        css = {
+            'all': ('admin/css/ckeditor-admin.css',)
+        }
+        js = (
+            'ckeditor/ckeditor/ckeditor.js',
+        )
 
 
 # Re-register UserAdmin
