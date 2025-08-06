@@ -90,45 +90,110 @@
 
     .stats-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
         margin-bottom: 30px;
+        max-width: 600px;
     }
 
     .stat-card {
-        background: linear-gradient(135deg, #0f238d, #2a1a4a);
+        background: #0f238d;
         color: white;
-        padding: 25px;
-        border-radius: 12px;
+        padding: 15px 12px;
+        border-radius: 10px;
         text-align: center;
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(15, 35, 141, 0.2);
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .stat-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(15, 35, 141, 0.3);
+        background: linear-gradient(135deg, #0f238d, #1a2f7a);
     }
 
     .stat-icon {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color: #ff9d00;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
+        display: block;
     }
 
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
+        line-height: 1.2;
     }
 
     .stat-label {
-        font-size: 0.9rem;
-        opacity: 0.8;
+        font-size: 0.75rem;
+        opacity: 0.9;
+        line-height: 1.2;
+        font-weight: 500;
     }
 
     .packages-grid, .accommodations-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
+    }
+
+    /* Responsive design for statistics boxes */
+    @media (max-width: 768px) {
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 100%;
+        }
+
+        .stat-card {
+            padding: 12px 8px;
+            min-height: 85px;
+        }
+
+        .stat-icon {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .stat-number {
+            font-size: 1.3rem;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .stat-card {
+            padding: 10px 6px;
+            min-height: 75px;
+        }
+
+        .stat-icon {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-number {
+            font-size: 1.1rem;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+        }
     }
 
     .package-card, .accommodation-card {
