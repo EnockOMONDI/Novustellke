@@ -5,10 +5,10 @@
 
 {% block content %}
 
-<section 
-    class="page-banner overlay pt-170 pb-100 bg_cover" 
-    style="background-image: url({% image_url_with_placeholder package.featured_image %});">
- 
+<section
+    class="page-banner overlay pt-170 pb-100 bg_cover"
+    style="background-image: url({% image_url_with_default package.featured_image 'packages' %});">
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">

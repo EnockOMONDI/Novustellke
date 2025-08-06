@@ -104,7 +104,7 @@
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
                         <div class="job-description" style="line-height: 1.8; color: #666;">
-                            {{ job.description|linebreaks }}
+                            {{ job.description|safe }}
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
                         <div class="job-responsibilities" style="line-height: 1.8; color: #666;">
-                            {{ job.responsibilities|linebreaks }}
+                            {{ job.responsibilities|safe }}
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
                         <div class="job-requirements" style="line-height: 1.8; color: #666;">
-                            {{ job.requirements|linebreaks }}
+                            {{ job.requirements|safe }}
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         </h2>
                         <div class="content-card p-4 bg-white rounded-3 shadow-sm">
                             <div class="job-benefits" style="line-height: 1.8; color: #666;">
-                                {{ job.benefits|linebreaks }}
+                                {{ job.benefits|safe }}
                             </div>
                         </div>
                     </div>
@@ -300,7 +300,7 @@
                                 {% endif %}
                             </div>
                             
-                            <p class="text-muted mb-3">{{ related_job.description|truncatewords:15 }}</p>
+                            <p class="text-muted mb-3">{{ related_job.description|striptags|truncatewords:15 }}</p>
                             
                             <div class="job-meta mb-3">
                                 <small class="text-muted">

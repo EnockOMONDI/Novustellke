@@ -720,7 +720,7 @@
     <div class="col-lg-4 col-md-6">
         <div class="accommodation-card">
             <div class="accommodation-image">
-                {% image_with_placeholder accommodation.image "img-fluid" accommodation.name %}
+                {% image_with_default accommodation.image "accommodations" "img-fluid" accommodation.name %}
                 {% if accommodation.is_featured %}
                 <div class="featured-badge">
                     <i class="fas fa-star me-1"></i>Featured

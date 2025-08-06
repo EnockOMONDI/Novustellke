@@ -4,6 +4,7 @@ from .models import UserBookings
 from django import forms
 from django.contrib.auth.models import User
 from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, NewsletterSubscription
+import re
 
 
 class UserRegisterForm(UserCreationForm):
@@ -105,7 +106,7 @@ class JobApplicationForm(forms.ModelForm):
     class Meta:
         model = JobApplication
         fields = [
-            'full_name', 'email', 'phone_number', 'position_applied_for',
+            'full_name', 'email', 'phone_number', 'alternative_phone_number', 'position_applied_for',
             'years_of_experience', 'availability_date', 'cover_letter', 'resume'
         ]
         widgets = {
@@ -119,7 +120,11 @@ class JobApplicationForm(forms.ModelForm):
             }),
             'phone_number': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Enter your phone number'
+                'placeholder': 'Enter your primary contact number (e.g., 254712345678)'
+            }),
+            'alternative_phone_number': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter an alternative contact number (optional)'
             }),
             'position_applied_for': forms.Select(attrs={
                 'class': 'form-control'
@@ -144,6 +149,38 @@ class JobApplicationForm(forms.ModelForm):
                 'accept': '.pdf,.doc,.docx'
             })
         }
+
+    def clean_phone_number(self):
+        """Validate primary phone number format"""
+        phone_number = self.cleaned_data.get('phone_number')
+        if phone_number:
+            # Remove spaces, hyphens, and parentheses
+            cleaned_phone = re.sub(r'[\s\-\(\)]', '', phone_number)
+
+            # Check if it contains only digits and optional + at the beginning
+            if not re.match(r'^\+?[0-9]{10,15}$', cleaned_phone):
+                raise forms.ValidationError(
+                    "Please enter a valid phone number (10-15 digits, optionally starting with +)"
+                )
+
+            return phone_number
+        return phone_number
+
+    def clean_alternative_phone_number(self):
+        """Validate alternative phone number format (optional)"""
+        alt_phone = self.cleaned_data.get('alternative_phone_number')
+        if alt_phone:
+            # Remove spaces, hyphens, and parentheses
+            cleaned_phone = re.sub(r'[\s\-\(\)]', '', alt_phone)
+
+            # Check if it contains only digits and optional + at the beginning
+            if not re.match(r'^\+?[0-9]{10,15}$', cleaned_phone):
+                raise forms.ValidationError(
+                    "Please enter a valid phone number (10-15 digits, optionally starting with +)"
+                )
+
+            return alt_phone
+        return alt_phone
 
     def clean_resume(self):
         """Validate resume file upload"""

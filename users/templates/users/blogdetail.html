@@ -1,5 +1,6 @@
 {% extends 'users/basemain.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}{{ page_title|default:post.title }}{% endblock %}
 
@@ -20,7 +21,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ canonical_url|default:request.build_absolute_uri }}">
 <meta property="og:site_name" content="Novustell Travel">
-{% if post.image %}<meta property="og:image" content="{{ post.image.cdn_url }}">{% endif %}
+<meta property="og:image" content="{% image_url_with_default post.image 'blog_posts' %}">
 <meta property="article:published_time" content="{{ post.date|date:'c' }}">
 <meta property="article:modified_time" content="{{ post.updated|date:'c' }}">
 {% if post.user %}<meta property="article:author" content="{{ post.user.get_full_name|default:post.user.username }}">{% endif %}
@@ -31,7 +32,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ post.title }}">
 <meta name="twitter:description" content="{{ post.get_meta_description }}">
-{% if post.image %}<meta name="twitter:image" content="{{ post.image.cdn_url }}">{% endif %}
+<meta name="twitter:image" content="{% image_url_with_default post.image 'blog_posts' %}">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ canonical_url|default:request.build_absolute_uri }}">
@@ -43,7 +44,7 @@
   "@type": "BlogPosting",
   "headline": "{{ post.title|escapejs }}",
   "description": "{{ post.get_meta_description|escapejs }}",
-  "image": {% if post.image %}"{{ post.image.cdn_url }}"{% else %}null{% endif %},
+  "image": "{% image_url_with_default post.image 'blog_posts' %}",
   "author": {
     "@type": "Person",
     "name": "{% if post.user %}{{ post.user.get_full_name|default:post.user.username|escapejs }}{% else %}Novustell Travel{% endif %}"
@@ -97,7 +98,7 @@
 <!-- Hero Banner Section -->
 <section class="blog-hero-banner" style="
     background: linear-gradient(135deg, rgba(15, 35, 141, 0.8) 0%, rgba(255, 157, 0, 0.8) 100%),
-                url('{{ post.image.cdn_url }}');
+                url('{% image_url_with_default post.image "blog_posts" %}');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -221,7 +222,7 @@
                     <div class="article-content">
                         <div class="content-wrapper">
                             <div class="post-text">
-                                {{ post.content|linebreaks }}
+                                {{ post.content|safe }}
                             </div>
                         </div>
 
@@ -443,7 +444,7 @@
                             <div class="related-post-item">
                                 <div class="post-thumb">
                                     <a href="{% url 'blog:blog-detail' slug=rp.slug %}">
-                                        <img src="{{ rp.image.cdn_url }}" alt="{{ rp.title }}">
+                                        {% image_with_default rp.image "blog_posts" "" rp.title %}
                                     </a>
                                 </div>
                                 <div class="post-info">

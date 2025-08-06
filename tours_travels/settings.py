@@ -91,6 +91,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
+                'tours_travels.context_processors.default_images',
+                'tours_travels.context_processors.site_settings',
             ],
         },
     },
@@ -197,6 +199,28 @@ UPLOADCARE = {
 
   'pub_key': 'ee9d364d0155cae58db7',
   'secret': '23d12b50d22b09097026',
+}
+
+# Default Image Configuration
+DEFAULT_IMAGES = {
+    # Primary default image for most content types
+    'DEFAULT': 'assets/images/logo/defaultimagenovustell.png',
+
+    # Category-specific default images
+    'DESTINATIONS': 'assets/images/logo/defaultimagenovustell.png',
+    'ACCOMMODATIONS': 'assets/images/logo/defaultimagenovustell.png',
+    'PACKAGES': 'assets/images/logo/defaultimagenovustell.png',
+    'BLOG_POSTS': 'assets/images/logo/defaultimagenovustell.png',
+
+    # Keep existing job thumbnail (do not change)
+    'JOB_LISTINGS': 'images/jobsthumbnail.png',
+
+    # Legacy placeholder (maintain for backward compatibility)
+    'PLACEHOLDER_SVG': 'images/novustelltravelplaceholder.svg',
+
+    # Fallback images for specific use cases
+    'HERO_BACKGROUND': 'assets/images/place/place-1.jpg',
+    'CAROUSEL_FALLBACK': 'assets/images/place/place-12.jpg',
 }
 
 TEMPLATE_DIRS = (

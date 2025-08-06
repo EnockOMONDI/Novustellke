@@ -772,7 +772,7 @@ We make your travels affordable, memorable, and completely stress-free.         
                         </h1>
                         <p class="lead mb-0" style="color: #333;">
                             Discover breathtaking destinations around the world with our carefully curated travel packages.
-                            From exotic beaches to cultural landmarks, we bring you the best travel experiences.
+
                         </p>
                     </div>
                 </div>
@@ -786,7 +786,7 @@ We make your travels affordable, memorable, and completely stress-free.         
                     <div class="destination-slide">
                         <div class="destination-card">
                             <div class="destination-image">
-                                {% image_with_placeholder destination.image "img-fluid" destination.name %}
+                                {% image_with_default destination.image "destinations" "img-fluid" destination.name %}
                                 <div class="destination-overlay">
                                     <div class="destination-content">
                                         <h4 class="destination-title">{{ destination.name }}</h4>
@@ -813,7 +813,7 @@ We make your travels affordable, memorable, and completely stress-free.         
                     <div class="destination-slide">
                         <div class="destination-card">
                             <div class="destination-image">
-                                <img src="{% static 'images/novustelltravelplaceholder.svg' %}" alt="Explore Destinations" class="img-fluid">
+                                <img src="{{ default_images.DESTINATIONS }}" alt="Explore Destinations" class="img-fluid">
                                 <div class="destination-overlay">
                                     <div class="destination-content">
                                         <h4 class="destination-title">Discover Amazing Destinations</h4>

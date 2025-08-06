@@ -398,7 +398,16 @@ class JobApplication(models.Model):
     # Personal Information
     full_name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone_number = models.CharField(max_length=20)
+    phone_number = models.CharField(
+        max_length=20,
+        help_text="Enter your primary contact number (e.g., 254712345678)"
+    )
+    alternative_phone_number = models.CharField(
+        max_length=20,
+        blank=True,
+        null=True,
+        help_text="Enter an alternative contact number (optional)"
+    )
 
     # Position Information
     position_applied_for = models.CharField(max_length=50, choices=POSITION_CHOICES)

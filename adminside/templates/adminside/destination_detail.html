@@ -272,7 +272,7 @@
 
 <!-- Destination Hero Section -->
 <div class="destination-hero">
-    {% image_with_placeholder destination.image "" destination.name %}
+    {% image_with_default destination.image "destinations" "" destination.name %}
     <div class="destination-hero-overlay">
         <div class="destination-hero-content">
             <div class="destination-type-badge">
@@ -373,7 +373,7 @@
         {% for accommodation in accommodations %}
         <div class="accommodation-card">
             <div class="card-image">
-                {% image_with_placeholder accommodation.image "" accommodation.name %}
+                {% image_with_default accommodation.image "accommodations" "" accommodation.name %}
             </div>
             <div class="card-content">
                 <h3 class="card-title">{{ accommodation.name }}</h3>
