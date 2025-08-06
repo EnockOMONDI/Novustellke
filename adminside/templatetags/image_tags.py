@@ -85,6 +85,79 @@ def image_with_placeholder(image_field, css_class="", alt_text="", placeholder_p
     return mark_safe(html)
 
 @register.simple_tag
+def image_with_default(image_field, content_type="default", css_class="", alt_text="", use_placeholder=False):
+    """
+    Template tag to display an image with centralized default image fallback
+
+    Usage:
+    {% load image_tags %}
+    {% image_with_default destination.image "destinations" "img-fluid" "Destination Image" %}
+    {% image_with_default accommodation.image "accommodations" "img-fluid" "Accommodation Image" %}
+    {% image_with_default job.image "job_listings" "img-fluid" "Job Image" %}
+    """
+    from django.conf import settings
+
+    image_url = None
+
+    # Try Uploadcare image first
+    if image_field and hasattr(image_field, 'cdn_url'):
+        cdn_url = getattr(image_field, 'cdn_url', None)
+        if is_valid_uploadcare_url(cdn_url):
+            image_url = cdn_url
+
+    # Try regular Django image field if Uploadcare failed
+    if not image_url and image_field and hasattr(image_field, 'url'):
+        django_url = getattr(image_field, 'url', None)
+        if is_valid_django_url(django_url):
+            image_url = django_url
+
+    # Use centralized default image system if no valid image found
+    if not image_url:
+        default_images_config = getattr(settings, 'DEFAULT_IMAGES', {})
+
+        if use_placeholder:
+            # Use SVG placeholder
+            placeholder_path = default_images_config.get('PLACEHOLDER_SVG', 'images/novustelltravelplaceholder.svg')
+            image_url = static(placeholder_path)
+        else:
+            # Use content-type specific default
+            content_type_upper = content_type.upper()
+
+            # Map content types to configuration keys
+            content_type_mapping = {
+                'DESTINATION': 'DESTINATIONS',
+                'DESTINATIONS': 'DESTINATIONS',
+                'ACCOMMODATION': 'ACCOMMODATIONS',
+                'ACCOMMODATIONS': 'ACCOMMODATIONS',
+                'PACKAGE': 'PACKAGES',
+                'PACKAGES': 'PACKAGES',
+                'BLOG': 'BLOG_POSTS',
+                'BLOG_POST': 'BLOG_POSTS',
+                'BLOG_POSTS': 'BLOG_POSTS',
+                'JOB': 'JOB_LISTINGS',
+                'JOB_LISTING': 'JOB_LISTINGS',
+                'JOB_LISTINGS': 'JOB_LISTINGS',
+                'JOBS': 'JOB_LISTINGS',
+            }
+
+            # Get the mapped key or use the content type directly
+            config_key = content_type_mapping.get(content_type_upper, content_type_upper)
+
+            # Get the appropriate default image
+            if config_key in default_images_config:
+                default_path = default_images_config[config_key]
+            else:
+                default_path = default_images_config.get('DEFAULT', 'assets/images/logo/defaultimagenovustell.png')
+
+            image_url = static(default_path)
+
+    css_classes = f'class="{css_class}"' if css_class else ''
+    alt_attribute = f'alt="{alt_text}"' if alt_text else 'alt="Image"'
+
+    html = f'<img src="{image_url}" {css_classes} {alt_attribute}>'
+    return mark_safe(html)
+
+@register.simple_tag
 def image_url_with_placeholder(image_field, placeholder_path="images/novustelltravelplaceholder.svg"):
     """
     Template tag to get image URL with automatic placeholder fallback
@@ -107,6 +180,69 @@ def image_url_with_placeholder(image_field, placeholder_path="images/novustelltr
 
     # Use placeholder if no valid image found
     return static(placeholder_path)
+
+@register.simple_tag
+def image_url_with_default(image_field, content_type="default", use_placeholder=False):
+    """
+    Template tag to get image URL with centralized default image fallback
+
+    Usage:
+    {% load image_tags %}
+    {% image_url_with_default destination.image "destinations" %}
+    {% image_url_with_default package.featured_image "packages" %}
+    """
+    from django.conf import settings
+
+    # Try Uploadcare image first
+    if image_field and hasattr(image_field, 'cdn_url'):
+        cdn_url = getattr(image_field, 'cdn_url', None)
+        if is_valid_uploadcare_url(cdn_url):
+            return cdn_url
+
+    # Try regular Django image field if Uploadcare failed
+    if image_field and hasattr(image_field, 'url'):
+        django_url = getattr(image_field, 'url', None)
+        if is_valid_django_url(django_url):
+            return django_url
+
+    # Use centralized default image system if no valid image found
+    default_images_config = getattr(settings, 'DEFAULT_IMAGES', {})
+
+    if use_placeholder:
+        # Use SVG placeholder
+        placeholder_path = default_images_config.get('PLACEHOLDER_SVG', 'images/novustelltravelplaceholder.svg')
+        return static(placeholder_path)
+    else:
+        # Use content-type specific default
+        content_type_upper = content_type.upper()
+
+        # Map content types to configuration keys
+        content_type_mapping = {
+            'DESTINATION': 'DESTINATIONS',
+            'DESTINATIONS': 'DESTINATIONS',
+            'ACCOMMODATION': 'ACCOMMODATIONS',
+            'ACCOMMODATIONS': 'ACCOMMODATIONS',
+            'PACKAGE': 'PACKAGES',
+            'PACKAGES': 'PACKAGES',
+            'BLOG': 'BLOG_POSTS',
+            'BLOG_POST': 'BLOG_POSTS',
+            'BLOG_POSTS': 'BLOG_POSTS',
+            'JOB': 'JOB_LISTINGS',
+            'JOB_LISTING': 'JOB_LISTINGS',
+            'JOB_LISTINGS': 'JOB_LISTINGS',
+            'JOBS': 'JOB_LISTINGS',
+        }
+
+        # Get the mapped key or use the content type directly
+        config_key = content_type_mapping.get(content_type_upper, content_type_upper)
+
+        # Get the appropriate default image
+        if config_key in default_images_config:
+            default_path = default_images_config[config_key]
+        else:
+            default_path = default_images_config.get('DEFAULT', 'assets/images/logo/defaultimagenovustell.png')
+
+        return static(default_path)
 
 @register.filter
 def has_image(image_field):

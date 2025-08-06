@@ -1107,9 +1107,9 @@
 <script>
     // Image error handling function
     function handleImageError(img) {
-        if (img.src.indexOf('{% static "assets/images/place/place-1.jpg" %}') === -1) {
+        if (img.src.indexOf('{{ default_images.PACKAGES }}') === -1) {
             img.onerror = null; // Prevent infinite loop
-            img.src = '{% static "assets/images/place/place-1.jpg" %}';
+            img.src = '{{ default_images.PACKAGES }}';
             img.classList.remove('package-main-image');
             img.classList.add('placeholder-image', 'error');
             img.alt = 'Default package image - ' + (img.alt || 'Package');

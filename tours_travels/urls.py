@@ -42,10 +42,11 @@ urlpatterns = [
 
 ]
 
-
+# Serve media files in development
 if settings.DEBUG == True:
     # static function below returns a list of url patterns of static path
-    urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # Custom error handlers for production
 handler400 = 'tours_travels.views.custom_400_view'

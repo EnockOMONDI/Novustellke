@@ -360,7 +360,7 @@
 
 <!-- Accommodation Hero Section -->
 <div class="accommodation-hero">
-    {% image_with_placeholder accommodation.image "" accommodation.name %}
+    {% image_with_default accommodation.image "accommodations" "" accommodation.name %}
     <div class="accommodation-hero-overlay">
         <div class="accommodation-hero-content">
             <h1 class="accommodation-title">{{ accommodation.name }}</h1>

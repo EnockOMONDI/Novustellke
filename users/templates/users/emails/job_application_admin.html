@@ -205,6 +205,11 @@
             background: #ff9d00;
             color: white;
         }
+
+        .btn-info {
+            background: #17a2b8;
+            color: white;
+        }
         
         .footer {
             background: #f8f9fa;
@@ -267,9 +272,16 @@
                     </div>
                     
                     <div class="detail-item">
-                        <div class="detail-label">Phone</div>
+                        <div class="detail-label">Primary Phone</div>
                         <div class="detail-value">{{ application.phone_number }}</div>
                     </div>
+
+                    {% if application.alternative_phone_number %}
+                    <div class="detail-item">
+                        <div class="detail-label">Alternative Phone</div>
+                        <div class="detail-value">{{ application.alternative_phone_number }}</div>
+                    </div>
+                    {% endif %}
                     
                     <div class="detail-item">
                         <div class="detail-label">Experience</div>
@@ -309,10 +321,35 @@
                         </div>
                     </div>
 
-                    <!-- Download Button -->
-                    <a href="{{ application.resume.url }}" class="download-btn" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-download"></i>Download Resume
-                    </a>
+                    <!-- Download and Share Buttons -->
+                    <div class="resume-actions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="{{ application.resume.url }}" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download"></i>Download Resume
+                        </a>
+                        <button onclick="copyResumeLink()" class="share-btn" style="background: #17a2b8; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-share-alt"></i>Copy CV Link
+                        </button>
+                    </div>
+
+                    <script>
+                        function copyResumeLink() {
+                            const resumeUrl = "{{ application.resume.url }}";
+                            navigator.clipboard.writeText(resumeUrl).then(function() {
+                                // Change button text temporarily
+                                const btn = event.target.closest('button');
+                                const originalText = btn.innerHTML;
+                                btn.innerHTML = '<i class="fas fa-check"></i>Copied!';
+                                btn.style.background = '#28a745';
+                                setTimeout(() => {
+                                    btn.innerHTML = originalText;
+                                    btn.style.background = '#17a2b8';
+                                }, 2000);
+                            }).catch(function(err) {
+                                console.error('Could not copy text: ', err);
+                                alert('Resume URL: {{ application.resume.url }}');
+                            });
+                        }
+                    </script>
 
                     <div style="margin-top: 15px;">
                         <small style="color: #666;">
@@ -330,11 +367,19 @@
             
             <!-- Action Buttons -->
             <div class="action-buttons">
-                <a href="#" class="btn btn-primary">
+                <a href="{% url 'admin:users_jobapplication_change' application.id %}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     🏠 View in Admin Panel
                 </a>
-                <a href="mailto:{{ application.email }}" class="btn btn-secondary">
+                <a href="mailto:{{ application.email }}?subject=Re: Your Application for {{ application.get_position_display }}&body=Dear {{ application.full_name }},%0D%0A%0D%0AThank you for your application for the {{ application.get_position_display }} position at Novustell Travel.%0D%0A%0D%0A" class="btn btn-secondary">
                     ✉️ Contact Applicant
+                </a>
+                {% if application.alternative_phone_number %}
+                <a href="tel:{{ application.alternative_phone_number }}" class="btn btn-info">
+                    📞 Call Alternative
+                </a>
+                {% endif %}
+                <a href="tel:{{ application.phone_number }}" class="btn btn-info">
+                    📞 Call Primary
                 </a>
             </div>
             

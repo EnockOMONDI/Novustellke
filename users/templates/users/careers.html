@@ -205,7 +205,7 @@
 
                             <!-- Job Description -->
                             <p class="text-muted mb-3" style="line-height: 1.6;">
-                                {{ job.description|truncatewords:25 }}
+                                {{ job.description|striptags|truncatewords:25 }}
                             </p>
 
                             <!-- Job Details -->
@@ -323,7 +323,7 @@
 
                             <div class="col-md-6">
                                 <label for="{{ form.phone_number.id_for_label }}" class="form-label fw-bold">
-                                    Phone Number <span class="text-danger">*</span>
+                                    <i class="fas fa-phone me-2"></i>Primary Phone Number <span class="text-danger">*</span>
                                 </label>
                                 {{ form.phone_number }}
                                 {% if form.phone_number.errors %}
@@ -331,6 +331,24 @@
                                         {{ form.phone_number.errors.0 }}
                                     </div>
                                 {% endif %}
+                                <div class="form-text text-muted small">
+                                    Enter your primary contact number (e.g., 254712345678)
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="{{ form.alternative_phone_number.id_for_label }}" class="form-label fw-bold">
+                                    <i class="fas fa-phone-alt me-2"></i>Alternative Phone Number
+                                </label>
+                                {{ form.alternative_phone_number }}
+                                {% if form.alternative_phone_number.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {{ form.alternative_phone_number.errors.0 }}
+                                    </div>
+                                {% endif %}
+                                <div class="form-text text-muted small">
+                                    Enter an alternative contact number (optional)
+                                </div>
                             </div>
 
                             <!-- Position Information -->

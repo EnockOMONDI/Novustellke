@@ -73,7 +73,7 @@
                         
                         <!-- Brief Job Description -->
                         <div class="job-description mb-4" style="line-height: 1.8; color: #666;">
-                            {{ job.description|truncatewords:50|linebreaks }}
+                            {{ job.description|striptags|truncatewords:50 }}
                         </div>
                         
                         <!-- Job Details Grid -->

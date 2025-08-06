@@ -1,5 +1,6 @@
 {% extends 'users/basemain.html' %}
 {% load static %}
+{% load image_tags %}
 
 {% block title %}{{ page_title|default:"Travel Blog - Novustell Travel" }}{% endblock %}
 
@@ -142,7 +143,7 @@
                             <article class="featured-post-card">
                                 <div class="post-image">
                                     <a href="{% url 'blog:blog-detail' slug=fp.slug %}">
-                                        <img src="{{ fp.image.cdn_url }}" alt="{{ fp.title }}" class="img-fluid">
+                                        {% image_with_default fp.image "blog_posts" "img-fluid" fp.title %}
                                         <div class="post-overlay">
                                             <span class="featured-badge">Featured</span>
                                         </div>
@@ -182,7 +183,7 @@
                             <article class="modern-blog-card">
                                 <div class="post-image-wrapper">
                                     <a href="{% url 'blog:blog-detail' slug=p.slug %}">
-                                        <img src="{{ p.image.cdn_url }}" alt="{{ p.title }}" class="post-image">
+                                        {% image_with_default p.image "blog_posts" "post-image" p.title %}
                                         <div class="image-overlay">
                                             <div class="overlay-content">
                                                 <i class="fas fa-arrow-right"></i>
@@ -349,7 +350,7 @@
                             <div class="recent-post-item">
                                 <div class="post-thumb">
                                     <a href="{% url 'blog:blog-detail' slug=rp.slug %}">
-                                        <img src="{{ rp.image.cdn_url }}" alt="{{ rp.title }}">
+                                        {% image_with_default rp.image "blog_posts" "" rp.title %}
                                     </a>
                                 </div>
                                 <div class="post-info">

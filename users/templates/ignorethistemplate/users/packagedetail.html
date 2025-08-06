@@ -5,9 +5,9 @@
 
 {% block content %}
    
-    <section 
-    class="page-banner overlay pt-170 pb-170 bg_cover" 
-    style="background-image: url({% image_url_with_placeholder package.featured_image %});">
+    <section
+    class="page-banner overlay pt-170 pb-170 bg_cover"
+    style="background-image: url({% image_url_with_default package.featured_image 'packages' %});">
 
     <div class="container">
         <div class="row justify-content-center">

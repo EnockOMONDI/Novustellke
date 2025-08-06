@@ -2,6 +2,7 @@ from django.contrib import admin
 from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
+from django.utils.html import format_html
 from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing
 from django_ckeditor_5.widgets import CKEditor5Widget
 
@@ -223,21 +224,21 @@ class BucketListAdmin(admin.ModelAdmin):
 
 @admin.register(JobApplication)
 class JobApplicationAdmin(admin.ModelAdmin):
-    list_display = ('full_name', 'position_applied_for', 'email', 'years_of_experience', 'created_at')
+    list_display = ('full_name', 'position_applied_for', 'email', 'years_of_experience', 'resume_link', 'created_at')
     list_filter = ('position_applied_for', 'years_of_experience', 'created_at', 'admin_notification_sent', 'applicant_confirmation_sent')
-    search_fields = ('full_name', 'email', 'phone_number')
-    readonly_fields = ('created_at', 'updated_at')
+    search_fields = ('full_name', 'email', 'phone_number', 'alternative_phone_number')
+    readonly_fields = ('created_at', 'updated_at', 'resume_download_link')
     date_hierarchy = 'created_at'
 
     fieldsets = (
         ('Personal Information', {
-            'fields': ('full_name', 'email', 'phone_number')
+            'fields': ('full_name', 'email', 'phone_number', 'alternative_phone_number')
         }),
         ('Position Details', {
             'fields': ('position_applied_for', 'years_of_experience', 'availability_date')
         }),
         ('Application Content', {
-            'fields': ('cover_letter', 'resume'),
+            'fields': ('cover_letter', 'resume', 'resume_download_link'),
             'classes': ('wide',)
         }),
         ('Email Tracking', {
@@ -253,6 +254,42 @@ class JobApplicationAdmin(admin.ModelAdmin):
     def get_queryset(self, request):
         """Optimize queryset for admin list view"""
         return super().get_queryset(request).select_related()
+
+    def resume_link(self, obj):
+        """Display resume download link in list view"""
+        if obj.resume:
+            return format_html(
+                '<a href="{}" target="_blank" style="color: #0f238d; font-weight: bold;">'
+                '<i class="fas fa-download"></i> Download CV</a>',
+                obj.resume.url
+            )
+        return "No CV uploaded"
+    resume_link.short_description = "Resume"
+    resume_link.allow_tags = True
+
+    def resume_download_link(self, obj):
+        """Display resume download link in detail view"""
+        if obj.resume:
+            import os
+            file_size = ""
+            try:
+                file_size = f" ({round(obj.resume.size / 1024, 1)} KB)"
+            except:
+                pass
+
+            return format_html(
+                '<div style="margin: 10px 0;">'
+                '<a href="{}" target="_blank" class="button" style="background: #0f238d; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block;">'
+                '<i class="fas fa-download"></i> Download Resume{}</a>'
+                '<br><small style="color: #666; margin-top: 5px; display: block;">File: {}</small>'
+                '</div>',
+                obj.resume.url,
+                file_size,
+                os.path.basename(obj.resume.name)
+            )
+        return format_html('<span style="color: #999;">No resume uploaded</span>')
+    resume_download_link.short_description = "Resume Download"
+    resume_download_link.allow_tags = True
 
 
 @admin.register(NewsletterSubscription)
