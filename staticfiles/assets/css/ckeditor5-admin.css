@@ -15,7 +15,7 @@
 
 /* Toolbar styling with Novustell colors */
 .ck-toolbar {
-    background: linear-gradient(135deg, #170b2c 0%, #0f238d 100%);
+    background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%);
     border-radius: 8px 8px 0 0;
     border: none;
     padding: 12px;
@@ -82,7 +82,7 @@
 
 /* Heading styles within editor */
 .ck-editor__editable h1 {
-    color: #170b2c;
+    color: #0f238d;
     font-family: 'Fonarto', sans-serif;
     font-size: 2.5em;
     font-weight: bold;
@@ -90,7 +90,7 @@
 }
 
 .ck-editor__editable h2 {
-    color: #170b2c;
+    color: #0f238d;
     font-family: 'Fonarto', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -113,7 +113,7 @@
 }
 
 .ck-editor__editable a:hover {
-    color: #170b2c;
+    color: #0f238d;
 }
 
 /* Blockquote styling */
@@ -149,7 +149,7 @@
 }
 
 .ck-editor__editable table th {
-    background: linear-gradient(135deg, #170b2c 0%, #0f238d 100%);
+    background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%);
     color: white;
     padding: 12px;
     font-weight: bold;
@@ -191,7 +191,7 @@
 
 .ck-editor__editable code {
     background-color: #f1f3f4;
-    color: #170b2c;
+    color: #0f238d;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Courier New', monospace;
@@ -206,7 +206,7 @@
 }
 
 .ck-balloon-panel .ck-toolbar {
-    background: linear-gradient(135deg, #170b2c 0%, #0f238d 100%);
+    background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%);
     border-radius: 6px;
 }
 
@@ -299,14 +299,14 @@
 }
 
 .destination-name {
-    color: #170b2c;
+    color: #0f238d;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .travel-tip {
     background-color: #f8f9fa;
-    border-left: 4px solid #170b2c;
+    border-left: 4px solid #0f238d;
     padding: 15px;
     margin: 15px 0;
     border-radius: 0 8px 8px 0;

@@ -5,7 +5,7 @@
 
 {% block content %}
 <!-- Job Detail Hero Section -->
-<section class="job-detail-hero py-5" style="background-color: #170b2c; position: relative; overflow: hidden;">
+<section class="job-detail-hero py-5" style="background-color: #0f238d; position: relative; overflow: hidden;">
     <!-- Background Pattern -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 50%); pointer-events: none;"></div>
     
@@ -99,7 +99,7 @@
             <div class="col-lg-8">
                 <!-- Job Description -->
                 <div class="job-section mb-5">
-                    <h2 class="section-title mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif; font-weight: 700;">
+                    <h2 class="section-title mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif; font-weight: 700;">
                         <i class="fas fa-info-circle me-2" style="color: #ff9d00;"></i>Job Description
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
@@ -111,7 +111,7 @@
                 
                 <!-- Key Responsibilities -->
                 <div class="job-section mb-5">
-                    <h2 class="section-title mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif; font-weight: 700;">
+                    <h2 class="section-title mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif; font-weight: 700;">
                         <i class="fas fa-tasks me-2" style="color: #ff9d00;"></i>Key Responsibilities
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
@@ -123,7 +123,7 @@
                 
                 <!-- Requirements -->
                 <div class="job-section mb-5">
-                    <h2 class="section-title mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif; font-weight: 700;">
+                    <h2 class="section-title mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif; font-weight: 700;">
                         <i class="fas fa-check-circle me-2" style="color: #ff9d00;"></i>Requirements & Qualifications
                     </h2>
                     <div class="content-card p-4 bg-white rounded-3 shadow-sm">
@@ -136,7 +136,7 @@
                 <!-- Benefits -->
                 {% if job.benefits %}
                     <div class="job-section mb-5">
-                        <h2 class="section-title mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif; font-weight: 700;">
+                        <h2 class="section-title mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif; font-weight: 700;">
                             <i class="fas fa-gift me-2" style="color: #ff9d00;"></i>Benefits & Perks
                         </h2>
                         <div class="content-card p-4 bg-white rounded-3 shadow-sm">
@@ -152,13 +152,13 @@
             <div class="col-lg-4">
                 <!-- Quick Apply Card -->
                 <div class="quick-apply-card mb-4 p-4 bg-white rounded-3 shadow-sm border-start border-4" style="border-color: #ff9d00 !important;">
-                    <h4 class="fw-bold mb-3" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+                    <h4 class="fw-bold mb-3" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                         <i class="fas fa-rocket me-2" style="color: #ff9d00;"></i>Quick Apply
                     </h4>
                     <p class="text-muted mb-3">Ready to join our team? Apply now and take the next step in your career journey.</p>
                     
                     {% if job.is_application_open %}
-                        <a href="{% url 'users:careers' %}?job_id={{ job.id }}#application" class="btn btn-primary w-100 mb-3" style="background: linear-gradient(135deg, #170b2c, #ff9d00); border: none; border-radius: 25px; padding: 12px;">
+                        <a href="{% url 'users:careers' %}?job_id={{ job.id }}#application" class="btn btn-primary w-100 mb-3" style="background: linear-gradient(135deg, #0f238d, #ff9d00); border: none; border-radius: 25px; padding: 12px;">
                             <i class="fas fa-paper-plane me-2"></i>Apply for this Position
                         </a>
                     {% else %}
@@ -167,14 +167,14 @@
                         </button>
                     {% endif %}
                     
-                    <a href="{% url 'users:careers' %}" class="btn btn-outline-primary w-100" style="border-color: #170b2c; color: #170b2c; border-radius: 25px;">
+                    <a href="{% url 'users:careers' %}" class="btn btn-outline-primary w-100" style="border-color: #0f238d; color: #0f238d; border-radius: 25px;">
                         <i class="fas fa-arrow-left me-2"></i>View All Jobs
                     </a>
                 </div>
                 
                 <!-- Job Information Card -->
                 <div class="job-info-card mb-4 p-4 bg-white rounded-3 shadow-sm">
-                    <h5 class="fw-bold mb-3" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+                    <h5 class="fw-bold mb-3" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                         <i class="fas fa-info me-2" style="color: #ff9d00;"></i>Job Information
                     </h5>
                     
@@ -243,7 +243,7 @@
                 
                 <!-- Share Job Card -->
                 <div class="share-job-card p-4 bg-white rounded-3 shadow-sm">
-                    <h5 class="fw-bold mb-3" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+                    <h5 class="fw-bold mb-3" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                         <i class="fas fa-share-alt me-2" style="color: #ff9d00;"></i>Share this Job
                     </h5>
                     <p class="text-muted mb-3">Know someone who might be interested? Share this opportunity!</p>
@@ -274,7 +274,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold mb-4" style="color: #170b2c; font-family: 'Fonarto', sans-serif;">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
                         Related Opportunities
                     </h2>
                     <p class="lead text-muted">
@@ -288,7 +288,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="job-card h-100 p-4 bg-white rounded-3 shadow-sm border-start border-4" style="border-color: #ff9d00 !important; transition: all 0.3s ease;">
                             <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h5 class="fw-bold mb-0" style="color: #170b2c;">{{ related_job.title }}</h5>
+                                <h5 class="fw-bold mb-0" style="color: #0f238d;">{{ related_job.title }}</h5>
                                 {% if related_job.application_status == 'open' %}
                                     <span class="badge bg-success">{{ related_job.get_application_status_display }}</span>
                                 {% elif related_job.application_status == 'reviewing' %}
@@ -308,7 +308,7 @@
                                 </small>
                             </div>
                             
-                            <a href="{{ related_job.get_absolute_url }}" class="btn btn-outline-primary w-100" style="border-color: #170b2c; color: #170b2c;">
+                            <a href="{{ related_job.get_absolute_url }}" class="btn btn-outline-primary w-100" style="border-color: #0f238d; color: #0f238d;">
                                 <i class="fas fa-eye me-2"></i>View Details
                             </a>
                         </div>
