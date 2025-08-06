@@ -2,7 +2,7 @@ from django.contrib import admin
 from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -324,6 +324,65 @@ class NewsletterSubscriptionAdmin(admin.ModelAdmin):
         if count > 0:
             self.message_user(request, f'Confirmation emails sent to {count} subscribers.')
     send_confirmation_emails.short_description = 'Send confirmation emails'
+
+
+@admin.register(JobListing)
+class JobListingAdmin(admin.ModelAdmin):
+    list_display = ('title', 'job_type', 'application_status', 'location', 'featured', 'is_active', 'posted_date', 'application_deadline')
+    list_filter = ('job_type', 'application_status', 'featured', 'is_active', 'posted_date', 'location')
+    search_fields = ('title', 'description', 'requirements', 'location')
+    readonly_fields = ('posted_date', 'updated_at', 'slug')
+    date_hierarchy = 'posted_date'
+    actions = ['mark_as_featured', 'mark_as_not_featured', 'open_applications', 'close_applications']
+
+    fieldsets = (
+        ('Basic Information', {
+            'fields': ('title', 'slug', 'description', 'job_image')
+        }),
+        ('Job Details', {
+            'fields': ('job_type', 'application_status', 'location', 'salary_range')
+        }),
+        ('Requirements & Responsibilities', {
+            'fields': ('requirements', 'responsibilities', 'benefits'),
+            'classes': ('wide',)
+        }),
+        ('Dates & Deadlines', {
+            'fields': ('application_deadline', 'posted_date', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+        ('Display Options', {
+            'fields': ('featured', 'is_active'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def mark_as_featured(self, request, queryset):
+        """Mark selected jobs as featured"""
+        updated = queryset.update(featured=True)
+        self.message_user(request, f'{updated} jobs marked as featured.')
+    mark_as_featured.short_description = 'Mark as featured'
+
+    def mark_as_not_featured(self, request, queryset):
+        """Remove featured status from selected jobs"""
+        updated = queryset.update(featured=False)
+        self.message_user(request, f'{updated} jobs removed from featured.')
+    mark_as_not_featured.short_description = 'Remove featured status'
+
+    def open_applications(self, request, queryset):
+        """Open applications for selected jobs"""
+        updated = queryset.update(application_status='open', is_active=True)
+        self.message_user(request, f'Applications opened for {updated} jobs.')
+    open_applications.short_description = 'Open applications'
+
+    def close_applications(self, request, queryset):
+        """Close applications for selected jobs"""
+        updated = queryset.update(application_status='closed')
+        self.message_user(request, f'Applications closed for {updated} jobs.')
+    close_applications.short_description = 'Close applications'
+
+    def get_queryset(self, request):
+        """Optimize queryset for admin list view"""
+        return super().get_queryset(request).select_related()
 
 
 # Re-register UserAdmin

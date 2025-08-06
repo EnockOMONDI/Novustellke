@@ -408,8 +408,24 @@ def send_newsletter_subscription_emails(subscription):
 
 def careers(request):
     """
-    Careers page with job application form
+    Careers page with job application form and dynamic job listings
     """
+    from .models import JobListing
+
+    # Get job listings
+    job_listings = JobListing.objects.filter(is_active=True).order_by('-featured', '-posted_date')
+
+    # Filter by job type if specified
+    job_type_filter = request.GET.get('job_type')
+    if job_type_filter:
+        job_listings = job_listings.filter(job_type=job_type_filter)
+
+    # Filter by application status if specified
+    status_filter = request.GET.get('status')
+    if status_filter:
+        job_listings = job_listings.filter(application_status=status_filter)
+
+    # Handle job application form submission
     if request.method == 'POST':
         form = JobApplicationForm(request.POST, request.FILES)
         if form.is_valid():
@@ -428,7 +444,69 @@ def careers(request):
     else:
         form = JobApplicationForm()
 
-    return render(request, 'users/careers.html', {'form': form})
+        # Pre-populate form if job_id is provided
+        job_id = request.GET.get('job_id')
+        if job_id:
+            try:
+                job_listing = JobListing.objects.get(id=job_id, is_active=True)
+                # Map job listing title to form choices
+                position_mapping = {
+                    'accountant': 'accountant',
+                    'travel consultant': 'travel_consultant',
+                    'graphic designer': 'graphic_designer',
+                    'marketing specialist': 'marketing_specialist',
+                    'customer service representative': 'customer_service',
+                    'tour guide': 'tour_guide',
+                    'operations manager': 'operations_manager',
+                }
+
+                # Try to find matching position
+                job_title_lower = job_listing.title.lower()
+                for key, value in position_mapping.items():
+                    if key in job_title_lower:
+                        form.initial['position_applied_for'] = value
+                        break
+
+            except JobListing.DoesNotExist:
+                pass
+
+    # Get filter choices for the template
+    job_type_choices = JobListing.JOB_TYPE_CHOICES
+    status_choices = JobListing.APPLICATION_STATUS_CHOICES
+
+    context = {
+        'form': form,
+        'job_listings': job_listings,
+        'job_type_choices': job_type_choices,
+        'status_choices': status_choices,
+        'current_job_type': job_type_filter,
+        'current_status': status_filter,
+    }
+
+    return render(request, 'users/careers.html', context)
+
+
+def job_detail(request, slug):
+    """
+    Individual job detail page
+    """
+    from .models import JobListing
+    from django.shortcuts import get_object_or_404
+
+    job = get_object_or_404(JobListing, slug=slug, is_active=True)
+
+    # Get related jobs (same type, excluding current job)
+    related_jobs = JobListing.objects.filter(
+        job_type=job.job_type,
+        is_active=True
+    ).exclude(id=job.id)[:3]
+
+    context = {
+        'job': job,
+        'related_jobs': related_jobs,
+    }
+
+    return render(request, 'users/job_detail.html', context)
 
 
 def newsletter_subscribe(request):

@@ -402,6 +402,13 @@ class JobApplication(models.Model):
 
     # Position Information
     position_applied_for = models.CharField(max_length=50, choices=POSITION_CHOICES)
+    job_listing = models.ForeignKey(
+        'JobListing',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        help_text="Specific job listing if applied through job detail page"
+    )
     years_of_experience = models.PositiveIntegerField()
     availability_date = models.DateField()
 
@@ -488,6 +495,115 @@ class NewsletterSubscription(models.Model):
         """Unsubscribe the user"""
         self.is_active = False
         self.save()
+
+
+class JobListing(models.Model):
+    """Model for job listings on the careers page"""
+
+    JOB_TYPE_CHOICES = [
+        ('full_time', 'Full-time'),
+        ('part_time', 'Part-time'),
+        ('contract', 'Contract'),
+        ('internship', 'Internship'),
+    ]
+
+    APPLICATION_STATUS_CHOICES = [
+        ('open', 'Open'),
+        ('reviewing', 'Reviewing Applications'),
+        ('closed', 'Closed'),
+        ('on_hold', 'On Hold'),
+    ]
+
+    # Basic Information
+    title = models.CharField(max_length=200, help_text="Job title")
+    slug = models.SlugField(max_length=250, unique=True, help_text="URL-friendly version of the title")
+    description = models.TextField(help_text="Detailed job description")
+
+    # Job Details
+    job_type = models.CharField(max_length=20, choices=JOB_TYPE_CHOICES, default='full_time')
+    application_status = models.CharField(max_length=20, choices=APPLICATION_STATUS_CHOICES, default='open')
+    location = models.CharField(max_length=100, default='Nairobi, Kenya')
+
+    # Requirements and Qualifications
+    requirements = models.TextField(help_text="Job requirements and qualifications")
+    responsibilities = models.TextField(help_text="Key responsibilities and duties")
+
+    # Optional Information
+    salary_range = models.CharField(max_length=100, blank=True, help_text="e.g., 'KES 50,000 - 80,000' or 'Competitive'")
+    benefits = models.TextField(blank=True, help_text="Employee benefits and perks")
+
+    # Media
+    job_image = models.ImageField(
+        upload_to='job_listings/',
+        blank=True,
+        null=True,
+        help_text="Job thumbnail image (recommended: 400x300px)"
+    )
+
+    # Dates
+    posted_date = models.DateTimeField(auto_now_add=True)
+    application_deadline = models.DateField(blank=True, null=True, help_text="Last date to apply")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    # SEO and Display
+    featured = models.BooleanField(default=False, help_text="Show as featured job")
+    is_active = models.BooleanField(default=True, help_text="Display on careers page")
+
+    class Meta:
+        ordering = ['-featured', '-posted_date']
+        verbose_name = "Job Listing"
+        verbose_name_plural = "Job Listings"
+
+    def __str__(self):
+        return f"{self.title} - {self.get_job_type_display()}"
+
+    def get_absolute_url(self):
+        """Get the URL for this job listing"""
+        from django.urls import reverse
+        return reverse('users:job_detail', kwargs={'slug': self.slug})
+
+    def is_application_open(self):
+        """Check if applications are currently being accepted"""
+        if not self.is_active:
+            return False
+        if self.application_status != 'open':
+            return False
+        if self.application_deadline:
+            from django.utils import timezone
+            return timezone.now().date() <= self.application_deadline
+        return True
+
+    def get_status_badge_class(self):
+        """Get CSS class for status badge"""
+        status_classes = {
+            'open': 'badge-success',
+            'reviewing': 'badge-warning',
+            'closed': 'badge-danger',
+            'on_hold': 'badge-secondary',
+        }
+        return status_classes.get(self.application_status, 'badge-secondary')
+
+    def get_type_badge_class(self):
+        """Get CSS class for job type badge"""
+        type_classes = {
+            'full_time': 'badge-primary',
+            'part_time': 'badge-info',
+            'contract': 'badge-warning',
+            'internship': 'badge-success',
+        }
+        return type_classes.get(self.job_type, 'badge-primary')
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            from django.utils.text import slugify
+            self.slug = slugify(self.title)
+            # Ensure unique slug
+            counter = 1
+            original_slug = self.slug
+            while JobListing.objects.filter(slug=self.slug).exists():
+                self.slug = f"{original_slug}-{counter}"
+                counter += 1
+        super().save(*args, **kwargs)
 
 
 # Signal to create UserProfile when User is created

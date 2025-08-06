@@ -23,6 +23,7 @@ urlpatterns = [
     path('activate/<uid64>/<token>',views.ActivateAccountView.as_view(),name='activate'),
     path('docs/', views.documentation, name='documentation'),
     path('careers/', views.careers, name='careers'),
+    path('careers/job/<slug:slug>/', views.job_detail, name='job_detail'),
     path('newsletter/subscribe/', views.newsletter_subscribe, name='newsletter_subscribe'),
 
     # User Profile URLs

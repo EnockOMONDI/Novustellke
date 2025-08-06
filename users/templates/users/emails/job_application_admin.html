@@ -136,6 +136,50 @@
             color: #666;
             margin: 10px 0;
         }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #170b2c, #ff9d00);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 15px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(23, 11, 44, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(23, 11, 44, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .download-btn i {
+            margin-right: 8px;
+        }
+
+        .file-info {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .file-name {
+            font-weight: 600;
+            color: #170b2c;
+            margin-bottom: 5px;
+        }
+
+        .file-details {
+            color: #666;
+            font-size: 14px;
+        }
         
         .action-buttons {
             text-align: center;
@@ -256,13 +300,30 @@
             <div class="resume-section">
                 <h3>📄 Resume/CV</h3>
                 {% if application.resume %}
-                    <div class="resume-info">
-                        <strong>File:</strong> {{ application.resume.name|default:"Resume uploaded" }}<br>
-                        <small>Please check the admin panel to download the resume file.</small>
+                    <div class="file-info">
+                        <div class="file-name">
+                            📎 {{ application.resume.name|default:"Resume.pdf" }}
+                        </div>
+                        <div class="file-details">
+                            Uploaded by {{ application.full_name }}
+                        </div>
+                    </div>
+
+                    <!-- Download Button -->
+                    <a href="{{ application.resume.url }}" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-download"></i>Download Resume
+                    </a>
+
+                    <div style="margin-top: 15px;">
+                        <small style="color: #666;">
+                            💡 <strong>Tip:</strong> Click the download button above to view or save the resume file directly.
+                            The file will open in a new tab for easy access.
+                        </small>
                     </div>
                 {% else %}
                     <div class="resume-info">
-                        <em>No resume file uploaded</em>
+                        <em>❌ No resume file uploaded</em>
+                        <br><small>The applicant did not upload a resume with their application.</small>
                     </div>
                 {% endif %}
             </div>
@@ -280,10 +341,10 @@
             <div style="background: #e8f5e8; border: 1px solid #4caf50; border-radius: 8px; padding: 20px; margin: 25px 0; text-align: center;">
                 <h3 style="color: #2e7d32; margin: 0 0 15px 0;">📊 Next Steps</h3>
                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                    1. Review the application in the admin panel<br>
-                    2. Download and review the resume<br>
-                    3. Contact the applicant if interested<br>
-                    4. Update the application status accordingly
+                    1. {% if application.resume %}Click the download button above to review the resume{% else %}Note: No resume was uploaded with this application{% endif %}<br>
+                    2. Review the application details and cover letter<br>
+                    3. Contact the applicant at {{ application.email }} if interested<br>
+                    4. Update the application status in the admin panel
                 </p>
             </div>
         </div>
