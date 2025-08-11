@@ -213,7 +213,7 @@
                                         <a href="{% url 'blog:blog-detail' slug=p.slug %}">{{ p.title|truncatechars:80 }}</a>
                                     </h3>
                                     <div class="post-excerpt">
-                                        {{ p.get_excerpt }}
+                                        {{ p.get_excerpt|safe }}
                                     </div>
                                     <div class="post-footer">
                                         <div class="author-info">
