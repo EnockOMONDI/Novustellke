@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'adminside',
     'users',
     'blog',
+    'status',
     'taggit',
     'crispy_forms',
     'pyuploadcare.dj',

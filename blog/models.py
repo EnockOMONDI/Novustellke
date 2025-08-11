@@ -107,7 +107,11 @@ class Post(models.Model):
     def get_excerpt(self):
         """Return excerpt if available, otherwise generate from content"""
         if self.excerpt:
-            return self.excerpt
+            # Check if excerpt has meaningful content (not just empty HTML)
+            clean_excerpt = strip_tags(self.excerpt).strip()
+            if clean_excerpt and clean_excerpt != '&nbsp;':
+                return self.excerpt
+
         # Auto-generate excerpt from content (first 150 characters)
         clean_content = strip_tags(self.content)
         return clean_content[:150] + "..." if len(clean_content) > 150 else clean_content
