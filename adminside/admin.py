@@ -8,7 +8,8 @@ from .models import (
     Package,
     Itinerary,
     ItineraryDay,
-    PackageBooking
+    PackageBooking,
+    Deal
 )
 # CKEditor5Field automatically handles CKEditor 5 widgets based on config_name
 # No need for explicit widget overrides
@@ -314,6 +315,78 @@ class PackageBookingAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
+
+
+class DealAdminForm(forms.ModelForm):
+    class Meta:
+        model = Deal
+        fields = '__all__'
+
+
+@admin.register(Deal)
+class DealAdmin(admin.ModelAdmin):
+    form = DealAdminForm
+    list_display = [
+        'title',
+        'discount_percentage',
+        'original_price',
+        'discounted_price',
+        'valid_from',
+        'valid_until',
+        'is_active',
+        'is_featured',
+        'is_currently_valid'
+    ]
+    list_filter = [
+        'is_active',
+        'is_featured',
+        'valid_from',
+        'valid_until',
+        'created_at'
+    ]
+    search_fields = ['title', 'description']
+    prepopulated_fields = {'slug': ('title',)}
+    readonly_fields = ['created_at', 'updated_at']
+    filter_horizontal = ['related_packages']
+
+    fieldsets = (
+        ('Basic Information', {
+            'fields': ('title', 'slug', 'description', 'featured_image')
+        }),
+        ('Pricing', {
+            'fields': ('discount_percentage', 'original_price', 'discounted_price'),
+            'classes': ('wide',)
+        }),
+        ('Validity', {
+            'fields': ('valid_from', 'valid_until'),
+            'classes': ('wide',)
+        }),
+        ('Status', {
+            'fields': ('is_active', 'is_featured'),
+            'classes': ('wide',)
+        }),
+        ('Related Packages', {
+            'fields': ('related_packages',),
+            'classes': ('wide',)
+        }),
+        ('SEO', {
+            'fields': ('meta_title', 'meta_description'),
+            'classes': ('collapse',)
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def is_currently_valid(self, obj):
+        """Display if deal is currently valid"""
+        if obj.is_currently_valid():
+            return format_html('<span style="color: green;">✓ Valid</span>')
+        else:
+            return format_html('<span style="color: red;">✗ Expired</span>')
+    is_currently_valid.short_description = 'Currently Valid'
+
 
 # Customize admin site header and title
 admin.site.site_header = 'Novustell Travel Administration'

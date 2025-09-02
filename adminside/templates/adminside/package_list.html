@@ -4,91 +4,554 @@
 
 {% block title %}Travel Packages - Novustell Travel{% endblock %}
 {% block meta_description %}Discover amazing travel packages and holiday deals with Novustell Travel. From luxury resorts to adventure tours, find your perfect getaway.{% endblock %}
+{% block meta_keywords %}travel packages, safari tours, Kenya tours, Uganda tours, Tanzania tours, beach holidays, cultural tours, adventure tours, Novustell Travel{% endblock %}
 
 {% block extra_css %}
 <style>
-    /* Enhanced Navigation Styles */
-    .main-container {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        gap: 25px;
+    /* Professional Packages Listing Page Styles */
+    .packages-container {
+        padding: 40px 0;
+        background: #f8f9fa;
         min-height: 100vh;
-        transition: grid-template-columns 0.3s ease;
     }
 
-    .nav-sidebar {
-        background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%);
-        border-radius: 20px;
-        padding: 25px;
-        height: fit-content;
-        position: sticky;
-        top: 20px;
-        box-shadow: 0 10px 30px rgba(15, 35, 141, 0.2);
-        transform: translateY(0);
-        animation: slideInLeft 0.6s ease-out;
-    }
-
-    .nav-sidebar h3 {
+    .page-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 40px 0;
+        background-image: url('{% static "assets/images/place/place-1.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: white;
-        font-weight: 600;
-        margin-bottom: 25px;
-        font-size: 1.3rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .destination-nav {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav-country {
-        margin-bottom: 15px;
-    }
-
-    .country-btn {
-        width: 100%;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        color: white;
-        padding: 12px 18px;
-        border-radius: 12px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 44px;
-    }
-
-    .country-btn:hover {
-        background: rgba(255, 157, 0, 0.2);
-        border-color: #ff9d00;
-        transform: translateX(5px);
-    }
-
-    .country-btn.active {
-        background: #ff9d00;
-        border-color: #ff9d00;
-        color: #0f238d;
-        font-weight: 600;
-    }
-
-    .cities-dropdown {
-        max-height: 0;
+        border-radius: 15px;
+        position: relative;
         overflow: hidden;
-        transition: max-height 0.4s ease, padding 0.3s ease;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 0 0 12px 12px;
-        margin-top: 2px;
     }
 
-    .cities-dropdown.active {
-        max-height: 500px;
-        padding: 10px 0;
+    .page-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(15, 35, 141, 0.35);
+        z-index: 1;
+    }
+
+    .page-header > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 0;
+    }
+
+    /* Category Filter Pills - Horizontal Scrolling Carousel */
+    .category-filters {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin-bottom: 40px;
+        padding: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+    .category-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Scroll indicators */
+    .category-filters::before,
+    .category-filters::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .category-filters::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(248, 249, 250, 0.8), transparent);
+    }
+
+    .category-filters::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(248, 249, 250, 0.8), transparent);
+    }
+
+    .category-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        min-width: fit-content;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 0.85rem;
+    }
+
+    .category-pill.active {
+        background: #0f238d;
+        color: white;
+        border-color: #0f238d;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(15, 35, 141, 0.3);
+    }
+
+    .category-pill:not(.active) {
+        background: #f8f9fa;
+        color: #333;
+        border-color: #e9ecef;
+    }
+
+    .category-pill:not(.active):hover {
+        background: #ff9d00;
+        color: white;
+        border-color: #ff9d00;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+    }
+
+    /* Category filter carousel enhancements */
+    .category-filters:hover {
+        cursor: grab;
+    }
+
+    .category-filters:active {
+        cursor: grabbing;
+    }
+
+    /* Focus styles for accessibility */
+    .category-filters:focus {
+        outline: 2px solid #0f238d;
+        outline-offset: 2px;
+    }
+
+    /* Search Section */
+    .search-section {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+
+    .search-container {
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px 50px 12px 20px;
+        border: 2px solid #e9ecef;
+        border-radius: 50px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: white;
+    }
+
+    .search-input:focus {
+        border-color: #0f238d;
+        box-shadow: 0 0 0 0.2rem rgba(15, 35, 141, 0.25);
+        outline: none;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+        font-size: 1.1rem;
+    }
+
+    /* Package Count */
+    .package-count {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+
+    /* Package Grid Layout */
+    .packages-grid {
+        display: grid;
+        gap: 20px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Package Filtering Classes */
+    .package-card.hidden {
+        display: none !important;
+    }
+
+    .package-card.visible {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Responsive Grid */
+    @media (min-width: 1200px) {
+        .packages-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .packages-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .packages-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 575px) {
+        .packages-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Mobile Carousel for Package Cards */
+    @media (max-width: 767px) {
+        .packages-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding: 0 15px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .packages-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .package-card {
+            flex: 0 0 300px;
+            scroll-snap-align: start;
+            height: auto;
+            min-height: 420px;
+            max-height: none;
+        }
+
+        .package-card.hidden {
+            display: none !important;
+        }
+
+        /* Mobile carousel navigation indicators */
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #dee2e6;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: #0f238d;
+            transform: scale(1.2);
+        }
+    }
+
+    /* Package Card Design */
+    .package-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .package-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .package-image {
+        position: relative;
+        width: 100%;
+        height: 160px!important ;
+        overflow: hidden;
+    }
+
+    .package-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .package-card:hover .package-image img {
+        transform: scale(1.05);
+    }
+
+    /* Package Badges */
+    .package-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: #ff9d00;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    .package-badge.popular {
+        background: #ff9d00;
+    }
+
+    .package-badge.new {
+        background: #28a745;
+    }
+
+    .package-badge.featured {
+        background: #dc3545;
+    }
+
+    /* Package Content */
+    .package-content {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .package-name {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #170b2c;
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+
+    .package-description {
+        color: #6c757d;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+    /* Package Footer */
+    .package-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid #f1f3f4;
+    }
+
+    .package-price {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #0f238d;
+    }
+
+    .price-label {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-weight: 400;
+        margin-right: 5px;
+    }
+
+    /* CTA Button */
+    .view-details-btn {
+        background: #170b2c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .view-details-btn:hover {
+        background: #0f238d;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(23, 11, 44, 0.3);
+        text-decoration: none;
+    }
+
+    /* Loading States */
+    .loading-spinner {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #0f238d;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    /* No Results Message */
+    .no-results {
+        text-align: center;
+        padding: 60px 20px;
+        color: #6c757d;
+    }
+
+    .no-results i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+    }
+
+    .no-results h3 {
+        margin-bottom: 15px;
+        color: #495057;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2rem;
+        }
+
+        .page-header p {
+            font-size: 1rem;
+        }
+
+        .category-filters {
+            padding: 15px 10px;
+            gap: 10px;
+        }
+
+        .category-pill {
+            padding: 5px 9px;
+            font-size: 0.8rem;
+        }
+
+        .search-section {
+            padding: 0 10px;
+        }
+
+        .packages-grid {
+            padding: 0 10px;
+        }
+
+        .package-content {
+            padding: 20px;
+        }
+
+        .package-name {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .packages-container {
+            padding: 20px 0;
+        }
+
+        .page-header {
+            padding: 30px 15px;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .category-filters {
+            gap: 8px;
+            padding: 10px 5px;
+        }
+
+        .category-pill {
+            padding: 4px 8px;
+            font-size: 0.75rem;
+        }
+
+        .package-content {
+            padding: 15px;
+        }
+
+        .package-footer {
+            flex-direction: column;
+            gap: 15px;
+            align-items: stretch;
+        }
+
+        .view-details-btn {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     .city-item {
@@ -197,24 +660,9 @@
         transform: translateY(-50%) scale(1.05);
     }
 
-    /* Exact Novustell Travel destination card styling */
-    .package-card {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        height: 450px !important;
-        min-height: 450px;
-        max-height: 450px;
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        box-shadow: 0 8px 25px rgba(23, 11, 44, 0.1);
-        margin: 0 auto;
-        max-width: 100%;
-    }
+    /* Remove conflicting card styling - using main definition above */
 
-    .package-card:hover {
-        transform: translateY(-10px) scale(1.02);
-        box-shadow: 0 20px 40px rgba(23, 11, 44, 0.2);
-    }
+    /* Hover effects handled by main definition */
 
     .package-image {
         position: relative;
@@ -473,122 +921,9 @@
         color: var(--white);
     }
 
-    /* Enhanced 4-column layout adjustments */
-    @media (min-width: 1200px) {
-        .package-card {
-            max-width: 100%;
-        }
+    /* Removed conflicting responsive grid CSS - using CSS Grid instead */
 
-        /* Ensure proper spacing for 4-column layout */
-        .row.g-4 > .col-lg-3 {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 1199px) {
-        .package-title {
-            font-size: 1.6rem;
-        }
-
-        .package-overlay {
-            padding: 25px;
-        }
-
-        /* 3-column layout for medium-large screens (992px - 1199px) */
-        .col-lg-3 {
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-        }
-    }
-
-    @media (max-width: 991px) {
-        /* 2-column layout for tablets remains as col-md-6 */
-        .col-lg-3 {
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-    }
-
-    @media (max-width: 575px) {
-        /* Single column layout for mobile */
-        .col-lg-3 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        .row.g-4 {
-            margin-left: -8px;
-            margin-right: -8px;
-        }
-
-        .row.g-4 > * {
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-    }
-
-    /* Large screen optimizations for 4-column layout */
-    @media (min-width: 1400px) {
-        .main-container {
-            grid-template-columns: 280px 1fr;
-            gap: 30px;
-        }
-
-        .package-card {
-            height: 480px !important;
-            min-height: 480px;
-            max-height: 480px;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .filter-section {
-            padding: 20px;
-        }
-
-        .package-card {
-            height: 380px !important;
-            min-height: 380px;
-            max-height: 380px;
-        }
-
-        .package-title {
-            font-size: 1.4rem;
-        }
-
-        .package-overlay {
-            padding: 20px;
-        }
-
-        .results-info {
-            flex-direction: column;
-            gap: 15px;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .package-card {
-            height: 320px !important;
-            min-height: 320px;
-            max-height: 320px;
-        }
-
-        .package-overlay {
-            padding: 15px;
-        }
-
-        .package-btn {
-            padding: 10px 20px;
-            font-size: 0.9rem;
-        }
-
-        .package-title {
-            font-size: 1.2rem;
-        }
-    }
+    /* Removed conflicting height definitions that break mobile carousel */
 
     .featured-badge {
         position: absolute;
@@ -839,7 +1174,7 @@
         }
 
         .package-image {
-            height: 200px;
+            height: 50px;
         }
 
         .package-content {
@@ -898,169 +1233,105 @@
 {% endblock %}
 
 {% block content %}
-<div class="main-container">
-    <!-- Enhanced Navigation Sidebar -->
-    <div class="nav-sidebar">
-        <h3>
-            <i class="fas fa-globe-americas"></i>
-            Explore Destinations
-        </h3>
-        <ul class="destination-nav">
-            {% for country in countries %}
-            <li class="nav-country">
-                <button class="country-btn" onclick="toggleCountry('{{ country.slug }}')">
-                    <span>
-                        <i class="fas fa-flag me-2"></i>{{ country.name }}
-                    </span>
-                    <i class="fas fa-chevron-down transition-transform" id="chevron-{{ country.slug }}"></i>
-                </button>
-                <div class="cities-dropdown" id="cities-{{ country.slug }}">
-                    {% for city in country.children.all %}
-                    <div class="city-item" onclick="toggleCity('{{ city.slug }}')">
-                        <span>
-                            <i class="fas fa-city me-2"></i>{{ city.name }}
-                        </span>
-                        {% if city.children.all %}
-                        <i class="fas fa-chevron-down" id="city-chevron-{{ city.slug }}"></i>
-                        {% endif %}
-                    </div>
-                    {% if city.children.all %}
-                    <div class="places-dropdown" id="places-{{ city.slug }}">
-                        {% for place in city.children.all %}
-                        <div class="place-item" onclick="filterByDestination('{{ place.id }}')">
-                            <i class="fas fa-map-marker-alt me-2"></i>{{ place.name }}
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-
-    <!-- Content Area -->
-    <div class="content-area">
-        <!-- Filter Section -->
-        <div class="filter-section">
-            <form method="GET" class="row g-3 align-items-end">
-                <div class="col-md-8">
-                    <label for="search" class="form-label fw-semibold">Search Packages</label>
-                    <div class="search-box">
-                        <input type="text"
-                               class="search-input"
-                               id="search"
-                               name="search"
-                               value="{{ search_query }}"
-                               placeholder="Search by package name, description, or destination...">
-                        <button type="submit" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="destination" class="form-label fw-semibold">Filter by Destination</label>
-                    <select class="form-select" id="destination" name="destination">
-                        <option value="">All Destinations</option>
-                        {% for country in countries %}
-                            <option value="{{ country.id }}" {% if country.id|stringformat:"s" == current_destination_id %}selected{% endif %}>
-                                🌍 {{ country.name }}
-                            </option>
-                            {% for city in country.children.all %}
-                                <option value="{{ city.id }}" {% if city.id|stringformat:"s" == current_destination_id %}selected{% endif %}>
-                                    &nbsp;&nbsp;🏙️ {{ city.name }}
-                                </option>
-                                {% for place in city.children.all %}
-                                    <option value="{{ place.id }}" {% if place.id|stringformat:"s" == current_destination_id %}selected{% endif %}>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;📍 {{ place.name }}
-                                    </option>
-                                {% endfor %}
-                            {% endfor %}
-                        {% endfor %}
-                    </select>
-                </div>
-            </form>
-
-            <!-- Active Filters -->
-            {% if search_query or current_destination_id %}
-            <div class="filter-tags">
-                {% if search_query %}
-                <div class="filter-tag">
-                    <span>Search: "{{ search_query }}"</span>
-                    <button type="button" class="remove-filter" onclick="removeFilter('search')">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                {% endif %}
-                {% if current_destination_id %}
-                <div class="filter-tag">
-                    <span>Destination Filter Active</span>
-                    <button type="button" class="remove-filter" onclick="removeFilter('destination')">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                {% endif %}
-            </div>
-            {% endif %}
+<div class="packages-container">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Travel Packages</h1>
+            <p>Discover amazing destinations and create unforgettable memories with our curated travel experiences</p>
         </div>
 
-<!-- Results Info -->
-<div class="results-info">
-    <div>
-        <h5 class="mb-1">Travel Packages</h5>
-        <p class="text-muted mb-0">
-            Showing {{ page_obj.start_index }}-{{ page_obj.end_index }} of {{ page_obj.paginator.count }} packages
-        </p>
-    </div>
-    <div class="d-flex gap-2">
-        <button class="btn btn-outline-primary btn-sm" onclick="toggleSidebar()">
-            <i class="fas fa-filter me-1"></i>Filters
-        </button>
-    </div>
-</div>
+        <!-- Category Filter Pills -->
+        <div class="category-filters">
+            <a href="?category=all" class="category-pill {% if not request.GET.category or request.GET.category == 'all' %}active{% endif %}" data-category="all">
+                All Packages
+            </a>
+            <a href="?category=uganda" class="category-pill {% if request.GET.category == 'uganda' %}active{% endif %}" data-category="uganda">
+                Uganda Tours
+            </a>
+            <a href="?category=kenya" class="category-pill {% if request.GET.category == 'kenya' %}active{% endif %}" data-category="kenya">
+                Kenya Tours
+            </a>
+            <a href="?category=tanzania" class="category-pill {% if request.GET.category == 'tanzania' %}active{% endif %}" data-category="tanzania">
+                Tanzania Tours
+            </a>
+            <a href="?category=beach" class="category-pill {% if request.GET.category == 'beach' %}active{% endif %}" data-category="beach">
+                Beach Holidays
+            </a>
+            <a href="?category=cultural" class="category-pill {% if request.GET.category == 'cultural' %}active{% endif %}" data-category="cultural">
+                Cultural Tours
+            </a>
+            <a href="?category=adventure" class="category-pill {% if request.GET.category == 'adventure' %}active{% endif %}" data-category="adventure">
+                Adventure Tours
+            </a>
+            <a href="?category=safari" class="category-pill {% if request.GET.category == 'safari' %}active{% endif %}" data-category="safari">
+                Safari Packages
+            </a>
+        </div>
 
-<!-- Package Grid -->
-<div class="row g-4">
-    {% for package in page_obj %}
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="package-card">
-            <div class="package-image{% if not package.featured_image or not package.featured_image.cdn_url %} has-placeholder{% endif %}">
-                {% image_with_placeholder package.featured_image "img-fluid package-main-image" package.name %}
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text"
+                       class="search-input"
+                       id="searchInput"
+                       placeholder="Search packages..."
+                       value="{{ search_query }}">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
 
-                {% if package.is_featured %}
-                <div class="featured-badge">
-                    <i class="fas fa-star me-1"></i>Featured
+        <!-- Package Count -->
+        <div class="package-count">
+            <span id="packageCount">Showing {{ page_obj.paginator.count }} packages</span>
+        </div>
+
+        <!-- Packages Grid -->
+        <div class="packages-grid" id="packagesGrid">
+            {% for package in page_obj %}
+            <div class="package-card" data-category="{{ package.main_destination.name|lower }}" data-name="{{ package.name|lower }}" data-description="{{ package.description|lower }}">
+                <div class="package-image">
+                    {% image_with_default package.featured_image "packages" "package-img" package.name %}
+
+                    <!-- Package Badges -->
+                    {% if package.is_featured %}
+                        <div class="package-badge featured">Featured</div>
+                    {% elif package.created|timesince:"30 days ago" %}
+                        <div class="package-badge new">New</div>
+                    {% elif package.adult_price < 500 %}
+                        <div class="package-badge popular">Popular</div>
+                    {% endif %}
                 </div>
-                {% endif %}
-                <div class="duration-badge">
-                    {{ package.duration_days }} Days
-                </div>
-                <div class="package-overlay">
-                    <div class="package-content">
-                        <h4 class="package-title">{{ package.name }}</h4>
-                        <p class="package-description">{{ package.description|truncatewords:15 }}</p>
-                        <div class="package-price">Starting from ${{ package.adult_price }}</div>
-                        <a href="{% url 'adminside:package_detail' package.slug %}" class="package-btn">
-                            <i class="fas fa-arrow-right"></i> Explore
+
+                <div class="package-content">
+                    <h4 class="package-name">{{ package.name }}</h4>
+                    <p class="package-description">{{ package.description|truncatewords:20 }}</p>
+
+                    <div class="package-footer">
+                        <div class="package-price">
+                            <span class="price-label">From</span>
+                            ${{ package.adult_price }}
+                        </div>
+                        <a href="{% url 'adminside:package_detail' package.slug %}" class="view-details-btn">
+                            View Details
                         </a>
                     </div>
                 </div>
             </div>
+            {% empty %}
+            <div class="no-results">
+                <i class="fas fa-suitcase-rolling"></i>
+                <h3>No packages found</h3>
+                <p>Try adjusting your search criteria or browse different categories.</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
         </div>
     </div>
-    {% empty %}
-    <div class="col-12">
-        <div class="text-center py-5">
-            <i class="fas fa-suitcase fa-3x text-muted mb-3"></i>
-            <h3 class="text-muted">No packages found</h3>
-            <p class="text-muted">Try adjusting your search criteria or browse all destinations.</p>
-            <a href="{% url 'adminside:package_list' %}" class="btn btn-primary">
-                <i class="fas fa-refresh me-2"></i>View All Packages
-            </a>
-        </div>
-    </div>
-    {% endfor %}
 </div>
 
 <!-- Pagination -->
@@ -1105,94 +1376,330 @@
 
 {% block extra_js %}
 <script>
-    // Image error handling function
-    function handleImageError(img) {
-        if (img.src.indexOf('{{ default_images.PACKAGES }}') === -1) {
-            img.onerror = null; // Prevent infinite loop
-            img.src = '{{ default_images.PACKAGES }}';
-            img.classList.remove('package-main-image');
-            img.classList.add('placeholder-image', 'error');
-            img.alt = 'Default package image - ' + (img.alt || 'Package');
+    // Professional Packages Listing JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const categoryPills = document.querySelectorAll('.category-pill');
+        const packagesGrid = document.getElementById('packagesGrid');
+        const packageCount = document.getElementById('packageCount');
+        const loadingSpinner = document.getElementById('loadingSpinner');
 
-            // Add placeholder class to parent container
-            const packageImageContainer = img.closest('.package-image');
-            if (packageImageContainer) {
-                packageImageContainer.classList.add('has-placeholder');
+        let searchTimeout;
+        let currentCategory = 'all';
+        let currentSearch = '';
+
+        // Initialize from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        currentCategory = urlParams.get('category') || 'all';
+        currentSearch = urlParams.get('search') || '';
+
+        // Search functionality
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                currentSearch = this.value.toLowerCase();
+
+                searchTimeout = setTimeout(() => {
+                    filterPackages();
+                    updateURL();
+                }, 300);
+            });
+        }
+
+        // Category filter functionality
+        categoryPills.forEach(pill => {
+            pill.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Update active state
+                categoryPills.forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+
+                // Scroll active pill into view
+                this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+                currentCategory = this.dataset.category;
+                filterPackages();
+                updateURL();
+            });
+        });
+
+        // Filter packages function
+        function filterPackages() {
+            showLoading();
+
+            const packageCards = packagesGrid.querySelectorAll('.package-card');
+            let visibleCount = 0;
+
+            console.log(`Filtering packages: category="${currentCategory}", search="${currentSearch}"`);
+            console.log(`Found ${packageCards.length} package cards`);
+
+            packageCards.forEach(card => {
+                const cardCategory = card.dataset.category || '';
+                const cardName = card.dataset.name || '';
+                const cardDescription = card.dataset.description || '';
+
+                const matchesCategory = currentCategory === 'all' ||
+                                      cardCategory.includes(currentCategory) ||
+                                      (currentCategory === 'safari' && (cardName.includes('safari') || cardDescription.includes('safari'))) ||
+                                      (currentCategory === 'beach' && (cardName.includes('beach') || cardDescription.includes('beach'))) ||
+                                      (currentCategory === 'cultural' && (cardName.includes('cultural') || cardDescription.includes('cultural'))) ||
+                                      (currentCategory === 'adventure' && (cardName.includes('adventure') || cardDescription.includes('adventure')));
+
+                const matchesSearch = currentSearch === '' ||
+                                    cardName.includes(currentSearch) ||
+                                    cardDescription.includes(currentSearch) ||
+                                    cardCategory.includes(currentSearch);
+
+                // Clear any existing classes first
+                card.classList.remove('hidden', 'visible');
+
+                if (matchesCategory && matchesSearch) {
+                    card.classList.add('visible');
+                    visibleCount++;
+
+                    // Debug: Check if card content is intact
+                    const cardContent = card.querySelector('.package-content');
+                    const cardName = card.querySelector('.package-name');
+                    if (!cardContent || !cardName) {
+                        console.warn('Card content missing for visible card:', card);
+                    }
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Update package count
+            packageCount.textContent = `Showing ${visibleCount} packages`;
+
+            // Show no results message if needed
+            const noResults = packagesGrid.querySelector('.no-results');
+            if (visibleCount === 0 && !noResults) {
+                const noResultsDiv = document.createElement('div');
+                noResultsDiv.className = 'no-results';
+                noResultsDiv.innerHTML = `
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <h3>No packages found</h3>
+                    <p>Try adjusting your search criteria or browse different categories.</p>
+                `;
+                packagesGrid.appendChild(noResultsDiv);
+            } else if (visibleCount > 0 && noResults) {
+                noResults.remove();
             }
 
-            // Add a subtle loading indicator
-            img.style.opacity = '0.8';
+            hideLoading();
+
+            // Reinitialize mobile carousel after filtering
+            if (window.innerWidth <= 767) {
+                setTimeout(() => {
+                    initializeMobileCarousel();
+                }, 100);
+            }
+        }
+
+        // Update URL without page reload
+        function updateURL() {
+            const url = new URL(window.location);
+
+            if (currentCategory && currentCategory !== 'all') {
+                url.searchParams.set('category', currentCategory);
+            } else {
+                url.searchParams.delete('category');
+            }
+
+            if (currentSearch) {
+                url.searchParams.set('search', currentSearch);
+            } else {
+                url.searchParams.delete('search');
+            }
+
+            window.history.replaceState({}, '', url);
+        }
+
+        // Loading states
+        function showLoading() {
+            loadingSpinner.style.display = 'block';
+        }
+
+        function hideLoading() {
             setTimeout(() => {
-                img.style.opacity = '1';
+                loadingSpinner.style.display = 'none';
             }, 300);
         }
-    }
 
-    // Enhanced image loading with better error handling
-    function initializeImages() {
-        const images = document.querySelectorAll('.package-main-image');
-        images.forEach(img => {
-            // Add loading state
-            img.classList.add('loading');
+        // Initialize filters on page load
+        if (currentSearch) {
+            searchInput.value = currentSearch;
+        }
 
-            // Handle successful load
-            img.addEventListener('load', function() {
-                this.classList.remove('loading');
+        // Apply initial filters if any
+        if (currentCategory !== 'all' || currentSearch) {
+            filterPackages();
+        }
+
+        // Initialize mobile carousel
+        initializeMobileCarousel();
+
+        // Initialize category filter carousel
+        initializeCategoryFilterCarousel();
+    });
+
+    // Mobile Carousel Functionality
+    function initializeMobileCarousel() {
+        if (window.innerWidth <= 767) {
+            const packagesGrid = document.getElementById('packagesGrid');
+            const packageCards = packagesGrid.querySelectorAll('.package-card:not(.hidden)');
+
+            // Add touch/swipe support
+            let startX = 0;
+            let scrollLeft = 0;
+            let isDown = false;
+
+            packagesGrid.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - packagesGrid.offsetLeft;
+                scrollLeft = packagesGrid.scrollLeft;
+                packagesGrid.style.cursor = 'grabbing';
             });
 
-            // Handle error
-            img.addEventListener('error', function() {
-                handleImageError(this);
+            packagesGrid.addEventListener('mouseleave', () => {
+                isDown = false;
+                packagesGrid.style.cursor = 'grab';
             });
 
-            // Check if image is already loaded (cached)
-            if (img.complete && img.naturalHeight !== 0) {
-                img.classList.remove('loading');
-            }
-        });
-    }
+            packagesGrid.addEventListener('mouseup', () => {
+                isDown = false;
+                packagesGrid.style.cursor = 'grab';
+            });
 
-    // Enhanced Navigation Functions
-    function toggleCountry(countrySlug) {
-        const dropdown = document.getElementById(`cities-${countrySlug}`);
-        const chevron = document.getElementById(`chevron-${countrySlug}`);
-        const isActive = dropdown.classList.contains('active');
+            packagesGrid.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - packagesGrid.offsetLeft;
+                const walk = (x - startX) * 2;
+                packagesGrid.scrollLeft = scrollLeft - walk;
+            });
 
-        // Close all other country dropdowns
-        document.querySelectorAll('.cities-dropdown.active').forEach(el => {
-            if (el.id !== `cities-${countrySlug}`) {
-                el.classList.remove('active');
-                const otherChevron = document.querySelector(`#chevron-${el.id.replace('cities-', '')}`);
-                if (otherChevron) otherChevron.style.transform = 'rotate(0deg)';
-            }
-        });
+            // Touch events for mobile
+            packagesGrid.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX;
+                scrollLeft = packagesGrid.scrollLeft;
+            });
 
-        // Toggle current dropdown
-        if (isActive) {
-            dropdown.classList.remove('active');
-            chevron.style.transform = 'rotate(0deg)';
-        } else {
-            dropdown.classList.add('active');
-            chevron.style.transform = 'rotate(180deg)';
+            packagesGrid.addEventListener('touchmove', (e) => {
+                if (!startX) return;
+                const x = e.touches[0].pageX;
+                const walk = (startX - x) * 1;
+                packagesGrid.scrollLeft = scrollLeft + walk;
+            });
+
+            packagesGrid.addEventListener('touchend', () => {
+                startX = 0;
+            });
+
+            // Smooth scroll snap
+            packagesGrid.style.cursor = 'grab';
         }
     }
 
-    function toggleCity(citySlug) {
-        const dropdown = document.getElementById(`places-${citySlug}`);
-        const chevron = document.getElementById(`city-chevron-${citySlug}`);
+    // Category Filter Carousel Functionality
+    function initializeCategoryFilterCarousel() {
+        const categoryFilters = document.querySelector('.category-filters');
+        if (!categoryFilters) return;
 
-        if (dropdown && chevron) {
-            const isActive = dropdown.classList.contains('active');
+        // Add touch/swipe support for category filters
+        let startX = 0;
+        let scrollLeft = 0;
+        let isDown = false;
 
-            if (isActive) {
-                dropdown.classList.remove('active');
-                chevron.style.transform = 'rotate(0deg)';
-            } else {
-                dropdown.classList.add('active');
-                chevron.style.transform = 'rotate(180deg)';
+        // Mouse events for desktop
+        categoryFilters.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - categoryFilters.offsetLeft;
+            scrollLeft = categoryFilters.scrollLeft;
+            categoryFilters.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+
+        categoryFilters.addEventListener('mouseleave', () => {
+            isDown = false;
+            categoryFilters.style.cursor = 'default';
+        });
+
+        categoryFilters.addEventListener('mouseup', () => {
+            isDown = false;
+            categoryFilters.style.cursor = 'default';
+        });
+
+        categoryFilters.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - categoryFilters.offsetLeft;
+            const walk = (x - startX) * 2;
+            categoryFilters.scrollLeft = scrollLeft - walk;
+        });
+
+        // Touch events for mobile
+        categoryFilters.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX;
+            scrollLeft = categoryFilters.scrollLeft;
+        });
+
+        categoryFilters.addEventListener('touchmove', (e) => {
+            if (!startX) return;
+            const x = e.touches[0].pageX;
+            const walk = (startX - x) * 1.5;
+            categoryFilters.scrollLeft = scrollLeft + walk;
+        });
+
+        categoryFilters.addEventListener('touchend', () => {
+            startX = 0;
+        });
+
+        // Keyboard navigation
+        categoryFilters.addEventListener('keydown', (e) => {
+            const scrollAmount = 100;
+
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                categoryFilters.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                categoryFilters.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             }
+        });
+
+        // Make container focusable for keyboard navigation
+        categoryFilters.setAttribute('tabindex', '0');
+
+        // Scroll active pill into view
+        const activePill = categoryFilters.querySelector('.category-pill.active');
+        if (activePill) {
+            activePill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
     }
+
+    // Accessibility: Keyboard navigation for category pills
+    document.querySelectorAll('.category-pill').forEach(pill => {
+        pill.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+
+    // Smooth scroll for pagination
+    document.querySelectorAll('.pagination .page-link').forEach(link => {
+        link.addEventListener('click', function() {
+            setTimeout(() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        });
+    });
 
     function filterByDestination(destinationId) {
         const url = new URL(window.location);
@@ -1317,6 +1824,12 @@
         } else {
             mainContainer.style.gridTemplateColumns = '1fr';
         }
+
+        // Reinitialize carousels on resize
+        setTimeout(() => {
+            initializeMobileCarousel();
+            initializeCategoryFilterCarousel();
+        }, 100);
     });
 </script>
 {% endblock %}

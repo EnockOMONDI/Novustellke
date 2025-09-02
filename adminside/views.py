@@ -10,7 +10,8 @@ from .models import (
     Package,
     Itinerary,
     ItineraryDay,
-    PackageBooking
+    PackageBooking,
+    Deal
 )
 
 # Destination Views
@@ -68,10 +69,48 @@ def destination_detail(request, slug):
 
 # Package Views
 def package_list(request):
-    """List packages with filtering by destination hierarchy"""
+    """Professional packages listing with category filtering and search"""
     packages = Package.objects.filter(status=Package.PUBLISHED).select_related('main_destination')
 
-    # Filter by destination if provided
+    # Category filtering
+    category = request.GET.get('category', 'all')
+    if category and category != 'all':
+        if category == 'uganda':
+            packages = packages.filter(main_destination__name__icontains='uganda')
+        elif category == 'kenya':
+            packages = packages.filter(main_destination__name__icontains='kenya')
+        elif category == 'tanzania':
+            packages = packages.filter(main_destination__name__icontains='tanzania')
+        elif category == 'beach':
+            packages = packages.filter(
+                Q(name__icontains='beach') |
+                Q(description__icontains='beach') |
+                Q(name__icontains='coast') |
+                Q(description__icontains='coast')
+            )
+        elif category == 'cultural':
+            packages = packages.filter(
+                Q(name__icontains='cultural') |
+                Q(description__icontains='cultural') |
+                Q(name__icontains='culture') |
+                Q(description__icontains='culture')
+            )
+        elif category == 'adventure':
+            packages = packages.filter(
+                Q(name__icontains='adventure') |
+                Q(description__icontains='adventure') |
+                Q(name__icontains='hiking') |
+                Q(description__icontains='hiking')
+            )
+        elif category == 'safari':
+            packages = packages.filter(
+                Q(name__icontains='safari') |
+                Q(description__icontains='safari') |
+                Q(name__icontains='wildlife') |
+                Q(description__icontains='wildlife')
+            )
+
+    # Legacy destination filtering (for backward compatibility)
     destination_id = request.GET.get('destination')
     if destination_id:
         try:
@@ -117,6 +156,7 @@ def package_list(request):
         'countries': countries,
         'current_destination_id': destination_id,
         'search_query': search_query,
+        'current_category': category,
         'page_title': 'Travel Packages'
     }
     return render(request, 'adminside/package_list.html', context)
@@ -400,3 +440,61 @@ def user_package_list(request):
     }
 
     return render(request, 'adminside/user_package_list.html', context)
+
+
+# Deal Views
+def deals_list(request):
+    """List all active deals with filtering and pagination"""
+    from django.utils import timezone
+
+    deals = Deal.objects.filter(is_active=True).select_related().prefetch_related('related_packages')
+
+    # Filter by validity
+    show_expired = request.GET.get('show_expired', 'false').lower() == 'true'
+    if not show_expired:
+        deals = deals.filter(valid_until__gte=timezone.now())
+
+    # Search functionality
+    search_query = request.GET.get('search')
+    if search_query:
+        deals = deals.filter(
+            Q(title__icontains=search_query) |
+            Q(description__icontains=search_query)
+        )
+
+    # Filter by featured
+    featured_only = request.GET.get('featured', 'false').lower() == 'true'
+    if featured_only:
+        deals = deals.filter(is_featured=True)
+
+    # Order by featured first, then by creation date
+    deals = deals.order_by('-is_featured', '-created_at')
+
+    # Pagination
+    paginator = Paginator(deals, 12)  # Show 12 deals per page
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        'page_obj': page_obj,
+        'search_query': search_query,
+        'show_expired': show_expired,
+        'featured_only': featured_only,
+        'page_title': 'Special Deals & Offers'
+    }
+    return render(request, 'adminside/deals_list.html', context)
+
+
+def deal_detail(request, slug):
+    """Display individual deal details with related packages"""
+    deal = get_object_or_404(Deal, slug=slug, is_active=True)
+
+    # Get related packages
+    related_packages = deal.related_packages.filter(status=Package.PUBLISHED)
+
+    context = {
+        'deal': deal,
+        'related_packages': related_packages,
+        'page_title': deal.title
+    }
+    return render(request, 'adminside/deal_detail.html', context)

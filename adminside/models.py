@@ -496,3 +496,94 @@ class PackageBooking(models.Model):
 
     def __str__(self):
         return f"Booking {self.id} - {self.package.name} by {self.user.username}"
+
+
+class Deal(models.Model):
+    """
+    Special deals and offers for travel packages
+    """
+    title = models.CharField(max_length=200, help_text="Deal title")
+    slug = models.SlugField(max_length=200, unique=True, blank=True)
+    description = CKEditor5Field(config_name='default', help_text="Detailed deal description")
+
+    # Pricing
+    discount_percentage = models.DecimalField(
+        max_digits=5,
+        decimal_places=2,
+        help_text="Discount percentage (e.g., 25.00 for 25%)"
+    )
+    original_price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        help_text="Original price before discount (in USD)"
+    )
+    discounted_price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        help_text="Price after discount (in USD)"
+    )
+
+    # Validity
+    valid_from = models.DateTimeField(help_text="Deal start date and time")
+    valid_until = models.DateTimeField(help_text="Deal end date and time")
+
+    # Status
+    is_active = models.BooleanField(default=True, help_text="Whether the deal is currently active")
+    is_featured = models.BooleanField(default=False, help_text="Featured deals appear prominently")
+
+    # Media
+    featured_image = ImageField(
+        blank=True,
+        null=True,
+        manual_crop="16:9",
+        help_text="Main image for the deal"
+    )
+
+    # Relationships
+    related_packages = models.ManyToManyField(
+        Package,
+        blank=True,
+        related_name='deals',
+        help_text="Packages included in this deal"
+    )
+
+    # SEO
+    meta_title = models.CharField(max_length=200, blank=True)
+    meta_description = models.TextField(max_length=300, blank=True)
+
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = "Deal"
+        verbose_name_plural = "Deals"
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
+
+    def clean(self):
+        if self.valid_from and self.valid_until and self.valid_from >= self.valid_until:
+            raise ValidationError("Valid from date must be before valid until date")
+
+        if self.original_price and self.discounted_price and self.discounted_price >= self.original_price:
+            raise ValidationError("Discounted price must be less than original price")
+
+    def get_absolute_url(self):
+        return reverse('adminside:deal_detail', kwargs={'slug': self.slug})
+
+    def is_currently_valid(self):
+        """Check if the deal is currently valid based on dates"""
+        from django.utils import timezone
+        now = timezone.now()
+        return self.valid_from <= now <= self.valid_until
+
+    def savings_amount(self):
+        """Calculate the savings amount"""
+        return self.original_price - self.discounted_price
+
+    def __str__(self):
+        return f"{self.title} - {self.discount_percentage}% off"

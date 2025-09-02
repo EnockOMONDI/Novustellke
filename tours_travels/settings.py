@@ -113,16 +113,33 @@ WSGI_APPLICATION = 'tours_travels.wsgi.application'
 
 # To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
 
-DATABASES = {
-  'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
-    'USER': 'EnockOMONDI',
-    'PASSWORD': 'iuXReO7TL0rs',
-    'HOST': 'ep-ancient-rice-27299843-pooler.eu-central-1.aws.neon.tech',
-    'PORT': '5432',
-  }
-}
+# Use environment variable for database URL (supports both development and production)
+DATABASE_URL = config('DATABASE_URL', default=None)
+
+if DATABASE_URL:
+    # Use Supabase/Neon database from environment variable
+    DATABASES = {
+        'default': dj_database_url.parse(DATABASE_URL)
+    }
+else:
+    # Fallback to direct database configuration
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': config('DB_NAME', default='neondb'),
+            'USER': config('DB_USER', default='EnockOMONDI'),
+            'PASSWORD': config('DB_PASSWORD', default='iuXReO7TL0rs'),
+            'HOST': config('DB_HOST', default='ep-ancient-rice-27299843-pooler.eu-central-1.aws.neon.tech'),
+            'PORT': config('DB_PORT', default='5432'),
+            'OPTIONS': {
+                'sslmode': 'require',
+            },
+        }
+    }
+
+# Database connection optimization
+DATABASES['default']['CONN_MAX_AGE'] = config('DB_CONN_MAX_AGE', default=600, cast=int)
+DATABASES['default']['CONN_HEALTH_CHECKS'] = config('DB_CONN_HEALTH_CHECKS', default=True, cast=bool)
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -464,7 +481,25 @@ CKEDITOR_5_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"
 # Environment and Dashboard callbacks for Unfold
 def environment_callback(request):
     """Return environment info for Unfold admin"""
-    return ["Development", "warning"] if DEBUG else ["Production", "success"]
+    # Check if we're running on localhost/127.0.0.1 for development
+    host = request.get_host()
+    is_local = any(local_host in host for local_host in ['127.0.0.1', 'localhost'])
+
+    # Also check for production domains
+    is_production = any(prod_host in host for prod_host in [
+        'novustelltravel.com',
+        'www.novustelltravel.com',
+        'novustelltravel.onrender.com'
+    ])
+
+    if is_local:
+        return ["Development", "warning"]
+    elif is_production:
+        return ["Production", "success"]
+    elif DEBUG:
+        return ["Development", "warning"]
+    else:
+        return ["Production", "success"]
 
 def dashboard_callback(request, context):
     """Return dashboard data for Unfold admin"""

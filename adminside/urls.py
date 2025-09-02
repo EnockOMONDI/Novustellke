@@ -20,6 +20,10 @@ urlpatterns = [
     # Travel Mode URLs
     path('travel-options/', views.travel_mode_list, name='travel_mode_list'),
 
+    # Deal URLs
+    path('deals/', views.deals_list, name='deals_list'),
+    path('deals/<slug:slug>/', views.deal_detail, name='deal_detail'),
+
     # AJAX URLs for dynamic filtering
     path('ajax/destinations/', views.get_destinations_ajax, name='get_destinations_ajax'),
     path('ajax/packages/', views.get_packages_by_destination_ajax, name='get_packages_by_destination_ajax'),

@@ -77,24 +77,30 @@ function enhanceDestinationTypes() {
 }
 
 function enhanceForms() {
+    // Skip form enhancements for Django admin pages
+    if (window.location.pathname.includes('/admin/')) {
+        console.log('Skipping form enhancements for Django admin');
+        return;
+    }
+
     // Add enhanced styling to form fields
     const formFields = document.querySelectorAll('.form-control, .form-select');
     formFields.forEach(field => {
         const wrapper = field.closest('.field-wrapper') || field.parentElement;
-        
+
         // Add focus enhancement
         field.addEventListener('focus', function() {
             wrapper.classList.add('field-focused');
         });
-        
+
         field.addEventListener('blur', function() {
             wrapper.classList.remove('field-focused');
         });
     });
-    
+
     // Enhance image upload fields
     enhanceImageUploads();
-    
+
     // Add form validation enhancements
     enhanceFormValidation();
 }
@@ -164,13 +170,25 @@ function addDragDropToImageUpload(wrapper) {
 }
 
 function enhanceFormValidation() {
-    const forms = document.querySelectorAll('form');
+    // Only apply custom validation to non-admin forms
+    const forms = document.querySelectorAll('form:not([action*="/admin/"])');
     forms.forEach(form => {
+        // Skip Django admin forms to prevent interference
+        if (form.closest('.admin') || form.querySelector('.django-ckeditor-5')) {
+            return;
+        }
+
         form.addEventListener('submit', function(e) {
             const requiredFields = form.querySelectorAll('[required]');
             let isValid = true;
-            
+
             requiredFields.forEach(field => {
+                // Skip CKEditor5 fields as they have their own validation
+                if (field.classList.contains('django-ckeditor-5') ||
+                    field.closest('.ck-editor')) {
+                    return;
+                }
+
                 if (!field.value.trim()) {
                     field.classList.add('is-invalid');
                     isValid = false;
@@ -178,7 +196,7 @@ function enhanceFormValidation() {
                     field.classList.remove('is-invalid');
                 }
             });
-            
+
             if (!isValid) {
                 e.preventDefault();
                 showValidationMessage('Please fill in all required fields.');

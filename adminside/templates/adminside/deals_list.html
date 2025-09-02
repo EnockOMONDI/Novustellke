@@ -1,0 +1,479 @@
+{% extends 'adminside/base.html' %}
+{% load static %}
+{% load image_tags %}
+
+{% block title %}Special Deals & Offers - Novustell Travel{% endblock %}
+{% block meta_description %}Discover amazing travel deals and special offers with Novustell Travel. Save big on your next adventure with our exclusive discounts.{% endblock %}
+{% block meta_keywords %}travel deals, special offers, discounts, safari deals, Kenya deals, Uganda deals, Tanzania deals, Novustell Travel{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Professional Deals Listing Page Styles */
+    .deals-container {
+        padding: 40px 0;
+        background: #f8f9fa;
+        min-height: 100vh;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 40px 0;
+        background-image: url('{% static "assets/images/bg/cta-bg.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .page-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(15, 35, 141, 0.75);
+        z-index: 1;
+    }
+
+    .page-header > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 0;
+    }
+
+    /* Filter Section */
+    .filter-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        border: 2px solid #0f238d;
+        background: white;
+        color: #0f238d;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+        background: #0f238d;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(15, 35, 141, 0.3);
+    }
+
+    .search-container {
+        position: relative;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 10px 40px 10px 15px;
+        border: 2px solid #e9ecef;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+        border-color: #0f238d;
+        box-shadow: 0 0 0 0.2rem rgba(15, 35, 141, 0.25);
+        outline: none;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+    }
+
+    /* Deals Grid Layout */
+    .deals-grid {
+        display: grid;
+        gap: 25px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Responsive Grid */
+    @media (min-width: 1200px) {
+        .deals-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .deals-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .deals-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Deal Card Design */
+    .deal-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .deal-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .deal-image {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .deal-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .deal-card:hover .deal-image img {
+        transform: scale(1.05);
+    }
+
+    /* Deal Badges */
+    .deal-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: #ff9d00;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    .deal-badge.featured {
+        background: #dc3545;
+    }
+
+    .discount-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #28a745;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    /* Deal Content */
+    .deal-content {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deal-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #170b2c;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    .deal-description {
+        color: #6c757d;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+    /* Deal Pricing */
+    .deal-pricing {
+        margin-bottom: 20px;
+    }
+
+    .original-price {
+        font-size: 1rem;
+        color: #6c757d;
+        text-decoration: line-through;
+        margin-bottom: 5px;
+    }
+
+    .discounted-price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0f238d;
+    }
+
+    .savings {
+        font-size: 0.9rem;
+        color: #28a745;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    /* Deal Validity */
+    .deal-validity {
+        background: #f8f9fa;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+        color: #495057;
+    }
+
+    .validity-label {
+        font-weight: 600;
+        color: #170b2c;
+    }
+
+    /* CTA Button */
+    .view-deal-btn {
+        background: #170b2c;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        margin-top: auto;
+    }
+
+    .view-deal-btn:hover {
+        background: #0f238d;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(23, 11, 44, 0.3);
+        text-decoration: none;
+    }
+
+    /* No Results */
+    .no-results {
+        text-align: center;
+        padding: 60px 20px;
+        color: #6c757d;
+    }
+
+    .no-results i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+    }
+
+    .no-results h3 {
+        margin-bottom: 15px;
+        color: #495057;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2rem;
+        }
+
+        .filter-section {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .filter-buttons {
+            justify-content: center;
+        }
+
+        .deal-content {
+            padding: 20px;
+        }
+
+        .deal-title {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="deals-container">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Special Deals & Offers</h1>
+            <p>Discover amazing discounts and exclusive offers for your next adventure</p>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <a href="?{% if search_query %}search={{ search_query }}&{% endif %}" 
+                   class="filter-btn {% if not featured_only and not show_expired %}active{% endif %}">
+                    All Deals
+                </a>
+                <a href="?featured=true{% if search_query %}&search={{ search_query }}{% endif %}" 
+                   class="filter-btn {% if featured_only %}active{% endif %}">
+                    Featured Deals
+                </a>
+                <a href="?show_expired=true{% if search_query %}&search={{ search_query }}{% endif %}" 
+                   class="filter-btn {% if show_expired %}active{% endif %}">
+                    Include Expired
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form method="GET">
+                    {% if featured_only %}<input type="hidden" name="featured" value="true">{% endif %}
+                    {% if show_expired %}<input type="hidden" name="show_expired" value="true">{% endif %}
+                    <input type="text" 
+                           class="search-input" 
+                           name="search" 
+                           placeholder="Search deals..."
+                           value="{{ search_query }}">
+                    <i class="fas fa-search search-icon"></i>
+                </form>
+            </div>
+        </div>
+
+        <!-- Deals Grid -->
+        <div class="deals-grid">
+            {% for deal in page_obj %}
+            <div class="deal-card">
+                <div class="deal-image">
+                    {% image_with_default deal.featured_image "deals" "deal-img" deal.title %}
+                    
+                    <!-- Discount Badge -->
+                    <div class="discount-badge">
+                        {{ deal.discount_percentage }}% OFF
+                    </div>
+                    
+                    <!-- Featured Badge -->
+                    {% if deal.is_featured %}
+                        <div class="deal-badge featured">Featured</div>
+                    {% endif %}
+                </div>
+                
+                <div class="deal-content">
+                    <h3 class="deal-title">{{ deal.title }}</h3>
+                    <p class="deal-description">{{ deal.description|striptags|truncatewords:25 }}</p>
+                    
+                    <div class="deal-pricing">
+                        <div class="original-price">Was: ${{ deal.original_price }}</div>
+                        <div class="discounted-price">Now: ${{ deal.discounted_price }}</div>
+                        <div class="savings">You save: ${{ deal.savings_amount }}</div>
+                    </div>
+                    
+                    <div class="deal-validity">
+                        <span class="validity-label">Valid until:</span> 
+                        {{ deal.valid_until|date:"M d, Y" }}
+                    </div>
+                    
+                    <a href="{% url 'adminside:deal_detail' deal.slug %}" class="view-deal-btn">
+                        View Deal Details
+                    </a>
+                </div>
+            </div>
+            {% empty %}
+            <div class="no-results">
+                <i class="fas fa-tags"></i>
+                <h3>No deals found</h3>
+                <p>Try adjusting your search criteria or check back later for new offers.</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if page_obj.has_other_pages %}
+        <nav aria-label="Deals pagination" class="mt-5">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if featured_only %}&featured=true{% endif %}{% if show_expired %}&show_expired=true{% endif %}">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </a>
+                </li>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                <li class="page-item active">
+                    <span class="page-link">{{ num }}</span>
+                </li>
+                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ num }}{% if search_query %}&search={{ search_query }}{% endif %}{% if featured_only %}&featured=true{% endif %}{% if show_expired %}&show_expired=true{% endif %}">{{ num }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if featured_only %}&featured=true{% endif %}{% if show_expired %}&show_expired=true{% endif %}">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
