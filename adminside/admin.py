@@ -1,6 +1,12 @@
 from django.contrib import admin
 from django import forms
 from django.utils.html import format_html
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.urls import path
+from django.http import HttpResponse
+import openpyxl
+from datetime import datetime
 from .models import (
     Destination,
     Accommodation,
@@ -386,6 +392,10 @@ class DealAdmin(admin.ModelAdmin):
         else:
             return format_html('<span style="color: red;">✗ Expired</span>')
     is_currently_valid.short_description = 'Currently Valid'
+
+
+# Note: Admin integration can be added later if needed
+# For now, use management commands for bulk operations
 
 
 # Customize admin site header and title

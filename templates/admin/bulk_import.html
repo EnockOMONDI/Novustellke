@@ -1,0 +1,184 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Bulk Import - {{ site_title|default:"Django Admin" }}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">Home</a>
+    &rsaquo; Bulk Import
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="module">
+    <h1>📤 Bulk Update Images from Excel</h1>
+    
+    <div class="form-row">
+        <p>Upload an Excel file with updated image URLs to bulk update images across destinations, packages, accommodations, and deals.</p>
+    </div>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                <pre>{{ message }}</pre>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data" class="module aligned">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <h2>📁 Upload Excel File</h2>
+            <div class="field-box">
+                <label for="excel_file">Excel File:</label>
+                <input type="file" name="excel_file" id="excel_file" accept=".xlsx,.xls" required>
+                <p class="help">Upload the Excel file exported from the bulk export feature with updated image URLs.</p>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-box">
+                <label for="dry_run">
+                    <input type="checkbox" name="dry_run" id="dry_run" checked>
+                    Dry Run (Preview changes without applying)
+                </label>
+                <p class="help">Check this to preview changes before applying them to the database.</p>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <h2>📋 File Format Requirements</h2>
+            <ul>
+                <li>Excel file must contain sheets: "Destinations", "Packages", "Accommodations", "Deals"</li>
+                <li>First column must be the record ID</li>
+                <li>Image URL column must be labeled with "Image URL" (case insensitive)</li>
+                <li>Supported image formats: JPG, PNG, GIF, WebP</li>
+                <li>URLs can be direct image links or UploadCare CDN URLs</li>
+            </ul>
+        </div>
+
+        <div class="form-row">
+            <h2>⚠️ Important Notes</h2>
+            <ul>
+                <li><strong>Always use dry-run first</strong> to preview changes</li>
+                <li>Create a backup before applying bulk updates</li>
+                <li>Invalid URLs will be skipped with error messages</li>
+                <li>Process may take several minutes for large datasets</li>
+                <li>Only active records will be updated</li>
+            </ul>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" value="🔄 Process Excel File" class="default" />
+            <a href="{% url 'admin:index' %}" class="button">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<style>
+.module h1 {
+    color: #0f238d;
+    margin-bottom: 20px;
+}
+
+.module h2 {
+    color: #170b2c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-row ul {
+    margin-left: 20px;
+}
+
+.form-row li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.field-box {
+    margin-bottom: 15px;
+}
+
+.field-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.field-box input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.field-box input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.help {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.alert pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 12px;
+    margin: 0;
+    background: rgba(0,0,0,0.05);
+    padding: 10px;
+    border-radius: 3px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.submit-row {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.submit-row input[type="submit"] {
+    background: #0f238d;
+    border-color: #0f238d;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.submit-row input[type="submit"]:hover {
+    background: #170b2c;
+    border-color: #170b2c;
+}
+</style>
+{% endblock %}

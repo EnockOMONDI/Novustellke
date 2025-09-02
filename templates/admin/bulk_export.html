@@ -1,0 +1,90 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Bulk Export - {{ site_title|default:"Django Admin" }}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">Home</a>
+    &rsaquo; Bulk Export
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="module">
+    <h1>📊 Export Novustell Travel Database to Excel</h1>
+    
+    <div class="form-row">
+        <p>Export all travel data (destinations, packages, accommodations, deals) to Excel format for image management and bulk operations.</p>
+    </div>
+
+    <form method="post" class="module aligned">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <h2>📋 Export Details</h2>
+            <ul>
+                <li><strong>Destinations:</strong> All destinations with image URLs, descriptions, and metadata</li>
+                <li><strong>Packages:</strong> All travel packages with pricing, images, and destination info</li>
+                <li><strong>Accommodations:</strong> All accommodations with pricing, images, and location data</li>
+                <li><strong>Deals:</strong> All special offers with discount info and validity dates</li>
+            </ul>
+        </div>
+
+        <div class="form-row">
+            <h2>💡 Usage Instructions</h2>
+            <ol>
+                <li>Click "Export to Excel" to download the complete database export</li>
+                <li>Open the Excel file and update image URLs in the respective columns</li>
+                <li>Use the "Bulk Import" feature to upload your changes</li>
+                <li>Preview changes with dry-run mode before applying</li>
+            </ol>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" value="📥 Export to Excel" class="default" />
+            <a href="{% url 'admin:index' %}" class="button">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<style>
+.module h1 {
+    color: #0f238d;
+    margin-bottom: 20px;
+}
+
+.module h2 {
+    color: #170b2c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-row ul, .form-row ol {
+    margin-left: 20px;
+}
+
+.form-row li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.submit-row {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.submit-row input[type="submit"] {
+    background: #0f238d;
+    border-color: #0f238d;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.submit-row input[type="submit"]:hover {
+    background: #170b2c;
+    border-color: #170b2c;
+}
+</style>
+{% endblock %}
