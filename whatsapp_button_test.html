@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Button Test</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f8f3fc;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .btn-premium {
+            background: linear-gradient(135deg, #ff9d00, #ffb84d);
+            color: #0f238d;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 15;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            margin: 10px;
+        }
+        
+        .btn-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 157, 0, 0.4);
+            color: #0f238d;
+            text-decoration: none;
+        }
+        
+        .whatsapp-btn {
+            pointer-events: auto !important;
+            user-select: none;
+            position: relative !important;
+            z-index: 999 !important;
+        }
+        
+        .whatsapp-btn .fab.fa-whatsapp {
+            color: #25D366;
+            transition: color 0.3s ease;
+            margin-right: 8px;
+        }
+        
+        .whatsapp-btn:hover .fab.fa-whatsapp {
+            color: #128C7E;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>WhatsApp Button Functionality Test</h1>
+        
+        <div class="test-section">
+            <h2>Test 1: Basic WhatsApp Link</h2>
+            <a href="https://wa.me/254701363551" target="_blank" class="btn-premium">
+                <i class="fab fa-whatsapp"></i> Basic WhatsApp Link
+            </a>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 2: WhatsApp with Pre-filled Message</h2>
+            <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27m%20interested%20in%20your%20corporate%20travel%20management%20services.%20Please%20provide%20more%20information." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="btn-premium whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>WhatsApp with Message
+            </a>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 3: Enhanced WhatsApp Button (Production Version)</h2>
+            <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27m%20interested%20in%20your%20corporate%20travel%20management%20services.%20Please%20provide%20more%20information." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="btn-premium whatsapp-btn"
+               role="button"
+               aria-label="Contact Novustell Travel via WhatsApp"
+               title="Start your journey with Novustell Travel - Contact us on WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>Start Your Journey
+            </a>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 4: Alternative WhatsApp API Format</h2>
+            <a href="https://api.whatsapp.com/send?phone=254701363551&text=Hello%20Novustell%20Travel!" 
+               target="_blank" 
+               class="btn-premium whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>Alternative API Format
+            </a>
+        </div>
+        
+        <div class="test-section">
+            <h2>Debug Information</h2>
+            <p><strong>Phone Number:</strong> +254701363551</p>
+            <p><strong>Country Code:</strong> Kenya (+254)</p>
+            <p><strong>Expected Behavior:</strong> Should open WhatsApp app or web.whatsapp.com</p>
+            <p><strong>Test on:</strong> Desktop browsers, Mobile browsers, Mobile apps</p>
+        </div>
+        
+        <div class="test-section">
+            <h2>JavaScript Test</h2>
+            <button onclick="testWhatsAppLink()" class="btn-premium">
+                <i class="fab fa-whatsapp"></i>Test with JavaScript
+            </button>
+            <div id="test-result" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+    
+    <script>
+        function testWhatsAppLink() {
+            const phoneNumber = '254701363551';
+            const message = 'Hello Novustell Travel! I\'m interested in your corporate travel management services.';
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            
+            document.getElementById('test-result').innerHTML = `
+                <p><strong>Generated URL:</strong> ${whatsappUrl}</p>
+                <p><strong>Status:</strong> Attempting to open WhatsApp...</p>
+            `;
+            
+            // Test if the link opens
+            const testWindow = window.open(whatsappUrl, '_blank');
+            
+            setTimeout(() => {
+                if (testWindow && !testWindow.closed) {
+                    document.getElementById('test-result').innerHTML += `
+                        <p style="color: green;"><strong>✅ Success:</strong> WhatsApp link opened successfully!</p>
+                    `;
+                } else {
+                    document.getElementById('test-result').innerHTML += `
+                        <p style="color: orange;"><strong>⚠️ Note:</strong> Window may have been redirected to WhatsApp app.</p>
+                    `;
+                }
+            }, 1000);
+        }
+        
+        // Test button click events
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.whatsapp-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    console.log('WhatsApp button clicked:', this.href);
+                    // Add visual feedback
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
