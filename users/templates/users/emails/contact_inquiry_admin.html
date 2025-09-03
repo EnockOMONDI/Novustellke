@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Inquiry - Novustell Travel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3fc;
+            color: #333333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0f238d, #0f238d);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .inquiry-details {
+            background-color: #f8f3fc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9d00;
+        }
+        .detail-row {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #0f238d;
+            margin-bottom: 5px;
+        }
+        .detail-value {
+            color: #333333;
+            line-height: 1.5;
+        }
+        .message-content {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .priority-notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        .footer {
+            background-color: #0f238d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
+        }
+        .action-buttons {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff9d00;
+            color: #0f238d;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+        .btn:hover {
+            background-color: #e8890a;
+        }
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+                border-radius: 5px;
+            }
+            .header, .content, .footer {
+                padding: 20px 15px;
+            }
+            .inquiry-details {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔔 New Contact Inquiry</h1>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">Novustell Travel Website</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2 style="color: #0f238d; margin-top: 0;">Contact Inquiry Details</h2>
+            
+            <div class="priority-notice">
+                <strong>⚡ Action Required:</strong> A new contact inquiry has been submitted through the website contact form. Please respond within 24 hours as promised on the contact page.
+            </div>
+
+            <div class="inquiry-details">
+                <div class="detail-row">
+                    <div class="detail-label">Full Name:</div>
+                    <div class="detail-value">{{ inquiry.full_name }}</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Email Address:</div>
+                    <div class="detail-value">
+                        <a href="mailto:{{ inquiry.email }}" style="color: #0f238d;">{{ inquiry.email }}</a>
+                    </div>
+                </div>
+
+                {% if inquiry.phone %}
+                <div class="detail-row">
+                    <div class="detail-label">Phone Number:</div>
+                    <div class="detail-value">
+                        <a href="tel:{{ inquiry.phone }}" style="color: #0f238d;">{{ inquiry.phone }}</a>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if inquiry.company %}
+                <div class="detail-row">
+                    <div class="detail-label">Company/Organization:</div>
+                    <div class="detail-value">{{ inquiry.company }}</div>
+                </div>
+                {% endif %}
+
+                <div class="detail-row">
+                    <div class="detail-label">Subject/Inquiry Type:</div>
+                    <div class="detail-value"><strong>{{ inquiry.subject }}</strong></div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Submission Date:</div>
+                    <div class="detail-value">{{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Source:</div>
+                    <div class="detail-value">Website Contact Form</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Message:</div>
+                    <div class="message-content">{{ inquiry.message|linebreaks }}</div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="mailto:{{ inquiry.email }}?subject=Re: {{ inquiry.subject }} - Novustell Travel Response" class="btn">
+                    📧 Reply to Inquiry
+                </a>
+                {% if inquiry.phone %}
+                <a href="tel:{{ inquiry.phone }}" class="btn">
+                    📞 Call Client
+                </a>
+                {% endif %}
+            </div>
+
+            <p style="color: #666666; font-size: 14px; margin-top: 30px;">
+                <strong>Next Steps:</strong><br>
+                1. Review the inquiry details above<br>
+                2. Respond to the client within 24 hours<br>
+                3. Follow up with personalized travel recommendations<br>
+                4. Update the inquiry status in the admin panel
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="margin: 0 0 10px 0;"><strong>Novustell Travel</strong></p>
+            <p style="margin: 0; font-size: 12px; opacity: 0.8;">
+                New Peoples Media Center (Kilimani)<br>
+                Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)<br>
+                Nairobi, Kenya<br>
+                📞 +254 721 115 572 | +254 701 363 551<br>
+                📧 <a href="mailto:Info@novustelltravel.com">Info@novustelltravel.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

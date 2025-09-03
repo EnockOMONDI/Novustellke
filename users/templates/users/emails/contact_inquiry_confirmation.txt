@@ -1,0 +1,47 @@
+✅ THANK YOU FOR YOUR INQUIRY - NOVUSTELL TRAVEL
+
+Dear {{ inquiry.full_name }},
+
+Thank you for contacting Novustell Travel! We have successfully received your inquiry about "{{ inquiry.subject }}" and our expert travel consultants are already reviewing your requirements.
+
+YOUR INQUIRY SUMMARY
+=====================
+Inquiry Type: {{ inquiry.subject }}
+Submission Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
+
+WHAT HAPPENS NEXT?
+==================
+🚀 Within 24 Hours: Our travel experts will review your requirements and respond with personalized recommendations
+📋 Consultation: We'll schedule a consultation to discuss your specific travel needs in detail
+💼 Custom Proposal: You'll receive a tailored travel proposal with competitive pricing
+🤝 Booking Support: Our team will assist you through every step of the booking process
+
+NEED IMMEDIATE ASSISTANCE?
+==========================
+📱 WhatsApp Business: +254 701 363 551
+   Message: "Hello Novustell Travel! I submitted an inquiry (Ref: NVT-{{ inquiry.id|stringformat:"05d" }}) and need immediate assistance."
+
+📞 Phone Numbers: 
+   +254 721 115 572
+   +254 701 363 551
+
+📧 Email: Info@novustelltravel.com
+   Subject: "Re: Inquiry NVT-{{ inquiry.id|stringformat:"05d" }}"
+
+QUICK LINKS:
+============
+WhatsApp: https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20inquiry%20(Ref:%20NVT-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions.
+
+---
+This is an automated confirmation. Please do not reply to this email. 
+For any questions, use the contact methods above.
+
+NOVUSTELL TRAVEL
+Think Convenience, Think Novustell
+
+New Peoples Media Center (Kilimani)
+Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)
+Nairobi, Kenya
+Phone: +254 721 115 572 | +254 701 363 551
+Email: Info@novustelltravel.com

@@ -1,0 +1,39 @@
+🔔 NEW CONTACT INQUIRY - NOVUSTELL TRAVEL
+
+Action Required: A new contact inquiry has been submitted through the website contact form. 
+Please respond within 24 hours as promised on the contact page.
+
+CONTACT INQUIRY DETAILS
+========================
+
+Full Name: {{ inquiry.full_name }}
+Email Address: {{ inquiry.email }}
+{% if inquiry.phone %}Phone Number: {{ inquiry.phone }}{% endif %}
+{% if inquiry.company %}Company/Organization: {{ inquiry.company }}{% endif %}
+Subject/Inquiry Type: {{ inquiry.subject }}
+Submission Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Source: Website Contact Form
+
+MESSAGE:
+--------
+{{ inquiry.message }}
+
+NEXT STEPS:
+-----------
+1. Review the inquiry details above
+2. Respond to the client within 24 hours
+3. Follow up with personalized travel recommendations
+4. Update the inquiry status in the admin panel
+
+QUICK ACTIONS:
+--------------
+Reply to Email: {{ inquiry.email }}
+{% if inquiry.phone %}Call Client: {{ inquiry.phone }}{% endif %}
+
+---
+Novustell Travel
+New Peoples Media Center (Kilimani)
+Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)
+Nairobi, Kenya
+Phone: +254 721 115 572 | +254 701 363 551
+Email: Info@novustelltravel.com

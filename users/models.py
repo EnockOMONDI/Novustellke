@@ -256,6 +256,36 @@ class NGOTravelInquiry(models.Model):
         return f"{self.organization_name} - {self.travel_purpose}"
 
 
+class ContactInquiry(models.Model):
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=20, blank=True, null=True)
+    company = models.CharField(max_length=200, blank=True, null=True)
+    subject = models.CharField(max_length=100, choices=[
+        ('Corporate Travel', 'Corporate Travel Management'),
+        ('MICE', 'MICE Events & Conferences'),
+        ('Group Travel', 'Group Travel Services'),
+        ('Student Travel', 'Student Travel Programs'),
+        ('NGO Travel', 'NGO Travel Solutions'),
+        ('Holiday Packages', 'Holiday Packages'),
+        ('Accommodation', 'Accommodation Booking'),
+        ('Car Rental', 'Car/Van Rental Services'),
+        ('General Inquiry', 'General Inquiry'),
+        ('Partnership', 'Partnership Opportunities'),
+    ])
+    message = models.TextField()
+    privacy_consent = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.full_name} - {self.subject}"
+
+    class Meta:
+        verbose_name = "Contact Inquiry"
+        verbose_name_plural = "Contact Inquiries"
+        ordering = ['-created_at']
+
+
 class UserProfile(models.Model):
     """
     Extended user profile for additional information and preferences

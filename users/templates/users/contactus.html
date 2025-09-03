@@ -1,68 +1,1364 @@
 {% extends 'users/basemain.html' %}
 {% load static  %}
 
+{% block title %}Contact Us - Novustell Travel{% endblock %}
+
+{% block meta_description %}Contact Novustell Travel for premium corporate travel management services. Get in touch with our expert travel consultants for personalized business travel solutions.{% endblock %}
+
+{% block extra_head %}
+<!-- Structured Data for Contact Information -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Novustell Travel",
+  "description": "Premium corporate travel management and business travel solutions",
+  "url": "{{ request.build_absolute_uri }}",
+  "telephone": ["+254721115572", "+254701363551"],
+  "email": "Info@novustelltravel.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "New Peoples Media Center (Kilimani), Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)",
+    "addressLocality": "Nairobi",
+    "addressCountry": "Kenya"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": ["+254721115572", "+254701363551"],
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Swahili"]
+  }
+}
+</script>
+{% endblock %}
 
 {% block content %}
-<section class="contact-main pt-6 pb-60">
-    <div class="container">
-    <div class="contact-info-main mt-0">
-    <div class="row">
-    <div class="col-lg-10 col-offset-lg-1 mx-auto">
-    <div class="contact-info bg-white">
-    <div class="contact-info-title text-center mb-4 px-5">
-    <h3 class="mb-1">Information About us</h3>
-    <p class="mb-0">
-        We are passionate about showcasing the beauty, diversity, and rich heritage of Kenya to
-        travelers from around the globe. What sets us apart is our commitment to creating personalized
-        journeys that cater to your unique preferences and interests. Whether you dream of thrilling
-        wildlife encounters, serene beach retreats, or immersive cultural experiences, our knowledgeable
-        team will craft bespoke itineraries that leave you with lifelong memories.We
-    </p>
-    </div>
-    <div class="contact-info-content row mb-1">
-    <div class="col-lg-4 col-md-6 mb-4">
-    <div class="info-item bg-lgrey px-4 py-5 border-all text-center rounded">
-    <div class="info-icon mb-2">
-    <i class="fa fa-map-marker-alt theme"></i>
-    </div>
-    <div class="info-content">
-    <h3>Office Location</h3>
-    <p class="m-0"> To be updated</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-    <div class="info-item bg-lgrey px-4 py-5 border-all text-center rounded">
-    <div class="info-icon mb-2">
-    <i class="fa fa-phone theme"></i>
-    </div>
-    <div class="info-content">
-    <h3>Phone Number</h3>
-    
-    <p class="m-0"> +49 163 8767374</p>
-    <p class="m-0">9+49 177 5377023</p>
-    </div>
-    </div>
-    </div>
-     <div class="col-lg-4 col-md-12 mb-4">
-    <div class="info-item bg-lgrey px-4 py-5 border-all text-center rounded">
-    <div class="info-icon mb-2">
-    <i class="fa fa-envelope theme"></i>
-    </div>
-    <div class="info-content ps-4">
-    <h3>Email Address</h3>
-    <p class="m-0">info@jungledreamsadventures.com</p>
-    <p class="m-0">travel@ungledreamsadventures.com</p>
-    </div>
-    </div>
-    </div>
-    </div>
- 
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
 
-    {% endblock %}
+<!-- Hero Section -->
+<section class="contact-hero-section" style="background: linear-gradient(135deg, rgba(15, 35, 141, 0.9), rgba(15, 35, 141, 0.7)), url('{% static 'assets/images/place/place-8.jpg' %}'); background-size: cover; background-position: center; min-height: 70vh; position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div class="hero-pattern"></div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8 col-md-10 mx-auto text-center">
+                <div class="hero-content text-white wow fadeInUp">
+                    <div class="hero-badge mb-4">
+                        <span class="badge-text">Get In Touch</span>
+                    </div>
+                    <h1 class="hero-title mb-4" style="font-family: 'Fonarto Bold', sans-serif;">
+                        Contact <span class="text-accent">Novustell Travel</span>
+                    </h1>
+                    <p class="hero-subtitle mb-5">
+                        Ready to transform your travel experience? Our expert consultants are here to provide personalized solutions for all your Leisure & business travel needs.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27d%20like%20to%20discuss%20my%20travel%20requirements."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-contact-primary me-3">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                        </a>
+                        <a href="#contact-form" class="btn btn-contact-outline">
+                            <i class="fas fa-envelope me-2"></i>Send Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info-section py-5" style="background-color: #f8f3fc;">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title-contact mb-4 wow fadeInUp">
+                    Multiple Ways to Reach Us
+                </h2>
+                <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">
+                    Choose your preferred method of communication. We're here to assist you with all your travel needs.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Cards Grid -->
+        <div class="row">
+            <!-- Office Location -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>Office Location</h4>
+                        <p class="contact-detail">
+                            New Peoples Media Center (Kilimani)<br>
+                            Elgeyo Marakwet & Kilimani Rd Junction<br>
+                            (Off Ngong Rd), Nairobi, Kenya
+                        </p>
+                        <p class="contact-note">Visit us for personalized consultation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Numbers -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>Phone Numbers</h4>
+                        <p class="contact-detail">
+                            <a href="tel:+254721115572" class="contact-link">+254 721 115 572</a><br>
+                            <a href="tel:+254701363551" class="contact-link">+254 701 363 551</a><br>
+                            <small class="text-muted">Business Lines</small>
+                        </p>
+                        <p class="contact-note">Available Monday - Friday, 8AM - 6PM EAT</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Addresses -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>Email Addresses</h4>
+                        <p class="contact-detail">
+                            <a href="mailto:Info@novustelltravel.com" class="contact-link">Info@novustelltravel.com</a><br>
+                        </p>
+                        <p class="contact-note">We respond within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>WhatsApp Business</h4>
+                        <p class="contact-detail">
+                            <a href="https://wa.me/254701363551" target="_blank" class="contact-link">+254 701 363 551</a><br>
+                            <small class="text-muted">Instant messaging support</small>
+                        </p>
+                        <p class="contact-note">Quick responses for urgent inquiries</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>Business Hours</h4>
+                        <p class="contact-detail">
+                            Monday - Friday: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 2:00 PM<br>
+                            Sunday: Emergency only
+                        </p>
+                        <p class="contact-note">East Africa Time (EAT)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-card premium-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="contact-icon emergency-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>24/7 Emergency Support</h4>
+                        <p class="contact-detail">
+                            <a href="tel:+254721115572" class="contact-link">+254 721 115 572</a><br>
+                            <a href="tel:+254701363551" class="contact-link">+254 701 363 551</a><br>
+                            <small class="text-muted">For traveling clients only</small>
+                        </p>
+                        <p class="contact-note">Round-the-clock assistance for emergencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact-form" class="contact-form-section py-5" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-8 mb-5">
+                <div class="contact-form-wrapper wow fadeInLeft">
+                    <div class="form-header mb-4">
+                        <h2 class="section-title-contact mb-3">Send Us a Message</h2>
+                        <p class="form-subtitle">Fill out the form below and our travel experts will get back to you within 24 hours with personalized recommendations.</p>
+                    </div>
+
+                    <!-- Display Messages -->
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                <i class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-triangle{% else %}info-circle{% endif %} me-2"></i>
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <form class="contact-form premium-form" method="post" action="{% url 'users:contactus' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <!-- Name Field -->
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.full_name.id_for_label }}" class="form-label">{{ form.full_name.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        {{ form.full_name }}
+                                    </div>
+                                    {% if form.full_name.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.full_name.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.email.id_for_label }}" class="form-label">{{ form.email.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        {{ form.email }}
+                                    </div>
+                                    {% if form.email.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.email.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.phone.id_for_label }}" class="form-label">{{ form.phone.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone input-icon"></i>
+                                        {{ form.phone }}
+                                    </div>
+                                    {% if form.phone.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.phone.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Company Field -->
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.company.id_for_label }}" class="form-label">{{ form.company.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-building input-icon"></i>
+                                        {{ form.company }}
+                                    </div>
+                                    {% if form.company.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.company.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="col-12 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.subject.id_for_label }}" class="form-label">{{ form.subject.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-tag input-icon"></i>
+                                        {{ form.subject }}
+                                    </div>
+                                    {% if form.subject.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.subject.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="col-12 mb-4">
+                                <div class="form-group">
+                                    <label for="{{ form.message.id_for_label }}" class="form-label">{{ form.message.label }}</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-comment-alt input-icon"></i>
+                                        {{ form.message }}
+                                    </div>
+                                    {% if form.message.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.message.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Privacy Consent -->
+                            <div class="col-12 mb-4">
+                                <div class="form-check premium-checkbox">
+                                    {{ form.privacy_consent }}
+                                    <label for="{{ form.privacy_consent.id_for_label }}" class="form-check-label">
+                                        {{ form.privacy_consent.label }}
+                                    </label>
+                                    {% if form.privacy_consent.errors %}
+                                        <div class="text-danger mt-1">
+                                            {% for error in form.privacy_consent.errors %}
+                                                <small>{{ error }}</small>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-contact-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                                <p class="form-note mt-3 text-center">
+                                    <i class="fas fa-shield-alt me-1"></i>
+                                    Your information is secure and will only be used to respond to your inquiry.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Sidebar -->
+            <div class="col-lg-4">
+                <div class="contact-sidebar wow fadeInRight">
+                    <!-- Quick Contact Card -->
+                    <div class="sidebar-card premium-card mb-4">
+                        <div class="card-header">
+                            <h4><i class="fas fa-headset me-2"></i>Need Immediate Assistance?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="mb-3">For urgent travel needs or immediate support, contact us directly:</p>
+                            <div class="quick-contact-item mb-3">
+                                <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20need%20immediate%20assistance."
+                                   target="_blank"
+                                   class="quick-contact-link whatsapp-link">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp: +254 701 363 551
+                                </a>
+                            </div>
+                            <div class="quick-contact-item mb-3">
+                                <a href="tel:+254721115572" class="quick-contact-link phone-link">
+                                    <i class="fas fa-phone me-2"></i>Call: +254 721 115 572
+                                </a>
+                            </div>
+                            <div class="quick-contact-item mb-3">
+                                <a href="tel:+254701363551" class="quick-contact-link phone-link">
+                                    <i class="fas fa-phone me-2"></i>Call: +254 701 363 551
+                                </a>
+                            </div>
+                            <div class="quick-contact-item">
+                                <a href="mailto:Info@novustelltravel.com" class="quick-contact-link email-link">
+                                    <i class="fas fa-envelope me-2"></i>Email: Info@novustelltravel.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours Card -->
+                    <div class="sidebar-card premium-card mb-4">
+                        <div class="card-header">
+                            <h4><i class="fas fa-clock me-2"></i>Office Hours</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">Emergency Only</span>
+                            </div>
+                            <p class="timezone-note mt-3">
+                                <i class="fas fa-globe me-1"></i>East Africa Time (EAT)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Card -->
+                    <div class="sidebar-card premium-card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-share-alt me-2"></i>Follow Us</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="mb-3">Stay connected for travel tips and updates:</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook-link" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link twitter-link" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin-link" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link instagram-link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location & Map Section -->
+<section class="location-section py-5" style="background-color: #f8f3fc;">
+    <div class="container">
+        <div class="row">
+            <!-- Location Information -->
+            <div class="col-lg-6 mb-5">
+                <div class="location-info wow fadeInLeft">
+                    <h2 class="section-title-contact mb-4">Visit Our Office</h2>
+                    <p class="location-subtitle mb-4">
+                        Located in Kilimani at the New Peoples Media Center, our office is easily accessible and equipped with modern facilities for client consultations.
+                    </p>
+
+                    <!-- Address Details -->
+                    <div class="address-card premium-card mb-4">
+                        <div class="address-header">
+                            <h4><i class="fas fa-map-marker-alt me-2 text-accent"></i>Office Address</h4>
+                        </div>
+                        <div class="address-content">
+                            <p class="address-line">Novustell Travel Limited</p>
+                            <p class="address-line">New Peoples Media Center (Kilimani)</p>
+                            <p class="address-line">Elgeyo Marakwet & Kilimani Rd Junction</p>
+                            <p class="address-line">(Off Ngong Rd), Nairobi, Kenya</p>
+                            <p class="address-line">P.O. Box 12345-00100</p>
+                        </div>
+                    </div>
+
+                    <!-- Directions -->
+                    <div class="directions-card premium-card mb-4">
+                        <div class="directions-header">
+                            <h4><i class="fas fa-route me-2 text-accent"></i>Getting Here</h4>
+                        </div>
+                        <div class="directions-content">
+                            <div class="direction-item mb-2">
+                                <i class="fas fa-car me-2"></i>
+                                <span>Free parking available on-site</span>
+                            </div>
+                            <div class="direction-item mb-2">
+                                <i class="fas fa-bus me-2"></i>
+                                <span>Accessible via public transport</span>
+                            </div>
+                            <div class="direction-item mb-2">
+                                <i class="fas fa-plane me-2"></i>
+                                <span>15 minutes from Jomo Kenyatta Airport</span>
+                            </div>
+                            <div class="direction-item">
+                                <i class="fas fa-wheelchair me-2"></i>
+                                <span>Wheelchair accessible facilities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Booking -->
+                    <div class="appointment-card premium-card">
+                        <div class="appointment-header">
+                            <h4><i class="fas fa-calendar-check me-2 text-accent"></i>Schedule a Visit</h4>
+                        </div>
+                        <div class="appointment-content">
+                            <p class="mb-3">Book a consultation with our travel experts for personalized service.</p>
+                            <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27d%20like%20to%20schedule%20an%20office%20visit."
+                               target="_blank"
+                               class="btn btn-contact-outline">
+                                <i class="fas fa-calendar-plus me-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="col-lg-6">
+                <div class="map-wrapper wow fadeInRight">
+                    <h3 class="map-title mb-4">Find Us on the Map</h3>
+
+                    <!-- Interactive Map Placeholder -->
+                    <div class="map-container premium-card">
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <i class="fas fa-map-marked-alt map-icon"></i>
+                                <h4>Interactive Map</h4>
+                                <p class="mb-3">Our office location at New Peoples Media Center, Kilimani</p>
+                                <a href="https://maps.app.goo.gl/Dq5Nk2ZLDbDYZ2jN7"
+                                   target="_blank"
+                                   class="btn btn-contact-primary">
+                                    <i class="fas fa-external-link-alt me-2"></i>Open in Google Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Actual Google Maps Embed (Replace with real coordinates) -->
+                        <div class="map-embed" style="display: none;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7931138245126!2d36.77320368501712!3d-1.2989009953078305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831043172a6eb2f%3A0x8f2a67f361de912c!2sNovustell%20Travel!5e0!3m2!1sen!2ske!4v1756891804522!5m2!1sen!2ske"></iframe>
+                                <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                width="100%"
+                                height="400"
+                                style="border:0; border-radius: 15px;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Location Features -->
+                    <div class="location-features mt-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="feature-item text-center">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                    <p class="feature-text">Complimentary Refreshments</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="feature-item text-center">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <p class="feature-text">Free WiFi Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="contact-cta-section py-5" style="background: linear-gradient(135deg, #0f238d, #0f238d);">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <div class="cta-content text-white wow fadeInUp">
+                    <h2 class="cta-title mb-4">Ready to Start Your Journey?</h2>
+                    <p class="cta-subtitle mb-5">
+                        Join thousands of satisfied clients who trust Novustell Travel for their corporate travel needs. Let us create a customized travel solution that exceeds your expectations.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27m%20ready%20to%20start%20planning%20my%20travel%20requirements."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-cta-primary me-3">
+                            <i class="fab fa-whatsapp me-2"></i>Start Planning Now
+                        </a>
+                        <a href="{% url 'users:corporatepage' %}" class="btn btn-cta-outline">
+                            <i class="fas fa-briefcase me-2"></i>Corporate Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS Styles -->
+<style>
+    /* Fonarto Font for H1 Elements */
+    h1 {
+        font-family: 'Fonarto Bold', sans-serif !important;
+    }
+
+    /* Contact Page Specific Styles */
+    .contact-hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            radial-gradient(circle at 20% 80%, rgba(255, 157, 0, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        background: rgba(255, 157, 0, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 8px 20px;
+        border-radius: 25px;
+        border: 1px solid rgba(255, 157, 0, 0.3);
+    }
+
+    .badge-text {
+        color: #ff9d00;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+
+    .text-accent {
+        color: #ff9d00;
+        position: relative;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Section Titles */
+    .section-title-contact {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0f238d;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #333333;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Premium Cards */
+    .premium-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .premium-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 157, 0, 0.1), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .premium-card:hover::before {
+        left: 100%;
+    }
+
+    .premium-card:hover {
+        transform: translateY(-8px);
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.15),
+            0 4px 16px rgba(0, 0, 0, 0.1);
+        border-color: rgba(255, 157, 0, 0.3);
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #0f238d, #0f238d);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-icon::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon::before {
+        opacity: 1;
+    }
+
+    .contact-icon i {
+        color: #ff9d00;
+        font-size: 32px;
+        z-index: 2;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon i {
+        color: #0f238d;
+    }
+
+    .whatsapp-icon {
+        background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .whatsapp-icon i {
+        color: white;
+    }
+
+    .emergency-icon {
+        background: linear-gradient(135deg, #dc3545, #c82333);
+    }
+
+    .emergency-icon i {
+        color: white;
+    }
+
+    .contact-content h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .contact-detail {
+        color: #333333;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-link {
+        color: #0f238d;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+        color: #ff9d00;
+        text-decoration: none;
+    }
+
+    .contact-note {
+        color: #666666;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    /* Form Styles */
+    .contact-form-wrapper {
+        background: white;
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-header h2 {
+        color: #0f238d;
+        font-weight: 700;
+    }
+
+    .form-subtitle {
+        color: #666666;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .form-label {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ff9d00;
+        z-index: 2;
+    }
+
+    .premium-input {
+        background: rgba(248, 243, 252, 0.5);
+        border: 2px solid rgba(15, 35, 141, 0.1);
+        border-radius: 12px;
+        padding: 15px 15px 15px 45px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .premium-input:focus {
+        background: white;
+        border-color: #ff9d00;
+        box-shadow: 0 0 0 0.2rem rgba(255, 157, 0, 0.25);
+        outline: none;
+    }
+
+    .premium-input::placeholder {
+        color: #999999;
+    }
+
+    .premium-checkbox .form-check-input {
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #0f238d;
+        border-radius: 4px;
+    }
+
+    .premium-checkbox .form-check-input:checked {
+        background-color: #ff9d00;
+        border-color: #ff9d00;
+    }
+
+    .privacy-link {
+        color: #0f238d;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .privacy-link:hover {
+        color: #ff9d00;
+        text-decoration: underline;
+    }
+
+    .form-note {
+        color: #666666;
+        font-size: 0.9rem;
+    }
+
+    /* Sidebar Styles */
+    .contact-sidebar .sidebar-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-header h4 {
+        color: #0f238d;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .card-content {
+        margin-top: 1rem;
+    }
+
+    .quick-contact-link {
+        display: block;
+        color: #0f238d;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+    }
+
+    .quick-contact-link:hover {
+        color: #ff9d00;
+        text-decoration: none;
+    }
+
+    .whatsapp-link:hover {
+        color: #25D366;
+    }
+
+    .phone-link:hover {
+        color: #007bff;
+    }
+
+    .email-link:hover {
+        color: #dc3545;
+    }
+
+    .hours-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(15, 35, 141, 0.1);
+    }
+
+    .hours-item:last-child {
+        border-bottom: none;
+    }
+
+    .day {
+        font-weight: 500;
+        color: #0f238d;
+    }
+
+    .time {
+        color: #333333;
+    }
+
+    .timezone-note {
+        color: #666666;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        color: white;
+    }
+
+    .facebook-link {
+        background: #1877f2;
+    }
+
+    .twitter-link {
+        background: #1da1f2;
+    }
+
+    .linkedin-link {
+        background: #0077b5;
+    }
+
+    .instagram-link {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Location Section */
+    .location-info h2 {
+        color: #0f238d;
+        font-weight: 700;
+    }
+
+    .location-subtitle {
+        color: #666666;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .address-card, .directions-card, .appointment-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .address-header h4, .directions-header h4, .appointment-header h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .address-line {
+        color: #333333;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .direction-item {
+        color: #333333;
+        font-size: 0.95rem;
+    }
+
+    .direction-item i {
+        color: #ff9d00;
+        width: 20px;
+    }
+
+    /* Map Styles */
+    .map-wrapper h3 {
+        color: #0f238d;
+        font-weight: 700;
+    }
+
+    .map-container {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 400px;
+        position: relative;
+    }
+
+    .map-placeholder {
+        height: 100%;
+        background: linear-gradient(135deg, rgba(15, 35, 141, 0.1), rgba(255, 157, 0, 0.1));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .map-content h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .map-icon {
+        font-size: 4rem;
+        color: #ff9d00;
+        margin-bottom: 1rem;
+    }
+
+    .location-features {
+        margin-top: 2rem;
+    }
+
+    .feature-item {
+        padding: 1rem;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+    }
+
+    .feature-icon i {
+        color: #0f238d;
+        font-size: 24px;
+    }
+
+    .feature-text {
+        color: #333333;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    /* Button Styles */
+    .btn-contact-primary {
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        color: #0f238d;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+        border: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-contact-primary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .btn-contact-primary:hover::before {
+        left: 100%;
+    }
+
+    .btn-contact-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(255, 157, 0, 0.4);
+        color: #0f238d;
+        text-decoration: none;
+    }
+
+    .btn-contact-outline {
+        background: transparent;
+        color: white;
+        padding: 15px 40px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+
+    .btn-contact-outline:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ff9d00;
+        color: #ff9d00;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+
+    /* CTA Section */
+    .contact-cta-section {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-cta-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            radial-gradient(circle at 20% 80%, rgba(255, 157, 0, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        z-index: 1;
+    }
+
+    .cta-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+
+    .btn-cta-primary {
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        color: #0f238d;
+        padding: 18px 45px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s ease;
+        box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+        border: none;
+    }
+
+    .btn-cta-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(255, 157, 0, 0.4);
+        color: #0f238d;
+        text-decoration: none;
+    }
+
+    .btn-cta-outline {
+        background: transparent;
+        color: white;
+        padding: 18px 45px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+
+    .btn-cta-outline:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ff9d00;
+        color: #ff9d00;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .section-title-contact {
+            font-size: 2rem;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .contact-form-wrapper {
+            padding: 1.5rem;
+        }
+
+        .premium-card {
+            padding: 1.5rem;
+        }
+
+        .hero-actions {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cta-actions {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-contact-primary, .btn-contact-outline,
+        .btn-cta-primary, .btn-cta-outline {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .social-links {
+            justify-content: center;
+        }
+
+        .location-features .row {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .section-title-contact {
+            font-size: 1.8rem;
+        }
+
+        .cta-title {
+            font-size: 1.8rem;
+        }
+
+        .contact-form-wrapper {
+            padding: 1rem;
+        }
+
+        .premium-card {
+            padding: 1rem;
+        }
+
+        .btn-contact-primary, .btn-contact-outline,
+        .btn-cta-primary, .btn-cta-outline {
+            padding: 12px 30px;
+            font-size: 1rem;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .contact-icon i {
+            font-size: 24px;
+        }
+
+        .hero-subtitle, .cta-subtitle {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+{% include 'users/footer.html' %}
+{% endblock %}

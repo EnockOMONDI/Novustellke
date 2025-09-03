@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import UserBookings
 from django import forms
 from django.contrib.auth.models import User
-from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, NewsletterSubscription
+from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, ContactInquiry
 import re
 
 
@@ -272,3 +272,67 @@ class NewsletterSubscriptionSimpleForm(forms.Form):
                 raise forms.ValidationError('This email is already subscribed to our newsletter.')
 
         return email
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = ContactInquiry
+        fields = ['full_name', 'email', 'phone', 'company', 'subject', 'message', 'privacy_consent']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # Add CSS classes and attributes to form fields
+        self.fields['full_name'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'placeholder': 'Enter your full name',
+            'required': True
+        })
+
+        self.fields['email'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'placeholder': 'Enter your email address',
+            'required': True
+        })
+
+        self.fields['phone'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'placeholder': 'Enter your phone number'
+        })
+
+        self.fields['company'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'placeholder': 'Enter your company name'
+        })
+
+        self.fields['subject'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'required': True
+        })
+
+        self.fields['message'].widget.attrs.update({
+            'class': 'form-control premium-input',
+            'placeholder': 'Tell us about your travel requirements, preferred dates, number of travelers, budget range, and any specific needs...',
+            'rows': 6,
+            'required': True
+        })
+
+        self.fields['privacy_consent'].widget.attrs.update({
+            'class': 'form-check-input',
+            'required': True
+        })
+
+        # Add labels
+        self.fields['full_name'].label = 'Full Name *'
+        self.fields['email'].label = 'Email Address *'
+        self.fields['phone'].label = 'Phone Number'
+        self.fields['company'].label = 'Company/Organization'
+        self.fields['subject'].label = 'Subject *'
+        self.fields['message'].label = 'Message *'
+        self.fields['privacy_consent'].label = 'I agree to the Privacy Policy and consent to Novustell Travel contacting me regarding my inquiry.'
+
+    def clean_privacy_consent(self):
+        privacy_consent = self.cleaned_data.get('privacy_consent')
+        if not privacy_consent:
+            raise forms.ValidationError('You must agree to the privacy policy to submit this form.')
+        return privacy_consent

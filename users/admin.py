@@ -3,7 +3,7 @@ from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
 from django.utils.html import format_html
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing, ContactInquiry
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -464,3 +464,28 @@ class JobListingAdmin(admin.ModelAdmin):
 # Re-register UserAdmin
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
+
+
+@admin.register(ContactInquiry)
+class ContactInquiryAdmin(admin.ModelAdmin):
+    list_display = ['full_name', 'email', 'subject', 'created_at', 'privacy_consent']
+    list_filter = ['subject', 'created_at', 'privacy_consent']
+    search_fields = ['full_name', 'email', 'company', 'message']
+    readonly_fields = ['created_at']
+    ordering = ['-created_at']
+
+    fieldsets = (
+        ('Contact Information', {
+            'fields': ('full_name', 'email', 'phone', 'company')
+        }),
+        ('Inquiry Details', {
+            'fields': ('subject', 'message')
+        }),
+        ('Consent & Metadata', {
+            'fields': ('privacy_consent', 'created_at')
+        }),
+    )
+
+    def has_add_permission(self, request):
+        # Prevent manual creation of contact inquiries in admin
+        return False

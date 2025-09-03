@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Inquiry - Novustell Travel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3fc;
+            color: #333333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0f238d, #0f238d);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .welcome-message {
+            background: linear-gradient(135deg, rgba(255, 157, 0, 0.1), rgba(255, 157, 0, 0.05));
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9d00;
+        }
+        .inquiry-summary {
+            background-color: #f8f3fc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .detail-row {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #0f238d;
+        }
+        .detail-value {
+            color: #333333;
+        }
+        .next-steps {
+            background-color: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .contact-info {
+            background-color: #fff3e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-method:last-child {
+            margin-bottom: 0;
+        }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ff9d00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #0f238d;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #0f238d;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
+        }
+        .social-links {
+            margin: 15px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ff9d00;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff9d00;
+            color: #0f238d;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 10px 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #e8890a;
+        }
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+                border-radius: 5px;
+            }
+            .header, .content, .footer {
+                padding: 20px 15px;
+            }
+            .welcome-message, .inquiry-summary, .contact-info {
+                padding: 15px;
+            }
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .detail-value {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>✅ Thank You!</h1>
+            <p>Your inquiry has been received</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="welcome-message">
+                <h2 style="color: #0f238d; margin-top: 0;">Dear {{ inquiry.full_name }},</h2>
+                <p style="margin-bottom: 0; font-size: 16px; line-height: 1.6;">
+                    Thank you for contacting <strong>Novustell Travel</strong>! We have successfully received your inquiry about <strong>{{ inquiry.subject }}</strong> and our expert travel consultants are already reviewing your requirements.
+                </p>
+            </div>
+
+            <h3 style="color: #0f238d;">📋 Your Inquiry Summary</h3>
+            <div class="inquiry-summary">
+                <div class="detail-row">
+                    <span class="detail-label">Inquiry Type:</span>
+                    <span class="detail-value">{{ inquiry.subject }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Submission Date:</span>
+                    <span class="detail-value">{{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Reference ID:</span>
+                    <span class="detail-value">NVT-{{ inquiry.id|stringformat:"05d" }}</span>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h3 style="color: #2e7d32; margin-top: 0;">🚀 What Happens Next?</h3>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;"><strong>Within 24 Hours:</strong> Our travel experts will review your requirements and respond with personalized recommendations</li>
+                    <li style="margin-bottom: 10px;"><strong>Consultation:</strong> We'll schedule a consultation to discuss your specific travel needs in detail</li>
+                    <li style="margin-bottom: 10px;"><strong>Custom Proposal:</strong> You'll receive a tailored travel proposal with competitive pricing</li>
+                    <li style="margin-bottom: 0;"><strong>Booking Support:</strong> Our team will assist you through every step of the booking process</li>
+                </ul>
+            </div>
+
+            <h3 style="color: #0f238d;">📞 Need Immediate Assistance?</h3>
+            <div class="contact-info">
+                <div class="contact-method">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <strong>WhatsApp Business:</strong><br>
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20inquiry%20(Ref:%20NVT-{{ inquiry.id|stringformat:"05d" }})%20and%20need%20immediate%20assistance." style="color: #0f238d;">+254 701 363 551</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Phone Numbers:</strong><br>
+                        <a href="tel:+254721115572" style="color: #0f238d;">+254 721 115 572</a> | 
+                        <a href="tel:+254701363551" style="color: #0f238d;">+254 701 363 551</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:Info@novustelltravel.com?subject=Re:%20Inquiry%20NVT-{{ inquiry.id|stringformat:"05d" }}" style="color: #0f238d;">Info@novustelltravel.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20inquiry%20(Ref:%20NVT-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions." class="btn">
+                    💬 Chat on WhatsApp
+                </a>
+                <a href="{% url 'users:corporatepage' %}" class="btn">
+                    🏢 Our Services
+                </a>
+            </div>
+
+            <p style="color: #666666; font-size: 14px; text-align: center; margin-top: 30px;">
+                <em>This is an automated confirmation. Please do not reply to this email. For any questions, use the contact methods above.</em>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="margin: 0 0 15px 0; font-size: 18px;"><strong>Novustell Travel</strong></p>
+            <p style="margin: 0 0 15px 0; opacity: 0.9;">Think Convenience, Think Novustell</p>
+            
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="Instagram">📸</a>
+            </div>
+            
+            <p style="margin: 15px 0 0 0; font-size: 12px; opacity: 0.8;">
+                New Peoples Media Center (Kilimani)<br>
+                Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)<br>
+                Nairobi, Kenya<br>
+                📞 +254 721 115 572 | +254 701 363 551<br>
+                📧 <a href="mailto:Info@novustelltravel.com">Info@novustelltravel.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

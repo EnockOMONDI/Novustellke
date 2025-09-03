@@ -1,52 +1,211 @@
 {% extends 'users/basemain.html' %}
 {% load static  %}
 
+{% block title %}Corporate Travel Management Services - Novustell Travel{% endblock %}
+
+{% block meta_description %}Professional corporate travel management services by Novustell Travel. Comprehensive business travel solutions, MICE planning, and dedicated travel consultants for your company.{% endblock %}
+
+{% block extra_head %}
+<!-- Structured Data for Corporate Travel Services -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Novustell Travel - Corporate Services",
+  "description": "Leading corporate travel management company providing comprehensive business travel solutions, MICE events, and dedicated travel consulting services.",
+  "url": "{{ request.build_absolute_uri }}",
+  "serviceType": [
+    "Corporate Travel Management",
+    "Business Travel Solutions",
+    "MICE Events Planning",
+    "Travel Risk Management",
+    "Expense Management",
+    "VIP Travel Services"
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "Global"
+  }
+}
+</script>
+{% endblock %}
 
 {% block content %}
 
-<section class="page-banner overlay pt-170 pb-60 bg_cover" style="background-image: url({% static 'assets/images/bg/page-bg.jpg' %});">    <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="page-banner-content text-center text-white">
-                <h1 class="page-title"style="background-color: #0f238d; padding: 15px; border-radius:10px;  display: inline-block;">Corporate Travel</h1>
-           
-       <h6>
-        At Novustell Travel we understand that corporate travel is more than just movement; it's a strategic element of your business. We seamlessly blend our expertise with your goals, ensuring every trip aligns with your objectives.     </h6>
-            </div>
+<!-- Hero Section -->
+<section class="corporate-hero-section" style="background: linear-gradient(135deg, rgba(15, 35, 141, 0.9), rgba(15, 35, 141, 0.7)), url('{% static 'assets/images/place/place-12.jpg' %}'); background-size: cover; background-position: center; min-height: 100vh; position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div class="hero-pattern"></div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="hero-content text-white wow fadeInLeft">
+                    <div class="hero-badge mb-4">
+                        <span class="badge-text">Corporate Travel Excellence</span>
+                    </div>
+                    <h1 class="hero-title mb-4">
+                        THINK <span class="text-accent">CONVENIENCE</span><br>
+                        THINK <span class="text-accent">NOVUSTELL</span>
+                    </h1>
+                    <p class="hero-subtitle mb-5">
+                        Seamlessly blend our expertise with your business goals. Every corporate trip strategically aligned with your objectives for maximum efficiency and cost-effectiveness.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%27m%20interested%20in%20your%20corporate%20travel%20management%20services."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-corporate-primary me-3">
+                            <i class="fab fa-whatsapp me-2"></i>Get Started Today
+                        </a>
+                        <a href="#core-services" class="btn btn-corporate-outline">
+                            <i class="fas fa-arrow-down me-2"></i>Explore Services
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+    </div>
 </section>
 
-<section class="blog-section  pt-60 black-bg">
+<!-- Core Travel Services Section -->
+<section id="core-services" class="core-services-section py-5" style="background-color: #f8f3fc;">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6">
-                <!--=== Blog Content Box ===-->
-                <div class="blog-content-box mb-40 wow fadeInLeft text-white" style="visibility: visible; animation-name: fadeInLeft;">
-                    <!--=== Section Title ===-->
-                    <div class="section-title mb-30">
-                        <!-- <span class="sub-title">Why choose us</span> -->
-                        <h2>Meet your travel and travel related needs at world-class level and  at the Lowest cost possible</h2>
-                    </div>
-                  
-                </div>
+        <!-- Section Header -->
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title-corporate mb-4 wow fadeInUp">
+                    OUR CORE TRAVEL SERVICES
+                </h2>
+                <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">
+                    Comprehensive corporate travel management solutions designed to streamline your business operations
+                </p>
             </div>
-            <div class="col-xl-6">
-                <!--=== Blog Content Box ===-->
-                <div class="blog-content-box mb-40 wow fadeInLeft text-white" style="visibility: visible; animation-name: fadeInLeft;">
-                    <!--=== Section Title ===-->
-                 
-                    <p class="mb-20">We recognize the evolving requirements of modern businesses when it comes to seamless travel arrangements. We intimately understand the daily challenges faced by small to medium enterprises (SMEs). As your business expands, so do the complexities of managing corporate travel expenses, often a significant portion of your financials. Our unwavering commitment is to empower your SME with time and cost savings.
+        </div>
 
- We are your convenient one-stop hub for all your business travel needs.
-                        
-                      </p>
-                    <a style="color:#ff9900" href="https://wa.me/254701363551" target="_blank" class="btn-link ">Request CallBack<i class="far fa-long-arrow-right"></i></a>
+        <!-- Services Grid -->
+        <div class="row">
+            <!-- Air Ticketing -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Air Ticketing & Flight Management</h4>
+                        <p>Comprehensive flight booking services with access to global airline networks, competitive rates, and flexible booking options for all your business travel needs.</p>
+                    </div>
                 </div>
             </div>
-      
+
+            <!-- Hotel Bookings -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Hotel Bookings & Accommodation</h4>
+                        <p>Preferred hotel partnerships worldwide ensuring quality accommodations at negotiated corporate rates with flexible cancellation policies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIP Services -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>VIP Services & Executive Travel</h4>
+                        <p>Premium travel experiences for executives including priority check-in, lounge access, and personalized concierge services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ground Transportation -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Ground Transportation</h4>
+                        <p>Reliable airport transfers, car rentals, and chauffeur services ensuring seamless door-to-door travel experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visa Services -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Visa Services & Documentation</h4>
+                        <p>Complete visa processing and travel documentation support to ensure compliance with international travel requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Insurance -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Travel Insurance & Protection</h4>
+                        <p>Comprehensive travel insurance coverage protecting your employees and business investments during travel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MICE Planning -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>MICE Planning & Events</h4>
+                        <p>Meetings, Incentives, Conferences, and Events planning with end-to-end event management and group travel coordination.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology & Expense Management -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="service-card corporate-card wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Technology & Expense Management</h4>
+                        <p>Advanced booking platforms and expense management tools providing real-time reporting and cost control capabilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Management -->
+            <div class="col-lg-12 mb-4">
+                <div class="service-card corporate-card featured-service wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="service-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>Risk Management & Traveller Support</h4>
+                        <p>24/7 emergency support, travel risk assessment, and duty of care programs ensuring traveller safety and business continuity worldwide.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -128,40 +287,642 @@
 </div>
     </div>
 </section>
-<section class="blog-section pt-10 black-bg pb-10">
-    <br><br><br>
+<!-- Traveler Safety & Well-being Section -->
+<section class="safety-section py-5" style="background: linear-gradient(135deg, #0f238d, #0f238d);">
     <div class="container">
-        <div class="row align-items-center text-white">
-            <div class="col-xl-8">
-                <!--=== Blog Content Box ===-->
-                <div class="blog-content-box mb-40 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-                    <!--=== Section Title ===-->
-                    <div class="section-title mb-30">
-                        <span class="sub-title">Role of our Travel Managers</span>
-                        <h2>Your Personal Travel Assistants:  Always at Your Service</h2>
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title-corporate text-white mb-4 wow fadeInUp">
+                    OUR COMMITMENT TO TRAVELER SAFETY & WELL-BEING
+                </h2>
+                <p class="section-subtitle text-white wow fadeInUp" data-wow-delay="0.2s">
+                    Your employees' safety and well-being are our top priorities in every journey
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="safety-card text-white wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="safety-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <p class="mb-20">Connect directly with a dedicated point of contact who possesses in-depth knowledge of your business and its travel necessities. Our dedicated Travel Managers operate as an extension of your team, much like your personal travel assistants. This personalized, people-centric approach adds exceptional value to your travel program.</p>
+                    <h4>Duty of Care Programs</h4>
+                    <p>Comprehensive duty of care programs ensuring traveler safety through pre-travel risk assessments, travel advisories, and continuous monitoring of global security situations.</p>
                 </div>
             </div>
-            <div class="col-xl-4">
-                <!--=== Single Blog Post ===-->
-                <div class="single-place-item-two mb-30 wow fadeInUp">
-                    <div class="place-img">
-                        <img src="{% static 'assets/images/blog/blog-4.jpg ' %}" alt="Place Image">
-                        <span class="tour-count">20+ Services</span>
-                       <div class="place-content">
-                            <div class="info text-white">
-                                <h3 class="title mb-10"><strong>seamless experience</strong> </h3>
-                                <div data-animation="fadeInRight" data-delay=".6s"> 
-                                    <span class="sub-title">  <a href="https://wa.me/254701363551" target="_blank""> <small> Talk to us <i class="fas fa-paper-plane"></i></small> </a> </span>
-                                </div>                                    </div>
-                        </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="safety-card text-white wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="safety-icon">
+                        <i class="fas fa-bell"></i>
                     </div>
+                    <h4>Real-time Travel Alerts</h4>
+                    <p>Instant notifications about weather conditions, political situations, health advisories, and security threats affecting your travelers' destinations and routes.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="safety-card text-white wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="safety-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h4>Emergency Communications</h4>
+                    <p>24/7 emergency assistance hotline with immediate response capabilities for medical emergencies, travel disruptions, and crisis management support worldwide.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-    {% include 'users/footer.html' %}
-    {% endblock %}
+<!-- Partnership Section -->
+<section class="partnership-section py-5" style="background-color: #f8f3fc;">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title-corporate mb-4 wow fadeInUp">
+                    OUR TRUSTED PARTNERSHIPS
+                </h2>
+                <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">
+                    Industry-leading certifications and partnerships ensuring quality and reliability
+                </p>
+            </div>
+        </div>
+
+    <div class="row justify-content-center align-items-center g-4">
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/iata2.jpg' %}" alt="IATA" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/kata2.jpg' %}" alt="KATA" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/kato2.jpg' %}" alt="KATO" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/galileo.jpg' %}" alt="GALILEO" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/magicalkenya.png' %}" alt="magical kenya" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/accor.jpeg' %}" alt="accor" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/Hayatt.png' %}" alt="accor" class="partner-logo">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'assets/images/logo/amadeus.png' %}" alt="accor" class="partner-logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Custom CSS Styles -->
+<style>
+    /* Corporate Page Specific Styles */
+    .corporate-hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            radial-gradient(circle at 20% 80%, rgba(255, 157, 0, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        background: rgba(255, 157, 0, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 8px 20px;
+        border-radius: 25px;
+        border: 1px solid rgba(255, 157, 0, 0.3);
+    }
+
+    .badge-text {
+        color: #ff9d00;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+
+    .text-accent {
+        color: #ff9d00;
+        position: relative;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        opacity: 0.9;
+        max-width: 600px;
+    }
+
+    .scroll-indicator {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .scroll-arrow {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #ff9d00;
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg);
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(45deg); }
+        40% { transform: translateY(-10px) rotate(45deg); }
+        60% { transform: translateY(-5px) rotate(45deg); }
+    }
+
+    /* Section Titles */
+    .section-title-corporate {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #0f238d;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: #333333;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Corporate Cards */
+    .corporate-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .corporate-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 157, 0, 0.1), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .corporate-card:hover::before {
+        left: 100%;
+    }
+
+    .corporate-card:hover {
+        transform: translateY(-8px);
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.15),
+            0 4px 16px rgba(0, 0, 0, 0.1);
+        border-color: rgba(255, 157, 0, 0.3);
+    }
+
+    /* Service Cards */
+    .service-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        height: 100%;
+    }
+
+    .service-icon {
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #0f238d, #0f238d);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-icon::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .service-card:hover .service-icon::before {
+        opacity: 1;
+    }
+
+    .service-icon i {
+        color: #ff9d00;
+        font-size: 28px;
+        z-index: 2;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .service-card:hover .service-icon i {
+        color: #0f238d;
+    }
+
+    .service-content h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    .service-content p {
+        color: #333333;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .featured-service {
+        background: linear-gradient(135deg, rgba(15, 35, 141, 0.05), rgba(255, 157, 0, 0.05));
+        border: 2px solid rgba(255, 157, 0, 0.2);
+    }
+
+    /* Value Proposition Cards */
+    .value-prop-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        height: 100%;
+    }
+
+    .value-icon {
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .value-icon i {
+        color: #0f238d;
+        font-size: 28px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .value-content h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .value-content p {
+        color: #333333;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Safety Section */
+    .safety-card {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .safety-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 157, 0, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+    }
+
+    .safety-icon i {
+        color: #ff9d00;
+        font-size: 32px;
+    }
+
+    .safety-card h4 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .safety-card p {
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    /* Partnership Section */
+    .partner-logo {
+        padding: 1rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partner-logo:hover {
+        transform: translateY(-5px);
+    }
+
+    .partner-logo img {
+        max-height: 60px;
+        width: auto;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .partner-logo:hover img {
+        filter: grayscale(0%);
+    }
+
+    /* Services Overview */
+    .service-overview-card {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        height: 100%;
+        border: 1px solid rgba(15, 35, 141, 0.1);
+    }
+
+    .service-overview-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        border-color: #ff9d00;
+    }
+
+    .service-overview-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #0f238d, #0f238d);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-overview-icon::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .service-overview-card:hover .service-overview-icon::before {
+        opacity: 1;
+    }
+
+    .service-overview-icon i {
+        color: #ff9d00;
+        font-size: 32px;
+        z-index: 2;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .service-overview-card:hover .service-overview-icon i {
+        color: #0f238d;
+    }
+
+    .service-overview-card h4 {
+        color: #0f238d;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .service-overview-card p {
+        color: #333333;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Hero Tagline */
+    .hero-tagline {
+        margin: 2rem 0;
+    }
+
+    .tagline-text {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0f238d;
+    }
+
+    /* Buttons */
+    .btn-corporate-primary {
+        background: linear-gradient(135deg, #ff9d00, #ffb84d);
+        color: #0f238d;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+        border: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-corporate-primary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .btn-corporate-primary:hover::before {
+        left: 100%;
+    }
+
+    .btn-corporate-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(255, 157, 0, 0.4);
+        color: #0f238d;
+        text-decoration: none;
+    }
+
+    .btn-corporate-outline {
+        background: transparent;
+        color: white;
+        padding: 15px 40px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+
+    .btn-corporate-outline:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ff9d00;
+        color: #ff9d00;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+
+    /* CTA Sections */
+    .value-cta, .final-cta {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0f238d;
+        margin-bottom: 1rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1.2rem;
+        color: #333333;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .section-title-corporate {
+            font-size: 2.2rem;
+        }
+
+        .tagline-text {
+            font-size: 1.8rem;
+        }
+
+        .service-card, .value-prop-card {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .service-icon, .value-icon {
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .hero-actions {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-corporate-primary, .btn-corporate-outline {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .section-title-corporate {
+            font-size: 1.8rem;
+        }
+
+        .tagline-text {
+            font-size: 1.5rem;
+        }
+
+        .corporate-card {
+            padding: 1.5rem;
+        }
+
+        .cta-title {
+            font-size: 1.6rem;
+        }
+
+        .btn-corporate-primary, .btn-corporate-outline {
+            padding: 12px 30px;
+            font-size: 1rem;
+        }
+    }
+</style>
+
+{% include 'users/footer.html' %}
+{% endblock %}

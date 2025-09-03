@@ -307,8 +307,78 @@ def holidays(request):
     return render(request, 'users/holidays.html')
 
 def contactus(request):
+    if request.method == 'POST':
+        from .forms import ContactForm
+        from django.core.mail import EmailMultiAlternatives
+        from django.template.loader import render_to_string
+        from django.contrib import messages
+        from django.conf import settings
+        import logging
 
-    return render(request, 'users/contactus.html')
+        logger = logging.getLogger(__name__)
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+            try:
+                # Save the contact inquiry
+                inquiry = form.save()
+
+                # Prepare email context
+                email_context = {
+                    'inquiry': inquiry,
+                }
+
+                # Admin notification email
+                admin_subject = f"New Contact Inquiry: {inquiry.subject} - {inquiry.full_name}"
+                admin_html_content = render_to_string('users/emails/contact_inquiry_admin.html', email_context)
+                admin_text_content = render_to_string('users/emails/contact_inquiry_admin.txt', email_context)
+
+                admin_email = EmailMultiAlternatives(
+                    subject=admin_subject,
+                    body=admin_text_content,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    to=['Info@novustelltravel.com'],
+                    reply_to=[inquiry.email]
+                )
+                admin_email.attach_alternative(admin_html_content, "text/html")
+                admin_email.send()
+
+                # Client confirmation email
+                client_subject = f"Thank You for Your Inquiry - Novustell Travel (Ref: NVT-{inquiry.id:05d})"
+                client_html_content = render_to_string('users/emails/contact_inquiry_confirmation.html', email_context, request=request)
+                client_text_content = render_to_string('users/emails/contact_inquiry_confirmation.txt', email_context, request=request)
+
+                client_email = EmailMultiAlternatives(
+                    subject=client_subject,
+                    body=client_text_content,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    to=[inquiry.email],
+                    reply_to=['Info@novustelltravel.com']
+                )
+                client_email.attach_alternative(client_html_content, "text/html")
+                client_email.send()
+
+                messages.success(request,
+                    f'Thank you for your inquiry! We have received your message about "{inquiry.subject}" and will respond within 24 hours. '
+                    f'Your reference number is NVT-{inquiry.id:05d}. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
+
+                logger.info(f"Contact inquiry submitted successfully: {inquiry.full_name} - {inquiry.subject}")
+
+                # Redirect to prevent form resubmission
+                from django.shortcuts import redirect
+                return redirect('users:contactus')
+
+            except Exception as e:
+                logger.error(f"Error processing contact form: {str(e)}")
+                messages.error(request,
+                    'There was an error sending your message. Please try again or contact us directly at Info@novustelltravel.com or +254 701 363 551.')
+        else:
+            messages.error(request, 'Please correct the errors below and try again.')
+    else:
+        from .forms import ContactForm
+        form = ContactForm()
+
+    return render(request, 'users/contactus.html', {'form': form})
 
 
 def send_job_application_emails(job_application):
