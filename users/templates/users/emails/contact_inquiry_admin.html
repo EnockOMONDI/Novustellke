@@ -134,17 +134,33 @@
             <div class="logo-container">
                 <img src="{% static 'assets/images/logo/logo-white.png' %}" alt="Novustell Travel" class="logo">
             </div>
-            <h1>🔔 New Contact Inquiry</h1>
-            <p style="margin: 10px 0 0 0; opacity: 0.9;">Novustell Travel Website</p>
+            <h1>🔔 New Contact Inquiry from Website</h1>
         </div>
 
         <!-- Content -->
         <div class="content">
-            <h2 style="color: #0f238d; margin-top: 0;">Contact Inquiry Details</h2>
+            <h2 style="color: #0f238d; margin-top: 0;">Inquiry Details</h2>
+
             
             <div class="priority-notice">
-                <strong>⚡ Action Required:</strong> A new contact inquiry has been submitted through the website contact form. Please respond within 24 hours as promised on the contact page.
+                <strong>⚡ Action Required:</strong> A new inquiry has been submitted through the website contact form. Please respond within 24 hours as promised on the contact page.
             </div>
+
+            <!-- Tracking Information -->
+                <div style="background-color: #fff; border: 1px solid #e0e0e0; padding: 15px; border-radius: 5px;">
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🔍 Inquiry Tracking</h4>
+                    <p style="margin: 0; font-size: 14px;">
+                        <strong>Reference ID:</strong> NVT-{{ inquiry.id|stringformat:"05d" }}<br>
+                        <strong>Submission Time:</strong> {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT<br>
+                        <strong>Source:</strong> Website Contact Form<br>
+                        <strong>Priority Level:</strong>
+                        {% if inquiry.subject == "Corporate Travel" or inquiry.subject == "MICE" or inquiry.subject == "Partnership" %}
+                            <span style="color: #ff9d00; font-weight: bold;">HIGH PRIORITY</span>
+                        {% else %}
+                            <span style="color: #0f238d; font-weight: bold;">STANDARD</span>
+                        {% endif %}
+                    </p>
+                </div>
 
             <div class="inquiry-details">
                 <div class="detail-row">
@@ -230,9 +246,9 @@
                         {% elif inquiry.subject == "Holiday Packages" %}
                             <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
                         {% elif inquiry.subject == "Accommodation" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Tours Booking Team</span>
+                            <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
                         {% elif inquiry.subject == "Car Rental" %}
-                            <span style="color: #ff9d00; font-weight: bold;">CTours Team</span>
+                            <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
                         {% elif inquiry.subject == "Partnership" %}
                             <span style="color: #ff9d00; font-weight: bold;">Business Development Team</span>
                         {% else %}
