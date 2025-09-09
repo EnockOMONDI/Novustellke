@@ -12,10 +12,21 @@ Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
 
 WHAT HAPPENS NEXT?
 ==================
-🚀 Within 24 Hours: Our travel experts will review your requirements and respond with personalized recommendations
-📋 Consultation: We'll schedule a consultation to discuss your specific travel needs in detail
-💼 Custom Proposal: You'll receive a tailored travel proposal with competitive pricing
-🤝 Booking Support: Our team will assist you through every step of the booking process
+
+🎯 YOUR INQUIRY ASSIGNMENT:
+Your {{ inquiry.subject }} inquiry has been assigned to our {% if inquiry.subject == "Corporate Travel" %}Corporate Travel Management Team - specialists in business travel solutions, expense management, and corporate policies.{% elif inquiry.subject == "MICE" %}MICE Events & Conferences Team - experts in meetings, incentives, conferences, and exhibitions planning.{% elif inquiry.subject == "Student Travel" %}Student Travel Programs Team - dedicated to educational travel, group bookings, and student-friendly packages.{% elif inquiry.subject == "NGO Travel" %}NGO Travel Solutions Team - specialized in humanitarian travel, volunteer programs, and non-profit organization needs.{% elif inquiry.subject == "Group Travel" %}Group Travel Services Team - focused on large group coordination, special rates, and group logistics.{% elif inquiry.subject == "Holiday Packages" %}Holiday Packages Team - experts in leisure travel, vacation planning, and holiday experiences.{% elif inquiry.subject == "Accommodation" %}Accommodation Booking Team - specialists in hotel reservations, lodging solutions, and accommodation partnerships.{% elif inquiry.subject == "Car Rental" %}Car/Van Rental Services Team - focused on vehicle rentals, transportation solutions, and fleet management.{% elif inquiry.subject == "Partnership" %}Business Development Team - dedicated to partnership opportunities, collaborations, and business relationships.{% else %}General Customer Service Team - our versatile team ready to assist with any travel-related inquiry.{% endif %}
+
+⏰ RESPONSE TIMELINE:
+- Within 2 Hours: Acknowledgment and initial review by our team
+- Within 4 Hours: Preliminary assessment and any clarifying questions
+- Within 24 Hours: Comprehensive response with personalized recommendations and pricing
+- Ongoing Support: Dedicated consultation and booking assistance throughout your journey
+
+📋 OUR SERVICE PROCESS:
+- Consultation: Detailed discussion of your travel requirements and preferences
+- Custom Proposal: Tailored travel proposal with competitive pricing and options
+- Booking Support: Complete assistance through every step of the booking process
+- Travel Support: 24/7 assistance during your travel for peace of mind
 
 NEED IMMEDIATE ASSISTANCE?
 ==========================
@@ -37,11 +48,34 @@ WhatsApp: https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20subm
 This is an automated confirmation. Please do not reply to this email. 
 For any questions, use the contact methods above.
 
-NOVUSTELL TRAVEL
+===============================================
+NOVUSTELL TRAVEL - COMPLETE CONTACT INFORMATION
+===============================================
+
 Think Convenience, Think Novustell
 
+🏢 Office Location:
 New Peoples Media Center (Kilimani)
 Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)
 Nairobi, Kenya
-Phone: +254 721 115 572 | +254 701 363 551
-Email: Info@novustelltravel.com
+
+📞 Phone Numbers:
++254 721 115 572
++254 701 363 551
+
+📧 Email Addresses:
+Info@novustelltravel.com
+corporate@novustelltravel.com
+
+💬 WhatsApp Business:
++254 701 363 551
+
+🕒 Business Hours:
+Monday - Friday: 8:00 AM - 6:00 PM EAT
+Saturday: 9:00 AM - 2:00 PM EAT
+🚨 24/7 Emergency Support for Travelers
+
+📋 Your Reference Information:
+Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
+Inquiry Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Keep this reference for future correspondence
