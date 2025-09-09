@@ -15,7 +15,7 @@ import sys
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'novustellke@gmail.com'
-EMAIL_HOST_PASSWORD = 'iagt yans hoyd pavg'
+EMAIL_HOST_PASSWORD = 'vsmw vdut tanu gtdg'
 
 def test_smtp_connection():
     """Test SMTP connection without sending email"""

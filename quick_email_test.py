@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 # UPDATE THESE CREDENTIALS
 EMAIL_HOST_USER = 'novustellke@gmail.com'
-EMAIL_HOST_PASSWORD = 'iagt yans hoyd pavg'  # Replace with new app password
+EMAIL_HOST_PASSWORD = 'vsmw vdut tanu gtdg'  # Replace with new app password
 
 def quick_test():
     try:
