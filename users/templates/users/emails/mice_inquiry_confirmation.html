@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You for Your Inquiry - Novustell Travel</title>
+    <title>MICE Inquiry Received - Novustell Travel</title>
     <style>
         body {
             margin: 0;
@@ -124,15 +124,6 @@
             color: #ff9d00;
             text-decoration: none;
         }
-        .social-links {
-            margin: 15px 0;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #ff9d00;
-            font-size: 18px;
-        }
         .btn {
             display: inline-block;
             padding: 15px 30px;
@@ -176,23 +167,31 @@
                 <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" class="logo">
             </div>
             <h1>✅ Thank You!</h1>
-            <p>Your inquiry has been received</p>
+            <p>Your MICE inquiry has been received</p>
         </div>
 
         <!-- Content -->
         <div class="content">
             <div class="welcome-message">
-                <h2 style="color: #0f238d; margin-top: 0;">Dear {{ inquiry.full_name }},</h2>
+                <h2 style="color: #0f238d; margin-top: 0;">Dear {{ inquiry.contact_person }},</h2>
                 <p style="margin-bottom: 0; font-size: 16px; line-height: 1.6;">
-                    Thank you for contacting <strong>Novustell Travel</strong>! We have successfully received your inquiry about <strong>{{ inquiry.subject }}</strong> and our expert travel consultants are already reviewing your requirements.
+                    Thank you for contacting <strong>Novustell Travel</strong> for your corporate event travel needs! We have successfully received your MICE inquiry for <strong>{{ inquiry.company_name }}</strong> and our specialized Corporate Travel Management Team is already reviewing your event requirements.
                 </p>
             </div>
 
-            <h3 style="color: #0f238d;">📋 Your Inquiry Summary</h3>
+            <h3 style="color: #0f238d;">📋 Your MICE Inquiry Summary</h3>
             <div class="inquiry-summary">
                 <div class="detail-row">
-                    <span class="detail-label">Inquiry Type:</span>
-                    <span class="detail-value">{{ inquiry.subject }}</span>
+                    <span class="detail-label">Company:</span>
+                    <span class="detail-value">{{ inquiry.company_name }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Event Type:</span>
+                    <span class="detail-value">{{ inquiry.event_type }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Number of Attendees:</span>
+                    <span class="detail-value">{{ inquiry.attendees }}</span>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Submission Date:</span>
@@ -200,62 +199,41 @@
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Reference ID:</span>
-                    <span class="detail-value">NVT-{{ inquiry.id|stringformat:"05d" }}</span>
-                    <em>Keep this reference for future correspondence</em>
+                    <span class="detail-value">MICE-{{ inquiry.id|stringformat:"05d" }}</span>
                 </div>
             </div>
 
             <div class="next-steps">
                 <h3 style="color: #2e7d32; margin-top: 0;">🚀 What Happens Next?</h3>
-
-                <!-- Department Assignment Information -->
+                
+                <!-- Corporate Specialization -->
                 <div style="background-color: #e3f2fd; border-left: 4px solid #0f238d; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
-                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🎯 Your Inquiry Assignment</h4>
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🎯 Your Corporate Event Specialist Team</h4>
                     <p style="margin: 0; font-size: 14px; line-height: 1.6;">
-                        Your <strong>{{ inquiry.subject }}</strong> inquiry has been assigned to our
-                        {% if inquiry.subject == "Corporate Travel" %}
-                            <strong style="color: #ff9d00;">Corporate Travel Management Team</strong> - specialists in business travel solutions, expense management, and corporate policies.
-                        {% elif inquiry.subject == "MICE" %}
-                            <strong style="color: #ff9d00;">MICE Events & Conferences Team</strong> - experts in meetings, incentives, conferences, and exhibitions planning.
-                        {% elif inquiry.subject == "Student Travel" %}
-                            <strong style="color: #ff9d00;">Student Travel Programs Team</strong> - dedicated to educational travel, group bookings, and student-friendly packages.
-                        {% elif inquiry.subject == "NGO Travel" %}
-                            <strong style="color: #ff9d00;">NGO Travel Solutions Team</strong> - specialized in humanitarian travel, volunteer programs, and non-profit organization needs.
-                        {% elif inquiry.subject == "Group Travel" %}
-                            <strong style="color: #ff9d00;">Group Travel Services Team</strong> - focused on large group coordination, special rates, and group logistics.
-                        {% elif inquiry.subject == "Holiday Packages" %}
-                            <strong style="color: #ff9d00;">Holiday Packages Team</strong> - experts in leisure travel, vacation planning, and holiday experiences.
-                        {% elif inquiry.subject == "Accommodation" %}
-                            <strong style="color: #ff9d00;">Accommodation Booking Team</strong> - specialists in hotel reservations, lodging solutions, and accommodation partnerships.
-                        {% elif inquiry.subject == "Car Rental" %}
-                            <strong style="color: #ff9d00;">Car/Van Rental Services Team</strong> - focused on vehicle rentals, transportation solutions, and fleet management.
-                        {% elif inquiry.subject == "Partnership" %}
-                            <strong style="color: #ff9d00;">Business Development Team</strong> - dedicated to partnership opportunities, collaborations, and business relationships.
-                        {% else %}
-                            <strong style="color: #ff9d00;">General Customer Service Team</strong> - our versatile team ready to assist with any travel-related inquiry.
-                        {% endif %}
+                        Your inquiry has been assigned to our <strong style="color: #ff9d00;">Corporate Travel Management Team</strong> - specialists in corporate events, business travel, group bookings, and professional event coordination. Our team understands the unique requirements of corporate events and will provide tailored solutions.
                     </p>
                 </div>
-
+                
                 <!-- Timeline Expectations -->
                 <div style="background-color: #f3e5f5; border-left: 4px solid #ff9d00; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Response Timeline</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
-                        <li style="margin-bottom: 8px;"><strong>Within 1 Hours:</strong> Acknowledgment and initial review by our team</li>
-                        <li style="margin-bottom: 8px;"><strong>Within 4 Hours:</strong> Preliminary assessment and any clarifying questions</li>
-                        <li style="margin-bottom: 8px;"><strong>Within 24 Hours:</strong> Comprehensive response with personalized recommendations and pricing</li>
-                        <li style="margin-bottom: 0;"><strong>Ongoing Support:</strong> Dedicated consultation and booking assistance throughout your journey</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 1 Hour:</strong> Acknowledgment and assignment to MICE specialist</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 2 Hours:</strong> Initial consultation and event requirements assessment</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 4 Hours:</strong> Detailed proposal with venue and travel options</li>
+                        <li style="margin-bottom: 0;"><strong>Ongoing Support:</strong> Site visits or virtual presentations as needed</li>
                     </ul>
                 </div>
-
-                <!-- Service Process -->
+                
+                <!-- MICE Service Process -->
                 <div style="background-color: #e8f5e8; border-left: 4px solid #2e7d32; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
-                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">📋 Our Service Process</h4>
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">📋 Our MICE Service Process</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
-                        <li style="margin-bottom: 8px;"><strong>Consultation:</strong> Detailed discussion of your travel requirements and preferences</li>
-                        <li style="margin-bottom: 8px;"><strong>Custom Proposal:</strong> Tailored travel proposal with competitive pricing and options</li>
-                        <li style="margin-bottom: 8px;"><strong>Booking Support:</strong> Complete assistance through every step of the booking process</li>
-                        <li style="margin-bottom: 0;"><strong>Travel Support:</strong> 24/7 assistance during your travel for peace of mind</li>
+                        <li style="margin-bottom: 8px;"><strong>Event Assessment:</strong> Understanding your corporate event goals and requirements</li>
+                        <li style="margin-bottom: 8px;"><strong>Venue Selection:</strong> Premium locations suitable for your event type</li>
+                        <li style="margin-bottom: 8px;"><strong>Travel Coordination:</strong> Seamless transportation for all attendees</li>
+                        <li style="margin-bottom: 8px;"><strong>Group Bookings:</strong> Competitive rates for corporate group travel</li>
+                        <li style="margin-bottom: 0;"><strong>24/7 Event Support:</strong> Dedicated assistance throughout your event</li>
                     </ul>
                 </div>
             </div>
@@ -266,7 +244,7 @@
                     <div class="contact-icon">📱</div>
                     <div>
                         <strong>WhatsApp Business:</strong><br>
-                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20inquiry%20(Ref:%20NVT-{{ inquiry.id|stringformat:"05d" }})%20and%20need%20immediate%20assistance." style="color: #0f238d;">+254 701 363 551</a>
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20a%20MICE%20inquiry%20(Ref:%20MICE-{{ inquiry.id|stringformat:"05d" }})%20and%20need%20immediate%20assistance." style="color: #0f238d;">+254 701 363 551</a>
                     </div>
                 </div>
                 <div class="contact-method">
@@ -281,22 +259,22 @@
                     <div class="contact-icon">📧</div>
                     <div>
                         <strong>Email:</strong><br>
-                        <a href="mailto:Info@novustelltravel.com?subject=Re:%20Inquiry%20NVT-{{ inquiry.id|stringformat:"05d" }}" style="color: #0f238d;">Info@novustelltravel.com</a>
+                        <a href="mailto:Info@novustelltravel.com?subject=Re:%20MICE%20Inquiry%20MICE-{{ inquiry.id|stringformat:"05d" }}" style="color: #0f238d;">Info@novustelltravel.com</a>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center; margin: 30px 0;">
-                <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20inquiry%20(Ref:%20NVT-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions." class="btn">
+                <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20a%20MICE%20inquiry%20(Ref:%20MICE-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions." class="btn">
                     💬 Chat on WhatsApp
                 </a>
-                <a href="{% url 'users:corporatepage' %}" class="btn">
-                    🏢 Our Services
+                <a href="{% url 'users:micepage' %}" class="btn">
+                    🏢 MICE Services
                 </a>
             </div>
 
             <p style="color: #666666; font-size: 14px; text-align: center; margin-top: 30px;">
-                <em>Please do not reply to this email. For any questions, use the contact methods above.</em>
+                <em>This is an automated confirmation. Please do not reply to this email. For any questions, use the contact methods above.</em>
             </p>
         </div>
 
@@ -305,13 +283,13 @@
             <div style="text-align: center; margin-bottom: 20px;">
                 <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" style="max-width: 150px; height: auto;">
             </div>
-
+            
             <p style="margin: 0 0 15px 0; font-size: 18px;"><strong>Novustell Travel</strong></p>
             <p style="margin: 0 0 15px 0; opacity: 0.9; font-style: italic;">Think Convenience, Think Novustell</p>
-
+            
             <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
                 <h4 style="color: #ff9d00; margin-top: 0; margin-bottom: 15px;">📍 Complete Contact Information</h4>
-
+                
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
                     <div>
                         <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
@@ -320,27 +298,27 @@
                             Elgeyo Marakwet & Kilimani Rd Junction<br>
                             (Off Ngong Rd), Nairobi, Kenya
                         </p>
-
+                        
                         <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
                             <strong style="color: #ff9d00;">📞 Phone Numbers:</strong><br>
                             <a href="tel:+254721115572" style="color: white; text-decoration: none;">+254 721 115 572</a><br>
                             <a href="tel:+254701363551" style="color: white; text-decoration: none;">+254 701 363 551</a>
                         </p>
                     </div>
-
+                    
                     <div>
                         <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
-                            <strong style="color: #ff9d00;">📧 Email Addresses:</strong><br>
-                            <a href="mailto:Info@novustelltravel.com" style="color: white; text-decoration: none;">Info@novustelltravel.com</a><br>
+                            <strong style="color: #ff9d00;">📧 Email Address:</strong><br>
+                            <a href="mailto:Info@novustelltravel.com" style="color: white; text-decoration: none;">Info@novustelltravel.com</a>
                         </p>
-
+                        
                         <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
                             <strong style="color: #ff9d00;">💬 WhatsApp Business:</strong><br>
                             <a href="https://wa.me/254701363551" style="color: white; text-decoration: none;">+254 701 363 551</a>
                         </p>
                     </div>
                 </div>
-
+                
                 <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 15px;">
                     <p style="margin: 0; font-size: 13px; line-height: 1.6; text-align: center;">
                         <strong style="color: #ff9d00;">🕒 Business Hours:</strong><br>
@@ -349,17 +327,10 @@
                     </p>
                 </div>
             </div>
-
-            <div class="social-links">
-                <a href="#" title="Facebook" style="color: #ff9d00; font-size: 20px;">📘</a>
-                <a href="#" title="Twitter" style="color: #ff9d00; font-size: 20px;">🐦</a>
-                <a href="#" title="LinkedIn" style="color: #ff9d00; font-size: 20px;">💼</a>
-                <a href="#" title="Instagram" style="color: #ff9d00; font-size: 20px;">📸</a>
-            </div>
-
+            
             <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 20px;">
                 <p style="margin: 0; font-size: 12px; opacity: 0.8;">
-                    <strong>Reference ID:</strong> NVT-{{ inquiry.id|stringformat:"05d" }}<br>
+                    <strong>Reference ID:</strong> MICE-{{ inquiry.id|stringformat:"05d" }}<br>
                     <strong>Inquiry Date:</strong> {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT<br>
                     <em>Keep this reference for future correspondence</em>
                 </p>

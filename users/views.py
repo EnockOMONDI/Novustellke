@@ -115,52 +115,46 @@ def micepage(request):
             inquiry = form.save()
 
             try:
-                # Setup SMTP
-                s = smtplib.SMTP('smtp.gmail.com', 587)
-                s.starttls()
+                # Email to admin using template
+                admin_subject = f'New MICE Inquiry from {inquiry.company_name}'
+                admin_message_html = render_to_string('users/emails/mice_inquiry_admin.html', {
+                    'inquiry': inquiry
+                })
+                admin_message_txt = render_to_string('users/emails/mice_inquiry_admin.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Use email credentials from settings
-                sender_email = settings.EMAIL_HOST_USER
-                password = settings.EMAIL_HOST_PASSWORD
+                # Send to admin email
+                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
 
-                s.login(sender_email, password)
-                msg = MIMEMultipart()
+                send_mail(
+                    subject=admin_subject,
+                    message=admin_message_txt,  # Plain text version
+                    html_message=admin_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[admin_email],
+                    fail_silently=False,
+                )
 
-                # Email headers
-                msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
-                msg['Subject'] = f"New MICE Inquiry from {inquiry.company_name}"
+                # Email to user using template
+                user_subject = f'MICE Inquiry Received - {inquiry.company_name}'
+                user_message_html = render_to_string('users/emails/mice_inquiry_confirmation.html', {
+                    'inquiry': inquiry
+                })
+                user_message_txt = render_to_string('users/emails/mice_inquiry_confirmation.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Create HTML content with better formatting
-                html_content = f"""
-                <html>
-                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #0f238d;">New MICE Inquiry</h2>
-                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
-                        <p><strong>Company Name:</strong> {inquiry.company_name}</p>
-                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
-                        <p><strong>Email:</strong> {inquiry.email}</p>
-                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
-                        <p><strong>Event Type:</strong> {inquiry.event_type}</p>
-                        <p><strong>Expected Attendees:</strong> {inquiry.attendees}</p>
-                        <h3 style="color: #0f238d;">Event Details:</h3>
-                        <p style="white-space: pre-wrap;">{inquiry.event_details}</p>
-                    </div>
-                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
-                        This inquiry was submitted through the MICE form on Novustell Travel website.
-                    </p>
-                </body>
-                </html>
-                """
+                send_mail(
+                    subject=user_subject,
+                    message=user_message_txt,  # Plain text version
+                    html_message=user_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[inquiry.email],
+                    fail_silently=False,
+                )
 
-                # Attach HTML content
-                msg.attach(MIMEText(html_content, 'html'))
-
-                # Send email
-                s.send_message(msg)
-                s.quit()
-
-                messages.success(request, 'Thank you! Your MICE inquiry has been submitted successfully. We will contact you soon.')
+                messages.success(request, f'Thank you! Your MICE inquiry has been submitted successfully. We will contact you within 2 hours. Reference ID: MICE-{inquiry.id:05d}')
                 return redirect('users:micepage')
 
             except Exception as e:
@@ -179,52 +173,46 @@ def student_travel(request):
             inquiry = form.save()
 
             try:
-                # Setup SMTP
-                s = smtplib.SMTP('smtp.gmail.com', 587)
-                s.starttls()
+                # Email to admin using template
+                admin_subject = f'New Student Travel Inquiry from {inquiry.school_name}'
+                admin_message_html = render_to_string('users/emails/student_travel_admin.html', {
+                    'inquiry': inquiry
+                })
+                admin_message_txt = render_to_string('users/emails/student_travel_admin.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Use email credentials from settings
-                sender_email = settings.EMAIL_HOST_USER
-                password = settings.EMAIL_HOST_PASSWORD
+                # Send to admin email
+                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
 
-                s.login(sender_email, password)
-                msg = MIMEMultipart()
+                send_mail(
+                    subject=admin_subject,
+                    message=admin_message_txt,  # Plain text version
+                    html_message=admin_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[admin_email],
+                    fail_silently=False,
+                )
 
-                # Email headers
-                msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
-                msg['Subject'] = f"New Student Travel Inquiry from {inquiry.school_name}"
+                # Email to user using template
+                user_subject = f'Student Travel Inquiry Received - {inquiry.school_name}'
+                user_message_html = render_to_string('users/emails/student_travel_confirmation.html', {
+                    'inquiry': inquiry
+                })
+                user_message_txt = render_to_string('users/emails/student_travel_confirmation.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Create HTML content with better formatting
-                html_content = f"""
-                <html>
-                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #0f238d;">New Student Travel Inquiry</h2>
-                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
-                        <p><strong>School Name:</strong> {inquiry.school_name}</p>
-                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
-                        <p><strong>Email:</strong> {inquiry.email}</p>
-                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
-                        <p><strong>Program Stage:</strong> {inquiry.program_stage}</p>
-                        <p><strong>Number of Students:</strong> {inquiry.number_of_students}</p>
-                        <h3 style="color: #0f238d;">Travel Details:</h3>
-                        <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
-                    </div>
-                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
-                        This inquiry was submitted through the Student Travel form on Novustell Travel website.
-                    </p>
-                </body>
-                </html>
-                """
+                send_mail(
+                    subject=user_subject,
+                    message=user_message_txt,  # Plain text version
+                    html_message=user_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[inquiry.email],
+                    fail_silently=False,
+                )
 
-                # Attach HTML content
-                msg.attach(MIMEText(html_content, 'html'))
-
-                # Send email
-                s.send_message(msg)
-                s.quit()
-
-                messages.success(request, 'Thank you! Your student travel inquiry has been submitted successfully. We will contact you soon.')
+                messages.success(request, f'Thank you! Your student travel inquiry has been submitted successfully. We will contact you within 4 hours. Reference ID: STU-{inquiry.id:05d}')
                 return redirect('users:student-travel')
 
             except Exception as e:
@@ -243,54 +231,46 @@ def ngo_travel(request):
             inquiry = form.save()
 
             try:
-                # Setup SMTP
-                s = smtplib.SMTP('smtp.gmail.com', 587)
-                s.starttls()
+                # Email to admin using template
+                admin_subject = f'New NGO Travel Inquiry from {inquiry.organization_name}'
+                admin_message_html = render_to_string('users/emails/ngo_travel_admin.html', {
+                    'inquiry': inquiry
+                })
+                admin_message_txt = render_to_string('users/emails/ngo_travel_admin.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Use email credentials from settings
-                sender_email = settings.EMAIL_HOST_USER
-                password = settings.EMAIL_HOST_PASSWORD
+                # Send to admin email
+                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
 
-                s.login(sender_email, password)
-                msg = MIMEMultipart()
+                send_mail(
+                    subject=admin_subject,
+                    message=admin_message_txt,  # Plain text version
+                    html_message=admin_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[admin_email],
+                    fail_silently=False,
+                )
 
-                # Email headers
-                msg['From'] = f"Novustell Travel <{sender_email}>"
-                msg['To'] = "info@novustelltravel.com"
-                msg['Subject'] = f"New NGO Travel Inquiry from {inquiry.organization_name}"
+                # Email to user using template
+                user_subject = f'NGO Travel Inquiry Received - {inquiry.organization_name}'
+                user_message_html = render_to_string('users/emails/ngo_travel_confirmation.html', {
+                    'inquiry': inquiry
+                })
+                user_message_txt = render_to_string('users/emails/ngo_travel_confirmation.txt', {
+                    'inquiry': inquiry
+                })
 
-                # Create HTML content with better formatting
-                html_content = f"""
-                <html>
-                <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-                    <h2 style="color: #0f238d;">New NGO Travel Inquiry</h2>
-                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
-                        <p><strong>Organization Name:</strong> {inquiry.organization_name}</p>
-                        <p><strong>Contact Person:</strong> {inquiry.contact_person}</p>
-                        <p><strong>Email:</strong> {inquiry.email}</p>
-                        <p><strong>Phone:</strong> {inquiry.phone_number}</p>
-                        <p><strong>Organization Type:</strong> {inquiry.organization_type}</p>
-                        <p><strong>Travel Purpose:</strong> {inquiry.travel_purpose}</p>
-                        <p><strong>Number of Travelers:</strong> {inquiry.number_of_travelers}</p>
-                        <p><strong>Sustainability Requirements:</strong> {'Yes' if inquiry.sustainability_requirements else 'No'}</p>
-                        <h3 style="color: #0f238d;">Travel Details:</h3>
-                        <p style="white-space: pre-wrap;">{inquiry.travel_details}</p>
-                    </div>
-                    <p style="color: #666; font-size: 12px; margin-top: 20px;">
-                        This inquiry was submitted through the NGO Travel form on Novustell Travel website.
-                    </p>
-                </body>
-                </html>
-                """
+                send_mail(
+                    subject=user_subject,
+                    message=user_message_txt,  # Plain text version
+                    html_message=user_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[inquiry.email],
+                    fail_silently=False,
+                )
 
-                # Attach HTML content
-                msg.attach(MIMEText(html_content, 'html'))
-
-                # Send email
-                s.send_message(msg)
-                s.quit()
-
-                messages.success(request, 'Thank you! Your NGO travel inquiry has been submitted successfully. We will contact you soon.')
+                messages.success(request, f'Thank you! Your NGO travel inquiry has been submitted successfully. We will contact you within 24 hours. Reference ID: NGO-{inquiry.id:05d}')
                 return redirect('users:ngo-travel')
 
             except Exception as e:

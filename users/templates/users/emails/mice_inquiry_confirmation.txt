@@ -1,0 +1,82 @@
+✅ THANK YOU! - MICE INQUIRY RECEIVED
+
+Dear {{ inquiry.contact_person }},
+
+Thank you for contacting NOVUSTELL TRAVEL for your corporate event travel needs! We have successfully received your MICE inquiry for {{ inquiry.company_name }} and our specialized Corporate Travel Management Team is already reviewing your event requirements.
+
+YOUR MICE INQUIRY SUMMARY
+==========================
+
+Company: {{ inquiry.company_name }}
+Event Type: {{ inquiry.event_type }}
+Number of Attendees: {{ inquiry.attendees }}
+Submission Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Reference ID: MICE-{{ inquiry.id|stringformat:"05d" }}
+
+🚀 WHAT HAPPENS NEXT?
+
+🎯 YOUR CORPORATE EVENT SPECIALIST TEAM:
+Your inquiry has been assigned to our Corporate Travel Management Team - specialists in corporate events, business travel, group bookings, and professional event coordination. Our team understands the unique requirements of corporate events and will provide tailored solutions.
+
+⏰ RESPONSE TIMELINE:
+- Within 1 Hour: Acknowledgment and assignment to MICE specialist
+- Within 2 Hours: Initial consultation and event requirements assessment
+- Within 4 Hours: Detailed proposal with venue and travel options
+- Ongoing Support: Site visits or virtual presentations as needed
+
+📋 OUR MICE SERVICE PROCESS:
+- Event Assessment: Understanding your corporate event goals and requirements
+- Venue Selection: Premium locations suitable for your event type
+- Travel Coordination: Seamless transportation for all attendees
+- Group Bookings: Competitive rates for corporate group travel
+- 24/7 Event Support: Dedicated assistance throughout your event
+
+📞 NEED IMMEDIATE ASSISTANCE?
+
+💬 WhatsApp Business: +254 701 363 551
+   Quick message: "Hello Novustell Travel! I submitted a MICE inquiry (Ref: MICE-{{ inquiry.id|stringformat:"05d" }}) and need immediate assistance."
+
+📞 Phone Numbers:
+   +254 721 115 572
+   +254 701 363 551
+
+📧 Email: Info@novustelltravel.com
+   Subject: Re: MICE Inquiry MICE-{{ inquiry.id|stringformat:"05d" }}
+
+QUICK ACTIONS:
+--------------
+WhatsApp: https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20a%20MICE%20inquiry%20(Ref:%20MICE-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions.
+
+===============================================
+NOVUSTELL TRAVEL - COMPLETE CONTACT INFORMATION
+===============================================
+
+🏢 Office Location:
+New Peoples Media Center (Kilimani)
+Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)
+Nairobi, Kenya
+
+📞 Phone Numbers:
++254 721 115 572
++254 701 363 551
+
+📧 Email Address:
+Info@novustelltravel.com
+
+💬 WhatsApp Business:
++254 701 363 551
+
+🕒 Business Hours:
+Monday - Friday: 8:00 AM - 6:00 PM EAT
+Saturday: 9:00 AM - 2:00 PM EAT
+🚨 24/7 Emergency Support for Travelers
+
+Reference ID: MICE-{{ inquiry.id|stringformat:"05d" }}
+Inquiry Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Keep this reference for future correspondence
+
+Think Convenience, Think Novustell
+
+---
+This is an automated confirmation. Please do not reply to this email. 
+For any questions, use the contact methods above.

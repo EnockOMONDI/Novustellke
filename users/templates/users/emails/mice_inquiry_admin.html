@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Contact Inquiry - Novustell Travel</title>
+    <title>New MICE Inquiry - Novustell Travel</title>
     <style>
         body {
             margin: 0;
@@ -38,18 +38,29 @@
         }
         .header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
         }
         .content {
             padding: 30px 20px;
+        }
+        .priority-notice {
+            background: linear-gradient(135deg, rgba(255, 157, 0, 0.1), rgba(255, 157, 0, 0.05));
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9d00;
         }
         .inquiry-details {
             background-color: #f8f3fc;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
-            border-left: 4px solid #ff9d00;
         }
         .detail-row {
             margin-bottom: 15px;
@@ -67,34 +78,14 @@
         }
         .detail-value {
             color: #333333;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .message-content {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
+            background-color: #fff;
             padding: 15px;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        .priority-notice {
-            background-color: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 20px 0;
-            color: #856404;
-        }
-        .footer {
-            background-color: #0f238d;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-        .footer a {
-            color: #ff9d00;
-            text-decoration: none;
+            border-radius: 5px;
+            border-left: 3px solid #ff9d00;
+            white-space: pre-wrap;
         }
         .action-buttons {
             text-align: center;
@@ -108,10 +99,20 @@
             text-decoration: none;
             border-radius: 25px;
             font-weight: 600;
-            margin: 0 10px;
+            margin: 5px;
         }
         .btn:hover {
             background-color: #e8890a;
+        }
+        .footer {
+            background-color: #0f238d;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
         }
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -121,7 +122,7 @@
             .header, .content, .footer {
                 padding: 20px 15px;
             }
-            .inquiry-details {
+            .priority-notice, .inquiry-details {
                 padding: 15px;
             }
         }
@@ -134,66 +135,50 @@
             <div class="logo-container">
                 <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" class="logo">
             </div>
-            <h1>🔔 New Contact Inquiry from Website</h1>
+            <h1>🏢 New MICE Inquiry</h1>
+            <p>Corporate Event Travel Solutions Request</p>
         </div>
 
         <!-- Content -->
         <div class="content">
-            <h2 style="color: #0f238d; margin-top: 0;">Inquiry Details</h2>
-
-            
             <div class="priority-notice">
-                <strong>⚡ Action Required:</strong> A new inquiry has been submitted through the website contact form. Please respond within 24 hours as promised on the contact page.
+                <h2 style="color: #0f238d; margin-top: 0;">⚠️ MICE Inquiry - Corporate Priority Response</h2>
+                <p style="margin-bottom: 0; font-size: 16px; line-height: 1.6;">
+                    A new MICE (Meetings, Incentives, Conferences, Exhibitions) inquiry has been submitted. 
+                    Corporate clients require professional event travel solutions and should receive priority attention within 2 hours.
+                </p>
             </div>
 
-            <!-- Tracking Information -->
-                <div style="background-color: #fff; border: 1px solid #e0e0e0; padding: 15px; border-radius: 5px;">
-                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🔍 Inquiry Tracking</h4>
-                    <p style="margin: 0; font-size: 14px;">
-                        <strong>Reference ID:</strong> NVT-{{ inquiry.id|stringformat:"05d" }}<br>
-                        <strong>Submission Time:</strong> {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT<br>
-                        <strong>Source:</strong> Website Contact Form<br>
-                        <strong>Priority Level:</strong>
-                        {% if inquiry.subject == "Corporate Travel" or inquiry.subject == "MICE" or inquiry.subject == "Partnership" %}
-                            <span style="color: #ff9d00; font-weight: bold;">HIGH PRIORITY</span>
-                        {% else %}
-                            <span style="color: #0f238d; font-weight: bold;">STANDARD</span>
-                        {% endif %}
-                    </p>
-                </div>
-
+            <h3 style="color: #0f238d;">📋 Corporate Event Details</h3>
             <div class="inquiry-details">
                 <div class="detail-row">
-                    <div class="detail-label">Full Name:</div>
-                    <div class="detail-value">{{ inquiry.full_name }}</div>
+                    <div class="detail-label">Company Name:</div>
+                    <div class="detail-value">{{ inquiry.company_name }}</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Contact Person:</div>
+                    <div class="detail-value">{{ inquiry.contact_person }}</div>
                 </div>
 
                 <div class="detail-row">
                     <div class="detail-label">Email Address:</div>
-                    <div class="detail-value">
-                        <a href="mailto:{{ inquiry.email }}" style="color: #0f238d;">{{ inquiry.email }}</a>
-                    </div>
+                    <div class="detail-value">{{ inquiry.email }}</div>
                 </div>
 
-                {% if inquiry.phone %}
                 <div class="detail-row">
                     <div class="detail-label">Phone Number:</div>
-                    <div class="detail-value">
-                        <a href="tel:{{ inquiry.phone }}" style="color: #0f238d;">{{ inquiry.phone }}</a>
-                    </div>
+                    <div class="detail-value">{{ inquiry.phone_number }}</div>
                 </div>
-                {% endif %}
-
-                {% if inquiry.company %}
-                <div class="detail-row">
-                    <div class="detail-label">Company/Organization:</div>
-                    <div class="detail-value">{{ inquiry.company }}</div>
-                </div>
-                {% endif %}
 
                 <div class="detail-row">
-                    <div class="detail-label">Subject/Inquiry Type:</div>
-                    <div class="detail-value"><strong>{{ inquiry.subject }}</strong></div>
+                    <div class="detail-label">Event Type:</div>
+                    <div class="detail-value">{{ inquiry.event_type }}</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Number of Attendees:</div>
+                    <div class="detail-value">{{ inquiry.attendees }}</div>
                 </div>
 
                 <div class="detail-row">
@@ -203,95 +188,70 @@
 
                 <div class="detail-row">
                     <div class="detail-label">Source:</div>
-                    <div class="detail-value">Website Contact Form</div>
+                    <div class="detail-value">MICE Form - Website</div>
                 </div>
 
                 <div class="detail-row">
-                    <div class="detail-label">Message:</div>
-                    <div class="message-content">{{ inquiry.message|linebreaks }}</div>
+                    <div class="detail-label">Event Details & Requirements:</div>
+                    <div class="message-content">{{ inquiry.event_details }}</div>
                 </div>
             </div>
 
             <div class="action-buttons">
-                <a href="mailto:{{ inquiry.email }}?subject=Re: {{ inquiry.subject }} - Novustell Travel Response" class="btn">
-                    📧 Reply to Inquiry
+                <a href="mailto:{{ inquiry.email }}?subject=Re: MICE Inquiry - {{ inquiry.company_name }}" class="btn">
+                    📧 Reply to Company
                 </a>
-                {% if inquiry.phone %}
-                <a href="tel:{{ inquiry.phone }}" class="btn">
-                    📞 Call Client
+                {% if inquiry.phone_number %}
+                <a href="tel:{{ inquiry.phone_number }}" class="btn">
+                    📞 Call Contact Person
                 </a>
                 {% endif %}
             </div>
 
             <!-- Enhanced Next Steps Section -->
             <div style="margin-top: 30px;">
-                <h3 style="color: #0f238d; margin-bottom: 20px;">📋 Next Steps & Department Routing</h3>
-
+                <h3 style="color: #0f238d; margin-bottom: 20px;">📋 MICE Response Protocol</h3>
+                
                 <!-- Department Assignment -->
                 <div style="background-color: #fff3e0; border-left: 4px solid #ff9d00; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🎯 Department Assignment</h4>
                     <p style="margin: 0; font-size: 14px;">
-                        <strong>Inquiry Type:</strong> {{ inquiry.subject }}<br>
-                        <strong>Recommended Department:</strong>
-                        {% if inquiry.subject == "Corporate Travel" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Corporate Travel Management / Ticketing  Team</span>
-                        {% elif inquiry.subject == "MICE" %}
-                            <span style="color: #ff9d00; font-weight: bold;">MICE Events & Conferences Team</span>
-                        {% elif inquiry.subject == "Student Travel" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Student Travel Programs Team</span>
-                        {% elif inquiry.subject == "NGO Travel" %}
-                            <span style="color: #ff9d00; font-weight: bold;">NGO Travel Solutions Team</span>
-                        {% elif inquiry.subject == "Group Travel" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Group Travel Services Team</span>
-                        {% elif inquiry.subject == "Holiday Packages" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
-                        {% elif inquiry.subject == "Accommodation" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
-                        {% elif inquiry.subject == "Car Rental" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Tours Team</span>
-                        {% elif inquiry.subject == "Partnership" %}
-                            <span style="color: #ff9d00; font-weight: bold;">Business Development Team</span>
-                        {% else %}
-                            <span style="color: #ff9d00; font-weight: bold;">Social Media Team</span>
-                        {% endif %}
+                        <strong>Inquiry Type:</strong> MICE ({{ inquiry.event_type }})<br>
+                        <strong>Assigned Team:</strong> <span style="color: #ff9d00; font-weight: bold;">Corporate Travel Management Team</span><br>
+                        <strong>Specialization:</strong> Corporate events, business travel, group bookings, professional event coordination
                     </p>
                 </div>
-
+                
                 <!-- Response Protocol -->
                 <div style="background-color: #f8f3fc; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
-                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Response Protocol (24-Hour Commitment)</h4>
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ MICE Response Protocol (2-Hour Priority)</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
-                        <li style="margin-bottom: 8px;"><strong>Immediate (0-2 hours):</strong> Acknowledge receipt and assign to appropriate department</li>
-                        <li style="margin-bottom: 8px;"><strong>Within 4 hours:</strong> Initial assessment and preliminary response</li>
-                        <li style="margin-bottom: 8px;"><strong>Within 24 hours:</strong> Comprehensive response with personalized recommendations</li>
-                        <li style="margin-bottom: 0;"><strong>Follow-up:</strong> Schedule consultation if needed for complex requirements</li>
+                        <li style="margin-bottom: 8px;"><strong>Immediate (0-1 hour):</strong> Acknowledge receipt and assign to MICE specialist</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 2 hours:</strong> Initial consultation and event requirements assessment</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 4 hours:</strong> Detailed proposal with venue and travel options</li>
+                        <li style="margin-bottom: 0;"><strong>Follow-up:</strong> Schedule site visit or virtual presentation if needed</li>
                     </ul>
                 </div>
-
+                
                 <!-- Contact Actions -->
                 <div style="background-color: #e8f5e8; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">📞 Contact & Follow-up Actions</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
                         <li style="margin-bottom: 8px;"><strong>Primary Contact:</strong> Reply directly to {{ inquiry.email }}</li>
-                        {% if inquiry.phone %}<li style="margin-bottom: 8px;"><strong>Phone Follow-up:</strong> Call {{ inquiry.phone }} for urgent inquiries</li>{% endif %}
+                        {% if inquiry.phone_number %}<li style="margin-bottom: 8px;"><strong>Phone Follow-up:</strong> Call {{ inquiry.phone_number }} for immediate consultation</li>{% endif %}
                         <li style="margin-bottom: 8px;"><strong>WhatsApp Option:</strong> Offer WhatsApp consultation at +254 701 363 551</li>
                         <li style="margin-bottom: 0;"><strong>Admin Update:</strong> Update inquiry status in admin panel after response</li>
                     </ul>
                 </div>
-
+                
                 <!-- Tracking Information -->
                 <div style="background-color: #fff; border: 1px solid #e0e0e0; padding: 15px; border-radius: 5px;">
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🔍 Inquiry Tracking</h4>
                     <p style="margin: 0; font-size: 14px;">
-                        <strong>Reference ID:</strong> NVT-{{ inquiry.id|stringformat:"05d" }}<br>
+                        <strong>Reference ID:</strong> MICE-{{ inquiry.id|stringformat:"05d" }}<br>
                         <strong>Submission Time:</strong> {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT<br>
-                        <strong>Source:</strong> Website Contact Form<br>
-                        <strong>Priority Level:</strong>
-                        {% if inquiry.subject == "Corporate Travel" or inquiry.subject == "MICE" or inquiry.subject == "Partnership" %}
-                            <span style="color: #ff9d00; font-weight: bold;">HIGH PRIORITY</span>
-                        {% else %}
-                            <span style="color: #0f238d; font-weight: bold;">STANDARD</span>
-                        {% endif %}
+                        <strong>Source:</strong> MICE Form - Website<br>
+                        <strong>Priority Level:</strong> <span style="color: #ff9d00; font-weight: bold;">HIGH PRIORITY</span> (Corporate Event)
                     </p>
                 </div>
             </div>
@@ -302,10 +262,10 @@
             <div style="text-align: center; margin-bottom: 20px;">
                 <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" style="max-width: 150px; height: auto;">
             </div>
-
+            
             <p style="margin: 0 0 15px 0; font-size: 18px;"><strong>Novustell Travel</strong></p>
             <p style="margin: 0 0 15px 0; opacity: 0.9; font-style: italic;">Think Convenience, Think Novustell</p>
-
+            
             <div style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin: 20px 0;">
                 <h4 style="color: #ff9d00; margin-top: 0; margin-bottom: 10px;">📍 Complete Contact Information</h4>
                 <p style="margin: 0; font-size: 13px; line-height: 1.6;">
@@ -313,29 +273,29 @@
                     New Peoples Media Center (Kilimani)<br>
                     Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)<br>
                     Nairobi, Kenya<br><br>
-
+                    
                     <strong>Phone Numbers:</strong><br>
                     📞 +254 721 115 572<br>
                     📞 +254 701 363 551<br><br>
-
+                    
                     <strong>Email Addresses:</strong><br>
-                    📧 <a href="mailto:Info@novustelltravel.com" style="color: #ff9d00;">Info@novustelltravel.com</a><br>
-
+                    📧 <a href="mailto:Info@novustelltravel.com" style="color: #ff9d00;">Info@novustelltravel.com</a><br><br>
+                    
                     <strong>WhatsApp Business:</strong><br>
                     💬 <a href="https://wa.me/254701363551" style="color: #ff9d00;">+254 701 363 551</a><br><br>
-
+                    
                     <strong>Business Hours:</strong><br>
                     🕒 Monday - Friday: 8:00 AM - 6:00 PM EAT<br>
                     🕒 Saturday: 9:00 AM - 2:00 PM EAT<br>
                     🚨 24/7 Emergency Support for Travelers
                 </p>
             </div>
-
+            
             <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 20px;">
                 <p style="margin: 0; font-size: 12px; opacity: 0.8;">
-                    <strong>⚠️ ADMIN NOTIFICATION</strong><br>
-                    This is an automated notification from the Novustell Travel contact form.<br>
-                    <strong>Action Required:</strong> Please respond to the client within 24 hours as promised.<br>
+                    <strong>⚠️ MICE INQUIRY NOTIFICATION</strong><br>
+                    This is an automated notification from the Novustell Travel MICE form.<br>
+                    <strong>Action Required:</strong> Please respond to the company within 2 hours.<br>
                     <strong>Timestamp:</strong> {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
                 </p>
             </div>

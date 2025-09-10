@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,44 +7,47 @@
     <title>New Newsletter Subscription - {{ subscription.email }}</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3fc;
+            color: #333333;
         }
-        
         .email-container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
         .header {
-            background: linear-gradient(135deg, #0f238d, #ff9d00);
-            color: white;
-            padding: 30px;
+            background: linear-gradient(135deg, #0f238d, #0f238d);
+            padding: 30px 20px;
             text-align: center;
+            color: white;
         }
-        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 15px;
+        }
         .header h1 {
             margin: 0;
             font-size: 28px;
             font-weight: 700;
         }
-        
         .header p {
             margin: 10px 0 0 0;
-            font-size: 16px;
             opacity: 0.9;
+            font-size: 16px;
         }
-        
         .alert-badge {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 157, 0, 0.2);
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 14px;
@@ -164,16 +168,14 @@
         }
         
         .footer {
-            background: #f8f9fa;
-            padding: 25px;
+            background-color: #0f238d;
+            color: white;
+            padding: 25px 20px;
             text-align: center;
-            border-top: 1px solid #e9ecef;
         }
-        
-        .footer p {
-            margin: 5px 0;
-            color: #666;
-            font-size: 14px;
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
         }
         
         @media (max-width: 600px) {
@@ -192,6 +194,9 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
+            <div class="logo-container">
+                <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" class="logo">
+            </div>
             <h1>📧 New Newsletter Subscription</h1>
             <p>A new subscriber has joined the Novustell Travel newsletter</p>
             <div class="alert-badge">NEW SUBSCRIBER</div>
@@ -291,11 +296,47 @@
         
         <!-- Footer -->
         <div class="footer">
-            <p><strong>Novustell Travel Newsletter System</strong></p>
-            <p>Automated notification from news@novustelltravel.com</p>
-            <p style="font-size: 12px; color: #999;">
-                This email was automatically generated when someone subscribed to the newsletter.
-            </p>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" style="max-width: 150px; height: auto;">
+            </div>
+
+            <p style="margin: 0 0 15px 0; font-size: 18px;"><strong>Novustell Travel</strong></p>
+            <p style="margin: 0 0 15px 0; opacity: 0.9; font-style: italic;">Think Convenience, Think Novustell</p>
+
+            <div style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin: 20px 0;">
+                <h4 style="color: #ff9d00; margin-top: 0; margin-bottom: 10px;">📍 Complete Contact Information</h4>
+                <p style="margin: 0; font-size: 13px; line-height: 1.6;">
+                    <strong>Office Location:</strong><br>
+                    New Peoples Media Center (Kilimani)<br>
+                    Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)<br>
+                    Nairobi, Kenya<br><br>
+
+                    <strong>Phone Numbers:</strong><br>
+                    📞 +254 721 115 572<br>
+                    📞 +254 701 363 551<br><br>
+
+                    <strong>Email Addresses:</strong><br>
+                    📧 <a href="mailto:Info@novustelltravel.com" style="color: #ff9d00;">Info@novustelltravel.com</a><br>
+                    📧 <a href="mailto:news@novustelltravel.com" style="color: #ff9d00;">news@novustelltravel.com</a><br><br>
+
+                    <strong>WhatsApp Business:</strong><br>
+                    💬 <a href="https://wa.me/254701363551" style="color: #ff9d00;">+254 701 363 551</a><br><br>
+
+                    <strong>Business Hours:</strong><br>
+                    🕒 Monday - Friday: 8:00 AM - 6:00 PM EAT<br>
+                    🕒 Saturday: 9:00 AM - 2:00 PM EAT<br>
+                    🚨 24/7 Emergency Support for Travelers
+                </p>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 20px;">
+                <p style="margin: 0; font-size: 12px; opacity: 0.8;">
+                    <strong>⚠️ NEWSLETTER SUBSCRIPTION NOTIFICATION</strong><br>
+                    This is an automated notification from the Novustell Travel newsletter system.<br>
+                    <strong>Action Required:</strong> Please add the subscriber to your mailing list.<br>
+                    <strong>Timestamp:</strong> {{ subscription.created_at|date:"F d, Y \a\t g:i A" }} EAT
+                </p>
+            </div>
         </div>
     </div>
 </body>

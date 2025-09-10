@@ -1,0 +1,83 @@
+✅ THANK YOU! - NGO TRAVEL INQUIRY RECEIVED
+
+Dear {{ inquiry.contact_person }},
+
+Thank you for contacting NOVUSTELL TRAVEL for your NGO travel needs! We have successfully received your inquiry for {{ inquiry.organization_name }} and our specialized NGO Travel Solutions Team is already reviewing your humanitarian travel requirements.
+
+YOUR NGO TRAVEL INQUIRY SUMMARY
+================================
+
+Organization: {{ inquiry.organization_name }}
+Organization Type: {{ inquiry.organization_type }}
+Number of Travelers: {{ inquiry.number_of_travelers }}
+Budget Range: {{ inquiry.budget_range }}
+Submission Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Reference ID: NGO-{{ inquiry.id|stringformat:"05d" }}
+
+🚀 WHAT HAPPENS NEXT?
+
+🎯 YOUR NGO TRAVEL SPECIALIST TEAM:
+Your inquiry has been assigned to our NGO Travel Solutions Team - specialists in humanitarian travel, volunteer programs, non-profit organization needs, and budget-conscious travel solutions. Our team understands the unique requirements of NGO missions and will provide tailored recommendations.
+
+⏰ RESPONSE TIMELINE:
+- Within 1 Hour: Acknowledgment and assignment to NGO specialist
+- Within 4 Hours: Initial assessment and budget-friendly options review
+- Within 24 Hours: Comprehensive proposal with humanitarian travel solutions and competitive pricing
+- Ongoing Support: Dedicated consultation for complex humanitarian missions
+
+📋 OUR NGO TRAVEL SERVICE PROCESS:
+- Needs Assessment: Understanding your humanitarian mission and travel requirements
+- Budget-Conscious Solutions: Cost-effective travel options that maximize your impact
+- Sustainability Focus: Eco-friendly travel options when requested
+- Mission Support: Specialized assistance for humanitarian and volunteer travel
+- 24/7 Emergency Support: Round-the-clock assistance during your mission
+
+📞 NEED IMMEDIATE ASSISTANCE?
+
+💬 WhatsApp Business: +254 701 363 551
+   Quick message: "Hello Novustell Travel! I submitted an NGO travel inquiry (Ref: NGO-{{ inquiry.id|stringformat:"05d" }}) and need immediate assistance."
+
+📞 Phone Numbers:
+   +254 721 115 572
+   +254 701 363 551
+
+📧 Email: Info@novustelltravel.com
+   Subject: Re: NGO Inquiry NGO-{{ inquiry.id|stringformat:"05d" }}
+
+QUICK ACTIONS:
+--------------
+WhatsApp: https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20submitted%20an%20NGO%20travel%20inquiry%20(Ref:%20NGO-{{ inquiry.id|stringformat:"05d" }})%20and%20have%20additional%20questions.
+
+===============================================
+NOVUSTELL TRAVEL - COMPLETE CONTACT INFORMATION
+===============================================
+
+🏢 Office Location:
+New Peoples Media Center (Kilimani)
+Elgeyo Marakwet & Kilimani Rd Junction (Off Ngong Rd)
+Nairobi, Kenya
+
+📞 Phone Numbers:
++254 721 115 572
++254 701 363 551
+
+📧 Email Address:
+Info@novustelltravel.com
+
+💬 WhatsApp Business:
++254 701 363 551
+
+🕒 Business Hours:
+Monday - Friday: 8:00 AM - 6:00 PM EAT
+Saturday: 9:00 AM - 2:00 PM EAT
+🚨 24/7 Emergency Support for Travelers
+
+Reference ID: NGO-{{ inquiry.id|stringformat:"05d" }}
+Inquiry Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Keep this reference for future correspondence
+
+Think Convenience, Think Novustell
+
+---
+This is an automated confirmation. Please do not reply to this email. 
+For any questions, use the contact methods above.

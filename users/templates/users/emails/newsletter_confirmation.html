@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,28 +7,34 @@
     <title>Welcome to Novustell Travel Newsletter!</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3fc;
+            color: #333333;
         }
-        
         .email-container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
         .header {
-            background: linear-gradient(135deg, #0f238d, #ff9d00);
-            color: white;
-            padding: 30px;
+            background: linear-gradient(135deg, #0f238d, #0f238d);
+            padding: 30px 20px;
             text-align: center;
+            color: white;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 15px;
         }
         
         .header h1 {
@@ -184,16 +191,14 @@
         }
         
         .footer {
-            background: #f8f9fa;
-            padding: 25px;
+            background-color: #0f238d;
+            color: white;
+            padding: 25px 20px;
             text-align: center;
-            border-top: 1px solid #e9ecef;
         }
-        
-        .footer p {
-            margin: 5px 0;
-            color: #666;
-            font-size: 14px;
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
         }
         
         .social-links {
@@ -220,6 +225,9 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
+            <div class="logo-container">
+                <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" class="logo">
+            </div>
             <div class="welcome-icon">🎉</div>
             <h1>Welcome to Our Newsletter!</h1>
             <p>Thank you for subscribing to Novustell Travel updates</p>
@@ -329,20 +337,63 @@
         
         <!-- Footer -->
         <div class="footer">
-            <p><strong>Novustell Travel</strong></p>
-            <p>Creating unforgettable travel experiences across East Africa</p>
-            
-            <div class="social-links">
-                <a href="#">📘</a>
-                <a href="#">📷</a>
-                <a href="#">🐦</a>
-                <a href="#">💼</a>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://www.novustelltravel.com/static/assets/images/logo/logo-white.png" alt="Novustell Travel" style="max-width: 150px; height: auto;">
             </div>
-            
-            <p>📧 news@novustelltravel.com | 📞 +254 701 363 551</p>
-            <p style="font-size: 12px; color: #999;">
-                This email was sent to {{ subscription.email }}. You're receiving this because you subscribed to our newsletter.
-            </p>
+
+            <p style="margin: 0 0 15px 0; font-size: 18px;"><strong>Novustell Travel</strong></p>
+            <p style="margin: 0 0 15px 0; opacity: 0.9; font-style: italic;">Think Convenience, Think Novustell</p>
+
+            <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h4 style="color: #ff9d00; margin-top: 0; margin-bottom: 15px;">📍 Complete Contact Information</h4>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+                    <div>
+                        <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
+                            <strong style="color: #ff9d00;">🏢 Office Location:</strong><br>
+                            New Peoples Media Center (Kilimani)<br>
+                            Elgeyo Marakwet & Kilimani Rd Junction<br>
+                            (Off Ngong Rd), Nairobi, Kenya
+                        </p>
+
+                        <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
+                            <strong style="color: #ff9d00;">📞 Phone Numbers:</strong><br>
+                            <a href="tel:+254721115572" style="color: white; text-decoration: none;">+254 721 115 572</a><br>
+                            <a href="tel:+254701363551" style="color: white; text-decoration: none;">+254 701 363 551</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
+                            <strong style="color: #ff9d00;">📧 Email Addresses:</strong><br>
+                            <a href="mailto:Info@novustelltravel.com" style="color: white; text-decoration: none;">Info@novustelltravel.com</a><br>
+                            <a href="mailto:news@novustelltravel.com" style="color: white; text-decoration: none;">news@novustelltravel.com</a>
+                        </p>
+
+                        <p style="margin: 0 0 15px 0; font-size: 13px; line-height: 1.6;">
+                            <strong style="color: #ff9d00;">💬 WhatsApp Business:</strong><br>
+                            <a href="https://wa.me/254701363551" style="color: white; text-decoration: none;">+254 701 363 551</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 15px;">
+                    <p style="margin: 0; font-size: 13px; line-height: 1.6; text-align: center;">
+                        <strong style="color: #ff9d00;">🕒 Business Hours:</strong><br>
+                        Monday - Friday: 8:00 AM - 6:00 PM EAT | Saturday: 9:00 AM - 2:00 PM EAT<br>
+                        <span style="color: #ff9d00;">🚨 24/7 Emergency Support for Travelers</span>
+                    </p>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; margin-top: 20px;">
+                <p style="margin: 0; font-size: 12px; opacity: 0.8;">
+                    <strong>Newsletter Subscription Confirmation</strong><br>
+                    This email was sent to {{ subscription.email }} as confirmation of your newsletter subscription.<br>
+                    You can unsubscribe at any time by replying to any of our emails.<br>
+                    <strong>Subscription Date:</strong> {{ subscription.created_at|date:"F d, Y \a\t g:i A" }} EAT
+                </p>
+            </div>
         </div>
     </div>
 </body>

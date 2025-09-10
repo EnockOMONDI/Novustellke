@@ -9,6 +9,7 @@ YOUR INQUIRY SUMMARY
 Inquiry Type: {{ inquiry.subject }}
 Submission Date: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
 Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
+Keep this reference for future correspondence
 
 WHAT HAPPENS NEXT?
 ==================
