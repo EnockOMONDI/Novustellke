@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'users',
     'blog',
     'status',
+    'email_marketing',  # Email marketing campaigns
     'taggit',
     'crispy_forms',
     'pyuploadcare.dj',

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribed Successfully - Novustell Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3fc;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0f238d;
+            margin-bottom: 20px;
+        }
+        .success-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #0f238d;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.novustelltravel.com/static/assets/images/logo/websitelogo.png" alt="Novustell Travel" class="logo">
+        
+        <div class="success-icon">✅</div>
+        <h1>Successfully Unsubscribed</h1>
+        
+        <p>You have been successfully unsubscribed from Novustell Travel email marketing.</p>
+        <p><strong>Email:</strong> {{ recipient.email }}</p>
+        
+        <p>You will no longer receive marketing emails from us. However, you may still receive important transactional emails related to any bookings or inquiries you make.</p>
+        
+        <p>We're sorry to see you go! If you change your mind, you can always resubscribe by contacting us.</p>
+        
+        <a href="https://www.novustelltravel.com" class="btn">Visit Our Website</a>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #666;">
+            If you have any questions or feedback, please contact us at 
+            <a href="mailto:info@novustelltravel.com" style="color: #0f238d;">info@novustelltravel.com</a>
+        </p>
+        
+        <p style="font-size: 12px; color: #999; margin-top: 20px;">
+            Thank you for your interest in Novustell Travel.<br>
+            Think Convenience, Think Novustell.
+        </p>
+    </div>
+</body>
+</html>

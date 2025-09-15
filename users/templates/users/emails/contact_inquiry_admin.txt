@@ -1,9 +1,15 @@
-🔔 NEW CONTACT INQUIRY - NOVUSTELL TRAVEL
+🔔 New Contact Inquiry from Website
 
 Action Required: A new contact inquiry has been submitted through the website contact form. 
 Please respond within 24 hours as promised on the contact page.
 
-CONTACT INQUIRY DETAILS
+🔍 INQUIRY TRACKING:
+Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
+Submission Time: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
+Source: Website Contact Form
+Priority Level: {% if inquiry.subject == "Corporate Travel" or inquiry.subject == "MICE" or inquiry.subject == "Partnership" %}HIGH PRIORITY{% else %}STANDARD{% endif %}
+
+INQUIRY DETAILS
 ========================
 
 Full Name: {{ inquiry.full_name }}
@@ -37,11 +43,6 @@ Recommended Department: {% if inquiry.subject == "Corporate Travel" %}Corporate 
 - WhatsApp Option: Offer WhatsApp consultation at +254 701 363 551
 - Admin Update: Update inquiry status in admin panel after response
 
-🔍 INQUIRY TRACKING:
-Reference ID: NVT-{{ inquiry.id|stringformat:"05d" }}
-Submission Time: {{ inquiry.created_at|date:"F d, Y \a\t g:i A" }} EAT
-Source: Website Contact Form
-Priority Level: {% if inquiry.subject == "Corporate Travel" or inquiry.subject == "MICE" or inquiry.subject == "Partnership" %}HIGH PRIORITY{% else %}STANDARD{% endif %}
 
 QUICK ACTIONS:
 --------------

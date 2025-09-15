@@ -38,6 +38,7 @@ urlpatterns = [
     path('mail/',tours_travels_views.mail,name='mail'),
     path('status/', include(('status.urls', 'status'), namespace='status')),
     path('system-status/', include(('status.urls', 'status'), namespace='system-status')),
+    path('email-marketing/', include(('email_marketing.urls', 'email_marketing'), namespace='email_marketing')),
 
     path('', include('users.urls')),
 
