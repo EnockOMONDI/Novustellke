@@ -171,28 +171,18 @@
                 </div>
 
                 <div class="detail-row">
-                    <div class="detail-label">Travel Type:</div>
-                    <div class="detail-value">{{ inquiry.travel_type }}</div>
+                    <div class="detail-label">Program Stage:</div>
+                    <div class="detail-value">
+                        {{ inquiry.program_stage }}
+                        {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                        <span style="background: linear-gradient(135deg, #ff9d00, #ffb84d); color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-left: 10px;">🏆 MUN PROGRAM</span>
+                        {% endif %}
+                    </div>
                 </div>
 
                 <div class="detail-row">
                     <div class="detail-label">Number of Students:</div>
                     <div class="detail-value">{{ inquiry.number_of_students }}</div>
-                </div>
-
-                <div class="detail-row">
-                    <div class="detail-label">Number of Supervisors:</div>
-                    <div class="detail-value">{{ inquiry.number_of_supervisors }}</div>
-                </div>
-
-                <div class="detail-row">
-                    <div class="detail-label">Student Age Group:</div>
-                    <div class="detail-value">{{ inquiry.student_age_group }}</div>
-                </div>
-
-                <div class="detail-row">
-                    <div class="detail-label">Budget Range:</div>
-                    <div class="detail-value">{{ inquiry.budget_range }}</div>
                 </div>
 
                 <div class="detail-row">
@@ -230,14 +220,32 @@
                 <div style="background-color: #fff3e0; border-left: 4px solid #ff9d00; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🎯 Department Assignment</h4>
                     <p style="margin: 0; font-size: 14px;">
-                        <strong>Inquiry Type:</strong> Student Travel ({{ inquiry.travel_type }})<br>
-                        <strong>Assigned Team:</strong> <span style="color: #ff9d00; font-weight: bold;">Educational Travel Solutions Team</span><br>
-                        <strong>Specialization:</strong> Student group travel, educational tours, school trips, safety protocols
+                        <strong>Inquiry Type:</strong> Student Travel ({{ inquiry.program_stage }})<br>
+                        <strong>Assigned Team:</strong>
+                        {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                        <span style="color: #ff9d00; font-weight: bold;">🏆 Model UN Specialist Team</span><br>
+                        <strong>Specialization:</strong> Model UN conferences, international academic competitions, university partnerships, diplomatic travel
+                        {% else %}
+                        <span style="color: #ff9d00; font-weight: bold;">Educational Travel Solutions Team</span><br>
+                        <strong>Specialization:</strong> World Scholars Cup, student group travel, educational tours, school trips, safety protocols
+                        {% endif %}
                     </p>
                 </div>
                 
                 <!-- Response Protocol -->
                 <div style="background-color: #f8f3fc; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+                    {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Model UN Response Protocol (2-Hour Priority)</h4>
+                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                        <li style="margin-bottom: 8px;"><strong>Immediate (0-1 hour):</strong> Acknowledge receipt and assign to MUN specialist</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 2 hours:</strong> Initial MUN conference assessment and timeline review</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 4 hours:</strong> Comprehensive MUN travel proposal with conference-specific logistics</li>
+                        <li style="margin-bottom: 0;"><strong>Follow-up:</strong> Schedule detailed consultation for MUN delegation planning</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-size: 12px; color: #666; font-style: italic;">
+                        🏆 Model UN conferences require specialized planning for Yale MUN, Harvard MUN, and HNMUN participation.
+                    </p>
+                    {% else %}
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Student Travel Response Protocol (4-Hour Priority)</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
                         <li style="margin-bottom: 8px;"><strong>Immediate (0-2 hours):</strong> Acknowledge receipt and assign to education specialist</li>
@@ -245,6 +253,7 @@
                         <li style="margin-bottom: 8px;"><strong>Within 8 hours:</strong> Comprehensive proposal with educational travel options</li>
                         <li style="margin-bottom: 0;"><strong>Follow-up:</strong> Schedule consultation for complex educational programs</li>
                     </ul>
+                    {% endif %}
                 </div>
                 
                 <!-- Contact Actions -->

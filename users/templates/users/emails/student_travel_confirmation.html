@@ -175,35 +175,39 @@
             <div class="welcome-message">
                 <h2 style="color: #0f238d; margin-top: 0;">Dear {{ inquiry.contact_person }},</h2>
                 <p style="margin-bottom: 0; font-size: 16px; line-height: 1.6;">
-                    Thank you for contacting <strong>Novustell Travel</strong> for your educational travel needs! We have successfully received your student travel inquiry for <strong>{{ inquiry.school_name }}</strong> and our specialized Educational Travel Solutions Team is already reviewing your requirements.
+                    Thank you for contacting <strong>Novustell Travel</strong> for your educational travel needs! We have successfully received your
+                    {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                    <strong style="color: #ff9d00;">Model UN travel inquiry</strong> for <strong>{{ inquiry.school_name }}</strong> and our specialized Model UN Travel Team is already reviewing your requirements for the upcoming 2025-2026 MUN season.
+                    {% else %}
+                    student travel inquiry for <strong>{{ inquiry.school_name }}</strong> and our specialized Educational Travel Solutions Team is already reviewing your requirements.
+                    {% endif %}
                 </p>
             </div>
 
-            <h3 style="color: #0f238d;">📋 Your Student Travel Inquiry Summary</h3>
+            <h3 style="color: #0f238d;">
+                {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                🏆 Your Model UN Travel Inquiry Summary
+                {% else %}
+                📋 Your Student Travel Inquiry Summary
+                {% endif %}
+            </h3>
             <div class="inquiry-summary">
                 <div class="detail-row">
                     <span class="detail-label">School:</span>
                     <span class="detail-value">{{ inquiry.school_name }}</span>
                 </div>
                 <div class="detail-row">
-                    <span class="detail-label">Travel Type:</span>
-                    <span class="detail-value">{{ inquiry.travel_type }}</span>
+                    <span class="detail-label">Program Stage:</span>
+                    <span class="detail-value">
+                        {{ inquiry.program_stage }}
+                        {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                        <span style="background: linear-gradient(135deg, #ff9d00, #ffb84d); color: white; padding: 2px 6px; border-radius: 8px; font-size: 11px; font-weight: 600; margin-left: 8px;">MUN</span>
+                        {% endif %}
+                    </span>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Number of Students:</span>
                     <span class="detail-value">{{ inquiry.number_of_students }}</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Number of Supervisors:</span>
-                    <span class="detail-value">{{ inquiry.number_of_supervisors }}</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Student Age Group:</span>
-                    <span class="detail-value">{{ inquiry.student_age_group }}</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Budget Range:</span>
-                    <span class="detail-value">{{ inquiry.budget_range }}</span>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Submission Date:</span>
@@ -220,14 +224,30 @@
                 
                 <!-- Educational Specialization -->
                 <div style="background-color: #e3f2fd; border-left: 4px solid #0f238d; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+                    {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🏆 Your Model UN Travel Specialist Team</h4>
+                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">
+                        Your inquiry has been assigned to our <strong style="color: #ff9d00;">Model UN Specialist Team</strong> - experts in Model UN conferences, international academic competitions, university partnerships, and diplomatic travel. Our team has extensive experience with Yale MUN, Harvard MUN, and HNMUN logistics.
+                    </p>
+                    {% else %}
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🎯 Your Educational Travel Specialist Team</h4>
                     <p style="margin: 0; font-size: 14px; line-height: 1.6;">
                         Your inquiry has been assigned to our <strong style="color: #ff9d00;">Educational Travel Solutions Team</strong> - specialists in student group travel, educational tours, school trips, and safety protocols. Our team understands the unique requirements of educational travel and prioritizes student safety.
                     </p>
+                    {% endif %}
                 </div>
                 
                 <!-- Timeline Expectations -->
                 <div style="background-color: #f3e5f5; border-left: 4px solid #ff9d00; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+                    {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Model UN Response Timeline (Priority)</h4>
+                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                        <li style="margin-bottom: 8px;"><strong>Within 1 Hour:</strong> Acknowledgment and assignment to MUN specialist</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 2 Hours:</strong> Initial MUN conference assessment and timeline review</li>
+                        <li style="margin-bottom: 8px;"><strong>Within 4 Hours:</strong> Comprehensive MUN travel proposal with conference-specific logistics</li>
+                        <li style="margin-bottom: 0;"><strong>Ongoing Support:</strong> Detailed consultation for MUN delegation planning</li>
+                    </ul>
+                    {% else %}
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">⏰ Response Timeline</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
                         <li style="margin-bottom: 8px;"><strong>Within 2 Hours:</strong> Acknowledgment and assignment to education specialist</li>
@@ -235,10 +255,25 @@
                         <li style="margin-bottom: 8px;"><strong>Within 8 Hours:</strong> Comprehensive proposal with educational travel options</li>
                         <li style="margin-bottom: 0;"><strong>Ongoing Support:</strong> Consultation for complex educational programs</li>
                     </ul>
+                    {% endif %}
                 </div>
                 
                 <!-- Student Travel Service Process -->
                 <div style="background-color: #e8f5e8; border-left: 4px solid #2e7d32; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+                    {% if inquiry.program_stage == "Model UN 2025-2026" %}
+                    <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">🏆 Our Model UN Travel Service Process</h4>
+                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                        <li style="margin-bottom: 8px;"><strong>Conference Registration:</strong> Assistance with Yale MUN, Harvard MUN, and HNMUN registration</li>
+                        <li style="margin-bottom: 8px;"><strong>Visa & Documentation:</strong> Specialized support for US visa applications and travel documents</li>
+                        <li style="margin-bottom: 8px;"><strong>University Partnerships:</strong> Connections with prestigious universities for enhanced experiences</li>
+                        <li style="margin-bottom: 8px;"><strong>Delegation Support:</strong> Comprehensive logistics for MUN delegations and advisors</li>
+                        <li style="margin-bottom: 8px;"><strong>Academic Extensions:</strong> Optional university tours and educational add-ons</li>
+                        <li style="margin-bottom: 0;"><strong>24/7 MUN Support:</strong> Dedicated assistance throughout the conference experience</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-size: 12px; color: #666; font-style: italic;">
+                        🎯 Specialized in Yale MUN (January 2026), Harvard MUN (January/February 2026), and HNMUN (February 2026)
+                    </p>
+                    {% else %}
                     <h4 style="color: #0f238d; margin-top: 0; margin-bottom: 10px;">📋 Our Student Travel Service Process</h4>
                     <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
                         <li style="margin-bottom: 8px;"><strong>Safety Assessment:</strong> Comprehensive safety protocols for student groups</li>
@@ -247,6 +282,7 @@
                         <li style="margin-bottom: 8px;"><strong>Budget-Friendly Options:</strong> Cost-effective solutions for educational institutions</li>
                         <li style="margin-bottom: 0;"><strong>24/7 Student Support:</strong> Dedicated assistance throughout the trip</li>
                     </ul>
+                    {% endif %}
                 </div>
             </div>
 

@@ -215,7 +215,8 @@ class StudentTravelInquiry(models.Model):
         ('Registration & Training', 'Registration & Training'),
         ('Regional Round', 'Regional Round'),
         ('Global Round', 'Global Round'),
-        ('Tournament of Champions', 'Tournament of Champions')
+        ('Tournament of Champions', 'Tournament of Champions'),
+        ('Model UN 2025-2026', 'Model UN 2025-2026')
     ])
     number_of_students = models.PositiveIntegerField()
     travel_details = CKEditor5Field(config_name='default', help_text="Detailed travel requirements and information")
