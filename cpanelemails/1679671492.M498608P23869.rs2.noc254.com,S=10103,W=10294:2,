@@ -1,0 +1,191 @@
+Return-Path: <davina578@gmail.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id qDv/HMTAHWQ9XQAA7QkJDw
+	(envelope-from <davina578@gmail.com>)
+	for <novuste1@rs2.noc254.com>; Fri, 24 Mar 2023 18:24:52 +0300
+Return-path: <davina578@gmail.com>
+Envelope-to: accounts@novustell.com
+Delivery-date: Fri, 24 Mar 2023 18:24:52 +0300
+Received: from mail-ua1-f53.google.com ([209.85.222.53]:43578)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <davina578@gmail.com>)
+	id 1pfjHe-0008XF-2d
+	for accounts@novustell.com;
+	Fri, 24 Mar 2023 18:24:52 +0300
+Received: by mail-ua1-f53.google.com with SMTP id n17so1634553uaj.10
+        for <accounts@novustell.com>; Fri, 24 Mar 2023 08:24:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1679671488;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=VZeCCbgRhbNqL4WyoOAPR+X0+1bFaHxW8RKDtYbksh0=;
+        b=FByRwhALQz2hrzBTNE0gwELkracRGZ5GY8eLBKIjrCBw5dSOfMzXgectGRf1I9pTAI
+         lBe97/HLM/JqX0e1UdxpNSc3PEK0k2ILfvguOssVYQ63POkMws3DoUNc01DhdqhkGPR+
+         vvi3N4F1gcCl6HLqbA0ROBuaZ2TtEaI7ZjlSijQZz5GE3db0nNnI5YKQS6YKqZPzeVsE
+         HVlf4rkUAPsGZDiLgwaC+Mo4Fx2RTh7qU8a0g3VzKCQpp9We1DuKSnhYILJ//0pq7Xc5
+         B0e8NcC6h1esslgxOXSh4nUckvtFB4i7y0UnI9gH/vfYCeWts6hqCUSXwWPrSIUUHaKy
+         Ok5g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1679671488;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=VZeCCbgRhbNqL4WyoOAPR+X0+1bFaHxW8RKDtYbksh0=;
+        b=U2TGgqT4y79x5+p3rR5oCuoM4dZHPmggZKNKGxZKVxPdJqKTltkQduytgY4zP0uTJx
+         f8YlFDZl23H4acKl5ejpeKeu0h76/pJv3U58CAs9+nxlh+WrbRjr839mYSuOKbE2vEoA
+         +Gaan5MKLbuAs+XUrM9Y/VL4mtf1AFISmkPjKo7sK2jRhEj7mvFQiz9yNoCbQccplJro
+         6j7+53LNcsFr/ZMDmCRjm6IOn9dCMz5c+1wWj7r2zIsONdzuRH1R98dZp+2IDIWJ+d4R
+         D3wwuL9Nzbd3JvgoLx1agSLBOfUuGEtyvWcLaW9uGLdtqykgRvYDueCAbbFyeaUg6Qb8
+         rkaQ==
+X-Gm-Message-State: AAQBX9f1wX44iQdhJlp8SX8vFsaaIP5ju1MKM2b57HNVA0cKVn/xWjQg
+	yp7tRKoOEoa7FnDwo6qSq+ZNtJt0nTUg1onGF+0=
+X-Google-Smtp-Source: AKy350bb9JREaKkye96VM2e7N6brRxWpx+EMbc/sJIjOLPPHkaM8rGeRVliVNb2Gzngt6zUFzDaZfF/ERI3c34HHf2A=
+X-Received: by 2002:a1f:1dcd:0:b0:43b:30a4:5bc1 with SMTP id
+ d196-20020a1f1dcd000000b0043b30a45bc1mr950069vkd.2.1679671488393; Fri, 24 Mar
+ 2023 08:24:48 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAKxRX1cyZ846=m6ueigrR5hTosk2eQ0yXE5onOwdKafyLvwXkw@mail.gmail.com>
+In-Reply-To: <CAKxRX1cyZ846=m6ueigrR5hTosk2eQ0yXE5onOwdKafyLvwXkw@mail.gmail.com>
+From: Davina Adhiambo <davina578@gmail.com>
+Date: Fri, 24 Mar 2023 18:24:19 +0300
+Message-ID: <CAO_-CGxr_ZrQpF5_8-6=knS6NhTG_eq4D+9Cy1ocK55KVotfTQ@mail.gmail.com>
+Subject: Re: WEEKLY RECONCILIATION REPORT 15th-24th march 2023
+To: Shadrack Mambo <shadrackmambo05@gmail.com>
+Cc: quinta omondi <quinta.omondi@gmail.com>, accounts@novustell.com, 
+	John Gichungu <gichungu.m@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000067b91805f7a6fe6e"
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  How about bank reconciliation? Cash in the bank, (deposits
+    from the bank what they've been used to pay and where the money(credits)
+   are coming from. Cash at hand - any money in cash, how it has been used and
+    if more has been added, [...] 
+ Content analysis details:   (0.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: freshbooks.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [davina578[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [davina578[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
+                             "accounts suspended", "account credited",
+                             "account verification"
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--00000000000067b91805f7a6fe6e
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+How about bank reconciliation?
+
+Cash in the bank, (deposits from the bank what they've been used to pay and
+where the money(credits) are coming from.
+Cash at hand - any money in cash, how it has been used and if more  has
+been added, what are the balances.
+
+That's what I'd want to see on the bank reconciliation report.
+ A bank reconciliation statement is a summary of banking and business
+activity that reconciles an entity's bank account with its financial
+records. The statement outlines the deposits, withdrawals, and other
+activities affecting a bank account for a specific period.
+
+*Bank Reconciliation: A Step-by-Step Guide*
+
+   1. COMPARE THE DEPOSITS. Match the deposits in the business records with
+   those in the bank statement. ...
+   2. ADJUST THE BANK STATEMENTS. Adjust the balance on the bank statements
+   to the corrected balance. ...
+   3. ADJUST THE CASH ACCOUNT
+   4. COMPARE THE BALANCES.
+
+
+If this is not clear let me know...you can reach out here >>>
+https://www.freshbooks.com/hub/accounting/do-bank-reconciliation
+
+
+Kind regards
+
+Davina Adhiambo
+0729358009
+
+
+On Fri, Mar 24, 2023 at 5:29=E2=80=AFPM Shadrack Mambo <shadrackmambo05@gma=
+il.com>
+wrote:
+
+> Hi, hope you are okay.
+> Find the attached weekly report for both USD and KES bank statements
+>
+
+--00000000000067b91805f7a6fe6e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">How about bank reconciliation?<div><br></div><div>Cash in =
+the bank, (deposits from the bank what they&#39;ve been used to pay and whe=
+re the money(credits) are coming from.</div><div>Cash at hand - any money i=
+n cash, how it has been used and if more=C2=A0 has been added, what are the=
+ balances.</div><div><br></div><div>That&#39;s what I&#39;d want to see on =
+the bank reconciliation report.=C2=A0<br><font color=3D"#ff0000">=C2=A0A ba=
+nk reconciliation statement is a summary of banking and business activity t=
+hat reconciles an entity&#39;s bank account with its financial records. The=
+ statement outlines the deposits, withdrawals, and other activities affecti=
+ng a bank account for a specific period.</font></div><div><font color=3D"#f=
+f0000"><br></font></div><div><div role=3D"heading" style=3D"margin-bottom:1=
+2px;font-family:arial,sans-serif;font-size:16px"><b><font color=3D"#ff0000"=
+>Bank Reconciliation: A Step-by-Step Guide</font></b></div><div style=3D"pa=
+dding:0px 20px;font-family:arial,sans-serif;font-size:16px"><ol style=3D"ma=
+rgin:0px;padding:0px"><li style=3D"margin:0px 0px 4px;padding:0px;list-styl=
+e:inherit"><font color=3D"#ff0000">COMPARE THE DEPOSITS. Match the deposits=
+ in the business records with those in the bank statement. ...</font></li><=
+li style=3D"margin:0px 0px 4px;padding:0px;list-style:inherit"><font color=
+=3D"#ff0000">ADJUST THE BANK STATEMENTS. Adjust the balance on the bank sta=
+tements to the corrected balance. ...</font></li><li style=3D"margin:0px 0p=
+x 4px;padding:0px;list-style:inherit"><font color=3D"#ff0000">ADJUST THE CA=
+SH ACCOUNT</font></li><li style=3D"margin:0px 0px 4px;padding:0px;list-styl=
+e:inherit"><font color=3D"#ff0000">COMPARE THE BALANCES.</font></li></ol></=
+div></div><div><font color=3D"#ff0000"><br></font></div><div><font color=3D=
+"#ff0000">If this is not clear let me know...you can reach out here &gt;&gt=
+;&gt;=C2=A0</font><a href=3D"https://www.freshbooks.com/hub/accounting/do-b=
+ank-reconciliation" target=3D"_blank">https://www.freshbooks.com/hub/accoun=
+ting/do-bank-reconciliation</a></div><div><font color=3D"#ff0000"><br></fon=
+t></div><div><font color=3D"#ff0000"><br clear=3D"all"></font><div><div dir=
+=3D"ltr" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=
+=3D"ltr"><font color=3D"#ff0000">Kind regards</font><div><br></div><div>Dav=
+ina Adhiambo</div><div>0729358009</div></div></div></div></div></div><br></=
+div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_at=
+tr">On Fri, Mar 24, 2023 at 5:29=E2=80=AFPM Shadrack Mambo &lt;<a href=3D"m=
+ailto:shadrackmambo05@gmail.com" target=3D"_blank">shadrackmambo05@gmail.co=
+m</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin=
+:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"=
+><div dir=3D"ltr">Hi, hope you are okay.<div>Find the attached weekly repor=
+t for both USD and KES bank statements</div></div>
+</blockquote></div>
+
+--00000000000067b91805f7a6fe6e--

@@ -1,0 +1,251 @@
+Return-Path: <marketing@kilua.co.ke>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id YMdaLc+of2G9iQAA7QkJDw
+	(envelope-from <marketing@kilua.co.ke>)
+	for <novuste1@rs2.noc254.com>; Mon, 01 Nov 2021 11:43:59 +0300
+Return-path: <marketing@kilua.co.ke>
+Envelope-to: info@novustelltravel.com
+Delivery-date: Mon, 01 Nov 2021 11:43:59 +0300
+Received: from ten.deepafrica.com ([69.16.238.120]:34719)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <marketing@kilua.co.ke>)
+	id 1mhSv4-0008G9-88; Mon, 01 Nov 2021 11:43:59 +0300
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=kilua.co.ke
+	; s=default; h=Content-Type:MIME-Version:Message-ID:Date:Subject:Cc:To:From:
+	Sender:Reply-To:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=+eYEky0X4HzmBarXecaRZ7gb6dMjYZrDKYYQlFJoCOI=; b=Emzka1Bg5G3HNYhAeGeEBSzT/X
+	AOBVX00WSWLKafIDtAhDgkPTDyXA3A+jgvGYh443n6Bf/o0q7yjLtp1UtXzyVZqirk+sje+pmKFFo
+	4Ms4oSDBt3+hvxRAmhCghAocdB7ckyh0zI+J5XWdi4w6qB8e1rH1ejPqiwZ2WBXZN1J65tWuprikp
+	tEYXfJKlb9VtCtfMTC3F3rL1KOtTcGp2dJkLM82r8ZSvwIHQNsOUud+zutWvQ4+y3qPzWuq6z2frX
+	pE6d8z0mqJ/H0/5t+hkk/IK1FPYTPOHPNYIYG90Rl0P/21PepWIFXQpvhU5AKeHwSdwjLD13Kcj9e
+	sFeBU3OA==;
+Received: from [41.212.110.155] (port=5691 helo=DESKTOP6QOKB9A)
+	by ten.deepafrica.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <marketing@kilua.co.ke>)
+	id 1mhRMZ-0008Sl-Va; Mon, 01 Nov 2021 10:04:12 +0300
+From: <marketing@kilua.co.ke>
+To: <info@novustelltravel.com>
+Cc: "'Renato Bachmann'" <renatobachmann@gmail.com>,
+	<fatma@kilua.co.ke>,
+	<quinta@novustelltravel.com>
+Subject: Commission to Agent
+Date: Mon, 1 Nov 2021 10:03:04 +0300
+Message-ID: <000c01d7ceee$add9f640$098de2c0$@kilua.co.ke>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_000D_01D7CF07.D32866C0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdfO6+FZp5Ial7u0T4GROJaDAhkQBw==
+Content-Language: en-ke
+X-Antivirus: Avast (VPS 211101-0, 11/1/2021), Outbound message
+X-Antivirus-Status: Clean
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ten.deepafrica.com
+X-AntiAbuse: Original Domain - novustelltravel.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - kilua.co.ke
+X-Get-Message-Sender-Via: ten.deepafrica.com: authenticated_id: marketing@kilua.co.ke
+X-Authenticated-Sender: ten.deepafrica.com: marketing@kilua.co.ke
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello Hamida Good morning Please process Novustell Travel
+   LTD commission for MERCY MBURU accommodation. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: kilua.co.ke]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_000D_01D7CF07.D32866C0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hello Hamida
+
+Good morning
+
+ 
+
+Please process Novustell Travel LTD commission for MERCY MBURU
+accommodation.
+
+Ref No.  MTBF11AEE
+
+ 
+
+Contact person;
+
+Quinta Omondi  - 0721 115572
+
+ 
+
+The guest checked out on Saturday 23rd October.
+
+ 
+
+Thank you.
+
+ 
+
+Warm regards,
+
+Yasra Mansur
+
+Marketing Dept.
+
+Mobile: +254 711525454   |   Email: marketing@kilua.co.ke
+
+Kiluwa Ltd.  |  <http://www.kilua.co.ke/> www.kilua.co.ke | P. O. Box
+9-80122 | Mombasa | Kenya
+
+ 
+
+
+
+-- 
+This email has been checked for viruses by Avast antivirus software.
+https://www.avast.com/antivirus
+
+------=_NextPart_000_000D_01D7CF07.D32866C0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+=2EMsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3Den-KE link=3D"#0563C1=
+" vlink=3D"#954F72" style=3D'word-wrap:break-word'><div class=3DWordSection=
+1><p class=3DMsoNormal><span lang=3DEN-US>Hello Hamida<o:p></o:p></span></p=
+><p class=3DMsoNormal><span lang=3DEN-US>Good morning<o:p></o:p></span></p>=
+<p class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p clas=
+s=3DMsoNormal><span lang=3DEN-US>Please process Novustell Travel LTD commis=
+sion for MERCY MBURU &nbsp;accommodation.</span><span lang=3Den-KE style=3D=
+'color:black;mso-fareast-language:#2000'><o:p></o:p></span></p><p class=3DM=
+soNormal><span lang=3DEN-US>Ref No. </span><b><span lang=3Den-KE style=3D'f=
+ont-size:10.5pt;font-family:"Arial",sans-serif;color:#5CA3D2'>&nbsp;</span>=
+</b><b><span lang=3Den-KE>MTBF11AEE</span></b><span lang=3DEN-US><o:p></o:p=
+></span></p><p class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span=
+></p><p class=3DMsoNormal><span lang=3DEN-US>Contact person;<o:p></o:p></sp=
+an></p><p class=3DMsoNormal><span lang=3DEN-US>Quinta Omondi &nbsp;&#8211; =
+0721 115572<o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US>The guest=
+ checked out on Saturday 23<sup>rd</sup> October.<o:p></o:p></span></p><p c=
+lass=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3D=
+MsoNormal><span lang=3DEN-US>Thank you.<o:p></o:p></span></p><p class=3DMso=
+Normal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal>=
+<span lang=3DEN-US>Warm regards,<o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'background:white'><b><span lang=3DEN-US style=3D'font-size:10.0pt;=
+font-family:"Century Gothic",sans-serif;color:black;mso-fareast-language:#2=
+000'>Yasra Mansur<o:p></o:p></span></b></p><p class=3DMsoNormal style=3D'ba=
+ckground:white'><b><span lang=3DEN-US style=3D'font-size:10.0pt;font-family=
+:"Century Gothic",sans-serif;color:black;mso-fareast-language:#2000'>Market=
+ing Dept.</span></b><span lang=3DEN-US style=3D'mso-fareast-language:#2000'=
+><o:p></o:p></span></p><p class=3DMsoNormal style=3D'background:white'><spa=
+n lang=3Den-KE style=3D'font-size:8.0pt;font-family:"Century Gothic",sans-s=
+erif;color:black;mso-fareast-language:#2000'>Mobile: +254 </span><span lang=
+=3DEN-US style=3D'font-size:8.0pt;font-family:"Century Gothic",sans-serif;c=
+olor:black;mso-fareast-language:#2000'>711525454</span><span lang=3Den-KE s=
+tyle=3D'font-size:8.0pt;font-family:"Century Gothic",sans-serif;color:black=
+;mso-fareast-language:#2000'> &nbsp; |&nbsp; &nbsp;Email:&nbsp;</span><span=
+ lang=3DEN-US style=3D'font-size:8.0pt;font-family:"Century Gothic",sans-se=
+rif;color:black;mso-fareast-language:#2000'>marketing@kilua.co.ke</span><sp=
+an lang=3Den-KE style=3D'mso-fareast-language:#2000'><o:p></o:p></span></p>=
+<p class=3DMsoNormal style=3D'background:white'><span lang=3Den-KE style=3D=
+'font-size:8.0pt;font-family:"Century Gothic",sans-serif;color:black;mso-fa=
+reast-language:#2000'>Kiluwa Ltd. &nbsp;|&nbsp;<a href=3D"http://www.kilua.=
+co.ke/"><span style=3D'color:#0563C1'>www.kilua.co.ke</span></a>&nbsp;| P. =
+O. Box 9-80122 | Mombasa | Kenya</span><span lang=3Den-KE style=3D'mso-fare=
+ast-language:#2000'><o:p></o:p></span></p><p class=3DMsoNormal><span lang=
+=3Den-KE><o:p>&nbsp;</o:p></span></p></div><div id=3D"DAB4FAD8-2DD7-40BB-A1=
+B8-4E2AA1F9FDF2"><br />
+<table style=3D"border-top: 1px solid #D3D4DE;">
+	<tr>
+        <td style=3D"width: 55px; padding-top: 13px;"><a href=3D"https://ww=
+w.avast.com/sig-email?utm_medium=3Demail&utm_source=3Dlink&utm_campaign=3Ds=
+ig-email&utm_content=3Demailclient" target=3D"_blank"><img src=3D"https://i=
+pmcdn.avast.com/images/icons/icon-envelope-tick-round-orange-animated-no-re=
+peat-v1.gif" alt=3D"" width=3D"46" height=3D"29" style=3D"width: 46px; heig=
+ht: 29px;" /></a></td>
+		<td style=3D"width: 470px; padding-top: 12px; color: #41424e; font-size: =
+13px; font-family: Arial, Helvetica, sans-serif; line-height: 18px;">Virus-=
+free. <a href=3D"https://www.avast.com/sig-email?utm_medium=3Demail&utm_sou=
+rce=3Dlink&utm_campaign=3Dsig-email&utm_content=3Demailclient" target=3D"_b=
+lank" style=3D"color: #4453ea;">www.avast.com</a>
+		</td>
+	</tr>
+</table><a href=3D"#DAB4FAD8-2DD7-40BB-A1B8-4E2AA1F9FDF2" width=3D"1" heigh=
+t=3D"1"> </a></div></body></html>
+------=_NextPart_000_000D_01D7CF07.D32866C0--
+

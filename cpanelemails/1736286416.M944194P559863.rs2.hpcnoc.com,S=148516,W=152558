@@ -1,0 +1,4042 @@
+Return-Path: <flight.service@information.lufthansa.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id kIv3N9CgfWf3iggAObGTvA
+	(envelope-from <flight.service@information.lufthansa.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 08 Jan 2025 00:46:56 +0300
+Return-path: <flight.service@information.lufthansa.com>
+Envelope-to: QUNITA@NOVUSTELLTRAVEL.COM
+Delivery-date: Wed, 08 Jan 2025 00:46:56 +0300
+Received: from send9.email15.net ([185.75.169.126]:30172)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <flight.service@information.lufthansa.com>)
+	id 1tVHPb-00000002NCt-1XA8
+	for QUNITA@NOVUSTELLTRAVEL.COM;
+	Wed, 08 Jan 2025 00:46:56 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=15below; d=information.lufthansa.com;
+ h=MIME-Version:From:To:Date:Subject:Message-ID:Content-Transfer-Encoding:
+ Content-Type; i=flight.service@information.lufthansa.com;
+ bh=HnlJ9HIS0y6miu7GQn4cLdGqhhvWI4lY2PiBzKxEH5Y=;
+ b=GqCT/svcA/956WMFaZkK8cor3i8VjvFF5zI9b1vQKd44e9egwe1VWklEjcRMGo29FEHKLWnYw+cg
+   V3Oq1O+lHzoI52B0i7nhkAE0JjdIyjpWxx1H3PpEwIAKqIrA0SXQuKJJE0PlLwdMjbMXL1iRCVaN
+   3bGYnxhKOKHvn4tgy9998TcYoqPDEZSLczGRoWIoekxlFfpcOXau7/vU01mgbXZlUvJ4Dqsw7/Df
+   eUzzj/k08xnxRr4+scRT6/wW7yCSW6qjlcDfSDILXWIipqyi/8tjCQIvwxF/ogEorJPms7GMLqku
+   R4wU1g2MkCa6CkQXIKU3IL/tQrS3BoKNqNIpbw==
+Received: by send9.email15.net id hfmgac39620g for <QUNITA@NOVUSTELLTRAVEL.COM>; Tue, 7 Jan 2025 21:46:13 +0000 (envelope-from <flight.service@information.lufthansa.com>)
+x-sender: flight.service@information.lufthansa.com
+x-receiver: QUNITA@NOVUSTELLTRAVEL.COM
+X-PASNGR-ID: 1083991815
+X-RECIPIENT-ID: 1062800038
+x-virtual-mta: LX-PRD-TRANS
+MIME-Version: 1.0
+X-Mailer: 15below (https://www.15below.com)
+X-Priority: 3 (Normal)
+From: =?utf-8?B?THVmdGhhbnNhIEZsaWdodCBTZXJ2aWNl?= <flight.service@information.lufthansa.com>
+To: QUNITA@NOVUSTELLTRAVEL.COM
+Date: Tue, 07 Jan 2025 21:45:06 -0000
+Subject: =?utf-8?B?WW91ciBmbGlnaHQgaXMgcmVhZHkgZm9yIGNoZWNrLWluIHwgRnJvbSBOYWk=?=
+ =?utf-8?B?cm9iaSB0byBUb3JvbnRvIG9uIDA4IEphbnVhcnkgMjAyNQ==?=
+Message-ID: <25010721-4506-803a-e42b-8618ac465ebe@LX.PRD.15below.com>
+X-Campaign-Id: 778421
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Use our online check-in to start your trip Please do not
+   reply to this email. Booking Code: 9KWOYR 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: swiss.com]
+                             [URI: lufthansa.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.8 CPANEL_LOTS_OF_EMPTY_LINE RAW: Spam that has large block of empty
+                             lines
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [185.75.169.126 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [185.75.169.126 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [185.75.169.126 listed in bl.score.senderscore.com]
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ -0.4 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"ur=
+n:schemas-microsoft-com:office:office"><head>
+    <title></title>
+    <meta charset=3D"utf-8">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <link rel=3D'shortcut icon' type=3D'image/x-icon' href=3D'https://my.=
+information.lufthansa.com/LinkTracking?q=3D2NNp8Zl7Mg1I251mXSYI1ZrI4iBQqB=
+zbawl_US1PG8G3fwDyMSrF5Y_RSTmYFS_6d2auvZyYEa95ZVxeISp9IPpHhozAweqkOy1dhFc=
+InmlB9-j6jArjdkLTzmSjSR3yBzCOv_hMU7BE-Ir-KG0SBQ&r=3D1062800038' />
+
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"address=3Dno">
+    <meta name=3D"format-detection" content=3D"email=3Dno">
+
+<!--[if mso]>
+            <style>
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    border: none;
+                    margin: 0;
+                    mso-table-lspace: 0pt !important;
+                    mso-table-rspace: 0pt !important;
+                }
+                div,
+                td {
+                    padding: 0;
+                }
+                div {
+                    margin: 0 !important;
+                }
+                div.list {Margin: 0 0 0 -20px;}
+                li {text-align:-webkit-match-parent; display:list-item;te=
+xt-indent: -1em;}
+                .mailaddress--white {
+                    mso-style-textfill-type:gradient;
+                    mso-style-textfill-fill-gradientfill-stoplist:"0 #FFF=
+FFF 0 100000,100000 #FFFFFF 0 100000";
+                    text-decoration: none !important;
+                }
+                .mailaddress--black {
+                    mso-style-textfill-type:gradient;
+                   mso-style-textfill-fill-gradientfill-stoplist:"0 #0000=
+00 1 100000,99000 #000000 1 100000";
+                    text-decoration: none !important;
+                }
+                .mailaddress--blue {
+                mso-style-textfill-type:gradient;
+                mso-style-textfill-fill-gradientfill-stoplist:"0 #051446=20=
+-1 100000,100000 #051446 -1 100000";
+                text-decoration: none !important;
+                }
+            </style>
+            <noscript>
+                <xml>
+                    <o:OfficeDocumentSettings>
+                        <o:PixelsPerInch>96</o:PixelsPerInch>
+                    </o:OfficeDocumentSettings>
+                </xml>
+            </noscript>
+              <![endif]-->
+             =0A
+<style>* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, sans-serif;
+}
+/*** A work-around for email clients automatically linking certain text s=
+trings ****/
+/*Apple iOS Hack*/
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/*Gmail Hack*/
+u + #body a {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* Samsung Mail Hack */
+#MessageViewBody a {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+a:link,
+span.MsoHyperlink {
+    mso-style-priority: 100 !important;
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.msoLink a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+div.list ul {
+    padding-inline-start: 20px;
+    -webkit-padding-start: 20px;
+}
+
+div.list ol li {
+    list-style: decimal;
+    margin-bottom: 5px;
+    mso-margin-bottom-alt: 5px;
+}
+
+div.list ul li {
+    list-style: disc outside;
+    mso-special-format: bullet;
+    margin-bottom: 5px;
+    mso-margin-bottom-alt: 5px;
+}
+div.smallList ul {
+    padding-inline-start: 15px;
+    -webkit-padding-start: 15px;
+}
+
+div.smallList ol li {
+    list-style: decimal;
+    margin-bottom: 5px;
+    mso-margin-bottom-alt: 5px;
+}
+
+div.smallList ul li {
+    list-style: disc outside;
+    mso-special-format: bullet;
+    margin-bottom: 5px;
+    mso-margin-bottom-alt: 5px;
+}
+.mailAddress--white {
+    color: #ffffff !important;
+    cursor: default;
+}
+
+.mailAddress--black a {
+    color: #101010 !important;
+    cursor: default;
+}
+
+.mailAddress--blue a {
+    color: #05164d !important;
+    cursor: default;
+}
+.cellSection {
+    width: 20px !important;
+}
+.cellSectionFullWidthDesktop {
+    width: 0 !important;
+}
+
+.mobileTCell {
+    display: none !important;
+}
+
+@media screen and (max-width: 753px) and (min-width: 601px) {
+    .two-col {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .smallTeaserWrapper {
+        display: inline-block !important;
+        max-width: 49% !important;
+        margin: 0 !important;
+    }
+    .tabletTeaserWidth {
+        width: 300px !important;
+        max-width: 300px !important;
+    }
+    .app {
+        margin-bottom: 20px !important;
+    }
+    .imageCell {
+        padding-right: 10px !important;
+    }
+    .bestPriceGrid {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .bestPriceEntry {
+        height: auto !important;
+        max-height: none !important;
+        margin-bottom: 10px !important;
+    }
+    .bestPriceInfo {
+        display: table !important;
+        width: 100% !important;
+    }
+    .bestPriceInfo h4,
+    .bestPriceInfo p {
+        display: table-cell !important;
+    }
+    .bestPriceInfo h4 {
+        text-align: left !important;
+    }
+    .bestPriceInfo p,
+    .bestPriceFlag {
+        text-align: right !important;
+    }
+    .mobileHidden {
+        display: none !important;
+    }
+    .mobileTCell {
+        display: table-cell !important;
+        min-width: 2px !important;
+    }
+    .bestPriceEntry:last-of-type {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bestPriceGrid {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .bestPriceEntry {
+        height: auto !important;
+        max-height: none !important;
+        margin-bottom: 10px !important;
+    }
+    .bestPriceInfo {
+        display: table !important;
+        width: 100% !important;
+    }
+    .bestPriceInfo h4,
+    .bestPriceInfo p {
+        display: table-cell !important;
+    }
+    .bestPriceInfo h4 {
+        text-align: left !important;
+    }
+    .bestPriceInfo p,
+    .bestPriceFlag {
+        text-align: right !important;
+    }
+    .mobileHidden {
+        display: none !important;
+    }
+    .mobileTCell {
+        display: table-cell !important;
+        min-width: 2px !important;
+    }
+    .bestPriceEntry:last-of-type {
+        margin-bottom: 0 !important;
+    }
+    .teaserNoPriceCell {
+        height: 0 !important;
+    }
+    .teaserHeadline {
+        height: auto !important;
+    }
+    .tabletTeaserWidth {
+        width: 100% !important;
+    }
+    .btn,
+    .scheduleWrapper,
+    .bookingCode {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: auto !important;
+    }
+    .scheduleWrapperContainer .placeholderCellContainer {
+        width: 0 !important;
+    }
+    .header-headline {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+
+    .cellSection {
+        width: 20px !important;
+    }
+    .cellSectionZero {
+        width: 0 !important;
+    }
+    .cellSectionFullWidthDesktop {
+        width: 20px !important;
+    }
+
+    .bgGrid {
+        width: 100% !important;
+    }
+    .bgCellImagePlaceholder {
+        width: 25px !important;
+    }
+
+    .metaTextsCell2,
+    .metaTextsCell3,
+    .metaTextsCell4,
+    .metaTextsCell5,
+    .metaTextsCell6 {
+        min-width: auto !important;
+        width: 50% !important;
+        padding-right: 5px !important;
+    }
+    .two-col {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .column {
+        display: block !important;
+        padding-bottom: 20px !important;
+        width: 100% !important;
+    }
+    .columnIfe {
+        padding-bottom: 20px !important;
+    }
+    .column.last,
+    .columnIfe.last {
+        margin-left: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .mobileLast {
+        padding-right: 0 !important;
+    }
+    .linkCell {
+        margin-bottom: 20px !important;
+    }
+    .app {
+        margin-bottom: 30px !important;
+        width: 100% !important;
+    }
+
+    .secondRowMobile {
+        height: 0 !important;
+    }
+
+    .appGrid {
+        width: 100% !important;
+    }
+
+    .socials,
+    .feedback {
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+    .socials {
+        margin-bottom: 30px !important;
+    }
+    .serviceGrid {
+        width: 100% !important;
+    }
+    .serviceLink {
+        display: block !important;
+    }
+    .footerMetaCellMM {
+        padding-right: 15px !important;
+    }
+    .brandLogoLeft {
+        text-align: center;
+        padding-bottom: 20px !important;
+    }
+    .headerLogo {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .chip {
+        margin-bottom: 10px !important;
+    }
+    .credentialBar {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .credentialBarCell {
+        width: 50% !important;
+        display: inline-block !important;
+        padding-bottom: 20px !important;
+        padding-top: 5px !important;
+    }
+    .credentialBarRow {
+        height: 115px !important;
+    }
+    .credentialBarHeadline {
+        margin: 20px 0 20px !important;
+    }
+    .credentialBarCell--right {
+        width: 45% !important;
+    }
+    .credentialBarCell--right > p {
+        text-align: left !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .credentialBarCell--left > p {
+        text-align: left !important;
+        padding-left: 20px !important;
+        padding-right: 0 !important;
+    }
+    .credentialBarCellHeadline {
+        width: 100% !important;
+        display: inline-block !important;
+        padding-top: 0 !important;
+    }
+    .headlineCell {
+        width: auto !important; /* 85% (old) */
+    }
+    .noPaddingBottom {
+        padding-bottom: 0 !important;
+    }
+    .mailGrid,
+    .serviceNumberGrid {
+        width: 100% !important;
+    }
+    .footerCell {
+        padding-right: 15px !important;
+    }
+    .voucherInfoWrapper {
+        width: 100% !important;
+    }
+    .voucherInfoSpace {
+        width: 8px !important;
+    }
+    .smallTeaserWrapper {
+        display: block !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+    .smallTeaserWrapperLast {
+        margin-top: 20px !important;
+    }
+    .mobileBlock {
+        display: block !important;
+        width: 100% !important;
+    }
+    .mobileLeft {
+        padding-top: 12px !important;
+        text-align: left !important;
+    }
+
+    .cellFlight {
+        width: 133px !important;
+    }
+    .detailsContent {
+        display: table-cell !important;
+    }
+    .bulletCell {
+        width: 250px !important;
+    }
+    .bulletPhCellDep_mobile {
+        width: 118px !important;
+    }
+    .bulletPhCellArr_mobile {
+        width: 118px !important;
+    }
+    .travelClass {
+        text-align: left !important;
+        padding-bottom: 20px;
+    }
+    .bookingCodeBarLink {
+        line-height: 0 !important;
+        padding: 25px 0 !important;
+    }
+    .segmentContent,
+    .segmentGrid {
+        width: 100% !important ;
+    }
+    .autoWidth {
+        width: auto !important;
+    }
+    .detailsContent > p {
+        padding-bottom: 0 !important;
+    }
+    .smallWidthGrid {
+        width: 100% !important;
+    }
+    .priceMobileCell {
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+    .mobileImage {
+        width: 100vw !important;
+        min-width: auto !important;
+    }
+    .quickServiceLabel {
+        display: block !important;
+        padding-bottom: 10px !important;
+    }
+    .quickServiceIcon {
+        padding-bottom: 10px !important;
+    }
+    .mobileCell {
+        display: block !important;
+    }
+    .button--mailing {
+        text-align: left !important;
+    }
+    .pa-table-mobile {
+        width: 55px !important;
+    }
+
+    .pa-table-3letters {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cellSection {
+        width: 10px !important;
+    }
+    .imageCell {
+        padding: 0 !important;
+    }
+}
+</style>
+  =0A
+  =0A
+  =0A
+  =0A
+  </head>
+  <body id=3D"body" style=3D"width: 100% !important; margin: 0; padding:=20=
+0; word-spacing: normal; -webkit-text-size-adjust: 100%; -ms-text-size-ad=
+just: 100%">
+    <div id=3D"context-provider">
+      <span>
+       =0A
+        <!--[if mso]><table align=3D'center' width=3D720 style=3D'width:=20=
+720px; margin: 0px auto; text-align:center;  background: #ffffff;' ><tr><=
+td style=3D'text-align: center;' align=3D'center'><![endif]-->
+       =0A
+        <table style=3D"width: 100%; height: 100%; margin: 0px auto; back=
+ground-color: #ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" r=
+ole=3D"presentation" data-reactroot=3D"">
+          <tbody>
+            <tr>
+              <td align=3D"center">
+                <table style=3D"width: 100%; max-width: 720px; margin: 20=
+px auto; border-collapse: collapse" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" role=3D"presentation">
+                  <tbody><!-- START OF SECTION-GRID - START -->
+<tr>
+      <td>
+            <table style=3D"width:100%;border-collapse:collapse" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+                  role=3D"presentation">
+                  <tbody>
+                        <tr>
+                              <td>
+                                    <!-- END OF SECTION-GRID //  FULL WID=
+TH START --><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <div
+          style=3D"display:none;max-height:0px;overflow:hidden"
+        >
+        Use our online check-in to start your trip
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table
+  style=3D"width:100%;border-collapse:collapse;margin:10px auto 0"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"header"
+  role=3D"presentation"
+  id=3D"header"
+>
+  <tbody>
+    <tr>
+      <td
+        class=3D"cellSectionZero"
+        style=3D"width:0px"
+      ></td>
+      <td>
+          <table
+  style=3D"width:100%;border-collapse:collapse;font-family:LufthansaTextW=
+eb, Arial, Helvetica, sans-serif;font-size:15px;font-weight:400;line-heig=
+ht:25px;letter-spacing:-0.24px;color:#999"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"BrowserReplyBar"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td style=3D"width:25px"></td>
+      <td>
+       =0A
+        <!--[if mso]>
+         =0A
+          <table
+            style=3D"width:720px;border-collapse:collapse;color:#999;font=
+-weight:400"
+            border=3D"0"
+            cellspacing=3D"0"
+            cellpadding=3D"0"
+            width=3D"720"
+            role=3D"presentation"
+          >
+            <tbody>
+              <tr>
+                <td align=3D"left">
+                  <span>
+                    Please do not reply to this email.
+                  </span>
+                </td>
+              </tr>
+              <tr style=3D"height:10px"></tr>
+            </tbody>
+          </table>
+         =0A
+        <![endif]-->
+        =0A
+        <!--[if !mso]><!-->
+       =0A
+        <div
+          style=3D"display:inline-block;min-width:49%;text-align:left;mar=
+gin-bottom:5px"
+        >
+          <span>Please do not reply to this email.</span>
+        </div>
+       =0A
+        <!--<![endif]-->
+       =0A
+      </td>
+      <td style=3D"width:25px"></td>
+    </tr>
+  </tbody>
+</table>
+      </td>
+      <td
+        class=3D"cellSectionZero"
+        style=3D"width:0px"
+      ></td>
+    </tr>
+    <tr>
+      <td colspan=3D"3">
+        <table
+          style=3D"width:auto;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"auto"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        class=3D"mobileImage"
+                        style=3D"background-size:cover;background-positio=
+n:center;background-repeat:no-repeat;font-size:0;background:url('https://=
+images.noti.swiss.com/common/Check_in_Generic.gif') center / cover no-rep=
+eat;background-color:#FFFFFF;width:720px;height:370px"
+                        valign=3D"top"
+                      >
+                       =0A
+                        <!--[if mso]>
+            <v:image xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"tr=
+ue" stroke=3D"false" style=3D" border: 0;display: inline-block; width:720=
+px; height:370px;" src=3D"https://images.noti.swiss.com/common/Check_in_G=
+eneric.gif" />
+            <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"tru=
+e" stroke=3D"false" style=3D" border: 0;display: inline-block;position: a=
+bsolute; width:720px; height:370px;">
+            <v:fill  opacity=3D"0%" color=3D"#FFFFFF"  />
+            <v:textbox inset=3D"0,0,0,0">
+            <![endif]-->
+                       =0A
+                        <table
+                          style=3D"width:auto;border-collapse:collapse"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          class=3D"bgGrid"
+                          width=3D"auto"
+                          role=3D"presentation"
+                        >
+                          <tbody>
+                            <tr
+                              style=3D"height:25px"
+                            >
+                              <td
+                                style=3D"width:25px"
+                              ></td>
+                              <td
+                                class=3D"autoWidth"
+                                style=3D"width:73px"
+                              ></td>
+                              <td
+                                class=3D"bgCellImagePlaceholder"
+                                style=3D"width:87%"
+                              ></td>
+                            </tr>
+                            <tr>
+                              <td
+                                style=3D"width:25px"
+                              ></td>
+                              <td
+                                class=3D"autoWidth"
+                                style=3D"width:73px"
+                              >
+                                <img
+                                  component-name=3D"image"
+                                  src=3D"https://images.noti.swiss.com/co=
+mmon/logo-crane.png"
+                                  style=3D"width:48px;height:48px"
+                                  alt=3D"[ALT TEXT SNIPPET]"
+                                  width=3D"48"
+                                  height=3D"48"
+                                />
+                              </td>
+                              <td
+                                class=3D"bgCellImagePlaceholder"
+                                style=3D"width:87%"
+                              ></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       =0A
+                        <!--[if mso]> </v:textbox></v:fill></v:rect></v:i=
+mage><![endif]-->
+                       =0A
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=3D"3">
+        <table
+          style=3D"width:100%;border-collapse:collapse;background-color:#=
+f5f5f5"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr style=3D"height:70px">
+              <td style=3D"width:25px"></td>
+              <td class=3D"mobileBlock">
+                <a
+                  href=3D"https://my.information.lufthansa.com/LinkTracki=
+ng?q=3DJ-mFfpZmMbeOk5BpjBhaLTgi7dgoQBF8_zYwwYeFbQsky7XgRobdTHPxiI4NMVZQEt=
+_Uum-eeizLTw7M_IB_ngCCtXfHjVsnd9_fFEFVU-Fj9jS2pbmxQOPXX2VnbIED70uJjCP_mt4=
+voXdOlz81es4sMFVIxFx3vgdYxG7Ylc88xy_qN-Cz5xFKWsdZtF58cPsjw705YlrSRq6uOVbA=
+lY94PvNV9KgTqHDjOcxXZ00HDo9VzAUZCAtCHzlcTwKHAqF83cg8CgWNJCGP6Xj8ycSfTvLrD=
+6BT3f2OIPoKP8NxTi5CTOcgnFFCbV3EYiY6wkRl_I1NdiF2KKZK8i6j2zUKmza4t3FjOLQ7Ti=
+YI52x9V9MYXC5-7-9gTyZ-j4ThnpaAHRo3yOeDZAFkLNLNdO-DlcFPSkD3Wkt-CRChHGmTI3I=
+WouFXXQC6IkgeoWI-i6in7SRTVaTC_Gwl8chqGuKaWaq3ajLYTvUM55z9rfw&r=3D10628000=
+38"
+                  style=3D"text-decoration:none;display:block;line-height=
+:70px"
+                  class=3D"bookingCodeBarLink"
+                >
+                  <span
+                    style=3D"font-family:LufthansaHead, Arial, Helvetica,=
+ sans-serif;font-weight:300;font-size:18px;line-height:1;color:#05164d;ma=
+rgin:0"
+                  >
+                    Booking Code:
+                    <span
+                      style=3D"font-family:LufthansaHead, Arial, Helvetic=
+a, sans-serif;font-weight:700;font-size:18px;line-height:1;color:#05164d;=
+margin:0"
+                    >
+                      9KWOYR
+                    </span>
+                  </span>
+                </a>
+              </td>
+              <td
+                class=3D"mobileBlock travelClass"
+                style=3D"text-align:right"
+              >
+                <p
+                  style=3D"font-family:LufthansaHead, Arial, Helvetica, s=
+ans-serif;font-weight:300;font-size:12px;line-height:1;color:#05164d;marg=
+in:0"
+                >
+               =0A
+                </p>
+              </td>
+              <td style=3D"width:25px"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=3D"3">
+        <table
+          style=3D"width:100%;border-collapse:collapse;background-color:#=
+fff;display:block"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr style=3D"height:40px"></tr>
+            <!-- [FOR LX SPECIFIC YOU HAVE TO USE THE SUBHEADLINE PART TO=
+ USE IF IT IS HEADLINE ONLY] -->
+            <tr>
+              <td
+                class=3D"cellSection"
+                style=3D"width:25px"
+              ></td>
+              <td>
+                <h1
+                  class=3D""
+                  style=3D"margin:0 0 30px;font-family:LufthansaHead, Ari=
+al, Helvetica, sans-serif;font-size:26px;font-weight:600;line-height:34px=
+;text-transform:none;color:#05164d"
+                >
+                  Check in for your flight to Toronto
+                </h1>
+              </td>
+              <td
+                class=3D"cellSection"
+                style=3D"width:25px"
+              ></td>
+            </tr>
+            <tr>
+              <td
+                class=3D"cellSection"
+                style=3D"width:25px"
+              ></td>
+              <td style=3D"padding-bottom:20px">
+                <p
+                  style=3D"margin:0;font-family:LufthansaTextWeb, Arial,=20=
+Helvetica, sans-serif;font-size:16px;font-weight:400;line-height:22px;col=
+or:#05164d"
+                >
+                 =0A
+   =0A
+    Dear
+     Mr.=0A
+   =0A
+    Ngula,
+   =0A
+
+                </p>
+              </td>
+              <td
+                class=3D"cellSection"
+                style=3D"width:25px"
+              ></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+                                    <!--  FULL WIDTH END -->
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+      </td>
+</tr>
+<!-- END OF SECTION-GRID - END --><!-- START OF SECTION-GRID - START -->
+<tr>
+      <td>
+            <table style=3D"width:100%;border-collapse:collapse" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+                  role=3D"presentation">
+                  <tbody>
+                        <tr>
+                              <td class=3D"cellSection"></td>
+                              <td>
+                                    <!-- END OF SECTION-GRID //  START --=
+>
+<!--[if mso]><table><tr><td style=3D'padding-top:0px;'><![endif]-->
+
+<span
+  component-name=3D"copy"
+  style=3D"font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;fon=
+t-size:16px;font-weight:400;line-height:22px;color:#05164d;padding-top:0"=
+
+>
+  <p
+    style=3D"display:block;margin:0;color:inherit;font-weight:inherit"
+  >
+    Check in now conveniently with the Lufthansa app or on our website.
+<br><br>
+We look forward to welcoming you on board soon.
+  </p>
+</span>
+
+<!--[if mso]></td></tr></table><![endif]-->
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:30px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:30px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"button"
+  role=3D"presentation">
+  <tbody>
+    <tr>
+      <td
+        class=3D"button--mailing"
+        style=3D"display:block"
+        align=3D"left">
+       =0A
+        <!--[if mso]><v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vm=
+l" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://my.i=
+nformation.lufthansa.com/LinkTracking?q=3DkV_9_ppghYcqWxa4_-iYgvM9Gs5AH71=
+NP3ZO4wQdQVl0jJR1HiT1BmBJdutp7fyiMS-vSBxgabkUvwDOqSfZqFRtElaGOpNXX3KHNxM2=
+lWYKGUZNmAjO7wVVuH4SKoNx77z5c2atzcP1hw4srRzYtVbxxK6oioobKUXy_lwZYUT2uqnZP=
+6HS09Kdov4sCxCIziaKUPLMAvBJaJCClzDVkSZA3tAkCDA1amVmisIowKYUaRBrq1aNFmFkc1=
+1hFZ5dWngZpXIKC2i-mGY5vLaNMrLsRwm7RJDVePMw5t9IGtSy_VouCfN9dEiaRYzpyA1mdHM=
+Wl2pRWyNgAhX5A21GB0OuwXlfe2ltw0zOvlcOKLKeWAagS4qmI-8DHLG2EGWR6lzjUSbAhyGW=
+EAzEm1tS-MnLqr0We5UgmFQ47B9k0lgn4K8fHFFr3dsKipIITR-B4Qo0OmqlMv33uJbiNWIxT=
+fDJSgpwiD2aCG_AlTSUdhReouAlikgDExjOG2pqee32A5yCGwtSEm1tFfgaUejrq4aLbZAS-e=
+rpHMwhcse0ZCMZNiJlNa0QGVPVWnHHfxHG2nb2nOGoXYFuEVV6WBdK03VpHMQpO1MLCCNOHVF=
+aw_jic5JeI4PGxtQa9H67Rn3ViKRjRvoIHuJe9Vx2a_Id9By2VeCojqucLzkjL4Y7fnhfNSV-=
+PJXXN1kOv52YiKI3sf_sE_BXNG5vWqVwhOWtgEeS5SFUmFYSbh2xTHAR6_7U5Brm3S1z4UpcA=
+kU8Xc7W5xblBUZhtXIdNK-Z7ToLdg&r=3D1062800038" style=3D"
+        height:50px;
+        v-text-anchor:middle;
+        width:250px;" arcsize=3D"8%" stroke=3D"f" fillcolor=3D"#ffad00"><=
+w:anchorlock/><center><![endif]-->
+       =0A
+        <a
+          href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D3=
+tCs5te6NX4wd-H8yHG_Mz2dUninJHG4TpJg1T3tz8RmKeXIKsM_2tg5dZcWFNM_6enaiaTZRN=
+qMtcHFfl6ZoROXZctLy0qgkpoYqjWjZBZUWS-JWicfWXSc1pobnJl-mURh0C_4rQ9TvVe8hI9=
+GHWG20VKtAGcjsd86AG8UYDXgOFPteh_Rsi2c_w7zrdE_55PLUMvGsFNgZRcatOx-RuEW3cVu=
+Vp3t3kVqoqeLmW20VhsgLfCTbsX3dC3ljV5AWNzQ2r2EbTrRReWZe7JUCXrx-sGep7ckRoFWj=
+gUEtYZZ793uw6pXvczMLhl-H9IqjcVbcttyyvx_06hyxHQr-i3FpJAgOqJsyVKFdY9UBEv6js=
+22KxCt_HeBw2i55n7RubWEFAj7-rmaT-JmY_A292KKnwcmnSLorIyu0sd5pNRORTtBqmOLbUo=
+c82hoZU3Xg6_jQdh3ajj8tyWY1XHiEN80X6bu50_z2DlcIEmMHYjpZhsyngaWEtwAq4O3SA0M=
+OQpcT1L-oeCKAIAt17hELiAeywZ9SHeS3LSPmFWi3mLPo-xyg0ROpqykPB3PYq4-r4AoUEmpk=
+Jnnaf8t16ngTbTx4Ol5QWLxB1kvMF26H1dmg0FzsApWRj0TZqbmWRV-APd-tPmfO74LctXGoI=
+w0IAO1ciBV6-8ZpXh9qCF6SVFoe_g4jIH_3vJPhiTnVPw4HTuN6uRRmESdt81I-lsnMwDlf-o=
+yslsIARY0JqVedBQELoV2RMFDnKOOMcBN7qyh-6AAuMH3fXSIk3k4fc_wbw&r=3D106280003=
+8"
+          style=3D"display:block;width:100%;max-width:250px;min-width:200=
+px;text-align:center;vertical-align:middle;text-decoration:none;line-heig=
+ht:50px;mso-line-height-rule:exactly;border-radius:4px;cursor:pointer;-we=
+bkit-text-size-adjust:none;background-color:#ffad00;color:#05164d"
+          class=3D"btn">
+          <span
+            style=3D"display:block;font-family:LufthansaTextWeb, Arial, H=
+elvetica, sans-serif;font-size:16px;letter-spacing:0.15px;line-height:50p=
+x;mso-line-height-rule:exactly;font-weight:700;color:#05164d">
+            <strong style=3D"font-weight:700;text-decoration:none">
+              Login or register for check in
+            </strong>
+          </span>
+        </a>
+       =0A
+        <!--[if mso]></center></v:roundrect><![endif]-->
+       =0A
+      </td>
+    </tr>
+  </tbody>
+</table><!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:20px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:20px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"button"
+  role=3D"presentation">
+  <tbody>
+    <tr>
+      <td
+        class=3D"button--mailing"
+        style=3D"display:block"
+        align=3D"left">
+       =0A
+        <!--[if mso]>
+         =0A
+          <v:roundrect
+            xmlns:v=3D"urn:schemas-microsoft-com:vml"
+            xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+            href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D=
+pEWJcgvRvgZpWdK1wuFSXnmtY9k4TSA55meX3G18Ps2zECagYIaIdyWAjlJ4r2fjtu_mC54lP=
+sZdmG-ZqJNFn9bS_uFi5spkuqOQVxQPMb1baybOAvTUjJbl_uOmrRpj_nkZjBu3UA6ZaRdlmS=
+ec1x8GfBGPAZGD8ZvqN0CA9BgR3w2VAb6YHadZHgeq-qOp5j8BHQujCCklSmQqaEbN_xSUKrT=
+HQGLgJXRotPAVF6rXvG2S30lNeHOW5IOm_7nuleZI-M5aiWv17JjieoNDKHAchWL_E40cSnxt=
+DFhIx8d8hkBlDIzh8QRG7I_WazORv1BvHNNuIDXZK2S2grdoPMdJSY5PQdtFwv1dY31Oi1XuT=
+bgsZS5CHbbwxgqo-cZDxAxN9HN9s0vQqTvqHRMqX1K1oBP4wsign10ZG2Qd7g537SLAJ029z5=
+EtSexVWZHKPYgql94KD3dmsvvlVE1q4enAK20foH0iQES0PeKpMfW-fm-g3RPJ5oCiBjA9XyT=
+o&r=3D1062800038"
+            style=3D"
+        height:50px;
+        v-text-anchor:middle;
+        width:250px;"
+            arcsize=3D"8%"
+            strokeweight=3D"2px"
+            strokecolor=3D"#05164d"
+            fill=3D"false"
+            fillcolor=3D"transparent">
+            <w:anchorlock />
+            <center>
+              <span
+                style=3D"display:block;font-family:LufthansaTextWeb, Aria=
+l, Helvetica, sans-serif;font-size:16px;letter-spacing:0.15px;line-height=
+:50px;mso-line-height-rule:exactly;font-weight:700;color:#05164d">
+                <strong
+                  style=3D"font-weight:700;text-decoration:none">
+                  Check in as a guest
+                </strong>
+              </span>
+            </center>
+          </v:roundrect>
+         =0A
+        <![endif]-->
+       =0A
+        <a
+          href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D4=
+q3P861XijaHETQLlRQWG-iRtI03ps-4gGKCdQvnf4NZ4YUwYsASnKsvD-cC0PoauY_YKEoZxb=
+Jzjjp3ib2PrwSp3mIzaxbpeANJF0A0u3D5Bzhr1nXxzaZ5DZJZR7_LLxe9zk9A6j90KPuB0xk=
+TdjXLRFLS3NufsYYyUQVrsRasJT6XRH28_KyXqQqTcbYrmv0ZCTUH5HyKmcU4XWLSjY20lUKO=
+P5kmTQkdU9cZemZIQvFIpWg5YHiS8kC9667X1thpFyhunJVQxgUBWsNUnS5CheA_MbRpeiDEb=
+J3FUT_xUasT0-C-Nb-8EKLeCLraReaBaxtrTaXeClEWt2FdnnCnw8mVwlmun0zRFnAftQ-t_X=
+NLrpwusbmiS8P-7-SBYuAAxh5JVLZPxF5SrOiEevovlvtCTBRcGFnSOtlETUxW76iQvhOjYOL=
+KT4I7mnkHIGAlkLrDbBT3L-wykqHHMIOdKyvnVxKbO9P-Oj_oLYaEhv_X-Au-4wxAwVyNDCIN=
+&r=3D1062800038"
+          style=3D"display:block;width:100%;max-width:250px;min-width:200=
+px;text-align:center;vertical-align:middle;text-decoration:none;line-heig=
+ht:50px;mso-line-height-rule:exactly;border-radius:4px;cursor:pointer;-we=
+bkit-text-size-adjust:none;mso-hide:all;background-color:transparent;bord=
+er-style:solid;border-width:2px;border-color:#05164d;color:#05164d"
+          class=3D"btn">
+          <span
+            style=3D"display:block;font-family:LufthansaTextWeb, Arial, H=
+elvetica, sans-serif;font-size:16px;letter-spacing:0.15px;line-height:50p=
+x;mso-line-height-rule:exactly;font-weight:700;mso-hide:all;color:#05164d=
+">
+            <strong
+              style=3D"font-weight:700;text-decoration:none;mso-hide:all"=
+>
+              Check in as a guest
+            </strong>
+          </span>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table><!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:20px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:20px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END -->
+<!--[if mso]><table><tr><td style=3D'padding-top:0px;'><![endif]-->
+
+<span
+  component-name=3D"copy"
+  style=3D"font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;fon=
+t-size:16px;font-weight:400;line-height:22px;color:#05164d;padding-top:0"=
+
+>
+  <p
+    style=3D"display:block;margin:0;color:inherit;font-weight:inherit"
+  >
+    When you check in using the app, your booking will be added automatic=
+ally if it is not already there.
+  </p>
+</span>
+
+<!--[if mso]></td></tr></table><![endif]-->
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   =0A
+
+<!-- SMALL WIDTH GRID START -->
+<table style=3D"width:440px;border-collapse:collapse;max-width:440px" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+      class=3D"smallWidthGrid" width=3D"440" role=3D"presentation">
+      <tbody>
+            <tr>
+                  <td>
+                        <!-- END OF SMALL WIDTH GRID START --><h2
+  component-name=3D"section-headline"
+  style=3D"margin-top:0;margin-bottom:20px;font-family:LufthansaHead, Ari=
+al, Helvetica, sans-serif;font-size:22px;font-weight:300;line-height:28px=
+;color:#05164d"
+>
+  Travel details
+</h2><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"flightcard-overview"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          style=3D"width:100%;border-collapse:collapse;height:100%;border=
+:1px solid;border-color:#cccccc;border-top:1px solid #cccccc;background-c=
+olor:#ffffff"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          class=3D"segmentGrid"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr style=3D"height:20px;width:440px">
+              <td colspan=3D"5">
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr style=3D"height:20px"></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style=3D"width:20px"></td>
+              <td
+                valign=3D"bottom"
+                colspan=3D"2"
+              >
+                <table
+                  style=3D"width:auto;border-collapse:collapse;background=
+-color:transparent;font-family:LufthansaHead, Arial, Helvetica, sans-seri=
+f;font-size:14px;font-weight:400;color:#05164d"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"auto"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p
+                          class=3D"msoLink"
+                          style=3D"margin-top:0;margin-bottom:0;font-fami=
+ly:LufthansaHead, Arial, Helvetica, sans-serif;font-size:14px;font-weight=
+:400;color:#05164d"
+                        >
+                          08.01.2025
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td
+                align=3D"right"
+                valign=3D"bottom"
+              >
+             =0A
+                <p
+                  style=3D"margin-top:0;margin-bottom:0;font-family:Lufth=
+ansaTextWeb, Arial, Helvetica, sans-serif;font-size:14px;line-height:20px=
+;font-weight:400;color:#05164d"
+                >
+                  1&nbsp;stop(s)
+                 =0A
+                </p>
+             =0A
+              </td>
+              <td style=3D"width:20px"></td>
+            </tr>
+            <tr style=3D"height:8px">
+              <td colspan=3D"5">
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr style=3D"height:8px"></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style=3D"width:20px"></td>
+              <td style=3D"width:100px">
+                <span
+                  style=3D"font-family:LufthansaHead, Arial, Helvetica, s=
+ans-serif;font-size:26px;font-weight:700;color:#05164d;margin-bottom:0"
+                >
+                  NBO
+                </span>
+              </td>
+              <td
+                class=3D"flightCardIconCell"
+                style=3D"width:150px"
+                align=3D"center"
+              >
+                <img
+                  src=3D"https://images.noti.swiss.com/common/airplane-ou=
+tbound.png"
+                  style=3D"width:32px;height:32px"
+                  width=3D"32"
+                  height=3D"32"
+                />
+              </td>
+              <td
+                class=3D"cellFlight"
+                style=3D"width:100px"
+                align=3D"right"
+              >
+                <span
+                  style=3D"font-family:LufthansaHead, Arial, Helvetica, s=
+ans-serif;font-size:26px;font-weight:700;color:#05164d;margin-bottom:0"
+                >
+                  YYZ
+                </span>
+              </td>
+              <td style=3D"width:20px"></td>
+            </tr>
+            <tr style=3D"height:8px">
+              <td colspan=3D"5">
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr style=3D"height:8px"></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style=3D"width:20px"></td>
+              <td
+                style=3D"width:120px;font-family:LufthansaHead, Arial, He=
+lvetica, sans-serif;font-size:14px;font-weight:400;color:#05164d"
+                align=3D"left"
+              >
+                Nairobi
+              </td>
+              <td style=3D"width:20px"></td>
+              <td
+                style=3D"width:120px;font-family:LufthansaHead, Arial, He=
+lvetica, sans-serif;font-size:14px;font-weight:400;color:#05164d"
+                align=3D"right"
+              >
+                Toronto
+              </td>
+              <td style=3D"width:20px"></td>
+            </tr>
+            <tr style=3D"height:8px">
+              <td colspan=3D"5">
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr style=3D"height:8px"></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style=3D"width:20px"></td>
+              <td valign=3D"top">
+                <p
+                  style=3D"display:inline-block;margin-top:5px;margin-bot=
+tom:0;text-decoration:none !important;font-family:LufthansaTextWeb, Arial=
+, Helvetica, sans-serif;font-size:14px;font-weight:700;color:#05164d"
+                >
+                  23:45
+                </p>
+              </td>
+              <td align=3D"center"></td>
+              <td
+                align=3D"right"
+                valign=3D"top"
+              >
+                <p
+                  style=3D"display:inline-block;margin-top:5px;margin-bot=
+tom:0;text-decoration:none !important;font-family:LufthansaTextWeb, Arial=
+, Helvetica, sans-serif;font-size:14px;font-weight:700;color:#05164d"
+                >
+                  12:50
+                </p>
+              </td>
+              <td></td>
+            </tr>
+            <tr style=3D"height:20px">
+              <td colspan=3D"5">
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr style=3D"height:20px"></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- START: OPTIONAL LINK ELEMENT -->
+    <tr style=3D"height:20px"></tr>
+    <tr>
+        <td><div
+  style=3D"position:relative;display:block;font-size:14px;font-family:Luf=
+thansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-heig=
+ht-rule:exactly;-webkit-text-size-adjust:none;line-height:14px;word-wrap:=
+normal;text-decoration:none;color:#52627c"
+>
+  <a
+    component-name=3D"link"
+    href=3D"https://my.information.lufthansa.com/LinkTracking?q=3Da5XjENU=
+Io7D_zu52_4E-SLohFlVqLguFycmgi5eIJHpEPta10ExBfIA93LN9QbDoPolifx09hXt4CDkj=
+R4gVN83MOnVT4PgBYpUe63CZJwNpUvoejLdL6onTIdClvgg399uBBDo6mAa5ZRDgX04xKxyku=
+9L4NZtJ9IJX4t4Eq97ieral_AdeOqtSNVP0j2byQ5QzI5XsRaslAleJHAE9H3JlIioJERwvFD=
+pey-RSVT1j1xU_PqexFJn7uXFnHpNGDocQowPzpuSEsRaazEvoNE0DPYzwWLpq8PHBC1BbQ05=
+OXL7PUIRRLQ7PbsJr1dn1sy474rcI2t5nYjkrbXN8KsT1sakEsiLsxoKOaep2svIpi0waGW2q=
+pHEhL8j3_9e--x2qwGrz9HdBQogQFb-wWatyBrwm3cJOzPQp1HXFLECe4fcEgINiflGFQlzvY=
+JZNGYPzSrdebYdHhXC75bEvsPuWBMSyX2iNe1rKe3Zqv3NUGTmjJ6IX_Apc5hp6kxg2C7D6Yn=
+Y0PAeOkrEG25k-BA&r=3D1062800038"
+    style=3D"position:relative;display:block;font-size:14px;font-family:L=
+ufthansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-he=
+ight-rule:exactly;-webkit-text-size-adjust:none;line-height:1;word-wrap:n=
+ormal;text-decoration:none;color:#52627c"
+  >
+    <strong
+      style=3D"display:table;font-weight:700;text-decoration:none"
+    >
+      <img
+        src=3D"https://images.noti.swiss.com/common/arrow-right-lh.png"
+        style=3D"display:table-cell;width:8px;height:8px;margin-left:0;ma=
+rgin-right:5px;vertical-align:baseline;line-height:8px;font-size:2px"
+        width=3D"8"
+        height=3D"8"
+      />
+     =0A
+      <!--[if mso]>
+       =0A
+        <i
+          style=3D"display:inline-block;width:4px;letter-spacing:4px;mso-=
+font-width:-100%"
+        >
+          &nbsp;
+        </i>
+       =0A
+      <![endif]-->
+     =0A
+      <span
+        style=3D"display:table-cell;font-size:14px;font-family:LufthansaT=
+extWeb, Arial, Helvetica, sans-serif;font-weight:700;line-height:14px;col=
+or:#52627c"
+      >
+        Manage booking
+      </span>
+    </strong>
+  </a>
+</div>
+</td>
+    </tr>
+    <!-- END: OPTIONAL LINK ELEMENT -->
+  </tbody>
+</table>
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"icon-headline"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td
+        style=3D"width:40px"
+        valign=3D"middle"
+      >
+        <img
+          src=3D"https://images.noti.swiss.com/common/trolley-a.png"
+          style=3D"width:32px;height:32px;vertical-align:top"
+          alt=3D"Baggage"
+          width=3D"32"
+          height=3D"32"
+        />
+      </td>
+      <td
+        style=3D"height:32px"
+        valign=3D"middle"
+      >
+        <h3
+          style=3D"margin-top:0;margin-bottom:0;font-family:LufthansaText=
+Web, Arial, Helvetica, sans-serif;font-size:18px;line-height:22px;font-we=
+ight:700;color:#05164d"
+        >
+          Baggage
+        </h3>
+      </td>
+    </tr>
+    <tr style=3D"height:20px">
+      <td colspan=3D"3"></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--[if mso]><table><tr><td style=3D'padding-top:0px;'><![endif]-->
+
+<span
+  component-name=3D"copy"
+  style=3D"font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;fon=
+t-size:16px;font-weight:400;line-height:22px;color:#05164d;padding-top:0"=
+
+>
+  <p
+    style=3D"display:block;margin:0;color:inherit;font-weight:inherit"
+  >
+    Find out how much baggage you can bring on your trip and what regulat=
+ions apply. Please note that oversized, overweight, and additional carry-=
+on baggage will be checked in at the gate for a fee.
+  </p>
+</span>
+
+<!--[if mso]></td></tr></table><![endif]-->
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:20px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:20px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><div
+  style=3D"position:relative;display:block;font-size:14px;font-family:Luf=
+thansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-heig=
+ht-rule:exactly;-webkit-text-size-adjust:none;line-height:14px;word-wrap:=
+normal;text-decoration:none;color:#52627c"
+>
+  <a
+    component-name=3D"link"
+    href=3D"https://my.information.lufthansa.com/LinkTracking?q=3DCT5Sp0J=
+lLynyvTYMigVAd-sclgaRYFeJC5tZfBLfb_CGoytKq_sbQUDc7DVe-ZBkRWBns9pakD7sP1nW=
+yM4OCv4CsMq9FGCAlRr9IBlsl5J9t8qgBxlYk-lW6Tj8JuixZzHJQ4LMdCXh4v7a8q-i1glNE=
+Z-VELs8ZSGLiSF3MJgajWaqewNUNOg4H6SSbcjcEj99sCofp4RrcMwosq8QT0NvEaOHg63L00=
+UKc-fVw9vjLPAP_LA2CgNpNM8ctp0gSBw0OVtNHL_cCtAsTEkh_YIRuqBLS89Udtf_rTEanA3=
+J8PTpFGCeU6Zv3Shdjj9z&r=3D1062800038"
+    style=3D"position:relative;display:block;font-size:14px;font-family:L=
+ufthansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-he=
+ight-rule:exactly;-webkit-text-size-adjust:none;line-height:1;word-wrap:n=
+ormal;text-decoration:none;color:#52627c"
+  >
+    <strong
+      style=3D"display:table;font-weight:700;text-decoration:none"
+    >
+      <img
+        src=3D"https://images.noti.swiss.com/common/arrow-right-lh.png"
+        style=3D"display:table-cell;width:8px;height:8px;margin-left:0;ma=
+rgin-right:5px;vertical-align:baseline;line-height:8px;font-size:2px"
+        width=3D"8"
+        height=3D"8"
+      />
+     =0A
+      <!--[if mso]>
+       =0A
+        <i
+          style=3D"display:inline-block;width:4px;letter-spacing:4px;mso-=
+font-width:-100%"
+        >
+          &nbsp;
+        </i>
+       =0A
+      <![endif]-->
+     =0A
+      <span
+        style=3D"display:table-cell;font-size:14px;font-family:LufthansaT=
+extWeb, Arial, Helvetica, sans-serif;font-weight:700;line-height:14px;col=
+or:#52627c"
+      >
+        View baggage information
+      </span>
+    </strong>
+  </a>
+</div>
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:20px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:20px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END -->
+<!--[if mso]><table><tr><td style=3D'padding-top:0px;'><![endif]-->
+
+<span
+  component-name=3D"copy"
+  style=3D"font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;fon=
+t-size:16px;font-weight:400;line-height:22px;color:#05164d;padding-top:0"=
+
+>
+  <p
+    style=3D"display:block;margin:0;color:inherit;font-weight:inherit"
+  >
+    When packing, make sure that all electronic devices and batteries con=
+form to specific transport regulations.
+  </p>
+</span>
+
+<!--[if mso]></td></tr></table><![endif]-->
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:20px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:20px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><div
+  style=3D"position:relative;display:block;font-size:14px;font-family:Luf=
+thansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-heig=
+ht-rule:exactly;-webkit-text-size-adjust:none;line-height:14px;word-wrap:=
+normal;text-decoration:none;color:#52627c"
+>
+  <a
+    component-name=3D"link"
+    href=3D"https://my.information.lufthansa.com/LinkTracking?q=3DMfTtyHd=
+Kc8EaHfUde3pBF40xmFK9Gtp7JEIsuxoWV6oCxuCDc-VlB4FDUg36dhe3yvuhxvvhLOfg6rVq=
+iiv9J1sBqISVkKtERM_TqnikpJYH0dVExy4kbN8IpN8Fkmem6AzwIEy518yJK-XCC60MP1zIe=
+sY9cxfvo9TrzSCJtdXwyYGrrJci8mlNlcp6zWPDmlEPIILgJiVSJZcEwJ5h8Dlr0CCB4HpjmL=
+pbVVBrM_XuqWQnW49BbULCHGMf_9DjbEcT-wyphbIuZmaTiqYnJSiNzbFeSzXNUsAYt2r-w4a=
+L9xeZ0RAgjbx5rxfTtagBW_Rvh9j_X_z2glfaqxIN0IQUyMJpmEJ0f9BcetEoOHc&r=3D1062=
+800038"
+    style=3D"position:relative;display:block;font-size:14px;font-family:L=
+ufthansaTextWeb, Arial, Helvetica, sans-serif;font-weight:400;mso-line-he=
+ight-rule:exactly;-webkit-text-size-adjust:none;line-height:1;word-wrap:n=
+ormal;text-decoration:none;color:#52627c"
+  >
+    <strong
+      style=3D"display:table;font-weight:700;text-decoration:none"
+    >
+      <img
+        src=3D"https://images.noti.swiss.com/common/arrow-right-lh.png"
+        style=3D"display:table-cell;width:8px;height:8px;margin-left:0;ma=
+rgin-right:5px;vertical-align:baseline;line-height:8px;font-size:2px"
+        width=3D"8"
+        height=3D"8"
+      />
+     =0A
+      <!--[if mso]>
+       =0A
+        <i
+          style=3D"display:inline-block;width:4px;letter-spacing:4px;mso-=
+font-width:-100%"
+        >
+          &nbsp;
+        </i>
+       =0A
+      <![endif]-->
+     =0A
+      <span
+        style=3D"display:table-cell;font-size:14px;font-family:LufthansaT=
+extWeb, Arial, Helvetica, sans-serif;font-weight:700;line-height:14px;col=
+or:#52627c"
+      >
+        Electronic devices and batteries
+      </span>
+    </strong>
+  </a>
+</div>
+<!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><h2
+  component-name=3D"section-headline"
+  style=3D"margin-top:0;margin-bottom:20px;font-family:LufthansaHead, Ari=
+al, Helvetica, sans-serif;font-size:22px;font-weight:300;line-height:28px=
+;color:#05164d"
+>
+  This happens next
+</h2><!-- START: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<table
+  style=3D"width:100%;border-collapse:collapse;max-width:440px;height:100=
+%"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"steps"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          style=3D"width:100%;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        style=3D"height:10px;width:32px;vertical-align:mi=
+ddle"
+                      >
+                        <img
+                          src=3D"https://images.noti.swiss.com/common/bul=
+let-point-2x.png"
+                          style=3D"height:10px;width:32px;vertical-align:=
+middle"
+                          width=3D"32"
+                          height=3D"10"
+                        />
+                      </td>
+                      <td align=3D"left">
+                        <p
+                          style=3D"color:#05164d;font-family:LufthansaTex=
+tWeb, Arial, Helvetica, sans-serif;font-size:16px;margin-top:0px;margin-b=
+ottom:0px"
+                        >
+                          <span>
+                            Now
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"detailsContent">
+                <p
+                  style=3D"padding:0;font-size:5px;margin:0"
+                >
+                  &nbsp;
+                </p>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:0"
+                      >
+                        <h3
+                          style=3D"color:#05164d;font-family:LufthansaHea=
+d, Arial, Helvetica, sans-serif;font-size:18px;font-weight:600;margin-bot=
+tom:0px;margin-top:0px"
+                        >
+                          Check in for your flight
+                        </h3>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:10px"
+                      >
+                        <table
+                          style=3D"width:100%;border-collapse:collapse;ma=
+rgin-bottom:0"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          width=3D"100%"
+                          role=3D"presentation"
+                        >
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style=3D"padding:0;font-size:10px;margin:0"
+                >
+                  &nbsp;
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<!-- START: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<table
+  style=3D"width:100%;border-collapse:collapse;max-width:440px;height:100=
+%"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"steps"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          style=3D"width:100%;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        style=3D"height:10px;width:32px;vertical-align:mi=
+ddle"
+                      >
+                        <img
+                          src=3D"https://images.noti.swiss.com/common/bul=
+let-point-2x.png"
+                          style=3D"height:10px;width:32px;vertical-align:=
+middle"
+                          width=3D"32"
+                          height=3D"10"
+                        />
+                      </td>
+                      <td align=3D"left">
+                        <p
+                          style=3D"color:#05164d;font-family:LufthansaTex=
+tWeb, Arial, Helvetica, sans-serif;font-size:16px;margin-top:0px;margin-b=
+ottom:0px"
+                        >
+                          <span>
+                            After Check-in
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"detailsContent">
+                <p
+                  style=3D"padding:0;font-size:5px;margin:0"
+                >
+                  &nbsp;
+                </p>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:0"
+                      >
+                        <h3
+                          style=3D"color:#05164d;font-family:LufthansaHea=
+d, Arial, Helvetica, sans-serif;font-size:18px;font-weight:600;margin-bot=
+tom:0px;margin-top:0px"
+                        >
+                          Save or print your boarding pass
+                        </h3>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:10px"
+                      >
+                        <table
+                          style=3D"width:100%;border-collapse:collapse;ma=
+rgin-bottom:0"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          width=3D"100%"
+                          role=3D"presentation"
+                        >
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style=3D"padding:0;font-size:10px;margin:0"
+                >
+                  &nbsp;
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+
+
+<!-- START: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<table
+  style=3D"width:100%;border-collapse:collapse;max-width:440px;height:100=
+%"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"steps"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          style=3D"width:100%;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        style=3D"height:10px;width:32px;vertical-align:mi=
+ddle"
+                      >
+                        <img
+                          src=3D"https://images.noti.swiss.com/common/bul=
+let-point-2x.png"
+                          style=3D"height:10px;width:32px;vertical-align:=
+middle"
+                          width=3D"32"
+                          height=3D"10"
+                        />
+                      </td>
+                      <td align=3D"left">
+                        <p
+                          style=3D"color:#05164d;font-family:LufthansaTex=
+tWeb, Arial, Helvetica, sans-serif;font-size:16px;margin-top:0px;margin-b=
+ottom:0px"
+                        >
+                          <span>
+                            Before departure
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"detailsContent">
+                <p
+                  style=3D"padding:0;font-size:5px;margin:0"
+                >
+                  &nbsp;
+                </p>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:0"
+                      >
+                        <h3
+                          style=3D"color:#05164d;font-family:LufthansaHea=
+d, Arial, Helvetica, sans-serif;font-size:18px;font-weight:600;margin-bot=
+tom:0px;margin-top:0px"
+                        >
+                          Get ready for your flight
+                        </h3>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:10px"
+                      >
+                        <table
+                          style=3D"width:100%;border-collapse:collapse;ma=
+rgin-bottom:0"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          width=3D"100%"
+                          role=3D"presentation"
+                        >
+                          <tbody>
+                            <!-- START: LOOP CONTENT ELEMENTS -->
+                            <tr
+                              style=3D"width:440px"
+                            >
+                              <td
+                                style=3D"width:395px"
+                              >
+                                <!-- START: IF LINK ELEMENT -->
+                                <p
+                                  style=3D"padding:0;font-size:10px;margi=
+n:0"
+                                >
+                                  &nbsp;
+                                </p>
+                                <span
+    style=3D"
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        mso-line-height-rule: exactly;
+        -webkit-text-size-adjust: none;
+        line-height: 1;
+        word-wrap: normal;
+        text-decoration: none;
+        color: #52627c;
+    "
+>
+    <a href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D3gh7=
+yHWTZA9pR1bg5Bsygs4vyCfmwYAwB9XiCIhmvLTd3AePtfQOa5b0zIqSGDbBv4OROlTG1ajOm=
+zgo50_vax8PJrSdI5IepHMJMdI_rO8nbF3vpsn8XFUYf815FTW9c__2te0xb2INudKtvyzXUR=
+G_Er3A3DjUnbuMytu8CUoZFsDjad6IA50a-ePQkhujhID8bUxCx896J-Gzt3JppQl_MSbPN6A=
+drp7cCEqoOaJZl_nKW8JIdvh4Abw9fVFRbId5YG4o5umd-6Ifu_X-Y0p3qv69CdmBeKPZtgzZ=
+hp9alqwlVqMjVBvsBL6BytHtiTQdyeBEdKoAgHg-jitvLaJlekgj5S1gd404G1gikPW-6oIHx=
+La4agwjsAoiEFGZ1kiXWjgOLMpYfQyJEqdDOg&r=3D1062800038"
+        style=3D"
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            mso-line-height-rule: exactly;
+            -webkit-text-size-adjust: none;
+            line-height: 1;
+            word-wrap: normal;
+            text-decoration: none;
+            color: #52627c;
+        "
+    >
+        <strong style=3D"display: table; font-weight: 700; text-decoratio=
+n: none">
+            <img
+                src=3D"https://images.noti.swiss.com/common/arrow-right-l=
+h.png"
+                style=3D"
+                    display: table-cell;
+                    width: 8px;
+                    height: 8px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    vertical-align: baseline;
+                    line-height: 8px;
+                    font-size: 2px;
+                "
+                width=3D"8"
+                height=3D"8"
+            />
+            <span>
+               =0A
+                <!--[if mso]>
+                   =0A
+                    <i
+                        style=3D"
+                            display: none;
+                            width: 4px;
+                            letter-spacing: 4px;
+                            mso-font-width: -100%;
+                        "
+                        data-reactroot=3D""
+                        >&nbsp;</i
+                    >
+                   =0A
+                <![endif]-->
+               =0A
+            </span>
+            <span style=3D"display: table-cell; line-height: 12px">Downlo=
+ad eJournal</span>
+        </strong>
+    </a>
+</span>
+                                <!-- END: IF LINK ELEMENT -->
+                                <!-- START: IF LINK ELEMENT -->
+                                <p
+                                  style=3D"padding:0;font-size:10px;margi=
+n:0"
+                                >
+                                  &nbsp;
+                                </p>
+                                <span
+    style=3D"
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        mso-line-height-rule: exactly;
+        -webkit-text-size-adjust: none;
+        line-height: 1;
+        word-wrap: normal;
+        text-decoration: none;
+        color: #52627c;
+    "
+>
+    <a href=3D"https://my.information.lufthansa.com/LinkTracking?q=3DbXwu=
+0hE0kpZBRqPTP24gJ6KkEReOXYL4OI0yAmsaiP52x8DYTMFG-WLmqAO7bfZbTJdLdCv11odL5=
+YM1D9ZkFvcgNDQZHoTsvq2j5AOtPwm5p5i2oL3-hzqGEvUWaEbbfOliri34781Z1iEVzPJkVP=
+ho_SPuGYjBBqdyYjPX0gc-DYIMei-ovRkY533Ah1nETqmge2b-9ugTwy5IVg5xouZQFXMkNtA=
+TwaoE1ks2Jpd3mY_cxdzjoogfxDChDh4znDVQrqqOCZo6_45aAtEbXjss0JagkvF0qiFANbwa=
+1ae8jI1rTo_FQUiXtBAPvNq3&r=3D1062800038"
+        style=3D"
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            mso-line-height-rule: exactly;
+            -webkit-text-size-adjust: none;
+            line-height: 1;
+            word-wrap: normal;
+            text-decoration: none;
+            color: #52627c;
+        "
+    >
+        <strong style=3D"display: table; font-weight: 700; text-decoratio=
+n: none">
+            <img
+                src=3D"https://images.noti.swiss.com/common/arrow-right-l=
+h.png"
+                style=3D"
+                    display: table-cell;
+                    width: 8px;
+                    height: 8px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    vertical-align: baseline;
+                    line-height: 8px;
+                    font-size: 2px;
+                "
+                width=3D"8"
+                height=3D"8"
+            />
+            <span>
+               =0A
+                <!--[if mso]>
+                   =0A
+                    <i
+                        style=3D"
+                            display: none;
+                            width: 4px;
+                            letter-spacing: 4px;
+                            mso-font-width: -100%;
+                        "
+                        data-reactroot=3D""
+                        >&nbsp;</i
+                    >
+                   =0A
+                <![endif]-->
+               =0A
+            </span>
+            <span style=3D"display: table-cell; line-height: 12px">Book s=
+ecurity check slot</span>
+        </strong>
+    </a>
+</span>
+                                <!-- END: IF LINK ELEMENT -->
+                                <!-- START: IF BUTTON ELEMENT -->
+                               =0A
+                              </td>
+                            </tr>
+                            <!-- END: LOOP CONTENT ELEMENTS -->
+                          </tbody>
+                        </table>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style=3D"padding:0;font-size:10px;margin:0"
+                >
+                  &nbsp;
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<!-- START: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) -->
+<table
+  style=3D"width:100%;border-collapse:collapse;max-width:440px;height:100=
+%"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"steps"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          style=3D"width:100%;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        style=3D"height:10px;width:32px;vertical-align:mi=
+ddle"
+                      >
+                        <img
+                          src=3D"https://images.noti.swiss.com/common/bul=
+let-point-2x.png"
+                          style=3D"height:10px;width:32px;vertical-align:=
+middle"
+                          width=3D"32"
+                          height=3D"10"
+                        />
+                      </td>
+                      <td align=3D"left">
+                        <p
+                          style=3D"color:#05164d;font-family:LufthansaTex=
+tWeb, Arial, Helvetica, sans-serif;font-size:16px;margin-top:0px;margin-b=
+ottom:0px"
+                        >
+                          <span>
+                            08 January 2025
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"detailsContent">
+                <p
+                  style=3D"padding:0;font-size:5px;margin:0"
+                >
+                  &nbsp;
+                </p>
+                <table
+                  style=3D"width:100%;border-collapse:collapse"
+                  border=3D"0"
+                  cellspacing=3D"0"
+                  cellpadding=3D"0"
+                  width=3D"100%"
+                  role=3D"presentation"
+                >
+                  <tbody>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:0"
+                      >
+                        <h3
+                          style=3D"color:#05164d;font-family:LufthansaHea=
+d, Arial, Helvetica, sans-serif;font-size:18px;font-weight:600;margin-bot=
+tom:0px;margin-top:0px"
+                        >
+                          Arrive at the airport and drop your baggage
+                        </h3>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                    <tr>
+                      <td style=3D"width:15px"></td>
+                      <td
+                        style=3D"border-left:1px solid;border-color:#cccc=
+cc;max-width:384px;padding-left:15px;padding-bottom:10px"
+                      >
+                        <table
+                          style=3D"width:100%;border-collapse:collapse;ma=
+rgin-bottom:0"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          width=3D"100%"
+                          role=3D"presentation"
+                        >
+                          <tbody>
+                            <!-- START: LOOP CONTENT ELEMENTS -->
+                            <tr
+                              style=3D"width:440px"
+                            >
+                              <td
+                                style=3D"width:395px"
+                              >
+
+                                <!-- START: IF LINK ELEMENT -->
+                                <p
+                                  style=3D"padding:0;font-size:10px;margi=
+n:0"
+                                >
+                                  &nbsp;
+                                </p>
+                                <span
+    style=3D"
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        mso-line-height-rule: exactly;
+        -webkit-text-size-adjust: none;
+        line-height: 1;
+        word-wrap: normal;
+        text-decoration: none;
+        color: #52627c;
+    "
+>
+    <a
+        href=3D"https://my.information.lufthansa.com/LinkTracking?q=3DW-4=
+ER0ciKUmU06hR0FYWZhKckrF5kEV1x67uPToxQw9UZZq6_t5tbLHWbQR78FA9bfwBsnz2_9qE=
+NlK9h7nxNfM3Q9ARW-M9o_gMCDACpbrF6qaOKXiO7BQFkAF1YGPflZVYig0wmC1j8hcLLbicI=
+elBK8UiMTNpZjl1Xx3XdkOVIPTn3lwaDnOS0oNtmNAuGBgzxpPLXkqAJhUAvTpTci2xep5xtE=
+yXHd0y8Io8vpxtI1vjj-E2a6LcIBH_O6MezibIhtklx_AyYwYE0PKk3V86FWP2IzLjoJ34zBo=
+QmoM&r=3D1062800038"
+        style=3D"
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            font-family: LufthansaTextWeb, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            mso-line-height-rule: exactly;
+            -webkit-text-size-adjust: none;
+            line-height: 1;
+            word-wrap: normal;
+            text-decoration: none;
+            color: #52627c;
+        "
+    >
+        <strong style=3D"display: table; font-weight: 700; text-decoratio=
+n: none">
+            <img
+                src=3D"https://images.noti.swiss.com/common/arrow-right-l=
+h.png"
+                style=3D"
+                    display: table-cell;
+                    width: 8px;
+                    height: 8px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    vertical-align: baseline;
+                    line-height: 8px;
+                    font-size: 2px;
+                "
+                width=3D"8"
+                height=3D"8"
+            />
+            <span>
+               =0A
+                <!--[if mso]>
+                   =0A
+                    <i
+                        style=3D"
+                            display: none;
+                            width: 4px;
+                            letter-spacing: 4px;
+                            mso-font-width: -100%;
+                        "
+                        data-reactroot=3D""
+                        >&nbsp;</i
+                    >
+                   =0A
+                <![endif]-->
+               =0A
+            </span>
+            <span style=3D"display: table-cell; line-height: 12px">Check=20=
+baggage drop-off deadlines</span>
+        </strong>
+    </a>
+</span>
+                                <!-- END: IF LINK ELEMENT -->
+
+                              </td>
+                            </tr>
+                            <!-- END: LOOP CONTENT ELEMENTS -->
+                          </tbody>
+                        </table>
+                      </td>
+                      <td style=3D"width:15px"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style=3D"padding:0;font-size:10px;margin:0"
+                >
+                  &nbsp;
+                </p>
+              </td>
+            </tr>
+            <!-- START: LAST ELEMENT SPECIFIC ITEM -->
+            <tr>
+              <td>
+                <img
+                  src=3D"https://images.noti.swiss.com/common/lh-airplane=
+-depart.png"
+                  style=3D"width:32px;height:32px;vertical-align:middle"
+                  width=3D"32"
+                  height=3D"32"
+                />
+              </td>
+            </tr>
+            <!-- END: LAST ELEMENT SPECIFIC ITEM -->
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END: SMALL STEPS ELEMENT (ALL CONTENT LOOPED) --><!-- SPACING START=20=
+-->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END -->                        <!-- START OF SMALL WIDTH GRI=
+D END -->
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SMALL WIDTH GRID END --><table
+  style=3D"width:100%;border-collapse:collapse;height:100%;max-width:670p=
+x"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"quick-services"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <!-- START: OPTIONAL SECTION HEADLINE -->
+        <h2
+    style=3D"
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-family: LufthansaHead, Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #05164d;
+    "
+>
+    On Your Flight
+</h2>
+        <!-- END: OPTIONAL SECTION HEADLINE -->
+      </td>
+    </tr>
+    <tr>
+      <td valign=3D"middle">
+        <!-- IF LAST ELEMENT: change margin-bottom to 0 -->
+        <div
+          class=3D"two-col"
+          style=3D"font-size:0;margin-bottom:20px"
+        >
+          <!-- IF LAST ELEMENT: change padding-bottom to 0 -->
+         =0A
+          <!--[if mso]><table role=3D"presentation" width=3D"auto"><tr><t=
+d style=3D"width:0; padding-bottom: 20px;" valign=3D"middle"><![endif]-->=
+
+         =0A
+          <a
+            href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D=
+dUlEWSKVjUKzfDNSul_TkeUdXkRtrvFeyZStv8orsu16wphVcMfKzNC3rzcB1DbmpAW1HL3OV=
+RcrBtrB33EX8MNc2gZZjoKoNWytHi_ULI2kfHaBj7jNuckiOLK8GPOzgW0X6sT8QeTOUPnwLZ=
+ynSXWFYzk_94wgAJNzJipdbMiONODNUeZtucpkZsi_dSLV6FchlnnRShHkIqcmQtwqrTzJSBJ=
+uI_eNCJhaGLaJSbTNGg5aIu9ZlJq1ZQt_meGPysr-YYpGH53JVgBDbyqQldq-mbTeSFXu_vrF=
+jOhDdAg&r=3D1062800038"=0A
+            style=3D"display:inline-block;vertical-align:top;font-size:18=
+px;text-decoration:none"
+            class=3D"serviceLink"
+          >
+            <!-- IF LAST ELEMENT: add -last- class to table -->
+            <table
+              style=3D"width:335px;border-collapse:collapse;display:inlin=
+e-block;vertical-align:middle"
+              border=3D"0"
+              cellspacing=3D"0"
+              cellpadding=3D"0"
+              class=3D"column"
+              width=3D"335"
+              role=3D"presentation"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class=3D""
+                    style=3D"padding-right:10px;width:50px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3DhsUpGRoAKYy3uLaSARF-yqrcPM0w5HTIG9hTpgYzttg7zvD0MqR2AUu3ehMxi9=
+8ugIpsjrSnOXm17k3z5GXtIspeKxg-vDReivr_Z2ufEeIGyXtXQn6-RcgJrHQfwLmfnV9OGGm=
+jAHNkhjViTRyuQ2qHs69ckEZHoTrpsboGMTY2cp1wTQu3CXU0fGzuHy9-S5XTcXIi8MiNF6CP=
+BwYkgyl0y-HKX52R7iCiRQQchl_-qHwWEjUm0jIs1ryDCiyKjKAdr1WCm2gF0MRwNOGFee4VM=
+jmwOXvA9JIfWLQlLow&r=3D1062800038"=0A
+                      style=3D"font-weight:700;text-decoration:none"
+                    >
+                      <img
+                        src=3D"https://images.noti.swiss.com/common/lh-fo=
+od.png"
+                        style=3D"width:40px;height:40px;vertical-align:un=
+set"
+                        alt=3D"[OPTIONAL ALT TEXT SNIPPET]"
+                        width=3D"40"
+                        height=3D"40"
+                      />
+                    </a>
+                  </td>
+                  <td
+                    style=3D"padding-right:20px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3DL1fQa07wbZM4FApp2lrjo9eDHYv4pcvZhuctvQ0xers25D0sG6tBHSLCrL4dEk=
+Xfq2Jm0M517qNCLsnkT5gmakA54Yz1_XqzdqCk1dlruedXzw5HQugHneHyjLafM7lv02xxwZy=
+l3tjTeCe-e2XTGvMEgQCeYanCrqRss7cCRZK3SE-SywXJ7Ws4czckJ_mTkwjoeXf2ZBhLuIj9=
+lGAjML_YI_oIvkcLF8kTPh90dwxqV6-sgkYjIKIbkD1yoVSSQXnFl_hVhz3zEqh_pDC37QAK4=
+_HcmiuU4rhu-DBIfx8&r=3D1062800038"=0A
+                      style=3D"text-decoration:none;font-family:Lufthansa=
+TextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;line=
+-height:22px;letter-spacing:0.15px;color:#05164d"
+                    >
+                      <span
+                        class=3D""
+                        style=3D"text-decoration:none;font-family:Lufthan=
+saTextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;li=
+ne-height:22px;letter-spacing:0.15px;color:#05164d"
+                      >
+                        <strong
+                          style=3D"font-weight:700;text-decoration:none"
+                        >
+                           Menu on board=0A
+                        </strong>
+                      </span>
+                    </a>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+         =0A
+          <!--[if mso]></td> <td style=3D"width:0px;" valign=3D"middle"><=
+![endif]-->
+          =0A
+          <!--[if mso]> <![endif]-->
+         =0A
+         =0A
+          <a
+            href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D=
+QkXYPxfUWbzzQIKu-25bmVoMFJVWFnZlNup3I6asxhVu4RGmXlN7xk4y_0UzFRRmtnd4g320q=
+ljq1uMZPE3nE-a2xzMsAA_rmdSFKSHJKT_SZ7iDoLQaLjnzhfYsfQSiUGHJ4exv05D4B6jCx_=
+bI2VSk7WvVBk1ZvwBaFfj8eraOSdgKWWk9cTUWemeNTlLtU8g9KRRpQglwv2GVNF96Vc-7rw1=
+_oX-ZDkeM6Y1OtSiS1_9FYXeYPiHR5IZ9BLB9ELg7_IiaMfrPuynzqOmZPRshsmH1P6lyR0GG=
+OxhrL0s&r=3D1062800038"
+            style=3D"display:inline-block;vertical-align:top;font-size:18=
+px;text-decoration:none"
+            class=3D"serviceLink"
+          >
+            <!-- IF LAST ELEMENT: add -last- class to table -->
+            <table
+              style=3D"width:335px;border-collapse:collapse;display:inlin=
+e-block;vertical-align:middle"
+              border=3D"0"
+              cellspacing=3D"0"
+              cellpadding=3D"0"
+              class=3D"column"
+              width=3D"335"
+              role=3D"presentation"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class=3D""
+                    style=3D"padding-right:10px;width:50px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3DWsxnco5Yik-yhSbWOn7SKlkHk7beanc7F8Q5bE_2qscYel0ZVUzzpn1_zSYiXp=
+dztPhsxcFJ0bPh33lJviXKf-ISvH22rDl9pVNR1P78DIgihJOeCxkN6X-Gm6piA2PmpK41pXv=
+rZogCVq-WmZ3EvtxZzJGgPuX_-X-Jrk-ey54J91tQPGzARKGmY_MizWGD25EOZ8Ws9Ds_wSBM=
+rBgHcnEM-ZHXJwYZtAfqO16nyGRA7aTU4cWaXFjp3cj8bs53ZfkURXrbtqovM5HZcn_MRu5gB=
+_cOmasVbBC8zqdG9Fk&r=3D1062800038"
+                      style=3D"font-weight:700;text-decoration:none"
+                    >
+                      <img
+                        src=3D"https://images.noti.swiss.com/common/lh-IF=
+E.png"
+                        style=3D"width:40px;height:40px;vertical-align:un=
+set"
+                        alt=3D"[OPTIONAL ALT TEXT SNIPPET]"
+                        width=3D"40"
+                        height=3D"40"
+                      />
+                    </a>
+                  </td>
+                  <td
+                    style=3D"padding-right:20px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3D1bSXg6uCoTueolQ6IuxkDZr6aJiEWrrL63C3ZkA_Iw5Tbo-BeJNz4Wn5k-MNXB=
+z2bcglLZqDKqRa9wrMQbfHBrbb0myDmIsyD0IO8o7WjgleWOTSglq9rGQQR6PvxpXeqat1h27=
+xYN5Ef6rlH0HR9I2Yktv2B-t9vml74YGz5az9vymJcS_A5_5ELFLtdN92XZN077l3ounz-ga0=
+Khb51pxKBFQHZ4pN3g2qxZghCRuKB7oSgNM-O3RxRNWb9WA0cvk2LcqCf8DdBrKwHkO7N53QN=
+KHmkBvfZmdZNZZ_ies&r=3D1062800038"
+                      style=3D"text-decoration:none;font-family:Lufthansa=
+TextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;line=
+-height:22px;letter-spacing:0.15px;color:#05164d"
+                    >
+                      <span
+                        class=3D""
+                        style=3D"text-decoration:none;font-family:Lufthan=
+saTextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;li=
+ne-height:22px;letter-spacing:0.15px;color:#05164d"
+                      >
+                        <strong
+                          style=3D"font-weight:700;text-decoration:none"
+                        >
+                          Inflight Entertainment
+                        </strong>
+                      </span>
+                    </a>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+         =0A
+         =0A
+          <!--[if mso]>  </td></tr></table><![endif]-->
+         =0A
+        </div>
+        <!-- IF LAST ELEMENT: change margin-bottom to 0 -->
+        <div
+          class=3D"two-col"
+          style=3D"font-size:0;margin-bottom:0"
+        >
+          <!-- IF LAST ELEMENT: change padding-bottom to 0 -->
+         =0A
+          <!--[if mso]><table role=3D"presentation" width=3D"auto"><tr><t=
+d style=3D"width:0; padding-bottom: 0px;" valign=3D"middle"><![endif]-->
+         =0A
+          <a
+            href=3D"https://my.information.lufthansa.com/LinkTracking?q=3D=
+amLTfh2K92Vl8-hnU04hYZXPSBqHg_rmU6fgg7w_PTa7QY5l7Gl1KU0YoFfGNPZu9IrGAJjcz=
+eb8kOcJWRpoXbreFPiSlOd34PduAMa1BRhDzhJodxeRXxYnPu0BUXxhVYJdIoXxG7y2xykuqj=
+Qo_jPAPI6S85Vw8QXiN6AQXem2g4VvzW93W9Vuf5uhf-44K3fYkFhx3m5abQmmski-c8v1wi5=
+_2cNPg36KiA098PCkMPCHXowseldha5n5gFM5D8_AK1g5Sg9PKBCMiEu_hw&r=3D106280003=
+8"
+            style=3D"display:inline-block;vertical-align:top;font-size:18=
+px;text-decoration:none"
+            class=3D"serviceLink"
+          >
+            <!-- IF LAST ELEMENT: add -last- class to table -->
+            <table
+              style=3D"width:335px;border-collapse:collapse;display:inlin=
+e-block;vertical-align:middle"
+              border=3D"0"
+              cellspacing=3D"0"
+              cellpadding=3D"0"
+              class=3D"column"
+              width=3D"335"
+              role=3D"presentation"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class=3D""
+                    style=3D"padding-right:10px;width:50px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3DVndtkcdM9NKo2DnB4M71IkBDVREL55Fk8uIxgmqVrTd-0_FX1iuQQr17Tm_PUO=
+N620d754hBOuL4f1z7C7i5N_sNDLETOTVIIAOKsJCo5ex2hKbbwqva4qG5eHgLxkYQfvgJFxe=
+ikMJoB7myWVrkfC5-zSlzYpn-u_RWF8-r-gUIY4hybnlnjEqVbw8udqFDr49pZZxZlm-gITlE=
+BSSPEuo2ALMJHSatinPL9-Va3Qg0q5Ic_3aLLgIDDkw-YPel4HXX7CxsX941FnBZIGD7BQ&r=3D=
+1062800038"
+                      style=3D"font-weight:700;text-decoration:none"
+                    >
+                      <img
+                        src=3D"https://images.noti.swiss.com/common/lh-wi=
+fi.png"
+                        style=3D"width:40px;height:40px;vertical-align:un=
+set"
+                        alt=3D"[OPTIONAL ALT TEXT SNIPPET]"
+                        width=3D"40"
+                        height=3D"40"
+                      />
+                    </a>
+                  </td>
+                  <td
+                    style=3D"padding-right:20px"
+                    valign=3D"middle"
+                  >
+                    <a
+                      href=3D"https://my.information.lufthansa.com/LinkTr=
+acking?q=3Dru22da5_GsSfZUEqA3rSMUl9ZTjz0tWrDeAgBGhXpSLDNTNhcc4zgV-9NGJawD=
+S4nKGQZ25Y9d1NdNaNihPzny0CmsWIRETj42gUTAW1j0-MXTazIfylAKhDRisLbvlYioZyl4k=
+LWovFTHIY9C_bYUp-fhAQIVNboNPYIUL8T2V35cwTTl6xHfocmJsXEeYIdqb65UOy5JH4hOIt=
+zLB9sMd08IFtniGYeL3tqYJiExeiWEbt_lkVBWafbIDlTKOum2bSM44SCPgj5fIIt1wuvA&r=3D=
+1062800038"
+                      style=3D"text-decoration:none;font-family:Lufthansa=
+TextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;line=
+-height:22px;letter-spacing:0.15px;color:#05164d"
+                    >
+                      <span
+                        class=3D""
+                        style=3D"text-decoration:none;font-family:Lufthan=
+saTextWeb, Arial, Helvetica, sans-serif;font-weight:700;font-size:16px;li=
+ne-height:22px;letter-spacing:0.15px;color:#05164d"
+                      >
+                        <strong
+                          style=3D"font-weight:700;text-decoration:none"
+                        >
+                          FlyNet
+                        </strong>
+                      </span>
+                    </a>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+         =0A
+          <!--[if mso]></td> <td style=3D"width:0px;" valign=3D"middle"><=
+![endif]-->
+          =0A
+          <!--[if mso]> <![endif]-->
+         =0A
+         =0A
+          <!--[if mso]>  </td></tr></table><![endif]-->
+         =0A
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table><!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END --><table
+  style=3D"width:100%;border-collapse:collapse"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  width=3D"100%"
+  component-name=3D"app-socialmedia-feedback"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+       =0A
+        <!--[if mso]><table role=3D"presentation" width=3D"100%"><tr><![e=
+ndif]-->
+        =0A
+        <!--[if mso]><td style=3D"width: 335px; max-width: 335px;" align=3D=
+"left" valign=3D"top"><![endif]-->
+         <table
+  style=3D"width:320px;border-collapse:collapse;padding-right:20px;margin=
+-bottom:0;display:inline-block"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  class=3D"app"
+  width=3D"320"
+  valign=3D"top"
+  component-name=3D"app"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <h2
+          component-name=3D"section-headline"
+          style=3D"margin-top:0;margin-bottom:20px;font-family:LufthansaH=
+ead, Arial, Helvetica, sans-serif;font-size:22px;font-weight:300;line-hei=
+ght:28px;color:#05164d"
+        >
+            Lufthansa App
+        </h2>
+        <table
+          style=3D"width:300px;border-collapse:collapse;margin-top:20px"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          class=3D"appGrid"
+          width=3D"300"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td
+                style=3D"width:76px"
+                valign=3D"middle"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3DsWpkfJtZD9EG7bhIaomUy6EO_kNfupvnYmScpx-0tio3BGKdU8VYGZmJFfRTl7qjw=
+j8-51fY1fCmZQ67tPdT0o_H4lb8NPvC5Y_XB4z9fR9mt7KQaM_JoMUusg9o6G2m5tgW19j6TZ=
+bfgvgVxBLmT_9QrEFjARsX9PsulBD9lKo5gSc4a2yigat6xKfhh_nXpXqe35Lw0dH6bcfwQXe=
+lDw&r=3D1062800038">
+                  <img
+                    src=3D"https://images.noti.swiss.com/common/app-icon_=
+new.png"
+                    style=3D"width:50px;height:50px;margin-right:15px;dis=
+play:inline-block"
+                    width=3D"50"
+                    height=3D"50"
+                  />
+                </a>
+              </td>
+              <td
+                style=3D"padding-right:20px"
+                valign=3D"middle"
+              >
+                <a
+                  href=3D"https://my.information.lufthansa.com/LinkTracki=
+ng?q=3D9XxSwENBpBjhaiNyN36AbfwY7QwEo9DcDXgDdjTtG-MfWDUe_UdxgZnugagsMuyHsp=
+vrYgh2NfL8lwrix0dFmUrzkuqMQrF6lP8PeH_f0JNwENcRxIdCJocV1Ys99NwD0zBLjjC2JlH=
+DPsLLkRBZ4fWrntiotuaXfcI_YEQTKFT5QHg6auxjwjb6kDoqhspK2YIXeM174Km7PZ7MDMcg=
+HQ&r=3D1062800038"
+                  style=3D"text-decoration:none;margin:0;padding:0"
+                >
+                  <strong
+                    style=3D"font-weight:400;text-decoration:none;display=
+:block"
+                  >
+                    <span
+                      style=3D"max-width:240px;margin-top:0px;margin-bott=
+om:0px;margin-left:0px;padding-right:0px;display:inline-block;font-family=
+:LufthansaTextWeb, Arial, Helvetica, sans-serif;font-size:16px;font-weigh=
+t:400;line-height:24px;color:#05164d"
+                    >
+                      Your digital companion for your flight with Lufthan=
+sa
+                    </span>
+                  </strong>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>=0A
+        <!--[if mso]></td><![endif]-->
+        =0A
+        <!--[if mso]><td style=3D"width: 335px; max-width: 335px;" align=3D=
+"left" valign=3D"top"><![endif]-->
+         <table
+  style=3D"width:335px;border-collapse:collapse;display:inline-block"
+  border=3D"0"
+  cellspacing=3D"0"
+  cellpadding=3D"0"
+  class=3D"feedback"
+  width=3D"335"
+  valign=3D"top"
+  component-name=3D"get-feedback"
+  role=3D"presentation"
+>
+  <tbody>
+    <tr>
+      <td>
+        <h2 component-name=3D"section-headline"
+    style=3D"margin-top:0;margin-bottom:20px;font-family:LufthansaHead, A=
+rial, Helvetica, sans-serif;font-size:22px;font-weight:300;line-height:28=
+px;color:#05164d">
+    Was this email helpful?
+</h2>
+        <table
+          style=3D"width:auto;border-collapse:collapse;margin-top:20px"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"auto"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <!-- START: LOOP FEEDBACK ICON -->
+              <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3Dsc-ol7iltg43VmbQ4Tn15lHKK6gvvPRR1gfDUmSES3vYxf2guW4W764fhN-ZKRbsD=
+2lds_3Ez5lKNt_CyXsfqCHyn6JGWKeZrzw5FyLCYdvCjFnXJgOhrcmDG6snA2FzMhXzu8OVJ_=
+8zPLv8xtrKtVbWtgP_tS0WV70TiC087p-D9YTKBYzYFo42YN7yqtckrwfPC8PsT2wcbnkPDMU=
+kvg&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+very_sad_B-24-LH.png"
+                        alt=3D"Not helpful at all"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+              <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3DWbgVBoDVGen04Er8V1ZDwMoe9flSGJwmjGI66DDFUtOLcVgkVgihGnocfHNcIHkRC=
+5_iA5vhIMLQlZoQp2W6Ct2fHKgxaA17d3FIu5i3oD3Gx8HyglGAg5uCGPEwbHwXxm5FL485Ah=
+7dE9BK8cW0qg7YBO7JQsj9nTCLTYGZokWQG_WDcyBCLYQJI-t15Eaze5Kibp0kROT14fc15Mg=
+X6w&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+sad_B-24-LH.png"
+                        alt=3D"Unhelpful"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+            <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3D_Ti5n_c5qtO9iVOSSKMvaY6VjR4WE82JD6-8f6ilzAv2GoOMSHZD6X3C8A-V9u4EK=
+Z47saQRKuddkT9aPWwM8g9htvx8Oz3RLneReI9yoR9nQJprRFDGCJayJ_ztzedrZGfKDrUqZv=
+pfJUwdiBpn56dG1uo_-Uuxwmj8OVKJhHaGuSJKVZvk8xL3IRPTRsD0qeB7vc0kkHxYmxchxo5=
+TOA&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+rather_sad_B-24-LH.png"
+                        alt=3D"Not very helpful"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+              <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3DG-pj5Q0VhAPwTGs3arUSi6FiRa5mMaRDaTjUF4UPRoYVR3_9wvBY3dY2yCQ13sfQ1=
+NqZ2Jlm4F_7gu8ybvT0zYQqk1tKNhnciwChefOyVeZY2Vg5dkKZ1eZuZ9kWa9riNcGvT9eb5D=
+WTas4BKnQ10e7zfUdp_qIuX965x4Cs81Ko8zAPH4nFaVRJkqV1KX-DC2MaenqKdQoDArBgu-9=
+_Uw&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+rather_happy_B-24-LH.png"
+                        alt=3D"Somewhat helpful"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+              <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3DgtkEmIPuDP545VFUv-L3iEoSBlxww_gjxfF7s1kQnkCfqf3DBGIq250sPQ1D-dStE=
+11OqGWPvmTeSkRbUY6vE2ExatVfTP3rN5hBFzfA9zA_Y8jFf0C9ZYD52zJJ2Batexq3cRCLMk=
+cWC1QmiUCA7jAtsVh1_MGO1Ne9Bgy7TYFXhooG8OWeiRQrfuPTqqR_4B8VvtOtuxfn9ASGvc-=
+GeA&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+happy_B-24-LH.png"
+                        alt=3D"Helpful"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+              <td
+                style=3D"width:50px"
+                valign=3D"top"
+              >
+                <a href=3D"https://my.information.lufthansa.com/LinkTrack=
+ing?q=3D7Lk0dtkc7TReIi07ewmLJRe9HuviVtyEM7SRk8aVT2l1ZChUMSaShjPOKco2Hoial=
+Bgr8s7jyXu-bfNU9bEa_I2AI394BvTAKN6RB_90ADxFCI3j70HATlLAamC2Yubjwp0_Ua84iK=
+FMaNGxJPLIPsgBGxkeuXmb2lMt-yJlgp82rnMNDhi0DDElZhPJj4QSUnkfI8n0E1WfKo_h8Dq=
+ixg&r=3D1062800038">
+                    <img
+                        src=3D"https://images.noti.swiss.com/common/Face_=
+very_happy_B-24-LH.png"
+                        alt=3D"Very helpful"
+                        style=3D"
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0px;
+                        "
+                        width=3D"32"
+                        height=3D"32"
+                    />
+                </a>
+              </td>
+              <!-- END: LOOP FEEDBACK ICON -->
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>=0A
+        <!--[if mso]></td><![endif]-->
+        =0A
+        <!--[if mso]></tr></table><![endif]-->
+       =0A
+      </td>
+    </tr>
+  </tbody>
+</table><!-- SPACING START -->
+<table style=3D"width:100%;border-collapse:collapse" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" aria-hidden=3D"true"
+      width=3D"100%" component-name=3D"spacer" role=3D"presentation">
+      <tbody>
+            <tr style=3D"height:50px">
+                  <td>
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr style=3D"height:50px"></tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!-- SPACING END -->                                    <!--  END -->
+                              </td>
+                              <td class=3D"cellSection"></td>
+                        </tr>
+                  </tbody>
+            </table>
+      </td>
+</tr>
+<!-- END OF SECTION-GRID - END --><!-- START OF SECTION-GRID - START -->
+<tr>
+      <td>
+            <table style=3D"width:100%;border-collapse:collapse" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+                  role=3D"presentation">
+                  <tbody>
+                        <tr>
+                              <td>
+                                    <!-- END OF SECTION-GRID //  FULL WID=
+TH START --><!-- START: PART Footer Start -->
+<table style=3D"width:100%;border-collapse:collapse;padding-top:40px;back=
+ground-color:#05164d" border=3D"0" cellspacing=3D"0"
+      cellpadding=3D"0" width=3D"100%" component-name=3D"footer" role=3D"=
+presentation" id=3D"footer">
+      <tbody>
+            <tr>
+                  <td style=3D"padding:30px 25px 15px">
+                        <h2
+                              style=3D"font-family:LufthansaHead, Arial,=20=
+Helvetica, sans-serif;font-size:22px;font-weight:300;line-height:28px;col=
+or:#ffffff;margin:0">
+                              Service and contact
+                        </h2>
+                  </td>
+            </tr>
+            <tr>
+                  <td style=3D"padding:15px 25px 0px">
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr>
+                                          <!-- START: LOOP METALINKS ELEM=
+ENTS -->
+                                          <td class=3D"footerMetaCellMM"
+                                                style=3D"display:inline-b=
+lock;padding-bottom:15px;padding-right:15px;text-decoration:none;vertical=
+-align:top"
+                                                valign=3D"top">
+                                                <table style=3D"width:100=
+%;border-collapse:collapse" border=3D"0"
+                                                      cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" role=3D"presentation">
+                                                      <tbody>
+                                                            <tr>
+                                                                  <td>
+                                                                        <=
+table style=3D"width:100%;border-collapse:collapse"
+                                                                        =20=
+     border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                                                                        =20=
+     width=3D"100%" role=3D"presentation">
+                                                                        =20=
+     <tbody>
+                                                                        =20=
+           <tr>
+                                                                        =20=
+                 <td style=3D"width:16px"
+                                                                        =20=
+                       valign=3D"middle">
+                                                                        =20=
+                       <img src=3D"https://images.noti.swiss.com/lh_edial=
+og/arrow-right-white.png"
+                                                                        =20=
+                             style=3D"display:block;width:12px;height:12p=
+x;top:-3px"
+                                                                        =20=
+                             alt=3D"Lufthansa Arrow Right" width=3D"12"
+                                                                        =20=
+                             height=3D"12" />
+                                                                        =20=
+                 </td>
+                                                                        =20=
+                 <td valign=3D"middle">
+                                                                        =20=
+                       <a href=3D"https://my.information.lufthansa.com/Li=
+nkTracking?q=3DCCvqn78WAC87WPvG0lM0p6beGK_eQivxM59tOapFWP3DkWtfmjUZB1fQ2x=
+irTlEv0JRsnM4XTWrPciGGkWcgFm_1rEn-v8lWVoyLOS4e85ZeUkmKlyo4xt8uFPzK63OT&r=3D=
+1062800038"
+                                                                        =20=
+                             style=3D"position:relative;width:auto;displa=
+y:block;vertical-align:middle;text-decoration:none;color:#ffffff;padding-=
+right:5px;font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;font=
+-size:14px;font-weight:400;line-height:1"><span
+                                                                        =20=
+                                   style=3D"display:block;text-decoration=
+:none;color:#ffffff">
+                                                                        =20=
+                                   <strong
+                                                                        =20=
+                                         style=3D"font-weight:400;text-de=
+coration:none">
+                                                                        =20=
+                                         Lufthansa.com
+                                                                        =20=
+                                   </strong>
+                                                                        =20=
+                             </span>
+                                                                        =20=
+                       </a>
+                                                                        =20=
+                 </td>
+                                                                        =20=
+           </tr>
+                                                                        =20=
+     </tbody>
+                                                                        <=
+/table>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </td>
+                                          <td class=3D"footerMetaCellMM"
+                                                style=3D"display:inline-b=
+lock;padding-bottom:15px;padding-right:15px;text-decoration:none;vertical=
+-align:top"
+                                                valign=3D"top">
+                                                <table style=3D"width:100=
+%;border-collapse:collapse" border=3D"0"
+                                                      cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" role=3D"presentation">
+                                                      <tbody>
+                                                            <tr>
+                                                                  <td>
+                                                                        <=
+table style=3D"width:100%;border-collapse:collapse"
+                                                                        =20=
+     border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                                                                        =20=
+     width=3D"100%" role=3D"presentation">
+                                                                        =20=
+     <tbody>
+                                                                        =20=
+           <tr>
+                                                                        =20=
+                 <td style=3D"width:16px"
+                                                                        =20=
+                       valign=3D"middle">
+                                                                        =20=
+                       <img src=3D"https://images.noti.swiss.com/lh_edial=
+og/arrow-right-white.png"
+                                                                        =20=
+                             style=3D"display:block;width:12px;height:12p=
+x;top:-3px"
+                                                                        =20=
+                             alt=3D"Lufthansa Arrow Right" width=3D"12"
+                                                                        =20=
+                             height=3D"12" />
+                                                                        =20=
+                 </td>
+                                                                        =20=
+                 <td valign=3D"middle">
+                                                                        =20=
+                       <a href=3D"https://my.information.lufthansa.com/Li=
+nkTracking?q=3DiZdU0MCy4Y2BHp768GKb2IoWzqoY3lqt8OI4F-a_Q5H7T8drvtgO4WvC69=
+ZRuxJHRu6_UEaxRYvo-6kefP-vCncdlJDaBJK7xqEQO_rM7bCWqxfj4CWPQOZBDm4Ti2Fwi8V=
+jqvdBT2_PFS5zC0W84F8WJKwP9SIjGfDrTYHpUByu6dCE8ZMhTCO4px4f4w1SoyjVkNvrvHdl=
+OjEJ7qGSzEaskx8JJ1Q9xF-QIi4Wd68kxVgC4k4xt9kIhV3HcLF1C3QH7_CI8BKVLzpzne4hN=
+A&r=3D1062800038"
+                                                                        =20=
+                             style=3D"position:relative;width:auto;displa=
+y:block;vertical-align:middle;text-decoration:none;color:#ffffff;padding-=
+right:5px;font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;font=
+-size:14px;font-weight:400;line-height:1"><span
+                                                                        =20=
+                                   style=3D"display:block;text-decoration=
+:none;color:#ffffff">
+                                                                        =20=
+                                   <strong
+                                                                        =20=
+                                         style=3D"font-weight:400;text-de=
+coration:none">
+                                                                        =20=
+                                         Help and contact
+                                                                        =20=
+                                   </strong>
+                                                                        =20=
+                             </span>
+                                                                        =20=
+                       </a>
+                                                                        =20=
+                 </td>
+                                                                        =20=
+           </tr>
+                                                                        =20=
+     </tbody>
+                                                                        <=
+/table>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </td>
+                                          <td class=3D"footerMetaCellMM"
+                                                style=3D"display:inline-b=
+lock;padding-bottom:15px;padding-right:15px;text-decoration:none;vertical=
+-align:top"
+                                                valign=3D"top">
+                                                <table style=3D"width:100=
+%;border-collapse:collapse" border=3D"0"
+                                                      cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" role=3D"presentation">
+                                                      <tbody>
+                                                            <tr>
+                                                                  <td>
+                                                                        <=
+table style=3D"width:100%;border-collapse:collapse"
+                                                                        =20=
+     border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                                                                        =20=
+     width=3D"100%" role=3D"presentation">
+                                                                        =20=
+     <tbody>
+                                                                        =20=
+           <tr>
+                                                                        =20=
+                 <td style=3D"width:16px"
+                                                                        =20=
+                       valign=3D"middle">
+                                                                        =20=
+                       <img src=3D"https://images.noti.swiss.com/lh_edial=
+og/arrow-right-white.png"
+                                                                        =20=
+                             style=3D"display:block;width:12px;height:12p=
+x;top:-3px"
+                                                                        =20=
+                             alt=3D"Lufthansa Arrow Right" width=3D"12"
+                                                                        =20=
+                             height=3D"12" />
+                                                                        =20=
+                 </td>
+                                                                        =20=
+                 <td valign=3D"middle">
+                                                                        =20=
+                       <a href=3D"
+    https://www.lufthansa.com/xx/en/common/privacy-statement
+"
+                                                                        =20=
+                             style=3D"position:relative;width:auto;displa=
+y:block;vertical-align:middle;text-decoration:none;color:#ffffff;padding-=
+right:5px;font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;font=
+-size:14px;font-weight:400;line-height:1"><span
+                                                                        =20=
+                                   style=3D"display:block;text-decoration=
+:none;color:#ffffff">
+                                                                        =20=
+                                   <strong
+                                                                        =20=
+                                         style=3D"font-weight:400;text-de=
+coration:none">
+                                                                        =20=
+                                         Privacy statement
+                                                                        =20=
+                                   </strong>
+                                                                        =20=
+                             </span>
+                                                                        =20=
+                       </a>
+                                                                        =20=
+                 </td>
+                                                                        =20=
+           </tr>
+                                                                        =20=
+     </tbody>
+                                                                        <=
+/table>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </td>
+                                          <td class=3D"footerMetaCellMM"
+                                                style=3D"display:inline-b=
+lock;padding-bottom:15px;padding-right:15px;text-decoration:none;vertical=
+-align:top"
+                                                valign=3D"top">
+                                                <table style=3D"width:100=
+%;border-collapse:collapse" border=3D"0"
+                                                      cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" role=3D"presentation">
+                                                      <tbody>
+                                                            <tr>
+                                                                  <td>
+                                                                        <=
+table style=3D"width:100%;border-collapse:collapse"
+                                                                        =20=
+     border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                                                                        =20=
+     width=3D"100%" role=3D"presentation">
+                                                                        =20=
+     <tbody>
+                                                                        =20=
+           <tr>
+                                                                        =20=
+                 <td style=3D"width:16px"
+                                                                        =20=
+                       valign=3D"middle">
+                                                                        =20=
+                       <img src=3D"https://images.noti.swiss.com/lh_edial=
+og/arrow-right-white.png"
+                                                                        =20=
+                             style=3D"display:block;width:12px;height:12p=
+x;top:-3px"
+                                                                        =20=
+                             alt=3D"Lufthansa Arrow Right" width=3D"12"
+                                                                        =20=
+                             height=3D"12" />
+                                                                        =20=
+                 </td>
+                                                                        =20=
+                 <td valign=3D"middle">
+                                                                        =20=
+                       <a href=3D"
+    https://www.lufthansa.com/xx/en/common/imprint
+"
+                                                                        =20=
+                             style=3D"position:relative;width:auto;displa=
+y:block;vertical-align:middle;text-decoration:none;color:#ffffff;padding-=
+right:5px;font-family:LufthansaTextWeb, Arial, Helvetica, sans-serif;font=
+-size:14px;font-weight:400;line-height:1"><span
+                                                                        =20=
+                                   style=3D"display:block;text-decoration=
+:none;color:#ffffff">
+                                                                        =20=
+                                   <strong
+                                                                        =20=
+                                         style=3D"font-weight:400;text-de=
+coration:none">
+                                                                        =20=
+                                         Imprint
+                                                                        =20=
+                                   </strong>
+                                                                        =20=
+                             </span>
+                                                                        =20=
+                       </a>
+                                                                        =20=
+                 </td>
+                                                                        =20=
+           </tr>
+                                                                        =20=
+     </tbody>
+                                                                        <=
+/table>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </td>
+                                          <!-- END: LOOP METALINKS ELEMEN=
+TS -->
+                                    </tr>
+                              </tbody>
+                        </table>
+                  </td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td style=3D"padding:15px 25px 0px">
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr>
+                                          <!-- START: LOOP META TEXT ELEM=
+ENTS -->
+
+                                          <!-- Add following class to cel=
+l: if 3-cols: metaTextsCell3, 4-cols: metaTextsCell4 etc. -->
+                                          <!-- Add following styles to ce=
+ll: if 3-cols:width: 33.333333%, 4-cols: width: 23%; min-width:150px;, 5-=
+cols: width: 20%; min-width: 134px; -->
+                                          <td class=3D"metaTextsCell4"
+                                                style=3D"padding-right:25=
+px;vertical-align:top;display:inline-block;width:23%;min-width:150px;max-=
+width:50%"
+                                                valign=3D"top">
+                                                <p class=3D"msoLink" styl=
+e=3D"margin:0">
+                                                      <span class=3D"msoL=
+ink"
+                                                            style=3D"disp=
+lay:block;margin:0;font-family:LufthansaTextWeb, Arial, Helvetica, sans-s=
+erif;font-size:12px;font-weight:300;line-height:20px;color:#ffffff">
+                                                            Corporate Hea=
+dquarters:<br>
+Deutsche Lufthansa AG<br>
+Venloer Stra=C3=9Fe 151-153<br>
+50672 Cologne<br>
+Germany
+                                                      </span>
+                                                      <!--[if mso]>
+                                                      <br />
+                                                      <![endif]-->
+                                                </p>
+                                          </td>
+                                          <td class=3D"metaTextsCell4"
+                                                style=3D"padding-right:25=
+px;vertical-align:top;display:inline-block;width:23%;min-width:150px;max-=
+width:50%"
+                                                valign=3D"top">
+                                                <p class=3D"msoLink" styl=
+e=3D"margin:0">
+                                                      <span class=3D"msoL=
+ink"
+                                                            style=3D"disp=
+lay:block;margin:0;font-family:LufthansaTextWeb, Arial, Helvetica, sans-s=
+erif;font-size:12px;font-weight:300;line-height:20px;color:#ffffff">
+                                                            Executive Boa=
+rd:<br>
+Carsten Spohr (Chairman)<br>
+Dr. Michael Niggemann<br>
+Dr. Till Streichert<br>
+Grazia Vittadini<br>
+Dieter Vranckx
+                                                      </span>
+                                                      <!--[if mso]>
+                                                      <br />
+                                                      <![endif]-->
+                                                </p>
+                                          </td>
+                                          <td class=3D"metaTextsCell4"
+                                                style=3D"padding-right:25=
+px;vertical-align:top;display:inline-block;width:23%;min-width:150px;max-=
+width:50%"
+                                                valign=3D"top">
+                                                <p class=3D"msoLink" styl=
+e=3D"margin:0">
+                                                      <span class=3D"msoL=
+ink"
+                                                            style=3D"disp=
+lay:block;margin:0;font-family:LufthansaTextWeb, Arial, Helvetica, sans-s=
+erif;font-size:12px;font-weight:300;line-height:20px;color:#ffffff">
+                                                            Chairman of t=
+he Supervisory Board:<br>
+Dr. Karl-Ludwig Kley
+                                                      </span>
+                                                      <!--[if mso]>
+                                                      <br />
+                                                      <![endif]-->
+                                                </p>
+                                          </td>
+                                          <td class=3D"metaTextsCell4"
+                                                style=3D"padding-right:25=
+px;vertical-align:top;display:inline-block;width:23%;min-width:150px;max-=
+width:50%"
+                                                valign=3D"top">
+                                                <p class=3D"msoLink" styl=
+e=3D"margin:0">
+                                                      <span class=3D"msoL=
+ink"
+                                                            style=3D"disp=
+lay:block;margin:0;font-family:LufthansaTextWeb, Arial, Helvetica, sans-s=
+erif;font-size:12px;font-weight:300;line-height:20px;color:#ffffff">
+                                                            Registration:=
+<br>
+District Court of Cologne<br>
+HRB 2168
+                                                      </span>
+                                                      <!--[if mso]>
+                                                      <br />
+                                                      <![endif]-->
+                                                </p>
+                                          </td>
+                                          <!-- END: LOOP META TEXT ELEMEN=
+TS -->
+                                    </tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+            <!-- END: PART Footer Start --><!-- START: PART Footer MID --=
+>
+    <tr>
+      <td style=3D"padding:20px 25px 30px">
+        <table
+          style=3D"width:100%;border-collapse:collapse"
+          border=3D"0"
+          cellspacing=3D"0"
+          cellpadding=3D"0"
+          width=3D"100%"
+          role=3D"presentation"
+        >
+          <tbody>
+            <tr>
+              <td
+                align=3D"left"
+                valign=3D"top"
+              >
+                <span
+                  style=3D"font-family:LufthansaTextWeb, Arial, Helvetica=
+, sans-serif;font-size:12px;font-weight:300;line-height:1.166666666666666=
+7;color:#ffffff"
+                >
+                MID:94
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- END: PART Footer MID -->            <!-- START: PART Footer End=20=
+-->
+            <tr>
+                  <td></td>
+            </tr>
+            <tr style=3D"background-color:#ffffff">
+                  <td style=3D"padding:20px 20px 20px">
+                        <table style=3D"width:100%;border-collapse:collap=
+se" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                              width=3D"100%" role=3D"presentation">
+                              <tbody>
+                                    <tr>
+                                          <td style=3D"font-size:0" align=
+=3D"left" valign=3D"middle">
+                                                <!--[if !mso]><!-->
+                                                <div style=3D"min-width:5=
+0%;display:inline-block;vertical-align:middle">
+                                                      <table style=3D"wid=
+th:100%;border-collapse:collapse" border=3D"0"
+                                                            cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"100%"
+                                                            role=3D"prese=
+ntation">
+                                                            <tbody>
+                                                                  <tr>
+                                                                        <=
+td class=3D"brandLogoLeft" align=3D"left">
+                                                                        =20=
+     <img component-name=3D"image"
+                                                                        =20=
+           src=3D"https://images.noti.swiss.com/lh_edialog/lh-logo-blue.p=
+ng"
+                                                                        =20=
+           style=3D"width:123px;height:21px"
+                                                                        =20=
+           alt=3D"Lufthansa Logo" width=3D"123"
+                                                                        =20=
+           height=3D"21" />
+                                                                        <=
+/td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                </div>
+                                                <div style=3D"min-width:5=
+0%;display:inline-block;vertical-align:middle">
+                                                      <table style=3D"wid=
+th:100%;border-collapse:collapse" border=3D"0"
+                                                            cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"100%"
+                                                            role=3D"prese=
+ntation">
+                                                            <tbody>
+                                                                  <tr>
+                                                                        <=
+td align=3D"right">
+                                                                        =20=
+     <img component-name=3D"image"
+                                                                        =20=
+           src=3D"https://images.noti.swiss.com/common_edialog/star-allia=
+nce.png"
+                                                                        =20=
+           style=3D"width:205px;height:21px"
+                                                                        =20=
+           alt=3D"Star Alliance Logo" width=3D"205"
+                                                                        =20=
+           height=3D"21" />
+                                                                        <=
+/td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                </div>
+                                                <!--<![endif]-->
+                                          </td>
+                                          <td>
+                                          <!--[if mso]>
+                                          <td>
+                                                <table style=3D"width:100=
+%;border-collapse:collapse" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%"
+                                                      valign=3D"middle" r=
+ole=3D"presentation">
+                                                      <tbody>
+                                                            <tr class=3D"=
+brandLogoLeft">
+                                                                  <td ali=
+gn=3D"left">
+                                                                        <=
+img component-name=3D"image" src=3D"https://images.noti.swiss.com/lh_edia=
+log/lh-logo-blue.png"
+                                                                        =20=
+     style=3D"width:123px;height:21px" alt=3D"Lufthansa Logo" width=3D"12=
+3" height=3D"21" />
+                                                                  </td>
+                                                                  <td ali=
+gn=3D"right">
+                                                                        <=
+img component-name=3D"image" src=3D"https://images.noti.swiss.com/common_=
+edialog/star-alliance.png"
+                                                                        =20=
+     style=3D"width:205px;height:21px" alt=3D"Star Alliance Logo" width=3D=
+"205" height=3D"21" />
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </td>
+                                          <![endif]-->
+                                          </td>
+                                    </tr>
+                              </tbody>
+                        </table>
+                  </td>
+            </tr>
+      </tbody>
+</table>
+<!--  END: PART Footer End -->                                    <!--  F=
+ULL WIDTH END -->
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+      </td>
+</tr>
+<!-- END OF SECTION-GRID - END -->                             </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+            </span>
+        </div>
+    </body>
+</html>

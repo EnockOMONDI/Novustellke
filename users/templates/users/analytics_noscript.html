@@ -1,0 +1,16 @@
+{% comment %}
+Google Tag Manager Noscript Fallback for Novustell Travel
+==========================================================
+
+This template provides the noscript fallback for Google Tag Manager.
+Should be included immediately after the opening <body> tag.
+
+Usage: Include this template right after <body> tag in basemain.html
+{% endcomment %}
+
+{% if SHOULD_LOAD_ANALYTICS and GOOGLE_TAG_MANAGER_ID %}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ GOOGLE_TAG_MANAGER_ID }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% endif %}

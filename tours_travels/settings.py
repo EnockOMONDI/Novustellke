@@ -94,6 +94,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
                 'tours_travels.context_processors.default_images',
+                'tours_travels.context_processors.analytics_settings',
                 'tours_travels.context_processors.site_settings',
             ],
         },
@@ -270,6 +271,14 @@ NEWSLETTER_EMAIL = 'news@novustelltravel.com'
 
 # Cart session configuration
 CART_SESSION_ID = 'cart'
+
+# Google Analytics Configuration
+GOOGLE_ANALYTICS_ID = config('GOOGLE_ANALYTICS_ID', default='')
+GOOGLE_TAG_MANAGER_ID = config('GOOGLE_TAG_MANAGER_ID', default='')
+
+# Analytics settings
+ENABLE_ANALYTICS = config('ENABLE_ANALYTICS', default=not DEBUG, cast=bool)
+ANALYTICS_TRACK_ADMIN = config('ANALYTICS_TRACK_ADMIN', default=False, cast=bool)
 
 # Django Unfold Configuration
 from django.templatetags.static import static

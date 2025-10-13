@@ -1,0 +1,211 @@
+Return-Path: <securityservice-noreply@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id qOQzIRnt12d4VxgAObGTvA
+	(envelope-from <securityservice-noreply@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 17 Mar 2025 12:36:25 +0300
+Return-path: <securityservice-noreply@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Mon, 17 Mar 2025 12:36:25 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:39293)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <securityservice-noreply@doc.mail.amadeus.com>)
+	id 1tu6tT-00000006lFO-2Jro
+	for natahsa@novustelltravel.com;
+	Mon, 17 Mar 2025 12:36:25 +0300
+Received: from obevp493 (unknown [10.168.11.254])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPSA id 197CB29D60
+	for <natahsa@novustelltravel.com>; Mon, 17 Mar 2025 09:35:42 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 197CB29D60
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1742204142;
+	bh=b84QL9KN1AVlrLhRraXlAsuZN00crxYYHVjAv6Tyw0A=;
+	h=From:TO:Subject:Date;
+	b=NyNLx/X3DvGEb5QsVk5piTmFERY5t3iQFRlPtF5q7ESGJK4i4u004axUOKKxxWtSv
+	 +Cj7JShIqi/e571V86Zyf3HKX6jZaA0nZKC1j9pyrWWfAl9/4RS10CF7CbVMd8VxHp
+	 jqVxWYA4Ar3GBkoaJ2mGxNYqSibKfNkjT4uW5eOmiAl1msNuwZ1Y2vkLwezBRyn0PF
+	 Zx+7cE7f4K5U3TTxzvQv12vy6h24zSJ0lla6wO3SmPVZf2tebb+1CF1ZfuyiJBAmHi
+	 kBnCKXYWMjGB6uUGdEEXn5hitOPwH02B+cpgr9jPiiRZaFG6u2j80uWNxL9/jGMZrv
+	 yygM5Au4UKe4A==
+From: =?UTF-8?B?IkFtYWRldXMgU2VjdXJpdHkgU2VydmljZSI=?= <securityservice-noreply@doc.mail.amadeus.com>
+TO: NATAHSA@NOVUSTELLTRAVEL.COM
+Message-ID: <RFD/NMC-EASTAF/C6020F3D2E5F2F/1@tds.amadeus.com>
+FND-Request-ID: <RFD/NMC-EASTAF/C6020F3D2E5F2F/1@tds.amadeus.com>
+Job-ID: 1
+Mailrelay-Header: v=1; carfid: 0001M8OV5T9HB0; id: <RFD/NMC-EASTAF/C6020F3D2E5F2F/1@tds.amadeus.com>; app: TDS/RFD; phase: PRD; partition: tds_peak1; region: erd; as: obevp493; doctype: AAM; 
+Subject: =?UTF-8?B?WW91ciBBbWFkZXVzIEFjY291bnQ=?=
+Date: Mon, 17 Mar 2025 09:35:41 +0000
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_961592_591185903.1742204141611"
+MIME-Version: 1.0
+X-Spam-Status: No, score=1.2
+X-Spam-Score: 12
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  ACTIVEUSR.ftl Dear NATASHA OKIDDY 
+ Content analysis details:   (1.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [82.150.225.79 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.net]
+                             [URI: amadeus.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: www.accounts.amadeus.com]
+                             [URI: 1a.prd.accounts.amadeus.com]
+                             [URI: doc.mail.amadeus.com]
+                             [URI: www.mrs.amadeus.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_EXTRA_CLOSE       BODY: HTML contains far too many close tags
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of words
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+X-Spam-Flag: NO
+
+------=_Part_961592_591185903.1742204141611
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<html>
+=09<title>
+=09=09ACTIVEUSR.ftl
+=09</title>
+=09<body style=3D"margin-left:4%; margin-right:44%">
+=09<table style=3D"font-family:Arial; font-size:10pt; width:70%">
+=09<tr>
+=09<td>
+=09=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+=09</td>
+=09</br>
+=09</tr>
+=09<tr>
+=09<td>
+=09Dear=09
+=09NATASHA
+=09OKIDDY
+=09</br></br>
+=09</td>
+=09</tr>
+=09<tr>
+=09<td>
+=09You can change your password to activate your account, enforce security =
+or if you simply forgot it.
+=09</br>
+=09Please change your password with <a href=3D"https://www.accounts.amadeus=
+.com/LoginService/authorizeAngular?service=3Dlssreset&LANGUAGE=3Den_GB&USER=
+_ALIAS=3DNOKIDDY&ORGANIZATION=3DNMC-EASTAF#!/forgotPassword">Internetlink</=
+a> or
+=09 <a href=3D"https://1a.PRD.accounts.amadeus.com/LoginService/authorizeAn=
+gular?service=3Dlssreset&LANGUAGE=3Den_GB&USER_ALIAS=3DNOKIDDY&ORGANIZATION=
+=3DNMC-EASTAF#!/forgotPassword">Intranetlink</a> and follow the instruction=
+s.
+=09</br></br>
+=09Your Amadeus account password is used to access many Amadeus solutions, =
+like Amadeus Reservation Desktop or Selling Platform Connect.
+=09</br>
+=09Below is your account information that may be requested to login to diff=
+erent Amadeus solutions:
+=09</td>
+=09</tr>
+=09<tr>
+=09<td>
+=09</br>
+=09Organization: NMC-EASTAF
+=09</br>
+=09UserID: NOKIDDY
+=09</br>
+=09UserName/Login: NOKIDDY
+=09</br>
+=09Default Office: NBO41232V
+=09</br>
+=09Sign: 2301NO
+=09</br>
+=09</td>
+=09</tr>
+=09<tr>
+=09<td>
+=09</br>=09
+=09Best regards,<br>
+=09The Amadeus Security Team
+=09</td>
+=09</tr>
+=09<tr>
+=09<td>
+=09<img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/urln/1A/RFD/I=
+MAGE/logo_header.gif?">
+=09</td>
+=09</tr>
+=09<tr>
+=09<td>
+=09<footer>
+=09<span style=3D"font-family:Arial; font-size:10pt; color:#808080">
+=09IMPORTANT - CONFIDENTIALITY NOTICE - This e-mail is intended only for th=
+e use of the addressee/s above.  It may contain information which is privil=
+eged, confidential or otherwise protected from disclosure under applicable =
+laws.  If the reader of this transmission is not the intended recipient, yo=
+u are hereby notified that any dissemination, printing, distribution, copyi=
+ng, disclosure or the taking of any action in reliance on the contents of t=
+his information is strictly prohibited.  If you have received this transmis=
+sion in error, please immediately notify us and delete the message and any =
+attachments from your system. Amadeus Corporate Headquarters, Salvador de M=
+adariaga 1 Madrid, 28027 Spain.
+=09</span>
+=09</footer>
+=09</td>
+=09</tr>
+=09</table>
+
+=09</body>
+</html>
+
+
+
+<!--
+
+=09
+
+-->
+------=_Part_961592_591185903.1742204141611--

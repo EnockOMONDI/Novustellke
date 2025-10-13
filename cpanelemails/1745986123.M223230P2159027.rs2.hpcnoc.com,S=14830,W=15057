@@ -1,0 +1,227 @@
+Return-Path: <dmarcreport@microsoft.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id sIsMDUuiEWiz8SAAObGTvA
+	(envelope-from <dmarcreport@microsoft.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 30 Apr 2025 07:08:43 +0300
+Return-path: <dmarcreport@microsoft.com>
+Envelope-to: admin@novustelltravel.com
+Delivery-date: Wed, 30 Apr 2025 07:08:43 +0300
+Received: from mail-dm6nam11on2092.outbound.protection.outlook.com ([40.107.223.92]:46689 helo=NAM11-DM6-obe.outbound.protection.outlook.com)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <dmarcreport@microsoft.com>)
+	id 1u9ykT-000000094cf-3rVe
+	for admin@novustelltravel.com;
+	Wed, 30 Apr 2025 07:08:43 +0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=CnkD1xPGVOAid+mtG5d8IH9839chAKJVuspDv1OqYfqgGGLbv9VC/AStwGHDg1FZd/kNzUV99Yf5Xvk/sB4teNbmo1TLy27pl//iMEhzbiu4zqc4Jo6vIIJL+sZFBdgy9L2aD1t07NeIXEpqGVYQgJErG/NlkwvtIIiZ8FYgTnnhWROQ+tRo7I6l0+roDrH33zvnhc/jhKujyO8xJsgTh3qjOOKGFtZvBFrJ3tmqCgNfDHxau8/6lEsyRdr91bQ/Pwxm5hZcpr5j3MKyk4wf8cXebWp4VbEkiKKB07vKRFVTT6UMdDRPZ+HLC8Hj4xq1flVCiqpvHNjp7bavZHfdwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=vOz9dl9IbZmm5/UJrkX4qOunBlho43N7RQ8K3dIwg5I=;
+ b=Bx2VCIcnFyoZbc54niGzI1UgnShTMheHVTI9CvPsype5EtD6DEIDuo5C/GrrJODB3n+Dtc9Cgo/uVpaVrV9/UV8lRtay9tgSdTb/8184SEYLiW1cGXycmrS5PviTb3wAgglRrn7MD05YW2XYk0vgacK9nMG6o319y5jn8SoT7/ro18vdqiZn8csisNflK5vm/iuSnsEBTTakE4dMW9d0O3jF/iXy3tV28xeb0PPIsk1YTuHBs2tnJYWfQZzh/MFelhMs6yDfoKqunI4RYCSWxdllJ9z3DwSbLDKIqCVrk6w8IB+wRBA9QWtEpz33sF6RP3UJA9RN9BVdbmZ3ALk9TQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none
+ action=none header.from=microsoft.com; dkim=none (message not signed);
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=notification.microsoft.com; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=vOz9dl9IbZmm5/UJrkX4qOunBlho43N7RQ8K3dIwg5I=;
+ b=f2woP1YMDZ04Wv7ydaDi5SEmuv88gOLExCHvoYHE4w7LsXOWj0k6JW4SjAFHnlU/YrQ5K4Q0BFPLp5m84ydMAu9Ml1GuM7EaE2DAm6QVK1rRNHNxT6FPrMF4QUHmWBE9mgCyizU5waTtnr8Mb/hsbyu5VMR/SiG3o+rm2Ue+FiXLJ147ahaFgAcnwfra7JcvBDJ9zkpMYFfSUbiLvN8an8Viyxzs1EHcKw73XIZ2BSBAElkzLJkQzRoV7/ggUloyQwiLyQshoxbUrCh1uHbHsPb1dTX5FtKiywhc/69ljFQjQVP48opcTQWeGTdOFmc+CeJnbR3kZ/dw+F0huMcYrg==
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=microsoft.com;
+Received: from PH0PR07CA0022.namprd07.prod.outlook.com (2603:10b6:510:5::27)
+ by LV8PR18MB5856.namprd18.prod.outlook.com (2603:10b6:408:22a::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8699.19; Wed, 30 Apr
+ 2025 04:07:44 +0000
+Received: from SN1PEPF0002BA4E.namprd03.prod.outlook.com
+ (2603:10b6:510:5:cafe::8a) by PH0PR07CA0022.outlook.office365.com
+ (2603:10b6:510:5::27) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8655.36 via Frontend Transport; Wed,
+ 30 Apr 2025 04:07:44 +0000
+Received: from nam10.map.protection.outlook.com (2a01:111:f400:7e5b::30) by
+ SN1PEPF0002BA4E.mail.protection.outlook.com (2603:10b6:82c:400:0:1006:0:7)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8699.20 via Frontend
+ Transport; Wed, 30 Apr 2025 04:07:44 +0000
+Message-ID: <b30cf0ed667b49159d045bca32fffe7b@microsoft.com>
+X-Sender: <dmarcreport@microsoft.com> XATTRDIRECT=Originating XATTRORGID=xorgid:96f9e21d-a1c4-44a3-99e4-37191ac61848
+MIME-Version: 1.0
+From: "DMARC Aggregate Report" <dmarcreport@microsoft.com>
+To: <admin@novustelltravel.com>
+Subject: =?utf-8?B?W1ByZXZpZXddIFJlcG9ydCBEb21haW46IG5vdnVzdGVsbHRyYXZlbC5jb20gU3VibWl0dGVyOiBlbnRlcnByaXNlLnByb3RlY3Rpb24ub3V0bG9vay5jb20gUmVwb3J0LUlEOiBiMzBjZjBlZDY2N2I0OTE1OWQwNDViY2EzMmZmZmU3Yg==?=
+Content-Type: multipart/mixed;
+	boundary="_mpm_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_"
+Date: Wed, 30 Apr 2025 04:07:44 +0000
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SN1PEPF0002BA4E:EE_|LV8PR18MB5856:EE_
+X-MS-Office365-Filtering-Correlation-Id: c5f76119-7bd9-422d-7c71-08dd879c8f3b
+X-MS-Exchange-SenderADCheck: 2
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|10070799003|366016|48200799018|61400799027|376014|34036016|41320700013|4053099003|8096899003;
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?bT+W5BEFqyWH0W6uRKF86l/RaA6MLSRrUqXMO7bxVJeTFWfwgIrK1pR5EI8k?=
+ =?us-ascii?Q?ERLbyodVF1NL33Pg1w2nMan0unZXDAyKcFFBZsLe73nk/5Mits8qcuJh+3ji?=
+ =?us-ascii?Q?5fswEcoXN9xwuP6FMlwvQkmLujDOVne0kS5oGIbxLH1qDBH6hRkyT6qMDQ+n?=
+ =?us-ascii?Q?F/6ovE0yb7gCp1pUTaR12VzZ7MrumFp3XbR6OT/5/VbwsG+zTopd3ab5iw4S?=
+ =?us-ascii?Q?NWtrERWlCdq+D2ASyZpV9DW5NPlwFZLtaNnJufktis8g+j0wAYEHjHjQHiSf?=
+ =?us-ascii?Q?9klMCO1h29PurTQPSuG68Mnrzbex47g9Yla+bujPZ7zip7WWXx0Re0XlI4eS?=
+ =?us-ascii?Q?e0QPi9+UU8irBt5I5ALvdObmKPlhl2cVLiHoc6StMXpmCnYtYtWNHnbZhJkP?=
+ =?us-ascii?Q?q+dtyPsdugDDus+FyzmEPfGZSueJecd9ZjNFAzrCM72zaXmp2CKbITLBEb3x?=
+ =?us-ascii?Q?dUcb1XXlE9oHetP7zLUcbtg9Scg8NwoHwtj/oxAOJl4uqjTVFQXcDkdLtlZM?=
+ =?us-ascii?Q?7v3msmR6c+7PRDfx8Pqn6z2Glw6dZyUKVIbGQMPH8fmeYMsNKm7W0KMjZHxI?=
+ =?us-ascii?Q?BXp+xAJfJ/b4ClmFHAUwYjLnpa0kVXeeXz+Wj1juHkObuwOAUhXKVSMllT50?=
+ =?us-ascii?Q?NnyuzCthKo4LagGoJKXnzGyVg/LZu0zsTdAe4A7P1IX6/MW3Xu1YdZoSz9ME?=
+ =?us-ascii?Q?78plp7H10b3uUwsDiYAwkpBLOhYf/GkzZdvNakaVncTouPo/EyFXfdAdo7o0?=
+ =?us-ascii?Q?7DeZWmhow6Gc3CiMUDGYKdg6IMmW3ctwp749XdU3Ew+Jat5ywfnlxIqm3oOc?=
+ =?us-ascii?Q?BaAyTW7EoQ+8yoDL2Cx87fkVoQt2RtjI9WG/GyYXyztB9JR9G0qbe0ClRimg?=
+ =?us-ascii?Q?tsUtlvPqrp8Of1Bi3XcJqFsz3/NAypZ5Opx7nXIknJro3gwu4ClVYzQnp9Tg?=
+ =?us-ascii?Q?vHKjTR64MEydMdwD6Jh5TbeBcrpVBo7BzUyPppZZUHX1gZl66r10ITDCLnwg?=
+ =?us-ascii?Q?vcpKrJcBmCUvczFJB0mEJiaJf1S6zsKrtJgMAPLF3HgWctrNPyiUYOWMpGw8?=
+ =?us-ascii?Q?8Y0xNubjdQwBde6qmTAOkOY1NBKsaGkvwV1xHHMWgbwV4WTR8gXH6mBG8IOJ?=
+ =?us-ascii?Q?m6YcNCMR5dYDPAx6xxNi6Bvg6VwWRlewYSAPEl2WOh6pnUnX5z/T4rc3Z1Vj?=
+ =?us-ascii?Q?hlVP/j5OZ/mDzHBD50huh12k/408hBAuMYLmr536lkSisH7s4aFDeT2Mz8KX?=
+ =?us-ascii?Q?ZHfGlrOro5hUW/KOcWO1wgaqioWxw5kiCW+F4CQIPi7YtATQorWdqEmoLlO9?=
+ =?us-ascii?Q?n05B3tduwU1hGC6ncNPbpvzZxFm5+TYWJy6kEFYOk3WUGZ8YvwUuBqu4TF3O?=
+ =?us-ascii?Q?e79qgQE=3D?=
+X-Forefront-Antispam-Report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:nam10.map.protection.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(10070799003)(366016)(48200799018)(61400799027)(376014)(34036016)(41320700013)(4053099003)(8096899003);DIR:OUT;SFP:1102;
+X-OriginatorOrg: dmarcrep.onmicrosoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Apr 2025 04:07:44.3412
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c5f76119-7bd9-422d-7c71-08dd879c8f3b
+X-MS-Exchange-CrossTenant-AuthSource: SN1PEPF0002BA4E.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Id: 96f9e21d-a1c4-44a3-99e4-37191ac61848
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8PR18MB5856
+X-Spam-Status: No, score=3.0
+X-Spam-Score: 30
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  This is a DMARC aggregate report from Microsoft Corporation.
+    For Emails received between 2025-04-28 00:00:00 UTC to 2025-04-29 00:00:00
+    UTC. You're receiving this email because you have included your email address
+    in the 'rua' tag of your DMARC record in DNS for novustelltravel.com. Please
+    remove your email address from the 'rua' tag if yo [...] 
+ Content analysis details:   (3.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 ARC_VALID              Message has a valid ARC signature
+  0.0 ARC_SIGNED             Message has a ARC signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 BASE64_LENGTH_78_79    BODY: No description available.
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  2.0 BASE64_LENGTH_79_INF   BODY: base64 encoded email part uses line length
+                              greater than 79 characters
+  0.0 T_TVD_MIME_NO_HEADERS  BODY: No description available.
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+  0.0 MIME_BASE64_TEXT       RAW: Message text disguised using base64 encoding
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: novustelltravel.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: novustelltravel.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [40.107.223.92 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.223.92 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [40.107.223.92 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.223.92 listed in sa-accredit.habeas.com]
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+
+--_mpm_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_
+Content-Type: multipart/related;
+	boundary="_rv_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_"
+
+--_rv_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_
+Content-Type: multipart/alternative;
+	boundary="_av_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_"
+
+--_av_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_
+
+
+--_av_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: base64
+
+PGRpdiBzdHlsZSA9ImZvbnQtZmFtaWx5OlNlZ29lIFVJOyBmb250LXNpemU6MTRweDsiPlRoaXMgaX
+MgYSBETUFSQyBhZ2dyZWdhdGUgcmVwb3J0IGZyb20gTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBGb3Ig
+RW1haWxzIHJlY2VpdmVkIGJldHdlZW4gMjAyNS0wNC0yOCAwMDowMDowMCBVVEMgdG8gMjAyNS0wNC
+0yOSAwMDowMDowMCBVVEMuPC8gZGl2PjxiciAvPjxiciAvPllvdSdyZSByZWNlaXZpbmcgdGhpcyBl
+bWFpbCBiZWNhdXNlIHlvdSBoYXZlIGluY2x1ZGVkIHlvdXIgZW1haWwgYWRkcmVzcyBpbiB0aGUgJ3
+J1YScgdGFnIG9mIHlvdXIgRE1BUkMgcmVjb3JkIGluIEROUyBmb3Igbm92dXN0ZWxsdHJhdmVsLmNv
+bS4gUGxlYXNlIHJlbW92ZSB5b3VyIGVtYWlsIGFkZHJlc3MgZnJvbSB0aGUgJ3J1YScgdGFnIGlmIH
+lvdSBkb24ndCB3YW50IHRvIHJlY2VpdmUgdGhpcyBlbWFpbC48YnIgLz48YnIgLz48ZGl2IHN0eWxl
+ID0iZm9udC1mYW1pbHk6U2Vnb2UgVUk7IGZvbnQtc2l6ZToxMnB4OyBjb2xvcjojNjY2NjY2OyI+UG
+xlYXNlIGRvIG5vdCByZXNwb25kIHRvIHRoaXMgZS1tYWlsLiBUaGlzIG1haWxib3ggaXMgbm90IG1v
+bml0b3JlZCBhbmQgeW91IHdpbGwgbm90IHJlY2VpdmUgYSByZXNwb25zZS4gRm9yIGFueSBmZWVkYm
+Fjay9zdWdnZXN0aW9ucywga2luZGx5IG1haWwgdG8gZG1hcmNyZXBvcnRmZWVkYmFja0BtaWNyb3Nv
+ZnQuY29tLjxiciAvPjxiciAvPk1pY3Jvc29mdCByZXNwZWN0cyB5b3VyIHByaXZhY3kuIFJldmlldy
+BvdXIgT25saW5lIFNlcnZpY2VzIDxhIGhyZWYgPSJodHRwczovL3ByaXZhY3kubWljcm9zb2Z0LmNv
+bS9lbi11cy9wcml2YWN5c3RhdGVtZW50Ij5Qcml2YWN5IFN0YXRlbWVudDwvYT4uPGJyIC8+T25lIE
+1pY3Jvc29mdCBXYXksIFJlZG1vbmQsIFdBLCBVU0EgOTgwNTIuPC8gZGl2ID4=
+
+--_av_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_--
+
+--_rv_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_--
+
+--_mpm_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_
+Content-Type: application/gzip
+Content-Transfer-Encoding: base64
+Content-ID: <14430d20-cb3a-4282-90dc-b78929d114b7>
+Content-Description: enterprise.protection.outlook.com!novustelltravel.com!1745798400!1745884800.xml.gz
+Content-Disposition: attachment; filename="enterprise.protection.outlook.com!novustelltravel.com!1745798400!1745884800.xml.gz";
+
+H4sIAAAAAAAEAO2aS3ObMBCA753pf/D4HoHxAztDlF56a6eHXnrzCLGyNQZEJWEn/76LwUASN02bpj
+PFuiRod6V9SN/oMY5u77J0tAdtpMpvxhPij2/p+3eRAEhixncjVOfm+s4kN+OttcW15x0OB3KYEqU3
+XuD7E+/b509f+RYyNm6N5a+Nr2RuLMs5jNHdaBQ1IVCMIPJOjaNGQ6G0XWdgWcIsOwpRjEOuc5YB/Z
+hb0IWWBkZfSpsqtYu8VtkYo0OZ0iRjmtfDfcgk18ooYQlXWeTVBo1141EmNJ76XPiQLBZhPFtN5qvE
+n81jzqaBEALCOPI626YzxghrzfLNyTnKYthITC2czcPVcuZjhrWkNYA8OaqXy9myUlftZjzv0YCtyw
+cFiQqVSn6/Lso4lWYLXTgKM8tprvalsZCmVrM9pHXSja6xZMlOZlRHXv1xkppCHIXV/0ZW0O8lw4is
+zCHyipPYFOimkphWVHBLJ1VC1UcjE4qiAP/W2ZwNHKeAK90modWhq5VRpeawlgUN/CUJpyTw5ySYT9
+Fvq2mNuSpzDCHy6o9W3niFPUtLrG/SaqqSSVMoI221AuuE+pK+YVWnghmDFl3JmloIKnBJVcUQnVvv
+J35xUtsUI5kAllZIhKC/QnDaVAFrqygTWnLGVW7KFOdg0yzhnsXTbkKr7PwqeGjS9twCS0A/069vcM
+riaegRK+12raEKtZfO43q9eJnW1YUUuFWaJiAYDoxVPkl6VrXTZoKaRjcTDyKI+rP0++FwLB/Nqkpg
+JMfGmTBAZ6C10mdi6bHlPalXZd/C8FIwFiQMEAyfzC6IC8ME6IPSaXK1SVXM0mrfcWA4MHpg4Fbhr8
+gkCMnEkTEEMqqDW8zie5KDfRaJmGWxzNXrkbg8ROt1+eZ0LkISTEKywCPd3HdwOjj/AAYHZxPGW54p
+g8uB0921HBIvQWJ+OUi4/crtV/8DnN1V74JueqWRJWGc7GAYRA4YhH/78NF7Kp9dDg7u+ObAeBYM9+
+YwtDOcA+Pv7xiOjCGQ4W43g7zdhJcD53CPc47NoW2f3dugu28NANABc/HKPSvyTr8WpT8AHWBDa08q
+AAA=
+
+--_mpm_a4bcd9a515b44b9d8eceb05d7333675fpiotk5m200exchangecorpm_--

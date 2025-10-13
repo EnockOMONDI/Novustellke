@@ -1,0 +1,667 @@
+Return-Path: <38LQXYRcKBcct11tyr914x52npr-014r2yBt11tyr.p1znqzv0018756ryy.p1z@scoutcamp.bounces.google.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id +L3LI/S0F2ETcQAA7QkJDw
+	(envelope-from <38LQXYRcKBcct11tyr914x52npr-014r2yBt11tyr.p1znqzv0018756ryy.p1z@scoutcamp.bounces.google.com>)
+	for <novuste1@rs2.noc254.com>; Sat, 14 Aug 2021 15:20:04 +0300
+Return-path: <38LQXYRcKBcct11tyr914x52npr-014r2yBt11tyr.p1znqzv0018756ryy.p1z@scoutcamp.bounces.google.com>
+Envelope-to: admin@novustell.com
+Delivery-date: Sat, 14 Aug 2021 15:20:04 +0300
+Received: from mail-qv1-f72.google.com ([209.85.219.72]:47027)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <38LQXYRcKBcct11tyr914x52npr-014r2yBt11tyr.p1znqzv0018756ryy.p1z@scoutcamp.bounces.google.com>)
+	id 1mEsdx-0007kZ-ML
+	for admin@novustell.com; Sat, 14 Aug 2021 15:20:04 +0300
+Received: by mail-qv1-f72.google.com with SMTP id bc19-20020ad45693000000b0035ccbd692a2so661472qvb.13
+        for <admin@novustell.com>; Sat, 14 Aug 2021 05:20:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:precedence:list-unsubscribe:feedback-id
+         :list-id:message-id:subject:from:to;
+        bh=q7VpvPWP3ihNUskTQjLZpM2TvfjA5MgfcrTBB73w4dE=;
+        b=qpE1WmDuvo54Fhbf2huXWangHvdfOnEsYeuCVEd2cdxLREuvJzjOHW2sHOsoV8zNjr
+         z5g32gt5/sqpEE/6Bq6rWmHIb5z1OAOXuRL/3lNzfD14HuGoMHqgTbOj8510cQh2IDAl
+         kFTvM7LbM5X1x80w8oVKIvEO0zvKndFcST0CmnNAflVLKyJFwEihD2P3a9Elzm3jRqqF
+         W0ct4AiNKL7V7E8FE8xLw1UuHUxltzIUHOMxdyJ3oGEckUhIWs6svNy63s9lMOMAIGDy
+         pp8P3LsmSoL+QkJAjZuVoUMAS/jyam/kzKKm4DOZ/AVNoZhY3Rk/Mzftxqklnf6IJnkN
+         qT/g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:precedence
+         :list-unsubscribe:feedback-id:list-id:message-id:subject:from:to;
+        bh=q7VpvPWP3ihNUskTQjLZpM2TvfjA5MgfcrTBB73w4dE=;
+        b=kOb3TA3URJNz8mlrBbFfUqeav4pIQZjAfavVvRfVCfaKo8xxSPqZmShn3Eep2o7B7K
+         ywWxXnOZm7PI3Q9QB/zLjzjfiMtbkRTVTBJ46TXhjEV5nAn+X0xvYGrX2xi437cJRrg1
+         WSJhOXln+EYsid3IOxRtG4FV1AEl4cWHj/6LqlEQM59EyiJDSieoWnlsnvoSQbfuacyp
+         3l101Hgxz6JMA1f6nkJrpOlQSNulk1QoNNyRR7J9xLahj8fDrF2g5n3LhfEbgUYyC9FT
+         SCxWW0SuqFAHRZiQtNuLwIcmdZLKsXuG4SQ/8fvfZcLo+nz4cEjt2ZqzL746RENm00CW
+         2kZg==
+X-Gm-Message-State: AOAM533k34mxgZq/1VQ1udsN8IK3Pn/w1FSofGcH0fd0eOmKcp0dIWU4
+	OnDXi8CkQqYN0Fo=
+X-Google-Smtp-Source: ABdhPJwZg4cNbvs/wOljauOkR1Fl2XXFImxrAXw7wdx68nraGsujnBsf9mYouM+TlzAMMiyekRUZRX8=
+MIME-Version: 1.0
+X-Received: by 2002:a05:620a:4050:: with SMTP id i16mr1377733qko.90.1628943600270;
+ Sat, 14 Aug 2021 05:20:00 -0700 (PDT)
+Date: Sat, 14 Aug 2021 05:20:00 -0700
+Reply-To: Google Workspace Team <googleworkspace-noreply@google.com>
+X-Google-Id: 4065843
+Precedence: bulk
+List-Unsubscribe: <https://notifications.google.com/g/optout/AD-FnEyChmhZtePYCtGTsJNul0FNxC-66NTQb_CUuNVs0BKF9HVlAaWT28oWw-nxFWcTVYr7JcpYOyyDS_E3shQFRIKSafPkQfT_7vR2GSYFv2pajj6T8KQiIts?hl=en>
+Feedback-ID: P2542--244918427:C20137191:M110372153-en:gamma
+List-Id: <c79b247ae656a53e3722005cb87f926f38cd6286.google.com>
+X-Notifications: GAMMA:<4e6305419327ba547b6d0fdb40f0f63339f293de-20137191-110905361@google.com>
+X-Notifications-Bounce-Info: ATpamXmIlZwCc_OqY9XeSdDl97rmI8AFVHrBYDeykGL8TDR7i01fYQYjrIAFZqoZMG9c4aKpijpufrYGT1RYjrhC8UZr9MM-OjS5iFixkTMZO32TpUTrpNhez50NbspBYghbHbxpMxQlEDS0jkBLD9dUMT2nhjdGmrMOcYw795Tcc1ioJcifQjxNSVNx5G_ZzJlJOdAQLqA-Y-Idk_0W_5XSQBfLPsi1gacxPE1t-KzyCN0_ucRJLK_dLBc6GnHdpX1ImKNQrA8jcNH7VhR-3fJeKFXPNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <4e6305419327ba547b6d0fdb40f0f63339f293de-20137191-110905361@google.com>
+Subject: Make data-driven decisions with Google Sheets
+From: Google Workspace Team <googleworkspace-noreply@google.com>
+To: admin@novustell.com
+Content-Type: multipart/alternative; boundary="000000000000a73e4f05c983fc93"
+X-Spam-Status: No, score=-6.7
+X-Spam-Score: -66
+X-Spam-Bar: ------
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Work smarter and share data insights with Google Sheets Google
+    Sheets helps you unlock and share insights, so you and your team can make
+    smart data-based decisions, quickly. New built-in intelligence features make
+    analysis faster and easier in Sheets. Did [...] 
+ Content analysis details:   (-6.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+--000000000000a73e4f05c983fc93
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+DQoNCldvcmsgc21hcnRlciBhbmQgc2hhcmUgZGF0YSBpbnNpZ2h0cyB3aXRoIEdvb2dsZSBTaGVl
+dHMNCg0KR29vZ2xlIFNoZWV0cyBoZWxwcyB5b3UgdW5sb2NrIGFuZCBzaGFyZSBpbnNpZ2h0cywg
+c28geW91IGFuZCB5b3VyIHRlYW0gY2FuICANCm1ha2Ugc21hcnQgZGF0YS1iYXNlZCBkZWNpc2lv
+bnMsIHF1aWNrbHkuDQpOZXcgYnVpbHQtaW4gaW50ZWxsaWdlbmNlIGZlYXR1cmVzIG1ha2UgYW5h
+bHlzaXMgZmFzdGVyIGFuZCBlYXNpZXIgaW4gIA0KU2hlZXRzLiBEaWQgeW91IGtub3cgeW91IGNh
+biBhc2sgcXVlc3Rpb25zICANCjxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3Av
+QUQtRm5FeWJWb3lRZGVtMm43Rl82UDNfenI4QXFhZHZrUGNIUU9HMGZkSkZrOGdJTTZjT3liRkVK
+cnktOVJINTB1Q2R5QzRhUVdvMXpla3dVY0lLVGYyeDhLa2lFNWxKVWhaM1FkMUtITjM2YUxiZC0z
+N1lzZ3JlclY0a0h6b1lzb1BEN0J0bkhGR1lzdGQ2S0lKQUVkcGcxYlNzY2dDWTJoYjBVLVVXVGpG
+UXRSaFZ4emM2bHFNSm1mZW1FczJPWTVjYVBGOHZFTmdGTzg2OFNOb2xQMkU+ICANCmluIHBsYWlu
+IEVuZ2xpc2ggdG8gaGVscCB5b3UgYW5hbHl6ZSB5b3VyIGRhdGE/IFlvdSBjYW4gYWxzbyB1c2Ug
+U21hcnQgRmlsbCAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FELUZu
+RXdrYkFWZ0x1anZ3VXBnLWdGeDhqMHBHZnh3REZKbWM3SlNnc3BYLThnX1pMNlJCNmhyemFCV1ZK
+WGlla1NGRVdNTFozbmJGY3hlN2lVdTcxUHktR2FTSHBwTWRReng3RjFsb0xsU2lZd0tjWW5LMHkx
+YUhVQU5XeU83RTVVNHFWN2s2b2pxRHlRSmg0Z0kzcVg5aFhZTHQ2S0tIbjk2Wi1mQ201a2h5dlJ2
+VjBaMEFfNnBsa0Z1YTdkX3RaOFB4T0JUa3EwNzVYYzZaRUJrWGNmcGpRZmltX2RLRVJCYzhwZ3ZZ
+QXN4Q3A3aUxjV1M3ZThNa0hxZ2dwRTlib1NhNEwzSXF3PiAgDQp0byBhdXRvbWF0ZSBkYXRhIGVu
+dHJ5IGFuZCBTbWFydCBDbGVhbnVwIHRvIG1ha2UgZGF0YSBjbGVhbnVwIGZhc3RlciBhbmQgIA0K
+bW9yZSBhY2N1cmF0ZS4NCklmIHlvdSBuZWVkIHRvIGFuYWx5emUgbGFyZ2UgZGF0YSBzZXRzLCB1
+c2UgU2hlZXRzIHRvIGltcG9ydCwgYW5hbHl6ZSwgYW5kICANCnZpc3VhbGl6ZSBkYXRhIGZyb20g
+b3RoZXIga2V5IGJ1c2luZXNzIHRvb2xzLCBsaWtlIFNBUCBhbmQgU2FsZXNmb3JjZSAgDQo8aHR0
+cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FELUZuRXhLY0Riam1JTldUdWVGbUJf
+TWI2SzZNOG1HS0R4TWdqelZIRUhQbnloTmsyUVhMaXV1cnZJNUdnRGhYQ0JxbTI4R1ZkZmNmc1ot
+THYxUGNycllGMTZDOTk4YkVTQTZ4UWIyYlZna1J5eGtjWWlYOUwyNU1LWWVhZHNGMmgxQ1N3OWFm
+RW1KejJONldOSktzNUxjclVSSXRWT1ozdTdDQklmTEtTRGt2aW9Pa2lTLXNBbkVHNXBkR2ZvLTBi
+U0hyc3VFQkR6V3pFSnhvVFU+Lg0KDQoNCg0KU2hlZXRzIGxldHMgeW91IGhhdmUgb25lIHNvdXJj
+ZSBvZiB0cnV0aCBmb3IgYWxsIHlvdXIgZGF0YQ0KDQoNCldpdGggU2hlZXRzLCB5b3UgY2FuIGtl
+ZXAgeW91ciB0ZWFtIGFsaWduZWQgYW5kIHdvcmtpbmcgb24gdGhlIHNhbWUgdmVyc2lvbiAgDQpv
+ZiBhIHNwcmVhZHNoZWV0LiBUaGUgYnVpbHQtaW4gdmVyc2lvbiBoaXN0b3J5IG1ha2VzIGl0IGVh
+c3kgdG8gdmlldyBhbmQgIA0KcmVzdG9yZSBwcmV2aW91cyB2ZXJzaW9ucyDigJMgb3IgZXZlbiBz
+ZWUgdGhlIGVkaXQgaGlzdG9yeSBvZiBhIHNwZWNpZmljIGNlbGwuDQoNCg0KU2hlZXRzIGlzIHRp
+Z2h0bHkgaW50ZWdyYXRlZCB3aXRoIG90aGVyIEdvb2dsZSBXb3Jrc3BhY2UgdG9vbHMsIHdoaWNo
+IGNhbiAgDQptYWtlIHlvdXIgZG9jdW1lbnRzIGFuZCBwcmVzZW50YXRpb25zIG1vcmUgZHluYW1p
+Yy4gRm9yIGV4YW1wbGUsIHlvdSBjYW4gIA0KZW1iZWQgY2hhcnRzIGluIERvY3MgYW5kIFNsaWRl
+cyBhbmQgdXBkYXRlIHRoZSBkYXRhIHdpdGggb25lIGNsaWNrLiBBbHNvLCAgDQp3aGVuIHlvdSB1
+c2UgRm9ybXMsIHlvdSBjYW4gc2VlIGFuZCBhbmFseXplIHJlc3BvbnNlIGRhdGEgIA0KPGh0dHBz
+Oi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRC1GbkV6cGEwWVFlT2tGb1FucW9pb000
+emREVHdhUWU0Z1AwdGZwTV93V2xTOEp4cUI3MDh1ZTRBUURMOFBSaGFDeEFEVVExckNxQmZnVlZD
+anJTTFZaZFhCcVdNZlFZMTNDcGJXaGlOb244VzNaMmZkWWpmNGhLSEU2ZWgwUnRQYmk4b2hkTEJZ
+WWNHWW5PSmhheEQ3N3N2bTBZT1BuT2I5bDJkanhKcTA0SHJRVWVTQzk1YmtoMjlVYUZyMkJiMWZz
+TkZlU3hicWg1anNUWDltU1E4al9tUTg+ICANCmluIFNoZWV0cy4NCk1vcmUgYWJvdXQgU2hlZXRz
+ICANCjxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3AvQUQtRm5FektxVmNxdWZR
+X1pJSDdRN1dLWmdQOXBHNDdEUW5hOGFJZXBNSFpBMVVuUXJabG9iNzRKemlueGY3d2xiLWVUT3Fm
+OWtUTktqUUNhOUxIbUM3MGI0Y3BVdXNORjVpdS1NUzNLc3RqQ1hjWFU0Y1pLaS0tRmFGWFVLSFJ0
+RENOcWE0S3BYbWNsVXVwWHJtNW5tVGt3OFlGMUFuVUdMYnotR1JLQWRnSHNUMVgtOE5ZNzZRYzFx
+NDUtT3g3TUdjdWpKR2txSkMxUTRNNUptUUI4TWFXZG1ybmc3YWx3b3dvemc+DQoNCg0KV2Ugd291
+bGQgbG92ZSB5b3VyIGZlZWRiYWNrIG9uIHRoaXMgZW1haWwuIFRha2UgYSBxdWljayBzdXJ2ZXkg
+aGVyZSAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FELUZuRXpiZ3Vl
+alFIS25xM3c5RWlfLXFOUDdXUUc0cXlNbTJZbW9DTHA2YXlLdU9WREtxa1lPd012cWUzQ3VQalVn
+VGtKY1ExdEljRlBIUUxNVGl3UGstOXN0WWhDRzF1aHp3ejVFT3NVeEc2cmNJX09WV01JR0pJU09l
+QXRka21FeFNKOD4uDQoNCg0KDQoNCsKpIDIwMjEgR29vZ2xlIExMQyAxNjAwIEFtcGhpdGhlYXRy
+ZSBQYXJrd2F5LCBNb3VudGFpbiBWaWV3LCBDQSA5NDA0Mw0KVGhpcyBlbWFpbCB3YXMgc2VudCB0
+byBhZG1pbkBub3Z1c3RlbGwuY29tIGJlY2F1c2UgeW91IG9yIHlvdXIgIA0KYWRtaW5pc3RyYXRv
+ciBzaWduZWQgeW91IHVwIHRvIHJlY2VpdmUgbmV3cywgcHJvZHVjdCB1cGRhdGVzLCBhbmQgdGlw
+cyAgDQphYm91dCBHb29nbGUgV29ya3NwYWNlLiBQbGVhc2Ugbm90ZSB0aGF0IHNvbWUgZmVhdHVy
+ZXMgaGlnaGxpZ2h0ZWQgaW4gdGhlc2UgIA0KZW1haWxzIG1pZ2h0IG5vdCBiZSBkZXBsb3llZCBi
+eSB5b3VyIG9yZ2FuaXphdGlvbi4gSWYgeW91IGRvbid0IHdhbnQgdG8gIA0KcmVjZWl2ZSBzdWNo
+IGVtYWlscyBpbiB0aGUgZnV0dXJlLCBwbGVhc2UgdW5zdWJzY3JpYmUgaGVyZSAgDQo8aHR0cHM6
+Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9vcHRvdXQvQUQtRm5FenBKUjZ3QXZTRjcwOENp
+aVIwbW9wRHJBemFESDUzd2xzYXRadWwxRWc1LTJ4Z05DREdHcGtPV3JUODVacnFIS3B6TTFKaWl5
+R3Y5eHY3UHRSa21uYW5jbFlDd1JtRm9ZUGtjbFM0M003SmE0bWs4RnNBP2hsPWVuPi4NCg==
+--000000000000a73e4f05c983fc93
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3Dhttp://www.w3.org/1999/xhtml xmlns:v=3Durn:schemas-microsoft-=
+com:vml xmlns:o=3Durn:schemas-microsoft-com:office:office lang=3Den>
+
+<head>
+  <title>Google Sheets lets you easily analyze data to make decisions</titl=
+e>
+  <meta name=3Dx-apple-disable-message-reformatting>
+  <meta http-equiv=3DX-UA-Compatible>
+  <meta http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+  <meta name=3Dviewport content=3D"initial-scale =3D 1.0,maximum-scale =3D =
+1.0" />
+  <meta name=3Dviewport content=3Dtarget-densitydpi=3Ddevice-dpi />
+      <style type=3Dtext/css>
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto:100,=
+300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto+Mono=
+:100,300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DOpen+Sans:3=
+00,400,600,700');
+         .ExternalClass {width: 100%;}
+         .ExternalClass,=20
+         .ExternalClass p,=20
+         .ExternalClass span,=20
+         .ExternalClass font,=20
+         .ExternalClass td,=20
+         .ExternalClass div {
+         line-height: 100%;}
+         body {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: none;
+         margin: 0; padding: 0;}
+         table, td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+         margin: 0; padding: 0;
+         border-collapse: collapse;}
+         img {
+         -ms-interpolation-mode: bicubic;
+         text-decoration: none;
+         outline: none;}
+         a img {
+         border: none;}
+         p {
+         margin: 0; margin-bottom: 0; padding: 0;}
+         [data-browser=3D"useragent"] {
+         display: none;}
+
+         }/* media only screen and (max-width: 600px) */
+         @media=20
+         only screen and (min-device-width: 375px) and (max-device-width: 4=
+10px),=20
+         only screen and (min-device-width: 414px) and (max-device-width: 7=
+36px),=20
+         only screen and (min-device-width: 320px) and (max-device-width: 3=
+59px) {
+         tr[class=3Dios-native] {
+         display: table-row!important;
+         }
+         }
+         @media only screen and (device-width: 412px) and (orientation: por=
+trait) {
+
+         }
+=20
+      </style>
+  <style>
+    @media screen and (max-width: 812px) {
+      .isection{padding-right: 10px !important;}
+    }
+   @media screen and (max-width: 500px){
+    .space{padding:0px 10px !important;}
+     .isection{padding-right: 10px !important;}
+         }
+ =20
+  </style>
+   <!--[if mso]>
+      <style type=3D"text/css">
+         body, table, td, center, a {font-family: Arial, Helvetica, sans-se=
+rif !important;}
+         li {text-indent: -1em; /* Normalise space between bullets and text=
+ */}
+      </style>
+      <![endif]-->
+     <!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <!--[if mso]>
+<style>
+</style>
+<![endif]-->
+   </head>
+   <body class=3Dbody style=3D"-webkit-text-size-adjust:100%; width:100%; p=
+adding:0" bgcolor=3D#ffffff width=3D100%>
+      <div style=3D"display:none; font-size:1px; color:#333333; line-height=
+:10px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">Work sma=
+rter and share data insights with <span style=3D"white-space: nowrap !impor=
+tant;display:inline-block;">Google Sheets</span></div>
+    <div style=3D"font-size: 0px; line-height:0px; display: none; max-heigh=
+t: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; color: #ffffff; displa=
+y: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </div>
+      <section>
+         <table role=3Dpresentation id=3Dtable-parent style=3D"background-c=
+olor:#ffffff; border:0 none; border-collapse:collapse; mso-table-lspace:0; =
+mso-table-rspace:0;width:100%;" bgcolor=3D#ffffff border=3D0 cellpadding=3D=
+0 cellspacing=3D0 width=3D100%>
+            <tbody>
+               <tr>
+                  <td id=3Dtd-parent style=3D"border-collapse:collapse; fon=
+t-family:Roboto,Arial,Helvetica,sans-serif; padding:0" align=3Dcenter bgcol=
+or=3D#ffffff>
+                     <!--[if mso]>
+                     <table role=3D"presentation" width=3D"600" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-collapse:collapse; ta=
+ble-width:fixed;" align=3D"center">
+                        <tr>
+                           <td style=3D"width: 600px!important;">
+                              <![endif]-->
+                              <div id=3Demail style=3D"background-color:#ff=
+ffff; margin:0 auto;" bgcolor=3D#ffffff>
+                                 <table role=3Dpresentation class=3DbodyWra=
+p align=3Dcenter style=3D" border:0 none; border-collapse:collapse; margin:=
+0; max-width:600px; mso-table-lspace:0; mso-table-rspace:0; padding:0" bord=
+er=3D0 cellpadding=3D0 cellspacing=3D0 width=3D600>
+                                    <tbody>
+                                       <tr>
+                                          <td class=3D"bodyWrap-td space" s=
+tyle=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,sans-s=
+erif;">
+                                             <table role=3Dpresentation sty=
+le=3D"border:0 none; border-collapse:collapse; mso-table-lspace:0; mso-tabl=
+e-rspace:0" border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+                                                <tbody>
+                                                   <tr>
+                                                      <td class=3Dbody-cont=
+ent style=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,s=
+ans-serif;" align=3Dcenter valign=3Dtop width=3D100%>
+                                                         <table role=3Dpres=
+entation style=3D"border:0 none; border-collapse:collapse; mso-table-lspace=
+:0; mso-table-rspace:0" align=3Dcenter border=3D0 cellpadding=3D0 cellspaci=
+ng=3D0 width=3D100%>
+                                                            <!-- mod: parag=
+raph -->
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class=
+=3Dmod-container-td style=3D"border-collapse:collapse; font-family:Roboto,A=
+rial,Helvetica,sans-serif;padding-left:20px;padding-right:20px;" align=3Dce=
+nter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+                                                                     <table=
+ role=3Dpresentation style=3D"border:0 none; border-collapse:collapse; mso-=
+table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 cellspacing=
+=3D0 width=3D100%>
+                                                                        <tb=
+ody>
+                                                                           =
+<tr>
+                                                                           =
+   <td class=3Dmod-padding style=3D"border-collapse:collapse; font-family:R=
+oboto,Arial,Helvetica,sans-serif;" width=3D100%>
+                                                                           =
+      <table role=3Dpresentation style=3D"border:0 none; border-collapse:co=
+llapse; mso-table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 =
+cellspacing=3D0>
+	<tbody>	<tr style=3D"margin:0; padding:0">
+  <td class=3D"mod-padding image-title" style=3D"border-collapse:collapse; =
+color:#1a73e8;  padding-top: 75px;word-break:normal;font-size:36px;directio=
+n:ltr; font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif; line-heig=
+ht:54px;" dir=3Dltr align=3Dcenter width=3D100%>Work smarter and share data=
+ insights with <span style=3D"white-space: nowrap !important;display:inline=
+-block;">Google Sheets</span></td>
+</tr>
+
+<tr style=3D"margin:0; padding:0">
+<td style=3D"">
+<table role=3Dpresentation align=3Dcenter class=3Dcontent_inner width=3D100=
+% cellspacing=3D0 cellpadding=3D0 border=3D0 style=3D"font-size:15px; width=
+:100%; background-color:#ffffff; background:#ffffff;" bgcolor=3D#ffffff>
+ <tr style=3D"margin:0; padding:0">
+<td class=3Dcontent_inner dir=3Dltr style=3D"color:#5f6368; font-family:Rob=
+oto,Arial,Helvetica,sans-serif; line-height:20px; margin:0; padding:0;direc=
+tion:ltr; width:100%;" width=3D100%>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 style=3Dfont-fam=
+ily:Roboto,Arial,Helvetica,sans-serif;>
+ <tbody>
+                     <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;line-height:28px;text-a=
+lign:center;">
+ <span style=3D"white-space: nowrap !important;display:inline-block;">Googl=
+e Sheets</span> helps you unlock and share insights, so you and your team c=
+an make smart data-based decisions, quickly.
+ </td>
+</tr>
+ <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;line-height:28px;text-a=
+lign:center;">
+ New built-in intelligence features make analysis faster and easier in Shee=
+ts. Did you know you can <a href=3Dhttps://notifications.google.com/g/p/AD-=
+FnEziq25zfpcSf3v7gKxjlseafTdUw7zX5sde8bkj2cf_jegsSA7g9UBAf95l33AhSyN9pTKIWE=
+w5LFo0oYTVnQ1AcxJpg4lE_q2BvKdNNPnx2wIDo82cw5-0GSFRndINF8ll826MhwY2DFDQjw86N=
+2CkuXCq3nHpTF2Z0KO3fwwTeMKv8YLJUd33L6Fx8_z34h0UdFlzNBTV_AemOGtO7A target=3D=
+_blank style=3D"color:#1a73e8;text-decoration:underline; font-size:inherit =
+!important; ;border:0;">ask questions</a> in plain English to help you anal=
+yze your data? You can also use <a href=3Dhttps://notifications.google.com/=
+g/p/AD-FnEyv_aUaB3D3p_UhC5RgPOPxPcUh-RzZ1dDJpN9oNLeHGHByAxtueAEEWQ9nlq-tu5A=
+cmU-yVRjJnmL04umUIhCvgUWucQi8GSM_91adxmnZuIy039rb4WDEdfILsFqjQQ7JlXJSgcBoqG=
+7Ru2xE0wT45OUJcREwu5P1Vlyh791ES0ICqgkh2tmYGLQHL8z6iedqCMO9XGPkzKgG9m91EtHCa=
+QE-Sx35OFeRaaAKqfWCHclwbYAByBPZ5kSyVEGzJcT_b1o9 target=3D_blank style=3D"co=
+lor:#1a73e8;text-decoration:underline; font-size:inherit !important; ;borde=
+r:0;">Smart Fill</a> to automate data entry and Smart Cleanup to make data =
+cleanup faster and more accurate.
+ </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;line-height:28px;text-a=
+lign:center;">
+ If you need to analyze large data sets, use Sheets to import, analyze, and=
+ visualize data from other key business tools, like SAP and <a href=3Dhttps=
+://notifications.google.com/g/p/AD-FnEwqHsktkfjqvD1miq07iiD2wb74OmjWdEfp1fp=
+Px3RRS50ZD_opU7f0SpPgeGv-IUu0-n7PAJGbNyLRHjftThnoRRM7QbzBCCJbn0mIID_cunkb9d=
+SW4rGPCnf2ShZnT2lz9w9SMJ17rZumbDZcspjecNf3ON237Eqhwhh24-ZyzaJDAPVef6tcNFJ5h=
+mit9O9Z40nuTBntG3OCVA target=3D_blank style=3D"color:#1a73e8;text-decoratio=
+n:underline; font-size:inherit !important; ;border:0;">Salesforce</a>.
+ </td>
+</tr>
+=20
+ =20
+</tbody>
+</table>
+</td>
+         </tr>
+      </table>
+   </td>=20
+  </tr>
+
+
+<tr style=3D"margin:0; padding:0">
+<td style=3Dmargin:0;padding-top:30px;text-align:center align=3Dcenter>
+<img src=3Dhttp://services.google.com/fh/files/emails/using_sheets_2020.png=
+ border=3D0 width=3D452 valign=3Dbottom style=3D"display: inline-block;" al=
+ign=3Dcenter alt=3D"">
+</td>
+</tr><tr style=3D"margin:0; padding:0">
+  <td class=3D"mod-padding image-title" style=3D"border-collapse:collapse; =
+color:#1a73e8;padding-top:13px; word-break:normal;font-size:24px;direction:=
+ltr; line-height:36px; font-family:Roboto,Arial,Helvetica,sans-serif;paddin=
+g-top:30px;text-align:center;" dir=3Dltr align=3Dcenter width=3D100%>Sheets=
+ lets you have one source of truth for all your data</td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;font-size:16px;color:#5f6368;fon=
+t-weight:normal;line-height:20px;padding-top:15px;line-height:28px;text-ali=
+gn:center;" dir=3Dltr align=3Dcenter width=3D100%>With Sheets, you can keep=
+ your team aligned and working on the same version of a spreadsheet. The bu=
+ilt-in version history makes it easy to view and restore previous versions =
+=E2=80=93 or even see the edit history of a specific cell.</td></tr>
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;font-size:16px;color:#5f6368;fon=
+t-weight:normal;line-height:20px;padding-top:15px;padding-bottom:27px;line-=
+height:28px;text-align:center;" dir=3Dltr align=3Dcenter width=3D100%>Sheet=
+s is tightly integrated with other <span style=3D"white-space: nowrap !impo=
+rtant;display:inline-block;">Google Workspace</span> tools, which can make =
+your documents and presentations more dynamic. For example, you can embed c=
+harts in Docs and Slides and update the data with one click. Also, when you=
+ use Forms, you can see and analyze <a href=3Dhttps://notifications.google.=
+com/g/p/AD-FnExZDcWkBkbQN_a9ByLolU-X073W_Li5k-WLOg0AoljLsgl1GzD8xGqX5cln8ci=
+KX98mr9aHmL_kB2b6wgiSRph7P05xqYu96WX-2YrhQLCmuZa6HoRnDqSGyUV6JlEk13N9ayzu2l=
+AtSTQy8jwJzkgCsnPcKz7aZib2R4ocLEAYqt6vGLPszTzUTdz0wmDkDXhfEIPeQrTfcwA1d10XA=
+PZozg target=3D_blank style=3D"color:#1a73e8;text-decoration:underline; fon=
+t-size:inherit !important; ;border:0;">response data</a> in Sheets.</td></t=
+r> <tr>
+      <td style=3D"margin-top:0;margin-bottom:0;margin-right:0;margin-left:=
+0; padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;padding-to=
+p:23px;">
+       =20
+        <div style=3D"text-align:center;line-height:24px;padding:13px 10px;=
+"><!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" href=3D"https://notifications.google.com/g/=
+p/AD-FnEwSxoCpNIy4OdFxIkwSEdWPo2A-9iP8M5HYXTIGXBpEJ7RN_JNW5WZvFlL1khtOjb8wT=
+NA1iSn8TB38woQWM59Sv2aRKLL-yt5hExWOYu4uvxjXkdOgXe4WdYoUjJKOl3wprRDPxkoFBXFx=
+AwpZmbELljIcbo7LLBXyAmXD-8fyacXgn8elCw-Mrf4xhxIHu-rPJi3izTlgWADLa2m7LB5LFLr=
+hIAHnlsIl" style=3D"height:38px;v-text-anchor:middle;width:235px;" arcsize=
+=3D"14%" strokecolor=3D"#dadce0" fillcolor=3D"#1a73e8" target=3D"_blank">
+    <w:anchorlock/>
+    <center style=3D"font-family:Google Sans,Roboto,Helvetica,Arial,sans-se=
+rif;font-size:13px;direction:ltr;font-weight:600;color:#ffffff;">More about=
+ Sheets</center>
+  </v:roundrect>
+<![endif]--><a href=3Dhttps://notifications.google.com/g/p/AD-FnEwSxoCpNIy4=
+OdFxIkwSEdWPo2A-9iP8M5HYXTIGXBpEJ7RN_JNW5WZvFlL1khtOjb8wTNA1iSn8TB38woQWM59=
+Sv2aRKLL-yt5hExWOYu4uvxjXkdOgXe4WdYoUjJKOl3wprRDPxkoFBXFxAwpZmbELljIcbo7LLB=
+XyAmXD-8fyacXgn8elCw-Mrf4xhxIHu-rPJi3izTlgWADLa2m7LB5LFLrhIAHnlsIl style=3D=
+"background-color:#1a73e8;border:1px solid #dadce0;border:1px solid #1a73e8=
+; border-radius:2px;color:#ffffff;display:inline-block;font-family: Google =
+Sans,Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-=
+height:36px;direction:ltr;text-align:center;text-decoration:none;border-rad=
+ius:5px; padding:0 10px;width:235px;-webkit-text-size-adjust:none;mso-hide:=
+all;line-height:24px;padding:13px 10px;" target=3D_blank class=3D"m_weight =
+m_font_size_nw">More about Sheets</a></div>
+       =20
+   =20
+      </td>
+   </tr>
+
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;font-size:16px;color:#5f6368;fon=
+t-weight:normal;line-height:20px;padding-top:50px;padding-bottom:20px;line-=
+height:24px;text-align:center;" dir=3Dltr align=3Dcenter width=3D100%>We wo=
+uld love your feedback on this email. Take a quick survey <a href=3Dhttps:/=
+/notifications.google.com/g/p/AD-FnEwqt2V25LxYD0ssXkIYG0tKhQEG5BS4i1sD_mFgh=
+5yL2Q3vhdAGFNpkWtV7-VUXLVy6JklAycj0sKM7G5Vto9E13nvUod1FAwfcGns2XQpYBQPJVQLh=
+bipKmG9urCt2qtjAig target=3D_blank style=3D"color:#1a73e8;text-decoration:u=
+nderline; font-size:inherit !important; ;border:0;">here</a>.</td></tr>
+<tr>
+   <td class=3Dfooter-content style=3D"border-collapse:collapse; font-famil=
+y:Roboto,Arial,Helvetica,sans-serif; padding:0px 30px;padding-bottom:30px;"=
+ align=3Dcenter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+      <div style=3Dclear:both;>
+   </div><table role=3Dpresentation style=3D"border:0 none; border-collapse=
+:collapse; mso-table-lspace:0; mso-table-rspace:0" align=3Dcenter border=3D=
+0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+         <tbody>
+          =20
+   <tr>
+      <td height=3D50 colspan=3D2 style=3Dheight:50px width=3D100%></td>
+   </tr>
+
+<!-- Footer above -->
+            <!-- Space -->
+            <tr>
+               <td class=3Dfooter-addr colspan=3D2 style=3D"border-collapse=
+:collapse; color:#5f6368; font-family:Roboto,Arial,Helvetica,sans-serif; fo=
+nt-size:14px; line-height:21px; padding:0 0 15px" align=3Dcenter valign=3Dt=
+op width=3D100%><span class=3Dios-link-footer-addr style=3D"color:#5f6368; =
+cursor:text; text-decoration:none"><font><span style=3D"color:#5f6368; curs=
+or:text; text-decoration:none">
+
+
+
+
+      <span style=3D"font-size:inherit; color:inherit; font-weight:inherit;=
+ line-height:inherit; font-family:inherit;">&copy; 2021 Google LLC 1600 Amp=
+hitheatre Parkway, Mountain View, CA 94043</span>
+  =20
+  =20
+=20
+                 </span></font></span></td>
+            </tr>
+            <tr><td colspan=3D2 class=3D"footer-legal last" style=3D"border=
+-collapse:collapse; color:#5f6368; font-family:Roboto,Arial,Helvetica,sans-=
+serif;font-size:14px;direction:ltr; line-height:21px; padding:0 0 15px; pad=
+ding-bottom:0;word-break:normal;" align=3Dcenter dir=3Dltr valign=3Dtop wid=
+th=3D100%>This email was sent to admin@novustell.com because you or your ad=
+ministrator signed you up to receive news, product updates, and tips about =
+<!--[if mso]><br><![endif]--><span style=3D"white-space: nowrap !important;=
+display:inline-block;">Google Workspace</span>. Please note that some featu=
+res highlighted in these emails might not be deployed by your organization.=
+ If you don't want to receive such emails in the future, please unsubscribe=
+ <a href=3Dhttps://notifications.google.com/g/optout/AD-FnEyChmhZtePYCtGTsJ=
+Nul0FNxC-66NTQb_CUuNVs0BKF9HVlAaWT28oWw-nxFWcTVYr7JcpYOyyDS_E3shQFRIKSafPkQ=
+fT_7vR2GSYFv2pajj6T8KQiIts?hl=3Den target=3D_blank style=3D"color:#1a73e8;t=
+ext-decoration:none; font-size:inherit !important; font-size:12px;border:0;=
+">here</a>.
+</td></tr>
+    =20
+ =20
+         </tbody>
+      </table>
+   </td>
+</tr>
+
+</tbody>
+ </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <!--[if mso]>
+                           </td>
+                        </tr>
+                     </table>
+                     <![endif]-->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+   <img alt=3D"" height=3D1 src=3Dhttps://notifications.google.com/g/img/AD=
+-FnExC8RkR0dHnfdmDIST-maE9yBHVVDc8CKus0W2I_gY5Ag.gif width=3D3>
+
+</body></html>
+
+--000000000000a73e4f05c983fc93--

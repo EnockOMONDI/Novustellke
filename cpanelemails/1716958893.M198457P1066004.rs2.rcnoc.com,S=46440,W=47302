@@ -1,0 +1,862 @@
+Return-Path: <bounce@eq.intuit.com>
+Delivered-To: novuste1@rs2.rcnoc.com
+Received: from rs2.rcnoc.com
+	by rs2.rcnoc.com with LMTP
+	id 8BWZC622VmYURBAAc6ptLA
+	(envelope-from <bounce@eq.intuit.com>)
+	for <novuste1@rs2.rcnoc.com>; Wed, 29 May 2024 08:01:33 +0300
+Return-path: <bounce@eq.intuit.com>
+Envelope-to: techniical@novustelltravel.com
+Delivery-date: Wed, 29 May 2024 08:01:33 +0300
+Received: from mail02.eq.intuit.com ([142.0.166.19]:54851)
+	by rs2.rcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.97.1)
+	(envelope-from <bounce@eq.intuit.com>)
+	id 1sCBRL-00000004U86-1ee8
+	for techniical@novustelltravel.com;
+	Wed, 29 May 2024 08:01:33 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk1024-2012; d=eq.intuit.com;
+ h=Message-ID:From:Reply-To:To:Subject:Date:MIME-Version:Content-Type;
+ i=intuit@eq.intuit.com;
+ bh=rCA8lnz6LQhLCHAnN3+ZUBLI+DynoCw18nzrbK8kk9A=;
+ b=kkOWJfs4voJDv4agEG3MfyKsENPRtpNHfCYexzvd43sY8j2QiDd6a+JGRS5mT8JVNQpJsc7r2hdg
+   z5Pxm+nJ+GY6hNd48sxSVDP+uunOiXckwo29AgpDIAK2ldYe6MIZLwrZwQxX1RJerKtM8x2MwfiS
+   G2aoRSdZFTImNQRcCR0=
+Received: from c03snj612 (10.50.136.32) by mail02.eq.intuit.com id haqr8235r8gl for <techniical@novustelltravel.com>; Wed, 29 May 2024 01:00:49 -0400 (envelope-from <bounce@eq.intuit.com>)
+Message-ID: <0820e3018704455b9442f4a68fb98268@113755760>
+X-Binding: 113755760
+X-elqSiteID: 113755760
+X-elqPod: 0x21D08863C745073163D34BE0C79B139AC486138E417EA2383AC1764C08224397
+X-cid: 18150-50437
+From: Intuit QuickBooks <intuit@eq.intuit.com>
+Reply-To: Intuit QuickBooks <donotreply@intuit.com>
+To: techniical@novustelltravel.com
+Subject: Customise and send your first invoice
+Date: Wed, 29 May 2024 01:00:49 -0400
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-4f3wL3l4djt8ztIealjaHQ=="
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.rcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  <a href="#">Ok les go</a> Choose from a template or customise
+    your own. "Intuit QuickBooks" <http://app.eq.intuit.com/e/er?s=113755760&lid=34627&elqTrackId=56bb9b127e1a461bbaba448370ee8f1b&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=14444>
+    [...] 
+ Content analysis details:   (-0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: intuit.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [142.0.166.19 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [142.0.166.19 listed in sa-accredit.habeas.com]
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+--=-4f3wL3l4djt8ztIealjaHQ==
+Content-Type: text/plain; charset=utf-8
+Content-Id: <84ead994-0f39-4a69-878b-1cf11bf78c1f>
+Content-Transfer-Encoding: base64
+
+PGEgaHJlZj0iIyI+T2sgbGVzIGdvPC9hPg0KDQoNCkNob29zZSBmcm9tIGEgdGVtcGxhdGUgb3Ig
+Y3VzdG9taXNlIHlvdXIgb3duLiAgICAgDQoNCg0KDQoiSW50dWl0IFF1aWNrQm9va3MiIDxodHRw
+Oi8vYXBwLmVxLmludHVpdC5jb20vZS9lcj9zPTExMzc1NTc2MCZsaWQ9MzQ2MjcmZWxxVHJhY2tJ
+ZD01NmJiOWIxMjdlMWE0NjFiYmFiYTQ0ODM3MGVlOGYxYiZlbHE9MDgyMGUzMDE4NzA0NDU1Yjk0
+NDJmNGE2OGZiOTgyNjgmZWxxYWlkPTUwNDM3JmVscWF0PTEmZWxxY3N0PTI3MiZlbHFjc2lkPTE0
+NDQ0PiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICANClNpZ24gaW4gPGh0dHA6Ly9hcHAuZXEuaW50dWl0LmNvbS9lL2VyP3M9MTEzNzU1NzYw
+JmxpZD04MzYzJmVscVRyYWNrSWQ9NWZmZDRmNWUwYmUyNGI2ZDgxODNlMWE2Y2M0NTRiZDImZWxx
+PTA4MjBlMzAxODcwNDQ1NWI5NDQyZjRhNjhmYjk4MjY4JmVscWFpZD01MDQzNyZlbHFhdD0xJmVs
+cWNzdD0yNzImZWxxY3NpZD0xNDQ0ND4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgDQoNCiAgICAgICAgICANCg0KQ3VzdG9taXNlIGFuZCBzZW5kIGFuIGlu
+dm9pY2UgaW4gbWludXRlcyAgICAgICAgICAgICAgICAgICAgICAgIA0KDQoiIiA8aHR0cHM6Ly9h
+cHAuZXEuaW50dWl0LmNvbS9lL2VyP3M9MTEzNzU1NzYwJmxpZD02NDkyJmVscVRyYWNrSWQ9ZTg4
+NmMwZTg2N2IzNDZjZWE3NjdhMzIzNzBlM2ZlZTImZWxxPTA4MjBlMzAxODcwNDQ1NWI5NDQyZjRh
+NjhmYjk4MjY4JmVscWFpZD01MDQzNyZlbHFhdD0xPiAgICAgICAgICAgIA0KDQpTZW5kaW5nIHBy
+b2Zlc3Npb25hbCBpbnZvaWNlcyBpbiBRdWlja0Jvb2tzIGlzIGFzIGVhc3kgYXMgYWRkaW5nIHlv
+dXIgY29tcGFueSBsb2dvIGFuZCBwYXltZW50IGRldGFpbHMgdG8gYSB0ZW1wbGF0ZS4gICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCg0KQ3VzdG9taXNlIGFuIGludm9pY2UgPGh0
+dHBzOi8vYXBwLmVxLmludHVpdC5jb20vZS9lcj9zPTExMzc1NTc2MCZsaWQ9OTE5OTImZWxxVHJh
+Y2tJZD04ZGY1MjA2NzBlMGQ0ZTA1OGI2OGEyYzJhMzhiNTZhNiZlbHE9MDgyMGUzMDE4NzA0NDU1
+Yjk0NDJmNGE2OGZiOTgyNjgmZWxxYWlkPTUwNDM3JmVscWF0PTE+ICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCkxlYXJuIGhvdyB0byBjcmVhdGUgYW5k
+IGVtYWlsIGFuIGludm9pY2UgdXNpbmcgUXVpY2tib29rcyBPbmxpbmUuICAgICAgICAgICAgICAg
+DQoNCjxodHRwczovL2FwcC5lcS5pbnR1aXQuY29tL2UvZXI/cz0xMTM3NTU3NjAmbGlkPTEwNTkx
+MyZlbHFUcmFja0lkPWU4MGI5YmVkM2RkZjQ0MzJiNTZiMmRjN2Q1MjQ4ZTVlJmVscT0wODIwZTMw
+MTg3MDQ0NTViOTQ0MmY0YTY4ZmI5ODI2OCZlbHFhaWQ9NTA0MzcmZWxxYXQ9MT4gICAgICAgICAg
+ICAgDQoNCg0KDQpXZSdyZSBoZXJlIHRvIGhlbHAgICAgICAgICAgICAgICAgICAgICAgICAgDQoN
+CiIiIDxodHRwczovL2FwcC5lcS5pbnR1aXQuY29tL2UvZXI/cz0xMTM3NTU3NjAmbGlkPTg3MzYz
+JmVscVRyYWNrSWQ9NWEyY2YzOGE5MmExNGQ1YThkMmY2ODdmNDc2NjQ3ZmEmZWxxPTA4MjBlMzAx
+ODcwNDQ1NWI5NDQyZjRhNjhmYjk4MjY4JmVscWFpZD01MDQzNyZlbHFhdD0xJmVscWNzdD0yNzIm
+ZWxxY3NpZD0xNzIwMz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgDQpGaW5kIGhlbHAgb3IgY29udGFjdCBzdXBwb3J0IDxodHRwczovL2FwcC5lcS5pbnR1
+aXQuY29tL2UvZXI/cz0xMTM3NTU3NjAmbGlkPTg3MzYzJmVscVRyYWNrSWQ9MzQ1NWRlN2QyZjU3
+NDczYmE2ZTVkNGUzMjZjZmI1MTAmZWxxPTA4MjBlMzAxODcwNDQ1NWI5NDQyZjRhNjhmYjk4MjY4
+JmVscWFpZD01MDQzNyZlbHFhdD0xJmVscWNzdD0yNzImZWxxY3NpZD0xNzIwMz4gICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCiIiIDxodHRwczovL2Fw
+cC5lcS5pbnR1aXQuY29tL2UvZXI/cz0xMTM3NTU3NjAmbGlkPTEyNDIyMyZlbHFUcmFja0lkPTRh
+YzQ4MzY3MjZiZjQ1YmY5YmFhZGU5MjEwYWNmZjAzJmVscT0wODIwZTMwMTg3MDQ0NTViOTQ0MmY0
+YTY4ZmI5ODI2OCZlbHFhaWQ9NTA0MzcmZWxxYXQ9MSZlbHFjc3Q9MjcyJmVscWNzaWQ9MTcyMDM+
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KQ2hhdCB3
+aXRoDQpzYWxlcyA8aHR0cHM6Ly9hcHAuZXEuaW50dWl0LmNvbS9lL2VyP3M9MTEzNzU1NzYwJmxp
+ZD0xMjQyMjMmZWxxVHJhY2tJZD04MWMyYzRmYzJjY2M0NjcwODQ5YTM4MWE0MmRkNDcwYSZlbHE9
+MDgyMGUzMDE4NzA0NDU1Yjk0NDJmNGE2OGZiOTgyNjgmZWxxYWlkPTUwNDM3JmVscWF0PTEmZWxx
+Y3N0PTI3MiZlbHFjc2lkPTE3MjAzPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICANCg0KIiIgPGh0dHBzOi8vYXBwLmVxLmludHVpdC5jb20vZS9lcj9zPTEx
+Mzc1NTc2MCZsaWQ9MTIxMTk2JmVscVRyYWNrSWQ9NmE1N2NiMjFmM2NjNDAwMzlmMTUzMDFiYTVk
+NWMyZWEmZWxxPTA4MjBlMzAxODcwNDQ1NWI5NDQyZjRhNjhmYjk4MjY4JmVscWFpZD01MDQzNyZl
+bHFhdD0xJmVscWNzdD0yNzImZWxxY3NpZD0xNzIwMz4gICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgDQpCdXkgbm93ICYNClNBVkUgOTAlKiA8aHR0cHM6Ly9h
+cHAuZXEuaW50dWl0LmNvbS9lL2VyP3M9MTEzNzU1NzYwJmxpZD0xMjExOTYmZWxxVHJhY2tJZD0z
+M2IyMDBhMmI2MjU0YTIwYjFjYTU3YTJhMTkwZDcxNCZlbHE9MDgyMGUzMDE4NzA0NDU1Yjk0NDJm
+NGE2OGZiOTgyNjgmZWxxYWlkPTUwNDM3JmVscWF0PTEmZWxxY3N0PTI3MiZlbHFjc2lkPTE3MjAz
+PiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCg0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KDQoNCg0KKkRp
+c2NvdW50OiBGb3IgbmV3IFF1aWNrQm9va3MgY3VzdG9tZXJzLCByZWNlaXZlIGEgZGlzY291bnQg
+b2ZmIHRoZSBjdXJyZW50IG1vbnRobHkgcHJpY2UgZm9yIFF1aWNrQm9va3MgT25saW5lIFNpbXBs
+ZSBTdGFydCwgUXVpY2tCb29rcyBPbmxpbmUgRXNzZW50aWFscyBvciBRdWlja0Jvb2tzIE9ubGlu
+ZSBQbHVzIGZvciB0aGUgZmlyc3QgNiBtb250aHMgb2Ygc2VydmljZSwgc3RhcnRpbmcgZnJvbSBk
+YXRlIG9mIGVucm9sbWVudC4gRnJvbSBtb250aCA3IGZyb20gdGhlIGRhdGUgb2YgZW5yb2xtZW50
+LCB0aGUgcHJpY2Ugd2lsbCBjaGFuZ2UgdG8gdGhlIHRoZW4gY3VycmVudCBtb250aGx5IHByaWNl
+LiBTZWUgY3VycmVudCBwcmljZXMgaGVyZSA8aHR0cHM6Ly9hcHAuZXEuaW50dWl0LmNvbS9lL2Vy
+P3M9MTEzNzU1NzYwJmxpZD01NDA4MiZlbHFUcmFja0lkPWY2OTg4NDk3N2FlNzQ0NzI4NTI2MTFl
+MWQyNmM3ZjNhJmVscT0wODIwZTMwMTg3MDQ0NTViOTQ0MmY0YTY4ZmI5ODI2OCZlbHFhaWQ9NTA0
+MzcmZWxxYXQ9MSZlbHFjc3Q9MjcyJmVscWNzaWQ9MTcyMDc+LiBZb3VyIGFjY291bnQgd2lsbCBh
+dXRvbWF0aWNhbGx5IGJlIGNoYXJnZWQgb24gYSBtb250aGx5IGJhc2lzIHVudGlsIHlvdSBjYW5j
+ZWwuIFlvdSBtYXkgY2FuY2VsIGF0IGFueSB0aW1lLiBUaGVyZSBpcyBubyBsaW1pdCBvbiB0aGUg
+bnVtYmVyIG9mIHN1YnNjcmlwdGlvbnMgb3JkZXJlZCB1bmRlciB0aGlzIG9mZmVyLiBUaGlzIG9m
+ZmVyIGNhbm5vdCBiZSBjb21iaW5lZCB3aXRoIGFueSBvdGhlciBRdWlja0Jvb2tzIE9ubGluZSBw
+cm9tb3Rpb24gb3Igb2ZmZXJzLiBTYWxlcyB0YXggbWF5IGJlIGFwcGxpZWQgd2hlcmUgYXBwbGlj
+YWJsZS4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCg0KDQoNCg0KVmlldyBvbiB3ZWIgPGh0dHBz
+Oi8vYXBwLmVxLmludHVpdC5jb20vZS9lcz9zPTExMzc1NTc2MCZlPTcyOTQ3MzMwJmVscVRyYWNr
+SWQ9Mzk2MDg1NWY5MWZiNGJjMTkxOGFlNWMwYmI4ODcwMjEmZWxxPTA4MjBlMzAxODcwNDQ1NWI5
+NDQyZjRhNjhmYjk4MjY4JmVscWFpZD01MDQzNyZlbHFhdD0xPg0KDQpUaGlzIG1lc3NhZ2Ugd2Fz
+IHNlbnQgdG8gdGVjaG5paWNhbEBub3Z1c3RlbGx0cmF2ZWwuY29tLCBhcyBhbiBJbnR1aXQgY3Vz
+dG9tZXIsIGNvbnNpc3RlbnQgd2l0aCB5b3VyIGVtYWlsIHByZWZlcmVuY2VzLiBJZiB5b3UgaGF2
+ZSBjaG9zZW4gbm90IHRvIHJlY2VpdmUgbWFya2V0aW5nIG1lc3NhZ2VzLCB5b3Ugd2lsbCBjb250
+aW51ZSB0byByZWNlaXZlIGJ1c2luZXNzIGNvbW11bmljYXRpb25zIGFib3V0IHlvdXIgc2VsZWN0
+ZWQgSW50dWl0IHByb2R1Y3QocyksIHdoaWNoIG1heSBlaXRoZXIgYWZmZWN0IHlvdXIgc2Vydmlj
+ZSBvciBzb2Z0d2FyZSwgeW91ciBhY2NvdW50LCBvciB3aGljaCBtYXkgYmUgbGVnYWxseSByZXF1
+aXJlZC4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNClVuc3Vic2NyaWJl
+IDxodHRwczovL2FjY291bnRzLmludHVpdC5jb20vYXBwL3Vuc3Vic2NyaWJlP2l1eF92Mz10cnVl
+JmFpZD1xYiZyZ249Uk9XJmxvYz1lbl9nYiZwdXI9L21hcmtldGluZy1ub3RpZmljYXRpb25zL1By
+b2R1Y3QmdG9rPTJnSUFBQUFiQVFBRUFBQUFEZ1VBQ0haNGNVMHZkbWxrQmdBR2NKaUYtRUtMNWhL
+RXNTSXBRM0xGeTd3cGkweDJJT0xMNzdrbktRWS1PdktuRHNtY053THRfaHVfUzJIQ2VoLXk0UEFj
+T3pKSmlSRDhRM050X25HV2swaWVSRUswbXg1Z0VDXzhLaS11aUZNeDQ1QkV3SlhhVGgtdFV0dHV6
+M1BmWlUwV01uUUtrSDJHeVlhQjVZSXVjVEwxcGUtVVhfdlBMU0Exc1ZvU2RiS3pNTlpNLVg4c3Y2
+NTEzRXdKOWZCS1JaQWp5TWY1eW80TXRzVGRPM0ZlZVFkUDhsWjVQck9KblVmVVRuOHZvak5lZnpi
+TUhqMTlFQSZlbHFUcmFja0lkPTczOTE5ZjE0ZGZkOTQ3MzRiMDIyNmUyMzQ0Y2ZkODg0JmVscT0w
+ODIwZTMwMTg3MDQ0NTViOTQ0MmY0YTY4ZmI5ODI2OCZlbHFhaWQ9NTA0MzcmZWxxYXQ9MSZlbHFD
+YW1wYWlnbklkPTE4MTUwPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgU2VjdXJpdHkgPGh0dHBzOi8vc2VjdXJpdHkuaW50dWl0LmNvbS8/ZWxxVHJhY2tJ
+ZD03NDY2NTE3Mjk5ZTM0M2Q1OTI0ZDA1N2RmOTU2MjJmZSZlbHE9MDgyMGUzMDE4NzA0NDU1Yjk0
+NDJmNGE2OGZiOTgyNjgmZWxxYWlkPTUwNDM3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD0xODE1MD4g
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFByaXZhY3kg
+c3RhdGVtZW50IDxodHRwczovL3d3dy5pbnR1aXQuY29tL3ByaXZhY3kvc3RhdGVtZW50Lz9lbHFU
+cmFja0lkPWJlZTllOTYxZGE5NDQ1YThhMzg3OGYwZGYxMzE4MzEzJmVscT0wODIwZTMwMTg3MDQ0
+NTViOTQ0MmY0YTY4ZmI5ODI2OCZlbHFhaWQ9NTA0MzcmZWxxYXQ9MSZlbHFDYW1wYWlnbklkPTE4
+MTUwPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCg0K
+wqkyMDI0IEludHVpdCBMdGQuIEFsbCByaWdodHMgcmVzZXJ2ZWQuIFRyYWRlbWFya3MgPGh0dHBz
+Oi8vd3d3LmludHVpdC5jb20vbGVnYWwvdHJhZGVtYXJrLz9lbHFUcmFja0lkPTYzMDBmYjA3ZTZi
+MDRjMzViYWQ3MTU1MTkzZThkNDg2JmVscT0wODIwZTMwMTg3MDQ0NTViOTQ0MmY0YTY4ZmI5ODI2
+OCZlbHFhaWQ9NTA0MzcmZWxxYXQ9MSZlbHFDYW1wYWlnbklkPTE4MTUwPi4NClRoZSBSb2NrZXQg
+U2NpZW5jZSBHcm91cCBMTEMgZC9iL2EgSW50dWl0IFF1aWNrQm9va3MNCjY3NSBQb25jZSBkZSBM
+ZW9uIEF2ZSBORSwgU3VpdCA1MDAwLCBBdGxhbnRhLCBHQSwgMzAzMDgNCkdTVCByZWdpc3RyYXRp
+b24gbnVtYmVyOiBNOTAzNzI5MzVHICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICANCg0KIkludHVpdCBicmFuZHMiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IA0KDQo=
+
+--=-4f3wL3l4djt8ztIealjaHQ==
+Content-Type: text/html; charset=utf-8
+Content-Id: <804e8d3a-6922-41d2-af5a-dbfea8f4eb10>
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+
+<meta name="x-apple-disable-message-reformatting">
+<title>Intuit</title>
+<!--[if mso]>
+<style>
+table
+ td {font-family: Arial, sans-serif !important;}
+table td a {font-family: Arial, sans-serif !important;}
+table {border-collapse: collapse; border-spacing: 0; }
+sup { font-size: 100% !important; }
+.hideoutlook {display:none !important;}
+.button-primary-kiwi {height: 48px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-primary-fig {height: 48px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-primary-white {height: 48px 
+!important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-secondary-kiwi {height: 44px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-secondary-fig {height: 44px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-secondary-white {height: 44px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.button-signin-kiwi {height: 28px !important; padding-left: 20px !important; 
+padding-right: 20px !important;}
+.button-signin-white {height: 28px !important; padding-left: 20px !important; padding-right: 20px !important;}
+.headline {font-family: "Arial Bold", Arial, sans-serif !important;}
+.headline-b {font-family: "Arial Black", "Arial Bold", Arial, sans-serif !important;}
+.items {padding-top: 20px !important;}
+</style>
+<![endif]-->
+
+
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+
+</xml><![endif]-->
+
+<link rel="stylesheet" href="https://quickbooks.intuit.com/cmc-emails/shared/css/reimagine-email.css">
+
+<style type="text/css">
+
+	body{margin:0
+ !important; padding:0; min-width:100%; width:100% !important;}
+	sup { line-height: 0; font-size: 75%; }
+	u ~ div .tofu-bg {background-color: #F4F4EF;}
+	.apple-link-legal a {color: #6B6C72 !important; text-decoration: none !important;}
+	.apple-link-black a {color: #000000 !important; text-decoration: none !important;}
+	.button-primary-kiwi:hover {background-color: #086D37;}
+	.button-primary-fig:hover {background-color: #09222A;}
+	.button-primary-white:hover {background-color: 
+#ECEEF1;}
+	.button-primary-kiwi:hover {background-color: #086D37;}
+	.button-primary-fig:hover {background-color: #09222A;}
+	.button-primary-white:hover {background-color: #ECEEF1;}
+	.button-secondary-kiwi a:hover {color: #ffffff !important; background-color: #00892E !important;}
+	.button-secondary-fig a:hover {color: #ffffff !important; background-color: #14324F;}
+	.button-secondary-white a:hover {color: #14324F !important; background-color: #ffffff;}
+	.button-signin-kiwi a:hover {color: #ffffff 
+!important; background-color: #00892E;}
+	.button-signin-white a:hover {color: #14324F !important; background-color: #ffffff;}
+
+	th {font-weight: normal;}
+	td {font-weight: normal;}
+	.headline-b {font-family: "Avenir", "Arial Black", "Arial Bold", Arial;}
+	u ~ div .headline {font-weight: 900 !important;}
+
+
+	@supports(--css: variables) { 
+	.fallback {display: none !important;}
+	.interactive {display: block !important;}
+	.tofu-bg {background-color: #F4F4EF;}
+	.open {display: block 
+!important;}
+	.card-shadow {border: none !important;}
+		
+		/*Adjust based on number of slides*/
+		#slide1:checked ~ #controls label:nth-child(2), 
+		#slide2:checked ~ #controls label:nth-child(3), 
+		#slide3:checked ~ #controls label:nth-child(1) {
+			background: url('https://quickbooks.intuit.com/oidam/intuit/sbseg-email/en_us/icons/email-icon-carousel-right-arrow.png') no-repeat center/cover;
+			background-size:100%;
+			background-size:cover;
+			float: right;
+			margin: 0 160px 0 
+0;
+			display: block;
+		}
+
+		/*Adjust based on number of slides*/
+		#slide1:checked ~ #controls label:nth-child(3),
+		#slide2:checked ~ #controls label:nth-child(1),
+		#slide3:checked ~ #controls label:nth-child(2) {
+			background: url('https://quickbooks.intuit.com/oidam/intuit/sbseg-email/en_us/icons/email-icon-carousel-left-arrow.png') no-repeat center/cover;
+			background-size:100%;
+			background-size:cover;
+			float: left;
+			margin: 0 0 0px 160px;
+			display: 
+block;
+		}
+	}
+
+	details > summary {list-style: none;}
+	details >
+ summary::-webkit-details-marker {display: none;}
+
+
+	/* hide the close button initially */
+	.close {display: none;}
+
+	@media all and (min-width: 320px) and (max-width: 371px){
+	.iphone5_block_wrap{ display:block !important; padding-bottom: 20px !important; }
+	.iphone5_hideme{display:none !important;}
+	}
+
+	@media all and (min-width: 372px) and (max-width: 413px){
+
+	}
+
+	@media yahoo {
+	input {
+		display:none !important;
+		font-size:0 !important;
+		line-height:0 !important;
+		float:left 
+!important;
+		overflow:hidden !important;
+		width:0 !important;
+		height:0 !important;
+	}
+	}
+
+
+	@media screen and (max-width: 525px), screen and (max-device-width: 525px) {
+	.block_wrap {display: block !important;}
+	.hideme {display: none !important;}
+	u ~ div .headline-b {font-family: Avenir, "Arial Black", "Arial Bold", Arial !important; font-weight: 800 !important;}
+	u ~ div .headline {font-weight: 700 !important;}
+
+	/*buttons*/
+	.button-primary-kiwi, .button-primary-fig, 
+.button-primary-white, .button-secondary-kiwi, .button-secondary-fig, .button-secondary-white, .button-secondary-video-green, .button-secondary-video-blue, .button-secondary-video-white {width: 100% !important;}
+	.video-button {padding-right: 8px !important;}
+	.button-primary-kiwi a, .button-primary-fig a, .button-primary-white a, .button-secondary-kiwi a, .button-secondary-fig a, .button-secondary-white a, .button-secondary-video-green a, .button-secondary-video-blue a, .button-secondary-video-white a 
+{width: 100% !important; padding: 0px !important; display: block !important;}
+	.button-signin-kiwi, .button-signin-white {background: transparent !important; border: none !important; height: auto !important;}
+	.button-signin-kiwi a {padding-left: 0px !important; padding-right: 0px !important; padding-top: 4px !important; line-height: 24px !important; color: #205EA3 !important; font-weight: normal !important; text-decoration: underline !important;}
+	.button-signin-white a {padding-left: 0px !important; 
+padding-right: 0px !important; padding-top: 4px; line-height: 24px !important; color: #ffffff !important; font-weight: normal !important; text-decoration: underline !important;}
+	.button-primary-kiwi:hover {background-color: #00892E;}
+	.button-primary-fig:hover {background-color: #14324F;}
+	.button-primary-white:hover {background-color: #ffffff;}
+	.button-secondary-kiwi a:hover {color: #00892E !important; background-color: transparent !important;}
+	.button-secondary-fig a:hover {color: #14324F 
+!important; background-color: transparent !important;}
+	.button-secondary-white a:hover {color: #ffffff !important; background-color: transparent !important;}
+	.button-signin-kiwi a:hover {color: #205EA3 !important; background-color: transparent !important;}
+	.button-signin-white a:hover {color: #ffffff !important; background-color: transparent !important;}	  
+
+	
+	.border-none {border: none !important;}
+	.img-full {width: 100% !important; height: auto !important;}
+	.border-bottom {border-bottom: 
+1px solid #C3CED5;}
+	.mobile-img {display: block !important; width: 100% !important; height: auto !important;}
+	.inline-table {display: inline-block !important; vertical-align: top !important; width: 100px !important;}
+	.mobile-journey-line {width: 2px !important; height: 40px !important;}
+
+	/*widths*/
+	.full{ width:100% !important;}
+	.width84p{ width:84% !important; }
+	.width50p{ width:50% !important; padding: 0px 20px !important;}
+
+	/*heights*/
+	.height-auto{ height: auto 
+!important;}
+
+	/*padding-tops*/
+	.paddingt0{ padding-top: 0px !important;}
+	.paddingt4{ padding-top: 4px !important;}
+	.paddingt6{ padding-top: 6px !important;}
+	.paddingt8{ padding-top: 8px !important;}
+	.paddingt14{ padding-top: 14px !important;}
+	.paddingt16{ padding-top: 16px !important;}
+	.paddingt18{ padding-top: 18px !important;}
+	.paddingt20{ padding-top: 20px !important;}
+	.paddingt34{ padding-top: 34px !important;}
+	.paddingt36{ padding-top: 36px !important;}
+	.paddingt38{ 
+padding-top: 38px !important;}
+	.paddingt40{ padding-top: 40px !important;}
+
+	/*padding-bottoms*/
+	.paddingb0{ padding-bottom: 0px !important;}
+	.paddingb20{ padding-bottom: 20px !important;}
+	.paddingb40{ padding-bottom: 40px !important;}
+
+	/*padding-lefts*/
+	.paddingl0{ padding-left: 0px !important;}
+	.paddingl20{ padding-left: 20px !important;}
+	.paddingl40{ padding-left: 40px !important;}
+
+	/*padding-rights*/
+	.paddingr0{ padding-right: 0px !important;}
+	.paddingr20{ padding-right: 
+20px !important;}
+	.paddingr40{ padding-right: 40px !important;}
+	.paddingr104 {padding-right: 104px !important;}
+
+	/*fonts*/
+	.font12{ font-size:12px !important; line-height: 16px !important;}
+	.font14{ font-size:14px !important; line-height: 20px !important;}
+	.font16{ font-size:16px !important; line-height: 20px !important;}
+	.font24{ font-size:24px !important; line-height: 28px !important;}
+	.font28{ font-size:28px !important; line-height: 32px !important;}
+
+	/*alignment*/
+	.textl{ 
+text-align:left !important; }
+	.textc{ text-align:center !important; }
+	.vtop{ vertical-align: top !important; }
+	.margin-auto{ margin:0px auto !important; }
+
+	/*mobile carousel*/
+		#slide1:checked ~ #controls label:nth-child(2), 
+		#slide2:checked ~ #controls label:nth-child(3),  
+		#slide3:checked ~ #controls label:nth-child(1) {
+			margin: 0 8% 0 0;
+		}
+		#slide1:checked ~ #controls label:nth-child(3),
+		#slide2:checked ~ #controls label:nth-child(1),
+		#slide3:checked ~ #controls 
+label:nth-child(2){
+			margin: 0 0 0 8%;
+		}
+	}
+
+</style>
+	
+
+</head>
+<body bgcolor="#F0F4F6" style="margin:0; padding:0;">
+
+
+
+
+
+
+<!--start body table-->
+<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#F0F4F6" class="min-width" style="table-layout: fixed; width:100%;" width="100%">
+	<tr>
+    	<td align="center" bgcolor="#F0F4F6" width="660" class="full" style="width:660px; min-width:660px; margin: auto;">
+
+        <!--start preheader-->
+
+        <table role="presentation" width="660" border="0" cellspacing="0" cellpadding="0" style="width:660px; margin: auto;" class="hideme">
+            <tr>
+                <td align="left" class="hideme" style="font-size:10px; font-family: Arial, sans-serif; color:#000000; display:none !important; mso-hide: all;">
+                    <p style="max-height:0px;overflow:hidden;">
+                        <!--start preheader-->
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+        <div style="display: none;">
+            Choose from a template or customise your own.
+        </div>
+        <!--end preheader-->
+
+
+        <!--start content table-->
+        <table role="presentation" align="center" width="660" border="0" cellpadding="0" cellspacing="0" class="full border-none" style="width: 660px; margin: auto; border-left: 1px solid #C3CED5; border-right: 1px solid #C3CED5; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);">
+			<tr>
+				<td align="center">
+					
+				
+<!--start header 01-->
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="full" role="presentation" style="width:660px; margin: auto;" width="660">
+	<tbody>
+		<tr>
+			<td align="center">
+			<div style="background:#ffffff; background-image:linear-gradient(#ffffff,#ffffff);">
+			<div class="gmail-blend-screen">
+			<div class="gmail-blend-difference">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+				<tbody>
+					<tr>
+						
+<td align="center" class="full" style="padding-top:20px; padding-bottom:20px;">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="width84p" role="presentation" style="width: 580px; margin: 0px auto;" width="580">
+							<tbody>
+								<tr>
+									<td align="left" style="width:150px;" width="150">
+<a href="http://app.eq.intuit.com/e/er?s=113755760&lid=34627&elqTrackId=56bb9b127e1a461bbaba448370ee8f1b&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=14444"><img alt="Intuit QuickBooks" border="0" class="margin-auto" height="38" src="http://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7B13008beb-f505-408b-ae19-4e2a60795523%7D_intuit-qb-50-50-logo1.png" style="display:block;" width="150" /></a></td>
+									<!--start sign in button -->
+									<td align="right">
+									
+<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="center" class="button-signin-kiwi" height="28" style="font-size:16px; color:#FFFFFF; font-family: Avenir, Arial, sans-serif; border-radius: 4px; border: 2px solid #00892E;">
+<a data-targettype="webpage" href="http://app.eq.intuit.com/e/er?s=113755760&lid=8363&elqTrackId=5ffd4f5e0be24b6d8183e1a6cc454bd2&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=14444" style="font-family: Avenir, Arial, sans-serif; color:#00892E; text-decoration: none; font-weight: 600; padding-left: 20px; padding-right: 20px; font-size:16px; line-height: 28px; display: inline-block;">Sign in</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+									
+<!--end sign in button -->
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--end header 01-->
+                  <!--start hero 02a-->
+<table role="presentation" width="660" class="full" border="0" cellspacing="0" cellpadding="0" style="width: 660px; margin:0 auto;" bgcolor="#ffffff">
+    <tr>
+        <td bgcolor="#F4F4EF" align="center" style="padding-top: 30px;">
+
+            <table role="presentation" align="center" width="580" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px;">
+                <tr>
+                    <td align="center" class="headline" style="font-family: Avenir, Arial, sans-serif; font-size: 40px; line-height: 52px; color:#000000; font-weight: 700;">
+                        Customise and send an invoice in minutes
+                    </td>
+                </tr>
+                
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <a href="https://app.eq.intuit.com/e/er?s=113755760&lid=6492&elqTrackId=e886c0e867b346cea767a32370e3fee2&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1"><img src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7B19244d4c-8b7e-417f-bc50-a93b071a3e3b%7D_ROW_QBO_FTU_Global_-_Day_3_-_hero.png" width="660" style="display: block;" class="img-full" alt=""></a>
+        </td>
+    </tr>
+</table>
+
+<!--end hero 02a-->
+ <!--start hero 01a-->
+<table role="presentation" width="660" class="full" border="0" cellspacing="0" cellpadding="0" style="width: 660px; margin:0 auto;" bgcolor="#ffffff">
+    
+    <tr>
+        <td align="center" style=" padding-bottom: 40px;">
+            <table role="presentation" align="center" width="580" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px;">
+                
+                <tr>
+
+                    <td align="center" style="padding-top: 12px;">
+                        <table role="presentation" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" class="" style="font-family: Avenir, Arial, sans-serif; font-size: 20px; line-height:28px; color:#000000;">
+
+                                    Sending professional invoices in QuickBooks is as easy as adding your company logo and payment details to a template.
+                                </td>
+                            </tr>
+                            <!--start kiwi primary cta button-->
+                            <tr>
+                                <td align="center" style="padding-top: 24px;">
+
+                                    <table role="presentation" class="full" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" height="48" bgcolor="#00892E" class="button-primary-kiwi" style="font-size:16px; color:#FFFFFF; font-family: Avenir, Arial, sans-serif; border-radius: 4px;">
+
+                                                <a href="https://app.eq.intuit.com/e/er?s=113755760&lid=91992&elqTrackId=8df520670e0d4e058b68a2c2a38b56a6&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1" class="" style="font-family: Avenir, Arial, sans-serif; color:#FFFFFF; text-decoration: none; font-weight: 600; padding-left: 20px; padding-right: 20px; font-size:16px; line-height: 48px; display: inline-block;">Customise an invoice</a>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--end kiwi primary cta button-->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--end hero 01a-->
+<!--start content 01-->
+
+<table role="presentation" align="center" width="660" border="0" cellpadding="0" cellspacing="0" class="full" style="width: 660px; margin: auto;" bgcolor="#ffffff">
+  <tr>
+    <td align="center" style="padding-top: 14px; padding-bottom: 12px;">
+      <table role="presentation" align="center" width="580" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px;">
+        <tr>
+
+          <td align="center" class="" style="font-family: Avenir, Arial, sans-serif; font-size:16px; line-height: 24px; color:#000000;">
+            Learn how to create and email an invoice using Quickbooks Online.
+          </td>
+        </tr>
+        
+        
+                  
+      </table>
+    </td>
+  </tr>
+</table>
+<!--end content 01-->
+                  <!--start feature 01-->
+
+<table role="presentation" width="660" class="full" border="0" cellspacing="0" cellpadding="0" style="width: 660px; margin: auto;" bgcolor="#ffffff">
+  <tr>
+    <td align="center" class="full" style="padding-top:10px; padding-bottom: 40px;">
+      <table role="presentation" width="580" class="width84p" align="center" border="0" cellspacing="0" cellpadding="0" style="width: 580px; margin: auto;">
+        <tr>
+
+          <!--start image col-->
+
+          <th align="center" class="full block_wrap" valign="top" width="457" style="width: 457px;">
+            <table role="presentation" width="100%" border="0" class="full" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" class=""> <a href="https://app.eq.intuit.com/e/er?s=113755760&lid=105913&elqTrackId=e80b9bed3ddf4432b56b2dc7d5248e5e&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1">
+<img src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7Bfcf12ec7-c922-4c80-a395-e8899c95a9b8%7D_ROW_QBO_FTU_Global_-_Day_3_-_video.png" width="457" style="display: block;" border="0" class="" /></a> </td>
+              </tr>
+            </table>
+          </th>
+          <!--end image col-->
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--end feature 01-->
+                         
+ <!--start icon grid 02-->
+<!--start icon grid 02-->
+
+<table bgcolor="#F4F4EF" border="0" cellpadding="0" cellspacing="0" class="full" style="width: 660px; margin: auto;" width="660">
+	<tbody>
+		<tr>
+			<td align="center" class="full" style="padding-top: 40px; padding-bottom: 56px;">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px; margin: auto;" width="580">
+				<tbody>
+					<tr>
+						
+<td align="center" class="headline" style="font-family: Avenir, Arial, sans-serif; font-size: 28px; line-height: 36px; color:#000000; font-weight: 700;padding-bottom:30px; ">We&#39;re here to help</td>
+					</tr>
+					<tr>
+						<td align="center" class="full">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr><!--start rtb 1-->
+									
+<th align="center" class="full block_wrap" style="font-weight:normal; width: 180px;" valign="top" width="180">
+									<table align="center" bgcolor="#14324F" border="0" cellpadding="0" cellspacing="0" style="border-radius: 4px; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;">
+<a href="https://app.eq.intuit.com/e/er?s=113755760&lid=87363&elqTrackId=5a2cf38a92a14d5a8d2f687f476647fa&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203"><img alt="" src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7Bc2a96813-64c7-484c-883f-1c71cf7d3c8c%7D_question_icon_72.png" width="79" /></a></td>
+											</tr>
+											<tr>
+												
+<td align="center" style="font-family: Avenir, Arial, sans-serif; font-size: 20px; line-height: 28px; color:#3BD85E; font-weight: 600; padding-top: 14px;padding-bottom:30px;padding-left:15px;padding-right:15px;">
+<a href="https://app.eq.intuit.com/e/er?s=113755760&lid=87363&elqTrackId=3455de7d2f57473ba6e5d4e326cfb510&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203" style="font-family: Avenir, Arial, sans-serif; color:#3BD85E; font-weight: 600; font-size:19px; line-height: 28px; text-decoration: none;" title="null">Find help or contact support</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!--end rtb 1-->
+									
+<th class="hideme" style="width:20px" width="20">&nbsp;</th>
+									<!--start rtb 2-->
+									<th align="center" class="full block_wrap paddingt40" style="font-weight:normal; width: 180px;" valign="top" width="180">
+									<table align="center" bgcolor="#14324F" border="0" cellpadding="0" cellspacing="0" style="border-radius: 4px; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);" width="100%">
+										<tbody>
+											<tr>
+												
+<td align="center" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;"><a href="https://app.eq.intuit.com/e/er?s=113755760&lid=124223&elqTrackId=4ac4836726bf45bf9baade9210acff03&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203"><img alt="" src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7B2c3b9596-2c32-4d89-99cc-c8254572ef51%7D_person_icon_72.png" width="79" /></a></td>
+											</tr>
+											<tr>
+												
+<td align="center" style="font-family: Avenir, Arial, sans-serif; font-size: 20px; line-height: 28px; color:#3BD85E; font-weight: 600; padding-top: 14px;padding-bottom:30px;padding-left:15px;padding-right:15px;">
+<a href="https://app.eq.intuit.com/e/er?s=113755760&lid=124223&elqTrackId=81c2c4fc2ccc4670849a381a42dd470a&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203" style="font-family: Avenir, Arial, sans-serif; color:#3BD85E; font-weight: 600; font-size:19px; line-height: 28px; text-decoration: none;">Chat with<br />
+												sales</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!--end rtb 2-->
+									
+<th class="hideme" style="width:20px" width="20">&nbsp;</th>
+									<!--start rtb 3-->
+									<th align="center" class="full block_wrap paddingt40" style="font-weight:normal; width: 180px;" valign="top" width="180">
+									<table align="center" bgcolor="#14324F" border="0" cellpadding="0" cellspacing="0" style="border-radius: 4px; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);" width="100%">
+										<tbody>
+											<tr>
+												
+<td align="center" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;"><a href="https://app.eq.intuit.com/e/er?s=113755760&lid=121196&elqTrackId=6a57cb21f3cc40039f15301ba5d5c2ea&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203"><img alt="" src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7B29785237-f94f-41b6-8827-15ddb5d78907%7D_percentage_icon_72.png" width="79" /></a></td>
+											</tr>
+											<tr>
+												
+<td align="center" style="font-family: Avenir, Arial, sans-serif; font-size: 20px; line-height: 28px; color:#3BD85E; font-weight: 600; padding-top: 14px;padding-bottom:30px;padding-left:15px;padding-right:15px;">
+<a href="https://app.eq.intuit.com/e/er?s=113755760&lid=121196&elqTrackId=33b200a2b6254a20b1ca57a2a190d714&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17203" style="font-family: Avenir, Arial, sans-serif; color:#3BD85E; font-weight: 600; font-size:19px; line-height: 28px; text-decoration: none;">Buy now &amp;<br />
+												SAVE 90%*</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!--end rtb 3-->
+								</tr>
+							
+</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--end icon grid 02-->    
+<!--end icon grid 02-->
+          
+					
+                </td>
+            </tr>
+        </table>
+        <!--end content table-->
+<!--start footer 04-->
+<table align="center" bgcolor="#F0F4F6" border="0" cellpadding="0" cellspacing="0" class="min-width" style="table-layout: fixed; width:100%;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center">
+			
+<table align="center" bgcolor="#21262A" border="0" cellpadding="0" cellspacing="0" class="full" style="width:660px; margin: auto;" width="660">
+				<tbody>
+					<tr>
+						<td align="center" style="">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px; margin: auto;" width="580">
+							<tbody>
+								<tr>
+									
+<td align="left" class="email-link" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff !important; font-weight:normal; text-decoration:none;padding-top:16px;">*Discount:
+ For new QuickBooks customers, receive a discount off the current monthly price for QuickBooks Online Simple Start, QuickBooks Online Essentials or QuickBooks Online Plus for the first 6 months of service, starting from date of enrolment. From month 7 from the date of enrolment, the price will change to the then current monthly price. <a 
+href="https://app.eq.intuit.com/e/er?s=113755760&lid=54082&elqTrackId=f69884977ae74472852611e1d26c7f3a&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqcst=272&elqcsid=17207" style="color:#FFFFFF; text-decoration: underline;"> See current prices here</a>.
+ Your account will automatically be charged on a monthly basis until you cancel. You may cancel at any time. There is no limit on the number of subscriptions ordered under this offer. This offer cannot be combined with any other QuickBooks Online promotion or offers. Sales tax may be applied where applicable.</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!--end footer 04-->
+
+
+
+        
+		
+		
+
+    	</td>
+	</tr>
+</table>
+<!--end body table-->
+
+
+
+
+
+
+
+<!--start footer 04-->
+<table align="center" bgcolor="#F0F4F6" border="0" cellpadding="0" cellspacing="0" class="min-width" style="table-layout: fixed; width:100%;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center">
+			<table align="center" bgcolor="#21262A" border="0" cellpadding="0" cellspacing="0" class="full" style="width:660px; margin: auto;" width="660">
+				<tbody>
+					<tr>
+						
+<td align="center" style="">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px; margin: auto;" width="580">
+							<tbody>
+								<tr>
+									<td align="left" class="email-link" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff !important; font-weight:normal; text-decoration:none;padding-top:16px;">
+<a href="https://app.eq.intuit.com/e/es?s=113755760&e=72947330&elqTrackId=3960855f91fb4bc1918ae5c0bb887021&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1" style="color: #ffffff; text-decoration: underline;">View on web</a><br />
+									<br />
+									This
+ message was sent to techniical@novustelltravel.com, as an Intuit customer, consistent with your email preferences. If you have chosen not to receive marketing messages, you will continue to receive business communications about your selected Intuit product(s), which may either affect your service or software, your account, or which may be legally required.</td>
+								</tr>
+								<tr>
+									<td align="left" style="padding-top:16px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										
+<tbody>
+											<tr>
+												<td align="left" class="iphone5_block_wrap" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal;">
+<a data-targettype="webpage" 
+href="https://accounts.intuit.com/app/unsubscribe?iux_v3=true&aid=qb&rgn=ROW&loc=en_gb&pur=/marketing-notifications/Product&tok=2gIAAAAbAQAEAAAADgUACHZ4cU0vdmlkBgAGcJiF-EKL5hKEsSIpQ3LFy7wpi0x2IOLL77knKQY-OvKnDsmcNwLt_hu_S2HCeh-y4PAcOzJJiRD8Q3Nt_nGWk0ieREK0mx5gEC_8Ki-uiFMx45BEwJXaTh-tUttuz3PfZU0WMnQKkH2GyYaB5YIucTL1pe-UX_vPLSA1sVoSdbKzMNZM-X8sv6513EwJ9fBKRZAjyMf5yo4MtsTdO3FeeQdP8lZ5PrOJnUfUTn8vojNefzbMHj19EA&elqTrackId=73919f14dfd94734b0226e2344cfd884&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqCampaignId=18150" style="color:#ffffff;">Unsubscribe</a></td>
+												<td align="center" class="iphone5_hideme" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal; width: 40px;" width="40">|</td>
+												<td align="left" class="iphone5_block_wrap" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal;">
+<a href="https://security.intuit.com/?elqTrackId=7466517299e343d5924d057df95622fe&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqCampaignId=18150" style="color:#ffffff;">Security</a></td>
+												<td align="center" class="iphone5_hideme" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal; width: 40px;" width="40">|</td>
+												
+<td align="left" class="iphone5_block_wrap" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal;"><a href="https://www.intuit.com/privacy/statement/?elqTrackId=bee9e961da9445a8a3878f0df1318313&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqCampaignId=18150" style="color:#ffffff;">Privacy&nbsp;statement</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									
+<td align="left" style="font-family: Avenir, Arial, sans-serif; font-size:12px; line-height:16px; color:#ffffff; font-weight:normal; padding-top:16px; padding-bottom:18px;">&copy;2024 Intuit Ltd. All rights reserved. <a href="https://www.intuit.com/legal/trademark/?elqTrackId=6300fb07e6b04c35bad7155193e8d486&elq=0820e3018704455b9442f4a68fb98268&elqaid=50437&elqat=1&elqCampaignId=18150" style="color:#ffffff; text-decoration:none;">Trademarks</a>.<br />
+									
+<font class="apple-link-legal" style="color:#ffffff; text-decoration:none;"><span style="color:#ffffff">The Rocket Science Group LLC d/b/a Intuit QuickBooks<br />
+									675 Ponce de Leon Ave NE, Suit 5000, Atlanta, GA, 30308<br />
+									GST registration number: M90372935G </span></font></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding-bottom: 40px;"><!--start brand bar-->
+						
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="width84p" style="width: 580px; margin: auto;" width="580">
+							<tbody>
+								<tr>
+									<td align="left" class="hideme"><img alt="Intuit brands" class="hideme" height="27" src="https://images.eq.intuit.com/EloquaImages/clients/IntuitSBG/%7Bb9868a2e-de69-43d6-b122-6123aad3ebb2%7D_intuit-qb-mc-footer-white.png" style="display:block; border:none;" width="347" /></td>
+								</tr>
+							</tbody>
+						</table>
+						
+<!--end brand bar--></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--end footer 04-->
+
+<img src='https://app.eq.intuit.com/e/FooterImages/FooterImage1?elq=0820e3018704455b9442f4a68fb98268&siteid=113755760' alt="" border=0 width=1px height=1px style='display:block;'></body></html>
+--=-4f3wL3l4djt8ztIealjaHQ==--

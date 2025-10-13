@@ -1,0 +1,279 @@
+Return-Path: <314vcYBEKBW4iadWebMOQ-ZadQbXkSaaSXQ.OaYMPYUZZahgefQXX.OaY@scoutcamp.bounces.google.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id qFrmB9yL3GCUIAAA7QkJDw
+	(envelope-from <314vcYBEKBW4iadWebMOQ-ZadQbXkSaaSXQ.OaYMPYUZZahgefQXX.OaY@scoutcamp.bounces.google.com>)
+	for <novuste1@rs2.noc254.com>; Wed, 30 Jun 2021 18:21:00 +0300
+Return-path: <314vcYBEKBW4iadWebMOQ-ZadQbXkSaaSXQ.OaYMPYUZZahgefQXX.OaY@scoutcamp.bounces.google.com>
+Envelope-to: admin@novustell.com
+Delivery-date: Wed, 30 Jun 2021 18:21:00 +0300
+Received: from mail-il1-f199.google.com ([209.85.166.199]:39650)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <314vcYBEKBW4iadWebMOQ-ZadQbXkSaaSXQ.OaYMPYUZZahgefQXX.OaY@scoutcamp.bounces.google.com>)
+	id 1lyc1K-0009Xb-B7
+	for admin@novustell.com; Wed, 30 Jun 2021 18:21:00 +0300
+Received: by mail-il1-f199.google.com with SMTP id g14-20020a926b0e0000b02901bb2deb9d71so2158855ilc.6
+        for <admin@novustell.com>; Wed, 30 Jun 2021 08:20:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:feedback-id:message-id:subject:from:to;
+        bh=+72Rsrs02SGg6Zh37xeuBaxafCN0QVeTU+JBxAJBqFw=;
+        b=oh5m0RmLMMyEUaZXIYELj0VoLt5mpYRxlidrn6+tMBsj7zd9AauC3F/50C1p4sZBts
+         UBZbntM/vUMaBFiUA/P5yfu5lwnVQYn6KPFo2oS962NANdXbnPRlA4+hdnZ9PvO8BtVV
+         GCTC9lXD0I3SuqgNEMu2MKhOwhVxayVI8FxWQmYzOX79zt1gER3uWx2gy+gT1cmD9YpE
+         P01l7jd8VdyIVU8IzDB3Bj4rQ62vAW0Vv+wa6BAaFXqygNU96QvjCyieYFrI2lIhesp4
+         tY0u+N9ZNrdOxXfyNPhBkXiqZ8Ll+wh7gb2zes5ZVZ/n5Jo86rNTKwDrsjw2owVTM8eV
+         EQ7g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:feedback-id
+         :message-id:subject:from:to;
+        bh=+72Rsrs02SGg6Zh37xeuBaxafCN0QVeTU+JBxAJBqFw=;
+        b=tnw0yFPHsdkpVR+Lj1hwVNup7mU8zK4HQ7A2lym1aMh3kuKBVMkv/PCajo+FoQQdNK
+         ELkBDIV061rrKlojk/mhCEPGshWQzqtVQ9SEerhV7NBJb+GO/Dy3/4dK8fMPGmr1NrmE
+         /O92SgruHb0dYy0kqQrd41AXRVZ1iR34WcXVWZv7aNvQLIA75VIluRC0ZTPKj9sOliQq
+         LBzZ9iE6dAQIONKbpTc8M+VtHFB1H94nXeTmhCDna84No3142mdnPohLzZR6lS03yjQT
+         IkEVhw0sIUwzXP3X+a0OL6NU3Qiw1F9fjcEdPVTs7L7qbFrS1+AYY57TVTc56Ex/HA3I
+         pPRg==
+X-Gm-Message-State: AOAM532r5gBHCQXiRZhnFi1KhKqsGnsb+YTqPBr7InXOCC/7itK1Rm68
+	x4swmjl+mkJllHk=
+X-Google-Smtp-Source: ABdhPJxbLMmk3a8XroG/QAq7r7fa7H9vejsHDyfkGxryH7Kkyl6vIuQZftjRiJgYmYEgl0wQytGGxGM=
+MIME-Version: 1.0
+X-Received: by 2002:a5e:dc48:: with SMTP id s8mr8162724iop.71.1625066455335;
+ Wed, 30 Jun 2021 08:20:55 -0700 (PDT)
+Date: Wed, 30 Jun 2021 08:20:55 -0700
+Reply-To: The Google Workspace Team <workspace-noreply@google.com>
+X-Google-Id: 4022905
+Feedback-ID: P-11-0:C20165941:M110450033-en:gamma
+X-Notifications: GAMMA:<dcf5c8fb2326e8060cfa8a540a8ae07ff85420f2-20165941-110980550@google.com>
+Message-ID: <dcf5c8fb2326e8060cfa8a540a8ae07ff85420f2-20165941-110980550@google.com>
+Subject: New Chrome Web Store control functionality and review of additional
+ service controls
+From: The Google Workspace Team <workspace-noreply@google.com>
+To: admin@novustell.com
+Content-Type: multipart/alternative; boundary="000000000000ce878405c5fd446a"
+X-Spam-Status: No, score=-7.7
+X-Spam-Score: -76
+X-Spam-Bar: -------
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Google Workspace logo New Chrome Web Store control functionality
+    and review of additional service controls Hello Administrator, 
+ Content analysis details:   (-7.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             white-list
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+--000000000000ce878405c5fd446a
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+R29vZ2xlIFdvcmtzcGFjZSBsb2dvDQoNCk5ldyBDaHJvbWUgV2ViIFN0b3JlIGNvbnRyb2wgZnVu
+Y3Rpb25hbGl0eSBhbmQgcmV2aWV3IG9mIGFkZGl0aW9uYWwgc2VydmljZSAgDQpjb250cm9scw0K
+DQpIZWxsbyBBZG1pbmlzdHJhdG9yLA0KDQpXZSBhcmUgd3JpdGluZyB0byBub3RpZnkgeW91IGFi
+b3V0IGVuaGFuY2VtZW50cyB0byB0aGUgQ2hyb21lIFdlYiBTdG9yZSAgDQppbmRpdmlkdWFsIHNl
+cnZpY2UgY29udHJvbCBpbiB5b3VyIEFkbWluIENvbnNvbGUgYW5kIHRvIHJlbWluZCB5b3UgdG8g
+IA0KcmV2aWV3IGFkZGl0aW9uYWwgc2VydmljZSBzZXR0aW5ncyB0byBlbnN1cmUgeW91ciB1c2Vy
+cyBoYXZlIGFjY2VzcyB0byB0aGUgIA0Kc2VydmljZXMgYXMgeW91IGludGVuZC4NCg0KQ2hyb21l
+IHVwZGF0ZXMNCg0KU3RhcnRpbmcgb24gU2VwdGVtYmVyIDEsIDIwMjEsIEdvb2dsZSBXb3Jrc3Bh
+Y2UgdXNlcnMgd2l0aCB0aGUgQ2hyb21lIFdlYiAgDQpTdG9yZSBzZXJ2aWNlIGNvbnRyb2wgdHVy
+bmVkIE9GRiB3aWxsIG5vIGxvbmdlciBiZSBhYmxlIHRvIGFjY2VzcyB0aGUgIA0KQ2hyb21lIFdl
+YiBTdG9yZSBpbiBhIHNpZ25lZC1vdXQgc3RhdGUgb3IgZG93bmxvYWQgZXh0ZW5zaW9ucyBmcm9t
+IGl0Lg0KDQoNCkV4dGVuc2lvbnMgc2V0IHRvIOKAnEFsbG93IGluc3RhbGzigJ0gaW4gQ2hyb21l
+IGRldmljZSBtYW5hZ2VtZW50IHdpbGwgbm90IGJlICANCmFjY2Vzc2libGUgdW5sZXNzIHRoZSBX
+ZWIgU3RvcmUgaXMgdHVybmVkIE9OIGZvciB0aGUgZW5kLXVzZXINCkV4dGVuc2lvbnMgc2V0IHRv
+IOKAnEZvcmNlIGluc3RhbGzigJ0gd2lsbCBzdGlsbCBpbnN0YWxsIGF1dG9tYXRpY2FsbHkNCkV4
+dGVuc2lvbnMgYWxyZWFkeSBpbnN0YWxsZWQgb24gYSB1c2VyJ3MgZGV2aWNlIHdpbGwgbm90IGJl
+IGFmZmVjdGVkIGJ5ICANCnRoaXMgY2hhbmdlDQoNCldoYXQgdG8gZG8NCg0KUmV2aWV3IGFkbWlu
+IGNvbnRyb2xzDQpBcyBhIEdvb2dsZSBXb3Jrc3BhY2UgQWRtaW5pc3RyYXRvciwgeW91IGhhdmUg
+c2V2ZXJhbCB3YXlzIHRvIG1hbmFnZSBhY2Nlc3MgIA0KdG8gR29vZ2xlIHNlcnZpY2VzIGZvciB5
+b3VyIHVzZXJzLiBXZSBlbmNvdXJhZ2UgeW91IHRvIHJldmlldyB0aGUgY29udHJvbHMgIA0KYmVs
+b3cgdG8gZW5zdXJlIHlvdXIgdXNlcnMgaGF2ZSBhY2Nlc3MgdG8gdGhlIHNlcnZpY2VzIHlvdSBp
+bnRlbmQuDQoNCg0KQWRkaXRpb25hbCBHb29nbGUgc2VydmljZXMgd2l0aCBpbmRpdmlkdWFsIGNv
+bnRyb2xzOiBNYW5hZ2UgYWNjZXNzIHRvICANCmluZGl2aWR1YWwgR29vZ2xlIHNlcnZpY2VzIGZv
+ciBzcGVjaWZpYyB1c2VycyBpbiB5b3VyIEdvb2dsZSBXb3Jrc3BhY2UgIA0KZG9tYWluLiBMZWFy
+biBtb3JlIGluIFR1cm4gYSBzZXJ2aWNlIG9uIG9yIG9mZiBmb3IgR29vZ2xlIFdvcmtzcGFjZSB1
+c2Vycy4NCg0KQWRkaXRpb25hbCBHb29nbGUgc2VydmljZXMgd2l0aG91dCBpbmRpdmlkdWFsIGNv
+bnRyb2xzOiBZb3UgY2FuIG1hbmFnZSAgDQphY2Nlc3MgdG8gR29vZ2xlIHNlcnZpY2VzIHRoYXQg
+YXJlbid0IGNvbnRyb2xsZWQgaW5kaXZpZHVhbGx5LiBZb3VyIHVzZXJzICANCm1heSBoYXZlIGJl
+ZW4gYWNjZXNzaW5nIG9yIGF0dGVtcHRpbmcgdG8gYWNjZXNzIEFkZGl0aW9uYWwgU2VydmljZXMg
+dGhhdCBkbyAgDQpub3QgaGF2ZSB0aGVpciBvd24gY29udHJvbHMuIElmIHlvdSB3aXNoIHRvIGFs
+bG93IGFjY2VzcyB0byBzZXJ2aWNlcyAgDQp3aXRob3V0IHRoZWlyIG93biBjb250cm9sLCBwbGVh
+c2UgZW5zdXJlIHRoZSBjb250cm9sIGlzIHNldCB0byBPTi4gTm90ZSAgDQp0aGF0IGlmIGEgc2Vy
+dmljZSBsYXRlciBnZXRzIGFuIGluZGl2aWR1YWwgY29udHJvbCBpbiB0aGUgQWRtaW4gY29uc29s
+ZSwgaXQgIA0KcmV0YWlucyBpdHMgY3VycmVudCBzdGF0ZSBvZiBPTiBvciBPRkYgYmFzZWQgb24g
+dGhpcyBzZXR0aW5nLiBMZWFybiBtb3JlIGluICANCk1hbmFnZSBhY2Nlc3MgdG8gc2VydmljZXMg
+dGhhdCBhcmVuJ3QgY29udHJvbGxlZCBpbmRpdmlkdWFsbHkuDQoNClRoaXJkLXBhcnR5ICYgaW50
+ZXJuYWwgYXBwcyBhY2Nlc3M6IE1hbmFnZSB3aGljaCB0aGlyZC1wYXJ0eSBhbmQgIA0KZG9tYWlu
+LW93bmVkIGFwcHMgY2FuIGFjY2VzcyBzZW5zaXRpdmUgR29vZ2xlIFdvcmtzcGFjZSBkYXRhLCBp
+bmNsdWRpbmcgdGhlICANCm9wdGlvbiB0byBibG9jayBhbGwgdGhpcmQtcGFydHkgQVBJIGFjY2Vz
+cy4gTGVhcm4gbW9yZSBpbiBDb250cm9sIHdoaWNoICANCnRoaXJkLXBhcnR5ICYgaW50ZXJuYWwg
+YXBwcyBhY2Nlc3MgR29vZ2xlIFdvcmtzcGFjZSBkYXRhLg0KDQpHb29nbGUgV29ya3NwYWNlIE1h
+cmtldHBsYWNlIGFwcDogTWFuYWdlIGFjY2VzcyB0byBhcHBzIGluc3RhbGxlZCBmcm9tIHRoZSAg
+DQpHb29nbGUgV29ya3NwYWNlIE1hcmtldHBsYWNlLCB3aGljaCBhZmZlY3RzIEFkZC1vbnMgaW4g
+R29vZ2xlIEdtYWlsLCBEcml2ZSwgIA0KRG9jcywgYW5kIENhbGVuZGFyLiBMZWFybiBtb3JlIGlu
+IFR1cm4gb24gb3Igb2ZmIGEgR29vZ2xlIFdvcmtzcGFjZSAgDQpNYXJrZXRwbGFjZSBhcHAgZm9y
+IHVzZXJzLg0KDQpHb29nbGUgVGFrZW91dDogRm9yIHNvbWUgR29vZ2xlIHNlcnZpY2VzLCB1c2Vy
+cyBjYW4gdXNlIGRhdGEgZXhwb3J0KHMpIHRvICANCmRvd25sb2FkIHlvdXIgZGF0YSBpZiBUYWtl
+b3V0IGlzIHR1cm5lZCBvbiBmb3IgeW91ciBXb3Jrc3BhY2UgdXNlcnMuIElmIHRoZSAgDQpkYXRh
+IGlzIG5vdCBhdmFpbGFibGUgdmlhIEdvb2dsZSBUYWtlb3V0LCBwbGVhc2Ugc3VibWl0IGEgZGF0
+YSBhY2Nlc3MgIA0KcmVxdWVzdC4NCg0KV2UncmUgaGVyZSB0byBoZWxwDQoNCkZvciB0ZWNobmlj
+YWwgcXVlc3Rpb25zIGFuZCBhc3Npc3RhbmNlLCBwbGVhc2UgY29udGFjdCBHb29nbGUgV29ya3Nw
+YWNlICANCnN1cHBvcnQgYW5kIHJlZmVyZW5jZSBpc3N1ZSBudW1iZXIgMTkxODkzMDY4Lg0KDQpT
+aW5jZXJlbHksDQoNClRoZSBHb29nbGUgV29ya3NwYWNlIFRlYW0NCg0KDQrCqSAyMDIxIEdvb2ds
+ZSBMTEMgMTYwMCBBbXBoaXRoZWF0cmUgUGFya3dheSwgTW91bnRhaW4gVmlldywgQ0EgOTQwNDMN
+Cg0KWW91IGhhdmUgcmVjZWl2ZWQgdGhpcyBpbXBvcnRhbnQgdXBkYXRlIGFib3V0IHlvdXIgR29v
+Z2xlIFdvcmtzcGFjZSBhY2NvdW50ICANCmJlY2F1c2UgeW91IGRlc2lnbmF0ZWQgdGhpcyBlbWFp
+bCBhZGRyZXNzIGFzIGEgcHJpbWFyeSBvciBzZWNvbmRhcnkgY29udGFjdCAgDQpmb3IgbWFuZGF0
+b3J5IHNlcnZpY2UgY29tbXVuaWNhdGlvbnMgaW4geW91ciBHb29nbGUgQWRtaW4gY29uc29sZSBw
+cm9maWxlLg0KDQo=
+--000000000000ce878405c5fd446a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- This contains CSS info, starts the body, and inserts the Google Worksp=
+ace logo header -->
+<span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; col=
+or: #000000;"> </span>
+<div style=3D"padding-top: 22px; padding-bottom: 6px; border-bottom-style: =
+solid; border-bottom-color: #dcdcdc; border-bottom-width: 1px" width=3D100%=
+><span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; co=
+lor: #000000;"><img alt=3D"Google Workspace logo" border=3D0 src=3Dhttp://s=
+ervices.google.com/fh/files/emails/google_workspace_750x96px_gray_lockup_go=
+ogle_product_624x96px_clr.png style=3D"display: block;" title=3DGoogle widt=
+h=3D250> </span></div>
+<span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; col=
+or: #000000;"> <!-- This is the beginning of the subject --> </span>
+<!-- Include the Pre-header snippet, copy HTML from TEMPLATE SNIPPET ID 916=
+0213 and add the pre-header text-->
+<div style=3D"height:0px; font-size:0px; max-height:0px; min-height: 0px; l=
+ine-height:0px; width: 100%; color: #fff; display:none;">New Chrome Web Sto=
+re control functionality and review of additional service controls</div>
+
+<!-- Adds translation notice, the English version is empty-->
+=C2=A0
+<!-- Please INSERT the relevant Customer Comm BODY snippet -->
+<p>Hello Administrator,</p>
+
+<p>We are writing to notify you about enhancements to the Chrome Web Store =
+individual service control in your Admin Console and to remind you to revie=
+w additional service settings to ensure your users have access to the servi=
+ces as you intend.</p>
+
+<h3>Chrome updates</h3>
+
+<p>Starting on September 1, 2021, Google Workspace users with the Chrome We=
+b Store service control <strong>turned OFF </strong>will no longer be able =
+to access the Chrome Web Store in a signed-out state or download extensions=
+ from it.</p>
+
+<ul>
+  <li>Extensions set to =E2=80=9C<strong>Allow install</strong>=E2=80=9D in=
+ Chrome device management will not be accessible unless the Web Store is <s=
+trong>turned ON </strong>for the end-user</li>
+  <li>Extensions set to =E2=80=9C<strong>Force install</strong>=E2=80=9D wi=
+ll still install automatically</li>
+  <li>Extensions already installed on a user&#39;s device will not be affec=
+ted by this change</li>
+</ul>
+
+<h3>What to do</h3>
+
+<p><strong>Review admin controls</strong><br>As a Google Workspace Administ=
+rator, you have several ways to manage access to Google services for your u=
+sers. <strong>We encourage you to review the controls below to ensure your =
+users have access to the services you intend.</strong></p>
+
+<ul>
+  <li><strong>Additional Google services with individual controls:</strong>=
+ Manage access to individual Google services for specific users in your Goo=
+gle Workspace domain. Learn more in <a href=3Dhttps://notifications.google.=
+com/g/p/AD-FnEwstNCwZlE337Tb7iLLZxbv3FVuomO_nuqw4A1WMFwZDogyEoTxwRgkEMe33bM=
+-XLx9vg6wnGsdZ-dEJmBBIYzL-DofJlK8IhX0tkfLkg target=3D_blank>Turn a service =
+on or off for Google Workspace users</a>.</li><br>
+  <li><strong>Additional Google services without individual controls:</stro=
+ng> You can manage access to Google services that aren&#39;t controlled ind=
+ividually. Your users may have been accessing or attempting to access Addit=
+ional Services that do not have their own controls. If you wish to allow ac=
+cess to services without their own control, please ensure the control is se=
+t to ON. Note that if a service later gets an individual control in the Adm=
+in console, it retains its current state of <strong>ON</strong> or <strong>=
+OFF</strong> based on this setting. Learn more in <a href=3Dhttps://notific=
+ations.google.com/g/p/AD-FnExIGlwAdg_5lpNhksdiTsIb-ytjUlCnqf-Mo59eA9w_ZMr4C=
+xy1boMuermSH4a0i5grL63JM4n2RyMX3RPwu-SYoHZBluwtX6B-rgJZ82I target=3D_blank>=
+Manage access to services that aren&#39;t controlled individually</a>.</li>=
+<br>
+  <li><strong>Third-party &amp; internal apps access:</strong> Manage which=
+ third-party and domain-owned apps can access sensitive Google Workspace da=
+ta, including the option to block all third-party API access. Learn more in=
+ <a href=3Dhttps://notifications.google.com/g/p/AD-FnExVG1DCVottV4Lz2FCEfXS=
+AuYlBLmrtucIw8B8uRR61334w3yFa1xlvmqsuI_4kIeq6SBaebNTfYteUu-sPKG2N92DB5HYIRZ=
+7rwdBgKck target=3D_blank>Control which third-party &amp; internal apps acc=
+ess Google Workspace data</a>.</li><br>
+  <li><strong>Google Workspace Marketplace app:</strong> Manage access to a=
+pps installed from the Google Workspace Marketplace, which affects Add-ons =
+in Google Gmail, Drive, Docs, and Calendar. Learn more in <a href=3Dhttps:/=
+/notifications.google.com/g/p/AD-FnExOJ-TOuGKAvcCZmze8JTeezeTYUuL7a2O9Gnxt4=
+ZTRVgLbG1rV8dOVxjgUvY44S8NyiijR8OQwxpilrA6egYKEWU9U-0cz9-6OgasX_A target=3D=
+_blank>Turn on or off a Google Workspace Marketplace app for users</a>.</li=
+><br>
+  <li><strong>Google Takeout: </strong>For some Google services, users can =
+use <a href=3Dhttps://notifications.google.com/g/p/AD-FnEwH8dw24MCBkslfCvSW=
+WaPzl0_G9TVjzODpY4cNaErGgyvUP2lceSFLITqwnT1_5NC_Sq9CZZhy4wEnhZIqjaGXKQtbbGx=
+r3nIOxwbEG0p86pnniVI_ target=3D_blank>data export(s)</a> to download your d=
+ata if Takeout is <a href=3Dhttps://notifications.google.com/g/p/AD-FnEzfA1=
+8FjyTjfsgr0Pe66NNF4jOm6Xkxfg7M67lnCWmNPNSsR8id2ffQkvxbjozjplS5-MfyA3qK_w64i=
+8L-yTAOE24zkksMOz-y9VHUbns>turned on</a> for your Workspace users. If the d=
+ata is not available via Google Takeout, please submit a <a href=3Dhttps://=
+notifications.google.com/g/p/AD-FnEwYq46y5thfwlDLMbNQTmsNrW8c_oheh84x8Z52n5=
+H7s392C2vJNnVMA384gUZ789tOOKwJiHPw5s8rJlsPNDVYTtpblRj483V3AhE41N4HmACP targ=
+et=3D_blank>data access request</a>.</li>
+</ul>
+
+<h3>We=E2=80=99re here to help</h3>
+
+<p>For technical questions and assistance, please contact <a href=3Dhttps:/=
+/notifications.google.com/g/p/AD-FnEyEuHezIekEa1OJ4loRa0Zl-l1TygTqZgPtFxxXW=
+GqNocC4v9dGeK3_FLXanHM5-ldCoJnfV_RK3JecyQkJP_0zNAHQIclV1rVciahOdkg target=
+=3D_blank>Google Workspace support</a> and reference issue number 191893068=
+.</p>
+
+<p>Sincerely,</p>
+
+<p>The Google Workspace Team</p>
+
+<!-- Finally, include the standard footer. This also ends the body -->
+<div style=3D"font-size: 10px; color: #666666; padding-top: 8px; border-top=
+-style: solid; border-top-color: #dcdcdc; border-top-width: 1px">
+  <p>=C2=A9 2021=C2=A0 Google LLC=C2=A01600 Amphitheatre Parkway, Mountain =
+View, CA 94043</p>
+
+  <p><i>You have received this important update about your Google Workspace=
+ account because you=C2=A0designated this email address as a primary or sec=
+ondary contact for mandatory service communications in your Google <a href=
+=3Dhttp://notifications.google.com/g/p/AD-FnEz65ksxUhrzWnx_SIZ2c6-zk2cP3eUj=
+mc4oBuiSbqY_nOlvSyXhVLAAosApUjG4zVH62ceO4Uwkfg0TMg target=3D_blank>Admin co=
+nsole</a> profile.</i></p>
+</div>
+<img alt=3D"" height=3D1 width=3D3 src=3Dhttps://notifications.google.com/g=
+/img/AD-FnEyI65qMDkc-DDr1yA6BeCKsU4xD4N9RoEv5YHd1_t1z66M.gif>
+--000000000000ce878405c5fd446a--

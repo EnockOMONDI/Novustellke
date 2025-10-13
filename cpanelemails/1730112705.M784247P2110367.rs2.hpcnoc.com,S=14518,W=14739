@@ -1,0 +1,221 @@
+Return-Path: <caroline.ndungu@parkinn.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 8CVrLsFsH2efMyAAObGTvA
+	(envelope-from <caroline.ndungu@parkinn.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 28 Oct 2024 13:51:45 +0300
+Return-path: <caroline.ndungu@parkinn.com>
+Envelope-to: qunita@novustelltravel.com
+Delivery-date: Mon, 28 Oct 2024 13:51:45 +0300
+Received: from repost01.tmes.trendmicro.eu ([18.185.115.0]:45311)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <caroline.ndungu@parkinn.com>)
+	id 1t5NLb-00000008sD8-1HEW;
+	Mon, 28 Oct 2024 13:51:45 +0300
+Received: from 40.93.6.28_.trendmicro.com (unknown [172.21.187.40])
+	by repost01.tmes.trendmicro.eu (Postfix) with SMTP id 16F811000134F;
+	Mon, 28 Oct 2024 10:50:42 +0000 (UTC)
+X-TM-MAIL-RECEIVED-TIME: 1730112636.703000
+X-TM-MAIL-UUID: 791e8e51-c2e7-41fa-a598-867c18eee7d0
+Received: from CY4PR02CU008.outbound.protection.outlook.com (unknown [40.93.6.28])
+	by repre01.tmes.trendmicro.eu (Trend Micro Email Security) with ESMTPS id ABDF310000E35;
+	Mon, 28 Oct 2024 10:50:36 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=TVR2ybp+RqFbBIq4wzWYBhZYV4Ut5gF6aSSsb+Uo1px1/AmgOCcRMe7dZr6iB9fKFSGKM2b5VjRnlvMwfnA45tsaYIsuZ6x7Qyr0gnwZsyysTnpvsnVk444blBYXkj404UJl6S5hDOAevuAG4Ntw96vAxcZ6Lpv7PBA8O5FdZYIDpwx3BZCMxbZIf8iCefHhxpEpToBPDXGmMkLOTbWnVM6WnnJ9/r3Fz5WOBOeJhW94zs3g0ZZ30FcrVDUGy52YMbt12LJZOG4+of4y1x1V+9sfeadrwKOqvcFES4LuVtMX9/QXZmh8kWcm2L6pf9PaK4C+UTQMV1zrpUZFrFu6cQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=x0LtmJGiQztoPsrzq5Ao3Qctt3b4odFe8h6f7ET0FT4=;
+ b=jHmk9mxX9D31OoiuLV70rwoC8Ij8o2Vxp+k9yClh5W/B13Jh6AaNufHTMjCCYkZoMN94+m4stE8Da5e/QucMy+4c9kWNU3z08/pNcbdo1FcG9S5jUKRiR8lBvxVRAa1Eal4oJueiaV2HQxQrFt6nTm36bhkUGb2lWecoNt3qB5ju1TQ01xUZYxxtwOkoVyXpYFg5GC4S5AXW49iUxwWvuIxV54eAayb4c1aIavNIbXLGeLzNwL7adSj7NItfJjjq+Mh/gZleW7KTJ7wdJpHI7OUrtM7lcWHuumRG9NJWY5ns7ATqG3O+TrW8VC1OQLwgw2dSgSAs13/wANX+npUNgw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=parkinn.com; dmarc=pass action=none header.from=parkinn.com;
+ dkim=pass header.d=parkinn.com; arc=none
+Received: from BLAPR05MB7204.namprd05.prod.outlook.com (2603:10b6:208:295::20)
+ by DM4PR05MB10312.namprd05.prod.outlook.com (2603:10b6:8:ba::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8093.23; Mon, 28 Oct
+ 2024 10:50:33 +0000
+Received: from BLAPR05MB7204.namprd05.prod.outlook.com
+ ([fe80::ca79:d7c8:f6e6:e2ea]) by BLAPR05MB7204.namprd05.prod.outlook.com
+ ([fe80::ca79:d7c8:f6e6:e2ea%5]) with mapi id 15.20.8093.023; Mon, 28 Oct 2024
+ 10:50:32 +0000
+From: "Ndungu, Caroline" <caroline.ndungu@parkinn.com>
+To: "ashley@novustelltravel.com" <ashley@novustelltravel.com>
+CC: "vallary@novustelltravel.com" <vallary@novustelltravel.com>,
+	"qunita@novustelltravel.com" <qunita@novustelltravel.com>, Novustell
+	<quinta@novustelltravel.com>, "Munene, Wanjiku" <wanjiku.munene@parkinn.com>
+Subject: Recall: BOOKING VOUCHER
+Thread-Topic: BOOKING VOUCHER
+Thread-Index: AQHbKSc2oUoKDIHMAkamQm/7vggw3w==
+X-CallingTelephoneNumber: IPM.Note
+X-VoiceMessageDuration: 17
+X-FaxNumberOfPages: 0
+Date: Mon, 28 Oct 2024 10:50:32 +0000
+Message-ID:
+ <BLAPR05MB7204ACA783B404455647CDF6E84A2@BLAPR05MB7204.namprd05.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=parkinn.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BLAPR05MB7204:EE_|DM4PR05MB10312:EE_
+x-ms-office365-filtering-correlation-id: 06628032-1ea5-41f5-6d3d-08dcf73e58b2
+x-ms-exchange-recallreportgenerated: true
+x-ms-exchange-recallreportcfmgenerated: true
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230040|1800799024|366016|376014|38070700018;
+x-microsoft-antispam-message-info:
+ =?us-ascii?Q?TJiUwW9BiT9xH0fg/7TAtVmlfaLJf30Tyb1lQe2lk0LQ97YOXAGc4yqL+UKm?=
+ =?us-ascii?Q?hgbSIjYpYl1N8EciWDjANK30chvV5Ez0t1uojZ+Z7S5E8QO1n4jAm9jiBNuR?=
+ =?us-ascii?Q?jiH23HeONByKNrpumjOpk1l0n5rcCbaA/XvSpPZFfRAggrwx9R0oz27rsD9p?=
+ =?us-ascii?Q?trqf2xzPGRUJBS4C3nD6F4efN+cdNdpU1qAa0gaaMPMhWMVN8rsGqIduWJhf?=
+ =?us-ascii?Q?5byoSDVEObhEcgqQ87oezVl/0iNg9/N+wry5s/TMiWIN466yN0whzJVoSiC0?=
+ =?us-ascii?Q?tvYpu34tgAD+w0Vv6dLxYneYuEeaGZiJXBTi0gYE7Yb0Jp3rdO4Ms2gfIQXs?=
+ =?us-ascii?Q?jqpniS2YHoTRwttv/Kd92qYorhUg5gU0Td1YiEogDVKSJf+xyrTo9sPz/cFP?=
+ =?us-ascii?Q?mxc6MdDKA5EaubaWC0W8ALAW2XhgXJvrqcdei4U9ATQMh8IOpuWm6WjDssAW?=
+ =?us-ascii?Q?sJk5oDYCrRqKDX48Skc5LITepk8wuM8g3LfR55OViLHZNcUDr0On0Cv4GBfd?=
+ =?us-ascii?Q?owpE7Kdr4VTatCHjRFtJoS/jleeXupMwut/itsU7TA7balXTt1IKkVxqtOEj?=
+ =?us-ascii?Q?pAM1uaNIa/bBkc8lp3GxNcsrpkg7hCq4iTsBtii/iD81jc8nBdZEV3lSg3xx?=
+ =?us-ascii?Q?pDwQwG0+vI/hoB7Q6ODF3ewkIY/nY3W0KC3GICifXEZQXSWHnx5k69kUJ6OU?=
+ =?us-ascii?Q?zWp1pilNJnwfyp0po3mssGGWz4SdHFd7B5twQi1RCGc2Y96VIWJMly7JYWA4?=
+ =?us-ascii?Q?tTMhtKVIvCfgz5PkOGb5U44kYxHWw4t1NRRmNBVs0jc0bVaauZT3qb6Q3uLn?=
+ =?us-ascii?Q?LkPh6TGwa93yrJrcOfbBb/RnaB7bSlZ7dz4MZqqkx6MJUUKM1niLBR2NaYH6?=
+ =?us-ascii?Q?XOVq6BlL8CSlVBk3Ogvo5/a620aZg0ESGEZXA5cBrB3mOYMM2eG575OAZ0Gk?=
+ =?us-ascii?Q?H5i69hdnWvb9v30urPU2CdwBg+Gp/VUkOTlSiUXhJUIBaKEYhcAffRZUSe1q?=
+ =?us-ascii?Q?DcPXuxuh2GeXBPKNfaASPQBxfqqWYmHrHjkKI2hbNwxERJ2hoBLVP4j9z9Z/?=
+ =?us-ascii?Q?yXxRZjBu3EtGCQScYEv97NkVOSbcA/ubMRRLt9CKvJXlz/OJ4J6ig0J+bz3k?=
+ =?us-ascii?Q?lIApYou3pvaxADJ1TvBXsZqnk7kxEKOi63Recviu2tFntA7OjnWw5foLU0k5?=
+ =?us-ascii?Q?xtNu2qsWKqACfJO9XIMJ8LkXYLbPRcBhufJ8OhsUlYoHtHS2KkOMvwHovFUZ?=
+ =?us-ascii?Q?+lqFTOwKa4KygLWBUdbNWctXOVjYHdwLGV5/IBs9U9Ra504aTKdLTb8617oF?=
+ =?us-ascii?Q?No8tMRa3guGj4JU8gAJitb0wSQ+m4Q1oZnCNcYxC23qk7FXKLmjXdnH+k3dF?=
+ =?us-ascii?Q?W799rR4=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BLAPR05MB7204.namprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(376014)(38070700018);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?D5O3qpg9CB5lFd5aY2H+TAqJVIcbsJC4ZhZGr6umzeHGLmIEd0qQicY0jvAB?=
+ =?us-ascii?Q?btdk8kKDZJ6gOvXxnokZ+sKBvYVtokT0DnYkbVOFan7X+ODzjh6tkYMfl2Lw?=
+ =?us-ascii?Q?iGlRVKX1KxmH3BXwvruULzhnq3Eg8GOFZjcjJjsQKA4cJPpUII4wHdkZF0sD?=
+ =?us-ascii?Q?6LVeguiXrvQfPXRaf1DhAx0C7xzR1VxKgY2EcEnEvkO0CbKALftpZxCgXBTc?=
+ =?us-ascii?Q?X9hmI7tM+GTXLddOYloEpjkot/nTzOmStQ10UMTqtTotT3Vco1tDPSqi+vl2?=
+ =?us-ascii?Q?QSwMYREGQxw+PrXZqqz7D1blEsI9CZpeApdBcdtpBCQo+A8Q6odU5Uqlg2zL?=
+ =?us-ascii?Q?2LLM/FAUbmeIc91Uydfl/dnYJdIkR0Q0lUvaJHpzbvNWETxBx4H5ps/aOTcQ?=
+ =?us-ascii?Q?9SJXU5ztMBadz8xoHHQeW4eGBksnCpHUiorMvCcVAogqBlRTNd/VeiT8qu26?=
+ =?us-ascii?Q?FvjJrQU5Zz1HFzpaUBwHvfv8rkFAyPrDw8X8h4qHPoh4HT6HhZdyIViSKCGL?=
+ =?us-ascii?Q?I5FhDdN80LO1sAONUMs2vxgSgBbw8QBgPQaAULt+ZesKj8SeXIOSH5mXuAAg?=
+ =?us-ascii?Q?5Iv1QFgc3QcYvqFhX6U0IkFvRa/kiaIrbgV+EpUgVFd9YGCYtsjXCVi0ZYCU?=
+ =?us-ascii?Q?Ocmf8T0NfVgVJEf6IVZR21NMRcScuF2yWOE2ER9uj2qsY5FmwRGRTGcovvS7?=
+ =?us-ascii?Q?vOQm+2WzVn1aeORdW+bFJLq/0kvxLp1q93eR+vgPKgw5rwDaMxZio8UKHjHQ?=
+ =?us-ascii?Q?/4WYaGAG7bDChcfzI7K5bjfE4wPKziQmEOWKYL8zxPyhEuKjWIC86BJLO8bi?=
+ =?us-ascii?Q?I+JHM85oZq01ZuO3m5Xw7CKxR7E2AAHL+JBG86SoDwuXzPdnY5Kz1ELNeXfb?=
+ =?us-ascii?Q?GvwY3ngjPWLQaI8N4IzdWd5KnOPi04gVeqb217FLapNA5vgpyyGXWLn+BUVU?=
+ =?us-ascii?Q?VPmigI2fYRAsIwo3D0vStOAZ2cpM4XFZlTRfopoYEysU4Qz+Fmqeeu2ZBk64?=
+ =?us-ascii?Q?/iA6zkI77e/5KIpdu/wS6qCtannBmH61o3V8OJUAGgljdJxbAssGdG8ERDIS?=
+ =?us-ascii?Q?JawdVLRknaVbn3ugdWuCbZnLrOLeVmYFek/xmCRwmFZb4TGbSeGbN0rPQ0XN?=
+ =?us-ascii?Q?mMFRT/dWF7bzmC7b7OnAWK98xoKTTpOyl1PSSIe+EhNgMDF9mWZvPdz4au5H?=
+ =?us-ascii?Q?x4sBnGhmRE0x2a7JRTswzfYunbe8mZr79n09VlDSv3LA5yZSHFGI1JIq+Opi?=
+ =?us-ascii?Q?93gW5yqaHwKamXk80GtIJg3t2FVP5VtDCLxSKVAGzR5xur55yoNr6MiqSeDa?=
+ =?us-ascii?Q?xXed+iCN11rraTwPL3Y/iUbWbjx+DJWj0P6XMKIyZ9vrkhuDn9nHlIb+UhCd?=
+ =?us-ascii?Q?cIyMjrxYVh2uNlpR0VjBc/r7Ju/16Lf4GxWdKa7Gk8CjkHUn0tO0oyVU495w?=
+ =?us-ascii?Q?Jmtry5gJKcgJJB5wostqiZgVks0AOCQPQxIc/NW6lA63uz9Ak6AsLbLV0pPZ?=
+ =?us-ascii?Q?UiYHrv0UYD9ogdQFvTvT8nRc2BqPL6xXFAdBHh6TXiy6TCpVFhVk03yzAV/n?=
+ =?us-ascii?Q?xo+5GnwanEPhHzO8dR5GUYL6gpGN8Lq/4x3UteZrGyRBVAnDXa24zt1sqsEd?=
+ =?us-ascii?Q?uQ=3D=3D?=
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-MS-Exchange-AntiSpam-ExternalHop-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-ExternalHop-MessageData-0:
+	+OE689ZGLxLWqAJDaJpV40/5Bw4IjgZdJR2qNDhjNk43vh58xEDEYeEhd7nOy4niyYGqLAne8Zl+Q3IJs63Fo9+d9fCJXWPPuT7yvSyEdKbAbXWJ1zqlMgtu33X4aGO4T6fma6asiww5wPthHZ6O6SDMOst7ljeRdteLbCeoJBiM07Lt5VmyDtcy0UVuXsq+hBfDtBo0SdzlccOWJFrzhHIff/IsJK60YV55puCTeFc/c8rIBJb1smIvB+h+bUPQ62hh/ydfXZap0zy2CBzXYOc3XRed+BMhAOWDtyrRxbBBxGaRbyzsZFFY4HINlW4bhNTrrlnu80CS3UekVYUZuScW7MoUIa41a5MoRJpZL4Ejg0zyJELC9o//N99szXBB4anD+y3qhLoFhVD3Be6W8uEsPCWy3Ad/9BLM9K54Vqb8qTmLYc9tce7VVxVFY3DWZGvpUkq2ZSOVAhfbeYvSdJxCuRtfYL/t5Kpk7jXAYYrmFiUesGfsk/xAOifdRtJ1oV06G6KKQ+Jm+w7GWhl0NI4kZY8o9XzkOt7VhwNKp86WUMaueWJpiMuNUJUPwscDgXCkwuCJ9gFghbkLYJA/WU81V8+oClnIzS1rAr3IjCA=
+X-OriginatorOrg: Parkinn.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BLAPR05MB7204.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 06628032-1ea5-41f5-6d3d-08dcf73e58b2
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Oct 2024 10:50:32.7508
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 1e69e311-af1f-4162-b24e-16bb3f962d34
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AOxMoLWcxegewxy6iqzkzz5C3PxrJ3UwVNBr9vmMvJzt+Yk4GxYWmIdt+OVucH08t220vgdb4sZN+pIvgnrpGVEUSMSoQXMlC+USjMTMeTY=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM4PR05MB10312
+X-TM-AS-ERS: 40.93.6.28-0.0.0.0
+X-TMASE-Version: StarCloud-1.3-9.1.1028-28758.007
+X-TMASE-Result: 10--0.211800-8.000000
+X-TMASE-MatchedRID: 5ZT8hKcXqEDVLrJfyVWkTdbojhKG7WOq6KEJO7SR6XgkvJFrsDh0h8Kj
+	GRQnQ81hzHzLyqhlRFmn5tw70RYx1r6sldeFB/WLeyBqr64m8rIqIw/OY3zSGUFMyk707FYn+8U
+	IX8lw6O3rmPXl3q9/1KJYuGaIjh0/fiAqrjYtFiQz3h+AM2lq1yLaAwNLTuYe3j5abgH6IFzkFo
+	d3grp8WX7cGd19dSFd
+X-TMASE-XGENCLOUD: fe0d814e-6e2d-4249-9480-f5c557189511-0-0-200-0
+X-TM-Addin-Auth: p7OBCt3ZPDILqLsRFxVb2OKDyrdjU+g6VjXNgGN7iHCu68h8/T1CqW5NGFU
+	wQDtzBipPQx5XcGSQheMGHXm2fBOcyaxreGMq0OWe0mZT1fWq5/BDZMF22foIIheAeLI7DTQs9E
+	tJeQORaM9It491RJKGmv3vyRjZxDwJjtV/jdlBsAVslKjzY9Lf5x3AqFQnihC4RRNnnHJ5t6VCG
+	/VD+MJBC9da2PkBGNXbemD3wWuvWyvWTIGyq+4wgDBp7mj4UiPIBWHacMSoDxk/B/T1zCFNQQ0V
+	ITxhZiAqLhIv+pTAMxjeH9uurwdKTy6d1k9rD4Kl9r+CBuuiCY+xSN3Lpg==.Iw0H6v98k4FBqa
+	3THwWzK+eJeo0sjEjWv+bZ4G/xWy46Rz9xHoZ8s+ndnWtOakqWvrsZrP9MXH14Su5MjxmIUJxlz
+	dhvjMc0O8WMOQshzCjcY5gP6wSHNGgWikIHoN6Oe0H5YD741CVtt5g3rIGvS3aN+J4LveIdVkTj
+	Q49r5YmmQGznduqOHJnSrbgsUSFaXHyzAqFMRnkloWdZXuYDi+Zm78IfJiAS7dJQWKLZsFOclvm
+	vVJI8gcfums+kGPv4ShAeuvZEooK2ZMNorjcbso//v29IMfiUkVnPe7x3JE+AsijnprmoN7tHa2
+	X6QEI80fiS23EBiE7qhGBMkCSieQ==
+X-TM-Addin-ProductCode: EMS
+X-TM-Deliver-Signature: 2AC80A1829FEF23954AE9413C1090D6A
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=parkinn.com;
+	s=TM-DKIM-2021071416130; t=1730112642;
+	bh=x0LtmJGiQztoPsrzq5Ao3Qctt3b4odFe8h6f7ET0FT4=; l=72;
+	h=From:To:Date;
+	b=i+z/e60M28erDvWQK3zKRXrOBrUSLbJt6mwpvgGQPKnRuIqbSlJMdfFjH9+poCDCA
+	 IEK8Ig/i3S+D5FlfXhrWe54btz9lxCcpyUip80Vc2nq2cGLs0VtBxGVJTsnfpMjdVz
+	 Fha76fR+QdWSMraBTnRKLrHOzvAmsQ7vm2GuhEoDHRQlVowR7HNrPZEm6qDsXB/Yb8
+	 Nh0varOHDTzdID9PxM/oGjVWK9YvRXAdAvVSG3/zFowjZQmqOBaJATQhSWRsPs3ug3
+	 tmxHBKlmcGjUcGYd10mTUvxwWq8ZprkTykP6GYs/FtnvBmVS5n32oFsMMDs81lHHbs
+	 bqNN9rgFRvxXA==
+X-Spam-Status: No, score=-0.3
+X-Spam-Score: -2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Ndungu, Caroline would like to recall the message, "BOOKING
+    VOUCHER". 
+ Content analysis details:   (-0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: parkinn.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 ARC_VALID              Message has a valid ARC signature
+  0.0 ARC_SIGNED             Message has a ARC signature
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [18.185.115.0 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [18.185.115.0 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                           [18.185.115.0 listed in sa-trusted.bondedsender.org]
+X-Spam-Flag: NO
+
+Ndungu, Caroline would like to recall the message, "BOOKING VOUCHER".=

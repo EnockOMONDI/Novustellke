@@ -1,0 +1,700 @@
+Return-Path: <32W31YBcKBZg8GG8D6OGJCKH246-FGJ6HDQ8GG8D6.4GE25EAFFGNMKL6DD.4GE@scoutcamp.bounces.google.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id 2CMOFOJt9WA7nwAA7QkJDw
+	(envelope-from <32W31YBcKBZg8GG8D6OGJCKH246-FGJ6HDQ8GG8D6.4GE25EAFFGNMKL6DD.4GE@scoutcamp.bounces.google.com>)
+	for <novuste1@rs2.noc254.com>; Mon, 19 Jul 2021 15:19:46 +0300
+Return-path: <32W31YBcKBZg8GG8D6OGJCKH246-FGJ6HDQ8GG8D6.4GE25EAFFGNMKL6DD.4GE@scoutcamp.bounces.google.com>
+Envelope-to: admin@novustell.com
+Delivery-date: Mon, 19 Jul 2021 15:19:46 +0300
+Received: from [209.85.222.199] (port=33616 helo=mail-qk1-f199.google.com)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <32W31YBcKBZg8GG8D6OGJCKH246-FGJ6HDQ8GG8D6.4GE25EAFFGNMKL6DD.4GE@scoutcamp.bounces.google.com>)
+	id 1m5SFI-000Aan-7T
+	for admin@novustell.com; Mon, 19 Jul 2021 15:19:46 +0300
+Received: by mail-qk1-f199.google.com with SMTP id i190-20020a3786c70000b02903b54f40b442so14494099qkd.0
+        for <admin@novustell.com>; Mon, 19 Jul 2021 05:19:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:precedence:list-unsubscribe:feedback-id
+         :list-id:message-id:subject:from:to;
+        bh=it+EXPfzWVmoT42sjWuV8K2MZtYuJaECplzDJlLOVlw=;
+        b=O2W6zbEbDXUY1KH9uyay+Su9YHprz+xZUMz1GRswgSNfJ7prgDTM/KD/dlf2ITo2aC
+         FCKJ0N0DWXiYokLa+cuetR9BOn8pZxGw6vF1JllFzM7tkEg9Fk17U/gIvvt1NFFRzFi8
+         5MDlN5LAVEHGExv2tG9HAeo/KTRWcomepHy8PCDDslZduSQDXbgwx+9dMXRTY6FsGJbl
+         pAj3b3yFxVVJAGYMKLficIMcCA4tyuFX/H4vhlXUJdUyRl2HswLhk7CncycNyRY8z1Vz
+         UhraGU5mvawCjxNEZLSI9BCgw/K7eU7/R/oigTsT63pe4iGbyvKcjHeduEXJWfrv2EdR
+         K56w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:precedence
+         :list-unsubscribe:feedback-id:list-id:message-id:subject:from:to;
+        bh=it+EXPfzWVmoT42sjWuV8K2MZtYuJaECplzDJlLOVlw=;
+        b=F80FeBt1bEA1zrrtigDixLhR+Xjn1G7f7J2JpOGFGEOIywZ7kz0oTiy+vzEdC2uOm0
+         KQHlVJgnwlt3abELEdUQwlx1MQgpu2O357qstDkSXdkkYQLPDr30WPAU+TuqwGnmamfM
+         NRSZ8H7lschat/98zq+lvlV3llLcrlkMKlWCeIhMgvtKZpXEzQciuqwZEci5AhqX53vy
+         CikVr/WxVX/8jXtkXwRVhZhxf/z2CcluUaOnVkH7pL+UdJBGTKyVVtIGdI9u4EFh9tLW
+         O2eHcPgxQzSZFFaCsntJYqIx1gi8TRnjItGGuYci44fHt3jgOfy4F29h83zbFaUK4UB4
+         KqAg==
+X-Gm-Message-State: AOAM530oWJRl/owXjloJybfL6cMidL50SY6/Akk6pAangvTs0JmGShjw
+	dY6C3d4gqtdghcM=
+X-Google-Smtp-Source: ABdhPJziJmFcvUhr/U3ilcYblfdO6quzGr9x8XPR/sdEl2zAspD3RPBuo2pClILC9NQM8xtPZ7ksArI=
+MIME-Version: 1.0
+X-Received: by 2002:ac8:7491:: with SMTP id v17mr21252849qtq.228.1626697177453;
+ Mon, 19 Jul 2021 05:19:37 -0700 (PDT)
+Date: Mon, 19 Jul 2021 05:19:37 -0700
+Reply-To: Google Workspace Team <googleworkspace-noreply@google.com>
+X-Google-Id: 4065843
+Precedence: bulk
+List-Unsubscribe: <https://notifications.google.com/g/optout/AD-FnEx-NSAfZxn5Wr8Ti1QzqKxM0HibxnhghfhKl1zff8hQNv4bxKDIFY6y7x6JYs-FrhUTpiYOBtehZHZRCy4CK7d_9-oU9qyVSu7-hiISTS-oLeAcfFPtjLX3?hl=en>
+Feedback-ID: P2542--244918427:C20137191:M110373664-en:gamma
+List-Id: <c79b247ae656a53e3722005cb87f926f38cd6286.google.com>
+X-Notifications: GAMMA:<cf911b0d4a5eec656ff5f0ce49a32d59d20556f1-20137191-110906593@google.com>
+X-Notifications-Bounce-Info: ARgXy4A4-fbzLdXeYtGkUyyz0_6bQLzQRdYZaAfN0ZUXateSMPLWmp2hu7j18qtlp1yhwJTF_W2Q_icRaEYc2ZLXQ9UZocrrM6Z7I4FLRx9z6vYXjbYx-YwSyR6pND6mmW7kPkeqbVStfbeoJRFJ0Z0JU3yQiBAs_k2xfUvRJyHcIOo2wwe6sXBTCx0K2ah5ZuVPOl0NGoulGSlNyJdQPjJUsbTp16ltP5fFzDHWAt4tjcQ_Hh78jPkEH82rXim6376Az9qCaDss9lSB-wVBqm0K7TRU
+Message-ID: <cf911b0d4a5eec656ff5f0ce49a32d59d20556f1-20137191-110906593@google.com>
+Subject: Take control of your meetings with Google Meet
+From: Google Workspace Team <googleworkspace-noreply@google.com>
+To: admin@novustell.com
+Content-Type: multipart/alternative; boundary="0000000000006b556d05c778f3be"
+X-Spam-Status: No, score=-3.2
+X-Spam-Score: -31
+X-Spam-Bar: ---
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Google Meet makes it easy to take control Meet lets you choose
+    how to join, manage, and share your meetings so you can securely connect,
+    collaborate, and celebrate from anywhere. You can use Meet on any device,
+    select who can join, customize [...] 
+ Content analysis details:   (-3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             white-list
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.5 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+  0.0 PDS_HP_HELO_NORDNS     High profile HELO with no sender rDNS
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+--0000000000006b556d05c778f3be
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+R29vZ2xlIE1lZXQgbWFrZXMgaXQgZWFzeSB0byB0YWtlIGNvbnRyb2wNCg0KTWVldCBsZXRzIHlv
+dSBjaG9vc2UgaG93IHRvIGpvaW4sIG1hbmFnZSwgYW5kIHNoYXJlIHlvdXIgbWVldGluZ3Mgc28g
+eW91ICANCmNhbiBzZWN1cmVseSBjb25uZWN0LCBjb2xsYWJvcmF0ZSwgYW5kIGNlbGVicmF0ZSBm
+cm9tIGFueXdoZXJlLiBZb3UgY2FuIHVzZSAgDQpNZWV0IG9uIGFueSBkZXZpY2UsIHNlbGVjdCB3
+aG8gY2FuIGpvaW4sIGN1c3RvbWl6ZSB5b3VyIGV4cGVyaWVuY2UsIGFuZCBzZWUgIA0Kd2hvJ3Mg
+dGhlcmUgYmVmb3JlIHlvdSBqb2luIHRoZSBtZWV0aW5nLg0KDQoNCg0KVXNlIHRoZXNlIHRpcHMg
+dG8gdGFrZSBjb21tYW5kIG9mIHlvdXIgbWVldGluZ3MNCjEuIERvd25sb2FkIHRoZSBHb29nbGUg
+TWVldCBhcHAgIA0KPGh0dHBzOi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRC1GbkV5
+cUU5MklvZ0pUaW5NcmdZUl8tT1RidTJHSTREWTFETFFrNTdMVDdUT1pmNzdSWXFlVWU5TXZnaHZK
+akdrdlFBdUNwZkFQREh1Zk0zUncwbEJrV1dEdldFVmxkYVpic0pJOWRRTGxWcDk3OUxuTFlUN0hi
+YWh0RktXaTN6TC1QNEd1SDQzdGJ2ZURHYlBnLXpPV2pXSGREZ2RaU0R5NFNwSnQza3o0Q0R1azJL
+TURDTkhjZmVIWldsVUJ3dEVKQ01ILVpIb3gzdz4gIA0KYW5kIHRoZSBNZWV0IE91dGxvb2sgcGx1
+Zy1pbiAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FELUZuRXlLczNS
+N2hjQWVZTU5XQkpJNkFsa3R3SFVHaXVVdVkzRXZBMmlOajRXbnZydThGNlhXemsyQlVFWE5xM2dN
+MURNWU9vMEl4MW5rVThXamQ2d1NYU0hieGgtSzJCTy1hRG9kdXJMOVVOR3gzUUIxd1VTSjYyVnhN
+cURNaHFaT1BTeGZGY2dsdXNOdTlxUmlLRzdXNmlSaVJRams5cUdKc1NmU1BUNVBsVVdmV0x2ekhP
+ekl1WnFJNWs2amYyUHF1bGFwNzAwaT4NCjIuIEludml0ZSAgDQo8aHR0cHM6Ly9ub3RpZmljYXRp
+b25zLmdvb2dsZS5jb20vZy9wL0FELUZuRXo1d194Z1kzZ0JrcTcyR3hxM3VRV25Ja3VFNlhkQXRy
+OF9zQ0dHR3hOUGtEcmRYNHJoSXlac3RyYlZ4T2VqTGdsSGpWdXVOVW16OGpoS2oxZGEyUUFZa0Iw
+US1NS2NrWUxid1Qtck5Ya1hiZzF3QVdxeFhSR1hVRVhqeFF1bHI4eHRlUG1mMzJWTTRSaU1weFY0
+cnpCam5Sc2lkcWNQbzA2UUhjZ01pZF9yM2E0VWp1SUVWek95NVFZRlAtWlQzbWdONndNPiAgDQpw
+ZW9wbGUgdG8geW91ciBtZWV0aW5nLCBubyBtYXR0ZXIgd2hpY2ggY2FsZW5kYXIgeW91IHVzZSwg
+YW5kIGVhc2lseSBwaW4sICANCm11dGUsIG9yIHJlbW92ZSBwYXJ0aWNpcGFudHMgIA0KPGh0dHBz
+Oi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRC1GbkV6Rkw2eGVvN2dOVnFyeFhGcWhq
+NjFBNE9yN3FuZnl4YnZ3N3h6MTU5bE5lSDVDVzRtYm9QbVB0NUpZd3g2Und5WUVLbkNUa3dVTktw
+MFNScDZnLVBqTWdxcmdyXzQwWXNhMDhrWE1rQ01pWG1oTmRrRXRCVnVDcEs1X3dqR3FqclI3WXFt
+dHRtNkVKM2tVdFRQQVg1czUzVXkyMWx4MU9RVGs5enRaTDJhNDhPRm5PMXZsM2J1Rm4xYTZfLVVa
+b3Y5bTAyelh4MFl1Ty1XWWxqRT4NCjMuIFN3aXRjaCB0aGUgbGF5b3V0ICANCjxodHRwczovL25v
+dGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3AvQUQtRm5FemR6Ny1RbHNKZENjVGFIUExkdlQzNVR2
+X2xKZXJuVGk5N1RrNUU1cFdhaUtuUDVIOGs0SHBzMU1mN0hhdjh5UW5VdENNbTRkZkEtMFZKYTFo
+em93WW5BNVNUc0JOVUJkYk1kd2pPUkdiTlZhWWtKbktpUERjMDhVQk5aWmlvNDRXeVctUll5UWRh
+RkhESThtVzA5S0ZOTFJzdGR5RHF3TG5ZZGZyc3V2ZTVyXzVOWmtaZmdLdjRGeGdnZ3dHVi1RWV85
+NnM+ICANCm9mIHlvdXIgdmlkZW8gY2FsbCB0byBzZWUgZXZlcnlvbmUgb3IgZm9jdXMgb24gdGhl
+IHNwZWFrZXINCjQuIE11dGUgb3IgYWRqdXN0IHlvdXIgdmlkZW8gYW5kIG1pY3JvcGhvbmUgc2V0
+dGluZ3MgIA0KPGh0dHBzOi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRC1GbkV3UVpW
+dGVibjBJQVJUczFwdEdYZjhoSEF1YVg0eHZKQWlmNEQtaFFPZE1VWHJxZjExM2IyYkJjV2ZaUldC
+dEwzSGtHLXpoTzNfeW1WS3hrVzdZM0hsQVBfdUpadXVVM3U0NUNBSkhta0lFSGF0Z01qNk5POC1I
+ZE1KbDRBRmpnUlVNQWJpLTFCUjZBNkhuSW0weWJiQ2VnckdvUVE0ZmVCUFJPMDdzVHEzcFhIOWJT
+cUUyUE8zRUpMblQ4MHNHLXRqVFV2YnJoUT4gIA0KdG8gbG9vayBhbmQgc291bmQgeW91ciBiZXN0
+DQoNCg0KRG93bmxvYWQgdGhlIE1lZXQgYXBwICANCjxodHRwczovL25vdGlmaWNhdGlvbnMuZ29v
+Z2xlLmNvbS9nL3AvQUQtRm5FeEx6Y2NKeXo0SW5DRkJnWjNaNkpFc3JqOVhoa3VSbTB2MmpDZmh1
+TF9ER3RtaXNwWUM2Rm93OFZrWmhORzRIc2l5QjlHTW8wSHFsdFhaTUI1ajR6SkNkV3RuU28wTUE4
+UTVURWJCYUxvaHNNQ05KX2Q0RHhtdWoybGYzbEJtUkY2Mi1iTzk1RjZHclNyaEoyZk91SkFiM2J5
+aUk4RWwxQ09CYkpoTjlwRmJtdndZR09EYmZTLTBRRDRoRVFDTUIwMHdaR0lLTlE+DQoNCg0KV2Ug
+d291bGQgbG92ZSB5b3VyIGZlZWRiYWNrIG9uIHRoaXMgZW1haWwuIFRha2UgYSBxdWljayBzdXJ2
+ZXkgaGVyZSAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FELUZuRXhW
+cV9qZUVoaVVWbkFrWWNrNTNqQzd0bzBCcWdxeGkzTndHSmU4Wk13emIteWdRSFNzd1J1UktUMDJK
+eFF0RC1ZeWF4bDNpc2stUTBXSC0tTnFhb25ib09oRnNfcS1nRkRnREVRNTFVTjFJMjZrMWVadnY2
+b29ZZjdGbmRHbFlrbEI+Lg0KDQoNCg0KDQoNCg0KwqkgMjAyMSBHb29nbGUgSXJlbGFuZCBMdGQs
+IEdvcmRvbiBIb3VzZSwgQmFycm93IFN0cmVldCwgRHVibGluIDQsIElyZWxhbmQuDQoNCg0KDQpU
+aGlzIGVtYWlsIHdhcyBzZW50IHRvIGFkbWluQG5vdnVzdGVsbC5jb20gYmVjYXVzZSB5b3Ugc2ln
+bmVkIHVwIHRvIHJlY2VpdmUgIA0KbmV3cywgcHJvZHVjdCB1cGRhdGVzLCBhbmQgdGlwcyBhYm91
+dCAgR29vZ2xlIFdvcmtzcGFjZS4gUGxlYXNlIG5vdGUgdGhhdCAgDQpzb21lIGZlYXR1cmVzIGhp
+Z2hsaWdodGVkIGluIHRoZXNlIGVtYWlscyBtaWdodCBub3QgYmUgZGVwbG95ZWQgYnkgeW91ciAg
+DQpvcmdhbml6YXRpb24uIElmIHlvdSBkb24ndCB3YW50IHRvIHJlY2VpdmUgc3VjaCBlbWFpbHMg
+aW4gdGhlIGZ1dHVyZSwgIA0KcGxlYXNlIHVuc3Vic2NyaWJlICBoZXJlICANCjxodHRwczovL25v
+dGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL29wdG91dC9BRC1GbkV5bnBwUjVROWVva3d4VTFwaXhh
+eDBNUkZCVmRMb2N3bHFob0ZCQmNSRFVpbW5SdGtCVFJuU1c0cmZFM3BEdHA0dEktSXV4clUySWY4
+NGRETkdPQlV5cDVsV2RkanZFRG05UVBzLVFEeXVyRm1rRXF5OC1WQT9obD1lbj4uDQo=
+--0000000000006b556d05c778f3be
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3Dhttp://www.w3.org/1999/xhtml xmlns:v=3Durn:schemas-microsoft-=
+com:vml xmlns:o=3Durn:schemas-microsoft-com:office:office lang=3Den>
+
+<head>
+  <title>Tips for how to better control Google Meet</title>
+  <meta name=3Dx-apple-disable-message-reformatting>
+  <meta http-equiv=3DX-UA-Compatible>
+  <meta http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+  <meta name=3Dviewport content=3D"initial-scale =3D 1.0,maximum-scale =3D =
+1.0" />
+  <meta name=3Dviewport content=3Dtarget-densitydpi=3Ddevice-dpi />
+      <style type=3Dtext/css>
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto:100,=
+300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto+Mono=
+:100,300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DOpen+Sans:3=
+00,400,600,700');
+         .ExternalClass {width: 100%;}
+         .ExternalClass,=20
+         .ExternalClass p,=20
+         .ExternalClass span,=20
+         .ExternalClass font,=20
+         .ExternalClass td,=20
+         .ExternalClass div {
+         line-height: 100%;}
+         body {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: none;
+         margin: 0; padding: 0;}
+         table, td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+         margin: 0; padding: 0;
+         border-collapse: collapse;}
+         img {
+         -ms-interpolation-mode: bicubic;
+         text-decoration: none;
+         outline: none;}
+         a img {
+         border: none;}
+         p {
+         margin: 0; margin-bottom: 0; padding: 0;}
+         [data-browser=3D"useragent"] {
+         display: none;}
+
+         }/* media only screen and (max-width: 600px) */
+         @media=20
+         only screen and (min-device-width: 375px) and (max-device-width: 4=
+10px),=20
+         only screen and (min-device-width: 414px) and (max-device-width: 7=
+36px),=20
+         only screen and (min-device-width: 320px) and (max-device-width: 3=
+59px) {
+         tr[class=3Dios-native] {
+         display: table-row!important;
+         }
+         }
+         @media only screen and (device-width: 412px) and (orientation: por=
+trait) {
+
+         }
+=20
+      </style>
+  <style>
+    @media screen and (max-width: 812px) {
+      .isection{padding-right: 10px !important;}
+    }
+   @media screen and (max-width: 500px){
+    .space{padding:0px 10px !important;}
+     .isection{padding-right: 10px !important;}
+         }
+ =20
+  </style>
+   <!--[if mso]>
+      <style type=3D"text/css">
+         body, table, td, center, a {font-family: Arial, Helvetica, sans-se=
+rif !important;}
+         li {text-indent: -1em; /* Normalise space between bullets and text=
+ */}
+      </style>
+      <![endif]-->
+     <!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <!--[if mso]>
+<style>
+</style>
+<![endif]-->
+   </head>
+   <body class=3Dbody style=3D"-webkit-text-size-adjust:100%; width:100%; p=
+adding:0" bgcolor=3D#ffffff width=3D100%>
+      <div style=3D"display:none; font-size:1px; color:#333333; line-height=
+:10px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">Google M=
+eet makes it easy to take control Meet lets you choose how to join, manage,=
+ and share your meetings so you can securely connect, collaborate, and cele=
+brate from anywhere. You can use Meet on any device, select who can join, c=
+ustomize your experience, and see who's there before you join the meeting.<=
+/div>
+    <div style=3D"font-size: 0px; line-height:0px; display: none; max-heigh=
+t: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; color: #ffffff; displa=
+y: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </div>
+      <section>
+         <table role=3Dpresentation id=3Dtable-parent style=3D"background-c=
+olor:#ffffff; border:0 none; border-collapse:collapse; mso-table-lspace:0; =
+mso-table-rspace:0;width:100%;" bgcolor=3D#ffffff border=3D0 cellpadding=3D=
+0 cellspacing=3D0 width=3D100%>
+            <tbody>
+               <tr>
+                  <td id=3Dtd-parent style=3D"border-collapse:collapse; fon=
+t-family:Roboto,Arial,Helvetica,sans-serif; padding:0" align=3Dcenter bgcol=
+or=3D#ffffff>
+                     <!--[if mso]>
+                     <table role=3D"presentation" width=3D"600" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-collapse:collapse; ta=
+ble-width:fixed;" align=3D"center">
+                        <tr>
+                           <td style=3D"width: 600px!important;">
+                              <![endif]-->
+                              <div id=3Demail style=3D"background-color:#ff=
+ffff; margin:0 auto;" bgcolor=3D#ffffff>
+                                 <table role=3Dpresentation class=3DbodyWra=
+p align=3Dcenter style=3D" border:0 none; border-collapse:collapse; margin:=
+0; max-width:600px; mso-table-lspace:0; mso-table-rspace:0; padding:0" bord=
+er=3D0 cellpadding=3D0 cellspacing=3D0 width=3D600>
+                                    <tbody>
+                                       <tr>
+                                          <td class=3D"bodyWrap-td space" s=
+tyle=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,sans-s=
+erif;">
+                                             <table role=3Dpresentation sty=
+le=3D"border:0 none; border-collapse:collapse; mso-table-lspace:0; mso-tabl=
+e-rspace:0" border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+                                                <tbody>
+                                                   <tr>
+                                                      <td class=3Dbody-cont=
+ent style=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,s=
+ans-serif;" align=3Dcenter valign=3Dtop width=3D100%>
+                                                         <table role=3Dpres=
+entation style=3D"border:0 none; border-collapse:collapse; mso-table-lspace=
+:0; mso-table-rspace:0" align=3Dcenter border=3D0 cellpadding=3D0 cellspaci=
+ng=3D0 width=3D100%>
+                                                            <!-- mod: parag=
+raph -->
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class=
+=3Dmod-container-td style=3D"border-collapse:collapse; font-family:Roboto,A=
+rial,Helvetica,sans-serif;padding-left:20px;padding-right:20px;" align=3Dce=
+nter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+                                                                     <table=
+ role=3Dpresentation style=3D"border:0 none; border-collapse:collapse; mso-=
+table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 cellspacing=
+=3D0 width=3D100%>
+                                                                        <tb=
+ody>
+                                                                           =
+<tr>
+                                                                           =
+   <td class=3Dmod-padding style=3D"border-collapse:collapse; font-family:R=
+oboto,Arial,Helvetica,sans-serif;" width=3D100%>
+                                                                           =
+      <table role=3Dpresentation style=3D"border:0 none; border-collapse:co=
+llapse; mso-table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 =
+cellspacing=3D0>
+	<tbody>	<tr style=3D"margin:0; padding:0">
+  <td class=3D"mod-padding image-title" style=3D"border-collapse:collapse; =
+color:#1a73e8;  padding-top: 75px;word-break:normal;font-size:36px;directio=
+n:ltr; font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif; line-heig=
+ht:54px;" dir=3Dltr align=3Dcenter width=3D100%>Google Meet makes it easy t=
+o take control</td>
+</tr>
+
+<tr style=3D"margin:0; padding:0">
+<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5f6=
+368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-size=
+:16px; line-height:28px; padding-top:14px;word-break:normal;padding-left:10=
+px;padding-right:10px;" dir=3Dltr align=3Dcenter width=3D100%>
+Meet lets you choose how to join, manage, and share your meetings so you ca=
+n securely connect, collaborate, and celebrate from anywhere. You can use M=
+eet on any device, select who can join, customize your experience, and see =
+who's there before you join the meeting.
+   </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td style=3Dmargin:0;padding-top:30px;text-align:center align=3Dcenter>
+<img src=3Dhttps://services.google.com/fh/files/emails/take_control.png bor=
+der=3D0 width=3D452 valign=3Dbottom style=3D"display: inline-block;" align=
+=3Dcenter alt=3D"">
+</td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td style=3D"">
+<table role=3Dpresentation align=3Dcenter class=3Dcontent_inner width=3D100=
+% cellspacing=3D0 cellpadding=3D0 border=3D0 style=3D"font-size:15px; width=
+:100%; background-color:#ffffff; background:#ffffff;" bgcolor=3D#ffffff>
+ <tr style=3D"margin:0; padding:0">
+<td class=3Dcontent_inner dir=3Dltr style=3D"color:#5f6368; font-family:Rob=
+oto,Arial,Helvetica,sans-serif; line-height:20px; margin:0; padding:0;direc=
+tion:ltr; width:100%;" width=3D100%>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 style=3Dfont-fam=
+ily:Roboto,Arial,Helvetica,sans-serif;>
+ <tbody>
+                     <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:24px;color:#1a73e8;font-weight:normal;line=
+-height:36px;">
+ Use these tips to take command of your meetings
+ </td>
+</tr>
+=20
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">1.</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+Download the <a href=3Dhttps://notifications.google.com/g/p/AD-FnExp4SRlOD6=
+iTXkpkaj3WqpJvBrLK_UBGlgzX1eflSp95V8yRwwUOASbIthKsMq9e31N1hmzTy80z7J_bRdElM=
+j6Fr2lLsBg1-Sy-EFjy-M3hz6RknZkaHSyKGXcz_VIFHcFJj5Hgh0FPoXKtnmec_wO8u6jfYEXZ=
+giv5Xw5pP6t9Tk36kfYcBJE0We4BRi2gX0qtzEksRtF target=3D_blank style=3D"color:=
+#1a73e8;font-size:16px;border:0; ;text-decoration:none;line-height:inherit;=
+font-size:inherit !important;">Google Meet app</a> and the <a href=3Dhttps:=
+//notifications.google.com/g/p/AD-FnEykUBSot_HtNHz6FvSabXzosks33jkPsuCaBPQE=
+XVE5As5eu_P0NBHSb-AIm7BB8upuCfINv7O9nuRrVnvLV3ESIg9GbdtRku8xcfVnQyvQLrDj335=
+RtHGjNk6AEqyqRsOZqWXPkxQ_axlMpO2ebDzkNJYvRVFP2BVvCdeMKDGn2nqxwN2Qg02SXSuMhS=
+Qv0uWMahecCWg target=3D_blank style=3D"color:#1a73e8;font-size:16px;border:=
+0; ;text-decoration:none;line-height:inherit;font-size:inherit !important;"=
+>Meet Outlook plug-in</a>
+</td>
+</tr>
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">2.</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+<a href=3Dhttps://notifications.google.com/g/p/AD-FnExJWsmBLPwe37HQYHL4fPGL=
+KowDfwqXck1HpciV0fQtRlOm2Zhv_e_5zue1blOUm6r_pCk0N8tx2Q49IQsK7BVfiW9kow558_b=
+hmc7aih8cGtbJ60Qcd2evN3av1OdT-f1VZWIlrbQglqXoL0dqonqf_DubGSvT50mWRYj5xmw9r5=
+3m4FUKZJzxDt4Q--KTXAwwhyqfYQ target=3D_blank style=3D"color:#1a73e8;font-si=
+ze:16px;border:0; ;text-decoration:none;line-height:inherit;font-size:inher=
+it !important;">Invite</a> people to your meeting, no matter which calendar=
+ you use, and easily <a href=3Dhttps://notifications.google.com/g/p/AD-FnEx=
+DcDAvpmEvGFBZsvAJsQ0z-dsJx5FS86Q4mJ-6ahoF9gcc7ArQe8jxbCsaBP7sCmb-jLrar8Kgr3=
+YppuVbrAWwOqol42lIUXHI7fgABni6MXeSNRaqCPH7fknNKx-omaBTQj6tnblpnHZKQFU5ESsvD=
+JC7gUgrkj1GjQrsDDcbQSZ9TMth3FAuRJw6ofBcpdxOh4ME3pHZiXoK3uObHw target=3D_bla=
+nk style=3D"color:#1a73e8;font-size:16px;border:0; ;text-decoration:none;li=
+ne-height:inherit;font-size:inherit !important;">pin, mute, or remove parti=
+cipants</a>
+</td>
+</tr>
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">3.</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+<a href=3Dhttps://notifications.google.com/g/p/AD-FnEw59T5wD4cCZOjr6eQSGdsa=
+A26_bU_GPPqqg2fhvmsxS15-3jTeWH8Oa4aiGioIIwrNfOaOPWI68pS8ffSvet5QJp_BcaluUFy=
+ZOhP_u4vM0opO_9kPxm-ITcy9K2U7et7WxoAWVtBhpWXBd4vxWBPUYeo0ArlU3RvOovWBtiXJnc=
+2hRNjPKT8nRaXvaAmnEx6bMWHyBA target=3D_blank style=3D"color:#1a73e8;font-si=
+ze:16px;border:0; ;text-decoration:none;line-height:inherit;font-size:inher=
+it !important;">Switch the layout</a> of your video call to see everyone or=
+ focus on the speaker
+</td>
+</tr>
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">4.</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+Mute or adjust your video and microphone <a href=3Dhttps://notifications.go=
+ogle.com/g/p/AD-FnEw5kEUqoC87-wUiYXojraZ_2n6hd99rQtHef0yhGMUV8ZqLCPLVGswCi8=
+3YZ4-ZFQi_yfV8_6WLgEVuItNf-N3nfaUnpfHlqrh04_Nd6btqbsifzhZqDrM7QajIn6nF-xar_=
+6WGfWokOn_vY3T8aaMX1c3HwFRDRMIlFTtKnq2Im3OC93dn3grDYN77DrF2sNHXl_J9Tnf2 tar=
+get=3D_blank style=3D"color:#1a73e8;font-size:16px;border:0; ;text-decorati=
+on:none;line-height:inherit;font-size:inherit !important;">settings</a> to =
+look and sound your best
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+         </tr>
+      </table>
+   </td>=20
+  </tr>
+
+
+<tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+ <tr>
+      <td style=3D"margin-top:0;margin-bottom:0;margin-right:0;margin-left:=
+0; padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;padding-to=
+p:23px;">
+       =20
+        <div style=3D"text-align:center;line-height:24px;padding:13px 10px;=
+"><!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" href=3D"https://notifications.google.com/g/=
+p/AD-FnEx7usjCiumV0PZQsSO6LXm6aMK1ey8nPLI66Srl4rDDqr4O5CrF3_nHlo7nl7_cl3xO5=
+5XjRyqdS30hEfudsKuaoDrvDFkk0AFBzZVEpR7duxfSGCnOQH4S5HSbRyMoha7_Q4Jq05uekNR7=
+np6szPYWogjpGO9aS-h_0jvQrldf4m_7vYAbyESU5GEYFZq5UuDYjZK2-Evg" style=3D"heig=
+ht:38px;v-text-anchor:middle;width:235px;" arcsize=3D"14%" strokecolor=3D"#=
+dadce0" fillcolor=3D"#1a73e8" target=3D"_blank">
+    <w:anchorlock/>
+    <center style=3D"font-family:Google Sans,Roboto,Helvetica,Arial,sans-se=
+rif;font-size:15px;direction:ltr;font-weight:600;color:#ffffff;">Download t=
+he Meet app</center>
+  </v:roundrect>
+<![endif]--><a href=3Dhttps://notifications.google.com/g/p/AD-FnEx7usjCiumV=
+0PZQsSO6LXm6aMK1ey8nPLI66Srl4rDDqr4O5CrF3_nHlo7nl7_cl3xO55XjRyqdS30hEfudsKu=
+aoDrvDFkk0AFBzZVEpR7duxfSGCnOQH4S5HSbRyMoha7_Q4Jq05uekNR7np6szPYWogjpGO9aS-=
+h_0jvQrldf4m_7vYAbyESU5GEYFZq5UuDYjZK2-Evg style=3D"background-color:#1a73e=
+8;border:1px solid #dadce0;border:1px solid #1a73e8; border-radius:2px;colo=
+r:#ffffff;display:inline-block;font-family: Google Sans,Roboto,Helvetica,Ar=
+ial,sans-serif;font-size:14px;font-weight:600;line-height:36px;direction:lt=
+r;text-align:center;text-decoration:none;border-radius:5px; padding:0 10px;=
+width:235px;-webkit-text-size-adjust:none;mso-hide:all;line-height:24px;pad=
+ding:13px 10px;" target=3D_blank class=3D"m_weight m_font_size_nw">Download=
+ the Meet app</a></div>
+       =20
+   =20
+      </td>
+   </tr>
+
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;font-size:16px;color:#5f6368;fon=
+t-weight:normal;padding-top: 50px; padding-bottom: 20px; line-height:28px;t=
+ext-align:center;" dir=3Dltr align=3Dcenter width=3D100%>We would love your=
+ feedback on this email. Take a quick survey <a href=3Dhttps://notification=
+s.google.com/g/p/AD-FnEzVbEMNvlWekeO02pnIpPWzFmr9x5Y9JOAqxVbJAbT02oZKxfhefI=
+z9JWrfeGlL-LDs6W6vrl8rsU83DrSXMUesa3Yrph6CPChHuCrZ8C7K-0HUuQhxT2N4KyVmNZKMa=
+lkddnA target=3D_blank style=3D"color:#1a73e8;font-size:16px;border:0; ;tex=
+t-decoration:none;line-height:inherit;font-size:inherit !important;">here</=
+a>.</td></tr>
+<tr>
+   <td class=3Dfooter-content style=3D"border-collapse:collapse; font-famil=
+y:Roboto,Arial,Helvetica,sans-serif; padding:0px 30px;padding-bottom:30px;"=
+ align=3Dcenter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+      <div style=3Dclear:both;>
+   </div><table role=3Dpresentation style=3D"border:0 none; border-collapse=
+:collapse; mso-table-lspace:0; mso-table-rspace:0" align=3Dcenter border=3D=
+0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+         <tbody>
+          =20
+   <tr>
+      <td height=3D50 colspan=3D2 style=3Dheight:50px width=3D100%></td>
+   </tr>
+
+<!-- Footer above -->
+            <!-- Space -->
+            <tr>
+               <td class=3Dfooter-addr colspan=3D2 style=3D"border-collapse=
+:collapse; color:#5f6368; font-family:Roboto,sans-serif;  font-size:14px; l=
+ine-height:21px; padding:0 0 15px" align=3Dcenter valign=3Dtop width=3D100%=
+><span class=3Dios-link-footer-addr style=3D"color:#5f6368; cursor:text; te=
+xt-decoration:none"><font><span style=3D"color:#5f6368; cursor:text; text-d=
+ecoration:none">
+ <!-- Phase Launch controller -->
+ <!-- for testing will remove when launch and true value update in 9748739 =
+snippet -->
+
+
+<!-- Existing Footer Code -->
+
+=C2=A9 2021 Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Irel=
+and.
+=20
+
+                 </span></font></span></td>
+            </tr>
+        =20
+            <tr><td colspan=3D2 class=3D"footer-legal last" style=3D"border=
+-collapse:collapse; color:#5f6368; font-family:Roboto,Arial,Helvetica,sans-=
+serif;font-size:14px;direction:ltr; line-height:21px; padding:0 0 15px; pad=
+ding-bottom:0;word-break:normal;" align=3Dcenter dir=3Dltr valign=3Dtop wid=
+th=3D100%>This email was sent to <a href=3Dmailto:admin@novustell.com style=
+=3Dtext-decoration:none;color:#1a73e8;>admin@novustell.com</a> because you =
+signed up to receive news, product updates, and tips about  <!--[if gte mso=
+ 9]><br/><![endif]--><!--[if !mso]><!--><span class=3Dnowrap style=3Dwhite-=
+space:nowrap;display:inline-block;><!--<![endif]-->Google Workspace</span>.=
+ Please note that some features highlighted in these emails might not be de=
+ployed by your organization. If you don't want to receive such emails in th=
+e future, please unsubscribe  <a href=3Dhttps://notifications.google.com/g/=
+optout/AD-FnEx-NSAfZxn5Wr8Ti1QzqKxM0HibxnhghfhKl1zff8hQNv4bxKDIFY6y7x6JYs-F=
+rhUTpiYOBtehZHZRCy4CK7d_9-oU9qyVSu7-hiISTS-oLeAcfFPtjLX3?hl=3Den target=3D_=
+blank style=3D"color:#1a73e8;font-size:16px;border:0; font-size:14px;text-d=
+ecoration:none;line-height:inherit;font-size:inherit !important;">here</a>.
+</td></tr>
+    =20
+ =20
+         </tbody>
+      </table>
+   </td>
+</tr>
+
+</tbody>
+ </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <!--[if mso]>
+                           </td>
+                        </tr>
+                     </table>
+                     <![endif]-->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+   <img alt=3D"" height=3D1 src=3Dhttps://notifications.google.com/g/img/AD=
+-FnEy9Z3jdE7K0L0ZsAyoN-G14SHFPLpuZtvd6o_Fx1fRKuMU.gif width=3D3>
+
+</body></html>
+
+--0000000000006b556d05c778f3be--

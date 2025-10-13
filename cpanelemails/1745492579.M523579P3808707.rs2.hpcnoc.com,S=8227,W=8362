@@ -1,0 +1,135 @@
+Return-Path: <noreply-dmarc-support@google.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 0MTiHmMaCmjDHToAObGTvA
+	(envelope-from <noreply-dmarc-support@google.com>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 24 Apr 2025 14:02:59 +0300
+Return-path: <noreply-dmarc-support@google.com>
+Envelope-to: admin@novustelltravel.com
+Delivery-date: Thu, 24 Apr 2025 14:02:59 +0300
+Received: from mail-qv1-f74.google.com ([209.85.219.74]:54441)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.1)
+	(envelope-from <noreply-dmarc-support@google.com>)
+	id 1u7uM7-0000000G28D-2DrL
+	for admin@novustelltravel.com;
+	Thu, 24 Apr 2025 14:02:59 +0300
+Received: by mail-qv1-f74.google.com with SMTP id 6a1803df08f44-6e8feffbe08so22286896d6.0
+        for <admin@novustelltravel.com>; Thu, 24 Apr 2025 04:02:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1745492537; x=1746097337; darn=novustelltravel.com;
+        h=content-transfer-encoding:content-disposition:to:from:subject
+         :message-id:date:mime-version:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=zb6vUjv1El4/FNpBTOQ/WEUY27obxj0uAF9e9Gh48do=;
+        b=IyhYKo0+085ylAePtBz8BiqUy9eXktKIMZkvo6wJVQOAtX+XPLmgAAF3DRUKfRigu5
+         8ecfPmuINPl+uWVFmuDWsYm+lis1rWu7IaeLBSwuKWQ+PeAkf5OMakuLKIrJzTkAKr+S
+         0T73XqW/7nxxc+9CxHDvwhuQe8l0O6d/6P/kpOmJzDuU4A9JavbvT7q0Xt1EG/MSd6Rb
+         BmCddA4Cxo+WrhWHN817UlUNfRvBBJMSVr1FZmAFbwwlKpDnJMsYzIH/src7l3d1RPM1
+         Xksrgm5baFP8OQSMxWSk6G5uGNFgse30PXZebcdUXPCo7/nXgCOgp2qWidzve5af1JhF
+         xkPQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1745492537; x=1746097337;
+        h=content-transfer-encoding:content-disposition:to:from:subject
+         :message-id:date:mime-version:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=zb6vUjv1El4/FNpBTOQ/WEUY27obxj0uAF9e9Gh48do=;
+        b=jFVnsU7fHz7xSrF6xOtmqAH5izgU7rd5ypJrE+Gmt71WtssgCY2ZRrd3f4E/eAa/sR
+         xRQECX5+9O732+CwHIiaysZ9i4lopgepHpGSBTY7dIjXT7QB2Oxqhrae93uk6eCn55Pn
+         ke2W1E6k9dyTYAu5Z3tMIPxMHQZEsM9cogrxhpruydBB6kJmpOjwizeJvgx8cOdMfggj
+         sdwpq0rkajTkCEhXLHEJyavByCsR6hFzQkHzvBk/3kTofGluqODB3jzU06SlOqotYdiV
+         kO4o81zZcci2TfNIbZ4LLEgt4PuI0as/8RGunbHxluVVQsg+C3BVo5jxvsvJe41XHnzy
+         pwmQ==
+X-Gm-Message-State: AOJu0YxHRp1B7qFeSUCvNaeyV023wrTCaEXJxdoksNw7332SiGZAsYNQ
+	CilxDQjjHfxBj6c/YVYt3xh2KRdpTboRBo8irG0UjL2JlwKFBK7YFGcr5ZPwFRM1i2k=
+X-Google-Smtp-Source: AGHT+IHSlLVK69zRvxMMyHo+zLOyjKURrC9+qpkuyNeC+9aCRYlFFocTbp5tCivY+X0LF/CG8BEnklbZeTXHSQ==
+MIME-Version: 1.0
+X-Received: by 2002:a05:6214:4101:b0:6e8:97c0:76f8 with SMTP id
+ 6a1803df08f44-6f4bfc01268mr41011666d6.27.1745492537494; Thu, 24 Apr 2025
+ 04:02:17 -0700 (PDT)
+Date: Wed, 23 Apr 2025 16:59:59 -0700
+Message-ID: <11725455057946343326@google.com>
+Subject: Report domain: novustelltravel.com Submitter: google.com Report-ID: 11725455057946343326
+From: noreply-dmarc-support@google.com
+To: admin@novustelltravel.com
+Content-Type: application/zip; 
+	name="google.com!novustelltravel.com!1745366400!1745452799.zip"
+Content-Disposition: attachment; 
+	filename="google.com!novustelltravel.com!1745366400!1745452799.zip"
+Content-Transfer-Encoding: base64
+X-Spam-Status: No, score=-14.6
+X-Spam-Score: -145
+X-Spam-Bar: --------------
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  
+ Content analysis details:   (-14.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.74 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.219.74 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: novustelltravel.com]
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM welcome-list
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  1.1 DATE_IN_PAST_06_12     Date: is 6 to 12 hours before Received: date
+ -0.5 ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL Match
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: novustelltravel.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.219.74 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.74 listed in sa-accredit.habeas.com]
+  0.0 TVD_SPACE_RATIO        No description available.
+ -0.5 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+UEsDBAoAAAAIAKVKmFo6THvg4gIAALwqAAA4AAAAZ29vZ2xlLmNvbSFub3Z1c3RlbGx0cmF2ZWwu
+Y29tITE3NDUzNjY0MDAhMTc0NTQ1Mjc5OS54bWztms1ymzAQx+95Co/vEd9gdwjpqU/QnhkBi60J
+SFQSTvL2XYLAJHXSNJPxtIkODLBarVZ/fqw1Mun1XdusDiAVE/xq7RF3vQJeiorx3dX6x/dvl5v1
+6jq7SGuAqqDlTXaxWqXGP0P31JluhgYJnZA6b0HTimo62NAq5C7ntIVsJ8SuAVKKNnVm4+gDLWVN
+xgVGaO4vq5bK8lL13RDu67Lb6Gf63GlJ81JwTUudM16LbK91p744julKjl0d6lCubkE6fhjH0QYz
+P9F/DGymwarM8xI/CqPIjZJtGAdhEPhx6hzbR3+cK+SS8p2ZDZoK2DEUKAmjII5DF0cbLVM78Oqh
+NYz8ZLvFXPgUzHkcbR5tKWraiYaV93nXFw1Te5gTESgPRxkPvdLQNDi/AzSjcqZtdKTVDWszmTrj
+hTGqrn6wDefR1GU/e4q5aMYhdTpjVR0OMRjUZOlKnXnDLIeL0cQnJ96N8ziVM0pdCjmlL8XtLJAS
+vSwhZ10Wh8R3SbAhAcY/mifHUvQcB0+d8WIym9HgQJseBa2mhkElpjqhmB6oHVNcWhZ+gzQdVQod
+ZpWMAHVWI4iDAvU8pHN6THyC07xSVgFqWTN8Z+Zue6AVyLyWoj395JYOJuJvcVLa630uQfWNPoZ+
+kvZr8TAvwRDLzN/cLBSABkotZFZBTbEJlZgssxzL0dOFUG/NBGQLUgr5NJ3FU0B4n+gwOE+IvYq2
+mIQR8f0tHsnzvPmWN8vbe/Dmu0ibuyWenxAvsgXuPYAb1ggFLe4JB/120graFoyLP5Jmof/7Irsh
+Hh6+5+H5BehtlbXQf0joE7uUtUuLcy4tNpY3W2Q/AfOPVhaBXVlY6D8B9MdCHxLPDW2pt0uL8+yS
+BQFWWoubLbKfAfkEWU9IjMhHlnlbYs+6MRxb4Cxwdn/qvwPO/qr/49D7bkwSHwutS0LfMm+L7Dn3
+p174viCwwNki+1Ggt39E2CL7PrylzvFD1F9QSwECCgAKAAAACAClSphaOkx74OICAAC8KgAAOAAA
+AAAAAAAAAAAAAAAAAAAAZ29vZ2xlLmNvbSFub3Z1c3RlbGx0cmF2ZWwuY29tITE3NDUzNjY0MDAh
+MTc0NTQ1Mjc5OS54bWxQSwUGAAAAAAEAAQBmAAAAOAMAAAAA

@@ -1,0 +1,126 @@
+Return-Path: <accounts-noreply@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 8H2xEuqKYmgzZigAObGTvA
+	(envelope-from <accounts-noreply@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 30 Jun 2025 13:02:34 +0000
+Return-path: <accounts-noreply@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Mon, 30 Jun 2025 13:02:34 +0000
+Received: from relay.amadeus.net ([82.150.225.79]:47205)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <accounts-noreply@doc.mail.amadeus.com>)
+	id 1uWE9X-0000000BBIu-3LsS
+	for natahsa@novustelltravel.com;
+	Mon, 30 Jun 2025 13:02:34 +0000
+Received: from tds-2 (unknown [10.168.11.254])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPSA id 6A2FB222E8
+	for <natahsa@novustelltravel.com>; Mon, 30 Jun 2025 13:01:51 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 6A2FB222E8
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1751288511;
+	bh=le6mR5cWKdCmehwrSIbhPfDmMAFo9F1c9dSH9K5R01I=;
+	h=From:TO:Subject:Date;
+	b=v8wtgw4fwHmtdWMNZuVq72h9K3FF00h459OpP5VNNYm/86oLvMcJjbqga8dwvf4Ws
+	 gIBUfWGs37Hg8mDEnGoVmaeKDNxaMniqbtN2LCM5gxxkAYqJxk0of7wun3LPlsbGP4
+	 6XhF+XikFX2Z39PqB5v1x4aXDRx5FTWaYa31HXQP7xaXaRPG8Jkxps6KGwlG8GUK9t
+	 uUfzjf8SDKVeZhjU0cnLuW9+UsKMtcEC38lMyX+QTb9zQwV0Q3GjsT80wPppnW6Rdx
+	 ae6PfYI1DJxr7g24hhFvY19eZdQPaoVxQo4azyV1PbKj8gf0mH8ZJUNp3tU7Vek+Dn
+	 3eMSBKLXLm1qw==
+From: =?UTF-8?B?IkFtYWRldXMgU2VjdXJpdHkgU2VydmljZSAi?= <accounts-noreply@doc.mail.amadeus.com>
+TO: NATAHSA@NOVUSTELLTRAVEL.COM
+Message-ID: <RFD/1A/C516082F032C/1@tds.amadeus.com>
+Job-ID: 1
+Mailrelay-Request-ID: msgid: <RFD/1A/C516082F032C/1@tds.amadeus.com>; carfid: 0001HMDLSDA2OC; 
+Mailrelay-Header: v=1; app: TDS/RFD; sender: "Amadeus Security Service " <accounts-noreply@doc.mail.amadeus.com>; doctype: NTF; 
+App-MetaInfo: phase: PRD; partition: tds_peak1; region: prd-we-tcmw01a; as: acs://prd-we-tcmw01a/tds-prd1/tds-2; 
+Subject: =?UTF-8?B?UGFzc3dvcmQgQ29uZmlybWF0aW9uIG9uIFBSRCAoUFJPRFVDVElPTik=?=
+Date: Mon, 30 Jun 2025 13:01:51 +0000
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_157004_363381570.1751288511140"
+MIME-Version: 1.0
+X-Spam-Status: No, score=1.2
+X-Spam-Score: 12
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear NATASHA OKIDDY, You have requested to reset your password
+    on 2025-06-30 13:01:51Z. To finalize the reset action, you need to validate
+    the new password you provided. Please follow the link below to a secure web
+    page. Attention: the link will expire at 2025-07-02 13:01:51Z and you have
+    to start the process again. 
+ Content analysis details:   (1.2 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.2 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  1.0 HTML_IMAGE_ONLY_16     BODY: HTML: images with 1200-1600 bytes of words
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+X-Spam-Flag: NO
+
+------=_Part_157004_363381570.1751288511140
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body style="font-family: Tahoma, Arial, sans-serif;">
+    <table width="706px" style="margin: auto;">
+      <tr>
+        <td>
+          <img
+        src="https://www.accounts.sellingplatformconnect.amadeus.com/LoginService/img/banner_1Asecurity.jpg" />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:15px;">
+          <h3>Dear NATASHA OKIDDY,</h3>
+          <p style="font-size:95%;">You have requested to reset your password on 2025-06-30 13:01:51Z. To finalize the reset action, you need to validate the new password you provided.</p>
+          <p style="font-size:95%;">Please follow the link below to a secure web page. Attention: the link will expire at 2025-07-02 13:01:51Z and you have to start the process again.</p>
+          <p style="font-size:95%;">On this webpage please enter the required information to validate your new password. After the new password has been validated you can instantly use it to sign in Amadeus Selling Platform Connect.</p>
+          <a href="https://www.sellingplatformconnect.amadeus.com/login?SITE=LOGINURL&LANGUAGE=GB&ACTION=validate#KEY=80DFE262B270BD8D8B6851AAF13724E672B593AB&USER_ALIAS=NOKIDDY&OFFICE_ID=NBO41232V&LOGIN_TYPE=LSSUserAlias" target="_blank">Please click here</a>
+          <h3 style="font-size:95%;">Best regards,</h3>
+          <h3 style="font-size:95%;">Your Amadeus Selling Platform Connect team</h3>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+------=_Part_157004_363381570.1751288511140--

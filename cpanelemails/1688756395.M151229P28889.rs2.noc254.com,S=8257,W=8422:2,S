@@ -1,0 +1,165 @@
+Return-Path: <davina578@gmail.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id cG59CKtgqGTZcAAA7QkJDw
+	(envelope-from <davina578@gmail.com>)
+	for <novuste1@rs2.noc254.com>; Fri, 07 Jul 2023 21:59:55 +0300
+Return-path: <davina578@gmail.com>
+Envelope-to: lillian@novustelltravel.com
+Delivery-date: Fri, 07 Jul 2023 21:59:55 +0300
+Received: from mail-ua1-f54.google.com ([209.85.222.54]:61868)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <davina578@gmail.com>)
+	id 1qHqgQ-0006kf-1r;
+	Fri, 07 Jul 2023 21:59:55 +0300
+Received: by mail-ua1-f54.google.com with SMTP id a1e0cc1a2514c-794c5f5ae8aso839821241.3;
+        Fri, 07 Jul 2023 11:58:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1688756291; x=1691348291;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=mEo+T+QoGpU5XsR5NTZLqLvWbNOIbeMspyPG7P2w3r0=;
+        b=rlm5x2KGGgIW1Jy2t5mdQhqm4ej+6Pzq4Tcnetzd1Vn238FfflRR8u4AMufDg5AqMP
+         wVZZXAeXcu7dj7v0yB6ypQDNfkZbg5K5gj1MNJhPCR/2SvRl5UuG1y36iNlA3W9CDI13
+         spQv3VXJrMgu9y+3n5agVLlG7ypYXzh5f6P4eKco8UZepTIgZr7ERytVRsoe9774Ub4A
+         VT632FNrF3iqlbxTjc2J/QAuah9zD+wMavTv8qc3fh16lhYzQO+sjTkUnTxOWiZmt5IL
+         5P4UWvpj67bEvxNhywAh/cRzwPaGkHlYTpSxVS+qE8TJagIVVc5jc6LJbzf0zk/b8zAg
+         xROA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1688756291; x=1691348291;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=mEo+T+QoGpU5XsR5NTZLqLvWbNOIbeMspyPG7P2w3r0=;
+        b=X3AagWXqbXJRIH+1qwgur3UJvOI5VMwkiHowY4izQGHhrsA4F0giSlZgTUEkWh2HsZ
+         J+0xNdtJJF7bKqCpV3QixMLyTwpgwUzeHCujtyS98uM3UIxROH/mZAwWIBGXg8c8CCbr
+         2465WvKqlz2IKUP9MDwVU6OpJCaslsPUXNnejrzgvsltKllI4GNM/QJTchjkiA9ELhSP
+         VO2XXCCm4j3v+qDIk+87XGVIJw6Yeycxj0PzjT3jBuqAQ8TrpYwsRAikpdrbM/WY/JC2
+         Go43tx9aGxxXAt4XOfmKhBZDACWM01Tu0hLaSN3Wq5tnXlV4EPbaRxVLADslYQfyASkw
+         55kA==
+X-Gm-Message-State: ABy/qLadyRnpPXKCmx8c9qhcSI3sb3mJwyBWirmOLkZqlh9rrdO6A6cM
+	pi4Q37pp+lBtUprSvdz2cSpNbBmvec8Frg1FrArPPQkcxc8=
+X-Google-Smtp-Source: APBJJlETbtrRw6DAM4AxtG1M6G/i+BqJhQZJwjZeOb5lqhojytxla1FIWxCltyZ99M2KXUIZPPsm23mlgM9+oYNEBX0=
+X-Received: by 2002:a05:6102:458:b0:445:1ede:4e7d with SMTP id
+ e24-20020a056102045800b004451ede4e7dmr4512397vsq.21.1688756291277; Fri, 07
+ Jul 2023 11:58:11 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAJysLe8xQH3dfDyqkQhUpWgX20HZVUpDntubtpj6N-GsNQvA4w@mail.gmail.com>
+ <CABaNeK6qLZCMb8qcdkRuaTocJmN+ahtDZvJcu=jJzubW3xoyvg@mail.gmail.com>
+In-Reply-To: <CABaNeK6qLZCMb8qcdkRuaTocJmN+ahtDZvJcu=jJzubW3xoyvg@mail.gmail.com>
+From: Davina Adhiambo <davina578@gmail.com>
+Date: Fri, 7 Jul 2023 21:57:45 +0300
+Message-ID: <CAO_-CGx-3r1OZQR_msZbEGJoMjYTE-9yGeGP9eqKLt1uRa2vSQ@mail.gmail.com>
+Subject: Re: SOCIAL MEDIA REPORT (NOVUSTELL TRAVEL ) MAY - JUNE 2023
+To: "Quinta | Novustell travel" <quinta@novustelltravel.com>
+Cc: Enock Omondi <enockomondike@gmail.com>, christine ouma <christine@novustelltravel.com>, 
+	Faith Novustell <faith@novustelltravel.com>, lillian@novustelltravel.com, 
+	davina@novustell.com
+Content-Type: multipart/alternative; boundary="000000000000da95bd05ffea36d1"
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Thanks for this. Let's work on turning the engagements to
+   conversions. Kind regards Davina Adhiambo 0729358009 
+ Content analysis details:   (1.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [davina578[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [davina578[at]gmail.com]
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--000000000000da95bd05ffea36d1
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thanks for this. Let's work on turning the engagements to conversions.
+
+Kind regards
+
+Davina Adhiambo
+0729358009
+
+
+On Fri, Jul 7, 2023 at 12:04=E2=80=AFAM Quinta | Novustell travel <
+quinta@novustelltravel.com> wrote:
+
+> Good Job
+>
+>
+>
+>
+> On Thu, 6 Jul 2023, 23:53 Enock Omondi, <enockomondike@gmail.com> wrote:
+>
+>> Dear Novustell Team
+>>
+>> We are pleased to present the monthly report for our social media
+>> activities for the month of June 2023. This report aims to provide an
+>> overview of the performance and progress achieved on our various social
+>> media platforms during this period.
+>>
+>>
+>> kind Regards
+>>
+>> Enock Omondi
+>>
+>
+
+--000000000000da95bd05ffea36d1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks for this. Let&#39;s work on turning the engagements=
+ to conversions.<div><br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail=
+_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div d=
+ir=3D"ltr">Kind regards<div><br></div><div>Davina Adhiambo</div><div>072935=
+8009</div></div></div></div></div></div><br></div></div><br><div class=3D"g=
+mail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Fri, Jul 7, 2023 at 12=
+:04=E2=80=AFAM Quinta | Novustell travel &lt;<a href=3D"mailto:quinta@novus=
+telltravel.com">quinta@novustelltravel.com</a>&gt; wrote:<br></div><blockqu=
+ote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px=
+ solid rgb(204,204,204);padding-left:1ex"><div dir=3D"auto">Good Job<div di=
+r=3D"auto"><br></div><div dir=3D"auto"><br></div><br><br><div class=3D"gmai=
+l_quote" dir=3D"auto"><div dir=3D"ltr" class=3D"gmail_attr">On Thu, 6 Jul 2=
+023, 23:53 Enock Omondi, &lt;<a href=3D"mailto:enockomondike@gmail.com" tar=
+get=3D"_blank">enockomondike@gmail.com</a>&gt; wrote:<br></div><blockquote =
+class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px sol=
+id rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr"><div dir=3D"ltr"><p =
+style=3D"color:rgb(1,31,71);line-height:22px"><span><font face=3D"arial, sa=
+ns-serif">Dear Novustell Team</font></span></p><p style=3D"color:rgb(1,31,7=
+1);line-height:22px"><span><font face=3D"arial, sans-serif">We are pleased =
+to present the monthly report for our social media activities for the month=
+ of June 2023. This report aims to provide an overview of the performance a=
+nd progress achieved on our various social media platforms during this peri=
+od.</font></span></p><p style=3D"color:rgb(1,31,71);line-height:22px"><span=
+><font face=3D"arial, sans-serif"><br></font></span></p><p style=3D"color:r=
+gb(1,31,71);line-height:22px"><span><font face=3D"arial, sans-serif">kind R=
+egards</font></span></p><p style=3D"color:rgb(1,31,71);line-height:22px"><s=
+pan><font face=3D"arial, sans-serif">Enock Omondi</font></span></p></div></=
+div>
+</blockquote></div></div>
+</blockquote></div>
+
+--000000000000da95bd05ffea36d1--

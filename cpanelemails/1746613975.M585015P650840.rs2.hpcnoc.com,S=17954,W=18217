@@ -1,0 +1,263 @@
+Return-Path: <bounce+196505.5f1e32-valarykandie=novustelltravel.com@a.lushanotice.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id KFSOItc2G2hY7gkAObGTvA
+	(envelope-from <bounce+196505.5f1e32-valarykandie=novustelltravel.com@a.lushanotice.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 07 May 2025 13:32:55 +0300
+Return-path: <bounce+196505.5f1e32-valarykandie=novustelltravel.com@a.lushanotice.com>
+Envelope-to: valarykandie@novustelltravel.com
+Delivery-date: Wed, 07 May 2025 13:32:55 +0300
+Received: from m47-238.mailgun.net ([69.72.47.238]:33802)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.1)
+	(envelope-from <bounce+196505.5f1e32-valarykandie=novustelltravel.com@a.lushanotice.com>)
+	id 1uCc58-00000002m22-0JDW
+	for valarykandie@novustelltravel.com;
+	Wed, 07 May 2025 13:32:55 +0300
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=a.lushanotice.com; q=dns/txt; s=smtp; t=1746613932; x=1746621132;
+ h=Content-Type: Content-Transfer-Encoding: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender;
+ bh=VX4DtfvHbtDEBx2TDU+UrieYBzDLEnAiwpiGSRGm54I=;
+ b=ngpB2x0j/QR9BmagVsCJnnvdO6PPJzDFwI9SairV6wkynwEzukKEBlcQAa/yOAHyvV4NC7AdcveDmKjmRMlylVZ2yowbTJ6niHOhgJT+SBqE0h9WUbn6cnqq4DpGmqg/9b0tn1bs0Lvhybeu/Ect1+i8J1A7q6olXTUf02+iubw=
+X-Mailgun-Sending-Ip: 69.72.47.238
+X-Mailgun-Sending-Ip-Pool-Name: 
+X-Mailgun-Sending-Ip-Pool: 
+X-Mailgun-Sid: WyJlZjM5NCIsInZhbGFyeWthbmRpZUBub3Z1c3RlbGx0cmF2ZWwuY29tIiwiNWYxZTMyIl0=
+Received: by 938dab212718 with HTTP id 681b36ac656a53b86900ed5c; Wed, 07 May 2025
+ 10:32:12 GMT
+Sender: Lusha@a.lushanotice.com
+Date: Wed, 07 May 2025 10:32:12 +0000
+Mime-Version: 1.0
+Subject: Notice of personal information processing. (This is not an advertisement)
+From: Lusha <Lusha@a.lushanotice.com>
+To: valarykandie@novustelltravel.com
+X-Mailgun-Variables: {"dataSource": "data", "domainId": "3", "groupName": "high risk", "provider":
+ "mailgun", "traceId": "ae3c13da-65ea-4320-b090-78c5ab2413bb"}
+Message-Id: <20250507103212.cd4a8e9fc22b58b5@a.lushanotice.com>
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=ascii
+X-Spam-Status: No, score=1.9
+X-Spam-Score: 19
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Personal Information Notice This notice serves to provide
+    you information about the collection, processing, and sale of certain of
+   your personal information ("personal information") by Lusha Systems Inc. ("Lusha").
+    Please contin [...] 
+ Content analysis details:   (1.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: lushaprivacy.com]
+                             [URI: lushanotice.com]
+                             [URI: lusha.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [69.72.47.238 listed in zen.spamhaus.org]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: a.lushanotice.com]
+                             [URI: www.lusha.com]
+                             [URI: www.lushaprivacy.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [69.72.47.238 listed in bl.score.senderscore.com]
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 T_FILL_THIS_FORM_SHORT Fill in a short form with personal information
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [69.72.47.238 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                           [69.72.47.238 listed in sa-trusted.bondedsender.org]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
+                             [URI: www.lushaprivacy.com]
+X-Spam-Flag: NO
+
+<!DOCTYPE html>
+  <html>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+    <body style="direction: ltr; width: 600px; margin: auto;">
+      <p class="title" style="line-height: 20px; font-size: 20px; text-align: center; font-weight: 600; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-bottom: 20px;">Personal Information Notice</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        This notice serves to provide you information about the collection, processing, and sale of
+        certain of your personal information ("personal information") by Lusha Systems Inc. ("Lusha").
+        Please continue reading below for more information about the information we collect, how we
+        gather it, and how it is used and shared.
+      </p>
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Lusha's proprietary online software assists businesses (our "customers") to find business
+        contact information through access to information regarding business professionals and
+        companies ("Data") retained in Lusha's B2B database ("Database"). Our customers might use the
+        Data or sales, marketing and recruiting.
+      </p>
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        If you elect to do so, you may opt out of our Database by visiting
+        <a href="https://www.lushaprivacy.com/removal-form/" target="_blank">https://www.lushaprivacy.com/removal-form/</a>. From within our dedicated Privacy Center, you can also submit an access request or review
+        our privacy policy (<a href="https://www.lusha.com/privacy_topic/data-privacy" target="_blank">https://www.lusha.com/privacy_topic/data-privacy</a>).
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Categories of Personal Information Processed</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Lusha conducts business intelligence research on organizations and their employees and
+        professionals to obtain Data. We collect any of the below categories of personal information.
+        Please note that we might have any or all of the below categories of information, and you are
+        entitled to enquire about this through the Privacy Center.
+      </p>
+      <ul>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Name</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Company</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Telephone Number</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Email Address</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Job Title</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Job Function</p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Social Media URL</p>
+        </li>
+      </ul>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Purpose of Processing</p>
+      <ul>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+            Lusha may process the information and license it to its customers for their business
+            intelligence insights, sales, marketing,recruiting or fraud protection purposes, or to
+            other organizations who may license it to their customers for the same purposes
+            ("partners").
+          </p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+            Our customers, or those of our partners, may use the information to market their services
+            to your employer or to contact you about professional or business opportunities.
+          </p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+            The information is provided to customers or partners subject to restrictive license
+            agreements that limit the use to those specified purposes and prohibits the unauthorized
+            use or transfer of the information.
+          </p>
+        </li>
+        <li>
+          <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+            Lusha's customers may obtain the information via password protected account-based access
+            to our Database.
+          </p>
+        </li>
+      </ul>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Lawful Basis</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Your personal information is processed by Lusha based on the legitimate interest of itself and
+        its customers to engage in direct marketing.
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Recipients</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        This personal information may be provided, subject to restrictive license agreements, to
+        Lusha's customers, its partners, or the customers of its partners. These recipients are
+        business organizations who are permitted to use the information only for lawful sales,
+        marketing, and recruiting. The substantive terms of Lusha's license agreements may be reviewed
+        at https://www.lusha.com/legal/terms_and_conditions/
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Period</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Lusha aspires to provide accurate information to its customers. We will remove information
+        that we learn to be inaccurate, otherwise, we intend to process the information we have about
+        you for so long as it is accurate or until you instruct us to refrain from processing it.
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Your Rights</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">You have the right to request that Lusha:</p>
+      <p class="text bullet" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-left: 36px;">(1) provide you with access to your personal information;</p>
+      <p class="text bullet" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-left: 36px;">(2) rectify or correct your personal information</p>
+      <p class="text bullet" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-left: 36px;">(3) erase your information,</p>
+      <p class="text bullet" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-left: 36px;">
+        (4) restrict processing of your information, including refraining from selling it or otherwise
+        providing it to any third parties, or
+      </p>
+      <p class="text bullet" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-left: 36px;">
+        (5) You also have the right to object to processing and to lodge a complaint with the
+        appropriate supervisory authority in your country, if any.
+      </p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        The foregoing rights may be subject to certain limitations pursuant to applicable law.
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Sources of Personal Information</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Lusha gathers personal information from several sources, which include publicly available
+        sources such as websites and government records, contributions from our customers, third party
+        data providers, and members of the Lusha Community Program. Our proprietary algorithm scans
+        publicly available sources and retrieves public information with advanced tools. Because
+        information from several sources may be combined into one record, it may be difficult or near
+        impossible to identify the exact source of one particular piece of information.
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Who We Are</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        Lusha Systems Inc. is a registered data broker in the State of California under the California
+        Consumer Privacy Act of 2018 and the California Consumer Privacy Act Regulations and has ISO
+        27001 certification.
+      </p>
+  
+      <p class="sub-title" style="font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0; margin-top: 20px;">Contact Us</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">
+        You can contact us via Lusha Privacy Center, or via postal mail: 1177 Avenue of the Americas
+        5th floor, New York 10036, United States.
+      </p>
+  
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Sincerely,</p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Lusha Privacy Team</p>
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="line-break" style="height: 20px; margin: 0;"></p>
+      <p class="text" style="line-height: 20px; font-size: 16px; font-family: 'docs-Lato', 'Roboto', sans-serif; margin: 0;">Lusha Inc.</p>
+    </body>
+  </html>
+  

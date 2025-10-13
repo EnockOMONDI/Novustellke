@@ -1,0 +1,826 @@
+Return-Path: <brian.persea@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id qMk8AcWbd2ep3ykAObGTvA
+	(envelope-from <brian.persea@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 03 Jan 2025 11:11:49 +0300
+Return-path: <brian.persea@gmail.com>
+Envelope-to: faith@novustelltravel.com
+Delivery-date: Fri, 03 Jan 2025 11:11:49 +0300
+Received: from mail-ej1-f49.google.com ([209.85.218.49]:51212)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98)
+	(envelope-from <brian.persea@gmail.com>)
+	id 1tTcma-0000000BXf7-3TAa;
+	Fri, 03 Jan 2025 11:11:48 +0300
+Received: by mail-ej1-f49.google.com with SMTP id a640c23a62f3a-aa67f31a858so2129980166b.2;
+        Fri, 03 Jan 2025 00:10:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1735891827; x=1736496627; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=X/HlyquGQ4uzwcgTqGGXDoITTWzozcwaK6WE544wptk=;
+        b=JtwLbbNe+8LON3QlHFEF85lLyDaovcqWlPJ4+++4NAGRGf2KX598VfBQiLBq6uqeXO
+         FSlneOmZhNoyJd/IFOfmkl6ymh1bxPPwiUe99Og6h/6meaYaYIyoO/hC142zwpA4M+2x
+         j522zbu31PZkNkq7iPUH7V335yYrs0m4Pd3al6ICpDzmY9uYtfl5uz0RcBF9iDKrA0No
+         fLpg292aK5rhP6sNspDcKjwdETquQD5uWkY0A5tPLICHbQzQYkOVFhCrl6bGvm4eeoNk
+         2w6vJIgY3eI/WfZxiuKMwq+GqvnjYSdqrVk22oZAnHDi93dacw5BfsVUQs1EsOym+5I/
+         MEmQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1735891827; x=1736496627;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=X/HlyquGQ4uzwcgTqGGXDoITTWzozcwaK6WE544wptk=;
+        b=rVUtBS8F892Xwi025kGLA3mwMLhd90Gud3JhQo3ezzo3onj1Cs9liGcpc0hJ4FxP9c
+         qKSHmWA9c7sifgSo9CdUWpWPNVBXHGoyAY92tjhiTXjPrJYBG8S98g5tA/H56EWerLxv
+         X4IJX8pV8ijX/+4SmhFsETiF6OH3kkWhdrZJUeG+YA7h/gCYPClvqVgmbx2NpwUN/DUg
+         yWxrlGO+9EP4Oo8N7ul0eJFWNwQgJwvin1N7wXsgxQnshAokpI+12rYdr1OfPLq82ebC
+         +Sszb2KEzfiR+y9WC6/u98wkdzG3HNUP/MK5EnkINmpTG5T1a4rVtJHpU9prEHPCPiKC
+         W+CQ==
+X-Forwarded-Encrypted: i=1; AJvYcCV84kRYkv9KF5kdw2ezNOdr2kREIxYq57NxNJN/ZV/hzeIhIVFUTlRugKr2TEV7YBu9rEvQlQ==@novustelltravel.com
+X-Gm-Message-State: AOJu0Yy4mps8eNUcR9lhUf8SirIzplQ+Beaqca2cBhyEQGlpTmfBuPdo
+	aiitUgwWY9GZB/M/Zg+0BPMOvB49SZyeXuFj0fgAI207WplXqyFuv3XznkDxj9PVzYTRHBuRpbp
+	HltFuy8NYCNxXyIu7jAO8e4eeSvAAEkYE
+X-Gm-Gg: ASbGncvGRLNSYQhyb1yJLVnEn+vORMmdLGAWXjhJmX0eBKnzldugzFUTomO7/HxuQ75
+	9+p2m5/G+f2j8OPUWQKV/bHYWtwJhRWVuQ4n8VFs=
+X-Google-Smtp-Source: AGHT+IH1OiARpfHhacT0GpousN0TH/ByqKNSUaFS+ZAReDR5G2+dsgufmidNBuwH0+PI7QNi3ceA5e0uKuz/0LND8T0=
+X-Received: by 2002:a17:907:96a7:b0:aab:daf2:6fed with SMTP id
+ a640c23a62f3a-aac2ba400afmr4405937466b.29.1735891826501; Fri, 03 Jan 2025
+ 00:10:26 -0800 (PST)
+MIME-Version: 1.0
+References: <CAC6_GATyhUxzr3OknbiTaKewKBeYphdbYdxFLcvcM_62NZjHNA@mail.gmail.com>
+ <CA718A9F-2C68-4BB2-AF75-ED60AF45FF26@novustelltravel.com>
+ <CAC6_GAQF_UTJERAeGQ2J3gwgWu1ZL_B6U9N-5W2B1hY1vPYBsg@mail.gmail.com> <HE1PR03MB2922D312145FAA5D6B2463C2A4152@HE1PR03MB2922.eurprd03.prod.outlook.com>
+In-Reply-To: <HE1PR03MB2922D312145FAA5D6B2463C2A4152@HE1PR03MB2922.eurprd03.prod.outlook.com>
+From: Brian Benadict <brian.persea@gmail.com>
+Date: Fri, 3 Jan 2025 11:09:52 +0300
+Message-ID: <CAC6_GAQAxFJ5qeewFScKUsgtJVbxCxmRQWw0Q-FzeDyTtsUVeg@mail.gmail.com>
+Subject: Re: Flight booking from Nairobi to Iringa
+To: "natasha@novustelltravel.com" <natasha@novustelltravel.com>
+Cc: Novustell <quinta@novustelltravel.com>, Faith Novustell <faith@novustelltravel.com>, 
+	Martha Ondu <mondu.persea@gmail.com>, Aaron Ndegwa <aaron@perseaoils.com>, 
+	Henry Kariuki <hkariuki.persea@gmail.com>, John chege Chege <john.persea@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000aff041062ac8cf9b"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Natasha, This is well received. Please book the below
+    flights; 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [brian.persea(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.218.49 listed in bl.score.senderscore.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: perseaoils.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.218.49 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.218.49 listed in sa-trusted.bondedsender.org]
+X-Spam-Flag: NO
+
+--000000000000aff041062ac8cf9b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Natasha,
+
+This is well received.
+
+Please book the below flights;
+
+05JAN NAIROBI  DAR ES SALAAM  1830 1955  KQ 486
+H1 6356   08JAN DAR ES SALAAM IRINGA   0700   0830
+
+Kindly share the fare cost.
+
+On Fri, Jan 3, 2025 at 10:35=E2=80=AFAM natasha@novustelltravel.com <
+natasha@novustelltravel.com> wrote:
+
+> Dear Brian,
+>
+> Thank you for your email, please see below as per your request
+>
+> PRECISION AIR
+> PW  719   05JAN NAIROBI DAR  ES SALAAM   2240  0030
+>
+> KENYA AIRWAYS
+> 05JAN NAIROBI  DAR ES SALAAM 0130 0300  KQ 488
+> 05JAN NAIROBI  DAR ES SALAAM  0740 0905  KQ 482
+> 05JAN NAIROBI  DAR ES SALAAM  1250 1415  KQ 484
+> 05JAN NAIROBI  DAR ES SALAAM  1830 1955  KQ 486
+>
+> AIR TANZANIA
+> TC  203  05JAN NAIROBI DAR  ES SALAAM 2300  0030
+>
+> AURIC AIR
+> H1 6356   08JAN DAR ES SALAAM IRINGA   0700   0830
+>          OPERATED BY AURIC AIR
+>
+> LOWEST FARE ON BELOW FLIGHTS
+>
+> AIR TANZANIA/AURIC AIR
+> TC  203  05JAN NAIROBI DAR  ES SALAAM 2300  0030
+> H1 6356   08JAN DAR ES SALAAM IRINGA   0700   0830
+> Fare 576USD
+>
+> *No reservation has been made, fares are therefore subject to change
+> without prior notice.
+>
+>
+>
+> -   Tickets to be issued immediately to guarantee the fare.
+>
+> -    Rates are subject to change without prior notice
+>
+> -    Rates are subject to seat availability
+>
+>  Kind regards,
+> Natasha
+>
+>
+>
+> ------------------------------
+> *From:* Brian Benadict <brian.persea@gmail.com>
+> *Sent:* Thursday, January 2, 2025 10:54 PM
+> *To:* Novustell <quinta@novustelltravel.com>
+> *Cc:* Natasha | Novustell travel <natasha@novustelltravel.com>; Faith
+> Novustell <faith@novustelltravel.com>; Martha Ondu <mondu.persea@gmail.co=
+m>;
+> Aaron Ndegwa <aaron@perseaoils.com>; Henry Kariuki <
+> hkariuki.persea@gmail.com>; John chege Chege <john.persea@gmail.com>
+> *Subject:* Re: Flight booking from Nairobi to Iringa
+>
+> Dear Quinta,
+>
+> There has been a change on the departure dates as below;
+>
+> Nairobi to Dar on 5-Jan.
+> Dar to Iringa on 8-Jan.
+>
+> Kindly share available flight schedules for the subject dates.
+>
+> On Wed, Jan 1, 2025 at 4:56=E2=80=AFPM Novustell <quinta@novustelltravel.=
+com>
+> wrote:
+>
+> Dear Brian,
+>
+>
+>
+> Please see below as requested
+>
+>
+>
+>
+>
+> *FLIGHT SCHEDULE for NAIROBI - DAR*
+>
+> Kenya Airways
+>
+> KQ 488  04JAN  NBO- DAR   0130 0300  04JAN
+>
+> KQ 482  04JAN  NBO- DAR   0740 0905  04JAN
+>
+> KQ 484  04JAN  NBO- DAR   1250 1415  04JAN
+>
+> KQ 486  04JAN  NBO- DAR   1830 1955  04JAN
+>
+>
+>
+> PRECISION AIR
+>
+> PW 719  04JAN  NBODAR   2150 2340  04JAN
+>
+>
+>
+> Air Tanzania
+>
+> TC 203  04JAN  NBO- DAR DK1  2300 0030  05JAN
+>
+>
+>
+> *FLIGHT SCHEDULE for DAR-IRINGA*
+>
+>
+>
+> AURIC Air
+>
+> H1  06JAN DAR IRINGA  1600 1700  06JAN
+>
+>
+>
+> *Lowest fare on  below flights*
+>
+>
+>
+> KIRORI/JOHN CHEGE
+>
+> PW 719  04JAN  NBO- DAR 2150 2340  04JAN
+>
+> H16356  06JAN  DAR- IRI    1600 1700  06JAN
+>
+> Fare USD 498.00
+>
+>
+>
+> Regards
+>
+>
+>
+> Quinta
+>
+> 0721115572
+>
+>
+>
+> *From: *Brian Benadict <brian.persea@gmail.com>
+> *Date: *Wednesday, 1 January 2025 at 12:23
+> *To: *Quinta | Novustell travel <quinta@novustelltravel.com>
+> *Cc: *Natasha | Novustell travel <natasha@novustelltravel.com>, Faith
+> Novustell <faith@novustelltravel.com>, Martha Ondu <mondu.persea@gmail.co=
+m>,
+> Aaron Ndegwa <aaron@perseaoils.com>, Henry Kariuki <
+> hkariuki.persea@gmail.com>, John chege Chege <john.persea@gmail.com>
+> *Subject: *Flight booking from Nairobi to Iringa
+>
+>
+>
+> Dear Quinta,
+>
+>
+>
+> Kindly book the subject flight for Mr John Chege scheduled as below;
+>
+>
+>
+> Nairobi to Dar on 4-Jan.
+>
+> Dar to Iringa on 6-Jan.
+>
+>
+>
+>
+>
+> --
+>
+> Thank you.
+>
+>
+>
+> Regards,
+>
+>
+>
+> *Benadict Brian*
+>
+> *Logistics & W/M Coordinator*
+>
+> *Persea Oils & Orchards Ltd*
+>
+> *+254705135228*
+>
+> *www.perseaoils.com <http://www.perseaoils.com/>*
+>
+>
+>
+> --
+> Thank you.
+>
+> Regards,
+>
+> *Benadict Brian*
+> *Logistics & W/M Coordinator*
+> *Persea Oils & Orchards Ltd*
+> *+254705135228*
+> *www.perseaoils.com <http://www.perseaoils.com/>*
+>
+
+
+--=20
+Thank you.
+
+Regards,
+
+*Benadict Brian*
+*Logistics & W/M Coordinator*
+*Persea Oils & Orchards Ltd*
+*+254705135228*
+*www.perseaoils.com <http://www.perseaoils.com/>*
+
+--000000000000aff041062ac8cf9b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma,s=
+ans-serif">Dear Natasha,</div><div class=3D"gmail_default" style=3D"font-fa=
+mily:tahoma,sans-serif"><br></div><div class=3D"gmail_default" style=3D"fon=
+t-family:tahoma,sans-serif">This is well received.</div><div class=3D"gmail=
+_default" style=3D"font-family:tahoma,sans-serif"><br></div><div class=3D"g=
+mail_default" style=3D"font-family:tahoma,sans-serif">Please book the below=
+ flights;</div><div class=3D"gmail_default" style=3D"font-family:tahoma,san=
+s-serif"><br></div><div class=3D"gmail_default" style=3D"font-family:tahoma=
+,sans-serif"><span style=3D"color:rgb(0,0,0);font-family:Aptos,Aptos_Embedd=
+edFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:16px">05J=
+AN NAIROBI =C2=A0DAR ES SALAAM =C2=A01830 1955=C2=A0 KQ 486</span></div><di=
+v class=3D"gmail_default" style=3D"font-family:tahoma,sans-serif"><span sty=
+le=3D"color:rgb(0,0,0);font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontSer=
+vice,Calibri,Helvetica,sans-serif;font-size:16px">H1 6356 =C2=A0 08JAN DAR =
+ES SALAAM IRINGA =C2=A0 0700=C2=A0=C2=A0 0830=C2=A0</span><span style=3D"co=
+lor:rgb(0,0,0);font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cal=
+ibri,Helvetica,sans-serif;font-size:16px"></span></div><div class=3D"gmail_=
+default" style=3D"font-family:tahoma,sans-serif"><span style=3D"color:rgb(0=
+,0,0);font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helv=
+etica,sans-serif;font-size:16px"><br></span></div><div class=3D"gmail_defau=
+lt" style=3D"font-family:tahoma,sans-serif"><span style=3D"color:rgb(0,0,0)=
+;font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica=
+,sans-serif;font-size:16px">Kindly share the fare cost.</span></div></div><=
+br><div class=3D"gmail_quote gmail_quote_container"><div dir=3D"ltr" class=
+=3D"gmail_attr">On Fri, Jan 3, 2025 at 10:35=E2=80=AFAM <a href=3D"mailto:n=
+atasha@novustelltravel.com">natasha@novustelltravel.com</a> &lt;<a href=3D"=
+mailto:natasha@novustelltravel.com">natasha@novustelltravel.com</a>&gt; wro=
+te:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px =
+0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div class=
+=3D"msg5184879256250610454">
+
+
+
+
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Dear Brian,</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Thank you for your email, please see below as per your request</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+PRECISION AIR</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+PW=C2=A0 719 =C2=A0 05JAN NAIROBI DAR =C2=A0ES SALAAM =C2=A0 2240=C2=A0 003=
+0=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+KENYA AIRWAYS</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+05JAN NAIROBI =C2=A0DAR ES SALAAM 0130 0300=C2=A0 KQ 488</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+05JAN NAIROBI =C2=A0DAR ES SALAAM =C2=A00740 0905=C2=A0 KQ 482</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+05JAN NAIROBI =C2=A0DAR ES SALAAM =C2=A01250 1415=C2=A0 KQ 484</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+05JAN NAIROBI =C2=A0DAR ES SALAAM =C2=A01830 1955=C2=A0 KQ 486</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+AIR TANZANIA</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+TC=C2=A0 203 =C2=A005JAN NAIROBI DAR =C2=A0ES SALAAM 2300=C2=A0 0030=C2=A0<=
+/div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+AURIC AIR</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+H1 6356 =C2=A0 08JAN DAR ES SALAAM IRINGA =C2=A0 0700=C2=A0=C2=A0 0830=C2=
+=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 OPERATED BY AURIC AIR</div=
+>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:10p=
+t;color:rgb(0,0,0)">
+LOWEST FARE ON BELOW FLIGHTS</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:10p=
+t;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+AIR TANZANIA/AURIC AIR</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+TC=C2=A0 203 =C2=A005JAN NAIROBI DAR =C2=A0ES SALAAM 2300=C2=A0 0030=C2=A0<=
+/div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+H1 6356 =C2=A0 08JAN DAR ES SALAAM IRINGA =C2=A0 0700=C2=A0=C2=A0 0830=C2=
+=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+Fare 576USD</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+*No reservation has been made, fares are therefore subject to change withou=
+t prior notice.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+- =C2=A0 Tickets to be issued immediately to guarantee the fare.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+- =C2=A0 =C2=A0Rates are subject to change without prior notice</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+- =C2=A0 =C2=A0Rates are subject to seat availability</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0Kind regards,</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+Natasha</div>
+<div style=3D"line-height:1.284;margin:0in 0in 8pt;font-family:Aptos,Aptos_=
+EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)">
+=C2=A0</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div id=3D"m_5184879256250610454appendonsend"></div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_5184879256250610454divRplyFwdMsg" dir=3D"ltr"><font face=3D"Ca=
+libri, sans-serif" color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> =
+Brian Benadict &lt;<a href=3D"mailto:brian.persea@gmail.com" target=3D"_bla=
+nk">brian.persea@gmail.com</a>&gt;<br>
+<b>Sent:</b> Thursday, January 2, 2025 10:54 PM<br>
+<b>To:</b> Novustell &lt;<a href=3D"mailto:quinta@novustelltravel.com" targ=
+et=3D"_blank">quinta@novustelltravel.com</a>&gt;<br>
+<b>Cc:</b> Natasha | Novustell travel &lt;<a href=3D"mailto:natasha@novuste=
+lltravel.com" target=3D"_blank">natasha@novustelltravel.com</a>&gt;; Faith =
+Novustell &lt;<a href=3D"mailto:faith@novustelltravel.com" target=3D"_blank=
+">faith@novustelltravel.com</a>&gt;; Martha Ondu &lt;<a href=3D"mailto:mond=
+u.persea@gmail.com" target=3D"_blank">mondu.persea@gmail.com</a>&gt;; Aaron=
+ Ndegwa &lt;<a href=3D"mailto:aaron@perseaoils.com" target=3D"_blank">aaron=
+@perseaoils.com</a>&gt;; Henry Kariuki &lt;<a href=3D"mailto:hkariuki.perse=
+a@gmail.com" target=3D"_blank">hkariuki.persea@gmail.com</a>&gt;; John cheg=
+e Chege &lt;<a href=3D"mailto:john.persea@gmail.com" target=3D"_blank">john=
+.persea@gmail.com</a>&gt;<br>
+<b>Subject:</b> Re: Flight booking from Nairobi to Iringa</font>
+<div>=C2=A0</div>
+</div>
+<div>
+<div dir=3D"ltr">
+<div style=3D"font-family:tahoma,sans-serif">Dear Quinta,</div>
+<div style=3D"font-family:tahoma,sans-serif"><br>
+</div>
+<div style=3D"font-family:tahoma,sans-serif">There has been a change on the=
+ departure dates as below;</div>
+<div style=3D"font-family:tahoma,sans-serif">
+<div><br>
+</div>
+<div>Nairobi to Dar on 5-Jan.</div>
+<div>Dar to Iringa on 8-Jan.</div>
+</div>
+<div style=3D"font-family:tahoma,sans-serif"><br>
+</div>
+<div style=3D"font-family:tahoma,sans-serif">Kindly share available flight =
+schedules for the subject dates.</div>
+</div>
+<br>
+<div>
+<div dir=3D"ltr">On Wed, Jan 1, 2025 at 4:56=E2=80=AFPM Novustell &lt;<a hr=
+ef=3D"mailto:quinta@novustelltravel.com" target=3D"_blank">quinta@novustell=
+travel.com</a>&gt; wrote:<br>
+</div>
+<blockquote style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204=
+,204,204);padding-left:1ex">
+<div>
+<div lang=3D"EN-US">
+<div>
+<p>Dear Brian,<u></u><u></u></p>
+<p><u></u>=C2=A0<u></u></p>
+<p>Please see below as requested<u></u><u></u></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><b><span style=3D"font-size:10pt">FLIGHT SCHEDULE for NAIROBI - DAR<u></=
+u><u></u></span></b></p>
+<p><span style=3D"font-size:10pt">Kenya Airways<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">KQ 488=C2=A0 04JAN=C2=A0 NBO- DAR=C2=A0=
+=C2=A0 0130 0300=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">KQ 482=C2=A0 04JAN=C2=A0 NBO- DAR=C2=A0=
+=C2=A0 0740 0905=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">KQ 484=C2=A0 04JAN=C2=A0 NBO- DAR=C2=A0=
+=C2=A0 1250 1415=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">KQ 486=C2=A0 04JAN=C2=A0 NBO- DAR=C2=A0=
+=C2=A0 1830 1955=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><span style=3D"font-size:10pt">PRECISION AIR <u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">PW 719=C2=A0 04JAN=C2=A0 NBODAR=C2=A0=C2=
+=A0 2150 2340=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><span style=3D"font-size:10pt">Air Tanzania<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">TC 203=C2=A0 04JAN=C2=A0 NBO- DAR DK1=C2=
+=A0 2300 0030=C2=A0 05JAN=C2=A0
+<u></u><u></u></span></p>
+<p><b><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></b></p>
+<p><b><span style=3D"font-size:10pt">FLIGHT SCHEDULE for DAR-IRINGA<u></u><=
+u></u></span></b></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><span style=3D"font-size:10pt">AURIC Air<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">H1=C2=A0 06JAN DAR IRINGA=C2=A0 1600 1700=
+=C2=A0 06JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></p>
+<p><b><i><span style=3D"font-size:10pt">Lowest fare on=C2=A0 below flights<=
+u></u><u></u></span></i></b></p>
+<p><b><i><span style=3D"font-size:10pt"><u></u>=C2=A0<u></u></span></i></b>=
+</p>
+<p><span style=3D"font-size:10pt">KIRORI/JOHN CHEGE<u></u><u></u></span></p=
+>
+<p><span style=3D"font-size:10pt">PW 719=C2=A0 04JAN=C2=A0 NBO- DAR 2150 23=
+40=C2=A0 04JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">H16356=C2=A0 06JAN=C2=A0 DAR- IRI=C2=A0=
+=C2=A0=C2=A0 1600 1700=C2=A0 06JAN=C2=A0
+<u></u><u></u></span></p>
+<p><span style=3D"font-size:10pt">Fare USD 498.00<u></u><u></u></span></p>
+<p><u></u>=C2=A0<u></u></p>
+<p>Regards<u></u><u></u></p>
+<p><u></u>=C2=A0<u></u></p>
+<p>Quinta<u></u><u></u></p>
+<p>0721115572<u></u><u></u></p>
+<p><u></u>=C2=A0<u></u></p>
+<div style=3D"border-right:none;border-bottom:none;border-left:none;border-=
+top:1pt solid rgb(181,196,223);padding:3pt 0cm 0cm">
+<p><b><span style=3D"font-size:12pt;color:black">From: </span>
+</b><span style=3D"font-size:12pt;color:black">Brian Benadict &lt;<a href=
+=3D"mailto:brian.persea@gmail.com" target=3D"_blank">brian.persea@gmail.com=
+</a>&gt;<br>
+<b>Date: </b>Wednesday, 1 January 2025 at 12:23<br>
+<b>To: </b>Quinta | Novustell travel &lt;<a href=3D"mailto:quinta@novustell=
+travel.com" target=3D"_blank">quinta@novustelltravel.com</a>&gt;<br>
+<b>Cc: </b>Natasha | Novustell travel &lt;<a href=3D"mailto:natasha@novuste=
+lltravel.com" target=3D"_blank">natasha@novustelltravel.com</a>&gt;, Faith =
+Novustell &lt;<a href=3D"mailto:faith@novustelltravel.com" target=3D"_blank=
+">faith@novustelltravel.com</a>&gt;, Martha Ondu &lt;<a href=3D"mailto:mond=
+u.persea@gmail.com" target=3D"_blank">mondu.persea@gmail.com</a>&gt;,
+ Aaron Ndegwa &lt;<a href=3D"mailto:aaron@perseaoils.com" target=3D"_blank"=
+>aaron@perseaoils.com</a>&gt;, Henry Kariuki &lt;<a href=3D"mailto:hkariuki=
+.persea@gmail.com" target=3D"_blank">hkariuki.persea@gmail.com</a>&gt;, Joh=
+n chege Chege &lt;<a href=3D"mailto:john.persea@gmail.com" target=3D"_blank=
+">john.persea@gmail.com</a>&gt;<br>
+<b>Subject: </b>Flight booking from Nairobi to Iringa<u></u><u></u></span><=
+/p>
+</div>
+<div>
+<p><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif">Dear Quinta,<u></u><u></u>=
+</span></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif"><u></u>=C2=A0<u></u></span=
+></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif">Kindly book the subject fl=
+ight for Mr John Chege scheduled as below;<u></u><u></u></span></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif"><u></u>=C2=A0<u></u></span=
+></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif">Nairobi to Dar on 4-Jan.<u=
+></u><u></u></span></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif">Dar to Iringa on 6-Jan.<u>=
+</u><u></u></span></p>
+</div>
+<div>
+<p><span style=3D"font-family:tahoma,sans-serif"><u></u>=C2=A0<u></u></span=
+></p>
+</div>
+</div>
+<div>
+<p><u></u>=C2=A0<u></u></p>
+</div>
+<p><span>--
+</span><u></u><u></u></p>
+<div>
+<div>
+<p>Thank you.<u></u><u></u></p>
+<div>
+<p><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p><span style=3D"color:rgb(34,34,34)">Regards,</span><u></u><u></u></p>
+</div>
+<div>
+<p><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<div>
+<div>
+<p><i><u><span style=3D"font-family:&quot;arial narrow&quot;,sans-serif;col=
+or:rgb(34,34,34)">Benadict Brian</span></u></i><span style=3D"color:rgb(136=
+,136,136)"><u></u><u></u></span></p>
+</div>
+<div>
+<p><i><span style=3D"font-family:&quot;arial narrow&quot;,sans-serif;color:=
+rgb(34,34,34)">Logistics &amp; W/M Coordinator</span></i><span style=3D"col=
+or:rgb(136,136,136)"><u></u><u></u></span></p>
+<div>
+<div>
+<p><i><span style=3D"font-family:&quot;arial narrow&quot;,sans-serif;color:=
+rgb(34,34,34)">Persea Oils &amp; Orchards Ltd</span></i><span style=3D"colo=
+r:rgb(34,34,34)"><u></u><u></u></span></p>
+</div>
+<div>
+<p><i><span style=3D"font-family:&quot;arial narrow&quot;,sans-serif;color:=
+rgb(34,34,34)">+254705135228</span></i><span style=3D"color:rgb(34,34,34)">=
+<u></u><u></u></span></p>
+</div>
+<div>
+<p><u><span style=3D"color:rgb(34,34,34)"><a href=3D"http://www.perseaoils.=
+com/" target=3D"_blank"><i><span style=3D"font-family:&quot;arial narrow&qu=
+ot;,sans-serif;color:rgb(17,85,204)">www.perseaoils.com</span></i></a></spa=
+n></u><span style=3D"color:rgb(34,34,34)"><u></u><u></u></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<div><br clear=3D"all">
+</div>
+<div><br>
+</div>
+<span>-- </span><br>
+<div dir=3D"ltr">
+<div dir=3D"ltr">Thank you.
+<div><span style=3D"color:rgb(34,34,34)"><br>
+</span></div>
+<div><span style=3D"color:rgb(34,34,34)">Regards,</span></div>
+<div><br>
+</div>
+<div>
+<div style=3D"color:rgb(34,34,34)">
+<div style=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><=
+font face=3D"arial narrow, sans-serif"><i><u>Benadict Brian</u></i></font><=
+/span></div>
+<div style=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><=
+font face=3D"arial narrow, sans-serif"><i>Logistics &amp; W/M Coordinator</=
+i></font></span>
+<div>
+<div style=3D"color:rgb(34,34,34)"><font face=3D"arial narrow, sans-serif">=
+<i>Persea Oils &amp; Orchards Ltd</i></font></div>
+<div style=3D"color:rgb(34,34,34)"><font face=3D"arial narrow, sans-serif">=
+<i>+254705135228</i></font></div>
+<div style=3D"color:rgb(34,34,34)"><u><a href=3D"http://www.perseaoils.com/=
+" style=3D"color:rgb(17,85,204)" target=3D"_blank"><font face=3D"arial narr=
+ow, sans-serif"><i>www.perseaoils.com</i></font></a></u></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div></blockquote></div><div><br clear=3D"all"></div><div><br></div><span =
+class=3D"gmail_signature_prefix">-- </span><br><div dir=3D"ltr" class=3D"gm=
+ail_signature"><div dir=3D"ltr">Thank you.<div><span style=3D"color:rgb(34,=
+34,34)"><br></span></div><div><span style=3D"color:rgb(34,34,34)">Regards,<=
+/span></div><div><br></div><div><div style=3D"color:rgb(34,34,34)"><div sty=
+le=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><font fac=
+e=3D"arial narrow, sans-serif"><i><u>Benadict Brian</u></i></font></span></=
+div><div style=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34=
+)"><font face=3D"arial narrow, sans-serif"><i>Logistics &amp; W/M Coordinat=
+or</i></font></span><div><div style=3D"color:rgb(34,34,34)"><font face=3D"a=
+rial narrow, sans-serif"><i>Persea Oils &amp; Orchards Ltd</i></font></div>=
+<div style=3D"color:rgb(34,34,34)"><font face=3D"arial narrow, sans-serif">=
+<i>+254705135228</i></font></div><div style=3D"color:rgb(34,34,34)"><u><a h=
+ref=3D"http://www.perseaoils.com/" style=3D"color:rgb(17,85,204)" target=3D=
+"_blank"><font face=3D"arial narrow, sans-serif"><i>www.perseaoils.com</i><=
+/font></a></u></div></div></div></div></div></div></div>
+
+--000000000000aff041062ac8cf9b--

@@ -1,0 +1,159 @@
+Return-Path: <brian.persea@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id SCJWIYwJdWdwVRMAObGTvA
+	(envelope-from <brian.persea@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 01 Jan 2025 12:23:24 +0300
+Return-path: <brian.persea@gmail.com>
+Envelope-to: faith@novustelltravel.com
+Delivery-date: Wed, 01 Jan 2025 12:23:24 +0300
+Received: from mail-ed1-f46.google.com ([209.85.208.46]:53553)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98)
+	(envelope-from <brian.persea@gmail.com>)
+	id 1tSuwm-00000005M0n-0Mkb;
+	Wed, 01 Jan 2025 12:23:24 +0300
+Received: by mail-ed1-f46.google.com with SMTP id 4fb4d7f45d1cf-5d7e527becaso17179085a12.3;
+        Wed, 01 Jan 2025 01:22:23 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1735723322; x=1736328122; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=jXt/QsXNpi8Yx1H0ek03wgLlcqo0nRSbeGY3xNqq4IA=;
+        b=KqHW66B2V3nkJVMwv7XclEa1n+lj4IBF5afkJ34qFPneaDaYpiwXP0az+UhS//PNPU
+         gvD5U3xrRmbX0IMbGAjapTPDs5KIEOe+Rh5WOLki+47jvPkPa9S5Lqil/0nB4OqDx/m6
+         Nyq6v7UHrJr2O+7eVQLf91mUcCT861lvJMI+yoTXGGWXxlHV34KE/3D3IF29rI/qrmYv
+         BFWWH/e1PzYX2ATAUkVccJX4ZhthMVWmfmwq73+UOwt8D/AHTSXJxgmHUHR47IKYD/It
+         cCd5OykRk/SZII0PsGhAUOIgoEI8A1CkeFuWhAtVfAsU5FoXs3px5XUx+kva5EKE/M2o
+         eMGQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1735723322; x=1736328122;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=jXt/QsXNpi8Yx1H0ek03wgLlcqo0nRSbeGY3xNqq4IA=;
+        b=YE/O+nMrzX0lJ7s8CjqUp5U1Hy2H+nvCIVB4H4NOpzxlUFt2AJ/y20ZceVLbk/Giiz
+         uCXGZ7ng26cOjYM7e+gpE6fqEwkfsgnSDM0R6zUtRsMRUwBIJy72n21eG2/1NPh0wN2T
+         KQ6X4sYzf3Uq39Z+QbZyeqJ6Jj1rufo2ho7g8kmALMoNJfJw+malvKiO4lLQ2QPOY9Fm
+         6JGjnQXGtezVLyTUsCiDUATgMDTmAJoI4S5QPKRjmYaPnSjRFkQCLhhUGghr5nkDygiZ
+         yGCHK0IGySQo4LCL/48mEhAaOWSuzHb921B7FNwkk8qPZwZ/6tvBzk5yXDixNwhXTkq4
+         71Qg==
+X-Forwarded-Encrypted: i=1; AJvYcCXA5DudL41Jpnk/dSTX4y+lVM8IEHaQve54ZHogfqk8fIgWEDWm41U8h1VLpjV9gO+lxW2UtA==@novustelltravel.com
+X-Gm-Message-State: AOJu0YwVYPIeedbuVWGXBXMDdsKZmBT8kktiqMN740e3H0cNmn1RQJd6
+	+stKWvRtcYXUOObLH1+Wf2I1laDMaKulyweZbBuifjBJfrpYfJjZaE/Yko3SEW14cGUFmUOz24F
+	R2ZsmzUr97lYYPxN3g4fMFYcmjQ9R3aiR
+X-Gm-Gg: ASbGnct9L5NR/9WRP9TByHPWUG1U9BS09TZkxCwAmQn5w+aMQbTA6cKbVM6vAIM7cv2
+	Xra/34fr7UBFzLnhdywKxuuGCJPIODs7UOXgn36U=
+X-Google-Smtp-Source: AGHT+IGg4ukV1GXnG5+wzgjgB+31ye321R2cYFKATre1Xsuy1nO4+O+UJKe8Y2Wu8UISTAhFmrSxMIjEcrXjYy3LC+g=
+X-Received: by 2002:a05:6402:3224:b0:5d0:d3eb:a78f with SMTP id
+ 4fb4d7f45d1cf-5d81dc79cadmr101713274a12.0.1735723322095; Wed, 01 Jan 2025
+ 01:22:02 -0800 (PST)
+MIME-Version: 1.0
+From: Brian Benadict <brian.persea@gmail.com>
+Date: Wed, 1 Jan 2025 12:21:27 +0300
+Message-ID: <CAC6_GATyhUxzr3OknbiTaKewKBeYphdbYdxFLcvcM_62NZjHNA@mail.gmail.com>
+Subject: Flight booking from Nairobi to Iringa
+To: "Quinta | Novustell travel" <quinta@novustelltravel.com>
+Cc: "Natasha | Novustell travel" <natasha@novustelltravel.com>, 
+	Faith Novustell <faith@novustelltravel.com>, Martha Ondu <mondu.persea@gmail.com>, 
+	Aaron Ndegwa <aaron@perseaoils.com>, Henry Kariuki <hkariuki.persea@gmail.com>, 
+	John chege Chege <john.persea@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000000abf1a062aa1943c"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Quinta, Kindly book the subject flight for Mr John Chege
+    scheduled as below; Nairobi to Dar on 4-Jan. Dar to Iringa on 6-Jan. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: perseaoils.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [brian.persea(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.208.46 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.208.46 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.208.46 listed in sa-trusted.bondedsender.org]
+X-Spam-Flag: NO
+
+--0000000000000abf1a062aa1943c
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Quinta,
+
+Kindly book the subject flight for Mr John Chege scheduled as below;
+
+Nairobi to Dar on 4-Jan.
+Dar to Iringa on 6-Jan.
+
+
+-- 
+Thank you.
+
+Regards,
+
+*Benadict Brian*
+*Logistics & W/M Coordinator*
+*Persea Oils & Orchards Ltd*
+*+254705135228*
+*www.perseaoils.com <http://www.perseaoils.com/>*
+
+--0000000000000abf1a062aa1943c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div class=3D"gmail_default" style=3D"font-family:tah=
+oma,sans-serif">Dear Quinta,</div><div class=3D"gmail_default" style=3D"fon=
+t-family:tahoma,sans-serif"><br></div><div class=3D"gmail_default" style=3D=
+"font-family:tahoma,sans-serif">Kindly book the subject flight for Mr John =
+Chege scheduled as below;</div><div class=3D"gmail_default" style=3D"font-f=
+amily:tahoma,sans-serif"><br></div><div class=3D"gmail_default" style=3D"fo=
+nt-family:tahoma,sans-serif">Nairobi to Dar on 4-Jan.</div><div class=3D"gm=
+ail_default" style=3D"font-family:tahoma,sans-serif">Dar to Iringa on 6-Jan=
+.</div><div class=3D"gmail_default" style=3D"font-family:tahoma,sans-serif"=
+><br></div></div><div><br></div><span class=3D"gmail_signature_prefix">-- <=
+/span><br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmai=
+l_signature"><div dir=3D"ltr">Thank you.<div><span style=3D"color:rgb(34,34=
+,34)"><br></span></div><div><span style=3D"color:rgb(34,34,34)">Regards,</s=
+pan></div><div><br></div><div><div style=3D"color:rgb(34,34,34)"><div style=
+=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><font face=
+=3D"arial narrow, sans-serif"><i><u>Benadict Brian</u></i></font></span></d=
+iv><div style=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)=
+"><font face=3D"arial narrow, sans-serif"><i>Logistics &amp; W/M Coordinato=
+r</i></font></span><div><div style=3D"color:rgb(34,34,34)"><font face=3D"ar=
+ial narrow, sans-serif"><i>Persea Oils &amp; Orchards Ltd</i></font></div><=
+div style=3D"color:rgb(34,34,34)"><font face=3D"arial narrow, sans-serif"><=
+i>+254705135228</i></font></div><div style=3D"color:rgb(34,34,34)"><u><a hr=
+ef=3D"http://www.perseaoils.com/" style=3D"color:rgb(17,85,204)" target=3D"=
+_blank"><font face=3D"arial narrow, sans-serif"><i>www.perseaoils.com</i></=
+font></a></u></div></div></div></div></div></div></div></div>
+
+--0000000000000abf1a062aa1943c--

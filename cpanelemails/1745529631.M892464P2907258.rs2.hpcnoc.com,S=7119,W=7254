@@ -1,0 +1,135 @@
+Return-Path: <postmaster@qatarairways.com.qa>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id KM/JNB+rCmh6XCwAObGTvA
+	(envelope-from <postmaster@qatarairways.com.qa>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 25 Apr 2025 00:20:31 +0300
+Return-path: <postmaster@qatarairways.com.qa>
+Envelope-to: admin@novustelltravel.com
+Delivery-date: Fri, 25 Apr 2025 00:20:31 +0300
+Received: from mx2.qatarairways.com.qa ([212.77.217.214]:17691)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <postmaster@qatarairways.com.qa>)
+	id 1u83zi-0000000CBk1-42CA
+	for admin@novustelltravel.com;
+	Fri, 25 Apr 2025 00:20:31 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=qatarairways.com.qa; q=dns/txt; s=qrcorp2;
+  t=1745529631; x=1777065631;
+  h=mime-version:message-id:from:sender:to:date:subject;
+  bh=K3QTe2BfzZDF31Pg6dhsrGxDQs/F3LcpJhoWZwS5FLo=;
+  b=Nd7TqU1J1mtbvahWYsZ/90PgfFPyhiDMiPLmP3B2Nl7i2vErfSZfo8c1
+   QraD5dS4VcMT28LHGzcReGcr0vG7E6ix9bjNSwgWXG9LJBQ7Os9JEly7m
+   rp70rWgOBY8PdQ1qlfL1ZwfTuGi0es7216tvTjlOoQP6hPO+Og7gsI/wr
+   lLKCYwkbO3yrjTWz35Yj+z6ZbzxHbnF4isTGUi5pobvOKa5nGwE9pTVbq
+   2MfOyMkW/lgQaPMX04WhA0oWCKni9J85L6eYi7QiMoI6JBSxFt/RRgGD7
+   0gVSAeVbKsB3ewKAyAgqEv30Vf+Jqkc87+ijZC+zPS7RwYdMEjrlqlZvC
+   Q==;
+Received: from localhost by mx2.qatarairways.com.qa;
+  25 Apr 2025 00:19:49 +0300
+Received: from localhost by mx2.qatarairways.com.qa;
+  25 Apr 2025 00:19:49 +0300
+Received: from localhost by mx2.qatarairways.com.qa;
+  25 Apr 2025 00:19:49 +0300
+X-MGA-submission: =?us-ascii?q?MDGGVQOPg7qz1zBqGrPI/qY0/HktKccNLM0V3s?=
+ =?us-ascii?q?topbcGXN2vxm8hB32YJixXlBkTQ5VxuNDM1Bq8yLgU6ORbMYboi2vj7Z?=
+ =?us-ascii?q?9jKYNlJcf5LNrFXA=3D=3D?=
+Content-Type: multipart/mixed; boundary="===============1966767972162042829=="
+MIME-Version: 1.0
+Message-Id: 85ed68$cf6d96f=ee40a946d8d61575@qatarairways.com.qa
+From: postmaster@qatarairways.com.qa
+Sender: postmaster@qatarairways.com.qa
+To: admin@novustelltravel.com
+Date: 25 Apr 2025 00:19:48 +0300
+Subject: Report Domain: novustelltravel.com Submitter: qatarairways.com.qa
+ Report-ID: <85ed68$cf6d96f=ee40a946d8d61575@qatarairways.com.qa>
+X-Spam-Status: No, score=0.7
+X-Spam-Score: 7
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Find attached the DMARC Aggregate Report. 
+ Content analysis details:   (0.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: qatarairways.com.qa]
+                             [URI: novustelltravel.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [212.77.217.214 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: novustelltravel.com]
+                             [URI: qatarairways.com.qa]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  1.2 INVALID_MSGID          Message-Id is not valid, according to RFC 2822
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [212.77.217.214 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [212.77.217.214 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [212.77.217.214 listed in sa-trusted.bondedsender.org]
+ -0.3 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+--===============1966767972162042829==
+Content-Type: multipart/alternative; boundary="===============2200653304251131668=="
+MIME-Version: 1.0
+
+--===============2200653304251131668==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+RmluZCBhdHRhY2hlZCB0aGUgRE1BUkMgQWdncmVnYXRlIFJlcG9ydC4=
+
+--===============2200653304251131668==--
+--===============1966767972162042829==
+Content-Type: application/gzip
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="qatarairways.com.qa!novustelltravel.com!1745442002!1745528407.xml.gz"
+
+H4sICPSqCmgC/3FhdGFyYWlyd2F5cy5jb20ucWEhbm92dXN0ZWxsdHJhdmVsLmNvbSExNzQ1NDQy
+MDAyITE3NDU1Mjg0MDcueG1sAJVUwXKbMBC95ys8nl4L2AEHz8hKT/2C9szI0srWBCRZEk7y911Z
+gEnsSdsT0tu3u28fC+T5rWsXZ3BeGb1brrJiuQDNjVD6sFv+/vXze71cPNMHIgHEnvEX+rBYkIFP
+kU7y8RIDDqxxoekgMMECixiixh0azTqgJ8QcU+6VvfuMmy47MZJP0USGjqmWWuNDx3wA9+NuUmIN
+GW/BsYYbHRgPjdLS/D39NiXVGgZQgtYViE39jcuN2G7kDqAs2LbciFpsVtVTdb/uNT2VQxOgcUwf
+hukQ2sNBoXNPZVWW66JYkzwhYxy0uESrdV0WTyhVj8Xyj9WmbnO3iTWt4u+N7fet8keYhBg0TFNt
+zj260rY4/hnaqBvLplgiMvGiOupIng4D6K28YPGZIEtPPc6vg9JAcjug3mKLCPgRsTzQVYFrEg8X
+1fcUou/cuFGsM6+THd70jkOjbDQlWz3W2WpbZI8VtpgiI5ebXmM3kqfDCA8N4czaHh0UYyDaojyu
+igpxf5PwOTLjRS8s8x4Jky3DxJJK3MU4spxa5vd74isbRyNKAJonFX49U9oRmADXSGe6+69qTrgu
+DIaNhS/SPlIGKTcCCOvDsXHg+zZcNX2a918XKZkDLfBgHBUgGVZFk0bkSkoNB3eHy+TjvDuZOfzf
+SjiOT7s4P4q4XG4VgOvAOeNuZVz3Pv9sUiSn3SX59JP8A08Hd0hXBQAA
+
+--===============1966767972162042829==--

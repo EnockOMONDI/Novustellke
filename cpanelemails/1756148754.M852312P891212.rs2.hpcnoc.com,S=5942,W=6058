@@ -1,0 +1,116 @@
+Return-Path: <sales@a1-mkt.asia>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 2EJGMBK0rGhMmQ0AObGTvA
+	(envelope-from <sales@a1-mkt.asia>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 25 Aug 2025 22:05:54 +0300
+Return-path: <sales@a1-mkt.asia>
+Envelope-to: nfo@novustelltravel.com
+Delivery-date: Mon, 25 Aug 2025 22:05:54 +0300
+Received: from a1-mkt.asia ([45.8.125.13]:39092)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <sales@a1-mkt.asia>)
+	id 1uqcVn-000000040ua-30oQ
+	for nfo@novustelltravel.com;
+	Mon, 25 Aug 2025 22:05:54 +0300
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=a1-mkt.asia;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@a1-mkt.asia;
+ bh=MDIbeLN01CnALQdKqAyI66zf9Zc=;
+ b=D775Q55MSHCnGJrE5uSCGnGAx15vXYbMPNHfPY1k/XndimaP0TZqLYKhIKkh/M3IPMTtZZGC2HqU
+   5iZQNg+hKNDqLDT4x/0LknkJrwje5stVwQSget5po7eEsad9CleRAt9dxfFdbX64ZGNJ89oZ0WqJ
+   F9i/k7f2g42ZUpGW12I=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=a1-mkt.asia;
+ b=RC2+XouEMKmwWUBlU8ykf8yuRpxJEKiyJx4CJFDk0PzZ2DECGrcnEOFa16D+sG4/L0J5nsLGB/ex
+   mIUnubpqgjNB/c+XBxSN1dJ89WXWI3z5zWEAyYF1SC3xjugmvQvx5ae+M5IpGRGAGRtyACwYwyig
+   gOOKkXAO9WmhJM6reNY=;
+Reply-To: Kahyx Capital Sarl <Eric.herbert@kahyxcapital.com>
+From: Kahyx Capital Sarl <sales@a1-mkt.asia>
+To: nfo@novustelltravel.com
+Subject: Solutions for Business Expansion and Projects
+Date: 25 Aug 2025 12:05:04 -0700
+Message-ID: <20250825120504.08DC47082834B144@a1-mkt.asia>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=6.7
+X-Spam-Score: 67
+X-Spam-Bar: ++++++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Sir, Kahyx is pleased to extend funding solutions for
+    business expansion and project development through long-term debt financing.
+    We offer loan facilities with terms ranging from 10 to 25 years, inclusive
+    [...] 
+ Content analysis details:   (6.7 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
+                             blocklist
+                             [URI: a1-mkt.asia/45.8.125.13]
+  2.5 URIBL_DBL_PHISH        Contains a Phishing URL listed in the Spamhaus DBL
+                             blocklist
+                             [URI: a1-mkt.asia]
+  1.3 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+                 [Blocked - see <https://www.spamcop.net/bl.shtml?45.8.125.13>]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [45.8.125.13 listed in bl.score.senderscore.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: a1-mkt.asia]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [45.8.125.13 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [45.8.125.13 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 FROM_FMBLA_NEWDOM14    From domain was registered in last 7-14 days
+  0.8 BAYES_50               BODY: Bayes spam probability is 40 to 60%
+                             [score: 0.5000]
+  2.0 DEAR_SOMETHING         BODY: Contains 'Dear (something)'
+X-Spam-Flag: NO
+
+Dear Sir,
+
+Kahyx is pleased to extend funding solutions for
+business expansion and project development through long-term debt
+financing. We offer loan facilities with terms ranging from 10 to
+25 years, inclusive of a 12-month grace period, at a highly
+competitive fixed interest rate of 3% per annum.
+
+We also welcome collaborations with qualified brokers and
+introducers. A 2% commission on the total loan amount is paid to
+ intermediaries who successfully connect eligible project owners
+to our firm.
+
+Should you require further information or wish to explore this
+opportunity, please do not hesitate to reach out directly.
+
+Warm regards,
+Mr. Eric Herbert
+Director, Corporate Finance & Lending
+Kahyx Capital
+Chemin de Sus=E2=80=91Craux 27,
+1166 Perroy (VD), Switzerland

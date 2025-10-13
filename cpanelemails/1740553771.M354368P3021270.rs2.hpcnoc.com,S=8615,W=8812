@@ -1,0 +1,197 @@
+Return-Path: <securityservice-noreply@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 2IiPFCu+vmfWGS4AObGTvA
+	(envelope-from <securityservice-noreply@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 26 Feb 2025 10:09:31 +0300
+Return-path: <securityservice-noreply@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Wed, 26 Feb 2025 10:09:31 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:47406)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <securityservice-noreply@doc.mail.amadeus.com>)
+	id 1tnBXS-0000000D095-0RFt
+	for natahsa@novustelltravel.com;
+	Wed, 26 Feb 2025 10:09:31 +0300
+Received: from obevp493 (unknown [10.168.11.250])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPSA id 6169C24754
+	for <natahsa@novustelltravel.com>; Wed, 26 Feb 2025 07:08:21 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 6169C24754
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1740553701;
+	bh=ogvA3zu+nHyc7PDYYQwl2bkGzORb0LsypNFXM+3s8IQ=;
+	h=From:TO:Subject:Date;
+	b=olXjlS/wUb6bmP63nPeLJc2nndvjBK3T7L0QIYkgHet3HxoDCqtxORfk569RCZ4mE
+	 V7UURIIvYAJh+jRttFLb+3VFCxERiYdHy914djw/abWPWyBz8bHyj9Rhf2SXzaarZ9
+	 NyVH9LzglFknGOny5Ox+2nU7QJK0jK5faf0tZbVuf6U477WsQyGXuJuxRwpxKOoR7x
+	 6Al0BVYk3lm0NlyFyDw+q+ewR78spEQL+9vWhERwdvhbbBf5RLKJPYh6870oGvN7aF
+	 UYTom8Fb+/wcaovra9W3sKSTWLnLy4Rt6zY+3adwLH35klScw+k10YPdWOiarFc1Kv
+	 oFLppJ9nP32sA==
+From: =?UTF-8?B?IkFtYWRldXMgU2VjdXJpdHkgU2VydmljZSI=?= <securityservice-noreply@doc.mail.amadeus.com>
+TO: NATAHSA@NOVUSTELLTRAVEL.COM
+Message-ID: <RFD/NMC-EASTAF/C6020F02400F12/1@tds.amadeus.com>
+FND-Request-ID: <RFD/NMC-EASTAF/C6020F02400F12/1@tds.amadeus.com>
+Job-ID: 1
+Mailrelay-Header: v=1; carfid: 0001QU8OBSA3KT; id: <RFD/NMC-EASTAF/C6020F02400F12/1@tds.amadeus.com>; app: TDS/RFD; phase: PRD; partition: tds_peak1; region: erd; as: obevp493; doctype: AAM; 
+Subject: =?UTF-8?B?QU1BREVVUzogWW91ciBVc2VyIEFjY291bnQgQ3JlYXRpb24=?=
+Date: Wed, 26 Feb 2025 07:08:21 +0000
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_53558_871617289.1740553701023"
+MIME-Version: 1.0
+X-Spam-Status: No, score=1.6
+X-Spam-Score: 16
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear NATASHA OKIDDY, Your user has been successfully created.
+    You can find below your user information: Organization: NMC-EASTAF Username/Login:
+    NOKIDDY UserID: NOKIDDY Office: NBO41232V Sign: 2301NO 
+ Content analysis details:   (1.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: sharepoint.com]
+                             [URI: amadeus.com]
+                             [URI: amadeus.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  1.7 URI_PHISH              Phishing using web form
+X-Spam-Flag: NO
+
+------=_Part_53558_871617289.1740553701023
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+<html>
+<body>
+
+<table>
+<tr>
+<td>
+
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+
+</td>
+</tr>
+
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+ 
+<assign environmentProd = "Production">
+<span style="font-family:Arial; font-size:10pt;">
+Dear  NATASHA OKIDDY,<br>
+<br>
+Your user has been successfully created. You can find below your user information:
+<br><br>
+Organization: NMC-EASTAF <br>
+Username/Login: NOKIDDY <br>
+UserID: NOKIDDY <br>
+Office: NBO41232V <br>
+Sign: 2301NO <br>
+<br>
+In order to activate your account, please set up a password by connecting to one of the secure URLs below according to your network access. Please use one of the links below and follow the instructions:
+<br>
+<br>
+If you have an Internet access: 
+<br>
+<a href="https://www.accounts.amadeus.com/LoginService/authorizeAngular?service=lssreset&LANGUAGE=en_GB&USER_ALIAS=NOKIDDY&ORGANIZATION=NMC-EASTAF#!/forgotPassword">Activate my account.</a>
+<br>
+<br>
+If you have an Intranet access:
+<br>
+<a href="https://1a.PRD.accounts.amadeus.com/LoginService/authorizeAngular?service=lssreset&LANGUAGE=en_GB&USER_ALIAS=NOKIDDY&ORGANIZATION=NMC-EASTAF#!/forgotPassword">Activate my account.</a>
+<br>
+<br>
+<br>
+If you do not know the type of access you have, then try accessing both links, one after the other. In case neither URL works, please contact your Help Desk.
+<br><br>
+<b>Once your account is activated, please wait two hours before accessing your new applications.</b>
+<br><br>
+Also, please note that you can change your password at any time by connecting to one of the above secure URLs.
+<br><br>
+Best Regards,
+<br>
+The Amadeus Security Team
+</span>
+</td>
+</tr>
+
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/urln/1A/RFD/IMAGE/logo_header.gif?">
+</td>
+</tr>
+
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<span style="font-family:Arial; font-size:10pt; color:#808080; ">
+IMPORTANT - CONFIDENTIALITY NOTICE - This e-mail is intended only for the use of the addressee/s above.  It may contain information which is privileged, confidential or otherwise protected from disclosure under applicable laws.  If the reader of this transmission is not the intended recipient, you are hereby notified that any dissemination, printing, distribution, copying, disclosure or the taking of any action in reliance on the contents of this information is strictly prohibited.  If you have received this transmission in error, please immediately notify us and delete the message and any attachments from your system. Amadeus Corporate Headquarters, Salvador de Madariaga 1 Madrid, 28027 Spain.
+<br><br>
+Privacy Statement:  
+<a href="https://amadeus.com/en/policies/business-privacy-policy.html">Business Partners</a> /  <a href="https://amadeus.com/en/policies/gds-privacy-statement.html">Amadeus GDS</a> /  <a href="https://amadeusworkplace.sharepoint.com/Sites/SecurityAndPrivacy_Official/Shared%20Documents/Privacy%20policies/TPE_Applications_Privacy_Notice.pdf">Internal users</a> <br>
+</span>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+------=_Part_53558_871617289.1740553701023--

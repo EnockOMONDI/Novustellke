@@ -1,0 +1,156 @@
+Return-Path: <noreply@amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id UNwuCSr+7GdqqSEAObGTvA
+	(envelope-from <noreply@amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 02 Apr 2025 12:06:50 +0300
+Return-path: <noreply@amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Wed, 02 Apr 2025 12:06:50 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:3156)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <noreply@amadeus.com>)
+	id 1tzu3d-00000009HRw-3Ala
+	for natahsa@novustelltravel.com;
+	Wed, 02 Apr 2025 12:06:50 +0300
+Received: from obevp494 (unknown [10.168.11.250])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPSA id 6300A299D6
+	for <natahsa@novustelltravel.com>; Wed,  2 Apr 2025 09:06:07 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 6300A299D6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=amadeus.com;
+	s=FND2019Q1; t=1743584767;
+	bh=fj/dsj6TW90Iy8fghu2gpCyW5+YlDMp6Ki9oqlgTWZ8=;
+	h=From:TO:Subject:Date;
+	b=qNjOt5AhSDpPbBl5Qi9mR/HZN0FwAcMQDcbLlohHFGAflJj141lfrQEqN8H2R/TpL
+	 T0ccgvFN9DIRhZ2pweq9lXeH8VMLctRlBkDiOxh3Il6K3cS42TPaewcTpeeiKSdv4F
+	 PpRArdhh4gBahTfSREz0pYbvR+j3iYMkpneyu4hLMg+zccMYD25iHJKBVtoH1pVYlI
+	 9FS5hBIBc/tZt4EHUmxWqYd9C0YoXeWft2AIGQf/X5TEE72VLYD0b90EFsTIoIPQYk
+	 2z+q4YhEz1P9mCPx8LUivqPsNnbt2zcEwpy04g3HgzmsmJBmVk5E69XN/Dgxjy6gIV
+	 LHgGQymf97scA==
+From: =?UTF-8?B?IkFtYWRldXMgU2VjdXJpdHkgU2VydmljZSI=?= <noreply@amadeus.com>
+TO: NATAHSA@NOVUSTELLTRAVEL.COM
+Message-ID: <LSS/NMC-EASTAF/C602100B384555/1@tds.amadeus.com>
+FND-Request-ID: <LSS/NMC-EASTAF/C602100B384555/1@tds.amadeus.com>
+Job-ID: 1
+Mailrelay-Header: v=1; carfid: 0001DXPDGHGAVC; id: <LSS/NMC-EASTAF/C602100B384555/1@tds.amadeus.com>; app: TDS/LSS; phase: PRD; partition: tds_peak1; region: erd; as: obevp494; doctype: LSS; 
+Subject: =?UTF-8?B?T25lLXRpbWUgcGFzc3dvcmQgb24gUFJPRFVDVElPTiAoUFJEKQ==?=
+Date: Wed, 02 Apr 2025 09:06:07 +0000
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_513759_1265252933.1743584767013"
+MIME-Version: 1.0
+X-Spam-Status: No, score=-1.1
+X-Spam-Score: -10
+X-Spam-Bar: -
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear NATASHA OKIDDY, You have requested a one-time password.
+    
+ Content analysis details:   (-1.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+                             [URI: amadeus.net]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: amadeus.com]
+                             [URI: www.mrs.amadeus.net]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [82.150.225.79 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ -1.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+------=_Part_513759_1265252933.1743584767013
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+<body>
+<table width="670">
+
+<tr height=29><td width=676><div ><div ><div style="color:black;direction:ltr;font-family:Arial;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-decoration:none;vertical-align:baseline;white-space:normal;" ><span style="font-size:10pt;" >
+			
+
+
+Dear NATASHA OKIDDY,<br>
+
+
+
+<tr height=20><td width=647><div ><p style="padding:0px;margin:0px;color:#000000;white-space:nowrap;font-size:10pt;font-family:'Arial';text-align:left;"> <span style="color:#000000;white-space:nowrap;font-size:10pt;font-family:'Arial';text-align:left;">
+<br>You have requested a one-time password.<br><br>You need to enter this one-time password in the login screen of your Amadeus product within 15 minutes of receipt of this email:<br><br>
+</span> </p></div></td><td width=0></td></tr>
+
+<tr height=39><td width=627><div ><div ><div style="color:black;direction:ltr;font-family:Arial;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-decoration:none;vertical-align:baseline;white-space:normal;" >
+BTW9Y4<br><br>
+</div></div></div></td><td width=0></td></tr>
+
+<tr height=80><td width=676><div ><div ><div style="color:black;direction:ltr;font-family:Arial;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-decoration:none;vertical-align:baseline;white-space:normal;" ><span style="font-size:10pt;" >
+If you have not requested a one-time password, please contact your Help Desk.<br><br>Best regards,<br>The Amadeus Security Team
+</span></div></div></div></td><td width=0></td></tr>
+
+<td width=512></td></tr><tr height=82><td width=186><div ><div ><div style="color:black;direction:ltr;font-family:Arial;font-size:9pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-decoration:none;vertical-align:baseline;white-space:normal;" >
+<img src="https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/urln/1A/RFD/IMAGE/logo_header.gif?">
+</div></div></div></td><td width=0></td></tr>
+
+</table>
+
+
+<table width="685">
+
+<tr height=128><td width=686>
+<div ><div ><div style="color:rgb(128, 128, 128);direction:ltr;font-family:Arial;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-decoration:none;vertical-align:baseline;white-space:normal;" ><span style="font-size:10pt;" >
+
+IMPORTANT - CONFIDENTIALITY NOTICE - This e-mail is intended only for the use of the addressee/s above.  It may contain information which is privileged, confidential or otherwise protected from disclosure under applicable laws.  If the reader of this transmission is not the intended recipient, you are hereby notified that any dissemination, printing, distribution, copying, disclosure or the taking of any action in reliance on the contents of this information is strictly prohibited.  If you have received this transmission in error, please immediately notify us and delete the message and any attachments from your system. Amadeus Corporate Headquarters, Salvador de Madariaga 1 Madrid, 28027 Spain.
+
+</span></div></div></div></td><td width=0></td></tr></table>
+</td></tr>
+
+
+</table>
+</body>
+</html>
+
+
+------=_Part_513759_1265252933.1743584767013--

@@ -1,0 +1,154 @@
+Return-Path: <novustellke@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id iLM+DWvaR2jqPQ8AObGTvA
+	(envelope-from <novustellke@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 10 Jun 2025 10:10:35 +0300
+Return-path: <novustellke@gmail.com>
+Envelope-to: wyccliffe@novustelltravel.com
+Delivery-date: Tue, 10 Jun 2025 10:10:35 +0300
+Received: from mail-wr1-f74.google.com ([209.85.221.74]:46218)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <novustellke@gmail.com>)
+	id 1uOt80-00000004BYM-1Mbl
+	for wyccliffe@novustelltravel.com;
+	Tue, 10 Jun 2025 10:10:35 +0300
+Received: by mail-wr1-f74.google.com with SMTP id ffacd0b85a97d-3a4edf5bb4dso3115584f8f.0
+        for <wyccliffe@novustelltravel.com>; Tue, 10 Jun 2025 00:10:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1749539393; x=1750144193; darn=novustelltravel.com;
+        h=to:from:subject:date:message-id:auto-submitted:sender:reply-to
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=diaQ6b6WcHXX9COfUjqRguLU0LNV6Bu4qSti+o2Qk1g=;
+        b=sFdUOJloOZFR2jcDDKd/1SDo+f/DKqnaZUV+MlmmxBXuq7UF+i/iph2msg22pyxLGO
+         5yV6opzL5dVUrCHcj6Fulp7rZTk0q2E/F0cUHMnzS5Kf+nnbShGe6brZ9pEW4SBClbjG
+         wRIENVYUxBNoEa7HLhJVCwAxC8S+TlaPY8PBZ8wQsJW5po8F4inly0rmaZU5e4+ciIwc
+         O/mmjmQ5kc/7uH4g63An2pBa6HfwwvqT1BEUHvuX4qbGL3VJU3kf/FdX6ggKQLqdu5jD
+         08nT4hYMKhqLhAKh/xfrX+9umeBtAqYxDBNzGKrLVWAfv+IVj/dsgoyadFGv3xqJEN04
+         QN9w==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1749539393; x=1750144193; darn=novustelltravel.com;
+        h=to:from:subject:date:message-id:auto-submitted:sender:reply-to
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=diaQ6b6WcHXX9COfUjqRguLU0LNV6Bu4qSti+o2Qk1g=;
+        b=Vx7YmlJtMA0xLl9n3ceg9WjuO9bJpAJ44Pn6m6C1iXSOLx1omy3oyQ7Lt537cBK+NM
+         tWQfQZFGbIWEo6LanFsYFW0/4N+yU99UKOZw8RWzAUHtcCACviLLsStxHbx1dmrdqDUi
+         hnUJIIaqjWT4IE1Apt5QhbsPNWcPEylep0dRL7AX1/6AaiHvIP/B0vO5BsJgENNdFp2v
+         lf45C7jjPQSbtMJipx2TmXmDIolo0NZf2Q2eDodJn1/KfB3Odb3qH9Dok6fF6mkr12/u
+         x+p+zqSxM8UtsDjxKFnBLa3t6ugD8EaeMsc+2Hwm+gSwQ/f4NHxOs6V2z9rPOCpVRcVw
+         AMDw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1749539393; x=1750144193;
+        h=to:from:subject:date:message-id:auto-submitted:sender:reply-to
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=diaQ6b6WcHXX9COfUjqRguLU0LNV6Bu4qSti+o2Qk1g=;
+        b=HSUpixJpckwdv4bm7SEzSHM8RKkhCFXi/pGv4l4I+EDuURqT+zQjiFBguEv/w1xWF5
+         p1N5sK+g64XOAGHuWkOnvYRcrZ0zaDRCiMzbs49kQwLvRdpoIuW0K6C9DbbmxPwVuBSW
+         91RQ+eDdtgJsOnDV1OC82DX6TMnMKc/jYhoJ4P5lWxzWRRAcBQgiatDilF+pXPQZuiPm
+         eoy+kJTi7mawBtNITzs8E6V3ecGJsmn/wrVxFfA95excXdZprWT54NlAXx/QNSwrCUKU
+         FHknvG1fcHIricKmVdEImxzUm79M1pI01bmZSLhQOuZHwKOmUaKE6xbP0/joblL4dBCk
+         0hmg==
+X-Gm-Message-State: AOJu0YxnWGrBj3AUG617q7CCZXbK7h07fJeuMlke9PhvV7P42HN8waVb
+	TYB/Lji0whcBJF7Kl68RQOWsRWm72ISIRfxWKmf/7ESUb29R1UStu/Slgbr1qDJ84nEm/M415yp
+	riWNUpLwKwYRLlas+/ljtTXF/AidN9OYO3Vw=
+X-Google-Smtp-Source: AGHT+IEkZ5rpTs1J8DqATpEdS8BseKqU7gZFb0cHcpEvMFbLuTNm72BKMWBDLwSQGoIhx4OsUJgjrk6uEAPYBJ84TZAG
+MIME-Version: 1.0
+X-Received: by 2002:a05:6000:1a8e:b0:3a5:2a24:fbf5 with SMTP id
+ ffacd0b85a97d-3a552275055mr974456f8f.18.1749539393556; Tue, 10 Jun 2025
+ 00:09:53 -0700 (PDT)
+Reply-To: Novustell Travel <novustellke@gmail.com>
+Sender: Google Calendar <calendar-notification@google.com>
+Auto-Submitted: auto-generated
+Message-ID: <calendar-137f8b10-162f-4397-a6dc-6cf9e3f5df91@google.com>
+Date: Tue, 10 Jun 2025 07:09:53 +0000
+Subject: Novustell Travel has shared a calendar with you
+From: Novustell Travel <novustellke@gmail.com>
+To: wyccliffe@novustelltravel.com
+Content-Type: multipart/alternative; boundary="00000000000012dbc40637326275"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello wyccliffe@novustelltravel.com, We are writing to let
+    you know that Novustell Travel has given you access to view events on the
+    Google Calendar called "NOVUSTELL OFFICE CALENDAR". After adding this calendar
+    to your other calendars, you can hide or completely remove it whenever you
+    want. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.221.74 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.221.74 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.221.74 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.221.74 listed in bl.score.senderscore.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [novustellke(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Spam-Flag: NO
+
+--00000000000012dbc40637326275
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Hello wyccliffe@novustelltravel.com,
+
+We are writing to let you know that Novustell Travel  
+<novustellke@gmail.com> has given you access to view events on the Google  
+Calendar called "NOVUSTELL OFFICE CALENDAR".
+
+After adding this calendar to your other calendars, you can hide or
+completely remove it whenever you want.
+
+Add this calendar  
+https://calendar.google.com/calendar/render?cid=novustellke@gmail.com&es=3.
+
+- The Google Calendar Team
+
+To see your calendar click  
+[https://calendar.google.com/calendar/render?es=3]
+
+--00000000000012dbc40637326275
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Hello wyccliffe@novustelltravel.com,</p> <p>We are writing to let you kn=
+ow that <a style=3D"pointer-events: none; cursor: default; color: inherit; =
+text-decoration: none;">Novustell Travel</a> &lt;novustellke@gmail.com&gt; =
+has given you access to view events on the Google Calendar called "<a style=
+=3D"pointer-events: none; cursor: default; color: inherit; text-decoration:=
+ none;">NOVUSTELL OFFICE CALENDAR</a>".</p> <p>After adding this calendar t=
+o your other calendars, you can hide or completely remove it whenever you w=
+ant. <p><p><a href=3D"https://calendar.google.com/calendar/render?cid=3Dnov=
+ustellke@gmail.com&es=3D3" >Add this calendar</a>.</p> - The Google Calenda=
+r Team<br> <p><a href=3D"https://calendar.google.com/calendar/render?es=3D3=
+">View Your Calendar</a></p>
+--00000000000012dbc40637326275--

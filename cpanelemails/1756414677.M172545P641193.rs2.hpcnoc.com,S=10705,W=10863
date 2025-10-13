@@ -1,0 +1,158 @@
+Return-Path: <servicehub@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 6B9yCNXCsGipyAkAObGTvA
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 28 Aug 2025 23:57:57 +0300
+Return-path: <servicehub@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Thu, 28 Aug 2025 23:57:57 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:56465)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	id 1urjgz-00000002jby-3NFj
+	for natahsa@novustelltravel.com;
+	Thu, 28 Aug 2025 23:57:56 +0300
+Received: from ociamashpapo02.doc.mail.amadeus.com (unknown [10.168.10.252])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id 44B1E24DAB;
+	Thu, 28 Aug 2025 20:57:15 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 44B1E24DAB
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1756414635;
+	bh=NsRNCpmTzZ2b0rBu+SI1RdQ7518Vn18Mm5J4b+DAQAA=;
+	h=Date:From:Subject;
+	b=CciVh5+4DU4dSAAYPyxsU5BzDnX4/e/x9+8hoOODTDlcnDVXbeIwFMEaFXsvbOXtW
+	 MDWs+ajmSSzMaXUlnE8Bv39l8kb/3U60hHMNu/F3pRF2hLnvPURPZU3qAfas6kHxXa
+	 8/yk2/J9VdrrAUIdZo9RCY+3lyl+6ieAhextL5s/6mq2GF5IrHgnHvcjj8235+5+Nt
+	 MtNvPzqLkmZ46VGPiEbiNrp04Ym8wLXNln2PPuo8KAu2qfOZBfKyaNrN329jIJWZ1p
+	 jYb9XV+afUTvP8wOLrNaoDuYQyOQtOO2iRUnvF+NJ+Doc+Ueq694pYkgpDmLihVzXc
+	 8lj1UJ9JuMovA==
+Received: from localhost (localhost [127.0.0.1])
+	by ociamashpapo02.doc.mail.amadeus.com (Postfix) with ESMTP id 8AAA11C0A020;
+	Thu, 28 Aug 2025 20:57:11 +0000 (UTC)
+Date: Thu, 28 Aug 2025 20:57:11 +0000 (UTC)
+From: Amadeus Customer Service <servicehub@doc.mail.amadeus.com>
+Message-ID: <655704698.60813.1756414631565@localhost>
+Subject: RECOVERED: Amadeus Master Pricer: Response Time: IR 36270049
+MIME-Version: 1.0
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: AutoReply, DR, NDR, NRN, OOF, RN
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, The following incident has been recovered:
+    Amadeus Master Pricer: Response Time: IR 36270049 
+ Content analysis details:   (-0.1 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+                             [score: 0.0000]
+  1.0 MISSING_HEADERS        Missing To: header
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.4 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+
+
+
+
+<center>
+    <table width="100%" bgcolor="#ffffff" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="694">
+                            <div style="max-width: 694px; margin: 0 auto" align="left">
+                                <img alt="Amadeus Service Hub" src="https://servicehub.amadeus.com/documents/20195/1117748133/Email+Banner+-+Incident.png/eb9b37fb-307d-70e2-3428-323c2d8ba7d9?t=1704357474209" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="694" bgcolor="#ffffff">
+                            <div style="max-width: 694px; margin: 0 auto">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <td width="10" bgcolor="#ffffff"></td>
+                                    <td width="674" bgcolor="#ffffff">
+                                        <div style="max-width: 674px; margin: 0 auto" dir="ltr" align="left">
+                                            <p style="font-family:'Source Sans Pro',Calibri, sans-serif;"><br/> Dear Customer,
+                                                <br/><br/>
+                                                The following incident has been recovered:
+                                                <br/>
+                                                                                                    <em><a href="https://servicehub.amadeus.com/c/portal/view-solution/1303604827/amadeus-master-pricer-response-time-ir-36270049">Amadeus Master Pricer: Response Time: IR 36270049</a></em>
+                                                                                                <br/>
+                                                <br/>
+                                                The following update was added:<br/>
+                                                <br/>On August 28th, Amadeus monitoring tools identified increased latency in Master Pricer shopping transactions, which may have affected users' ability to complete or manage passenger bookings. Amadeus support teams traced the issue to a Couchbase cluster within the shopping environment. Recovery efforts included rerouting traffic away from the impacted cluster and redistributing it across healthy nodes. An initial improvement was observed at 16:59 GMT; however, full recovery was achieved by 18:31 GMT. All environments remain under heightened monitoring to ensure continued stability.<br/>
+                                            </p>
+                                            <p style="font-family:'Source Sans Pro',Calibri, sans-serif;">
+                                                                                                    <em>There will be no further bulletins published within Amadeus Critical Incident Centre for this incident. Please contact your Account Manager or Service Delivery Manager should you require further information.</em>
+                                                    <br/><br/>
+                                                    <em>Note: If the link does not open, this means the content has been removed. </em>
+                                                                                                <br/><br/>
+                                                Best Regards,<br/>
+                                                <strong style="color:#000835;font-size:1.2em">Amadeus Service Hub</strong><br/>
+                                                'Helping Amadeus Customers Succeed' <br/>
+                                            </p>
+                                            <p>
+                                                <img src="https://servicehub.amadeus.com/documents/20195/1117748133/Amadeus+Logo+-+White+Background.png/7e5cd68b-bc75-93ed-1986-3a98c1e9c1fc?t=1704442648345" /> <!-- LOGO -->
+                                            </p><br/>
+                                            <a style="color:#0c66e1" href=https://servicehub.amadeus.com/en/home?login_panel=travel&default_option=userid%22>servicehub.amadeus.com</a>
+                                            <p style="font-family:'Source Sans Pro',Calibri, sans-serif;font-size:11px;text-align:left;">You have received this mail because you are subscribed to Amadeus Critical Incident Centre notifications.<br/>You can unsubscribe from Critical Incident notifications or change your email preferences by visiting the  <a href="https://servicehub.amadeus.com/group/control_panel/manage?p_p_id=notifpref&p_p_state=pop_up&manageSubscription=true" target="_blank">Subscriptions & Notifications</a> page.</p>
+                                            <p style="font-size:12px;font-family:'Source Sans Pro',Calibri, sans-serif;">
+
+                                                This email is generated automatically; no reply will be processed.
+
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td width="10" bgcolor="#ffffff"></td>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

@@ -1,0 +1,116 @@
+Return-Path: <brainlabske@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id SBA8ERaTEGi50BAAObGTvA
+	(envelope-from <brainlabske@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 29 Apr 2025 11:51:34 +0300
+Return-path: <brainlabske@gmail.com>
+Envelope-to: wyclife@novustelltravel.com
+Delivery-date: Tue, 29 Apr 2025 11:51:34 +0300
+Received: from mail-ua1-f47.google.com ([209.85.222.47]:59794)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.1)
+	(envelope-from <brainlabske@gmail.com>)
+	id 1u9ggf-00000004sOs-0g9l;
+	Tue, 29 Apr 2025 11:51:34 +0300
+Received: by mail-ua1-f47.google.com with SMTP id a1e0cc1a2514c-86d75f4e9a1so2249019241.3;
+        Tue, 29 Apr 2025 01:50:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1745916631; x=1746521431; darn=novustelltravel.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ZPJXBb5bbTm96k5pMy0Jw6lVvi/uCXhB+rM3BIdt4hU=;
+        b=eb4RnvgVNRu+HjJdVdbNJnvG3EYQinXgfvVwXDcZwwu5YNuBls/d5FU1fKdc7K/hDX
+         I/Avj1cYdyIX2SDDhuqVC2IN7UK6YMcUA64Hz4vlG9YsOzOi34S7ZsFhe1MhYpfXt08k
+         5PkPsCP5Z0IMtFzYO7zWoQWCQstMXX0YfP8FP8k26zdn0DmYzsFhLOu0WVj754G3WBJZ
+         GqbIaWw3EpKb/a9dcN2I3GGw1Z8CnIGwNvG5dM/yocnM8dupjCs/L+ItxZ9pjZoJ0f6d
+         xN7p5rHs+BB0VHzYQOGzfLjrMimY7vYu2K94ahGaIeSi5ZL6ShFCjuy4opqeWHFBvdWK
+         HXSA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1745916631; x=1746521431;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ZPJXBb5bbTm96k5pMy0Jw6lVvi/uCXhB+rM3BIdt4hU=;
+        b=dQLlSH1D3t0bYBwvAM2/09ceMnGRbzCgmXx9VXyqvQ6S1JMlxGmHpcJbM7/kcVzvU9
+         EGhTdIRtkc6xH59Vn3btbRr8G/GppT/QOEiKeEWKgkF1jJHHX+rzQ7PciFHrFo/mLIgU
+         65TL4S4+zhEmH84jCWAMmCb36Eh13+qo2BJ4oSrgFAd7ADKG7O+QlHwtBjCIVEfqLjUN
+         bZtrZlVNACaKVgcwDO3IzuvN1MiupN70vLRhd1Xb0H8H8shjV8g2YjLlex9r2JxDe34+
+         jWOYltrpwlTaRqUDMOeuIxMEZJ1BKiybecPo7E7GAYdnh5ccp2SQZUbCl7ev9OUkyOFR
+         wlqw==
+X-Forwarded-Encrypted: i=1; AJvYcCXMMLZAMbv4IffDoPdsoDOVObEWWIWm+YTJ0WOYHQqha70/mBpMblG6EbuJ5bRWOzDWYGSCWP9W@novustelltravel.com
+X-Gm-Message-State: AOJu0YyFGqDcf9CI8x2+reOjo1DwABLcMch3qAB10fp+m/KIooWaIVW+
+	H8DStO7o7RLL3qN+txTnLdCF5ZkxJmm6mBaVM0N0zYvzQFQHaRBokbUqrdoNHPbWZh9WNfi5hMJ
+	5jzDTT3AslM0DMLu89TqbmbFIZVh8Vvmw
+X-Gm-Gg: ASbGncukLRtAl+UUiNv/clWpKQl2br54hQnbAqC8xHoQ+534kYCXtPqdkWJabdwckpd
+	84ZvRhGeNDsUQBf3vSo0Cr7Edg3TRcAWMBlzhy8tK96Q7UdC0MB56PQg5u8jy6/r2xZYOf2zuuh
+	qupRYaqEA21OIPHM7im09j/znm
+X-Google-Smtp-Source: AGHT+IHbYJsST+Ie7SOLvn71EzY7Ntb/9ixjsuZnGgDMGwZbXNoCrvopcJyvU/YX5Dvzx/XILpC3XkXaUm6GhEVBkWE=
+X-Received: by 2002:a05:6102:1526:b0:4c1:99cc:792 with SMTP id
+ ada2fe7eead31-4da7fb17565mr1799409137.13.1745916631026; Tue, 29 Apr 2025
+ 01:50:31 -0700 (PDT)
+MIME-Version: 1.0
+From: enock omondi <brainlabske@gmail.com>
+Date: Tue, 29 Apr 2025 11:50:19 +0300
+X-Gm-Features: ATxdqUFdMSFnR3dnh-ELNn1j4EB6zRWlo4JFAphEbJEhV6gpu5_t0QoytNSiHVU
+Message-ID: <CAOCv6sdi_6Fo3BPAK63dW4Bv6Q8o2N6c96HmzpMOi16mg0sFTg@mail.gmail.com>
+Subject: INCOMING EMAILS @11:50
+To: wyclife@novustelltravel.com, natasha@novustelltravel.com
+Content-Type: multipart/alternative; boundary="0000000000009993300633e6e4f7"
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  INCOMING EMAILS @11:50 INCOMING EMAILS @11:50 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.222.47 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [brainlabske(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.222.47 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.222.47 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.222.47 listed in sa-trusted.bondedsender.org]
+X-Spam-Flag: NO
+
+--0000000000009993300633e6e4f7
+Content-Type: text/plain; charset="UTF-8"
+
+INCOMING EMAILS @11:50
+
+--0000000000009993300633e6e4f7
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">INCOMING EMAILS @11:50</div>
+
+--0000000000009993300633e6e4f7--

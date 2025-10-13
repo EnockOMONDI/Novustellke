@@ -1,0 +1,475 @@
+Return-Path: <mkwamboka@aihdint.org>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id cD4AM/hRw2VyFycAkzNyDQ
+	(envelope-from <mkwamboka@aihdint.org>)
+	for <novuste1@rs2b.noc254.com>; Wed, 07 Feb 2024 12:48:40 +0300
+Return-path: <mkwamboka@aihdint.org>
+Envelope-to: eah@novustelltravel.com
+Delivery-date: Wed, 07 Feb 2024 12:48:40 +0300
+Received: from mail-lf1-f50.google.com ([209.85.167.50]:56635)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <mkwamboka@aihdint.org>)
+	id 1rXeXk-00Ao6P-1U
+	for eah@novustelltravel.com;
+	Wed, 07 Feb 2024 12:48:40 +0300
+Received: by mail-lf1-f50.google.com with SMTP id 2adb3069b0e04-51147d0abd1so489150e87.1
+        for <eah@novustelltravel.com>; Wed, 07 Feb 2024 01:48:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=aihdint-org.20230601.gappssmtp.com; s=20230601; t=1707299275; x=1707904075; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=h3ZsnHhQJDkpUZHVVGPWVn1pWJhZUB7mPPlg/mRz96w=;
+        b=F4Y2eCZoffon2v2a3F29Atmi4HojBJLN3jtLYngK0gXtM/j3CIloIow6krP/Qfn8rA
+         3H/rSvkCtC16+ea4rAfDY26ET2dLRpo+gP+4U+p2M+cJkIy+fEISRjVo9DKw605//pdc
+         cxBb6tgeHp1lQ1gKFcErhcszYJTcwZzheM2PI7asCm/tEcTe0l9k74OonhwbEbsGT62a
+         FyWue3UjHwWC9VTaK5vE1roffZfrIz/NlQd3Iulji20llVDCWEkStG/yzcZJTuKcfsXZ
+         pMSi8cXhyB3G1Cop00tsM6nLkFlNVjFZr5WfhTDMUp6S0Hh0rLm7ltFoXKEDC3WgLgU1
+         FePw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1707299275; x=1707904075;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=h3ZsnHhQJDkpUZHVVGPWVn1pWJhZUB7mPPlg/mRz96w=;
+        b=XrwpEi9jdGI3ZQSuvgVMDZpWPO49GnZ+u8T1lIAJAv/C4tkrfHyBC8eBHXFGbfGO+i
+         lkrZnLVlTFV/agEUt4yV5AorRP7JcteSLnACshaxrJSW+d9DQVbo54zB6IqY8gp84khg
+         HTsJDus3SNoyg97aUNVZbBHQWECgQkjoDpmLe62/EcX16DtJx7Qxxb456dSF9YUgF1zD
+         QlVnKsZayYcXyCMvALnxu9ewjtRgw2bDlMFMlIzNvoe5yP4qPi1HoCDqicA795R0/y4j
+         o4nJ3N27485v1+8F3v+sE1slAzt9D/VlQrPKYi7Tif0NOJ5ZJMf972IihQkILd/h2YDd
+         XLCg==
+X-Gm-Message-State: AOJu0YxjgaQoNxvDyYiBgVJfQHPSa6Bz/qHKOYSpGftxNP2+PBlZy49J
+	lu6EGPZ8MtLftpSFl378wujDScBRXZsP2Bi2YTFykQ3ybDwJgZN14wlppHDO7gq134tkGwEPfzu
+	AfNkbWRBaPNuG/DYgG6i59k1PdzRalFEbB7c3ig==
+X-Google-Smtp-Source: AGHT+IFAAxRrDMnq4xYNXPW9kghmr7taycvLu8GTbLt1GaCdUgSTGPyxx9DQayLSVZa3hodS6ET6xibL0kQOgf/e480=
+X-Received: by 2002:ac2:54aa:0:b0:510:526:182b with SMTP id
+ w10-20020ac254aa000000b005100526182bmr3380586lfk.67.1707299274825; Wed, 07
+ Feb 2024 01:47:54 -0800 (PST)
+MIME-Version: 1.0
+References: <CAAGeNxv_BpsKGPxSi_cc3-13T5kaMAu+2KY9P1Rf5WG9wFxB6g@mail.gmail.com>
+ <3955592E-9C17-4666-A753-440138EB164F@novustelltravel.com>
+ <CAAGeNxsqmLcU6fqi-PHAPuwHB8CBHOtvO_sU4H=0OPa+_euxWg@mail.gmail.com> <7740E2E0-1B7F-406A-8DE4-574F2228A15A@novustelltravel.com>
+In-Reply-To: <7740E2E0-1B7F-406A-8DE4-574F2228A15A@novustelltravel.com>
+From: Metrine Kwamboka <mkwamboka@aihdint.org>
+Date: Wed, 7 Feb 2024 12:47:43 +0300
+Message-ID: <CAAGeNxt7865kMmPxVXvGtVJT3OT4fz-_e0c78xvh1=wO_400uQ@mail.gmail.com>
+Subject: Re: Flights BMGF
+To: Novustell <quinta@novustelltravel.com>
+Cc: eah@novustelltravel.com, Christine <christine@novustelltravel.com>, 
+	Alice Sinkeet <asinkeet@aihdint.org>, Clare Amuyunzu <camuyunzu@aihdint.org>, 
+	Mary Maghanga <mmaghanga@aihdint.org>, Diana Kinagu <dkinagu@aihdint.org>, 
+	Galdinus Mbeja <gmbeja@aihdint.org>, Mary Opetu <mopetu@aihdint.org>
+Content-Type: multipart/alternative; boundary="000000000000cd3fe00610c796d9"
+X-Spam-Status: No, score=1.5
+X-Spam-Score: 15
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Well received, thanks. On Wed, Feb 7, 2024 at 12:35 PM Novustell
+    <quinta@novustelltravel.com> wrote: > Dear Metrine, > > > > Please see below
+    > > > > *Safarilink* > > 13FEB Lamu Malindi 1555 1615*only flights > > Fare
+    kes 5,850 Non Refundable > > **15kgs baggage allowance > > **not holding
+   seats > > [...] 
+ Content analysis details:   (1.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  1.5 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--000000000000cd3fe00610c796d9
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Well received, thanks.
+
+On Wed, Feb 7, 2024 at 12:35=E2=80=AFPM Novustell <quinta@novustelltravel.c=
+om>
+wrote:
+
+> Dear Metrine,
+>
+>
+>
+> Please see below
+>
+>
+>
+> *Safarilink*
+>
+> 13FEB Lamu Malindi 1555 1615*only flights
+>
+> Fare kes 5,850 Non Refundable
+>
+> **15kgs baggage allowance
+>
+> **not holding seats
+>
+>
+>
+> Regards
+>
+> Quinta
+>
+>
+>
+>
+>
+> *From: *Metrine Kwamboka <mkwamboka@aihdint.org>
+> *Date: *Wednesday, 7 February 2024 at 12:24
+> *To: *Novustell <quinta@novustelltravel.com>
+> *Cc: *<eah@novustelltravel.com>, Christine <christine@novustelltravel.com=
+>,
+> Alice Sinkeet <asinkeet@aihdint.org>, Clare Amuyunzu <
+> camuyunzu@aihdint.org>, Mary Maghanga <mmaghanga@aihdint.org>, Diana
+> Kinagu <dkinagu@aihdint.org>, Galdinus Mbeja <gmbeja@aihdint.org>, Mary
+> Opetu <mopetu@aihdint.org>
+> *Subject: *Re: Flights BMGF
+>
+>
+>
+> Dear Quinta,
+>
+>
+>
+> Please provide a quotation for Lamu to Malindi on Tuesday, 13th February,
+> 2024 last flight of the day. The passengers may not be able to use road
+> transport.
+>
+>
+>
+> Kind regards,
+>
+> Metrine
+>
+>
+>
+>
+>
+> On Wed, Feb 7, 2024 at 11:49=E2=80=AFAM Novustell <quinta@novustelltravel=
+.com>
+> wrote:
+>
+> Resending below,
+>
+>
+>
+> thanks
+>
+>
+>
+> *JAMBO JET*
+>
+> JM 13FEB NAIROBI 09:00  - LAMU 10:20
+>
+> *Lamu Kilifi is by road transport*
+>
+> =3D=3D=3D=3Dreturn=3D=3D=3D
+>
+> JM 17FEB MOMBASA 15:40   -  NAIROBI  16 :55
+>
+> Return Fare KES 36,000
+>
+> Excludes  excess baggage @KES 1500
+>
+> TICKET NON -REFUNDABLE
+>
+>
+>
+>  2.
+>
+> JM 14FEB NAIROBI  10:45 - UKUNDA  12:00***Only flight available
+>
+> =3D=3Dreturn
+>
+> JM 17FEB Mombasa 15:40  Nairobi 16:55
+>
+> Return Fare KES 39,000
+>
+> Excludes excess baggage @KES 1500
+>
+> TICKET NON -REFUNDABLE
+>
+>
+>
+> Or
+>
+> JM 14FEB NAIROBI  10:45 - UKUNDA  12:00***Only flight available
+>
+> =3D=3Dreturn
+>
+> JM 17FEB Mombasa 20:40  Nairobi 21:55
+>
+> Return Fare KES 31,300
+>
+> Excludes excess baggage @KES 1500
+>
+> TICKET NON -REFUNDABLE
+>
+>
+>
+> 3.
+>
+> *SAFARILINK*
+>
+> SL 14FEB NAIROBI  09 :45 =E2=80=93 UKUNDA  10:55
+>
+> =3D=3D=3Dreturn
+>
+> SL 17FEB MOMBASA 17:40 =E2=80=93 NAIROBI 18:45
+>
+> *Return Fare KES 25,800 *
+>
+> LUGGUGE ALOWANCE  1 PC -15 KG
+>
+> TICKET NON -REFUNDABLE
+>
+>
+>
+> Kind regards,
+>
+>
+>
+> Leah.
+>
+>
+>
+>
+>
+>
+>
+> *From: *Metrine Kwamboka <mkwamboka@aihdint.org>
+> *Date: *Wednesday, 7 February 2024 at 09:12
+> *To: *Novustell <quinta@novustelltravel.com>, <eah@novustelltravel.com>,
+> Christine <christine@novustelltravel.com>
+> *Cc: *Alice Sinkeet <asinkeet@aihdint.org>, Clare Amuyunzu <
+> camuyunzu@aihdint.org>, Mary Maghanga <mmaghanga@aihdint.org>, Diana
+> Kinagu <dkinagu@aihdint.org>, Galdinus Mbeja <gmbeja@aihdint.org>, Mary
+> Opetu <mopetu@aihdint.org>
+> *Subject: *RFQ: Flights BMGF
+>
+>
+>
+> Dear Quinta,
+>
+>
+>
+> I trust this email finds you well.
+>
+>
+>
+> Kindly submit a quotation for the following flight itinerary:
+>
+>
+>
+> i) Return Ticket: Departure- Nairobi to Lamu on Tuesday, February 13th,
+> 2024 first flight of the day. Thereafter, Lamu to Kilifi on Wednesday,
+> February 14th, 2024 first flight of the day and return -Mombasa to Nairob=
+i
+> on Saturday, February 17th, 2024, afternoon flight.
+>
+>
+>
+> ii) Return Ticket: Nairobi to Ukunda on Wednesday, February 14th,
+> 2024 first flight of the day and return -Mombasa to Nairobi on Saturday,
+> February 17th, 2024, afternoon flight.
+>
+>
+>
+> Kindly share options for timings and airlines; Safarilink and Jambojet
+>
+>
+>
+> Best Regards,
+>
+> Metrine Kwamboka
+>
+>
+>
+>
+
+--000000000000cd3fe00610c796d9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Well received, thanks.=C2=A0<br></div><br><div class=3D"gm=
+ail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Wed, Feb 7, 2024 at 12:=
+35=E2=80=AFPM Novustell &lt;<a href=3D"mailto:quinta@novustelltravel.com">q=
+uinta@novustelltravel.com</a>&gt; wrote:<br></div><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,20=
+4,204);padding-left:1ex"><div class=3D"msg-7803353187492674105"><div lang=
+=3D"EN-US"><div class=3D"m_-7803353187492674105WordSection1"><p class=3D"Ms=
+oNormal">Dear Metrine,<u></u><u></u></p><p class=3D"MsoNormal"><u></u>=C2=
+=A0<u></u></p><p class=3D"MsoNormal">Please see below<u></u><u></u></p><p c=
+lass=3D"MsoNormal"><b><u></u>=C2=A0<u></u></b></p><p class=3D"MsoNormal"><b=
+>Safarilink<u></u><u></u></b></p><p class=3D"MsoNormal">13FEB Lamu Malindi =
+1555 1615*only flights<u></u><u></u></p><p class=3D"MsoNormal">Fare kes 5,8=
+50 Non Refundable<u></u><u></u></p><p class=3D"MsoNormal">**15kgs baggage a=
+llowance<u></u><u></u></p><p class=3D"MsoNormal">**not holding seats<u></u>=
+<u></u></p><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p><p class=3D"MsoNo=
+rmal">Regards<u></u><u></u></p><p class=3D"MsoNormal">Quinta<u></u><u></u><=
+/p><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p><p class=3D"MsoNormal"><u=
+></u>=C2=A0<u></u></p><div style=3D"border-right:none;border-bottom:none;bo=
+rder-left:none;border-top:1pt solid rgb(181,196,223);padding:3pt 0cm 0cm"><=
+p class=3D"MsoNormal"><b><span style=3D"font-size:12pt;color:black">From: <=
+/span></b><span style=3D"font-size:12pt;color:black">Metrine Kwamboka &lt;<=
+a href=3D"mailto:mkwamboka@aihdint.org" target=3D"_blank">mkwamboka@aihdint=
+.org</a>&gt;<br><b>Date: </b>Wednesday, 7 February 2024 at 12:24<br><b>To: =
+</b>Novustell &lt;<a href=3D"mailto:quinta@novustelltravel.com" target=3D"_=
+blank">quinta@novustelltravel.com</a>&gt;<br><b>Cc: </b>&lt;<a href=3D"mail=
+to:eah@novustelltravel.com" target=3D"_blank">eah@novustelltravel.com</a>&g=
+t;, Christine &lt;<a href=3D"mailto:christine@novustelltravel.com" target=
+=3D"_blank">christine@novustelltravel.com</a>&gt;, Alice Sinkeet &lt;<a hre=
+f=3D"mailto:asinkeet@aihdint.org" target=3D"_blank">asinkeet@aihdint.org</a=
+>&gt;, Clare Amuyunzu &lt;<a href=3D"mailto:camuyunzu@aihdint.org" target=
+=3D"_blank">camuyunzu@aihdint.org</a>&gt;, Mary Maghanga &lt;<a href=3D"mai=
+lto:mmaghanga@aihdint.org" target=3D"_blank">mmaghanga@aihdint.org</a>&gt;,=
+ Diana Kinagu &lt;<a href=3D"mailto:dkinagu@aihdint.org" target=3D"_blank">=
+dkinagu@aihdint.org</a>&gt;, Galdinus Mbeja &lt;<a href=3D"mailto:gmbeja@ai=
+hdint.org" target=3D"_blank">gmbeja@aihdint.org</a>&gt;, Mary Opetu &lt;<a =
+href=3D"mailto:mopetu@aihdint.org" target=3D"_blank">mopetu@aihdint.org</a>=
+&gt;<br><b>Subject: </b>Re: Flights BMGF<u></u><u></u></span></p></div><div=
+><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p></div><div><div><p class=3D=
+"MsoNormal">Dear Quinta,<u></u><u></u></p><div><p class=3D"MsoNormal"><u></=
+u>=C2=A0<u></u></p></div><div><p class=3D"MsoNormal">Please provide a quota=
+tion for Lamu to Malindi on Tuesday, 13th February, 2024 last flight of the=
+ day. The passengers may not be able to use road transport.<u></u><u></u></=
+p></div><div><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p></div><div><p c=
+lass=3D"MsoNormal">Kind regards,<u></u><u></u></p></div><div><p class=3D"Ms=
+oNormal">Metrine<u></u><u></u></p></div></div><div style=3D"margin-top:1.5p=
+t;outline:none"><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p></div></div>=
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p><div><div><p class=3D"MsoNor=
+mal">On Wed, Feb 7, 2024 at 11:49=E2=80=AFAM Novustell &lt;<a href=3D"mailt=
+o:quinta@novustelltravel.com" target=3D"_blank">quinta@novustelltravel.com<=
+/a>&gt; wrote:<u></u><u></u></p></div><blockquote style=3D"border-top:none;=
+border-right:none;border-bottom:none;border-left:1pt solid rgb(204,204,204)=
+;padding:0cm 0cm 0cm 6pt;margin-left:4.8pt;margin-right:0cm"><div><div><div=
+><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">Resendin=
+g below,</span><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font=
+-size:10pt;color:black">=C2=A0</span><u></u><u></u></p><p class=3D"MsoNorma=
+l"><span style=3D"font-size:10pt;color:black">thanks</span><u></u><u></u></=
+p><p class=3D"MsoNormal"><b><span style=3D"font-size:10pt;color:black">=C2=
+=A0</span></b><u></u><u></u></p><p class=3D"MsoNormal"><b><span style=3D"fo=
+nt-size:10pt;color:black">JAMBO JET</span></b><u></u><u></u></p><p class=3D=
+"MsoNormal"><span style=3D"font-size:10pt;color:black">JM 13FEB NAIROBI 09:=
+00=C2=A0 - LAMU 10:20</span><u></u><u></u></p><p class=3D"MsoNormal"><b><i>=
+<span style=3D"font-size:10pt;color:black">Lamu Kilifi is by road transport=
+</span></i></b><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font=
+-size:10pt;color:black">=3D=3D=3D=3Dreturn=3D=3D=3D</span><u></u><u></u></p=
+><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">JM 17FEB=
+ MOMBASA 15:40=C2=A0=C2=A0 -=C2=A0 NAIROBI=C2=A0 16 :55=C2=A0</span><u></u>=
+<u></u></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black=
+">Return Fare KES 36,000</span><u></u><u></u></p><p class=3D"MsoNormal"><sp=
+an style=3D"font-size:10pt;color:black">Excludes =C2=A0excess baggage @KES =
+1500=C2=A0</span><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"fo=
+nt-size:10pt;color:black">TICKET NON -REFUNDABLE</span><u></u><u></u></p><p=
+ class=3D"MsoNormal"><span style=3D"color:black">=C2=A0</span><u></u><u></u=
+></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">=C2=
+=A02.=C2=A0</span><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"f=
+ont-size:10pt;color:black">JM 14FEB NAIROBI=C2=A0 10:45 - UKUNDA=C2=A0 12:0=
+0***Only flight available</span><u></u><u></u></p><p class=3D"MsoNormal"><s=
+pan style=3D"font-size:10pt;color:black">=3D=3Dreturn</span><u></u><u></u><=
+/p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">JM 17F=
+EB Mombasa 15:40 =C2=A0Nairobi 16:55</span><u></u><u></u></p><p class=3D"Ms=
+oNormal"><span style=3D"font-size:10pt;color:black">Return Fare KES 39,000<=
+/span><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font-size:10p=
+t;color:black">Excludes excess baggage @KES 1500</span><u></u><u></u></p><p=
+ class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">TICKET NON =
+-REFUNDABLE=C2=A0</span><u></u><u></u></p><p class=3D"MsoNormal"><span styl=
+e=3D"font-size:10pt;color:black">=C2=A0</span><u></u><u></u></p><p class=3D=
+"MsoNormal"><span style=3D"font-size:10pt;color:black">Or</span><u></u><u><=
+/u></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">JM=
+ 14FEB NAIROBI=C2=A0 10:45 - UKUNDA=C2=A0 12:00***Only flight available</sp=
+an><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;c=
+olor:black">=3D=3Dreturn</span><u></u><u></u></p><p class=3D"MsoNormal"><sp=
+an style=3D"font-size:10pt;color:black">JM 17FEB Mombasa 20:40 =C2=A0Nairob=
+i 21:55</span><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font-=
+size:10pt;color:black">Return Fare KES 31,300</span><u></u><u></u></p><p cl=
+ass=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">Excludes exces=
+s baggage @KES 1500</span><u></u><u></u></p><p class=3D"MsoNormal"><span st=
+yle=3D"font-size:10pt;color:black">TICKET NON -REFUNDABLE=C2=A0</span><u></=
+u><u></u></p><p class=3D"MsoNormal"><span style=3D"color:black">=C2=A0</spa=
+n><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"color:black">3.=
+=C2=A0</span><u></u><u></u></p><p class=3D"MsoNormal"><b><span style=3D"fon=
+t-size:10pt;color:black">SAFARILINK</span></b><u></u><u></u></p><p class=3D=
+"MsoNormal"><span style=3D"font-size:10pt;color:black">SL 14FEB NAIROBI=C2=
+=A0 09 :45 =E2=80=93 UKUNDA=C2=A0 10:55</span><u></u><u></u></p><p class=3D=
+"MsoNormal"><span style=3D"color:black">=3D=3D=3Dreturn</span><u></u><u></u=
+></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;color:black">SL 1=
+7FEB MOMBASA 17:40 =E2=80=93 NAIROBI 18:45</span><u></u><u></u></p><p class=
+=3D"MsoNormal"><b><span style=3D"font-size:10pt;color:black">Return Fare KE=
+S 25,800=C2=A0</span></b><u></u><u></u></p><p class=3D"MsoNormal"><span sty=
+le=3D"font-size:10pt;color:black">LUGGUGE ALOWANCE =C2=A01 PC -15 KG</span>=
+<u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"font-size:10pt;colo=
+r:black">TICKET NON -REFUNDABLE</span><u></u><u></u></p><p class=3D"MsoNorm=
+al"><span style=3D"color:black">=C2=A0</span><u></u><u></u></p><p class=3D"=
+MsoNormal"><span style=3D"color:black">Kind regards,=C2=A0</span><u></u><u>=
+</u></p><p class=3D"MsoNormal"><span style=3D"color:black">=C2=A0</span><u>=
+</u><u></u></p><p class=3D"MsoNormal"><span style=3D"color:black">Leah.</sp=
+an><u></u><u></u></p><p class=3D"MsoNormal"><span style=3D"color:black">=C2=
+=A0</span><u></u><u></u></p><p class=3D"MsoNormal">=C2=A0<u></u><u></u></p>=
+<p class=3D"MsoNormal">=C2=A0<u></u><u></u></p><div style=3D"border-right:n=
+one;border-bottom:none;border-left:none;border-top:1pt solid rgb(181,196,22=
+3);padding:3pt 0cm 0cm"><p class=3D"MsoNormal"><b><span style=3D"font-size:=
+12pt;color:black">From: </span></b><span style=3D"font-size:12pt;color:blac=
+k">Metrine Kwamboka &lt;<a href=3D"mailto:mkwamboka@aihdint.org" target=3D"=
+_blank">mkwamboka@aihdint.org</a>&gt;<br><b>Date: </b>Wednesday, 7 February=
+ 2024 at 09:12<br><b>To: </b>Novustell &lt;<a href=3D"mailto:quinta@novuste=
+lltravel.com" target=3D"_blank">quinta@novustelltravel.com</a>&gt;, &lt;<a =
+href=3D"mailto:eah@novustelltravel.com" target=3D"_blank">eah@novustelltrav=
+el.com</a>&gt;, Christine &lt;<a href=3D"mailto:christine@novustelltravel.c=
+om" target=3D"_blank">christine@novustelltravel.com</a>&gt;<br><b>Cc: </b>A=
+lice Sinkeet &lt;<a href=3D"mailto:asinkeet@aihdint.org" target=3D"_blank">=
+asinkeet@aihdint.org</a>&gt;, Clare Amuyunzu &lt;<a href=3D"mailto:camuyunz=
+u@aihdint.org" target=3D"_blank">camuyunzu@aihdint.org</a>&gt;, Mary Maghan=
+ga &lt;<a href=3D"mailto:mmaghanga@aihdint.org" target=3D"_blank">mmaghanga=
+@aihdint.org</a>&gt;, Diana Kinagu &lt;<a href=3D"mailto:dkinagu@aihdint.or=
+g" target=3D"_blank">dkinagu@aihdint.org</a>&gt;, Galdinus Mbeja &lt;<a hre=
+f=3D"mailto:gmbeja@aihdint.org" target=3D"_blank">gmbeja@aihdint.org</a>&gt=
+;, Mary Opetu &lt;<a href=3D"mailto:mopetu@aihdint.org" target=3D"_blank">m=
+opetu@aihdint.org</a>&gt;<br><b>Subject: </b>RFQ: Flights BMGF</span><u></u=
+><u></u></p></div><div><p class=3D"MsoNormal">=C2=A0<u></u><u></u></p></div=
+><div><div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-famil=
+y:tahoma,sans-serif">Dear Quinta,</span><u></u><u></u></p></div><div><p cla=
+ss=3D"MsoNormal"><span style=3D"font-size:9.5pt">=C2=A0</span><u></u><u></u=
+></p></div><div><div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;=
+font-family:tahoma,sans-serif">I trust this email finds you well.</span><u>=
+</u><u></u></p></div><div><p class=3D"MsoNormal"><span style=3D"font-size:9=
+.5pt">=C2=A0</span><u></u><u></u></p></div><div><p class=3D"MsoNormal"><spa=
+n style=3D"font-size:9.5pt;font-family:tahoma,sans-serif">Kindly submit a q=
+uotation for the following flight itinerary:</span><u></u><u></u></p></div>=
+<div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt">=C2=A0</span><u=
+></u><u></u></p></div><div><p class=3D"MsoNormal"><span style=3D"font-size:=
+9.5pt;font-family:tahoma,sans-serif">i) Return Ticket: Departure- Nairobi t=
+o Lamu on Tuesday, February 13th, 2024 first flight of the day. Thereafter,=
+ Lamu to=C2=A0Kilifi on Wednesday, February 14th, 2024=C2=A0first flight of=
+ the day=C2=A0and return -Mombasa to Nairobi on Saturday, February 17th, 20=
+24, afternoon flight.</span><u></u><u></u></p></div><div><p class=3D"MsoNor=
+mal"><span style=3D"font-size:9.5pt">=C2=A0</span><u></u><u></u></p></div><=
+div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:tahom=
+a,sans-serif">ii) Return Ticket:=C2=A0Nairobi to Ukunda on Wednesday, Febru=
+ary 14th, 2024=C2=A0first flight=C2=A0of the day and return -Mombasa to Nai=
+robi on=C2=A0Saturday, February 17th, 2024, afternoon flight.</span><u></u>=
+<u></u></p></div><div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt=
+">=C2=A0</span><u></u><u></u></p></div><div><div><p class=3D"MsoNormal"><sp=
+an style=3D"font-size:9.5pt">Kindly share options for timings and airlines;=
+ Safarilink and Jambojet</span><u></u><u></u></p></div><div><p class=3D"Mso=
+Normal"><span style=3D"font-size:9.5pt">=C2=A0</span><u></u><u></u></p></di=
+v><div><p class=3D"MsoNormal"><span style=3D"font-size:9.5pt">Best Regards,=
+</span><u></u><u></u></p></div><div><p class=3D"MsoNormal"><span style=3D"f=
+ont-size:9.5pt">Metrine Kwamboka</span><u></u><u></u></p></div><div><p clas=
+s=3D"MsoNormal"><span style=3D"font-size:9.5pt;color:rgb(136,136,136)">=C2=
+=A0</span><u></u><u></u></p></div></div></div></div></div></div></div></blo=
+ckquote></div></div></div>
+</div></blockquote></div>
+
+--000000000000cd3fe00610c796d9--

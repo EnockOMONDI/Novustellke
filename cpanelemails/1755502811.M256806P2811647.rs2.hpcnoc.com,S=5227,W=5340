@@ -1,0 +1,113 @@
+Return-Path: <>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id sMhqDdvYomj/5ioAObGTvA
+	(envelope-from <>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 18 Aug 2025 10:40:11 +0300
+Return-path: <>
+Envelope-to: support@novustelltravel.com
+Delivery-date: Mon, 18 Aug 2025 10:40:11 +0300
+Received: from mail3.diginierotels.org ([198.46.216.140]:57335)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	id 1unuTS-0000000BvcK-11tc
+	for support@novustelltravel.com;
+	Mon, 18 Aug 2025 10:40:11 +0300
+Date: Mon, 18 Aug 2025 02:40:10 -0500
+From: postmaster@mail3.diginierotels.org
+Subject: Delivery report
+To: support@novustelltravel.com
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="report68A2D8DA@mail3.diginierotels.org"
+X-Spam-Status: No, score=5.1
+X-Spam-Score: 51
+X-Spam-Bar: +++++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello, this is the mail server on mail3.diginierotels.org.
+    I am sending you this message to inform you on the delivery status of a message
+    you previously sent. Immediately below you will find a list of the affected
+    recipients; also attached is a Delivery Stat [...] 
+ Content analysis details:   (5.1 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
+                             blocklist
+                             [URI: mail3.diginierotels.org/198.46.216.140]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: diginierotels.org]
+                             [URI: novustelltravel.com]
+  2.5 URIBL_DBL_PHISH        Contains a Phishing URL listed in the Spamhaus DBL
+                             blocklist
+                             [URI: mail3.diginierotels.org]
+  2.5 URIBL_DBL_MALWARE      Contains a malware URL listed in the Spamhaus DBL
+                             blocklist
+                             [URI: mail3.diginierotels.org]
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [198.46.216.140 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [198.46.216.140 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.46.216.140 listed in sa-accredit.habeas.com]
+X-Spam-Flag: NO
+
+--report68A2D8DA@mail3.diginierotels.org
+Content-Type: text/plain
+
+Hello, this is the mail server on mail3.diginierotels.org.
+
+I am sending you this message to inform you on the delivery status of a
+message you previously sent.  Immediately below you will find a list of
+the affected recipients;  also attached is a Delivery Status Notification
+(DSN) report in standard format, as well as the headers of the original
+message.
+
+  <Quinta@novustelltravel.com>  relayed to mailer novustelltravel.com (217.20.124.83)
+
+--report68A2D8DA@mail3.diginierotels.org
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;mail3.diginierotels.org
+X-PowerMTA-VirtualMTA: pmta-vmta3
+Received-From-MTA: dns;wfp.org (192.3.96.73)
+Arrival-Date: Mon, 18 Aug 2025 02:39:06 -0500
+
+Final-Recipient: rfc822;Quinta@novustelltravel.com
+Action: relayed
+Status: 2.0.0 (success)
+Remote-MTA: dns;novustelltravel.com (217.20.124.83)
+X-PowerMTA-BounceCategory: success
+
+--report68A2D8DA@mail3.diginierotels.org
+Content-Type: text/rfc822-headers
+
+From: Mail Delivery System<support@novustelltravel.com>
+To: Quinta@novustelltravel.com
+Subject: You have [9] pending incoming emails Quinta@novustelltravel.com
+Date: 18 Aug 2025 09:39:06 +0200
+Message-ID: <20250818093906.D1B508F8E6C862F4@novustelltravel.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+--report68A2D8DA@mail3.diginierotels.org--

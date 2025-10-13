@@ -50,8 +50,13 @@
         <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
         <!--====== Style css ======-->
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+        <!--====== Google Analytics 4 & Tag Manager ======-->
+        {% include 'users/analytics.html' %}
     </head>
     <body style="background-color: #f8f3fc !important;">
+        <!--====== Google Tag Manager (noscript) ======-->
+        {% include 'users/analytics_noscript.html' %}
         <script>
             var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?55090';
             var s = document.createElement('script');
@@ -129,6 +134,11 @@
 
         <!--====== Main js (Load after WOW.js) ======-->
         <script src="{% static 'assets/js/theme.js' %}"></script>
+
+        <!--====== Travel Analytics (Load after main theme) ======-->
+        {% if SHOULD_LOAD_ANALYTICS %}
+        <script defer src="{% static 'assets/js/analytics-travel.js' %}"></script>
+        {% endif %}
     </body>
 
 <!-- End Novustell Travel Website -->

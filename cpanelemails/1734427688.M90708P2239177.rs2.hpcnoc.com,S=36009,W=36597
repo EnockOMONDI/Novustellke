@@ -1,0 +1,588 @@
+Return-Path: <bounce-mc.us5_162875150.10146400-674b644ea9@mail235.sea101.rsgsv.net>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id iKfzBChEYWfJKiIAObGTvA
+	(envelope-from <bounce-mc.us5_162875150.10146400-674b644ea9@mail235.sea101.rsgsv.net>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 17 Dec 2024 12:28:08 +0300
+Return-path: <bounce-mc.us5_162875150.10146400-674b644ea9@mail235.sea101.rsgsv.net>
+Envelope-to: quita@novustelltravel.com
+Delivery-date: Tue, 17 Dec 2024 12:28:08 +0300
+Received: from mail235.sea101.rsgsv.net ([148.105.15.235]:38198)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <bounce-mc.us5_162875150.10146400-674b644ea9@mail235.sea101.rsgsv.net>)
+	id 1tNTs7-00000009Rpz-1Kxg
+	for quita@novustelltravel.com;
+	Tue, 17 Dec 2024 12:28:08 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k3; t=1734427630; x=1734688130;
+	i=fidelis.kanyi=3Dmarasa.africa@mailchimpapp.net;
+	bh=WNaBMHwfWmDJxriyMbWZ6oV+dqJvSEzLMqr1CaK6/5c=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=Jir7GqRQzadF8WnjHxIBA0QNoTQ8XEZLEW/UqReumzqmIUShLX13TVclvkQbsLNec
+	 4ltWSca8WzSH5piAmJqYgvNSiJwV2h+CHP0NDjp0xMgPAzKPA4E71TSDIyjvSDjPZR
+	 yCZzTEqWuyjoItGvnnzMICtleCKdc6iw9dyH/v0qu1god7LLyc0AgeAhe6ta44lGUP
+	 JmwNbQgEvZKdDQ+Vn+1pQviT0uN9j9uakl4jrOVCP7QVHhYPPnJ79pEMg8CM9xfe4N
+	 SAwYHg+8TGxXtOoqTCAAB2usqq8YbxNNRM8gABhwsFTuY+HT35Zd9LDMExKVEzsNDw
+	 mpNyr4sWzSNSQ==
+Received: from localhost (localhost [127.0.0.1])
+	by mail235.sea101.rsgsv.net (Mailchimp) with ESMTP id 4YCBKV2kyGzPmnMgG
+	for <quita@novustelltravel.com>; Tue, 17 Dec 2024 09:27:10 +0000 (GMT)
+Subject: =?utf-8?Q?We=20Have=20Relocated=20To=20A=20New=20Office?=
+From: Marasa Africa <fidelis.kanyi@marasa.africa>
+Reply-To: =?utf-8?Q?Marasa=20Africa?= <fidelis.kanyi@marasa.africa>
+To: <quita@novustelltravel.com>
+Date: Tue, 17 Dec 2024 09:27:01 +0000
+Message-ID: <83795d5686a46dd91a32a27a3.674b644ea9.20241217092651.24ab2b6ae3.82a255b0@mail235.sea101.rsgsv.net>
+X-Mailer: Mailchimp Mailer - **CID24ab2b6ae3674b644ea9**
+X-Campaign: mailchimp83795d5686a46dd91a32a27a3.24ab2b6ae3
+X-campaignid: mailchimp83795d5686a46dd91a32a27a3.24ab2b6ae3
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=83795d5686a46dd91a32a27a3&id=24ab2b6ae3&e=674b644ea9
+X-MC-User: 83795d5686a46dd91a32a27a3
+Feedback-ID: 162875150:162875150.10146400:us5:mc
+List-ID: 83795d5686a46dd91a32a27a3mc list <83795d5686a46dd91a32a27a3.1543101.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://marasa.us5.list-manage.com/unsubscribe?u=83795d5686a46dd91a32a27a3&id=647b9ce544&t=h&e=674b644ea9&c=24ab2b6ae3>, <mailto:unsubscribe-mc.us5_83795d5686a46dd91a32a27a3.24ab2b6ae3-674b644ea9@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1938260984"
+MIME-Version: 1.0
+X-Spam-Status: No, score=0.4
+X-Spam-Score: 4
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  To: 6 Rosslyn Lone Tree Estate Road, Nairobi, Kenya View this
+    email in your browser (https://mailchi.mp/8412114cf1be/important-notice-rate-increase-gorilla-tracking-news-from-uwa-10146400?e=674b644ea9)
+    
+ Content analysis details:   (0.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [148.105.15.235 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [148.105.15.235 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [148.105.15.235 listed in sa-trusted.bondedsender.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mailchimpapp.net]
+                             [URI: fonts.googleapis.com]
+                             [URI: mailchimp.com]
+                             [URI: mcusercontent.com]
+                             [URI: marasa.net]
+                             [URI: list-manage.com]
+                             [URI: mailchi.mp]
+  0.1 URIBL_SBL_A            Contains URL's A record listed in the Spamhaus SBL
+                             blocklist
+                             [URI: fonts.googleapis.com/142.250.186.42]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1938260984
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+To:  6 Rosslyn Lone Tree Estate Road=2C Nairobi=2C Kenya
+
+View this email in your browser (https://mailchi.mp/8412114cf1be/important=
+-notice-rate-increase-gorilla-tracking-news-from-uwa-10146400?e=3D674b644ea9=
+)
+
+
+** MA R A S A  A F R I C A
+RESERVATION OFFICE RELOCATION
+------------------------------------------------------------
+
+Dear Valued Partner=2C
+
+We are delighted to inform you that Marasa Africa has relocated to a new o=
+ffice:
+
+6 Rosslyn Lone Tree Estate Road=2C Nairobi=2C Kenya.
+
+Our telephone number remains the same: +254 730 841 841.
+
+And we continue to serve you with the excellence and professionalism you e=
+xpect from us.
+
+Please update your records with our new address=2C and don=E2=80=99t hesit=
+ate to reach out for any assistance or clarification.
+
+Thank you for your continued support.
+
+https://facebook.com/marasaafrica
+https://instagram.com/marasafrica
+https://twitter.com/MarasAfrica
+https://marasa.net
+https://www.linkedin.com/in/marasa-africa-51793618a/
+
+EMAIL: reservations.kenya@marasa.africa | CALL: +254 730 841 841  |  WEB:=
+ www.marasa.net
+
+Manage Your Subscription (https://marasa.us5.list-manage.com/profile?u=3D8=
+3795d5686a46dd91a32a27a3&id=3D647b9ce544&e=3D674b644ea9&c=3D24ab2b6ae3) or u=
+nsubscribe (https://marasa.us5.list-manage.com/unsubscribe?u=3D83795d5686a=
+46dd91a32a27a3&id=3D647b9ce544&t=3Db&e=3D674b644ea9&c=3D24ab2b6ae3)
+--_----------=_MCPart_1938260984
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head>
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1" />
+<title>We Have Relocated To A New Office</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" />
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"" />
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DLato:40=
+0=2C400i=2C700=2C700i=2C900=2C900i|Playfair+Display:400=2C400i=2C700=2C700=
+i=2C900=2C900i" /><!--<![endif]--><style>          img{-ms-interpolation-=
+mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(246=2C 246=2C 246); }.mceText=
+=2C .mcnTextContent=2C .mceLabel { font-family: Arial=2C "Helvetica Neue"=
+=2C Helvetica=2C sans-serif; }.mceText=2C .mcnTextContent=2C .mceLabel { c=
+olor: rgb(0=2C 0=2C 0); }.mceText h1 { margin-bottom: 0px; }.mceText p { m=
+argin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText input {=
+ margin-bottom: 0px; }.mceSpacing-24 .mceInput + .mceErrorMessage { margin=
+-top: -12px; }.mceText h1 { margin-bottom: 0px; }.mceText p { margin-botto=
+m: 0px; }.mceText label { margin-bottom: 0px; }.mceText input { margin-bot=
+tom: 0px; }.mceSpacing-12 .mceInput + .mceErrorMessage { margin-top: -6px;=
+ }.mceInput { background-color: transparent; border: 2px solid rgb(208=2C=
+ 208=2C 208); width: 60%; color: rgb(77=2C 77=2C 77); display: block; }.mc=
+eInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"] { float: left; ma=
+rgin-right: 12px; display: inline; width: auto !important; }.mceLabel > .m=
+ceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabel { display: block=
+; }.mceText p=2C .mcnTextContent p { color: rgb(0=2C 0=2C 0); font-family:=
+ Arial=2C "Helvetica Neue"=2C Helvetica=2C sans-serif; font-size: 16px; fo=
+nt-weight: normal; line-height: 150%; text-align: center; direction: ltr;=
+ }.mceText h1=2C .mcnTextContent h1 { color: rgb(0=2C 0=2C 0); font-family=
+: "Playfair Display"=2C Georgia=2C "Times New Roman"=2C serif; font-size:=
+ 31px; font-weight: bold; line-height: 150%; text-align: center; direction=
+: ltr; }.mceText a=2C .mcnTextContent a { color: rgb(0=2C 108=2C 115); fon=
+t-style: normal; font-weight: normal; text-decoration: underline; directio=
+n: ltr; }.mceSectionHeader .mceText p=2C .mceSectionHeader .mcnTextContent=
+ p { }.mceSectionHeader .mceText a=2C .mceSectionHeader .mcnTextContent a=
+ { font-style: normal; }.mceSectionBody .mceText h1=2C .mceSectionBody .mc=
+nTextContent h1 { }.mceSectionBody .mceText p=2C .mceSectionBody .mcnTextC=
+ontent p { }.mceSectionFooter .mceText p=2C .mceSectionFooter .mcnTextCont=
+ent p { }.mceSectionFooter .mceText a=2C .mceSectionFooter .mcnTextContent=
+ a { font-style: normal; }
+@media only screen and (max-width: 480px) {
+            .mceText p { margin: 0px; font-size: 16px !important; line-hei=
+ght: 150% !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceText h1 { font-size: 20px !important; line-height: 150% !i=
+mportant; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceBlockContainer { padding-left: 16px !important; padding-ri=
+ght: 16px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerBlock { border-top-width: 2px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerContainer { width: 100% !important; }
+          }
+#dataBlockId-19 p=2C #dataBlockId-19 h1=2C #dataBlockId-19 h2=2C #dataBloc=
+kId-19 h3=2C #dataBlockId-19 h4=2C #dataBlockId-19 ul { text-align: center=
+; }</style></head>
+<body>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">To:  6 Rosslyn=
+ Lone Tree Estate Road=2C Nairobi=2C Kenya</span><!--<![endif]-->
+<!--
+-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(246=2C 246=2C=
+ 246);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"3" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:#f6f6f6" align=3D"center" valign=3D"top" class=3D"mceSec=
+tionHeader"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:660px;"=
+><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><tbody>=
+<tr><td style=3D"background-color:#d2c3b1" class=3D"mceWrapperInner" valig=
+n=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"2"><tbody><=
+tr class=3D"mceRow"><td style=3D"background-position:center;background-rep=
+eat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tb=
+ody><tr><td style=3D"padding-top:0;padding-bottom:0" class=3D"mceColumn" d=
+ata-block-id=3D"-7" valign=3D"top" colspan=3D"12" width=3D"100%"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-r=
+ight:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"borde=
+r:0;background-color:#ffffff;border-radius:0;border-collapse:separate"><tb=
+ody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:3px;=
+padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D"=
+1" class=3D"mceText" id=3D"dataBlockId-1" style=3D"width:100%"><p class=3D=
+"last-child"><a href=3D"https://mailchi.mp/8412114cf1be/important-notice-r=
+ate-increase-gorilla-tracking-news-from-uwa-10146400?e=3D674b644ea9" style=
+=3D"color: #766d59;"><span style=3D"font-size: 11px">View this email in yo=
+ur browser</span></a></p></div></td></tr></tbody></table></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></t=
+d></tr></tbody><tbody data-block-id=3D"17" class=3D"mceWrapper"><tr><td st=
+yle=3D"background-color:#f6f6f6" align=3D"center" valign=3D"top" class=3D"=
+mceSectionBody"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:66=
+0px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><t=
+body><tr><td style=3D"background-color:#d2c3b1" class=3D"mceWrapperInner"=
+ valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"16"><=
+tbody><tr class=3D"mceRow"><td style=3D"background-position:center;backgro=
+und-repeat:no-repeat;background-size:cover" valign=3D"top"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" class=3D"mce=
+Column" data-block-id=3D"-8" valign=3D"top" colspan=3D"12" width=3D"100%">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation"><tbody><tr><td style=3D"background-color:#ffffff;paddin=
+g-top:0;padding-bottom:0;padding-right:0;padding-left:0" class=3D"mceBlock=
+Container" align=3D"left" valign=3D"top"><span class=3D"mceImageBorder" st=
+yle=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img data-blo=
+ck-id=3D"4" width=3D"660" height=3D"auto" style=3D"width:660px;height:auto=
+;max-width:801px !important;border-radius:0;display:block" alt=3D"" src=3D=
+"https://mcusercontent.com/83795d5686a46dd91a32a27a3/images/248597e6-f885-=
+490c-83c0-e535a01cf127.png" role=3D"presentation" class=3D"imageDropZone m=
+ceImage" /></span></td></tr><tr><td style=3D"background-color:#ffffff" val=
+ign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation" data-block-id=3D"5"><tbody><tr><td class=
+=3D"mceSpacerBlock" height=3D"20" valign=3D"top"></td></tr></tbody></table=
+></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0=
+;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;ba=
+ckground-color:#ffffff;border-radius:0;border-collapse:separate"><tbody><t=
+r><td style=3D"padding-left:24px;padding-right:24px;padding-top:5px;paddin=
+g-bottom:5px" class=3D"mceTextBlockContainer"><div data-block-id=3D"6" cla=
+ss=3D"mceText" id=3D"dataBlockId-6" style=3D"width:100%"><h1 style=3D"line=
+-height: 125%; letter-spacing: 1px;" class=3D"last-child"><span style=3D"c=
+olor:#5e4118;"><span style=3D"font-size: 13px"><span style=3D"font-family:=
+ 'Lato'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">MA R A S=
+ A =C2=A0A F R I C A</span></span><span style=3D"font-family: 'Lato'=2C 'H=
+elvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"><br /></span><span sty=
+le=3D"font-size: 19px"><span style=3D"font-family: 'Lato'=2C 'Helvetica Ne=
+ue'=2C Helvetica=2C Arial=2C sans-serif">RESERVATION OFFICE RELOCATION</sp=
+an></span></span></h1></div></td></tr></tbody></table></td></tr><tr><td st=
+yle=3D"background-color:#ffffff" valign=3D"top"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-bl=
+ock-id=3D"7"><tbody><tr><td class=3D"mceSpacerBlock" height=3D"20" valign=
+=3D"top"></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:=
+0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table w=
+idth=3D"100%" style=3D"border:0;background-color:#ffffff;border-radius:0;b=
+order-collapse:separate"><tbody><tr><td style=3D"padding-left:100px;paddin=
+g-right:100px;padding-top:5px;padding-bottom:5px" class=3D"mceTextBlockCon=
+tainer"><div data-block-id=3D"8" class=3D"mceText" id=3D"dataBlockId-8" st=
+yle=3D"width:100%"><p style=3D"text-align: left;"><span style=3D"font-size=
+: 13px">Dear Valued Partner=2C</span></p><p style=3D"text-align: left;"><s=
+pan style=3D"font-size: 13px">We are delighted to inform you that Marasa A=
+frica has relocated to a new office:</span></p><p style=3D"text-align: lef=
+t;"><strong><span style=3D"font-size: 13px">6 Rosslyn Lone Tree Estate Roa=
+d=2C Nairobi=2C Kenya.</span></strong><span style=3D"font-size: 13px"><br=
+ /></span></p><p style=3D"text-align: left;"><span style=3D"font-size: 13p=
+x">Our telephone number remains the same: </span><strong><span style=3D"fo=
+nt-size: 13px">+254 730 841 841.</span></strong></p><p style=3D"text-align=
+: left;"><span style=3D"font-size: 13px">And we continue to serve you with=
+ the excellence and professionalism you expect from us. <br /><br />Please=
+ update your records with our new address=2C and don=E2=80=99t hesitate to=
+ reach out for any assistance or clarification.</span></p><p style=3D"text=
+-align: left;" class=3D"last-child"><span style=3D"font-size: 13px">Thank=
+ you for your continued support.</span></p></div></td></tr></tbody></table=
+></td></tr><tr><td style=3D"background-color:#ffffff" valign=3D"top"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"=
+presentation" data-block-id=3D"9"><tbody><tr><td class=3D"mceSpacerBlock"=
+ height=3D"20" valign=3D"top"></td></tr></tbody></table></td></tr><tr><td=
+ style=3D"background-color:#ffffff" valign=3D"top"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data=
+-block-id=3D"11"><tbody><tr><td class=3D"mceSpacerBlock" height=3D"20" val=
+ign=3D"top"></td></tr></tbody></table></td></tr><tr><td style=3D"backgroun=
+d-color:#ffffff" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"13"><t=
+body><tr><td class=3D"mceSpacerBlock" height=3D"20" valign=3D"top"></td></=
+tr></tbody></table></td></tr><tr><td style=3D"background-color:#ffffff;pad=
+ding-top:0;padding-bottom:0;padding-right:50px;padding-left:50px" class=3D=
+"mceBlockContainer" valign=3D"top"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color=
+:#ffffff;width:100%" role=3D"presentation" class=3D"mceDividerContainer" d=
+ata-block-id=3D"14"><tbody><tr><td style=3D"min-width:100%;border-top-widt=
+h:1px;border-top-style:solid;border-top-color:#5e4118;line-height:0;font-s=
+ize:0" class=3D"mceDividerBlock" valign=3D"top">=C2=A0</td></tr></tbody></=
+table></td></tr><tr><td style=3D"background-color:#ffffff;padding-top:12px=
+;padding-bottom:12px;padding-right:0;padding-left:0" class=3D"mceLayoutCon=
+tainer" valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=
+=3D"15"><tbody><tr class=3D"mceRow"><td style=3D"background-color:#ffffff;=
+background-position:center;background-repeat:no-repeat;background-size:cov=
+er;padding-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"presentation"=
+><tbody><tr><td class=3D"mceColumn" data-block-id=3D"-6" valign=3D"top" co=
+lspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"to=
+p"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" class=3D"mceSocialFollowBlock" data-block-id=3D"-5=
+"><tbody><tr><td align=3D"center" valign=3D"middle"><!--[if mso]><table a=
+lign=3D"left" border=3D"0" cellspacing=3D "0" cellpadding=3D"0"><tr><![en=
+dif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"display:inline;float:left" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12p=
+x" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"24" valign=3D"t=
+op"><a href=3D"https://marasa.us5.list-manage.com/track/click?u=3D83795d56=
+86a46dd91a32a27a3&id=3Dd104afd7c5&e=3D674b644ea9" target=3D"_blank" rel=
+=3D"noreferrer"><img class=3D"mceSocialFollowImage" width=3D"24" height=3D=
+"24" alt=3D"Facebook icon" src=3D"https://cdn-images.mailchimp.com/icons/s=
+ocial-block-v3/block-icons-v3/facebook-filled-dark-40.png" /></a></td></tr=
+></tbody></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=
+=3D"center" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" r=
+ole=3D"presentation"><tbody><tr><td style=3D"padding-top:3px;padding-botto=
+m:3px;padding-left:12px;padding-right:12px" class=3D"mceSocialFollowIcon"=
+ align=3D"center" width=3D"24" valign=3D"top"><a href=3D"https://marasa.us=
+5.list-manage.com/track/click?u=3D83795d5686a46dd91a32a27a3&id=3D484685c70=
+e&e=3D674b644ea9" target=3D"_blank" rel=3D"noreferrer"><img class=3D"mceS=
+ocialFollowImage" width=3D"24" height=3D"24" alt=3D"Instagram icon" src=3D=
+"https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/ins=
+tagram-filled-dark-40.png" /></a></td></tr></tbody></table><!--[if mso]><=
+/td><![endif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![end=
+if]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"display:inline;float:left" role=3D"presentation"><tbody><tr><t=
+d style=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;padding-ri=
+ght:12px" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"24" vali=
+gn=3D"top"><a href=3D"https://marasa.us5.list-manage.com/track/click?u=3D8=
+3795d5686a46dd91a32a27a3&id=3Dac5d265da0&e=3D674b644ea9" target=3D"_blank=
+" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" width=3D"24" heig=
+ht=3D"24" alt=3D"Twitter icon" src=3D"https://cdn-images.mailchimp.com/ico=
+ns/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" /></a></td><=
+/tr></tbody></table><!--[if mso]></td><![endif]--><!--[if mso]><td alig=
+n=3D"center" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left"=
+ role=3D"presentation"><tbody><tr><td style=3D"padding-top:3px;padding-bot=
+tom:3px;padding-left:12px;padding-right:12px" class=3D"mceSocialFollowIcon=
+" align=3D"center" width=3D"24" valign=3D"top"><a href=3D"https://marasa.u=
+s5.list-manage.com/track/click?u=3D83795d5686a46dd91a32a27a3&id=3D2571a270=
+4f&e=3D674b644ea9" target=3D"_blank" rel=3D"noreferrer"><img class=3D"mce=
+SocialFollowImage" width=3D"24" height=3D"24" alt=3D"Website icon" src=3D"=
+https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/webs=
+ite-filled-dark-40.png" /></a></td></tr></tbody></table><!--[if mso]></td=
+><![endif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]=
+--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"display:inline;float:left" role=3D"presentation"><tbody><tr><td=
+ style=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;padding-rig=
+ht:12px" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"24" valig=
+n=3D"top"><a href=3D"https://marasa.us5.list-manage.com/track/click?u=3D83=
+795d5686a46dd91a32a27a3&id=3D46b28be08f&e=3D674b644ea9" target=3D"_blank"=
+ rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" width=3D"24" heigh=
+t=3D"24" alt=3D"LinkedIn icon" src=3D"https://cdn-images.mailchimp.com/ico=
+ns/social-block-v3/block-icons-v3/linkedin-filled-dark-40.png" /></a></td>=
+</tr></tbody></table><!--[if mso]></td><![endif]--><!--[if mso]></tr></=
+table><![endif]--></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></t=
+able><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr><=
+/tbody><tbody data-block-id=3D"24" class=3D"mceWrapper"><tr><td style=3D"b=
+ackground-color:#f6f6f6" align=3D"center" valign=3D"top" class=3D"mceSecti=
+onFooter"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:660px;">=
+<tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><tbody><=
+tr><td style=3D"background-color:#d2c3b1" class=3D"mceWrapperInner" valign=
+=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"23"><tbody><=
+tr class=3D"mceRow"><td style=3D"background-position:center;background-rep=
+eat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tb=
+ody><tr><td style=3D"padding-top:0;padding-bottom:0" class=3D"mceColumn" d=
+ata-block-id=3D"-9" valign=3D"top" colspan=3D"12" width=3D"100%"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation"><tbody><tr><td style=3D"background-color:#5e4118;padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0" class=3D"mceLayoutContaine=
+r" valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"21"=
+ id=3D"section_5ba7d4ebd7bb282d908c29c1e7193513" class=3D"mceFooterSection=
+"><tbody><tr class=3D"mceRow"><td style=3D"background-color:#5e4118;backgr=
+ound-position:center;background-repeat:no-repeat;background-size:cover;pad=
+ding-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"12" width=3D"100%" role=3D"presentation"><tbody=
+><tr><td style=3D"padding-top:0;padding-bottom:0" class=3D"mceColumn" data=
+-block-id=3D"-3" valign=3D"top" colspan=3D"12" width=3D"100%"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"present=
+ation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-righ=
+t:0;padding-left:0" align=3D"center" valign=3D"top"><table width=3D"100%"=
+ style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><t=
+d style=3D"padding-left:0;padding-right:0;padding-top:12px;padding-bottom:=
+12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"19" class=3D"m=
+ceText" id=3D"dataBlockId-19" style=3D"display:inline-block;width:100%"><p=
+ style=3D"line-height: 125%;" class=3D"last-child"><strong><span style=3D"=
+color:#ffffff;"><span style=3D"font-size: 12px">EMAIL</span></span></stron=
+g><span style=3D"color:#ffffff;"><span style=3D"font-size: 12px">: </span>=
+</span><span style=3D"color:rgb(255=2C 255=2C 255);"><span style=3D"font-s=
+ize: 12px">reservations.kenya@marasa.africa</span></span><span style=3D"co=
+lor:#ffffff;"><span style=3D"font-size: 12px"> | </span></span><strong><sp=
+an style=3D"color:#ffffff;"><span style=3D"font-size: 12px">CALL:</span></=
+span></strong><span style=3D"color:#ffffff;"><span style=3D"font-size: 12p=
+x"> </span></span><span style=3D"color:rgb(255=2C 255=2C 255);"><span styl=
+e=3D"font-size: 12px">+254 730 841 841 =C2=A0</span></span><span style=3D"=
+color:#ffffff;"><span style=3D"font-size: 12px">| =C2=A0</span></span><str=
+ong><span style=3D"color:#ffffff;"><span style=3D"font-size: 12px">WEB:</s=
+pan></span></strong><span style=3D"color:#ffffff;"><span style=3D"font-siz=
+e: 12px"> www.marasa.net<br /><br /> </span></span><a href=3D"https://mara=
+sa.us5.list-manage.com/profile?u=3D83795d5686a46dd91a32a27a3&id=3D647b9ce5=
+44&e=3D674b644ea9&c=3D24ab2b6ae3" style=3D"color: #ffffff;"><span style=3D"f=
+ont-size: 12px">Manage Your Subscription</span></a><span style=3D"color:#f=
+fffff;"><span style=3D"font-size: 12px"> or </span></span><a href=3D"https=
+://marasa.us5.list-manage.com/unsubscribe?u=3D83795d5686a46dd91a32a27a3&id=
+=3D647b9ce544&t=3Db&e=3D674b644ea9&c=3D24ab2b6ae3" style=3D"color: #ffffff;"=
+><span style=3D"font-size: 12px">unsubscribe</span></a></p></div></td></tr=
+></tbody></table></td></tr><tr><td class=3D"mceLayoutContainer" align=3D"c=
+enter" valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D=
+"-2"><tbody><tr class=3D"mceRow"><td style=3D"background-position:center;b=
+ackground-repeat:no-repeat;background-size:cover;padding-top:0px;padding-b=
+ottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"24" width=3D"100%" role=3D"presentation"><tbody></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr><tr><td style=3D"background-color:#ffff=
+ff" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" data-block-id=3D"22"><tbody><tr><td=
+ class=3D"mceSpacerBlock" height=3D"38" valign=3D"top"></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr>=
+</table><![endif]--></td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+<img src=3D"https://marasa.us5.list-manage.com/track/open.php?u=3D83795d56=
+86a46dd91a32a27a3&id=3D24ab2b6ae3&e=3D674b644ea9" height=3D"1" width=3D"1=
+" alt=3D""></body></html>
+--_----------=_MCPart_1938260984--

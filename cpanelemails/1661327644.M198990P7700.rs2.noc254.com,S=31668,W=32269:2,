@@ -1,0 +1,601 @@
+Return-Path: <bounces+8442656-581f-kaleb=novustelltravel.com@em6495.kenya-airways.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id IHdJCxzZBWMUHgAA7QkJDw
+	(envelope-from <bounces+8442656-581f-kaleb=novustelltravel.com@em6495.kenya-airways.com>)
+	for <novuste1@rs2.noc254.com>; Wed, 24 Aug 2022 10:54:04 +0300
+Return-path: <bounces+8442656-581f-kaleb=novustelltravel.com@em6495.kenya-airways.com>
+Envelope-to: kaleb@novustelltravel.com
+Delivery-date: Wed, 24 Aug 2022 10:54:04 +0300
+Received: from xvfrhtdb.outbound-mail.sendgrid.net ([168.245.7.219]:31028)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <bounces+8442656-581f-kaleb=novustelltravel.com@em6495.kenya-airways.com>)
+	id 1oQlDC-000ALk-Ch
+	for kaleb@novustelltravel.com;
+	Wed, 24 Aug 2022 10:54:04 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kenya-airways.com;
+	h=from:subject:mime-version:content-type:reply-to:to:list-unsubscribe:
+	cc;
+	s=s1; bh=qMv6a0iE6tQk5oDfQ9Fe+KUEJiYCm35k3km/zK1NXX4=;
+	b=S3CxNmLgSRTDha9vLcO/W9FQgLaRCbQ7iv6UoTC7ZU6RxfMr4iV+EuoHtSPj1yk79VLU
+	oXTDLnQV0zTw5Xni7QC8lVV1+BPf4NLlsgPYSwntw+DFM6s23J/XWh8vKk35vU3wzPfAzV
+	a9UzleJkLN0gOSyAyPq3zTESfnKZ9uvHP6vmdhYDb3xPfLd5YGGFGsV53MYqaieEfXOJFS
+	tUQx/cAmw1gyomBc2s8UrBwXn/IUfvNR/PQI1h+qtIOOrwxOLo0mAOBKsxY2lW80LPs1kE
+	dA6W7estoeLgf7E9i+Ozx1zOtAkowYGq/QRWmlKQpNRXFCpk+A00OHxbnD8mYelQ==
+Received: by filterdrecv-54f555c7c7-4csbr with SMTP id filterdrecv-54f555c7c7-4csbr-1-6305D8F0-31
+        2022-08-24 07:53:20.730622143 +0000 UTC m=+125566.384110716
+Received: from 4ddaddda7a2b (unknown)
+	by geopod-ismtpd-6-2 (SG) with ESMTP
+	id 45IfLOxPQAW0eBJmk1X2Ew
+	for <KALEB@NOVUSTELLTRAVEL.COM>;
+	Wed, 24 Aug 2022 07:53:20.670 +0000 (UTC)
+Date: Wed, 24 Aug 2022 07:53:20 +0000 (UTC)
+From: Kenya Airways <upgrade@kenya-airways.com>
+Message-ID: <1539171398.2101453.1661327600535.JavaMail.root@4ddaddda7a2b>
+Subject: =?UTF-8?B?4pyIWW91cg==?= Flight to Nairobi is Soon! Get Upgraded
+ Today
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2101447_1064841756.1661327600341"
+emailType: PRE_TRAVEL_EMAIL
+requestId: GANmpLfMbAo9yrBGJTYAd03tQqcPpKhpxz
+commType: PRE_TRAVEL_EMAIL
+correlationId: 971ec209-7e70-45c3-8a1b-530072bb805a
+partnerId: 396
+Reply-To: kqupgrade@kenya-airways.com
+X-SG-EID: 
+ =?us-ascii?Q?XFsZbaoC=2F6vb8v3=2FRvqAz3afPcYuuFC4SneAF04MXPgmMMeLrmS5ZAmtfzqSyA?=
+ =?us-ascii?Q?77+fzXtfjRfykpBtfgGePQmugvoFkcdyN3ZtnUS?=
+ =?us-ascii?Q?TCMBybKT9RcyBLLR4HUoRyey7MNROYVujUWoZbs?=
+ =?us-ascii?Q?e=2FRIi68nUt6Xj1yx7GYbpia81Mzc5rk7jz5q1Gq?=
+ =?us-ascii?Q?74Z6idwWDyZ7hmX4fp8dcqOOIXJ1ofegyfiGnnS?=
+ =?us-ascii?Q?T6vlOocAEx9bIxFAmD9fqVLE7VkFW8ttoMfq=2FmN?=
+ =?us-ascii?Q?7YqciSmbi4TuH5Ctn8Cdg=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb=2FivMAHDb1hionz8xktwUyCHLF8kPDrR7Fjpz1pzVa?=
+ =?us-ascii?Q?Jh0k6+mqM8TuEvZa3bjGXSjmFKkAAowlJqhP0r2?=
+ =?us-ascii?Q?pu5c3VuPOntNlTNneICb+NVpxhHlUYlAA1h0gsc?=
+ =?us-ascii?Q?77jQpXZDj481kcjdRFJ2ZdA=2FK1TeZYlIA=2FkfrlQ?=
+ =?us-ascii?Q?6ksrdmAAlvhYKKztnBrRtwbFP7RZB7NgeJ2unp6?=
+ =?us-ascii?Q?KbI2W4yD=2F6FrqhL3Wxj2+hLWGpnKDiULPHIoZpX?=
+ =?us-ascii?Q?qmXKFVkkyxna6VKXiQof68J3xbxZBS6GPCytbSq?=
+ =?us-ascii?Q?+zRQrUV8U=2FxIrRbny+iymauXU4CtMD1qrJgeGie?=
+ =?us-ascii?Q?Kl8fEVLHrUprftgpB+6WeWJrPA+aeMuuJw15R3Y?=
+ =?us-ascii?Q?=2FJsqGuGgdlvSmwsgj4u2OFhQWfQlYDedA7HQZ9q?=
+ =?us-ascii?Q?NcHJgUsln3YTOpfgFErWZIjMMFBHmhpmZ6cPe7e?=
+ =?us-ascii?Q?oUsMIbed7Df1snDE7S2wB=2FviShlsPhoorQnTwr0?=
+ =?us-ascii?Q?O8T3hBDPMZvtyzJGtNgswuIqfCQ3jAbEBOhN7HV?=
+ =?us-ascii?Q?zR=2Fdg9ZBqDYxYpRnwFyXfoCe9X9blAsvRQvpLgo?=
+ =?us-ascii?Q?suYtzIdyUMUN+EFsdeJLVYR75Ht=2FJtBQRVBz3Md?=
+ =?us-ascii?Q?NJne1LZJ0OdlFlsguqIkHCTrs=2FduAlcxSb7GY4R?=
+ =?us-ascii?Q?Idi95j40xmSMbeq9uLNV6O41qp7jBxqq8PLVM50?=
+ =?us-ascii?Q?KwqarboRdyT7Ns6B8sjFP7WtGS+lXw2BN5pqWPA?=
+ =?us-ascii?Q?g+HFGaHISgPRg8iTZHV4K7NWvwVfm8yY1ifdsWM?=
+ =?us-ascii?Q?hpkq4PMvRk4EGj+V6ZrsOcbEChEkDAOi211YVIn?=
+ =?us-ascii?Q?NNPNYLcfL6WEiXU8CoXw8L8vs+0I8EuFjxDCnbk?=
+ =?us-ascii?Q?JyEx8c4LfeQCd+SAeozsDHeiUdwmUKYXdTsjA5Z?=
+ =?us-ascii?Q?5PfRArcWFZUrtHHhujUGYwP2UCBr13+78bvnT=2Fd?=
+ =?us-ascii?Q?BbHCkGyRTPJ6r2xCGi4=3D?=
+To: KALEB@NOVUSTELLTRAVEL.COM
+X-Entity-ID: yxVsfhF0eX+cpE4wVmfstQ==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40em6495=2Ekenya-airways=2Ecom=3Fsubject=3Dhttps=3A=2F=2Fg?=
+ =?us-ascii?Q?o=2Eplusgrade=2Ecom=2Fwf=2Funsubscribe*q*upn=3DJi?=
+ =?us-ascii?Q?ECkvEOdZQakw6q11ZULPjwPDoRGieJAUmFhyFGu?=
+ =?us-ascii?Q?C-2FoODdZtAmkxRBS8urxvsWtGtgK1UUKwRmfS6?=
+ =?us-ascii?Q?FZPHQE6kms5V6XwW1saogUr11fl4xGKBD-2B7Xb?=
+ =?us-ascii?Q?uMsw1zqSx6KBktCw-2BNbbpSFFqhJw7Lqc1EiSP?=
+ =?us-ascii?Q?LS0X9f7rcAYk0I7BAPpt0okZi4WTwpN-2BLYpTn?=
+ =?us-ascii?Q?dgLhHDwk-2BLzkNQbpUyLU6w0-2BpIBZSjul-2F?=
+ =?us-ascii?Q?ib1j9cQnX3QFLHxmXnZTtmrhXmdOlLA4EHzkgLa?=
+ =?us-ascii?Q?egM15TmmHMxUroM20-2FlAjZXLNHZcTo3b2q-2B?=
+ =?us-ascii?Q?flOca0wUlkum9Et7yNHWMJyDOQL6czFbz8yCgmU?=
+ =?us-ascii?Q?DscFHuAQi2FnaeDPMJNeMF5Ks90JQUXD1MGM7E7?=
+ =?us-ascii?Q?U0viwLYUZzn3n9JmVII-2BNkhAwiJotsPb3bizt?=
+ =?us-ascii?Q?PpKXikpriAGgJSgzf5tCH0M-2FtNSLXKrecWr9v?=
+ =?us-ascii?Q?y-2Bt3bGK3X4Af9IpEKPd3vw1Cbx9Lz3fTQp8Qa?=
+ =?us-ascii?Q?GPdr9keu23W3y6qeB72-2FhsrG9Ff8U4usI5URe?=
+ =?us-ascii?Q?RNjspWa3e0qSLQMVHIt1mgJI3pNmce52yxb6HC2?=
+ =?us-ascii?Q?mr201j4fC-2BKHYWS3glrVluDOTwgUad3-2FQl-?=
+ =?us-ascii?Q?2BGhugtnK2VNA0idVWCw7HJTbsa2Sr3ygw54A7z?=
+ =?us-ascii?Q?Us-2FUBFe8FCVnhGHWVx66N6eaf8XE4WRcNQ7VG?=
+ =?us-ascii?Q?bBBKt-2FH-2BCEekPzZmug7YQzGFoarDjMLL7oE?=
+ =?us-ascii?Q?BCC0yeELny5X6ewjIhF6hak8q-2Bb7VibpPb4hH?=
+ =?us-ascii?Q?jVjJ0BG22Njp8qGL47AzPKWgPnhbEdLmyHX2gA1?=
+ =?us-ascii?Q?PgD-2FIITq3GuDr-2BFC98Os6QMjmZP3YXpSfLt?=
+ =?us-ascii?Q?ag02H7HQ8VyraiIbAZDhgfrWkWJORhgUe3Cnxbi?=
+ =?us-ascii?Q?s1LCA4LIHuofdBiA6WYjKfpwKkSY3IKKpc6gKpw?=
+ =?us-ascii?Q?vY32eVh5qx5DM-2Bf6uurg1qwLo98XKtZaenVsO?=
+ =?us-ascii?Q?lORjwoOnI76BiyDXxvmsLUvw1g-2Bw2eniuXGtE?=
+ =?us-ascii?Q?yxCLAAQB2WKLSgJlGOws-2FDRLoYc8jT2Lopf5j?=
+ =?us-ascii?Q?WpsjyRPYmxV3uYPNChmsad9m-2BImBo6gxszc1Y?=
+ =?us-ascii?Q?-2BMN6shT7ICrCtPzkPy-2FIeAWc52VzGiUmOlb?=
+ =?us-ascii?Q?26ug7GYQAbFYa6Q3dS8gir54PJfhE7-2Bnyzfif?=
+ =?us-ascii?Q?tCUY1r-2FbosIZr9n0C1I2OI-2FpYuUFcmJly5a?= =?us-ascii?Q?eAS=3E?=
+X-Spam-Status: No, score=0.4
+X-Spam-Score: 4
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Get Upgraded - Kenya Airways Your upcoming trip is eligible
+    for an upgrade. Bid for an upgrade today! Having trouble viewing this email?
+    Click here to view in web browser Dear Guest, Your upcoming flight is eligible
+    for an upgrade to our Premier World Business Class. 
+ Content analysis details:   (0.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: kenya-airways.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.5 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+------=_Part_2101447_1064841756.1661327600341
+Content-Type: multipart/related; 
+	boundary="----=_Part_2101448_344335246.1661327600341"
+
+------=_Part_2101448_344335246.1661327600341
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" xml:lang=3D"en">
+<head>
+  <title>Get Upgraded - Kenya Airways</title>
+ =20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"/=
+>
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0"/>
+  <style>
+  * {
+    font-family: "Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-seri=
+f;
+  }
+  </style>
+</head>
+
+<body>
+<table style=3D"background-color: #fff;" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" id=3D"backgroundTable" bgcolor=3D"#fff"
+       width=3D"100%">
+  <tr>
+    <td valign=3D"top">
+      <table cellpadding=3D"25" cellspacing=3D"0" border=3D"0" align=3D"cen=
+ter">
+       =20
+          <tr>
+            <td style=3D"color: transparent; display: none; height: 0; max-=
+height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visib=
+ility: hidden; width: 0;">
+              Your upcoming trip is eligible for an upgrade. Bid for an upg=
+rade today!
+            </td>
+            <td style=3D"width:580px;font-size:12px; font-family: 'Lucida S=
+ans Unicode','Lucida Sans',Geneva,Arial,sans-serif;text-align: center;">
+              Having trouble viewing this email? <a href=3D"https://go.plus=
+grade.com/ls/click?upn=3DI70O2AzsJ6OaXJzI2oz3YExyhOJPJIgyrADLWt-2Fjh3RuWQqF=
+rmnPqzhG-2B6EbfeHiLadH0w8yXI9ae-2Fz8ru7zjvyDA9Uq1KTA0lpCYg8qa1BMveXaN9KCKD9=
+kBrhZXPyYuYTR82o6KajVVQkcuxQSZw-3D-3Du3j__bDj9XIlGj1Neq0SkjoytCfm913Ink9p-2=
+BFFgmb-2BZXGzeAErx7fyr-2BrRwv8uxGbUHDIYYjb-2BBb7StemLXFUnIOQIx7NzT8kpRy5qh0=
+c4fGNDsUnwNKkU0wqyBpJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHOhtlfKfAfNL2hOZMqb45wlB9=
+YW4YbjPF66ptUx81Ux01f1YnPnGw81z9XXF-2BCNSrYoZdbdItcKmYjBCSTFOPTyORzIKyu88A3=
+1Lu39BDZgPlJ0VbKoSog6RrV464lVDVa5cCrNNiDp4I8oN2io4TzavqPendtQiPCKLo3KmBwkiy=
+j3rLc42Dp0XPzILq-2FRhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9yZqg7vy2Gg-2FGFJ0atBCiu=
+KMtQ44W2s4LKuY2VXNiP6UF2I24SiEwECIRodS5ByWL4fE5Fl44MWX8TbNpTkv2ZCokHln4JhAR=
+Ee7ltleFyR1d-2FYjZlL2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJsixwjpAuD64lrjXRBbXJcxub=
+1NkFqgExHtSSvoavWCHG0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqmnXaWl8VTpzNkjm2K4-2FEkW=
+FB2OA7WWVSy5QFOAIVfGiz9vpCaCggHh4GU5WcrOrjicb65WMPzLqDGaKRZTDgXVkC7bc9-2BYN=
+GSukCBUnQUneCrk-2FDZmGGx39UM2CilATYqqcthck4PRmA6jYr-2Bm1KoZoz3OqyNcS-2FvAFe=
+3a2JxT477dBUwSIg7mRL9v6FGH0qAEaiXqD8aYIjLsRgz4066V7BUjHqsvSouVIKBjbd-2BNHwe=
+dAi93M-2FZWi118-2B2DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZAocPGGnh83VhNOO8hWpVGGd=
+PiLtyu29LMz9yWhK8uZkm9HeEMhBFCa0Fc7sTxhBOiL1m4csyZbd6DG9cmLVw1NOAMdakEnom9W=
+AcVBhgka-2FBhvEV64S2Z59-2B6ml8fCn0aZHj5VvkMvp17OJRIp2D1n2FYJwEm2evEh4hDGm4X=
+0g-2Fz-2F-2FWnMRSfkTftzvRySxIJbngPovSQK5-2BZqbuBY5Okm5LXDpEM9Tmy1UCP6g8Y-2B=
+W-2FJPCmzLfdULJY9L6D-2FLlIFdpNQ1zdBfyozc3L8R9uShdPJ5IV" target=3D"_blank" s=
+tyle=3D"color:#939393;"> Click here to view in web browser</a>
+            </td>
+          </tr>
+       =20
+        <tr>
+          <td style=3D"border:1px solid #f1f1f1;">
+
+            <table cellpadding=3D"10" align=3D"center" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"580">
+
+              <tr>
+                <td width=3D"290">
+                  <img src=3D"https://upgrade-cdn-prd.plusgrade.com/offer/p=
+id/602mlrQaKQ/email/KQ.png"/>
+                </td>
+                <td width=3D"290"
+                    style=3D"font-size:12px; font-family: 'Lucida Sans Unic=
+ode','Lucida Sans',Geneva,Arial,sans-serif;text-align: right; vertical-alig=
+n: bottom; padding-bottom: 15px;">
+                 =20
+                </td>
+              </tr>
+
+            </table>
+
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" width=3D"580"
+                   style=3D" border-top:none;" bgcolor=3D"#ffffff">
+              <tr>
+                <td width=3D"580">
+                  <a href=3D"https://go.plusgrade.com/ls/click?upn=3DI70O2A=
+zsJ6OaXJzI2oz3YFKUdJkWa-2FktFvEhZTK7n8NdG9LhdaGX590Fo8bw8JyDkXINQU3Nu8SswNi=
+SjUHRBEaDB7D195iHyshn9o4QX9IoJpe45Kb52HHrQB1cGArLTnVfwgqpzvYW2s0GLuNU9bIu1x=
+NZU93d6l-2BP7CpjUfQ-3DzzKj_bDj9XIlGj1Neq0SkjoytCfm913Ink9p-2BFFgmb-2BZXGzeA=
+Erx7fyr-2BrRwv8uxGbUHDIYYjb-2BBb7StemLXFUnIOQIx7NzT8kpRy5qh0c4fGNDsUnwNKkU0=
+wqyBpJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHOhtlfKfAfNL2hOZMqb45wlB9YW4YbjPF66ptUx8=
+1Ux01f1YnPnGw81z9XXF-2BCNSrYoZdbdItcKmYjBCSTFOPTyORzIKyu88A31Lu39BDZgPlJ0Vb=
+KoSog6RrV464lVDVa5cCrNNiDp4I8oN2io4TzavqPendtQiPCKLo3KmBwkiyj3rLc42Dp0XPzIL=
+q-2FRhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9yZqg7vy2Gg-2FGFJ0atBCiuKMtQ44W2s4LKuY2=
+VXNiP6UF2I24SiEwECIRodS5ByWL4fE5Fl44MWX8TbNpTkv2ZCokHln4JhAREe7ltleFyR1d-2F=
+YjZlL2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJsixwjpAuD64lrjXRBbXJcxub1NkFqgExHtSSvoa=
+vWCHG0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqmnXaWl8VTpzNkjm2K4-2FEkWFB2OA7WWVSy5QFO=
+AIVfGiz9vpCaCggHh4GU5WcrOrjicb65WMPzLqDGaKRZTDgXVkC7bc9-2BYNGSukCBUnQUneCrk=
+-2FDZmGGx39UM2CilATYqqcthck4PRmA6jYr-2Bm1KoZoz3OqyNcS-2FvAFe3a2JxT477dBUwSI=
+g7mRL9v6FGH0qAEaiXqD8aYIjLsRgz4066V7BUjHqsvSouVIKBjbd-2BNHwedAi93M-2FZWi118=
+-2B2DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZAocPGGnh83VhNOO8hWpVGGdPiLtyu29LMz9yWh=
+K8uZkm9HeEMhBFCa0Fc7sTxhBOiL1m4ct8Nc3yBEdKrOe1M6FgG2xNT27QwUz-2Bs38bVNs7cQP=
+zIDGZz3QVy-2BXSsJDLqzBbk0rg9axzvjWcPf3pb0F65Y8xXJ-2FaOUmLg6XvGN3DN6F-2FXnkA=
+iqBMHta58gItixSkjiXQVjDC18K9uVxc-2F7jW-2B5w8npFxuywippcFwx7DW15Dr6zyKGRWYJA=
+QK1IqEH1c0QbK72SJPodhYYTDqy9Dp0zK" style=3D"text-decoration: none;"
+                     target=3D"_blank">
+                    <img src=3D"https://upgrade-cdn-prd.plusgrade.com/offer=
+/pid/602mlrQaKQ/email/header.png" alt=3D"Kenya Airways Logo" style=3D"width=
+: 580px;"/>
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" width=3D"580" style=3D" padding-bottom: 20px;"
+                   bgcolor=3D"#ffffff">
+              <tr>
+                <td width=3D"580" colspan=3D"2"
+                    style=3D"font-family: 'Lucida Sans Unicode','Lucida San=
+s',Geneva,Arial,sans-serif; font-size:20px; color:#505050; padding-top: 20p=
+x; padding-left:20px; padding-right:20px; padding-bottom: 12px;">
+
+                  <div style=3D"font-family: 'Lucida Sans Unicode','Lucida =
+Sans',Geneva,Arial,sans-serif; font-size:14px;color:#505050;">
+                    Dear Guest,
+                  </div>
+
+                  <p style=3D"font-family:'Lucida Sans Unicode','Lucida San=
+s',Geneva,Arial,sans-serif; font-size:14px; color:#505050;">
+                    Your upcoming flight is eligible for an upgrade to our =
+Premier World Business Class.
+                  </p>
+
+                  <p style=3D"font-family:'Lucida Sans Unicode','Lucida San=
+s',Geneva,Arial,sans-serif; font-size:14px; color:#505050; ">
+                    Enjoy the most awarded business class in Africa capped =
+with warm, caring, authentic African hospitality
+                  </p>
+
+                </td>
+              </tr>
+              <tr>
+                <td colspan=3D"2">
+                    <table style=3D"width:100%;border-collapse: collapse; b=
+ackground: #baa478; border: 10px solid transparent; border-image:url(https:=
+//www.kenya-airways.com/static/image_n/brownprint.gif) 30 round; font-weigh=
+t: bold;" cellpadding=3D"0"
+                         cellspacing=3D"0" border=3D"0">
+                    <thead>
+                      <tr style=3D" font-family: 'Lucida Sans Unicode','Luc=
+ida Sans',Geneva,Arial,sans-serif; font-size:14px; color:#000; text-align:c=
+enter; ">
+                        <th style=3D"padding: 20px 0px 5px 20px; text-align=
+: left;">Flight</th>
+                        <th style=3D"padding: 20px 10px 5px 10px; text-alig=
+n: left;">Origin</th>
+                        <th style=3D"padding: 20px 10px 5px 10px; text-alig=
+n: left;">Destination</th>
+                        <th style=3D"padding: 20px 20px 5px 0px; text-align=
+: right;">Departure Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     =20
+                        <tr style=3D" font-family: 'Lucida Sans Unicode','L=
+ucida Sans',Geneva,Arial,sans-serif; font-size:14px; color:#000; text-align=
+:center; ">
+                          <td style=3D" padding: 5px 0px 5px 20px; text-ali=
+gn: left; text-transform: uppercase; ">KQ 612</td>
+                          <td style=3D" padding: 5px 10px 5px 10px; text-al=
+ign: left; text-transform: uppercase; ">Nairobi (NBO)</td>
+                          <td style=3D" padding: 5px 10px 5px 10px; text-al=
+ign: left; text-transform: uppercase; ">Mombasa (MBA)</td>
+                          <td style=3D" padding: 5px 20px 5px 0px; text-ali=
+gn: right; text-transform: uppercase; text-decoration: none;">22 Aug 2022</=
+td>
+                        </tr>
+                     =20
+                        <tr style=3D" font-family: 'Lucida Sans Unicode','L=
+ucida Sans',Geneva,Arial,sans-serif; font-size:14px; color:#000; text-align=
+:center; ">
+                          <td style=3D" padding: 5px 0px 5px 20px; text-ali=
+gn: left; text-transform: uppercase; ">KQ 609</td>
+                          <td style=3D" padding: 5px 10px 5px 10px; text-al=
+ign: left; text-transform: uppercase; ">Mombasa (MBA)</td>
+                          <td style=3D" padding: 5px 10px 5px 10px; text-al=
+ign: left; text-transform: uppercase; ">Nairobi (NBO)</td>
+                          <td style=3D" padding: 5px 20px 5px 0px; text-ali=
+gn: right; text-transform: uppercase; text-decoration: none;">26 Aug 2022</=
+td>
+                        </tr>
+                     =20
+                    </tbody>
+                    <tfoot>
+                      <tr style=3D"color: #000; font-family: 'Lucida Sans U=
+nicode','Lucida Sans',Geneva,Arial,sans-serif;">
+                        <td colspan=3D"2" style=3D"padding: 35px 0px 20px 2=
+0px; vertical-align: middle;">
+                          <div style=3D"font-size: 14px; color: #000;paddin=
+g-bottom:5px;">Your Airline Booking Reference:</div>
+
+                          <div style=3D"font-size: 34px;">
+                            TNUK6Y
+                          </div>
+
+                        </td>
+                        <td colspan=3D"2" style=3D"text-align: right; paddi=
+ng: 35px 20px 26px 0px;vertical-align: bottom;">
+                          <a href=3D"https://go.plusgrade.com/ls/click?upn=
+=3DI70O2AzsJ6OaXJzI2oz3YFKUdJkWa-2FktFvEhZTK7n8NdG9LhdaGX590Fo8bw8JyDkXINQU=
+3Nu8SswNiSjUHRBEaDB7D195iHyshn9o4QX9IoJpe45Kb52HHrQB1cGArLz8mrzmmnr9W3uW7C7=
+GXd1tKYYOMwdw3qJ5DZQs9HUZGhW4pmDma9K8HSGKSxSt6csZo1zIbscwKEakorqDbYwPyc0Xvr=
+gT7kNXXYQIdMl04-3DgSwJ_bDj9XIlGj1Neq0SkjoytCfm913Ink9p-2BFFgmb-2BZXGzeAErx7=
+fyr-2BrRwv8uxGbUHDIYYjb-2BBb7StemLXFUnIOQIx7NzT8kpRy5qh0c4fGNDsUnwNKkU0wqyB=
+pJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHOhtlfKfAfNL2hOZMqb45wlB9YW4YbjPF66ptUx81Ux0=
+1f1YnPnGw81z9XXF-2BCNSrYoZdbdItcKmYjBCSTFOPTyORzIKyu88A31Lu39BDZgPlJ0VbKoSo=
+g6RrV464lVDVa5cCrNNiDp4I8oN2io4TzavqPendtQiPCKLo3KmBwkiyj3rLc42Dp0XPzILq-2F=
+Rhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9yZqg7vy2Gg-2FGFJ0atBCiuKMtQ44W2s4LKuY2VXNi=
+P6UF2I24SiEwECIRodS5ByWL4fE5Fl44MWX8TbNpTkv2ZCokHln4JhAREe7ltleFyR1d-2FYjZl=
+L2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJsixwjpAuD64lrjXRBbXJcxub1NkFqgExHtSSvoavWCH=
+G0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqmnXaWl8VTpzNkjm2K4-2FEkWFB2OA7WWVSy5QFOAIVf=
+Giz9vpCaCggHh4GU5WcrOrjicb65WMPzLqDGaKRZTDgXVkC7bc9-2BYNGSukCBUnQUneCrk-2FD=
+ZmGGx39UM2CilATYqqcthck4PRmA6jYr-2Bm1KoZoz3OqyNcS-2FvAFe3a2JxT477dBUwSIg7mR=
+L9v6FGH0qAEaiXqD8aYIjLsRgz4066V7BUjHqsvSouVIKBjbd-2BNHwedAi93M-2FZWi118-2B2=
+DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZAocPGGnh83VhNOO8hWpVGGdPiLtyu29LMz9yWhK8uZ=
+km9HeEMhBFCa0Fc7sTxhBOiL1m4ctd06kcLlgnCEM3VLq69PjjBto8JdZahbY5-2Fk-2BMtcxMY=
+NMfrOsqKXZMC98lEE1-2FrncwJ4awGt-2FVIUUb2GHV0hnB-2BZr2op6G4KluSUp2ni4fM0caNO=
+PnUweaNUfvGG5a6i7s1yLHOK1RSnnODSoNxrafPkGy0Enwyzn-2F2dqMnV6kijQKi86fMy4d2IU=
+m80YYS1X6QWYL239eM7q8qfhQ0eT8"
+                             style=3D"font-family: 'Lucida Sans Unicode','L=
+ucida Sans',Geneva,Arial,sans-serif; border: 10px solid #478b2c; border-rad=
+ius: 2px; color: #ffffff; margin: 0px; text-transform: uppercase; text-deco=
+ration: none; background-color:#478b2c">
+                            Upgrade Now
+                          </a>
+
+                        </td>
+                      </tr>
+
+                    </tfoot>
+                  </table>
+
+                  <div style=3D"padding: 20px; font-family: 'Lucida Sans Un=
+icode','Lucida Sans',Geneva,Arial,sans-serif; font-size:14px; color:#505050=
+; margin-bottom: 0px; ">
+                    Take your chance and make us an offer for an upgrade to=
+ Business Class/Premier World at a price you decide. Click the button above=
+ to get started.<br><br> *You pay nothing until your offer is successful. W=
+e will inform you 48 hours before your departure <br> **Flat-bed is availab=
+le on selected flights
+                  </div>
+
+                </td>
+              </tr>
+            </table>
+
+
+
+            <table style=3D"padding:0;border-collapse: collapse;" cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0"
+                   align=3D"center" width=3D"580">
+              <tr>
+                <td style=3D"text-align: left;" width=3D"290">
+                  <img width=3D"290" style=3D"width: 290px;" src=3D"https:/=
+/upgrade-cdn-prd.plusgrade.com/offer/pid/602mlrQaKQ/email/left-image.jpg"/>
+
+                </td>
+                <td style=3D"text-align: right;" width=3D"290">
+                  <img width=3D"290" style=3D"width: 290px;" src=3D"https:/=
+/upgrade-cdn-prd.plusgrade.com/offer/pid/602mlrQaKQ/email/right-image.jpg"/=
+>
+
+                </td>
+              </tr>
+            </table>
+
+            <br>
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" width=3D"580"
+                   bgcolor=3D"#cccccc">
+              <tr>
+                <td colspan=3D"2" style=3D"padding:5px 50px 5px 20px;">
+                  <p style=3D"font-family: 'Lucida Sans Unicode','Lucida Sa=
+ns',Geneva,Arial,sans-serif; font-size:12px; color:#505050;">
+                    Click <a href=3D"https://go.plusgrade.com/ls/click?upn=
+=3DI70O2AzsJ6OaXJzI2oz3YOFSXPndUdD4b0noznzW9YvsClHRr3ftrrVuT61X0yEWZDCY-2FM=
+O6JgCSagFyHdg-2BPTfq78YXdTtiMVV9NwPnuUqCFSuKHwcrbCvDPwofF0oDs_v0_bDj9XIlGj1=
+Neq0SkjoytCfm913Ink9p-2BFFgmb-2BZXGzeAErx7fyr-2BrRwv8uxGbUHDIYYjb-2BBb7Stem=
+LXFUnIOQIx7NzT8kpRy5qh0c4fGNDsUnwNKkU0wqyBpJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHO=
+htlfKfAfNL2hOZMqb45wlB9YW4YbjPF66ptUx81Ux01f1YnPnGw81z9XXF-2BCNSrYoZdbdItcK=
+mYjBCSTFOPTyORzIKyu88A31Lu39BDZgPlJ0VbKoSog6RrV464lVDVa5cCrNNiDp4I8oN2io4Tz=
+avqPendtQiPCKLo3KmBwkiyj3rLc42Dp0XPzILq-2FRhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9=
+yZqg7vy2Gg-2FGFJ0atBCiuKMtQ44W2s4LKuY2VXNiP6UF2I24SiEwECIRodS5ByWL4fE5Fl44M=
+WX8TbNpTkv2ZCokHln4JhAREe7ltleFyR1d-2FYjZlL2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJs=
+ixwjpAuD64lrjXRBbXJcxub1NkFqgExHtSSvoavWCHG0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqm=
+nXaWl8VTpzNkjm2K4-2FEkWFB2OA7WWVSy5QFOAIVfGiz9vpCaCggHh4GU5WcrOrjicb65WMPzL=
+qDGaKRZTDgXVkC7bc9-2BYNGSukCBUnQUneCrk-2FDZmGGx39UM2CilATYqqcthck4PRmA6jYr-=
+2Bm1KoZoz3OqyNcS-2FvAFe3a2JxT477dBUwSIg7mRL9v6FGH0qAEaiXqD8aYIjLsRgz4066V7B=
+UjHqsvSouVIKBjbd-2BNHwedAi93M-2FZWi118-2B2DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZ=
+AocPGGnh83VhNOO8hWpVGGdPiLtyu29LMz9yWhK8uZkm9HeEMhBFCa0Fc7sTxhBOiL1m4cutYTP=
+EMA5m8tNPHP61ATmlEqohHop2yAy2rr0yWxXIxHJz12mkXHDID2IROQCSGD-2BL7gkxb4KrPky-=
+2BKl8t58ENzOPVwdXOklXXWR97ZRATZcY6vtnd0Nq2J7dCFYdW9Rcn06H3sh-2BVMoWH2OdeCv-=
+2FaDagiyNXqO5Of8hLyx3xiqDwILvxdbvv-2BhcChLpJhuyXDwnGJ6RGmJm90WKez7igP" targ=
+et=3D"_blank" style=3D"text-decoration: underline;color:#505050; font-weigh=
+t: bold;">here</a> to see the full Terms and Conditions. If you have furthe=
+r questions, please review our <a  target=3D"_blank" style=3D"text-decorati=
+on: underline;color:#505050; font-weight: bold;" href=3D"https://go.plusgra=
+de.com/ls/click?upn=3DI70O2AzsJ6OaXJzI2oz3YOFSXPndUdD4b0noznzW9YtdfadUvSMT3=
+oqqrwF-2F32-2FbYrMm73rAq8ldxXhiN6JJIw-3D-3DueEt_bDj9XIlGj1Neq0SkjoytCfm913I=
+nk9p-2BFFgmb-2BZXGzeAErx7fyr-2BrRwv8uxGbUHDIYYjb-2BBb7StemLXFUnIOQIx7NzT8kp=
+Ry5qh0c4fGNDsUnwNKkU0wqyBpJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHOhtlfKfAfNL2hOZMqb=
+45wlB9YW4YbjPF66ptUx81Ux01f1YnPnGw81z9XXF-2BCNSrYoZdbdItcKmYjBCSTFOPTyORzIK=
+yu88A31Lu39BDZgPlJ0VbKoSog6RrV464lVDVa5cCrNNiDp4I8oN2io4TzavqPendtQiPCKLo3K=
+mBwkiyj3rLc42Dp0XPzILq-2FRhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9yZqg7vy2Gg-2FGFJ0=
+atBCiuKMtQ44W2s4LKuY2VXNiP6UF2I24SiEwECIRodS5ByWL4fE5Fl44MWX8TbNpTkv2ZCokHl=
+n4JhAREe7ltleFyR1d-2FYjZlL2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJsixwjpAuD64lrjXRBb=
+XJcxub1NkFqgExHtSSvoavWCHG0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqmnXaWl8VTpzNkjm2K4=
+-2FEkWFB2OA7WWVSy5QFOAIVfGiz9vpCaCggHh4GU5WcrOrjicb65WMPzLqDGaKRZTDgXVkC7bc=
+9-2BYNGSukCBUnQUneCrk-2FDZmGGx39UM2CilATYqqcthck4PRmA6jYr-2Bm1KoZoz3OqyNcS-=
+2FvAFe3a2JxT477dBUwSIg7mRL9v6FGH0qAEaiXqD8aYIjLsRgz4066V7BUjHqsvSouVIKBjbd-=
+2BNHwedAi93M-2FZWi118-2B2DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZAocPGGnh83VhNOO8h=
+WpVGGdPiLtyu29LMz9yWhK8uZkm9HeEMhBFCa0Fc7sTxhBOiL1m4ctZk3xpnNqmsmO0hr2zPZWT=
+LtoWSEaNhpd0DFyJYgMbrZDx3-2BXSXnXuzWMWUPIFcXF1Fb77BVHt2VbHWD7y-2BeeO6OIcSc1=
+Uv0OheWvQ5Co7r0u6XlcjXB5U-2BaDbuRyiZvQrynTTlFelwf6fCsa1N5z72800GOi7Ca5SLuul=
+5eha1XLRhfZjBCOo4rd2UD4Pprx-2Fsn3En5OCC2sKgilq9gud">Frequently Asked Questi=
+ons page</a> <br><br>Airport North Road, Embakasi P.O. Box: 19002 =E2=80=93=
+ 00501 Nairobi , Kenya <br>=C2=A9 2022, <a  target=3D"_blank" style=3D"text=
+-decoration: underline;color:#505050; font-weight: bold;" href=3D"https://g=
+o.plusgrade.com/ls/click?upn=3D3imsxuMYxDUG4AW07ivQcKrXJOujWGPXxyxHhf-2BF3V=
+Eoj3LdYb-2BzRQ8Z5XtUsc37DMNA_bDj9XIlGj1Neq0SkjoytCfm913Ink9p-2BFFgmb-2BZXGz=
+eAErx7fyr-2BrRwv8uxGbUHDIYYjb-2BBb7StemLXFUnIOQIx7NzT8kpRy5qh0c4fGNDsUnwNKk=
+U0wqyBpJJ-2FPDuXdU1TN-2F770zTQXpwqbBeHOhtlfKfAfNL2hOZMqb45wlB9YW4YbjPF66ptU=
+x81Ux01f1YnPnGw81z9XXF-2BCNSrYoZdbdItcKmYjBCSTFOPTyORzIKyu88A31Lu39BDZgPlJ0=
+VbKoSog6RrV464lVDVa5cCrNNiDp4I8oN2io4TzavqPendtQiPCKLo3KmBwkiyj3rLc42Dp0XPz=
+ILq-2FRhj3v7eapkOpgaBDZ4l5nShO2M-2BFwx9yZqg7vy2Gg-2FGFJ0atBCiuKMtQ44W2s4LKu=
+Y2VXNiP6UF2I24SiEwECIRodS5ByWL4fE5Fl44MWX8TbNpTkv2ZCokHln4JhAREe7ltleFyR1d-=
+2FYjZlL2dqHR2zEMstKtsvWiCtsuWCmOyG5CkJsixwjpAuD64lrjXRBbXJcxub1NkFqgExHtSSv=
+oavWCHG0z4J5gWpyiK4-2FtNMIHAcMhFqj3zEqmnXaWl8VTpzNkjm2K4-2FEkWFB2OA7WWVSy5Q=
+FOAIVfGiz9vpCaCggHh4GU5WcrOrjicb65WMPzLqDGaKRZTDgXVkC7bc9-2BYNGSukCBUnQUneC=
+rk-2FDZmGGx39UM2CilATYqqcthck4PRmA6jYr-2Bm1KoZoz3OqyNcS-2FvAFe3a2JxT477dBUw=
+SIg7mRL9v6FGH0qAEaiXqD8aYIjLsRgz4066V7BUjHqsvSouVIKBjbd-2BNHwedAi93M-2FZWi1=
+18-2B2DxaffqbSH80wd4C6stgjB-2Bb6HLWeMzZAocPGGnh83VhNOO8hWpVGGdPiLtyu29LMz9y=
+WhK8uZkm9HeEMhBFCa0Fc7sTxhBOiL1m4csKPf13LxFuP6jim6tvwOmI-2Fy-2BamXxV1RYOBmY=
+gIcFciazuY-2F1-2FI4h5uBUrSRYWnsjmLgX4VnQo0zyfPWYSdZCqaEUBz0upf3qgq8lAU5RP4w=
+MbmN3ZIXjLG6CibXVDBUc8O1pMq3YXUflPa5ob-2BASVanzhDTvyxGu6mQXUF7cWilF0BDx6wsk=
+LN7kqqVNIeK2bAg4j9PMct0O3nyEg-2Fl-2FD">www.kenya-airways.com,</a> Inc. All =
+rights reserved.
+                  </p>
+                  <p style=3D"font-family: 'Lucida Sans Unicode','Lucida Sa=
+ns',Geneva,Arial,sans-serif; font-size:12px; color:#505050;"><span
+                          style=3D"font-weight:bold">&nbsp;</span><br/>
+                    &nbsp;
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <table cellpadding=3D"4" cellspacing=3D"0" border=3D"0" align=
+=3D"center" width=3D"580">
+              <tr>
+                <td>
+                  <p style=3D"font-family: 'Lucida Sans Unicode','Lucida Sa=
+ns',Geneva,Arial,sans-serif; font-size:8px; color:#505050;">
+                    TNUK6Y, GANmpLfMbAo9yrBGJTYAd03tQqcPpKhpxz
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+<div style=3D"display: none"><img alt=3D"" width=3D"1" height=3D"1" src=3D"=
+https://upgrade.plusgrade.com/offer/602mlrQaKQ/offer/tag/GANmpLfMbAo9yrBGJT=
+YAd03tQqcPpKhpxz"/></div>
+&nbsp;<br><br><table width=3D"600" align=3D"center" style=3D"text-align: ce=
+nter;"><tr><td><a href=3D"https://go.plusgrade.com/wf/unsubscribe?upn=3DJiE=
+CkvEOdZQakw6q11ZULPjwPDoRGieJAUmFhyFGuC-2FoODdZtAmkxRBS8urxvsWtGtgK1UUKwRmf=
+S6FZPHQE6kms5V6XwW1saogUr11fl4xGKBD-2B7XbuMsw1zqSx6KBktCw-2BNbbpSFFqhJw7Lqc=
+1EiSPLS0X9f7rcAYk0I7BAPpt0okZi4WTwpN-2BLYpTndgLhHDwk-2BLzkNQbpUyLU6w0-2BpIB=
+ZSjul-2Fib1j9cQnX3QFLHxmXnZTtmrhXmdOlLA4EHzkgLaegM15TmmHMxUroM20-2FlAjZXLNH=
+ZcTo3b2q-2BflOca0wUlkum9Et7yNHWMJyDOQL6czFbz8yCgmUDscFHuAQi2FnaeDPMJNeMF5Ks=
+90JQUXD1MGM7E7U0viwLYUZzn3n9JmVII-2BNkhAwiJotsPb3biztPpKXikpriAGgJSgzf5tCH0=
+M-2FtNSLXKrecWr9vy-2Bt3bGK3X4Af9IpEKPd3vw1Cbx9Lz3fTQp8QaGPdr9keu23W3y6qeB72=
+-2FhsrG9Ff8U4usI5UReRNjspWa3e0qSLQMVHIt1mgJI3pNmce52yxb6HC2mr201j4fC-2BKHYW=
+S3glrVluDOTwgUad3-2FQl-2BGhugtnK2VNA0idVWCw7HJTbsa2Sr3ygw54A7zUs-2FUBFe8FCV=
+nhGHWVx66N6eaf8XE4WRcNQ7VGbBBKt-2FH-2BCEekPzZmug7YQzGFoarDjMLL7oEBCC0yeELny=
+5X6ewjIhF6hak8q-2Bb7VibpPb4hHjVjJ0BG22Njp8qGL47AzPKWgPnhbEdLmyHX2gA1PgD-2FI=
+ITq3GuDr-2BFC98Os6QMjmZP3YXpSfLtag02H7HQ8VyraiIbAZDhgfrWkWJORhgUe3Cnxbis1LC=
+A4LIHuofdBiA6WYjKfpwKkSY3IKKpc6gKpwvY32eVh5qx5DM-2Bf6uurg1qwLo98XKtZaenVsOl=
+ORjwoOmPHLgeaj78LKeMoEkfmfkDgeRXi9oIAt05mn2s-2F1olTThQmRbNfqBYBAC5hyO-2FzjN=
+euu0mjT40A-2F3KNF1ECfocC-2FJhEPDBnUissNTo0ysX7-2BG-2F-2FhUjf2XM-2FvifnFt-2F=
+nrMAXYfPSA-2FtKkIXrPSHVTfQvmzy9Fii87otODF3tcflR61zZRoPuZYt1dYuUVU09uAr8fOyo=
+iEZjczEE7lIgxF5">Unsubscribe</a></td></tr></table><img src=3D"https://go.pl=
+usgrade.com/wf/open?upn=3DJiECkvEOdZQakw6q11ZULPjwPDoRGieJAUmFhyFGuC-2FoODd=
+ZtAmkxRBS8urxvsWtGtgK1UUKwRmfS6FZPHQE6kms5V6XwW1saogUr11fl4xGKBD-2B7XbuMsw1=
+zqSx6KBktCw-2BNbbpSFFqhJw7Lqc1EiSPLS0X9f7rcAYk0I7BAPpt0okZi4WTwpN-2BLYpTndg=
+LhHDwk-2BLzkNQbpUyLU6w0-2BpIBZSjul-2Fib1j9cQnX3QFLHxmXnZTtmrhXmdOlLA4EHzkgL=
+aegM15TmmHMxUroM20-2FlAjZXLNHZcTo3b2q-2BflOca0wUlkum9Et7yNHWMJyDOQL6czFbz8y=
+CgmUDscFHuAQi2FnaeDPMJNeMF5Ks90JQUXD1MGM7E7U0viwLYUZzn3n9JmVII-2BNkhAwiJots=
+Pb3biztPpKXikpriAGgJSgzf5tCH0M-2FtNSLXKrecWr9vy-2Bt3bGK3X4Af9IpEKPd3vw1Cbx9=
+Lz3fTQp8QaGPdr9keu23W3y6qeB72-2FhsrG9Ff8U4usI5UReRNjspWa3e0qSLQMVHIt1mgJI3p=
+Nmce52yxb6HC2mr201j4fC-2BKHYWS3glrVluDOTwgUad3-2FQl-2BGhugtnK2VNA0idVWCw7HJ=
+Tbsa2Sr3ygw54A7zUs-2FUBFe8FCVnhGHWVx66N6eaf8XE4WRcNQ7VGbBBKt-2FH-2BCEekPzZm=
+ug7YQzGFoarDjMLL7oEBCC0yeELny5X6ewjIhF6hak8q-2Bb7VibpPb4hHjVjJ0BG22Njp8qGL4=
+7AzPKWgPnhbEdLmyHX2gA1PgD-2FIITq3GuDr-2BFC98Os6QMjmZP3YXpSfLtag02H7HQ8Vyrai=
+IbAZDhgfrWkWJORhgUe3Cnxbis1LCA4LIHuofdBiA6WYjKfpwKkSY3IKKpc6gKpwvY32eVh5qx5=
+DM-2Bf6uurg1qwLo98XKtZaenVsOlORjwoOnk8zO8HGhWvMeb3iiGcEs-2BpmnBjocQBXPYAGSj=
+CH14a0jEviOvtAAT8tjCAptnMArB2Y0bCU-2FtlXJpITNq4Vz7iWnW-2BiwiGWqP0QCkOuOUekz=
+WMWOd8aQv-2Bfjjthdx2GByoP3650BEyEQB1gAjJTYm5-2BpaUhFeZYhga-2FTun9woDEWTn4OF=
+rlIR8TCkqnKh6RiqIaapu7zJImHOJUZK5yaz" alt=3D"" width=3D"1" height=3D"1" bor=
+der=3D"0" style=3D"height:1px !important;width:1px !important;border-width:=
+0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-righ=
+t:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bo=
+ttom:0 !important;padding-right:0 !important;padding-left:0 !important;"/><=
+/body>
+</html>
+
+------=_Part_2101448_344335246.1661327600341--
+
+------=_Part_2101447_1064841756.1661327600341--

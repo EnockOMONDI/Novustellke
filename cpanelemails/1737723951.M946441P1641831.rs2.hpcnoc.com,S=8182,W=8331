@@ -1,0 +1,149 @@
+Return-Path: <mondu.persea@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id KNPgNy+Qk2dnDRkAObGTvA
+	(envelope-from <mondu.persea@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 24 Jan 2025 16:05:51 +0300
+Return-path: <mondu.persea@gmail.com>
+Envelope-to: faith@novustelltravel.com
+Delivery-date: Fri, 24 Jan 2025 16:05:51 +0300
+Received: from mail-yb1-f175.google.com ([209.85.219.175]:42467)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98)
+	(envelope-from <mondu.persea@gmail.com>)
+	id 1tbJNi-00000006t5I-2vIJ;
+	Fri, 24 Jan 2025 16:05:51 +0300
+Received: by mail-yb1-f175.google.com with SMTP id 3f1490d57ef6-e39779a268bso3184546276.1;
+        Fri, 24 Jan 2025 05:05:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1737723889; x=1738328689; darn=novustelltravel.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=tqIac1a2hOluHzvjZgzS8S+IqevxDRPsP4uBmSgtuts=;
+        b=jhbtnhGrNIOZLt3/kaG3OBqkNYzRpiskg5MjhU9BL1Nk6AANj1b8f9JN5AtO9k7iBc
+         VmfJzMWAJrGcFE59M8/SLzcEQUVUCvvArS9gOKQelagc70RXOx4c/WcAb49uskQqKzXH
+         zw/e7dGsg+wsvSEFjsEd1K+NCQph2F0MJxwRey/cgOKZsxz0IliOykFFly16wJYMt8s2
+         yyS16WZKvOX/vQP2pApLBSUj+mMRWYxhQViEZPCMqD7CRk9VOOfVHyro7EwhISWrRGGy
+         /9Ul2ZcBa1x1I+aVhadqfjATFKO3QTS30Ex6sbPfzAw7P8fXoyzlI9hdbem55nJ5dfhs
+         cf8Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1737723889; x=1738328689;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=tqIac1a2hOluHzvjZgzS8S+IqevxDRPsP4uBmSgtuts=;
+        b=KYNtAOYCYkHxoSfNu/33pAoKRk65eDjOVUWUxagv2gz9AhRHrOJ0G0ac5KVQwceUYD
+         repgLMP+pZ7Rg+6RgSdBfkDQOqwqudACvR0oLES3JZO85A9ccH2jxC1temU6rjYsbWXB
+         YYzhNicOCgvETt2uPpgx22SNaqRCWcuAdjJsgPzmY7EJeal+IISGKnfK2bXn5ZTMmJuc
+         69Zm/I05ZCiVQipahnDOEUaCDZLW87cYuzsJe/2uSnFLfNnjlNr0R5VQtOK242fUQJ6V
+         bMp2vmKyzlM2AKsGfMVNSB4EZ9GLrTFpgDcsThFBBsQJpoX8hxUsbVKoTNfmQITfODGE
+         HnnA==
+X-Forwarded-Encrypted: i=1; AJvYcCUmpeCBeDZE7kghAwFACUsbHkZpXImylmAbcT7Oy8NaLF/ZfamhmUrmAMWmElL25ZoORx5ukhsu@novustelltravel.com, AJvYcCWMeSDEO0BRIkWUamyTg+P6PNMht4tLrw1PodlCiCnhIBCPouqa7j/F+2WUd+al3O30T3Wh0g==@novustelltravel.com
+X-Gm-Message-State: AOJu0YwTGi0SBrJhMceEL+uZKpEFiIcgygLnTIEQJkrDByBT/It3tMeR
+	xVKM4AL35fh0PNPyxWtvSYWsf9KTX/cPI1Rdr+28rGVQJtcxw4EGM8nXci8qemWquC9c1hRktpF
+	RNx9gevRGvq+i1WhAuHKOYxijxDM=
+X-Gm-Gg: ASbGncvVtmvdmA/FcR6stdpGE9pYPOhZPRDu56gyGBYMtzFkexRcpVpdVSCym0SIBYg
+	bts+qemPvJFeQN76N0nsXJtqpC0oF2gYF17Fw78P6zeGiVLBGxAhC8rsJRNVR
+X-Google-Smtp-Source: AGHT+IHwW3wn75AeVNS9j7KrF172GzoY5XE/JwrnRan0/rn45YDuBkiq4WIB49ms0pOAcLm1CglxQXZFjNHJhYBTEMI=
+X-Received: by 2002:a05:6902:340b:b0:e57:3e83:517e with SMTP id
+ 3f1490d57ef6-e583c023c5cmr2418859276.5.1737723889241; Fri, 24 Jan 2025
+ 05:04:49 -0800 (PST)
+MIME-Version: 1.0
+From: Martha Ondu <mondu.persea@gmail.com>
+Date: Fri, 24 Jan 2025 16:04:37 +0300
+X-Gm-Features: AWEUYZka4PZHRekvO_i5FbcGtEA_PJA_jpXs7ozw62tfy98A5Y8VHfsqtgcCI9I
+Message-ID: <CAOJ9to5y8grphStdcLd++TrNnh1pDGR8w1beExHGDFyY2h-TCA@mail.gmail.com>
+Subject: Flight Booking
+To: Brian Benadict <brian.persea@gmail.com>, 
+	"Quinta | Novustell travel" <quinta@novustelltravel.com>, 
+	"cc: Faith Novustell" <faith@novustelltravel.com>, Aaron Ndegwa <aaron@perseaoils.com>
+Content-Type: multipart/alternative; boundary="00000000000022d44a062c735f56"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Quinta, Kindly book a One Way flight for Mr.Aaron Ndegwa
+    as per below details: *Destination:Mbeya* 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [mondu.persea(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.219.175 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.175 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.219.175 listed in sa-trusted.bondedsender.org]
+X-Spam-Flag: NO
+
+--00000000000022d44a062c735f56
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Quinta,
+
+Kindly book a One Way flight for Mr.Aaron Ndegwa as per below details:
+
+*Destination:Mbeya*
+
+*Travel Date:30th Night or 31st Morning depending on the flight
+availability*
+
+Kind regards,
+
+
+*Martha Ondu*
+*Human Resource Officer*
+*Persea Oils & Orchards L.t.d*
+
+*E:mondu.persea@gmail.com <mondu.persea@gmail.com>*
+*  M:+254759101690*
+
+--00000000000022d44a062c735f56
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><font face=3D"tahoma, sans-serif">Dear Qu=
+inta,</font><div><font face=3D"tahoma, sans-serif"><br></font></div><div><f=
+ont face=3D"tahoma, sans-serif">Kindly book a One Way flight for Mr.Aaron N=
+degwa as per below details:</font></div><div><font face=3D"tahoma, sans-ser=
+if"><br></font></div><div><b><font face=3D"tahoma, sans-serif">Destination:=
+Mbeya</font></b></div><div><b><font face=3D"tahoma, sans-serif"><br></font>=
+</b></div><div><b><font face=3D"tahoma, sans-serif">Travel Date:30th Night =
+or 31st Morning depending on the flight availability</font></b></div><div><=
+font face=3D"tahoma, sans-serif"><br></font></div><div><font face=3D"tahoma=
+, sans-serif">Kind regards,</font></div><div><br></div></div><div><br clear=
+=3D"all"></div><div><div dir=3D"ltr" class=3D"gmail_signature" data-smartma=
+il=3D"gmail_signature"><div dir=3D"ltr"><b><i style=3D"background-color:rgb=
+(255,255,255)"><font color=3D"#274e13">Martha Ondu</font></i></b><div><b><i=
+ style=3D"background-color:rgb(255,255,255)"><font color=3D"#274e13">Human =
+Resource Officer</font></i></b></div><div><b><i style=3D"background-color:r=
+gb(255,255,255)"><font color=3D"#274e13">Persea Oils &amp; Orchards L.t.d</=
+font></i></b></div><div><i><font color=3D"#38761d"><b>E:</b></font><a href=
+=3D"mailto:mondu.persea@gmail.com" target=3D"_blank"><font color=3D"#ff9900=
+"><b>mondu.persea@gmail.com</b></font></a><br></i><div><div><i><b>=C2=A0 <f=
+ont color=3D"#38761d">M:</font></b><font color=3D"#ff9900"><b>+254759101690=
+</b></font></i></div></div></div></div></div></div></div>
+
+--00000000000022d44a062c735f56--

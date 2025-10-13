@@ -1,0 +1,265 @@
+Return-Path: <novustellafrica21@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id yIWmJKJTi2i90B8AObGTvA
+	(envelope-from <novustellafrica21@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 31 Jul 2025 14:29:38 +0300
+Return-path: <novustellafrica21@gmail.com>
+Envelope-to: wycliff@novustelltravel.com
+Delivery-date: Thu, 31 Jul 2025 14:29:38 +0300
+Received: from mail-wm1-f52.google.com ([209.85.128.52]:52377)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <novustellafrica21@gmail.com>)
+	id 1uhRTd-00000008qjB-3AhQ
+	for wycliff@novustelltravel.com;
+	Thu, 31 Jul 2025 14:29:38 +0300
+Received: by mail-wm1-f52.google.com with SMTP id 5b1f17b1804b1-4561514c7f0so3020855e9.0
+        for <wycliff@novustelltravel.com>; Thu, 31 Jul 2025 04:29:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1753961335; x=1754566135; darn=novustelltravel.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ebH49/yYwx22d7czRNdQloj46f9E5f5YSlmNoTfJwO8=;
+        b=jTgvqr8bNQ6APEkkOsvs9C0OUIVfyhWlKUn8Earj/MtyApWQJTu2xa6zQbAAnN/+h8
+         99PyzncHas7zuMkML3jGLNFxKGN7S/MaIbT0JQy1xilOd9fg+TVK2YwfIOd4oOWgoPgu
+         gEaKKmLIgmUGXmA5gVsHqBU1VGWfK9On5bt+6xCLCLVLTxqyhWYRzvkYwrh66/qGmeFa
+         L3Q8n990YBEpsACC2yU27Z92Nk5es1NZleS+wYWsbB15sFK6afr3khFs5Sl0WQkHkGf1
+         HokD0ijYgm50w0TayJToO5Qx0AJ/rw+0UoFgi+5XFuffl8OQCGI0grBBqYP7cR+nO0lU
+         F1yw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1753961335; x=1754566135;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=ebH49/yYwx22d7czRNdQloj46f9E5f5YSlmNoTfJwO8=;
+        b=CWGPYQ7DnFEkTGaiyfAsQBdw1dAJqNbsyZ99mDRBfsI5Onev17WZKjDFH7/zjwBY6B
+         I705sOjknkEHtx9bM+67bxctLOUae4q9V3JbX2BZWxn+S7XX9VAsFHTQHIyyAkY4FCPy
+         7HTqyj3ILhZCf4iET6RYNfPSrXviwLIP8yjWzLUN4AQOPr+eAWou4DrZF5pXLYDT2WAq
+         z4HklprOVD7nHlK22+IZWe9EURyYUbXmcne+oKr3xpM39V9hGVSmnfxPqcNjJKN7kccJ
+         btgTUGR0fy7KqaJAlf/G0qd0xkRhgNvAHjX0TD0qPB/zfYqTxx3dAf8mH07rHyqTZKrI
+         EH4g==
+X-Gm-Message-State: AOJu0YwDYxj3G2ok0NGLQYRsyjhJnCN3hqqjaHxIdsoKowdPq3EE7dDr
+	7ey6RNyXmhje2goAMy3WSKrvgmou/o9zIJFc5gq5qED4CU+aZmzp2cqekOea8EeOuIYNjdSIynT
+	fH2boKiEXsr4Y9JUPK1+pZZDnG6G4fMIh6A==
+X-Gm-Gg: ASbGncuZtv2uK/QEDYAEhBwrC4y16FNYwbUaqxMzWSPLXX1Zr0iTdav3di9Mbg2Kaqq
+	J99tIoHMe7QBgqZ+u9jiQLKeF1nq/gSwpHfrGe8+LoQqtSeMOShdhX4poStm3+dFzTaRrpaRGsM
+	3c+7ad35kwYb+HrNncug9I228QqGexMfWoQcTQqnMp2Rpv9/A9aoKyXuXsYhkyBJchUaLHiitb1
+	arVg48oBA==
+X-Google-Smtp-Source: AGHT+IF7FPTz/dqcq7S4f55nEZrO6TJ5kYlbDI6SlIqTg4GE4uhJLZN0wPGA2UlfJRxByf2nUvwKQrMN0MF2wiokBJk=
+X-Received: by 2002:a05:600c:3e06:b0:43d:3df:42d8 with SMTP id
+ 5b1f17b1804b1-45892b90f08mr61005095e9.6.1753961334343; Thu, 31 Jul 2025
+ 04:28:54 -0700 (PDT)
+MIME-Version: 1.0
+References: <OFE659A65B.36AA321A-ON43258CD7.005DB691-43258CD7.00618F92@kra.go.ke>
+In-Reply-To: <OFE659A65B.36AA321A-ON43258CD7.005DB691-43258CD7.00618F92@kra.go.ke>
+From: novustell Africa21 <novustellafrica21@gmail.com>
+Date: Thu, 31 Jul 2025 09:22:05 +0300
+X-Gm-Features: Ac12FXzSNNcfqwX5AwLbj9rsbwOHHQ4kOt8sOqWmIodrBHUsA1FPlWZsfSrCzB0
+Message-ID: <CAP-V7q8y-VFr1T9B8-tqcDUgG_AwkvQhQkhpkkQ9JWKjbTbQQA@mail.gmail.com>
+Subject: Fwd: SIMPLIFIED PAYE RETURN SENSITISATION
+To: wycliff@novustelltravel.com
+Content-Type: multipart/alternative; boundary="000000000000488e0d063b37f264"
+X-Spam-Status: No, score=1.6
+X-Spam-Score: 16
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Forwarded message --------- From: Date: Wed, 30 Jul 2025,
+    20:44 Subject: SIMPLIFIED PAYE RETURN SENSITISATION To: *Dear Esteemed Employer*,
+    Kenya Revenue Authority (KRA) has simplified the PAYE return filing and payment
+    process, as part of its 9th Corporate Plan's strategic objective to streamline
+    tax processes and align with best practic [...] 
+ Content analysis details:   (1.6 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: zoom.us]
+                             [URI: kra.go.ke]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.52 listed in bl.score.senderscore.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [novustellafrica21(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [novustellafrica21(at)gmail.com]
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  1.1 DATE_IN_PAST_03_06     Date: is 3 to 6 hours before Received: date
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.52 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.128.52 listed in sa-trusted.bondedsender.org]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+--000000000000488e0d063b37f264
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ---------
+From: <KRASeminar@kra.go.ke>
+Date: Wed, 30 Jul 2025, 20:44
+Subject: SIMPLIFIED PAYE RETURN SENSITISATION
+To: <novustellafrica21@gmail.com>
+
+
+*Dear Esteemed Employer*,
+
+Kenya Revenue Authority (KRA) has simplified the PAYE return filing and
+payment process, as part of its 9th Corporate Plan's strategic objective to
+streamline tax processes and align with best practices.
+
+KRA wishes to inform all employers that the *July 2025* PAYE return should
+be filed using the *simplified PAYE return* as guided in the public notice
+sent in June 2025. The return is available in the *taxpayer portal* as well
+as the KRA Website under 'Publications'.
+
+To improve your knowledge and understanding of the process, the key
+changes, and how to manage the transition, you are invited to attend any of
+the following sensitisations.
+
+To take part in the sensitisations, please register using the following
+links:
+
+*Monday August 4, 2025 at 9:00am - 11:00am*
+https://zoom.us/webinar/register/WN_mbpLfodvT6WlV8w8uS1gKA
+
+
+*Tuesday August 5, 2025 at 9:00am - 11:00am*
+https://zoom.us/webinar/register/WN_v_fOX2JlRV-TQVnRkM2kDw
+
+
+*Additionally, for your further clarification* *please see the links below
+for the:*
+
+*Simplified PAYE Training Recordings:*
+*https://www.youtube.com/watch?v=1LN-ev3oMik&t=4957s*
+<https://www.youtube.com/watch?v=1LN-ev3oMik&t=4957s>
+*https://www.youtube.com/watch?v=MOUWXsrwga0&t=5071s*
+<https://www.youtube.com/watch?v=MOUWXsrwga0&t=5071s>
+
+*Public Notice:*
+*https://www.kra.go.ke/news-center/public-notices/2230-kra-simplifies-the-paye-return-filing-process*
+<https://www.kra.go.ke/news-center/public-notices/2230-kra-simplifies-the-paye-return-filing-process>
+
+*Simplified PAYE Return (P10):*
+*https://www.kra.go.ke/publications* <https://www.kra.go.ke/publications>
+
+
+KRA appreciates the feedback and collaboration from taxpayers and will
+continue to execute industry specific solutions that support tax compliance.
+
+Reply to *taxpayereducation@kra.go.ke* <kraseminar@kra.go.ke>
+
+Kind regards,
+
+Taxpayer Experience,
+Taxpayer Education Forums,
+Email: *taxpayereducation@kra.go.ke* <kraseminar@kra.go.ke>
+
+https://www.kra.go.ke/images/KRA-Mail-Disclaimer.pdf
+https://www.kra.go.ke/helping-tax-payers/faqs/tax-amnesty-on-interest-and-penalties-for-periods-up-to-31st-december-2023
+
+--000000000000488e0d063b37f264
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote gmail_quote_container=
+"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded message ------=
+---<br>From: <span dir=3D"auto">&lt;<a href=3D"mailto:KRASeminar@kra.go.ke"=
+>KRASeminar@kra.go.ke</a>&gt;</span><br>Date: Wed, 30 Jul 2025, 20:44<br>Su=
+bject: SIMPLIFIED PAYE RETURN SENSITISATION<br>To:  &lt;<a href=3D"mailto:n=
+ovustellafrica21@gmail.com">novustellafrica21@gmail.com</a>&gt;<br></div><b=
+r><br><div><p><font size=3D"3" face=3D"Georgia"><b>Dear Esteemed Employer</=
+b></font><font size=3D"3" face=3D"Georgia">,</font><br><br><font size=3D"3"=
+ face=3D"Georgia">Kenya Revenue Authority (KRA) has simplified the PAYE ret=
+urn filing and payment process, as part of its 9</font><font size=3D"3" fac=
+e=3D"Georgia"><sup>th</sup></font><font size=3D"3" face=3D"Georgia">=C2=A0C=
+orporate Plan&#39;s strategic objective to streamline tax processes and ali=
+gn with best practices.</font><br><br><font size=3D"3" face=3D"Georgia">KRA=
+ wishes to inform all employers that the </font><font size=3D"3" face=3D"Ge=
+orgia"><b>July 2025</b></font><font size=3D"3" face=3D"Georgia">=C2=A0PAYE =
+return should be filed using the </font><font size=3D"3" face=3D"Georgia"><=
+b>simplified PAYE return</b></font><font size=3D"3" face=3D"Georgia">=C2=A0=
+as guided in the public notice sent in June 2025. The return is available i=
+n the </font><font size=3D"3" face=3D"Georgia"><b>taxpayer portal</b></font=
+><font size=3D"3" face=3D"Georgia">=C2=A0as well as the KRA Website under &=
+#39;Publications&#39;.</font><br><br><font size=3D"3" face=3D"Georgia">To i=
+mprove your knowledge and understanding of the process, the key changes, an=
+d how to manage the transition, you are invited to attend any of the follow=
+ing sensitisations.<br><br>To take part in the sensitisations, please regis=
+ter using the following links:<br><br></font><font size=3D"3" face=3D"Georg=
+ia"><b><u>Monday August 4, 2025 at 9:00am - 11:00am</u></b></font><font siz=
+e=3D"3" face=3D"Georgia"><b>=C2=A0</b></font><font size=3D"3" face=3D"Georg=
+ia"><br></font><a href=3D"https://zoom.us/webinar/register/WN_mbpLfodvT6WlV=
+8w8uS1gKA" target=3D"_blank" rel=3D"noreferrer"><font size=3D"3" face=3D"Ge=
+orgia">https://zoom.us/webinar/register/WN_mbpLfodvT6WlV8w8uS1gKA</font></a=
+><font size=3D"3" face=3D"Georgia"><br><br><br></font><font size=3D"3" face=
+=3D"Georgia"><b><u>Tuesday August 5, 2025 at 9:00am - 11:00am</u></b></font=
+><br><a href=3D"https://zoom.us/webinar/register/WN_v_fOX2JlRV-TQVnRkM2kDw"=
+ target=3D"_blank" rel=3D"noreferrer"><font size=3D"3" face=3D"Georgia">htt=
+ps://zoom.us/webinar/register/WN_v_fOX2JlRV-TQVnRkM2kDw</font></a><br><br><=
+br><font size=3D"3" face=3D"Georgia"><b>Additionally, for your further clar=
+ification</b></font><font size=3D"3" face=3D"Georgia">=C2=A0</font><font si=
+ze=3D"3" face=3D"Georgia"><b>please see the links below for the:</b></font>=
+<br><br><font size=3D"3" face=3D"Georgia"><b>Simplified PAYE Training Recor=
+dings:</b></font><br><a href=3D"https://www.youtube.com/watch?v=3D1LN-ev3oM=
+ik&amp;t=3D4957s" target=3D"_blank" rel=3D"noreferrer"><font size=3D"3" col=
+or=3D"#0000FF" face=3D"Georgia"><u>https://www.youtube.com/watch?v=3D1LN-ev=
+3oMik&amp;t=3D4957s</u></font></a><br><a href=3D"https://www.youtube.com/wa=
+tch?v=3DMOUWXsrwga0&amp;t=3D5071s" target=3D"_blank" rel=3D"noreferrer"><fo=
+nt size=3D"3" color=3D"#0000FF" face=3D"Georgia"><u>https://www.youtube.com=
+/watch?v=3DMOUWXsrwga0&amp;t=3D5071s</u></font></a><br><br><font size=3D"3"=
+ face=3D"Georgia"><b>Public Notice:</b></font><br><a href=3D"https://www.kr=
+a.go.ke/news-center/public-notices/2230-kra-simplifies-the-paye-return-fili=
+ng-process" target=3D"_blank" rel=3D"noreferrer"><font size=3D"3" color=3D"=
+#0000FF" face=3D"Georgia"><u>https://www.kra.go.ke/news-center/public-notic=
+es/2230-kra-simplifies-the-paye-return-filing-process</u></font></a><br><br=
+><font size=3D"3" face=3D"Georgia"><b>Simplified PAYE Return (P10):</b></fo=
+nt><br><a href=3D"https://www.kra.go.ke/publications" target=3D"_blank" rel=
+=3D"noreferrer"><font size=3D"3" color=3D"#0000FF" face=3D"Georgia"><u>http=
+s://www.kra.go.ke/publications</u></font></a><br><br><br><font size=3D"3" f=
+ace=3D"Georgia">KRA appreciates the feedback and collaboration from taxpaye=
+rs and will continue to execute industry specific solutions that support ta=
+x compliance.</font><br><br><font size=3D"3" face=3D"Georgia">Reply to </fo=
+nt><a href=3D"mailto:kraseminar@kra.go.ke" target=3D"_blank" rel=3D"norefer=
+rer"><font size=3D"3" color=3D"#0000FF" face=3D"Georgia"><u>taxpayereducati=
+on@kra.go.ke</u></font></a><p><p><font size=3D"3" face=3D"Georgia">Kind reg=
+ards,<br><br>Taxpayer Experience,<br>Taxpayer Education Forums,<br>Email: <=
+/font><a href=3D"mailto:kraseminar@kra.go.ke" target=3D"_blank" rel=3D"nore=
+ferrer"><font size=3D"3" color=3D"#0000FF" face=3D"Georgia"><u>taxpayereduc=
+ation@kra.go.ke</u></font></a><font face=3D"sans-serif"><br><img src=3D"htt=
+ps://www.kra.go.ke/images/trust.gif" width=3D"531" height=3D"70"><br><a hre=
+f=3D"https://www.kra.go.ke/images/KRA-Mail-Disclaimer.pdf" target=3D"_blank=
+" rel=3D"noreferrer">https://www.kra.go.ke/images/KRA-Mail-Disclaimer.pdf</=
+a><br><a href=3D"https://www.kra.go.ke/helping-tax-payers/faqs/tax-amnesty-=
+on-interest-and-penalties-for-periods-up-to-31st-december-2023" target=3D"_=
+blank" rel=3D"noreferrer">https://www.kra.go.ke/helping-tax-payers/faqs/tax=
+-amnesty-on-interest-and-penalties-for-periods-up-to-31st-december-2023</a>=
+</font>
+</p></p></p></div>
+</div>
+
+--000000000000488e0d063b37f264--

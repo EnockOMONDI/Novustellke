@@ -130,3 +130,38 @@ def site_settings(request):
         'SITE_URL': getattr(settings, 'SITE_URL', 'http://localhost:8000'),
         'DEBUG': getattr(settings, 'DEBUG', False),
     }
+
+
+def analytics_settings(request):
+    """
+    Context processor to provide Google Analytics settings in all templates.
+
+    Makes analytics configuration available for conditional loading based on:
+    - Environment (production vs development)
+    - User authentication status (exclude admin users if configured)
+    - Analytics enablement settings
+    """
+
+    # Get analytics settings from Django settings
+    google_analytics_id = getattr(settings, 'GOOGLE_ANALYTICS_ID', '')
+    google_tag_manager_id = getattr(settings, 'GOOGLE_TAG_MANAGER_ID', '')
+    enable_analytics = getattr(settings, 'ENABLE_ANALYTICS', True)
+    track_admin = getattr(settings, 'ANALYTICS_TRACK_ADMIN', False)
+    debug_mode = getattr(settings, 'DEBUG', False)
+
+    # Determine if analytics should be loaded for this request
+    should_load_analytics = (
+        enable_analytics and  # Analytics enabled in settings
+        google_analytics_id and  # GA ID is configured
+        not debug_mode and  # Not in debug/development mode
+        (track_admin or not (request.user.is_authenticated and request.user.is_staff))  # Respect admin tracking setting
+    )
+
+    return {
+        'GOOGLE_ANALYTICS_ID': google_analytics_id,
+        'GOOGLE_TAG_MANAGER_ID': google_tag_manager_id,
+        'ENABLE_ANALYTICS': enable_analytics,
+        'ANALYTICS_TRACK_ADMIN': track_admin,
+        'SHOULD_LOAD_ANALYTICS': should_load_analytics,
+        'IS_PRODUCTION': not debug_mode,
+    }

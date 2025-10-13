@@ -1,0 +1,280 @@
+Return-Path: <servicehub@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id uKB3Kg1EqmiIbhAAObGTvA
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Sun, 24 Aug 2025 01:43:25 +0300
+Return-path: <servicehub@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Sun, 24 Aug 2025 01:43:25 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:35822)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	id 1upwxH-00000004ZLd-2f0L
+	for natahsa@novustelltravel.com;
+	Sun, 24 Aug 2025 01:43:25 +0300
+Received: from ociamashpapo03.doc.mail.amadeus.com (unknown [10.168.10.251])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id 273C422A7F;
+	Sat, 23 Aug 2025 22:42:43 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 273C422A7F
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1755988963;
+	bh=s7tDz8vtdjSROjo/OzjpF1EtARAINJLwISS4yfzL07U=;
+	h=Date:From:Subject;
+	b=MNXhqhbFgzMBgQXbn/jIOc+2Zm0fAGbckoRrvtQjpG4R7vkMf3X8CU6Lnxn5Iqo04
+	 cl3GeGcZo340URkxPGfDmI7U+pA5hLj6/wHC7LC4vurgEiKZhwUpPBk8B+YWQxuXIK
+	 BjSxjLO/xfPaNFru3BFURH6oWJPQB7hkzeQdlLSi+KMqqqex4iZLGgteVMo4NkQFMK
+	 pgoxJ1C53T/oIQ8ov1s1tjNL27OLqNkD2x4y077ZbULBN+/scPnQb5nEnA0u0RaYFq
+	 17kBtH3El1KiYx8dnEle/K8ZEVTdSSqmbe0OE0lGdLAKTsEaClyOWMpi6IArr3Saib
+	 DufDiLn6CDCPA==
+Received: from localhost (localhost [127.0.0.1])
+	by ociamashpapo03.doc.mail.amadeus.com (Postfix) with ESMTP id 12B211A0797D;
+	Sat, 23 Aug 2025 22:42:42 +0000 (UTC)
+Date: Sat, 23 Aug 2025 22:42:42 +0000 (UTC)
+From: Amadeus Customer Service <servicehub@doc.mail.amadeus.com>
+Message-ID: <1867771506.6306.1755988962075@localhost>
+Subject: AMADEUS Scheduled Maintenance Notification - 23AUG2025 - MMW - New
+ scheduled maintenance
+MIME-Version: 1.0
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Auto-Response-Suppress: AutoReply, DR, NDR, NRN, OOF, RN
+X-Spam-Status: No, score=-0.6
+X-Spam-Score: -5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, The following Scheduled Maintenance bulletin
+    has been published via Amadeus Critical Incident Center: AMADEUS Scheduled
+    Maintenance Notification - 23AUG2025 - MMW 
+ Content analysis details:   (-0.6 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+                             [score: 0.0000]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  1.0 MISSING_HEADERS        Missing To: header
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.4 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+X-Spam-Flag: NO
+
+
+
+
+<center>
+    <table width=3D"100%" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"1=
+0" cellspacing=3D"0">
+        <tr>
+            <td align=3D"center" valign=3D"top">   =20
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td width=3D"694">
+                        <div style=3D"max-width: 694px; margin: 0 auto" ali=
+gn=3D"left">
+                            <img alt=3D"Amadeus Service Hub" src=3D"https:/=
+/servicehub.amadeus.com/documents/20195/1117748133/Email+Banner+-+Incident.=
+png/eb9b37fb-307d-70e2-3428-323c2d8ba7d9?t=3D1704357474209" />
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=3D"694" bgcolor=3D"#ffffff">
+                        <div style=3D"max-width: 694px; margin: 0 auto">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0">
+                                <td width=3D"10" bgcolor=3D"#ffffff"></td>
+                                <td width=3D"674" bgcolor=3D"#ffffff">
+                                    <div style=3D"max-width: 674px; margin:=
+ 0 auto" dir=3D"ltr" align=3D"left">
+                                        <p style=3D"font-family:'Source San=
+s Pro',Calibri, sans-serif;"><br/> Dear Customer,=20
+=09=09=09=09                            <br/><br/>
+                                            The following Scheduled Mainten=
+ance bulletin has been published via Amadeus Critical Incident Center:
+                                            <br/>
+                                                                           =
+                 <em><a href=3D"https://servicehub.amadeus.com/c/portal/vie=
+w-solution/1302003334/amadeus-scheduled-maintenance-notification-23aug2025-=
+mmw">AMADEUS Scheduled Maintenance Notification - 23AUG2025 - MMW</a></em>
+                                                                           =
+             <br/><br/>
+
+                                            The following update was added:=
+<br/>
+                                            <table class=3D"predefinedField=
+s" style=3D"border:0px; width:100%">
+=09<tbody>
+=09=09<tr>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Change number</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+<strong>36101134</strong></td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Product</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+Generic History Interface (GHI)<br />
+=09=09=09Middleware Resource Server (MRS)</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Expected business impact</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">
+=09=09=09<p>Please find below the expected business impact:</p>
+
+=09=09=09<p><strong>Generic History Interface (GHI):</strong></p>
+
+=09=09=09<p>All URL based solutions will be unavailable during this time. S=
+toring/Searching, Reading/Writing and Fetching of all documents will not be=
+ available during this time.</p>
+
+=09=09=09<p>In Details :<br />
+=09=09=09<br />
+=09=09=091) Storing/Searching and Fetching of All Teletype(TTY) Documents.<=
+br />
+=09=09=092) Searching / Storing and Fetching of notification type documents=
+ for Hospitality applications.<br />
+=09=09=093) Storing/Searching and Fetching of Alt=C3=A9a Group Negotiator A=
+d Hoc Contract Documents.<br />
+=09=09=094) Storing/Searching and Fetching of all documents related to Sell=
+ing Platform Connect. These broadly include Invoices, Itineraries, E-ticket=
+ receipts for CTS, Electronic Miscellaneous Documents, Generic Documents, T=
+ickets, etc. Merging/Zipping of multiple documents will also be unavailable=
+.<br />
+=09=09=095) Storing/Searching and Fetching of all documents related to Mid =
+Office application. These broadly include credit notes, BOF, deposit, invoi=
+ce, order confirmation, offer, tickets , payment receipt, voucher, delivery=
+ note, debit notes, notification, periodical invoices, etc.<br />
+=09=09=096) Storing/Searching and Fetching of Ticketing documents for RAILS=
+ will be affected.<br />
+=09=09=097) Storing Searching and Fetching of Optimised Passenger Recovery =
+(OPR) application information Documents will not be available.<br />
+=09=09=098) Reading/Writing of error reports generated by the JFE (Java Fro=
+nt End) Customer management GUI from/to Archive.<br />
+=09=09=09<br />
+=09=09=09Customers trying to use GHI (Generic History Interface) through th=
+e above services (plus others which may not be included), during its downti=
+me will receive an error message.</p>
+
+=09=09=09<p><br />
+=09=09=09<strong>Middleware Resource Server (MRS)</strong><br />
+=09=09=09<br />
+=09=09=091. Customize-IT (CIT) users will not be able to create, modify or =
+delete the customizations through GUI.<br />
+=09=09=092. Emails generated for E-ticket, itinerary, boarding pass, disrup=
+tion notifications and other documents with customizations will be incomple=
+te as it will be unable to fetch the images and logos from MRS database. (D=
+efault template will be delivered with generic notices and color for all cu=
+stomers).<br />
+=09=09=093. Delay in delivering the documents through Email, SMS.<br />
+=09=09=094. For customers using digital signature in PDF documents- digital=
+ signature will not be available in invoices generated from Amadeus Agency =
+Manager.<br />
+=09=09=095. Boarding pass delivered through emails via Altea Customer Manag=
+ement (CM) application will not have digital signature.<br />
+=09=09=096. Validation of PK-Pass documents used in iOS wallet will fail fo=
+r Altea Customer Management (CM).</p>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Maintenance window</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+<strong>23AUG2025 / 23:30 GMT - 24AUG2025 / 00:00 GMT</strong></td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Duration</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+30 Minutes</td>
+=09=09</tr>
+=09</tbody>
+</table>
+                                            <br/>
+
+                                                                           =
+                 <em>Note: If the link does not open, this means the conten=
+t has been removed. </em>
+                                                                           =
+             <br/><br/>
+                                            Best Regards,<br/>
+                                            <br/>
+                                            <strong style=3D"color:#000835;=
+font-size:1.2em">Amadeus Service Hub</strong><br/>
+                                            'Helping Amadeus Customers Succ=
+eed' <br/>
+                                        </p>
+                                        <p>
+                                            <img src=3D"https://servicehub.=
+amadeus.com/documents/20195/1117748133/Amadeus+Logo+-+White+Background.png/=
+7e5cd68b-bc75-93ed-1986-3a98c1e9c1fc?t=3D1704442648345" /> <!-- LOGO -->
+                                        </p><br/>
+                                        <a style=3D"color:#0c66e1" href=3Dh=
+ttps://servicehub.amadeus.com/en/home?login_panel=3Dtravel&default_option=
+=3Duserid%22>servicehub.amadeus.com</a>
+
+                                        <p style=3D"font-family:'Source San=
+s Pro',Calibri, sans-serif;font-size:11px;text-align:left;">You have receiv=
+ed this mail because you are subscribed to Amadeus Critical Incident Centre=
+ notifications.<br/>You can unsubscribe from Critical Incident notification=
+s or change your email preferences by visiting the  <a href=3D"https://serv=
+icehub.amadeus.com/group/control_panel/manage?p_p_id=3Dnotifpref&p_p_state=
+=3Dpop_up&manageSubscription=3Dtrue" target=3D"_blank">Subscriptions & Noti=
+fications</a> page.</p>
+                                        <p style=3D"font-size:12px;font-fam=
+ily:'Source Sans Pro',Calibri, sans-serif;">
+
+                                            This email is generated automat=
+ically; no reply will be processed.
+
+                                        </p>
+                                    </div>
+                                </td>
+                                <td width=3D"10" bgcolor=3D"#ffffff"></td>
+                            </table>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

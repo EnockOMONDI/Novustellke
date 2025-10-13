@@ -1,0 +1,660 @@
+Return-Path: <amadeus-direct-no-reply@amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id OLEVC6DVy2iQmg8AObGTvA
+	(envelope-from <amadeus-direct-no-reply@amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 18 Sep 2025 12:49:20 +0300
+Return-path: <amadeus-direct-no-reply@amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Thu, 18 Sep 2025 12:49:20 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:23192)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <amadeus-direct-no-reply@amadeus.com>)
+	id 1uzBGP-00000004RP4-2XqI
+	for natahsa@novustelltravel.com;
+	Thu, 18 Sep 2025 12:49:19 +0300
+Received: from relay.amadeus.net (unknown [10.168.10.251])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id 1689820730
+	for <natahsa@novustelltravel.com>; Thu, 18 Sep 2025 09:48:37 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 1689820730
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=amadeus.com;
+	s=FND2019Q1; t=1758188917;
+	bh=l7DoC3sV9j2XNy37qsOX4uDvWv5KuynUMWB+/rc7zvA=;
+	h=Date:Subject:To:From;
+	b=wKFnqijQcUReA39LWglXYNEPlELd3M/z6UgfFQP9bIk9RTZlBuQHMsbvosV+LQMsl
+	 z0OFkkKzbw1MZ8U+xkakWfti6svzJuk6H+jpfvWKwTFWi+m0XjCBUm1QmYYgKMzf5M
+	 m9IfWCqstld+9/FEFPH2B7WLXKBKsIx7dQLnkmWHvlhFUvA9Vr4gM8r7/Xi6Jj4l4R
+	 zvU08+0huwMuf2JpQ1hQ0PaxN7sZh62oAw/FaDKg2RpGTdehEve2Dq/dC56veX3te1
+	 Eh31Tz7H2Vb5PFWcAg2Qe0H0gV1dA4gUvy6x2KvrDm8+XgrYIiKD5Dhx3k5K3R6SW1
+	 +yqzT2hdnYyFg==
+Date: Thu, 18 Sep 2025 09:48:37 +0000
+MIME-Version: 1.0
+Content-Type: text/html;
+ charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Subject: =?UTF-8?Q?Congrats!=20Start=20enjoying=20full=20access=20to=20?=
+ =?UTF-8?Q?the=20Amadeus+Me=20program?=
+To: natahsa@novustelltravel.com
+From: =?utf-8?Q?Amadeus=20Direct?= <amadeus-direct-no-reply@amadeus.com>
+X-Spam-Status: No, score=-2.0
+X-Spam-Score: -19
+X-Spam-Bar: --
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Congratulations! Your travel agency manager has activated
+    the Amadeus+Me Club for your agency. You can now enroll and earn rewards
+   when booking with us. 
+ Content analysis details:   (-2.0 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus-direct.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: amadeus.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+                             [score: 0.0001]
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+<!--=0A/**=0A * MMMW2-3423: [Loyalty] DM has to approve the Loyalty part=
+icipation for the agency=0A * MMMW2-3424: [Loyalty] DM did not allow yet=
+ to join the loyalty=0A *=0A * @category  Amadeus=0A * @package   Amadeu=
+s_Loyalty=0A * @author    Kostiantyn Kovalchuk <kostiantyn.kovalchuk@ama=
+deus.com>=0A */=0A-->=0A=0A=0A<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1=
+=2E0 Transitional //EN"=0A        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-=
+transitional.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml"=0A      xmlns:o=3D"urn:schemas-micro=
+soft-com:office:office">=0A<head>=0A    <!--[if gte mso 9]>=0A    <xml>=
+=0A        <o:OfficeDocumentSettings>=0A            <o:AllowPNG/>=0A   =20=
+        <o:PixelsPerInch>96</o:PixelsPerInch>=0A        </o:OfficeDocume=
+ntSettings>=0A    </xml><![endif]-->=0A    <meta http-equiv=3D"Content-T=
+ype" content=3D"text/html; charset=3Dutf-8">=0A    <meta name=3D"viewpor=
+t" content=3D"width=3Ddevice-width">=0A    <!--[if !mso]><!-->=0A    <me=
+ta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><!--<![endif]-->=
+=0A    <title></title>=0A    <!--[if !mso]><! -->=0A    <link href=3D"ht=
+tps://fonts.googleapis.com/css?family=3DSourceSansPro" rel=3D"stylesheet=
+" type=3D"text/css">=0A    <link rel=3D"stylesheet" type=3D"text/css" hr=
+ef=3D"../../../../../../design/frontend/mmm/default/web/css/amadeus_neue=
+=2Ecss">=0A    <!--<![endif]-->=0A=0A    <style type=3D"text/css" id=3D"me=
+dia-query">=0A        body {=0A            margin: 0;=0A            padd=
+ing: 0;=0A        }=0A=0A        table, tr, td {=0A            vertical-=
+align: top;=0A            border-collapse: collapse;=0A        }=0A=0A =20=
+      .ie-browser table, .mso-container table {=0A            table-layo=
+ut: fixed;=0A        }=0A=0A        * {=0A            line-height: inher=
+it;=0A        }=0A=0A        a[x-apple-data-detectors=3Dtrue] {=0A     =20=
+      color: inherit !important;=0A            text-decoration: none !im=
+portant;=0A        }=0A=0A        [owa] .img-container div, [owa] .img-c=
+ontainer button {=0A            display: block !important;=0A        }=
+=0A=0A        [owa] .fullwidth button {=0A            width: 100% !impor=
+tant;=0A        }=0A=0A        [owa] .block-grid .col {=0A            di=
+splay: table-cell;=0A            float: none !important;=0A            v=
+ertical-align: top;=0A        }=0A=0A        .ie-browser .num12, .ie-bro=
+wser .block-grid, [owa] .num12, [owa] .block-grid {=0A            width:=
+ 595px !important;=0A        }=0A=0A        .ExternalClass, .ExternalCla=
+ss p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .Exte=
+rnalClass div {=0A            line-height: 100%;=0A        }=0A=0A     =20=
+  .ie-browser .mixed-two-up .num4, [owa] .mixed-two-up .num4 {=0A      =20=
+     width: 196px !important;=0A        }=0A=0A        .ie-browser .mixe=
+d-two-up .num8, [owa] .mixed-two-up .num8 {=0A            width: 392px !=
+important;=0A        }=0A=0A        .ie-browser .block-grid.two-up .col,=
+ [owa] .block-grid.two-up .col {=0A            width: 297px !important;=
+=0A        }=0A=0A        .ie-browser .block-grid.three-up .col, [owa] .=
+block-grid.three-up .col {=0A            width: 198px !important;=0A   =20=
+    }=0A=0A        .ie-browser .block-grid.four-up .col, [owa] .block-gr=
+id.four-up .col {=0A            width: 148px !important;=0A        }=0A=
+=0A        .ie-browser .block-grid.five-up .col, [owa] .block-grid.five-=
+up .col {=0A            width: 119px !important;=0A        }=0A=0A     =20=
+  .ie-browser .block-grid.six-up .col, [owa] .block-grid.six-up .col {=
+=0A            width: 99px !important;=0A        }=0A=0A        .ie-brow=
+ser .block-grid.seven-up .col, [owa] .block-grid.seven-up .col {=0A    =20=
+       width: 85px !important;=0A        }=0A=0A        .ie-browser .blo=
+ck-grid.eight-up .col, [owa] .block-grid.eight-up .col {=0A            w=
+idth: 74px !important;=0A        }=0A=0A        .ie-browser .block-grid.=
+nine-up .col, [owa] .block-grid.nine-up .col {=0A            width: 66px=
+ !important;=0A        }=0A=0A        .ie-browser .block-grid.ten-up .co=
+l, [owa] .block-grid.ten-up .col {=0A            width: 59px !important;=
+=0A        }=0A=0A        .ie-browser .block-grid.eleven-up .col, [owa]=20=
+=2Eblock-grid.eleven-up .col {=0A            width: 54px !important;=0A  =20=
+     }=0A=0A        .ie-browser .block-grid.twelve-up .col, [owa] .block=
+-grid.twelve-up .col {=0A            width: 49px !important;=0A        }=
+=0A=0A        @media only screen and (min-width: 615px) {=0A           =20=
+=2Eblock-grid {=0A                width: 595px !important;=0A            }=
+=0A=0A            .block-grid .col {=0A                display: table-ce=
+ll;=0A                Float: none !important;=0A                vertical=
+-align: top;=0A            }=0A=0A            .block-grid .col.num12 {=
+=0A                width: 595px !important;=0A            }=0A=0A      =20=
+     .block-grid.mixed-two-up .col.num4 {=0A                width: 196px=
+ !important;=0A            }=0A=0A            .block-grid.mixed-two-up .=
+col.num8 {=0A                width: 392px !important;=0A            }=0A=
+=0A            .block-grid.two-up .col {=0A                width: 297px=20=
+!important;=0A            }=0A=0A            .block-grid.three-up .col {=
+=0A                width: 198px !important;=0A            }=0A=0A      =20=
+     .block-grid.four-up .col {=0A                width: 148px !importan=
+t;=0A            }=0A=0A            .block-grid.five-up .col {=0A      =20=
+         width: 119px !important;=0A            }=0A=0A            .bloc=
+k-grid.six-up .col {=0A                width: 99px !important;=0A      =20=
+     }=0A=0A            .block-grid.seven-up .col {=0A                wi=
+dth: 85px !important;=0A            }=0A=0A            .block-grid.eight=
+-up .col {=0A                width: 74px !important;=0A            }=0A=
+=0A            .block-grid.nine-up .col {=0A                width: 66px=20=
+!important;=0A            }=0A=0A            .block-grid.ten-up .col {=
+=0A                width: 59px !important;=0A            }=0A=0A       =20=
+    .block-grid.eleven-up .col {=0A                width: 54px !importan=
+t;=0A            }=0A=0A            .block-grid.twelve-up .col {=0A    =20=
+           width: 49px !important;=0A            }=0A        }=0A=0A   =20=
+    @media (max-width: 615px) {=0A            .block-grid, .col {=0A   =20=
+            min-width: 320px !important;=0A                max-width: 10=
+0% !important;=0A            }=0A=0A            .block-grid {=0A       =20=
+        width: calc(100% - 40px) !important;=0A            }=0A=0A     =20=
+      .col {=0A                width: 100% !important;=0A            }=
+=0A=0A            .col > div {=0A                margin: 0 auto;=0A    =20=
+       }=0A=0A            img.fullwidth {=0A                max-width: 1=
+00% !important;=0A            }=0A        }=0A=0A    </style>=0A</head>=
+=0A<body class=3D"clean-body" style=3D"margin: 0;padding: 0;-webkit-text=
+-size-adjust: 100%;background-color: #FFFFFF">=0A=0A<!--[if IE]>=0A<div=20=
+class=3D"ie-browser"><![endif]-->=0A<!--[if mso]>=0A<div class=3D"mso-co=
+ntainer"><![endif]-->=0A<div class=3D"nl-container" style=3D"min-width:=20=
+320px;Margin: 0 auto;background-color: #FFFFFF">=0A    <!--[if (mso)|(IE=
+)]>=0A    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0">=0A        <tr>=0A            <td align=3D"center" style=3D"bac=
+kground-color: #FFFFFF;"><![endif]-->=0A=0A    <div style=3D"background-=
+color:transparent;">=0A        <div style=3D"margin: 0 auto 0px;overflow=
+-wrap: break-word;word-wrap: break-word;word-break: break-word;backgroun=
+d-color: transparent;">=0A            <div style=3D"border-collapse: col=
+lapse;display: table;width: 100%;">=0A                <!--[if (mso)|(IE)=
+]>=0A                <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">=0A                    <tr>=0A                     =20=
+  <td style=3D"background-color:transparent;" align=3D"center">=0A     =20=
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" style=3D"width: 595px;">=0A                                <tr cl=
+ass=3D"layout-full-width" style=3D"background-color:transparent;"><![end=
+if]-->=0A=0A                <!--[if (mso)|(IE)]>=0A                <td a=
+lign=3D"center" width=3D"595"=0A                    style=3D" width:595p=
+x; padding-right: 0px; padding-left: 0px; padding-top:0px; padding-botto=
+m:0px; border-top: 0px solid transparent; border-left: 0px solid transpa=
+rent; border-bottom: 0px solid transparent; border-right: 0px solid tran=
+sparent;"=0A                    valign=3D"top"><![endif]-->=0A         =20=
+      <div class=3D"col num12" style=3D"background-color: transparent;">=
+=0A                    <div style=3D"background-color: transparent; widt=
+h: 100% !important;">=0A                        <!--[if (!mso)&(!IE)]><!=
+-->=0A                        <div style=3D"border-top: 0px solid transp=
+arent; border-left: 0px solid transparent; border-bottom: 0px solid tran=
+sparent; border-right: 0px solid transparent; padding-top:0px; padding-b=
+ottom:0px; padding-right: 0px; padding-left: 0px;">=0A                 =20=
+          <!--<![endif]-->=0A=0A=0A                            <div alig=
+n=3D"center" class=3D"img-container center fullwidth"=0A               =20=
+                 style=3D"padding-right: 0px;  padding-left: 0px;">=0A =20=
+                              <!--[if mso]>=0A                         =20=
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0">=0A                                    <tr>=0A                  =20=
+                     <td style=3D"padding-right: 0px; padding-left: 0px;=
+" align=3D"center"><![endif]-->=0A                                <img c=
+lass=3D"center fullwidth" align=3D"center" border=3D"0"=0A             =20=
+                       src=3D"https://api.amadeus-direct.com/static/fron=
+tend/mmm/default/en_US/Magento_Email/images/email-header-loyalty.jpg"=0A=
+                                     alt=3D"" title=3D""=0A            =20=
+                        style=3D"outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;clear: both;display: block !important;borde=
+r: 0;height: auto;float: none;width: 100%;max-width: 595px"=0A         =20=
+                           width=3D"595">=0A                           =20=
+    <!--[if mso]></td></tr></table><![endif]-->=0A                     =20=
+      </div>=0A=0A=0A                            <!--[if (!mso)&(!IE)]><=
+!--></div><!--<![endif]-->=0A                    </div>=0A             =20=
+  </div>=0A                <!--[if (mso)|(IE)]></td></tr></table></td></=
+tr></table><![endif]-->=0A            </div>=0A        </div>=0A    </di=
+v>=0A<div style=3D"background-color:transparent;" xmlns=3D"http://www.w3=
+=2Eorg/1999/html">=0A    <div style=3D"Margin: 0 auto;min-width: 320px;max=
+-width: 595px;width: 595px;width: calc(28500% - 174680px);overflow-wrap:=
+ break-word;word-wrap: break-word;word-break: break-word;background-colo=
+r: #FFFFFF;"=0A         class=3D"block-grid ">=0A        <div style=3D"b=
+order-collapse: collapse;display: table;width: 100%;">=0A            <!-=
+-[if (mso)|(IE)]>=0A            <table width=3D"100%" cellpadding=3D"0"=20=
+cellspacing=3D"0" border=3D"0">=0A                <tr>=0A              =20=
+     <td style=3D"background-color:transparent;" align=3D"center">=0A  =20=
+                     <table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" style=3D"width: 595px;">=0A                            <tr class=
+=3D"layout-full-width" style=3D"background-color:#FFFFFF;"><![endif]-->=
+=0A            <!--[if (mso)|(IE)]>=0A            <td align=3D"center" w=
+idth=3D"595"=0A                style=3D" width:595px; padding: 5px 0; bo=
+rder: 0 solid transparent;"=0A                valign=3D"top"><![endif]--=
+>=0A            <div class=3D"col num12"=0A                 style=3D"min=
+-width: 320px;max-width: 595px;width: 595px;width: calc(27500% - 163030p=
+x);background-color: #FFFFFF;">=0A                <div style=3D"backgrou=
+nd-color: transparent; width: 100% !important;">=0A                    <=
+!--[if (!mso)&(!IE)]><!-->=0A                    <div style=3D"border: 0=
+ solid transparent;">=0A                        <!--<![endif]-->=0A    =20=
+                   <!--[if mso]>=0A                        <table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A         =20=
+                  <tr>=0A                                <td style=3D"pa=
+dding: 24px 10px 24px 10px;">=0A                        <![endif]-->=0A=20=
+                       <div style=3D"color:#1a1a1a; line-height:120%; fo=
+nt-family:'Amadeus Neue', 'Source Sans Pro', Helvetica, Arial, sans-seri=
+f;padding: 24px 10px 24px;">=0A                            <div style=3D=
+"font-size:12px; line-height:14px; color:#1a1a1a; font-family:'Amadeus N=
+eue', 'Source Sans Pro', Helvetica, Arial, sans-serif; text-align:left;"=
+>=0A                                <p style=3D"margin: 0;font-size: 14p=
+x;line-height: 17px;padding-bottom: 2px;"><span=0A                     =20=
+                  style=3D"font-size: 14px; line-height: 19px; color: #1=
+a1a1a; padding-bottom: 2px;">Congratulations! Your travel agency manager=
+ has activated the Amadeus+Me Club for your agency.</span>=0A          =20=
+                     </p>=0A                                <p style=3D"=
+margin: 0;font-size: 14px;line-height: 17px; padding-bottom: 2px;"><span=
+=0A                                        style=3D"font-size: 14px; lin=
+e-height: 19px; color: #1a1a1a;">You can now enroll and earn rewards whe=
+n booking with us.</span>=0A                                </p>=0A    =20=
+                           <p style=3D"margin: 0;font-size: 14px;line-he=
+ight: 17px; padding-bottom: 2px;"><span=0A                             =20=
+          style=3D"font-size: 14px; line-height: 19px; color: #1a1a1a; p=
+adding-bottom: 2px;"><a style=3D'color: #0c66e1;' href=3D'https://www.am=
+adeus-direct.com/'>Discover more</a> about Amadeus+Me Club here.</span>=
+=0A                                </p>=0A                             =20=
+  </div>=0A                        </div>=0A                        <!--=
+[if mso]></td></tr></table><![endif]-->=0A                        <!--[i=
+f (!mso)&(!IE)]><!--></div><!--<![endif]-->=0A                </div>=0A=20=
+           </div>=0A            <!--[if (mso)|(IE)]></td></tr></table></=
+td></tr></table><![endif]-->=0A        </div>=0A    </div>=0A</div>=0A<!=
+-- End Content -->=0A<div style=3D"background-color:transparent;">=0A  =20=
+ <div style=3D"Margin: 0 auto;min-width: 320px;max-width: 595px;width: 5=
+95px;width: calc(28500% - 174680px);overflow-wrap: break-word;word-wrap:=
+ break-word;word-break: break-word;background-color: transparent;"=0A  =20=
+      class=3D"block-grid ">=0A        <div style=3D"border-collapse: co=
+llapse;display: table;width: 100%;">=0A            <!--[if (mso)|(IE)]>=
+=0A            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0">=0A                <tr>=0A                    <td style=3D=
+"background-color:transparent;" align=3D"center">=0A                   =20=
+    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wid=
+th: 595px;">=0A                            <tr class=3D"layout-full-widt=
+h" style=3D"background-color:transparent;"><![endif]-->=0A=0A          =20=
+ <!--[if (mso)|(IE)]>=0A            <td align=3D"center" width=3D"595"=
+=0A                style=3D" width:595px; padding-right: 0px; padding-le=
+ft: 10px; padding-top:0px; padding-bottom:0px; border-top: 0px solid tra=
+nsparent; border-left: 0px solid transparent; border-bottom: 0px solid t=
+ransparent; border-right: 0px solid transparent;"=0A                vali=
+gn=3D"top"><![endif]-->=0A            <div class=3D"col num12"=0A      =20=
+          style=3D"min-width: 320px;max-width: 595px;width: 595px;width:=
+ calc(27500% - 163030px);background-color: transparent;">=0A           =20=
+    <div style=3D"background-color: transparent; width: 100% !important;=
+">=0A                    <!--[if (!mso)&(!IE)]><!-->=0A                =20=
+   <div style=3D"border-top: 0px solid transparent; border-left: 10px so=
+lid transparent; border-bottom: 0px solid transparent; border-right: 0px=
+ solid transparent;">=0A                        <!--<![endif]-->=0A    =20=
+                   <!--[if (mso)]>=0A                        <table widt=
+h=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A        =20=
+                   <tr>=0A                                <td style=3D"p=
+adding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom:=20=
+0px;padding-bottom:8px;">=0A                                    <table w=
+idth=3D"50%" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"=0A     =20=
+                                     border=3D"0">=0A                  =20=
+                     <tr>=0A                                           =20=
+<td><![endif]-->=0A                        <div align=3D"left">=0A     =20=
+                      <div style=3D"border-top: 1px solid #f4f4f4; width=
+:50%; line-height:1px; height:1px; font-size:1px;padding-bottom:8px; pad=
+ding-left: 10px;">=0A                                &#160;=0A         =20=
+                  </div>=0A                        </div>=0A           =20=
+            <!--[if (mso)]></td></tr></table></td></tr></table><![endif]=
+-->=0A                        <!--[if (!mso)&(!IE)]><!--></div><!--<![en=
+dif]-->=0A                </div>=0A            </div>=0A            <!--=
+[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->=0A    =20=
+   </div>=0A    </div>=0A</div>=0A=0A<div style=3D"background-color:tran=
+sparent;">=0A    <div style=3D"Margin: 0 auto;min-width: 320px;max-width=
+: 595px;width: 595px;width: calc(28500% - 174680px);overflow-wrap: break=
+-word;word-wrap: break-word;word-break: break-word;background-color: #FF=
+FFFF;"=0A         class=3D"block-grid ">=0A        <div style=3D"border-=
+collapse: collapse;display: table;width: 100%;">=0A            <!--[if (=
+mso)|(IE)]>=0A            <table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">=0A                <tr>=0A                    <=
+td style=3D"background-color:transparent;" align=3D"center">=0A        =20=
+               <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"width: 595px;">=0A                            <tr class=3D"layou=
+t-full-width" style=3D"background-color:#FFFFFF;"><![endif]-->=0A=0A   =20=
+        <!--[if (mso)|(IE)]>=0A            <td align=3D"center" width=3D=
+"595"=0A                style=3D" width:595px; padding-right: 0px; paddi=
+ng-left: 10px; padding-top:0px; padding-bottom:0px; border-top: 0px soli=
+d transparent; border-left: 0px solid transparent; border-bottom: 0px so=
+lid transparent; border-right: 0px solid transparent;"=0A              =20=
+ valign=3D"top"><![endif]-->=0A            <div class=3D"col num12"=0A =20=
+               style=3D"min-width: 320px;max-width: 595px;width: 595px;w=
+idth: calc(27500% - 163030px);background-color: #FFFFFF;">=0A          =20=
+     <div style=3D"background-color: transparent; width: 100% !important=
+;">=0A                    <!--[if (!mso)&(!IE)]><!-->=0A               =20=
+    <div style=3D"border-top: 0px solid transparent; border-left: 0px so=
+lid transparent; border-bottom: 0px solid transparent; border-right: 0px=
+ solid transparent; padding-top:0px; padding-bottom:0px; padding-right:=20=
+0px; padding-left: 10px;">=0A                        <!--<![endif]-->=0A=
+                        <!--[if mso]>=0A                        <table w=
+idth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A     =20=
+                      <tr>=0A                                <td style=
+=3D"padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bot=
+tom: 0px;">=0A                        <![endif]-->=0A                  =20=
+     <div style=3D"font-family:'Amadeus Neue', 'Source Sans Pro', Helvet=
+ica, Arial, sans-serif;color:#555555;line-height:120%;padding-top: 0px;=20=
+padding-bottom: 0px; padding-left: 0px;">=0A                           =20=
+<div style=3D"font-size:8px;line-height:14px;color:#555555;font-family:'=
+Amadeus Neue', 'Source Sans Pro', Helvetica, Arial, sans-serif; Margin:=20=
+0 auto;min-width: 320px;max-width: 595px;">=0A                         =20=
+      <p style=3D"margin: 0;font-size: 14px;line-height: 17px"><span=0A=20=
+                                       style=3D"font-size: 11px; line-he=
+ight: 15px; color: #1a1a1a;"><span=0A                                  =20=
+     style=3D"line-height: 15px; font-size: 14px;">Regards,</span></span=
+>=0A                                </p>=0A                            =20=
+   <p style=3D"margin: 0;font-size: 14px;line-height: 17px"><span=0A   =20=
+                                    style=3D"font-size: 14px; line-heigh=
+t: 16px; color: rgb(0, 8, 53);">=0A=09=09=09=09=09=09=09=09=09=09=09=09<=
+strong>Amadeus+Me team</strong>=0A=09=09=09=09=09=09=09=09=09=09=09=09</=
+span></p>=0A                                <p style=3D"margin: 0;font-s=
+ize: 14px;line-height: 17px"><span=0A                                  =20=
+     style=3D"font-size: 14px; line-height: 19px; color: #1a1a1a;">My cl=
+ub, my rewards</span>=0A                                </p>=0A        =20=
+                   </div>=0A                        </div>=0A          =20=
+             <!--[if mso]></td></tr></table><![endif]-->=0A            =20=
+           <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->=0A        =20=
+       </div>=0A            </div>=0A            <!--[if (mso)|(IE)]></t=
+d></tr></table></td></tr></table><![endif]-->=0A        </div>=0A    </d=
+iv>=0A</div>=0A=0A<div style=3D"line-height:16px;font-size:1px">&nbsp;</=
+div>=0A=0A<div style=3D"background-color:transparent;">=0A    <div style=
+=3D"Margin: 0 auto;min-width: 320px;max-width: 595px;width: 595px;width:=
+ calc(28500% - 174680px);overflow-wrap: break-word;word-wrap: break-word=
+;word-break: break-word"=0A         class=3D"block-grid">=0A        <div=
+ style=3D"border-collapse: collapse;display: table;width: 100%;">=0A   =20=
+        <!--[if (mso)|(IE)]>=0A            <table width=3D"100%" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0">=0A                <tr>=0A   =20=
+                <td style=3D"background-color:transparent;" align=3D"cen=
+ter">=0A                        <table cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" style=3D"width: 595px;">=0A                            <=
+tr class=3D"layout-full-width" style=3D"background-color:#FFFFFF;"><![en=
+dif]-->=0A=0A            <!--[if (mso)|(IE)]>=0A            <td align=3D=
+"center" width=3D"595"=0A                style=3D" width:595px; padding-=
+right: 0px; padding-left: 10px; padding-top:0px; padding-bottom:0px; bor=
+der-top: 0px solid transparent; border-left: 0px solid transparent; bord=
+er-bottom: 0px solid transparent; border-right: 0px solid transparent;"=
+=0A                valign=3D"top"><![endif]-->=0A            <div class=
+=3D"col num12"=0A                 style=3D"min-width: 320px;max-width: 5=
+95px;width: 595px;width: calc(27500% - 163030px);background-color: #FFFF=
+FF;">=0A                <div style=3D"background-color: transparent; wid=
+th: 100% !important;">=0A                    <!--[if (!mso)&(!IE)]><!-->=
+=0A                    <div style=3D"border-top: 0px solid transparent;=20=
+border-left: 0px solid transparent; border-bottom: 0px solid transparent=
+; border-right: 0px solid transparent; padding-top:0px; padding-bottom:0=
+px; padding-right: 0px; padding-left: 10px;">=0A                       =20=
+<!--<![endif]-->=0A=0A                        <!--[if mso]>=0A         =20=
+              <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=20=
+border=3D"0">=0A                            <tr>=0A                    =20=
+           <td style=3D"padding-right: 0px; padding-left: 0px; padding-t=
+op: 0px; padding-bottom: 0px;">=0A                        <![endif]-->=
+=0A                        <div style=3D"font-family:'Amadeus Neue', 'So=
+urce Sans Pro', Helvetica, Arial, =09sans-serif;color:#555555;line-heigh=
+t:120%;padding-top: 0px; padding-bottom: 0px; padding-left: 0px;">=0A  =20=
+                         <div style=3D"font-size:14px;line-height:14px;c=
+olor:#555555;font-family:'Amadeus Neue', 'Source Sans Pro', Helvetica, A=
+rial, sans-serif; Margin: 0 auto;min-width: 320px;max-width: 595px;">=0A=
+                                <img class=3D"center" align=3D"center" b=
+order=3D"0"=0A                                     src=3D"https://api.am=
+adeus-direct.com/static/frontend/mmm/default/en_US/Magento_Email/images/=
+logo-full-blue.png"=0A                                     alt=3D""=0A =20=
+                                   style=3D"outline: none;text-decoratio=
+n: none;-ms-interpolation-mode: bicubic;clear: both;display: block !impo=
+rtant;border: 0;height: auto;float: none;width: 100%;max-width: 113px"=
+=0A                                     title=3D"Image" width=3D"121">=
+=0A                                <p style=3D"margin: 0;font-size: 14px=
+;line-height: 17px;"><span=0A                                        sty=
+le=3D"font-size: 14px; line-height: 19px; color: #1a1a1a;">It=E2=80=99s=20=
+how travel works for me</span>=0A                                </p>=0A=
+                            </div>=0A                        </div>=0A =20=
+                      <!--[if mso]></td></tr></table><![endif]-->=0A   =20=
+                    <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->=0A=
+                </div>=0A            </div>=0A            <!--[if (mso)|=
+(IE)]></td></tr></table></td></tr></table><![endif]-->=0A        </div>=
+=0A    </div>=0A</div>=0A<div style=3D"line-height:32px;font-size:1px">&=
+nbsp;</div>=0A<div style=3D"background-color:transparent;">=0A    <div s=
+tyle=3D"Margin: 0 auto;min-width: 320px;max-width: 595px;width: 595px;wi=
+dth: calc(28500% - 174680px);overflow-wrap: break-word;word-wrap: break-=
+word;word-break: break-word"=0A         class=3D"block-grid">=0A       =20=
+<div style=3D"border-collapse: collapse;display: table;width: 100%;">=0A=
+            <!--[if (mso)|(IE)]>=0A            <table width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A                <tr>=0A=
+                    <td style=3D"background-color:transparent;" align=3D=
+"center">=0A                        <table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"width: 595px;">=0A                        =20=
+   <tr class=3D"layout-full-width" style=3D"background-color:#FFFFFF;"><=
+![endif]-->=0A=0A            <!--[if (mso)|(IE)]>=0A            <td alig=
+n=3D"center" width=3D"595"=0A                style=3D" width:595px; padd=
+ing-right: 0px; padding-left: 10px; padding-top:0px; padding-bottom:0px;=
+ border-top: 0px solid transparent; border-left: 0px solid transparent;=20=
+border-bottom: 0px solid transparent; border-right: 0px solid transparen=
+t;"=0A                valign=3D"top"><![endif]-->=0A            <div cla=
+ss=3D"col num12"=0A                 style=3D"min-width: 320px;max-width:=
+ 595px;width: 595px;width: calc(27500% - 163030px);background-color: #FF=
+FFFF;">=0A                <div style=3D"background-color: transparent; w=
+idth: 100% !important;">=0A                    <!--[if (!mso)&(!IE)]><!-=
+->=0A                    <div style=3D"border-top: 0px solid transparent=
+; border-left: 0px solid transparent; border-bottom: 0px solid transpare=
+nt; border-right: 0px solid transparent; padding-top:0px; padding-bottom=
+:0px; padding-right: 0px; padding-left: 10px;">=0A                     =20=
+  <!--<![endif]-->=0A=0A                        <!--[if mso]>=0A       =20=
+                <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">=0A                            <tr>=0A                  =20=
+             <td style=3D"padding-right: 0px; padding-left: 0px; padding=
+-top: 0px; padding-bottom: 0px;">=0A                        <![endif]-->=
+=0A                        <div style=3D"font-family:'Amadeus Neue', 'So=
+urce Sans Pro', Helvetica, Arial, =09sans-serif;color:#555555;line-heigh=
+t:120%;padding-top: 0px; padding-bottom: 0px; padding-left: 0px;">=0A  =20=
+                         <div style=3D"float: left; font-size:14px;line-=
+height:21px;color:#555555;font-family:'Amadeus Neue', 'Source Sans Pro',=
+ Helvetica, Arial, sans-serif; Margin: 0 auto;min-width: 320px;max-width=
+: 595px;">=0A                                <div style=3D"Margin: 0 aut=
+o;min-width: 320px;max-width: 595px;width: 595px;width: calc(28500% - 17=
+4680px);overflow-wrap: break-word;word-wrap: break-word;word-break: brea=
+k-word"=0A                                     class=3D"block-grid mixed=
+-two-up">=0A                                    <a style=3D"color: #0c66=
+e1;" href=3D"www.amadeus.com">www.amadeus.com</a>=0A                   =20=
+            </div>=0A                            </div>=0A             =20=
+          </div>=0A                        <!--[if mso]></td></tr></tabl=
+e><![endif]-->=0A                        <!--[if (!mso)&(!IE)]><!--></di=
+v><!--<![endif]-->=0A                </div>=0A            </div>=0A    =20=
+       <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]=
+-->=0A        </div>=0A    </div>=0A</div>=0A<div style=3D"line-height:3=
+px;font-size:1px">&nbsp;</div>=0A=0A<div style=3D"background-color:trans=
+parent;">=0A    <div style=3D"Margin: 0 auto;min-width: 320px;max-width:=
+ 595px;width: 595px;width: calc(28500% - 174680px);overflow-wrap: break-=
+word;word-wrap: break-word;word-break: break-word;background-color: tran=
+sparent;"=0A         class=3D"block-grid ">=0A        <div style=3D"bord=
+er-collapse: collapse;display: table;width: 100%;">=0A            <!--[i=
+f (mso)|(IE)]>=0A            <table width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0">=0A                <tr>=0A                 =20=
+  <td style=3D"background-color:transparent;" align=3D"center">=0A     =20=
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"width: 595px;">=0A                            <tr class=3D"la=
+yout-full-width" style=3D"background-color:transparent;"><![endif]-->=0A=
+=0A            <!--[if (mso)|(IE)]>=0A            <td align=3D"left" wid=
+th=3D"595"=0A                style=3D" width:595px; padding-right: 0px;=20=
+padding-left: 10px; padding-top:5px; padding-bottom:0px; border-top: 0px=
+ solid transparent; border-left: 0px solid transparent; border-bottom: 0=
+px solid transparent; border-right: 0px solid transparent;"=0A         =20=
+      valign=3D"top"><![endif]-->=0A            <div class=3D"col num12"=
+=0A                 style=3D"min-width: 320px;max-width: 595px;width: 59=
+5px;width: calc(27500% - 163030px);background-color: transparent;">=0A =20=
+              <div style=3D"background-color: transparent; width: 100% !=
+important;">=0A                    <!--[if (!mso)&(!IE)]><!-->=0A      =20=
+             <div style=3D"border-top: 0px solid transparent; border-lef=
+t: 0px solid transparent; border-bottom: 0px solid transparent; border-r=
+ight: 0px solid transparent; padding-top:0px; padding-bottom:0px; paddin=
+g-right: 0px; padding-left: 10px;">=0A                        <!--<![end=
+if]-->=0A                        <div style=3D"padding-right: 0px; paddi=
+ng-left: 0px; padding-top: 0px; padding-bottom: 0px;">=0A              =20=
+             <!--[if (mso)]>=0A                            <table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A         =20=
+                      <tr>=0A                                    <td sty=
+le=3D"padding-right: 0px;padding-left: 0px; padding-top: 0px; padding-bo=
+ttom: 0px;">=0A                                        <table width=3D"1=
+00%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0"=0A           =20=
+                                   border=3D"0">=0A                    =20=
+                       <tr>=0A                                         =20=
+      <td><![endif]-->=0A                            <div align=3D"cente=
+r">=0A                                <div style=3D"color:#555555;line-h=
+eight:120%;font-family:'SourceSansPro', Tahoma, Verdana, Segoe, sans-ser=
+if; padding-left: 0px;">=0A                                    <div styl=
+e=3D"font-size:12px;line-height:14px;color:#555555;font-family:'SourceSa=
+nsPro', Tahoma, Verdana, Segoe, sans-serif;text-align:left;">=0A       =20=
+                                <p style=3D"margin: 0;font-size: 14px;li=
+ne-height: 17px;"><span=0A                                             =20=
+  style=3D"font-size: 14px; line-height: 19px; color: #1a1a1a;"><strong>=
+=0A                                    Amadeus East Africa</strong></spa=
+n>=0A                                        </p>=0A                   =20=
+                    <p style=3D"margin: 0;font-size: 14px;line-height: 1=
+7px;"><span=0A                                                style=3D"f=
+ont-size: 14px; line-height: 19px; color: #1a1a1a;">14 Riverside, Grosve=
+nor Building Suite 4A, Off Riverside Drive, Nairobi, Kenya</span>=0A   =20=
+                                    </p>=0A                            =20=
+       </div>=0A                                </div>=0A              =20=
+                 <!--[if (mso)]></td></tr></table></td></tr></table><![e=
+ndif]-->=0A                            </div>=0A=0A=0A                 =20=
+          <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->=0A         =20=
+          </div>=0A                </div>=0A                <!--[if (mso=
+)|(IE)]></td></tr></table></td></tr></table><![endif]-->=0A            <=
+/div>=0A        </div>=0A    </div>=0A</div>=0A=0A<div style=3D"line-hei=
+ght:48px;font-size:1px">&nbsp;</div>=0A=0A<div style=3D"background-color=
+:transparent;">=0A    <div style=3D"Margin: 0 auto;min-width: 320px;max-=
+width: 595px;width: 595px;width: calc(28500% - 174680px);overflow-wrap:=20=
+break-word;word-wrap: break-word;word-break: break-word;background-color=
+: transparent;"=0A         class=3D"block-grid ">=0A        <div style=
+=3D"border-collapse: collapse;display: table;width: 100%;">=0A         =20=
+  <!--[if (mso)|(IE)]>=0A            <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">=0A                <tr>=0A       =20=
+            <td style=3D"background-color:transparent;" align=3D"center"=
+>=0A                        <table cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" style=3D"width: 595px;">=0A                            <tr c=
+lass=3D"layout-full-width" style=3D"background-color:transparent;"><![en=
+dif]-->=0A=0A            <!--[if (mso)|(IE)]>=0A            <td align=3D=
+"center" width=3D"595"=0A                style=3D" width:595px; padding-=
+right: 0px; padding-left: 10px; padding-top:0px; padding-bottom:0px; bor=
+der-top: 0px solid transparent; border-left: 0px solid transparent; bord=
+er-bottom: 0px solid transparent; border-right: 0px solid transparent;"=
+=0A                valign=3D"top"><![endif]-->=0A            <div class=
+=3D"col num12"=0A                 style=3D"min-width: 320px;max-width: 5=
+95px;width: 595px;width: calc(27500% - 163030px);background-color: trans=
+parent;">=0A                <div style=3D"background-color: transparent;=
+ width: 100% !important;">=0A                    <!--[if (!mso)&(!IE)]><=
+!-->=0A                    <div style=3D"border-top: 0px solid transpare=
+nt; border-left: 0px solid transparent; border-bottom: 0px solid transpa=
+rent; border-right: 0px solid transparent; padding-top:0px; padding-bott=
+om:0px; padding-right: 0px; padding-left: 10px;">=0A                   =20=
+    <!--<![endif]-->=0A=0A=0A                        <!--[if mso]>=0A  =20=
+                     <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">=0A                            <tr>=0A             =20=
+                  <td style=3D"padding-right: 0px; padding-left: 0px; pa=
+dding-top: 0px; padding-bottom: 10px;">=0A                        <![end=
+if]-->=0A                        <div style=3D"color:#555555;line-height=
+:120%;font-family:'Amadeus Neue', 'Source Sans Pro', Helvetica, Arial, s=
+ans-serif; padding-left: 0px;">=0A                            <div style=
+=3D"font-size:14px; line-height:21px; color:#555555; font-family:'Amadeu=
+s Neue', 'Source Sans Pro', Helvetica, Arial, sans-serif; text-align:lef=
+t; display: inline;">=0A                                <p style=3D"marg=
+in: 0; float:left; color: #1a1a1a; font-size: 14px; line-height: 21px;">=
+This is an automatically generated email, <strong>please do not reply</s=
+trong>.</p>=0A                                <p style=3D"margin: 0; flo=
+at: right; color: #1a1a1a; font-size: 14px; padding-right: 50px;line-hei=
+ght: 21px; text-align: right; font-family:'Amadeus Neue', 'Source Sans P=
+ro', Helvetica, Arial, sans-serif;">Follow us </p>=0A                  =20=
+         </div>=0A                        </div>=0A                    =20=
+   <!--[if mso]></td></tr></table><![endif]-->=0A=0A=0A                =20=
+       <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->=0A            =20=
+   </div>=0A            </div>=0A            <!--[if (mso)|(IE)]></td></=
+tr></table></td></tr></table><![endif]-->=0A        </div>=0A    </div>=
+=0A</div>=0A=0A<!--[if (mso)|(IE)]></div><![endif]-->=0A=0A<div style=3D=
+"background-color:transparent;">=0A    <div style=3D"Margin: 0 auto;min-=
+width: 320px;max-width: 595px;width: 595px;width: calc(28500% - 174680px=
+);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word=
+;background-color: transparent;"=0A         class=3D"block-grid ">=0A  =20=
+     <div style=3D"border-collapse: collapse;display: table;width: 100%;=
+">=0A            <!--[if (mso)|(IE)]>=0A            <table width=3D"100%=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0A                <t=
+r>=0A                    <td style=3D"background-color:transparent;" ali=
+gn=3D"center">=0A                        <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"width: 595px;">=0A                   =20=
+        <tr class=3D"layout-full-width" style=3D"background-color:transp=
+arent;"><![endif]-->=0A=0A            <!--[if (mso)|(IE)]>=0A          =20=
+ <td align=3D"center" width=3D"595"=0A                style=3D" width:59=
+5px; padding-right: 10px; padding-left: 10px; padding-top:1px; padding-b=
+ottom:10px; border-top: 0px solid transparent; border-left: 0px solid tr=
+ansparent; border-bottom: 0px solid transparent; border-right: 0px solid=
+ transparent;"=0A                valign=3D"top"><![endif]-->=0A        =20=
+   <div class=3D"col num12"=0A                 style=3D"min-width: 320px=
+;max-width: 595px;width: 595px;width: calc(27500% - 163030px);background=
+-color: transparent;">=0A                <div style=3D"background-color:=
+ transparent; width: 100% !important;">=0A                    <!--[if (!=
+mso)&(!IE)]><!-->=0A                    <div style=3D"border-top: 0px so=
+lid transparent; border-left: 0px solid transparent; border-bottom: 0px=20=
+solid transparent; border-right: 0px solid transparent; padding-top:0px;=
+ padding-bottom:0px; padding-right: 0px; padding-left: 0px;">=0A       =20=
+                <!--<![endif]-->=0A=0A=0A                        <!--[if=
+ mso]>=0A                        <table width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0">=0A                            <tr>=0A =20=
+                              <td style=3D"float: right; padding-right:=20=
+0px; padding-left: 10px; padding-top: 1px; padding-bottom: 10px;">=0A  =20=
+                     <![endif]-->=0A=0A                        <div styl=
+e=3D"color:#555555;line-height:120%;font-family:'Amadeus Neue', 'Source=20=
+Sans Pro', Helvetica, Arial, sans-serif;float: right;padding-top: 1px;">=
+=0A                            <div style=3D"font-size:14px;line-height:=
+21px;color:#555555;font-family:'Amadeus Neue', 'Source Sans Pro', Helvet=
+ica, Arial, sans-serif;">=0A                                <p style=3D"=
+margin: 0; font-size: 14px; line-height: 21px; text-align: right;">=0A =20=
+                                  <a href=3D"https://www.facebook.com/Am=
+adeusITGroup" style=3D"margin-left: 10px;"><img src=3D"https://api.amade=
+us-direct.com/static/frontend/mmm/default/en_US/Magento_Email/images/fac=
+ebook.png"/></a>=0A                                    <a href=3D"https:=
+//www.youtube.com/@AmadeusITGroup" style=3D"margin-left: 10px;"><img src=
+=3D"https://api.amadeus-direct.com/static/frontend/mmm/default/en_US/Mag=
+ento_Email/images/youtube.png"/></a>=0A                                =20=
+   <a href=3D"https://www.instagram.com/amadeusitgroup/" style=3D"margin=
+-left: 10px;"><img src=3D"https://api.amadeus-direct.com/static/frontend=
+/mmm/default/en_US/Magento_Email/images/instagram.png"/></a>=0A        =20=
+                           <a href=3D"https://www.linkedin.com/company/a=
+madeus/" style=3D"margin-left: 10px;"><img src=3D"https://api.amadeus-di=
+rect.com/static/frontend/mmm/default/en_US/Magento_Email/images/linkedin=
+=2Epng"/></a>=0A                                    <a href=3D"https://twi=
+tter.com/AmadeusITGroup" style=3D"margin-left: 10px;"><img src=3D"https:=
+//api.amadeus-direct.com/static/frontend/mmm/default/en_US/Magento_Email=
+/images/twitter.png"/></a>=0A                                </p>=0A   =20=
+                        </div>=0A                        </div>=0A     =20=
+                  <!--[if mso]></td></tr></table><![endif]-->=0A=0A=0A =20=
+                      <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->=
+=0A                </div>=0A            </div>=0A            <!--[if (ms=
+o)|(IE)]></td></tr></table></td></tr></table><![endif]-->=0A        </di=
+v>=0A    </div>=0A</div>=0A<!--[if (mso)|(IE)]></div><![endif]-->=0A=0A<=
+/body>=0A</html>

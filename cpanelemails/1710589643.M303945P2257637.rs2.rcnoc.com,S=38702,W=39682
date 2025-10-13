@@ -1,0 +1,980 @@
+Return-Path: <tdsfndprd@amadeus.com>
+Delivered-To: novuste1@rs2.rcnoc.com
+Received: from rs2.rcnoc.com
+	by rs2.rcnoc.com with LMTP
+	id GBQNEsuG9WXlciIAc6ptLA
+	(envelope-from <tdsfndprd@amadeus.com>)
+	for <novuste1@rs2.rcnoc.com>; Sat, 16 Mar 2024 14:47:23 +0300
+Return-path: <tdsfndprd@amadeus.com>
+Envelope-to: quintaomondi@novustelltravel.com
+Delivery-date: Sat, 16 Mar 2024 14:47:23 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:54817)
+	by rs2.rcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <tdsfndprd@amadeus.com>)
+	id 1rlSVY-009SdK-1k
+	for quintaomondi@novustelltravel.com;
+	Sat, 16 Mar 2024 14:47:23 +0300
+Received: from obevp599 (unknown [10.168.11.252])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPSA id 08FC5210FE
+	for <quintaomondi@novustelltravel.com>; Sat, 16 Mar 2024 11:46:40 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 08FC5210FE
+From: =?UTF-8?B?S1EgQ2hlY2staW4gQWxlcnQ=?= <kqflightupdate@kenya-airways.com>
+TO: QUINTAOMONDI@NOVUSTELLTRAVEL.COM
+Message-ID: <PNE/KQ/C50E4B5D370F/0@tds.amadeus.com>
+FND-Request-ID: <PNE/KQ/C50E4B5D370F/0@tds.amadeus.com>
+Job-ID: 1
+Mailrelay-Header: v=1; carfid: 000100DLZFZPXP; id: <PNE/KQ/C50E4B5D370F/0@tds.amadeus.com>; app: TDS/PNE; phase: PRD; partition: tds_peak3; region: erd; as: obevp599; doctype: NTF; 
+Subject: =?UTF-8?Q?Alfred,_Kenya_Airways_Check-in_Notification_=E2=80=93_613?=
+Date: Sat, 16 Mar 2024 11:46:39 +0000
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_10762_1744050655.1710589599655"
+MIME-Version: 1.0
+X-Spam-Status: No, score=2.9
+X-Spam-Score: 29
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2.rcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  PNEAACCE00 CHECK-IN NOTIFICATION Booking reference: K283I4
+    Dear Alfred Nandwa, 
+ Content analysis details:   (2.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: traveldoc.aero]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.8 CPANEL_LOTS_OF_EMPTY_LINE RAW: Spam that has large block of
+                             empty lines
+  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+X-Spam-Flag: NO
+
+------=_Part_10762_1744050655.1710589599655
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+=09
+=09
+
+
+
+
+=09
+=09
+=09
+=09
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<title>PNEAACCE00</title>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"/>
+<!--[if !mso]><!-->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D9; IE=3D8; IE=3D7; IE=
+=3DEDGE" />
+ <!--<![endif]-->
+<meta name=3D"viewport" content=3D"width=3Ddevice-width; initial-scale=3D1.=
+0; maximum-scale=3D1.0; user-scalable=3Dno;">                             =
+=20
+<style>
+html,body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+table,td {
+=09=09mso-table-lspace: 0pt !important;
+=09=09mso-table-rspace: 0pt !important;
+=09=09word-wrap:break-word !important;=09
+=09=09vertical-align:top;=20
+=09=09ms-text-size-adjust:100%;=20
+=09=09webkit-text-size-adjust:100%;=20
+=09
+        }
+table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+=09border: 0px;=20
+=09cellpadding: 0;=20
+=09cellspacing: 0;
+=09valign:Top !important;
+=09
+        }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
+ .ExternalClass td, .ExternalClass div {line-height: 100%;}
+p {margin:0; padding:0; margin-bottom:0;}
+
+a[x-apple-data-detectors]{ color: inherit !important; text-decoration: none=
+ !important; font-size: inherit !important; font-family: inherit !important=
+; font-weight: inherit !important; line-height: inherit !important; }
+
+.outerTableWidth{width:720px;}
+
+                                                                =20
+@media only screen (min-width:375px) and (max-width:468px){
+.outerTableWidth{width:100%;}
+}
+
+@media screen and (min-width:501px) and (max-width:999px) and (orientation:=
+landscape){
+   /* Tablet styles */
+.outerTableWidth{width:100%;}
+}
+.background {=09
+=09background-color:#BFBFBF;=09
+=09}
+.backgroundFooter {=09
+=09background-color:#FF0000;=09
+=09}
+.Title {
+=09font-family:Calibri,sans-serif,Arial;
+=09font-size:11pt;
+=09color:#005EB8;
+=09background-color:#F7F7FA;
+=09margin: 0 auto !important;
+=09}
+.rotate90 { =20
+  -webkit-transform:rotate(90deg); =20
+  -moz-transform: rotate(90deg); =20
+  -ms-transform: rotate(90deg);                          =20
+  -o-transform: rotate(90deg); =20
+  transform: rotate(90deg); =20
+} =20
+</style>
+
+</head>
+
+<body>
+<!--Outer structure-->
+<!--[if (gte mso 9)|(IE)]>
+<table width=3D"720" align=3D"left">
+<tr>
+<td>
+<![endif]-->
+<table align=3D"left"  border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" style=3D"padding-left:1px;padding-right:1px;">=20
+=09<tr>
+=09 =09<td align=3D"left" style=3D"padding-left:1px;padding-right:1px;">
+=09 =09=09 <table align=3D"left"  border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0"  class=3D"outerTableWidth"> =09=09=09=09
+=09=09=09=09<tr>
+    =09=09=09=09=09<td align=3D"left" width=3D"100%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" sty=
+le=3D"width:100%" class=3D"generic">
+=09<tr>=09
+=09=09<td class=3D"generic"  valign=3D"top">
+=09=09=09<table border=3D"0" cellpadding =3D"0" cellspacing=3D"0" height=3D=
+"100%"> =09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"width:100%">
+=09=09=09=09=09=09<table width=3D"100%" border=3D"0" align=3D"center" cellp=
+adding=3D"0" cellspacing=3D"0">
+                                                      <tr>
+                                                           <td align=3D"lef=
+t" valign=3D"top">
+                                                                <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"720">
+                                                                  =09<tr>
+                                                                    =09=09<=
+td align=3D"left" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.mrs.amadeus.net/1A=
+SIHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&fo=
+rmatcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DLogo&c=
+ategory=3DLOGO&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" width=3D"=
+569" height=3D"113" align=3D"middle" style=3D"border: none;"/>=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</table>=09=09=09=09=09
+=09=09=09=09=09=09=09    </td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09</td>=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>
+</table>
+
+
+
+=09
+
+
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+    =09=09=09=09=09<td style=3D"background-color:#808080;valign:center;" al=
+ign=3D"center" width=3D"100%">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"color:#FFFFFF;font-weight:bold;font-size:1=
+4pt;font-family:Arial;"> <P>CHECK-IN NOTIFICATION </P></span>
+=09=09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09 =09=09<td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" width=3D"100%">
+
+=09=09=09=09=09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" >=20
+=09<tr>
+=09=09<td>=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"width:30%; height =3D"16px"">
+=09=09=09=09=09=09<span style=3D"color:#181891;white-space:nowrap;font-weig=
+ht:bold;font-size:11pt;font-family:Arial;"> <b>Booking reference: </b></spa=
+n>
+ =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"center" style=3D"vertical-align:middle; width:2=
+%;">=09=09=09=09=09
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:middle; width:58%=
+;">
+=09=09=09=09=09=09<span style=3D"white-space:nowrap;font-size:11pt;font-fam=
+ily:Arial;"> K283I4</span>
+=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"center" style=3D"vertical-align:middle; width:1=
+0%;">=09=09=09=09=09
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09
+=09=09</td>
+=09</tr>
+</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;"> Dear A=
+lfred Nandwa,</span>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;"> <p>It =
+is our pride to welcome you onboard soon. Your flight is now open for onlin=
+e check-in, providing you with the option to complete the check-in process =
+and print your boarding pass from the convenience of your home or office.</=
+p><p><br></p><p>If you would like additional baggage allowance on your flig=
+ht, use <u><a href=3D"https://www.kenya-airways.com/prepare-for-travel/mana=
+ge-booking/modify-booking/en/" target=3D"_blank">manage booking</a></u> to =
+purchase excess baggage service or from any of our KQ sales offices. To vie=
+w excess baggage rates, <u><a href=3D"https://www.kenya-airways.com/prepare=
+fortravel/baggageinformation/excess-baggage-charges/en/" target=3D"_blank">=
+Click here</a></u>.</p><p><br></p><p>Travelling in Economy cabin? Make the =
+most of your travel and select a preferred seat or extra legroom at a modes=
+t fee. Click here to <u><a href=3D"https://www.kenya-airways.com/prepare-fo=
+r-travel/on-board/preferred-seats/en/" target=3D"_blank">learn more</a></u>=
+</p><p><br></p><p>As you plan your next adventure with us, we encourage you=
+ to check the health and <a href=3D"https://kenya-airways.traveldoc.aero/" =
+target=3D"_blank">additional entry documentation requirements&nbsp;</a>of t=
+he country you are traveling to before your trip. If you are flying with on=
+e of our partner airlines, please check the airline=E2=80=99s website using=
+ this <a href=3D"https://www.skyteam.com/en/General-information/covid19" ta=
+rget=3D"_blank">link</a> that provides you with all information about SkyTe=
+am Alliance members.</p><p><br></p><p>Duty Free shopping is available on bo=
+ard, download a copy of the Karibu Duty Free in-flight Magazine from <a hre=
+f=3D"https://tourvestretailservices.cld.bz/KQ-Karibu" target=3D"_blank" tit=
+le=3D"https://tourvestretailservices.cld.bz/KQ-Karibu">https://tourvestreta=
+ilservices.cld.bz/KQ-Karibu</a> before your flight.</p><p><br></p><p>We val=
+ue your feedback, so do let us know what you thought about your flight here=
+. <a href=3D"https://kenya-airways.custhelp.com/" rel=3D"noopener noreferre=
+r" target=3D"_blank">Guest Feedback</a>.</p><p><br></p><p>For further inqui=
+ries on your booking, call us on +254 734 104 747, +254 711 024 747 or chat=
+ us via &nbsp;Whatsapp on +254 705 474 747 or on our <a href=3D"http://keny=
+a-airways.custhelp.com/" target=3D"_blank">customer portal</a>.</p><p><br><=
+/p><p>Thank you for choosing Kenya Airways. Safari Njema!</p><p><br></p></s=
+pan>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>=09=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;font-size:12pt;font-family:Arial;=
+font-weight:bold;" align=3D"center" width=3D"100%">
+=09=09=09=09=09=09<a style=3D"color:#181891;" href=3D"https://www.kenya-air=
+ways.com/prepare-for-travel/manage-booking/online-check-in/en/">ONLINE CHEC=
+K-IN WEBSITE</a>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" width=3D"100%">
+
+
+
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+
+=09
+=09
+
+=09
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" >=20
+=09<tr>
+=09=09<td>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"width:13%; height =3D"16px"">
+=09=09=09=09=09=09<img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspv=
+d/urln/1A/PNE/IMAGE/PNEAACCActiveFlight.png?" valign=3D"center" width=3D"64=
+" height=3D"66"> =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:middle; width:87%=
+;padding-bottom:10px;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:12pt;font-family:Arial;font-weig=
+ht:bold;color:#181891;"> Active Flight Information</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:#FF0000;" height =3D"5" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"5" width=3D=
+"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09</table>=09=09=09
+=09=09=09=09=09
+=09=09=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" class=3D"background" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:25%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> From</span>
+ =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:25%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> To</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Departure</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Arrival</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:9%;pad=
+ding-bottom:10px;background-color:#BFBFBF;">=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Flight</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:13%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Booking class</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>=09=09=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" class=3D"background">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;"> Mombasa MBA Moi Intl</span>
+ =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;"> Nairobi NBO Jomo Kenyatta Intl</span>
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;">20:45<br>Mar 17, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;">21:45<br>Mar 17, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:9%;pad=
+ding-bottom:5px;background-color:#BFBFBF;">=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;">KQ613</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:13%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;">E</span>
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09
+=09=09</td>
+=09</tr>
+</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" width=3D"100%">
+
+
+
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+
+=09
+=09
+=09
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" >=20
+=09<tr>
+=09=09<td>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"width:13%; height =3D"16px"">
+=09=09=09=09=09=09<img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspv=
+d/urln/1A/PNE/IMAGE/PNEAACCItinerary.png?" valign=3D"center" width=3D"64" h=
+eight=3D"66"> =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:middle; width:87%=
+;padding-bottom:10px;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:12pt;font-family:Arial;font-weig=
+ht:bold;color:#181891;"> Itinerary </span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:#FF0000;" height =3D"5" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"5" width=3D=
+"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09</table>=09=09=09
+=09=09=09=09=09
+=09=09=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" class=3D"background" width=3D"100%">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:25%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> From</span>
+ =20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:25%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> To</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Departure</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">=09=09=09=09=09
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Arrival</span>
+ =09=09=09=09=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:9%;pad=
+ding-bottom:10px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Flight</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:13%;pa=
+dding-bottom:10px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-weigh=
+t:bold;color:#181891;"> Booking class</span>
+=20
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>=09=09=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" class=3D"background">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;"> Nairobi NBO Jomo Kenyatta Intl</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;"> Mombasa MBA Moi Intl</span>
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">19:00<br>Mar 15, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">20:00<br>Mar 15, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:9%;pad=
+ding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">KQ612</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:13%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">N</span>
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09
+=09=09</td>
+=09</tr>
+</table>
+
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+
+=09
+=09
+=09
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" >=20
+=09<tr>
+=09=09<td>
+=09=09=09=09=09
+=09=09=09
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" class=3D"background">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;"> Mombasa MBA Moi Intl</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:23.5%;=
+padding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;"> Nairobi NBO Jomo Kenyatta Intl</span>
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:1.5%;p=
+adding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09=20
+=09=09=09=09=09</td>=09
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">20:45<br>Mar 17, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:14%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">21:45<br>Mar 17, 2024</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:9%;pad=
+ding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">KQ613</span>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" style=3D"vertical-align:top; width:13%;pa=
+dding-bottom:5px;background-color:#BFBFBF;">
+=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:blac=
+k;">E</span>
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09
+=09=09</td>
+=09</tr>
+</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;"> For fu=
+rther information, please contact our service desk.<br><br>Best regards.</s=
+pan>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;"> <p>Ple=
+ase note, enactment of a new legislation by the Kenyan and Rwandan authorit=
+ies, on complete ban of the use of plastic bags. Passengers are no longer a=
+llowed to carry any plastic bags when arriving or departing Kenya and Rwand=
+a on all flights .Kindly ensure that you are not in possession of plastic b=
+ags whatsoever as this will incur penalties enforced by these authorities. =
+Should you have a bag containing tax/duty free purchases, we kindly advise =
+you to remove it and leave the plastic bag at the entry points for arriving=
+ passengers. These measures do not affect your flight schedule. We regret a=
+ny inconvenience caused. </p></span>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;"> <p><sp=
+an style=3D"color: rgb(204, 204, 204);">LEGAL INFORMATION</span></p></span>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"valign:center;" align=3D"left" width=3D"100%">
+=09=09=09=09=09=09<span style=3D"font-size:11pt;font-family:Arial;padding-t=
+op:2px;"> <p><a href=3D"https://www.kenya-airways.com/privacy-policy/en/">P=
+rivacy Policy</a></p><p><a href=3D"https://www.kenya-airways.com/en/policie=
+s/conditions-of-carriage/">Conditions of Carriage</a></p><p>Please do not r=
+eply directly to this email. This email was sent from a notification-only a=
+ddress that cannot accept incoming email. If you have questions or need ass=
+istance, please refer to the RSVP contacts. Kenya Airways is =EF=AC=81rmly =
+committed to respecting your privacy. We do not share you information with =
+any third party without your consent.</p></span>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td style=3D"background-color:white" height =3D"16" width=
+=3D"100%" ></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td class=3D"backgroundFooter" height =3D"10" width=3D"100%=
+" ></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td  align=3D"left" width=3D"100%">
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" class=3D"backgroundFooter">=20
+=09<tr>
+=09=09<td>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" class=3D"backgroundFooter">
+=09=09=09=09<tr>
+                              =09=09<td align=3D"left" valign=3D"top" style=
+=3D"width:19%;" class=3D"backgroundFooter">
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-we=
+ight:bold;color:white;">Connect with us</span>=09
+=09=09=09=09=09</td>
+=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"width:26%;" >
+=09=09=09=09=09=09=09
+                               =09=09</td>
+=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"width:55%;" >
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;font-we=
+ight:bold;color:white;">Contact us at</span>=09
+=09=09=09=09=09</td>=09=09=09=09=09=09=09
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>
+</table>
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" class=3D"backgroundFooter">=20
+=09<tr>
+=09=09<td>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" class=3D"backgroundFooter">
+=09=09=09=09<tr>
+                                                                    =09=09<=
+td align=3D"left" valign=3D"top" style=3D"width:5%;" >
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.mrs.amadeus.net/1AS=
+IHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&for=
+matcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Fa=
+cebook&category=3DHYPERLINK&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGG=
+ER"><img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/find/RSGEN?d=
+cxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&formatcode=3DPNEAACCE00&mode=3D=
+EXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Facebook&category=3DLOGO&langu=
+age=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" width=3D"40" height=3D"40" al=
+ign=3D"middle" style=3D"border: none;"/></a>=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:2%;" >
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:5%;" >
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.mrs.amadeus.net/1AS=
+IHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&for=
+matcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Tw=
+itter&category=3DHYPERLINK&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGE=
+R"><img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/find/RSGEN?dc=
+xoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&formatcode=3DPNEAACCE00&mode=3DE=
+XT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Twitter&category=3DLOGO&languag=
+e=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" width=3D"40" height=3D"40" alig=
+n=3D"middle" style=3D"border: none;"/></a>=09
+=09=09=09              =09                               =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:2%;" >
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:5%;" >
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.mrs.amadeus.net/1AS=
+IHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&for=
+matcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Go=
+ogle&category=3DHYPERLINK&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER=
+"><img src=3D"https://www.mrs.amadeus.net/1ASIHMRSEXT/mrspvd/find/RSGEN?dcx=
+off=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&formatcode=3DPNEAACCE00&mode=3DEX=
+T&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+Google&category=3DLOGO&language=
+=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" width=3D"40" height=3D"40" align=
+=3D"middle" style=3D"border: none;"/></a>=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:26%;" >
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:3%;" >
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.mrs.amadeus.net/1A=
+SIHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&fo=
+rmatcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+e=
+mail&category=3DLOGO&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" wid=
+th=3D"20" height=3D"20" align=3D"middle" style=3D"border: none;"/>=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:1%;" >
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:31%;padding-top:5px;" >
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:A=
+rial;color:black;"><p><a href=3D"http://www.kenya-airways.com/">www.kenya-a=
+irways.com</a></p></span>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:3%;" >
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.mrs.amadeus.net/1A=
+SIHMRSEXT/mrspvd/find/RSGEN?dcxoff=3DNBOKQ08MB&dcxorg=3DKQ&doctype=3DNTF&fo=
+rmatcode=3DPNEAACCE00&mode=3DEXT&hpos=3DNONE&vpos=3DNONE&smartname=3DIcon+p=
+hone&category=3DLOGO&language=3Den&CRIT_VALUE=3DCO&CRIT_NAME=3DTRIGGER" wid=
+th=3D"20" height=3D"20" align=3D"middle" style=3D"border: none;"/>=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"top" style=3D"wi=
+dth:1%;" >
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09                                             =09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"right" valign=3D"top" style=3D"w=
+idth:16%;padding-top:5px;padding-right:10px;" >
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:A=
+rial;color:white;text-align:right;"><p>+254 711 024 747 </p></span>
+=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>
+</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09 <td class=3D"backgroundFooter" height =3D"10" width=3D"100%=
+" ></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td  align=3D"left" width=3D"100%">
+
+
+
+<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"left" widt=
+h=3D"100%" >=20
+=09<tr>
+=09=09<td>
+=09=09=09<table border=3D"0" cellSpacing=3D"0" cellPadding=3D"0" align=3D"l=
+eft" width=3D"100%" >
+=09=09=09=09=09<tr>
+                                        =09<td align=3D"left" valign=3D"top=
+" height =3D"16" style=3D"width:100%;" >
+=09=09=09=09=09=09=09=09
+=09=09=09                         </td>=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+                                               <td align=3D"right" valign=
+=3D"top" style=3D"width:100%;" >
+=09=09=09=09=09=09=09<span style=3D"font-size:9pt;font-family:Arial;color:b=
+lack;text-align:right;">=C2=A9 2024 Kenya Airways Limited. All rights reser=
+ved </span>
+=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09
+=09=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>
+</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09=09
+=09  =09=09</table>
+=09=09</td>
+    =09 </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>                                                                      =
+                                          =20
+</tr>
+</table>
+<![endif]-->
+</body>
+</html>
+------=_Part_10762_1744050655.1710589599655--

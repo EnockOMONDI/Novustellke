@@ -1,0 +1,341 @@
+Return-Path: <A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id gBIqFkMIa2eHUgcAObGTvA
+	(envelope-from <A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 24 Dec 2024 22:15:15 +0300
+Return-path: <A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com>
+Envelope-to: caleb@novustelltravel.com
+Delivery-date: Tue, 24 Dec 2024 22:15:15 +0300
+Received: from ccm175.constantcontact.com ([208.75.123.175]:2404)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com>)
+	id 1tQAN8-000000026qG-1qFX
+	for caleb@novustelltravel.com;
+	Tue, 24 Dec 2024 22:15:15 +0300
+Received: from [10.252.1.104] ([10.252.1.104:46144] helo=low1-prod-emailsyndicator-syn-d122.ctct.net)
+	by 10.249.225.10 (envelope-from <A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com>)
+	(ecelerity 4.3.1.999 r(:)) with ESMTP
+	id 5E/B8-50838-2180B676; Tue, 24 Dec 2024 14:14:26 -0500
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=ctct1; d=bluebayhotelszanzibar.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:X-250ok-CID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=Mc/Icz31T1+8SG8oNRXCe9h27+wuCcZu9oygKjmtyPk=; b=I8oOcOIKDbyIEg8UQAdFhiEQAmcUPPthSAMFnh9b6ALzMXaZjKcfhgra41AsbwiFs/ALERLd8bztoKES44cwfjgBoaTSBqa63A2fCr4eVgpPBAupXjg00lCjKMZTYIPPt4K6q0MsWYAm9Ilrr6a5QfTokD2HJqOdt3eqqFQm5kt2U2vPCfh04Ki+VEwcdoRHQ5qTvpV++qSZZhy5/KRVN5td1WTCcJE3Z2G7OuNJfrW6L4lY0uIjx3/V0oDv5Zb9HM/MZY6PlHf9ULC5Rtrhv3XeaYNoPa9S/s3/RSHuRJK9ICBL5viTfNgdgAEkAMssyj3MGnTo/pcG7lYf4/5F1A==
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:X-250ok-CID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=Mc/Icz31T1+8SG8oNRXCe9h27+wuCcZu9oygKjmtyPk=; b=bYv8Kd+G3n8puwRc1Fv+u/fT5ycd98NbqdupLlv4jqC+sp0R4pUOp6T9DjMjYsS7mYu87tSnQDWgFRYrHvzzzUkWtIRGNVrl+Wn923mnl3GEIImuoMpMCDJWqX4iYAM50yoefXpDQpiYGdru6nhEVyAObKdyMSdo3M5ECpwCEH0=
+Message-ID: <1142041031999.1125145487075.1835083312.0.111414JL.2002@synd.ccsend.com>
+Date: Tue, 24 Dec 2024 14:14:26 -0500 (EST)
+From: Bluebay Hotels Zanzibar <georgekamau@bluebayhotelszanzibar.ccsend.com>
+Reply-To: sales@bluebayzanzibar.com
+To: caleb@novustelltravel.com
+Subject: Merry Christmas from Bluebay Hotels Zanzibar!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_573494773_1159148270.1735067666316"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001OjKuv1ab87kDtdVXV_3zig%3D%3D&se=001r4WUbgIRmxOfO8dLMzitbg%3D%3D&t=001EkZLEx15CcE%3D&llr=dxjl58xab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: d60df128-9563-42ee-ad3d-3269f2142c43
+X-250ok-CID: d60df128-9563-42ee-ad3d-3269f2142c43
+X-Channel-ID: e727b462-a950-11ed-b3c1-fa163eb65cb7
+X-Return-Path-Hint: A1g3xKJVjQu6tPTJp8hQsQw==_1125145487075_5ye0YqlQEe2zwfoWPrZctw==@in.constantcontact.com
+X-Roving-Campaignid: 1142041031999
+X-Roving-Id: 1125145487075.1835083312
+X-Feedback-ID: e727b462-a950-11ed-b3c1-fa163eb65cb7:d60df128-9563-42ee-ad3d-3269f2142c43:1125145487075:CTCT
+X-CTCT-ID: e725d2c8-a950-11ed-b3c1-fa163eb65cb7
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Email from Bluebay Hotels Bluebay Hotels | 3276 | Zanzibar,
+    2210 TZ Unsubscribe | Update Profile | Constant Contact Data Notice Email
+    from Bluebay Hotels Bluebay Hotels | 3276 | Zanzibar, 2210 TZ 
+ Content analysis details:   (0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [208.75.123.175 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [208.75.123.175 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [208.75.123.175 listed in sa-trusted.bondedsender.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: constantcontact.com]
+                             [URI: ccsend.com]
+                             [URI: rs6.net]
+                             [URI: amazonaws.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 KAM_UNSUB1             Unsubscription Spams
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+------=_Part_573494773_1159148270.1735067666316
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Email from Bluebay Hotels Bluebay Hotels | 3276 | Zanzibar, 2210 TZ Unsubscribe | Update Profile | Constant Contact Data Notice
+------=_Part_573494773_1159148270.1735067666316
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html lang=3D"en-US"> <head> <title>Email from Bluebay Hotels</title> <meta=
+ http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> <meta =
+name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1, maxim=
+um-scale=3D1">   <style type=3D"text/css" data-premailer=3D"ignore">=20
+@media only screen and (max-width:480px) { .footer-main-width { width: 100%=
+ !important; }  .footer-mobile-hidden { display: none !important; }  .foote=
+r-mobile-hidden { display: none !important; }  .footer-column { display: bl=
+ock !important; }  .footer-mobile-stack { display: block !important; }  .fo=
+oter-mobile-stack-padding { padding-top: 3px; } }=20
+/* IE: correctly scale images with w/h attbs */ img { -ms-interpolation-mod=
+e: bicubic; }=20
+.layout { min-width: 100%; }=20
+table { table-layout: fixed; } .shell_outer-row, .shell_panel-row { table-l=
+ayout: auto; }=20
+/* Gmail/Web viewport fix */ u + .body .shell_outer-row { width: 700px; }=
+=20
+/* LIST AND p STYLE OVERRIDES */ .text .text_content-cell p { margin: 0; pa=
+dding: 0; margin-bottom: 0; } .text .text_content-cell ul, .text .text_cont=
+ent-cell ol { padding: 0; margin: 0 0 0 40px; } .text .text_content-cell li=
+ { padding: 0; margin: 0; /* line-height: 1.2; Remove after testing */ } /*=
+ Text Link Style Reset */ a { text-decoration: underline; } /* iOS: Autolin=
+k styles inherited */ a[x-apple-data-detectors] { text-decoration: underlin=
+e !important; font-size: inherit !important; font-family: inherit !importan=
+t; font-weight: inherit !important; line-height: inherit !important; color:=
+ inherit !important; } /* FF/Chrome: Smooth font rendering */ .text .text_c=
+ontent-cell { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing:=
+ grayscale; }
+</style> <!--[if gte mso 9]> <style id=3D"ol-styles">=20
+/* OUTLOOK-SPECIFIC STYLES */ li { text-indent: -1em; padding: 0; margin: 0=
+; /* line-height: 1.2; Remove after testing */ } ul, ol { padding: 0 0 0 40=
+px; } p { margin: 0; padding: 0; margin-bottom: 0; }=20
+</style> <![endif]-->  <style>@media only screen and (max-width:480px) {
+.button_content-cell {
+padding-top: 10px !important; padding-right: 20px !important; padding-botto=
+m: 10px !important; padding-left: 20px !important;
+}
+.button_border-row .button_content-cell {
+padding-top: 10px !important; padding-right: 20px !important; padding-botto=
+m: 10px !important; padding-left: 20px !important;
+}
+.column .content-padding-horizontal {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.layout .column .content-padding-horizontal .content-padding-horizontal {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.layout .column .content-padding-horizontal .block-wrapper_border-row .cont=
+ent-padding-horizontal {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.dataTable {
+overflow: auto !important;
+}
+.dataTable .dataTable_content {
+width: auto !important;
+}
+.icons_container {
+text-align: center !important;
+}
+.image--mobile-scale .image_container img {
+width: auto !important;
+}
+.image--mobile-center .image_container img {
+margin-left: auto !important; margin-right: auto !important;
+}
+.image.image--float-left {
+float: none !important;
+}
+.image.image--float-right {
+float: none !important;
+}
+.layout-margin .layout-margin_cell {
+padding: 0px 20px !important;
+}
+.layout-margin--uniform .layout-margin_cell {
+padding: 20px 20px !important;
+}
+.scale {
+width: 100% !important;
+}
+.stack {
+display: block !important; box-sizing: border-box;
+}
+.hide {
+display: none !important;
+}
+u + .body .shell_outer-row {
+width: 100% !important;
+}
+.socialFollow_container {
+text-align: center !important;
+}
+.text .text_content-cell {
+font-size: 16px !important;
+}
+.text .text_content-cell h1 {
+font-size: 24px !important;
+}
+.text .text_content-cell h2 {
+font-size: 20px !important;
+}
+.text .text_content-cell h3 {
+font-size: 20px !important;
+}
+.text--sectionHeading .text_content-cell {
+font-size: 24px !important;
+}
+.text--heading .text_content-cell {
+font-size: 24px !important;
+}
+.text--feature .text_content-cell h2 {
+font-size: 20px !important;
+}
+.text--articleHeading .text_content-cell {
+font-size: 20px !important;
+}
+.text--article .text_content-cell h3 {
+font-size: 20px !important;
+}
+.text--featureHeading .text_content-cell {
+font-size: 20px !important;
+}
+.text--feature .text_content-cell h3 {
+font-size: 20px !important;
+}
+.text--dataTable .text_content-cell .dataTable .dataTable_content-cell {
+font-size: 12px !important;
+}
+.text--dataTable .text_content-cell .dataTable th.dataTable_content-cell {
+font-size: px !important;
+}
+}
+</style>
+</head> <body class=3D"body template template--en-US" data-template-version=
+=3D"1.35.22" data-canonical-name=3D"CPE-PT17831" lang=3D"en-US" align=3D"ce=
+nter" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; =
+min-width: 100%; width: 100%; margin: 0px; padding: 0px;"> <div id=3D"prehe=
+ader" style=3D"color: transparent; display: none; font-size: 1px; line-heig=
+ht: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"><s=
+pan data-entity-ref=3D"preheader"></span></div> <div id=3D"tracking-image" =
+style=3D"color: transparent; display: none; font-size: 1px; line-height: 1p=
+x; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"><img src=
+=3D"https://dxjl58xab.cc.rs6.net/on.jsp?ca=3Dd60df128-9563-42ee-ad3d-3269f2=
+142c43&a=3D1125145487075&c=3De725d2c8-a950-11ed-b3c1-fa163eb65cb7&ch=3De727=
+b462-a950-11ed-b3c1-fa163eb65cb7" / alt=3D""></div> <div class=3D"shell" la=
+ng=3D"en-US" dir=3D"ltr" style=3D"background-color: #ffffff;">  <table clas=
+s=3D"shell_panel-row" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"background-color: #ffffff;" bgcolor=3D"#ffffff"> <tr cl=
+ass=3D""> <td class=3D"shell_panel-cell" style=3D"" align=3D"center" valign=
+=3D"top"> <table class=3D"shell_width-row scale" style=3D"width: 700px;" al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td c=
+lass=3D"shell_width-cell" style=3D"padding: 15px 10px;" align=3D"center" va=
+lign=3D"top"> <table class=3D"shell_content-row" width=3D"100%" align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"s=
+hell_content-cell" style=3D"background-color: #ffffff; padding: 0; border: =
+0px solid #ffffff;" align=3D"center" valign=3D"top" bgcolor=3D"#ffffff"> <t=
+able class=3D"layout layout--1-column" style=3D"table-layout: fixed;" width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=
+=3D"column column--1 scale stack" style=3D"width: 100%;" align=3D"center" v=
+align=3D"top">
+<table class=3D"image image--padding-vertical image--mobile-scale image--mo=
+bile-center" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"> <tr> <td class=3D"image_container content-padding-horizontal" style=3D"p=
+adding: 10px 40px;" align=3D"center" valign=3D"top"> <table class=3D"image_=
+container-caption text" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"table-layout: fixed;"> <tr> <td class=3D"text_content-cell" style=3D=
+"text-align: center; font-family: Georgia, serif; color: #BE5C39; font-size=
+: 14px; line-height: 1.2; display: block; word-wrap: break-word; padding: 0=
+px;" align=3D"center"> <img data-image-content class=3D"image_content" styl=
+e=3D"display: block; height: auto; max-width: 100%;" width=3D"595" src=3D"h=
+ttps://mlsvc01-prod.s3.amazonaws.com/3e6a5e7f501/97f549ff-4843-4694-a02f-e7=
+c213627ace.png" alt=3D"">  </td> </tr> </table> </td> </tr> </table> </td> =
+</tr> </table>  </td> </tr> </table> </td> </tr> </table> </td> </tr> <tr c=
+lass=3D""> <td class=3D"shell_panel-cell shell_panel-cell--footer" style=3D=
+"background-color: #FFFFFF;" align=3D"center" valign=3D"top" bgcolor=3D"#FF=
+FFFF"> <table class=3D"shell_width-row scale" style=3D"width: 700px;" align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td clas=
+s=3D"shell_width-cell" style=3D"padding: 0px 10px;" align=3D"center" valign=
+=3D"top"> <table class=3D"shell_content-row" width=3D"100%" align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"shell=
+_content-cell" style=3D"background-color: transparent; padding: 0; border: =
+0 solid #ffffff;" align=3D"center" valign=3D"top" bgcolor=3D"transparent"> =
+<table class=3D"layout layout--1-column" style=3D"table-layout: fixed;" wid=
+th=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td clas=
+s=3D"column column--1 scale stack" style=3D"width: 100%;" align=3D"center" =
+valign=3D"top">
+<table class=3D"complianceAddress complianceAddress--padding-vertical" widt=
+h=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=
+=3D"complianceAddress_content-cell content-padding-horizontal" align=3D"cen=
+ter" style=3D"color: #595959; font-family: Verdana,Geneva,sans-serif; font-=
+size: 12px; line-height: 1.2; padding: 10px 40px;"> <p style=3D"margin: 0;"=
+><span>Bluebay Hotels | </span><span>3276</span><span>   | </span><span>Zan=
+zibar,  2210 TZ</span></p> </td> </tr> </table> <table class=3D"complianceL=
+inks complianceLinks--padding-vertical" width=3D"100%" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"complianceLinks_content-cel=
+l content-padding-horizontal" align=3D"center" style=3D"color: #595959; fon=
+t-family: Verdana,Geneva,sans-serif; font-size: 12px; line-height: 1.2; pad=
+ding: 10px 40px;"> <p style=3D"margin: 0;"> <a href=3D"https://visitor.cons=
+tantcontact.com/do?p=3Dun&m=3D001OjKuv1ab87kDtdVXV_3zig%3D&ch=3De727b462-a9=
+50-11ed-b3c1-fa163eb65cb7&ca=3Dd60df128-9563-42ee-ad3d-3269f2142c43" data-t=
+rack=3D"false" style=3D"color: inherit;">Unsubscribe<span></span></a><span>=
+ | </span><span></span><span><a href=3D"https://visitor.constantcontact.com=
+/do?p=3Doo&m=3D001OjKuv1ab87kDtdVXV_3zig%3D&ch=3De727b462-a950-11ed-b3c1-fa=
+163eb65cb7&ca=3Dd60df128-9563-42ee-ad3d-3269f2142c43" data-track=3D"false" =
+style=3D"color: inherit;">Update Profile</a></span><span> | </span><span><s=
+pan></span><a href=3D"https://www.constantcontact.com/legal/customer-contac=
+t-data-notice" data-track=3D"false" style=3D"color: inherit;">Constant Cont=
+act Data Notice</a></span> </p> </td> </tr> </table> </td> </tr> </table>  =
+</td> </tr> </table> </td> </tr> </table> </td> </tr> <tr class=3D""> <td c=
+lass=3D"shell_panel-cell shell_panel-cell--footer" style=3D"background-colo=
+r: #FFFFFF;" align=3D"center" valign=3D"top" bgcolor=3D"#FFFFFF"> <table cl=
+ass=3D"shell_width-row scale" style=3D"width: 700px;" align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"shell_width=
+-cell" style=3D"padding: 0px 10px;" align=3D"center" valign=3D"top"> <table=
+ class=3D"shell_content-row" width=3D"100%" align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"shell_content-cell" s=
+tyle=3D"background-color: transparent; padding: 0; border: 0 solid #ffffff;=
+" align=3D"center" valign=3D"top" bgcolor=3D"transparent"> <table class=3D"=
+layout layout--1-column" style=3D"table-layout: fixed;" width=3D"100%" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"column colu=
+mn--1 scale stack" style=3D"width: 100%;" align=3D"center" valign=3D"top">
+<table class=3D"image image--mobile-center" width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"image_container" style=
+=3D"" align=3D"center" valign=3D"top"> <table class=3D"image_container-capt=
+ion text" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"table-l=
+ayout: fixed;"> <tr> <td class=3D"text_content-cell" style=3D"text-align: c=
+enter; font-family: Georgia, serif; color: #BE5C39; font-size: 14px; line-h=
+eight: 1.2; display: block; word-wrap: break-word; padding: 0px;" align=3D"=
+center"> <a href=3D"https://www.constantcontact.com/landing1/vr/home?cc=3Dn=
+ge&utm_campaign=3Dnge&rmc=3DVF21_CPE&utm_medium=3DVF21_CPE&utm_source=3Dvir=
+al&nav=3Dd60df128-9563-42ee-ad3d-3269f2142c43" data-trackable=3D"false" sty=
+le=3D"color: #155368; font-weight: bold; text-decoration: none;"><img data-=
+image-content class=3D"image_content" style=3D"display: block; height: auto=
+; max-width: 100%;" width=3D"220" src=3D"https://imgssl.constantcontact.com=
+/letters/images/CPE/referralLogos/H-Stacked-FC-WhiteBG-Email-Footer.png" al=
+t=3D"Constant Contact"></a>  </td> </tr> </table> </td> </tr> </table> </td=
+> </tr> </table>  </td> </tr> </table> </td> </tr> </table> </td> </tr>  </=
+table> </div>  </body> </html>
+
+------=_Part_573494773_1159148270.1735067666316--

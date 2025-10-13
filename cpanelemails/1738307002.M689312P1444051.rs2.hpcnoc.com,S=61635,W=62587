@@ -1,0 +1,952 @@
+Return-Path: <bounce-mc.us5_162875150.10147123-674b644ea9@mail212.atl81.rsgsv.net>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id mKO0KLp1nGfTCBYAObGTvA
+	(envelope-from <bounce-mc.us5_162875150.10147123-674b644ea9@mail212.atl81.rsgsv.net>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 31 Jan 2025 10:03:22 +0300
+Return-path: <bounce-mc.us5_162875150.10147123-674b644ea9@mail212.atl81.rsgsv.net>
+Envelope-to: quita@novustelltravel.com
+Delivery-date: Fri, 31 Jan 2025 10:03:22 +0300
+Received: from mail212.atl81.rsgsv.net ([198.2.129.212]:17455)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <bounce-mc.us5_162875150.10147123-674b644ea9@mail212.atl81.rsgsv.net>)
+	id 1tdl3h-000000066bi-0fH2
+	for quita@novustelltravel.com;
+	Fri, 31 Jan 2025 10:03:22 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k3; t=1738306940; x=1738576940;
+	i=marketing=3Dmarasa.net@mailchimpapp.net;
+	bh=d94NPXFAJsg8kP5o1DrHPNU2fgCX7WnG3+u97pgmbIw=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=BQlsqHXceS6qKVwdq1U9WBpULvxkvqHUfHlEU4SDdzH/1b5UwPXofS0XzK9UKx3WD
+	 99W7Q3KfMYP3bzbskIB1DwsQUn0EZSkj4A6dRojPPZrScJudPWoJOhDux3ZFF0Exv0
+	 1yS+REOfID9PB0qQbUoPuZpPJcMfm7v4CDp6xCcIaGYRzXa6UhUZDJCTg6b1T5gg3C
+	 unGuboomPXthsHat7IZGxssq3cPuSH8RRaAfU3cF7FnEWdsvB3TppkA9LvM5ouhBMX
+	 I85VzU1ZdPgLs2MwEjXAuwcJ21Fx65VRRTwjGGUyL1eHLdCnrYhplFpTqm1wkgZsKl
+	 ZLaGr7rItugig==
+Received: from localhost (localhost [127.0.0.1])
+	by mail212.atl81.rsgsv.net (Mailchimp) with ESMTP id 4Ykmzc523pz8Xmlb1
+	for <quita@novustelltravel.com>; Fri, 31 Jan 2025 07:02:20 +0000 (GMT)
+Subject: =?utf-8?Q?Wholesale=20Net=20Rates=20Update=20=2D=202025?=
+From: Marasa Africa <marketing@marasa.net>
+Reply-To: =?utf-8?Q?Marasa=20Africa?= <marketing@marasa.net>
+To: <quita@novustelltravel.com>
+Date: Fri, 31 Jan 2025 07:02:10 +0000
+Message-ID: <83795d5686a46dd91a32a27a3.674b644ea9.20250131070202.31ecf538f9.e1af13fd@mail212.atl81.rsgsv.net>
+X-Mailer: Mailchimp Mailer - **CID31ecf538f9674b644ea9**
+X-Campaign: mailchimp83795d5686a46dd91a32a27a3.31ecf538f9
+X-campaignid: mailchimp83795d5686a46dd91a32a27a3.31ecf538f9
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=83795d5686a46dd91a32a27a3&id=31ecf538f9&e=674b644ea9
+X-MC-User: 83795d5686a46dd91a32a27a3
+Feedback-ID: 162875150:162875150.10147123:us5:mc
+List-ID: 83795d5686a46dd91a32a27a3mc list <83795d5686a46dd91a32a27a3.1543101.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://marasa.us5.list-manage.com/unsubscribe?u=83795d5686a46dd91a32a27a3&id=647b9ce544&t=h&e=674b644ea9&c=31ecf538f9>, <mailto:unsubscribe-mc.us5_83795d5686a46dd91a32a27a3.31ecf538f9-674b644ea9@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_896311771"
+MIME-Version: 1.0
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  View this email in your browser (https://mailchi.mp/3ca8135ef4cf/wholesale-net-rates-update-10147123?e=674b644ea9)
+    https://marasa.net/ ** M A R A S A A F R I C A WHOLESALE NET RATES UPDATE
+    2025 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [198.2.129.212 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.129.212 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.129.212 listed in bl.score.senderscore.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mailchimpapp.net]
+                             [URI: fonts.googleapis.com]
+                             [URI: mailchimp.com]
+                             [URI: mailchi.mp]
+                             [URI: list-manage.com]
+                             [URI: mcusercontent.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.5 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_896311771
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View this email in your browser (https://mailchi.mp/3ca8135ef4cf/wholesale=
+-net-rates-update-10147123?e=3D674b644ea9)
+https://marasa.net/
+
+
+** M A R A S A   A F R I C A
+WHOLESALE NET RATES UPDATE 2025
+------------------------------------------------------------
+
+Dear Partner=2C
+
+We are pleased to inform you that we have revisited our 2025 rates and mad=
+e adjustments to offer you even greater value.  Attached=2C you will find=
+ the revised rate sheet reflecting these updates.
+
+This revision is part of our ongoing effort to ensure we provide the most=
+ competitive pricing while maintaining the exceptional service you expect=
+ from Marasa Africa. We=E2=80=99re excited about this opportunity to enhan=
+ce your partnership experience and help you meet your business goals.
+
+If you have any questions or need further assistance=2C please don=E2=80=
+=99t hesitate to reach out to us. We=E2=80=99re always here to support you=
+=2E
+
+Thank you for your continued trust and collaboration. We look forward to a=
+nother prosperous year of working together.
+CLICK FOR ACCESS (https://drive.google.com/drive/folders/1fIXmP06YAR3vKvwD=
+LJsbipWS3n-G_1OU?usp=3Ddrive_link)
+
+https://facebook.com/marasaafrica
+https://instagram.com/marasafrica
+https://twitter.com/MarasAfrica
+https://marasa.net
+https://www.linkedin.com/in/marasa-africa-51793618a/
+
+EMAIL: mutiga@marasa.africa     |   CALL: +254 730 841 841   |     WEB: ww=
+w.marasa.net
+Manage Your Subscription (https://marasa.us5.list-manage.com/profile?u=3D8=
+3795d5686a46dd91a32a27a3&id=3D647b9ce544&e=3D674b644ea9&c=3D31ecf538f9) or u=
+nsubscribe (https://marasa.us5.list-manage.com/unsubscribe?u=3D83795d5686a=
+46dd91a32a27a3&id=3D647b9ce544&t=3Db&e=3D674b644ea9&c=3D31ecf538f9)
+--_----------=_MCPart_896311771
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head>
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1" />
+<title>Wholesale Net Rates Update - 2025</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" />
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"" />
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DLato:40=
+0=2C400i=2C700=2C700i=2C900=2C900i|Playfair+Display:400=2C400i=2C700=2C700=
+i=2C900=2C900i" /><!--<![endif]--><style>          img{-ms-interpolation-=
+mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(246=2C 246=2C 246); }.mceText=
+=2C .mcnTextContent=2C .mceLabel { font-family: Lato=2C "Helvetica Neue"=
+=2C Helvetica=2C Arial=2C sans-serif; }.mceText=2C .mcnTextContent=2C .mce=
+Label { color: rgb(0=2C 0=2C 0); }.mceText h1 { margin-bottom: 0px; }.mceT=
+ext p { margin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceTex=
+t input { margin-bottom: 0px; }.mceSpacing-24 .mceInput + .mceErrorMessage=
+ { margin-top: -12px; }.mceText h1 { margin-bottom: 0px; }.mceText p { mar=
+gin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText input { m=
+argin-bottom: 0px; }.mceSpacing-12 .mceInput + .mceErrorMessage { margin-t=
+op: -6px; }.mceInput { background-color: transparent; border: 2px solid rg=
+b(208=2C 208=2C 208); width: 60%; color: rgb(77=2C 77=2C 77); display: blo=
+ck; }.mceInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"] { float:=
+ left; margin-right: 12px; display: inline; width: auto !important; }.mceL=
+abel > .mceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabel { displ=
+ay: block; }.mceText p=2C .mcnTextContent p { color: rgb(0=2C 0=2C 0); fon=
+t-family: Lato=2C "Helvetica Neue"=2C Helvetica=2C Arial=2C sans-serif; fo=
+nt-size: 16px; font-weight: normal; line-height: 1.5; mso-line-height-alt:=
+ 150%; text-align: center; direction: ltr; }.mceText h1=2C .mcnTextContent=
+ h1 { color: rgb(0=2C 0=2C 0); font-family: "Playfair Display"=2C Georgia=
+=2C "Times New Roman"=2C serif; font-size: 31px; font-weight: bold; line-h=
+eight: 1.5; mso-line-height-alt: 150%; text-align: center; direction: ltr;=
+ }.mceText a=2C .mcnTextContent a { color: rgb(0=2C 108=2C 115); font-styl=
+e: normal; font-weight: normal; text-decoration: underline; direction: ltr=
+; }.mceSectionHeader .mceText p=2C .mceSectionHeader .mcnTextContent p { }=
+=2EmceSectionHeader .mceText a=2C .mceSectionHeader .mcnTextContent a { font=
+-style: normal; }.mceSectionBody .mceText h1=2C .mceSectionBody .mcnTextCo=
+ntent h1 { }.mceSectionBody .mceText p=2C .mceSectionBody .mcnTextContent=
+ p { }.mceSectionFooter .mceText p=2C .mceSectionFooter .mcnTextContent p=
+ { }.mceSectionFooter .mceText a=2C .mceSectionFooter .mcnTextContent a {=
+ font-style: normal; }
+@media only screen and (max-width: 480px) {
+            .mceText p { margin: 0px; font-size: 16px !important; line-hei=
+ght: 1.5 !important; mso-line-height-alt: 150%; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceText h1 { font-size: 20px !important; line-height: 1.5 !im=
+portant; mso-line-height-alt: 150%; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceBlockContainer { padding-left: 16px !important; padding-ri=
+ght: 16px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonContainer { width: fit-content !important; max-width=
+: fit-content !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonLink { padding: 18px 28px !important; font-size: 16p=
+x !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerBlock { border-top-width: 2px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerContainer { width: 100% !important; }
+          }
+#dataBlockId-19 p=2C #dataBlockId-19 h1=2C #dataBlockId-19 h2=2C #dataBloc=
+kId-19 h3=2C #dataBlockId-19 h4=2C #dataBlockId-19 ul { text-align: center=
+; }</style></head>
+<body>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">View and downlo=
+ad 2025 Whole Sale Net Rates</span><!--<![endif]-->
+<!--
+-->
+<div style=3D"display: none; max-height: 0px; overflow: hidden;"> =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=
+=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87 =C2=AD =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =C2=AD =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87 =C2=AD </div><div style=3D"display:none;">=E2=
+=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=
+=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=
+=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87=
+&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#x=
+FEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFE=
+FF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=
+=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=
+=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F</div><!--[if !mso]><!=
+--><div style=3D"display:none; font-size:0px; line-height:0px; max-height:=
+0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hid=
+e:all;"><img src=3D"https://marasa.us5.list-manage.com/track/open.php?u=3D=
+83795d5686a46dd91a32a27a3&id=3D31ecf538f9&e=3D674b644ea9" height=3D"1" wi=
+dth=3D"1" style=3D"display:none; font-size:0px; line-height:0px; opacity:0=
+; overflow:hidden; visibility:hidden; mso-hide:all;" alt=3D""></div><!--<!=
+[endif]-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(246=2C 246=2C=
+ 246);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"3" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:#f6f6f6" valign=3D"top" align=3D"center" class=3D"mceSec=
+tionHeader"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:660px;"=
+><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><tbody>=
+<tr><td style=3D"background-color:#d2c3b1" valign=3D"top" class=3D"mceWrap=
+perInner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"2"><tbody><=
+tr class=3D"mceRow"><td style=3D"background-position:center;background-rep=
+eat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tb=
+ody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=
+=3D"mceColumn" data-block-id=3D"-7" colspan=3D"12" width=3D"100%"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pre=
+sentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-=
+right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"bord=
+er:0;background-color:#ffffff;border-radius:0;border-collapse:separate"><t=
+body><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:3px=
+;padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D=
+"1" class=3D"mceText" id=3D"dataBlockId-1" style=3D"width:100%"><p class=
+=3D"last-child"><a href=3D"https://mailchi.mp/3ca8135ef4cf/wholesale-net-r=
+ates-update-10147123?e=3D674b644ea9" style=3D"color: #766d59;"><span style=
+=3D"font-size: 11px">View this email in your browser</span></a></p></div><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9=
+)|(IE)]></td></tr></table><![endif]--></td></tr></tbody><tbody data-block=
+-id=3D"17" class=3D"mceWrapper"><tr><td style=3D"background-color:#f6f6f6"=
+ valign=3D"top" align=3D"center" class=3D"mceSectionBody"><!--[if (gte ms=
+o 9)|(IE)]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"660" style=3D"width:660px;"><tr><td><![endif]--><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"=
+max-width:660px" role=3D"presentation"><tbody><tr><td style=3D"background-=
+color:#d2c3b1" valign=3D"top" class=3D"mceWrapperInner"><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation" data-block-id=3D"16"><tbody><tr class=3D"mceRow"><td sty=
+le=3D"background-position:center;background-repeat:no-repeat;background-si=
+ze:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"paddin=
+g-top:0;padding-bottom:0" valign=3D"top" class=3D"mceColumn" data-block-id=
+=3D"-8" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td st=
+yle=3D"background-color:#ffffff;padding-top:0;padding-bottom:0;padding-rig=
+ht:0;padding-left:0" valign=3D"top" class=3D"mceBlockContainer" align=3D"l=
+eft"><a href=3D"https://marasa.us5.list-manage.com/track/click?u=3D83795d5=
+686a46dd91a32a27a3&id=3Dcddb975bc5&e=3D674b644ea9" style=3D"display:block=
+" target=3D"_blank" data-block-id=3D"4"><span class=3D"mceImageBorder" sty=
+le=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img width=3D"=
+660" height=3D"auto" style=3D"width:660px;height:auto;max-width:660px !imp=
+ortant;border-radius:0;display:block" alt=3D"Horse riding among among wild=
+life at Aberdare Country Club" src=3D"https://mcusercontent.com/83795d5686=
+a46dd91a32a27a3/images/4836b3d4-5bfa-7ad6-d7b4-712930bf4ede.png" class=3D"=
+mceImage" /></span></a></td></tr><tr><td style=3D"background-color:#ffffff=
+" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" role=3D"presentation" data-block-id=3D"5"><tbody><tr><td val=
+ign=3D"top" class=3D"mceSpacerBlock" height=3D"20"></td></tr></tbody></tab=
+le></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right=
+:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;=
+background-color:#ffffff;border-radius:0;border-collapse:separate"><tbody>=
+<tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:5px;padd=
+ing-bottom:5px" class=3D"mceTextBlockContainer"><div data-block-id=3D"6" c=
+lass=3D"mceText" id=3D"dataBlockId-6" style=3D"width:100%"><h1 style=3D"li=
+ne-height: 1.25; mso-line-height-alt: 125%; letter-spacing: 1px;" class=3D=
+"last-child"><span style=3D"font-size: 13px"><span style=3D"font-family: '=
+Lato'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"><span style=
+=3D"font-weight:normal;">M A R A S A =C2=A0 A F R I C A</span></span></spa=
+n><span style=3D"font-family: 'Lato'=2C 'Helvetica Neue'=2C Helvetica=2C A=
+rial=2C sans-serif"><br /></span><span style=3D"font-size: 19px"><span sty=
+le=3D"font-family: 'Lato'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C san=
+s-serif">WHOLESALE NET RATES UPDATE 2025</span></span></h1></div></td></tr=
+></tbody></table></td></tr><tr><td style=3D"background-color:#ffffff" vali=
+gn=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation" data-block-id=3D"7"><tbody><tr><td valign=
+=3D"top" class=3D"mceSpacerBlock" height=3D"20"></td></tr></tbody></table>=
+</td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;=
+padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;bac=
+kground-color:#ffffff;border-radius:0;border-collapse:separate"><tbody><tr=
+><td style=3D"padding-left:100px;padding-right:100px;padding-top:5px;paddi=
+ng-bottom:5px" class=3D"mceTextBlockContainer"><div data-block-id=3D"8" cl=
+ass=3D"mceText" id=3D"dataBlockId-8" style=3D"width:100%"><p style=3D"text=
+-align: left;"><span style=3D"font-size: 13px">Dear Partner=2C</span></p><=
+p style=3D"text-align: left;"><span style=3D"font-size: 13px">We are pleas=
+ed to inform you that we have revisited our 2025 rates and made adjustment=
+s to offer you even greater value. =C2=A0Attached=2C you will find the rev=
+ised rate sheet reflecting these updates.</span></p><p style=3D"text-align=
+: left;"><br /></p><p style=3D"text-align: left;"><span style=3D"font-size=
+: 13px">This revision is part of our ongoing effort to ensure we provide t=
+he most competitive pricing while maintaining the exceptional service you=
+ expect from Marasa Africa. We=E2=80=99re excited about this opportunity t=
+o enhance your partnership experience and help you meet your business goal=
+s.</span></p><p style=3D"text-align: left;"><br /></p><p style=3D"text-ali=
+gn: left;"><span style=3D"font-size: 13px">If you have any questions or ne=
+ed further assistance=2C please don=E2=80=99t hesitate to reach out to us.=
+ We=E2=80=99re always here to support you.</span></p><p style=3D"text-alig=
+n: left;" class=3D"last-child"><span style=3D"font-size: 13px">Thank you f=
+or your continued trust and collaboration. We look forward to another pros=
+perous year of working together.</span></p></div></td></tr></tbody></table=
+></td></tr><tr><td style=3D"background-color:#ffffff" valign=3D"top"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"=
+presentation" data-block-id=3D"9"><tbody><tr><td valign=3D"top" class=3D"m=
+ceSpacerBlock" height=3D"30"></td></tr></tbody></table></td></tr><tr><td s=
+tyle=3D"background-color:#ffffff" valign=3D"top"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-b=
+lock-id=3D"11"><tbody><tr><td valign=3D"top" class=3D"mceSpacerBlock" heig=
+ht=3D"20"></td></tr></tbody></table></td></tr><tr><td style=3D"background-=
+color:#ffffff;padding-top:0;padding-bottom:0;padding-right:100px;padding-l=
+eft:100px" valign=3D"top" class=3D"mceBlockContainer" align=3D"center"><di=
+v><!--[if !mso]><!--></div><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:564px" role=
+=3D"presentation" data-block-id=3D"12" class=3D"mceButtonContainer"><tbody=
+><tr class=3D"mceStandardButton"><td style=3D"background-color:#5e4118;bor=
+der-radius:0;text-align:center" valign=3D"top" class=3D"mceButton"><a href=
+=3D"https://marasa.us5.list-manage.com/track/click?u=3D83795d5686a46dd91a3=
+2a27a3&id=3D435820dc7d&e=3D674b644ea9" target=3D"_blank" class=3D"mceButt=
+onLink" style=3D"background-color:#5e4118;border-radius:0;border:1px solid=
+ #5e4118;color:#ffffff;display:block;font-family:Arial=2C 'Helvetica Neue'=
+=2C Helvetica=2C sans-serif;font-size:14px;font-weight:normal;font-style:n=
+ormal;padding:12px 28px;text-decoration:none;min-width:30px;text-align:cen=
+ter;direction:ltr;letter-spacing:0px" rel=3D"noreferrer">CLICK FOR ACCESS<=
+/a></td></tr></tbody></table><div><!--<![endif]--></div><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"max-width:564px" role=3D"presentation" data-block-id=3D"12" class=3D=
+"mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://drive.google.com/drive/folders/1fIXmP06YAR3vKvwDLJsbipWS3n=
+-G_1OU?usp=3Ddrive_link"
+style=3D"v-text-anchor:middle; width:460px; height:42px;"
+arcsize=3D"0%"
+strokecolor=3D"#5e4118"
+strokeweight=3D"1px"
+fillcolor=3D"#5e4118">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: Arial=2C 'Helvetica Neue'=2C Helvetica=2C sans-serif;
+font-size: 14;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+CLICK FOR ACCESS
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#ffffff"=
+ valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"13"><tbody><tr><td val=
+ign=3D"top" class=3D"mceSpacerBlock" height=3D"50"></td></tr></tbody></tab=
+le></td></tr><tr><td style=3D"background-color:#ffffff;padding-top:0;paddi=
+ng-bottom:0;padding-right:100px;padding-left:100px" valign=3D"top" class=
+=3D"mceBlockContainer"><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:#ffffff;wid=
+th:100%" role=3D"presentation" class=3D"mceDividerContainer" data-block-id=
+=3D"14"><tbody><tr><td style=3D"min-width:100%;border-top-width:1px;border=
+-top-style:solid;border-top-color:#5e4118;line-height:0;font-size:0" valig=
+n=3D"top" class=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></td><=
+/tr><tr><td style=3D"background-color:#ffffff;padding-top:12px;padding-bot=
+tom:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceLayout=
+Container"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"15"><tbody=
+><tr class=3D"mceRow"><td style=3D"background-color:#ffffff;background-pos=
+ition:center;background-repeat:no-repeat;background-size:cover;padding-top=
+:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"24" width=3D"100%" role=3D"presentation"><tbody><tr><td=
+ valign=3D"top" class=3D"mceColumn" data-block-id=3D"-6" colspan=3D"12" wi=
+dth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" class=3D"mceSocialFollowBlock" data-block-id=3D"-5"><tbody><tr><t=
+d valign=3D"middle" align=3D"center"><!--[if mso]><table align=3D"left" b=
+order=3D"0" cellspacing=3D "0" cellpadding=3D"0"><tr><![endif]--><!--[if=
+ mso]><td align=3D"center" valign=3D"top"><![endif]--><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display:inlin=
+e;float:left" role=3D"presentation"><tbody><tr><td style=3D"padding-top:3p=
+x;padding-bottom:3px;padding-left:12px;padding-right:12px" valign=3D"top"=
+ class=3D"mceSocialFollowIcon" align=3D"center" width=3D"24"><a href=3D"ht=
+tps://marasa.us5.list-manage.com/track/click?u=3D83795d5686a46dd91a32a27a3=
+&id=3D84deb49ad7&e=3D674b644ea9" target=3D"_blank" rel=3D"noreferrer"><im=
+g class=3D"mceSocialFollowImage" width=3D"24" height=3D"24" alt=3D"Faceboo=
+k icon" src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/ligh=
+t-facebook-48.png" /></a></td></tr></tbody></table><!--[if mso]></td><![=
+endif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><t=
+able align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"display:inline;float:left" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12p=
+x" valign=3D"top" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"=
+24"><a href=3D"https://marasa.us5.list-manage.com/track/click?u=3D83795d56=
+86a46dd91a32a27a3&id=3D5971f1724d&e=3D674b644ea9" target=3D"_blank" rel=
+=3D"noreferrer"><img class=3D"mceSocialFollowImage" width=3D"24" height=3D=
+"24" alt=3D"Instagram icon" src=3D"https://cdn-images.mailchimp.com/icons/=
+social-block-v2/light-instagram-48.png" /></a></td></tr></tbody></table><!=
+--[if mso]></td><![endif]--><!--[if mso]><td align=3D"center" valign=3D=
+"top"><![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"display:inline;float:left" role=3D"presentation">=
+<tbody><tr><td style=3D"padding-top:3px;padding-bottom:3px;padding-left:12=
+px;padding-right:12px" valign=3D"top" class=3D"mceSocialFollowIcon" align=
+=3D"center" width=3D"24"><a href=3D"https://marasa.us5.list-manage.com/tra=
+ck/click?u=3D83795d5686a46dd91a32a27a3&id=3D04ef8f766b&e=3D674b644ea9" ta=
+rget=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" wid=
+th=3D"24" height=3D"24" alt=3D"Twitter icon" src=3D"https://cdn-images.mai=
+lchimp.com/icons/social-block-v2/light-twitter-48.png" /></a></td></tr></t=
+body></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=3D"ce=
+nter" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" role=3D=
+"presentation"><tbody><tr><td style=3D"padding-top:3px;padding-bottom:3px;=
+padding-left:12px;padding-right:12px" valign=3D"top" class=3D"mceSocialFol=
+lowIcon" align=3D"center" width=3D"24"><a href=3D"https://marasa.us5.list-=
+manage.com/track/click?u=3D83795d5686a46dd91a32a27a3&id=3Da824ebfc5e&e=3D674b644ea9" target=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFo=
+llowImage" width=3D"24" height=3D"24" alt=3D"Website icon" src=3D"https://=
+cdn-images.mailchimp.com/icons/social-block-v2/light-link-48.png" /></a></=
+td></tr></tbody></table><!--[if mso]></td><![endif]--><!--[if mso]><td=
+ align=3D"center" valign=3D"top"><![endif]--><table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:l=
+eft" role=3D"presentation"><tbody><tr><td style=3D"padding-top:3px;padding=
+-bottom:3px;padding-left:12px;padding-right:12px" valign=3D"top" class=3D"=
+mceSocialFollowIcon" align=3D"center" width=3D"24"><a href=3D"https://mara=
+sa.us5.list-manage.com/track/click?u=3D83795d5686a46dd91a32a27a3&id=3Dd22d=
+a56d80&e=3D674b644ea9" target=3D"_blank" rel=3D"noreferrer"><img class=3D=
+"mceSocialFollowImage" width=3D"24" height=3D"24" alt=3D"LinkedIn icon" sr=
+c=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/light-linkedin=
+-48.png" /></a></td></tr></tbody></table><!--[if mso]></td><![endif]--><=
+!--[if mso]></tr></table><![endif]--></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![=
+endif]--></td></tr></tbody><tbody data-block-id=3D"25" class=3D"mceWrapper=
+"><tr><td style=3D"background-color:#f6f6f6" valign=3D"top" align=3D"cente=
+r" class=3D"mceSectionFooter"><!--[if (gte mso 9)|(IE)]><table align=3D"c=
+enter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" styl=
+e=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"pre=
+sentation"><tbody><tr><td style=3D"background-color:#d2c3b1" valign=3D"top=
+" class=3D"mceWrapperInner"><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block=
+-id=3D"24"><tbody><tr class=3D"mceRow"><td style=3D"background-position:ce=
+nter;background-repeat:no-repeat;background-size:cover" valign=3D"top"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0"=
+ valign=3D"top" class=3D"mceColumn" data-block-id=3D"-9" colspan=3D"12" wi=
+dth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"background-color:#=
+5e4118;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" vali=
+gn=3D"top" class=3D"mceLayoutContainer"><table align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+" data-block-id=3D"21" id=3D"section_c3cdae2ef7f361097c26c07532cde2fe" cla=
+ss=3D"mceFooterSection"><tbody><tr class=3D"mceRow"><td style=3D"backgroun=
+d-color:#5e4118;background-position:center;background-repeat:no-repeat;bac=
+kground-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"12" width=3D"100%" role=
+=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0"=
+ valign=3D"top" class=3D"mceColumn" data-block-id=3D"-3" colspan=3D"12" wi=
+dth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padd=
+ing-bottom:0;padding-right:0;padding-left:0" valign=3D"top" align=3D"cente=
+r"><table width=3D"100%" style=3D"border:0;border-radius:0;border-collapse=
+:separate"><tbody><tr><td style=3D"padding-left:0;padding-right:0;padding-=
+top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-bl=
+ock-id=3D"19" class=3D"mceText" id=3D"dataBlockId-19" style=3D"display:inl=
+ine-block;width:100%"><p style=3D"line-height: 1.25; mso-line-height-alt:=
+ 125%;" class=3D"last-child"><strong><span style=3D"color:#ffffff;"><span=
+ style=3D"font-size: 12px">EMAIL</span></span></strong><span style=3D"colo=
+r:#ffffff;"><span style=3D"font-size: 12px">: </span></span><span style=3D=
+"color:rgb(255=2C 255=2C 255);"><span style=3D"font-size: 12px">mutiga@mar=
+asa.africa =C2=A0 =C2=A0 | =C2=A0 </span></span><strong><span style=3D"col=
+or:#ffffff;"><span style=3D"font-size: 12px">CALL:</span></span></strong><=
+span style=3D"color:#ffffff;"><span style=3D"font-size: 12px"> +254 730 84=
+1 841 =C2=A0 | =C2=A0 =C2=A0 </span></span><strong><span style=3D"color:#f=
+fffff;"><span style=3D"font-size: 12px">WEB:</span></span></strong><span s=
+tyle=3D"color:#ffffff;"><span style=3D"font-size: 12px"> www.marasa.net<br=
+ /> </span></span><a href=3D"https://marasa.us5.list-manage.com/profile?u=
+=3D83795d5686a46dd91a32a27a3&id=3D647b9ce544&e=3D674b644ea9&c=3D31ecf538f9"=
+ style=3D"color: #ffffff;"><span style=3D"font-size: 12px">Manage Your Sub=
+scription</span></a><span style=3D"color:#ffffff;"><span style=3D"font-siz=
+e: 12px"> or </span></span><a href=3D"https://marasa.us5.list-manage.com/u=
+nsubscribe?u=3D83795d5686a46dd91a32a27a3&id=3D647b9ce544&t=3Db&e=3D674b644ea9&c=3D31ecf538f9" style=3D"color: #ffffff;"><span style=3D"font-size: 12px=
+">unsubscribe</span></a></p></div></td></tr></tbody></table></td></tr><tr>=
+<td valign=3D"top" class=3D"mceLayoutContainer" align=3D"center"><table al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" role=3D"presentation" data-block-id=3D"-2"><tbody><tr class=3D"mceRow=
+"><td style=3D"background-position:center;background-repeat:no-repeat;back=
+ground-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D=
+"presentation"><tbody></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr><tr><td style=3D"background-color:#ffffff" valign=3D"top"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"present=
+ation" data-block-id=3D"22"><tbody><tr><td valign=3D"top" class=3D"mceSpac=
+erBlock" height=3D"38"></td></tr></tbody></table></td></tr><tr><td style=
+=3D"background-color:#ffffff" valign=3D"top"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block=
+-id=3D"23"><tbody><tr><td valign=3D"top" class=3D"mceSpacerBlock" height=
+=3D"20"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if (=
+gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+</body></html>
+--_----------=_MCPart_896311771--

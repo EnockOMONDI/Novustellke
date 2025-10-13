@@ -1,0 +1,58 @@
+Return-Path: <>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id uMU/Gg7WjWKtIwAA7QkJDw
+	(envelope-from <>)
+	for <novuste1@rs2.noc254.com>; Wed, 25 May 2022 10:09:02 +0300
+Return-path: <>
+Envelope-to: novuste1@rs2.noc254.com
+Delivery-date: Wed, 25 May 2022 10:09:02 +0300
+Received: from mailnull by rs2.noc254.com with local (Exim 4.95)
+	id 1ntl8g-0001FO-A8
+	for novuste1@rs2.noc254.com;
+	Wed, 25 May 2022 10:09:02 +0300
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@rs2.noc254.com>
+To: novuste1@rs2.noc254.com
+References: <jfJl97J2E4AoB6OK9kFPvO88cLhbVJvkEQ99yZTZM@novustelltravel.com>
+Subject: Mail failure - rejected by local scanning code
+Message-Id: <E1ntl8g-0001FO-A8@rs2.noc254.com>
+Date: Wed, 25 May 2022 10:09:02 +0300
+
+A message that you sent was rejected by the local scanning code that
+checks incoming messages on this system. The following error was given:
+
+  This message was classified as SPAM and may not be delivered
+
+------ This is a copy of your message, including all the headers. ------
+
+Received: from novuste1 by rs2.noc254.com with local (Exim 4.95)
+	(envelope-from <novuste1@rs2.noc254.com>)
+	id 1ntl8f-00017r-Hb
+	for info@pinglabsolutions.co.ke;
+	Wed, 25 May 2022 10:09:01 +0300
+To: info@pinglabsolutions.co.ke
+Subject: =?us-ascii?Q?[Novustell_Travel]_Your_site_has_updated_to_Wor?=  =?us-ascii?Q?dPress_6.0?=
+X-PHP-Script: novustelltravel.com/wp-cron.php for 207.180.238.64
+X-PHP-Originating-Script: 1700:PHPMailer.php
+Date: Wed, 25 May 2022 07:09:01 +0000
+From: WordPress <wordpress@novustelltravel.com>
+Message-ID: <jfJl97J2E4AoB6OK9kFPvO88cLhbVJvkEQ99yZTZM@novustelltravel.com>
+X-Mailer: PHPMailer 6.6.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Howdy! Your site at https://novustelltravel.com has been updated automatically to WordPress 6.0.
+
+No further action is needed on your part. For more on version 6.0, see the About WordPress screen:
+https://novustelltravel.com/wp-admin/about.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+You also have some plugins or themes with updates available. Update them now:
+https://novustelltravel.com/wp-admin/
+
+The WordPress Team
+

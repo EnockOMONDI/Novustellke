@@ -1,0 +1,249 @@
+Return-Path: <novustellafrica21@gmail.com>
+Delivered-To: novuste1@rs2.rcnoc.com
+Received: from rs2.rcnoc.com
+	by rs2.rcnoc.com with LMTP
+	id 6EYgHzOmZmaMfCcAc6ptLA
+	(envelope-from <novustellafrica21@gmail.com>)
+	for <novuste1@rs2.rcnoc.com>; Mon, 10 Jun 2024 10:07:31 +0300
+Return-path: <novustellafrica21@gmail.com>
+Envelope-to: wycliff@novustelltravel.com
+Delivery-date: Mon, 10 Jun 2024 10:07:31 +0300
+Received: from mail-ed1-f49.google.com ([209.85.208.49]:49627)
+	by rs2.rcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.97.1)
+	(envelope-from <novustellafrica21@gmail.com>)
+	id 1sGZ7q-0000000AuDY-1lqM;
+	Mon, 10 Jun 2024 10:07:31 +0300
+Received: by mail-ed1-f49.google.com with SMTP id 4fb4d7f45d1cf-57a30dbdb7fso5661928a12.3;
+        Mon, 10 Jun 2024 00:06:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1718003190; x=1718607990; darn=novustelltravel.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JsoE1Jvewgo0rnZVj18rS5EApaZuGxY+zONiszk8ibw=;
+        b=bimLvnLbZ92epeb3t6wPY/LBVV6adm6i+WACLs5/HwiiNdVIEWISAL3XP1LikYmf6s
+         Rg+rk+1VHvbSUlRj8eWBmTo5REMa8TK/foxzyNMAF0atQFpzRRZfNb9+sawUjuxuf5l5
+         NWLc/ZnxMfPQB+wLKQZ3tX0keQMCpVk9YVlHYg/3afAX3gxysbYbthcuHREHPPyM2k8E
+         bFWtxJp0UZqX+sKQUmAEV1Vd9GwCZZSH44G0sEv0UxuVVlG8qodHaIBGsI6bRMJpwPyB
+         CpYw6GOW+dEOa0AxE89Kp60FNSr7b9M+zG1t6XGNfwCUGhSBWQpbkOp28pRyEab65p/D
+         BpDg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1718003190; x=1718607990;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=JsoE1Jvewgo0rnZVj18rS5EApaZuGxY+zONiszk8ibw=;
+        b=innBBy2kFldqnvclhumxRf4/1WOivJXOGd+OR0ZQ9ZY4hrsYQHlN+gA3orBZQUyrY8
+         NOow+hfUT3NlG3KZH96Gj03BuQ2bSTzMuEDQKpmpW7vmt1HlAO3yUZGp3rkPoCqRZDnu
+         E01kkFLfxwEuZCuI8R2M3nujzBNX76VKhrAi8cVX9s3AiGlLjWl828Lh1PVrtCPyxdZS
+         CHvAZTcqTxvlSsBNxp2cV2VULoIWfGSETZ8HDK/iDIU/b9p6bAvlCYwEzi6YtOqve3fq
+         jk57lhNyQBN8R4/TL0rOdD5Cl3miyTfVmKacY1NWU7sPRUmy3FOyesV9xkPixjY5uhMX
+         mJbQ==
+X-Forwarded-Encrypted: i=1; AJvYcCXpGejxbcTHBOfW8Pw6pvGJ0YbskRooNmJQQEtDe3XaUxQSXbjxTiRvnUbAFj8YjrpH7ECXYp/2FOAM7TB5jynZlPVmaAUBVUto0I+Xh+9BJmXm/Mu17wZkrBIXFbix7pa6lklkD2pu72Y=
+X-Gm-Message-State: AOJu0YwMobCUomhhUR/lRQ3ar7hHQGYiH8yCFNAdW62B3zW1NBzqlX08
+	TEpBdg2itTe2d/1+Dz0RyrcdRpjN19eC7O+fbkBdyLgZPElzMmnNAcI/cUNPSMiSeBKJjOsOjPp
+	MvHldzCpXY8kaq0EzzaycUN9qTAs=
+X-Google-Smtp-Source: AGHT+IFMMoTVTSDCqD+hOF7rXeMknZC9MmM3hL9VJVnpJSgKELo1cW8mc9/mEmPBTUQ5uC2lvMIsLbIGDrFWzpZD95c=
+X-Received: by 2002:a50:875a:0:b0:57c:7eb6:440a with SMTP id
+ 4fb4d7f45d1cf-57c7eb64467mr2020159a12.3.1718003189513; Mon, 10 Jun 2024
+ 00:06:29 -0700 (PDT)
+MIME-Version: 1.0
+References: <30738419.20240609212214.66661d06782ee2.64051901@mail128-6.atl41.mandrillapp.com>
+In-Reply-To: <30738419.20240609212214.66661d06782ee2.64051901@mail128-6.atl41.mandrillapp.com>
+From: novustell Africa21 <novustellafrica21@gmail.com>
+Date: Mon, 10 Jun 2024 10:04:04 +0300
+Message-ID: <CAP-V7q-Ta60HGd8aYoxpvGanDCWVXGniHSK-20huyY4ZU_Z2pA@mail.gmail.com>
+Subject: Fwd: JTL Faiba Service Expiration Notice
+To: quinta@novustelltravel.co, wycliff@novustelltravel.com, 
+	accounts@novustelltravel.com
+Content-Type: multipart/alternative; boundary="000000000000d582a3061a83c911"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.rcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Forwarded message --------- From: Date: Mon, 10 Jun 2024,
+    00:22 Subject: JTL Faiba Service Expiration Notice To: NOVUSTELL AFRICA LIMITED
+    Hello NOVUSTELL AFRICA LIMITED, Your Faiba 40Mbps Internet Service service
+    will expire in 5 days. The payment due date for your account number JTLK64474
+    is 15/06/2024. Please pay to continue enjoying the service. 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [novustellafrica21[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [novustellafrica21[at]gmail.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.208.49 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.208.49 listed in bl.score.senderscore.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: faiba.co.ke]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--000000000000d582a3061a83c911
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ---------
+From: <billing@jtl.co.ke>
+Date: Mon, 10 Jun 2024, 00:22
+Subject: JTL Faiba Service Expiration Notice
+To: NOVUSTELL AFRICA LIMITED <novustellafrica21@gmail.com>
+
+
+
+Hello NOVUSTELL AFRICA LIMITED,
+
+Your Faiba 40Mbps Internet Service service will expire in 5 days. The
+payment due date for your account number JTLK64474 is 15/06/2024. Please
+pay to continue enjoying the service.
+
+If you have remitted payment, then please disregard this message.
+
+You can make a payment via several options;
+
+1. M-PESA:
+
+Go to M-PESA on your phone
+Select Pay Bill option
+Enter Business no. 776611 or 330330
+Enter JTLKXX in account code where XX is your JTL FAIBA account number
+Enter the Amount
+Enter your M-PESA PIN and Send
+
+2. ABSA BANK:
+
+AC/No: 0451549855
+Account Name: Jamii Telecommunication Limited
+Branch: Hurlingham Branch
+Please indicate the Invoice and Account number
+
+3. Airtel Money:
+
+Go to Airtel -> airtel money option on your phone
+Select make payments option
+Select pay bill option
+Select OTHER
+Enter business name pesapal
+Enter Amount
+Enter your PIN
+For Reference enter JTLX where JTLX is your JTL FAIBA account number
+
+4. Online Payment:
+
+Go to http://payments.faiba.co.ke
+Insert your Account Information Details
+For Account No, enter JTLKXX where XX is your JTL FAIBA account number
+Select a Payment Method from the options provided
+*Supports Mpesa, Airtel Money, Yu Cash, Visa and MasterCard
+
+
+Please contact our customer care team for any clarification.
+
+Our Customer Service Team can be reached 24x7 in the following ways:
+
+email: customercare@jtl.co.ke
+Faiba 4G Line: 0747585100
+Landline: 0208405100
+
+
+Kind Regards,
+JTL Faiba Billing
+
+--000000000000d582a3061a83c911
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">---------- Forwarded message ---------<br>From: <span dir=
+=3D"auto">&lt;<a href=3D"mailto:billing@jtl.co.ke">billing@jtl.co.ke</a>&gt=
+;</span><br>Date: Mon, 10 Jun 2024, 00:22<br>Subject: JTL Faiba Service Exp=
+iration Notice<br>To: NOVUSTELL AFRICA LIMITED &lt;<a href=3D"mailto:novust=
+ellafrica21@gmail.com">novustellafrica21@gmail.com</a>&gt;<br></div><br><br=
+><br>
+Hello NOVUSTELL AFRICA LIMITED,<br>
+<br>
+Your Faiba 40Mbps Internet Service service will expire in 5 days. The payme=
+nt due date for your account number JTLK64474 is 15/06/2024. Please pay to =
+continue enjoying the service. <br>
+<br>
+If you have remitted payment, then please disregard this message.<br>
+<br>
+You can make a payment via several options;<br>
+<br>
+1. M-PESA:<br>
+<br>
+Go to M-PESA on your phone<br>
+Select Pay Bill option<br>
+Enter Business no. 776611 or 330330<br>
+Enter JTLKXX in account code where XX is your JTL FAIBA account number<br>
+Enter the Amount<br>
+Enter your M-PESA PIN and Send<br>
+<br>
+2. ABSA BANK:<br>
+<br>
+AC/No: 0451549855<br>
+Account Name: Jamii Telecommunication Limited<br>
+Branch: Hurlingham Branch<br>
+Please indicate the Invoice and Account number<br>
+<br>
+3. Airtel Money:<br>
+<br>
+Go to Airtel -&gt; airtel money option on your phone<br>
+Select make payments option<br>
+Select pay bill option<br>
+Select OTHER<br>
+Enter business name pesapal<br>
+Enter Amount<br>
+Enter your PIN<br>
+For Reference enter JTLX where JTLX is your JTL FAIBA account number<br>
+<br>
+4. Online Payment:<br>
+<br>
+Go to <a href=3D"http://payments.faiba.co.ke" rel=3D"noreferrer noreferrer"=
+ target=3D"_blank">http://payments.faiba.co.ke</a><br>
+Insert your Account Information Details<br>
+For Account No, enter JTLKXX where XX is your JTL FAIBA account number<br>
+Select a Payment Method from the options provided<br>
+*Supports Mpesa, Airtel Money, Yu Cash, Visa and MasterCard <br>
+<br>
+<br>
+Please contact our customer care team for any clarification. <br>
+<br>
+Our Customer Service Team can be reached 24x7 in the following ways:<br>
+<br>
+email: <a href=3D"mailto:customercare@jtl.co.ke" target=3D"_blank" rel=3D"n=
+oreferrer">customercare@jtl.co.ke</a><br>
+Faiba 4G Line: 0747585100<br>
+Landline: 0208405100<br>
+<br>
+<br>
+Kind Regards,<br>
+JTL Faiba Billing<br>
+</div>
+
+--000000000000d582a3061a83c911--

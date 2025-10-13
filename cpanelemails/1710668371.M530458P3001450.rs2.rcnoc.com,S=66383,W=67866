@@ -1,0 +1,1483 @@
+Return-Path: <bounces+8442656-aeeb-quintaomondi=novustelltravel.com@em6495.kenya-airways.com>
+Delivered-To: novuste1@rs2.rcnoc.com
+Received: from rs2.rcnoc.com
+	by rs2.rcnoc.com with LMTP
+	id kOzrHlO69mVqzC0Ac6ptLA
+	(envelope-from <bounces+8442656-aeeb-quintaomondi=novustelltravel.com@em6495.kenya-airways.com>)
+	for <novuste1@rs2.rcnoc.com>; Sun, 17 Mar 2024 12:39:31 +0300
+Return-path: <bounces+8442656-aeeb-quintaomondi=novustelltravel.com@em6495.kenya-airways.com>
+Envelope-to: quintaomondi@novustelltravel.com
+Delivery-date: Sun, 17 Mar 2024 12:39:31 +0300
+Received: from xvfrhtdb.outbound-mail.sendgrid.net ([168.245.7.219]:34002)
+	by rs2.rcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <bounces+8442656-aeeb-quintaomondi=novustelltravel.com@em6495.kenya-airways.com>)
+	id 1rlmzI-00CgVA-2o
+	for quintaomondi@novustelltravel.com;
+	Sun, 17 Mar 2024 12:39:31 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kenya-airways.com;
+	h=from:subject:mime-version:content-type:reply-to:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:from:subject:to;
+	s=s1; bh=Iwdr+OCGAsSZnLXJhLzyUCyt0qeWU9nnk1OXvfk7AjM=;
+	b=BJuPnav+j5pFgwREAu2o3F6sip8Ac8glbrx6kKz/EpZPB8zUuogtkpAXOg8VLGHL1Vfd
+	O48NAsLjaqCuTXRXyFV7Nnvg3x4+TNe4JkwvL9ckcvKTimnZJxl2CS1WcQmI66+nXyuPNu
+	jNv2lkebMG/9PlrB7HDpltv4uuZYG4tIGESVax7WEL/a6jNmkQoGHEV0R1I16qnTwavbS3
+	n7nmSRyCHwgqlscbRFLNFcoYMKq7CB3ST/DdTHlFL5/DZ4H/haZfXOXbsGn20Os9zssFgC
+	w3yaFAnjwXGLdCYqQF8u4AyxEesRL1u2WKsJkT14mLy5DDSw+mcEax+ZEIsHNBjg==
+Received: by filterdrecv-c57655446-trk4f with SMTP id filterdrecv-c57655446-trk4f-1-65F6BA26-5
+        2024-03-17 09:38:46.927648667 +0000 UTC m=+1075440.895962481
+Received: from 1d1706e2ad7e (unknown)
+	by geopod-ismtpd-3 (SG) with ESMTP
+	id -92Kg4jISH-oavs3Q3NGtA
+	for <QUINTAOMONDI@NOVUSTELLTRAVEL.COM>;
+	Sun, 17 Mar 2024 09:38:46.753 +0000 (UTC)
+Date: Sun, 17 Mar 2024 09:38:46 +0000 (UTC)
+From: Kenya Airways <upgrade@kenya-airways.com>
+Message-ID: <623318219.11633.1710668326727.JavaMail.root@1d1706e2ad7e>
+Subject: Claim an extra seat on your flight to Nairobi
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_11630_1425362859.1710668326560"
+emailType: CHASER_EMAIL
+requestId: je0scVwHxTDAtwEvq5fWaTvG9DtqjmJjUk
+commType: CHASER_EMAIL
+correlationId: 569e1869-5ce1-4237-a36f-7ebb661def89
+partnerId: 396
+Reply-To: kqupgrade@kenya-airways.com
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EhzB+quX=2Fm8n+9GbfmnVds4A+EpediS3nVAzW48iWgWJi4iB6EV0cLwaG2?=
+ =?us-ascii?Q?xDLIlomQizxwLjNlZOMm6y5zil+BGxWNRx9DRFr?=
+ =?us-ascii?Q?UMx1It90613JcdQXEDYujBIw3qjB8GnTna=2FzCvu?=
+ =?us-ascii?Q?IHb3PmBno9EZ1Hxyx6M2r85Nm4Wxw59l0XOe=2Foy?=
+ =?us-ascii?Q?ycUHJh=2FUMXw9P+jKi7sz0r9WcuWLx0etzr7mqyd?=
+ =?us-ascii?Q?CIJ1bGZmnOOkYl3Fmxq0bpEB=2Fbev+gcYgGVQ3io?=
+ =?us-ascii?Q?8SDqVCqmPvPocIBzlwMCLfWt1w=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3Bq2EOyRZ4PS8G8rPFz9xLbBqGvHInlRz1SEyO?=
+ =?us-ascii?Q?hYJzQqP4Z=2FbqBxJ7tvpNvbTjoXPgMfftEP6f0cn?=
+ =?us-ascii?Q?8ugJTiUeNASpBDckCC3KfDl4aKtx8z=2FDPdMWzqb?=
+ =?us-ascii?Q?O+SIsyRuycV4wluRhD5TNLIChOYAmyI64dhHO6s?=
+ =?us-ascii?Q?0WN7dkTdJCpiJk28Yy9yYR0rp2DvCJwd2HzYZL1?=
+ =?us-ascii?Q?jKUFaw5+EJMPFfKdlV7e0gNWVmpn86m3bnnRR5j?=
+ =?us-ascii?Q?B84+wlKQYIWM5mLRmltOMlOd1pQE2FY7nPbCoTn?=
+ =?us-ascii?Q?WoQtXLNGtEUAwjOZtIBHvVmi8lcNAJeNMIP79XW?=
+ =?us-ascii?Q?Ifo7QsldnIZX85aGRwEF1bfoi2UtSuvvCNJ97MT?=
+ =?us-ascii?Q?Qx0vuq1xoOxdWvNBp6wcecfPwsvoF8rlelEwR6+?=
+ =?us-ascii?Q?dRj606J6ynAWcP=2F7Ioh+PY+yhTTLluC2MnE0yj4?=
+ =?us-ascii?Q?GkdiPoB9XpoG6MhP8CBNisw1XZGBt5Na2Xl+ZqT?=
+ =?us-ascii?Q?9PpyhRjELgAw4Nw4RMRfkqQoMco4M3fKvl9Nj2+?=
+ =?us-ascii?Q?VhUFwxQnL94G0FR0ZD4cRsHEcfsKrk7xKabA4Uz?=
+ =?us-ascii?Q?Lk56QyGWL9dgdQE5ozQgg4psfXxgQ6CHqNXPH6c?=
+ =?us-ascii?Q?d6qm8eRi5c+7FFDibHfWDqq1PJqpS=2FOj=2FCUycnx?=
+ =?us-ascii?Q?Zbd=2F84bCKY5T+ys0HffM6iW9LFU40zhQLw1FA+V?=
+ =?us-ascii?Q?Lu5iJzQacTby+snR+ksTDTXepAUF10w9kJWBxOt?=
+ =?us-ascii?Q?UnJtRIWmL8VM7o21edCtNS41+op4Klgf+q8eFuH?=
+ =?us-ascii?Q?EJ4BY6py6qQ8fexn2kETrzjdvtTMXrFqLX5T1k=2F?=
+ =?us-ascii?Q?Y8+9Yjkydcuo6UGz5tmX2q1W8On1Bswulg=2FDm9w?=
+ =?us-ascii?Q?uokOWeYeEIxQwMCsuEbH1svwgTWvxcXHc4YOfdb?=
+ =?us-ascii?Q?ikf80CdVP=2FNhwvGNGlcD?=
+To: QUINTAOMONDI@NOVUSTELLTRAVEL.COM
+X-Entity-ID: u001.jux66uuypSC8fEvjIOEpYg==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40em6495=2Ekenya-airways=2Ecom=3Fsubject=3Dhttps=3A=2F=2Fg?=
+ =?us-ascii?Q?o=2Eplusgrade=2Ecom=2Fwf=2Funsubscribe*q*upn=3D2i?=
+ =?us-ascii?Q?l9mTuCwGKDH0vWf9tTNfPg-2BZDKcz1qDeSgeBO?=
+ =?us-ascii?Q?05n-2BXuVxdNUhD-2FNCXWNBCE-2FoEFAI981vU?=
+ =?us-ascii?Q?vRV-2BJQiv4ZUlGSBS7C-2BVkzCI9r0f1mrbfj6?=
+ =?us-ascii?Q?IGCulmJsfZ9DDnLAKEAkAmoj-2FGvAAOSyeY0qB?=
+ =?us-ascii?Q?LKdMegrPXgwMGApYzMhDTaXXJ1jl6wdCDSRLN2k?=
+ =?us-ascii?Q?J-2Bo-2BVv3sRNAmQh7EAlEqos2tl2A1fyj1-2B?=
+ =?us-ascii?Q?p24fC3M-2BaTefPR0pkOhNLTnTCMuBULY19OtSW?=
+ =?us-ascii?Q?sUADdRwcBuTZ-2FEWihXNo7R-2FocGA8LRVHhNX?=
+ =?us-ascii?Q?-2BZtg-2BWovynb0i4HRqI2UW-2BIFHxuKnjGFT?=
+ =?us-ascii?Q?fF9OHdJPKtu5qr7a7YTBaW3cYcUKVGElS6N3zpU?=
+ =?us-ascii?Q?hxyvnB9z63XEhI2oQZzFL54quAAhlON1EaTWxV1?=
+ =?us-ascii?Q?ys3MXX2P9hu7QqdSciwPFNdlI0vKcek0bZWA3QT?=
+ =?us-ascii?Q?p8jXejkgNCz47dRjd8oEojhGGpBOyDeO52ETVr8?=
+ =?us-ascii?Q?Wk3M7EHXk6l0pN-2FzCszyaYdR-2F-2BNuu29GD?=
+ =?us-ascii?Q?phaNvGmrgFC0b1-2Bv-2F30o8wWDANpqP3IBKJf?=
+ =?us-ascii?Q?IYbJdBBXMkOON2eOwQrl5lAUjEYCeFTtfXYmGIQ?=
+ =?us-ascii?Q?h-2BoTZJFhOIUv06t9seXW6eWU-2B6tz4JxueD5?=
+ =?us-ascii?Q?IM990-2BWWh2Gehqr8UHQwqjFNEYycD9A6AV-2B?=
+ =?us-ascii?Q?nR4xTeDy1-2BUGiipcS2W2TWVQHzLOGXG3lvBKu?=
+ =?us-ascii?Q?zG0HjmnKWDp82jPTpCucQlbaVZWa9Fx2cLFQorF?=
+ =?us-ascii?Q?n1MuDWUbMyYl5D1iDVmRmbZo4NfOwWgKJfrJkiZ?=
+ =?us-ascii?Q?7Q3bUgBZxQl7CF3XBVoOfvG-2FhT8zPg-2FVDFB?=
+ =?us-ascii?Q?2m6tOu7EtGfgQtx-2BUu-2BM2bVudNdgRHQLEOv?=
+ =?us-ascii?Q?8RjSV4fhOLi2OSzbPIokPx564uFHEIJqsIaG9Xx?=
+ =?us-ascii?Q?stWm8FJIH3lZun63hINYI3R7NyOSO7FvgRumaut?=
+ =?us-ascii?Q?wMp1Am8cVyOybyKy4LIv8qBW-2FyTg5LkMfXFhQ?=
+ =?us-ascii?Q?5MT3uAAiZB95WmcB34C7H1QXUqnqFrgQu7d-2FB?=
+ =?us-ascii?Q?l0A0vqcf02IGzE-2BKXa4vKyL8Iw1sPnn6J1ETX?=
+ =?us-ascii?Q?6g-2Ft5zSf8FcsHxy-2BtxNkAKHpc4JvNV596CA?=
+ =?us-ascii?Q?Zm3aUZImZ5OK9v1Yut4QTlkumWEzJtD1OGVSa-2?=
+ =?us-ascii?Q?Blcd-2Fzz-2BuiKRgkyWiP-2FdD8vQ9PfnO7E-3?=
+ =?us-ascii?Q?D=3E=2C=3Chttps=3A=2F=2Fgo=2Eplusgrade=2Ecom=2Flu=2Funsubsc?=
+ =?us-ascii?Q?ribe=3Foc=3Du001=2EL-HUMoWcoiCJqnizdYozDAuocg?=
+ =?us-ascii?Q?Hy8zFqGm3cKGjdCS-OzR1=5FqEKSDlACD=5FHvlhiLA?=
+ =?us-ascii?Q?haJqKoxL4PeCeitG=5F6VNW61bdw6qNZIftJoi4J0?=
+ =?us-ascii?Q?gMdtYyZOatDvTTqwpfJ-ZxVuW=5F5-aOzv4dryQY2?=
+ =?us-ascii?Q?0h8-Bls9srgKZtM92eDd2ZGZ12QUPgsWr00Hk3s?=
+ =?us-ascii?Q?XJ8nOZ5mwcc7010wV=5FPwJo911NqkZcZW27uZfo8?=
+ =?us-ascii?Q?0PxZedFldglBqBOg-yk=5FFRP0gc3vXUNW2Wgl9tn?=
+ =?us-ascii?Q?zBFckpw1wtAHgdUVQ2JaPc6Ix3ARg8Tc5rOEMVm?=
+ =?us-ascii?Q?JcOYZeo42QuFfBk5bLJBsfbGY-E9Pp7=5F88us=5Fm=5F?=
+ =?us-ascii?Q?A7ehgmNdFjHMYUW5FpqNJaK=5F1aGiUBvs4aiHuaS?=
+ =?us-ascii?Q?WjdQPFDc4Ocd0BU8yGwhcvTFp-N24Rqe6b8yKAm?=
+ =?us-ascii?Q?HDT6atoOE8wtrbdYyXLM7iKWD=5FeAW-luCmtGJvZ?=
+ =?us-ascii?Q?ikFYA-IEc47rt8U6j6dCVOpPB=5FQv3hnWq7-tGV2?=
+ =?us-ascii?Q?DYTMIrwuVKSouZAoOdygTUXnjwMw9jUOeeO8krX?=
+ =?us-ascii?Q?PvWiAnIl7fz4YmMOb1lKamQPz1TImDcxyN-3IqU?=
+ =?us-ascii?Q?Sksy5-1sT0csxjEdMqG0F-Z6tfplL62bCJy3kQX?=
+ =?us-ascii?Q?--E2HZ9vKYuBW-C7=5Fc6XJTf=5FJ=5Fv6jZc2mm910T9?=
+ =?us-ascii?Q?PpCOD2hHeVQ2Gti8HUYpTq0oKh0rSEGewVgXU-V?=
+ =?us-ascii?Q?omLDGrZ3UQajY5fOMwMibma-yNOcTc=5F1SoSUKVE?=
+ =?us-ascii?Q?UcEK-mLHy0O1pWzzEbJqRw9WQHZIVZnjjIqs7IH?=
+ =?us-ascii?Q?hz22WWGRdWFP1a8FgeDQBaiEWBjXCW6obfi51eA?=
+ =?us-ascii?Q?5bQMyLHG2xcbxxJtlAXBSG80sde60p=5F4ZjB8DUB?=
+ =?us-ascii?Q?sJJq7te6vvJwbOddxGQiA-=5F1uaicThr149IzUoe?=
+ =?us-ascii?Q?Hi8Q-3jdK2v5eAt6J=5FTCx8aDNMmc64N9eWXbsZc?=
+ =?us-ascii?Q?HIu3GQZZ8Pz3bHbMtzly1pNPH-vEmxZfIp9MSWr?=
+ =?us-ascii?Q?O9iQTvvassddK37IiHemQLHqwsp8KlY2eVDUS1v?=
+ =?us-ascii?Q?rXVet76F06ftkmyjXV7lWZ6nCXH4weycSJuGgWU?=
+ =?us-ascii?Q?JYXHVfQrjc4swSTfC6b2lvZA9HkfTPM34UlApQt?=
+ =?us-ascii?Q?3RhiTW9zTtBDuVmhb=5F9JkX5OUOCqJ1PK3TiU-UM?=
+ =?us-ascii?Q?tb=5FlufiEqKVAFyJ6qe-uLG14c=5FrIGpLM6nJ4RHf?=
+ =?us-ascii?Q?HiX6OvaUwnUtieHthLGHZtMhpz-1rXoJbmoKc7B?=
+ =?us-ascii?Q?rkM5KY3sLF9cs9rpmwjxTipkzANGnfkNcBJACf9?=
+ =?us-ascii?Q?K6M90LmFVmDJHdEDzONOrmOOoI6dZjaR79=5Fhdji?=
+ =?us-ascii?Q?8KLpN-DYz1aUkbR8wzshp8hxJ5Cq9WSiaqLIKtV?=
+ =?us-ascii?Q?13md8n-ixlYvzWc-ZDato2P2LvwfYIPKFG=5F2qcW?=
+ =?us-ascii?Q?F994JDOdpa=5FBHnpAO-skVfBCjgLHnQybpAAQ=5FEB?=
+ =?us-ascii?Q?K6OmqdnRzO2Fph1wna31X5UCMcPo2Nu6o19odAr?=
+ =?us-ascii?Q?WWRRlWJWg97rbxGLE=5FnFDLd6QFNUN08BnzmZyS8?=
+ =?us-ascii?Q?=5FBu8-TiDFFNGjZVsiJIUfHgLljZ3TQ1fU1HHEFK?=
+ =?us-ascii?Q?h4t9tvEBV46PgOQgTIQkCN86=5FH4gb77LM6cemSy?=
+ =?us-ascii?Q?TKAx3BsYbI=5FMfCNFYvLoxsU5fxqaMNidkueO7YF?=
+ =?us-ascii?Q?VoJ5yeRqIUENg3=5FlOmTcoUXtYqDU-2BwtaJgbMo?=
+ =?us-ascii?Q?NtWAfgPS9Tw4Q25phSpVkIjr8K-NtDcHEZUY9cL?=
+ =?us-ascii?Q?uAW7nt5ZsZxPX=5FERdW291w=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.rcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Kenya Airways Get all kinds of unlimited space with Economy
+    Max View in browser 
+ Content analysis details:   (0.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: fonts.googleapis.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+                             area
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.5 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.8 CPANEL_LOTS_OF_EMPTY_LINE RAW: Spam that has large block of
+                             empty lines
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+ -0.6 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+------=_Part_11630_1425362859.1710668326560
+Content-Type: multipart/related; 
+	boundary="----=_Part_11631_862383283.1710668326560"
+
+------=_Part_11631_862383283.1710668326560
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" lang=3D"en"=
+ xml:lang=3D"en" dir=3D"ltr">
+
+<head>
+  <title>Kenya Airways</title>
+<!--[if !mso]>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]-->
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+  <style type=3D"text/css">
+    @media {
+      @font-face {
+          font-family: SourceSans-Bold;
+          src: url('https://upgrade-cdn-prd.plusgrade.com/offer/fonts/sourc=
+e-sans/SourceSansPro-Bold.otf');
+          font-weight: bold;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: SourceSans;
+          src: url('https://upgrade-cdn-prd.plusgrade.com/offer/fonts/sourc=
+e-sans/SourceSansPro-Regular.otf'),
+          url('https://upgrade-cdn-prd.plusgrade.com/offer/fonts/source-san=
+s/SourceSansPro-Regular.woff') format('woff'),
+          url('https://upgrade-cdn-prd.plusgrade.com/offer/fonts/source-san=
+s/SourceSansPro-Regular.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: Varela Round;
+          src: url('https://upgrade-cdn-prd.plusgrade.com/offer/fonts/varel=
+a/Varela-Regular.otf');
+          font-weight: normal;
+          font-style: normal;
+      }
+    }
+    #outlook a {
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+  </style>
+<!--[if mso]>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG></o:AllowPNG>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+<![endif]-->
+  <!--[if lte mso 11]>
+        <style type=3D"text/css">
+          .mj-outlook-group-fix { width:100% !important; }
+        </style>
+<![endif]-->
+  <!--[if !mso]><!-->
+  <link href=3D"https://fonts.googleapis.com/css2?family=3DOpen+Sans:ital,w=
+ght@0,300;0,400;0,500;0,600;0,700;1,400;1,500" rel=3D"stylesheet" type=3D"t=
+ext/css">
+  <style type=3D"text/css">
+    @import url(https://fonts.googleapis.com/css2?family=3DOpen+Sans:ital,w=
+ght@0,300;0,400;0,500;0,600;0,700;1,400;1,500);
+  </style>
+  <!--<![endif]-->
+  <style type=3D"text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+
+      .mj-column-per-50 {
+        width: 49.5% !important;
+        max-width: 49.5%;
+      }
+
+    }
+  </style>
+  <style type=3D"text/css">
+    noinput.mj-menu-checkbox {
+      display: block !important;
+      max-height: none !important;
+      visibility: visible !important;
+    }
+
+    @media only screen and (max-width:480px) {
+      .mj-menu-checkbox[type=3D"checkbox"]~.mj-inline-links {
+        display: none !important;
+      }
+
+      .mj-menu-checkbox[type=3D"checkbox"]:checked~.mj-inline-links,
+      .mj-menu-checkbox[type=3D"checkbox"]~.mj-menu-trigger {
+        display: block !important;
+        max-width: none !important;
+        max-height: none !important;
+        font-size: inherit !important;
+      }
+
+      .mj-menu-checkbox[type=3D"checkbox"]~.mj-inline-links>a {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type=3D"checkbox"]:checked~.mj-menu-trigger .mj-men=
+u-icon-close {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type=3D"checkbox"]:checked~.mj-menu-trigger .mj-men=
+u-icon-open {
+        display: none !important;
+      }
+    }
+
+    @media only screen and (max-width:480px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.mj-full-width-mobile {
+        width: auto !important;
+      }
+    }
+  </style>
+  <style type=3D"text/css">
+    @media all and (max-width: 480px) {}
+    @media { @font-face { font-family: 'Lucida Sans'; src: url('https://upg=
+rade-cdn.plusgrade.com/offer/fonts/lucida-sans/lucidasansdemibold.ttf') for=
+mat('truetype'); font-weight: normal; font-style: normal;} @font-face { fon=
+t-family: 'Lato'; src: url('https://upgrade-cdn.plusgrade.com/offer/fonts/l=
+ato/Lato-Regular.ttf') format('truetype'); font-weight: normal; font-style:=
+ normal;}}
+
+    .highlight {
+      font-weight:600;color: #000;
+    }
+
+    .flight-row {
+      background-color: #F4F4F4;
+      border-collapse: separate;
+      border: 2px solid #ffffff;
+    }
+
+    .flight-departure-date {
+      font-family: 'Lato',Arial,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color:#333333;;
+    }
+
+    .flight-details {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color:#333333;;
+    }
+
+    a {
+      text-decoration: none;
+      color:#ed1724 !important;
+    }
+    .preheader {
+      display: none !important; color: transparent; height: 0; max-height: =
+0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: h=
+idden; width: 0;
+    }
+  </style>
+  <script type=3D"application/ld+json">
+ =20
+ =20
+    {
+      "@context": "http://schema.org",
+      "@type": "FlightReservation",
+      "reservationNumber": "K283I4",
+      "reservationStatus": "http://schema.org/Confirmed",
+      "underName": {
+        "@type": "Person",
+        "name": "SU  BIQUN"
+      },
+      "reservationFor": {
+        "@type": "Flight",
+        "flightNumber": "613",
+        "airline": {
+          "@type": "Airline",
+          "name": "Kenya Airways",
+          "iataCode": "KQ"
+        },
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Mombasa",
+          "iataCode": "MBA"
+        },
+        "departureTime": "2024-03-17T20:45",
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Nairobi",
+          "iataCode": "NBO"
+        },
+        "arrivalTime": "2024-03-17T20:45"
+      }
+    }
+ =20
+ =20
+  </script>
+</head>
+<body style=3D"background-color:#f0f0f0"><span class=3D"preheader">Get all =
+kinds of unlimited space with Economy Max</span>
+  <div style=3D"background-color:#f0f0f0">
+<!--[if mso | IE]>
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+    <div style=3D"background:#f0f0f0;background-color:#f0f0f0;margin:0px au=
+to;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"background:#f0f0f0;background-color:#f0f=
+0f0;width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"direction:ltr;padding:0px;text-align:center;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:300px;">
+<![endif]-->
+              <div class=3D"mj-column-per-50 mj-outlook-group-fix" style=3D=
+"text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                  <tr>
+                    <td align=3D"left" vertical-align=3D"middle" style=3D"p=
+adding:10px 25px;word-break:break-word;">
+                      <div style=3D"font-family:'Lato',Arial,sans-serif;lin=
+e-height:24px;text-align:left;font-size:11px;color:#505050;font-style:norma=
+l;font-weight:300;text-decoration:none;">
+                        <a href=3D"https://go.plusgrade.com/ls/click?upn=3D=
+u001.VCgYw5ra82-2FGwlnOVWxgSLrjZ9SNt24EO9ok5uiaikE1eO-2FTQxcMl2Y2SpCcwt8Wt8=
+m5LyzQPszLyga6Vo6VWXjomek9Oz4u9pZ297wsx5d9L3sK7UsZYrr4c-2FirqLqbjySdDJXokDv=
+J-2BBYBNBOuC-2BU43ufwp5GxR8ts2wPxGaWnEh70f1jp-2FN3-2BUXjEPHt66qLq2lFC7Kbr33=
+q7liAWKEZl3h7eRMmzpierzG0g1NsVVkjkL1NBmFTPYoqsZfcLRZyYn0Gk7o2l5MA40jSTJWPZo=
+RlxopMeylVwfWw8Kco-3Dvo00_u8VxlpT-2BJuqEeILftLn8TVem1eZZJSp9-2Bol40DteUHp3N=
+V8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2FJaojphpOBzkgnaA5acN-2B9E-2FyllCAhYP6sSy=
+t6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2FOA4Iovf7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaT=
+g8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVtdZAt89glYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-=
+2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5bjW8oLCzGM5msN50htrr8GTPb-2Bgf2cZPmV5I-2=
+FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziFoA5zJn0Fw7iIZIN95MtEsKj-2BlpBgev9vANgGp=
+PGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bxa7UWg-2FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa=
+2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8Hq-2BK-2BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9Z=
+eKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2F8WtANfR-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt=
+0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2FBjax4NL0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZ=
+tecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94PUeGmOlIOu9R95M055R5pRnNQSahucMvsZ1T9xI=
+5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIYKY8-2FxUvUrUE2lRlKfX92BocJQtmVzDLI68c-2=
+FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHrZfClwHcBfi71J-2B7e9Gvbehi4qBaQh4y6h3eyt=
+urAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfCZHKfeVideKiz5PLPZc7NvlmVYx-2FDz51lak-2B=
+b-2BqyeO-2BSCSwE2PIxt1fFlBjsiwad5xn3oyPaa1J8QT1v66VtH5nNuk4QDF0LzfNdw5kWquu=
+KRtBKPOmiKP2h6RoHjmMdjS2ltxnwvCbkKeUPvVLVzSj7rZBuItwmZLV-2FZhvzrD7odN2nDNoX=
+Sngz3b5NzoHJWyhFgFwByg-3D-3D">
+                          View in browser
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+<!--[if mso | IE]>
+            </td>
+            <td class=3D"" style=3D"vertical-align:top;width:300px;">
+<![endif]-->
+              <div class=3D"mj-column-per-50 mj-outlook-group-fix" style=3D=
+"text-align:right;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                  <tr>
+                    <td align=3D"right" style=3D"word-break:break-word;">
+                     =20
+                    </td>
+                  </tr>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+<![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+    <div style=3D"background:#ffffff;background-color:#ffffff;margin:0px au=
+to;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"background:#ffffff;background-color:#fff=
+fff;width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"direction:ltr;padding:0px 0;text-align:center;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+            <tr>
+              <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+        <tr>
+            <td class=3D"" style=3D"width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"font-size:0;line-height:0;text-align:left;display:inline-block;=
+width:100%;direction:ltr">
+<!--[if mso | IE]>
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation">
+          <tr>
+              <td style=3D"vertical-align:top;width:300px;">
+<![endif]-->
+                          <div class=3D"mj-column-per-50 mj-outlook-group-f=
+ix" style=3D"text-align:left;direction:ltr;display:inline-block;vertical-al=
+ign:top;width:50%;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"=
+>
+                              <tr>
+                                <td align=3D"left" style=3D"padding:10px 25=
+px;padding-top:0;padding-left:0;word-break:break-word;">
+                                  <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;bord=
+er-spacing:0px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style=3D"width:275px;">
+                                          <a href=3D"https://go.plusgrade.c=
+om/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSFQA8IsuERHQSDF5MXVN0fNmJubz5w=
+-2F-2BIdZemc3Lh36Rca4PmdD5lJ8BjRLPJgBVo0WcF8774XjcAhGVsD7xeFIRhqNHLttgcsFHF=
+ldmWSfoYBvYtFSu4E3GbcsA3ubUYzNeJG83jzAJOEzuDdgLp2TAA7eseCEsnMKmQfBRgTIAoNrR=
+M4q6ceBRxg57Y74HyOKKE2v4PDUZN01Xxf0SHHY-3D07wo_u8VxlpT-2BJuqEeILftLn8TVem1e=
+ZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2FJaojphpOBzkgnaA5ac=
+N-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2FOA4Iovf7VSqD1nFkIq=
+J0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVtdZAt89glYUcU0dYPhf=
+2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5bjW8oLCzGM5msN50htr=
+r8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziFoA5zJn0Fw7iIZIN95M=
+tEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bxa7UWg-2FvruXH9nn4l=
+5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8Hq-2BK-2BKHJzWBZ7Fz=
+NjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2F8WtANfR-2BclmA8Jj=
+B1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2FBjax4NL0D1fJ2-2FsA=
+5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94PUeGmOlIOu9R95M055=
+R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIYKY8-2FxUvUrUE2lRlK=
+fX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHrZfClwHcBfi71J-2B7e=
+9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfCZHKfeVidQha9NqV5zt=
+bELJMnWVeMfhvV4RMykNFaMNHw-2F3Z9U65GWPLVEV1JlnvNCdBAzNLzYJ6gC8e-2BKjD-2B8OK=
+VYtC85PA1g0DmykudxTEhplCh-2FMADveGZY8UZ94Dhk5hukRt8zhW3FjgDlChHabwwQ4CXS7nm=
+2KE1gjwkjKTgFDW9MyKSbuXqMGplzVgR60tkFL7Yw-3D-3D" style=3D"text-decoration: =
+none;" target=3D"_blank">
+                                            <img alt=3D"airline logo" heigh=
+t=3D"auto" src=3D"https://upgrade-cdn-prd.plusgrade.com/offer/pid/602mlrQaK=
+Q/email/Extra_seat_logo.png" style=3D"border:0;display:block;outline:none;t=
+ext-decoration:none;height:auto;width:100%;font-size:13px;padding:10px 10px=
+ 0px 10px;" width=3D"275" />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+<!--[if mso | IE]>
+              </td>
+              <td style=3D"vertical-align:top;width:300px;">
+<![endif]-->
+                         =20
+<!--[if mso | IE]>
+              </td>
+          </tr>
+          </table>
+<![endif]-->
+                        </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+                  </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"text-align:left;direction:ltr;display:inline-block;vertical-ali=
+gn:top;width:100%;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                            <tr>
+                              <td align=3D"left" style=3D"padding:0 25px 10=
+px;padding-right:0;padding-left:0;word-break:break-word;">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border=
+-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style=3D"width:600px;">
+                                        <a href=3D"https://go.plusgrade.com=
+/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSFQA8IsuERHQSDF5MXVN0fNmJubz5w-2=
+F-2BIdZemc3Lh36Rca4PmdD5lJ8BjRLPJgBVo0WcF8774XjcAhGVsD7xeFIRhqNHLttgcsFHFld=
+mWSfooKaveLAZUX7-2BB-2FmE78whANpQ7GB6mxOUFnWe-2BSs3zBFtWnrSPm9-2FgOkcCaCt0U=
+xoFWUzOx-2FjZoWE-2BNFQ6MvN29EXrHOWGB-2BvGi4GzBbMx2s-3D98Wj_u8VxlpT-2BJuqEeI=
+LftLn8TVem1eZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2FJaojph=
+pOBzkgnaA5acN-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2FOA4Iov=
+f7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVtdZAt89=
+glYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5bjW8oLC=
+zGM5msN50htrr8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziFoA5zJn=
+0Fw7iIZIN95MtEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bxa7UWg-=
+2FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8Hq-2BK-=
+2BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2F8WtAN=
+fR-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2FBjax4N=
+L0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94PUeGmO=
+lIOu9R95M055R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIYKY8-2F=
+xUvUrUE2lRlKfX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHrZfClwH=
+cBfi71J-2B7e9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfCZHKfeV=
+idWCO0tj9xQNxmOm8ysF4ex6U53uCDq-2F2jpWS54UzlQ8G8JGkf7bhJEoqRcyAF8X36x-2BdEL=
+zaNgINdkGP3e043Y7PprUYBD0drhUCNnf1WjGOe9f-2B8oJCKvhmLDusS50SqawOoYgNAHDOnLk=
+JjBGkeYBSgWaYOtJhS6lTm4NsDAKn6XCOtTlDKaGo-2BfI0MgZ77w-3D-3D" style=3D"text-=
+decoration: none;" target=3D"_blank">
+                                          <img alt=3D"Hero Image" height=3D=
+"auto" src=3D"https://upgrade-cdn-prd.plusgrade.com/offer/pid/602mlrQaKQ/em=
+ail/Extra_seat_hero.png" style=3D"border:0;display:block;outline:none;text-=
+decoration:none;height:auto;width:100%;font-size:13px;" width=3D"600" />
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+                  </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">=20
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"text-align:left;direction:ltr;display:inline-block;vertical-ali=
+gn:top;width:100%;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:0;padding-bottom:0;word-break:break-word;">
+                            <div style=3D"font-family:'Lato',Arial,sans-ser=
+if;line-height:38px;text-align:left;font-size:18px;font-weight:300;color:#1=
+e1e1e;">
+                              Dear Guests,
+                            </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:8px;padding-bottom:0;word-break:break-word;">
+                          <div style=3D"font-family:'Lato',Arial,sans-serif=
+;line-height:38px;text-align:left;font-family: 'Lucida Sans',Arial,sans-ser=
+if;font-size:28px;font-weight:500;color:#1e1e1e;">
+                              Get up to the entire row to yourself with Eco=
+nomy Max
+                          </div>
+                        </td>
+                      </tr>
+                     =20
+                          <tr>
+                            <td align=3D"left" style=3D"padding:10px 25px;p=
+adding-top:8px;padding-bottom:0px;word-break:break-word;">
+                              <div style=3D"font-family:'Lato',Arial,sans-s=
+erif;line-height:24px;text-align:left;font-size:18px;font-weight:300;color:=
+#1e1e1e;">
+                                Did you know that you can <span style=3D"co=
+lor: #037390 !important">own the whole row</span> on your next flight.
+                              </div>
+                            </td>
+                          </tr>
+                     =20
+                           =20
+                              <tr>
+                                <td align=3D"left" vertical-align=3D"middle=
+" style=3D"padding:10px 25px;padding-bottom:20px;word-break:break-word;">
+                                  <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;line=
+-height:100%;">
+                                    <tr>
+                                      <td align=3D"center" bgcolor=3D"#ed17=
+24" role=3D"presentation" style=3D"border:none;border-radius:5px;cursor:aut=
+o;mso-padding-alt:15px 30px;background:#ed1724" valign=3D"middle">
+                                        <a href=3D"https://go.plusgrade.com=
+/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSFQA8IsuERHQSDF5MXVN0fNmJubz5w-2=
+F-2BIdZemc3Lh36Rca4PmdD5lJ8BjRLPJgBVo0WcF8774XjcAhGVsD7xeFIRhqNHLttgcsFHFld=
+mWSfoDuJBhHxuqFedrgjAH5TJYBCnKlg53ql7AsfXW3NQMdNMsNGOitjzA5wctDzHkwUpfGTyRE=
+3GNRMkzpHQwlEhGci2bu6S-2FO-2FziXYZExNDHo5tosrNUnJqikJWyr0suG04Ao6C_u8VxlpT-=
+2BJuqEeILftLn8TVem1eZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-=
+2FJaojphpOBzkgnaA5acN-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-=
+2FOA4Iovf7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11J=
+VtdZAt89glYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp=
+5bjW8oLCzGM5msN50htrr8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCz=
+iFoA5zJn0Fw7iIZIN95MtEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2=
+Bxa7UWg-2FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG=
+8Hq-2BK-2BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m=
+-2F8WtANfR-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-=
+2FBjax4NL0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F=
+94PUeGmOlIOu9R95M055R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kT=
+IYKY8-2FxUvUrUE2lRlKfX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CC=
+HrZfClwHcBfi71J-2B7e9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYE=
+fCZHKfeVidUvAdKcD7NoO4Bu04Gf2W208ZMy-2F-2Ff-2BjbetI-2F8sKMZSKQgXizxXXwhqv9k=
+aQaP-2FCHD2NWJbUzDBPAaMM-2FKipyNl9GI1lX1Jd4XK4IJWHBk-2BMaDhRx9kuehGOOPVcidV=
+Qj6yKeVYoW0kbioYhYV9kbdKMVNSl8Ae-2BraTt3VNw483NP1H-2Btm-2FnG29IXMU-2F-2FoMn=
+BQ-3D-3D" style=3D"display:inline-block;background:#ed1724;font-family:'Lat=
+o',Arial,sans-serif;line-height:120%;margin:0;text-decoration:none;text-tra=
+nsform:none;padding:15px 30px;mso-padding-alt:0px;border-radius:5px;font-fa=
+mily: 'Lucida Sans',Arial,sans-serif;color:#ffffff;text-transform:none;font=
+-size:18px;font-weight:700;" target=3D"_blank">
+                                          <span style=3D"text-decoration:no=
+ne;font-family: 'Lucida Sans',Arial,sans-serif;color:#ffffff;text-transform=
+:none;font-size:18px;font-weight:700;;font-family:'Lato',Arial,sans-serif">
+                                     =20
+                                        Add a request
+                                     =20
+                                          </span>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                           =20
+                            <tr>
+                              <td style=3D"padding:10px 25px;padding-right:=
+0;padding-left:0;word-break:break-word;">
+                          <p style=3D"border-top:solid 1px #f0f0f0;font-siz=
+e:1px;margin:0px auto;width:100%;"></p>
+<!--[if mso | IE]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-top:solid 1px #f0f0f0;font-size:1px;margin:0px auto;=
+width:600px;" role=3D"presentation" width=3D"600px">
+          <tr>
+            <td style=3D"height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+<![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+                  </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"text-align:left;direction:ltr;display:inline-block;vertical-ali=
+gn:top;width:100%;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:24px;padding-bottom:17px;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;font-family: 'Lucida Sans',Arial,sans-serif;font-size:20px;font-weig=
+ht:500;color:#1e1e1e;;line-height:40px;text-align:left">What is Economy Max=
+?</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:0px;padding-bottom:0;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;font-size:16px;font-weight:300;color:#1e1e1e;;line-height:24px;text-=
+align:left">Take advantage of our new service =E2=80=93 Economy Max =E2=80=
+=93 which allows you to purchase one or two empty seats next to you in Econ=
+omy Class, ensuring all kinds of unlimited space for you.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:0px;padding-bottom:0px;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;font-size:16px;font-weight:300;color:#1e1e1e;;line-height:24px;text-=
+align:left"><ul style=3D"list-style-type: none; margin-top: 17px; padding: =
+0px 8px 0px 8px;"><li style=3D"padding:8px;"><i style=3D"padding: 0 15px 0 =
+15px; background: url(https://upgrade-cdn-prd.plusgrade.com/offer/pid/602ml=
+rQaKQ/email/Extra_seat_checkmark.png) no-repeat center"></i> Make your stan=
+dard seat Neighbour Free</li><li style=3D"padding:8px;"><i style=3D"padding=
+: 0 15px 0 15px; background: url(https://upgrade-cdn-prd.plusgrade.com/offe=
+r/pid/602mlrQaKQ/email/Extra_seat_checkmark.png) no-repeat center"></i> Enj=
+oy more elbow room</li><li style=3D"padding:8px;"><i style=3D"padding: 0 15=
+px 0 15px; background: url(https://upgrade-cdn-prd.plusgrade.com/offer/pid/=
+602mlrQaKQ/email/Extra_seat_checkmark.png) no-repeat center"></i> Relax wit=
+h added comfort</li></ul></div>
+                              </td>
+                            </tr>
+                           =20
+                              <tr>
+                                <td align=3D"left" vertical-align=3D"middle=
+" style=3D"padding:10px 25px;padding-top:9px;padding-bottom:20px;word-break=
+:break-word;">
+                                  <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;line=
+-height:100%;">
+                                    <tr>
+                                      <td align=3D"center" bgcolor=3D"#ed17=
+24" role=3D"presentation" style=3D"border:none;border-radius:5px;cursor:aut=
+o;mso-padding-alt:15px 30px;background:#ed1724" valign=3D"middle">
+                                        <a href=3D"https://go.plusgrade.com=
+/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSFQA8IsuERHQSDF5MXVN0fNmJubz5w-2=
+F-2BIdZemc3Lh36Rca4PmdD5lJ8BjRLPJgBVo0WcF8774XjcAhGVsD7xeFIRhqNHLttgcsFHFld=
+mWSfoDuJBhHxuqFedrgjAH5TJYBCnKlg53ql7AsfXW3NQMdMt7BuxrfIdYprEiVgAJ2xEGjhKCG=
+lZYWKpMSRco4JQsH8cWzN0hFNPs1QlVn0xbtoxBbwC68NEO1D2L-2BG6FlKpgwM7_u8VxlpT-2B=
+JuqEeILftLn8TVem1eZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2F=
+JaojphpOBzkgnaA5acN-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2F=
+OA4Iovf7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVt=
+dZAt89glYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5b=
+jW8oLCzGM5msN50htrr8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziF=
+oA5zJn0Fw7iIZIN95MtEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bx=
+a7UWg-2FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8H=
+q-2BK-2BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2=
+F8WtANfR-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2F=
+Bjax4NL0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94=
+PUeGmOlIOu9R95M055R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIY=
+KY8-2FxUvUrUE2lRlKfX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHr=
+ZfClwHcBfi71J-2B7e9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfC=
+ZHKfeVidcF6OaCFXLFyI08eMoEHX617FeBfOAWLbgQ-2B1eF9KJYyZjmz99ft9Y6vg9ulZVMD2J=
+GHk5HlsPdGqec88u7XNOoPr-2Blb0N5xL3TdiUV-2Fe4E6aRkDbLQFSbBOL-2BACW8oBNCvsCsO=
+5ndlCFJTWx5-2Bcxioyi64-2FqZ9qVP9t0y8Sstx3EGobJn5-2BlIYo0wfmuJ6IkA-3D-3D" st=
+yle=3D"display:inline-block;background:#ed1724;font-family:'Lato',Arial,san=
+s-serif;line-height:120%;margin:0;text-decoration:none;text-transform:none;=
+padding:15px 30px;mso-padding-alt:0px;border-radius:5px;font-family: 'Lucid=
+a Sans',Arial,sans-serif;color:#ffffff;text-transform:none;font-size:18px;f=
+ont-weight:700;" target=3D"_blank">
+                                          <span style=3D"text-decoration:no=
+ne;font-family: 'Lucida Sans',Arial,sans-serif;color:#ffffff;text-transform=
+:none;font-size:18px;font-weight:700;;font-family:'Lato',Arial,sans-serif">
+                                            Learn more
+                                          </span>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                           =20
+                            <tr>
+                              <td style=3D"padding:10px 25px;padding-right:=
+0;padding-left:0;word-break:break-word;">
+                                <p style=3D"border-top:solid 1px #f0f0f0;fo=
+nt-size:1px;margin:0px auto;width:100%;">
+                                </p>
+<!--[if mso | IE]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-top:solid 1px #f0f0f0;font-size:1px;margin:0px auto;=
+width:600px;" role=3D"presentation" width=3D"600px">
+          <tr>
+            <td style=3D"height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+<![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+      </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0">   =20
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"text-align:left;direction:ltr;;display:inline-block;vertical-al=
+ign:top;width:100%;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:32px;padding-bottom:0px;word-break:break-word;">
+                          <div style=3D"font-family:'Lato',Arial,sans-serif=
+;font-family: 'Lucida Sans',Arial,sans-serif;font-size:20px;font-weight:500=
+;color:#1e1e1e;;line-height:26px;text-align:left">
+                              Economy Max is available on these flight(s)
+                          </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:0;padding-bottom:24px;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;font-size:16px;font-weight:300;color:#1e1e1e;;line-height:24px;text-=
+align:left">Booking reference: K283I4</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;word-break:break-word;">
+                                <table cellpadding=3D"12px" cellspacing=3D"=
+0" width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:'Lato',Ar=
+ial,sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%=
+;border:none;">
+                                 =20
+                                 =20
+                                    <tr class=3D"flight-row">
+                                      <td>
+                                        <span class=3D"flight-departure-dat=
+e">17 Mar 2024</span><br>
+                                        <span class=3D"flight-details">Momb=
+asa (MBA) <i style=3D"padding: 0 15px 0 15px; background: url(https://upgra=
+de-cdn-prd.plusgrade.com/offer/pid/602mlrQaKQ/email/ltr/Extra_seat_arrow.pn=
+g) no-repeat center"></i> Nairobi (NBO)</span><br>
+                                        <span style=3D"color:#666;">KQ 613 =
+- Operated by Kenya Airways</span></td>
+                                    </tr>
+                                 =20
+                                 =20
+                                </table>
+                              </td>
+                            </tr>
+                           =20
+                              <tr>
+                                <td align=3D"left" vertical-align=3D"middle=
+" style=3D"padding:10px 25px;padding-top:9px;padding-bottom:20px;word-break=
+:break-word;">
+                                  <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;line=
+-height:100%;">
+                                    <tr>
+                                      <td align=3D"center" bgcolor=3D"#ed17=
+24" role=3D"presentation" style=3D"border:none;border-radius:5px;cursor:aut=
+o;mso-padding-alt:15px 30px;background:#ed1724" valign=3D"middle">
+                                        <a href=3D"https://go.plusgrade.com=
+/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSFQA8IsuERHQSDF5MXVN0fNmJubz5w-2=
+F-2BIdZemc3Lh36Rca4PmdD5lJ8BjRLPJgBVo0WcF8774XjcAhGVsD7xeFIRhqNHLttgcsFHFld=
+mWSfoDuJBhHxuqFedrgjAH5TJYBCnKlg53ql7AsfXW3NQMdOrC4OjvjewqMPySQsUnDfEh-2FED=
+cPhmimQc8HPDdAI2mfSGwibJd1-2BehcxMoaVAO0Qi-2FI7yqRr7WDgEdBG41WLmh2ub_u8Vxlp=
+T-2BJuqEeILftLn8TVem1eZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58=
+x-2FJaojphpOBzkgnaA5acN-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIr=
+N-2FOA4Iovf7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC1=
+1JVtdZAt89glYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3sm=
+qp5bjW8oLCzGM5msN50htrr8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bF=
+CziFoA5zJn0Fw7iIZIN95MtEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5=
+-2Bxa7UWg-2FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dV=
+EG8Hq-2BK-2BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu=
+6m-2F8WtANfR-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5=
+r-2FBjax4NL0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-=
+2F94PUeGmOlIOu9R95M055R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3=
+kTIYKY8-2FxUvUrUE2lRlKfX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5=
+CCHrZfClwHcBfi71J-2B7e9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4X=
+YEfCZHKfeVidTTa9gA-2FgeVok-2F890SuJIO1Z8evJEc87nayynFsiPfyeGmN66-2FzLiY-2Bc=
+RnNpQ9ODKWgDLso4BrWAmoSP2GlesNlQwd4uaHe1hI0-2FdqDLr-2FNKZ8cNpNd2AIr5NnyIbPM=
+gM-2BZA8xPujex4h-2BlA1YexCH8WevJ6nYfJ65Dnuk9JIixdVlyn3pT-2FQp8fqrOf5590GA-3=
+D-3D" style=3D"display:inline-block;background:#ed1724;font-family:'Lato',A=
+rial,sans-serif;line-height:120%;margin:0;text-decoration:none;text-transfo=
+rm:none;padding:15px 30px;mso-padding-alt:0px;border-radius:5px;font-family=
+: 'Lucida Sans',Arial,sans-serif;color:#ffffff;text-transform:none;font-siz=
+e:18px;font-weight:700;" target=3D"_blank">
+                                          <span style=3D"text-decoration:no=
+ne;font-family: 'Lucida Sans',Arial,sans-serif;color:#ffffff;text-transform=
+:none;font-size:18px;font-weight:700;;font-family:'Lato',Arial,sans-serif">
+                                            Request now
+                                          </span>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                           =20
+                            <tr>
+                              <td style=3D"padding:10px 25px 0;padding-righ=
+t:0;padding-left:0;word-break:break-word;">
+                                <p style=3D"border-top:solid 24px #f0f0f0;f=
+ont-size:1px;margin:0px auto;width:100%;">
+                                </p>
+<!--[if mso | IE]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-top:solid 24px #f0f0f0;font-size:1px;margin:0px auto=
+;width:600px;" role=3D"presentation" width=3D"600px">
+          <tr>
+            <td style=3D"height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+<![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+      </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+              </td>
+            </tr>
+            <tr>
+              <td class=3D"" width=3D"600px">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+              <div style=3D"margin:0px auto;max-width:600px;">
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style=3D"direction:ltr;padding:0px;text-align:cen=
+ter;">
+<!--[if mso | IE]>
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0">
+        <tr>
+            <td class=3D"" style=3D"vertical-align:top;width:600px;">
+<![endif]-->
+                        <div class=3D"mj-column-per-100 mj-outlook-group-fi=
+x" style=3D"text-align:left;direction:ltr;display:inline-block;vertical-ali=
+gn:top;width:100%;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:16px;padding-bottom:8px;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;line-height:19px;text-align:left;font-size:14px;font-weight:400;colo=
+r:#1e1e1e;">
+                                * Subject to change, conditions may apply</=
+div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=3D"left" style=3D"padding:10px 25px=
+;padding-top:16px;padding-bottom:24px;word-break:break-word;">
+                                <div style=3D"font-family:'Lato',Arial,sans=
+-serif;line-height:19px;text-align:left;font-size:14px;font-weight:400;colo=
+r:#1e1e1e;">
+                                  Please see our <a href=3D"https://go.plus=
+grade.com/ls/click?upn=3Du001.VCgYw5ra82-2FGwlnOVWxgSKySY1s-2FCSbVdxI0NB68y=
+PgUSSY-2FNwjEs8XeioCbOnGIwwbT7W92WPfmOYpcQEOIcw-3D-3DEvxs_u8VxlpT-2BJuqEeIL=
+ftLn8TVem1eZZJSp9-2Bol40DteUHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2FJaojphp=
+OBzkgnaA5acN-2B9E-2FyllCAhYP6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2FOA4Iovf=
+7VSqD1nFkIqJ0YcBrzQmL5ws-2Fp7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVtdZAt89g=
+lYUcU0dYPhf2iKOcsmyu-2BXHUSY6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5bjW8oLCz=
+GM5msN50htrr8GTPb-2Bgf2cZPmV5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziFoA5zJn0=
+Fw7iIZIN95MtEsKj-2BlpBgev9vANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bxa7UWg-2=
+FvruXH9nn4l5X0WEWmLx3jpqpVsmDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8Hq-2BK-2=
+BKHJzWBZ7FzNjV6biNymJ0T8UZB9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2F8WtANf=
+R-2BclmA8JjB1Cm-2F1NbMPQ5MzaAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2FBjax4NL=
+0D1fJ2-2FsA5IY6-2B4irHxFpu53-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94PUeGmOl=
+IOu9R95M055R5pRnNQSahucMvsZ1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIYKY8-2Fx=
+UvUrUE2lRlKfX92BocJQtmVzDLI68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHrZfClwHc=
+Bfi71J-2B7e9Gvbehi4qBaQh4y6h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfCZHKfeVi=
+dZnPbVVb4aHN8utT-2BZXA3b5XHFNkUAb3gZxnuFCwQfsd3GhOXL43aIgA05XeiAypA-2BW26WK=
+N5M959UNgxuSRF27rn-2BS9yPyn8Zg-2Fb-2B5CQjYuGzEjFitUtW-2FOsK1G6oWFnhFpsuXbqY=
+Z6QSIB3YADW7gHspHR91cHPh4VP-2Fpzxvnn-2FbXNphn7UUjUd3fksPBE7g-3D-3D">Terms a=
+nd Conditions</a> and <a href=3D"https://go.plusgrade.com/ls/click?upn=3Du0=
+01.VCgYw5ra82-2FGwlnOVWxgSKySY1s-2FCSbVdxI0NB68yPgUSSY-2FNwjEs8XeioCbOnGIww=
+bT7W92WPfmOYpcQEOIcw-3D-3Dkxbj_u8VxlpT-2BJuqEeILftLn8TVem1eZZJSp9-2Bol40Dte=
+UHp3NV8YLxPZtu2ozIQ2UtRW-2FoifUyNoF58x-2FJaojphpOBzkgnaA5acN-2B9E-2FyllCAhY=
+P6sSyt6gCaB4auWy29hlixs-2BthZAVWhqyIrN-2FOA4Iovf7VSqD1nFkIqJ0YcBrzQmL5ws-2F=
+p7VaTg8ImOpyTSdUpdKnW5bP1Pdz-2FWU7pC11JVtdZAt89glYUcU0dYPhf2iKOcsmyu-2BXHUS=
+Y6ie-2FvNTu-2BcoOpoADf-2FiKJkTrPlD3smqp5bjW8oLCzGM5msN50htrr8GTPb-2Bgf2cZPm=
+V5I-2FWuUmdg-2BwSkqcKkNZBbnuunxP5k1bFCziFoA5zJn0Fw7iIZIN95MtEsKj-2BlpBgev9v=
+ANgGpPGs-2FesT5piAxp80VxWt96pRrFCntd5-2Bxa7UWg-2FvruXH9nn4l5X0WEWmLx3jpqpVs=
+mDbPa2m2t8ldHZty-2F25iqnk36RioM88X2dVEG8Hq-2BK-2BKHJzWBZ7FzNjV6biNymJ0T8UZB=
+9Zb9ZeKIhUt67HTbRVCDdLlHREawAmEgb2Wvu6m-2F8WtANfR-2BclmA8JjB1Cm-2F1NbMPQ5Mz=
+aAfUt0N9i322zpTLiuw52hb5RWT5EWugWFaQ5r-2FBjax4NL0D1fJ2-2FsA5IY6-2B4irHxFpu5=
+3-2FZtecPGf0CLvWhRb7kIN7jh4jxb6Ycp6v-2F94PUeGmOlIOu9R95M055R5pRnNQSahucMvsZ=
+1T9xI5v7XeSoXHFGheA6xA8cd8sgAQ3l3tRk3kTIYKY8-2FxUvUrUE2lRlKfX92BocJQtmVzDLI=
+68c-2FT9nP-2BKWOOivNB4LNPVr9WcIEEgrT5CCHrZfClwHcBfi71J-2B7e9Gvbehi4qBaQh4y6=
+h3eyturAMt4g1-2FUxx-2BtteOr7g3KbP2f4XYEfCZHKfeViddYQ9ZIDIFg0im4z149xq68ydXB=
+n1JsIy-2FdxOCBW8uY0lvTtp0S6FxYjfnBfIMJR7xuognbmK-2FxwkDOYDrcYX3H-2FXf69h8uz=
+o9b3qBpJSoxPJMIiq-2BWXBY7T1gN48KyN4OBFD6gKrcha3JE2mkm7LQI-2FiNu-2B1yIOVOCUy=
+sBYwKToNLwsI8GmsW4Jc-2BVU-2BtgFtQ-3D-3D">Frequently Asked Questions (FAQs)<=
+/a> that apply to offers made under Economy Max.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<!--[if mso | IE]>
+            </td>   =20
+        </tr>
+      </table>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+              </td>
+            </tr>
+          </table>
+<![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600">
+        <tr>
+          <td style=3D"line-height:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+    <div style=3D"background:#f0f0f0;background-color:#f0f0f0;margin:0px au=
+to;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"background:#f0f0f0;background-color:#f0f=
+0f0;width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"direction:ltr;padding:0px;padding-top:16px;text-al=
+ign:center;">
+<!--[if mso | IE]>
+                  <table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+                    <tr>
+                      <td class=3D"" style=3D"vertical-align:top;width:600p=
+x;">
+<![endif]-->
+              <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=
+=3D"text-align:left;direction:ltr;display:inline-block;vertical-align:top;w=
+idth:100%;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                  <tr>
+                    <td align=3D"center" style=3D"padding:10px 25px;word-br=
+eak:break-word;">
+                      <div style=3D"font-family:'Lato',Arial,sans-serif;lin=
+e-height:19px;text-align:center;font-size:14px;font-weight:400;color:#1e1e1=
+e;">
+                        You have received this email because you made a boo=
+king with this airline.
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align=3D"center" style=3D"padding:10px 25px;word-br=
+eak:break-word;">
+                      <div style=3D"font-family:'Lato',Arial,sans-serif;lin=
+e-height:19px;text-align:center;font-size:14px;font-weight:400;color:#1e1e1=
+e;">
+                      K283I4, je0scVwHxTDAtwEvq5fWaTvG9DtqjmJjUk</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+<!--[if mso | IE]>
+            </td>
+        </tr>
+      </table>
+<![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+<![endif]-->
+  </div>
+<div style=3D"display: none"><img alt=3D"" width=3D"1" height=3D"1" src=3D"=
+https://upgrade.plusgrade.com/offer/602mlrQaKQ/chaser/tag/je0scVwHxTDAtwEvq=
+5fWaTvG9DtqjmJjUk"/></div>
+&nbsp;<br><br><table width=3D"600" align=3D"center" style=3D"text-align: ce=
+nter;"><tr><td><a href=3D"https://go.plusgrade.com/wf/unsubscribe?upn=3D2il=
+9mTuCwGKDH0vWf9tTNfPg-2BZDKcz1qDeSgeBO05n-2BXuVxdNUhD-2FNCXWNBCE-2FoEFAI981=
+vUvRV-2BJQiv4ZUlGSBS7C-2BVkzCI9r0f1mrbfj6IGCulmJsfZ9DDnLAKEAkAmoj-2FGvAAOSy=
+eY0qBLKdMegrPXgwMGApYzMhDTaXXJ1jl6wdCDSRLN2kJ-2Bo-2BVv3sRNAmQh7EAlEqos2tl2A=
+1fyj1-2Bp24fC3M-2BaTefPR0pkOhNLTnTCMuBULY19OtSWsUADdRwcBuTZ-2FEWihXNo7R-2Fo=
+cGA8LRVHhNX-2BZtg-2BWovynb0i4HRqI2UW-2BIFHxuKnjGFTfF9OHdJPKtu5qr7a7YTBaW3cY=
+cUKVGElS6N3zpUhxyvnB9z63XEhI2oQZzFL54quAAhlON1EaTWxV1ys3MXX2P9hu7QqdSciwPFN=
+dlI0vKcek0bZWA3QTp8jXejkgNCz47dRjd8oEojhGGpBOyDeO52ETVr8Wk3M7EHXk6l0pN-2FzC=
+szyaYdR-2F-2BNuu29GDphaNvGmrgFC0b1-2Bv-2F30o8wWDANpqP3IBKJfIYbJdBBXMkOON2eO=
+wQrl5lAUjEYCeFTtfXYmGIQh-2BoTZJFhOIUv06t9seXW6eWU-2B6tz4JxueD5IM990-2BWWh2G=
+ehqr8UHQwqjFNEYycD9A6AV-2BnR4xTeDy1-2BUGiipcS2W2TWVQHzLOGXG3lvBKuzG0HjmnKWD=
+p82jPTpCucQlbaVZWa9Fx2cLFQorFn1MuDWUbMyYl5D1iDVmRmbZo4NfOwWgKJfrJkiZ7Q3bUgB=
+ZxQl7CF3XBVoOfvG-2FhT8zPg-2FVDFB2m6tOu7EtGfgQtx-2BUu-2BM2bVudNdgRHQLEOv8RjS=
+V4fhOLi2OSzbPIokPx564uFHEIJqsIaG9XxstWm8FJIH3lZun63hINYI3R7NyOSO7FvgRumaut2=
+Y0YPL3OJwCyMBUsm2GSb0OcGE4CD976ocaDJD-2B1ZTAvEbiLalWqOiC4x35MqcH9BMXornCxE9=
+kkixE8-2B0xV0UebQcJIbRl1W9PuN1C-2BG2WWKyn0uRj1bXgE-2FRNRmXCBv363dJoRq0yOI3f=
+Jz0usRgdw20iO3CE5i8qSyWTGpsoHAlz6c7sg9Xx5eGUVYqgEtTJ-2FqX52LXdazeGcYpUBTk-3=
+D">Unsubscribe</a></td></tr></table><img src=3D"https://go.plusgrade.com/wf=
+/open?upn=3Du001.Ov0KbKGrem4K648IOv-2B0EIerGyEhO-2FKMSn6sofZa5-2FjMWYuOMlEN=
+sjwmdazuTxGhrYQmkn9PdBgzI-2BxKkJFURmoJUXEpT3g-2Fa7KF1A3s-2FW4RuS14TKKHKEO7E=
+IqXrLyapti7LpIhliINQVM-2BlGNpw7PMNWlq0Bg9CA9qEKQHXhwjQxCrEHgFyumerkIAW1ya4V=
+i8RPlnHyIkuJN0rlcgG8tLVcKaShZ7E1ovrn1xXV-2FM-2BiMoalqg6S7Y8L5B1kyMbYOKSbDmW=
+7yYr5Xjkdw9iv6bWaOH7zTXS2Z8Xv4ZB4HZH96mcfPkoeAG4mBW2DxNEsNT9irP-2Fw0VgyWAAz=
+Xu1op9Wi7Fn-2F6-2F1lqSxfCEY9ublb76dOaTgeZhRmGyw2iLwMow89h3P83SUhIKlqvL-2FeO=
+P7Y3-2BkYmwRV10oGaqKPqjO8vYO0Xt24qWIbwpUAcME9Q7NPt4IcWFmoFCGCCie6Tq74pPTQbd=
+w6hpSuevh5xAz92YdTMqD-2FsnnEDzFOJ-2FF8-2FeQqZD8jiaXyyBOboy-2BsODEdm1j2847M-=
+2BfLnoPN9G0bM9EJT9S2dufhwXa9l2GhH7OCfFHMxdGiLpmopcOJZ9Q2H1N0fo8AwnqUyQSuAga=
+5ToV0ACNrg-2BGJX2d6YS68l5qjEswPzXZrONSg9atC4Dm9Qxfe16NO6cEz9EMHR0duuKh-2BwT=
+z9FhbiNiDEARAkFXxfEBruix1wtlRMz4Xb7mn-2FXEUk-2FZbPO40v-2BJ96Fe1tYGSMVzaEUwu=
+OHyq6M9UiF2-2F7wBqcIKwukr-2BJXlDZF2m-2FPXvKpIlt6yV5I2qJtqKgk-2Fh7HcRxsa6fsW=
+k3G2hc2Ru8qhF-2F8UFYhsElG0hiyIHA3pt55pTr9N13L5s06XA8nrOaBZhaIZV4HXpdnKtkd-2=
+FVujqdBgvNe-2FmJSrEaWBKEtXth1z5ixV6xI7e-2B3rveUJQyt9VA5qpOIwAN8qvSW-2BtGqXZ=
+mTTbc4xc1aI8NNQrYdcXPukkqk3-2FWP3HZjwB7kcw-2F9OnVZ8QqNHGuJs32reWmHdv9B5UqzS=
+-2B4hYkxXILvsTl4kA-2FkIZ3oEvmjoJ5kDysZmvE0LhHFqKyMVizQWw6FPZrakBvWCsgVbV32i=
+Q-3D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px=
+ !important;width:1px !important;border-width:0 !important;margin-top:0 !im=
+portant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 =
+!important;padding-top:0 !important;padding-bottom:0 !important;padding-rig=
+ht:0 !important;padding-left:0 !important;"/></body>
+
+</html>
+
+------=_Part_11631_862383283.1710668326560--
+
+------=_Part_11630_1425362859.1710668326560--

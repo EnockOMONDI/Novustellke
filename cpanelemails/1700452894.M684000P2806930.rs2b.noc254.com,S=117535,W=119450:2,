@@ -1,0 +1,1915 @@
+Return-Path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id IFqFKB7aWmWS1CoAkzNyDQ
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	for <novuste1@rs2b.noc254.com>; Mon, 20 Nov 2023 07:01:34 +0300
+Return-path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Envelope-to: chriatine@novustelltravel.com
+Delivery-date: Mon, 20 Nov 2023 07:01:34 +0300
+Received: from wrqvxvzx.outbound-mail.sendgrid.net ([149.72.168.234]:55956)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	id 1r4vTY-00BtAy-15
+	for chriatine@novustelltravel.com;
+	Mon, 20 Nov 2023 07:01:34 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=katakenya.org;
+	h=from:subject:mime-version:reply-to:to:content-type:cc:content-type:
+	from:subject:to;
+	s=g1; bh=aa+THHrLuLnUPrMykgxUj1QJTltjcanNmujw5udyfGI=;
+	b=oOAZfIoiSXWC8uDuypAdRovvW7831qfitVD4LsYlq8Uid9yIu6xb6BR/6rM/iIh1p47i
+	7d089AI63O3XdGh8NlVhRUHZJ97Uv04QJZk57xA7jwqMLy7fs2efXOxGkbtjx1Hzcm4mYm
+	onqouiBIxQRpnps2iN775KMtoKOAxC1c7kfH9e1uc5/4UMZeoWKO5ebWHvqMbI730ponaz
+	vdDNFPWvCjsMDFhsM5ceBOS+ScHcx4cySG26SL3IO2Eoe3zjGHQv4v/IlLsSSxjCPKXSaT
+	loG4UilhpNBuuU1c/xYDvusRkutcXO9oVlCF6LT+s1KhIjnzAYhD6Scv7fYWI+Ew==
+Received: by filterdrecv-canary-5b59595454-r889n with SMTP id filterdrecv-canary-5b59595454-r889n-1-655AD9F2-87
+        2023-11-20 04:00:50.589537629 +0000 UTC m=+2884766.843433857
+Received: from mx1.glueupmail.com (unknown)
+	by geopod-ismtpd-13 (SG)
+	with ESMTP id rBpozUC-QnKsjtonjUlweg
+	for <chriatine@novustelltravel.com>;
+	Mon, 20 Nov 2023 04:00:50.406 +0000 (UTC)
+Date: Mon, 20 Nov 2023 04:00:50 +0000 (UTC)
+From: Kenya Association of Travel Agents <communications@katakenya.org>
+Message-ID: <EDM_5799_231930_368ce3d1-cb46-4065-be14-3bfeef8c4de0_JavaMail.ebprod@ebcproweb01>
+Subject: Weekly Travel News | November 20
+MIME-Version: 1.0
+Reply-To: communications@katakenya.org
+X-SG-EID: 
+ =?us-ascii?Q?XFsZbaoC=2F6vb8v3=2FRvqAz5595B=2F3BulKdmlcDSh+fGwXqPRxLy1uEdK5L+iCr+?=
+ =?us-ascii?Q?=2F1pL=2FD1sxCi0RKMn8d0syCc+jJ6XmpEW=2FLJeGt9?=
+ =?us-ascii?Q?RAWYCAJ8USdrv7YYF5X69p8vizOmsIrOJwgc6BN?=
+ =?us-ascii?Q?tdkSuElHk=2Feyy5dV6vQpYjlZ5nHQkvVmYFEUaQJ?=
+ =?us-ascii?Q?uSaRVtdtoDaJakUHT1GhXw5PDXmmRK89=2FUW1KMI?=
+ =?us-ascii?Q?qrc2SFBJZiTSrIiJgLIaNqyr=2F8KOA+FIvmVmsYw?=
+ =?us-ascii?Q?=2FF33Pr0xs97aIbMIq1KYn+94iqAcEKAqeNr99q9?=
+ =?us-ascii?Q?rm2xEJKRYTh3tBvS9+F0qe8R?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FJD19wAwXS3Wj0DIxmTIg?=
+ =?us-ascii?Q?Z1hgwte=2FZsLSWTXxA379R8s64WnUm+DEzsPKW58?=
+ =?us-ascii?Q?zU4Cey2L0V0M+UwVKynZgGaDXtJsLbcqG=2FhvEZS?=
+ =?us-ascii?Q?aEr5nCj1AZYZnJEr32VBPz9jIS8Lyt7OTnnCH8g?=
+ =?us-ascii?Q?KCAjo6Xy3WI2yjxWVV7HU=2F+O+CUGKfsjuYg=3D=3D?=
+To: Christine Auma <chriatine@novustelltravel.com>
+X-Entity-ID: BbP1ydw1icJuGh+FQLfe4A==
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_116569767_373641296.1700452843062"
+X-Spam-Status: No, score=0.4
+X-Spam-Score: 4
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Christine, Stay informed about the latest industry developments,
+    travel Weekly Travel News | November 20 
+ Content analysis details:   (0.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: glueup.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+------=_Part_116569767_373641296.1700452843062
+Content-Type: multipart/related; 
+	boundary="----=_Part_116569768_733713282.1700452843062"
+
+------=_Part_116569768_733713282.1700452843062
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_116569769_334220106.1700452843062"
+
+------=_Part_116569769_334220106.1700452843062
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear Christine,
+
+Stay informed about the latest industry developments, travel 
+------=_Part_116569769_334220106.1700452843062
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta htt=
+p-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><meta name=
+=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"><title>We=
+ekly Travel News | November 20</title><link rel=3D"apple-touch-icon" sizes=
+=3D"180x180" href=3D"https://www.glueup.com/images/favicons/apple-touch-ico=
+n.png"><link rel=3D"icon" type=3D"image/png" href=3D"https://www.glueup.com=
+/images/favicons/favicon-32x32.png" sizes=3D"32x32"><link rel=3D"icon" type=
+=3D"image/png" href=3D"https://www.glueup.com/images/favicons/favicon-16x16=
+.png" sizes=3D"16x16"><style type=3D"text/css"> @media only screen {
+        html {
+            min-height:     100%;
+            background:     #f5f5f6;
+        }
+    }
+   =20
+    .ReadMsgBody {
+        width:100%;
+        background-color:#fff;
+    }
+    .ExternalClass {
+        width:100%;
+        background-color:#fff;
+    }
+
+    .eventTracker_left{
+        width: 30%;
+    }
+
+    .eventTracker_right{
+        width: 70%;
+    }
+
+    .eventTracker_portrait_left{
+        width:  34%;
+    }
+    .eventTracker_portrait_right{
+        width:  66%;
+    }
+
+    .module_percent_48{
+        width: 48%;
+        float: left;
+    }
+    .module_percent_33{
+        width: 33.3%;
+    }
+    .module_percent_32{
+        width: 32%;
+    }
+    .module_percent_67{
+        width: 67%;
+    }
+    .module_percent_100{
+        width: 100%;
+    }
+
+    .event-speaker{
+        width: 200px;
+        height:200px;
+    }
+
+    img.event-speaker{
+        height: auto;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing: 0;
+    }
+
+    a,a:link,a:visited {
+        text-decoration:none;
+    }
+
+    a:hover,.ExternalClass a:hover {
+        text-decoration:underline;
+    }
+
+    a > img{
+        margin: 0 auto;
+    }
+
+    .module_percent_33 img{
+        display: inline !important;
+    }
+
+    p:first-child{
+        margin-top:0;
+    }
+
+    h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {
+        color:#000!important;
+    }
+
+    .ExternalClass p {
+        margin-bottom:0!important;
+        padding:0!important;
+        display:inline!important;
+        color:red;
+    }
+
+    .ExternalClass a:link,.ExternalClass a:hover,ExternalClass a:visited {
+        text-decoration:none;
+    }
+
+    html, body{
+        background-color: #ffffff;
+    }
+
+    body {
+        width:100%;
+        margin:0;
+        padding:0;
+        font-family:Arial;
+        -webkit-text-size-adjust:none;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    .socials{
+        width: auto !important;
+    }
+
+    #cant-read-notice{
+        display: none;
+    }
+
+    #tablet-only{
+        display: none;
+    }
+
+    #mobile-only{
+        display: none;
+    }
+
+    .alignHeight, .alignHeightElement{
+        height: 100%;
+    }
+
+    .custom-input-text div{
+        line-height:      1.4em;
+    }
+    .custom-input-text ol,
+    .custom-input-text ul{
+        padding-left:     2.5em;
+        margin:           0.5em 0;
+    }
+    .custom-input-text ol li,
+    .custom-input-text ul li{
+        line-height:        1.2em;
+        margin:             0.5em 0;
+        padding-left:       0.2em;
+    }
+    .custom-input-text ol li > li,
+    .custom-input-text ul li > li{
+        list-style:     inherit;
+    }
+    .custom-input-text ul{
+        list-style:     disc;
+    }
+    .custom-input-text ol{
+        list-style:     decimal;
+    }
+    .custom-input-text p{
+        margin-top:     0;
+        margin-bottom:  0;
+    }
+    .custom-input-text b,
+    .custom-input-text strong{
+        font-weight:    700;
+        font-style:     inherit;
+    }
+    .custom-input-text i,
+    .custom-input-text em{
+        font-style:     italic;
+        font-weight:    inherit;
+    }
+    .custom-input-text .font-size-tiny{
+        font-size:      0.7em !important;
+    }
+    .custom-input-text .font-size-small{
+        font-size:      0.85em !important;
+    }
+    .custom-input-text .font-size-large{
+        font-size:      1.2em !important;
+        line-height:    1.2em !important;
+    }
+    .custom-input-text .font-size-huge{
+        font-size:      1.5em !important;
+        line-height:    1.1em !important;
+    }
+    #text-email{
+        display:              none;
+        width:                0px;
+        height:               0px;
+        color:                white;
+    }
+    .text-email-block{
+        margin:               20px;
+        padding:              20px;
+        font-family:          arial;
+        width:                700px;
+        background:           #fff;
+        border:               1px solid #dcdcdc;
+    }
+    .text-email-block pre{
+        margin:             0;
+        white-space:        pre-wrap;
+    }
+
+    .unsubscribe-url-wrapper a{
+        color:              #979797 !important;
+        text-decoration:    underline !important;
+    }
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    .ql-indent-1 {
+        margin-left:       2em !important;
+    }
+    .ql-indent-2 {
+        margin-left:       4em !important;
+    }
+    .ql-indent-3,
+    .ql-indent-4,
+    .ql-indent-5,
+    .ql-indent-6,
+    .ql-indent-7,
+    .ql-indent-8 {
+        margin-left:       6em !important;
+    }
+    @media only screen and (max-width: 600px) {
+        .device-width,
+        .half-device-width{
+            width:          440px !important;
+            padding-left:   0 !important;
+            padding-right:  0 !important;
+            border:         0 !important;
+            margin-left:    0 !important;
+            margin-right:   0 !important;
+        }
+        #tablet-only{
+            display:        inline-block !important;
+        }
+        #desktop-only{
+            display: none !important;
+        }
+        .mobile-remove-padding{
+            padding:        0 !important;
+        }
+
+        .mobile-remove-top-padding{
+            padding-top:    0 !important;
+        }
+
+        .mobile-auto-height{
+            height:         auto !important;
+        }
+
+        .mobile-auto-width{
+            width:          auto !important;
+        }
+
+        .mobile-add-left-padding{
+            padding-left:   10px !important;
+        }
+
+        .mobile-add-right-padding{
+            padding-right:  10px !important;
+        }
+
+        .mobile-add-bottom-padding{
+            padding-bottom: 16px !important;
+        }
+
+        .mobile-add-top-padding{
+            padding-top:    16px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          410px !important;
+            padding-left:   16px !important;
+            padding-right:  16px !important;
+        }
+
+        .alignHeight, .alignHeightElement{
+            height:         auto;
+            width:          100%;
+        }
+
+        .fullWidth,
+        .fullWidth table{
+            width:          100% !important;
+            height:         auto !important;
+        }
+
+        .fullWidth table td{
+            height:         auto !important;
+        }
+
+        .fullWidth .socialBlock{
+            width:  auto !important;
+        }
+
+        .emptyContent{
+            display:        none !important;
+        }
+
+        .hasMargin{
+            margin-bottom:  20px;
+        }
+
+        .image-block{
+            margin:         0 !important;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .device-width{
+            width:          100% !important;
+        }
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          190px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          360px !important;
+        }
+
+        .small-device-width{
+            width:          360px !important;
+            padding:        0 !important;
+        }
+
+        .background-contain-mobile{
+           background-size: contain !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          140px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          250px !important;
+        }
+
+        .small-device-width{
+            width:          250px !important;
+            padding:        0 !important;
+        }
+    }
+
+    @media screen yahoo {
+        .yahoo-mail{
+          display:none !important;
+      }
+    } </style><style type=3D"text/css"> ///////////
+//  Font Icons
+////////
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-24708b.=
+eot');
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-24708b.=
+eot#iefix') format('embedded-opentype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-7d4a28.=
+woff') format('woff'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-cd2f65.=
+ttf') format('truetype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-2688bc.=
+svg#icons') format('svg');
+    font-weight:    500;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-79=
+50cb.eot');
+    src:url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-79=
+50cb.eot#iefix') format('embedded-opentype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-2d=
+27f7.woff') format('woff'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-85=
+5157.ttf') format('truetype'),
+        url('https://d11ib5o31hsc11.cloudfront.net/font/icons/icons-thin-3d=
+6a93.svg#icons-thin') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+}
+    ///////////
+    //  OpenSans
+    ////////
+    @font-face {
+        font-family: 'OpenSansWeb';
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Light-webfont.eot');
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Light-webfont.woff') format('woff'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Light-webfont.ttf') format('truetype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Light-webfont.svg#open_sanslight') format('svg');
+        font-weight:    400;
+        font-style:     normal;
+
+    }
+    @font-face {
+        font-family: 'OpenSansWeb';
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Regular-webfont.eot');
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Regular-webfont.woff') format('woff'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Regular-webfont.ttf') format('truetype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Regular-webfont.svg#open_sansregular') format('svg');
+        font-weight:    500;
+        font-style:     normal;
+    }
+    @font-face {
+        font-family: 'OpenSansWeb';
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Semibold-webfont.eot');
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Semibold-webfont.woff') format('woff'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Semibold-webfont.ttf') format('truetype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+        font-weight:    600;
+        font-style:     normal;
+    }
+    @font-face {
+        font-family: 'OpenSansWeb';
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Bold-webfont.eot');
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Bold-webfont.woff') format('woff'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Bold-webfont.ttf') format('truetype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-Bold-webfont.svg#open_sansbold') format('svg');
+        font-weight:    700;
+        font-style:     normal;
+    }
+    @font-face {
+        font-family: 'OpenSansWeb';
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-ExtraBold-webfont.eot');
+        src: url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-ExtraBold-webfont.woff') format('woff'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-ExtraBold-webfont.ttf') format('truetype'),
+             url('https://d11ib5o31hsc11.cloudfront.net/font/opensans/OpenS=
+ans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+        font-weight:    800;
+        font-style:     normal;
+    }</style><!--[if mso]-><style type=3D"text/css"> body,
+        table,
+        td,
+        p,
+        div{
+            font-family: 'Arial';
+        }
+
+        li {
+            text-align:  -webkit-match-parent;
+            display:     list-item;
+            text-indent:  -1em;
+        } </style><![endif]--></head><body leftmargin=3D"0" topmargin=3D"0"=
+ marginwidth=3D"0" marginheight=3D"0" yahoo=3D"fix" style=3D"font-family: O=
+penSans-en; background-color: ; font-size:14px;"><!-- Start Emain PreHeader=
+ --><p style=3D"height: 0;width:0;font-size:0;display:none !important;visib=
+ility:hidden;mso-hide:all;color:#ffffff;line-height:1px;max-height:0px;max-=
+width:0px;opacity:0;overflow:hidden;">Kenya, Uganda to deepen tourism coope=
+ration and 5 other stories...</p><!-- End Emain PreHeader --><div class=3D"=
+device-width" style=3D"background-color:#ffffff; display:block; width:600px=
+;  margin: 0 auto;"><!-- <div style=3D"width: 1px; background:red; height: =
+100%; position: fixed; left: 50%; margin-left:-275px"></div><div style=3D"w=
+idth: 1px; background:red; height: 100%; position: fixed; left: 50%; margin=
+-left: 275px"></div><div style=3D"width: 1px; background:red; height: 100%;=
+ position: fixed; left: 50%; margin-left:-205px"></div><div style=3D"width:=
+ 1px; background:red; height: 100%; position: fixed; left: 50%; margin-left=
+: 205px"></div><div style=3D"width: 1px; background:red; height: 100%; posi=
+tion: fixed; left: 50%; margin-left:-125px"></div><div style=3D"width: 1px;=
+ background:red; height: 100%; position: fixed; left: 50%; margin-left: 125=
+px"></div><!=3D=3D Wrapper --><table class=3D"device-width" width=3D"600" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D=
+"#ffffff"><tbody><tr><td><table class=3D"device-width" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" width=3D"100%" bgcolor=3D"#ff=
+ffff"><tbody><tr id=3D"cant-read-notice"><td align=3D"center" width=3D"100%=
+"><a class=3D"ignoreTracking" href=3D"https://app.glueup.com/en/organizatio=
+n/5799/campaign/231930" style=3D"text-decoration: none; font-size: 12px; co=
+lor: #93765b; font-weight: normal; font-family: Arial, sans-serif; display:=
+ inline">If you can't see this email click here.</a></td></tr></tbody></tab=
+le><!-- HEADER ---><!-- BEGIN image Block --><table class=3D"device-width" =
+width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"cen=
+ter" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Ima=
+ge Column --><table class=3D"device-width" width=3D"100%" border=3D"0" alig=
+n=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"devi=
+ce-width mobile-remove-padding" valign=3D"top" align=3D"center" style=3D"te=
+xt-align: center; padding:0;"><img title=3D"image" src=3D"https://app.glueu=
+p.com/resources/public/images/fixed-width/600/18f395e6-7105-46be-9fb7-03f8d=
+5bf10ae.png" srcset=3D"https://app.glueup.com/resources/public/images/fixed=
+-width/1200/18f395e6-7105-46be-9fb7-03f8d5bf10ae.png 2x" class=3D"device-wi=
+dth" width=3D"600" alt=3D"image" style=3D"display: block; border:0;"></td><=
+/tr></tbody></table><!-- END Image Column --></td></tr></tbody></table><!--=
+ END image Block --><!-- BEGIN separator Block --><table class=3D"device-wi=
+dth" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table =
+class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpaddi=
+ng=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#ffffff=
+" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td width=
+=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15=
+px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table><!-- END separator Block --><!-- BEGIN image Block --><=
+table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=
+=3D"padding:0;"><!-- BEGIN Image Column --><table class=3D"device-width" wi=
+dth=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0=
+"><tbody><tr><td class=3D"device-width mobile-remove-padding" valign=3D"top=
+" align=3D"center" style=3D"text-align: center; padding:0;"><a title=3D"htt=
+ps://katakenya.org/news/" target=3D"_blank" href=3D"https://app.glueup.com/=
+track/rd?type=3Dcampaign&amp;lid=3D1&amp;tracking_id=3D5799:231930:368ce3d1=
+-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org=
+%2Fnews%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIbkQ5dDh=
+ibHNKMmNjQWxlc2xqaVZ3dVNHS0Y3V2g4cXQwUDBncWFNUnM0Tg=3D=3D"><img title=3D"im=
+age" src=3D"https://app.glueup.com/resources/public/images/fixed-width/600/=
+772c32ce-41ce-4f4c-ba35-8fd922d1363b.png" srcset=3D"https://app.glueup.com/=
+resources/public/images/fixed-width/1200/772c32ce-41ce-4f4c-ba35-8fd922d136=
+3b.png 2x" class=3D"device-width" width=3D"600" alt=3D"image" style=3D"disp=
+lay: block; border:0;"></a></td></tr></tbody></table><!-- END Image Column =
+--></td></tr></tbody></table><!-- END image Block --><!-- END HEADER ---><!=
+-- CONTENT ---><!-- BEGIN html Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN html col=
+umn --><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"l=
+eft" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" alig=
+n=3D"center" style=3D"width:600px; padding:16px; word-break:break-word;   c=
+olor: #254c6f;"><div class=3D"custom-input-text device-width" style=3D"colo=
+r: #254c6f; text-align: left; line-height: 1.4em; mso-width-alt:568px;"><di=
+v style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=
+=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><div style=3D"text-align: justify;">Dear Chris=
+tine,</div><div style=3D"text-align: justify;"><br></div><div style=3D"text=
+-align: justify;">Stay informed about the latest industry developments, tra=
+vel technologies, market insights, and strategies to help your travel busin=
+ess thrive. We're excited to be your trusted source of valuable information=
+ and resources in the ever-evolving world of travel.</div><div style=3D"tex=
+t-align: justify;"><br></div><div style=3D"text-align: justify;">Happy read=
+ing!</div></div></div></td></tr></tbody></table><!-- END html column --></t=
+d></tr></tbody></table><!-- END html Block --><!-- BEGIN socialShare Block =
+--><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td st=
+yle=3D"padding:0;"><style> @media only screen and (max-width: 360px ) {
+    .iframe-body .device-width{
+        width:  100% !important;
+    }
+    .iframe-body .invitation .socialWidth{
+        width:  60% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  80% !important;
+    }
+}
+
+@media only screen and (max-width: 260px ) {
+    .iframe-body .invitation .socialWidth{
+        width:  50% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  70% !important;
+    }
+} </style><table class=3D"device-width regular" width=3D"600" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"=
+background:#F4F4F4;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Micro=
+soft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;;"><tbody><tr><td class=3D"devic=
+e-width" width=3D"600" style=3D"padding: 14px;"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"color: =
+#444; height:28px; white-space: nowrap; font-size:14px; font-weight: normal=
+; padding-left: 14px;">Share:</td><td width=3D"16"></td><td style=3D" font-=
+family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Mi=
+crosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple =
+LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"device-width"><a title=3D"Facebook" class=3D=
+"campaignSocial" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&am=
+p;lid=3D2&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de=
+0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3=
+Fdisplay%3Dpopup%26u%3Dhttps%253A%252F%252Fapp.glueup.com%252Forganization%=
+252F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk_=
+campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1700452550&a=
+mp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4S3BIbHBlU2lydzFrMmdhQ0IyamhVR3RVWXk4OTV=
+LdWk3S3JySm9nb1VFT0NobnZRYi84Vk8xbktDQzdIME5OOUZJWFZZdEJINkxSY1BWK0hWVTRUSG=
+FlR0FaQThDM08zQlVkM0k1MzlXaXJQb3VlMmxMYS9KMFdXZkZ2MHBhN055SmJVQTR2M2tjWVBFR=
+3FCL1FOajlwYWNleGh3bE5YTHdtcHJuL1ovdnhoU0JmY0JFTWg1cFdLU0pIcEx6aHJMUjZmMW85=
+c2c5Sm1KbExWY3Q0RUphR04rb3Jac2dJRnh0REFIV003aDJhN0Z4LzRZMlR5K3Z5Y20rbnRESER=
+Ja3dHQUJqRTRQUkkxRE9ZTWFIbFM1U0VRTXpFVHVzZnRhaWIxY2x2M09pU1hJeHIwVjZjaWJaUk=
+xiU2RFQmJ3akNUWmZrelFROVNJU0lVcGM0RFFYQWQwPQ=3D=3D" style=3D"margin-left:4p=
+x; margin-right:4px; display:inline-block;" target=3D"_blank"><img title=3D=
+"Facebook" alt=3D"Facebook" style=3D"margin:0; padding:0;vertical-align: to=
+p; border:none;" src=3D"https://app.glueup.com/images/email/social-media/fb=
+-logo-grey.png" srcset=3D"https://app.glueup.com/images/email/social-media/=
+fb-logo-grey@2x.png 2x"></a><a title=3D"Twitter" class=3D"campaignSocial" h=
+ref=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D3&amp;trac=
+king_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=
+=3Dhttps%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DWeekly%2BTravel%2BNe=
+ws%2B%257C%2BNovember%2B20+https%253A%252F%252Fapp.glueup.com%252Forganizat=
+ion%252F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253=
+Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D17004525=
+50&amp;ps=3DT0FhaDVuVDlEOWkvUzVBa1FYWWtOUHNWQzZFcHlGa29zOXFjWmNxRkpQME5ORVF=
+5SHBaNnp4bzN0MC9heWJhb3BFaDJVb0dVaU92T1Y5eVE4TC9tZXJUV1lMZzluejBsZHUxbjYwWH=
+NOdW5JaWZkL1hJNFcvSkhHRnNUU0NjdGZYZzVJYUNpM1dmanM0Yng5ZkN1Yi9UMkRrN3haSlRCO=
+XFhTFZQSXpaeGhwQmw0MEppRkVVUWMvNThMc3VEODA1U0JPR00rMHJYb2FrZXpDZUxqZXQxR0VP=
+TVpVQnZvTDNlaUdmNWMrMWsrL3NGN0djR08xVzI0YkR1ZHdmTGJydkt5QUQ5RDJCV0l1MTNzZEd=
+hcHVWMzRjelVIaFMvK0JpeU5lZEtRNUZoL1J6Ym1QRE5GUHQrdHk5eGxMc3JsYlp2cnpmK1IzYX=
+JKcnhjcDRoMCtLQVFuNW1BTytUdTA2d0tJY0k5RXBVYlZFSjVrajk3UXFBcVI0UmtMbGFlUnh5"=
+ style=3D"margin-left:4px; margin-right:4px; display:inline-block;" target=
+=3D"_blank"><img title=3D"Twitter" alt=3D"Twitter" style=3D"margin:0; paddi=
+ng:0;vertical-align: top; border:none;" src=3D"https://app.glueup.com/image=
+s/email/social-media/tw-logo-grey.png" srcset=3D"https://app.glueup.com/ima=
+ges/email/social-media/tw-logo-grey@2x.png 2x"></a><a title=3D"LinkedIn" cl=
+ass=3D"campaignSocial" href=3D"https://app.glueup.com/track/rd?type=3Dcampa=
+ign&amp;lid=3D4&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfee=
+f8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.linkedin.com%2FshareArticle%3F=
+mini%3Dtrue%26url%3Dhttps%253A%252F%252Fapp.glueup.com%252Forganization%252=
+F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk_cam=
+paign%253DShareButtons%2526pk_kwd%253DPublishModal%26title%3DWeekly%2BTrave=
+l%2BNews%2B%257C%2BNovember%2B20&amp;ts=3D1700452550&amp;ps=3DY1JDUWkrYmhFT=
+3pHUTNraUxhZUV4T3hpRmUyS1l4ekhBMFArZnJrWHM4WElQbGVHV056YVlaSzVVd00xbU84RXdK=
+MFN6QldUaTgwM0JQT2NmaTU2QVRyU3ZrVUhhdDZ2aG51cG9mSG05U0JiUm0xa09saTFCY0VUeUF=
+yTjNPNGJ0YW1oeGlLcTRveUxlM2IwNkp2N1VDODZpYlpwa1lsWi9QakNMWUJYMFRMMm5SZFRHT2=
+ZtN1NVcUpvRHZOa3pQbkd4NlN4cUd4U2o2dXlCckVldEVZN1Z4d1V5UGEzcXlzSHA1WllvcXF3d=
+FJiTDdSY0xyc2lZTFFpUDMyU0NYcmNLdWlOZHFSYXo4dTNHdmZOa1hNOTRpL0xDV3lXUHpjR2FY=
+ckYySW0zc3FvMXJoUm5URDhaMWNHR2tXazd5WXhkekpDUC9iL1NScEFuYkZDVjhUY1BXcHllSlR=
+JVDNCN2EvUWNYV1hHRHJ3cE9TcFBIZ3dNZ2JBY29xUjVyRWtrejhpMWJyakpMVDBWM0RUSlFiMG=
+NtTEFpN0pTbDdkdEN0cnJEbXFCK2xTVT0=3D" style=3D"margin-left:4px; margin-righ=
+t:4px; display:inline-block;" target=3D"_blank"><img title=3D"LinkedIn" alt=
+=3D"LinkedIn" style=3D"margin:0; padding:0;vertical-align: top; border:none=
+;" src=3D"https://app.glueup.com/images/email/social-media/in-logo-grey.png=
+" srcset=3D"https://app.glueup.com/images/email/social-media/in-logo-grey@2=
+x.png 2x"></a><a title=3D"WhatsApp" class=3D"campaignSocial" href=3D"https:=
+//app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D5&amp;tracking_id=3D579=
+9:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2=
+F%2Fweb.whatsapp.com%2Fsend%3Ftext%3DWeekly%2BTravel%2BNews%2B%257C%2BNovem=
+ber%2B20+https%253A%252F%252Fapp.glueup.com%252Forganization%252F5799%252Fc=
+ampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk_campaign%253DS=
+hareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1700452550&amp;ps=3DR3hOQ2=
+FIZjdnd2NBQWNUMEJPbFdPc3RBeERlU1hISzhpa3IzaXJhNGk3TWZySE1Oa20xcHAzWkhPQ3JmM=
+ldpUjIyQUVSRWh3VTRBcDh2L0gzUzQzdVB1TmJIdTQ5VkdxampUZER3OXlpNzRicHg5ME1iMnFO=
+TXV1dXByeHVNUHhBL1JSRVFPTzRjajQ2eHI2a3BCRUhnYjdacFhlZlVnN1VzS1NBWXhxT3ltS2J=
+VQWJvWHJiK0tOT3VnaE1EQVh6cWxwUkszd0xwMzNBQU9PcytOWVJidzFpQzhRd1R0aS95K3JYTj=
+NvS1oxamQ5cXpQYXRDNk9UejlkMklBTTJzV0RpZkZpZkQvNENaZ2Z1M0RiVHR5OGVEWXA1dVZkQ=
+2dJTWZ0U0RzaWJRVXVzVFlkQ3ZSL2hxWGZtdVdhdTZrVGdpenR0Nm5kRlVqUklIcmQ1cHQydVZW=
+N3QrYU1DN21OMENnZ0ZyZzlSWkcwdFNDZFp4VXQ4S2NKREw4UXBJV0NE" style=3D"margin-l=
+eft:4px; margin-right:4px; display:inline-block;" target=3D"_blank"><img ti=
+tle=3D"WhatsApp" alt=3D"WhatsApp" style=3D"margin:0; padding:0;vertical-ali=
+gn: top; border:none;" src=3D"https://app.glueup.com/images/email/social-me=
+dia/wa-logo-grey.png" srcset=3D"https://app.glueup.com/images/email/social-=
+media/wa-logo-grey@2x.png 2x"></a><a title=3D"Telegram" class=3D"campaignSo=
+cial" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D6&a=
+mp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redir=
+ect_url=3Dhttps%3A%2F%2Ftelegram.me%2Fshare%2Furl%3Furl%3Dhttps%253A%252F%2=
+52Fapp.glueup.com%252Forganization%252F5799%252Fcampaign%252F9Wx7P71A7AZtZW=
+sAm8vlEw%25253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_kwd%253=
+DPublishModal%26v%3D1700452550&amp;ts=3D1700452550&amp;ps=3DcFhBK2N2WGVCV3J=
+DQ3VpNzJtTWJEMlFkQkF5am5rSnBKVzN2alM4TVRzYWVxdlFqMTdYejdnbDAwWEdaWWcrSHBMUX=
+lFRjZGdngybUloYkJPN2txYms4d1M3SFJTNWg5TlhCbDcwTmU2UnV1bGhtWDVEWlhQcncwZVRYa=
+Eo3Rk5iRVdBSC9sb2FDNm9FZFlvd2swb3BPS24xRElqK3I4bDN1N1JkOExPaS8zQUNHcXRpWG5q=
+WGJyREd3amMzRzd4bGdEd21hNGFpSzA2YTQxUVhaL2VlU21UVnR0Q2ZBTWs0V3ZkZVZRbWo3ZGx=
+FVm1oQVdMWFg3YnRzQ29BeVB4UW9kQkozSmt3UzBOSUdsQzVQS0ViUnVmZEZBWTV6TmVMRGZpUG=
+dNRW0rUVg1cFNhbjJVVnA3b0NuaXBPWUpuQkw1dTdjN3AycndyUWQyYnk4WEMraFdnPT0=3D" s=
+tyle=3D"margin-left:4px; margin-right:4px; display:inline-block;" target=3D=
+"_blank"><img title=3D"Telegram" alt=3D"Telegram" style=3D"margin:0; paddin=
+g:0;vertical-align: top; border:none;" src=3D"https://app.glueup.com/images=
+/email/social-media/te-logo-grey.png" srcset=3D"https://app.glueup.com/imag=
+es/email/social-media/te-logo-grey@2x.png 2x"></a></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table><!-- END socialShare Block --><!-- BEGIN arti=
+cle Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody>=
+<tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" b=
+order=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso=
+-width-alt:600px;"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"pa=
+dding-bottom:16px;" bgcolor=3D"#f5f5f6"><table width=3D"100%" bgcolor=3D"#f=
+5f5f6" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"device-width" style=3D"border:1px solid #f5f5f6; background-color:#f=
+5f5f6"><tbody><tr><td style=3D"padding: 8px 16px 0;"><table style=3D"float:=
+justify;" align=3D"justify" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tbody><tr><td valign=3D"middle" style=3D" font-family: 'OpenSansWeb', 'D=
+roid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STX=
+ihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=
+=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=
+=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=
+=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA'=
+, 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><a title=3D=
+"Kenya, Uganda to deepen tourism cooperation" href=3D"https://app.glueup.co=
+m/track/rd?type=3Dcampaign&amp;lid=3D7&amp;tracking_id=3D5799:231930:368ce3=
+d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.o=
+rg%2Fkenya-uganda-to-deepen-tourism-cooperation%2F&amp;ts=3D1700452550&amp;=
+ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIcGVVemVpTzAyZCtMNzRKbURGdVV3bkNPZFRIVXBXUV=
+hxajJjTVdYYVlqdXVNMXRyVFdRaTYyQzRBZXZWY2hjdnoyWUE1ZWZVemRsVkhrSjBEVCs2dFk9"=
+ style=3D"text-decoration: none;  color: #00a1de; font-size: 24px; backgrou=
+nd: #f5f5f6; text-align: justify; word-break: break-word; line-height: 26px=
+; display: inline;">Kenya, Uganda to deepen tourism cooperation</a></td></t=
+r></tbody></table></td></tr><tr><td width=3D"600" align=3D"left" valign=3D"=
+top" style=3D"padding:0;"><table width=3D"200" align=3D"left" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;float:le=
+ft;" border=3D"0"><tbody><tr><td class=3D"device-width" valign=3D"top" styl=
+e=3D"padding:16px 0 8px 16px;"><a title=3D"Kenya, Uganda to deepen tourism =
+cooperation" target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; te=
+xt-decoration:none" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign=
+&amp;lid=3D8&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c=
+4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fkenya-uganda-to-deepe=
+n-tourism-cooperation%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1W=
+m12U0FIcGVVemVpTzAyZCtMNzRKbURGdVV3bkNPZFRIVXBXUVhxajJjTVdYYVlqdXVNMXRyVFdR=
+aTYyQzRBZXZWY2hjdnoyWUE1ZWZVemRsVkhrSjBEVCs2dFk9"><img title=3D"Kenya, Ugan=
+da to deepen tourism cooperation" alt=3D"Kenya, Uganda to deepen tourism co=
+operation" src=3D"https://app.glueup.com/resources/public/images/fixed-widt=
+h/600/2085716c-0b42-42d4-85b4-1c5a9dc3b07d.jpg" width=3D"200" class=3D"devi=
+ce-width fullWidth" style=3D"display: block; width:200px;" border=3D"0"></a=
+></td></tr></tbody></table><table width=3D"365" border=3D"0" align=3D"right=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"paddi=
+ng:0;float:right;"><tbody><tr><td class=3D"mobile-body-padding custom-input=
+-text" style=3D"line-height:1.4em; word-break: break-word;  color: #254c6f;=
+ font-size: 14px; background: #f5f5f6; line-height: 18px; color:#254c6f; ve=
+rtical-align: top; padding:16px 16px 8px 8px;"><div style=3D" font-family: =
+'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsof=
+t JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGoth=
+ic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=
+=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=
+=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-ser=
+if;"><div style=3D"text-align: justify;">Increased promotion of key tourism=
+ sites available in the two countries tipped to help increase the number of=
+ tourists between the two East African Community member states...</div></di=
+v></td></tr></tbody></table></td></tr><tr><td class=3D"mobile-body-padding"=
+ style=3D"height:20px; padding: 8px 16px 0 8px; font-size: 13px; color: #00=
+a1de; text-align: right; line-height: 10px; vertical-align: top; font-weigh=
+t: normal; border-top:1px solid #f5f5f6"><span style=3D" font-family: 'Open=
+SansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=
+=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft Jhen=
+gHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;">=
+<a title=3D"Read More" style=3D"font-size: 13px;  color: #00a1de; font-weig=
+ht: bold; font-style: normal; text-decoration: none;" href=3D"https://app.g=
+lueup.com/track/rd?type=3Dcampaign&amp;lid=3D9&amp;tracking_id=3D5799:23193=
+0:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkat=
+akenya.org%2Fkenya-uganda-to-deepen-tourism-cooperation%2F&amp;ts=3D1700452=
+550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIcGVVemVpTzAyZCtMNzRKbURGdVV3bkNPZF=
+RIVXBXUVhxajJjTVdYYVlqdXVNMXRyVFdRaTYyQzRBZXZWY2hjdnoyWUE1ZWZVemRsVkhrSjBEV=
+Cs2dFk9">Read More</a></span></td></tr></tbody></table></td></tr></tbody></=
+table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><t=
+d width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding:0"><ta=
+ble width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"device-width" style=3D"border:0"><tbody><tr><td width=3D"=
+600" align=3D"left" valign=3D"top" style=3D"padding:0;height:16px; line-hei=
+ght:50%" bgcolor=3D"#ffffff"></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table><!-- END article Block --><!-- BEGIN separa=
+tor Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody>=
+<tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" b=
+order=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><=
+td valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D=
+"device-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea =
+1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table><!-- END separator B=
+lock --><!-- BEGIN image Block --><table class=3D"device-width" width=3D"60=
+0" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolo=
+r=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Column -=
+-><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width mo=
+bile-remove-padding" valign=3D"top" align=3D"center" style=3D"text-align: c=
+enter; padding:0;"><a title=3D"https://boyahq.com/blog/how-boya-benefits-tr=
+avel-agencies-streamlining-payments-reducing-administrative-tasks-and-savin=
+g-time/" target=3D"_blank" href=3D"https://app.glueup.com/track/rd?type=3Dc=
+ampaign&amp;lid=3D10&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-=
+3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fboyahq.com%2Fblog%2Fhow-boya-=
+benefits-travel-agencies-streamlining-payments-reducing-administrative-task=
+s-and-saving-time%2F&amp;ts=3D1700452550&amp;ps=3DWXZUYkhtSFA2aWlQS3dNc0hpe=
+lRxdXZEdE1lUjZ5MlZaT29sMThNbnhpWXlTSkdMSkZnNDFKck93aFBNdjlnQ1RqVFFRcVpqTVF0=
+WHROeGMvTGdrK2tLT01nMjF4ZkhJdDBST0RTNWdnT3ljNkJEelRZZEhLeTNmWWJ0R05OOXh2U1d=
+WL2I4bCtQVVJYaUZMUllmbE91S1NZeHZvNWwrUUpvZWVySXZ1QTl2MGJ1NE45Zko3aGFpMndzZ1=
+RQaTRC"><img title=3D"image" src=3D"https://app.glueup.com/resources/public=
+/images/fixed-width/600/22e0038f-ced8-4fa8-bf96-31048b4a658a.jpg" srcset=3D=
+"https://app.glueup.com/resources/public/images/fixed-width/1200/22e0038f-c=
+ed8-4fa8-bf96-31048b4a658a.jpg 2x" class=3D"device-width" width=3D"600" alt=
+=3D"image" style=3D"display: block; border:0;"></a></td></tr></tbody></tabl=
+e><!-- END Image Column --></td></tr></tbody></table><!-- END image Block -=
+-><!-- BEGIN separator Block --><table class=3D"device-width" width=3D"600"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=
+=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-wid=
+th" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-=
+bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" style=3D"bo=
+rder-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+<!-- END separator Block --><!-- BEGIN article Block --><table class=3D"dev=
+ice-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><ta=
+ble class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:600px;"><tbody><tr><t=
+d width=3D"100%" valign=3D"top" style=3D"padding-bottom:16px;" bgcolor=3D"#=
+f5f5f6"><table width=3D"100%" bgcolor=3D"#f5f5f6" border=3D"0" align=3D"cen=
+ter" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"bo=
+rder:1px solid #f5f5f6; background-color:#f5f5f6"><tbody><tr><td style=3D"p=
+adding: 8px 16px 0;"><table style=3D"float:justify;" align=3D"justify" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"middl=
+e" style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=
+=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><a title=3D"Trevor Noah Launches Charm Offensi=
+ve in FAQ Ad About South Africa" href=3D"https://app.glueup.com/track/rd?ty=
+pe=3Dcampaign&amp;lid=3D11&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065=
+-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Ftrevor-=
+noah-launches-charm-offensive-in-faq-ad-about-south-africa%2F&amp;ts=3D1700=
+452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIaGRvUjNWWjVucE1YNTUxMHRRUzI5Nnk=
+3VlcvTFh0L1AzSk9IVGtGeFp5UU5uNEtiTXZsK0pucGE0dW4vRkJpVTI5dkIrR3l2c0NhS3F3dW=
+pYejg1ZlBBem0vT2VpWmsrWk9NOGxwZGZjUmtXdlFPWjBpWnJONW12aXVGVXBIRGxRPT0=3D" s=
+tyle=3D"text-decoration: none;  color: #00a1de; font-size: 24px; background=
+: #f5f5f6; text-align: justify; word-break: break-word; line-height: 26px; =
+display: inline;">Trevor Noah Launches Charm Offensive in FAQ Ad About Sout=
+h Africa</a></td></tr></tbody></table></td></tr><tr><td width=3D"600" align=
+=3D"left" valign=3D"top" style=3D"padding:0;"><table width=3D"200" align=3D=
+"left" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"=
+padding:0;float:left;" border=3D"0"><tbody><tr><td class=3D"device-width" v=
+align=3D"top" style=3D"padding:16px 0 8px 16px;"><a title=3D"Trevor Noah La=
+unches Charm Offensive in FAQ Ad About South Africa" target=3D"_blank" styl=
+e=3D"font-size: 14px; color: #0178ba; text-decoration:none" href=3D"https:/=
+/app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D12&amp;tracking_id=3D579=
+9:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2=
+F%2Fkatakenya.org%2Ftrevor-noah-launches-charm-offensive-in-faq-ad-about-so=
+uth-africa%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIaGRv=
+UjNWWjVucE1YNTUxMHRRUzI5Nnk3VlcvTFh0L1AzSk9IVGtGeFp5UU5uNEtiTXZsK0pucGE0dW4=
+vRkJpVTI5dkIrR3l2c0NhS3F3dWpYejg1ZlBBem0vT2VpWmsrWk9NOGxwZGZjUmtXdlFPWjBpWn=
+JONW12aXVGVXBIRGxRPT0=3D"><img title=3D"Trevor Noah Launches Charm Offensiv=
+e in FAQ Ad About South Africa" alt=3D"Trevor Noah Launches Charm Offensive=
+ in FAQ Ad About South Africa" src=3D"https://app.glueup.com/resources/publ=
+ic/images/fixed-width/600/c8cc9c6d-eaa6-4d2e-a42e-ee77936dce87.jpg" width=
+=3D"200" class=3D"device-width fullWidth" style=3D"display: block; width:20=
+0px;" border=3D"0"></a></td></tr></tbody></table><table width=3D"365" borde=
+r=3D"0" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" class=3D"device=
+-width" style=3D"padding:0;float:right;"><tbody><tr><td class=3D"mobile-bod=
+y-padding custom-input-text" style=3D"line-height:1.4em; word-break: break-=
+word;  color: #254c6f; font-size: 14px; background: #f5f5f6; line-height: 1=
+8px; color:#254c6f; vertical-align: top; padding:16px 16px 8px 8px;"><div s=
+tyle=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=
+=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=
+=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=
+=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91',=
+ 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=
+=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia Ne=
+w', 'Arial', sans-serif;"><div style=3D"text-align: justify;">Trevor Noah, =
+world-renowned comedian and 2024 Grammy nominee for best comedy album, has =
+taken on a new title: =E2=80=98chief tourism comedian for South Africa.=E2=
+=80=99 In a new tourism campaign entitled =E2=80=9CThe Best of Us,"....</di=
+v></div></td></tr></tbody></table></td></tr><tr><td class=3D"mobile-body-pa=
+dding" style=3D"height:20px; padding: 8px 16px 0 8px; font-size: 13px; colo=
+r: #00a1de; text-align: right; line-height: 10px; vertical-align: top; font=
+-weight: normal; border-top:1px solid #f5f5f6"><span style=3D" font-family:=
+ 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsof=
+t JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGoth=
+ic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=
+=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=
+=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-ser=
+if;;"><a title=3D"Read More" style=3D"font-size: 13px;  color: #00a1de; fon=
+t-weight: bold; font-style: normal; text-decoration: none;" href=3D"https:/=
+/app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D13&amp;tracking_id=3D579=
+9:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2=
+F%2Fkatakenya.org%2Ftrevor-noah-launches-charm-offensive-in-faq-ad-about-so=
+uth-africa%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIaGRv=
+UjNWWjVucE1YNTUxMHRRUzI5Nnk3VlcvTFh0L1AzSk9IVGtGeFp5UU5uNEtiTXZsK0pucGE0dW4=
+vRkJpVTI5dkIrR3l2c0NhS3F3dWpYejg1ZlBBem0vT2VpWmsrWk9NOGxwZGZjUmtXdlFPWjBpWn=
+JONW12aXVGVXBIRGxRPT0=3D">Read More</a></span></td></tr></tbody></table></t=
+d></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0"><tbody><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" style=
+=3D"padding:0"><table width=3D"600" border=3D"0" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"border:0"><tbody=
+><tr><td width=3D"600" align=3D"left" valign=3D"top" style=3D"padding:0;hei=
+ght:16px; line-height:50%" bgcolor=3D"#ffffff"></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table><!-- END article Block --=
+><!-- BEGIN separator Block --><table class=3D"device-width" width=3D"600" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=
+=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-wid=
+th" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-=
+bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" style=3D"bo=
+rder-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+<!-- END separator Block --><!-- BEGIN image Block --><table class=3D"devic=
+e-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- =
+BEGIN Image Column --><table class=3D"device-width" width=3D"100%" border=
+=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td cl=
+ass=3D"device-width mobile-remove-padding" valign=3D"top" align=3D"center" =
+style=3D"text-align: center; padding:0;"><a title=3D"https://www.dubaitouri=
+sm.gov.ae/" target=3D"_blank" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D14&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-b=
+e14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.dubaitourism.gov.ae%2=
+F&amp;ts=3D1700452550&amp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4TUpLNTEwMjBmWlJU=
+VzNmT3pOY085VkRqaXZKSjNXTVVUT0JPS04vME5QVw=3D=3D"><img title=3D"image" src=
+=3D"https://app.glueup.com/resources/public/images/fixed-width/600/c9402d09=
+-d20d-4a06-9195-2236f8f3c29b.png" srcset=3D"https://app.glueup.com/resource=
+s/public/images/fixed-width/1200/c9402d09-d20d-4a06-9195-2236f8f3c29b.png 2=
+x" class=3D"device-width" width=3D"600" alt=3D"image" style=3D"display: blo=
+ck; border:0;"></a></td></tr></tbody></table><!-- END Image Column --></td>=
+</tr></tbody></table><!-- END image Block --><!-- BEGIN article Block --><t=
+able class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=
+=3D"padding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" a=
+lign=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:60=
+0px;"><tbody><tr><td width=3D"100%" valign=3D"top" style=3D"padding-bottom:=
+16px;" bgcolor=3D"#f5f5f6"><table width=3D"100%" bgcolor=3D"#f5f5f6" border=
+=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device=
+-width" style=3D"border:1px solid #f5f5f6; background-color:#f5f5f6"><tbody=
+><tr><td style=3D"padding: 8px 16px 0;"><table style=3D"float:justify;" ali=
+gn=3D"justify" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>=
+<td valign=3D"middle" style=3D" font-family: 'OpenSansWeb', 'Droid Sans', '=
+Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;"><a title=3D"How Dubai Air=
+show showed aviation is flying high again" href=3D"https://app.glueup.com/t=
+rack/rd?type=3Dcampaign&amp;lid=3D15&amp;tracking_id=3D5799:231930:368ce3d1=
+-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org=
+%2Fhow-dubai-airshow-showed-aviation-is-flying-high-again%2F&amp;ts=3D17004=
+52550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIa3I5T0J5TTFIV2FXRnhZYkd4ZVJSS1d2=
+eUxycklkS2YrNVpqZS85a1hJMkN2K2NaMmtWUGJxNFUwSU1GdzhCMWhQM2doKzJqN3phUUZrbUp=
+SaWJkbDhHK1ZsR1VtdFhmczhQaGZVS25BZ2Q=3D" style=3D"text-decoration: none;  c=
+olor: #00a1de; font-size: 24px; background: #f5f5f6; text-align: justify; w=
+ord-break: break-word; line-height: 26px; display: inline;">How Dubai Airsh=
+ow showed aviation is flying high again</a></td></tr></tbody></table></td><=
+/tr><tr><td width=3D"600" align=3D"left" valign=3D"top" style=3D"padding:0;=
+"><table width=3D"200" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" =
+class=3D"device-width" style=3D"padding:0;float:right;" border=3D"0"><tbody=
+><tr><td class=3D"device-width" valign=3D"top" style=3D"padding:16px 16px 8=
+px 0;"><a title=3D"How Dubai Airshow showed aviation is flying high again" =
+target=3D"_blank" style=3D"font-size: 14px; color: #0178ba; text-decoration=
+:none" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D16=
+&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;red=
+irect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fhow-dubai-airshow-showed-aviation=
+-is-flying-high-again%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1W=
+m12U0FIa3I5T0J5TTFIV2FXRnhZYkd4ZVJSS1d2eUxycklkS2YrNVpqZS85a1hJMkN2K2NaMmtW=
+UGJxNFUwSU1GdzhCMWhQM2doKzJqN3phUUZrbUpSaWJkbDhHK1ZsR1VtdFhmczhQaGZVS25BZ2Q=
+=3D"><img title=3D"How Dubai Airshow showed aviation is flying high again" =
+src=3D"https://app.glueup.com/resources/public/images/fixed-width/600/16ddf=
+e16-1d5e-40b5-b328-e354b0d2d7dd.jpg" alt=3D"How Dubai Airshow showed aviati=
+on is flying high again" width=3D"200" class=3D"device-width" style=3D"disp=
+lay: block; width:200px" border=3D"0"></a></td></tr></tbody></table><table =
+width=3D"365" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"device-width" style=3D"padding:0;float:left;"><tbody><tr><td cl=
+ass=3D"mobile-body-padding custom-input-text" style=3D"line-height:1.4em; w=
+ord-break: break-word;  color: #254c6f; font-size: 14px; background: #f5f5f=
+6; line-height: 18px; color:#254c6f; vertical-align: top; padding:16px 8px =
+8px 16px;"><div style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Micros=
+oft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: just=
+ify;">The Dubai Airshow, a bellwether for the global aviation industry=E2=
+=80=99s health, showcased the sector=E2=80=99s strong return to growth foll=
+owing the Covid-19 pandemic as airlines sealed multibillion-dollar deals fo=
+r jets and signalled their confidence in the longevity of air travel demand=
+...</div></div></td></tr></tbody></table></td></tr><tr><td class=3D"mobile-=
+body-padding" style=3D"height:20px; padding: 8px 16px 0 8px; font-size: 13p=
+x; color: #00a1de; text-align: right; line-height: 10px; vertical-align: to=
+p; font-weight: normal; border-top:1px solid #f5f5f6"><span style=3D" font-=
+family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Mi=
+crosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple =
+LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;;"><a title=3D"Read More" style=3D"font-size: 13px;  color: #00a1d=
+e; font-weight: bold; font-style: normal; text-decoration: none;" href=3D"h=
+ttps://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D17&amp;tracking_id=
+=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttp=
+s%3A%2F%2Fkatakenya.org%2Fhow-dubai-airshow-showed-aviation-is-flying-high-=
+again%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIa3I5T0J5T=
+TFIV2FXRnhZYkd4ZVJSS1d2eUxycklkS2YrNVpqZS85a1hJMkN2K2NaMmtWUGJxNFUwSU1GdzhC=
+MWhQM2doKzJqN3phUUZrbUpSaWJkbDhHK1ZsR1VtdFhmczhQaGZVS25BZ2Q=3D">Read More</=
+a></span></td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"100%" va=
+lign=3D"top" bgcolor=3D"#ffffff" style=3D"padding:0"><table width=3D"600" b=
+order=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"d=
+evice-width" style=3D"border:0"><tbody><tr><td width=3D"600" align=3D"left"=
+ valign=3D"top" style=3D"padding:0;height:16px; line-height:50%" bgcolor=3D=
+"#ffffff"></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><!-- END article Block --><!-- BEGIN separator Block --><table=
+ class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"pa=
+dding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top"=
+ bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><t=
+body><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div =
+style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table><!-- END separator Block --><!-- BEGI=
+N image Block --><table class=3D"device-width" width=3D"600" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tb=
+ody><tr><td style=3D"padding:0;"><!-- BEGIN Image Column --><table class=3D=
+"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr><td class=3D"device-width mobile-remove-paddi=
+ng" valign=3D"top" align=3D"center" style=3D"text-align: center; padding:0;=
+"><img title=3D"image" src=3D"https://app.glueup.com/resources/public/image=
+s/fixed-width/600/29d7c6ee-c679-4866-adc3-6de5988b005b.png" srcset=3D"https=
+://app.glueup.com/resources/public/images/fixed-width/1200/29d7c6ee-c679-48=
+66-adc3-6de5988b005b.png 2x" class=3D"device-width" width=3D"600" alt=3D"im=
+age" style=3D"display: block; border:0;"></td></tr></tbody></table><!-- END=
+ Image Column --></td></tr></tbody></table><!-- END image Block --><!-- BEG=
+IN separator Block --><table class=3D"device-width" width=3D"600" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff=
+"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-width" width=
+=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><=
+tbody><tr><td valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8=
+px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"cente=
+r" class=3D"device-width"><tbody><tr><td width=3D"600" style=3D"border-bott=
+om:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table><!-- END =
+separator Block --><!-- BEGIN article Block --><table class=3D"device-width=
+" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"c=
+enter" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=
+=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"mso-width-alt:600px;"><tbody><tr><td width=
+=3D"100%" valign=3D"top" style=3D"padding-bottom:16px;" bgcolor=3D"#f5f5f6"=
+><table width=3D"100%" bgcolor=3D"#f5f5f6" border=3D"0" align=3D"center" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"border:1p=
+x solid #f5f5f6; background-color:#f5f5f6"><tbody><tr><td style=3D"padding:=
+ 8px 16px 0;"><table style=3D"float:justify;" align=3D"justify" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"middle" styl=
+e=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=
+=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=
+=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=
+=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'D=
+utum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=
+=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New',=
+ 'Arial', sans-serif;"><a title=3D"Kagame: Single African Air Transport Mar=
+ket Needed for Tourism Growth" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D18&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-b=
+e14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fkagame-si=
+ngle-african-air-transport-market-needed-for-tourism-growth%2F&amp;ts=3D170=
+0452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIaFJ0Z2JUZlQ2cDhEWWUyeFErb1BhNj=
+dBZGxKN2ZRVWkyMTQxQmVaUGtZSjVGS3hGY1QzOGV3OUlZVUdDNjQ3d0ZyaFVpeFZsU25sVFhBa=
+Tcyc0Jya3l6NDRybGtSalN2YXJ6dnMvYUliQmFNRXNrT2I0bStZMVlNNllkNUxMMHVnPT0=3D" =
+style=3D"text-decoration: none;  color: #00a1de; font-size: 24px; backgroun=
+d: #f5f5f6; text-align: justify; word-break: break-word; line-height: 26px;=
+ display: inline;">Kagame: Single African Air Transport Market Needed for T=
+ourism Growth</a></td></tr></tbody></table></td></tr><tr><td width=3D"600" =
+align=3D"left" valign=3D"top" style=3D"padding:0;"><table width=3D"200" ali=
+gn=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" styl=
+e=3D"padding:0;float:left;" border=3D"0"><tbody><tr><td class=3D"device-wid=
+th" valign=3D"top" style=3D"padding:16px 0 8px 16px;"><a title=3D"Kagame: S=
+ingle African Air Transport Market Needed for Tourism Growth" target=3D"_bl=
+ank" style=3D"font-size: 14px; color: #0178ba; text-decoration:none" href=
+=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D19&amp;tracki=
+ng_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=
+=3Dhttps%3A%2F%2Fkatakenya.org%2Fkagame-single-african-air-transport-market=
+-needed-for-tourism-growth%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVt=
+QVd1Wm12U0FIaFJ0Z2JUZlQ2cDhEWWUyeFErb1BhNjdBZGxKN2ZRVWkyMTQxQmVaUGtZSjVGS3h=
+GY1QzOGV3OUlZVUdDNjQ3d0ZyaFVpeFZsU25sVFhBaTcyc0Jya3l6NDRybGtSalN2YXJ6dnMvYU=
+liQmFNRXNrT2I0bStZMVlNNllkNUxMMHVnPT0=3D"><img title=3D"Kagame: Single Afri=
+can Air Transport Market Needed for Tourism Growth" alt=3D"Kagame: Single A=
+frican Air Transport Market Needed for Tourism Growth" src=3D"https://app.g=
+lueup.com/resources/public/images/fixed-width/600/73c95adb-b126-4db1-91bd-5=
+462db477a38.jpg" width=3D"200" class=3D"device-width fullWidth" style=3D"di=
+splay: block; width:200px;" border=3D"0"></a></td></tr></tbody></table><tab=
+le width=3D"365" border=3D"0" align=3D"right" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"padding:0;float:right;"><tbody><tr><=
+td class=3D"mobile-body-padding custom-input-text" style=3D"line-height:1.4=
+em; word-break: break-word;  color: #254c6f; font-size: 14px; background: #=
+f5f5f6; line-height: 18px; color:#254c6f; vertical-align: top; padding:16px=
+ 16px 8px 8px;"><div style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'M=
+icrosoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: j=
+ustify;">Rich with tourism attractions, Africa remains poorly connected via=
+ air transport, making it difficult to market itself as a tourist destinati=
+on within its boundaries and internationally...</div></div></td></tr></tbod=
+y></table></td></tr><tr><td class=3D"mobile-body-padding" style=3D"height:2=
+0px; padding: 8px 16px 0 8px; font-size: 13px; color: #00a1de; text-align: =
+right; line-height: 10px; vertical-align: top; font-weight: normal; border-=
+top:1px solid #f5f5f6"><span style=3D" font-family: 'OpenSansWeb', 'Droid S=
+ans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei',=
+ '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=
+=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=
+=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'D=
+otum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiry=
+o', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read M=
+ore" style=3D"font-size: 13px;  color: #00a1de; font-weight: bold; font-sty=
+le: normal; text-decoration: none;" href=3D"https://app.glueup.com/track/rd=
+?type=3Dcampaign&amp;lid=3D20&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4=
+065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fkaga=
+me-single-african-air-transport-market-needed-for-tourism-growth%2F&amp;ts=
+=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIaFJ0Z2JUZlQ2cDhEWWUyeFEr=
+b1BhNjdBZGxKN2ZRVWkyMTQxQmVaUGtZSjVGS3hGY1QzOGV3OUlZVUdDNjQ3d0ZyaFVpeFZsU25=
+sVFhBaTcyc0Jya3l6NDRybGtSalN2YXJ6dnMvYUliQmFNRXNrT2I0bStZMVlNNllkNUxMMHVnPT=
+0=3D">Read More</a></span></td></tr></tbody></table></td></tr></tbody></tab=
+le><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td w=
+idth=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding:0"><table=
+ width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"device-width" style=3D"border:0"><tbody><tr><td width=3D"60=
+0" align=3D"left" valign=3D"top" style=3D"padding:0;height:16px; line-heigh=
+t:50%" bgcolor=3D"#ffffff"></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table><!-- END article Block --><!-- BEGIN separato=
+r Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><t=
+r><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" bor=
+der=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td=
+ valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"d=
+evice-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1p=
+x solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table><!-- END separator Blo=
+ck --><!-- BEGIN image Block --><table class=3D"device-width" width=3D"600"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=
+=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Column --=
+><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" c=
+ellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width mob=
+ile-remove-padding" valign=3D"top" align=3D"center" style=3D"text-align: ce=
+nter; padding:0;"><img title=3D"image" src=3D"https://app.glueup.com/resour=
+ces/public/images/fixed-width/600/116b216e-6628-47f9-b6ec-5c6a1e6aee88.png"=
+ srcset=3D"https://app.glueup.com/resources/public/images/fixed-width/1200/=
+116b216e-6628-47f9-b6ec-5c6a1e6aee88.png 2x" class=3D"device-width" width=
+=3D"600" alt=3D"image" style=3D"display: block; border:0;"></td></tr></tbod=
+y></table><!-- END Image Column --></td></tr></tbody></table><!-- END image=
+ Block --><!-- BEGIN separator Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=3D"dev=
+ice-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cel=
+lspacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#ffffff" style=3D"p=
+adding-bottom: 8px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"center" class=3D"device-width"><tbody><tr><td width=3D"600" styl=
+e=3D"border-bottom:#e9e9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</=
+div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table><!-- END separator Block --><!-- BEGIN article Block --><table class=
+=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding=
+:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-width-alt:600px;"><tbod=
+y><tr><td width=3D"100%" valign=3D"top" style=3D"padding-bottom:16px;" bgco=
+lor=3D"#f5f5f6"><table width=3D"100%" bgcolor=3D"#f5f5f6" border=3D"0" alig=
+n=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" sty=
+le=3D"border:1px solid #f5f5f6; background-color:#f5f5f6"><tbody><tr><td st=
+yle=3D"padding: 8px 16px 0;"><table style=3D"float:justify;" align=3D"justi=
+fy" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=
+=3D"middle" style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft =
+YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=
+=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=
+=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=
+=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=
+=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text=
+', 'Cordia New', 'Arial', sans-serif;"><a title=3D"El Salvador slaps a $1,1=
+30 fee on African and Indian travelers as US pressures it to curb migration=
+" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D21&amp;=
+tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect=
+_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fel-salvador-slaps-a-1130-fee-on-africa=
+n-and-indian-travelers-as-us-pressures-it-to-curb-migration%2F&amp;ts=3D170=
+0452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIc1gvZGV0VUhZdmdiWUhSYkFLSkJTVF=
+ora2JNRTZ1MzV4N0M5Sk83Z2FzUDhtaTBtR0pWTmxvcGhvSlVTeXJFK09VTEVxZUo2VG56TEVuZ=
+kYwTlVwc053UGw5TEp6dnVVN3RhQnJlcWZ4K1ZQbHBleks4bmplZVMrVXVMUWtleE80U09ldmdP=
+ZEtQS052alZzMlpybnNOYTlBNW5TSm1zM21hK0s0VlNrY09W" style=3D"text-decoration:=
+ none;  color: #00a1de; font-size: 24px; background: #f5f5f6; text-align: j=
+ustify; word-break: break-word; line-height: 26px; display: inline;">El Sal=
+vador slaps a $1,130 fee on African and Indian travelers as US pressures it=
+ to curb migration</a></td></tr></tbody></table></td></tr><tr><td width=3D"=
+600" align=3D"left" valign=3D"top" style=3D"padding:0;"><table width=3D"200=
+" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width"=
+ style=3D"padding:0;float:left;" border=3D"0"><tbody><tr><td class=3D"devic=
+e-width" valign=3D"top" style=3D"padding:16px 0 8px 16px;"><a title=3D"El S=
+alvador slaps a $1,130 fee on African and Indian travelers as US pressures =
+it to curb migration" target=3D"_blank" style=3D"font-size: 14px; color: #0=
+178ba; text-decoration:none" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D22&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-b=
+e14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fel-salvad=
+or-slaps-a-1130-fee-on-african-and-indian-travelers-as-us-pressures-it-to-c=
+urb-migration%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIc=
+1gvZGV0VUhZdmdiWUhSYkFLSkJTVFora2JNRTZ1MzV4N0M5Sk83Z2FzUDhtaTBtR0pWTmxvcGhv=
+SlVTeXJFK09VTEVxZUo2VG56TEVuZkYwTlVwc053UGw5TEp6dnVVN3RhQnJlcWZ4K1ZQbHBleks=
+4bmplZVMrVXVMUWtleE80U09ldmdPZEtQS052alZzMlpybnNOYTlBNW5TSm1zM21hK0s0VlNrY0=
+9W"><img title=3D"El Salvador slaps a $1,130 fee on African and Indian trav=
+elers as US pressures it to curb migration" alt=3D"El Salvador slaps a $1,1=
+30 fee on African and Indian travelers as US pressures it to curb migration=
+" src=3D"https://app.glueup.com/resources/public/images/fixed-width/600/ab1=
+90fcd-1929-4e9c-8c96-650680f7196e.jpg" width=3D"200" class=3D"device-width =
+fullWidth" style=3D"display: block; width:200px;" border=3D"0"></a></td></t=
+r></tbody></table><table width=3D"365" border=3D"0" align=3D"right" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padding:0;floa=
+t:right;"><tbody><tr><td class=3D"mobile-body-padding custom-input-text" st=
+yle=3D"line-height:1.4em; word-break: break-word;  color: #254c6f; font-siz=
+e: 14px; background: #f5f5f6; line-height: 18px; color:#254c6f; vertical-al=
+ign: top; padding:16px 16px 8px 8px;"><div style=3D" font-family: 'OpenSans=
+Web', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=
+=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHe=
+i', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=
+=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=
+=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=
+=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;"><div=
+ style=3D"text-align: justify;">El Salvador=E2=80=99s government has begun =
+slapping a $1,130 fee on travelers from dozens of countries connecting thro=
+ugh the nation=E2=80=99s main airport, amid U.S. pressure to help control m=
+igration flows to its southern border...</div></div></td></tr></tbody></tab=
+le></td></tr><tr><td class=3D"mobile-body-padding" style=3D"height:20px; pa=
+dding: 8px 16px 0 8px; font-size: 13px; color: #00a1de; text-align: right; =
+line-height: 10px; vertical-align: top; font-weight: normal; border-top:1px=
+ solid #f5f5f6"><span style=3D" font-family: 'OpenSansWeb', 'Droid Sans', '=
+Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=
+=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=
+=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=
+=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum',=
+ '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'M=
+yanmar Text', 'Cordia New', 'Arial', sans-serif;;"><a title=3D"Read More" s=
+tyle=3D"font-size: 13px;  color: #00a1de; font-weight: bold; font-style: no=
+rmal; text-decoration: none;" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D23&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-b=
+e14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fel-salvad=
+or-slaps-a-1130-fee-on-african-and-indian-travelers-as-us-pressures-it-to-c=
+urb-migration%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIc=
+1gvZGV0VUhZdmdiWUhSYkFLSkJTVFora2JNRTZ1MzV4N0M5Sk83Z2FzUDhtaTBtR0pWTmxvcGhv=
+SlVTeXJFK09VTEVxZUo2VG56TEVuZkYwTlVwc053UGw5TEp6dnVVN3RhQnJlcWZ4K1ZQbHBleks=
+4bmplZVMrVXVMUWtleE80U09ldmdPZEtQS052alZzMlpybnNOYTlBNW5TSm1zM21hK0s0VlNrY0=
+9W">Read More</a></span></td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td wid=
+th=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding:0"><table w=
+idth=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"device-width" style=3D"border:0"><tbody><tr><td width=3D"600" =
+align=3D"left" valign=3D"top" style=3D"padding:0;height:16px; line-height:5=
+0%" bgcolor=3D"#ffffff"></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table><!-- END article Block --><!-- BEGIN separator B=
+lock --><table class=3D"device-width" width=3D"600" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><=
+td style=3D"padding:0;"><table class=3D"device-width" width=3D"100%" border=
+=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td va=
+lign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"devi=
+ce-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px s=
+olid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table><!-- END separator Block =
+--><!-- BEGIN image Block --><table class=3D"device-width" width=3D"600" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"=
+#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN Image Column --><ta=
+ble class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellp=
+adding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width mobile-=
+remove-padding" valign=3D"top" align=3D"center" style=3D"text-align: center=
+; padding:0;"><a title=3D"https://katakenya.org/expand-your-reach-to-travel=
+lers-from-anywhere-in-the-world/" target=3D"_blank" href=3D"https://app.glu=
+eup.com/track/rd?type=3Dcampaign&amp;lid=3D24&amp;tracking_id=3D5799:231930=
+:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkata=
+kenya.org%2Fexpand-your-reach-to-travellers-from-anywhere-in-the-world%2F&a=
+mp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIdHJudWI0a0tNcTNXcmZ=
+HY21XdHB3YVIyRDMwTWdWdkd4S1VLaTFiNFRScXlhWjdvN2RYU1M0alN6SGNsTm5Qd090Z2JSQk=
+dYVmwyZFFVMDJ4YldIUHhiMGtyQ1ZtbWRHRTlJckw5MmJuV1k=3D"><img title=3D"image" =
+src=3D"https://app.glueup.com/resources/public/images/fixed-width/600/34e76=
+07b-6ba8-45cd-888a-a70e10dcfbaf.jpg" srcset=3D"https://app.glueup.com/resou=
+rces/public/images/fixed-width/1200/34e7607b-6ba8-45cd-888a-a70e10dcfbaf.jp=
+g 2x" class=3D"device-width" width=3D"600" alt=3D"image" style=3D"display: =
+block; border:0;"></a></td></tr></tbody></table><!-- END Image Column --></=
+td></tr></tbody></table><!-- END image Block --><!-- BEGIN separator Block =
+--><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td st=
+yle=3D"padding:0;"><table class=3D"device-width" width=3D"100%" border=3D"0=
+" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device=
+-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px sol=
+id;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td=
+></tr></tbody></table></td></tr></tbody></table><!-- END separator Block --=
+><!-- BEGIN article Block --><table class=3D"device-width" width=3D"600" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"=
+#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-width" =
+width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D=
+"0" style=3D"mso-width-alt:600px;"><tbody><tr><td width=3D"100%" valign=3D"=
+top" style=3D"padding-bottom:16px;" bgcolor=3D"#f5f5f6"><table width=3D"100=
+%" bgcolor=3D"#f5f5f6" border=3D"0" align=3D"center" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"device-width" style=3D"border:1px solid #f5f5f6; bac=
+kground-color:#f5f5f6"><tbody><tr><td style=3D"padding: 8px 16px 0;"><table=
+ style=3D"float:justify;" align=3D"justify" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td valign=3D"middle" style=3D" font-family: '=
+OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft J=
+hengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic'=
+, '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=
+=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=
+=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;=
+"><a title=3D"Google Maps to Remove Dangerous South African Route Following=
+ Tourist Incidents" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign=
+&amp;lid=3D25&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8=
+c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2Fgoogle-maps-to-remov=
+e-dangerous-south-african-route-following-tourist-incidents%2F&amp;ts=3D170=
+0452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIbVB0dUMyd3p3S2tYUkZYWTZ2WGFqWW=
+hob1V6eWIxd2RabUM2d2dUejZGaWlGaVljbXhZY3YrZlRMdURWMG5oR1N1U3U4cXo4RmJncHQyb=
+HhYRm9XNkhPcU9HVEVtajV6dEo5Z3FWbUxFT255SjVzV3d1MUdHc1g3elVsK1RjbUlraGZZdDF2=
+WVRiWm9SN21ReHlvd0hJPQ=3D=3D" style=3D"text-decoration: none;  color: #00a1=
+de; font-size: 24px; background: #f5f5f6; text-align: justify; word-break: =
+break-word; line-height: 26px; display: inline;">Google Maps to Remove Dang=
+erous South African Route Following Tourist Incidents</a></td></tr></tbody>=
+</table></td></tr><tr><td width=3D"600" align=3D"left" valign=3D"top" style=
+=3D"padding:0;"><table width=3D"200" align=3D"left" cellpadding=3D"0" cells=
+pacing=3D"0" class=3D"device-width" style=3D"padding:0;float:left;" border=
+=3D"0"><tbody><tr><td class=3D"device-width" valign=3D"top" style=3D"paddin=
+g:16px 0 8px 16px;"><a title=3D"Google Maps to Remove Dangerous South Afric=
+an Route Following Tourist Incidents" target=3D"_blank" style=3D"font-size:=
+ 14px; color: #0178ba; text-decoration:none" href=3D"https://app.glueup.com=
+/track/rd?type=3Dcampaign&amp;lid=3D26&amp;tracking_id=3D5799:231930:368ce3=
+d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.o=
+rg%2Fgoogle-maps-to-remove-dangerous-south-african-route-following-tourist-=
+incidents%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIbVB0d=
+UMyd3p3S2tYUkZYWTZ2WGFqWWhob1V6eWIxd2RabUM2d2dUejZGaWlGaVljbXhZY3YrZlRMdURW=
+MG5oR1N1U3U4cXo4RmJncHQybHhYRm9XNkhPcU9HVEVtajV6dEo5Z3FWbUxFT255SjVzV3d1MUd=
+Hc1g3elVsK1RjbUlraGZZdDF2WVRiWm9SN21ReHlvd0hJPQ=3D=3D"><img title=3D"Google=
+ Maps to Remove Dangerous South African Route Following Tourist Incidents" =
+alt=3D"Google Maps to Remove Dangerous South African Route Following Touris=
+t Incidents" src=3D"https://app.glueup.com/resources/public/images/fixed-wi=
+dth/600/6e060e17-3b3c-4fb6-b4d7-739dfc05f486.jpg" width=3D"200" class=3D"de=
+vice-width fullWidth" style=3D"display: block; width:200px;" border=3D"0"><=
+/a></td></tr></tbody></table><table width=3D"365" border=3D"0" align=3D"rig=
+ht" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"pad=
+ding:0;float:right;"><tbody><tr><td class=3D"mobile-body-padding custom-inp=
+ut-text" style=3D"line-height:1.4em; word-break: break-word;  color: #254c6=
+f; font-size: 14px; background: #f5f5f6; line-height: 18px; color:#254c6f; =
+vertical-align: top; padding:16px 16px 8px 8px;"><div style=3D" font-family=
+: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=
+=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsof=
+t JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGoth=
+ic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=
+=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=
+=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-ser=
+if;"><div style=3D"text-align: justify;">In a significant move, Google has =
+decided to eliminate a route to Nyanga, one of South Africa=E2=80=99s most =
+violent townships, from its navigation platform, Google Maps...</div></div>=
+</td></tr></tbody></table></td></tr><tr><td class=3D"mobile-body-padding" s=
+tyle=3D"height:20px; padding: 8px 16px 0 8px; font-size: 13px; color: #00a1=
+de; text-align: right; line-height: 10px; vertical-align: top; font-weight:=
+ normal; border-top:1px solid #f5f5f6"><span style=3D" font-family: 'OpenSa=
+nsWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=
+=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHe=
+i', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=
+=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=
+=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=
+=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;;"><a =
+title=3D"Read More" style=3D"font-size: 13px;  color: #00a1de; font-weight:=
+ bold; font-style: normal; text-decoration: none;" href=3D"https://app.glue=
+up.com/track/rd?type=3Dcampaign&amp;lid=3D27&amp;tracking_id=3D5799:231930:=
+368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatak=
+enya.org%2Fgoogle-maps-to-remove-dangerous-south-african-route-following-to=
+urist-incidents%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0F=
+IbVB0dUMyd3p3S2tYUkZYWTZ2WGFqWWhob1V6eWIxd2RabUM2d2dUejZGaWlGaVljbXhZY3YrZl=
+RMdURWMG5oR1N1U3U4cXo4RmJncHQybHhYRm9XNkhPcU9HVEVtajV6dEo5Z3FWbUxFT255SjVzV=
+3d1MUdHc1g3elVsK1RjbUlraGZZdDF2WVRiWm9SN21ReHlvd0hJPQ=3D=3D">Read More</a><=
+/span></td></tr></tbody></table></td></tr></tbody></table><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"100%" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"padding:0"><table width=3D"600" borde=
+r=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"devic=
+e-width" style=3D"border:0"><tbody><tr><td width=3D"600" align=3D"left" val=
+ign=3D"top" style=3D"padding:0;height:16px; line-height:50%" bgcolor=3D"#ff=
+ffff"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody=
+></table><!-- END article Block --><!-- BEGIN separator Block --><table cla=
+ss=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"paddin=
+g:0;"><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"le=
+ft" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" bgcol=
+or=3D"#ffffff" style=3D"padding-bottom: 8px;"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center" class=3D"device-width"><tbody><=
+tr><td width=3D"600" style=3D"border-bottom:#e9e9ea 1px solid;"><div style=
+=3D"height:15px;">&nbsp;</div></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table><!-- END separator Block --><!-- BEGIN ima=
+ge Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><=
+tr><td style=3D"padding:0;"><!-- BEGIN Image Column --><table class=3D"devi=
+ce-width" width=3D"100%" border=3D"0" align=3D"left" cellpadding=3D"0" cell=
+spacing=3D"0"><tbody><tr><td class=3D"device-width mobile-remove-padding" v=
+align=3D"top" align=3D"center" style=3D"text-align: center; padding:0;"><im=
+g title=3D"image" src=3D"https://app.glueup.com/resources/public/images/fix=
+ed-width/600/caa0140b-66cd-4af2-8550-c201a1aebb04.png" srcset=3D"https://ap=
+p.glueup.com/resources/public/images/fixed-width/1200/caa0140b-66cd-4af2-85=
+50-c201a1aebb04.png 2x" class=3D"device-width" width=3D"600" alt=3D"image" =
+style=3D"display: block; border:0;"></td></tr></tbody></table><!-- END Imag=
+e Column --></td></tr></tbody></table><!-- END image Block --><!-- BEGIN se=
+parator Block --><table class=3D"device-width" width=3D"600" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tb=
+ody><tr><td style=3D"padding:0;"><table class=3D"device-width" width=3D"100=
+%" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><=
+tr><td valign=3D"top" bgcolor=3D"#ffffff" style=3D"padding-bottom: 8px;"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" clas=
+s=3D"device-width"><tbody><tr><td width=3D"600" style=3D"border-bottom:#e9e=
+9ea 1px solid;"><div style=3D"height:15px;">&nbsp;</div></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table><!-- END separat=
+or Block --><!-- BEGIN html Block --><table class=3D"device-width" width=3D=
+"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgc=
+olor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN html column=
+ --><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left=
+" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" align=
+=3D"center" style=3D"width:600px; padding:16px; word-break:break-word;   co=
+lor: #254c6f;"><div class=3D"custom-input-text device-width" style=3D"color=
+: #254c6f; text-align: left; line-height: 1.4em; mso-width-alt:568px;"><div=
+ style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=
+=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;"><div style=3D"text-align: justify;"><strong>Ch=
+airman's Breakfast -&nbsp;</strong>Nairobi | Date: Tuesday 5th December 202=
+3 | Venue: Villa Rosa Kempinski | 0800hrs - 1100hrs</div><div style=3D"text=
+-align: justify;"><br></div></div></div></td></tr></tbody></table><!-- END =
+html column --></td></tr></tbody></table><!-- END html Block --><!-- BEGIN =
+socialShare Block --><table class=3D"device-width" width=3D"600" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"=
+><tbody><tr><td style=3D"padding:0;"><style> @media only screen and (max-wi=
+dth: 360px ) {
+    .iframe-body .device-width{
+        width:  100% !important;
+    }
+    .iframe-body .invitation .socialWidth{
+        width:  60% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  80% !important;
+    }
+}
+
+@media only screen and (max-width: 260px ) {
+    .iframe-body .invitation .socialWidth{
+        width:  50% !important;
+    }
+    .iframe-body .regular .socialWidth{
+        width:  70% !important;
+    }
+} </style><table class=3D"device-width regular" width=3D"600" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"=
+background:#F4F4F4;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Micro=
+soft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=
+=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=
+=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=
+=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=
+=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanma=
+r Text', 'Cordia New', 'Arial', sans-serif;;"><tbody><tr><td class=3D"devic=
+e-width" width=3D"600" style=3D"padding: 14px;"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"color: =
+#444; height:28px; white-space: nowrap; font-size:14px; font-weight: normal=
+; padding-left: 14px;">Share:</td><td width=3D"16"></td><td style=3D" font-=
+family: 'OpenSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=
+=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Mi=
+crosoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple =
+LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=
+=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=
+=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sa=
+ns-serif;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"device-width"><a title=3D"Facebook" class=3D=
+"campaignSocial" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&am=
+p;lid=3D28&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4d=
+e0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%=
+3Fdisplay%3Dpopup%26u%3Dhttps%253A%252F%252Fapp.glueup.com%252Forganization=
+%252F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk=
+_campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1700452550&=
+amp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4S3BIbHBlU2lydzFrMmdhQ0IyamhVR3RVWXk4OT=
+VLdWk3S3JySm9nb1VFT0NobnZRYi84Vk8xbktDQzdIME5OOUZJWFZZdEJINkxSY1BWK0hWVTRUS=
+GFlR0FaQThDM08zQlVkM0k1MzlXaXJQb3VlMmxMYS9KMFdXZkZ2MHBhN055SmJVQTR2M2tjWVBF=
+R3FCL1FOajlwYWNleGh3bE5YTHdtcHJuL1ovdnhoU0JmY0JFTWg1cFdLU0pIcEx6aHJMUjZmMW8=
+5c2c5Sm1KbExWY3Q0RUphR04rb3Jac2dJRnh0REFIV003aDJhN0Z4LzRZMlR5K3Z5Y20rbnRESE=
+RJa3dHQUJqRTRQUkkxRE9ZTWFIbFM1U0VRTXpFVHVzZnRhaWIxY2x2M09pU1hJeHIwVjZjaWJaU=
+kxiU2RFQmJ3akNUWmZrelFROVNJU0lVcGM0RFFYQWQwPQ=3D=3D" style=3D"margin-left:4=
+px; margin-right:4px; display:inline-block;" target=3D"_blank"><img title=
+=3D"Facebook" alt=3D"Facebook" style=3D"margin:0; padding:0;vertical-align:=
+ top; border:none;" src=3D"https://app.glueup.com/images/email/social-media=
+/fb-logo-grey.png" srcset=3D"https://app.glueup.com/images/email/social-med=
+ia/fb-logo-grey@2x.png 2x"></a><a title=3D"Twitter" class=3D"campaignSocial=
+" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D29&amp;=
+tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect=
+_url=3Dhttps%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DWeekly%2BTravel%=
+2BNews%2B%257C%2BNovember%2B20+https%253A%252F%252Fapp.glueup.com%252Forgan=
+ization%252F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F=
+%253Fpk_campaign%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1700=
+452550&amp;ps=3DT0FhaDVuVDlEOWkvUzVBa1FYWWtOUHNWQzZFcHlGa29zOXFjWmNxRkpQME5=
+ORVF5SHBaNnp4bzN0MC9heWJhb3BFaDJVb0dVaU92T1Y5eVE4TC9tZXJUV1lMZzluejBsZHUxbj=
+YwWHNOdW5JaWZkL1hJNFcvSkhHRnNUU0NjdGZYZzVJYUNpM1dmanM0Yng5ZkN1Yi9UMkRrN3haS=
+lRCOXFhTFZQSXpaeGhwQmw0MEppRkVVUWMvNThMc3VEODA1U0JPR00rMHJYb2FrZXpDZUxqZXQx=
+R0VPTVpVQnZvTDNlaUdmNWMrMWsrL3NGN0djR08xVzI0YkR1ZHdmTGJydkt5QUQ5RDJCV0l1MTN=
+zZEdhcHVWMzRjelVIaFMvK0JpeU5lZEtRNUZoL1J6Ym1QRE5GUHQrdHk5eGxMc3JsYlp2cnpmK1=
+IzYXJKcnhjcDRoMCtLQVFuNW1BTytUdTA2d0tJY0k5RXBVYlZFSjVrajk3UXFBcVI0UmtMbGFlU=
+nh5" style=3D"margin-left:4px; margin-right:4px; display:inline-block;" tar=
+get=3D"_blank"><img title=3D"Twitter" alt=3D"Twitter" style=3D"margin:0; pa=
+dding:0;vertical-align: top; border:none;" src=3D"https://app.glueup.com/im=
+ages/email/social-media/tw-logo-grey.png" srcset=3D"https://app.glueup.com/=
+images/email/social-media/tw-logo-grey@2x.png 2x"></a><a title=3D"LinkedIn"=
+ class=3D"campaignSocial" href=3D"https://app.glueup.com/track/rd?type=3Dca=
+mpaign&amp;lid=3D30&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3=
+bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.linkedin.com%2FshareArticl=
+e%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Fapp.glueup.com%252Forganization=
+%252F5799%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk=
+_campaign%253DShareButtons%2526pk_kwd%253DPublishModal%26title%3DWeekly%2BT=
+ravel%2BNews%2B%257C%2BNovember%2B20&amp;ts=3D1700452550&amp;ps=3DY1JDUWkrY=
+mhFT3pHUTNraUxhZUV4T3hpRmUyS1l4ekhBMFArZnJrWHM4WElQbGVHV056YVlaSzVVd00xbU84=
+RXdKMFN6QldUaTgwM0JQT2NmaTU2QVRyU3ZrVUhhdDZ2aG51cG9mSG05U0JiUm0xa09saTFCY0V=
+UeUFyTjNPNGJ0YW1oeGlLcTRveUxlM2IwNkp2N1VDODZpYlpwa1lsWi9QakNMWUJYMFRMMm5SZF=
+RHT2ZtN1NVcUpvRHZOa3pQbkd4NlN4cUd4U2o2dXlCckVldEVZN1Z4d1V5UGEzcXlzSHA1Wllvc=
+XF3dFJiTDdSY0xyc2lZTFFpUDMyU0NYcmNLdWlOZHFSYXo4dTNHdmZOa1hNOTRpL0xDV3lXUHpj=
+R2FYckYySW0zc3FvMXJoUm5URDhaMWNHR2tXazd5WXhkekpDUC9iL1NScEFuYkZDVjhUY1BXcHl=
+lSlRJVDNCN2EvUWNYV1hHRHJ3cE9TcFBIZ3dNZ2JBY29xUjVyRWtrejhpMWJyakpMVDBWM0RUSl=
+FiMGNtTEFpN0pTbDdkdEN0cnJEbXFCK2xTVT0=3D" style=3D"margin-left:4px; margin-=
+right:4px; display:inline-block;" target=3D"_blank"><img title=3D"LinkedIn"=
+ alt=3D"LinkedIn" style=3D"margin:0; padding:0;vertical-align: top; border:=
+none;" src=3D"https://app.glueup.com/images/email/social-media/in-logo-grey=
+.png" srcset=3D"https://app.glueup.com/images/email/social-media/in-logo-gr=
+ey@2x.png 2x"></a><a title=3D"WhatsApp" class=3D"campaignSocial" href=3D"ht=
+tps://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D31&amp;tracking_id=
+=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttp=
+s%3A%2F%2Fweb.whatsapp.com%2Fsend%3Ftext%3DWeekly%2BTravel%2BNews%2B%257C%2=
+BNovember%2B20+https%253A%252F%252Fapp.glueup.com%252Forganization%252F5799=
+%252Fcampaign%252F9Wx7P71A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk_campaign=
+%253DShareButtons%2526pk_kwd%253DPublishModal&amp;ts=3D1700452550&amp;ps=3D=
+R3hOQ2FIZjdnd2NBQWNUMEJPbFdPc3RBeERlU1hISzhpa3IzaXJhNGk3TWZySE1Oa20xcHAzWkh=
+PQ3JmMldpUjIyQUVSRWh3VTRBcDh2L0gzUzQzdVB1TmJIdTQ5VkdxampUZER3OXlpNzRicHg5ME=
+1iMnFOTXV1dXByeHVNUHhBL1JSRVFPTzRjajQ2eHI2a3BCRUhnYjdacFhlZlVnN1VzS1NBWXhxT=
+3ltS2JVQWJvWHJiK0tOT3VnaE1EQVh6cWxwUkszd0xwMzNBQU9PcytOWVJidzFpQzhRd1R0aS95=
+K3JYTjNvS1oxamQ5cXpQYXRDNk9UejlkMklBTTJzV0RpZkZpZkQvNENaZ2Z1M0RiVHR5OGVEWXA=
+1dVZkQ2dJTWZ0U0RzaWJRVXVzVFlkQ3ZSL2hxWGZtdVdhdTZrVGdpenR0Nm5kRlVqUklIcmQ1cH=
+QydVZWN3QrYU1DN21OMENnZ0ZyZzlSWkcwdFNDZFp4VXQ4S2NKREw4UXBJV0NE" style=3D"ma=
+rgin-left:4px; margin-right:4px; display:inline-block;" target=3D"_blank"><=
+img title=3D"WhatsApp" alt=3D"WhatsApp" style=3D"margin:0; padding:0;vertic=
+al-align: top; border:none;" src=3D"https://app.glueup.com/images/email/soc=
+ial-media/wa-logo-grey.png" srcset=3D"https://app.glueup.com/images/email/s=
+ocial-media/wa-logo-grey@2x.png 2x"></a><a title=3D"Telegram" class=3D"camp=
+aignSocial" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=
+=3D32&amp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&am=
+p;redirect_url=3Dhttps%3A%2F%2Ftelegram.me%2Fshare%2Furl%3Furl%3Dhttps%253A=
+%252F%252Fapp.glueup.com%252Forganization%252F5799%252Fcampaign%252F9Wx7P71=
+A7AZtZWsAm8vlEw%25253D%25253D%252F%253Fpk_campaign%253DShareButtons%2526pk_=
+kwd%253DPublishModal%26v%3D1700452550&amp;ts=3D1700452550&amp;ps=3DcFhBK2N2=
+WGVCV3JDQ3VpNzJtTWJEMlFkQkF5am5rSnBKVzN2alM4TVRzYWVxdlFqMTdYejdnbDAwWEdaWWc=
+rSHBMUXlFRjZGdngybUloYkJPN2txYms4d1M3SFJTNWg5TlhCbDcwTmU2UnV1bGhtWDVEWlhQcn=
+cwZVRYaEo3Rk5iRVdBSC9sb2FDNm9FZFlvd2swb3BPS24xRElqK3I4bDN1N1JkOExPaS8zQUNHc=
+XRpWG5qWGJyREd3amMzRzd4bGdEd21hNGFpSzA2YTQxUVhaL2VlU21UVnR0Q2ZBTWs0V3ZkZVZR=
+bWo3ZGxFVm1oQVdMWFg3YnRzQ29BeVB4UW9kQkozSmt3UzBOSUdsQzVQS0ViUnVmZEZBWTV6TmV=
+MRGZpUGdNRW0rUVg1cFNhbjJVVnA3b0NuaXBPWUpuQkw1dTdjN3AycndyUWQyYnk4WEMraFdnPT=
+0=3D" style=3D"margin-left:4px; margin-right:4px; display:inline-block;" ta=
+rget=3D"_blank"><img title=3D"Telegram" alt=3D"Telegram" style=3D"margin:0;=
+ padding:0;vertical-align: top; border:none;" src=3D"https://app.glueup.com=
+/images/email/social-media/te-logo-grey.png" srcset=3D"https://app.glueup.c=
+om/images/email/social-media/te-logo-grey@2x.png 2x"></a></td></tr></tbody>=
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table><!-- END socialShare Block --><!-- END=
+ CONTENT ---><!-- CUSTOM FOOTER ---><!-- BEGIN image Block --><table class=
+=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding=
+:0;"><!-- BEGIN Image Column --><table class=3D"device-width" width=3D"100%=
+" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><t=
+r><td class=3D"device-width mobile-remove-padding" valign=3D"top" align=3D"=
+center" style=3D"text-align: center; padding:0;"><a title=3D"https://katake=
+nya.org/partnerships/" target=3D"_blank" href=3D"https://app.glueup.com/tra=
+ck/rd?type=3Dcampaign&amp;lid=3D33&amp;tracking_id=3D5799:231930:368ce3d1-c=
+b46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fkatakenya.org%2=
+Fpartnerships%2F&amp;ts=3D1700452550&amp;ps=3Da2J1MVBYK1hacFVtQVd1Wm12U0FIb=
+TYzd2p0L3FoM1VRZDFxdnBEZXFSSUtoeEpKMlpONGZ4VXF3eFlja0VxVA=3D=3D"><img title=
+=3D"image" src=3D"https://app.glueup.com/resources/public/images/fixed-widt=
+h/600/ee3fa01d-854e-438e-aa40-78cb8d669c18.png" srcset=3D"https://app.glueu=
+p.com/resources/public/images/fixed-width/1200/ee3fa01d-854e-438e-aa40-78cb=
+8d669c18.png 2x" class=3D"device-width" width=3D"600" alt=3D"image" style=
+=3D"display: block; border:0;"></a></td></tr></tbody></table><!-- END Image=
+ Column --></td></tr></tbody></table><!-- END image Block --><!-- BEGIN org=
+anizationLogo Block --><table class=3D"device-width" width=3D"600" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fff=
+fff"><tbody><tr><td style=3D"padding:0;"><table class=3D"device-width" widt=
+h=3D"600" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><=
+tbody><tr><td valign=3D"top" bgcolor=3D""><table class=3D"device-width" ali=
+gn=3D"center" border=3D"0" bgcolor=3D"#ffffff" style=3D"padding:0; border:0=
+px;border-collapse:collapse; font-family: Arial, sans-serif; text-align: Ce=
+nter; background-color: #ffffff;" cellspacing=3D"0" cellpadding=3D"0"><tbod=
+y><tr><td width=3D"600" class=3D"device-width" valign=3D"top" align=3D"Cent=
+er" style=3D" line-height:10px; background-color: ;"><img title=3D"image" a=
+lt=3D"<org_name>" style=3D"padding:8px; width:100px;" class=3D"" src=3D"htt=
+ps://app.glueup.com/resources/public/images/logo/200x100/0930f74d-8917-4dcc=
+-8575-b0ec04bae05b.png" srcset=3D"https://app.glueup.com/resources/public/i=
+mages/logo/200x100/0930f74d-8917-4dcc-8575-b0ec04bae05b.png"></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table><!-- END or=
+ganizationLogo Block --><!-- BEGIN html Block --><table class=3D"device-wid=
+th" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D=
+"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN=
+ html column --><table class=3D"device-width" width=3D"100%" border=3D"0" a=
+lign=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"=
+top" align=3D"center" style=3D"width:600px; padding:16px; word-break:break-=
+word;   color: #254c6f;"><div class=3D"custom-input-text device-width" styl=
+e=3D"color: #254c6f; text-align: left; line-height: 1.4em; mso-width-alt:56=
+8px;"><div style=3D" font-family: 'OpenSansWeb', 'Droid Sans', 'Microsoft Y=
+aHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=
+=87=E7=BB=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=
+=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=
+=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=
+=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text=
+', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: center;">C=
+opyright =C2=A9 2023 Kenya Association of Travel Agents, All rights reserve=
+d.</div><div style=3D"text-align: center;"><br></div><div style=3D"text-ali=
+gn: center;">Disclaimer: No copyright infringement intended.</div><div styl=
+e=3D"text-align: center;"><br></div><div style=3D"text-align: center;"><str=
+ong>Our mailing address is:</strong></div><div style=3D"text-align: center;=
+">The Address 10th&nbsp;Floor</div><div style=3D"text-align: center;">Mutha=
+ngari Drive, Off Waiyaki Way</div><div style=3D"text-align: center;">P.O Bo=
+x 10290 =E2=80=93 00100, Nairobi, Kenya.</div><div style=3D"text-align: cen=
+ter;">Email: info@katakenya.org&nbsp;| communications@katakenya.org</div><d=
+iv style=3D"text-align: center;">Phone: +254 792 000 835</div></div></div><=
+/td></tr></tbody></table><!-- END html column --></td></tr></tbody></table>=
+<!-- END html Block --><!-- BEGIN image Block --><table class=3D"device-wid=
+th" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D=
+"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN=
+ Image Column --><table class=3D"device-width" width=3D"100%" border=3D"0" =
+align=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"=
+device-width mobile-remove-padding" valign=3D"top" align=3D"center" style=
+=3D"text-align: center; padding:0;"><img title=3D"image" src=3D"https://app=
+.glueup.com/resources/public/images/fixed-width/600/f2eb0473-b207-4f00-8f66=
+-b7eb4eda6db8.png" srcset=3D"https://app.glueup.com/resources/public/images=
+/fixed-width/1200/f2eb0473-b207-4f00-8f66-b7eb4eda6db8.png 2x" class=3D"dev=
+ice-width" width=3D"600" alt=3D"image" style=3D"display: block; border:0;">=
+</td></tr></tbody></table><!-- END Image Column --></td></tr></tbody></tabl=
+e><!-- END image Block --><!-- BEGIN socialFollow Block --><table class=3D"=
+device-width" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;">=
+<table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" ce=
+llpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"device-width" wid=
+th=3D"600" style=3D"padding:14px; background:white;"><table width=3D"100%" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D" font-family: 'Op=
+enSansWeb', 'Droid Sans', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft J=
+hengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic'=
+, '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=
+=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=
+=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;=
+"><tbody><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0"><tbody><tr><td><a title=3D"Facebook" class=3D"campaignSocial=
+" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D34&amp;=
+tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect=
+_url=3Dhttps%3A%2F%2Fwww.facebook.com%2FKATAKenyaOfficial&amp;ts=3D17004525=
+50&amp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4S3BIbHBlU2lydzFrMmdhQ0IyamhVR2tDOEl=
+MdHhYK3FLeE5LaHlHREdWbkxVZ25XY1ZMZkNuQ1F5L0VLU0ZnZ3c9PQ=3D=3D" style=3D"mar=
+gin-left:4px; margin-right:4px; float:left; display: block;line-height:10px=
+; font-size: 2px;" target=3D"_blank"><img title=3D"Facebook" align=3D"middl=
+e" alt=3D"Facebook" style=3D"display:block; vertical-align: top; border:non=
+e;" width=3D"26" height=3D"26" src=3D"https://app.glueup.com/images/email/s=
+ocial-media/fb-logo.png" srcset=3D"https://app.glueup.com/images/email/soci=
+al-media/fb-logo@2x.png 2x"></a><a title=3D"Instagram" class=3D"campaignSoc=
+ial" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D35&a=
+mp;tracking_id=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redir=
+ect_url=3Dhttps%3A%2F%2Fwww.instagram.com%2Fkata_kenya%2F&amp;ts=3D17004525=
+50&amp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4QVBPRGdJbjRkUjFNSmdXSHJVQjBpV3AzbEg=
+yL282bC9kMHY0SG44S1JDTg=3D=3D" style=3D"margin-left:4px; margin-right:4px; =
+float:left; display: block;line-height:10px; font-size: 2px;" target=3D"_bl=
+ank"><img title=3D"Instagram" align=3D"middle" alt=3D"Instagram" style=3D"d=
+isplay:block; vertical-align: top; border:none;" width=3D"26" height=3D"26"=
+ src=3D"https://app.glueup.com/images/email/social-media/ig-logo.png" srcse=
+t=3D"https://app.glueup.com/images/email/social-media/ig-logo@2x.png 2x"></=
+a><a title=3D"LinkedIn" class=3D"campaignSocial" href=3D"https://app.glueup=
+.com/track/rd?type=3Dcampaign&amp;lid=3D36&amp;tracking_id=3D5799:231930:36=
+8ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fwww.lin=
+kedin.com%2Fcompany%2Fkenya-association-of-travel-agents%2F%3FviewAsMember%=
+3Dtrue&amp;ts=3D1700452550&amp;ps=3DY1JDUWkrYmhFT3pHUTNraUxhZUV4T3hpRmUyS1l=
+4ekhBMFArZnJrWHM4VW0zZDdmVllGVGs5SzBlUTJ1Zk5JSjdRT084aXJmRXBIeTlDUFMrQjJIaE=
+xYTmRwVkNLM1I3bGw4VHlMblM4MTBpWTl4blIwSHBCOVVuVnZwbk5zSG42ODI4SlB1RGEweUs3e=
+k9FUmwwVWdRPT0=3D" style=3D"margin-left:4px; margin-right:4px; float:left; =
+display: block;line-height:10px; font-size: 2px;" target=3D"_blank"><img ti=
+tle=3D"LinkedIn" align=3D"middle" alt=3D"LinkedIn" style=3D"display:block; =
+vertical-align: top; border:none;" width=3D"26" height=3D"26" src=3D"https:=
+//app.glueup.com/images/email/social-media/in-logo.png" srcset=3D"https://a=
+pp.glueup.com/images/email/social-media/in-logo@2x.png 2x"></a><a title=3D"=
+Twitter" class=3D"campaignSocial" href=3D"https://app.glueup.com/track/rd?t=
+ype=3Dcampaign&amp;lid=3D37&amp;tracking_id=3D5799:231930:368ce3d1-cb46-406=
+5-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Ftwitter.com%2FKATAKeny=
+a&amp;ts=3D1700452550&amp;ps=3DT0FhaDVuVDlEOWkvUzVBa1FYWWtOS1hQLy9hdnJ1ckpR=
+dVJ0VFN4MEFTVjQ3eGtYOVRKL212L0FiWmtaL1VWTQ=3D=3D" style=3D"margin-left:4px;=
+ margin-right:4px; float:left; display: block;line-height:10px; font-size: =
+2px;" target=3D"_blank"><img title=3D"Twitter" align=3D"middle" alt=3D"Twit=
+ter" style=3D"display:block; vertical-align: top; border:none;" width=3D"26=
+" height=3D"26" src=3D"https://app.glueup.com/images/email/social-media/tw-=
+logo.png" srcset=3D"https://app.glueup.com/images/email/social-media/tw-log=
+o@2x.png 2x"></a></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr></tbody></table><!-- END socialFollow Block -=
+-><!-- END CUSTOM FOOTER ---><table class=3D"device-width" width=3D"600" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center"><tbody><tr>=
+<td width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff"><!-- event block, als=
+o one image, banner --><table width=3D"100%" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td styl=
+e=3D"padding:0px"><table width=3D"600" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center" class=3D"device-width"><tbody><tr><td width=
+=3D"100%" align=3D"center" valign=3D"top" style=3D"line-height: 100%;  font=
+-family: 'Arial', 'PingFang SC', '=E5=B9=B3=E6=96=B9', 'Microsoft YaHei', '=
+=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', sans-serif;; font-size: 10px; font-weight: normal; border-top:#e9e9e=
+a 1px solid; padding: 16px; color:#979797; " bgcolor=3D"#f5f5f6"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"tex=
+t-align: center;"><!-- unsubscribe links start --><tbody><tr><td style=3D"f=
+ont-size:12px;"><p class=3D"unsubscribe-url-wrapper" style=3D"margin:0;"><a=
+ target=3D"_blank" style=3D"color:#979797; text-decoration:underline;" titl=
+e=3D"Unsubscribe from this list" href=3D"https://app.glueup.com/track/rd?ty=
+pe=3Dcampaign&amp;status=3DClicked&amp;lid=3D38&amp;tracking_id=3D5799:2319=
+30:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F%2Fap=
+p.glueup.com%2Fen%2Forganization%2F5799%2Fsubscriptions%2F231930%2F5799:231=
+930:368ce3d1-cb46-4065-be14-3bfeef8c4de0%2Funsubscribe&amp;ts=3D1700452550&=
+amp;ps=3DOHd6KzRVV1IrbEczOUtNR0F6YXY2REtiNjBxSEsvMWt1VmhlWmZEcFJSbytmZkt5bF=
+RFS1ZGQi9Ca1Jxc3dDNFNyRWZpbEZvVHJCcHpkSUd4YkMxN1dzNXovUTdBR3FBZkR6YlVuMHczZ=
+TNyL3NsaUorZVlDWWhWbDJCRFRGTkEvdnhmQTc0dDZyQlM2MGdPTEVOWTJiMmtvS0FCd2FZQXp5=
+Vm41Rk0yNXE0PQ=3D=3D&amp;trackingid=3D5799:231930:368ce3d1-cb46-4065-be14-3=
+bfeef8c4de0">Unsubscribe from this list</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;<=
+/span><a target=3D"_blank" style=3D"color:#979797; text-decoration:underlin=
+e;" title=3D"Manage my subscriptions" href=3D"https://app.glueup.com/track/=
+rd?type=3Dcampaign&amp;status=3DClicked&amp;lid=3D39&amp;tracking_id=3D5799=
+:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;redirect_url=3Dhttps%3A%2F=
+%2Fapp.glueup.com%2Fen%2Forganization%2F5799%2Fsubscriptions%2F231930%2F579=
+9:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0&amp;ts=3D1700452550&amp;ps=3D=
+OHd6KzRVV1IrbEczOUtNR0F6YXY2REtiNjBxSEsvMWt1VmhlWmZEcFJSbytmZkt5bFRFS1ZGQi9=
+Ca1Jxc3dDNFNyRWZpbEZvVHJCcHpkSUd4YkMxN1dzNXovUTdBR3FBZkR6YlVuMHczZTNyL3NsaU=
+orZVlDWWhWbDJCRFRGTkFkMXh1MWtTN3NOL3FJeHVWaC9CSTFBPT0=3D&amp;trackingid=3D5=
+799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0">Manage my subscriptions</a=
+></p></td></tr><!-- unsubscribe links end --><tr><td style=3D""><p style=3D=
+"margin:0;padding-top: 15px;"><a class=3D"ignoreTracking" href=3D"https://w=
+ww.glueup.com/?pk_campaign=3Dinvitation&amp;pk_kwd=3D231930" style=3D"color=
+:#33547A; text-decoration:none;"><img alt=3D"glueup" title=3D"glueup" src=
+=3D"https://www.glueup.com/images/eb-email-logo.gif" srcset=3D"https://www.=
+glueup.com/images/eb-email-logo.gif" border=3D"0" width=3D"21" height=3D"21=
+" style=3D"display:inline-block;"></a></p><p style=3D"margin:0; padding:0">=
+<a class=3D"ignoreTracking" href=3D"https://www.glueup.com/?pk_campaign=3Di=
+nvitation&amp;pk_kwd=3D231930" style=3D"color:#33547A; text-decoration:none=
+;"><span style=3D"display: block; margin:0; font-weight: 500; color:#33547A=
+; padding-bottom: 5px; font-size:12px;">Powered by Glue Up</span><span><br>=
+</span><span style=3D"display: block; color:#979797; margin:0; font-size:12=
+px;">All-in-one CRM Software for Growing Communities</span></a></p><div id=
+=3D"image-tracker"><img title=3D"" alt=3D"" style=3D"width:1px; height:1px;=
+" src=3D"https://app.glueup.com/track/image?type=3Dcampaign&amp;tracking_id=
+=3D5799:231930:368ce3d1-cb46-4065-be14-3bfeef8c4de0" width=3D"1" height=3D"=
+1"></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table><!-- End Wr=
+apper --></div></body></html>
+------=_Part_116569769_334220106.1700452843062--
+
+------=_Part_116569768_733713282.1700452843062--
+
+------=_Part_116569767_373641296.1700452843062--

@@ -1,0 +1,741 @@
+Return-Path: <bounce-mc.us14_190502374.10339421-f797710ced@mail216.suw101.mcdlv.net>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id wEG1L8wM9mdS1RkAObGTvA
+	(envelope-from <bounce-mc.us14_190502374.10339421-f797710ced@mail216.suw101.mcdlv.net>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 09 Apr 2025 08:59:40 +0300
+Return-path: <bounce-mc.us14_190502374.10339421-f797710ced@mail216.suw101.mcdlv.net>
+Envelope-to: Caleb@novustelltravel.com
+Delivery-date: Wed, 09 Apr 2025 08:59:40 +0300
+Received: from mail216.suw101.mcdlv.net ([198.2.184.216]:64859)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <bounce-mc.us14_190502374.10339421-f797710ced@mail216.suw101.mcdlv.net>)
+	id 1u2OTM-000000076GO-1nKC
+	for Caleb@novustelltravel.com;
+	Wed, 09 Apr 2025 08:59:40 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k3; t=1744178278; x=1744448278;
+	i=marketing=3Dflyals.com@mailchimpapp.net;
+	bh=GZsb3So1Jk9QR6tkvW8f6i6bh3xLbGYj/EKquwnCacM=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=oeSMd7fiBo4UHc4GDq4xJk2sxhlPFsojiE3CfM/FVvzABM2+kJkTb/I/Jf7lS6NWr
+	 Qywp5/GFpxhXkimQDZ6XtkolJ8anBmw4WToe9TGf1b+LCwBHIwxmqIFwRFFFnPviei
+	 gQIozldKm96TGAQ58G5HRBOSSFdo0JaT+cxD1yCOOjqLUwzzVirW5BGFM6MwtipoZd
+	 HXN96psC12CLyBTGChftObZaZssVno/XW9CYzpkc9OpHVn3Ey8j1GudvR6xqSbEDUI
+	 P0dQzdWWcM5Ja6OqoHeAP1TWYYqa1FkKVGEF7ipjiHmZ3eaM/nf6E/uRMd8yhbk1hK
+	 Jmi+VmiQP1V0Q==
+Received: from localhost (localhost [127.0.0.1])
+	by mail216.suw101.mcdlv.net (Mailchimp) with ESMTP id 4ZXXKx6wD6z7mWh5Q
+	for <Caleb@novustelltravel.com>; Wed,  9 Apr 2025 05:57:57 +0000 (GMT)
+Subject: =?utf-8?Q?FlyALS=20to=20Diani=20and=20Vipingo=20over=20Easter=20Holiday.=20Few=20Seats=20left.=20Book=20yours=20today=E2=9C=88=EF=B8=8F?=
+From: ALS <marketing@flyals.com>
+Reply-To: =?utf-8?Q?ALS?= <marketing@flyals.com>
+To: =?utf-8?Q?Caleb?= <Caleb@novustelltravel.com>
+Date: Wed,  9 Apr 2025 05:57:42 +0000
+Message-ID: <03023185812172f0083b81b78.f797710ced.20250409055734.788f40e354.c9906a38@mail216.suw101.mcdlv.net>
+X-Mailer: Mailchimp Mailer - **CID788f40e354f797710ced**
+X-Campaign: mailchimp03023185812172f0083b81b78.788f40e354
+X-campaignid: mailchimp03023185812172f0083b81b78.788f40e354
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=03023185812172f0083b81b78&id=788f40e354&e=f797710ced
+X-MC-User: 03023185812172f0083b81b78
+Feedback-ID: 190502374:190502374.10339421:us14:mc
+List-ID: 03023185812172f0083b81b78mc list <03023185812172f0083b81b78.519637.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://als.us14.list-manage.com/unsubscribe?u=03023185812172f0083b81b78&id=586c1b00d9&t=h&e=f797710ced&c=788f40e354>, <mailto:unsubscribe-mc.us14_03023185812172f0083b81b78.788f40e354-f797710ced@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1127941660"
+MIME-Version: 1.0
+X-Spam-Status: No, score=2.3
+X-Spam-Score: 23
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  https://www.flyals.com Seats are filling up fast! Don’t
+   miss your chance to secure a flight for this Easter holiday. Whether you are
+    visiting a family, taking a well-deserved break or exploring new destinations,
+    now is th [...] 
+ Content analysis details:   (2.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.184.216 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [198.2.184.216 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [198.2.184.216 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.184.216 listed in sa-accredit.habeas.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mailchimp.com]
+                             [URI: list-manage.com]
+                             [URI: mailchi.mp]
+                             [URI: storage.googleapis.com]
+                             [URI: mailchimpapp.net]
+                             [URI: flyals.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: mcusercontent.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: cdn-images.mailchimp.com]
+                             [URI: als.us14.list-manage.com]
+                             [URI: mailchi.mp]
+                        [URI: sawa-dev-2-storage-bucket.storage.googleapis.com]
+                             [URI: mailchimpapp.net]
+                             [URI: www.flyals.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: mcusercontent.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  2.2 KAM_STORAGE_GOOGLE     URI: Google Storage API being abused by spammers
+  0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1127941660
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+https://www.flyals.com
+
+Seats are filling up fast! Don=E2=80=99t miss your chance to secure a flig=
+ht for this Easter holiday. Whether you are visiting a family=2C taking a=
+ well-deserved break or exploring new destinations=2C now is the time to b=
+ook!!
+https://www.flyals.com
+
+Easter Escapes: Go Wild with FlyALS!  =F0=9F=90=98=F0=9F=A6=92
+
+Explore the brethtaking landscapes of the Masai Mara=2C the iconic wildlif=
+e of Amboseli=2C the stunning Tsavo and the serene beauty of Nanyuki. Expe=
+rience the magic of Lewa=2C the allure of Samburu and the hidden treasures=
+ of Loisaba.
+
+View email in browser (https://mailchi.mp/068646c0b6f3/flyals-to-diani-and=
+-vipingo-over-easter-holiday-few-seats-left-book-yours-today?e=3Df797710ced)
+ALS LIMITED
+41937
+Nairobi 00100
+Kenya
+update your preferences (https://als.us14.list-manage.com/profile?u=3D0302=
+3185812172f0083b81b78&id=3D586c1b00d9&e=3Df797710ced&c=3D788f40e354) or unsu=
+bscribe (https://als.us14.list-manage.com/unsubscribe?u=3D03023185812172f0=
+083b81b78&id=3D586c1b00d9&t=3Db&e=3Df797710ced&c=3D788f40e354)
+--_----------=_MCPart_1127941660
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head>
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1" />
+<title>FlyALS to Diani and Vipingo over Easter Holiday. Few Seats left. Bo=
+ok yours today=E2=9C=88=EF=B8=8F</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" />
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"" />
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DAlegrey=
+a:400=2C400i=2C700=2C700i=2C900=2C900i" /><!--<![endif]--><style>       =
+   img{-ms-interpolation-mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(199=2C 224=2C 230); }.mceText=
+=2C .mcnTextContent=2C .mceLabel { font-family: "Helvetica Neue"=2C Helvet=
+ica=2C Arial=2C Verdana=2C sans-serif; }.mceText=2C .mcnTextContent=2C .mc=
+eLabel { color: rgb(26=2C 26=2C 26); }.mceText p { margin-bottom: 0px; }.m=
+ceText label { margin-bottom: 0px; }.mceText input { margin-bottom: 0px; }=
+=2EmceSpacing-24 .mceInput + .mceErrorMessage { margin-top: -12px; }.mceText=
+ p { margin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText i=
+nput { margin-bottom: 0px; }.mceSpacing-12 .mceInput + .mceErrorMessage {=
+ margin-top: -6px; }.mceInput { background-color: transparent; border: 2px=
+ solid rgb(208=2C 208=2C 208); width: 60%; color: rgb(77=2C 77=2C 77); dis=
+play: block; }.mceInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"]=
+ { float: left; margin-right: 12px; display: inline; width: auto !importan=
+t; }.mceLabel > .mceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabe=
+l { display: block; }.mceText p=2C .mcnTextContent p { color: rgb(26=2C 26=
+=2C 26); font-family: "Helvetica Neue"=2C Helvetica=2C Arial=2C Verdana=2C=
+ sans-serif; font-size: 16px; font-weight: normal; line-height: 1.25; mso-=
+line-height-alt: 125%; text-align: center; letter-spacing: 0px; direction:=
+ ltr; margin: 0px; }.mceText a=2C .mcnTextContent a { color: rgb(0=2C 0=2C=
+ 0); font-style: normal; font-weight: normal; text-decoration: underline;=
+ direction: ltr; }p.mcePastedContent=2C h1.mcePastedContent=2C h2.mcePaste=
+dContent=2C h3.mcePastedContent=2C h4.mcePastedContent { text-align: left;=
+ }.mceSectionHeader .mceText p=2C .mceSectionHeader .mcnTextContent p { }.=
+mceSectionBody .mceText p=2C .mceSectionBody .mcnTextContent p { }.mceSect=
+ionFooter .mceText p=2C .mceSectionFooter .mcnTextContent p { }.mceSection=
+Footer .mceText a=2C .mceSectionFooter .mcnTextContent a { font-style: nor=
+mal; }
+@media only screen and (max-width: 480px) {
+            .mceText p { margin: 0px; font-size: 16px !important; line-hei=
+ght: 1.5 !important; mso-line-height-alt: 150%; }
+          }
+@media only screen and (max-width: 480px) {
+            .bodyCell { padding-left: 16px !important; padding-right: 16px=
+ !important; }
+          }
+#dataBlockId-40 p=2C #dataBlockId-40 h1=2C #dataBlockId-40 h2=2C #dataBloc=
+kId-40 h3=2C #dataBlockId-40 h4=2C #dataBlockId-40 ul { text-align: center=
+; }</style></head>
+<body>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">FlyALS to Diani=
+ and Vipingo over Easter Holiday. Few Seats left. Book yours today=E2=9C=
+=88=EF=B8=8F</span><!--<![endif]-->
+<!--
+-->
+<div style=3D"display: none; max-height: 0px; overflow: hidden;">=CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD</div><div styl=
+e=3D"display:none;">=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=
+=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87=
+&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#x=
+FEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFE=
+FF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=
+=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=
+=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F=E2=80=87&#xFEFF;=CD=8F=
+ =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F =E2=80=87&#xFEFF;=CD=8F</=
+div><!--[if !mso]><!--><div style=3D"display:none; font-size:0px; line-he=
+ight:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visib=
+ility:hidden; mso-hide:all;"><img src=3D"https://als.us14.list-manage.com/=
+track/open.php?u=3D03023185812172f0083b81b78&id=3D788f40e354&e=3Df797710ced" height=3D"1" width=3D"1" style=3D"display:none; font-size:0px; line-he=
+ight:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;" al=
+t=3D""></div><!--<![endif]-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(199=2C 224=2C=
+ 230);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"8" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:transparent" valign=3D"top" align=3D"center" class=3D"mc=
+eSectionHeader"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:66=
+0px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><t=
+body><tr><td style=3D"background-color:#fffdf8" valign=3D"top" class=3D"mc=
+eWrapperInner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"7"><tb=
+ody><tr class=3D"mceRow"><td style=3D"background-position:center;backgroun=
+d-repeat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" c=
+lass=3D"mceColumn" data-block-id=3D"-6" colspan=3D"12" width=3D"100%"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D=
+"presentation"><tbody><tr><td style=3D"padding-top:24px;padding-bottom:12p=
+x;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceImageBlockCon=
+tainer" align=3D"center" id=3D"blockContainerId-5"><a href=3D"https://als.=
+us14.list-manage.com/track/click?u=3D03023185812172f0083b81b78&id=3Daed655=
+0a9d&e=3Df797710ced" style=3D"display:block" target=3D"_blank" data-block=
+-id=3D"5"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:0=
+;vertical-align:top;margin:0"><img width=3D"290.4" height=3D"auto" style=
+=3D"width:290.4px;height:auto;max-width:290.4px !important;border-radius:0=
+;display:block" alt=3D"" src=3D"https://sawa-dev-2-storage-bucket.storage.=
+googleapis.com/profiles/qbqetortqrw4q1c6-42266.png" role=3D"presentation"=
+ class=3D"imageDropZone mceLogo" /></span></a></td></tr><tr><td style=3D"p=
+adding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"to=
+p" id=3D"blockContainerId-6"><table width=3D"100%" style=3D"border:0;borde=
+r-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-left:=
+12px;padding-right:12px;padding-top:0;padding-bottom:12px" class=3D"mceTex=
+tBlockContainer"><div data-block-id=3D"6" class=3D"mceText" id=3D"dataBloc=
+kId-6" style=3D"width:100%"><p class=3D"mcePastedContent last-child"><span=
+ style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=2C Helve=
+tica=2C Arial=2C Verdana=2C sans-serif">Seats are filling up fast! Don=E2=
+=80=99t miss your chance to secure a flight for this Easter holiday. Wheth=
+er you are visiting a family=2C taking a well-deserved break or exploring=
+ new destinations=2C now is the time to book!!</span></span></p></div></td=
+></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|(=
+IE)]></td></tr></table><![endif]--></td></tr></tbody><tbody data-block-id=
+=3D"34" class=3D"mceWrapper"><tr><td style=3D"background-color:transparent=
+" valign=3D"top" align=3D"center" class=3D"mceSectionBody"><!--[if (gte m=
+so 9)|(IE)]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"660" style=3D"width:660px;"><tr><td><![endif]--><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"max-width:660px" role=3D"presentation"><tbody><tr><td style=3D"background=
+-color:#fffdf8" valign=3D"top" class=3D"mceWrapperInner"><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation" data-block-id=3D"33"><tbody><tr class=3D"mceRow"><td st=
+yle=3D"background-position:center;background-repeat:no-repeat;background-s=
+ize:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"paddi=
+ng-top:0;padding-bottom:0" valign=3D"top" class=3D"mceColumn" data-block-i=
+d=3D"-8" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td s=
+tyle=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" val=
+ign=3D"top" class=3D"mceImageBlockContainer" align=3D"center" id=3D"blockC=
+ontainerId-9"><a href=3D"https://als.us14.list-manage.com/track/click?u=3D=
+03023185812172f0083b81b78&id=3D944916c6c5&e=3Df797710ced" style=3D"displa=
+y:block" target=3D"_blank" data-block-id=3D"9"><span class=3D"mceImageBord=
+er" style=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img wi=
+dth=3D"660" height=3D"auto" style=3D"width:660px;height:auto;max-width:660=
+px !important;border-radius:0;display:block" alt=3D"" src=3D"https://mcuse=
+rcontent.com/03023185812172f0083b81b78/images/e72d6cba-83e8-2015-cb71-212a=
+9839407e.jpg" role=3D"presentation" class=3D"imageDropZone mceImage" /></s=
+pan></a></td></tr><tr><td valign=3D"top" class=3D"mceGutterContainer" id=
+=3D"gutterContainerId-29"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" style=3D"border-collapse:separate" role=3D"presenta=
+tion"><tbody><tr><td style=3D"background-color:#f0f3f4;padding-top:24px;pa=
+dding-bottom:24px;padding-right:0;padding-left:0" valign=3D"top" class=3D"=
+mceLayoutContainer" id=3D"blockContainerId-29"><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"prese=
+ntation" data-block-id=3D"29" id=3D"section_8f5e5d34eb3e053d7bbd8f4e55a887=
+82" class=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"backgroun=
+d-position:center;background-repeat:no-repeat;background-size:cover" valig=
+n=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" class=3D"mceCol=
+umn" data-block-id=3D"-7" colspan=3D"12" width=3D"100%"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+><tbody><tr><td valign=3D"top" align=3D"center" id=3D"blockContainerId--5"=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" data-block-id=3D"-5"><tbody><tr clas=
+s=3D"mceRow"><td style=3D"background-position:center;background-repeat:no-=
+repeat;background-size:cover" valign=3D"top"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr=
+><td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-10" colspan=3D"1=
+2" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" id=3D"=
+blockContainerId-28"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"=
+28"><tbody><tr class=3D"mceRow"><td style=3D"background-position:center;ba=
+ckground-repeat:no-repeat;background-size:cover" valign=3D"top"><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"pres=
+entation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=
+=3D"top" class=3D"mceColumn" data-block-id=3D"27" colspan=3D"12" width=3D"=
+100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:12px;padding-=
+bottom:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceIma=
+geBlockContainer" align=3D"center" id=3D"blockContainerId-24"><span class=
+=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertical-align:top;m=
+argin:0"><img data-block-id=3D"24" width=3D"145.2" height=3D"auto" style=
+=3D"width:145.2px;height:auto;max-width:145.2px !important;border-radius:0=
+;display:block" alt=3D"" src=3D"https://cdn-images.mailchimp.com/template_=
+images/email/02e89d02fa76f31fd037d1a51/images/eed6741c-0627-3c76-dd93-615f=
+ba5ebcbd.png" role=3D"presentation" class=3D"imageDropZone mceImage" /></s=
+pan></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-righ=
+t:0;padding-left:0" valign=3D"top" id=3D"blockContainerId-26"><table width=
+=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbo=
+dy><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:0;pad=
+ding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"26=
+" class=3D"mceText" id=3D"dataBlockId-26" style=3D"width:100%"><p><strong>=
+<span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=2C=
+ Helvetica=2C Arial=2C Verdana=2C sans-serif">Easter Escapes: Go Wild with=
+ FlyALS! =C2=A0</span></span></strong><span style=3D"font-size: 14px"><spa=
+n style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=2C san=
+s-serif">=F0=9F=90=98=F0=9F=A6=92</span></span></p><p class=3D"last-child"=
+><span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=2C=
+ Helvetica=2C Arial=2C Verdana=2C sans-serif">Explore the brethtaking land=
+scapes of the </span></span><strong><span style=3D"font-size: 14px"><span=
+ style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=2C sans=
+-serif">Masai Mara</span></span></strong><span style=3D"font-size: 14px"><=
+span style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=2C=
+ sans-serif">=2C the iconic wildlife of</span></span><strong><span style=
+=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=2C Helvetica=
+=2C Arial=2C Verdana=2C sans-serif"> Amboseli</span></span></strong><span=
+ style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=2C Helve=
+tica=2C Arial=2C Verdana=2C sans-serif">=2C the stunning </span></span><st=
+rong><span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya=
+'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif">Tsavo</span></span></str=
+ong><span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya'=
+=2C Helvetica=2C Arial=2C Verdana=2C sans-serif"> and the serene beauty of=
+</span></span><strong><span style=3D"font-size: 14px"><span style=3D"font-=
+family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif"> Nanyuk=
+i.</span></span></strong><span style=3D"font-size: 14px"><span style=3D"fo=
+nt-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif"> Exp=
+erience the magic of </span></span><strong><span style=3D"font-size: 14px"=
+><span style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=
+=2C sans-serif">Lewa</span></span></strong><span style=3D"font-size: 14px"=
+><span style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=2C Verdana=
+=2C sans-serif">=2C the allure of </span></span><strong><span style=3D"fon=
+t-size: 14px"><span style=3D"font-family: 'Alegreya'=2C Helvetica=2C Arial=
+=2C Verdana=2C sans-serif">Samburu </span></span></strong><span style=3D"f=
+ont-size: 14px"><span style=3D"font-family: 'Alegreya'=2C Helvetica=2C Ari=
+al=2C Verdana=2C sans-serif">and the hidden treasures of </span></span><st=
+rong><span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegreya=
+'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif">Loisaba</span></span></s=
+trong><span style=3D"font-size: 14px"><span style=3D"font-family: 'Alegrey=
+a'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif">.</span></span></p></di=
+v></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![end=
+if]--></td></tr></tbody><tbody data-block-id=3D"44" class=3D"mceWrapper"><=
+tr><td style=3D"background-color:transparent" valign=3D"top" align=3D"cent=
+er" class=3D"mceSectionFooter"><!--[if (gte mso 9)|(IE)]><table align=3D"=
+center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" sty=
+le=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"=
+presentation"><tbody><tr><td style=3D"background-color:#fffdf8" valign=3D"=
+top" class=3D"mceWrapperInner"><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-bl=
+ock-id=3D"43"><tbody><tr class=3D"mceRow"><td style=3D"background-position=
+:center;background-repeat:no-repeat;background-size:cover" valign=3D"top">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0"=
+ valign=3D"top" class=3D"mceColumn" data-block-id=3D"-9" colspan=3D"12" wi=
+dth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:24px;p=
+adding-bottom:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D=
+"mceImageBlockContainer" align=3D"center" id=3D"blockContainerId-36"><span=
+ class=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertical-align=
+:top;margin:0"><img data-block-id=3D"36" width=3D"204.6" height=3D"auto" s=
+tyle=3D"width:204.6px;height:auto;max-width:204.6px !important;border-radi=
+us:0;display:block" alt=3D"" src=3D"https://sawa-dev-2-storage-bucket.stor=
+age.googleapis.com/profiles/qbqetortqrw4q1c6-42266.png" role=3D"presentati=
+on" class=3D"imageDropZone mceLogo" /></span></td></tr><tr><td style=3D"ba=
+ckground-color:transparent;padding-top:8px;padding-bottom:8px;padding-righ=
+t:8px;padding-left:8px" valign=3D"top" class=3D"mceLayoutContainer" id=3D"=
+blockContainerId-42"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"=
+42" id=3D"section_5a3b8d79257c3aadc278eb9b941f4dd5" class=3D"mceFooterSect=
+ion"><tbody><tr class=3D"mceRow"><td style=3D"background-color:transparent=
+;background-position:center;background-repeat:no-repeat;background-size:co=
+ver" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"1=
+2" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-to=
+p:0;padding-bottom:0" valign=3D"top" class=3D"mceColumn" data-block-id=3D"=
+-3" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=
+=3D"top" align=3D"center" id=3D"blockContainerId-40"><table width=3D"100%"=
+ style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><t=
+d style=3D"padding-left:16px;padding-right:16px;padding-top:12px;padding-b=
+ottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"40" clas=
+s=3D"mceText" id=3D"dataBlockId-40" style=3D"display:inline-block;width:10=
+0%"><p><br /></p><p class=3D"last-child"><a href=3D"https://mailchi.mp/068=
+646c0b6f3/flyals-to-diani-and-vipingo-over-easter-holiday-few-seats-left-b=
+ook-yours-today?e=3Df797710ced"><span style=3D"font-size: 11px">View email i=
+n browser</span></a><span style=3D"font-size: 11px"><br />
+ALS LIMITED
+41937
+Nairobi 00100
+Kenya
+<br /></span><a href=3D"https://als.us14.list-manage.com/profile?u=3D03023=
+185812172f0083b81b78&id=3D586c1b00d9&e=3Df797710ced&c=3D788f40e354"><span st=
+yle=3D"font-size: 11px">update your preferences</span></a><span style=3D"f=
+ont-size: 11px"> or </span><a href=3D"https://als.us14.list-manage.com/uns=
+ubscribe?u=3D03023185812172f0083b81b78&id=3D586c1b00d9&t=3Db&e=3Df797710ced&=
+c=3D788f40e354"><span style=3D"font-size: 11px">unsubscribe</span></a></p>=
+</div></td></tr></tbody></table></td></tr><tr><td valign=3D"top" class=3D"=
+mceLayoutContainer" align=3D"center" id=3D"blockContainerId--2"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" role=3D"presentation" data-block-id=3D"-2"><tbody><tr class=3D"mceRow"=
+><td style=3D"background-position:center;background-repeat:no-repeat;backg=
+round-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"=
+presentation"><tbody></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![en=
+dif]--></td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+</body></html>
+--_----------=_MCPart_1127941660--

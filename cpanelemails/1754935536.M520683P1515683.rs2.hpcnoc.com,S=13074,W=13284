@@ -1,0 +1,210 @@
+Return-Path: <servicehub@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id yL4LHfAwmmijIBcAObGTvA
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 11 Aug 2025 21:05:36 +0300
+Return-path: <servicehub@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Mon, 11 Aug 2025 21:05:36 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:34610)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	id 1ulWts-00000006THc-0HXn
+	for natahsa@novustelltravel.com;
+	Mon, 11 Aug 2025 21:05:36 +0300
+Received: from ociamashpapo01.doc.mail.amadeus.com (unknown [10.168.10.249])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id B163625608;
+	Mon, 11 Aug 2025 18:04:53 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net B163625608
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1754935493;
+	bh=51LtdtUDSbSmyQMBnfMC81PvnYeJ9TNCmCbkDhRcpO8=;
+	h=Date:From:Subject;
+	b=XRk/xfWYygThvl2lOtI2zjmDXElrzz/kqsqooVAbqYKYacFTvJM5EdaUfmBakvisE
+	 i2HJvjfKCyT89YNV5j3zYiL2Tcjzpj2Q8EmYaPW/tkSc7AmCqtk46YzBzJvo/KqXln
+	 SYV3XmSbUecEDCmijF0Bx6m1LREjYhbIapjMid7H+cL3n7elK5wy8Ao2HjWs2Yzd3q
+	 KrHT9H2BE5nSvgxM5rG0kGlLiFscfFNlZX2+B+vd+YHo4OY+GPFa2LA8ms83zooB2x
+	 dMT0oI4ReUXxUydWcDJqnjgCaP52MOuXwqpe1rOfJysa7c/PbZ8gkxd5Q3S4/GorA2
+	 +ccpX/c48L8HA==
+Received: from localhost (localhost [127.0.0.1])
+	by ociamashpapo01.doc.mail.amadeus.com (Postfix) with ESMTP id D36B682DB68;
+	Mon, 11 Aug 2025 18:04:51 +0000 (UTC)
+Date: Mon, 11 Aug 2025 18:04:51 +0000 (UTC)
+From: Amadeus Customer Service <servicehub@doc.mail.amadeus.com>
+Message-ID: <37643915.170000.1754935491864@localhost>
+Subject: AMADEUS Scheduled Maintenance Notification - 11AUG2025 - EOW - New
+ scheduled maintenance
+MIME-Version: 1.0
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: AutoReply, DR, NDR, NRN, OOF, RN
+X-Spam-Status: No, score=1.7
+X-Spam-Score: 17
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, The following Scheduled Maintenance bulletin
+    has been published via Amadeus Critical Incident Center: AMADEUS Scheduled
+    Maintenance Notification - 11AUG2025 - EOW 
+ Content analysis details:   (1.7 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  1.2 MISSING_HEADERS        Missing To: header
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+X-Spam-Flag: NO
+
+
+
+
+<center>
+    <table width="100%" bgcolor="#ffffff" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center" valign="top">    
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="694">
+                        <div style="max-width: 694px; margin: 0 auto" align="left">
+                            <img alt="Amadeus Service Hub" src="https://servicehub.amadeus.com/documents/20195/1117748133/Email+Banner+-+Incident.png/eb9b37fb-307d-70e2-3428-323c2d8ba7d9?t=1704357474209" />
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="694" bgcolor="#ffffff">
+                        <div style="max-width: 694px; margin: 0 auto">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <td width="10" bgcolor="#ffffff"></td>
+                                <td width="674" bgcolor="#ffffff">
+                                    <div style="max-width: 674px; margin: 0 auto" dir="ltr" align="left">
+                                        <p style="font-family:'Source Sans Pro',Calibri, sans-serif;"><br/> Dear Customer, 
+				                            <br/><br/>
+                                            The following Scheduled Maintenance bulletin has been published via Amadeus Critical Incident Center:
+                                            <br/>
+                                                                                            <em><a href="https://servicehub.amadeus.com/c/portal/view-solution/1298243528/amadeus-scheduled-maintenance-notification-11aug2025-eow">AMADEUS Scheduled Maintenance Notification - 11AUG2025 - EOW</a></em>
+                                                                                        <br/><br/>
+
+                                            The following update was added:<br/>
+                                            <table class="predefinedFields" style="border:0px; width:100%">
+	<tbody>
+		<tr>
+		</tr>
+		<tr>
+			<td class="col_label" style="width:30%;color:#cf0058;font-weight:bold;padding-left: 10px;">Change number</td>
+			<td class="col_content" style="width:70%; padding-left:10px;">34387747</td>
+		</tr>
+		<tr>
+			<td class="col_label" style="width:30%;color:#cf0058;font-weight:bold;padding-left: 10px;">Product</td>
+			<td class="col_content" style="width:70%; padding-left:10px;">Amadeus Publisher Database (PUB)</td>
+		</tr>
+		<tr>
+			<td class="col_label" style="width:30%;color:#cf0058;font-weight:bold;padding-left: 10px;">Expected business impact</td>
+			<td class="col_content" style="width:70%; padding-left:10px;">
+			<p>Please find below the expected business impact for your respective application/s:</p>
+
+			<p><strong>Amadeus Publisher Database (PUB):</strong><br />
+			<br />
+			<strong>Airlines:</strong><br />
+			<span style="font-size: 1.06rem; color: inherit;">1. Actions triggered by Time Initiated Actions (TIA's) or Event Initiated Actions (EIA's):</span></p>
+
+			<p>During the outage of the database, no TIA's or EIA's will be processed, resulting in the absence of message generation and dispatch. This will be recovered right after the outage by re-sending all actions.</p>
+
+			<p>2. Passenger Name Record (PNR) Data Feed:<br />
+			Structured Booking Record (SBR) data feeds, both online and offline will be queued during the maintenance and sent with a delay preserving data and sequence; no data loss is anticipated. Scope of the action covers Ticketing Publication, Automated Ticketing functionalities, Departure Control System (DCS) Passenger Name List (PNL) and the Addition and Deletion List (ADL) activities.</p>
+
+			<p>3. Flight Creation:<br />
+			Flights scheduled for creation during the window will be queued and processed at the end of the maintenance.</p>
+
+			<p>4. Customer Profiles:<br />
+			Customer Profile creation, change and deletion traffic will not be processed during the maintenance, generating an error message for end users. Traffic will be re-injected after the outage leading to a delay on profile update/s.</p>
+
+			<p>5. PNR Push to Customs:<br />
+			PNR Push is sent to Customs triggered by TIA.<br />
+			No PNR push will be generated or sent during the outage.<br />
+			The Time Initiated Actions (TIAs) will be rescheduled after the maintenance window in order to trigger the &nbsp;generation of push reports. The impact will be a delay for the outage duration.<br />
+			<br />
+			<strong>Travel Channels:</strong><br />
+			1. FeedTrip Feed: TTR Data feed will be queued during the maintenance and sent with a delay preserving data; no data loss is expected.&nbsp;<br />
+			<br />
+			2. Back Office Amadeus Interface Record (AIR):<br />
+			Back office agents will not be able to display AIR content, listing, generate manual Information Management Record (IMR) and re-transmit manually AIR (BR entry) for all offices. This will result in an "unable to process" response during the maintenance.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="col_label" style="width:30%;color:#cf0058;font-weight:bold;padding-left: 10px;">Maintenance window</td>
+			<td class="col_content" style="width:70%; padding-left:10px;"><strong>11AUG2025 / 18:00 GMT - 11AUG2025 / 18:30 GMT</strong></td>
+		</tr>
+		<tr>
+			<td class="col_label" style="width:30%;color:#cf0058;font-weight:bold;padding-left: 10px;">Duration</td>
+			<td class="col_content" style="width:70%; padding-left:10px;"><strong>&nbsp;30 minutes</strong></td>
+		</tr>
+	</tbody>
+</table>
+                                            <br/>
+
+                                                                                            <em>Note: If the link does not open, this means the content has been removed. </em>
+                                                                                        <br/><br/>
+                                            Best Regards,<br/>
+                                            <br/>
+                                            <strong style="color:#000835;font-size:1.2em">Amadeus Service Hub</strong><br/>
+                                            'Helping Amadeus Customers Succeed' <br/>
+                                        </p>
+                                        <p>
+                                            <img src="https://servicehub.amadeus.com/documents/20195/1117748133/Amadeus+Logo+-+White+Background.png/7e5cd68b-bc75-93ed-1986-3a98c1e9c1fc?t=1704442648345" /> <!-- LOGO -->
+                                        </p><br/>
+                                        <a style="color:#0c66e1" href=https://servicehub.amadeus.com/en/home?login_panel=travel&default_option=userid%22>servicehub.amadeus.com</a>
+
+                                        <p style="font-family:'Source Sans Pro',Calibri, sans-serif;font-size:11px;text-align:left;">You have received this mail because you are subscribed to Amadeus Critical Incident Centre notifications.<br/>You can unsubscribe from Critical Incident notifications or change your email preferences by visiting the  <a href="https://servicehub.amadeus.com/group/control_panel/manage?p_p_id=notifpref&p_p_state=pop_up&manageSubscription=true" target="_blank">Subscriptions & Notifications</a> page.</p>
+                                        <p style="font-size:12px;font-family:'Source Sans Pro',Calibri, sans-serif;">
+
+                                            This email is generated automatically; no reply will be processed.
+
+                                        </p>
+                                    </div>
+                                </td>
+                                <td width="10" bgcolor="#ffffff"></td>
+                            </table>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

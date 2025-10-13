@@ -1,0 +1,131 @@
+Return-Path: <noreply-dmarc-support@google.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 6PbaCaxSD2g3oS0AObGTvA
+	(envelope-from <noreply-dmarc-support@google.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 28 Apr 2025 13:04:28 +0300
+Return-path: <noreply-dmarc-support@google.com>
+Envelope-to: admin@novustelltravel.com
+Delivery-date: Mon, 28 Apr 2025 13:04:28 +0300
+Received: from mail-qv1-f74.google.com ([209.85.219.74]:61951)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.1)
+	(envelope-from <noreply-dmarc-support@google.com>)
+	id 1u9LLg-0000000CcYn-0jR3
+	for admin@novustelltravel.com;
+	Mon, 28 Apr 2025 13:04:28 +0300
+Received: by mail-qv1-f74.google.com with SMTP id 6a1803df08f44-6e900f6dcadso100223086d6.3
+        for <admin@novustelltravel.com>; Mon, 28 Apr 2025 03:04:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1745834626; x=1746439426; darn=novustelltravel.com;
+        h=content-transfer-encoding:content-disposition:to:from:subject
+         :message-id:date:mime-version:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=sSGbBaxfuns7SEiNytNQ2HPgNCznD/HcsG8UO2Zgiww=;
+        b=INNKWY+JVQGtFn9m71F75qWbD7eCQQ/kRPbZ1gvIIij/38u3Y3zpQO7UQZMxBp4ou5
+         D9B0ixzEYzlGsoaNDa8fo1SClw9Xh6Zyh96LgzVKaO2Cxp2IydSxZ4diaq1BMr0gPeBA
+         Og0brUPmmo53ExiY4DwKbdvcfM9zRe3EwO6wk9RaFP25b05JX8eZcJQUejvNSGOWcYMy
+         2BLFMXW8IxHW+G8Q541HSmYkYlc1cUmB1FjDo2D9MHKU+Jteyq+NURPL0d0iRpXaP4tU
+         zWa6GRVE4B6J4EkqqwvOnIy8RrjYRxNvZYiFOx0OrkYXcqGSrYu1Cg3r2PYVjGjqIRWk
+         i2sw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1745834626; x=1746439426;
+        h=content-transfer-encoding:content-disposition:to:from:subject
+         :message-id:date:mime-version:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=sSGbBaxfuns7SEiNytNQ2HPgNCznD/HcsG8UO2Zgiww=;
+        b=tgcKMy0YseUFEvVfjorxR583MaV29VE+yB7Q1tZa4hz5P2hzYinrLOYNQfUG3bTFfE
+         /RJdBifi40+VYcIuyE2YBLseWwjNKHsvtzHMcaopj6FTuUWDbQUMWiQ90CipbFODgkrk
+         jESgmy8uX3N2SdjWleyTq3DHiE0NX/cjapmNReMHFB4orJHwwG8dkh192SMMgaVZwU/9
+         vWz/+qmhAAN8yr7g0mrCqVOTZb26LYRKdLH6K3GvzAKmkYaA4o68WLOGUwDOFJuezT7h
+         Fx2Qee6SgW8PeZUf2RmmEkccsuT6gtQeVuPJ2stFNcTO7RxH2VQCHk9dMaVk4SGBmSf2
+         UzPQ==
+X-Gm-Message-State: AOJu0YwwBUNhy3Wp0QXVceS4iMn7lYM4dqK3b+7DbGFojtJQ52o31Dmc
+	Zqd4EASkNDlWnb5yetgq22Rx//7/NXoi4g4sCOdLr8fwFwJgubfo6mo0GYnPhYZ1QA8=
+X-Google-Smtp-Source: AGHT+IGMi0VuID1/TJKL9eoCLC0jm8lnu7xFO3BNoorClePoQ3/Nom2iYa0xRe/QNtZdtaysw5wzSoIo7LpWgQ==
+MIME-Version: 1.0
+X-Received: by 2002:a05:6214:4019:b0:6e8:ed7f:1a79 with SMTP id
+ 6a1803df08f44-6f4cba43872mr232028146d6.32.1745834626311; Mon, 28 Apr 2025
+ 03:03:46 -0700 (PDT)
+Date: Sun, 27 Apr 2025 16:59:59 -0700
+Message-ID: <1683794721928393591@google.com>
+Subject: Report domain: novustelltravel.com Submitter: google.com Report-ID: 1683794721928393591
+From: noreply-dmarc-support@google.com
+To: admin@novustelltravel.com
+Content-Type: application/zip; 
+	name="google.com!novustelltravel.com!1745712000!1745798399.zip"
+Content-Disposition: attachment; 
+	filename="google.com!novustelltravel.com!1745712000!1745798399.zip"
+Content-Transfer-Encoding: base64
+X-Spam-Status: No, score=-14.1
+X-Spam-Score: -140
+X-Spam-Bar: --------------
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  
+ Content analysis details:   (-14.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.219.74 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.74 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.74 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.219.74 listed in sa-trusted.bondedsender.org]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: novustelltravel.com]
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF welcome-list
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  1.1 DATE_IN_PAST_06_12     Date: is 6 to 12 hours before Received: date
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: novustelltravel.com]
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.5 ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL Match
+  0.0 TVD_SPACE_RATIO        No description available.
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+UEsDBAoAAAAIAJRLnFpFUtymCAIAAPoEAAA4AAAAZ29vZ2xlLmNvbSFub3Z1c3RlbGx0cmF2ZWwu
+Y29tITE3NDU3MTIwMDAhMTc0NTc5ODM5OS54bWydVMuS2yAQvO9XuHy3sPyUUiybU74gOaswGsnU
+IiCAvLt/nyEgWdn4kMpJqKenZ6YZib68D2p1A+el0c/rstiuV6CFaaXun9c/vn/bVOvVC3uiHUB7
+4eKVPa1WNPMZ0imZXmLAgTUuNAME3vLAI4aocX2j+QCsN6ZXUAgzUDKDiQMDl4ppgwrqY9MO3ImN
+H22U+7pMS7yc8x4cb4TRgYvQSN0Zdg3B+i+E5NTinko44dq/gSO7w+l0rLDzB/lJOI8hW1aeqv25
+Ppx3Zb2r9vX+WJeU3MOJjqNC47ju8zAIXaCX6M/5cDyXu+0WiyVkioNuU7RG1Rpb0ZMY+VNtrrb0
+lFqjpPho7HhR0l9hbsSgOxpdvI0+gFI43g1UMi7HEpG3r3JgjpJ0yKC33W8sPhNk2c+RYy9BaqDE
+ZtRbLBEBPyFWBFbGKeMhQXoiaZvmeNQzOi2Mm9p35m02yJvRCWikZWVdF7t9WZRVXdQVFp0jE1eY
+UWN9StJhgnNBuHE1oqftFIhGSW+NlyHubepyiSx40R3LvUfCbFT2oGMdrmI0oZtLksc18RKn0ahs
+Ae3sJH41c9oVeAuu6ZwZHl/ekpAV/9KhfAzXxoEfVbhLf2r7XzckfwZRK8+fXxYOgAIRjGMtdBxD
+6MSEzHYsq9OFUf/bCbgBnDPuczuLW8D9/eRDJKcto+T+G/sFUEsBAgoACgAAAAgAlEucWkVS3KYI
+AgAA+gQAADgAAAAAAAAAAAAAAAAAAAAAAGdvb2dsZS5jb20hbm92dXN0ZWxsdHJhdmVsLmNvbSEx
+NzQ1NzEyMDAwITE3NDU3OTgzOTkueG1sUEsFBgAAAAABAAEAZgAAAF4CAAAAAA==

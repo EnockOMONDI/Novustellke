@@ -1,0 +1,1889 @@
+Return-Path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id YMmRCF/yB2W39QQAkzNyDQ
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	for <novuste1@rs2b.noc254.com>; Mon, 18 Sep 2023 09:46:55 +0300
+Return-path: <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>
+Envelope-to: chriatine@novustelltravel.com
+Delivery-date: Mon, 18 Sep 2023 09:46:55 +0300
+Received: from wrqvxvzx.outbound-mail.sendgrid.net ([149.72.168.234]:45082)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounces+10318183-0618-chriatine=novustelltravel.com@gumail1025.katakenya.org>)
+	id 1qi821-001VHp-0d
+	for chriatine@novustelltravel.com;
+	Mon, 18 Sep 2023 09:46:55 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=katakenya.org;
+	h=from:subject:mime-version:reply-to:to:content-type:cc:content-type:
+	from:subject:to;
+	s=g1; bh=wDu23w8Z1rQUj2vx7Rzkur1NMzHwpgxHtGGIyCVkyP4=;
+	b=DVY0i/yaqGCTnmlTXdOTpcEHTGiukLFVJqrpj8YTvgeoK4ZYEH3cFbhZTR4TkT9ruisl
+	57w1zJ4uD78l/SOZVn8sBZHvHXiifgxwrmFKUYFShrMnEjUzDCjQbPFFJj6kj3Mjixy4Fc
+	itOQ/qohxteJHDVe0IgkqjxcbO8ds2PxRCAd1pyKlxCcLKLzekZxMUIl5THY8OhW6MGCbo
+	6XoCbarjHD3X4NXC/2zlvYYWwyXippzw08+21Hg8I8Kc/rQJ8JxTVo5K5LH7GxFGaSziT6
+	VQoDi39ohfhXUmDSJppznNvTELYHT+Tenufxazqsjg4Ho/7oqmgBMLf4On55ck3g==
+Received: by filterdrecv-86c7d77d8f-8nsbd with SMTP id filterdrecv-86c7d77d8f-8nsbd-1-6507F233-15
+        2023-09-18 06:46:11.424825939 +0000 UTC m=+11257810.896357552
+Received: from mx1.glueupmail.com (unknown)
+	by geopod-ismtpd-17 (SG)
+	with ESMTP id c0bzc_0bTAKjuUo2cj1qDw
+	for <chriatine@novustelltravel.com>;
+	Mon, 18 Sep 2023 06:46:11.284 +0000 (UTC)
+Date: Mon, 18 Sep 2023 06:46:11 +0000 (UTC)
+From: Kenya Association of Travel Agents <communications@katakenya.org>
+Message-ID: <EI_EDM_5799_216148_726eaac5-09c8-4ff4-81bb-56c2134beec6_JavaMail.ebprod@ebcproweb01>
+Subject: Aitken Spence Hotels Product Training
+MIME-Version: 1.0
+Reply-To: communications@katakenya.org
+X-SG-EID: 
+ =?us-ascii?Q?XFsZbaoC=2F6vb8v3=2FRvqAz5595B=2F3BulKdmlcDSh+fGwXqPRxLy1uEdK5L+iCr+?=
+ =?us-ascii?Q?=2F1pL=2FD1sxCi0RKMn8d0syCc+jJ6XmpEW=2FLJeGt9?=
+ =?us-ascii?Q?RAWYCAJ8USdrv7YYF5X69p8vizOdGVF33w1VtB5?=
+ =?us-ascii?Q?U80RiARrT6xmMWiHuIjhvsvld456Xc1slGGdDXB?=
+ =?us-ascii?Q?7dS1qjp6v9DmFLxZL96WkQ9rJaS6gsCcjybxYAq?=
+ =?us-ascii?Q?sNt+114PmapuYpcSL9m=2FKUa4Aj6fsohKithQ649?=
+ =?us-ascii?Q?Xd3TVyf6QsB7RmNMxtFleWzntfZUiCyaH1aw=2FW0?=
+ =?us-ascii?Q?MseFvs8lxm+H9pkvNO2SDfHn?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FJD19wAwXS3Wj0DIxmTIg?=
+ =?us-ascii?Q?Z1LVaQHUgt1SIdUCrZaMdVqgDRy=2Fze4VT1fvJ3c?=
+ =?us-ascii?Q?dp1QXizpxbzkWl7h2byc6SR6u1N8QSM7HvC8LfM?=
+ =?us-ascii?Q?q51LySNvJh2SbdtUZSumZAMz+vT+cwKsyKhj9Zm?=
+ =?us-ascii?Q?KxzTipFwKLF7WC8UT6Ykm7OIVYchJyJ7C+g=3D=3D?=
+To: Christine Auma <chriatine@novustelltravel.com>
+X-Entity-ID: BbP1ydw1icJuGh+FQLfe4A==
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_135529277_1235654808.1695019535030"
+X-Spam-Status: No, score=1.3
+X-Spam-Score: 13
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  [image] [when] When &amp; #8203;Sep &amp; #8203; &amp; #8203;19,
+    &amp; #8203; &amp; #8203;2023 &amp; #8203; &amp; #8203; &amp; #8 Aitken Spence
+    Hotels Product Training 
+ Content analysis details:   (1.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: glueup.com]
+  0.6 URIBL_SBL              Contains an URL's NS IP listed in the Spamhaus SBL
+                             blocklist
+                             [URIs: katakenya.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+------=_Part_135529277_1235654808.1695019535030
+Content-Type: multipart/related; 
+	boundary="----=_Part_135529278_1242083047.1695019535030"
+
+------=_Part_135529278_1242083047.1695019535030
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_135529279_1879558797.1695019535030"
+
+------=_Part_135529279_1879558797.1695019535030
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+[image]
+
+[when]	When
+&amp; #8203;Sep &amp; #8203;  &amp; #8203;19, &amp; #8203;  &amp; #8203;2023 &amp; #8203;
+&amp; #8203; &amp; #8
+------=_Part_135529279_1879558797.1695019535030
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dutf-8"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-=
+scale=3D1"><link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https:/=
+/www.glueup.com/images/favicons/apple-touch-icon.png"><link rel=3D"icon" ty=
+pe=3D"image/png" href=3D"https://www.glueup.com/images/favicons/favicon-32x=
+32.png" sizes=3D"32x32"><link rel=3D"icon" type=3D"image/png" href=3D"https=
+://www.glueup.com/images/favicons/favicon-16x16.png" sizes=3D"16x16"><title=
+>Aitken Spence Hotels Product Training</title><style type=3D"text/css"> @me=
+dia only screen {
+        html {
+            min-height:     100%;
+            background:     #f5f5f6;
+        }
+    }
+   =20
+    .ReadMsgBody {
+        width:100%;
+        background-color:#fff;
+    }
+    .ExternalClass {
+        width:100%;
+        background-color:#fff;
+    }
+
+    .eventTracker_left{
+        width: 30%;
+    }
+
+    .eventTracker_right{
+        width: 70%;
+    }
+
+    .eventTracker_portrait_left{
+        width:  34%;
+    }
+    .eventTracker_portrait_right{
+        width:  66%;
+    }
+
+    .module_percent_48{
+        width: 48%;
+        float: left;
+    }
+    .module_percent_33{
+        width: 33.3%;
+    }
+    .module_percent_32{
+        width: 32%;
+    }
+    .module_percent_67{
+        width: 67%;
+    }
+    .module_percent_100{
+        width: 100%;
+    }
+
+    .event-speaker{
+        width: 200px;
+        height:200px;
+    }
+
+    img.event-speaker{
+        height: auto;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing: 0;
+    }
+
+    a,a:link,a:visited {
+        text-decoration:none;
+    }
+
+    a:hover,.ExternalClass a:hover {
+        text-decoration:underline;
+    }
+
+    a > img{
+        margin: 0 auto;
+    }
+
+    .module_percent_33 img{
+        display: inline !important;
+    }
+
+    p:first-child{
+        margin-top:0;
+    }
+
+    h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {
+        color:#000!important;
+    }
+
+    .ExternalClass p {
+        margin-bottom:0!important;
+        padding:0!important;
+        display:inline!important;
+        color:red;
+    }
+
+    .ExternalClass a:link,.ExternalClass a:hover,ExternalClass a:visited {
+        text-decoration:none;
+    }
+
+    html, body{
+        background-color: #ffffff;
+    }
+
+    body {
+        width:100%;
+        margin:0;
+        padding:0;
+        font-family:Arial;
+        -webkit-text-size-adjust:none;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    .socials{
+        width: auto !important;
+    }
+
+    #cant-read-notice{
+        display: none;
+    }
+
+    #tablet-only{
+        display: none;
+    }
+
+    #mobile-only{
+        display: none;
+    }
+
+    .alignHeight, .alignHeightElement{
+        height: 100%;
+    }
+
+    .custom-input-text div{
+        line-height:      1.4em;
+    }
+    .custom-input-text ol,
+    .custom-input-text ul{
+        padding-left:     2.5em;
+        margin:           0.5em 0;
+    }
+    .custom-input-text ol li,
+    .custom-input-text ul li{
+        line-height:        1.2em;
+        margin:             0.5em 0;
+        padding-left:       0.2em;
+    }
+    .custom-input-text ol li > li,
+    .custom-input-text ul li > li{
+        list-style:     inherit;
+    }
+    .custom-input-text ul{
+        list-style:     disc;
+    }
+    .custom-input-text ol{
+        list-style:     decimal;
+    }
+    .custom-input-text p{
+        margin-top:     0;
+        margin-bottom:  0;
+    }
+    .custom-input-text b,
+    .custom-input-text strong{
+        font-weight:    700;
+        font-style:     inherit;
+    }
+    .custom-input-text i,
+    .custom-input-text em{
+        font-style:     italic;
+        font-weight:    inherit;
+    }
+    .custom-input-text .font-size-tiny{
+        font-size:      0.7em !important;
+    }
+    .custom-input-text .font-size-small{
+        font-size:      0.85em !important;
+    }
+    .custom-input-text .font-size-large{
+        font-size:      1.2em !important;
+        line-height:    1.2em !important;
+    }
+    .custom-input-text .font-size-huge{
+        font-size:      1.5em !important;
+        line-height:    1.1em !important;
+    }
+    #text-email{
+        display:              none;
+        width:                0px;
+        height:               0px;
+        color:                white;
+    }
+    .text-email-block{
+        margin:               20px;
+        padding:              20px;
+        font-family:          arial;
+        width:                700px;
+        background:           #fff;
+        border:               1px solid #dcdcdc;
+    }
+    .text-email-block pre{
+        margin:             0;
+        white-space:        pre-wrap;
+    }
+
+    .unsubscribe-url-wrapper a{
+        color:              #979797 !important;
+        text-decoration:    underline !important;
+    }
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    .ql-indent-1 {
+        margin-left:       2em !important;
+    }
+    .ql-indent-2 {
+        margin-left:       4em !important;
+    }
+    .ql-indent-3,
+    .ql-indent-4,
+    .ql-indent-5,
+    .ql-indent-6,
+    .ql-indent-7,
+    .ql-indent-8 {
+        margin-left:       6em !important;
+    }
+    @media only screen and (max-width: 600px) {
+        .device-width,
+        .half-device-width{
+            width:          440px !important;
+            padding-left:   0 !important;
+            padding-right:  0 !important;
+            border:         0 !important;
+            margin-left:    0 !important;
+            margin-right:   0 !important;
+        }
+        #tablet-only{
+            display:        inline-block !important;
+        }
+        #desktop-only{
+            display: none !important;
+        }
+        .mobile-remove-padding{
+            padding:        0 !important;
+        }
+
+        .mobile-remove-top-padding{
+            padding-top:    0 !important;
+        }
+
+        .mobile-auto-height{
+            height:         auto !important;
+        }
+
+        .mobile-auto-width{
+            width:          auto !important;
+        }
+
+        .mobile-add-left-padding{
+            padding-left:   10px !important;
+        }
+
+        .mobile-add-right-padding{
+            padding-right:  10px !important;
+        }
+
+        .mobile-add-bottom-padding{
+            padding-bottom: 16px !important;
+        }
+
+        .mobile-add-top-padding{
+            padding-top:    16px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          410px !important;
+            padding-left:   16px !important;
+            padding-right:  16px !important;
+        }
+
+        .alignHeight, .alignHeightElement{
+            height:         auto;
+            width:          100%;
+        }
+
+        .fullWidth,
+        .fullWidth table{
+            width:          100% !important;
+            height:         auto !important;
+        }
+
+        .fullWidth table td{
+            height:         auto !important;
+        }
+
+        .fullWidth .socialBlock{
+            width:  auto !important;
+        }
+
+        .emptyContent{
+            display:        none !important;
+        }
+
+        .hasMargin{
+            margin-bottom:  20px;
+        }
+
+        .image-block{
+            margin:         0 !important;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .device-width{
+            width:          100% !important;
+        }
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          190px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          360px !important;
+        }
+
+        .small-device-width{
+            width:          360px !important;
+            padding:        0 !important;
+        }
+
+        .background-contain-mobile{
+           background-size: contain !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        #tablet-only{
+            display:        none !important;
+        }
+        #mobile-only{
+            display:        inline-block !important;
+        }
+        .half-device-width{
+            width:          140px !important;
+        }
+
+        .mobile-body-padding.device-width,
+        .mobile-body-padding{
+            width:          250px !important;
+        }
+
+        .small-device-width{
+            width:          250px !important;
+            padding:        0 !important;
+        }
+    }
+
+    @media screen yahoo {
+        .yahoo-mail{
+          display:none !important;
+      }
+    } </style><style type=3D"text/css"> ///////////
+//  Helvetica Neue LT Std
+////////
+@font-face {
+    font-family: 'HelveticaNeueWeb';
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-lt-webfont.eot');
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-lt-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-lt-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-lt-webfont.svg#helvetica_neue_lt_std45_light') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+
+}
+@font-face {
+    font-family: 'HelveticaNeueWeb';
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-roman-webfont.eot');
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-roman-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-roman-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-roman-webfont.svg#helvetica_neue_lt_std55_roman') format('svg');
+    font-weight:    500;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueWeb';
+    src: url('/font/helveticaneueltstd/helveticaneueltstd-md-webfont.eot');
+    src: url('/font/helveticaneueltstd/helveticaneueltstd-md-webfont.eot?#i=
+efix') format('embedded-opentype'),
+         url('/font/helveticaneueltstd/helveticaneueltstd-md-webfont.woff')=
+ format('woff'),
+         url('/font/helveticaneueltstd/helveticaneueltstd-md-webfont.ttf') =
+format('truetype'),
+         url('/font/helveticaneueltstd/helveticaneueltstd-md-webfont.svghel=
+vetica_neue_lt_std65Md') format('svg');
+    font-weight:    600;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueWeb';
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-bd-webfont.eot');
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-bd-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-bd-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-bd-webfont.svg#helvetica_neue_lt_std75_bold') format('svg');
+    font-weight:    700;
+    font-style:     normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueWeb';
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-blkcn-webfont.eot');
+    src: url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-blkcn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-blkcn-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-blkcn-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/helveticaneueltstd/helveticaneuel=
+tstd-blkcn-webfont.svg#HelveticaNeueLTStd-BlkCn') format('svg');
+    font-weight:    800;
+    font-style:     normal;
+}
+
+
+
+///////////
+//  Merriweather Sans
+////////
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-reg=
+ular-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-reg=
+ular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-reg=
+ular-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-reg=
+ular-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-reg=
+ular-webfont.svg#merriweather_sansregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ita=
+lic-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ita=
+lic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ita=
+lic-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ita=
+lic-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ita=
+lic-webfont.svg#merriweather_sansitalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+ht-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+ht-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+ht-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+ht-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+ht-webfont.svg#merriweather_sansbook') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+htitalic-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+htitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+htitalic-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+htitalic-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-lig=
+htitalic-webfont.svg#merriweather_sansbookitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+d-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+d-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+d-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+d-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+d-webfont.svg#merriweather_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+ditalic-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+ditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+ditalic-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+ditalic-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-bol=
+ditalic-webfont.svg#merriweather_sansbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabold-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabold-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabold-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabold-webfont.svg#merriweather_sansextrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MerriWeatherSansWeb';
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabolditalic-webfont.eot');
+    src: url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabolditalic-webfont.woff') format('woff'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabolditalic-webfont.ttf') format('truetype'),
+         url('https://app.glueup.com/font/merriweather/merriweathersans-ext=
+rabolditalic-webfont.svg#merriweather_sansXBdIt') format('svg');
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+
+///////////
+//  OpenSans
+////////
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Light-webfont.e=
+ot');
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Light-webfont.e=
+ot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Light-webfont.w=
+off') format('woff'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Light-webfont.t=
+tf') format('truetype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Light-webfont.s=
+vg#open_sanslight') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+
+}
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Regular-webfont=
+.eot');
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Regular-webfont=
+.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Regular-webfont=
+.woff') format('woff'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Regular-webfont=
+.ttf') format('truetype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Regular-webfont=
+.svg#open_sansregular') format('svg');
+    font-weight:    500;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Semibold-webfon=
+t.eot');
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Semibold-webfon=
+t.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Semibold-webfon=
+t.woff') format('woff'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Semibold-webfon=
+t.ttf') format('truetype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Semibold-webfon=
+t.svg#open_sanssemibold') format('svg');
+    font-weight:    600;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Bold-webfont.eo=
+t');
+    src: url('https://app.glueup.com/font/opensans/OpenSans-Bold-webfont.eo=
+t?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Bold-webfont.wo=
+ff') format('woff'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Bold-webfont.tt=
+f') format('truetype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-Bold-webfont.sv=
+g#open_sansbold') format('svg');
+    font-weight:    700;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://app.glueup.com/font/opensans/OpenSans-ExtraBold-webfo=
+nt.eot');
+    src: url('https://app.glueup.com/font/opensans/OpenSans-ExtraBold-webfo=
+nt.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-ExtraBold-webfo=
+nt.woff') format('woff'),
+         url('https://app.glueup.com/font/opensans/OpenSans-ExtraBold-webfo=
+nt.ttf') format('truetype'),
+         url('https://app.glueup.com/font/opensans/OpenSans-ExtraBold-webfo=
+nt.svg#open_sansextrabold') format('svg');
+    font-weight:    800;
+    font-style:     normal;
+}
+
+
+///////////
+//  Roboto
+////////
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoThin.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoThin.eot?#iefix') fo=
+rmat('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoThin.woff2') format(=
+'woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoThin.woff') format('=
+woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoThin.ttf') format('t=
+ruetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoThin.svg#RobotoThin'=
+) format('svg');
+    font-weight:        300;
+    font-style:         normal;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoLight.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoLight.eot?#iefix') f=
+ormat('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoLight.woff2') format=
+('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoLight.woff') format(=
+'woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoLight.ttf') format('=
+truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoLight.svg#RobotoLigh=
+t') format('svg');
+    font-weight:        400;
+    font-style:         normal;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoRegular.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoRegular.eot?#iefix')=
+ format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoRegular.woff2') form=
+at('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoRegular.woff') forma=
+t('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoRegular.ttf') format=
+('truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoRegular.svg#RobotoRe=
+gular') format('svg');
+    font-weight:        500;
+    font-style:         normal;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoMedium.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoMedium.eot?#iefix') =
+format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoMedium.woff2') forma=
+t('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoMedium.woff') format=
+('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoMedium.ttf') format(=
+'truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoMedium.svg#RobotoMed=
+ium') format('svg');
+    font-weight:        600;
+    font-style:         normal;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoBold.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoBold.eot?#iefix') fo=
+rmat('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBold.woff2') format(=
+'woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoBold.woff') format('=
+woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoBold.ttf') format('t=
+ruetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBold.svg#RobotoBold'=
+) format('svg');
+    font-weight:        700;
+    font-style:         normal;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoThinItalic.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoThinItalic.eot?#iefi=
+x') format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoThinItalic.woff2') f=
+ormat('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoThinItalic.woff') fo=
+rmat('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoThinItalic.ttf') for=
+mat('truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoThinItalic.svg#Robot=
+oThinItalic') format('svg');
+    font-weight:        300;
+    font-style:         italic;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoLightItalic.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoLightItalic.eot?#ief=
+ix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoLightItalic.woff2') =
+format('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoLightItalic.woff') f=
+ormat('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoLightItalic.ttf') fo=
+rmat('truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoLightItalic.svg#Robo=
+toLightItalic') format('svg');
+    font-weight:        400;
+    font-style:         italic;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoItalic.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoItalic.eot?#iefix') =
+format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoItalic.woff2') forma=
+t('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoItalic.woff') format=
+('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoItalic.ttf') format(=
+'truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoItalic.svg#RobotoIta=
+lic') format('svg');
+    font-weight:        500;
+    font-style:         italic;
+
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.eot?#ie=
+fix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.woff2')=
+ format('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.woff') =
+format('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.ttf') f=
+ormat('truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoMediumItalic.svg#Rob=
+otoMediumItalic') format('svg');
+    font-weight:        600;
+    font-style:         italic;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.eot?#iefi=
+x') format('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.woff2') f=
+ormat('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.woff') fo=
+rmat('woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.ttf') for=
+mat('truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBoldItalic.svg#Robot=
+oBoldItalic') format('svg');
+    font-weight:        700;
+    font-style:         italic;
+}
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('https://app.glueup.com/font/Roboto/RobotoBlack.eot');
+    src: url('https://app.glueup.com/font/Roboto/RobotoBlack.eot?#iefix') f=
+ormat('embedded-opentype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBlack.woff2') format=
+('woff2'),
+         url('https://app.glueup.com/font/Roboto/RobotoBlack.woff') format(=
+'woff'),
+         url('https://app.glueup.com/font/Roboto/RobotoBlack.ttf') format('=
+truetype'),
+         url('https://app.glueup.com/font/Roboto/RobotoBlack.svg#RobotoBlac=
+k') format('svg');
+    font-weight:        500;
+    font-style:         oblique;
+}
+
+
+///////////
+//  Font Icons
+////////
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://app.glueup.com/font/icons/icons-24708b.eot');
+    src:url('https://app.glueup.com/font/icons/icons-24708b.eot#iefix') for=
+mat('embedded-opentype'),
+        url('https://app.glueup.com/font/icons/icons-7d4a28.woff') format('=
+woff'),
+        url('https://app.glueup.com/font/icons/icons-cd2f65.ttf') format('t=
+ruetype'),
+        url('https://app.glueup.com/font/icons/icons-c62ac7.svg#icons') for=
+mat('svg');
+    font-weight:    500;
+    font-style:     normal;
+}
+@font-face {
+    font-family: 'font-icons';
+    src:url('https://app.glueup.com/font/icons/icons-thin-7950cb.eot');
+    src:url('https://app.glueup.com/font/icons/icons-thin-7950cb.eot#iefix'=
+) format('embedded-opentype'),
+        url('https://app.glueup.com/font/icons/icons-thin-2d27f7.woff') for=
+mat('woff'),
+        url('https://app.glueup.com/font/icons/icons-thin-855157.ttf') form=
+at('truetype'),
+        url('https://app.glueup.com/font/icons/icons-thin-3d6a93.svg#icons-=
+thin') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+}
+
+///////////
+//  Tablet Gothic Wide
+////////
+@font-face {
+    font-family: 'TabletGothicWideWeb';
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.eot');
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.eot?#iefix')        format('embedded-opentype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.woff2')             format('woff2'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.woff')              format('woff'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.ttf')               format('truetype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+ht.svg')               format('svg');
+    font-weight: 400;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'TabletGothicWideWeb';
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.eot');
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.eot?#iefix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.woff2')      format('woff2'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.woff')       format('woff'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.ttf')        format('truetype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideLig=
+htOblique.svg')        format('svg');
+    font-weight: 400;
+    font-style:  oblique;
+}
+
+@font-face {
+    font-family: 'TabletGothicWideWeb';
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.eot');
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.eot?#iefix')      format('embedded-opentype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.woff2')           format('woff2'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.woff')            format('woff'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.ttf')             format('truetype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideReg=
+ular.svg')             format('svg');
+    font-weight: 500;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'TabletGothicWideWeb';
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.eot');
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.eot?#iefix')     format('embedded-opentype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.woff2')          format('woff2'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.woff')           format('woff'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.ttf')            format('truetype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideSem=
+iBold.svg')            format('svg');
+    font-weight: 600;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'TabletGothicWideWeb';
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.eot');
+    src: url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.eot?#iefix')         format('embedded-opentype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.woff2')              format('woff2'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.woff')               format('woff'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.ttf')                format('truetype'),
+         url('https://app.glueup.com/font/tablet-gothic/TabletGothicWideBol=
+d.svg')                format('svg');
+    font-weight: 700;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('https://app.glueup.com/font/Lato/lato-regular-webfont.eot');
+    src: url('https://app.glueup.com/font/Lato/lato-regular-webfont.eot?#ie=
+fix') format('embedded-opentype'),
+         url('https://app.glueup.com/font/Lato/lato-light-webfont.woff') fo=
+rmat('woff'),
+         url('https://app.glueup.com/font/Lato/Lato-Regular.ttf') format('t=
+ruetype'),
+         url('https://app.glueup.com/font/Lato/lato-regular.svg#latoregular=
+') format('svg');
+    font-weight:    400;
+    font-style:     normal;
+
+} </style><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o=
+:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endi=
+f]--><!--[if mso]-><style type=3D=E2=80=9Dtext/css=E2=80=9D> body,
+        table,
+        td,
+        p,
+        div{
+            font-family: 'Arial';
+        }
+
+        li {
+            text-align:  -webkit-match-parent;
+            display:     list-item;
+            text-indent:  -1em;
+        } </style><![endif]--></head><body leftmargin=3D"0" topmargin=3D"0"=
+ marginwidth=3D"0" marginheight=3D"0" yahoo=3D"fix" style=3D" font-family: =
+'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Sim=
+Sun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=
+=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsof=
+t YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft =
+JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic=
+', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=
+=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=
+=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;=
+; font-size: 14px; background-color: "><!-- Start Emain PreHeader --><p sty=
+le=3D"height: 0;width:0;font-size:0;display:none !important;visibility:hidd=
+en;mso-hide:all;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;=
+opacity:0;overflow:hidden;"></p><!-- End Emain PreHeader --><div class=3D"d=
+evice-width" width=3D"600" style=3D"background-color:#ffffff; width:600px; =
+margin: 0 auto;"><table class=3D"device-width" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" align=3D"center" width=3D"100%" bgcolor=3D"#ffffff"><t=
+body><tr id=3D"cant-read-notice"><td align=3D"center" width=3D"100%"><a cla=
+ss=3D"ignoreTracking" href=3D"https://app.glueup.com/en/event/88912/invitat=
+ion/216148" style=3D"text-decoration: none; font-size: 12px; color: #93765b=
+; font-weight: normal; font-family: Arial, sans-serif; display: inline">If =
+you can't see this email click here.</a></td></tr></tbody></table><!-- Wrap=
+per --><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" align=3D"center"><tbody><tr><t=
+d><!-- BEGIN organizationLogo Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><table class=3D"dev=
+ice-width" width=3D"600" border=3D"0" align=3D"left" cellpadding=3D"0" cell=
+spacing=3D"0"><tbody><tr><td valign=3D"top" bgcolor=3D"#FFFFFF"><table clas=
+s=3D"device-width" align=3D"center" border=3D"0" bgcolor=3D"#FFFFFF" style=
+=3D"padding:0; border:0px;border-collapse:collapse; font-family: Arial, san=
+s-serif; text-align: Left; background-color: #FFFFFF;" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td width=3D"600" class=3D"device-width" valign=
+=3D"top" align=3D"Left" style=3D" line-height:10px; background-color: #FFFF=
+FF;"><img title=3D"image" alt=3D"<org_name>" style=3D"padding:8px; width:10=
+0px;" class=3D"" src=3D"https://app.glueup.com/resources/public/images/logo=
+/100x50/0930f74d-8917-4dcc-8575-b0ec04bae05b.png" srcset=3D"https://app.glu=
+eup.com/resources/public/images/logo/200x100/0930f74d-8917-4dcc-8575-b0ec04=
+bae05b.png"></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table><!-- END organizationLogo Block --><!-- BEGIN detailsHeader =
+Block --><table class=3D"device-width" width=3D"600" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr>=
+<td style=3D"padding:0;"></td></tr><tr><td width=3D"100%"><table width=3D"6=
+00" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" border=3D"0" style=
+=3D"padding: 0px; border-collapse:collapse" class=3D"device-width"><tbody><=
+tr><td style=3D"width:100%; vertical-align:top; padding:0px;"><a title=3D"A=
+itken Spence Hotels Product Training" target=3D"_blank" class=3D"has_mso de=
+vice-width" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=
+=3D1&amp;tracking_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp=
+;redirect_url=3Dhttps%3A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels=
+-product-training-88912%2F%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_c=
+ampaign%3DAitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%=
+3D216148%26pk_medium%3Devent-campaign&amp;ts=3D1695019512&amp;ps=3Db24xYmFr=
+OXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R=
+0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQk8yN3Vjc3dDQ1MwOT=
+ZIbUFVbmpzbTRUQTZWY1g3RW1RUWNHTzR6MjZQeEh3UlJSc0xPc3pBOFBNdnRSeFM5MUFoVURRW=
+TdadDQ1d0JvMG5ieXMrdDRjenV1dmlXTGJORFU0NitTb1ZZYmdnSWNZUVZZYVY5REtqNXpSY2p4=
+NThXZkViV3RkTjkxQ3pCSERjdG4yT1JHd0pNbHNwMXFyaXRnREJRYWtnRmFpcGhEYjArQjRWVEZ=
+qNVplYWEyRGZBaG9tWVZMTlhWdDNrU1JZS1BiNEIvUjlYejEwSWRRRTIyS3BhT1JSVDNSemZoQm=
+RGeWJHWGFyMWpzYnNKM2lrcG1RPQ=3D=3D&amp;eventinviteeverificationcode=3Dd2ef7=
+3ea-a3d3-4223-b" style=3D"display:block; width: 600px; text-decoration:none=
+; color: #ffffff;text-align:center;"><table width=3D"100%" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#1e496d"><tbody><tr><td width=
+=3D"600" align=3D"center" style=3D"font-size: 24px;"><img width=3D"600" cla=
+ss=3D"device-width" src=3D"https://app.glueup.com/resources/public/images/f=
+ixed-width/600/15969d0a-1b78-4b8c-80d9-275d561be2b9.png" title=3D"Aitken Sp=
+ence Hotels Product Training" alt=3D"Aitken Spence Hotels Product Training"=
+ style=3D"display: flex; "></td></tr><tr><td width=3D"600" align=3D"left" b=
+gcolor=3D"#1e496d" style=3D"padding: 8px; font-size:24px; color: #ffffff; f=
+ont-weight: 500; text-align: left; line-height: 30px; text-transform:  uppe=
+rcase;"><span style=3D"font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucid=
+a Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', '=
+ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=
+=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=
+=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=
+=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=
+=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar T=
+ext', 'Cordia New', 'Arial', sans-serif;color: #ffffff;">Aitken Spence Hote=
+ls Product Training </span></td></tr></tbody></table></a></td></tr></tbody>=
+</table></td></tr><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"#FFFFFF"=
+><table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+border=3D"0" style=3D"padding: 0px; border-collapse:collapse" class=3D"devi=
+ce-width"><tbody><tr><td valign=3D"top" align=3D"left" bgcolor=3D"#1e496d" =
+style=3D"padding:0px; border:0px; line-height: 0px; color:#FFF"><table widt=
+h=3D"220" border=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"device-width" style=3D"padding:0;"><tbody><tr><td valign=3D"top" st=
+yle=3D"padding:5px; font-size: 14px; color:#ffffff; text-align: left; line-=
+height:100%; vertical-align: middle; font-weight: normal;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"48" height=
+=3D"48" valign=3D"top"><img title=3D"when" alt=3D"when" src=3D"https://app.=
+glueup.com/images/campaigns/event-block/webinar/icon-time-email-hear.png" w=
+idth=3D"49" height=3D"49"></td><td valign=3D"top" style=3D"padding:5px; col=
+or: #ffffff;"><span style=3D"font-family: 'Trebuchet MS', 'Lucida Grande', =
+'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSo=
+ng', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"><b>When</b><br><span style=
+=3D"line-height:100%; font-size:12px">=E2=80=8BSep=E2=80=8B&nbsp;=E2=80=8B1=
+9,=E2=80=8B&nbsp;=E2=80=8B2023=E2=80=8B<br>=E2=80=8B=E2=80=8B&nbsp;=E2=80=
+=8B(=E2=80=8B11=E2=80=8B:00=E2=80=8B=E2=80=8B&nbsp;=E2=80=8BAM=E2=80=8B&nbs=
+p;=E2=80=8B-=E2=80=8B&nbsp;=E2=80=8B=E2=80=8B1=E2=80=8B:00=E2=80=8B=E2=80=
+=8B&nbsp;=E2=80=8BPM)=E2=80=8B (GMT+3)</span></span></td></tr></tbody></tab=
+le></td></tr></tbody></table><table width=3D"365" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"padd=
+ing:0;"><tbody><tr><td valign=3D"top" style=3D"padding:5px; height:40px; fo=
+nt-size: 14px; color:#ffffff; text-align: left; line-height:100%; vertical-=
+align: middle; font-weight: normal;"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table><!-- END detailsHeader=
+ Block --><!-- BEGIN html Block --><table class=3D"device-width" width=3D"6=
+00" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcol=
+or=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN html column -=
+-><table class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" align=3D"=
+center" style=3D"width:600px; padding:16px; word-break:break-word;   color:=
+ #254c6f;"><div class=3D"custom-input-text device-width" style=3D"color: #2=
+54c6f; text-align: left; line-height: 1.4em; mso-width-alt:568px;"><div sty=
+le=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode',=
+ 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=
+=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=
+=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Dro=
+id Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=
+=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'D=
+utum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=
+=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New',=
+ 'Arial', sans-serif;"><div>Dear Christine,</div></div></div></td></tr></tb=
+ody></table><!-- END html column --></td></tr></tbody></table><!-- END html=
+ Block --><!-- BEGIN summary Block --><table class=3D"device-width" width=
+=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0;"><style> .ql-indent-=
+1 {
+    margin-left:       2em !important;
+}
+.ql-indent-2 {
+    margin-left:       4em !important;
+}
+.ql-indent-3,
+.ql-indent-4,
+.ql-indent-5,
+.ql-indent-6,
+.ql-indent-7,
+.ql-indent-8 {
+    margin-left:       6em !important;
+}
+@media only screen and (max-width: 479px ) {
+    .iframe-body .device-width{
+        width:  100% !important;
+    }
+} </style><table class=3D"device-width" width=3D"100%" border=3D"0" align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td width=3D"100%"=
+ valign=3D"top" bgcolor=3D"#ffffff" style=3D"text-align: justify; padding-b=
+ottom:15px; background:#ffffff;"><table width=3D"580" class=3D"device-width=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tbo=
+dy><tr><!-- start block-summary (one column text)--><td class=3D"device-wid=
+th mobile-body-padding" style=3D"font-weight: normal; line-height: 1.4em; v=
+ertical-align: top; padding:16px;  font-size: 14px; background: #ffffff;; c=
+olor:#254c6f;"><div style=3D" font-family: 'Trebuchet MS', 'Lucida Grande',=
+ 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STS=
+ong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;"><div style=3D"text-align: j=
+ustify;">Dear KATA Members,</div><div style=3D"text-align: justify;"><br></=
+div><div style=3D"text-align: justify;">We hope this message finds you well=
+. We are excited to invite you to an exclusive webinar in collaboration wit=
+h Aitken Spence Hotels, a renowned name in the hospitality industry with a =
+presence in Sri Lanka, India, Oman, and the Maldives.</div><div style=3D"te=
+xt-align: justify;"><br></div><div style=3D"text-align: justify;"><strong>A=
+bout Aitken Spence Hotels</strong></div><div style=3D"text-align: justify;"=
+><br></div><div style=3D"text-align: justify;">Aitken Spence Hotels operate=
+s a distinguished chain of 22 hotels and resorts under two premier brands: =
+Heritance Hotels and Resorts and Adaaran Resorts and Spa. Their commitment =
+to excellence in hospitality is synonymous with the high standards they uph=
+old across their properties. Each of these unique establishments caters to =
+a diverse clientele, offering a wide range of options to suit every need an=
+d budget.</div><div style=3D"text-align: justify;"><br></div><div style=3D"=
+text-align: justify;"><strong>Webinar Details:</strong></div><div style=3D"=
+text-align: justify;"><strong>Topic:</strong> Product Training For Aitken S=
+pence Hotel</div><div style=3D"text-align: justify;"><strong>Link:</strong>=
+ https://us06web.zoom.us/j/85665168546?pwd=3DAArcrfsraEQKbTywqHt9wWQF2BXucE=
+.1</div><div style=3D"text-align: justify;"><strong>Date:</strong> Septembe=
+r 19, 2023</div><div style=3D"text-align: justify;"><strong>Time: </strong>=
+11:00 AM Nairobi</div><div style=3D"text-align: justify;"><strong>Meeting I=
+D:</strong> 856 6516 8546</div><div style=3D"text-align: justify;"><strong>=
+Passcode:</strong> 647776</div><div style=3D"text-align: justify;"><br></di=
+v><div style=3D"text-align: justify;"><strong>Agenda:</strong></div><div st=
+yle=3D"text-align: justify;">In this webinar, we will delve into the produc=
+t offerings of Aitken Spence Hotels, with a specific focus on their propert=
+ies in the Maldives:</div><ul style=3D"padding-left:24px; margin-top:0.5em;=
+ margin-bottom:0.5em; font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida=
+ Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'S=
+T Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=
+=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=
+=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=
+=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=
+=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar T=
+ext', 'Cordia New', 'Arial', sans-serif;;"><li style=3D"text-align: justify=
+;">Adaaran Hotels Group - Maldives</li><li style=3D"text-align: justify;">A=
+itken Spence Hotel - Maldives</li></ul><div style=3D"text-align: justify;">=
+During this informative session, you will have the opportunity to gain valu=
+able insights into these exquisite properties, their unique features, and t=
+he exceptional experiences they offer to guests. Whether you are seeking to=
+ expand your knowledge of the Maldivian hospitality landscape or explore po=
+tential collaborations, this webinar is your gateway to a wealth of informa=
+tion.</div><div style=3D"text-align: justify;"><br></div><div style=3D"text=
+-align: justify;"><strong>Registration:</strong></div><div style=3D"text-al=
+ign: justify;">To secure your spot, please register for the webinar using t=
+he following link: <a title=3D"Webinar Registration Link" style=3D" color: =
+#00a1de; font-weight: normal; font-style: normal; text-decoration: none;" h=
+ref=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D2&amp;trac=
+king_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=
+=3Dhttps%3A%2F%2Fus06web.zoom.us%2Fj%2F85665168546%3Fpwd%3DAArcrfsraEQKbTyw=
+qHt9wWQF2BXucE.1&amp;ts=3D1695019512&amp;ps=3DOWdCVEJNOXU3MWpWNGtDNWtLSlg0R=
+1A2OUZWRzA3SlZPUlNoTVJoUlVPK3R5SXZZN3NmOEZxM3hodW5SV2pDdUFvOTVtNytnaXNlYnh3=
+ZlVITElFamkvTkI2SUV4SkthZXM4c21zTU5EamY0M1lPN083bWR3UUpzd1BrWXpWb3c=3D" rel=
+=3D"noopener noreferrer" target=3D"_blank">Webinar Registration Link</a></d=
+iv><div style=3D"text-align: justify;"><br></div><div style=3D"text-align: =
+justify;">We look forward to your active participation in this insightful s=
+ession. Aitken Spence Hotels is excited to share their expertise and engage=
+ in meaningful discussions with you. Should you have any questions or requi=
+re further information, please do not hesitate to reach out to us. We antic=
+ipate a highly informative and productive webinar and hope to see you there=
+.</div><div style=3D"text-align: justify;"><br></div><div style=3D"text-ali=
+gn: justify;">Regards,</div><div style=3D"text-align: justify;">KATA Secret=
+ariat</div></div></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table><!-- END summary Block --><!-- BEGIN speakers Block -->=
+<table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=
+=3D"padding:0;"></td></tr><tr><td width=3D"100%" valign=3D"top" bgcolor=3D"=
+#FFFFFF"><table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" align=3D"center" class=3D"device-width"><!-- speakers --><!-- start tit=
+le --><tbody><tr><td style=3D"font-size: 24px; color: #ffffff; font-weight:=
+ normal; text-align: center; 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans =
+Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song=
+', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=
+=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=
+=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=
+=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=
+=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=
+=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', =
+'Cordia New', 'Arial', sans-serif; line-height: 24px; vertical-align: top; =
+padding:8px 16px;" bgcolor=3D"#FFFFFF"><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" align=3D"center"><tbody><tr><td class=3D"mobile-body-pa=
+dding" align=3D"center" style=3D"">&nbsp;</td></tr><tr><td valign=3D"middle=
+" style=3D"padding:0"><span style=3D"'Trebuchet MS', 'Lucida Grande', 'Luci=
+da Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', =
+'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=
+=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=
+=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=
+=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=
+=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar T=
+ext', 'Cordia New', 'Arial', sans-serif;"><a title=3D"Speakers" href=3D"htt=
+ps://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D3&amp;tracking_id=3D=
+5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3=
+A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-product-training-88912=
+%2Fspeakers.html%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3D=
+Aitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%2=
+6pk_medium%3Devent-campaign&amp;ts=3D1695019512&amp;ps=3Db24xYmFrOXpTa043a0=
+xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4c=
+XZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQlBrV292Mk5LTnNFamVNQUJUMFdz=
+VHVoYlcrcXhHTkM5aVlxTVFNTCs0S3d3eXMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJ=
+FL2dZQ2hGK3V4MHhMVlBNQTk2WHZSdUJHQkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni=
+9hak5sdlhmNWVDZ29qZ0RkMVZQY1FjV0Irazd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZ=
+mRCZ01LWTl1WWJKWDdLeExRQWpqUUxud3R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5Wlps=
+ME0wUFpZRzZ5T2JtWVU5aEYvSVEzRmdhWEtCYi9aUTBh&amp;eventinviteeverificationco=
+de=3Dd2ef73ea-a3d3-4223-b" style=3D"text-decoration: none; font-size: 28px;=
+ color: #27333b; font-weight: bold; text-transform:  uppercase;">Speakers</=
+a></span></td></tr></tbody></table></td></tr><!-- end title --><tr><td vali=
+gn=3D"top" align=3D"left" bgcolor=3D"#FFFFFF" style=3D"padding:0px"><table =
+width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"le=
+ft" class=3D"device-width" bgcolor=3D"white"><tbody><tr><td style=3D"paddin=
+g:0px;"><table width=3D"192" border=3D"0" align=3D"left" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"device-width event-speaker" style=3D"padding:0; =
+"><tbody><tr><td valign=3D"top" align=3D"left" style=3D"padding:0;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"192" height=3D"19=
+2" class=3D"device-width event-speaker" style=3D"padding:0px; background-co=
+lor: #ce5353;"><tbody><tr><td align=3D"center" valign=3D"middle" width=3D"1=
+92" height=3D"192" class=3D"event-speaker"><span style=3D"mso-table-lspace:=
+0;mso-table-rspace:0; margin:0"><a title=3D"Manujaya Fernando" target=3D"_b=
+lank" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D4&a=
+mp;tracking_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redir=
+ect_url=3Dhttps%3A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-produ=
+ct-training-88912%2Fspeakers.html%3FverificationCode%3Dd2ef73ea-a3d3-4223-b=
+%26pk_campaign%3DAitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26=
+pk_kwd%3D216148%26pk_medium%3Devent-campaign%23speaker-6507ef0ce4b0e1fc2d8a=
+624c&amp;ts=3D1695019512&amp;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9nd=
+Ew0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1lt=
+MDFFMC9pb3h4MHVKTk52WGlFQlBrV292Mk5LTnNFamVNQUJUMFdzVHVoYlcrcXhHTkM5aVlxTVF=
+NTCs0S3d3eXMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJFL2dZQ2hGK3V4MHhMVlBNQT=
+k2WHZSdUJHQkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni9hak5sdlhmNWVDZ29qZ0RkM=
+VZQY1FjV0Irazd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZmRCZ01LWTl1WWJKWDdLeExR=
+QWpqUUxud3R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5WlpsME0wUFpZRzZ5T2JtUlAvd0c=
+yVHpmMzVNYXEzTXNrdFg0THVuL0RvdFZWY0FkdFQ5VmhscWtBRHdkZGJIbjAwWGVJVm1LNVZIeG=
+k4ND0=3D&amp;eventinviteeverificationcode=3Dd2ef73ea-a3d3-4223-b"><img src=
+=3D"https://app.glueup.com/templates/invitation/conference/default-speaker.=
+png" title=3D"" alt=3D"" border=3D"0" style=3D""></a></span></td></tr></tbo=
+dy></table></td></tr><tr><td bgcolor=3D"white" align=3D"left" valign=3D"top=
+" style=3D"padding:10px; font-size: 14px; color: #27333B; line-height:100%;=
+ vertical-align: top; font-weight: normal; text-align: center;"><div style=
+=3D"line-height: 160%; 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicod=
+e', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=
+=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=
+=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', '=
+Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=
+=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91',=
+ 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=
+=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia Ne=
+w', 'Arial', sans-serif"><b>Manujaya Fernando</b></div><div style=3D"line-h=
+eight:130%; font-size:12px; 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans U=
+nicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song'=
+, '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif"><span itemprop=3D"jobTitle">Deputy General Mana=
+ger -  Sales &amp; Marketing</span> at <span itemprop=3D"worksFor">Aitken S=
+pence Hotels</span></div></td></tr></tbody></table><table width=3D"192" bor=
+der=3D"0" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D"devic=
+e-width event-speaker" style=3D"padding:0; "><tbody><tr><td valign=3D"top" =
+align=3D"center" style=3D"padding:0px; line-height:0px"><a title=3D"Dr Jose=
+ph Kithitu" target=3D"_blank" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;lid=3D5&amp;tracking_id=3D5799:216148:726eaac5-09c8-4ff4-81=
+bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2Fapp.glueup.com%2Fevent%2Fa=
+itken-spence-hotels-product-training-88912%2Fspeakers.html%3FverificationCo=
+de%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3DAitken+Spence+Hotels+Product+Trai=
+ning%26pk_cid%3D216148%26pk_kwd%3D216148%26pk_medium%3Devent-campaign%23spe=
+aker-6507eec7e4b0e1fc2d8a6238&amp;ts=3D1695019512&amp;ps=3Db24xYmFrOXpTa043=
+a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl=
+4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQlBrV292Mk5LTnNFamVNQUJUMF=
+dzVHVoYlcrcXhHTkM5aVlxTVFNTCs0S3d3eXMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGa=
+zJFL2dZQ2hGK3V4MHhMVlBNQTk2WHZSdUJHQkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96=
+Ni9hak5sdlhmNWVDZ29qZ0RkMVZQY1FjV0Irazd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1J=
+CZmRCZ01LWTl1WWJKWDdLeExRQWpqUUxud3R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5Wl=
+psME0wUFpZRzZ5T2JtUlAvd0cyVHpmMzVNYXEzTXNrdFg0Qk92Y2s4RWNUUzhrYk12ZERHREoye=
+EJ2dmJTOG04VSs1azkyY0k2WmRoVT0=3D&amp;eventinviteeverificationcode=3Dd2ef73=
+ea-a3d3-4223-b"><img class=3D"device-width event-speaker" src=3D"https://ap=
+p.glueup.com/resources/public/images/square/300/9bfbcb42-9634-48ac-a1ce-167=
+dec1227e7.png" title=3D"" alt=3D"" width=3D"192" border=3D"0" style=3D""></=
+a></td></tr><tr><td bgcolor=3D"white" align=3D"left" valign=3D"top" style=
+=3D"padding:10px; font-size: 14px; color: #27333B; line-height:100%; vertic=
+al-align: top; font-weight: normal; text-align: center;"><div style=3D"line=
+-height: 160%; 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Luc=
+ida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=
+=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=
+=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid San=
+s', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', =
+'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum',=
+ '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=
+=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Aria=
+l', sans-serif"><b>Dr Joseph Kithitu</b></div><div style=3D"line-height:130=
+%; font-size:12px; 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', =
+'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=
+=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=
+=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid =
+Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94=
+', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutu=
+m', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=
+=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'A=
+rial', sans-serif"><span itemprop=3D"jobTitle">Chairperson</span> at <span =
+itemprop=3D"worksFor">Kenya Association of Travel Agents</span></div></td><=
+/tr></tbody></table><table width=3D"192" border=3D"0" align=3D"left" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"device-width event-speaker" style=3D=
+"padding:0; "><tbody><tr><td valign=3D"top" align=3D"center" style=3D"paddi=
+ng:0px; line-height:0px"><a title=3D"Agnes Mucuha" target=3D"_blank" href=
+=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D6&amp;trackin=
+g_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3D=
+https%3A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-product-trainin=
+g-88912%2Fspeakers.html%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_camp=
+aign%3DAitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D2=
+16148%26pk_medium%3Devent-campaign%23speaker-6507eeb7e4b0e1fc2d8a6226&amp;t=
+s=3D1695019512&amp;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWd=
+UUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3=
+h4MHVKTk52WGlFQlBrV292Mk5LTnNFamVNQUJUMFdzVHVoYlcrcXhHTkM5aVlxTVFNTCs0S3d3e=
+XMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJFL2dZQ2hGK3V4MHhMVlBNQTk2WHZSdUJH=
+QkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni9hak5sdlhmNWVDZ29qZ0RkMVZQY1FjV0I=
+razd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZmRCZ01LWTl1WWJKWDdLeExRQWpqUUxud3=
+R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5WlpsME0wUFpZRzZ5T2JtUlAvd0cyVHpmMzVNY=
+XEzTXNrdFg0MXNSa2xOZUpYNVJPMXFBcndHQThYc1MxWWZPOHFoY3I0TXh4Q0prTTNDcz0=3D&a=
+mp;eventinviteeverificationcode=3Dd2ef73ea-a3d3-4223-b"><img class=3D"devic=
+e-width event-speaker" src=3D"https://app.glueup.com/resources/public/image=
+s/square/300/68fc8fef-cf9b-4a4b-b79c-a29c600a6e0d.png" title=3D"" alt=3D"" =
+width=3D"192" border=3D"0" style=3D""></a></td></tr><tr><td bgcolor=3D"whit=
+e" align=3D"left" valign=3D"top" style=3D"padding:10px; font-size: 14px; co=
+lor: #27333B; line-height:100%; vertical-align: top; font-weight: normal; t=
+ext-align: center;"><div style=3D"line-height: 160%; 'Trebuchet MS', 'Lucid=
+a Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=
+=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei=
+', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=
+=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=
+=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=
+=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'D=
+otum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiry=
+o', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif"><b>Agnes Mucuha</b><=
+/div><div style=3D"line-height:130%; font-size:12px; 'Trebuchet MS', 'Lucid=
+a Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=
+=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei=
+', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=
+=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=
+=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=
+=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'D=
+otum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiry=
+o', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif"><span itemprop=3D"jo=
+bTitle">ceo</span> of <span itemprop=3D"worksFor">Kenya Association of Trav=
+el Agents</span></div></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table><!-- END speakers Block =
+--><!-- BEGIN rsvp Block --><table class=3D"device-width" width=3D"600" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#=
+ffffff"><tbody><tr><td style=3D"padding:0;"><!-- BEGIN RSVP Block --><table=
+ class=3D"device-width" width=3D"100%" border=3D"0" align=3D"left" cellpadd=
+ing=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" width=3D"100%" st=
+yle=3D"padding-bottom:15px;"><span style=3D"display:none;"><!--[if !mso]><<=
+![endif]--><!--[if !mso]>!<![endif]--><!--[if !mso]>-<![endif]--><!--[if !m=
+so]>-<![endif]--></span><!--[if mso]-><table class=3D"device-width yahoo-ma=
+il" style=3D" font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Un=
+icode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song',=
+ '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=
+=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91'=
+, 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=
+=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=
+=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80'=
+, '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia=
+ New', 'Arial', sans-serif;; text-align: center; background-color: #ffffff;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" align=3D"c=
+enter"><tr><td class=3D"mobile-body-padding" align=3D"center" style=3D"">&n=
+bsp;</td></tr><tr><td valign=3D"top" align=3D"left" style=3D"padding:10px 1=
+0px 10px 10px;"><table width=3D"577" border=3D"0" cellspacing=3D"4" cellpad=
+ding=3D"0"><tr><td width=3D"285"><v:roundrect xmlns:v=3D"urn:schemas-micros=
+oft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"http=
+s://app.glueup.com/track/rd?type=3Dcampaign&lid=3D7&tracking_id=3D5799:2161=
+48:726eaac5-09c8-4ff4-81bb-56c2134beec6&redirect_url=3Dhttps%3A%2F%2Fapp.gl=
+ueup.com%2Fevent%2Faitken-spence-hotels-product-training-88912%2Fregister%2=
+F%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3DAitken+Spence+H=
+otels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%26pk_medium%3Dev=
+ent-campaign%26act%3Dinvitation-accept%23actions%3Dinvitation-accept%26id%3=
+D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&ts=3D1695019512&ps=3Db24x=
+YmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F=
+6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQk9iWkRQdTBUaF=
+FPaC9WK0xZdGsyczZMb3F1QTVVRUU5S2xpRzd4RlpqNHlScGlzZVFEa0hPTjdBdE9xQUdPUGE1V=
+00xemY4Mkh1SVNkby9yU2NwVzU4cm5OTlQ2U2tZNUt5NU9DK01lWm9QT3N2eEEyaVNSamxwVitV=
+RmFtL1dyNlhtRnJrUWJsVVlvRC92WG03dmhTaEN5cUFnTURNYVg0NDA2WmtxQXEvS0dseXFqRnl=
+yalVTWDNPREFpKzZMbW5Xd2dpeldSN0g1OTJOanI5eERiYlhBR2hJWVRyb2duWUFrN3lZWW8wWE=
+9WWGZYMlRxUWcvOVdjdDB1cHUxOW1Eanh4cUFFZTVUQ3VBenQ5bEk5NUcvZHZUd0V4dG5UQk9TW=
+nRlSWJsU0phdHhueXJoVEo4ZkczNU5hNHllQW53L3A1RE1GVjRCVFMwU3BoUmxKZHc5L283Qm9r=
+ZUQxRHUxL3pnU0FLQS9IMHc9PQ=3D=3D&eventinviteeverificationcode=3Dd2ef73ea-a3=
+d3-4223-b&trackingid=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6" st=
+yle=3D"height:40px;v-text-anchor:middle;width:283px;" arcsize=3D"45%" strok=
+e=3D"f" fill=3D"t"><v:fill type=3D"tile" color=3D"#2883eb" /><w:anchorlock/=
+><center style=3D" font-size: 16px; background: #2883eb; font-weight: norma=
+l; font-style: normal; text-decoration: none; font-weight:bold;  font-famil=
+y: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', '=
+SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=
+=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Micro=
+soft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microso=
+ft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGot=
+hic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=
+=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=
+=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-ser=
+if;">I Will Attend</center></v:roundrect></td><td width=3D"285"><v:roundrec=
+t xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsof=
+t-com:office:word" href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&=
+lid=3D8&tracking_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&redi=
+rect_url=3Dhttps%3A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-prod=
+uct-training-88912%2F%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campai=
+gn%3DAitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216=
+148%26pk_medium%3Devent-campaign%26act%3Dinvitation-decline%23actions%3Dinv=
+itation-decline%26id%3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&ts=
+=3D1695019512&ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5U=
+RjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHV=
+KTk52WGlFQk8yN3Vjc3dDQ1MwOTZIbUFVbmpzbTRUQTZWY1g3RW1RUWNHTzR6MjZQeEh3UlJSc0=
+xPc3pBOFBNdnRSeFM5MUFoVURRWTdadDQ1d0JvMG5ieXMrdDRjenV1dmlXTGJORFU0NitTb1ZZY=
+mdnSWNZUVZZYVY5REtqNXpSY2p4NThXZkViV3RkTjkxQ3pCSERjdG4yT1JHd0pNbHNwMXFyaXRn=
+REJRYWtnRmFpcGhEYjArQjRWVEZqNVplYWEyRGZBaG9tWVZMTlhWdDNrU1JZS1BiNEIvUjlYejE=
+wSWRRRTIyS3BhT1JSVDNSemZqejRpajg3SEZQSEN2UXZwakpxOWwwNTRiSWhkOXRYTHJJQUlpdD=
+hUSHNwazhoVTZEeExtRm8wQlVtN2VGc3YxTDZJUExURXFONnowUVAyUG5BY2FTR0JYYm84ZWJrZ=
+WRGTXdIU3hOM0RZS0RwU05BTFJpcGpxS3NRSnEvcENxYUE9PQ=3D=3D&eventinviteeverific=
+ationcode=3Dd2ef73ea-a3d3-4223-b&trackingid=3D5799:216148:726eaac5-09c8-4ff=
+4-81bb-56c2134beec6" style=3D"height:40px;v-text-anchor:middle;width:283px;=
+" arcsize=3D"45%" stroke=3D"f" fill=3D"t"><v:fill type=3D"tile" color=3D"#e=
+9e9ea" /><w:anchorlock/><center style=3D" font-size: 16px; background: #288=
+3eb; font-weight: normal; font-style: normal; text-decoration: none; color:=
+#33547a; background-color: #e9e9ea; font-weight:bold;  font-family: 'Trebuc=
+het MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=
+=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=
+=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHe=
+i', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengH=
+ei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=
+=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=
+=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=
+=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;">N=
+o</center></v:roundrect></td></tr></table></td></tr></table><![endif]--><sp=
+an style=3D"display:none;"><!--[if !mso]>-<![endif]--><!--[if !mso]>-<![end=
+if]--><!--[if !mso]>><![endif]--></span><!--[if !mso]><!--><!-- <![endif]--=
+><table class=3D"device-width" style=3D" font-family: 'Trebuchet MS', 'Luci=
+da Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=
+=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXi=
+hei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=
+=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=
+=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=
+=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4',=
+ 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'me=
+iryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-serif;; text-align: cent=
+er; background-color: #ffffff; mso-hide:all;" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"100%" align=3D"center"><tbody><tr><td class=3D=
+"mobile-body-padding" align=3D"center" style=3D"">&nbsp;</td></tr><tr><td v=
+align=3D"top" align=3D"left" style=3D"padding:10px 10px 10px 10px;"><table =
+width=3D"50%" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"padding:0px;float: left;" class=3D"device-width"><tbody><tr><td=
+ style=3D"padding:5px 5px 5px 0px;"><a class=3D"has_mso" title=3D"I Will At=
+tend" style=3D"text-decoration: none; border-top: #E9E9EA 1px solid; height=
+: 20px; border-right: #E9E9EA 1px solid; vertical-align: middle; border-bot=
+tom: #E9E9EA 1px solid; padding-bottom: 8px; text-align: center; padding-to=
+p: 10px; padding-left: 0px; border-left: #E9E9EA 1px solid; display: block;=
+ line-height: 1.1em; padding-right: 0px; border-top-left-radius: 20px; bord=
+er-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-r=
+ight-radius: 20px;-webkit-text-size-adjust:none;mso-hide:all;  font-size: 1=
+6px; background: #2883eb; font-weight: normal; font-style: normal; text-dec=
+oration: none; border-color: #2883eb; color:#ffffff;" href=3D"https://app.g=
+lueup.com/track/rd?type=3Dcampaign&amp;lid=3D7&amp;tracking_id=3D5799:21614=
+8:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2Fapp=
+.glueup.com%2Fevent%2Faitken-spence-hotels-product-training-88912%2Fregiste=
+r%2F%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3DAitken+Spenc=
+e+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%26pk_medium%3=
+Devent-campaign%26act%3Dinvitation-accept%23actions%3Dinvitation-accept%26i=
+d%3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;ts=3D1695019512&am=
+p;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004=
+NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQk9=
+iWkRQdTBUaFFPaC9WK0xZdGsyczZMb3F1QTVVRUU5S2xpRzd4RlpqNHlScGlzZVFEa0hPTjdBdE=
+9xQUdPUGE1V00xemY4Mkh1SVNkby9yU2NwVzU4cm5OTlQ2U2tZNUt5NU9DK01lWm9QT3N2eEEya=
+VNSamxwVitVRmFtL1dyNlhtRnJrUWJsVVlvRC92WG03dmhTaEN5cUFnTURNYVg0NDA2WmtxQXEv=
+S0dseXFqRnlyalVTWDNPREFpKzZMbW5Xd2dpeldSN0g1OTJOanI5eERiYlhBR2hJWVRyb2duWUF=
+rN3lZWW8wWE9WWGZYMlRxUWcvOVdjdDB1cHUxOW1Eanh4cUFFZTVUQ3VBenQ5bEk5NUcvZHZUd0=
+V4dG5UQk9TWnRlSWJsU0phdHhueXJoVEo4ZkczNU5hNHllQW53L3A1RE1GVjRCVFMwU3BoUmxKZ=
+Hc5L283Qm9rZUQxRHUxL3pnU0FLQS9IMHc9PQ=3D=3D&amp;eventinviteeverificationcod=
+e=3Dd2ef73ea-a3d3-4223-b&amp;trackingid=3D5799:216148:726eaac5-09c8-4ff4-81=
+bb-56c2134beec6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D" font-f=
+amily: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans=
+', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=
+=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Mi=
+crosoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Micr=
+osoft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple Li=
+Gothic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=
+=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=
+=E3=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-=
+serif;">I Will Attend</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td></tr></t=
+body></table><!-- End answer1 --><table width=3D"50%" align=3D"right" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding:0px;float:righ=
+t;" class=3D"device-width"><tbody><tr><td style=3D"padding:5px 5px 5px 0px;=
+"><a class=3D"has_mso" title=3D"No" style=3D"font-size: 16px; text-decorati=
+on: none; border-top: #E9E9EA 1px solid; height: 20px; border-right: #E9E9E=
+A 1px solid; vertical-align: middle; border-bottom: #E9E9EA 1px solid; padd=
+ing-bottom: 8px; text-align: center; padding-top: 10px; padding-left: 0px; =
+border-left: #E9E9EA 1px solid; display: block; line-height: 1.1em; padding=
+-right: 0px; background-color: #e9e9ea; border-top-left-radius: 20px; borde=
+r-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-ri=
+ght-radius: 20px;-webkit-text-size-adjust:none;mso-hide:all;  font-size: 16=
+px; background: #2883eb; font-weight: normal; font-style: normal; text-deco=
+ration: none; background-color: #e9e9ea; color: #33547a;" href=3D"https://a=
+pp.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D8&amp;tracking_id=3D5799:2=
+16148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2=
+Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-product-training-88912%2F%3F=
+verificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3DAitken+Spence+Hotel=
+s+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%26pk_medium%3Devent-=
+campaign%26act%3Dinvitation-decline%23actions%3Dinvitation-decline%26id%3D5=
+799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;ts=3D1695019512&amp;ps=
+=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJC=
+cjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKTk52WGlFQk8yN3V=
+jc3dDQ1MwOTZIbUFVbmpzbTRUQTZWY1g3RW1RUWNHTzR6MjZQeEh3UlJSc0xPc3pBOFBNdnRSeF=
+M5MUFoVURRWTdadDQ1d0JvMG5ieXMrdDRjenV1dmlXTGJORFU0NitTb1ZZYmdnSWNZUVZZYVY5R=
+EtqNXpSY2p4NThXZkViV3RkTjkxQ3pCSERjdG4yT1JHd0pNbHNwMXFyaXRnREJRYWtnRmFpcGhE=
+YjArQjRWVEZqNVplYWEyRGZBaG9tWVZMTlhWdDNrU1JZS1BiNEIvUjlYejEwSWRRRTIyS3BhT1J=
+SVDNSemZqejRpajg3SEZQSEN2UXZwakpxOWwwNTRiSWhkOXRYTHJJQUlpdDhUSHNwazhoVTZEeE=
+xtRm8wQlVtN2VGc3YxTDZJUExURXFONnowUVAyUG5BY2FTR0JYYm84ZWJrZWRGTXdIU3hOM0RZS=
+0RwU05BTFJpcGpxS3NRSnEvcENxYUE9PQ=3D=3D&amp;eventinviteeverificationcode=3D=
+d2ef73ea-a3d3-4223-b&amp;trackingid=3D5799:216148:726eaac5-09c8-4ff4-81bb-5=
+6c2134beec6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D" font-famil=
+y: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', '=
+SimSun', '=E5=AE=8B=E4=BD=93', 'STSong', 'ST Song', '=E5=8D=8E=E6=96=87=E5=
+=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Micro=
+soft YaHei', '=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91', 'Droid Sans', 'Microso=
+ft JhengHei', '=E5=BE=AE=E8=BB=9F=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGot=
+hic', '=E8=98=8B=E6=9E=9C=E5=84=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=
+=EC=9B=80=EC=B2=B4', 'Dotum', '=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=
+=83=AA=E3=82=AA', 'meiryo', 'Myanmar Text', 'Cordia New', 'Arial', sans-ser=
+if;">No</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td></tr></tbody></table><=
+!-- End answer2 --></td></tr></tbody></table></td></tr></tbody></table><!--=
+ END RSVP Block --></td></tr></tbody></table><!-- END rsvp Block --><!-- BE=
+GIN sponsors Block --><table class=3D"device-width" width=3D"600" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#ffffff=
+"><tbody><tr><td style=3D"padding:0;"></td></tr><tr><td width=3D"100%" vali=
+gn=3D"top" bgcolor=3D"#ffffff" style=3D"padding:15px 0;"><table width=3D"60=
+0" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=
+=3D"device-width"><tbody><tr><!-- start title --><td style=3D"font-weight: =
+normal; text-align: center;  font-family: 'Trebuchet MS', 'Lucida Grande', =
+'Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSo=
+ng', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;; line-height: 24px; vertical=
+-align: top; padding:8px 16px; background:; "><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center"><tbody><tr><td valign=3D"middle=
+" style=3D"padding:0;"><a title=3D"Organizer" href=3D"https://app.glueup.co=
+m/track/rd?type=3Dcampaign&amp;lid=3D9&amp;tracking_id=3D5799:216148:726eaa=
+c5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2Fapp.glueup.=
+com%2Fevent%2Faitken-spence-hotels-product-training-88912%2Fsponsors.html%3=
+FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3DAitken+Spence+Hote=
+ls+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%26pk_medium%3Devent=
+-campaign&amp;ts=3D1695019512&amp;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4=
+Tk9ndEw0QzBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWN=
+QY1ltMDFFMC9pb3h4MHVKTk52WGlFQk9RdEEvWFB0Y0ZXM2greWg0NXZCSmJoYlcrcXhHTkM5aV=
+lxTVFNTCs0S3d3eXMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJFL2dZQ2hGK3V4MHhMV=
+lBNQTk2WHZSdUJHQkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni9hak5sdlhmNWVDZ29q=
+Z0RkMVZQY1FjV0Irazd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZmRCZ01LWTl1WWJKWDd=
+LeExRQWpqUUxud3R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5WlpsME0wUFpZRzZ5T2JtWV=
+U5aEYvSVEzRmdhWEtCYi9aUTBh&amp;eventinviteeverificationcode=3Dd2ef73ea-a3d3=
+-4223-b" style=3D"text-decoration: none; font-size: 28px; color: #27333b; f=
+ont-weight: bold; text-transform:  uppercase;">Organizer</a></td></tr></tbo=
+dy></table></td></tr><!-- end title --><tr><td valign=3D"top"><table width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffff=
+ff" class=3D"device-width" style=3D"margin: 0;"></table><table width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" =
+bgcolor=3D"#ffffff"><tbody><tr><td align=3D"center" valign=3D"top" style=3D=
+"padding:0"><table width=3D"165" align=3D"left" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"device-width yahoo-mail" style=3D"padding:0;=
+margin: 10px 50px 10px 70px;"><tbody><tr height=3D"90"><td valign=3D"middle=
+" align=3D"center" style=3D"padding:8px 0;width: 80px; border:1px solid #E8=
+E9EB; text-align:center;"><table border=3D"0" align=3D"center" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"device-width" style=3D"text-align:center;=
+" width=3D"100%"><tbody><tr><td valign=3D"middle" bgcolor=3D"#FFFFFF" width=
+=3D"100%"><p style=3D"mso-table-lspace:0;mso-table-rspace:0; margin:0;"><a =
+title=3D"Kenya Association of Travel Agents" target=3D"_blank" href=3D"http=
+s://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D10&amp;tracking_id=3D=
+5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3=
+A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-product-training-88912=
+%2Fsponsors.html%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26pk_campaign%3D=
+Aitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_kwd%3D216148%2=
+6pk_medium%3Devent-campaign%23sponsor-6507edac73420e601740611c&amp;ts=3D169=
+5019512&amp;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URj=
+dUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFFMC9pb3h4MHVKT=
+k52WGlFQk9RdEEvWFB0Y0ZXM2greWg0NXZCSmJoYlcrcXhHTkM5aVlxTVFNTCs0S3d3eXMrT2sr=
+cWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJFL2dZQ2hGK3V4MHhMVlBNQTk2WHZSdUJHQkpUcFN=
+wNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni9hak5sdlhmNWVDZ29qZ0RkMVZQY1FjV0Irazd4Uj=
+JlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZmRCZ01LWTl1WWJKWDdLeExRQWpqUUxud3R1Mk1za=
+nJCazk3TlM1T2FQRi9KTmgybGpyNFh5WlpsME0wUFpZRzZ5T2JsaU5DR0UwSGJSQXQ4OHdVbUFJ=
+RFV1RkRtOFcxS05VRnp1NWZidXM0R1NTVENuTm0zVFBuVjR5OG5Wb0RLY3dITT0=3D&amp;even=
+tinviteeverificationcode=3Dd2ef73ea-a3d3-4223-b"><img alt=3D"Kenya Associat=
+ion of Travel Agents" title=3D"Kenya Association of Travel Agents" src=3D"h=
+ttps://app.glueup.com/resources/public/images/logo/200x100/0930f74d-8917-4d=
+cc-8575-b0ec04bae05b.png" border=3D"0" width=3D"145"></a></p></td></tr></tb=
+ody></table></td></tr></tbody></table><table width=3D"165" align=3D"left" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width yahoo=
+-mail" style=3D"padding:0;margin: 10px 50px 10px 70px;"><tbody><tr height=
+=3D"90"><td valign=3D"middle" align=3D"center" style=3D"padding:8px 0;width=
+: 80px; border:1px solid #E8E9EB; text-align:center;"><table border=3D"0" a=
+lign=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"device-width" =
+style=3D"text-align:center;" width=3D"100%"><tbody><tr><td valign=3D"middle=
+" bgcolor=3D"#FFFFFF" width=3D"100%"><p style=3D"mso-table-lspace:0;mso-tab=
+le-rspace:0; margin:0;"><a title=3D"Aitken Spence Hotels" target=3D"_blank"=
+ href=3D"https://app.glueup.com/track/rd?type=3Dcampaign&amp;lid=3D11&amp;t=
+racking_id=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_=
+url=3Dhttps%3A%2F%2Fapp.glueup.com%2Fevent%2Faitken-spence-hotels-product-t=
+raining-88912%2Fsponsors.html%3FverificationCode%3Dd2ef73ea-a3d3-4223-b%26p=
+k_campaign%3DAitken+Spence+Hotels+Product+Training%26pk_cid%3D216148%26pk_k=
+wd%3D216148%26pk_medium%3Devent-campaign%23sponsor-6507ef92e4b0e1fc2d8a627b=
+&amp;ts=3D1695019512&amp;ps=3Db24xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0Q=
+zBOSWdUUE5URjdUUzJSL004NlJCcjZGU1F6a2R0NE96bFl4cXZLYXhkbkRlWXNVUWNQY1ltMDFF=
+MC9pb3h4MHVKTk52WGlFQk9RdEEvWFB0Y0ZXM2greWg0NXZCSmJoYlcrcXhHTkM5aVlxTVFNTCs=
+0S3d3eXMrT2srcWcrWUJjUVpDRXVkRWFvTFZlUURYNDhGazJFL2dZQ2hGK3V4MHhMVlBNQTk2WH=
+ZSdUJHQkpUcFNwNDg2VnR6dWwwR2F3T0RsODJRalE4ZS96Ni9hak5sdlhmNWVDZ29qZ0RkMVZQY=
+1FjV0Irazd4UjJlR0pnY3VzOUdMM05mM0k5c3VLRzU0Q1JCZmRCZ01LWTl1WWJKWDdLeExRQWpq=
+UUxud3R1Mk1zanJCazk3TlM1T2FQRi9KTmgybGpyNFh5WlpsME0wUFpZRzZ5T2JsaU5DR0UwSGJ=
+SQXQ4OHdVbUFJRFV1UUlrc0o1MXJHamlucmQ1dFV3K2w0bDIyeE1yZlpOL2c0NU1YUFFGYTcwWT=
+0=3D&amp;eventinviteeverificationcode=3Dd2ef73ea-a3d3-4223-b"><img alt=3D"A=
+itken Spence Hotels" title=3D"Aitken Spence Hotels" src=3D"https://app.glue=
+up.com/resources/public/images/logo/200x100/4fe2f66f-4ba1-4816-a2bd-e7a14fb=
+beb29.png" border=3D"0" width=3D"145"></a></p></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr></tbody></table><br></td></tr></tbody></ta=
+ble><!-- End Sponsors) --></td></tr></tbody></table><!-- END sponsors Block=
+ --><table class=3D"device-width" width=3D"600" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" align=3D"center"><tbody><tr><td width=3D"100%" valign=
+=3D"top" bgcolor=3D"#ffffff"><!-- event block, also one image, banner --><t=
+able width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding:0px"><table=
+ width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"ce=
+nter" class=3D"device-width"><tbody><tr><td width=3D"100%" align=3D"center"=
+ valign=3D"top" style=3D"border-top:#e9e9ea 1px solid; padding: 16px; color=
+:#979797; line-height: 100%; font-family:'Trebuchet MS', 'Lucida Grande', '=
+Lucida Sans Unicode', 'Lucida Sans', 'SimSun', '=E5=AE=8B=E4=BD=93', 'STSon=
+g', 'ST Song', '=E5=8D=8E=E6=96=87=E5=AE=8B=E4=BD=93', 'STXihei', '=E5=8D=
+=8E=E6=96=87=E7=BB=86=E9=BB=91', 'Microsoft YaHei', '=E5=BE=AE=E8=BD=AF=E9=
+=9B=85=E9=BB=91', 'Droid Sans', 'Microsoft JhengHei', '=E5=BE=AE=E8=BB=9F=
+=E6=AD=A3=E9=BB=91=E9=AB=94', 'Apple LiGothic', '=E8=98=8B=E6=9E=9C=E5=84=
+=B7=E4=B8=AD=E9=BB=91', 'Dutum', '=EB=8F=8B=EC=9B=80=EC=B2=B4', 'Dotum', '=
+=EB=8F=8B=EC=9B=80', '=E3=83=A1=E3=82=A4=E3=83=AA=E3=82=AA', 'meiryo', 'Mya=
+nmar Text', 'Cordia New', 'Arial', sans-serif;; font-size: 10px; font-weigh=
+t: normal;" bgcolor=3D"#f5f5f6"><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"text-align: center;"><!-- unsubscrib=
+e links start --><tbody><tr><td style=3D"font-size:12px; padding-bottom: 15=
+px;"><p class=3D"unsubscribe-url-wrapper" style=3D"margin:0;"><a target=3D"=
+_blank" style=3D"color:#979797; text-decoration:underline;" title=3D"Unsubs=
+cribe from this list" href=3D"https://app.glueup.com/track/rd?type=3Dcampai=
+gn&amp;status=3DClicked&amp;lid=3D12&amp;tracking_id=3D5799:216148:726eaac5=
+-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2Fapp.glueup.co=
+m%2Fen%2Forganization%2F5799%2Fsubscriptions%2F216148%2F5799:216148:726eaac=
+5-09c8-4ff4-81bb-56c2134beec6%2Funsubscribe&amp;ts=3D1695019512&amp;ps=3Db2=
+4xYmFrOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URmlzalpiZVA0K2JVb3ZBU=
+G9wMmsra0ZHMFlaUDNuQXBmRzA4eGxrVEpLMEc5cSt5cE0xQ3JRZFhyclNLNWErTlZwVkhiSEgz=
+bzcrNExvY0FoUjZqbEU4L0hERDU0VG04N3NTeGI0dGI0UUoxVkwxMFJhVTE2dGVRTFozdWsxZzZ=
+rPQ=3D=3D&amp;trackingid=3D5799:216148:726eaac5-09c8-4ff4-81bb-56c2134beec6=
+">Unsubscribe from this list</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a ta=
+rget=3D"_blank" style=3D"color:#979797; text-decoration:underline;" title=
+=3D"Manage my subscriptions" href=3D"https://app.glueup.com/track/rd?type=
+=3Dcampaign&amp;status=3DClicked&amp;lid=3D13&amp;tracking_id=3D5799:216148=
+:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;redirect_url=3Dhttps%3A%2F%2Fapp.=
+glueup.com%2Fen%2Forganization%2F5799%2Fsubscriptions%2F216148%2F5799:21614=
+8:726eaac5-09c8-4ff4-81bb-56c2134beec6&amp;ts=3D1695019512&amp;ps=3Db24xYmF=
+rOXpTa043a0xLNm9YU0ppWk5KanJ4Tk9ndEw0QzBOSWdUUE5URmlzalpiZVA0K2JVb3ZBUG9wMm=
+sra0ZHMFlaUDNuQXBmRzA4eGxrVEpLMEc5cSt5cE0xQ3JRZFhyclNLNWErTlZwVkhiSEgzbzcrN=
+ExvY0FoUjZqbEV1OE1FamwvTmR5U01NWlpQVCtJQ0FBPT0=3D&amp;trackingid=3D5799:216=
+148:726eaac5-09c8-4ff4-81bb-56c2134beec6">Manage my subscriptions</a></p></=
+td></tr><!-- unsubscribe links end --><tr><td style=3D"padding-bottom:5px;"=
+><p style=3D"margin:0;"><a class=3D"ignoreTracking" href=3D"https://www.glu=
+eup.com/?pk_campaign=3Dinvitation&amp;pk_kwd=3D216148" style=3D"color:#3354=
+7A; text-decoration:none;"><img alt=3D"glueup" title=3D"glueup" src=3D"http=
+s://www.glueup.com/images/eb-email-logo.gif" srcset=3D"https://www.glueup.c=
+om/images/eb-email-logo.gif" border=3D"0" width=3D"21" height=3D"21" style=
+=3D"display:inline-block;"></a></p><p style=3D"margin:0; padding:0"><a clas=
+s=3D"ignoreTracking" href=3D"https://www.glueup.com/?pk_campaign=3Dinvitati=
+on&amp;pk_kwd=3D216148" style=3D"color:#33547A; text-decoration:none;"><spa=
+n style=3D"display: block; margin:0; font-weight: 500; color:#33547A; paddi=
+ng-bottom: 5px; font-size:12px;">Powered by Glue Up</span><span><br></span>=
+<span style=3D"display: block; color:#979797; margin:0; font-size:12px;">Al=
+l-in-one CRM Software for Growing Communities</span></a></p><div id=3D"imag=
+e-tracker"><img title=3D"" alt=3D"" style=3D"width:1px; height:1px;" src=3D=
+"https://app.glueup.com/track/image?type=3Dcampaign&amp;tracking_id=3D5799:=
+216148:726eaac5-09c8-4ff4-81bb-56c2134beec6" width=3D"1" height=3D"1"></div=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table><!-- End Wrapper --=
+></div></body></html>
+------=_Part_135529279_1879558797.1695019535030--
+
+------=_Part_135529278_1242083047.1695019535030--
+
+------=_Part_135529277_1235654808.1695019535030--

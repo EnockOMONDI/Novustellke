@@ -1,0 +1,47 @@
+Return-Path: <hello@novustelltravel.com>
+Delivered-To: novuste1@rs2.rcnoc.com
+Received: from rs2.rcnoc.com
+	by rs2.rcnoc.com with LMTP
+	id wEqsEQGvA2dHzAUAc6ptLA
+	(envelope-from <hello@novustelltravel.com>)
+	for <novuste1@rs2.rcnoc.com>; Mon, 07 Oct 2024 12:50:57 +0300
+Return-path: <hello@novustelltravel.com>
+Envelope-to: wyccliffe@novustelltravel.com
+Delivery-date: Mon, 07 Oct 2024 12:50:57 +0300
+Received: from mail-pg1-f179.google.com ([209.85.215.179]:48327)
+	by rs2.rcnoc.com with esmtpsa  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.97.1)
+	(envelope-from <hello@novustelltravel.com>)
+	id 1sxkOH-00000001pLL-3MYu;
+	Mon, 07 Oct 2024 12:50:57 +0300
+Received: by mail-pg1-f179.google.com with SMTP id 41be03b00d2f7-7ea03ecf191so978152a12.0;
+        Mon, 07 Oct 2024 02:50:56 -0700 (PDT)
+X-Forwarded-Encrypted: i=1; AJvYcCXB3VADoXRNJg71+yYKxdAeL0YZVldK4GkHJhQxEDb1p1/nz0JYUMFF7WIxU9bNAbDsm7K67A==@novustelltravel.com, AJvYcCXw0zQCH5PAdQG+20svTEbcVfw68NlZRtWmqSOAXGA8hWM06bW9sjZ/dmp+1PGGYpdJ3UWuHi8F+WuN@novustelltravel.com
+X-Gm-Message-State: AOJu0Yxr14liDWR/uTJ7R36l9yOaBAg3MYDopDSzsiQH1rl5zB4Afce1
+	WS2Im42zBQv9zpzu09I0zAL5CsZ9kjHbsxi8nuNGlHv1GnlWM2bOYMSx6N+GO5kQRbUdy7Urwb3
+	aYYqX6TVVMdRzylQnhme6G7womqc=
+X-Google-Smtp-Source: AGHT+IFYlAHqGXAqQoWyUf3Sdp+sSptuMet/2nQRCl5pSQs5f1Yu248MT8JMgVQ0ORPBgvuGLak1KVXbfs13htv95SE=
+X-Received: by 2002:a05:6830:6d0c:b0:710:f5bf:c4df with SMTP id
+ 46e09a7af769-7154e991369mr7933966a34.30.1728280772385; Sun, 06 Oct 2024
+ 22:59:32 -0700 (PDT)
+MIME-Version: 1.0
+From: Hello <hello@novustelltravel.com>
+Date: Mon, 7 Oct 2024 08:59:21 +0300
+X-Gmail-Original-Message-ID: <CAHg24aJ_P8qiYfe-yyzRobggNRno+kLH+E68MMi2=hLk4fwDTA@mail.gmail.com>
+Message-ID: <CAHg24aJ_P8qiYfe-yyzRobggNRno+kLH+E68MMi2=hLk4fwDTA@mail.gmail.com>
+Subject: INCOMING MAIL TEST 8:59
+To: Enock Omondi <enockomondike@gmail.com>, wyccliffe@novustelltravel.com, 
+	enock@novustelltravel.com
+Content-Type: multipart/alternative; boundary="00000000000082aa1f0623dcb904"
+
+--00000000000082aa1f0623dcb904
+Content-Type: text/plain; charset="UTF-8"
+
+INCOMING MAIL TEST 8:59
+
+--00000000000082aa1f0623dcb904
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">INCOMING MAIL TEST 8:59<br></div>
+
+--00000000000082aa1f0623dcb904--

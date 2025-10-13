@@ -1,0 +1,1160 @@
+Return-Path: <shaikh.ajmal@zohocorp.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id iDwCApsm/2O8AgAA7QkJDw
+	(envelope-from <shaikh.ajmal@zohocorp.com>)
+	for <novuste1@rs2.noc254.com>; Wed, 01 Mar 2023 13:19:07 +0300
+Return-path: <shaikh.ajmal@zohocorp.com>
+Envelope-to: tips@novustelltravel.com
+Delivery-date: Wed, 01 Mar 2023 13:19:07 +0300
+Received: from sender4-zc7.zoho.com ([136.143.188.7]:30962)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shaikh.ajmal@zohocorp.com>)
+	id 1pXJYA-0003wC-1v
+	for tips@novustelltravel.com;
+	Wed, 01 Mar 2023 13:19:06 +0300
+Delivered-To: sreejith.s@zohocorp.com
+ARC-Seal: i=1; a=rsa-sha256; t=1677665899; cv=none; 
+	d=zohomail.com; s=zohoarc; 
+	b=Nv9cVs7NgG/ZGol5lac44TSLKLtEQoLgaxpx+SrGtg10Z6DgYKmA158fKqBG+g0bfMoHcwwavjgjX1LKwen9urhYAtjwyaJfTehIZZj8ZLjdZTY7oZIxcrAkfiF4bIpgz8c0jlriECXXKvSNF9MAOassmv2slhRX7PWvzFRoQs8=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail.com; s=zohoarc; 
+	t=1677665899; h=Content-Type:Cc:Date:From:In-Reply-To:MIME-Version:Message-ID:References:Subject:To; 
+	bh=gojBxHAh+14FRp1h2318vtNyIxIWu94v/GYxKJgA1Ls=; 
+	b=HUjwbeFPsvI/Y3IsDlaWeeF4YMl2WtEIXzjig4c+lXWaOXuX5RB1oaE/iKPrT9d2MYPYiVHngtqqTL+WAwtfP9ozWrbVmjOm0Oti3E4HdqHIbSxT72eQCylKX//3OUZe3RMoeREQo7nBg9oqVz34Ht32+GzJ2I3uPJ96wqWb3yo=
+ARC-Authentication-Results: i=1; mx.zohomail.com;
+	dkim=pass  header.i=zohocorp.com;
+	spf=pass  smtp.mailfrom=shaikh.ajmal@zohocorp.com;
+	dmarc=pass header.from=<shaikh.ajmal@zohocorp.com>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1677665899;
+	s=admin; d=zohocorp.com; i=shaikh.ajmal@zohocorp.com;
+	h=Date:Date:From:From:To:To:Cc:Cc:Message-Id:Message-Id:In-Reply-To:References:Subject:Subject:MIME-Version:Content-Type:Reply-To;
+	bh=gojBxHAh+14FRp1h2318vtNyIxIWu94v/GYxKJgA1Ls=;
+	b=MHw5oYKh6Y59ZsyUHmd1erNBbiiUcEj8JeQPxqnFC7DxE9n0J/seWrvj2oBTzOqS
+	MYLgsZZ26XgUeS8tQ0utwb54wLIugWlo+P5jlSyzK1mz/E0KX+N/sDlMXJ7bV22lJsi
+	uZyRMSbMAQTfYQCqZbZ6cs2yiGdIRMU+Le/Yazxg=
+Received: from mail.zoho.com by mx.zohomail.com
+	with SMTP id 1677665883836633.270034337747; Wed, 1 Mar 2023 02:18:03 -0800 (PST)
+Date: Wed, 01 Mar 2023 15:48:03 +0530
+From: MD Ajmal <shaikh.ajmal@zohocorp.com>
+To: "tips" <tips@novustelltravel.com>
+Cc: "Sreejith S" <sreejith.s@zohocorp.com>
+Message-Id: <1869cabf9b4.1071ae26337613.3182176613736202030@zohocorp.com>
+In-Reply-To: <186797814c6.12a2aa18384.2459925407817465633@zohocorp.com>
+References: <186797814c6.12a2aa18384.2459925407817465633@zohocorp.com>
+Subject: =?UTF-8?Q?Re:_Welcome_to_Zoho_Mail!_=F0=9F=93=A9?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_120720_672038938.1677665761718"
+Importance: Medium
+User-Agent: Zoho Mail
+X-Mailer: Zoho Mail
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello Quinta, Greetings from Zoho!​   
+ Content analysis details:   (0.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: zoho.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 AC_DIV_BONANZA         RAW: Too many divs in a row... spammy template
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.8 CPANEL_LOTS_OF_EMPTY_LINE RAW: Spam that has large block of
+                             empty lines
+X-Spam-Flag: NO
+
+------=_Part_120720_672038938.1677665761718
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Quinta,
+
+
+
+Greetings from Zoho!=E2=80=8B
+
+=C2=A0
+
+I just wanted to check your progress and decision regarding Zoho Mail.
+
+=E2=96=A1=C2=A0Would you like to use the free plan or would you like an=C2=
+=A0upgrade to the paid edition?
+
+=E2=96=A1=C2=A0Would you like=C2=A0a pricing quote=C2=A0to help you make yo=
+ur decision?
+
+=E2=96=A1=C2=A0Would you like to get help with the purchase process?
+
+=C2=A0
+
+I'd really appreciate it if you could let me know your next step.=C2=A0
+
+=C2=A0
+
+Always happy to hear from you!
+
+
+
+
+
+
+
+
+
+
+Best Regards!!!
+
+
+
+Shaikh Mohammad Ajmal
+
+Account Manager - MEA
+
+ZOHO=C2=A0Corporation=C2=A0
+
+Website:=C2=A0https://www.zoho.com/workplace/
+
+DID:=C2=A0+1 7379105916
+
+
+
+
+
+
+
+
+---- On Wed, 22 Feb 2023 19:44:38 +0530 MD Ajmal <shaikh.ajmal@zohocorp.com=
+> wrote ---
+
+
+
+Hello Quinta,
+
+
+
+Thank you so much for your time on call.=C2=A0My name is=C2=A0Ajmal, Accoun=
+t Manager for Zoho Mail. We=C2=A0will be happy to have you on board and exp=
+erience=C2=A0our=C2=A0feature-rich business email solution.
+
+
+
+We have two bundled packages where we offer various editions with storage p=
+lans ranging from 5GB to 100GB per user.
+
+
+
+1.=C2=A0Mail-only package=C2=A0(Lite 5 GB, Lite 10GB and Premium 50 GB) has=
+ only Mail and Cliq services included in the package.
+
+2.=C2=A0Workplace package=C2=A0(Standard 30 GB, Professional 100 GB) has a =
+combination of up to 8 applications (including WorkDrive and Office Suite) =
+bundled together.
+
+
+
+In the meantime, you may explore the below quick links to experience the pl=
+atform:
+
+
+
+https://www.zoho.com/workplace/plan-comparison.html |=C2=A0https://www.zoho=
+.com/mail/help/ | https://www.zoho.com/mail/features.html | https://youtu.b=
+e/Qt0MqwZ_luw | https://www.zoho.com/mail/webinars/=C2=A0| https://www.zoho=
+.com/mail/help/adminconsole/migration.html | https://www.zoho.com/mail/help=
+/adminconsole/godaddy.html#oneclick:~:text=3DOne%2DClick%20Verification%20%=
+2D%20GoDaddy
+
+
+
+
+We also have a mix-n-match feasibility of editions for a flexible pricing s=
+cheme to ensure accommodation of users with varying storage and feature nee=
+ds within the same organization.
+
+
+
+Kindly let us know the following details to help us provide you with a pric=
+e quote.
+
+
+
+Edition (Mail Lite/Mail Premium/Workplace Standard/Workplace=C2=A0Professio=
+nal):
+
+
+Number of Users:=C2=A0=C2=A0
+
+Company Name:=20
+
+Company Billing Address:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Look forward to hearing from you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Best Regards!!!
+
+
+
+Shaikh Mohammad Ajmal
+
+Account Manager - MEA
+
+ZOHO=C2=A0Corporation=C2=A0
+
+Website:=C2=A0https://www.zoho.com/workplace/
+
+DID:=C2=A0+1 7379105916
+------=_Part_120720_672038938.1677665761718
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>=
+<meta content=3D"text/html;charset=3DUTF-8" http-equiv=3D"Content-Type"></h=
+ead><body ><div style=3D"font-family: Verdana, Arial, Helvetica, sans-serif=
+; font-size: 10pt;"><div><div><div><div><div><div><div><p style=3D"font-sty=
+le    :  normal; font-weight    :  400; letter-spacing    :  normal; orphan=
+s    :  2; text-indent    :  0px; text-transform    :  none; white-space   =
+ :  normal; widows    :  2; word-spacing    :  0px; margin    :  0cm; backg=
+round-size    :  initial;"><span style=3D"font-size:13.3333px" class=3D"siz=
+e"><span style=3D"font-family:verdana" class=3D"font">Hello Quinta,</span><=
+/span><br></p><div><br></div><div><span style=3D"background: white; margin:=
+ 0cm;" class=3D"highlight"><span style=3D"color:black" class=3D"colour"><sp=
+an style=3D"font-family:Roboto" class=3D"font"><span style=3D"font-family:v=
+erdana, sans-serif" class=3D"font">Greetings from Zoho!=E2=80=8B</span></sp=
+an></span></span><br></div><p style=3D"font-style    :  normal; font-weight=
+    :  400; letter-spacing    :  normal; orphans    :  2; text-indent    : =
+ 0px; text-transform    :  none; white-space    :  normal; widows    :  2; =
+word-spacing    :  0px; margin    :  0cm; background-size    :  initial;"><=
+span style=3D"background-color:rgb(255, 255, 255)" class=3D"highlight"><spa=
+n style=3D"color:rgb(0, 0, 0)" class=3D"colour"><span style=3D"font-family:=
+Verdana, Arial, Helvetica, sans-serif" class=3D"font"><span style=3D"font-s=
+ize: 13.3333px; font-style: normal; font-weight: 400; letter-spacing: norma=
+l; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal;=
+ widows: 2; word-spacing: 0px; margin: 0cm; background-size: initial;" clas=
+s=3D"size"><span style=3D"background: white; margin: 0cm;" class=3D"highlig=
+ht"><span style=3D"color:black" class=3D"colour"><span style=3D"font-size:1=
+0pt" class=3D"size"><span style=3D"font-family:verdana, sans-serif" class=
+=3D"font">&nbsp;</span></span></span></span></span></span></span></span><br=
+></p><p style=3D"font-style    :  normal; font-weight    :  400; letter-spa=
+cing    :  normal; orphans    :  2; text-indent    :  0px; text-transform  =
+  :  none; white-space    :  normal; widows    :  2; word-spacing    :  0px=
+; margin    :  0cm; background-size    :  initial;"><span style=3D"backgrou=
+nd-color:rgb(255, 255, 255)" class=3D"highlight"><span style=3D"color:rgb(0=
+, 0, 0)" class=3D"colour"><span style=3D"font-family:Verdana, Arial, Helvet=
+ica, sans-serif" class=3D"font"><span style=3D"font-size: 13.3333px; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-in=
+dent: 0px; text-transform: none; white-space: normal; widows: 2; word-spaci=
+ng: 0px; margin: 0cm; background-size: initial;" class=3D"size"><span style=
+=3D"background: white; margin: 0cm;" class=3D"highlight"><span style=3D"col=
+or:black" class=3D"colour"><span style=3D"font-family:Roboto" class=3D"font=
+"><span style=3D"font-family:verdana, sans-serif" class=3D"font">I just wan=
+ted to check your progress and decision regarding Zoho Mail.</span></span><=
+/span></span></span></span></span></span><br></p><p style=3D"font-style    =
+:  normal; font-weight    :  400; letter-spacing    :  normal; orphans    :=
+  2; text-indent    :  0px; text-transform    :  none; white-space    :  no=
+rmal; widows    :  2; word-spacing    :  0px; margin-right    :  0cm; margi=
+n-bottom    :  0cm; margin-left    :  36pt; background-size    :  initial;"=
+><span style=3D"background-color:rgb(255, 255, 255)" class=3D"highlight"><s=
+pan style=3D"color:rgb(0, 0, 0)" class=3D"colour"><span style=3D"font-famil=
+y:Verdana, Arial, Helvetica, sans-serif" class=3D"font"><span style=3D"font=
+-size: 13.3333px; font-style: normal; font-weight: 400; letter-spacing: nor=
+mal; orphans: 2; text-indent: 0px; text-transform: none; white-space: norma=
+l; widows: 2; word-spacing: 0px; margin-right: 0cm; margin-bottom: 0cm; mar=
+gin-left: 36pt; background-size: initial;" class=3D"size"><span style=3D"ba=
+ckground: white; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36pt;"=
+ class=3D"highlight"><span style=3D"color:black" class=3D"colour"><span sty=
+le=3D"font-family:verdana, sans-serif" class=3D"font">=E2=96=A1</span><span=
+ style=3D"font-size:10pt" class=3D"size"><span style=3D"font-family:verdana=
+, sans-serif" class=3D"font">&nbsp;</span></span><span style=3D"font-family=
+:Roboto" class=3D"font"><span style=3D"font-family:verdana, sans-serif" cla=
+ss=3D"font">Would you like to use the free plan or would you like an&nbsp;<=
+/span><b><span style=3D"font-family:verdana, sans-serif" class=3D"font">upg=
+rade to the paid edition</span></b><span style=3D"font-family:verdana, sans=
+-serif" class=3D"font">?</span></span></span></span></span></span></span></=
+span><br></p><p style=3D"font-style    :  normal; font-weight    :  400; le=
+tter-spacing    :  normal; orphans    :  2; text-indent    :  0px; text-tra=
+nsform    :  none; white-space    :  normal; widows    :  2; word-spacing  =
+  :  0px; margin-right    :  0cm; margin-bottom    :  0cm; margin-left    :=
+  36pt; background-size    :  initial;"><span style=3D"background-color:rgb=
+(255, 255, 255)" class=3D"highlight"><span style=3D"color:rgb(0, 0, 0)" cla=
+ss=3D"colour"><span style=3D"font-family:Verdana, Arial, Helvetica, sans-se=
+rif" class=3D"font"><span style=3D"font-size: 13.3333px; font-style: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; t=
+ext-transform: none; white-space: normal; widows: 2; word-spacing: 0px; mar=
+gin-right: 0cm; margin-bottom: 0cm; margin-left: 36pt; background-size: ini=
+tial;" class=3D"size"><span style=3D"background: white; margin-right: 0cm; =
+margin-bottom: 0cm; margin-left: 36pt;" class=3D"highlight"><span style=3D"=
+color:black" class=3D"colour"><span style=3D"font-family:verdana, sans-seri=
+f" class=3D"font">=E2=96=A1</span><span style=3D"font-size:10pt" class=3D"s=
+ize"><span style=3D"font-family:verdana, sans-serif" class=3D"font">&nbsp;<=
+/span></span><span style=3D"font-family:Roboto" class=3D"font"><span style=
+=3D"font-family:verdana, sans-serif" class=3D"font">Would you like&nbsp;</s=
+pan><b><span style=3D"font-family:verdana, sans-serif" class=3D"font">a pri=
+cing quote</span></b><span style=3D"font-family:verdana, sans-serif" class=
+=3D"font">&nbsp;to help you make your decision?</span></span></span></span>=
+</span></span></span></span><br></p><p style=3D"font-style    :  normal; fo=
+nt-weight    :  400; letter-spacing    :  normal; orphans    :  2; text-ind=
+ent    :  0px; text-transform    :  none; white-space    :  normal; widows =
+   :  2; word-spacing    :  0px; margin-right    :  0cm; margin-bottom    :=
+  0cm; margin-left    :  36pt; background-size    :  initial;"><span style=
+=3D"background-color:rgb(255, 255, 255)" class=3D"highlight"><span style=3D=
+"color:rgb(0, 0, 0)" class=3D"colour"><span style=3D"font-family:Verdana, A=
+rial, Helvetica, sans-serif" class=3D"font"><span style=3D"font-size: 13.33=
+33px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans=
+: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36=
+pt; background-size: initial;" class=3D"size"><span style=3D"background: wh=
+ite; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36pt;" class=3D"hi=
+ghlight"><span style=3D"color:black" class=3D"colour"><span style=3D"font-f=
+amily:verdana, sans-serif" class=3D"font">=E2=96=A1</span><span style=3D"fo=
+nt-size:10pt" class=3D"size"><span style=3D"font-family:verdana, sans-serif=
+" class=3D"font">&nbsp;</span></span><span style=3D"font-family:Roboto" cla=
+ss=3D"font"><span style=3D"font-family:verdana, sans-serif" class=3D"font">=
+Would you like to get help with the purchase process?</span></span></span><=
+/span></span></span></span></span><br></p><p style=3D"font-style    :  norm=
+al; font-weight    :  400; letter-spacing    :  normal; orphans    :  2; te=
+xt-indent    :  0px; text-transform    :  none; white-space    :  normal; w=
+idows    :  2; word-spacing    :  0px; margin    :  0cm; background-size   =
+ :  initial;"><span style=3D"background-color:rgb(255, 255, 255)" class=3D"=
+highlight"><span style=3D"color:rgb(0, 0, 0)" class=3D"colour"><span style=
+=3D"font-family:Verdana, Arial, Helvetica, sans-serif" class=3D"font"><span=
+ style=3D"font-size: 13.3333px; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; whit=
+e-space: normal; widows: 2; word-spacing: 0px; margin: 0cm; background-size=
+: initial;" class=3D"size"><span style=3D"background: white; margin: 0cm;" =
+class=3D"highlight"><span style=3D"color:black" class=3D"colour"><span styl=
+e=3D"font-size:10pt" class=3D"size"><span style=3D"font-family:verdana, san=
+s-serif" class=3D"font">&nbsp;</span></span></span></span></span></span></s=
+pan></span><br></p><p style=3D"font-style    :  normal; font-weight    :  4=
+00; letter-spacing    :  normal; orphans    :  2; text-indent    :  0px; te=
+xt-transform    :  none; white-space    :  normal; widows    :  2; word-spa=
+cing    :  0px; margin    :  0cm; background-size    :  initial;"><span sty=
+le=3D"background-color:rgb(255, 255, 255)" class=3D"highlight"><span style=
+=3D"color:rgb(0, 0, 0)" class=3D"colour"><span style=3D"font-family:Verdana=
+, Arial, Helvetica, sans-serif" class=3D"font"><span style=3D"font-size: 13=
+.3333px; font-style: normal; font-weight: 400; letter-spacing: normal; orph=
+ans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows=
+: 2; word-spacing: 0px; margin: 0cm; background-size: initial;" class=3D"si=
+ze"><span style=3D"background: white; margin: 0cm;" class=3D"highlight"><sp=
+an style=3D"color:black" class=3D"colour"><span style=3D"font-family:Roboto=
+" class=3D"font"><span style=3D"font-family:verdana, sans-serif" class=3D"f=
+ont">I'd really appreciate it if you could let me know your next step.&nbsp=
+;</span></span></span></span></span></span></span></span><br></p><p style=
+=3D"font-style    :  normal; font-weight    :  400; letter-spacing    :  no=
+rmal; orphans    :  2; text-indent    :  0px; text-transform    :  none; wh=
+ite-space    :  normal; widows    :  2; word-spacing    :  0px; margin    :=
+  0cm; background-size    :  initial;"><span style=3D"background-color:rgb(=
+255, 255, 255)" class=3D"highlight"><span style=3D"color:rgb(0, 0, 0)" clas=
+s=3D"colour"><span style=3D"font-family:Verdana, Arial, Helvetica, sans-ser=
+if" class=3D"font"><span style=3D"font-size: 13.3333px; font-style: normal;=
+ font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; te=
+xt-transform: none; white-space: normal; widows: 2; word-spacing: 0px; marg=
+in: 0cm; background-size: initial;" class=3D"size"><span style=3D"backgroun=
+d: white; margin: 0cm;" class=3D"highlight"><span style=3D"color:black" cla=
+ss=3D"colour"><span style=3D"font-size:10pt" class=3D"size"><span style=3D"=
+font-family:verdana, sans-serif" class=3D"font">&nbsp;</span></span></span>=
+</span></span></span></span></span><br></p><p style=3D"font-style    :  nor=
+mal; font-weight    :  400; letter-spacing    :  normal; orphans    :  2; t=
+ext-indent    :  0px; text-transform    :  none; white-space    :  normal; =
+widows    :  2; word-spacing    :  0px; margin    :  0cm; background-size  =
+  :  initial;"><span style=3D"background-color:rgb(255, 255, 255)" class=3D=
+"highlight"><span style=3D"color:rgb(0, 0, 0)" class=3D"colour"><span style=
+=3D"font-family:Verdana, Arial, Helvetica, sans-serif" class=3D"font"><span=
+ style=3D"font-size: 13.3333px; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; whit=
+e-space: normal; widows: 2; word-spacing: 0px; margin: 0cm; background-size=
+: initial;" class=3D"size"><span style=3D"background: white; margin: 0cm;" =
+class=3D"highlight"><span style=3D"color:black" class=3D"colour"><span styl=
+e=3D"font-family:Roboto" class=3D"font"><span style=3D"font-family:verdana,=
+ sans-serif" class=3D"font">Always happy to hear from you!</span></span></s=
+pan></span></span></span></span></span><br></p></div></div></div></div></di=
+v></div><div><br></div></div><div id=3D"Zm-_Id_-Sgn" data-zbluepencil-ignor=
+e=3D"true" data-sigid=3D"4085907000000044012"><div style=3D"outline: 0px; b=
+ox-sizing: border-box; color: rgb(0, 0, 0); font-style: normal; font-weight=
+: 400; letter-spacing: 0.2px; orphans: 2; text-indent: 0px; text-transform:=
+ none; white-space: normal; widows: 2; word-spacing: 0px; background-color:=
+ rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-serif; fo=
+nt-size: 13.3333px"><span class=3D"highlight" style=3D"background-color:rgb=
+(255, 255, 255)">Best Regards!!!<br></span></div><div style=3D"outline: 0px=
+; box-sizing: border-box; color: rgb(0, 0, 0); font-style: normal; font-wei=
+ght: 400; letter-spacing: 0.2px; orphans: 2; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; widows: 2; word-spacing: 0px; background-col=
+or: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-serif;=
+ font-size: 13.3333px"><span class=3D"highlight" style=3D"background-color:=
+rgb(255, 255, 255)"><br></span></div><div style=3D"outline: 0px; box-sizing=
+: border-box; color: rgb(0, 0, 0); font-style: normal; font-weight: 400; le=
+tter-spacing: 0.2px; orphans: 2; text-indent: 0px; text-transform: none; wh=
+ite-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255,=
+ 255, 255); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: =
+13.3333px"><b style=3D"outline: 0px; box-sizing: border-box"><span class=3D=
+"font" style=3D"font-family:verdana, sans-serif"><span class=3D"size" style=
+=3D"font-size:13.3333px"><span class=3D"highlight" style=3D"background-colo=
+r:rgb(255, 255, 255)">Shaikh Mohammad Ajmal</span></span></span></b><span c=
+lass=3D"font" style=3D"font-family:verdana, sans-serif"><span class=3D"size=
+" style=3D"font-size:13.3333px"><span class=3D"highlight" style=3D"backgrou=
+nd-color:rgb(255, 255, 255)"><br></span></span></span></div><div style=3D"o=
+utline: 0px; box-sizing: border-box; color: rgb(0, 0, 0); font-style: norma=
+l; font-weight: 400; letter-spacing: 0.2px; orphans: 2; text-indent: 0px; t=
+ext-transform: none; white-space: normal; widows: 2; word-spacing: 0px; bac=
+kground-color: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, =
+sans-serif; font-size: 13.3333px"><span class=3D"font" style=3D"font-family=
+:verdana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><s=
+pan class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">Accou=
+nt Manager - MEA</span><span class=3D"highlight" style=3D"background-color:=
+rgb(255, 255, 255)"><br></span></span></span></div><div style=3D"outline: 0=
+px; box-sizing: border-box; color: rgb(0, 0, 0); font-style: normal; font-w=
+eight: 400; letter-spacing: 0.2px; orphans: 2; text-indent: 0px; text-trans=
+form: none; white-space: normal; widows: 2; word-spacing: 0px; background-c=
+olor: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-seri=
+f; font-size: 13.3333px"><span class=3D"colour" style=3D"color: rgb(102, 10=
+2, 102); outline: 0px; box-sizing: border-box;"><span class=3D"colour" styl=
+e=3D"color: rgb(0, 0, 0); outline: 0px; box-sizing: border-box;"><span clas=
+s=3D"colour" style=3D"color:rgb(0, 0, 0)"><span class=3D"colour" style=3D"c=
+olor:rgb(14, 16, 26)"><b><span class=3D"colour" style=3D"color:rgb(204, 0, =
+0)"><span class=3D"font" style=3D"font-family:verdana, sans-serif"><span cl=
+ass=3D"size" style=3D"font-size: 13.3333px; background-color: inherit;"><sp=
+an class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">Z</spa=
+n></span></span></span><span class=3D"colour" style=3D"color:rgb(0, 153, 0)=
+"><span class=3D"font" style=3D"font-family:verdana, sans-serif"><span clas=
+s=3D"size" style=3D"font-size: 13.3333px; background-color: inherit;"><span=
+ class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">O</span>=
+</span></span></span><span class=3D"colour" style=3D"color:rgb(0, 101, 204)=
+"><span class=3D"font" style=3D"font-family:verdana, sans-serif"><span clas=
+s=3D"size" style=3D"font-size: 13.3333px; background-color: inherit;"><span=
+ class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">H</span>=
+</span></span></span><span class=3D"colour" style=3D"color:rgb(255, 153, 51=
+)"><span class=3D"font" style=3D"font-family:verdana, sans-serif"><span cla=
+ss=3D"size" style=3D"font-size: 13.3333px; background-color: inherit;"><spa=
+n class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">O</span=
+></span></span></span></b></span></span><span class=3D"font" style=3D"font-=
+family:verdana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333=
+px"><span class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)"=
+>&nbsp;Corporation</span></span></span></span></span><span class=3D"font" s=
+tyle=3D"font-family:verdana, sans-serif"><span class=3D"size" style=3D"font=
+-size:13.3333px"><span class=3D"highlight" style=3D"background-color:rgb(25=
+5, 255, 255)">&nbsp;</span><span class=3D"highlight" style=3D"background-co=
+lor:rgb(255, 255, 255)"><br></span></span></span></div><div style=3D"outlin=
+e: 0px; box-sizing: border-box; color: rgb(0, 0, 0); font-style: normal; fo=
+nt-weight: 400; letter-spacing: 0.2px; orphans: 2; text-indent: 0px; text-t=
+ransform: none; white-space: normal; widows: 2; word-spacing: 0px; backgrou=
+nd-color: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-=
+serif; font-size: 13.3333px"><span class=3D"font" style=3D"font-family:verd=
+ana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span c=
+lass=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">Website:&n=
+bsp;</span></span></span><a href=3D"https://www.zoho.com/workplace/" target=
+=3D"_blank" style=3D"outline: none 0px; box-sizing: border-box; color: rgb(=
+0, 163, 254); cursor: pointer"><span class=3D"font" style=3D"font-family:ve=
+rdana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span=
+ class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">www.zoho=
+.com</span></span></span></a><span class=3D"font" style=3D"font-family:verd=
+ana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span c=
+lass=3D"highlight" style=3D"background-color:rgb(255, 255, 255)"><br></span=
+></span></span></div><div style=3D"outline: 0px; box-sizing: border-box; co=
+lor: rgb(0, 0, 0); font-style: normal; font-weight: 400; letter-spacing: 0.=
+2px; orphans: 2; text-indent: 0px; text-transform: none; white-space: norma=
+l; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); font=
+-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13.3333px"><span=
+ class=3D"font" style=3D"font-family:verdana, sans-serif"><span class=3D"si=
+ze" style=3D"font-size:13.3333px"><span class=3D"highlight" style=3D"backgr=
+ound-color:rgb(255, 255, 255)">DID:&nbsp;</span></span></span><span class=
+=3D"colour" style=3D"color:rgb(0, 0, 0)"><span class=3D"font" style=3D"font=
+-family:LatoRegular, sans-serif"><span class=3D"size" style=3D"font-size: 1=
+4px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans:=
+ 2; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: =
+2; word-spacing: 0px; float: none;"><span class=3D"font" style=3D"font-fami=
+ly:verdana, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px">=
+<span class=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">+1 =
+7379105916</span></span></span></span></span></span><br></div></div><div><b=
+r></div><div class=3D"zmail_extra_hr" style=3D"border-top: 1px solid rgb(20=
+4, 204, 204); height: 0px; margin-top: 10px; margin-bottom: 10px; line-heig=
+ht: 0px;"><br></div><div class=3D"zmail_extra" data-zbluepencil-ignore=3D"t=
+rue"><div><br></div><div id=3D"Zm-_Id_-Sgn1">---- On Wed, 22 Feb 2023 19:44=
+:38 +0530 <b>MD Ajmal &lt;shaikh.ajmal@zohocorp.com&gt;</b> wrote ---<br></=
+div><div><br></div><blockquote id=3D"blockquote_zmail" style=3D"margin: 0px=
+;"><div><div style=3D"font-family :  Verdana,  Arial,  Helvetica,  sans-ser=
+if; font-size :  10pt;"><div><div><div><div><div><div><div><div><div><div><=
+div><div><div><div><div><div><div><div><div><div style=3D"outline          =
+            :  0px; box-sizing                      :  border-box; color   =
+                   :  rgb(0, 0, 0); font-family                      :  Ari=
+al,                       Helvetica,                       Verdana,        =
+               sans-serif; font-size                      :  13px; font-sty=
+le                      :  normal; font-weight                      :  400;=
+ orphans                      :  2; text-indent                      :  0px=
+; text-transform                      :  none; white-space                 =
+     :  normal; widows                      :  2; word-spacing             =
+         :  0px; background-color                      :  rgb(255, 255, 255=
+); letter-spacing                      :  normal;"><span class=3D"size" sty=
+le=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verdan=
+a">Hello Quinta,<br></span></span></div><div style=3D"outline              =
+        :  0px; box-sizing                      :  border-box; color       =
+               :  rgb(0, 0, 0); font-family                      :  Arial, =
+                      Helvetica,                       Verdana,            =
+           sans-serif; font-size                      :  13px; font-style  =
+                    :  normal; font-weight                      :  400; orp=
+hans                      :  2; text-indent                      :  0px; te=
+xt-transform                      :  none; white-space                     =
+ :  normal; widows                      :  2; word-spacing                 =
+     :  0px; background-color                      :  rgb(255, 255, 255); l=
+etter-spacing                      :  normal;"><span class=3D"size" style=
+=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana"=
+><br></span></span></div><div style=3D"outline                      :  0px;=
+ box-sizing                      :  border-box; color                      =
+:  rgb(0, 0, 0); font-family                      :  Arial,                =
+       Helvetica,                       Verdana,                       sans=
+-serif; font-size                      :  13px; font-style                 =
+     :  normal; font-weight                      :  400; orphans           =
+           :  2; text-indent                      :  0px; text-transform   =
+                   :  none; white-space                      :  normal; wid=
+ows                      :  2; word-spacing                      :  0px; ba=
+ckground-color                      :  rgb(255, 255, 255); letter-spacing  =
+                    :  normal;"><span class=3D"colour" style=3D"color: rgb(=
+0, 0, 0); outline: 0px; box-sizing: border-box;"><span class=3D"size" style=
+=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana"=
+>Thank you so much for your time on call.&nbsp;</span></span></span><span c=
+lass=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"f=
+ont-family:verdana">My name is</span></span><span><span class=3D"size" styl=
+e=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana=
+">&nbsp;Ajmal</span></span></span><span class=3D"highlight" style=3D"backgr=
+ound-color:rgb(255, 255, 255)"><span class=3D"colour" style=3D"color:rgb(0,=
+ 0, 0)"><span class=3D"size" style=3D"font-size: 13.3333px; background-colo=
+r: inherit;"><span class=3D"font" style=3D"font-family:verdana">, Account M=
+anager for Zoho Mail. We</span></span></span></span><span class=3D"size" st=
+yle=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verda=
+na">&nbsp;</span></span><span class=3D"highlight" style=3D"background-color=
+:rgb(255, 255, 255)"><span class=3D"colour" style=3D"color:rgb(0, 0, 0)"><s=
+pan class=3D"size" style=3D"font-size: 13.3333px; background-color: inherit=
+;"><span class=3D"font" style=3D"font-family:verdana">will be happy to have=
+ you on board and experience&nbsp;our&nbsp;feature-rich business email solu=
+tion.</span></span></span></span><br></div><div style=3D"outline           =
+           :  0px; box-sizing                      :  border-box; color    =
+                  :  rgb(0, 0, 0); font-family                      :  Aria=
+l,                       Helvetica,                       Verdana,         =
+              sans-serif; font-size                      :  13px; font-styl=
+e                      :  normal; font-weight                      :  400; =
+orphans                      :  2; text-indent                      :  0px;=
+ text-transform                      :  none; white-space                  =
+    :  normal; widows                      :  2; word-spacing              =
+        :  0px; background-color                      :  rgb(255, 255, 255)=
+; letter-spacing                      :  normal;"><span class=3D"size" styl=
+e=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana=
+"><br></span></span></div><div style=3D"outline                      :  0px=
+; box-sizing                      :  border-box; color                     =
+ :  rgb(0, 0, 0); font-family                      :  Arial,               =
+        Helvetica,                       Verdana,                       san=
+s-serif; font-size                      :  13px; font-style                =
+      :  normal; font-weight                      :  400; orphans          =
+            :  2; text-indent                      :  0px; text-transform  =
+                    :  none; white-space                      :  normal; wi=
+dows                      :  2; word-spacing                      :  0px; b=
+ackground-color                      :  rgb(255, 255, 255); letter-spacing =
+                     :  normal;"><span class=3D"size" style=3D"font-size:13=
+.3333px"><span class=3D"font" style=3D"font-family:verdana">We have two bun=
+dled packages where w</span></span><span class=3D"highlight" style=3D"backg=
+round-color:rgb(255, 255, 255)"><span class=3D"colour" style=3D"color:rgb(5=
+1, 51, 51)"><span class=3D"size" style=3D"font-size: 13.3333px; background-=
+color: inherit;"><span class=3D"font" style=3D"font-family:verdana">e offer=
+ various editions with storage plans ranging from 5GB to 100GB per user.</s=
+pan></span></span></span><span class=3D"size" style=3D"font-size:13.3333px"=
+><span class=3D"font" style=3D"font-family:verdana"><br></span></span></div=
+><div style=3D"outline                      :  0px; box-sizing             =
+         :  border-box; color                      :  rgb(0, 0, 0); font-fa=
+mily                      :  Arial,                       Helvetica,       =
+                Verdana,                       sans-serif; font-size       =
+               :  13px; font-style                      :  normal; font-wei=
+ght                      :  400; orphans                      :  2; text-in=
+dent                      :  0px; text-transform                      :  no=
+ne; white-space                      :  normal; widows                     =
+ :  2; word-spacing                      :  0px; background-color          =
+            :  rgb(255, 255, 255); letter-spacing                      :  n=
+ormal;"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"f=
+ont" style=3D"font-family:verdana"><br></span></span></div><div style=3D"ou=
+tline                      :  0px; box-sizing                      :  borde=
+r-box; color                      :  rgb(0, 0, 0); font-family             =
+         :  Arial,                       Helvetica,                       V=
+erdana,                       sans-serif; font-size                      : =
+ 13px; font-style                      :  normal; font-weight              =
+        :  400; orphans                      :  2; text-indent             =
+         :  0px; text-transform                      :  none; white-space  =
+                    :  normal; widows                      :  2; word-spaci=
+ng                      :  0px; background-color                      :  rg=
+b(255, 255, 255); letter-spacing                      :  normal;"><span cla=
+ss=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"fon=
+t-family:verdana">1.</span></span><span><span class=3D"size" style=3D"font-=
+size:13.3333px"><span class=3D"font" style=3D"font-family:verdana">&nbsp;</=
+span></span></span><b style=3D"outline                      :  0px; box-siz=
+ing                      :  border-box;"><span class=3D"size" style=3D"font=
+-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana">Mail-on=
+ly package</span></span></b><span><span class=3D"size" style=3D"font-size:1=
+3.3333px"><span class=3D"font" style=3D"font-family:verdana">&nbsp;</span><=
+/span></span><span class=3D"size" style=3D"font-size:13.3333px"><span class=
+=3D"font" style=3D"font-family:verdana">(Lite 5 GB, Lite 10GB and Premium 5=
+0 GB) has only Mail and Cliq services included in the package.<br></span></=
+span></div><div style=3D"outline                      :  0px; box-sizing   =
+                   :  border-box; color                      :  rgb(0, 0, 0=
+); font-family                      :  Arial,                       Helveti=
+ca,                       Verdana,                       sans-serif; font-s=
+ize                      :  13px; font-style                      :  normal=
+; font-weight                      :  400; orphans                      :  =
+2; text-indent                      :  0px; text-transform                 =
+     :  none; white-space                      :  normal; widows           =
+           :  2; word-spacing                      :  0px; background-color=
+                      :  rgb(255, 255, 255); letter-spacing                =
+      :  normal;"><span class=3D"size" style=3D"font-size:13.3333px"><span =
+class=3D"font" style=3D"font-family:verdana">2.</span></span><span><span cl=
+ass=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"fo=
+nt-family:verdana">&nbsp;</span></span></span><b style=3D"outline          =
+            :  0px; box-sizing                      :  border-box;"><span c=
+lass=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"f=
+ont-family:verdana">Workplace package</span></span></b><span><span class=3D=
+"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-fam=
+ily:verdana">&nbsp;</span></span></span><span class=3D"size" style=3D"font-=
+size:13.3333px"><span class=3D"font" style=3D"font-family:verdana">(Standar=
+d 30 GB, Professional 100 GB) has a combination of up to 8 applications (in=
+cluding WorkDrive and Office Suite) bundled together.<br></span></span></di=
+v><div style=3D"outline                      :  0px; box-sizing            =
+          :  border-box; color                      :  rgb(0, 0, 0); font-f=
+amily                      :  Arial,                       Helvetica,      =
+                 Verdana,                       sans-serif; font-size      =
+                :  13px; font-style                      :  normal; font-we=
+ight                      :  400; orphans                      :  2; text-i=
+ndent                      :  0px; text-transform                      :  n=
+one; white-space                      :  normal; widows                    =
+  :  2; word-spacing                      :  0px; background-color         =
+             :  rgb(255, 255, 255); letter-spacing                      :  =
+normal;"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"=
+font" style=3D"font-family:verdana"><br></span></span></div><div style=3D"o=
+utline                      :  0px; box-sizing                      :  bord=
+er-box; color                      :  rgb(0, 0, 0); font-family            =
+          :  Arial,                       Helvetica,                       =
+Verdana,                       sans-serif; font-size                      :=
+  13px; font-style                      :  normal; font-weight             =
+         :  400; orphans                      :  2; text-indent            =
+          :  0px; text-transform                      :  none; white-space =
+                     :  normal; widows                      :  2; word-spac=
+ing                      :  0px; background-color                      :  r=
+gb(255, 255, 255); letter-spacing                      :  normal;"><span cl=
+ass=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"fo=
+nt-family:verdana">In the meantime, you may explore the below quick links t=
+o experience the platform:<br></span></span></div><div style=3D"outline    =
+                  :  0px; box-sizing                      :  border-box; co=
+lor                      :  rgb(0, 0, 0); font-family                      =
+:  Arial,                       Helvetica,                       Verdana,  =
+                     sans-serif; font-size                      :  13px; fo=
+nt-style                      :  normal; font-weight                      :=
+  400; orphans                      :  2; text-indent                      =
+:  0px; text-transform                      :  none; white-space           =
+           :  normal; widows                      :  2; word-spacing       =
+               :  0px; background-color                      :  rgb(255, 25=
+5, 255); letter-spacing                      :  normal;"><span class=3D"siz=
+e" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:=
+verdana"><br></span></span></div><div style=3D"outline                     =
+ :  0px; box-sizing                      :  border-box; color              =
+        :  rgb(0, 0, 0); font-family                      :  Arial,        =
+               Helvetica,                       Verdana,                   =
+    sans-serif; font-size                      :  13px; font-style         =
+             :  normal; font-weight                      :  400; orphans   =
+                   :  2; text-indent                      :  0px; text-tran=
+sform                      :  none; white-space                      :  nor=
+mal; widows                      :  2; word-spacing                      : =
+ 0px; background-color                      :  rgb(255, 255, 255); letter-s=
+pacing                      :  normal;"><span class=3D"highlight" style=3D"=
+background-color:rgba(0, 0, 0, 0)"><a href=3D"https://www.zoho.com/workplac=
+e/plan-comparison.html" target=3D"_blank"><span class=3D"colour" style=3D"c=
+olor:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size: 13.3333=
+px; background-color: inherit;"><span class=3D"font" style=3D"font-family:v=
+erdana">Plan Comparison</span></span></b></span></a><span class=3D"colour" =
+style=3D"color:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-siz=
+e: 13.3333px; background-color: inherit;"><span class=3D"font" style=3D"fon=
+t-family:verdana"> |&nbsp;</span></span></b></span></span><a target=3D"_bla=
+nk" style=3D"font-family              :  verdana,               sans-serif;=
+ letter-spacing              :  0.2px; color              :  rgb(0, 0, 255)=
+;" href=3D"https://www.zoho.com/mail/help/"><span class=3D"highlight" style=
+=3D"background-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=3D"colo=
+r:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size: 13.3333px;=
+ background-color: inherit;"><span class=3D"font" style=3D"font-family:verd=
+ana">Resources</span></span></b></span></span></a><span class=3D"highlight"=
+ style=3D"background-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=
+=3D"color:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size: 13=
+.3333px; background-color: inherit;"><span class=3D"font" style=3D"font-fam=
+ily:verdana"> | </span></span></b></span></span><a target=3D"_blank" style=
+=3D"font-family              :  verdana,               sans-serif; letter-s=
+pacing              :  0.2px; color              :  rgb(0, 0, 255);" href=
+=3D"https://www.zoho.com/mail/features.html"><span class=3D"highlight" styl=
+e=3D"background-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=3D"col=
+or:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size: 13.3333px=
+; background-color: inherit;"><span class=3D"font" style=3D"font-family:ver=
+dana">Features</span></span></b></span></span></a><span class=3D"highlight"=
+ style=3D"background-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=
+=3D"color:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size: 13=
+.3333px; background-color: inherit;"><span class=3D"font" style=3D"font-fam=
+ily:verdana"> | </span></span></b></span></span><a target=3D"_blank" style=
+=3D"font-family              :  verdana,               sans-serif; letter-s=
+pacing              :  0.2px; color              :  rgb(0, 0, 255);" href=
+=3D"https://youtu.be/Qt0MqwZ_luw"><span class=3D"highlight" style=3D"backgr=
+ound-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=3D"color:rgb(57, =
+156, 253)"><b><span class=3D"size" style=3D"font-size: 13.3333px; backgroun=
+d-color: inherit;"><span class=3D"font" style=3D"font-family:verdana">Demo<=
+/span></span></b></span></span></a><span class=3D"highlight" style=3D"backg=
+round-color:rgba(0, 0, 0, 0)"><span class=3D"colour" style=3D"color:rgb(57,=
+ 156, 253)"><b><span class=3D"size" style=3D"font-size: 13.3333px; backgrou=
+nd-color: inherit;"><span class=3D"font" style=3D"font-family:verdana"> | <=
+/span></span></b></span></span><a target=3D"_blank" style=3D"font-family   =
+           :  verdana,               sans-serif; letter-spacing            =
+  :  0.2px; color              :  rgb(0, 0, 255);" href=3D"https://www.zoho=
+.com/mail/webinars/"><span class=3D"highlight" style=3D"background-color:rg=
+ba(0, 0, 0, 0)"><span class=3D"colour" style=3D"color:rgb(57, 156, 253)"><b=
+><span class=3D"size" style=3D"font-size: 13.3333px; background-color: inhe=
+rit;"><span class=3D"font" style=3D"font-family:verdana">Webinars</span></s=
+pan></b></span></span></a><span class=3D"colour" style=3D"color:rgb(57, 156=
+, 253)"><b><span class=3D"size" style=3D"font-size:13.3333px"><span class=
+=3D"font" style=3D"font-family:verdana">&nbsp;| </span></span></b></span><a=
+ style=3D"font-family              :  verdana,               sans-serif; le=
+tter-spacing              :  0.2px;" target=3D"_blank" href=3D"https://www.=
+zoho.com/mail/help/adminconsole/migration.html"><span class=3D"colour" styl=
+e=3D"color:rgb(57, 156, 253)"><b><span class=3D"size" style=3D"font-size:13=
+.3333px"><span class=3D"font" style=3D"font-family:verdana">Migration to Zo=
+ho Mail</span></span></b></span></a><b><span class=3D"colour" style=3D"colo=
+r:rgb(57, 156, 253)"><span class=3D"size" style=3D"font-size:13.3333px"><sp=
+an class=3D"font" style=3D"font-family:verdana"> | </span></span></span></b=
+><a style=3D"font-family              :  verdana,               sans-serif;=
+ letter-spacing              :  0.2px;" target=3D"_blank" href=3D"https://w=
+ww.zoho.com/mail/help/adminconsole/godaddy.html#oneclick:~:text=3DOne%2DCli=
+ck%20Verification%20%2D%20GoDaddy"><b><span class=3D"colour" style=3D"color=
+:rgb(57, 156, 253)"><span class=3D"size" style=3D"font-size:13.3333px"><spa=
+n class=3D"font" style=3D"font-family:verdana">GoDaddy domain configuration=
+</span></span></span></b></a><span class=3D"size" style=3D"font-size:13.333=
+3px"><span class=3D"font" style=3D"font-family:verdana"><br></span></span><=
+/div><div style=3D"outline                      :  0px; box-sizing         =
+             :  border-box; color                      :  rgb(0, 0, 0); fon=
+t-family                      :  Arial,                       Helvetica,   =
+                    Verdana,                       sans-serif; font-size   =
+                   :  13px; font-style                      :  normal; font=
+-weight                      :  400; orphans                      :  2; tex=
+t-indent                      :  0px; text-transform                      :=
+  none; white-space                      :  normal; widows                 =
+     :  2; word-spacing                      :  0px; background-color      =
+                :  rgb(255, 255, 255); letter-spacing                      =
+:  normal;"><span class=3D"size" style=3D"font-size:13.3333px"><span class=
+=3D"font" style=3D"font-family:verdana"><br></span></span></div></div><div =
+style=3D"outline                     :  0px; box-sizing                    =
+ :  border-box; font-style                     :  normal; font-weight      =
+               :  400; letter-spacing                     :  normal; orphan=
+s                     :  2; text-align                     :  left; text-in=
+dent                     :  0px; text-transform                     :  none=
+; white-space                     :  normal; widows                     :  =
+2; word-spacing                     :  0px; color                     :  rg=
+b(0, 0, 0); font-family                     :  Verdana,                    =
+  Arial,                      Helvetica,                      sans-serif; f=
+ont-size                     :  13.3333px; background-color                =
+     :  rgb(255, 255, 255);"><span class=3D"size" style=3D"font-size:13.333=
+3px"><span class=3D"font" style=3D"font-family:verdana">We also have a mix-=
+n-match feasibility of editions for a flexible pricing scheme to ensure acc=
+ommodation of users with varying storage and feature needs within the same =
+organization.<br></span></span></div><div style=3D"outline                 =
+    :  0px; box-sizing                     :  border-box; font-style       =
+              :  normal; font-weight                     :  400; letter-spa=
+cing                     :  normal; orphans                     :  2; text-=
+align                     :  left; text-indent                     :  0px; =
+text-transform                     :  none; white-space                    =
+ :  normal; widows                     :  2; word-spacing                  =
+   :  0px; color                     :  rgb(0, 0, 0); font-family          =
+           :  Verdana,                      Arial,                      Hel=
+vetica,                      sans-serif; font-size                     :  1=
+3.3333px; background-color                     :  rgb(255, 255, 255);"><spa=
+n class=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=
+=3D"font-family:verdana"><br></span></span></div><div style=3D"outline     =
+                :  0px; box-sizing                     :  border-box; font-=
+style                     :  normal; font-weight                     :  400=
+; letter-spacing                     :  normal; orphans                    =
+ :  2; text-align                     :  left; text-indent                 =
+    :  0px; text-transform                     :  none; white-space        =
+             :  normal; word-spacing                     :  0px; color     =
+                :  rgb(0, 0, 0); font-family                     :  Verdana=
+,                      Arial,                      Helvetica,              =
+        sans-serif; font-size                     :  13.3333px; widows     =
+                :  1; background-color                     :  rgb(255, 255,=
+ 255);"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"f=
+ont" style=3D"font-family:verdana">Kindly let us know the following details=
+ to help us provide you with a price quote.<br></span></span></div><div sty=
+le=3D"outline                     :  0px; box-sizing                     : =
+ border-box; font-style                     :  normal; font-weight         =
+            :  400; letter-spacing                     :  normal; orphans  =
+                   :  2; text-align                     :  left; text-inden=
+t                     :  0px; text-transform                     :  none; w=
+hite-space                     :  normal; word-spacing                     =
+:  0px; color                     :  rgb(0, 0, 0); font-family             =
+        :  Verdana,                      Arial,                      Helvet=
+ica,                      sans-serif; font-size                     :  13.3=
+333px; widows                     :  1; background-color                   =
+  :  rgb(255, 255, 255);"><span class=3D"size" style=3D"font-size:13.3333px=
+"><span class=3D"font" style=3D"font-family:verdana"><br></span></span></di=
+v><div style=3D"outline                     :  0px; box-sizing             =
+        :  border-box; font-style                     :  normal; font-weigh=
+t                     :  400; letter-spacing                     :  normal;=
+ orphans                     :  2; text-align                     :  left; =
+text-indent                     :  0px; text-transform                     =
+:  none; white-space                     :  normal; word-spacing           =
+          :  0px; color                     :  rgb(0, 0, 0); font-family   =
+                  :  Verdana,                      Arial,                  =
+    Helvetica,                      sans-serif; font-size                  =
+   :  13.3333px; widows                     :  1; background-color         =
+            :  rgb(255, 255, 255);"><div style=3D"outline                  =
+   :  0px; box-sizing                     :  border-box;"><div style=3D"out=
+line                     :  0px; box-sizing                     :  border-b=
+ox; font-family                     :  Verdana,                      Arial,=
+                      Helvetica,                      sans-serif; font-size=
+                     :  10pt;"><div style=3D"outline                     : =
+ 0px; box-sizing                     :  border-box;"><div style=3D"outline =
+                    :  0px; box-sizing                     :  border-box; f=
+ont-family                     :  Verdana,                      Arial,     =
+                 Helvetica,                      sans-serif; font-size     =
+                :  10pt;"><div style=3D"outline                     :  0px;=
+ box-sizing                     :  border-box; font-family                 =
+    :  Verdana,                      Arial,                      Helvetica,=
+                      sans-serif; font-size                     :  10pt;"><=
+div style=3D"outline                     :  0px; box-sizing                =
+     :  border-box;"><div style=3D"outline                     :  0px; box-=
+sizing                     :  border-box; font-family                     :=
+  Verdana,                      Arial,                      Helvetica,     =
+                 sans-serif; font-size                     :  10pt;"><div s=
+tyle=3D"outline                     :  0px; box-sizing                     =
+:  border-box; font-family                     :  Verdana,                 =
+     Arial,                      Helvetica,                      sans-serif=
+; font-size                     :  10pt;"><div style=3D"outline            =
+         :  0px; box-sizing                     :  border-box;"><div style=
+=3D"outline                     :  0px; box-sizing                     :  b=
+order-box; font-family                     :  Verdana,                     =
+ Arial,                      Helvetica,                      sans-serif; fo=
+nt-size                     :  10pt;"><div style=3D"outline                =
+     :  0px; box-sizing                     :  border-box; font-family     =
+                :  Verdana,                      Arial,                    =
+  Helvetica,                      sans-serif; font-size                    =
+ :  10pt;"><div style=3D"outline                     :  0px; box-sizing    =
+                 :  border-box;"><div style=3D"outline                     =
+:  0px; box-sizing                     :  border-box; color                =
+     :  rgb(0, 0, 0); font-style                     :  normal; font-weight=
+                     :  400; letter-spacing                     :  normal; =
+orphans                     :  2; text-indent                     :  0px; t=
+ext-transform                     :  none; white-space                     =
+:  normal; widows                     :  2; word-spacing                   =
+  :  0px; font-family                     :  Arial,                      He=
+lvetica,                      Verdana,                      sans-serif; fon=
+t-size                     :  13px; background-color                     : =
+ rgb(255, 255, 255); line-height                     :  1.2;"><div style=3D=
+"outline                     :  0px; box-sizing                     :  bord=
+er-box; font-family                     :  Verdana,                      Ar=
+ial,                      Helvetica,                      sans-serif; font-=
+size                     :  13.3333px;"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"outline                     :  0px; box-sizin=
+g                     :  border-box; text-align                     :  left=
+; max-width                     :  100%; font-size                     :  1=
+3.3333px; min-width                     :  100%;"><tbody style=3D"outline  =
+                   :  0px; box-sizing                     :  border-box;"><=
+tr style=3D"outline                     :  0px; box-sizing                 =
+    :  border-box;"><td style=3D"outline                     :  0px; box-si=
+zing                     :  border-box; font                     :  14px/  =
+                    22px Lato; color                     :  rgb(51, 51, 51)=
+; width                     :  906.333px;"><div style=3D"outline           =
+          :  0px; box-sizing                     :  border-box; line-height=
+                     :  normal; widows                     :  1;"><div styl=
+e=3D"outline                     :  0px; box-sizing                     :  =
+border-box; widows                     :  2;"><div style=3D"outline        =
+             :  0px; box-sizing                     :  border-box;"><b styl=
+e=3D"outline                     :  0px; box-sizing                     :  =
+border-box;"><span class=3D"x_670033550font" style=3D"outline              =
+       :  0px; box-sizing                     :  border-box;"><span class=
+=3D"x_670033550size" style=3D"outline                     :  0px; box-sizin=
+g                     :  border-box;"><span class=3D"x_297480049font" style=
+=3D"outline                     :  0px; box-sizing                     :  b=
+order-box;"><span class=3D"x_297480049size" style=3D"outline               =
+      :  0px; box-sizing                     :  border-box;"><span class=3D=
+"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-fam=
+ily:verdana">Edition (Mail Lite/</span></span><b style=3D"outline          =
+           :  0px; box-sizing                     :  border-box;"><span cla=
+ss=3D"x_670033550font" style=3D"outline                     :  0px; box-siz=
+ing                     :  border-box;"><span class=3D"x_670033550size" sty=
+le=3D"outline                     :  0px; box-sizing                     : =
+ border-box;"><span class=3D"x_297480049font" style=3D"outline             =
+        :  0px; box-sizing                     :  border-box;"><span class=
+=3D"x_297480049size" style=3D"outline                     :  0px; box-sizin=
+g                     :  border-box;"><span class=3D"x_1883551290font" styl=
+e=3D"outline                     :  0px; box-sizing                     :  =
+border-box;"><span class=3D"x_1883551290size" style=3D"outline             =
+        :  0px; box-sizing                     :  border-box;"><span class=
+=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-=
+family:verdana">Mail Premium</span></span><b style=3D"outline              =
+       :  0px; box-sizing                     :  border-box;"><span style=
+=3D"outline                     :  0px; box-sizing                     :  b=
+order-box;" class=3D"x_670033550font"><span style=3D"outline               =
+      :  0px; box-sizing                     :  border-box;" class=3D"x_670=
+033550size"><span style=3D"outline                     :  0px; box-sizing  =
+                   :  border-box;" class=3D"x_297480049font"><span style=3D=
+"outline                     :  0px; box-sizing                     :  bord=
+er-box;" class=3D"x_297480049size"><span class=3D"size" style=3D"font-size:=
+13.3333px"><span class=3D"font" style=3D"font-family:verdana">/Workplace St=
+andard</span></span></span></span></span></span></b><span class=3D"size" st=
+yle=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verda=
+na">/</span></span><b style=3D"outline                     :  0px; box-sizi=
+ng                     :  border-box;"><span style=3D"outline              =
+       :  0px; box-sizing                     :  border-box;" class=3D"x_67=
+0033550font"><span style=3D"outline                     :  0px; box-sizing =
+                    :  border-box;" class=3D"x_670033550size"><span style=
+=3D"outline                     :  0px; box-sizing                     :  b=
+order-box;" class=3D"x_297480049font"><span style=3D"outline               =
+      :  0px; box-sizing                     :  border-box;" class=3D"x_297=
+480049size"><b style=3D"outline                     :  0px; box-sizing     =
+                :  border-box;"><span style=3D"outline                     =
+:  0px; box-sizing                     :  border-box;" class=3D"x_670033550=
+font"><span style=3D"outline                     :  0px; box-sizing        =
+             :  border-box;" class=3D"x_670033550size"><span style=3D"outli=
+ne                     :  0px; box-sizing                     :  border-box=
+;" class=3D"x_297480049font"><span style=3D"outline                     :  =
+0px; box-sizing                     :  border-box;" class=3D"x_297480049siz=
+e"><span style=3D"outline                     :  0px; box-sizing           =
+          :  border-box;" class=3D"x_1883551290font"><span style=3D"outline=
+                     :  0px; box-sizing                     :  border-box;"=
+ class=3D"x_1883551290size"><b style=3D"outline                     :  0px;=
+ box-sizing                     :  border-box;"><span class=3D"x_670033550f=
+ont" style=3D"outline                     :  0px; box-sizing               =
+      :  border-box;"><span class=3D"x_670033550size" style=3D"outline     =
+                :  0px; box-sizing                     :  border-box;"><spa=
+n class=3D"x_297480049font" style=3D"outline                     :  0px; bo=
+x-sizing                     :  border-box;"><span class=3D"x_297480049size=
+" style=3D"outline                     :  0px; box-sizing                  =
+   :  border-box;"><span class=3D"size" style=3D"font-size:13.3333px"><span=
+ class=3D"font" style=3D"font-family:verdana">Workplace&nbsp;</span></span>=
+</span></span></span></span></b></span></span></span></span></span></span><=
+/b></span></span></span></span></b></span></span></span></span></span></spa=
+n></b><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"fon=
+t" style=3D"font-family:verdana">Professional):</span></span></span></span>=
+</span></span></b><span class=3D"size" style=3D"font-size:13.3333px"><span =
+class=3D"font" style=3D"font-family:verdana"><br></span></span></div></div>=
+<div style=3D"outline                     :  0px; box-sizing               =
+      :  border-box; widows                     :  2;"><div style=3D"outlin=
+e                     :  0px; box-sizing                     :  border-box;=
+ line-height                     :  normal; margin-bottom                  =
+   :  0cm;"><b style=3D"outline                     :  0px; box-sizing     =
+                :  border-box;"><span class=3D"x_670033550font" style=3D"ou=
+tline                     :  0px; box-sizing                     :  border-=
+box;"><span class=3D"x_670033550size" style=3D"outline                     =
+:  0px; box-sizing                     :  border-box;"><span class=3D"x_297=
+480049font" style=3D"outline                     :  0px; box-sizing        =
+             :  border-box;"><span class=3D"x_297480049size" style=3D"outli=
+ne                     :  0px; box-sizing                     :  border-box=
+;"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" =
+style=3D"font-family:verdana">Number of Users:&nbsp;&nbsp;</span></span></s=
+pan></span></span></span></b><span class=3D"size" style=3D"font-size:13.333=
+3px"><span class=3D"font" style=3D"font-family:verdana"><br></span></span><=
+/div><div style=3D"outline                     :  0px; box-sizing          =
+           :  border-box; line-height                     :  normal; widows=
+                     :  1;"><div style=3D"outline                     :  0p=
+x; box-sizing                     :  border-box;"><b style=3D"outline      =
+               :  0px; box-sizing                     :  border-box;"><span=
+ class=3D"x_670033550font" style=3D"outline                     :  0px; box=
+-sizing                     :  border-box;"><span class=3D"x_670033550size"=
+ style=3D"outline                     :  0px; box-sizing                   =
+  :  border-box;"><span class=3D"x_297480049font" style=3D"outline         =
+            :  0px; box-sizing                     :  border-box;"><span cl=
+ass=3D"x_297480049size" style=3D"outline                     :  0px; box-si=
+zing                     :  border-box;"><span class=3D"size" style=3D"font=
+-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana">Company=
+ Name: </span></span></span></span></span></span></b><span class=3D"size" s=
+tyle=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-family:verd=
+ana"><br></span></span></div><div style=3D"outline                     :  0=
+px; box-sizing                     :  border-box;"><b style=3D"outline     =
+                :  0px; box-sizing                     :  border-box;"><spa=
+n class=3D"x_670033550font" style=3D"outline                     :  0px; bo=
+x-sizing                     :  border-box;"><span class=3D"x_670033550size=
+" style=3D"outline                     :  0px; box-sizing                  =
+   :  border-box;"><span class=3D"x_297480049font" style=3D"outline        =
+             :  0px; box-sizing                     :  border-box;"><span c=
+lass=3D"x_297480049size" style=3D"outline                     :  0px; box-s=
+izing                     :  border-box;"><span class=3D"size" style=3D"fon=
+t-size:13.3333px"><span class=3D"font" style=3D"font-family:verdana">Compan=
+y Billing Address:</span></span></span></span></span></span></b><span class=
+=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-=
+family:verdana"><br></span></span></div><div style=3D"outline              =
+       :  0px; box-sizing                     :  border-box;"><span class=
+=3D"size" style=3D"font-size:13.3333px"><span class=3D"font" style=3D"font-=
+family:verdana"><br></span></span></div></div></div></div></td></tr></tbody=
+></table></div></div></div></div></div></div></div></div></div></div></div>=
+</div></div></div></div><div><div style=3D"outline                      :  =
+0px; box-sizing                      :  border-box; color                  =
+    :  rgb(0, 0, 0); font-family                      :  Arial,            =
+           Helvetica,                       Verdana,                       =
+sans-serif; font-size                      :  13px; font-style             =
+         :  normal; font-weight                      :  400; orphans       =
+               :  2; text-indent                      :  0px; text-transfor=
+m                      :  none; white-space                      :  normal;=
+ widows                      :  2; word-spacing                      :  0px=
+; background-color                      :  rgb(255, 255, 255); letter-spaci=
+ng                      :  normal;"><span class=3D"size" style=3D"font-size=
+:13.3333px"><span class=3D"font" style=3D"font-family:verdana">Look forward=
+ to hearing from you.</span></span><br></div></div></div></div></div></div>=
+</div></div></div></div></div></div></div></div></div></div></div></div></d=
+iv></div><div><br></div><br><div id=3D""><div style=3D"outline :  0px; box-=
+sizing :  border-box; color :  rgb(0, 0, 0); font-style :  normal; font-wei=
+ght :  400; letter-spacing :  0.2px; orphans :  2; text-indent :  0px; text=
+-transform :  none; white-space :  normal; widows :  2; word-spacing :  0px=
+; background-color :  rgb(255, 255, 255); font-family :  Verdana,  Arial,  =
+Helvetica,  sans-serif; font-size :  13.3333px;"><span class=3D"highlight" =
+style=3D"background-color:rgb(255, 255, 255)">Best Regards!!!<br></span></d=
+iv><div style=3D"outline :  0px; box-sizing :  border-box; color :  rgb(0, =
+0, 0); font-style :  normal; font-weight :  400; letter-spacing :  0.2px; o=
+rphans :  2; text-indent :  0px; text-transform :  none; white-space :  nor=
+mal; widows :  2; word-spacing :  0px; background-color :  rgb(255, 255, 25=
+5); font-family :  Verdana,  Arial,  Helvetica,  sans-serif; font-size :  1=
+3.3333px;"><span class=3D"highlight" style=3D"background-color:rgb(255, 255=
+, 255)"><br></span></div><div style=3D"outline :  0px; box-sizing :  border=
+-box; color :  rgb(0, 0, 0); font-style :  normal; font-weight :  400; lett=
+er-spacing :  0.2px; orphans :  2; text-indent :  0px; text-transform :  no=
+ne; white-space :  normal; widows :  2; word-spacing :  0px; background-col=
+or :  rgb(255, 255, 255); font-family :  Verdana,  Arial,  Helvetica,  sans=
+-serif; font-size :  13.3333px;"><b style=3D"outline :  0px; box-sizing :  =
+border-box;"><span class=3D"font" style=3D"font-family:verdana, sans-serif"=
+><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"highligh=
+t" style=3D"background-color:rgb(255, 255, 255)">Shaikh Mohammad Ajmal</spa=
+n></span></span></b><span class=3D"font" style=3D"font-family:verdana, sans=
+-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"h=
+ighlight" style=3D"background-color:rgb(255, 255, 255)"><br></span></span><=
+/span></div><div style=3D"outline :  0px; box-sizing :  border-box; color :=
+  rgb(0, 0, 0); font-style :  normal; font-weight :  400; letter-spacing : =
+ 0.2px; orphans :  2; text-indent :  0px; text-transform :  none; white-spa=
+ce :  normal; widows :  2; word-spacing :  0px; background-color :  rgb(255=
+, 255, 255); font-family :  Verdana,  Arial,  Helvetica,  sans-serif; font-=
+size :  13.3333px;"><span class=3D"font" style=3D"font-family:verdana, sans=
+-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"h=
+ighlight" style=3D"background-color:rgb(255, 255, 255)">Account Manager - M=
+EA</span><span class=3D"highlight" style=3D"background-color:rgb(255, 255, =
+255)"><br></span></span></span></div><div style=3D"outline :  0px; box-sizi=
+ng :  border-box; color :  rgb(0, 0, 0); font-style :  normal; font-weight =
+:  400; letter-spacing :  0.2px; orphans :  2; text-indent :  0px; text-tra=
+nsform :  none; white-space :  normal; widows :  2; word-spacing :  0px; ba=
+ckground-color :  rgb(255, 255, 255); font-family :  Verdana,  Arial,  Helv=
+etica,  sans-serif; font-size :  13.3333px;"><span class=3D"colour" style=
+=3D"color: rgb(102, 102, 102); outline: 0px; box-sizing: border-box;"><span=
+ class=3D"colour" style=3D"color: rgb(0, 0, 0); outline: 0px; box-sizing: b=
+order-box;"><span class=3D"colour" style=3D"color:rgb(0, 0, 0)"><span class=
+=3D"colour" style=3D"color:rgb(14, 16, 26)"><b><span class=3D"colour" style=
+=3D"color:rgb(204, 0, 0)"><span class=3D"font" style=3D"font-family:verdana=
+, sans-serif"><span class=3D"size" style=3D"font-size: 13.3333px; backgroun=
+d-color: inherit;"><span class=3D"highlight" style=3D"background-color:rgb(=
+255, 255, 255)">Z</span></span></span></span><span class=3D"colour" style=
+=3D"color:rgb(0, 153, 0)"><span class=3D"font" style=3D"font-family:verdana=
+, sans-serif"><span class=3D"size" style=3D"font-size: 13.3333px; backgroun=
+d-color: inherit;"><span class=3D"highlight" style=3D"background-color:rgb(=
+255, 255, 255)">O</span></span></span></span><span class=3D"colour" style=
+=3D"color:rgb(0, 101, 204)"><span class=3D"font" style=3D"font-family:verda=
+na, sans-serif"><span class=3D"size" style=3D"font-size: 13.3333px; backgro=
+und-color: inherit;"><span class=3D"highlight" style=3D"background-color:rg=
+b(255, 255, 255)">H</span></span></span></span><span class=3D"colour" style=
+=3D"color:rgb(255, 153, 51)"><span class=3D"font" style=3D"font-family:verd=
+ana, sans-serif"><span class=3D"size" style=3D"font-size: 13.3333px; backgr=
+ound-color: inherit;"><span class=3D"highlight" style=3D"background-color:r=
+gb(255, 255, 255)">O</span></span></span></span></b></span></span><span cla=
+ss=3D"font" style=3D"font-family:verdana, sans-serif"><span class=3D"size" =
+style=3D"font-size:13.3333px"><span class=3D"highlight" style=3D"background=
+-color:rgb(255, 255, 255)">&nbsp;Corporation</span></span></span></span></s=
+pan><span class=3D"font" style=3D"font-family:verdana, sans-serif"><span cl=
+ass=3D"size" style=3D"font-size:13.3333px"><span class=3D"highlight" style=
+=3D"background-color:rgb(255, 255, 255)">&nbsp;</span><span class=3D"highli=
+ght" style=3D"background-color:rgb(255, 255, 255)"><br></span></span></span=
+></div><div style=3D"outline :  0px; box-sizing :  border-box; color :  rgb=
+(0, 0, 0); font-style :  normal; font-weight :  400; letter-spacing :  0.2p=
+x; orphans :  2; text-indent :  0px; text-transform :  none; white-space : =
+ normal; widows :  2; word-spacing :  0px; background-color :  rgb(255, 255=
+, 255); font-family :  Verdana,  Arial,  Helvetica,  sans-serif; font-size =
+:  13.3333px;"><span class=3D"font" style=3D"font-family:verdana, sans-seri=
+f"><span class=3D"size" style=3D"font-size:13.3333px"><span class=3D"highli=
+ght" style=3D"background-color:rgb(255, 255, 255)">Website:&nbsp;</span></s=
+pan></span><a href=3D"https://www.zoho.com/workplace/" target=3D"_blank" st=
+yle=3D"outline :  none 0px; box-sizing :  border-box; color :  rgb(0, 163, =
+254); cursor :  pointer;"><span class=3D"font" style=3D"font-family:verdana=
+, sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span clas=
+s=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">www.zoho.com<=
+/span></span></span></a><span class=3D"font" style=3D"font-family:verdana, =
+sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span class=
+=3D"highlight" style=3D"background-color:rgb(255, 255, 255)"><br></span></s=
+pan></span></div><div style=3D"outline :  0px; box-sizing :  border-box; co=
+lor :  rgb(0, 0, 0); font-style :  normal; font-weight :  400; letter-spaci=
+ng :  0.2px; orphans :  2; text-indent :  0px; text-transform :  none; whit=
+e-space :  normal; widows :  2; word-spacing :  0px; background-color :  rg=
+b(255, 255, 255); font-family :  Verdana,  Arial,  Helvetica,  sans-serif; =
+font-size :  13.3333px;"><span class=3D"font" style=3D"font-family:verdana,=
+ sans-serif"><span class=3D"size" style=3D"font-size:13.3333px"><span class=
+=3D"highlight" style=3D"background-color:rgb(255, 255, 255)">DID:&nbsp;</sp=
+an></span></span><span class=3D"colour" style=3D"color:rgb(0, 0, 0)"><span =
+class=3D"font" style=3D"font-family:LatoRegular, sans-serif"><span class=3D=
+"size" style=3D"font-size: 14px; font-style: normal; font-weight: 400; lett=
+er-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; whi=
+te-space: pre-wrap; widows: 2; word-spacing: 0px; float: none;"><span class=
+=3D"font" style=3D"font-family:verdana, sans-serif"><span class=3D"size" st=
+yle=3D"font-size:13.3333px"><span class=3D"highlight" style=3D"background-c=
+olor:rgb(255, 255, 255)">+1 7379105916</span></span></span></span></span></=
+span><br></div></div></div><br></div></blockquote></div><div><br></div></di=
+v><br></body></html>
+------=_Part_120720_672038938.1677665761718--
+

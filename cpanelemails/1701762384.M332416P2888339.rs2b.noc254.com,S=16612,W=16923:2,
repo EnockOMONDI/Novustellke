@@ -1,0 +1,311 @@
+Return-Path: <reservations1@southernpalmskenya.com>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id GIFdE1DVbmWTEiwAkzNyDQ
+	(envelope-from <reservations1@southernpalmskenya.com>)
+	for <novuste1@rs2b.noc254.com>; Tue, 05 Dec 2023 10:46:24 +0300
+Return-path: <reservations1@southernpalmskenya.com>
+Envelope-to: valary@novustelltravel.com
+Delivery-date: Tue, 05 Dec 2023 10:46:24 +0300
+Received: from mail-lj1-f177.google.com ([209.85.208.177]:46153)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <reservations1@southernpalmskenya.com>)
+	id 1rAQ8O-00CG1O-0Y
+	for valary@novustelltravel.com;
+	Tue, 05 Dec 2023 10:46:24 +0300
+Received: by mail-lj1-f177.google.com with SMTP id 38308e7fff4ca-2ca03103155so23337071fa.0
+        for <valary@novustelltravel.com>; Mon, 04 Dec 2023 23:46:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=southernpalmskenya.com; s=google; t=1701762342; x=1702367142; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=FIptboWhGJYmp/ti3qj2g+KUIBMTK1mTrNFIIiXe3NM=;
+        b=IeUXcge7YQrXlSl91P58FwAKtN/E/DlBBAi3OxEpNKHIqb5n6lFrm6N1H9kOdYZyuA
+         8vaZz6Hctpba6uZ+MqVxwfT4Uqt4S+0Q5LyC8gmWrj1RvAC0F6XunIyM0lvBtbFqABep
+         AJfvJZLvxQSmDpPgAfP9PBYRVx9R6PkQ7Gmf14fW+JvyAUHLLVgE6fKxdZ7ed8ko3BQN
+         93sv/yFoQ6sFdhWxj58uy0Uq8EvGF1ri6vMyqtyuDhQlAQtYprg0TarYf0Fnrj1G3HRL
+         150L9GpA81VbWYLne/0r9HTKbWNpWg+d7HnRolQrpQRuHC4RqM4IxbaGpJIHi13jbpyH
+         BNxA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1701762342; x=1702367142;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=FIptboWhGJYmp/ti3qj2g+KUIBMTK1mTrNFIIiXe3NM=;
+        b=XLb8+cj7mtE7E/Gaw9RVi/Su30DXBNN/Qo0NUEgVB76/aoZpVOGdTsPAeY3eI8QnkF
+         ZleW7d/usgX143dk+TVsIGwkqwiYx7r9byk/r2GgGLK9Toc5Brc9RTjkF3KQSpVcMEVR
+         8C19L0/ldT0qnH4Xj0y/ulPzPln3O3yKxPC3veCKrhMVgzNE47Eh7/PI+vkecPoBbZFE
+         sEBg0D6XZAa2rFP0vj26YJO9oGgXu3ot9Az2BXewgh/+5j8Kjc7MKGun7FxdQ2DyijE3
+         UqMOXPf/re3yLX1BFWuhrz5rSQdW403kDYchjRzNE9qmoKoDIPr36uwFGZxUWo8WTlxM
+         wY+Q==
+X-Gm-Message-State: AOJu0YyzO2EDHdZfmPufIDZMHSkTH6+5hOh8xWJtvt7qV+RvXacvp60r
+	+mhbWcxna85nUFVDtBfZNfrMkK7POoZIHIgW/CfXRQ==
+X-Google-Smtp-Source: AGHT+IECJJEqqzVt5VuyHuAC27shxckcGFs/WBUQBf4XJwK+QzYluMg8Bo7bTc5khn1edr5Ap1u5n+e0K2m612/1Vzg=
+X-Received: by 2002:a2e:380b:0:b0:2c9:f829:9bf6 with SMTP id
+ f11-20020a2e380b000000b002c9f8299bf6mr1439425lja.88.1701762342344; Mon, 04
+ Dec 2023 23:45:42 -0800 (PST)
+MIME-Version: 1.0
+References: <007001da269a$06cc91e0$1465b5a0$@novustelltravel.com> <CACf00AWWm2rHf37=o7WFc9Q+O65c1ovSDZWiej91-5qGfbMoGQ@mail.gmail.com>
+In-Reply-To: <CACf00AWWm2rHf37=o7WFc9Q+O65c1ovSDZWiej91-5qGfbMoGQ@mail.gmail.com>
+From: Reservations1 Southern Palms <reservations1@southernpalmskenya.com>
+Date: Tue, 5 Dec 2023 10:45:31 +0300
+Message-ID: <CACf00AVwM06MV_rYP8tHkhV6kn7VE8zddTURyfWdYwZT6xDgRw@mail.gmail.com>
+Subject: Re: BOOKING VOUCHER
+To: info@novustelltravel.com
+Cc: reservations@southernpalmskenya.com, valary@novustelltravel.com
+Content-Type: multipart/alternative; boundary="000000000000e868e1060bbe6b7c"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Valarie, Kindly advise if you received the invoice shared
+    yesterday *Regards* Maurine 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: bamburibeachkenya.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--000000000000e868e1060bbe6b7c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Valarie,
+Kindly advise if you received the invoice shared yesterday
+
+*Regards*
+
+
+Maurine
+
+*Southern Palms Beach Resort*
+
+*Post Box: 363-80400, Diani Beach Road*
+
+*Diani, Ukunda.  Kenya*
+
+*Wireless: +25420235266/+254538015548/9*
+
+*Mobile: +254733333366/+254722203166/*
+
+*Reservations direct line: 0772795394*
+
+*Email: **reservations@southernpalmskenya.com
+<reservations@southernpalmskenya.com>*
+
+*http://www.southernpalmskenya.com <http://www.southernpalmskenya.com/>*
+
+*http://www.bamburibeachkenya.com <http://www.bamburibeachkenya.com/>*
+
+
+On Mon, Dec 4, 2023 at 5:37=E2=80=AFPM Reservations1 Southern Palms <
+reservations1@southernpalmskenya.com> wrote:
+
+> Dear Novustell,
+> Below please find attached with the proforma invoice and advise on the
+> payment for your booking to be confirmed.
+> Kindly might you not be able to make payment by tomorrow noon  please cal=
+l
+> to reconfirm availability on the same before you proceed with the payment=
+.
+>
+> *Regards*
+>
+>
+> Maurine
+>
+> *Southern Palms Beach Resort*
+>
+> *Post Box: 363-80400, Diani Beach Road*
+>
+> *Diani, Ukunda.  Kenya*
+>
+> *Wireless: +25420235266/+254538015548/9*
+>
+> *Mobile: +254733333366/+254722203166/*
+>
+> *Reservations direct line: 0772795394*
+>
+> *Email: **reservations@southernpalmskenya.com
+> <reservations@southernpalmskenya.com>*
+>
+> *http://www.southernpalmskenya.com <http://www.southernpalmskenya.com/>*
+>
+> *http://www.bamburibeachkenya.com <http://www.bamburibeachkenya.com/>*
+>
+>
+> On Mon, Dec 4, 2023 at 1:10=E2=80=AFPM <info@novustelltravel.com> wrote:
+>
+>> Dear Team,
+>>
+>>
+>>
+>> Kindly book and confirm as per the below attached voucher and share
+>> invoice.
+>>
+>>
+>>
+>> Thank you.
+>>
+>>
+>>
+>> Kind Regards,
+>>
+>>
+>>
+>> Novustell Limited
+>>
+>
+
+--000000000000e868e1060bbe6b7c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"color:#000000">Dear =
+Valarie,</div><div class=3D"gmail_default" style=3D"color:#000000">Kindly a=
+dvise if you received the invoice shared yesterday</div><div><div dir=3D"lt=
+r" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D=
+"ltr"><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D=
+"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot=
+;sans-serif&quot;;color:rgb(31,73,125)">Regards</span></b></p><p class=3D"M=
+soNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"fo=
+nt-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;c=
+olor:rgb(31,73,125)"><br></span></b></p><p class=3D"MsoNormal" style=3D"col=
+or:rgb(34,34,34)"><span class=3D"gmail_default" style=3D"color:rgb(0,0,0)">=
+Maurine</span><br></p><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)">=
+<b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Go=
+thic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Southern Palms Beac=
+h Resort<u></u><u></u></span></b></p><p class=3D"MsoNormal" style=3D"color:=
+rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&=
+quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Post=
+ Box: 363-80400, Diani Beach Road<u></u><u></u></span></b></p><p class=3D"M=
+soNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"fo=
+nt-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;c=
+olor:rgb(31,73,125)">Diani, Ukunda.=C2=A0 Kenya<u></u><u></u></span></b></p=
+><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-G=
+B" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans=
+-serif&quot;;color:rgb(31,73,125)">Wireless: +25420235266/+254538015548/9<u=
+></u><u></u></span></b></p><p class=3D"MsoNormal" style=3D"color:rgb(34,34,=
+34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Centu=
+ry Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Mobile: +25473=
+3333366/+254722203166/<u></u><u></u></span></b></p><p class=3D"MsoNormal" s=
+tyle=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt=
+;font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31=
+,73,125)"><span>Reservations</span>=C2=A0direct line: 0772795394<u></u><u><=
+/u></span></b></p><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><=
+span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Gothic=
+&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Email:=C2=A0</span></b>=
+<b><u><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century=
+ Gothic&quot;,&quot;sans-serif&quot;;color:blue"><a href=3D"mailto:reservat=
+ions@southernpalmskenya.com" style=3D"color:rgb(17,85,204)" target=3D"_blan=
+k"><span style=3D"color:rgb(5,99,193)"><span>reservations</span>@<span>sout=
+hernpalmskenya.com</span></span></a></span></u></b><b><span lang=3D"EN-GB" =
+style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-se=
+rif&quot;;color:rgb(31,73,125)"><u></u><u></u></span></b></p><p class=3D"Ms=
+oNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"fon=
+t-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;co=
+lor:rgb(31,73,125)"><a href=3D"http://www.southernpalmskenya.com/" style=3D=
+"color:rgb(17,85,204)" target=3D"_blank">http://www.southernpalmskenya.com<=
+/a><u></u><u></u></span></b></p><p class=3D"MsoNormal" style=3D"color:rgb(3=
+4,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;=
+Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)"><a href=
+=3D"http://www.bamburibeachkenya.com/" style=3D"color:rgb(17,85,204)" targe=
+t=3D"_blank"><span style=3D"color:rgb(5,99,193)">http://www.bamburibeachken=
+ya.com</span></a></span></b></p></div></div></div><br></div><br><div class=
+=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, Dec 4, 2023 =
+at 5:37=E2=80=AFPM Reservations1 Southern Palms &lt;<a href=3D"mailto:reser=
+vations1@southernpalmskenya.com">reservations1@southernpalmskenya.com</a>&g=
+t; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0p=
+x 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div d=
+ir=3D"ltr"><div class=3D"gmail_default" style=3D"color:rgb(0,0,0)">Dear Nov=
+ustell,</div><div class=3D"gmail_default" style=3D"color:rgb(0,0,0)">Below =
+please find attached with the proforma invoice and advise on the payment fo=
+r your booking to be confirmed.</div><div class=3D"gmail_default" style=3D"=
+color:rgb(0,0,0)">Kindly might you not be able to make payment by tomorrow =
+noon=C2=A0 please call to reconfirm availability=C2=A0on the same before yo=
+u proceed with the=C2=A0payment.</div><div class=3D"gmail_default" style=3D=
+"color:rgb(0,0,0)"><br></div><div><div dir=3D"ltr" class=3D"gmail_signature=
+"><div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b>=
+<span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Gothi=
+c&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Regards</span></b></p>=
+<p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB=
+" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-=
+serif&quot;;color:rgb(31,73,125)"><br></span></b></p><p class=3D"MsoNormal"=
+ style=3D"color:rgb(34,34,34)"><span class=3D"gmail_default" style=3D"color=
+:rgb(0,0,0)">Maurine</span><br></p><p class=3D"MsoNormal" style=3D"color:rg=
+b(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&qu=
+ot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Southe=
+rn Palms Beach Resort<u></u><u></u></span></b></p><p class=3D"MsoNormal" st=
+yle=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;=
+font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,=
+73,125)">Post Box: 363-80400, Diani Beach Road<u></u><u></u></span></b></p>=
+<p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB=
+" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-=
+serif&quot;;color:rgb(31,73,125)">Diani, Ukunda.=C2=A0 Kenya<u></u><u></u><=
+/span></b></p><p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span=
+ lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quo=
+t;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Wireless: +25420235266/+254=
+538015548/9<u></u><u></u></span></b></p><p class=3D"MsoNormal" style=3D"col=
+or:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-famil=
+y:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">M=
+obile: +254733333366/+254722203166/<u></u><u></u></span></b></p><p class=3D=
+"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"=
+font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;=
+;color:rgb(31,73,125)"><span>Reservations</span>=C2=A0direct line: 07727953=
+94<u></u><u></u></span></b></p><p class=3D"MsoNormal" style=3D"color:rgb(34=
+,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;C=
+entury Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,125)">Email:=C2=
+=A0</span></b><b><u><span lang=3D"EN-GB" style=3D"font-size:9pt;font-family=
+:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:blue"><a href=3D"m=
+ailto:reservations@southernpalmskenya.com" style=3D"color:rgb(17,85,204)" t=
+arget=3D"_blank"><span style=3D"color:rgb(5,99,193)"><span>reservations</sp=
+an>@<span>southernpalmskenya.com</span></span></a></span></u></b><b><span l=
+ang=3D"EN-GB" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;=
+,&quot;sans-serif&quot;;color:rgb(31,73,125)"><u></u><u></u></span></b></p>=
+<p class=3D"MsoNormal" style=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB=
+" style=3D"font-size:9pt;font-family:&quot;Century Gothic&quot;,&quot;sans-=
+serif&quot;;color:rgb(31,73,125)"><a href=3D"http://www.southernpalmskenya.=
+com/" style=3D"color:rgb(17,85,204)" target=3D"_blank">http://www.southernp=
+almskenya.com</a><u></u><u></u></span></b></p><p class=3D"MsoNormal" style=
+=3D"color:rgb(34,34,34)"><b><span lang=3D"EN-GB" style=3D"font-size:9pt;fon=
+t-family:&quot;Century Gothic&quot;,&quot;sans-serif&quot;;color:rgb(31,73,=
+125)"><a href=3D"http://www.bamburibeachkenya.com/" style=3D"color:rgb(17,8=
+5,204)" target=3D"_blank"><span style=3D"color:rgb(5,99,193)">http://www.ba=
+mburibeachkenya.com</span></a></span></b></p></div></div></div><br></div><b=
+r><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, =
+Dec 4, 2023 at 1:10=E2=80=AFPM &lt;<a href=3D"mailto:info@novustelltravel.c=
+om" target=3D"_blank">info@novustelltravel.com</a>&gt; wrote:<br></div><blo=
+ckquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left=
+:1px solid rgb(204,204,204);padding-left:1ex"><div><div lang=3D"EN-US"><div=
+><p class=3D"MsoNormal">Dear Team,<u></u><u></u></p><p class=3D"MsoNormal">=
+<u></u>=C2=A0<u></u></p><p class=3D"MsoNormal">Kindly book and confirm as p=
+er the below attached voucher and share invoice.<u></u><u></u></p><p class=
+=3D"MsoNormal"><u></u>=C2=A0<u></u></p><p class=3D"MsoNormal">Thank you.<u>=
+</u><u></u></p><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p><p class=3D"M=
+soNormal">Kind Regards, <u></u><u></u></p><p class=3D"MsoNormal"><u></u>=C2=
+=A0<u></u></p><p class=3D"MsoNormal">Novustell Limited<u></u><u></u></p></d=
+iv></div></div></blockquote></div>
+</blockquote></div>
+
+--000000000000e868e1060bbe6b7c--

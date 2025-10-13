@@ -1,0 +1,292 @@
+{% comment %}
+Google Analytics 4 (GA4) Tracking Template for Novustell Travel
+================================================================
+
+This template provides comprehensive Google Analytics 4 tracking including:
+- Page view tracking
+- Enhanced ecommerce events
+- Form submission tracking
+- CTA click tracking
+- File download tracking
+- User engagement metrics
+
+Usage: Include this template in the <head> section of basemain.html
+{% endcomment %}
+
+{% if SHOULD_LOAD_ANALYTICS %}
+<!-- Google Analytics 4 (GA4) Configuration -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ GOOGLE_ANALYTICS_ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Configure GA4 with enhanced measurement
+  gtag('config', '{{ GOOGLE_ANALYTICS_ID }}', {
+    // Enhanced measurement settings
+    enhanced_measurement: {
+      scrolls: true,
+      outbound_clicks: true,
+      site_search: true,
+      video_engagement: true,
+      file_downloads: true,
+      page_changes: true
+    },
+    // Custom parameters for travel industry
+    custom_map: {
+      'custom_parameter_1': 'travel_type',
+      'custom_parameter_2': 'destination',
+      'custom_parameter_3': 'package_category'
+    },
+    // Cookie settings for GDPR compliance
+    anonymize_ip: true,
+    cookie_flags: 'SameSite=None;Secure',
+    // Performance settings
+    send_page_view: true,
+    allow_google_signals: true,
+    allow_ad_personalization_signals: false  // GDPR compliance
+  });
+
+  // Custom event tracking for Novustell Travel
+  
+  // Track form submissions
+  function trackFormSubmission(formType, formName) {
+    gtag('event', 'form_submit', {
+      event_category: 'engagement',
+      event_label: formName,
+      form_type: formType,
+      value: 1
+    });
+  }
+
+  // Track CTA clicks
+  function trackCTAClick(ctaName, ctaLocation) {
+    gtag('event', 'cta_click', {
+      event_category: 'engagement',
+      event_label: ctaName,
+      cta_location: ctaLocation,
+      value: 1
+    });
+  }
+
+  // Track travel package views
+  function trackPackageView(packageName, packageType, destination) {
+    gtag('event', 'view_item', {
+      event_category: 'ecommerce',
+      event_label: packageName,
+      item_category: packageType,
+      item_name: packageName,
+      destination: destination,
+      value: 1
+    });
+  }
+
+  // Track inquiry submissions
+  function trackInquiry(inquiryType, destination, numberOfPeople) {
+    gtag('event', 'generate_lead', {
+      event_category: 'conversion',
+      event_label: inquiryType,
+      inquiry_type: inquiryType,
+      destination: destination,
+      number_of_people: numberOfPeople,
+      value: 10  // Assign value to leads
+    });
+  }
+
+  // Track search usage
+  function trackSearch(searchTerm, searchType) {
+    gtag('event', 'search', {
+      event_category: 'engagement',
+      search_term: searchTerm,
+      search_type: searchType
+    });
+  }
+
+  // Track file downloads
+  function trackDownload(fileName, fileType) {
+    gtag('event', 'file_download', {
+      event_category: 'engagement',
+      event_label: fileName,
+      file_name: fileName,
+      file_type: fileType
+    });
+  }
+
+  // Track WhatsApp clicks
+  function trackWhatsAppClick(source) {
+    gtag('event', 'whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'WhatsApp Contact',
+      source: source,
+      value: 5
+    });
+  }
+
+  // Track email clicks
+  function trackEmailClick(emailType) {
+    gtag('event', 'email_click', {
+      event_category: 'engagement',
+      event_label: emailType,
+      value: 3
+    });
+  }
+
+  // Track phone clicks
+  function trackPhoneClick(phoneNumber) {
+    gtag('event', 'phone_click', {
+      event_category: 'engagement',
+      event_label: 'Phone Contact',
+      phone_number: phoneNumber,
+      value: 8
+    });
+  }
+
+  // Track page scroll depth
+  let scrollDepthTracked = false;
+  function trackScrollDepth() {
+    if (!scrollDepthTracked) {
+      const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      if (scrollPercent >= 75) {
+        gtag('event', 'scroll_depth', {
+          event_category: 'engagement',
+          event_label: '75% Scroll',
+          scroll_depth: scrollPercent
+        });
+        scrollDepthTracked = true;
+      }
+    }
+  }
+
+  // Track time on page
+  let timeOnPageTracked = false;
+  setTimeout(function() {
+    if (!timeOnPageTracked) {
+      gtag('event', 'time_on_page', {
+        event_category: 'engagement',
+        event_label: '30 seconds',
+        time_threshold: 30
+      });
+      timeOnPageTracked = true;
+    }
+  }, 30000);
+
+  // Auto-track common elements when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Track form submissions
+    const forms = document.querySelectorAll('form');
+    forms.forEach(function(form) {
+      form.addEventListener('submit', function() {
+        const formId = form.id || form.className || 'unknown_form';
+        const formType = form.dataset.formType || 'contact';
+        trackFormSubmission(formType, formId);
+      });
+    });
+
+    // Track CTA button clicks
+    const ctaButtons = document.querySelectorAll('.btn-primary, .cta-button, [data-cta]');
+    ctaButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const ctaName = button.textContent.trim() || button.dataset.cta || 'CTA Button';
+        const ctaLocation = button.dataset.location || 'unknown';
+        trackCTAClick(ctaName, ctaLocation);
+      });
+    });
+
+    // Track WhatsApp widget clicks
+    const whatsappElements = document.querySelectorAll('[href*="wa.me"], [href*="whatsapp"], .whatsapp-widget');
+    whatsappElements.forEach(function(element) {
+      element.addEventListener('click', function() {
+        const source = element.dataset.source || 'widget';
+        trackWhatsAppClick(source);
+      });
+    });
+
+    // Track email links
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const emailType = link.dataset.emailType || 'contact';
+        trackEmailClick(emailType);
+      });
+    });
+
+    // Track phone links
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const phoneNumber = link.href.replace('tel:', '');
+        trackPhoneClick(phoneNumber);
+      });
+    });
+
+    // Track file downloads
+    const downloadLinks = document.querySelectorAll('a[href$=".pdf"], a[href$=".doc"], a[href$=".docx"], a[href$=".jpg"], a[href$=".png"]');
+    downloadLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const fileName = link.href.split('/').pop();
+        const fileType = fileName.split('.').pop();
+        trackDownload(fileName, fileType);
+      });
+    });
+
+    // Track search form submissions
+    const searchForms = document.querySelectorAll('.search-form, [data-search-form]');
+    searchForms.forEach(function(form) {
+      form.addEventListener('submit', function() {
+        const searchInput = form.querySelector('input[type="search"], input[name*="search"], input[name*="query"]');
+        if (searchInput) {
+          const searchTerm = searchInput.value;
+          const searchType = form.dataset.searchType || 'general';
+          trackSearch(searchTerm, searchType);
+        }
+      });
+    });
+
+    // Track scroll depth
+    window.addEventListener('scroll', trackScrollDepth);
+  });
+
+  // Track page visibility changes
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'hidden') {
+      gtag('event', 'page_visibility', {
+        event_category: 'engagement',
+        event_label: 'page_hidden'
+      });
+    }
+  });
+
+</script>
+
+{% if GOOGLE_TAG_MANAGER_ID %}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ GOOGLE_TAG_MANAGER_ID }}');</script>
+<!-- End Google Tag Manager -->
+{% endif %}
+
+{% else %}
+<!-- Analytics disabled in development mode or not configured -->
+{% if DEBUG %}
+<!-- Development Mode: Analytics tracking disabled -->
+<script>
+  console.log('🔧 Development Mode: Google Analytics tracking is disabled');
+  // Provide mock functions for development
+  window.gtag = function() { console.log('GA Event:', arguments); };
+  window.trackFormSubmission = function() { console.log('Form submission tracked:', arguments); };
+  window.trackCTAClick = function() { console.log('CTA click tracked:', arguments); };
+  window.trackPackageView = function() { console.log('Package view tracked:', arguments); };
+  window.trackInquiry = function() { console.log('Inquiry tracked:', arguments); };
+  window.trackSearch = function() { console.log('Search tracked:', arguments); };
+  window.trackDownload = function() { console.log('Download tracked:', arguments); };
+  window.trackWhatsAppClick = function() { console.log('WhatsApp click tracked:', arguments); };
+  window.trackEmailClick = function() { console.log('Email click tracked:', arguments); };
+  window.trackPhoneClick = function() { console.log('Phone click tracked:', arguments); };
+</script>
+{% endif %}
+{% endif %}

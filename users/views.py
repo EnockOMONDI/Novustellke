@@ -1244,3 +1244,7 @@ def test_500_error(request):
     Only works when DEBUG=False
     """
     raise Exception("This is a test 500 error for testing error pages")
+
+
+# Test views removed - custom error pages are working correctly
+# Error handlers are configured in tours_travels/urls.py and work when DEBUG=False

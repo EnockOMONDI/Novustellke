@@ -1,0 +1,1147 @@
+Return-Path: <bounce@info.aircanada.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id kNnkOLE9aGftDjkAObGTvA
+	(envelope-from <bounce@info.aircanada.com>)
+	for <novuste1@rs2.hpcnoc.com>; Sun, 22 Dec 2024 19:26:25 +0300
+Return-path: <bounce@info.aircanada.com>
+Envelope-to: qunita@novustelltravel.com
+Delivery-date: Sun, 22 Dec 2024 19:26:25 +0300
+Received: from r123.info.aircanada.com ([172.82.216.123]:54950)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <bounce@info.aircanada.com>)
+	id 1tPOme-0000000FhQr-0yzR
+	for qunita@novustelltravel.com;
+	Sun, 22 Dec 2024 19:26:25 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.aircanada.com;
+	s=aircanada; t=1734884728;
+	bh=voLqdEM3hpblJI48eCZueC9M17TUHrukUIBVzC372Ko=;
+	h=From:Subject:Date:To:MIME-Version:Message-ID:Content-Type;
+	b=Gypkd2wyXqLNArFJxtbzvUP/7+MwDe6+5NIDQuZB9wU5SArRCpBeesfwjPsI03fsN
+	 QUGk/Q95dxgW7nZjx1FZ0KdbongWRHjGLNuyqRgO0C/tJYzOualFKhS7pcxrzhHbKh
+	 XCdACZEB7Rsg5HdvJJmoNtt5mAfDkth86pU6Z5IJTmoEByjIqPAcxKRQVCzqxIi0jk
+	 KT97NzfyFgh4CXQRMe+qUu6gs7bp6J5tZCIU1d1kEusOojesQc6Cf9kbCj8CJAsFv/
+	 8Ag3wjP+ktKOBQQtLeM3DFxbXm3WGkxeK8A/paJow8AUccgLi9L39YJ5UKJB6N/cxM
+	 wIzJAgfnZVdhQ==
+X-MSFBL: 8K6LwcE+zacMVuyfPYAYZsdx3pAGgzkll1oXNWqFGxc=|eyJnIjoiZGVmYXVsdF8
+	zZmEyNDJjOS00NzIxLTRmZmItYTE4Zi01OTM2OTVmMzhjODIiLCJyIjoicXVuaXR
+	hQG5vdnVzdGVsbHRyYXZlbC5jb20iLCJyY3B0X21ldGEiOnsgIm0iOiAiMTA5NzI
+	zNzUzIiwgImQiOiAiNjg3MTk4MDciLCAiaW4iOiAiYWlyY2FuYWRhX3J0X3Byb2Q
+	2IiwgInIiOiAicXVuaXRhQG5vdnVzdGVsbHRyYXZlbC5jb20iIH0sImIiOiJhaXJ
+	jYW5hZGFfMTcyLjgyLjIxNi4xMjNfZGVmYXVsdF8zZmEyNDJjOS00NzIxLTRmZmI
+	tYTE4Zi01OTM2OTVmMzhjODIifQ==
+Received: from [3.97.161.197] ([3.97.161.197:55073] helo=r123.info.aircanada.com)
+	by or2-prod1-mta-i-0933202c7af4c56e9 (envelope-from <bounce@info.aircanada.com>)
+	(ecelerity 4.4.1.20033 r(msys-ecelerity:tags/4.4.1.0^0)) with ESMTP
+	id 12/46-32024-87D38676; Sun, 22 Dec 2024 16:25:28 +0000
+From: "Air Canada" <communications@info.aircanada.com>
+Subject: Gate change for flight AC414 to Montreal (YUL)
+Date: Sun, 22 Dec 2024 17:25:22 +0100
+To: <qunita@novustelltravel.com>
+Reply-To: "Air Canada" <communications@info.aircanada.com>
+MIME-Version: 1.0
+X-mailer: nlserver, Build 6.7.0
+Message-ID: <NM6068A4069041894BFaircanada_rt_prod6@info.aircanada.com>
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  New gate information for flight AC414 from Toronto to Montreal
+    New gate information for flight AC414 from Toronto to Montreal 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: aircanada.com]
+                             [URI: fonts.googleapis.com]
+  0.1 URIBL_SBL_A            Contains URL's A record listed in the Spamhaus SBL
+                             blocklist
+                             [URI: fonts.googleapis.com/142.250.185.234]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [172.82.216.123 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [172.82.216.123 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [172.82.216.123 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+                             background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Spam-Flag: NO
+
+
+
+
+
+
+
+
+  <!-- START BLOCK -->
+
+ <!-- END BLOCK -->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html lang=3D"en">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+     <title>New gate information for flight AC414 from Toronto to Montreal<=
+/title>
+    
+    <link href=3D"https://fonts.googleapis.com/css=3Ffamily=3DOpen+Sans:400=
+,600,700&display=3Dswap" rel=3D"stylesheet">
+    
+    <!--[if gte mso 16]>
+    <style>
+        .mso16-divider {
+            mso-margin-top-alt: 2px !important;
+        }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type=3D"text/css">
+        body, th, td, span, p, h1, h2, a {
+            font-family: Verdana !important;
+            mso-line-height-rule: exactly !important;
+        }
+    </style>
+    <![endif]-->
+    
+    <style>
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ffffff;
+        }
+    
+        .ExternalClass {
+            width: 100%;
+            background-color: #ffffff;
+        }
+    
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+    
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+    
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+    
+        table td {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+    
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+    
+        span.MsoHyperlink {
+            mso-style-priority: 99;
+            color: inherit;
+        }
+    
+        span.MsoHyperlinkFollowed {
+            mso-style-priority: 99;
+            color: inherit;
+        }
+    
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    
+        .show-mobile-new {
+            display: none;
+        }
+    
+        @media screen and (max-width: 639px) {
+            table[class=3D"container"] {
+                width: 100% !important;
+            }
+    
+            .container2 {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+    
+            img[class=3D"image-resize"] {
+                width: 100% !important;
+            }
+    
+            img[class=3D"rball-mobile"] {
+                width: 10px !important;
+                height: auto !important;
+            }
+    
+            td[class=3D"force-col"] {
+                display: block;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                width: 100% !important;
+            }
+    
+            table[class=3D"col"] {
+                float: none !important;
+                width: 100% !important;
+            }
+    
+            td[class=3D"mobile-width-auto"] {
+                width: auto !important;
+            }
+    
+            td[id=3D"mobile-height-171"] {
+                width: 100% !important;
+                height: 171px !important;
+            }
+    
+            table[class=3D"mobile-width-100"] {
+                width: 100% !important;
+            }
+    
+            td[class=3D"mobile-padding-20px"] {
+                padding-left: 20px !important;
+                padding-top: 20px !important;
+                padding-right: 20px !important;
+                padding-bottom: 20px !important;
+            }
+    
+            td[class=3D"mobile-padding-v15-h8"] {
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+            }
+    
+            td[class=3D"mobile-main-padding"] {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+    
+            td[class=3D"mobile-main-padding-2"] {
+                padding-left: 15px !important;
+                padding-right: 20px !important;
+            }
+    
+            td[class=3D"mobile-main-padding-3"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+    
+            td[class=3D"mobile-padding-30px"] {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
+    
+            td[class=3D"mobile-padding-all-30px"] {
+                padding-top: 30px !important;
+                padding-left: 30px !important;
+                padding-bottom: 30px !important;
+                padding-right: 30px !important;
+            }
+    
+            td[class=3D"mobile-main-padding-4"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+    
+            td[class=3D"mobile-no-padding"] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+    
+            tr[class=3D"show-mobile"] {
+                display: block !important;
+            }
+    
+            tr[class=3D"show-mobile-tr"] {
+                display: table-row !important;
+                width: auto !important;
+                max-height: inherit !important;
+                overflow: visible !important;
+                float: none !important;
+            }
+    
+            tr[class=3D"hide-mobile"] {
+                display: none;
+            }
+    
+            td[class=3D"hide-mobile"] {
+                display: none;
+            }
+    
+            .hide-mobile2 {
+                display: none !important;
+            }
+    
+            td[class=3D"show-mobile"] {
+                display: block !important;
+                width: auto !important;
+                max-height: inherit !important;
+                overflow: visible !important;
+                float: none !important;
+                border-width: 1px !important;
+            }
+    
+            td[class=3D"show-mobile-table-cell"] {
+                display: table-cell !important;
+                width: auto !important;
+                max-height: inherit !important;
+                overflow: visible !important;
+                float: none !important;
+                border-width: 1px !important;
+            }
+    
+            table[class=3D"mobile-border-none"] {
+                border: none !important;
+            }
+    
+            td[id=3D"text-left"] {
+                text-align: left !important;
+            }
+    
+            td[id=3D"text-center"] {
+                text-align: center !important;
+            }
+    
+            td[id=3D"text-right"] {
+                text-align: right !important;
+            }
+    
+            td[id=3D"remove-border"] {
+                border: none !important;
+            }
+            /* ADDED 04.04.2016 for Tables Alignment */
+            td[id=3D"mobile-table-cell-padding"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            /* _______________________________________ */
+            td[id=3D"padding-left-12"] {
+                padding-left: 12px !important;
+            }
+    
+            td[id=3D"padding-right-12"] {
+                padding-right: 12px !important;
+            }
+    
+            td[id=3D"image-padding-8-15"] {
+                padding: 0 8px !important;
+            }
+    
+            td[id=3D"image-padding-all"] {
+                padding: 7px 7px 7px 7px !important;
+            }
+    
+            td[id=3D"image-padding-no-bottom"] {
+                padding: 7px 7px 0 7px !important;
+            }
+    
+            td[id=3D"image-padding-all-2"] {
+                padding: 15px 15px 15px 15px !important;
+            }
+    
+            td[id=3D"image-padding-no-bottom-2"] {
+                padding: 15px 15px 0 15px !important;
+            }
+    
+            td[id=3D"cell-no-padding"] {
+                padding: 0 !important;
+            }
+    
+            td[id=3D"mobile-offer-destination"] {
+                width: 50% !important;
+            }
+    
+            td[id=3D"mobile-offer-price"] {
+                width: 5% !important;
+            }
+    
+            td[id=3D"padding-left-20"] {
+                padding-left: 20px !important;
+            }
+    
+            td[id=3D"padding-left-30"] {
+                padding-left: 30px !important;
+            }
+    
+            td[id=3D"padding-left-8px"] {
+                padding-left: 8px !important;
+            }
+    
+            td[id=3D"padding-right-8px"] {
+                padding-right: 8px !important;
+            }
+    
+            td[id=3D"border-fix"] {
+                display: table-cell !important;
+            }
+    
+            td[class=3D"mobile-60-percent"] {
+                width: 60% !important;
+            }
+    
+            td[class=3D"mobile-paddding-20-bottom-0"] {
+                padding: 20px !important;
+                padding-bottom: 0 !important;
+            }
+    
+            td[class=3D"button-padding-20"] {
+                padding-top: 20px !important;
+            }
+    
+            td[class=3D"mobile-line-height-normal"] {
+                line-height: normal !important;
+            }
+    
+            td[class=3D"mobile-font-7"] {
+                font-size: 7px !important;
+            }
+    
+            td[class=3D"mobile-font-9"] {
+                font-size: 9px !important;
+            }
+    
+            td[class=3D"mobile-font-10"] {
+                font-size: 10px !important;
+            }
+    
+            td[class=3D"mobile-font-11"] {
+                font-size: 11px !important;
+            }
+    
+            td[class=3D"mobile-font-12"] {
+                font-size: 12px !important;
+            }
+    
+            td[class=3D"mobile-font-17"] {
+                font-size: 17px !important;
+            }
+    
+            td[class=3D"show-border"] {
+                border-width: 1px !important;
+            }
+    
+            td[class=3D"reset-padding"] {
+                padding: 0 !important;
+            }
+    
+            td[class=3D"image-bg-1"] {
+                width: 100% !important;
+                background: #cccccc no-repeat !important;
+                background-size: 100% !important;
+            }
+    
+            span[class=3D"mobile-center-text"] {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+    
+            td[class=3D"table-mobile-padding"] {
+                padding: 10px !important;
+            }
+    
+            td[id=3D"table-mobile-headline"] {
+                height: 25px !important;
+                padding-bottom: 2px !important;
+            }
+    
+            .flight-bullet {
+                padding-right: 8px !important;
+                font-size: 10px !important;
+            }
+    
+            #mobile-padding-bottom {
+                padding-bottom: 20px !important;
+            }
+    
+            th[class=3D"force-col"] {
+                display: block;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                width: 100% !important;
+            }
+    
+            .show-mobile-new {
+                display: table-row !important;
+            }
+    
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+    
+            .mobile-padding40 {
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+    
+            .show-mobile-td {
+                display: table-cell !important;
+            }
+    
+            .force-row {
+                display: block !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                width: 100% !important;
+            }
+    
+            .heightAuto {
+                height: auto !important;
+            }
+    
+            .buttonMobile {
+                width: 250px !important;
+            }
+    
+            .buttonMobile2 {
+                width: 200px !important;
+            }
+    
+            .padding13 {
+                padding: 13px !important;
+            }
+    
+            .image-resize2 {
+                width: 100% !important;
+            }
+    
+            .tiercopy-m {
+                font-size: 20px !important;
+                line-height: 20px !important;
+            }
+
+            .resetHeight {
+                height: auto !important;
+            }
+        }
+    
+        @media screen and (max-width: 359px) {
+            .pointcopy-m {
+                font-size: 16px !important;
+                line-height: 16px !important;
+            }
+    
+            .tiercopy-m {
+                font-size: 16px !important;
+                line-height: 16px !important;
+            }
+        }
+    </style>
+    
+   
+    <!--[if gte mso 16]>
+    <style>
+        .mso16-divider {
+            mso-margin-top-alt: 2px !important;
+        }
+    </style>
+    <![endif]-->
+
+</head>
+
+
+
+
+<!-- ************************ BEGIN RENDER CommonTemplate STRING **********=
+************** -->
+
+
+
+<body style=3D"margin:0; padding:0;" bgcolor=3D"25282a" leftmargin=3D"0" to=
+pmargin=3D"0" marginwidth=3D"0" marginheight=3D"0">                        =
+    <div style=3D"display:none !important; mso-hide:all; width: 0; max-heig=
+ht: 0; overflow: hidden; font-size:0; mso-line-height-alt:0; mso-margin-top=
+-alt:1px;">New gate information for flight AC414 from Toronto to Montreal</=
+div>                            <table id=3D"content" border=3D"0" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"25282a">
+<!-- ************************ END RENDER CommonTemplate STRING ************=
+************ -->
+  
+          <!-- ************************ BEGIN RENDER HEADER ***************=
+********* -->
+          
+          
+<!-- Start aca:Common_Header_MirrorPage -->
+<tr>
+    <td align=3D"center" valign=3D"middle">
+        <!-- Outer BAR Table -->
+        <table border=3D"0" width=3D"100%" height=3D"30" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"container" bgcolor=3D"#25282a" style=3D"border-t=
+op: 3px solid #25282a;">
+            <tr>
+                <td height=3D"30" align=3D"center" valign=3D"middle">
+                    <!-- Outer color Table -->
+                    <table border=3D"0" width=3D"640" height=3D"35" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"container">
+                        <tr>
+                            <td align=3D"left" valign=3D"middle" style=3D"p=
+adding-right: 30px;" class=3D"mobile-padding-30px">
+                                <!-- Top Table -->
+                                <table border=3D"0" width=3D"100%" height=
+=3D"35" cellpadding=3D"0" cellspacing=3D"0" class=3D"container">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<!--[if !mso]><!-->
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"middle" width=3D=
+"0" height=3D"6" class=3D"show-mobile" style=3D"display: none; width: 0; ma=
+x-height: 0; overflow: hidden; float: left;"></td>
+=09=09=09=09=09=09=09=09=09=09<!--<![endif]-->
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"middle" style=
+=3D"font-family:'Open Sans', Verdana, sans-serif; line-height: 15px; font-s=
+ize: 12px; color: #c7c9c7; font-style:normal;font-weight:normal;text-decora=
+tion:none;text-transform:none;; padding-left: 30px;" class=3D"force-col">
+=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"margin:0px; padding:0px;"><=
+a href=3D"" _label=3D"H_Snippet_ACA" style=3D"font-family: Verdana; font-si=
+ze: 12px; text-decoration: none; color: #c7c9c7;">New gate information for =
+flight AC414 from Toronto to Montreal</a></p>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<!--[if !mso]><!-->
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"middle" width=3D=
+"0" height=3D"4" class=3D"show-mobile" style=3D"display: none; width: 0; ma=
+x-height: 0; overflow: hidden; float: left;"></td>
+=09=09=09=09=09=09=09=09=09=09<!--<![endif]-->
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09<td align=3D"right" valign=3D"middle" style=
+=3D"font-family:'Open Sans', Verdana, sans-serif; font-size: 12px;" class=
+=3D"force-col" id=3D"text-left">
+=09=09=09=09=09=09=09=09=09=09=09<p style=3D"margin:0px; padding:0px;"><a h=
+ref=3D"https://t6.info.aircanada.com/r/=3Fid=3Dh68a4069,41894bf,12a0d&e=3Dc=
+DE9JTQwaUhEMFBqVjc0SThrOVlhS241YWsyaG1mSldLSlZjdzJGNG9LRUJpRXEySSUzRA&s=3D9=
+Oq3pQ7dIR4mZ5Kd5T6pIRDNxEow1NhmMbu-mAkeBzE" _label=3D"H_Web_ACA" _type=3D"m=
+irrorPage" style=3D"font-family: Verdana; font-size: 12px; text-decoration:=
+ underline; color: #c7c9c7;">Web&nbsp;version</a></p>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09<!--[if !mso]><!-->
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"middle" width=3D=
+"0" height=3D"8" class=3D"show-mobile" style=3D"display: none; width: 0; ma=
+x-height: 0; overflow: hidden; float: left;"></td>
+=09=09=09=09=09=09=09=09=09=09<!--<![endif]-->
+=09=09=09=09=09=09=09=09=09</tr>
+                                </table>
+                                <!-- END Top Table -->
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END Outer color Table -->
+                </td>
+            </tr>
+        </table>
+        <!-- END Outer BAR Table -->
+    </td>
+</tr>
+<!-- End aca:Common_Header_MirrorPage -->
+          
+          
+
+
+<tr>
+    <td align=3D"center" valign=3D"top">
+        <!-- Outer color Table -->
+        <table border=3D"0" width=3D"640" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"container" bgcolor=3D"#ffffff">
+            <tr>
+                <td align=3D"left" valign=3D"top" style=3D"padding: 27px 30=
+px;" class=3D"mobile-padding-all-30px">
+                    <!-- Bottom White Table -->
+                    <table border=3D"0" width=3D"100%" height=3D"30" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"container" bgcolor=3D"#ffffff">
+                        <tr>
+                            <td align=3D"left" valign=3D"middle" class=3D"f=
+orce-col">
+                                <a href=3D"https://t6.info.aircanada.com/r/=
+=3Fid=3Dh68a4069,41894bf,12a0e" _label=3D"H_Logo_ACA" target=3D"_blank" sty=
+le=3D"text-decoration:none;" title=3D"Air Canada"><img src=3D"http://res.ma=
+il.aircanada.com/res/aircana_mkt_prod3/header_logo_ac_white.jpg" alt=3D"Air=
+ Canada" border=3D"0"></a>
+                            </td>
+                            <td align=3D"right" valign=3D"middle" style=3D"=
+font-family:'Open Sans', Verdana, sans-serif; font-size: 12px; font-weight:=
+ bold; font-style: normal; text-decoration: none; color: #000000;" class=3D=
+"hide-mobile">
+                                 
+                            </td>
+                            <!--[if !mso]><!-->
+                            <td align=3D"left" valign=3D"middle" width=3D"0=
+" height=3D"30" class=3D"show-mobile" style=3D"display: none; width: 0; max=
+-height: 0; overflow: hidden; float: left;"></td>
+                            <!--<![endif]-->
+                            
+                        </tr>
+                    </table>
+                    <!-- END Bottom White Table -->
+                </td>
+            </tr>
+        </table>
+        <!-- END Outer color Table -->
+    </td>
+</tr>
+<!-- Block Common_Header_Header end -->
+          
+          <!-- ************************ END RENDER HEADER *****************=
+******* -->   
+
+          <!-- ############################################################=
+########################### -->
+
+          <!-- ************************ BEGIN RENDER BODY *****************=
+******* -->
+          
+            
+              
+<tr>
+    <td align=3D"center" valign=3D"top">
+        <table border=3D"0" width=3D"640" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"container" bgcolor=3D"#ffffff">
+            <tr>
+                <td align=3D"left" valign=3D"top">
+                    <!-- Content Table -->
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+>
+                        <tr>
+                            <td align=3D"" valign=3D"top" style=3D"font-fam=
+ily:'Open Sans', Verdana, sans-serif; font-size:15px; color:#4b4f54;">
+                                <!-- MODULE 2 - WHITE BG - HERO IMG / BODY =
+/ CTA  -->
+<table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"clear:both">
+<tbody>
+
+ 
+  <!-- DESKTOP HERO IMG -->
+    <tr class=3D"hide-mobile">
+      <td align=3D"left" valign=3D"top" style=3D"">
+    <img src=3D"http://res.mail.aircanada.com/res/aircana_mkt_prod3/0822_CC=
+070_HERO-Gate-Change_D_BIL.png" border=3D"0" width=3D"100%" style=3D"displa=
+y:block;" alt=3D"">
+      </td>
+    </tr>
+    <!-- /DESKTOP HERO IMG -->
+    <!-- MOBILE HERO IMG -->
+    <!--[if !mso]><!-->
+    <tr style=3D"display:none;" class=3D"show-mobile">
+      <td align=3D"left" valign=3D"top" id=3D"" class=3D"show-mobile" style=
+=3D"display:none; width:0; max-height:0; overflow:hidden; float:left;">
+    <img src=3D"http://res.mail.aircanada.com/res/aircana_mkt_prod3/0822_CC=
+070_HERO-Gate-Change_M_BIL.png" border=3D"0" style=3D"display:block;" class=
+=3D"image-resize" alt=3D"">
+      </td>
+    </tr>
+    <!--<![endif]-->
+    <!-- /MOBILE HERO IMG -->    
+
+
+<tr>
+  <td align=3D"left" valign=3D"top">&nbsp;</td>
+</tr>
+<tr>
+  <td align=3D"left" valign=3D"top" style=3D"padding-left:30px; padding-rig=
+ht:30px;" class=3D"mobile-main-padding">
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+    <!-- BODY TEXT -->
+        <td align=3D"center" valign=3D" top" style=3D"font-family:'Open San=
+s', Verdana, sans-serif; font-size:20px; color:#000000;">
+        
+        
+        
+          <b>Kyle Kimanthi Wambua, your flight has a new gate and will be d=
+eparting from <span style=3D"color:#f01428;">Gate&nbsp;D31</span>.</b>
+            
+         
+                
+    
+    </td>
+        <!-- /BODY TEXT -->
+  </tr>
+
+  </tbody>
+  </table>
+  </td>
+</tr>
+</tbody>
+</table>
+<!-- /MODULE 2 - WHITE BG - HERO IMG / BODY / CTA  -->
+
+<br>
+
+<!--  SECOND REVISED FLIGHT TABLE   -->
+
+<table border=3D"0" width=3D"95%" align=3D"center" cellpadding=3D"5" cellsp=
+acing=3D"0" style=3D"border-left:1px solid #c7c9c7; border-right:1px solid =
+#c7c9c7; border-top:1px solid #c7c9c7;">
+<tbody>
+<tr>
+      <td align=3D"left" valign=3D"middle" height=3D"35" width=3D"33%" styl=
+e=3D"background-color:#EFEFEF;font-family:verdana; font-size:15px; border-b=
+ottom:1px solid #c7c9c7; padding-left: 15px; padding-right: 15px;" id=3D"mo=
+bile-table-cell-padding">
+       
+        <b>Flight&nbsp;AC414</b>
+         
+        
+       
+          
+            <br>        
+        <b style=3D"font-size:12px;font-weight:normal;"><s>Gate&nbsp;D20</s=
+></b>
+           
+         
+        
+        <br>
+    <b style=3D"font-size:12px;font-weight:normal;"><b><span style=3D"color=
+:#f01428;">Gate&nbsp;D31</span></b></b>
+     
+      </td>
+        
+      <td colspan=3D"2" valign=3D"top" style=3D"border-bottom:1px solid #c7=
+c9c7;"><img src=3D"http://res.mail.aircanada.com/res/aircana_mkt_prod3/PRJA=
+C10000200_plane-takeoff@2x.png"  width=3D"40" align=3D"top"></td>
+        
+      <td align=3D"left" valign=3D"middle" height=3D"35" width=3D"33%" styl=
+e=3D"font-family:verdana; font-size:12px; border-bottom:1px solid #c7c9c7; =
+border-right:1px solid #c7c9c7; padding-left: 15px; padding-right: 15px;" i=
+d=3D"mobile-table-cell-padding">
+       
+      <b>Toronto (YYZ)</b>
+      <br>
+         
+        Sun 22 Dec
+          
+      <br>
+        
+         
+        
+          <b>14:00</b>&nbsp;local&nbsp;time
+        
+         
+
+      </td>
+        
+      <td colspan=3D"2" valign=3D"top" style=3D"border-bottom:1px solid #c7=
+c9c7;"><img src=3D"http://res.mail.aircanada.com/res/aircana_mkt_prod3/PRJA=
+C10000200_plane-landing@2x.png"  width=3D"40" align=3D"top"></td>
+        
+      <td align=3D"left" valign=3D"middle" height=3D"35" width=3D"33%" styl=
+e=3D"font-family:verdana; font-size:12px; border-right:1px solid #c7c9c7; b=
+order-bottom:1px solid #c7c9c7; padding-left: 15px; padding-right: 15px;" i=
+d=3D"mobile-table-cell-padding">
+        
+      <b>Montreal (YUL)</b>
+      <br>
+       
+        Sun 22 Dec
+         
+      <br>
+      
+         
+        
+          <b>15:18</b>&nbsp;local&nbsp;time
+         
+        
+      </td>
+  </tr>
+</tbody>
+</table>
+<!--  /SECOND REVISED FLIGHT  -->
+
+<br>
+
+<!-- MODULE LEFT TEXT - WHITE BG -->
+<table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"clear:both">
+<tbody>
+<tr>
+  <td align=3D"left" valign=3D"top" style=3D"padding-left:30px; padding-rig=
+ht:30px;" class=3D"mobile-main-padding">
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+  <!-- LEFT BODY TEXT -->
+  <tr>
+    <td align=3D"left" valign=3D" top" style=3D"font-family:'Open Sans', Ve=
+rdana, sans-serif; font-size:15px; color:#000000;">
+   
+
+    
+    
+      Please make your way to the new gate at least 30 minutes before your =
+scheduled departure for flights within Canada and the U.S., and at least 45=
+ minutes before international departures. 
+    
+      <br><br>
+
+    If you need help finding your new departure gate, or if you require spe=
+cial assistance to reach your new gate, please let one of our agents know.
+
+    
+    
+
+  </td>
+  </tr>
+  <!-- /LEFT BODY TEXT -->
+  <tr>
+    <td align=3D"left" valign=3D"top">&nbsp;</td>
+  </tr>
+  </tbody>
+  </table>
+  </td>
+</tr>
+</tbody>
+</table>
+<!-- /MODULE LEFT TEXT - WHITE BG  -->
+
+
+
+<!-- MODULE LEFT TEXT - GREY BG -->
+<table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"clear:both" bgcolor=3D"#EFEFEF">
+<tbody>
+<tr>
+  <td align=3D"left" valign=3D"top">&nbsp;</td>
+</tr>
+<tr>
+  <td align=3D"left" valign=3D"top" style=3D"padding-left:30px; padding-rig=
+ht:30px;" class=3D"mobile-main-padding">
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+  <!-- LEFT BODY TEXT -->
+  <tr>
+    <td align=3D"left" valign=3D" top" style=3D"font-family:'Open Sans', Ve=
+rdana, sans-serif; font-size:15px; color:#000000;">
+    <b style=3D"font-size:18px;">Questions=3F We=92re here to help.</b>
+    
+    <br /><br>
+
+  
+    <b>Is my boarding pass still valid=3F</b><br>
+
+  Yes. Your flight number, seat assignment, and boarding zone all remain th=
+e same. The gate agents at your new gate are aware of the change, and you=
+=92ll be able to board with your existing pass.
+
+  <br><br>
+
+  <b>Why is there a deadline to be at the boarding gate=3F</b><br>
+
+  We need to account for all checked-in passengers to make sure your flight=
+ will board and depart on time. Arriving after the boarding gate closes may=
+ result in the reassignment of any reserved seats, the cancellation of rese=
+rvations, and/or ineligibility for denied boarding compensation. 
+
+  <br><br>
+
+  <b>How do I check the status of my flight=3F</b><br>
+  You can check the status of your flight by visiting <a href=3D"https://ai=
+rcanada.com/ca/en/aco/home/fly/flight-information/flight-status-results.htm=
+l#/flight-status-results=3Fmethod=3Dbyfn&fn=3D414&date=3D12-22-2024" _label=
+=3D"B_XXXX" style=3D"color:#f01428;" target=3D"_blank">aircanada.com/flight=
+status</a>.  We=92ll notify you if there is a time change difference greate=
+r than 15 minutes from your scheduled departure time. 
+    
+    <br><br>
+
+  We look forward to welcoming you on board.
+  
+  <br />
+
+  </td>
+  </tr>
+  <!-- /LEFT BODY TEXT -->
+  <tr>
+    <td align=3D"left" valign=3D"top">&nbsp;</td>
+  </tr>
+  </tbody>
+  </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    <table align=3D"center" border=3D"0" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:100%;border-bottom: 4px solid #F01428;" cla=
+ss=3D"container2" bgcolor=3D"#EFEFEF"><tbody><tr><td>&nbsp;</td></tr></tbod=
+y></table>
+    </td>
+</tr>
+<tr>
+  <td bgcolor=3D"#25282a">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /MODULE LEFT TEXT - GREY BG  -->
+
+
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END Content Table -->
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+              
+            
+          
+          
+          <!-- ************************ END RENDER BODY *******************=
+***** -->
+
+          <!-- ############################################################=
+########################### -->
+
+          <!-- ************************ BEGIN RENDER FOOTER ***************=
+********* -->
+          
+          
+<!-- Start Common_Footer_OptOut -->
+<tr>
+    <td align=3D"center" valign=3D"top">
+        <table border=3D"0" width=3D"640" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"container" bgcolor=3D"#25282a">
+            <tr>
+                <td align=3D"left" valign=3D"top" style=3D"font-size:0; mso=
+-line-height-alt:0; mso-margin-top-alt:1px;">
+                    <img height=3D"30" src=3D"https://res.mail.aircanada.co=
+m/res/aircana_mkt_prod3/spacer.gif" border=3D"0" alt=3D"" style=3D"display:=
+block;">
+                </td>
+            </tr>
+            <tr>
+                <td style=3D"font-family:'Open Sans', Verdana, sans-serif; =
+font-size:10px; color:#666666; padding-left:15px; padding-right:15px;" alig=
+n=3D"left" valign=3D"top">
+                    <span style=3D"color:#ffffff;">
+To ensure delivery to your inbox, please add <a href=3D"mailto:communicatio=
+ns@info.aircanada.com" _label=3D"F_Feedback" style=3D"color:#ffffff;" targe=
+t=3D"_blank"><b>communications@info.aircanada.com</b></a> to your address b=
+ook or safe list.
+<br><br>
+This service email was sent by Air&nbsp;Canada to <a href=3D"#" style=3D"co=
+lor:#ffffff; text-decoration:none;"><b>qunita@novustelltravel.com</b></a> b=
+ecause you purchased an Air&nbsp;Canada flight and provides important fligh=
+t information that must be communicated to you. This service email is not a=
+ promotional&nbsp;email.
+<br>
+<br>
+Your privacy is important to us. To learn how Air&nbsp;Canada collects, use=
+s, and protects the personal information you provide, please view our <a hr=
+ef=3D"https://t6.info.aircanada.com/r/=3Fid=3Dh68a4069,41894bf,12a0f" _labe=
+l=3D"F_Disclaimer" style=3D"color:#ffffff;" target=3D"_blank"><b>Privacy&nb=
+sp;Policy</b></a>.
+<br>
+<br>
+<b>Please do not reply to this email, as this inbox is not monitored.</b> I=
+f you have any questions please visit <a href=3D"https://t6.info.aircanada.=
+com/r/=3Fid=3Dh68a4069,41894bf,12a10" _label=3D"F_Disclaimer" style=3D"colo=
+r:#ffffff;" target=3D"_blank"><b>aircanada.com</b></a>.
+<br>
+<br>
+Air&nbsp;Canada, PO Box 64239, RPO Thorncliffe, Calgary, Alberta, T2K&nbsp;=
+6J7
+
+</span>
+                </td>
+            </tr>
+            <tr>
+                <td align=3D"left" valign=3D"top" style=3D"font-size:0; mso=
+-line-height-alt:0; mso-margin-top-alt:1px; padding-top:10px;">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<!-- End Common_Footer_OptOut -->
+          
+          
+<!-- Start Common_Footer_OptOut -->
+<tr>
+    <td align=3D"center" valign=3D"top">
+        <table border=3D"0" width=3D"640" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"container" bgcolor=3D"#25282a">
+            <tr>
+                <td align=3D"left" valign=3D"top" style=3D"font-size:0; mso=
+-line-height-alt:0; mso-margin-top-alt:1px;">
+                    <img height=3D"30" src=3D"https://res.mail.aircanada.co=
+m/res/aircana_mkt_prod3/spacer.gif" border=3D"0" alt=3D"" style=3D"display:=
+block;">
+                </td>
+            </tr>
+            <tr>
+                <td style=3D"font-family:'Open Sans', Verdana, sans-serif; =
+font-size:10px; color:#666666; padding-left:15px; padding-right:15px;" alig=
+n=3D"left" valign=3D"top">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<!-- End Common_Footer_OptOut -->
+          
+          <!-- ************************ END RENDER FOOTER *****************=
+******* -->
+  </table>
+
+          <!-- ************************ BEGIN Pixel tag *******************=
+***** -->
+          
+          <!-- ************************ END Pixel tag *********************=
+*** -->
+<img height=3D'0' width=3D'0' alt=3D'' src=3D'https://t6.info.aircanada.com=
+/r/=3Fid=3Dh68a4069,41894bf,1'/></body>
+</html>
+

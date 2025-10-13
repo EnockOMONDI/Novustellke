@@ -1,0 +1,205 @@
+Return-Path: <servicehub@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id +Je7BH3ev2jNCDYAObGTvA
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 09 Sep 2025 10:59:57 +0300
+Return-path: <servicehub@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Tue, 09 Sep 2025 10:59:57 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:5930)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	id 1uvtGe-0000000Eqfq-3ORL
+	for natahsa@novustelltravel.com;
+	Tue, 09 Sep 2025 10:59:56 +0300
+Received: from ociamashpapo04.doc.mail.amadeus.com (unknown [10.168.10.254])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id 6AC752606F;
+	Tue,  9 Sep 2025 07:59:14 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 6AC752606F
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1757404754;
+	bh=aG9tlqWqUpDcFZ28Dpxa1f44ZeWeLx6XwrYkLmhRxGA=;
+	h=Date:From:Subject;
+	b=qkYkNdsFgB4eUWNp1iPs150hv8bgJd4Qqcqd6XFOxR7+yLmbs4++DmUHQxOB6rwgx
+	 nAtOnPREe1wqJcH9CK2+YCEd6ebzaa5sTNb8p6jO7rQ/PcaN7R+IQO1MsO11OIW36X
+	 gLvawOwSiVYgfW3zLezPtqwvqKOESvM1yb2UxD3QsLtAzYSZzeWpkGoGorjp90o5C7
+	 GhPK8dF305GzQeJHUTKCovJaW2JWX5KgnljQbafG/F9Q5lQmDRJL/kVEXh6qPzSdCU
+	 1Dn7at6dJukEimW4EqZHAb990qqpmIL1RFZuJNxHt4HovLW1sV998mIsMo/02XeEjM
+	 VHEH8msCWWRRg==
+Received: from localhost (localhost [127.0.0.1])
+	by ociamashpapo04.doc.mail.amadeus.com (Postfix) with ESMTP id D99E9821E4A;
+	Tue,  9 Sep 2025 07:59:12 +0000 (UTC)
+Date: Tue, 9 Sep 2025 07:59:12 +0000 (UTC)
+From: Amadeus Customer Service <servicehub@doc.mail.amadeus.com>
+Message-ID: <1944032300.108278.1757404752890@localhost>
+Subject: RECOVERED: Amadeus Central Reservation: Queues : IR 36365254
+MIME-Version: 1.0
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Auto-Response-Suppress: AutoReply, DR, NDR, NRN, OOF, RN
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, The following incident has been recovered:
+    Amadeus Central Reservation: Queues : IR 36365254 
+ Content analysis details:   (-0.1 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+                             [score: 0.0000]
+  1.0 MISSING_HEADERS        Missing To: header
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.4 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+
+
+
+
+<center>
+    <table width=3D"100%" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"1=
+0" cellspacing=3D"0">
+        <tr>
+            <td align=3D"center" valign=3D"top">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td width=3D"694">
+                            <div style=3D"max-width: 694px; margin: 0 auto"=
+ align=3D"left">
+                                <img alt=3D"Amadeus Service Hub" src=3D"htt=
+ps://servicehub.amadeus.com/documents/20195/1117748133/Email+Banner+-+Incid=
+ent.png/eb9b37fb-307d-70e2-3428-323c2d8ba7d9?t=3D1704357474209" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=3D"694" bgcolor=3D"#ffffff">
+                            <div style=3D"max-width: 694px; margin: 0 auto"=
+>
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0">
+                                    <td width=3D"10" bgcolor=3D"#ffffff"></=
+td>
+                                    <td width=3D"674" bgcolor=3D"#ffffff">
+                                        <div style=3D"max-width: 674px; mar=
+gin: 0 auto" dir=3D"ltr" align=3D"left">
+                                            <p style=3D"font-family:'Source=
+ Sans Pro',Calibri, sans-serif;"><br/> Dear Customer,
+                                                <br/><br/>
+                                                The following incident has =
+been recovered:
+                                                <br/>
+                                                                           =
+                         <em><a href=3D"https://servicehub.amadeus.com/c/po=
+rtal/view-solution/1306987935/amadeus-central-reservation-queues-ir-3636525=
+4">Amadeus Central Reservation: Queues : IR 36365254</a></em>
+                                                                           =
+                     <br/>
+                                                <br/>
+                                                The following update was ad=
+ded:<br/>
+                                                <br/>During a database swit=
+chover activity, the database linked to the queue server of the Central Res=
+ervation System experienced degradation. As a result, some customers may ha=
+ve encountered =E2=80=9CUnable to process=E2=80=9D errors when accessing re=
+servation queues.<br/>
+
+<br/>The Amadeus support teams promptly intervened, successfully recovering=
+ the affected database and completing the switchover. The incident was reso=
+lved at 06:11 GMT, and customers can now access their PNR queues.<br/>
+                                            </p>
+                                            <p style=3D"font-family:'Source=
+ Sans Pro',Calibri, sans-serif;">
+                                                                           =
+                         <em>There will be no further bulletins published w=
+ithin Amadeus Critical Incident Centre for this incident. Please contact yo=
+ur Account Manager or Service Delivery Manager should you require further i=
+nformation.</em>
+                                                    <br/><br/>
+                                                    <em>Note: If the link d=
+oes not open, this means the content has been removed. </em>
+                                                                           =
+                     <br/><br/>
+                                                Best Regards,<br/>
+                                                <strong style=3D"color:#000=
+835;font-size:1.2em">Amadeus Service Hub</strong><br/>
+                                                'Helping Amadeus Customers =
+Succeed' <br/>
+                                            </p>
+                                            <p>
+                                                <img src=3D"https://service=
+hub.amadeus.com/documents/20195/1117748133/Amadeus+Logo+-+White+Background.=
+png/7e5cd68b-bc75-93ed-1986-3a98c1e9c1fc?t=3D1704442648345" /> <!-- LOGO --=
+>
+                                            </p><br/>
+                                            <a style=3D"color:#0c66e1" href=
+=3Dhttps://servicehub.amadeus.com/en/home?login_panel=3Dtravel&default_opti=
+on=3Duserid%22>servicehub.amadeus.com</a>
+                                            <p style=3D"font-family:'Source=
+ Sans Pro',Calibri, sans-serif;font-size:11px;text-align:left;">You have re=
+ceived this mail because you are subscribed to Amadeus Critical Incident Ce=
+ntre notifications.<br/>You can unsubscribe from Critical Incident notifica=
+tions or change your email preferences by visiting the  <a href=3D"https://=
+servicehub.amadeus.com/group/control_panel/manage?p_p_id=3Dnotifpref&p_p_st=
+ate=3Dpop_up&manageSubscription=3Dtrue" target=3D"_blank">Subscriptions & N=
+otifications</a> page.</p>
+                                            <p style=3D"font-size:12px;font=
+-family:'Source Sans Pro',Calibri, sans-serif;">
+
+                                                This email is generated aut=
+omatically; no reply will be processed.
+
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td width=3D"10" bgcolor=3D"#ffffff"></=
+td>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

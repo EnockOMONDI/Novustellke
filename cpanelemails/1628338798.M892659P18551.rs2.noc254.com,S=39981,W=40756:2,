@@ -1,0 +1,775 @@
+Return-Path: <3a3oOYRcKBagOWWOTMeWZSaXIKM-VWZMXTgOWWOTM.KWUILUQVVWdcabMTT.KWU@scoutcamp.bounces.google.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id 0FyZNG56DmF3SAAA7QkJDw
+	(envelope-from <3a3oOYRcKBagOWWOTMeWZSaXIKM-VWZMXTgOWWOTM.KWUILUQVVWdcabMTT.KWU@scoutcamp.bounces.google.com>)
+	for <novuste1@rs2.noc254.com>; Sat, 07 Aug 2021 15:19:58 +0300
+Return-path: <3a3oOYRcKBagOWWOTMeWZSaXIKM-VWZMXTgOWWOTM.KWUILUQVVWdcabMTT.KWU@scoutcamp.bounces.google.com>
+Envelope-to: admin@novustell.com
+Delivery-date: Sat, 07 Aug 2021 15:19:58 +0300
+Received: from mail-qk1-f199.google.com ([209.85.222.199]:43804)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <3a3oOYRcKBagOWWOTMeWZSaXIKM-VWZMXTgOWWOTM.KWUILUQVVWdcabMTT.KWU@scoutcamp.bounces.google.com>)
+	id 1mCLIy-0009Dc-GG
+	for admin@novustell.com; Sat, 07 Aug 2021 15:19:58 +0300
+Received: by mail-qk1-f199.google.com with SMTP id q11-20020a05620a05abb02903ca17a8eef8so5250411qkq.10
+        for <admin@novustell.com>; Sat, 07 Aug 2021 05:19:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:precedence:list-unsubscribe:feedback-id
+         :list-id:message-id:subject:from:to;
+        bh=EYQAeZkPPNgdGXftSIvyJSjXW25n9I+N1E1LunzG+uk=;
+        b=iHbTW46tvHIYcUJJGAni1Q1pyNY2vhu5L9gHSiLGIRxFHqC14IaOp0UOjpehAy9qjU
+         LXz4m1NzB+E+uJR5dKyUDLLRmBFcYt/a4nu++EeSzkY9isbkoa21nM8Ctc/IokEh2BGV
+         BmvHYb9JagNSztib8rUJKXFAKUOFZPTuDgNMtQKDv4aV17e0Jz6XtCUo0lz/tl9s5XCy
+         I0iXqqTUIFWVpzuVpH4GovSNynB3U4Z23DtnbWZEZXv+ItPpSuLW6z3QnPS4beB5UzrS
+         88eDDkpU8ZB/FT/Ituuif/4K46OBjMv0gGAz5Up6Ui6ZTrFlWPUa2VcfpnidU1gOaggy
+         FXnA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:precedence
+         :list-unsubscribe:feedback-id:list-id:message-id:subject:from:to;
+        bh=EYQAeZkPPNgdGXftSIvyJSjXW25n9I+N1E1LunzG+uk=;
+        b=HlFMD9qtBosOxuXPvyCrTYe2k316TVUP5AzZS0WMCgSYb3cWryiD6taBXKh9nb2hZ9
+         bhaV1bTW1GZdEbea3sOKsHZjOz6zflg8mgqXOsjYBWxpsIGUXSfVCxb1TfnhkF6bdgQf
+         egF1FygX4gU/CZZMERY9aM3haTERIbeGI1ic5FIgZuTL+ZeAt8K5MSeSLe0fI/iX5bAb
+         kvIc7vqfknFysVR6mc/go/YlLeJAnDWY72XvlH8VdaOxNQT8SF4m9anUauoL4iSElxfF
+         CkSpcrnGQtmi2Jq0FQ3eeQrKLbnJ8oTt8Mi55aI1YcuN0FivTrzOIJg7lgcRgcJlrLYW
+         1R3Q==
+X-Gm-Message-State: AOAM530hlcMqUbv8Njseomnw6AZTAibBrsNYpfPZrRefCygENLd3mZk4
+	XHn8Bd/EIqMzQ8w=
+X-Google-Smtp-Source: ABdhPJw+LrxdKC3EjrNPQgwQ5V5fjG53z5g1qf8dw1+G+JLRqSqy17DuFgXbJkN3dQw9NctqDCX+Wb8=
+MIME-Version: 1.0
+X-Received: by 2002:a0c:c186:: with SMTP id n6mr747507qvh.4.1628338795018;
+ Sat, 07 Aug 2021 05:19:55 -0700 (PDT)
+Date: Sat, 07 Aug 2021 05:19:55 -0700
+Reply-To: Google Workspace Team <googleworkspace-noreply@google.com>
+X-Google-Id: 4065843
+Precedence: bulk
+List-Unsubscribe: <https://notifications.google.com/g/optout/AD-FnEyy7IKBfN-CoiU_K7rhB8b-iTW-Chh1pvQYS62Eaqx94-RutL3hY4WuWd3_Le-qGyr4Wy0zMFJOpYIFQl1-Qs40p9WYNNqwArKWDWk78gOJ6QPMm87fvGI?hl=en>
+Feedback-ID: P2542--244918427:C20137191:M110371952-en:gamma
+List-Id: <c79b247ae656a53e3722005cb87f926f38cd6286.google.com>
+X-Notifications: GAMMA:<3b486d1a0bd0f63ad702b8345d83775c0a8e75d6-20137191-110906563@google.com>
+X-Notifications-Bounce-Info: ATpamXlVY7pFy57aJYo3MmpXqR7avtBTXhA8FTpBlngArpcsUZ-h4hYU5C27lC4Dr1pus9b57JdYpBzNVc2CvQMXsDwbYDYG-FmXpjzFPD02Swee03lw229nwI2NnFAegxZQYSxpu5jLlf1La3fgr-ief3SAHOPlD3h793c-XbD-OGCSMDV_yUlh9x5fBDH6gOOa5WX82BcLFcFcIE1aKPk3du5F_0OltnxuwbE47AMuAhL4BhYukwBVAwg4t8xsP937VNao_UMRzvK72ySakXjKju8gNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <3b486d1a0bd0f63ad702b8345d83775c0a8e75d6-20137191-110906563@google.com>
+Subject: Share files and set permissions with ease
+From: Google Workspace Team <googleworkspace-noreply@google.com>
+To: admin@novustell.com
+Content-Type: multipart/alternative; boundary="000000000000737b9b05c8f72b91"
+X-Spam-Status: No, score=-6.7
+X-Spam-Score: -66
+X-Spam-Bar: ------
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Have you used the Share feature yet? Easily send links to
+   share documents with Google Workspace – instead of sending emails with attachments.
+    Here are a few ways to use sharing to collaborate more productively. 
+ Content analysis details:   (-6.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+--000000000000737b9b05c8f72b91
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+SGF2ZSB5b3UgdXNlZCB0aGUgU2hhcmUgZmVhdHVyZSB5ZXQ/DQpFYXNpbHkgc2VuZCBsaW5rcyB0
+byBzaGFyZSBkb2N1bWVudHMgd2l0aCBHb29nbGUgV29ya3NwYWNlIOKAkyBpbnN0ZWFkIG9mICAN
+CnNlbmRpbmcgZW1haWxzIHdpdGggYXR0YWNobWVudHMuDQoNCg0KDQpIZXJlIGFyZSBhIGZldyB3
+YXlzIHRvIHVzZSBzaGFyaW5nIHRvIGNvbGxhYm9yYXRlIG1vcmUgcHJvZHVjdGl2ZWx5Lg0KDQoN
+CkhvdyB0byB1c2Ugc2hhcmluZyBkZXBlbmRzIG9uIHdoYXQgeW91IHdhbnQgdG8gc2hhcmUsIHRv
+IHdob20sIGFuZCBmb3IgaG93ICANCmxvbmcuDQoNClRpcHMgZm9yIHVzaW5nIHBlcm1pc3Npb24g
+dHlwZXMgIA0KPGh0dHBzOi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRC1GbkV5R3R2
+ZExUblV3a2dMWjJnZUV5UWVnUk9VaTFQN0U4NkVFeWhtMUtqcXF2UHkxdDgtbUEzTFA4Vm9aWmFu
+S0p4WTRjUGdDSHpJaTdibXVEc3JVSDBkLUlhTXZ0RHBBM3Ayb0NWY1Y2djlsbU9YM1J6X0FnSnpL
+LWpJYkdlTGg4VllDR3VWTll1bkdMNFB5Z2FudkRQa2s5QVlWOW9EVnlyb0ZmMEQ0V3E0TTVfYVdr
+TWZXd2ZJWkdnZjdHYnNqTUZEd0J3bHRjMWM5WmtiTzdfUTRXblJwR2F3Pg0KLSBWaWV3OiBMZXRz
+IHlvdSBzaGFyZSB5b3VyIHByZXNlbnRhdGlvbiBvciBkb2N1bWVudCB3aXRoIHRob3NlIHdobyBz
+aW1wbHkgIA0KbmVlZCB0byBzZWUgaXQgYW5kIG5vdCBtYWtlIGFueSBjaGFuZ2VzLiBWaWV3IGlz
+IGdvb2QgZm9yIHNhbGVzIHBpdGNoZXMsICANCmVzdGltYXRlcywgaW52b2ljZXMsIHByb2R1Y3Qg
+YnJvY2h1cmVzLCBhbmQgbW9yZQ0KLSBDb21tZW50OiBBbGxvd3MgeW91IHRvIGdldCBpbnB1dCBm
+cm9tIHlvdXIgdGVhbSBvciBvdGhlciByZXZpZXdlcnMuIFRoZXkgIA0KY2FuIGFkZCBjb21tZW50
+cywgYnV0IGNhbid0IGVkaXQgdGhlIGNvbnRlbnQNCi0gRWRpdDogR2l2ZXMgcGVybWlzc2lvbiB0
+byBhIHBlcnNvbiBvciBhIGdyb3VwIHRvIGNvbnRyaWJ1dGUgb3IgZWRpdCBhICANCnByZXNlbnRh
+dGlvbiwgY29udGVudCwgb3Igc3ByZWFkc2hlZXQgdGhhdCB5b3UncmUgd29ya2luZyBvbiB0b2dl
+dGhlcg0KDQpGbGV4aWJsZSBzaGFyaW5nIGxpbWl0cyAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25z
+Lmdvb2dsZS5jb20vZy9wL0FELUZuRXhGaU9NLW12VU1EMzNVeUQ0LXhvYXVuYlZBWW41UTFTQ0Fn
+ZUNqMVR6QjBqbHFGd0NtNDJfSHFBZnRVMnZnOHRxR2xlMlBPanZjdENSM05raTluYkNoZk9LbkxW
+bU02Ykk3d1pjSFdxay1HeGw3QWExQU92U0JSV0xoM0w1aC1wZGpKd2lxWHNOYzFwTlZVN1JfMWZD
+blpQUFdEQzZSOGZYQkVBbHk0VUtQVmZ1ZFd6WWZzNzdzRjg2bnBXeUxQVXpyTVhsUHpHaHEwSVNu
+eEdMbEJnPg0KLSBBZGp1c3Qgd2hlbiB5b3Ugc2hhcmUgd2hldGhlciBwZW9wbGUgY2FuIGRvd25s
+b2FkIG9yIHBhc3MgYWxvbmcgYSBmaWxlLCAgDQpzZXQgdGhlIGFtb3VudCBvZiB0aW1lIHRoZXkg
+aGF2ZSBhY2Nlc3MgdG8gYSBmaWxlLCBhbmQgZXZlbiByZXZva2UgYWNjZXNzDQpTaGFyZSB3aXRo
+IHRlYW1zIGluc2lkZSDigJMgYW5kIG91dHNpZGUg4oCTIG9mIHlvdXIgb3JnYW5pemF0aW9uICAN
+CjxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3AvQUQtRm5FeVhhRWc1ZnZOeWRB
+UkFPc3U3NmRkVmJiM0FGZkxVX19YbnhfS0dCT3BoRHpneDBZNWxVSHZFRW1HNTVqZ0FQRkRmcndp
+dExiQlpFbGNKdkVzU0NQSnl6LVRhdjVZbnZqc1RoNzVXeGtHNFNPN2Vna2ZKSlVZZ0VUS0d0bXZM
+NkVQeFZsX3pkMnVibW5fMmtySVpYeENhWTBfajc4eUhiQmd4VkVrZ1dDSnhxOW5BSWJaSWk1OElI
+MzczYWtrV0xHbWh0YkNHb2ZEOXo5dTN6MDgyUDlQMENWRm1VUT4NCi0gU2hhcmUgYSBkb2N1bWVu
+dCwgb3Igc2V0IHVwIGEgc2hhcmVkIERyaXZlIGZvciBpbnRlcm5hbCBvciBleHRlcm5hbCB0ZWFt
+cyAgDQpvciBpbmRpdmlkdWFscyDigJMgYW5kIHJlbW92ZSBhY2Nlc3Mgd2hlbiBpdCdzIG5vIGxv
+bmdlciBuZWVkZWQNCg0KTW9yZSBzaGFyaW5nIHRpcHMgIA0KPGh0dHBzOi8vbm90aWZpY2F0aW9u
+cy5nb29nbGUuY29tL2cvcC9BRC1GbkV4c2xoSTN2dWVlbkZvUnZRR2wyTm5WYWdydnloSl9lZ3lk
+RVBtMVF0VFdGaTcyaG4xUnVqT0Y2REJXWnlXaVAzdlRYQ1BjR3B2T0RJZzFhRnRUOVllamE3U0tm
+d2p3cnh3UHVNc21GZHQyM3Z5NUhMVk51X3I5eXZxMGNQVXNiTU9BQU5GZWx0UXhLbDJSWGp3cHZp
+OHVxeDJXekxZbU1jNTMtMDBOcmlMdEozNXlhOUJBRTZBVkNUXzdJY1FKNjd0UzJzMnYtU090Tk9V
+Pg0KDQpXZSB3b3VsZCBsb3ZlIHlvdXIgZmVlZGJhY2sgb24gdGhpcyBlbWFpbC4gVGFrZSBhIHF1
+aWNrIHN1cnZleSBoZXJlICANCjxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3Av
+QUQtRm5FeVZzWmNMRW05VGRTLU5BTkFCdHdwblBISE9YR0lzcFJtNTlJLUxfUFRqT1FJd0phQ0I5
+bXQzWUhOVjg3dmxEU0g4TTgyTU1pVDJPSG45YWhHNWdvYWp5T3ZLSHF1eU5GU2o2Nk43UnFXV2ZJ
+M1V2MmU2VFBHd2JycTBYQy1qQkRzPi4NCg0KDQoNCsKpIDIwMjEgR29vZ2xlIExMQyAxNjAwIEFt
+cGhpdGhlYXRyZSBQYXJrd2F5LCBNb3VudGFpbiBWaWV3LCBDQSA5NDA0Mw0KVGhpcyBlbWFpbCB3
+YXMgc2VudCB0byBhZG1pbkBub3Z1c3RlbGwuY29tIGJlY2F1c2UgeW91IG9yIHlvdXIgIA0KYWRt
+aW5pc3RyYXRvciBzaWduZWQgeW91IHVwIHRvIHJlY2VpdmUgbmV3cywgcHJvZHVjdCB1cGRhdGVz
+LCBhbmQgdGlwcyAgDQphYm91dCBHb29nbGUgV29ya3NwYWNlLiBQbGVhc2Ugbm90ZSB0aGF0IHNv
+bWUgZmVhdHVyZXMgaGlnaGxpZ2h0ZWQgaW4gdGhlc2UgIA0KZW1haWxzIG1pZ2h0IG5vdCBiZSBk
+ZXBsb3llZCBieSB5b3VyIG9yZ2FuaXphdGlvbi4gSWYgeW91IGRvbid0IHdhbnQgdG8gIA0KcmVj
+ZWl2ZSBzdWNoIGVtYWlscyBpbiB0aGUgZnV0dXJlLCBwbGVhc2UgdW5zdWJzY3JpYmUgaGVyZSAg
+DQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9vcHRvdXQvQUQtRm5FenlzbzEz
+MFFXalZYZlNPdDhwQXlsYWUwYWQ1UU5IUDJ1akxEYWRiNVhXbHRRNGJjVTdFR2FjZEs3MXB0dmxy
+S1A4RU82ZGk0SHkxX090dmxCVUtIVF9QcjFqYU5FLTIxbFdwRlBpbXU2Vk9LQXZjNVFVP2hsPWVu
+Pi4NCg==
+--000000000000737b9b05c8f72b91
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3Dhttp://www.w3.org/1999/xhtml xmlns:v=3Durn:schemas-microsoft-=
+com:vml xmlns:o=3Durn:schemas-microsoft-com:office:office lang=3Den>
+
+<head>
+  <title>Learn how to share documents</title>
+  <meta name=3Dx-apple-disable-message-reformatting>
+  <meta http-equiv=3DX-UA-Compatible>
+  <meta http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+  <meta name=3Dviewport content=3D"initial-scale =3D 1.0,maximum-scale =3D =
+1.0" />
+  <meta name=3Dviewport content=3Dtarget-densitydpi=3Ddevice-dpi />
+      <style type=3Dtext/css>
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto:100,=
+300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DRoboto+Mono=
+:100,300,400,500,700');
+         @import url('https://fonts.googleapis.com/css?family=3DOpen+Sans:3=
+00,400,600,700');
+         .ExternalClass {width: 100%;}
+         .ExternalClass,=20
+         .ExternalClass p,=20
+         .ExternalClass span,=20
+         .ExternalClass font,=20
+         .ExternalClass td,=20
+         .ExternalClass div {
+         line-height: 100%;}
+         body {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: none;
+         margin: 0; padding: 0;}
+         table, td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+         margin: 0; padding: 0;
+         border-collapse: collapse;}
+         img {
+         -ms-interpolation-mode: bicubic;
+         text-decoration: none;
+         outline: none;}
+         a img {
+         border: none;}
+         p {
+         margin: 0; margin-bottom: 0; padding: 0;}
+         [data-browser=3D"useragent"] {
+         display: none;}
+
+         }/* media only screen and (max-width: 600px) */
+         @media=20
+         only screen and (min-device-width: 375px) and (max-device-width: 4=
+10px),=20
+         only screen and (min-device-width: 414px) and (max-device-width: 7=
+36px),=20
+         only screen and (min-device-width: 320px) and (max-device-width: 3=
+59px) {
+         tr[class=3Dios-native] {
+         display: table-row!important;
+         }
+         }
+         @media only screen and (device-width: 412px) and (orientation: por=
+trait) {
+
+         }
+=20
+      </style>
+  <style>
+    @media screen and (max-width: 812px) {
+      .isection{padding-right: 10px !important;}
+    }
+   @media screen and (max-width: 500px){
+    .space{padding:0px 10px !important;}
+     .isection{padding-right: 10px !important;}
+         }
+ =20
+  </style>
+   <!--[if mso]>
+      <style type=3D"text/css">
+         body, table, td, center, a {font-family: Arial, Helvetica, sans-se=
+rif !important;}
+         li {text-indent: -1em; /* Normalise space between bullets and text=
+ */}
+      </style>
+      <![endif]-->
+     <!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <!--[if mso]>
+<style>
+</style>
+<![endif]-->
+   </head>
+   <body class=3Dbody style=3D"-webkit-text-size-adjust:100%; width:100%; p=
+adding:0" bgcolor=3D#ffffff width=3D100%>
+      <div style=3D"display:none; font-size:1px; color:#333333; line-height=
+:10px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">Send lin=
+ks to shared docs with access and editing permissions.</div>
+    <div style=3D"font-size: 0px; line-height:0px; display: none; max-heigh=
+t: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; display: none; max-hei=
+ght: 0px; overflow: hidden;"> =20
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;=20
+=20
+</div><div style=3D"font-size: 0px; line-height:0px; color: #ffffff; displa=
+y: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </div>
+      <section>
+         <table role=3Dpresentation id=3Dtable-parent style=3D"background-c=
+olor:#ffffff; border:0 none; border-collapse:collapse; mso-table-lspace:0; =
+mso-table-rspace:0;width:100%;" bgcolor=3D#ffffff border=3D0 cellpadding=3D=
+0 cellspacing=3D0 width=3D100%>
+            <tbody>
+               <tr>
+                  <td id=3Dtd-parent style=3D"border-collapse:collapse; fon=
+t-family:Roboto,Arial,Helvetica,sans-serif; padding:0" align=3Dcenter bgcol=
+or=3D#ffffff>
+                     <!--[if mso]>
+                     <table role=3D"presentation" width=3D"600" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-collapse:collapse; ta=
+ble-width:fixed;" align=3D"center">
+                        <tr>
+                           <td style=3D"width: 600px!important;">
+                              <![endif]-->
+                              <div id=3Demail style=3D"background-color:#ff=
+ffff; margin:0 auto;" bgcolor=3D#ffffff>
+                                 <table role=3Dpresentation class=3DbodyWra=
+p align=3Dcenter style=3D" border:0 none; border-collapse:collapse; margin:=
+0; max-width:600px; mso-table-lspace:0; mso-table-rspace:0; padding:0" bord=
+er=3D0 cellpadding=3D0 cellspacing=3D0 width=3D600>
+                                    <tbody>
+                                       <tr>
+                                          <td class=3D"bodyWrap-td space" s=
+tyle=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,sans-s=
+erif;">
+                                             <table role=3Dpresentation sty=
+le=3D"border:0 none; border-collapse:collapse; mso-table-lspace:0; mso-tabl=
+e-rspace:0" border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+                                                <tbody>
+                                                   <tr>
+                                                      <td class=3Dbody-cont=
+ent style=3D"border-collapse:collapse; font-family:Roboto,Arial,Helvetica,s=
+ans-serif;" align=3Dcenter valign=3Dtop width=3D100%>
+                                                         <table role=3Dpres=
+entation style=3D"border:0 none; border-collapse:collapse; mso-table-lspace=
+:0; mso-table-rspace:0" align=3Dcenter border=3D0 cellpadding=3D0 cellspaci=
+ng=3D0 width=3D100%>
+                                                            <!-- mod: parag=
+raph -->
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class=
+=3Dmod-container-td style=3D"border-collapse:collapse; font-family:Roboto,A=
+rial,Helvetica,sans-serif;padding-left:20px;padding-right:20px;" align=3Dce=
+nter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+                                                                     <table=
+ role=3Dpresentation style=3D"border:0 none; border-collapse:collapse; mso-=
+table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 cellspacing=
+=3D0 width=3D100%>
+                                                                        <tb=
+ody>
+                                                                           =
+<tr>
+                                                                           =
+   <td class=3Dmod-padding style=3D"border-collapse:collapse; font-family:R=
+oboto,Arial,Helvetica,sans-serif;" width=3D100%>
+                                                                           =
+      <table role=3Dpresentation style=3D"border:0 none; border-collapse:co=
+llapse; mso-table-lspace:0; mso-table-rspace:0" border=3D0 cellpadding=3D0 =
+cellspacing=3D0>
+	<tbody>	<tr style=3D"margin:0; padding:0">
+  <td class=3D"mod-padding image-title" style=3D"border-collapse:collapse; =
+color:#1a73e8;  padding-top: 75px;word-break:normal;font-size:36px;directio=
+n:ltr; font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif; line-heig=
+ht:54px;" dir=3Dltr align=3Dcenter width=3D100%>Have you used the Share fea=
+ture yet?</td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5f6=
+368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-size=
+:16px; line-height:28px; padding-top:14px;word-break:normal;padding-left:10=
+px;padding-right:10px;" dir=3Dltr align=3Dcenter width=3D100%>
+Easily send links to share documents with <span style=3D"white-space: nowra=
+p !important;display:inline-block;">Google Workspace</span> =E2=80=93 inste=
+ad of sending emails with attachments.
+   </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td style=3Dmargin:0;padding-top:30px;text-align:center align=3Dcenter>
+<img src=3Dhttps://services.google.com/fh/files/emails/share_rebrand.png bo=
+rder=3D0 width=3D452 valign=3Dbottom style=3D"display: inline-block;" align=
+=3Dcenter alt=3D"">
+</td>
+</tr><tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;padding-top:13px; font-size:24px=
+;color:#1a73e8;font-weight:normal;line-height:36px;text-align:center;" dir=
+=3Dltr align=3Dcenter width=3D100%>Here are a few ways to use sharing to co=
+llaborate more productively.</td></tr><tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;padding-top:0px;font-size:16px;c=
+olor:#5f6368;font-weight:normal;line-height:28px;text-align:center;" dir=3D=
+ltr align=3Dcenter width=3D100%>How to use sharing depends on what you want=
+ to share, to whom, and for how long.</td></tr><tr style=3D"margin:0; paddi=
+ng:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td style=3D"">
+<table role=3Dpresentation align=3Dcenter class=3Dcontent_inner width=3D100=
+% cellspacing=3D0 cellpadding=3D0 border=3D0 style=3D"font-size:15px; width=
+:100%; background-color:#ffffff; background:#ffffff;" bgcolor=3D#ffffff>
+ <tr style=3D"margin:0; padding:0">
+<td class=3Dcontent_inner dir=3Dltr style=3D"color:#5f6368; font-family:Rob=
+oto,Arial,Helvetica,sans-serif; line-height:20px; margin:0; padding:0;direc=
+tion:ltr; width:100%;" width=3D100%>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 style=3Dfont-fam=
+ily:Roboto,Arial,Helvetica,sans-serif;>
+ <tbody>
+                     <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;font-weight:normal;line=
+-height:24px;text-decoration:underline;">
+ <a href=3Dhttps://notifications.google.com/g/p/AD-FnEzQx2hbrq3tqbBtt56ipOd=
+JqhPzA4x-QPCCNy82jcAZ4H7GWEl1-Hlv-jaP8h6jb1P_cNmontt9zU-HUiQ5_3TbBVQSV93L7f=
+2mZqXLOnuI7MFwVvEDynFOeg_gi8PtUF-dER5ljcy0L6zXygHmfoi2sI1nRnvej0ErzwqjQAK8p=
+ZnGjE8IhJp63BrrsnMmpcfI_dJFMtvR4TgNCgS2pSXvr39j5A target=3D_blank style=3D"=
+color:#1a73e8;text-decoration:none; font-size:inherit !important;border:0;l=
+ine-height:inherit;">Tips for using permission types</a>
+ </td>
+</tr>
+=20
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">&#9679;</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+<span style=3D"font-weight: bold;">View: </span>Lets you share your present=
+ation or document with those who simply need to see it and not make any cha=
+nges. View is good for sales pitches, estimates, invoices, product brochure=
+s, and more
+</td>
+</tr>
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">&#9679;</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+<span style=3D"font-weight: bold;">Comment: </span>Allows you to get input =
+from your team or other reviewers. They can add comments, but can't edit th=
+e content
+</td>
+</tr>
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">&#9679;</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+<span style=3D"font-weight: bold;">Edit: </span>Gives permission to a perso=
+n or a group to contribute or edit a presentation, content, or spreadsheet =
+that you're working on together
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+         </tr>
+      </table>
+   </td>=20
+  </tr>
+
+<tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+<tr style=3D"margin:0; padding:0">
+<td style=3D"">
+<table role=3Dpresentation align=3Dcenter class=3Dcontent_inner width=3D100=
+% cellspacing=3D0 cellpadding=3D0 border=3D0 style=3D"font-size:15px; width=
+:100%; background-color:#ffffff; background:#ffffff;" bgcolor=3D#ffffff>
+ <tr style=3D"margin:0; padding:0">
+<td class=3Dcontent_inner dir=3Dltr style=3D"color:#5f6368; font-family:Rob=
+oto,Arial,Helvetica,sans-serif; line-height:20px; margin:0; padding:0;direc=
+tion:ltr; width:100%;" width=3D100%>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 style=3Dfont-fam=
+ily:Roboto,Arial,Helvetica,sans-serif;>
+ <tbody>
+                     <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;font-weight:normal;line=
+-height:24px;text-decoration:underline;">
+ <a href=3Dhttps://notifications.google.com/g/p/AD-FnEwUWBc689lEZk6Sv3M5Apj=
+8E4-1EeMy87kYz0Pm4Iy2XIr_XgrVMMmJICgNnkotlMAJDHV5ohZN-yGU8BXshbudwbF_9uYNWk=
+LxwyA9o3ZlWlgw0stRWYd0BIMh-MyBoQJ5l8SYw51AHdthMXArFfFwZgJPjAwaisVs8VrpgMzbQ=
+zVBh6RTd-EmZDc5clNDWOYSD3jwv5clX05DqrLr2szq target=3D_blank style=3D"color:=
+#1a73e8;text-decoration:none; font-size:inherit !important;border:0;line-he=
+ight:inherit;">Flexible sharing limits</a>
+ </td>
+</tr>
+=20
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">&#9679;</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+Adjust when you share whether people can download or pass along a file, set=
+ the amount of time they have access to a file, and even revoke access
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+         </tr>
+      </table>
+   </td>=20
+  </tr>
+
+<tr style=3D"margin:0; padding:0">
+<td style=3D"">
+<table role=3Dpresentation align=3Dcenter class=3Dcontent_inner width=3D100=
+% cellspacing=3D0 cellpadding=3D0 border=3D0 style=3D"font-size:15px; width=
+:100%; background-color:#ffffff; background:#ffffff;" bgcolor=3D#ffffff>
+ <tr style=3D"margin:0; padding:0">
+<td class=3Dcontent_inner dir=3Dltr style=3D"color:#5f6368; font-family:Rob=
+oto,Arial,Helvetica,sans-serif; line-height:20px; margin:0; padding:0;direc=
+tion:ltr; width:100%;" width=3D100%>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 style=3Dfont-fam=
+ily:Roboto,Arial,Helvetica,sans-serif;>
+ <tbody>
+                     <tr style=3D"margin:0; padding:0">
+                        <td colspan=3D2 class=3Dlftpd dir=3Dltr style=3D"li=
+ne-height: 36px; color:#1a73e8; font-size:24px; margin:0; padding-top:13px;=
+font-family:Roboto,Arial,Helvetica,sans-serif;word-break:normal;direction:l=
+tr;padding-bottom:13px;font-size:16px;color:#5f6368;font-weight:normal;line=
+-height:24px;text-decoration:underline;">
+ <a href=3Dhttps://notifications.google.com/g/p/AD-FnEyGnO253QiR8QxBsAc2T7V=
+PAMe3XOns8LX6BENcLp6Y3LePJ3Z_OHpfika3YXnihI8vkwonrKxwBgDFoFS1TaYIOS50gEKFS7=
+aucr2N6qnWRw9sbVUTxeIp-r-NxrDUkV7c9R4KiQVcN8jDoBCGwRr4gwTCYFgQCGddHOcMBtKQi=
+fXUK74WR4wfGED8OxT81k6oG30FUhtvVY28FghQuNiQF_4UVlwQ target=3D_blank style=
+=3D"color:#1a73e8;text-decoration:none; font-size:inherit !important;border=
+:0;line-height:inherit;">Share with teams inside =E2=80=93 and outside =E2=
+=80=93 of your organization</a>
+ </td>
+</tr>
+=20
+    =20
+<tr style=3D"margin:0; padding:0">
+<td align=3Dleft valign=3Dtop width=3D30 style=3D"line-height: 28px; color:=
+#5f6368; font-size:16px; margin:0; padding:0; width:30px; vertical-align: t=
+op;">
+ <span style=3D"font-size: 16px;">&#9679;</span>
+</td>
+<td align=3Dleft width=3D505 style=3D"line-height: 28px; color:#5f6368; fon=
+t-size:16px; margin:0; vertical-align: top;">
+Share a document, or set up a shared Drive for internal or external teams o=
+r individuals =E2=80=93 and remove access when it's no longer needed
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+         </tr>
+      </table>
+   </td>=20
+  </tr>
+
+<tr style=3D"margin:0; padding:0">
+   <td class=3D"content_inner_td flexible spacer" height=3D10px style=3D"co=
+lor:#666666; font-family:arial;margin:0; padding:0; background-color:#fffff=
+f;line-height:20px;font-size:0px; ">
+&nbsp;
+   </td>
+</tr>
+ <tr>
+      <td style=3D"margin-top:0;margin-bottom:0;margin-right:0;margin-left:=
+0; padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;padding-to=
+p:23px;">
+       =20
+        <div style=3D"text-align:center;line-height:24px;padding:13px 10px;=
+"><!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" href=3D"https://notifications.google.com/g/=
+p/AD-FnEwYr5ZP83h6PKW3tqS5KuTmVLZOKj20d6QU4fyK5o3Lk2As51aNj-3UHLyEM9uekwlGX=
+ha5aaSu6GrpsDbToGK_HzwG5Qpnun8DZI85T9wlqj63-tfq7cTnyij97HeuF-gWMY91hsbrCxAB=
+xvBXW5GDtZ7K30v3P-s7idlcUyZqfwne-dlT0C_hXJLYSQVjP9g2q_4T_I8xjDkFLw" style=
+=3D"height:38px;v-text-anchor:middle;width:235px;" arcsize=3D"14%" strokeco=
+lor=3D"#dadce0" fillcolor=3D"#1a73e8" target=3D"_blank">
+    <w:anchorlock/>
+    <center style=3D"font-family:Google Sans,Roboto,Helvetica,Arial,sans-se=
+rif;font-size:13px;direction:ltr;font-weight:600;color:#ffffff;line-height:=
+20px;line-height:20px;">More sharing tips</center>
+  </v:roundrect>
+<![endif]--><a href=3Dhttps://notifications.google.com/g/p/AD-FnEwYr5ZP83h6=
+PKW3tqS5KuTmVLZOKj20d6QU4fyK5o3Lk2As51aNj-3UHLyEM9uekwlGXha5aaSu6GrpsDbToGK=
+_HzwG5Qpnun8DZI85T9wlqj63-tfq7cTnyij97HeuF-gWMY91hsbrCxABxvBXW5GDtZ7K30v3P-=
+s7idlcUyZqfwne-dlT0C_hXJLYSQVjP9g2q_4T_I8xjDkFLw style=3D"background-color:=
+#1a73e8;border:1px solid #dadce0;border:1px solid #1a73e8; border-radius:2p=
+x;color:#ffffff;display:inline-block;font-family: Google Sans,Roboto,Helvet=
+ica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:36px;direct=
+ion:ltr;text-align:center;text-decoration:none;border-radius:5px; padding:0=
+ 10px;width:235px;-webkit-text-size-adjust:none;mso-hide:all;line-height:24=
+px;padding:13px 10px;" target=3D_blank class=3D"m_weight m_font_size_nw">Mo=
+re sharing tips</a></div>
+       =20
+   =20
+      </td>
+   </tr>
+   <tr>
+		<td class=3D"copy copy-first" style=3D"border-collapse:collapse; color:#5=
+f6368; font-family:Roboto,Arial,Helvetica,sans-serif;direction:ltr; font-si=
+ze:16px;padding-top:78px;word-break:normal;font-size:16px;color:#5f6368;fon=
+t-weight:normal;line-height:20px;padding-top:50px;padding-bottom:20px;line-=
+height:24px;text-align:center;" dir=3Dltr align=3Dcenter width=3D100%>We wo=
+uld love your feedback on this email. Take a quick survey <a href=3Dhttps:/=
+/notifications.google.com/g/p/AD-FnEyf_wF1o5AMW7yCPLhTtJS5YUW_PelF45qX_6NeN=
+YpNrFvGgx9rv_pzv7U4d3mz_IU9fcye76uwSHE9UCTLl4HQOglJmeEP36hKhKpfzoHhYxXT2rMd=
+A2sOiXT20OgMYLTe0Q target=3D_blank style=3D"color:#1a73e8;text-decoration:n=
+one; font-size:inherit !important;border:0;line-height:inherit;">here</a>.<=
+/td></tr><tr>
+   <td class=3Dfooter-content style=3D"border-collapse:collapse; font-famil=
+y:Roboto,Arial,Helvetica,sans-serif; padding:0px 30px;padding-bottom:30px;"=
+ align=3Dcenter bgcolor=3D#ffffff valign=3Dtop width=3D100%>
+      <div style=3Dclear:both;>
+   </div><table role=3Dpresentation style=3D"border:0 none; border-collapse=
+:collapse; mso-table-lspace:0; mso-table-rspace:0" align=3Dcenter border=3D=
+0 cellpadding=3D0 cellspacing=3D0 width=3D100%>
+         <tbody>
+          =20
+   <tr>
+      <td height=3D50 colspan=3D2 style=3Dheight:50px width=3D100%></td>
+   </tr>
+
+<!-- Footer above -->
+            <!-- Space -->
+            <tr>
+               <td class=3Dfooter-addr colspan=3D2 style=3D"border-collapse=
+:collapse; color:#5f6368; font-family:Roboto,Arial,Helvetica,sans-serif; fo=
+nt-size:14px; line-height:21px; padding:0 0 15px" align=3Dcenter valign=3Dt=
+op width=3D100%><span class=3Dios-link-footer-addr style=3D"color:#5f6368; =
+cursor:text; text-decoration:none"><font><span style=3D"color:#5f6368; curs=
+or:text; text-decoration:none">
+
+
+
+
+      <span style=3D"font-size:inherit; color:inherit; font-weight:inherit;=
+ line-height:inherit; font-family:inherit;">&copy; 2021 Google LLC 1600 Amp=
+hitheatre Parkway, Mountain View, CA 94043</span>
+  =20
+  =20
+=20
+                 </span></font></span></td>
+            </tr>
+            <tr><td colspan=3D2 class=3D"footer-legal last" style=3D"border=
+-collapse:collapse; color:#5f6368; font-family:Roboto,Arial,Helvetica,sans-=
+serif;font-size:14px;direction:ltr; line-height:21px; padding:0 0 15px; pad=
+ding-bottom:0;word-break:normal;" align=3Dcenter dir=3Dltr valign=3Dtop wid=
+th=3D100%>This email was sent to admin@novustell.com because you or your ad=
+ministrator signed you up to receive news, product updates, and tips about =
+<span class=3Dnowrap style=3Dwhite-space:nowrap;display:inline-block;>Googl=
+e Workspace</span>. Please note that some features highlighted in these ema=
+ils might not be deployed by your organization. If you don't want to receiv=
+e such emails in the future, please unsubscribe <a href=3Dhttps://notificat=
+ions.google.com/g/optout/AD-FnEyy7IKBfN-CoiU_K7rhB8b-iTW-Chh1pvQYS62Eaqx94-=
+RutL3hY4WuWd3_Le-qGyr4Wy0zMFJOpYIFQl1-Qs40p9WYNNqwArKWDWk78gOJ6QPMm87fvGI?h=
+l=3Den target=3D_blank style=3D"color:#1a73e8;text-decoration:none; font-si=
+ze:inherit !important;border:0;line-height:inherit;">here</a>.
+</td></tr>
+    =20
+ =20
+         </tbody>
+      </table>
+   </td>
+</tr>
+
+</tbody>
+ </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <!--[if mso]>
+                           </td>
+                        </tr>
+                     </table>
+                     <![endif]-->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+   <img alt=3D"" height=3D1 src=3Dhttps://notifications.google.com/g/img/AD=
+-FnEwz1RQMKiYW-ku2yZ_Bf75EYSdrMq1Q5UbOa6Lck5ipOg.gif width=3D3>
+
+</body></html>
+
+--000000000000737b9b05c8f72b91--

@@ -1,0 +1,130 @@
+Return-Path: <gmail-noreply@google.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id sLHEEKrVz2NqhgAA7QkJDw
+	(envelope-from <gmail-noreply@google.com>)
+	for <novuste1@rs2.noc254.com>; Tue, 24 Jan 2023 15:57:14 +0300
+Return-path: <gmail-noreply@google.com>
+Envelope-to: shadrackmambo@novustelltravel.com
+Delivery-date: Tue, 24 Jan 2023 15:57:14 +0300
+Received: from mail-yw1-f169.google.com ([209.85.128.169]:36487)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <gmail-noreply@google.com>)
+	id 1pKIrU-0006JM-Qs
+	for shadrackmambo@novustelltravel.com;
+	Tue, 24 Jan 2023 15:57:13 +0300
+Received: by mail-yw1-f169.google.com with SMTP id 00721157ae682-50112511ba7so157185917b3.3
+        for <shadrackmambo@novustelltravel.com>; Tue, 24 Jan 2023 04:57:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20210112;
+        h=to:from:subject:message-id:date:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=bTHxfsvH9tGv0m7hYxVPrnuHEum57IQp4qQu/Md06cM=;
+        b=WTkBMMqxrJ7ckBUe4o96WSjwmbuXVMiKbdCmyxR3BG/xiPqH8z7+zi0tQYQSdwqlNl
+         GKs6RgCu2YwfOf+9P2tkrL/KP3DNRrnqZrhIdQR4zDOxXDbo8mDHs9yxWzb6dKkR1hSo
+         9jbkfngzwRGgWl313Iz5nXEwr5AoxJU/NXguMka1S+ux9tT3pO7JMq1mkqfXFlxk4uGE
+         WD9KLW9dRZjGogVmyAAqSCiSSJ1X01QGu/co5otWWdP3vfRtckbE46lILxurK66Plt4Q
+         VHRZ+j7BL76f+N9jl5P/mZKx9SdGm6ix/Opc2NWHqGMW8DBguvljX73fg15TxEFPAJF9
+         wyIA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:from:subject:message-id:date:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=bTHxfsvH9tGv0m7hYxVPrnuHEum57IQp4qQu/Md06cM=;
+        b=Q3RHUkHsZ5p/BiYp3T9xjPbsk9QIGCrBb7VHZxKZT5afk02yvKXkP762d31oKYsSsj
+         ogfGs45o/8L81rF4gx/ytip91Aib4G4YeGAqO7BC3ScRHnVLB1mCdZbTtDEdx+hjwBav
+         08YDvvpiwAne5NoM8yRk1TKcqmbMbM/mw7ztOIKJe4eXmrrUfDV5NY2dAi250YDqRl11
+         pkZEMf3Fh1e7Bh8c/VThtAsH7DphGy374LUJ7hSN8//u1DVoN+ZYsucAogkRnsqPp4z0
+         zVOsSHGTbPWa45JmEFQ7dsAzk/xhHotZTOiP1jZG47sjmMDN/LqFZfZRUOQU2Tkp+znH
+         +e/w==
+X-Gm-Message-State: AFqh2kp7oWvDHvjKxue601G85P/+UFxOKn8i0b9M0wUzDO92e4CBgfzR
+	rHTfa7MC2ltW5eJFsp4n6Gj1IpcCUck8grvPa7r2xflG7f1jl0CznJs=
+X-Google-Smtp-Source: AMrXdXvdyUUPXixk+5xHD0FqmF6Z54hg/NX6DK10CQDBVCRiykqQ24QOn2gV9vzO6J4rcDf1s9Tw2HK1K2c6ExrSpBudfZYJCYasbg==
+MIME-Version: 1.0
+X-Received: by 2002:a0d:e68f:0:b0:3b4:2ab1:2307 with SMTP id
+ p137-20020a0de68f000000b003b42ab12307mr3557177ywe.374.1674565029998; Tue, 24
+ Jan 2023 04:57:09 -0800 (PST)
+X-Google-Address-Confirmation: yxEOYTtulCyfnSzAB5oR0R5T4DU
+Date: Tue, 24 Jan 2023 15:57:09 +0300
+Message-ID: <CAKxRX1ebOcGQhrnnzAkKYRWBO3sFd9YgPsz4B8w1XZhyH7iaOw@mail.gmail.com>
+Subject: Gmail Confirmation - Send Mail as shadrackmambo@novustelltravel.com
+From: Gmail Team <gmail-noreply@google.com>
+To: shadrackmambo@novustelltravel.com
+Content-Type: text/plain; charset="UTF-8"
+X-Spam-Status: No, score=-13.7
+X-Spam-Score: -136
+X-Spam-Bar: -------------
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  You have requested to add shadrackmambo@novustelltravel.com
+    to your Gmail account. Confirmation code: 140932410 Before you can send mail
+    from shadrackmambo@novustelltravel.com using your Gmail account (shadrackmambo05@gmail.com),
+    please click the link below to confirm your request: 
+ Content analysis details:   (-13.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF
+                             welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -0.5 ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL
+                             Match
+  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+You have requested to add shadrackmambo@novustelltravel.com to your
+Gmail account.
+Confirmation code: 140932410
+
+Before you can send mail from shadrackmambo@novustelltravel.com using your Gmail
+account (shadrackmambo05@gmail.com), please click the link below to confirm your
+request:
+
+https://mail.google.com/mail/f-%5BANGjdJ-uU_t-iRwLxg9aFHfshqNTGGHtudBcZd8v3sjA1MkSu4gJxri6d2AC27iesXNjr29MVBYrmXE2vzwR11oLJxvDEId8qaJ-t3TMlA%5D-76rpwzqnBz4d1awOdR-WslDsxL8
+
+If you click the link and it appears to be broken, please copy and paste it
+into a new browser window. If you aren't able to access the link, please log in
+to your Gmail account, and click 'Settings' at the top of any page.
+Open the 'Accounts' tab, and locate the email address you'd like to add in the
+'Send mail as:' section. Then, click 'Verify,' and enter your confirmation
+code: 140932410
+
+Thanks for using Gmail!
+
+Sincerely,
+
+The Gmail Team
+
+If you did not make this request, or you don't want to add this email address
+to your Gmail account, no further action is required.
+shadrackmambo05@gmail.com cannot send messages using your email
+address unless you
+confirm the request by clicking the link above. If you accidentally clicked
+the link, but you do not want to allow shadrackmambo05@gmail.com to
+send messages
+using your address, click this link to cancel this verification:
+https://mail.google.com/mail/g-%5BANGjdJ9hvV0BJWgTSZN0j4esMKsYMoFKm7ICMbIovyQWI2ho2fZs7ME8p5bhwdIaGRtryql0d039d6wPPxnK_LXKsaL1L5-1SM4nmao6tA%5D-76rpwzqnBz4d1awOdR-WslDsxL8
+
+To learn more about why you might have received this message, please
+visit: http://support.google.com/mail/bin/answer.py?answer=184973.
+
+Please do not respond to this message. If you'd like to contact the
+Gmail Team, please log in to your account and click 'Help' at
+the top of any page. Then, click 'Contact Us' along the bottom of the
+Help Center.

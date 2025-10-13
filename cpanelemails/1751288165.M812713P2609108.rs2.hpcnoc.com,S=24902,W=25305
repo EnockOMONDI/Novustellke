@@ -1,0 +1,403 @@
+Return-Path: <vincent.oduor@amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 4A6ML2WJYmjUzycAObGTvA
+	(envelope-from <vincent.oduor@amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 30 Jun 2025 12:56:05 +0000
+Return-path: <vincent.oduor@amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Mon, 30 Jun 2025 12:56:05 +0000
+Received: from mail-francecentralazon11013021.outbound.protection.outlook.com ([40.107.162.21]:7413 helo=PA4PR04CU001.outbound.protection.outlook.com)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <vincent.oduor@amadeus.com>)
+	id 1uWE3F-0000000B1A0-2AsJ
+	for natahsa@novustelltravel.com;
+	Mon, 30 Jun 2025 12:56:05 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=fnBlSA8EqIJobTURoU7g+lCse/WBj29gDzhpckD183GZwkC7DjlObS/oGb2FhD+OY7EjXWeceRBMHSIYRzuy6gYyVEvFCSVAA4Rc/1lZlgVUv32E5wLesZIDqDCnyxzu+qzMyjC4H9gEaeh0choBuZjoPMWiX7XRd6n9otyf+arAvNiqUn3Zyb1aCwZ1KXPu3jp8fEq84S42HfwUax4pHGrQCTUKdanvhvziDH4lVhlMJloVS0VW6tZHNDJr7B1pPGuLNvhFIPn3P3SeRHC+Q/16Oq7gPKvJlrtGYAoLm1SsxTO2hwZ8ovdCSVw7vhhn94qloA9MisoyVQ5vIR8vvg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=IYFfXl61ciWWwQU5sWBaS+dJH5G3NUBkXRQd45ahYgw=;
+ b=X5y27BrLtIzdJuovFTzpn/xtKEQ5REIhl+Brq/67vg5MwUjH/eDCATYOGyhh5lUzs6AmVt9K+YaPL4izakFtj4MSp1VmCSDI4XAX7sG8beYPj59cmTWYcfYKNBPfTiWPwdXA2S6FLrhbvJYBIHhpprnJXnMmcmNrVrFgUSG327cDVN2kQD1cm0HMv/msisRL8Z0+Lr2WOzOvA8DWjHxjFtw/21OinHj1xIN+cFyqtbrg6QHHfQLE0M73pdS9ayp8m84HVUosUNzub/oG0WEQVGylaEOtwS9I+nRvhGO7oVwX/XpZCQaOmtxHE7MZ/ksF6CevE7TsNInJuFAtd6Zy2A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=amadeus.com; dmarc=pass action=none header.from=amadeus.com;
+ dkim=pass header.d=amadeus.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=amadeus.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=IYFfXl61ciWWwQU5sWBaS+dJH5G3NUBkXRQd45ahYgw=;
+ b=OW6lRIEIdARHDmnZ7WxIWWC2h5vR/HlVFf8rG7Gem2IdHAPjIs03QEJ1YHowxAgAKdpF1fqPG5LSGLTBSwHMHDqwBQVK+VB+dv4vIFLZpaRIIXUamkHPOzg696I8FKybOmhujQEuCopwcmLrOxx5UyjVqUKk08oNKFi3ZUSpq+L4v87sXc0Rwlie+nLvs1YGSm8SC5BOIDqzseYjx9M5VLovlPG8Wp+1lpzV+ULsfIWZ24ib0BRlWpj8kip8Wp/zIGJRbTvyhRlasqJUPHU5y4mgR033WJ6c1mK0Mxj9UcUvMD7Zd0WAOFUXFEeUQUQHrug5ucLXV86IVn5KKoH6lQ==
+Received: from AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:17a::14)
+ by DU0PR10MB7481.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:424::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8880.22; Mon, 30 Jun
+ 2025 12:55:19 +0000
+Received: from AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::8759:340d:88bf:e25e]) by AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::8759:340d:88bf:e25e%5]) with mapi id 15.20.8880.027; Mon, 30 Jun 2025
+ 12:55:19 +0000
+From: "Vincent ODUOR (contractor)" <vincent.oduor@amadeus.com>
+To: "natahsa@novustelltravel.com" <natahsa@novustelltravel.com>
+Subject: Canceled: Natasha
+Thread-Topic: Natasha
+Thread-Index: AdvpvSQMQtowNhhDBU2YkPIgHMaXpA==
+Date: Mon, 30 Jun 2025 12:55:19 +0000
+Message-ID:
+ <AM7PR10MB3777B6D411F3E8E8A83D50A1FF46A@AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=amadeus.com;
+x-ms-exchange-calendar-series-instance-id:
+ BAAAAIIA4AB0xbcQGoLgCAAAAACb8YcjvenbAQAAAAAAAAAAEAAAAHO5E9+9FEJNmp9gEKhc90o=
+x-ms-traffictypediagnostic:
+ AM7PR10MB3777:EE_MeetingMessage|DU0PR10MB7481:EE_MeetingMessage
+x-ms-office365-filtering-correlation-id: 87644b63-227a-4424-6cff-08ddb7d55e77
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|366016|1800799024|376014|8096899003|38070700018;
+x-microsoft-antispam-message-info:
+ =?iso-8859-1?Q?YuPCIC4S3SoM2sHTaTMgKzFR6v7riLYiwQNvKQ9drEdIwRZ7jGLmfBdUzQ?=
+ =?iso-8859-1?Q?JQQ4+bbzfn90JBoRlDaRHxf5KRSQFIXYjq2tMxFIPs03SvTCDVj3KpRf5w?=
+ =?iso-8859-1?Q?McwwaVna8vi3umsqme+i0njOH2youWKTmM+AUzotJT8N0FMLCQBE4nddHs?=
+ =?iso-8859-1?Q?51miJaew7g0R+OSTHCzq9gPO8J+g6JbZlyUMHsGvfQHY9qsMYPB75lobc4?=
+ =?iso-8859-1?Q?R0c5Lm5Zke9cvdR0oTXvvlAizafxFFxt4tvOWRpZ+OaFPlzh3uTu/FtydK?=
+ =?iso-8859-1?Q?5sy0/XDfQ2M7gPDoBQjKf10vnv6mLL4QCiPV2ksLZn/6CSifZ2tm2H5kMA?=
+ =?iso-8859-1?Q?LnGnzqWTknniUFSOtepctAeHeUIqToSStviBtJ/jtD8lun0jQD+m4yI+Eq?=
+ =?iso-8859-1?Q?7p/mxH6WwB13pMAkFmtOwT0082/1/W42ndreForOfPsoTe6hl9Gu6eueVd?=
+ =?iso-8859-1?Q?j/MrEdr1ZtknhCvA+VeTDpnY09aGn7sNahhS0wce+7tjThdBufozx0WGiI?=
+ =?iso-8859-1?Q?nmBQQ3sHimF/MVYlB6BBQvuqJOCxH3VYSBm0T0nnKCrjw/H3yzkEscb0/g?=
+ =?iso-8859-1?Q?qAHUjPsyHkPIMD1nQrTEmoiANTSWPrcflrfsL6Px2MG1mo+MlZva/HnIr+?=
+ =?iso-8859-1?Q?ehi5j4XA3FUBgAmp9LZUi7YqROWCNM56yHEgLOjZuy7DLMx1jMiNB74vuV?=
+ =?iso-8859-1?Q?cOwq+VdBiia2+JHiLSUEk9nG9yqvmCZN0DD3x0KqXKvRIdpfdU30J+6B0f?=
+ =?iso-8859-1?Q?eMH7QAdAYDksEOAnRXQOMOGZhmcr4mE1Log0EJB0PdfnMSxI7sdlpQkO7D?=
+ =?iso-8859-1?Q?zSTLSPjZkQjBbQQHTneWbID6AGocTLzsONPmxYaZmir6bbapHGy08utByz?=
+ =?iso-8859-1?Q?eaH1BZvbDutssqlLzRNIjhW+bLErMUbczkg7QivbKHkL9HgK9vVbjpGfzL?=
+ =?iso-8859-1?Q?s29IOig9HoLCz1Kc4oSNtW1Kcbg427rZ/0MVswwFyPLwrlQeodTPT1jeh0?=
+ =?iso-8859-1?Q?eZtdQ6vh+9WjExhlRqVGbecm5u7n+qxhUJgaaJs87K7CJSwSqqkwLJDqJm?=
+ =?iso-8859-1?Q?VV2LAk8Xfe6a7QzoJNmZmL3XOcOo2CAuz1DBoY5U4ZdYuekzUB5781RSJ9?=
+ =?iso-8859-1?Q?NyrZBOklfVUPDdEfivFu6evI0RSzisOBnzK76H3xbJ99GR9LXd5japuJsR?=
+ =?iso-8859-1?Q?R8H6lfNIKJ73JtR/QMLrH7yc0IFAj+OXczCCsJ23IKMUrvGg0pNu6vkZMM?=
+ =?iso-8859-1?Q?OdI0OCUZaJBcWB4L53fQvyeJoE3Cd2/k4ptTyQpgoMFtm9FxwDAbA4zp7f?=
+ =?iso-8859-1?Q?oOBDCpFDkPEl1ks8JyyXIlqPkTrWiTLGt2BdmwIGWoLOfsdXze83RokNFH?=
+ =?iso-8859-1?Q?VAoRUfoAwhLK7QHg3zym+diSDn/0h8/qt4Ug/WwSw0UrGRiuV2sJWNde+h?=
+ =?iso-8859-1?Q?cfkdM3nLKMhHJ1/meZgGF1L0IVFwyCZUXTdq+Gfh2XgpO+SyiUT4eYAXCW?=
+ =?iso-8859-1?Q?9nyZS4m3F5LNzyTOgqCCAX2x4hh8cekNIOH4U3UYMnPA=3D=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(376014)(8096899003)(38070700018);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?5OHjAeY+DRuXKBwkys28qd0Eh8sNqbHyxPlwYtqCi0ze7FHwQ07sYVFLeC?=
+ =?iso-8859-1?Q?6Ea1HXnbXtVOTGre4iTB7jri7hOqhbrc1Bs/X4pr85crfCQb/DGt5BFpWl?=
+ =?iso-8859-1?Q?9kl+DyMLqYkQwgB3Q1w77WoI/iSyHKmTsTOKuvQl9iJChejRTmLFo/jH/S?=
+ =?iso-8859-1?Q?opHo83mAOlBxBIa3+XNAeaghc5jCtAjDZfMn5SQ4GLxWBCsM7xE3UZujWd?=
+ =?iso-8859-1?Q?qxvC40DLEXHnYYdaWjAdg0URt0UeElC3sxoSKV5mqdBF1qY8of8kX1CgR3?=
+ =?iso-8859-1?Q?inwEBkpNhRAd+WTYxAn++PABi/b39nDz53gLhUmW2RuHMdsLWW8iBJNa6d?=
+ =?iso-8859-1?Q?0EjZtTQBRZBBQ1OfqCaLh7z9MMmRR95PucGfZzD4wOHQ5GXAh2CEgLRlV6?=
+ =?iso-8859-1?Q?Lnt0wwU9YRbgPFs4V5kjwFQwuXgezc9zVDMByKD6oZa5z+YJrzhbLo7Quj?=
+ =?iso-8859-1?Q?fpcdJE+kNjwXom+tSRAzbQCIq8E4vOjyl8XtkbAoTNw/E9bRXTdkclJDaS?=
+ =?iso-8859-1?Q?poCvOBsSIAWVu7xCNEaYLaRmp7LYYsTk/EUFA6e7cG2BXNSsTKWvihLlwL?=
+ =?iso-8859-1?Q?rOn231eNMKHF++HHo9kvzQEx5kvaLMY0ZvNr5eIex86qWKfD/K9HtSeHSs?=
+ =?iso-8859-1?Q?OYsKBxIKmtbqJbn0hA7fJU25CQKZyfO6B3YYnJuPO67ficCGtZ9AsVI37V?=
+ =?iso-8859-1?Q?kIokA1b9V1wIaYaWtSDQqgP/BCT0WpPLwWpgdQUiRTcKoQcmkrRuhKB+zg?=
+ =?iso-8859-1?Q?CzVPYIYeBTIQe7NLkHcLQiCJMO0V7UP76K0RqguMogKK7zzgLfycnSyISz?=
+ =?iso-8859-1?Q?RpTY9r/tpRYhPq4xeeYLpVR/YfoFLUf5X0mS4MXI2AJ4BfpBgwLYEvWD5e?=
+ =?iso-8859-1?Q?6ChyaV6EkdkJpebRQB4KLA+xrXps7BXFnOcaKD5SLITEL3729MxhK12ZsP?=
+ =?iso-8859-1?Q?gC5hgFLSSXYE6ex374L23d8QD8c5UkpuMObP2GhfPHk7Lbs8CrhJeomBW7?=
+ =?iso-8859-1?Q?QwuNsI2XxO+2rGbFCdWBiHXMyzR9IuhoD66vWDad2wNV9BKOZV27a+rzbq?=
+ =?iso-8859-1?Q?Pe1qpUSpt/OQDxqMEFsqFc/qMp4h7+mjY94VBp5HLqYVgj1J/MyhGy+2D8?=
+ =?iso-8859-1?Q?0i9bBl/JAmbFS1mwGiOCCWf0S+hNa5/nDbMiv0ucuY2wk3uIgo3B5g9yc5?=
+ =?iso-8859-1?Q?7MjfoZaRfdjCKrRpWJcpRQhVCRKGDI1L/y+cSWZ7264YTSv0eL9xv6nODv?=
+ =?iso-8859-1?Q?9XV72iYTvk82ld55XsoKJgUjziXL66n3NSjaaHwuDwTfpZgncS9XsNETZg?=
+ =?iso-8859-1?Q?UQGdsCn631Dvxy5GPn2R/DF45f3oMMBOoSr7qaTVqDc1asIMt23b0Gt0t+?=
+ =?iso-8859-1?Q?LBPFTZDSqlMNOKgTH+Oq/86rcguqh/Ox9fZgOr914wXCWu9VwfnqtjN7yZ?=
+ =?iso-8859-1?Q?uW2oW5XERXvigAApxa0MENaUNS1G0P3bJ++HVpLNuVw0oAZ+o5H00jOVQr?=
+ =?iso-8859-1?Q?vWixsUMqE056N6D0TLfTve+3JO2TXGKk1PjLOM4K8/3hDBBWi30QccgYuM?=
+ =?iso-8859-1?Q?q6seKuPgu40rxVgI6xM04iYGg8p33TNKlIIk0vdO56kpm6gGdqRjWddVrk?=
+ =?iso-8859-1?Q?4YVNWZrheISqor7uNhyF0T9Esf9AzQFAKW?=
+Content-Type: multipart/alternative;
+	boundary="_000_AM7PR10MB3777B6D411F3E8E8A83D50A1FF46AAM7PR10MB3777EURP_"
+MIME-Version: 1.0
+X-OriginatorOrg: amadeus.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: AM7PR10MB3777.EURPRD10.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 87644b63-227a-4424-6cff-08ddb7d55e77
+X-MS-Exchange-CrossTenant-originalarrivaltime: 30 Jun 2025 12:55:19.6420
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: b3f4f7c2-72ce-4192-aba4-d6c7719b5766
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: xwqg7b53BTPJF2/ksjeaSXT/sf9pb3Aogi0ALFqb90kZtvfTkLarGC2mEuVWF4gCgWfqc+T+bL9/g4BJtR3aaU7MhUUK+dX6AY13ecXyTxk=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU0PR10MB7481
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Microsoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-US>
+    Join the meeting now<https://teams.microsoft.com [...] 
+ Content analysis details:   (0.0 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.162.21 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.162.21 listed in sa-accredit.habeas.com]
+  0.2 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [40.107.162.21 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 ARC_SIGNED             Message has a ARC signature
+  0.0 ARC_VALID              Message has a valid ARC signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+--_000_AM7PR10MB3777B6D411F3E8E8A83D50A1FF46AAM7PR10MB3777EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+___________________________________________________________________________=
+_____
+Microsoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=3Den-US>
+Join the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting=
+_ZTM5MWYyNDAtZWRkZC00MjEyLWE5YzgtN2E4YjhjZjkyMDVm%40thread.v2/0?context=3D%=
+7b%22Tid%22%3a%22b3f4f7c2-72ce-4192-aba4-d6c7719b5766%22%2c%22Oid%22%3a%224=
+798b958-a0c3-4bb3-958f-4d687fc25f35%22%7d>
+Meeting ID: 386 274 074 384 3
+Passcode: SK9tv7GW
+________________________________
+Dial in by phone
++33 1 85 64 24 99,,377897118#<tel:+33185642499,,377897118#> France, All loc=
+ations
+Find a local number<https://dialin.teams.microsoft.com/479268ea-639c-4035-8=
+a1f-a4e25660f57c?id=3D377897118>
+Phone conference ID: 377 897 118#
+For organizers: Meeting options<https://teams.microsoft.com/meetingOptions/=
+?organizerId=3D4798b958-a0c3-4bb3-958f-4d687fc25f35&tenantId=3Db3f4f7c2-72c=
+e-4192-aba4-d6c7719b5766&threadId=3D19_meeting_ZTM5MWYyNDAtZWRkZC00MjEyLWE5=
+YzgtN2E4YjhjZjkyMDVm@thread.v2&messageId=3D0&language=3Den-US> | Reset dial=
+-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>
+IMPORTANT NOTICE: Please note that this meeting might be recorded with audi=
+o, video and other information. If you do not want to be recorded, discuss =
+concerns with the host, leave the session or consider to keep your video an=
+d audio off.
+Privacy and security<https://amadeus.com/en/policies/recording-meetings-pri=
+vacy-notice>
+___________________________________________________________________________=
+_____
+
+--_000_AM7PR10MB3777B6D411F3E8E8A83D50A1FF46AAM7PR10MB3777EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+</head>
+<body>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<br>
+<div style=3D"max-width: 600px; color: #242424; font-family:'Segoe UI','Hel=
+vetica Neue',Helvetica,Arial,sans-serif" class=3D"me-email-text">
+<div style=3D"margin-bottom:24px;overflow:hidden;white-space:nowrap;">_____=
+___________________________________________________________________________=
+</div>
+<div style=3D"margin-bottom: 12px;"><span class=3D"me-email-text" style=3D"=
+font-size: 24px;font-weight: 700; margin-right:12px;">Microsoft Teams</span=
+>
+<a id=3D"meet_invite_block.action.help" class=3D"me-email-link" style=3D"fo=
+nt-size:14px; text-decoration:underline; color: #5B5FC7;" href=3D"https://a=
+ka.ms/JoinTeamsMeeting?omkt=3Den-US">
+Need help?</a> </div>
+<div style=3D"margin-bottom: 6px;"><a id=3D"meet_invite_block.action.join_l=
+ink" title=3D"Meeting join link" class=3D"me-email-headline" style=3D"font-=
+size: 20px; font-weight:600; text-decoration: underline; color: #5B5FC7;" h=
+ref=3D"https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTM5MWYyNDAtZ=
+WRkZC00MjEyLWE5YzgtN2E4YjhjZjkyMDVm%40thread.v2/0?context=3D%7b%22Tid%22%3a=
+%22b3f4f7c2-72ce-4192-aba4-d6c7719b5766%22%2c%22Oid%22%3a%224798b958-a0c3-4=
+bb3-958f-4d687fc25f35%22%7d" target=3D"_blank" rel=3D"noreferrer noopener">=
+Join
+ the meeting now</a> </div>
+<div style=3D"margin-bottom: 6px;"><span class=3D"me-email-text-secondary" =
+style=3D"font-size: 14px; color: #616161;">Meeting ID:
+</span><span class=3D"me-email-text" style=3D"font-size: 14px; color: #2424=
+24;">386 274 074 384 3</span>
+</div>
+<div style=3D"margin-bottom: 24px;"><span class=3D"me-email-text-secondary"=
+ style=3D"font-size: 14px; color: #616161;">Passcode:
+</span><span class=3D"me-email-text" style=3D"font-size: 14px; color: #2424=
+24;">SK9tv7GW</span>
+</div>
+<div style=3D"margin-bottom: 24px; max-width: 532px;">
+<hr style=3D"border: 0; background: #D1D1D1; height: 1px;">
+</div>
+<div>
+<div style=3D"margin-bottom: 6px;"><span class=3D"me-email-text" style=3D"f=
+ont-size: 16px; color: #242424; font-weight: 600; margin-right: 4px;">Dial =
+in by phone</span>
+</div>
+<div style=3D"margin-bottom: 6px;"><a id=3D"meet_invite_block.action.join_p=
+hone_number1" class=3D"me-email-link" style=3D"font-size: 14px; text-decora=
+tion: underline; color: #5B5FC7; margin-right: 6px;" href=3D"tel:+331856424=
+99,,377897118#">+33 1 85 64 24 99,,377897118#</a>
+<span class=3D"me-email-text" style=3D"font-size: 14px; color: #616161;">Fr=
+ance, All locations</span>
+</div>
+<div style=3D"margin-bottom: 6px;"><a id=3D"meet_invite_block.action.join_p=
+hone_find_local_number" class=3D"me-email-link" style=3D"font-size: 14px; t=
+ext-decoration: underline; color: #5B5FC7" href=3D"https://dialin.teams.mic=
+rosoft.com/479268ea-639c-4035-8a1f-a4e25660f57c?id=3D377897118">Find
+ a local number</a> </div>
+</div>
+<div style=3D"margin-bottom: 24px;"><span class=3D"me-email-text-secondary"=
+ style=3D"font-size: 14px; color: #616161;">Phone conference ID:
+</span><span class=3D"me-email-text" style=3D"font-size: 14px; color: #2424=
+24;">377 897 118#</span>
+</div>
+<div><span class=3D"me-email-text-secondary" style=3D"font-size: 14px; colo=
+r: #616161;">For organizers:
+</span><a id=3D"meet_invite_block.action.organizer_meet_options" class=3D"m=
+e-email-link" style=3D"font-size: 14px; text-decoration: underline; color: =
+#5B5FC7;" target=3D"_blank" href=3D"https://teams.microsoft.com/meetingOpti=
+ons/?organizerId=3D4798b958-a0c3-4bb3-958f-4d687fc25f35&amp;tenantId=3Db3f4=
+f7c2-72ce-4192-aba4-d6c7719b5766&amp;threadId=3D19_meeting_ZTM5MWYyNDAtZWRk=
+ZC00MjEyLWE5YzgtN2E4YjhjZjkyMDVm@thread.v2&amp;messageId=3D0&amp;language=
+=3Den-US" rel=3D"noreferrer noopener">Meeting
+ options</a> <span style=3D"color: #D1D1D1">|</span> <a id=3D"meet_invite_b=
+lock.action.organizer_reset_dialin_pin" class=3D"me-email-link" style=3D"fo=
+nt-size: 14px; text-decoration: underline; color: #5B5FC7;" target=3D"_blan=
+k" href=3D"https://dialin.teams.microsoft.com/usp/pstnconferencing" rel=3D"=
+noreferrer noopener">
+Reset dial-in PIN</a> </div>
+<div style=3D"margin-top: 24px; margin-bottom: 6px;">
+<div class=3D"me-email-text-secondary" style=3D"color: #616161; font-size: =
+14px;">IMPORTANT NOTICE: Please note that this meeting might be recorded wi=
+th audio, video and other information. If you do not want to be recorded, d=
+iscuss concerns with the host, leave
+ the session or consider to keep your video and audio off. </div>
+</div>
+<div style=3D"margin-bottom: 24px;"><a id=3D"meet_invite_block.action.org_p=
+rivacy" class=3D"me-email-link" style=3D"font-size: 14px; text-decoration: =
+underline; color: #5B5FC7;" target=3D"_blank" href=3D"https://amadeus.com/e=
+n/policies/recording-meetings-privacy-notice" rel=3D"noreferrer noopener">P=
+rivacy
+ and security</a> </div>
+<div style=3D"margin-bottom:24px;overflow:hidden;white-space:nowrap;">_____=
+___________________________________________________________________________=
+</div>
+</div>
+</body>
+</html>
+
+--_000_AM7PR10MB3777B6D411F3E8E8A83D50A1FF46AAM7PR10MB3777EURP_
+Content-Type: text/calendar; charset="utf-8"; method=CANCEL
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6Q0FOQ0VMDQpQUk9ESUQ6TWljcm9zb2Z0IEV4Y2hhbmdl
+IFNlcnZlciAyMDEwDQpWRVJTSU9OOjIuMA0KQkVHSU46VlRJTUVaT05FDQpUWklEOkUuIEFmcmlj
+YSBTdGFuZGFyZCBUaW1lDQpCRUdJTjpTVEFOREFSRA0KRFRTVEFSVDoxNjAxMDEwMVQwMDAwMDAN
+ClRaT0ZGU0VURlJPTTorMDMwMA0KVFpPRkZTRVRUTzorMDMwMA0KRU5EOlNUQU5EQVJEDQpCRUdJ
+TjpEQVlMSUdIVA0KRFRTVEFSVDoxNjAxMDEwMVQwMDAwMDANClRaT0ZGU0VURlJPTTorMDMwMA0K
+VFpPRkZTRVRUTzorMDMwMA0KRU5EOkRBWUxJR0hUDQpFTkQ6VlRJTUVaT05FDQpCRUdJTjpWRVZF
+TlQNCk9SR0FOSVpFUjtDTj1WaW5jZW50IE9EVU9SIChjb250cmFjdG9yKTptYWlsdG86dmluY2Vu
+dC5vZHVvckBhbWFkZXVzLmNvbQ0KQVRURU5ERUU7Uk9MRT1SRVEtUEFSVElDSVBBTlQ7UEFSVFNU
+QVQ9TkVFRFMtQUNUSU9OO1JTVlA9VFJVRTtDTj1uYXRhaHNhQG5vDQogdnVzdGVsbHRyYXZlbC5j
+b206bWFpbHRvOm5hdGFoc2FAbm92dXN0ZWxsdHJhdmVsLmNvbQ0KREVTQ1JJUFRJT047TEFOR1VB
+R0U9ZW4tVVM6XG5cbl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+DQogX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fXG5NaWNyb3NvZnQgVGVhbXMg
+TmVlZCBoZWxwPzxodHRwczovL2ENCiBrYS5tcy9Kb2luVGVhbXNNZWV0aW5nP29ta3Q9ZW4tVVM+
+XG5Kb2luIHRoZSBtZWV0aW5nIG5vdzxodHRwczovL3RlYW1zLm1pYw0KIHJvc29mdC5jb20vbC9t
+ZWV0dXAtam9pbi8xOSUzYW1lZXRpbmdfWlRNNU1XWXlOREF0WldSa1pDMDBNakV5TFdFNVl6Z3RO
+MkU0DQogWWpoalpqa3lNRFZtJTQwdGhyZWFkLnYyLzA/Y29udGV4dD0lN2IlMjJUaWQlMjIlM2El
+MjJiM2Y0ZjdjMi03MmNlLTQxOTItYWINCiBhNC1kNmM3NzE5YjU3NjYlMjIlMmMlMjJPaWQlMjIl
+M2ElMjI0Nzk4Yjk1OC1hMGMzLTRiYjMtOTU4Zi00ZDY4N2ZjMjVmMzUlMg0KIDIlN2Q+XG5NZWV0
+aW5nIElEOiAzODYgMjc0IDA3NCAzODQgM1xuUGFzc2NvZGU6IFNLOXR2N0dXXG5fX19fX19fX19f
+X19fX19fDQogX19fX19fX19fX19fX19fX1xuRGlhbCBpbiBieSBwaG9uZVxuKzMzIDEgODUgNjQg
+MjQgOTlcLFwsMzc3ODk3MTE4Izx0ZWw6KzMNCiAzMTg1NjQyNDk5XCxcLDM3Nzg5NzExOCM+IEZy
+YW5jZVwsIEFsbCBsb2NhdGlvbnNcbkZpbmQgYSBsb2NhbCBudW1iZXI8aHR0cA0KIHM6Ly9kaWFs
+aW4udGVhbXMubWljcm9zb2Z0LmNvbS80NzkyNjhlYS02MzljLTQwMzUtOGExZi1hNGUyNTY2MGY1
+N2M/aWQ9Mzc3DQogODk3MTE4PlxuUGhvbmUgY29uZmVyZW5jZSBJRDogMzc3IDg5NyAxMTgjXG5G
+b3Igb3JnYW5pemVyczogTWVldGluZyBvcHRpb24NCiBzPGh0dHBzOi8vdGVhbXMubWljcm9zb2Z0
+LmNvbS9tZWV0aW5nT3B0aW9ucy8/b3JnYW5pemVySWQ9NDc5OGI5NTgtYTBjMy00Yg0KIGIzLTk1
+OGYtNGQ2ODdmYzI1ZjM1JnRlbmFudElkPWIzZjRmN2MyLTcyY2UtNDE5Mi1hYmE0LWQ2Yzc3MTli
+NTc2NiZ0aHJlYWRJDQogZD0xOV9tZWV0aW5nX1pUTTVNV1l5TkRBdFpXUmtaQzAwTWpFeUxXRTVZ
+emd0TjJFNFlqaGpaamt5TURWbUB0aHJlYWQudjImbWUNCiBzc2FnZUlkPTAmbGFuZ3VhZ2U9ZW4t
+VVM+IHwgUmVzZXQgZGlhbC1pbiBQSU48aHR0cHM6Ly9kaWFsaW4udGVhbXMubWljcm9zbw0KIGZ0
+LmNvbS91c3AvcHN0bmNvbmZlcmVuY2luZz5cbklNUE9SVEFOVCBOT1RJQ0U6IFBsZWFzZSBub3Rl
+IHRoYXQgdGhpcyBtZWV0DQogaW5nIG1pZ2h0IGJlIHJlY29yZGVkIHdpdGggYXVkaW9cLCB2aWRl
+byBhbmQgb3RoZXIgaW5mb3JtYXRpb24uIElmIHlvdSBkbyANCiBub3Qgd2FudCB0byBiZSByZWNv
+cmRlZFwsIGRpc2N1c3MgY29uY2VybnMgd2l0aCB0aGUgaG9zdFwsIGxlYXZlIHRoZSBzZXNzaQ0K
+IG9uIG9yIGNvbnNpZGVyIHRvIGtlZXAgeW91ciB2aWRlbyBhbmQgYXVkaW8gb2ZmLlxuUHJpdmFj
+eSBhbmQgc2VjdXJpdHk8aHR0DQogcHM6Ly9hbWFkZXVzLmNvbS9lbi9wb2xpY2llcy9yZWNvcmRp
+bmctbWVldGluZ3MtcHJpdmFjeS1ub3RpY2U+XG5fX19fX19fX18NCiBfX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX1xu
+DQpVSUQ6MDQwMDAwMDA4MjAwRTAwMDc0QzVCNzEwMUE4MkUwMDgwMDAwMDAwMDlCRjE4NzIzQkRF
+OURCMDEwMDAwMDAwMDAwMDAwMDANCiAwMTAwMDAwMDA3M0I5MTNERkJEMTQ0MjREOUE5RjYwMTBB
+ODVDRjc0QQ0KU1VNTUFSWTtMQU5HVUFHRT1lbi1VUzpDYW5jZWxlZDogTmF0YXNoYQ0KRFRTVEFS
+VDtUWklEPUUuIEFmcmljYSBTdGFuZGFyZCBUaW1lOjIwMjUwNjMwVDE1MzAwMA0KRFRFTkQ7VFpJ
+RD1FLiBBZnJpY2EgU3RhbmRhcmQgVGltZToyMDI1MDYzMFQxNjMwMDANCkNMQVNTOlBVQkxJQw0K
+UFJJT1JJVFk6NQ0KRFRTVEFNUDoyMDI1MDYzMFQxMjU1MTlaDQpUUkFOU1A6VFJBTlNQQVJFTlQN
+ClNUQVRVUzpDQU5DRUxMRUQNClNFUVVFTkNFOjENCkxPQ0FUSU9OO0xBTkdVQUdFPWVuLVVTOk1p
+Y3Jvc29mdCBUZWFtcyBNZWV0aW5nDQpYLU1JQ1JPU09GVC1DRE8tQVBQVC1TRVFVRU5DRToxDQpY
+LU1JQ1JPU09GVC1DRE8tT1dORVJBUFBUSUQ6MjEyMzgyMjc0Nw0KWC1NSUNST1NPRlQtQ0RPLUJV
+U1lTVEFUVVM6RlJFRQ0KWC1NSUNST1NPRlQtQ0RPLUlOVEVOREVEU1RBVFVTOkZSRUUNClgtTUlD
+Uk9TT0ZULUNETy1BTExEQVlFVkVOVDpGQUxTRQ0KWC1NSUNST1NPRlQtQ0RPLUlNUE9SVEFOQ0U6
+MQ0KWC1NSUNST1NPRlQtQ0RPLUlOU1RUWVBFOjANClgtTUlDUk9TT0ZULU9OTElORU1FRVRJTkdJ
+TkZPUk1BVElPTjp7Ik9ubGluZU1lZXRpbmdDaGFubmVsSWQiOm51bGxcLCJPbmxpbg0KIGVNZWV0
+aW5nUHJvdmlkZXIiOjN9DQpYLU1JQ1JPU09GVC1PTkxJTkVNRUVUSU5HVE9MTE5VTUJFUjorMzMg
+MSA4NSA2NCAyNCA5OQ0KWC1NSUNST1NPRlQtT05MSU5FTUVFVElOR0NPTkZFUkVOQ0VJRDozNzc4
+OTcxMTgNClgtTUlDUk9TT0ZULVNLWVBFVEVBTVNNRUVUSU5HVVJMOmh0dHBzOi8vdGVhbXMubWlj
+cm9zb2Z0LmNvbS9sL21lZXR1cC1qb2luLw0KIDE5JTNhbWVldGluZ19aVE01TVdZeU5EQXRaV1Jr
+WkMwME1qRXlMV0U1WXpndE4yRTRZamhqWmpreU1EVm0lNDB0aHJlYWQudjIvDQogMD9jb250ZXh0
+PSU3YiUyMlRpZCUyMiUzYSUyMmIzZjRmN2MyLTcyY2UtNDE5Mi1hYmE0LWQ2Yzc3MTliNTc2NiUy
+MiUyYyUyMk8NCiBpZCUyMiUzYSUyMjQ3OThiOTU4LWEwYzMtNGJiMy05NThmLTRkNjg3ZmMyNWYz
+NSUyMiU3ZA0KWC1NSUNST1NPRlQtU0NIRURVTElOR1NFUlZJQ0VVUERBVEVVUkw6aHR0cHM6Ly9h
+cGkuc2NoZWR1bGVyLnRlYW1zLm1pY3Jvc29mDQogdC5jb20vdGVhbXMvYjNmNGY3YzItNzJjZS00
+MTkyLWFiYTQtZDZjNzcxOWI1NzY2LzQ3OThiOTU4LWEwYzMtNGJiMy05NThmLTQNCiBkNjg3ZmMy
+NWYzNS8xOV9tZWV0aW5nX1pUTTVNV1l5TkRBdFpXUmtaQzAwTWpFeUxXRTVZemd0TjJFNFlqaGpa
+amt5TURWbUB0aA0KIHJlYWQudjIvMA0KWC1NSUNST1NPRlQtU0tZUEVURUFNU1BST1BFUlRJRVM6
+eyJjaWQiOiIxOTptZWV0aW5nX1pUTTVNV1l5TkRBdFpXUmtaQzAwTWpFDQogeUxXRTVZemd0TjJF
+NFlqaGpaamt5TURWbUB0aHJlYWQudjIiXCwicmlkIjowXCwibWlkIjowXCwidWlkIjpudWxsXCwi
+cHJpdmENCiB0ZSI6dHJ1ZVwsInR5cGUiOjB9DQpYLU1JQ1JPU09GVC1ET05PVEZPUldBUkRNRUVU
+SU5HOkZBTFNFDQpYLU1JQ1JPU09GVC1ESVNBTExPVy1DT1VOVEVSOkZBTFNFDQpYLU1JQ1JPU09G
+VC1SRVFVRVNURURBVFRFTkRBTkNFTU9ERTpERUZBVUxUDQpYLU1JQ1JPU09GVC1JU1JFU1BPTlNF
+UkVRVUVTVEVEOlRSVUUNCkVORDpWRVZFTlQNCkVORDpWQ0FMRU5EQVINCg==
+
+--_000_AM7PR10MB3777B6D411F3E8E8A83D50A1FF46AAM7PR10MB3777EURP_--

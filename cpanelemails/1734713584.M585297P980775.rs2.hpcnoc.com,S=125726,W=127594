@@ -1,0 +1,1868 @@
+Return-Path: <bounce-mc.us1_102466.4938328-de18c730d2@mail149.sea22.mcdlv.net>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id +PlKIvCgZWcn9w4AObGTvA
+	(envelope-from <bounce-mc.us1_102466.4938328-de18c730d2@mail149.sea22.mcdlv.net>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 20 Dec 2024 19:53:04 +0300
+Return-path: <bounce-mc.us1_102466.4938328-de18c730d2@mail149.sea22.mcdlv.net>
+Envelope-to: caleb@novustelltravel.com
+Delivery-date: Fri, 20 Dec 2024 19:53:04 +0300
+Received: from mail149.sea22.mcdlv.net ([148.105.12.149]:22249)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98)
+	(envelope-from <bounce-mc.us1_102466.4938328-de18c730d2@mail149.sea22.mcdlv.net>)
+	id 1tOgFL-00000004NYG-0Z9p
+	for caleb@novustelltravel.com;
+	Fri, 20 Dec 2024 19:53:04 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kicheche.com; s=k3;
+	t=1734713540; x=1734974040; i=kct@kicheche.com;
+	bh=nRTmyk/Q1XCeB+YfyO2ffSlYZ6opZavArO5kiAl81Ec=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=X2Zhp7247vbhMm0u/6Jr/KtyL+z1OXwp0chGi3EUmPXXoAWuM5q03SZrS6cuM0p3A
+	 UnNF3ItR6uK1o2XrMEZ09pBqPttIPImo+yzokZsYZGkRDAEHsdqt1zXqluDYz5MKTW
+	 0dCayr8q/G7zZwBKSwD1KVsLnuxLbWEMfC0JAouCZwQNWpxcVafo1MROzm5P/VcIOR
+	 3xyC1Yvi48GPkz6AhySv8NQslxP7oipwtbuMeKtPVsuNYPbeWJ9Ecvjgp9lf5ENix+
+	 TeMd21Dy3aeNhqIbNbGQNeEn2IaNlleDfKMhAV1rDRJtJPNWovu5IzijhjjhvjMQoF
+	 PdePL4mG092FQ==
+Received: from localhost (localhost [127.0.0.1])
+	by mail149.sea22.mcdlv.net (Mailchimp) with ESMTP id 4YFD3m3r2NzQY3G7h
+	for <caleb@novustelltravel.com>; Fri, 20 Dec 2024 16:52:20 +0000 (GMT)
+Subject: =?utf-8?Q?KCT=20Newsletter=20=2D=20December=202024?=
+From: Kicheche Community Trust <kct@kicheche.com>
+Reply-To: =?utf-8?Q?Kicheche=20Community=20Trust?= <kct@kicheche.com>
+To: <caleb@novustelltravel.com>
+Date: Fri, 20 Dec 2024 16:52:17 +0000
+Message-ID: <7d96fa269bd7ce767a3c8624b.de18c730d2.20241220165210.0c14319c03.d1cc9698@mail149.sea22.mcdlv.net>
+X-Mailer: Mailchimp Mailer - **CID0c14319c03de18c730d2**
+X-Campaign: mailchimp7d96fa269bd7ce767a3c8624b.0c14319c03
+X-campaignid: mailchimp7d96fa269bd7ce767a3c8624b.0c14319c03
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=7d96fa269bd7ce767a3c8624b&id=0c14319c03&e=de18c730d2
+X-MC-User: 7d96fa269bd7ce767a3c8624b
+Feedback-ID: 102466:102466.4938328:us1:mc
+List-ID: 7d96fa269bd7ce767a3c8624bmc list <7d96fa269bd7ce767a3c8624b.51777.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://kicheche.us1.list-manage.com/unsubscribe?u=7d96fa269bd7ce767a3c8624b&id=3e6c97abb8&t=h&e=de18c730d2&c=0c14319c03>, <mailto:unsubscribe-mc.us1_7d96fa269bd7ce767a3c8624b.0c14319c03-de18c730d2@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_629861207"
+MIME-Version: 1.0
+X-Spam-Status: No, score=2.8
+X-Spam-Score: 28
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Thank You for Your Support in 2024! View this email in your
+    browser (https://mailchi.mp/kicheche/kct-newsletter-december-4938328?e=de18c730d2)
+    https://kicheche.com/?utm_source=RACK+-+agents&utm_campaign=0c14319c03-EMAIL_CAMPAIGN_2024_DE
+    [...] 
+ Content analysis details:   (2.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mcusercontent.com]
+                             [URI: list-manage.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: mailchi.mp]
+                             [URI: mailchimp.com]
+                             [URI: kichechetrust.com]
+                             [URI: marapredatorconservation.org]
+                             [URI: directpay.online]
+                             [URI: kicheche.com]
+  0.1 URIBL_SBL_A            Contains URL's A record listed in the Spamhaus SBL
+                             blocklist
+                             [URI: fonts.googleapis.com/142.250.186.42]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [148.105.12.149 listed in bl.score.senderscore.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  2.0 PDS_OTHER_BAD_TLD      Untrustworthy TLDs
+                             [URI: shop.directpay.online (online)]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [148.105.12.149 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [148.105.12.149 listed in sa-trusted.bondedsender.org]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
+  0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_629861207
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Thank You for Your Support in 2024!
+
+
+View this email in your browser (https://mailchi.mp/kicheche/kct-newslette=
+r-december-4938328?e=3Dde18c730d2)
+https://kicheche.com/?utm_source=3DRACK+-+agents&utm_campaign=3D0c14319c03=
+-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=3D0_=
+-037afbd9c0-33796052
+
+ABOUT US (https://kichechetrust.com/about-us/?utm_source=3DRACK+-+agents&u=
+tm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medi=
+um=3Demail&utm_term=3D0_-037afbd9c0-33796052)  |  OUR PILLARS (http=
+s://kichechetrust.com/our-pillars/?utm_source=3DRACK+-+agents&utm_campaign=
+=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&=
+utm_term=3D0_-037afbd9c0-33796052)  | CONTACT US (https://kichechet=
+rust.com/get-in-touch/?utm_source=3DRACK+-+agents&utm_campaign=3D0c14319c0=
+3-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=3D0=
+_-037afbd9c0-33796052)  | SUPPORT US (https://kichechetrust.com/sup=
+port-us/?utm_source=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAI=
+GN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052)
+
+https://kicheche.com/your-impact/?utm_source=3DRACK+-+agents&utm_campaign=
+=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&=
+utm_term=3D0_-037afbd9c0-33796052
+
+Dear Friends and Supporters=2C
+
+Thank you for your unwavering support of Kicheche Community Trust. Your ge=
+nerosity and encouragement drive our efforts to uplift communities and pro=
+tect wildlife.
+
+None of this would be possible without you=E2=80=94ASHE OLENG!
+
+Free Aitong Medical Camp
+
+Healing in the Heart of Mara
+
+Kicheche Community Trust in partnership with Saruni Basecamp and Safarilin=
+k=2C organised a free medical camp at CHP Aitong Clinic. It was a beacon o=
+f hope and care for the Aitong community providing vital healthcare servic=
+es to 886 patients over three impactful days.
+
+This life-changing initiative=2C made possible by the incredible dedicatio=
+n of volunteer doctors and conservation partners=2C addressed various medi=
+cal needs=2C from general consultations=2C and pediatric care to dental ch=
+eck-ups=2C nutrition=2C gynecology services=2C and HPV testing.
+
+Nanny=2C Dr. Geert=2C Ledama & Dr. Pol - Dental Team
+
+Dr. Luis & Joshua - HPV Testing & Gynaecology
+
+Inge - Registration & Triage
+
+Among the standout contributors was 14 year old Leshan=2C son of Kicheche=
+ Mara=E2=80=99s guide Jimmy Tinka. Leshan=E2=80=99s enthusiasm and commitm=
+ent at the triage section was inspiring=2C showcasing the power of communi=
+ty spirit across all ages.
+
+Leshan taking patients=E2=80=99 temperature.
+
+Leshan with the father=2C Jimmy Tinka.
+
+We extend our heartfelt gratitude to every individual who supported this c=
+amp. Your efforts are healing today=E2=80=99s patients and building health=
+ier=2C brighter futures for the Aitong community.
+
+Women Empowerment Program
+
+Empowering Women=2C Enriching Communities
+
+Kicheche Community Trust proudly concluded the annual transformative Women=
+ Empowerment Training Program at the Maasai Mara Wildlife Conservancies As=
+sociation (MMWCA)=2C near Mara North Conservancy. The two-week initiative=
+ brought together 21 determined women eager to acquire life-changing skill=
+s and build brighter futures for themselves and their communities.
+
+The training covered a diverse range of topics=2C including:
+* Family Planning & Female genital mutilation (FGM) Awareness
+* Storekeeping & Clerical Skills
+* Mental Health & Personal Branding
+* Business & Budgeting
+* Computer Skills & Sewing
+* Kitchen Gardening
+
+Elisa=2C Inge & Nanny - Volunteer Trainers
+
+Participants engaging in a group activity.
+
+We owe immense gratitude to our incredible volunteer trainers =E2=80=93 El=
+isa=2C Inge=2C Nanny=2C and Julius =E2=80=93 for their unwavering dedicati=
+on and passion. Their expertise and encouragement inspired the participant=
+s to unlock their potential and embrace opportunities with confidence.
+
+A heartfelt thank you also goes to MMWCA=2C our hosting partner=2C for pro=
+viding the space and support that made this program possible.
+
+Empowering Students
+
+Through Sports and Talents at Wathituga Secondary School
+
+Kicheche Laikipia Assistant Manager=2C Naftali (far left)=2C posing with t=
+he boys Football team.
+
+We recently organized an inspiring sports and talent program at Wathituga=
+ Secondary School in partnership with Binti Mwangaza (https://www.instagra=
+m.com/binti.mwangaza/?utm_source=3DRACK+-+agents&utm_campaign=3D0c14319c03=
+-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=3D0_=
+-037afbd9c0-33796052) =2C creating a platform for students to showc=
+ase their gifts while enjoying a day of fun and team work.
+
+Binti Mwangaza (Daughters of Light) is a Laikipia-based community organiza=
+tion dedicated to supporting vulnerable women and girls from low-income fa=
+milies by providing access to reusable sanitary towels.
+
+The event began with motivational talks tailored for boys and girls=2C add=
+ressing their unique challenges and encouraging them to dream big=2C overc=
+ome obstacles=2C and embrace their strengths.
+
+Trophies & Kicheche bottles for the winning teams .
+
+Creativity on display during fashion show.
+
+The day unfolded with a vibrant talent show=2C featuring captivating perfo=
+rmances and creative displays=2C followed by an exhilarating football tour=
+nament that highlighted teamwork and sportsmanship.
+
+This initiative not only uplifted the students=E2=80=99 spirits but also d=
+emonstrated how sports and creative expression can empower young minds=2C=
+ equipping them with skills and experiences to shape their future.
+
+Changing Lives Through Education
+
+Kicheche Community Trust Bursary Program
+https://shop.directpay.online/paymybills/kichechecommunitytrust?utm_source=
+=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KC=
+T_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+
+Vivian Sanoe - bursary beneficiary at Naboisho Primary School
+
+Education is the foundation of a brighter future=2C and we are committed t=
+o making it accessible for young minds. Thanks to the unwavering support o=
+f our generous donors=2C 18 students have received bursaries in 2024=2C em=
+powering them to pursue their studies and fulfill their potential.
+
+Our bursary program spans across various levels of education=E2=80=94prima=
+ry=2C secondary=2C and specialized study programs. This initiative reflect=
+s our belief in nurturing talent and fostering opportunities for individua=
+ls to contribute meaningfully to their communities.
+
+Together with our donors=2C we continue to transform lives=2C one bursary=
+ at a time.
+
+Building a Brighter Future
+
+Library Project for Naboisho Primary School
+https://shop.directpay.online/paymybills/kichechecommunitytrust?utm_source=
+=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KC=
+T_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+
+Design layout for the container library.
+
+Kicheche Community Trust is excited to announce the construction of a fabr=
+icated container library at Naboisho Primary School. The library will be b=
+uilt using repurposed shipping containers=2C offering a cost-effective=2C=
+ durable=2C and environmentally friendly solution.
+https://shop.directpay.online/paymybills/kichechecommunitytrust?utm_source=
+=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KC=
+T_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+
+We invite you to join this journey by donating books (nature=2C wildlife a=
+nd educative) to fill the library shelves.
+
+Your support will help provide students with access to valuable resources=
+=2C sparking a love for reading and learning that can transform their futu=
+re.
+DONATE A BOOK ()
+
+Safeguarding Cheetahs
+
+Your Support Makes a Difference
+https://shop.directpay.online/paymybills/kichechecommunitytrust?utm_source=
+=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KC=
+T_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+
+Thanks to your generous contributions=2C we proudly continue to support th=
+e Mara Predator Conservation Programme (https://www.marapredatorconservati=
+on.org/?utm_source=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIG=
+N_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052) (MPCP) by fueling their research vehicles. These vehicles a=
+re essential for conducting vital patrols across the Mara=2C ensuring the=
+ monitoring and protection of cheetah populations.
+
+These patrols play a critical role in deterring poaching=2C tracking cheet=
+ah movements=2C and preserving the vast habitats these iconic big cats dep=
+end on. Together=2C we are making strides in securing a future where cheet=
+ahs thrive in the wild.
+
+https://shop.directpay.online/paymybills/kichechecommunitytrust?utm_source=
+=3DRACK+-+agents&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KC=
+T_COPY_01&utm_medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+https://www.facebook.com/KichecheCommunityTrust/?utm_source=3DRACK+-+agent=
+s&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_m=
+edium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+https://www.instagram.com/kichechecommunitytrust/?utm_source=3DRACK+-+agen=
+ts&utm_campaign=3D0c14319c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_=
+medium=3Demail&utm_term=3D0_-037afbd9c0-33796052
+mailto:kct@kicheche.com
+https://kichechetrust.com/?utm_source=3DRACK+-+agents&utm_campaign=3D0c143=
+19c03-EMAIL_CAMPAIGN_2024_DECEMBER_KCT_COPY_01&utm_medium=3Demail&utm_term=
+=3D0_-037afbd9c0-33796052
+
+Copyright (C) 2024 Kicheche Camps. All rights reserved.
+You are receiving our Kicheche Agents Updates because you sell our camps.
+Our mailing address is:
+Kicheche Camps
+P.O Box 15236
+Nairobi 00509
+Kenya
+Want to change how you receive these emails?
+You can
+update your preferences (https://kicheche.us1.list-manage.com/profile?u=3D=
+7d96fa269bd7ce767a3c8624b&id=3D3e6c97abb8&e=3Dde18c730d2&c=3D0c14319c03) or=
+ unsubscribe (https://kicheche.us1.list-manage.com/unsubscribe?u=3D7d96fa2=
+69bd7ce767a3c8624b&id=3D3e6c97abb8&t=3Db&e=3Dde18c730d2&c=3D0c14319c03)
+--_----------=_MCPart_629861207
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head><meta name=3D"twitter:image:src" content=3D"https://mcusercont=
+ent.com/7d96fa269bd7ce767a3c8624b/images/643a837d-96c7-4c9d-9bc7-83da5b627=
+834.jpg"><meta name=3D"twitter:description" content=3D"Dear Friends and Su=
+pporters=2C
+
+Thank you for your unwavering support of Kicheche Community Trust. Your ge=
+nerosity and encouragement drive our efforts to uplift communities and pro=
+tect wildlife.
+
+None of this would be possible without you=E2=80=94ASHE OLENG!"><meta name=
+=3D"twitter:title" content=3D"KCT Newsletter - December 2024"><meta name=
+=3D"twitter:card" content=3D"summary_large_image"><meta property=3D"og:typ=
+e" content=3D"article"><meta property=3D"og:description" content=3D"Dear F=
+riends and Supporters=2C
+
+Thank you for your unwavering support of Kicheche Community Trust. Your ge=
+nerosity and encouragement drive our efforts to uplift communities and pro=
+tect wildlife.
+
+None of this would be possible without you=E2=80=94ASHE OLENG!"><meta prop=
+erty=3D"og:image" content=3D"https://mcusercontent.com/7d96fa269bd7ce767a3=
+c8624b/images/643a837d-96c7-4c9d-9bc7-83da5b627834.jpg"><meta property=3D"=
+og:title" content=3D"KCT Newsletter - December 2024"><meta property=3D"og:=
+url" content=3D"http://eepurl.com/i6Fjbc">
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1">
+<title>KCT Newsletter - December 2024</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com">
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"">
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sa=
+ns:400=2C400i=2C700=2C700i=2C900=2C900i"><!--<![endif]--><style>        =
+  img{-ms-interpolation-mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(246=2C 244=2C 238); }.mceText=
+=2C .mcnTextContent=2C .mceLabel { font-family: "Helvetica Neue"=2C Helvet=
+ica=2C Arial=2C Verdana=2C sans-serif; }.mceText=2C .mcnTextContent=2C .mc=
+eLabel { color: rgb(0=2C 0=2C 0); }.mceText p { margin-bottom: 0px; }.mceT=
+ext ul { margin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceTe=
+xt input { margin-bottom: 0px; }.mceSpacing-24 .mceInput + .mceErrorMessag=
+e { margin-top: -12px; }.mceText p { margin-bottom: 0px; }.mceText ul { ma=
+rgin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText input {=
+ margin-bottom: 0px; }.mceSpacing-12 .mceInput + .mceErrorMessage { margin=
+-top: -6px; }.mceInput { background-color: transparent; border: 2px solid=
+ rgb(208=2C 208=2C 208); width: 60%; color: rgb(77=2C 77=2C 77); display:=
+ block; }.mceInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"] { flo=
+at: left; margin-right: 12px; display: inline; width: auto !important; }.m=
+ceLabel > .mceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabel { di=
+splay: block; }.mceText p=2C .mcnTextContent p { color: rgb(0=2C 0=2C 0);=
+ font-family: "Helvetica Neue"=2C Helvetica=2C Arial=2C Verdana=2C sans-se=
+rif; font-size: 16px; font-weight: normal; line-height: 150%; text-align:=
+ center; direction: ltr; }.mceText a=2C .mcnTextContent a { color: rgb(0=
+=2C 0=2C 0); font-style: normal; font-weight: normal; text-decoration: und=
+erline; direction: ltr; }.mceSectionBody .mceText p=2C .mceSectionBody .mc=
+nTextContent p { }.mceSectionBody .mceText a=2C .mceSectionBody .mcnTextCo=
+ntent a { font-style: normal; }.mceSectionBody .mceText p=2C .mceSectionBo=
+dy .mcnTextContent p { }.mceSectionBody .mceText a=2C .mceSectionBody .mcn=
+TextContent a { font-style: normal; }.mceSectionBody .mceText p=2C .mceSec=
+tionBody .mcnTextContent p { }.mceSectionBody .mceText a=2C .mceSectionBod=
+y .mcnTextContent a { font-style: normal; }
+@media only screen and (max-width: 480px) {
+            .mceText p { margin: 0px; font-size: 16px !important; line-hei=
+ght: 150% !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceBlockContainer { padding-left: 16px !important; padding-ri=
+ght: 16px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonContainer { width: fit-content !important; max-width=
+: fit-content !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonLink { padding: 18px 28px !important; font-size: 16p=
+x !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerBlock { border-top-width: 2px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerContainer { width: 100% !important; }
+          }
+#dataBlockId-71 p=2C #dataBlockId-71 h1=2C #dataBlockId-71 h2=2C #dataBloc=
+kId-71 h3=2C #dataBlockId-71 h4=2C #dataBlockId-71 ul { text-align: center=
+; }#dataBlockId-16 p=2C #dataBlockId-16 h1=2C #dataBlockId-16 h2=2C #dataB=
+lockId-16 h3=2C #dataBlockId-16 h4=2C #dataBlockId-16 ul { text-align: lef=
+t; }#dataBlockId-19 p=2C #dataBlockId-19 h1=2C #dataBlockId-19 h2=2C #data=
+BlockId-19 h3=2C #dataBlockId-19 h4=2C #dataBlockId-19 ul { text-align: le=
+ft; }#dataBlockId-82 p=2C #dataBlockId-82 h1=2C #dataBlockId-82 h2=2C #dat=
+aBlockId-82 h3=2C #dataBlockId-82 h4=2C #dataBlockId-82 ul { text-align: l=
+eft; }#dataBlockId-85 p=2C #dataBlockId-85 h1=2C #dataBlockId-85 h2=2C #da=
+taBlockId-85 h3=2C #dataBlockId-85 h4=2C #dataBlockId-85 ul { text-align:=
+ left; }#dataBlockId-137 p=2C #dataBlockId-137 h1=2C #dataBlockId-137 h2=
+=2C #dataBlockId-137 h3=2C #dataBlockId-137 h4=2C #dataBlockId-137 ul { te=
+xt-align: left; }#dataBlockId-143 p=2C #dataBlockId-143 h1=2C #dataBlockId=
+-143 h2=2C #dataBlockId-143 h3=2C #dataBlockId-143 h4=2C #dataBlockId-143=
+ ul { text-align: left; }#dataBlockId-144 p=2C #dataBlockId-144 h1=2C #dat=
+aBlockId-144 h2=2C #dataBlockId-144 h3=2C #dataBlockId-144 h4=2C #dataBloc=
+kId-144 ul { text-align: left; }#dataBlockId-145 p=2C #dataBlockId-145 h1=
+=2C #dataBlockId-145 h2=2C #dataBlockId-145 h3=2C #dataBlockId-145 h4=2C #=
+dataBlockId-145 ul { text-align: left; }#dataBlockId-147 p=2C #dataBlockId=
+-147 h1=2C #dataBlockId-147 h2=2C #dataBlockId-147 h3=2C #dataBlockId-147=
+ h4=2C #dataBlockId-147 ul { text-align: left; }#dataBlockId-148 p=2C #dat=
+aBlockId-148 h1=2C #dataBlockId-148 h2=2C #dataBlockId-148 h3=2C #dataBloc=
+kId-148 h4=2C #dataBlockId-148 ul { text-align: left; }</style></head>
+<body><div itemscope=3D"" itemtype=3D"http://schema.org/EmailMessage"><div=
+ itemprop=3D"publisher" itemscope=3D"" itemtype=3D"http://schema.org/Organ=
+ization"><meta itemprop=3D"name" content=3D"Kicheche Camps"><link itemprop=
+=3D"url" content=3D"http://www.kicheche.com"></div><div itemprop=3D"about"=
+ itemscope=3D"" itemtype=3D"http://schema.org/Offer"><link itemprop=3D"ima=
+ge" href=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/643=
+a837d-96c7-4c9d-9bc7-83da5b627834.jpg"></div></div>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">Thank You for Y=
+our Support in 2024!</span><!--<![endif]-->
+<!--
+-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(246=2C 244=2C=
+ 238);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"5" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:transparent" valign=3D"top" align=3D"center" class=3D"mc=
+eSectionBody"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:660px=
+;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><tbo=
+dy><tr><td style=3D"background-color:#ffffff" valign=3D"top" class=3D"mceW=
+rapperInner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"4"><tbod=
+y><tr class=3D"mceRow"><td style=3D"background-position:center;background-=
+repeat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation">=
+<tbody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" cla=
+ss=3D"mceColumn" data-block-id=3D"-19" colspan=3D"12" width=3D"100%"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"=
+presentation"><tbody><tr><td style=3D"background-color:transparent;padding=
+-top:13px;padding-bottom:13px;padding-right:13px;padding-left:13px" valign=
+=3D"top" class=3D"mceBlockContainer"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-co=
+lor:transparent;width:100%" role=3D"presentation" class=3D"mceDividerConta=
+iner" data-block-id=3D"1"><tbody><tr><td style=3D"min-width:100%;border-to=
+p-width:2px;border-top-style:solid;border-top-color:#d0d0d0;line-height:0;=
+font-size:0" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</td></tr></tb=
+ody></table></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padd=
+ing-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"=
+border:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D=
+"padding-left:24px;padding-right:24px;padding-top:5px;padding-bottom:5px"=
+ class=3D"mceTextBlockContainer"><div data-block-id=3D"2" class=3D"mceText=
+" id=3D"dataBlockId-2" style=3D"width:100%"><p class=3D"last-child"><a hre=
+f=3D"https://mailchi.mp/kicheche/kct-newsletter-december-4938328?e=3Dde18c730d2" style=3D"color: #874b4b;"><span style=3D"font-size: 11px"><span style=
+=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C=
+ sans-serif">View this email in your browser</span></span></a></p></div></=
+td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:12px;paddin=
+g-bottom:12px;padding-right:24px;padding-left:24px" valign=3D"top" class=
+=3D"mceBlockContainer" align=3D"center"><a href=3D"https://kicheche.us1.li=
+st-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D646a9acd33&e=
+=3Dde18c730d2" style=3D"display:block" target=3D"_blank" data-block-id=3D=
+"3"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:0;verti=
+cal-align:top;margin:0"><img width=3D"263.27543424317616" height=3D"auto"=
+ style=3D"width:263.27543424317616px;height:auto;max-width:263.27543424317=
+616px !important;border-radius:0;display:block" alt=3D"" src=3D"https://mc=
+usercontent.com/7d96fa269bd7ce767a3c8624b/images/3242a100-3fb0-726c-45b3-9=
+bb55d05be93.png" role=3D"presentation" class=3D"imageDropZone mceLogo"></s=
+pan></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr=
+></table><![endif]--></td></tr></tbody><tbody data-block-id=3D"69" class=
+=3D"mceWrapper"><tr><td style=3D"background-color:transparent" valign=3D"t=
+op" align=3D"center" class=3D"mceSectionBody"><!--[if (gte mso 9)|(IE)]><=
+table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"660" style=3D"width:660px;"><tr><td><![endif]--><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:66=
+0px" role=3D"presentation"><tbody><tr><td style=3D"background-color:#fffff=
+f" valign=3D"top" class=3D"mceWrapperInner"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion" data-block-id=3D"68"><tbody><tr class=3D"mceRow"><td style=3D"backgr=
+ound-position:center;background-repeat:no-repeat;background-size:cover" va=
+lign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padd=
+ing-bottom:0" valign=3D"top" class=3D"mceColumn" data-block-id=3D"-22" col=
+span=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padd=
+ing-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top">=
+<table width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:se=
+parate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;paddi=
+ng-top:6px;padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-b=
+lock-id=3D"6" class=3D"mceText" id=3D"dataBlockId-6" style=3D"width:100%">=
+<p class=3D"last-child"><a href=3D"https://kicheche.us1.list-manage.com/tr=
+ack/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Da702360993&e=3Dde18c730d2" t=
+arget=3D"_blank" style=3D"color: #c10812; text-decoration: none;"><strong>=
+<span style=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">ABOUT US</span></sp=
+an></strong></a><strong><span style=3D"color:#c10812;"><span style=3D"font=
+-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C sans-serif"> =C2=A0| =C2=A0</span></span></span>=
+</strong><a href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7=
+d96fa269bd7ce767a3c8624b&id=3Dcdeb8fdb34&e=3Dde18c730d2" target=3D"_blank=
+" style=3D"color: #c10812; text-decoration: none;"><strong><span style=3D"=
+font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neu=
+e'=2C Helvetica=2C Arial=2C sans-serif">OUR PILLARS</span></span></strong>=
+</a><strong><span style=3D"color:#c10812;"><span style=3D"font-size: 12px"=
+><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif"> =C2=A0| </span></span></span></strong><a href=3D=
+"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c=
+8624b&id=3Dba1d2260b1&e=3Dde18c730d2" target=3D"_blank" style=3D"color: #=
+c10812; text-decoration: none;"><strong><span style=3D"font-size: 12px"><s=
+pan style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C=
+ Arial=2C sans-serif">CONTACT US</span></span></strong></a><strong><span s=
+tyle=3D"color:#c10812;"><span style=3D"font-size: 12px"><span style=3D"fon=
+t-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif"> =C2=A0| </span></span></span></strong><a href=3D"https://kicheche.us=
+1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D388ff76a0=
+c&e=3Dde18c730d2" target=3D"_blank" style=3D"color: #c10812; text-decorat=
+ion: none;"><strong><span style=3D"font-size: 12px"><span style=3D"font-fa=
+mily: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"=
+>SUPPORT US</span></span></strong></a></p></div></td></tr></tbody></table>=
+</td></tr><tr><td style=3D"background-color:transparent;padding-top:5px;pa=
+dding-bottom:5px;padding-right:2px;padding-left:1px" valign=3D"top" class=
+=3D"mceBlockContainer"><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:transparent=
+;width:100%" role=3D"presentation" class=3D"mceDividerContainer" data-bloc=
+k-id=3D"7"><tbody><tr><td style=3D"min-width:100%;border-top-width:2px;bor=
+der-top-style:solid;border-top-color:#0da0b7;line-height:0;font-size:0" va=
+lign=3D"top" class=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></t=
+d></tr><tr><td style=3D"padding-top:6px;padding-bottom:6px;padding-right:0=
+;padding-left:0" valign=3D"top" class=3D"mceBlockContainer" align=3D"left"=
+><a href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269=
+bd7ce767a3c8624b&id=3D233d26b98f&e=3Dde18c730d2" style=3D"display:block"=
+ target=3D"_blank" data-block-id=3D"8"><span class=3D"mceImageBorder" styl=
+e=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img width=3D"6=
+60" height=3D"auto" style=3D"width:660px;height:auto;max-width:3872px !imp=
+ortant;border-radius:0;display:block" alt=3D"" src=3D"https://mcuserconten=
+t.com/7d96fa269bd7ce767a3c8624b/images/643a837d-96c7-4c9d-9bc7-83da5b62783=
+4.jpg" role=3D"presentation" class=3D"imageDropZone mceImage"></span></a><=
+/td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;p=
+adding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;bord=
+er-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-left=
+:24px;padding-right:24px;padding-top:5px;padding-bottom:12px" class=3D"mce=
+TextBlockContainer"><div data-block-id=3D"9" class=3D"mceText" id=3D"dataB=
+lockId-9" style=3D"width:100%"><p style=3D"line-height: 125%; text-align:=
+ justify;"><strong><span style=3D"color:#212121;"><span style=3D"font-fami=
+ly: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">D=
+ear Friends and Supporters=2C</span></span></strong></p><p style=3D"line-h=
+eight: 125%; text-align: justify;"><br></p><p style=3D"line-height: 125%;=
+ text-align: justify;"><span style=3D"color:#212121;"><span style=3D"font-=
+family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-seri=
+f">Thank you for your unwavering support of Kicheche Community Trust. Your=
+ generosity and encouragement drive our efforts to uplift communities and=
+ protect wildlife.</span></span></p><p style=3D"line-height: 125%; text-al=
+ign: justify;"><br></p><p style=3D"line-height: 125%; text-align: justify;=
+" class=3D"last-child"><span style=3D"color:#212121;"><span style=3D"font-=
+family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-seri=
+f">None of this would be possible without you=E2=80=94ASHE OLENG!</span></=
+span></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"backgr=
+ound-color:transparent;padding-top:5px;padding-bottom:5px;padding-right:5p=
+x;padding-left:5px" valign=3D"top" class=3D"mceBlockContainer"><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"background-color:transparent;width:100%" role=3D"presentation"=
+ class=3D"mceDividerContainer" data-block-id=3D"10"><tbody><tr><td style=
+=3D"min-width:100%;border-top-width:2px;border-top-style:solid;border-top-=
+color:#0da0b7;line-height:0;font-size:0" valign=3D"top" class=3D"mceDivide=
+rBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"padding=
+-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top" cla=
+ss=3D"mceBlockContainer" align=3D"center"><span class=3D"mceImageBorder" s=
+tyle=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img data-bl=
+ock-id=3D"11" width=3D"66" height=3D"auto" style=3D"width:66px;height:auto=
+;max-width:660px !important;border-radius:0;display:block" alt=3D"" src=3D=
+"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/8e1afb3a-828a-=
+6093-60b0-9095ff27e460.png" role=3D"presentation" class=3D"imageDropZone m=
+ceImage"></span></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;=
+padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=
+=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><td styl=
+e=3D"padding-left:24px;padding-right:24px;padding-top:6px;padding-bottom:6=
+px" class=3D"mceTextBlockContainer"><div data-block-id=3D"77" class=3D"mce=
+Text" id=3D"dataBlockId-77" style=3D"width:100%"><p style=3D"line-height:=
+ 125%; text-align: center;"><strong><span style=3D"color:#c10812;"><span s=
+tyle=3D"font-size: 20px"><span style=3D"font-family: 'Times New Roman'=2C=
+ Times=2C Baskerville=2C Georgia=2C serif">Free Aitong Medical Camp</span>=
+</span></span></strong></p><p style=3D"line-height: 125%; text-align: cent=
+er;" class=3D"last-child"><strong><span style=3D"color:#0da0b7;"><span sty=
+le=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif">Healing in the Heart of Mara</span></span></strong></p></d=
+iv></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:6px;pa=
+dding-bottom:6px;padding-right:6px;padding-left:6px" valign=3D"top" class=
+=3D"mceBlockContainer" align=3D"left"><span class=3D"mceImageBorder" style=
+=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img data-block-=
+id=3D"13" width=3D"648" height=3D"auto" style=3D"width:648px;height:auto;m=
+ax-width:3872px !important;border-radius:0;display:block" alt=3D"" src=3D"=
+https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/cb8b018a-e69c-6=
+304-ec25-b6249448a54d.jpeg" role=3D"presentation" class=3D"imageDropZone m=
+ceImage"></span></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;=
+padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=
+=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><td styl=
+e=3D"padding-left:24px;padding-right:24px;padding-top:5px;padding-bottom:1=
+2px" class=3D"mceTextBlockContainer"><div data-block-id=3D"14" class=3D"mc=
+eText" id=3D"dataBlockId-14" style=3D"width:100%"><p style=3D"line-height:=
+ 125%; text-align: justify;"><span style=3D"color:#212121;"><span style=3D=
+"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C san=
+s-serif">Kicheche Community Trust in partnership with Saruni Basecamp and=
+ Safarilink=2C organised a free medical camp at CHP Aitong Clinic. It was=
+ a beacon of hope and care for the Aitong community providing vital health=
+care services to </span></span><strong><span style=3D"color:#212121;"><spa=
+n style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Ar=
+ial=2C sans-serif">886 patients</span></span></strong><span style=3D"color=
+:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C=
+ Helvetica=2C Arial=2C sans-serif"> over three impactful days. </span></sp=
+an></p><p style=3D"line-height: 125%; text-align: justify;"><br></p><p sty=
+le=3D"line-height: 125%; text-align: justify;" class=3D"last-child"><span=
+ style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helv=
+etica Neue'=2C Helvetica=2C Arial=2C sans-serif">This life-changing initia=
+tive=2C made possible by the incredible dedication of volunteer doctors an=
+d conservation partners=2C addressed various medical needs=2C from general=
+ consultations=2C and pediatric care to dental check-ups=2C nutrition=2C g=
+ynecology services=2C and HPV testing.</span></span></p></div></td></tr></=
+tbody></table></td></tr><tr><td valign=3D"top" class=3D"mceGutterContainer=
+" id=3D"gutterContainerId-118"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"border-collapse:separate" role=3D"pre=
+sentation"><tbody><tr><td style=3D"padding-top:12px;padding-bottom:6px;pad=
+ding-right:0;padding-left:0" valign=3D"top" class=3D"mceLayoutContainer"><=
+table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"118" id=3D"section_ef4=
+f033dc13fc28d1458cc32c2ed54b7" class=3D"mceLayout"><tbody><tr class=3D"mce=
+Row"><td style=3D"background-position:center;background-repeat:no-repeat;b=
+ackground-size:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td val=
+ign=3D"top" class=3D"mceColumn" data-block-id=3D"-26" colspan=3D"12" width=
+=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" align=3D"center=
+"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" data-block-id=3D"-16"><tbody><tr cla=
+ss=3D"mceRow"><td style=3D"background-position:center;background-repeat:no=
+-repeat;background-size:cover" valign=3D"top"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><t=
+r><td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-32" colspan=3D"=
+12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top"><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation" data-block-id=3D"121"><tbody><tr class=3D"=
+mceRow"><td style=3D"background-position:center;background-repeat:no-repea=
+t;background-size:cover" valign=3D"top"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"24" width=3D"100%" role=3D"presentation"><tbody><tr><td=
+ style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=3D"mceColum=
+n" data-block-id=3D"120" colspan=3D"12" width=3D"100%"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation">=
+<tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;pad=
+ding-left:0" valign=3D"top" class=3D"mceBlockContainer" align=3D"center"><=
+span class=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertical-a=
+lign:top;margin:0"><img data-block-id=3D"122" width=3D"561" height=3D"auto=
+" style=3D"width:561px;height:auto;max-width:660px !important;border-radiu=
+s:0;display:block" alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7c=
+e767a3c8624b/images/8aecb8ec-9450-6da4-ebfb-74f3091678d9.jpeg" role=3D"pre=
+sentation" class=3D"imageDropZone mceImage"></span></td></tr><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=
+=3D"top"><table width=3D"100%" style=3D"border:0;border-radius:0;border-co=
+llapse:separate"><tbody><tr><td style=3D"padding-left:24px;padding-right:2=
+4px;padding-top:0;padding-bottom:6px" class=3D"mceTextBlockContainer"><div=
+ data-block-id=3D"123" class=3D"mceText" id=3D"dataBlockId-123" style=3D"w=
+idth:100%"><p class=3D"last-child"><em><span style=3D"color:#c10812;"><spa=
+n style=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'He=
+lvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Nanny=2C Dr. Geert=2C L=
+edama &amp; Dr. Pol - </span></span></span></em><span style=3D"color:#2121=
+21;"><span style=3D"font-size: 12px"><span style=3D"font-family: 'Open San=
+s'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Dental Team</s=
+pan></span></span></p></div></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr><tr><td valign=3D"top" class=3D"mceGutterConta=
+iner" id=3D"gutterContainerId-100"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"border-collapse:separate" role=3D=
+"presentation"><tbody><tr><td style=3D"padding-top:12px;padding-bottom:12p=
+x;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceLayoutContain=
+er"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" role=3D"presentation" data-block-id=3D"100" id=3D"sectio=
+n_41b33ede167709b51f220fe3bc800912" class=3D"mceLayout"><tbody><tr class=
+=3D"mceRow"><td style=3D"background-position:center;background-repeat:no-r=
+epeat;background-size:cover" valign=3D"top"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr>=
+<td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-25" colspan=3D"12=
+" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" align=3D=
+"center"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"-14"><tbody>=
+<tr class=3D"mceRow"><td style=3D"background-position:center;background-re=
+peat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><t=
+body><tr><td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-31" cols=
+pan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top"=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" data-block-id=3D"105"><tbody><tr cla=
+ss=3D"mceRow"><td style=3D"background-position:center;background-repeat:no=
+-repeat;background-size:cover;padding-top:0px;padding-bottom:0px" valign=
+=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D=
+"100%" style=3D"table-layout:fixed" role=3D"presentation"><colgroup><col s=
+pan=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.33333333=
+3333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" wid=
+th=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><co=
+l span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.33333=
+3333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1"=
+ width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"=
+><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.3=
+33333333333332%"></colgroup><tbody><tr><td style=3D"padding-top:0;padding-=
+bottom:0" valign=3D"top" class=3D"mceColumn" data-block-id=3D"102" colspan=
+=3D"6" width=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:16px;padding-left:16px" valign=3D"top"=
+ class=3D"mceBlockContainer" align=3D"center"><span class=3D"mceImageBorde=
+r" style=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img dat=
+a-block-id=3D"106" width=3D"298" height=3D"auto" style=3D"width:298px;heig=
+ht:auto;max-width:298px !important;border-radius:0;display:block" alt=3D""=
+ src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/ad7100d=
+3-a04c-df54-ea14-2a1fa4280bfb.jpeg" role=3D"presentation" class=3D"imageDr=
+opZone mceImage"></span></td></tr><tr><td style=3D"padding-top:0;padding-b=
+ottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100=
+%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr>=
+<td style=3D"padding-left:24px;padding-right:24px;padding-top:0;padding-bo=
+ttom:0" class=3D"mceTextBlockContainer"><div data-block-id=3D"124" class=
+=3D"mceText" id=3D"dataBlockId-124" style=3D"width:100%"><p style=3D"line-=
+height: 125%;" class=3D"last-child"><em><span style=3D"color:#c10812;"><sp=
+an style=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'H=
+elvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"> Dr. Luis &amp; Joshua=
+ - </span></span></span></em><span style=3D"color:#212121;"><span style=3D=
+"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Ne=
+ue'=2C Helvetica=2C Arial=2C sans-serif">HPV Testing &amp; Gynaecology</sp=
+an></span></span></p></div></td></tr></tbody></table></td></tr></tbody></t=
+able></td><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" clas=
+s=3D"mceColumn" data-block-id=3D"104" colspan=3D"6" width=3D"50%"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pre=
+sentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-=
+right:16px;padding-left:16px" valign=3D"top" class=3D"mceBlockContainer" a=
+lign=3D"center"><span class=3D"mceImageBorder" style=3D"border:0;border-ra=
+dius:0;vertical-align:top;margin:0"><img data-block-id=3D"107" width=3D"29=
+8" height=3D"auto" style=3D"width:298px;height:auto;max-width:298px !impor=
+tant;border-radius:0;display:block" alt=3D"" src=3D"https://mcusercontent.=
+com/7d96fa269bd7ce767a3c8624b/images/c6141d57-c9f8-7ae7-db2d-3788c7cc1a11.=
+jpeg" role=3D"presentation" class=3D"imageDropZone mceImage"></span></td><=
+/tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;border-ra=
+dius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-left:24px=
+;padding-right:24px;padding-top:0;padding-bottom:0" class=3D"mceTextBlockC=
+ontainer"><div data-block-id=3D"125" class=3D"mceText" id=3D"dataBlockId-1=
+25" style=3D"width:100%"><p style=3D"line-height: 125%;" class=3D"last-chi=
+ld"><em><span style=3D"color:#c10812;"><span style=3D"font-size: 12px"><sp=
+an style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C A=
+rial=2C sans-serif">Inge - </span></span></span></em><span style=3D"color:=
+#212121;"><span style=3D"font-size: 12px"><span style=3D"font-family: 'Ope=
+n Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Registrat=
+ion &amp; Triage</span></span></span></p></div></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table=
+ width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate=
+"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top=
+:5px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-=
+id=3D"23" class=3D"mceText" id=3D"dataBlockId-23" style=3D"width:100%"><p=
+ style=3D"line-height: 125%; text-align: justify;" class=3D"last-child"><s=
+pan style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'H=
+elvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Among the standout con=
+tributors was </span></span><strong><span style=3D"color:#212121;"><span s=
+tyle=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif">14 year old Leshan</span></span></strong><span style=3D"co=
+lor:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C sans-serif">=2C son of Kicheche Mara=E2=80=99s g=
+uide Jimmy Tinka. Leshan=E2=80=99s enthusiasm and commitment at the triage=
+ section was inspiring=2C showcasing the power of community spirit across=
+ all ages.</span></span></p></div></td></tr></tbody></table></td></tr><tr>=
+<td valign=3D"top" class=3D"mceGutterContainer" id=3D"gutterContainerId-22=
+"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" s=
+tyle=3D"border-collapse:separate" role=3D"presentation"><tbody><tr><td sty=
+le=3D"padding-top:12px;padding-bottom:12px;padding-right:0;padding-left:0"=
+ valign=3D"top" class=3D"mceLayoutContainer"><table align=3D"center" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"present=
+ation" data-block-id=3D"22" id=3D"section_78e78093f87504bbfc1bb9c67f82d2a9=
+" class=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"background-=
+position:center;background-repeat:no-repeat;background-size:cover" valign=
+=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation"><tbody><tr><td valign=3D"top" class=3D"mceColu=
+mn" data-block-id=3D"-20" colspan=3D"12" width=3D"100%"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+><tbody><tr><td valign=3D"top" align=3D"center"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation" data-block-id=3D"-5"><tbody><tr class=3D"mceRow"><td style=3D"ba=
+ckground-position:center;background-repeat:no-repeat;background-size:cover=
+" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" class=3D=
+"mceColumn" data-block-id=3D"-28" colspan=3D"12" width=3D"100%"><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"prese=
+ntation"><tbody><tr><td valign=3D"top"><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+ data-block-id=3D"21"><tbody><tr class=3D"mceRow"><td style=3D"background-=
+position:center;background-repeat:no-repeat;background-size:cover;padding-=
+top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"24" width=3D"100%" style=3D"table-layout:fixed" role=
+=3D"presentation"><colgroup><col span=3D"1" width=3D"8.333333333333332%"><=
+col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333=
+333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1=
+" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%=
+"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.=
+333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=
+=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.33333333333=
+3332%"><col span=3D"1" width=3D"8.333333333333332%"></colgroup><tbody><tr>=
+<td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=3D"mceCo=
+lumn" data-block-id=3D"17" colspan=3D"6" width=3D"50%"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation">=
+<tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:16px;=
+padding-left:16px" valign=3D"top" class=3D"mceBlockContainer"><span class=
+=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertical-align:top;m=
+argin:0"><img data-block-id=3D"15" width=3D"298" height=3D"auto" style=3D"=
+width:298px;height:auto;max-width:298px !important;border-radius:0;display=
+:block" alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624=
+b/images/7c8815e9-0951-04d5-efd5-acbfe581493b.jpeg" role=3D"presentation"=
+ class=3D"imageDropZone mceImage"></span></td></tr><tr><td style=3D"paddin=
+g-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><t=
+able width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:sepa=
+rate"><tbody><tr><td style=3D"padding-left:16px;padding-right:16px;padding=
+-top:0;padding-bottom:0" class=3D"mceTextBlockContainer"><div data-block-i=
+d=3D"16" class=3D"mceText" id=3D"dataBlockId-16" style=3D"width:100%"><p s=
+tyle=3D"text-align: center;" class=3D"last-child"><em><span style=3D"color=
+:#c10812;"><span style=3D"font-size: 12px"><span style=3D"font-family: 'Op=
+en Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Leshan t=
+aking patients=E2=80=99 temperature.</span></span></span></em></p></div></=
+td></tr></tbody></table></td></tr></tbody></table></td><td style=3D"paddin=
+g-top:0;padding-bottom:0" valign=3D"top" class=3D"mceColumn" data-block-id=
+=3D"20" colspan=3D"6" width=3D"50%"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td sty=
+le=3D"padding-top:0;padding-bottom:0;padding-right:16px;padding-left:16px"=
+ valign=3D"top" class=3D"mceBlockContainer"><span class=3D"mceImageBorder"=
+ style=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img data-=
+block-id=3D"18" width=3D"298" height=3D"auto" style=3D"width:298px;height:=
+auto;max-width:298px !important;border-radius:0;display:block" alt=3D"" sr=
+c=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/88438379-e=
+d83-dba8-c36e-b42accc97204.jpeg" role=3D"presentation" class=3D"imageDropZ=
+one mceImage"></span></td></tr><tr><td style=3D"padding-top:0;padding-bott=
+om:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%"=
+ style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><t=
+d style=3D"padding-left:16px;padding-right:16px;padding-top:0;padding-bott=
+om:0" class=3D"mceTextBlockContainer"><div data-block-id=3D"19" class=3D"m=
+ceText" id=3D"dataBlockId-19" style=3D"width:100%"><p style=3D"text-align:=
+ center;" class=3D"last-child"><em><span style=3D"color:#c10812;"><span st=
+yle=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvet=
+ica Neue'=2C Helvetica=2C Arial=2C sans-serif">Leshan with the father=2C J=
+immy Tinka.</span></span></span></em></p></div></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table=
+ width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate=
+"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top=
+:5px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-=
+id=3D"126" class=3D"mceText" id=3D"dataBlockId-126" style=3D"width:100%"><=
+p style=3D"line-height: 125%; text-align: justify;" class=3D"last-child"><=
+span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C '=
+Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">We extend our heartfe=
+lt gratitude to every individual who supported this camp. Your efforts are=
+ healing today=E2=80=99s patients and building healthier=2C brighter futur=
+es for the Aitong community.</span></span></p></div></td></tr></tbody></ta=
+ble></td></tr><tr><td style=3D"background-color:transparent;padding-top:5p=
+x;padding-bottom:5px;padding-right:5px;padding-left:5px" valign=3D"top" cl=
+ass=3D"mceBlockContainer"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:transpar=
+ent;width:100%" role=3D"presentation" class=3D"mceDividerContainer" data-b=
+lock-id=3D"34"><tbody><tr><td style=3D"min-width:100%;border-top-width:2px=
+;border-top-style:solid;border-top-color:#0da0b7;line-height:0;font-size:0=
+" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table=
+></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0=
+;padding-left:0" valign=3D"top" class=3D"mceBlockContainer" align=3D"cente=
+r"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertic=
+al-align:top;margin:0"><img data-block-id=3D"35" width=3D"66" height=3D"au=
+to" style=3D"width:66px;height:auto;max-width:660px !important;border-radi=
+us:0;display:block" alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7=
+ce767a3c8624b/images/d01b30b7-2a4d-aaf5-bfc3-e6eac977a2f7.png" role=3D"pre=
+sentation" class=3D"imageDropZone mceImage"></span></td></tr><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=
+=3D"top"><table width=3D"100%" style=3D"border:0;border-radius:0;border-co=
+llapse:separate"><tbody><tr><td style=3D"padding-left:24px;padding-right:2=
+4px;padding-top:6px;padding-bottom:6px" class=3D"mceTextBlockContainer"><d=
+iv data-block-id=3D"36" class=3D"mceText" id=3D"dataBlockId-36" style=3D"w=
+idth:100%"><p style=3D"line-height: 125%; text-align: center;"><strong><sp=
+an style=3D"color:#c10812;"><span style=3D"font-size: 20px"><span style=3D=
+"font-family: 'Times New Roman'=2C Times=2C Baskerville=2C Georgia=2C seri=
+f">Women Empowerment Program</span></span></span></strong></p><p style=3D"=
+line-height: 125%; text-align: center;" class=3D"last-child"><strong><span=
+ style=3D"color:#0da0b7;"><span style=3D"font-family: 'Open Sans'=2C 'Helv=
+etica Neue'=2C Helvetica=2C Arial=2C sans-serif">Empowering Women=2C Enric=
+hing Communities</span></span></strong></p></div></td></tr></tbody></table=
+></td></tr><tr><td style=3D"padding-top:6px;padding-bottom:6px;padding-rig=
+ht:6px;padding-left:6px" valign=3D"top" class=3D"mceBlockContainer" align=
+=3D"left"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:0=
+;vertical-align:top;margin:0"><img data-block-id=3D"37" width=3D"648" heig=
+ht=3D"auto" style=3D"width:648px;height:auto;max-width:5000px !important;b=
+order-radius:0;display:block" alt=3D"" src=3D"https://mcusercontent.com/7d=
+96fa269bd7ce767a3c8624b/images/770f1f2c-0f5d-a045-ee8b-76b21394c267.jpg" r=
+ole=3D"presentation" class=3D"imageDropZone mceImage"></span></td></tr><tr=
+><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:=
+0" valign=3D"top"><table width=3D"100%" style=3D"border:0;border-radius:0;=
+border-collapse:separate"><tbody><tr><td style=3D"padding-left:24px;paddin=
+g-right:24px;padding-top:5px;padding-bottom:12px" class=3D"mceTextBlockCon=
+tainer"><div data-block-id=3D"38" class=3D"mceText" id=3D"dataBlockId-38"=
+ style=3D"width:100%"><p style=3D"line-height: 125%; text-align: justify;"=
+><span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Kicheche Community=
+ Trust proudly concluded the annual transformative </span></span><strong><=
+span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C '=
+Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Women Empowerment Tra=
+ining Program</span></span></strong><span style=3D"color:#212121;"><span s=
+tyle=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif"> at the </span></span><strong><span style=3D"color:#212121=
+;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetic=
+a=2C Arial=2C sans-serif">Maasai Mara Wildlife Conservancies Association</=
+span></span></strong><span style=3D"color:#212121;"><span style=3D"font-fa=
+mily: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"=
+> </span></span><em><span style=3D"color:#212121;"><span style=3D"font-fam=
+ily: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">=
+(MMWCA)</span></span></em><span style=3D"color:#212121;"><span style=3D"fo=
+nt-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-s=
+erif">=2C near Mara North Conservancy. The two-week initiative brought tog=
+ether </span></span><strong><span style=3D"color:#212121;"><span style=3D"=
+font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans=
+-serif">21 determined women</span></span></strong><span style=3D"color:#21=
+2121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helv=
+etica=2C Arial=2C sans-serif"> eager to acquire life-changing skills and b=
+uild brighter futures for themselves and their communities.</span></span><=
+/p><p style=3D"line-height: 125%; text-align: justify;"><br></p><p style=
+=3D"line-height: 125%; text-align: justify;"><span style=3D"color:#212121;=
+"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif">The training covered a diverse range of topics=2C=
+ including:</span></span></p><ul class=3D"last-child"><li style=3D"color:=
+ #212121; line-height: 125%; text-align: justify;"><p style=3D"line-height=
+: 125%; text-align: justify;"><span style=3D"color:#212121;"><span style=
+=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C=
+ sans-serif">Family Planning &amp; Female genital mutilation </span></span=
+><em><span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans=
+'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">(FGM)</span></s=
+pan></em><span style=3D"color:#212121;"><span style=3D"font-family: 'Open=
+ Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"> Awareness=
+</span></span></p></li><li style=3D"color: #212121; line-height: 125%; tex=
+t-align: justify;"><p style=3D"line-height: 125%; text-align: justify;"><s=
+pan style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'H=
+elvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Storekeeping &amp; Cle=
+rical Skills</span></span></p></li><li style=3D"color: #212121; line-heigh=
+t: 125%; text-align: justify;"><p style=3D"line-height: 125%; text-align:=
+ justify;"><span style=3D"color:#212121;"><span style=3D"font-family: 'Ope=
+n Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Mental He=
+alth &amp; Personal Branding</span></span></p></li><li style=3D"color: #21=
+2121; line-height: 125%; text-align: justify;"><p style=3D"line-height: 12=
+5%; text-align: justify;"><span style=3D"color:#212121;"><span style=3D"fo=
+nt-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-s=
+erif">Business &amp; Budgeting</span></span></p></li><li style=3D"color: #=
+212121; line-height: 125%; text-align: justify;"><p style=3D"line-height:=
+ 125%; text-align: justify;"><span style=3D"color:#212121;"><span style=3D=
+"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C san=
+s-serif">Computer Skills &amp; Sewing</span></span></p></li><li style=3D"c=
+olor: #212121; line-height: 125%; text-align: justify;"><p style=3D"line-h=
+eight: 125%; text-align: justify;"><span style=3D"color:#212121;"><span st=
+yle=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif">Kitchen Gardening</span></span></p></li></ul></div></td></=
+tr></tbody></table></td></tr><tr><td valign=3D"top" class=3D"mceGutterCont=
+ainer" id=3D"gutterContainerId-80"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"border-collapse:separate" role=3D=
+"presentation"><tbody><tr><td style=3D"padding-top:12px;padding-bottom:12p=
+x;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceLayoutContain=
+er"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" role=3D"presentation" data-block-id=3D"80" id=3D"section=
+_5061f3eadca0ea9eccb0359ff64a09d4" class=3D"mceLayout"><tbody><tr class=3D=
+"mceRow"><td style=3D"background-position:center;background-repeat:no-repe=
+at;background-size:cover" valign=3D"top"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><=
+td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-24" colspan=3D"12"=
+ width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" align=3D"=
+center"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"-12"><tbody><=
+tr class=3D"mceRow"><td style=3D"background-position:center;background-rep=
+eat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tb=
+ody><tr><td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-30" colsp=
+an=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top">=
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" role=3D"presentation" data-block-id=3D"87"><tbody><tr class=
+=3D"mceRow"><td style=3D"background-position:center;background-repeat:no-r=
+epeat;background-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"=
+top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100=
+%" style=3D"table-layout:fixed" role=3D"presentation"><colgroup><col span=
+=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.33333333333=
+3332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=
+=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col=
+ span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333=
+333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" w=
+idth=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><=
+col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333=
+333333333332%"></colgroup><tbody><tr><td style=3D"padding-top:0;padding-bo=
+ttom:0" valign=3D"top" class=3D"mceColumn" data-block-id=3D"83" colspan=3D=
+"6" width=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:=
+0;padding-bottom:0;padding-right:16px;padding-left:16px" valign=3D"top" cl=
+ass=3D"mceBlockContainer"><span class=3D"mceImageBorder" style=3D"border:0=
+;border-radius:0;vertical-align:top;margin:0"><img data-block-id=3D"81" wi=
+dth=3D"298" height=3D"auto" style=3D"width:298px;height:auto;max-width:298=
+px !important;border-radius:0;display:block" alt=3D"" src=3D"https://mcuse=
+rcontent.com/7d96fa269bd7ce767a3c8624b/images/1a7032ff-4878-2e66-33b2-fabb=
+26325b78.jpg" role=3D"presentation" class=3D"imageDropZone mceImage"></spa=
+n></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:=
+0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;b=
+order-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-l=
+eft:16px;padding-right:16px;padding-top:0;padding-bottom:0" class=3D"mceTe=
+xtBlockContainer"><div data-block-id=3D"82" class=3D"mceText" id=3D"dataBl=
+ockId-82" style=3D"width:100%"><p style=3D"text-align: center;" class=3D"l=
+ast-child"><em><span style=3D"color:#c10812;"><span style=3D"font-size: 12=
+px"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helveti=
+ca=2C Arial=2C sans-serif"> Elisa=2C Inge &amp; Nanny - Volunteer Trainers=
+</span></span></span></em></p></div></td></tr></tbody></table></td></tr></=
+tbody></table></td><td style=3D"padding-top:0;padding-bottom:0" valign=3D"=
+top" class=3D"mceColumn" data-block-id=3D"86" colspan=3D"6" width=3D"50%">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;=
+padding-right:16px;padding-left:16px" valign=3D"top" class=3D"mceBlockCont=
+ainer"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:0;ve=
+rtical-align:top;margin:0"><img data-block-id=3D"84" width=3D"298" height=
+=3D"auto" style=3D"width:298px;height:auto;max-width:298px !important;bord=
+er-radius:0;display:block" alt=3D"" src=3D"https://mcusercontent.com/7d96f=
+a269bd7ce767a3c8624b/images/8bae2e02-3e9a-7027-909d-8f392c0fd226.jpg" role=
+=3D"presentation" class=3D"imageDropZone mceImage"></span></td></tr><tr><t=
+d style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0"=
+ valign=3D"top"><table width=3D"100%" style=3D"border:0;border-radius:0;bo=
+rder-collapse:separate"><tbody><tr><td style=3D"padding-left:16px;padding-=
+right:16px;padding-top:0;padding-bottom:0" class=3D"mceTextBlockContainer"=
+><div data-block-id=3D"85" class=3D"mceText" id=3D"dataBlockId-85" style=
+=3D"width:100%"><p style=3D"text-align: center;" class=3D"last-child"><em>=
+<span style=3D"color:#c10812;"><span style=3D"font-size: 12px"><span style=
+=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C=
+ sans-serif">Participants engaging in a group activity.</span></span></spa=
+n></em></p></div></td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-r=
+ight:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"borde=
+r:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padd=
+ing-left:24px;padding-right:24px;padding-top:5px;padding-bottom:12px" clas=
+s=3D"mceTextBlockContainer"><div data-block-id=3D"88" class=3D"mceText" id=
+=3D"dataBlockId-88" style=3D"width:100%"><p style=3D"line-height: 125%; te=
+xt-align: justify;"><span style=3D"color:#212121;"><span style=3D"font-fam=
+ily: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">=
+We owe immense gratitude to our incredible volunteer trainers =E2=80=93 </=
+span></span><strong><span style=3D"color:#212121;"><span style=3D"font-fam=
+ily: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">=
+Elisa=2C Inge=2C Nanny=2C </span></span></strong><span style=3D"color:#212=
+121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helve=
+tica=2C Arial=2C sans-serif">and</span></span><strong><span style=3D"color=
+:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C=
+ Helvetica=2C Arial=2C sans-serif"> Julius</span></span></strong><span sty=
+le=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetic=
+a Neue'=2C Helvetica=2C Arial=2C sans-serif"> =E2=80=93 for their unwaveri=
+ng dedication and passion. Their expertise and encouragement inspired the=
+ participants to unlock their potential and embrace opportunities with con=
+fidence.</span></span></p><p style=3D"line-height: 125%; text-align: justi=
+fy;"><br></p><p style=3D"line-height: 125%; text-align: justify;" class=3D=
+"last-child"><span style=3D"color:#212121;"><span style=3D"font-family: 'O=
+pen Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">A heart=
+felt thank you also goes to MMWCA=2C our hosting partner=2C for providing=
+ the space and support that made this program possible.</span></span></p><=
+/div></td></tr></tbody></table></td></tr><tr><td style=3D"background-color=
+:transparent;padding-top:5px;padding-bottom:5px;padding-right:5px;padding-=
+left:5px" valign=3D"top" class=3D"mceBlockContainer"><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"background-color:transparent;width:100%" role=3D"presentation" class=
+=3D"mceDividerContainer" data-block-id=3D"39"><tbody><tr><td style=3D"min-=
+width:100%;border-top-width:2px;border-top-style:solid;border-top-color:#0=
+da0b7;line-height:0;font-size:0" valign=3D"top" class=3D"mceDividerBlock">=
+=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0" valign=3D"top" class=3D"mc=
+eBlockContainer" align=3D"center"><span class=3D"mceImageBorder" style=3D"=
+border:0;border-radius:0;vertical-align:top;margin:0"><img data-block-id=
+=3D"40" width=3D"66" height=3D"auto" style=3D"width:66px;height:auto;max-w=
+idth:660px !important;border-radius:0;display:block" alt=3D"" src=3D"https=
+://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/6d255b97-50fd-4b46-b=
+872-03bff208dae5.png" role=3D"presentation" class=3D"imageDropZone mceImag=
+e"></span></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;paddin=
+g-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"bo=
+rder:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"p=
+adding-left:24px;padding-right:24px;padding-top:6px;padding-bottom:6px" cl=
+ass=3D"mceTextBlockContainer"><div data-block-id=3D"41" class=3D"mceText"=
+ id=3D"dataBlockId-41" style=3D"width:100%"><p style=3D"line-height: 125%;=
+ text-align: center;"><strong><span style=3D"color:#c10812;"><span style=
+=3D"font-size: 20px"><span style=3D"font-family: 'Times New Roman'=2C Time=
+s=2C Baskerville=2C Georgia=2C serif">Empowering Students</span></span></s=
+pan></strong></p><p style=3D"line-height: 125%; text-align: center;" class=
+=3D"last-child"><strong><span style=3D"color:#0da0b7;"><span style=3D"font=
+-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-ser=
+if">Through Sports and Talents at Wathituga Secondary School</span></span>=
+</strong></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"pa=
+dding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top=
+" class=3D"mceBlockContainer" align=3D"left"><span class=3D"mceImageBorder=
+" style=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img data=
+-block-id=3D"42" width=3D"660" height=3D"auto" style=3D"width:660px;height=
+:auto;max-width:3872px !important;border-radius:0;display:block" alt=3D""=
+ src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/85151a9=
+e-5338-7e4a-faae-9c93835d4897.jpeg" role=3D"presentation" class=3D"imageDr=
+opZone mceImage"></span></td></tr><tr><td style=3D"padding-top:0;padding-b=
+ottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100=
+%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr>=
+<td style=3D"padding-left:16px;padding-right:16px;padding-top:0;padding-bo=
+ttom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D"143" class=
+=3D"mceText" id=3D"dataBlockId-143" style=3D"width:100%"><p style=3D"text-=
+align: center;" class=3D"last-child"><em><span style=3D"color:#c10812;"><s=
+pan style=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C '=
+Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"> Kicheche Laikipia As=
+sistant Manager=2C Naftali (far left)=2C posing with the boys Football tea=
+m.</span></span></span></em></p></div></td></tr></tbody></table></td></tr>=
+<tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-le=
+ft:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;border-radius=
+:0;border-collapse:separate"><tbody><tr><td style=3D"padding-left:24px;pad=
+ding-right:24px;padding-top:5px;padding-bottom:12px" class=3D"mceTextBlock=
+Container"><div data-block-id=3D"43" class=3D"mceText" id=3D"dataBlockId-4=
+3" style=3D"width:100%"><p style=3D"line-height: 125%; text-align: justify=
+;"><span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=
+=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">We recently orga=
+nized an inspiring sports and talent program at </span></span><strong><spa=
+n style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Hel=
+vetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Wathituga Secondary Scho=
+ol</span></span></strong><span style=3D"color:#212121;"><span style=3D"fon=
+t-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif"> in partnership with </span></span><a href=3D"https://kicheche.us1.li=
+st-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D66f7264320&e=
+=3Dde18c730d2" target=3D"_blank" style=3D"color: #0da0b7; text-decoration=
+: none;"><strong><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neu=
+e'=2C Helvetica=2C Arial=2C sans-serif">Binti Mwangaza</span></strong></a>=
+<span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">=2C creating a plat=
+form for students to showcase their gifts while enjoying a day of fun and=
+ team work.<span style=3D"background-color: #ffffff"> </span></span></span=
+></p><p style=3D"line-height: 125%; text-align: justify;"><br></p><p style=
+=3D"line-height: 125%; text-align: justify;"><span style=3D"color:#212121;=
+"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif"><span style=3D"background-color: #ffffff">Binti M=
+wangaza (</span></span></span><em><span style=3D"color:#212121;"><span sty=
+le=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif"><span style=3D"background-color: #ffffff">Daughters of Lig=
+ht</span></span></span></em><span style=3D"color:#212121;"><span style=3D"=
+font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans=
+-serif"><span style=3D"background-color: #ffffff">) is a Laikipia-based co=
+mmunity organization dedicated to supporting vulnerable women and girls fr=
+om low-income families by providing access to reusable sanitary towels.</s=
+pan></span></span></p><p style=3D"line-height: 125%; text-align: justify;"=
+><br></p><p style=3D"line-height: 125%; text-align: justify;" class=3D"las=
+t-child"><span style=3D"color:#212121;"><span style=3D"font-family: 'Open=
+ Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">The event=
+ began with motivational talks tailored for boys and girls=2C addressing t=
+heir unique challenges and encouraging them to dream big=2C overcome obsta=
+cles=2C and embrace their strengths.</span></span></p></div></td></tr></tb=
+ody></table></td></tr><tr><td valign=3D"top" class=3D"mceGutterContainer"=
+ id=3D"gutterContainerId-49"><table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"border-collapse:separate" role=3D"prese=
+ntation"><tbody><tr><td style=3D"padding-top:6px;padding-bottom:6px;paddin=
+g-right:0;padding-left:0" valign=3D"top" class=3D"mceLayoutContainer"><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation" data-block-id=3D"49" id=3D"section_63bdb86=
+131bdcdacf1f7d43693ba7128" class=3D"mceLayout"><tbody><tr class=3D"mceRow"=
+><td style=3D"background-position:center;background-repeat:no-repeat;backg=
+round-size:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=
+=3D"top" class=3D"mceColumn" data-block-id=3D"-21" colspan=3D"12" width=3D=
+"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" role=3D"presentation"><tbody><tr><td valign=3D"top" align=3D"center"><=
+table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"-7"><tbody><tr class=
+=3D"mceRow"><td style=3D"background-position:center;background-repeat:no-r=
+epeat;background-size:cover" valign=3D"top"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr>=
+<td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-29" colspan=3D"12=
+" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation" data-block-id=3D"48"><tbody><tr class=3D"mceRo=
+w"><td style=3D"background-position:center;background-repeat:no-repeat;bac=
+kground-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" style=
+=3D"table-layout:fixed" role=3D"presentation"><colgroup><col span=3D"1" wi=
+dth=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><c=
+ol span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.3333=
+33333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1"=
+ width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"=
+><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.3=
+33333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D=
+"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.33333333333333=
+2%"></colgroup><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" val=
+ign=3D"top" class=3D"mceColumn" data-block-id=3D"45" colspan=3D"6" width=
+=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-=
+bottom:0;padding-right:12px;padding-left:12px" valign=3D"top" class=3D"mce=
+BlockContainer" align=3D"center"><span class=3D"mceImageBorder" style=3D"b=
+order:0;border-radius:0;vertical-align:top;margin:0"><img data-block-id=3D=
+"44" width=3D"306" height=3D"auto" style=3D"width:306px;height:auto;max-wi=
+dth:306px !important;border-radius:0;display:block" alt=3D"" src=3D"https:=
+//mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/46d74c57-1dc7-47e8-31=
+69-468f9333d7fb.jpeg" role=3D"presentation" class=3D"imageDropZone mceImag=
+e"></span></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;paddin=
+g-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"bo=
+rder:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"p=
+adding-left:16px;padding-right:16px;padding-top:0;padding-bottom:6px" clas=
+s=3D"mceTextBlockContainer"><div data-block-id=3D"144" class=3D"mceText" i=
+d=3D"dataBlockId-144" style=3D"width:100%"><p style=3D"text-align: center;=
+" class=3D"last-child"><em><strong><span style=3D"color:#c10812;"><span st=
+yle=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvet=
+ica Neue'=2C Helvetica=2C Arial=2C sans-serif"> </span></span></span></str=
+ong><span style=3D"color:#c10812;"><span style=3D"font-size: 12px"><span s=
+tyle=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif">Trophies &amp; Kicheche bottles for the winning teams .</s=
+pan></span></span></em></p></div></td></tr></tbody></table></td></tr></tbo=
+dy></table></td><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top=
+" class=3D"mceColumn" data-block-id=3D"47" colspan=3D"6" width=3D"50%"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;p=
+adding-right:12px;padding-left:12px" valign=3D"top" class=3D"mceBlockConta=
+iner" align=3D"center"><span class=3D"mceImageBorder" style=3D"border:0;bo=
+rder-radius:0;vertical-align:top;margin:0"><img data-block-id=3D"46" width=
+=3D"306" height=3D"auto" style=3D"width:306px;height:auto;max-width:306px=
+ !important;border-radius:0;display:block" alt=3D"" src=3D"https://mcuserc=
+ontent.com/7d96fa269bd7ce767a3c8624b/images/ff6b263e-2677-6727-150a-d99e82=
+c85df3.jpeg" role=3D"presentation" class=3D"imageDropZone mceImage"></span=
+></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0=
+;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;bo=
+rder-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-le=
+ft:16px;padding-right:16px;padding-top:0;padding-bottom:6px" class=3D"mceT=
+extBlockContainer"><div data-block-id=3D"145" class=3D"mceText" id=3D"data=
+BlockId-145" style=3D"width:100%"><p style=3D"text-align: center;" class=
+=3D"last-child"><em><span style=3D"color:#c10812;"><span style=3D"font-siz=
+e: 12px"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C He=
+lvetica=2C Arial=2C sans-serif"> Creativity on display during fashion show=
+=2E</span></span></span></em></p></div></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;paddin=
+g-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"=
+100%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><=
+tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:5px;paddi=
+ng-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"127"=
+ class=3D"mceText" id=3D"dataBlockId-127" style=3D"width:100%"><p style=3D=
+"line-height: 125%; text-align: justify;"><span style=3D"color:#212121;"><=
+span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C=
+ Arial=2C sans-serif">The day unfolded with a vibrant talent show=2C featu=
+ring captivating performances and creative displays=2C followed by an exhi=
+larating football tournament that highlighted teamwork and sportsmanship.=
+ </span></span></p><p style=3D"line-height: 125%; text-align: justify;"><b=
+r></p><p style=3D"line-height: 125%; text-align: justify;" class=3D"last-c=
+hild"><span style=3D"color:#212121;"><span style=3D"font-family: 'Open San=
+s'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">This initiativ=
+e not only uplifted the students=E2=80=99 spirits but also demonstrated ho=
+w sports and creative expression can empower young minds=2C equipping them=
+ with skills and experiences to shape their future.</span></span></p></div=
+></td></tr></tbody></table></td></tr><tr><td style=3D"background-color:tra=
+nsparent;padding-top:13px;padding-bottom:13px;padding-right:13px;padding-l=
+eft:13px" valign=3D"top" class=3D"mceBlockContainer"><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"background-color:transparent;width:100%" role=3D"presentation" class=
+=3D"mceDividerContainer" data-block-id=3D"50"><tbody><tr><td style=3D"min-=
+width:100%;border-top-width:2px;border-top-style:solid;border-top-color:#d=
+0d0d0;line-height:0;font-size:0" valign=3D"top" class=3D"mceDividerBlock">=
+=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table widt=
+h=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate"><tb=
+ody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:6px;=
+padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D"=
+128" class=3D"mceText" id=3D"dataBlockId-128" style=3D"width:100%"><p styl=
+e=3D"line-height: 125%; text-align: center;"><strong><span style=3D"color:=
+#c10812;"><span style=3D"font-size: 20px"><span style=3D"font-family: 'Tim=
+es New Roman'=2C Times=2C Baskerville=2C Georgia=2C serif">Changing Lives=
+ Through Education</span></span></span></strong></p><p style=3D"line-heigh=
+t: 125%; text-align: center;" class=3D"last-child"><strong><span style=3D"=
+color:#0da0b7;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue=
+'=2C Helvetica=2C Arial=2C sans-serif">Kicheche Community Trust Bursary Pr=
+ogram</span></span></strong></p></div></td></tr></tbody></table></td></tr>=
+<tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-le=
+ft:0" valign=3D"top" class=3D"mceBlockContainer" align=3D"left"><a href=3D=
+"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c=
+8624b&id=3D630f39c432&e=3Dde18c730d2" style=3D"display:block" target=3D"_=
+blank" data-block-id=3D"52"><span class=3D"mceImageBorder" style=3D"border=
+:0;border-radius:0;vertical-align:top;margin:0"><img width=3D"660" height=
+=3D"auto" style=3D"width:660px;height:auto;max-width:3872px !important;bor=
+der-radius:0;display:block" alt=3D"DONATE NOW" src=3D"https://mcuserconten=
+t.com/7d96fa269bd7ce767a3c8624b/images/b1bba6e6-9064-41a6-86ee-e9e0524dd5e=
+b.jpeg" class=3D"mceImage"></span></a></td></tr><tr><td style=3D"padding-t=
+op:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><tabl=
+e width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separat=
+e"><tbody><tr><td style=3D"padding-left:16px;padding-right:16px;padding-to=
+p:0;padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=
+=3D"148" class=3D"mceText" id=3D"dataBlockId-148" style=3D"width:100%"><p=
+ style=3D"text-align: center;" class=3D"last-child"><em><span style=3D"col=
+or:#c10812;"><span style=3D"font-size: 12px"><span style=3D"font-family: '=
+Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Vivian=
+ Sanoe - bursary beneficiary at Naboisho Primary School</span></span></spa=
+n></em></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"padd=
+ing-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top">=
+<table width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:se=
+parate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;paddi=
+ng-top:5px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-=
+block-id=3D"53" class=3D"mceText" id=3D"dataBlockId-53" style=3D"width:100=
+%"><p style=3D"line-height: 125%; text-align: justify;"><span style=3D"col=
+or:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C sans-serif">Education is the foundation of a bri=
+ghter future=2C and we are committed to making it accessible for young min=
+ds. Thanks to the unwavering support of our generous donors=2C </span></sp=
+an><strong><span style=3D"color:#212121;"><span style=3D"font-family: 'Ope=
+n Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">18 studen=
+ts</span></span></strong><span style=3D"color:#212121;"><span style=3D"fon=
+t-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif"> have received bursaries in 2024=2C empowering them to pursue their s=
+tudies and fulfill their potential.</span></span></p><p style=3D"line-heig=
+ht: 125%; text-align: justify;"><br></p><p style=3D"line-height: 125%; tex=
+t-align: justify;"><span style=3D"color:#212121;"><span style=3D"font-fami=
+ly: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">O=
+ur bursary program spans across various levels of education=E2=80=94primar=
+y=2C secondary=2C and specialized study programs. This initiative reflects=
+ our belief in nurturing talent and fostering opportunities for individual=
+s to contribute meaningfully to their communities.</span></span></p><p sty=
+le=3D"line-height: 125%; text-align: justify;"><br></p><p style=3D"line-he=
+ight: 125%; text-align: justify;" class=3D"last-child"><span style=3D"colo=
+r:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C=
+ Helvetica=2C Arial=2C sans-serif">Together with our donors=2C we continue=
+ to transform lives=2C one bursary at a time.</span></span></p></div></td>=
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:transpare=
+nt;padding-top:13px;padding-bottom:13px;padding-right:13px;padding-left:13=
+px" valign=3D"top" class=3D"mceBlockContainer"><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"back=
+ground-color:transparent;width:100%" role=3D"presentation" class=3D"mceDiv=
+iderContainer" data-block-id=3D"129"><tbody><tr><td style=3D"min-width:100=
+%;border-top-width:2px;border-top-style:solid;border-top-color:#d0d0d0;lin=
+e-height:0;font-size:0" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</t=
+d></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;padding-bo=
+ttom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%=
+" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><=
+td style=3D"padding-left:24px;padding-right:24px;padding-top:6px;padding-b=
+ottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D"130" clas=
+s=3D"mceText" id=3D"dataBlockId-130" style=3D"width:100%"><p style=3D"line=
+-height: 125%; text-align: center;"><strong><span style=3D"color:#c10812;"=
+><span style=3D"font-size: 20px"><span style=3D"font-family: 'Times New Ro=
+man'=2C Times=2C Baskerville=2C Georgia=2C serif">Building a Brighter Futu=
+re</span></span></span></strong></p><p style=3D"line-height: 125%; text-al=
+ign: center;" class=3D"last-child"><strong><span style=3D"color:#0da0b7;">=
+<span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif">Library Project for Naboisho Primary School</span=
+></span></strong></p></div></td></tr></tbody></table></td></tr><tr><td sty=
+le=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valig=
+n=3D"top" class=3D"mceBlockContainer" align=3D"left"><a href=3D"https://ki=
+cheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D=
+c9642e41c5&e=3Dde18c730d2" style=3D"display:block" target=3D"_blank" data=
+-block-id=3D"133"><span class=3D"mceImageBorder" style=3D"border:0;border-=
+radius:0;vertical-align:top;margin:0"><img width=3D"660" height=3D"auto" s=
+tyle=3D"width:660px;height:auto;max-width:1920px !important;border-radius:=
+0;display:block" alt=3D"DONATE NOW" src=3D"https://mcusercontent.com/7d96f=
+a269bd7ce767a3c8624b/images/a0b868d8-9e83-141b-2ffd-4ea68d9087f6.jpg" clas=
+s=3D"mceImage"></span></a></td></tr><tr><td style=3D"padding-top:0;padding=
+-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"1=
+00%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><t=
+r><td style=3D"padding-left:16px;padding-right:16px;padding-top:0;padding-=
+bottom:6px" class=3D"mceTextBlockContainer"><div data-block-id=3D"147" cla=
+ss=3D"mceText" id=3D"dataBlockId-147" style=3D"width:100%"><p style=3D"tex=
+t-align: center;" class=3D"last-child"><em><span style=3D"color:#c10812;">=
+<span style=3D"font-size: 12px"><span style=3D"font-family: 'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Design layout for t=
+he container library.</span></span></span></em></p></div></td></tr></tbody=
+></table></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding=
+-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"bor=
+der:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"pa=
+dding-left:24px;padding-right:24px;padding-top:5px;padding-bottom:12px" cl=
+ass=3D"mceTextBlockContainer"><div data-block-id=3D"131" class=3D"mceText"=
+ id=3D"dataBlockId-131" style=3D"width:100%"><p style=3D"line-height: 125%=
+; text-align: justify;" class=3D"last-child"><span style=3D"color:#212121;=
+"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif">Kicheche Community Trust is excited to announce t=
+he construction of a fabricated container library at </span></span><strong=
+><span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Naboisho Primary Sc=
+hool</span></span></strong><span style=3D"color:#212121;"><span style=3D"f=
+ont-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-=
+serif">. The library will be built using repurposed shipping containers=2C=
+ offering a cost-effective=2C durable=2C and environmentally friendly solu=
+tion.</span></span></p></div></td></tr></tbody></table></td></tr><tr><td v=
+align=3D"top" class=3D"mceGutterContainer" id=3D"gutterContainerId-134"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"border-collapse:separate" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:12px;padding-bottom:12px;padding-right:0;padding-left:0" v=
+align=3D"top" class=3D"mceLayoutContainer"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion" data-block-id=3D"134" id=3D"section_83e99a4ed8af91d3e7030fbda872e3b1=
+" class=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"background-=
+position:center;background-repeat:no-repeat;background-size:cover" valign=
+=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation"><tbody><tr><td valign=3D"top" class=3D"mceColu=
+mn" data-block-id=3D"-27" colspan=3D"12" width=3D"100%"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+><tbody><tr><td valign=3D"top" align=3D"center"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation" data-block-id=3D"-18"><tbody><tr class=3D"mceRow"><td style=3D"b=
+ackground-position:center;background-repeat:no-repeat;background-size:cove=
+r" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top" class=
+=3D"mceColumn" data-block-id=3D"-33" colspan=3D"12" width=3D"100%"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"p=
+resentation"><tbody><tr><td valign=3D"top"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion" data-block-id=3D"140"><tbody><tr class=3D"mceRow"><td style=3D"backg=
+round-position:center;background-repeat:no-repeat;background-size:cover;pa=
+dding-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"24" width=3D"100%" style=3D"table-layout:fixed=
+" role=3D"presentation"><colgroup><col span=3D"1" width=3D"8.3333333333333=
+32%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D=
+"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col spa=
+n=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.3333333333=
+33332%"><col span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=
+=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333333333332%"><col=
+ span=3D"1" width=3D"8.333333333333332%"><col span=3D"1" width=3D"8.333333=
+333333332%"><col span=3D"1" width=3D"8.333333333333332%"></colgroup><tbody=
+><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=3D"=
+mceColumn" data-block-id=3D"136" colspan=3D"6" width=3D"50%"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion"><tbody><tr><td style=3D"padding-top:12px;padding-bottom:12px;padding=
+-right:16px;padding-left:16px" valign=3D"top" class=3D"mceBlockContainer">=
+<a href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269b=
+d7ce767a3c8624b&id=3Db81cf07796&e=3Dde18c730d2" style=3D"display:block" t=
+arget=3D"_blank" data-block-id=3D"135"><span class=3D"mceImageBorder" styl=
+e=3D"border:0;border-radius:0;vertical-align:top;margin:0"><img width=3D"2=
+98" height=3D"auto" style=3D"width:298px;height:auto;max-width:298px !impo=
+rtant;border-radius:0;display:block" alt=3D"DONATE A BOOK" src=3D"https://=
+mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/b255fbd0-30c6-52e0-08c3=
+-700b4e276e3e.jpeg" class=3D"mceImage"></span></a></td></tr></tbody></tabl=
+e></td><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=
+=3D"mceColumn" data-block-id=3D"139" colspan=3D"6" width=3D"50%"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-r=
+ight:0;padding-left:0" valign=3D"top"><table width=3D"100%" style=3D"borde=
+r:0;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padd=
+ing-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px" cla=
+ss=3D"mceTextBlockContainer"><div data-block-id=3D"137" class=3D"mceText"=
+ id=3D"dataBlockId-137" style=3D"width:100%"><p style=3D"line-height: 125%=
+; text-align: justify;"><strong><span style=3D"color:#212121;"><span style=
+=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C=
+ sans-serif">We invite you to join this journey by donating books </span><=
+/span></strong><em><strong><span style=3D"color:#212121;"><span style=3D"f=
+ont-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-=
+serif">(nature=2C wildlife and educative)</span></span></strong></em><stro=
+ng><span style=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=
+=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"> to fill the lib=
+rary shelves. </span></span></strong></p><p style=3D"line-height: 125%; te=
+xt-align: justify;"><br></p><p style=3D"line-height: 125%; text-align: jus=
+tify;" class=3D"last-child"><strong><span style=3D"color:#212121;"><span s=
+tyle=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif">Your support will help provide students with access to val=
+uable resources=2C sparking a love for reading and learning that can trans=
+form their future.</span></span></strong></p></div></td></tr></tbody></tab=
+le></td></tr><tr><td style=3D"padding-top:12px;padding-bottom:12px;padding=
+-right:16px;padding-left:16px" valign=3D"top" class=3D"mceBlockContainer"=
+ align=3D"left"><table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" data-block-id=3D"138" class=3D"mceButto=
+nContainer"><tbody><tr><!--[if !mso]><!--></tr><tr class=3D"mceStandardBu=
+tton"><td style=3D"background-color:#c10812;border-radius:50px;text-align:=
+center" valign=3D"top" class=3D"mceButton"><a href=3D"" target=3D"_blank"=
+ class=3D"mceButtonLink" style=3D"background-color:#c10812;border-radius:5=
+0px;border:2px solid #c10812;color:#ffffff;display:block;font-family:'Open=
+ Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif;font-size:1=
+6px;font-weight:bold;font-style:normal;padding:16px 28px;text-decoration:n=
+one;min-width:30px;text-align:center;direction:ltr;letter-spacing:0px" rel=
+=3D"noreferrer">DONATE A BOOK</a></td></tr><tr><!--<![endif]--></tr><tr>
+<!--[if mso]>
+<td align=3D"left">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D""
+style=3D"v-text-anchor:middle; width:187.38px; height:58px;"
+arcsize=3D"27%"
+strokecolor=3D"#c10812"
+strokeweight=3D"2px"
+fillcolor=3D"#c10812">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans=
+-serif;
+font-size: 16;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+DONATE A BOOK
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><=
+td style=3D"background-color:transparent;padding-top:13px;padding-bottom:1=
+3px;padding-right:13px;padding-left:13px" valign=3D"top" class=3D"mceBlock=
+Container"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" style=3D"background-color:transparent;width:100%"=
+ role=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"61">=
+<tbody><tr><td style=3D"min-width:100%;border-top-width:2px;border-top-sty=
+le:solid;border-top-color:#0da0b7;line-height:0;font-size:0" valign=3D"top=
+" class=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr>=
+<td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0=
+" valign=3D"top" class=3D"mceBlockContainer" align=3D"center"><span class=
+=3D"mceImageBorder" style=3D"border:0;border-radius:0;vertical-align:top;m=
+argin:0"><img data-block-id=3D"62" width=3D"66" height=3D"auto" style=3D"w=
+idth:66px;height:auto;max-width:660px !important;border-radius:0;display:b=
+lock" alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/=
+images/b98dcb01-d428-cc64-962a-7c594f381ce7.png" role=3D"presentation" cla=
+ss=3D"imageDropZone mceImage"></span></td></tr><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table=
+ width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate=
+"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top=
+:6px;padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-i=
+d=3D"63" class=3D"mceText" id=3D"dataBlockId-63" style=3D"width:100%"><p s=
+tyle=3D"line-height: 125%; text-align: center;"><strong><span style=3D"col=
+or:#c10812;"><span style=3D"font-size: 20px"><span style=3D"font-family: '=
+Times New Roman'=2C Times=2C Baskerville=2C Georgia=2C serif">Safeguarding=
+ Cheetahs</span></span></span></strong></p><p style=3D"line-height: 125%;=
+ text-align: center;" class=3D"last-child"><strong><span style=3D"color:#0=
+da0b7;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Hel=
+vetica=2C Arial=2C sans-serif">Your Support Makes a Difference</span></spa=
+n></strong></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"=
+padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"t=
+op" class=3D"mceBlockContainer" align=3D"left"><a href=3D"https://kicheche=
+=2Eus1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D1fc953=
+20e3&e=3Dde18c730d2" style=3D"display:block" target=3D"_blank" data-block=
+-id=3D"64"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:=
+0;vertical-align:top;margin:0"><img width=3D"660" height=3D"auto" style=3D=
+"width:660px;height:auto;max-width:3871px !important;border-radius:0;displ=
+ay:block" alt=3D"PROTECT CHEETAHS" src=3D"https://mcusercontent.com/7d96fa=
+269bd7ce767a3c8624b/images/8c72adcd-11ae-ab43-2460-749feca45729.jpeg" clas=
+s=3D"mceImage"></span></a></td></tr><tr><td style=3D"padding-top:0;padding=
+-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"1=
+00%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><t=
+r><td style=3D"padding-left:24px;padding-right:24px;padding-top:5px;paddin=
+g-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"65" c=
+lass=3D"mceText" id=3D"dataBlockId-65" style=3D"width:100%"><p style=3D"li=
+ne-height: 125%; text-align: justify;"><span style=3D"color:#212121;"><spa=
+n style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Ar=
+ial=2C sans-serif">Thanks to your generous contributions=2C we proudly con=
+tinue to support the </span></span><a href=3D"https://kicheche.us1.list-ma=
+nage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Dec0b512e3e&e=3Dde18c730d2" target=3D"_blank" style=3D"text-decoration: none;"><strong><span=
+ style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Ari=
+al=2C sans-serif">Mara Predator Conservation Programme</span></strong></a>=
+<strong><span style=3D"color:#212121;"><span style=3D"font-family: 'Open S=
+ans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif"> (</span></s=
+pan></strong><em><strong><span style=3D"color:#212121;"><span style=3D"fon=
+t-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif">MPCP</span></span></strong></em><strong><span style=3D"color:#212121;=
+"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif">)</span></span></strong><span style=3D"color:#212=
+121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica Neue'=2C Helve=
+tica=2C Arial=2C sans-serif"> by fueling their research vehicles. These ve=
+hicles are essential for conducting vital patrols across the Mara=2C ensur=
+ing the monitoring and protection of cheetah populations.</span></span></p=
+><p style=3D"line-height: 125%; text-align: justify;"><br></p><p style=3D"=
+line-height: 125%; text-align: justify;" class=3D"last-child"><span style=
+=3D"color:#212121;"><span style=3D"font-family: 'Open Sans'=2C 'Helvetica=
+ Neue'=2C Helvetica=2C Arial=2C sans-serif">These patrols play a critical=
+ role in deterring poaching=2C tracking cheetah movements=2C and preservin=
+g the vast habitats these iconic big cats depend on. Together=2C we are ma=
+king strides in securing a future where cheetahs thrive in the wild.</span=
+></span></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"bac=
+kground-color:transparent;padding-top:20px;padding-bottom:20px;padding-rig=
+ht:24px;padding-left:24px" valign=3D"top" class=3D"mceBlockContainer"><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"background-color:transparent;width:100%" role=3D"presen=
+tation" class=3D"mceDividerContainer" data-block-id=3D"66"><tbody><tr><td=
+ style=3D"min-width:100%;border-top-width:2px;border-top-style:solid;borde=
+r-top-color:#0da0b7;line-height:0;font-size:0" valign=3D"top" class=3D"mce=
+DividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"p=
+adding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"to=
+p" class=3D"mceBlockContainer" align=3D"left"><a href=3D"https://kicheche.=
+us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D0ec28b0=
+016&e=3Dde18c730d2" style=3D"display:block" target=3D"_blank" data-block-=
+id=3D"146"><span class=3D"mceImageBorder" style=3D"border:0;border-radius:=
+0;vertical-align:top;margin:0"><img width=3D"660" height=3D"auto" style=3D=
+"width:660px;height:auto;max-width:660px !important;border-radius:0;displa=
+y:block" alt=3D"DONATE NOW" src=3D"https://mcusercontent.com/7d96fa269bd7c=
+e767a3c8624b/images/a4aa367b-80e4-5327-76ba-c171f23ddbea.jpg" class=3D"mce=
+Image"></span></a></td></tr><tr><td style=3D"padding-top:12px;padding-bott=
+om:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceLayoutC=
+ontainer"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"67"><tbody>=
+<tr class=3D"mceRow"><td style=3D"background-position:center;background-re=
+peat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"presentation"><=
+tbody><tr><td valign=3D"top" class=3D"mceColumn" data-block-id=3D"-10" col=
+span=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"top=
+"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" class=3D"mceSocialFollowBlock" data-block-id=3D"-9"=
+><tbody><tr><td valign=3D"middle" align=3D"center"><!--[if mso]><table al=
+ign=3D"left" border=3D"0" cellspacing=3D "0" cellpadding=3D"0"><tr><![end=
+if]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"display:inline;float:left" role=3D"presentation"><tbody><tr><td style=3D"=
+padding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12px" v=
+align=3D"top" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"32">=
+<a href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269b=
+d7ce767a3c8624b&id=3D3b0ea49208&e=3Dde18c730d2" target=3D"_blank" rel=3D"=
+noreferrer"><img class=3D"mceSocialFollowImage" width=3D"32" height=3D"32"=
+ alt=3D"Facebook icon" src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v3/block-icons-v3/facebook-filled-gray-40.png"></a></td></tr></tbo=
+dy></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=3D"cent=
+er" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" role=3D"p=
+resentation"><tbody><tr><td style=3D"padding-top:3px;padding-bottom:3px;pa=
+dding-left:12px;padding-right:12px" valign=3D"top" class=3D"mceSocialFollo=
+wIcon" align=3D"center" width=3D"32"><a href=3D"https://kicheche.us1.list-=
+manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D073eb0bb51&e=3Dde18c730d2" target=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFo=
+llowImage" width=3D"32" height=3D"32" alt=3D"Instagram icon" src=3D"https:=
+//cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-=
+filled-gray-40.png"></a></td></tr></tbody></table><!--[if mso]></td><![e=
+ndif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><ta=
+ble align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"display:inline;float:left" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12p=
+x" valign=3D"top" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"=
+32"><a href=3D"mailto:kct@kicheche.com" target=3D"_blank" rel=3D"noreferre=
+r"><img class=3D"mceSocialFollowImage" width=3D"32" height=3D"32" alt=3D"E=
+mail icon" src=3D"https://cdn-images.mailchimp.com/icons/social-block-v3/b=
+lock-icons-v3/email-filled-gray-40.png"></a></td></tr></tbody></table><!--=
+[if mso]></td><![endif]--><!--[if mso]><td align=3D"center" valign=3D"t=
+op"><![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"display:inline;float:left" role=3D"presentation"><t=
+body><tr><td style=3D"padding-top:3px;padding-bottom:3px;padding-left:12px=
+;padding-right:12px" valign=3D"top" class=3D"mceSocialFollowIcon" align=3D=
+"center" width=3D"32"><a href=3D"https://kicheche.us1.list-manage.com/trac=
+k/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D022de0e1cc&e=3Dde18c730d2" tar=
+get=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" widt=
+h=3D"32" height=3D"32" alt=3D"Website icon" src=3D"https://cdn-images.mail=
+chimp.com/icons/social-block-v3/block-icons-v3/website-filled-gray-40.png"=
+></a></td></tr></tbody></table><!--[if mso]></td><![endif]--><!--[if ms=
+o]></tr></table><![endif]--></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><=
+/td></tr></tbody><tbody data-block-id=3D"75" class=3D"mceWrapper"><tr><td=
+ style=3D"background-color:transparent" valign=3D"top" align=3D"center" cl=
+ass=3D"mceSectionBody"><!--[if (gte mso 9)|(IE)]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"w=
+idth:660px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentat=
+ion"><tbody><tr><td style=3D"background-color:#ffffff" valign=3D"top" clas=
+s=3D"mceWrapperInner"><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D=
+"74"><tbody><tr class=3D"mceRow"><td style=3D"background-position:center;b=
+ackground-repeat:no-repeat;background-size:cover" valign=3D"top"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=
+=3D"top" class=3D"mceColumn" data-block-id=3D"-23" colspan=3D"12" width=3D=
+"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" role=3D"presentation"><tbody><tr><td style=3D"background-color:#c10812=
+;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px" va=
+lign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"73" id=
+=3D"section_d6bb22661c787d142ce8648a322f564f" class=3D"mceFooterSection"><=
+tbody><tr class=3D"mceRow"><td style=3D"background-color:#c10812;backgroun=
+d-position:center;background-repeat:no-repeat;background-size:cover;paddin=
+g-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"12" width=3D"100%" role=3D"presentation"><tbody><t=
+r><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=3D"mce=
+Column" data-block-id=3D"-3" colspan=3D"12" width=3D"100%"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right=
+:0;padding-left:0" valign=3D"top" align=3D"center"><table width=3D"100%" s=
+tyle=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><td=
+ style=3D"padding-left:16px;padding-right:16px;padding-top:12px;padding-bo=
+ttom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"71" class=
+=3D"mceText" id=3D"dataBlockId-71" style=3D"display:inline-block;width:100=
+%"><p class=3D"last-child"><em><span style=3D"color:rgb(255=2C 255=2C 255)=
+;"><span style=3D"font-size: 12px">Copyright (C) 2024 Kicheche Camps. All=
+ rights reserved.</span></span></em><span style=3D"color:rgb(255=2C 255=2C=
+ 255);"><br><span style=3D"font-size: 12px">
+You are receiving our Kicheche Agents Updates because you sell our camps.
+</span><br><br><span style=3D"font-size: 12px">Our mailing address is:</sp=
+an><br><span style=3D"font-size: 12px">
+Kicheche Camps
+P.O Box 15236
+Nairobi 00509
+Kenya
+</span><br><br><span style=3D"font-size: 12px">Want to change how you rece=
+ive these emails?</span><br><span style=3D"font-size: 12px">You can </span=
+></span><a href=3D"https://kicheche.us1.list-manage.com/profile?u=3D7d96fa=
+269bd7ce767a3c8624b&id=3D3e6c97abb8&e=3Dde18c730d2&c=3D0c14319c03" style=3D"=
+color: #ffffff;"><span style=3D"color:rgb(255=2C 255=2C 255);"><span style=
+=3D"font-size: 12px">update your preferences</span></span></a><span style=
+=3D"color:rgb(255=2C 255=2C 255);"><span style=3D"font-size: 12px"> or </s=
+pan></span><a href=3D"https://kicheche.us1.list-manage.com/unsubscribe?u=
+=3D7d96fa269bd7ce767a3c8624b&id=3D3e6c97abb8&t=3Db&e=3Dde18c730d2&c=3D0c1431=
+9c03" style=3D"color: #ffffff;"><span style=3D"color:rgb(255=2C 255=2C 255=
+);"><span style=3D"font-size: 12px">unsubscribe</span></span></a></p></div=
+></td></tr></tbody></table></td></tr><tr><td valign=3D"top" class=3D"mceLa=
+youtContainer" align=3D"center"><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-b=
+lock-id=3D"-2"><tbody><tr class=3D"mceRow"><td style=3D"background-positio=
+n:center;background-repeat:no-repeat;background-size:cover;padding-top:0px=
+;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"24" width=3D"100%" role=3D"presentation"><tbody></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if=
+ (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr></tbody></tabl=
+e>
+</td>
+</tr>
+</tbody></table>
+</center>
+<img src=3D"https://kicheche.us1.list-manage.com/track/open.php?u=3D7d96fa=
+269bd7ce767a3c8624b&id=3D0c14319c03&e=3Dde18c730d2" height=3D"1" width=3D=
+"1" alt=3D""></body></html>
+--_----------=_MCPart_629861207--

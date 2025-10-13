@@ -1,0 +1,115 @@
+Return-Path: <davina578@gmail.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id aCnKIemMAWQqfgAA7QkJDw
+	(envelope-from <davina578@gmail.com>)
+	for <novuste1@rs2.noc254.com>; Fri, 03 Mar 2023 09:00:09 +0300
+Return-path: <davina578@gmail.com>
+Envelope-to: accounts@novustell.com
+Delivery-date: Fri, 03 Mar 2023 09:00:09 +0300
+Received: from mail-vs1-f46.google.com ([209.85.217.46]:40514)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <davina578@gmail.com>)
+	id 1pXySe-0003Ub-20;
+	Fri, 03 Mar 2023 09:00:09 +0300
+Received: by mail-vs1-f46.google.com with SMTP id v27so1443564vsa.7;
+        Thu, 02 Mar 2023 22:00:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1677823207;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=duWHLHC998/ALX9wAk1ZT8M/Zsd/3V3XAwx/PG6sWs0=;
+        b=a2HXBmPzMD+4NM8rTdj4d7HK1FOhXKmJfAQjTHSqAZwe4efYWcWHDYDFlaKeUKZAc1
+         NHwLSfFCiZhaxoRVoBGD63bvl3ZvAokM8jhlPbnP00LG2AvEQdk4MgyvIaNuD3DrBrRZ
+         1F/HzxMva/e3RdAh7pzSinBFtJ2Oc+Np7edYfwOyoUMlgPfDOsyGC7PClp0+459J7HXG
+         nzef1OgIAYXqyHR9iYkRYidt9fKo5Y2Md7FE0e0lVzwYwYgGcXwa0Z7nMu6sGmedm4F5
+         ZPmgajLXW+/kABFJ6PYxI+zHiPPRLDibDvj49tvCfWyVs/xi+vgQogu5aeYl94ZuuMn3
+         Fu7w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1677823207;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=duWHLHC998/ALX9wAk1ZT8M/Zsd/3V3XAwx/PG6sWs0=;
+        b=CIdojPTMMvnndpFWXLlHKGCEa8dQKZhqM4mkibdaosFg/Ig71H//FBODjBsVWitb2r
+         ShQuxGi54UZ/S1vQI/Kl2PiAklLqu017BcIWHksRfSSK4Pm63u6NTwlXJ/d2CO77AGuX
+         koQTP/iVNvwnuyS2ZNyVtPLLQwae1JSWbN5X4+Ua67i/QVi3d923oqTjjTtEL3jK5CLl
+         s2+vBXO4FWyRmBEjxvlIGS7JDO/wC5WLgYArnOQPS20HWzhjVECOb1SD3IJaIf46Givx
+         Pg1x8YDPD7x7/7NteK9X28Jg6YmuIgtMqmDROiwPSFRVXF5KwIVuhWU58u8CjR6FY/Yw
+         RabA==
+X-Gm-Message-State: AO0yUKVzs3nvkQ+NeY3mZeSUOoUFoITb5yS2sMGCknu8JWV3BlnuPgJ6
+	0SiIRJhhQ6llgNybsricD2e9VFOG2qclKBoisVO3vJF3
+X-Google-Smtp-Source: AK7set9VXNjBFhRvYKXKTd8sMHwCT/q2XHk+uHNBQfQT3TfZSnjTqio+bNyRQfOjn+PcJ+OckBPqudk49yfTVR3khuo=
+X-Received: by 2002:a67:7305:0:b0:411:c666:583b with SMTP id
+ o5-20020a677305000000b00411c666583bmr464534vsc.5.1677823206669; Thu, 02 Mar
+ 2023 22:00:06 -0800 (PST)
+MIME-Version: 1.0
+From: Davina Adhiambo <davina578@gmail.com>
+Date: Fri, 3 Mar 2023 08:59:40 +0300
+Message-ID: <CAO_-CGx==GmKG8FoLx9csxJNvGDazR+r3e07s0i=Qpr-GcTWcg@mail.gmail.com>
+Subject: Reconciliation reports
+To: shadrackmambo@novustell.com
+Cc: Muketha Titus <mukethatitus@gmail.com>, 
+	Quinta from Novustelltravel <quinta@novustelltravel.com>, quinta omondi <quinta.omondi@gmail.com>, 
+	accounts@novustell.com
+Content-Type: multipart/alternative; boundary="0000000000003ac07b05f5f8a83d"
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello Shadrack, I've been sharing with you daily bank statements
+    for reconciliation, could I be getting weekly reports on the same. Kindly
+    liaise with Titus on the same. Kind regards 
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [davina578[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [davina578[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--0000000000003ac07b05f5f8a83d
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Shadrack,
+
+I've been sharing with you daily bank statements for reconciliation, could
+I be getting weekly reports on the same. Kindly liaise with Titus on the
+same.
+
+
+Kind regards
+
+Davina Adhiambo
+0729358009
+
+--0000000000003ac07b05f5f8a83d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Shadrack,<div><br></div><div>I&#39;ve been sharing w=
+ith you daily bank statements for reconciliation, could I be getting weekly=
+ reports on the same. Kindly liaise with Titus on the same.</div><div><br><=
+/div><div><br></div><div><div><div dir=3D"ltr" class=3D"gmail_signature" da=
+ta-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr">Kin=
+d regards<div><br></div><div>Davina Adhiambo</div><div>0729358009</div></di=
+v></div></div></div></div></div></div>
+
+--0000000000003ac07b05f5f8a83d--

@@ -1,0 +1,227 @@
+Return-Path: <lulu@nglhrc.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id QIMwEbmbPWhhLgcAObGTvA
+	(envelope-from <lulu@nglhrc.com>)
+	for <novuste1@rs2.hpcnoc.com>; Mon, 02 Jun 2025 15:40:25 +0300
+Return-path: <lulu@nglhrc.com>
+Envelope-to: valary@novustelltravel.com
+Delivery-date: Mon, 02 Jun 2025 15:40:25 +0300
+Received: from mail-io1-f47.google.com ([209.85.166.47]:47525)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <lulu@nglhrc.com>)
+	id 1uM4Sl-00000001xaJ-3VyA
+	for valary@novustelltravel.com;
+	Mon, 02 Jun 2025 15:40:25 +0300
+Received: by mail-io1-f47.google.com with SMTP id ca18e2360f4ac-86a55400875so377858539f.3
+        for <valary@novustelltravel.com>; Mon, 02 Jun 2025 05:40:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=nglhrc-com.20230601.gappssmtp.com; s=20230601; t=1748867981; x=1749472781; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ocdxQeRn/D2ab/UgGWgyAmY4bdzyTT1rqzrluxkLKQU=;
+        b=j6S3gXo/VSAeHqRJGENETj5TE2SMAZAX+336gTA6zyVf08UjK3lzJe3JNMrH2gaZ7F
+         k94WNrkE1ht+w3nV2Zv25oHpHVzpUXIij/CLgxIspFB65VIBPCFLoZBKNEDsi+jZPhCC
+         C/1L6REREgOLGdjo0/TNgmXsMQdwRdX0taUgWrIEhkyATGmP7KF3adqPGc2x8sNSUKmE
+         iAzchYZe/AfCYRCe57LqwCsZ1Zx44u85XK5S+1bJyfgg+XG54pfpOnjN7f8oXF5FHmhw
+         RG4JFTvhTJ4e01PiT93BOWp05yh0JfPRe54Vz+wHq+ZtdZusCbS41+Ic6/U73pGgAmSU
+         J4Yg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1748867981; x=1749472781;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ocdxQeRn/D2ab/UgGWgyAmY4bdzyTT1rqzrluxkLKQU=;
+        b=RpXhlRZsAA9IChXAfn9dudYkG7hnfN1Xdjf56hFJW2eE0jOEPdS5yY7CI3rm03F2Jp
+         AtS3qE9KWoXA7B8h35y6IwshqJBopl17vNsflEILo4wWup2DzdXufrp9eUty1Br6Oxze
+         rna6cDYIIs1HEGdQ00auRxRr0kwhzE9VPSeeHc21UahV/uGlqXgh6I8yfdvczbn1+ELJ
+         RFR2l7+BKWtXDKZ/Nmoivnmu/6uuu3/qwW6AeDin4M5F11wD8NWgpTIDqsI2SpLnaGdS
+         qMfFDJMDk6LyGlKObbCkIE/cePpJHGjO75M7DITbMb7+eMQ5z0qWSxN3X6upfrcZbNsl
+         rbqQ==
+X-Forwarded-Encrypted: i=1; AJvYcCXZFuSJYKkKFU8+tgte8QnpFYYjovtwT1xwhFUu03WIAwWzKLSfdZRUEBmgVIRRNGErkcT9eqg=@novustelltravel.com
+X-Gm-Message-State: AOJu0YxhcR+uQwBhXsc7eHMogzVOHpzI5HfOaReQqMrs2WlrP7E16XES
+	gBmHUv0b5XXwJ7QD4OVTYTAi00uC1NRr626N7+ZaKfy2RzeG1Izmcl7m4a9d/iUPGmTv8cPnlKy
+	nM2ATZkY5Wixb1MLAUeO+xEnRiKbBFdUAR9yP1Rf/TQ==
+X-Gm-Gg: ASbGncsesa+SWf/itx0h4VkeB4TSLPus8eb5j8UWsO9UccbmKcb3CYCRAKTZskUSm9+
+	4gRtieEsn9psJ2ydykGnWuH5elzuWHwJQcDyluQt0qm7xg8NmDjCZoR/nAst3PHOOHRhzLm0Cr9
+	o18eQqktRZ7F+PpPA9woDlr5KGDf/Yd3YQM5tVrimA38Ly2hEay99ObWV6lWt503xeOw==
+X-Google-Smtp-Source: AGHT+IFF5eXSlb0uMp1AoT1dCU4ko2JpeEHhxHiz2OQUEewNCiT4iduZZv36QhVy49ezs7yA/hDpzy92ZWIKaQu1BNg=
+X-Received: by 2002:a05:6e02:1a67:b0:3dc:8a5f:7cc2 with SMTP id
+ e9e14a558f8ab-3dd99b13d5cmr127011505ab.0.1748867981448; Mon, 02 Jun 2025
+ 05:39:41 -0700 (PDT)
+MIME-Version: 1.0
+From: Lulu <Lulu@nglhrc.com>
+Date: Mon, 2 Jun 2025 15:39:05 +0300
+X-Gm-Features: AX0GCFtkPhLOh7VbyGgGRaUVb6wPWJrxD-gqmJwpCoPl2awisjDwbBeZZiR-f6g
+Message-ID: <CAPokx+Kh=W_KPA_ha0aY5ZyAUafLGNqe0Zc+Q=X6TxqdQaudXw@mail.gmail.com>
+Subject: REQUEST FOR QUOTATIONS
+To: Novustell <quinta@novustelltravel.com>, 
+	"Natasha | Novustell travel" <natasha@novustelltravel.com>, valary@novustelltravel.com, 
+	Novustell <accounts@novustelltravel.com>
+Cc: Njeri Gateru <njeri@nglhrc.com>, Masafu Okwara <masafu@nglhrc.com>, 
+	Sophia Karani <sophie@nglhrc.com>, Winnie Mwangi <accounts@nglhrc.com>, 
+	NGLHRC ASSOCIATE <salome@nglhrc.com>
+Content-Type: multipart/alternative; boundary="000000000000cb29240636960ee1"
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Quinta, Please share quotations for the following: 1.
+    Consultative meeting, 20 pax on 18th June 2025 at Novotel, full day conference,
+    with equipment for other participants to join virtually. 2. Case Conferenc
+    [...] 
+ Content analysis details:   (1.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: nglhrc.com]
+  0.5 JMQ_SPF_NEUTRAL        ASKDNS: SPF set to ?all
+                             [nglhrc.com TXT:v=spf1 include:servers.mcsv.net]
+                             [?all]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.166.47 listed in zen.spamhaus.org]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: www.nglhrc.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.166.47 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.166.47 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.166.47 listed in sa-accredit.habeas.com]
+  0.0 T_SPF_PERMERROR        SPF: test of record failed (permerror)
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Spam-Flag: NO
+
+--000000000000cb29240636960ee1
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Quinta,
+
+Please share quotations for the following:
+1. Consultative meeting, 20 pax on 18th June 2025 at Novotel, full day
+conference, with equipment for other participants to join virtually.
+2. Case Conference, 30 pax, at Novotel (I'll share dates later), full day
+conference
+
+
+Please share these at your earliest convenience.
+
+Warm regards,
+
+-- 
+
+Sheila Lulu - She/Her
+
+Program Officer - Knowledge and Partnership
+
+National Gay & Lesbian Human Rights Commission  | www.nglhrc.com
+
+P.O Box 52695-00100 Nairobi
+T: +254 (020) 4400525 | Cell: +254700010743|
+
+E:lulu@nglhrc.com  /info@nglhrc.com
+
+--000000000000cb29240636960ee1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div class=3D"gmail_default" style=3D"font-family:ver=
+dana,sans-serif">Dear Quinta,=C2=A0</div><div class=3D"gmail_default" style=
+=3D"font-family:verdana,sans-serif"><br></div><div class=3D"gmail_default" =
+style=3D"font-family:verdana,sans-serif">Please share quotations for the=C2=
+=A0following:=C2=A0</div><div class=3D"gmail_default" style=3D"font-family:=
+verdana,sans-serif">1. Consultative=C2=A0meeting, 20 pax on 18th June 2025 =
+at Novotel, full day conference, with equipment for other participants to j=
+oin virtually.=C2=A0</div><div class=3D"gmail_default" style=3D"font-family=
+:verdana,sans-serif">2. Case Conference, 30 pax, at Novotel (I&#39;ll share=
+=C2=A0dates later), full day conference</div><br clear=3D"all"></div><div><=
+br></div><div><div class=3D"gmail_default" style=3D"font-family:verdana,san=
+s-serif">Please share these at your earliest convenience.=C2=A0</div><div c=
+lass=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><br></div><=
+div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif">Warm r=
+egards,=C2=A0</div></div><div><br></div><span class=3D"gmail_signature_pref=
+ix">-- </span><br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr"><p dir=3D"ltr" style=3D"line-height:1=
+.5709090909090906;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt=
+"><span style=3D"font-size:11pt;font-family:Verdana,sans-serif;color:#3d85c=
+6;background-color:transparent;font-weight:400;font-style:normal;font-varia=
+nt:normal;text-decoration:none;vertical-align:baseline;white-space:pre;whit=
+e-space:pre-wrap">Sheila Lulu - She/Her</span></p><p dir=3D"ltr" style=3D"l=
+ine-height:1.5709090909090906;background-color:#ffffff;margin-top:0pt;margi=
+n-bottom:0pt"><span style=3D"font-size:11pt;font-family:Verdana,sans-serif;=
+color:#3d85c6;background-color:transparent;font-weight:400;font-style:norma=
+l;font-variant:normal;text-decoration:none;vertical-align:baseline;white-sp=
+ace:pre;white-space:pre-wrap">Program Officer - Knowledge and Partnership</=
+span></p><p dir=3D"ltr" style=3D"line-height:1.5709090909090906;margin-top:=
+0pt;margin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Verdana,sa=
+ns-serif;color:#3d85c6;background-color:transparent;font-weight:400;font-st=
+yle:normal;font-variant:normal;text-decoration:none;vertical-align:baseline=
+;white-space:pre;white-space:pre-wrap">National Gay &amp; Lesbian Human Rig=
+hts Commission=C2=A0 | </span><a href=3D"http://www.nglhrc.com/" style=3D"t=
+ext-decoration:none" target=3D"_blank"><span style=3D"font-size:11pt;font-f=
+amily:Verdana,sans-serif;color:#1155cc;background-color:transparent;font-we=
+ight:400;font-style:normal;font-variant:normal;text-decoration:underline;ve=
+rtical-align:baseline;white-space:pre;white-space:pre-wrap">www.nglhrc.com<=
+/span></a><span style=3D"font-size:11pt;font-family:Verdana,sans-serif;colo=
+r:#3d85c6;background-color:transparent;font-weight:400;font-style:normal;fo=
+nt-variant:normal;text-decoration:none;vertical-align:baseline;white-space:=
+pre;white-space:pre-wrap">=C2=A0</span></p><p dir=3D"ltr" style=3D"line-hei=
+ght:1.5709090909090906;margin-top:0pt;margin-bottom:0pt"><span style=3D"fon=
+t-size:11pt;font-family:Verdana,sans-serif;color:#3d85c6;background-color:t=
+ransparent;font-weight:400;font-style:normal;font-variant:normal;text-decor=
+ation:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">P.=
+O Box 52695-00100 Nairobi</span><span style=3D"font-size:11pt;font-family:V=
+erdana,sans-serif;color:#3d85c6;background-color:transparent;font-weight:40=
+0;font-style:normal;font-variant:normal;text-decoration:none;vertical-align=
+:baseline;white-space:pre;white-space:pre-wrap"><br></span><span style=3D"f=
+ont-size:11pt;font-family:Verdana,sans-serif;color:#3d85c6;background-color=
+:transparent;font-weight:400;font-style:normal;font-variant:normal;text-dec=
+oration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">=
+T: +254 (020) 4400525 | Cell: +254700010743|=C2=A0</span></p><p style=3D"fo=
+nt-stretch:normal;line-height:19.2px;margin:0px"><span><span style=3D"font-=
+size:11pt;font-family:Verdana,sans-serif;color:rgb(61,133,198);background-c=
+olor:transparent;vertical-align:baseline">E:</span><a href=3D"mailto:lulu@n=
+glhrc.com" target=3D"_blank"><span style=3D"font-size:11pt;font-family:Verd=
+ana,sans-serif;color:rgb(17,85,204);background-color:transparent;vertical-a=
+lign:baseline">lulu@nglhrc.com</span></a><span style=3D"font-size:11pt;font=
+-family:Verdana,sans-serif;color:rgb(61,133,198);background-color:transpare=
+nt;vertical-align:baseline">=C2=A0 /</span><a href=3D"mailto:info@nglhrc.co=
+m" target=3D"_blank"><span style=3D"font-size:11pt;font-family:Verdana,sans=
+-serif;color:rgb(17,85,204);background-color:transparent;vertical-align:bas=
+eline">info@nglhrc.com</span></a><span style=3D"font-size:11pt;font-family:=
+Verdana,sans-serif;color:rgb(61,133,198);background-color:transparent;verti=
+cal-align:baseline"> </span></span></p><p style=3D"font-stretch:normal;line=
+-height:19.2px;margin:0px"><font face=3D"verdana, sans-serif"><br></font></=
+p><p style=3D"font-stretch:normal;line-height:19.2px;margin:0px"><font face=
+=3D"verdana, sans-serif"><img src=3D"https://docs.google.com/uc?export=3Ddo=
+wnload&amp;id=3D1JkWsZ8jYVgbs9lDmS_rMh5U19ljE-li-&amp;revid=3D0B6ypY2pQWQ7V=
+V0RLenUxaHZxMSt5Y1RVd0NXazh4SGJId1E0PQ" width=3D"200" height=3D"30"></font>=
+<br></p></div></div></div>
+
+--000000000000cb29240636960ee1--

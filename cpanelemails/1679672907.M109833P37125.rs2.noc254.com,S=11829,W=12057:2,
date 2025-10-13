@@ -1,0 +1,228 @@
+Return-Path: <davina578@gmail.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id wNvHBUvGHWQFkQAA7QkJDw
+	(envelope-from <davina578@gmail.com>)
+	for <novuste1@rs2.noc254.com>; Fri, 24 Mar 2023 18:48:27 +0300
+Return-path: <davina578@gmail.com>
+Envelope-to: accounts@novustell.com
+Delivery-date: Fri, 24 Mar 2023 18:48:27 +0300
+Received: from mail-ua1-f45.google.com ([209.85.222.45]:43826)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <davina578@gmail.com>)
+	id 1pfjeT-000700-17
+	for accounts@novustell.com;
+	Fri, 24 Mar 2023 18:48:27 +0300
+Received: by mail-ua1-f45.google.com with SMTP id n17so1686047uaj.10
+        for <accounts@novustell.com>; Fri, 24 Mar 2023 08:48:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1679672903;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=n6WUdpvYL2ZwgmwwpFED5JnDeYtO7mgzAdxVczE3n8w=;
+        b=L5HeBSCZpteOw+pAJQuZdK6JdGht1K+Z+vREfcQO3gyoolwI81qSxvk+givK3QoX8b
+         DpTklTpOz6NA/eiLmMQPPkw55PaFwqax7rcEsipV7YdYMEpceptoOOJIRr0NxdynThtw
+         ZDbcnvQfj4xCR19dnG1SLtmhWUA+up6JzX/ILPC6HPFgW1wJK3f1iLKBVTYKfSZ0OYCi
+         BpgUUPkqtIePsKw2IfHOmBvQTnBJlXMq6qP5dws/Yj29X7I6cEeSG8fHioWrQl34a+Ge
+         b3CsMC15C9TPsZ5zJcLvX1wJAnqdNQcjoyI5LPNOoou16LLjKgtkKcVzNi3zX2Q4Iyzz
+         Y/TQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1679672903;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=n6WUdpvYL2ZwgmwwpFED5JnDeYtO7mgzAdxVczE3n8w=;
+        b=MC8/16pMGdFnNOGYoOAhV2CUSGbS9V0weO9lLDkwDw5mvOAepV9YSRJxvsUaD8Qvr5
+         vCmwrpT5ykmUtGwa5q6xEE80ToidBGFABfh42Os8cSDeTY28pTWmtT68EDTQPfVTJNGO
+         Txp6ttRVB80v/z1wRUfDyd4l7vsedDF++zRVTZf8f6Q+J3wUZ6O4lrufCykjwA400/Az
+         GpkX/knGZAdLYT1cpYBKKL+I0XT20BgTZBsBY1b0IhaidPfdulKFsueslsJY58Rtq7eg
+         05ouEkwv4pti0y9jEZXIdZDs06WZ2AwgfabFcD+mHsJqtv9oVwpbUgnpg6e7VvV87D3k
+         LS/A==
+X-Gm-Message-State: AAQBX9dQj9GzIDoZa+uYW1wBQcezUpY/9cB1ejCz5iH8Z7cgCZOUe4FD
+	CApQjjijg0vWesicTWwPWxiNViZoOvE5SBYFihk=
+X-Google-Smtp-Source: AKy350bKt3hhXUo67STFvs+xnXrm6fd2F8mk+KSYwK+Um+oT73eqDpaU6NA0dkr80bqiPBztziA2uYwNTqEmt7ib8CI=
+X-Received: by 2002:a05:6130:3a9:b0:68d:6360:77b with SMTP id
+ az41-20020a05613003a900b0068d6360077bmr2101479uab.1.1679672902923; Fri, 24
+ Mar 2023 08:48:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAKxRX1cyZ846=m6ueigrR5hTosk2eQ0yXE5onOwdKafyLvwXkw@mail.gmail.com>
+ <CAO_-CGxr_ZrQpF5_8-6=knS6NhTG_eq4D+9Cy1ocK55KVotfTQ@mail.gmail.com>
+In-Reply-To: <CAO_-CGxr_ZrQpF5_8-6=knS6NhTG_eq4D+9Cy1ocK55KVotfTQ@mail.gmail.com>
+From: Davina Adhiambo <davina578@gmail.com>
+Date: Fri, 24 Mar 2023 18:47:57 +0300
+Message-ID: <CAO_-CGx3j_wz4WLjSm=gh8PKBQdPismxe13sfcWhg8X_ZUpwXw@mail.gmail.com>
+Subject: Re: WEEKLY RECONCILIATION REPORT 15th-24th march 2023
+To: Shadrack Mambo <shadrackmambo05@gmail.com>
+Cc: quinta omondi <quinta.omondi@gmail.com>, accounts@novustell.com, 
+	John Gichungu <gichungu.m@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000b7ba6005f7a7520c"
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  See below as well The bank reconciliation process offers several
+    advantages including: 1. Keeping track of accounts payable and receivables
+    of the business 2. Detecting errors such as double payments, missed payments,
+    calculation errors etc. 3. Tracking and adding bank fees and penalti [...]
+    
+ Content analysis details:   (0.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [davina578[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [davina578[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: freshbooks.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
+                             "accounts suspended", "account credited",
+                             "account verification"
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--000000000000b7ba6005f7a7520c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+See below as well
+
+The bank reconciliation process offers several advantages including:
+
+   1. Keeping track of accounts payable and receivables of the business
+   2. Detecting errors such as double payments, missed payments,
+   calculation errors etc.
+   3. Tracking and adding bank fees and penalties in the books
+   4. Spot fraudulent transactions and theft
+
+
+Kind regards
+
+Davina Adhiambo
+0729358009
+
+
+On Fri, Mar 24, 2023 at 6:24=E2=80=AFPM Davina Adhiambo <davina578@gmail.co=
+m> wrote:
+
+> How about bank reconciliation?
+>
+> Cash in the bank, (deposits from the bank what they've been used to pay
+> and where the money(credits) are coming from.
+> Cash at hand - any money in cash, how it has been used and if more  has
+> been added, what are the balances.
+>
+> That's what I'd want to see on the bank reconciliation report.
+>  A bank reconciliation statement is a summary of banking and business
+> activity that reconciles an entity's bank account with its financial
+> records. The statement outlines the deposits, withdrawals, and other
+> activities affecting a bank account for a specific period.
+>
+> *Bank Reconciliation: A Step-by-Step Guide*
+>
+>    1. COMPARE THE DEPOSITS. Match the deposits in the business records
+>    with those in the bank statement. ...
+>    2. ADJUST THE BANK STATEMENTS. Adjust the balance on the bank
+>    statements to the corrected balance. ...
+>    3. ADJUST THE CASH ACCOUNT
+>    4. COMPARE THE BALANCES.
+>
+>
+> If this is not clear let me know...you can reach out here >>>
+> https://www.freshbooks.com/hub/accounting/do-bank-reconciliation
+>
+>
+> Kind regards
+>
+> Davina Adhiambo
+> 0729358009
+>
+>
+> On Fri, Mar 24, 2023 at 5:29=E2=80=AFPM Shadrack Mambo <shadrackmambo05@g=
+mail.com>
+> wrote:
+>
+>> Hi, hope you are okay.
+>> Find the attached weekly report for both USD and KES bank statements
+>>
+>
+
+--000000000000b7ba6005f7a7520c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">See below as well<div><br></div><div>The bank reconciliati=
+on process offers several advantages including:</div><div><ol><li>Keeping t=
+rack of accounts payable and receivables of the business</li><li>Detecting =
+errors such as double payments, missed payments, calculation errors etc.</l=
+i><li>Tracking and adding bank fees and penalties in the books</li><li>Spot=
+ fraudulent transactions and theft</li></ol></div><div><br></div><div><div>=
+<div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signatur=
+e"><div dir=3D"ltr"><div><div dir=3D"ltr">Kind regards<div><br></div><div>D=
+avina Adhiambo</div><div>0729358009</div></div></div></div></div></div><br>=
+</div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_=
+attr">On Fri, Mar 24, 2023 at 6:24=E2=80=AFPM Davina Adhiambo &lt;<a href=
+=3D"mailto:davina578@gmail.com">davina578@gmail.com</a>&gt; wrote:<br></div=
+><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border=
+-left:1px solid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr">How abo=
+ut bank reconciliation?<div><br></div><div>Cash in the bank, (deposits from=
+ the bank what they&#39;ve been used to pay and where the money(credits) ar=
+e coming from.</div><div>Cash at hand - any money in cash, how it has been =
+used and if more=C2=A0 has been added, what are the balances.</div><div><br=
+></div><div>That&#39;s what I&#39;d want to see on the bank reconciliation =
+report.=C2=A0<br><font color=3D"#ff0000">=C2=A0A bank reconciliation statem=
+ent is a summary of banking and business activity that reconciles an entity=
+&#39;s bank account with its financial records. The statement outlines the =
+deposits, withdrawals, and other activities affecting a bank account for a =
+specific period.</font></div><div><font color=3D"#ff0000"><br></font></div>=
+<div><div role=3D"heading" style=3D"margin-bottom:12px;font-family:arial,sa=
+ns-serif;font-size:16px"><b><font color=3D"#ff0000">Bank Reconciliation: A =
+Step-by-Step Guide</font></b></div><div style=3D"padding:0px 20px;font-fami=
+ly:arial,sans-serif;font-size:16px"><ol style=3D"margin:0px;padding:0px"><l=
+i style=3D"margin:0px 0px 4px;padding:0px;list-style:inherit"><font color=
+=3D"#ff0000">COMPARE THE DEPOSITS. Match the deposits in the business recor=
+ds with those in the bank statement. ...</font></li><li style=3D"margin:0px=
+ 0px 4px;padding:0px;list-style:inherit"><font color=3D"#ff0000">ADJUST THE=
+ BANK STATEMENTS. Adjust the balance on the bank statements to the correcte=
+d balance. ...</font></li><li style=3D"margin:0px 0px 4px;padding:0px;list-=
+style:inherit"><font color=3D"#ff0000">ADJUST THE CASH ACCOUNT</font></li><=
+li style=3D"margin:0px 0px 4px;padding:0px;list-style:inherit"><font color=
+=3D"#ff0000">COMPARE THE BALANCES.</font></li></ol></div></div><div><font c=
+olor=3D"#ff0000"><br></font></div><div><font color=3D"#ff0000">If this is n=
+ot clear let me know...you can reach out here &gt;&gt;&gt;=C2=A0</font><a h=
+ref=3D"https://www.freshbooks.com/hub/accounting/do-bank-reconciliation" ta=
+rget=3D"_blank">https://www.freshbooks.com/hub/accounting/do-bank-reconcili=
+ation</a></div><div><font color=3D"#ff0000"><br></font></div><div><font col=
+or=3D"#ff0000"><br clear=3D"all"></font><div><div dir=3D"ltr"><div dir=3D"l=
+tr"><div><div dir=3D"ltr"><font color=3D"#ff0000">Kind regards</font><div><=
+br></div><div>Davina Adhiambo</div><div>0729358009</div></div></div></div><=
+/div></div><br></div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" =
+class=3D"gmail_attr">On Fri, Mar 24, 2023 at 5:29=E2=80=AFPM Shadrack Mambo=
+ &lt;<a href=3D"mailto:shadrackmambo05@gmail.com" target=3D"_blank">shadrac=
+kmambo05@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote=
+" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);=
+padding-left:1ex"><div dir=3D"ltr">Hi, hope you are okay.<div>Find the atta=
+ched weekly report for both USD and KES bank statements</div></div>
+</blockquote></div>
+</blockquote></div>
+
+--000000000000b7ba6005f7a7520c--

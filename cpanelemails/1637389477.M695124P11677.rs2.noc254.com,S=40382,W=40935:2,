@@ -1,0 +1,553 @@
+Return-Path: <msprvs1=189586D6IiCcV=bounces-201745-2@e.reply.drifttmail.com>
+Delivered-To: novuste1@rs2.noc254.com
+Received: from rs2.noc254.com
+	by rs2.noc254.com with LMTP
+	id QOBSKKWUmGGdLQAA7QkJDw
+	(envelope-from <msprvs1=189586D6IiCcV=bounces-201745-2@e.reply.drifttmail.com>)
+	for <novuste1@rs2.noc254.com>; Sat, 20 Nov 2021 09:24:37 +0300
+Return-path: <msprvs1=189586D6IiCcV=bounces-201745-2@e.reply.drifttmail.com>
+Envelope-to: info@novustelltravel.com
+Delivery-date: Sat, 20 Nov 2021 09:24:37 +0300
+Received: from mta-219-132.sparkpostmail.com ([147.253.219.132]:29398)
+	by rs2.noc254.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <msprvs1=189586D6IiCcV=bounces-201745-2@e.reply.drifttmail.com>)
+	id 1moJni-0001uD-3f
+	for info@novustelltravel.com; Sat, 20 Nov 2021 09:24:37 +0300
+X-MSFBL: 8ZkF2Zpvp21bVpgrPUKFnHaUgRtPxKi+kvvfjs/JVAc=|eyJjdXN0b21lcl9pZCI
+	6IjIwMTc0NSIsInN1YmFjY291bnRfaWQiOiIyIiwibWVzc2FnZV9pZCI6IjYxOGU
+	3Nzk0OTg2MWEyNDg0NDE4IiwiciI6ImluZm9Abm92dXN0ZWxsdHJhdmVsLmNvbSI
+	sInRlbmFudF9pZCI6InNwYyJ9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=reply.drifttmail.com; s=scph0218; t=1637389431;
+	i=@reply.drifttmail.com;
+	bh=sdYvtrW+hP67WP6LoIenipDCmdGLsDZj+8uO/Fz14vs=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=YV1EbMFx63W1mlrCt1MxmV69U66n2EZBBFbhyfQxCTuysFUXXxYzBoqH3LAa+R2zD
+	 k2ELf+vOZsKhXa0UcSQD3DQbBoAaVrXe2GTahCuZQzv5t+lI6Mkcs54obbKutAr9Ak
+	 RmdpSITqakgInkNDJlRyvTjlW/FbvjXzJuZ2c48s=
+To: "Quinta from Novustell" <info@novustelltravel.com>
+Message-ID: <44.81.03708.77498916@at.mta1vrest.cc.prd.sparkpost>
+Date: Sat, 20 Nov 2021 06:23:51 +0000
+Content-Type: multipart/alternative; boundary="_----ZHrRODAawCKBdK88bm/tPg===_24/81-03708-77498916"
+MIME-Version: 1.0
+Subject: Verify your email address.
+From: "Drift" <notifications+verify-email@reply.drifttmail.com>
+X-Spam-Status: No, score=1.9
+X-Spam-Score: 19
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Verify your email address Please click the button below to
+    confirm your new email address. https://start.drift.com/login?emailVerifyToken=0e771d14343843e7910d3c511a014537&region=US
+    
+ Content analysis details:   (1.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: drift.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+                             area
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+  1.8 URI_TRY_3LD            "Try it" URI, suspicious hostname
+X-Spam-Flag: NO
+X-From-Rewrite: unmodified, forwarded message
+
+--_----ZHrRODAawCKBdK88bm/tPg===_24/81-03708-77498916
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Verify your email address=0A=0APlease click the button below to confirm you=
+r new email address.=0A=0Ahttps://start.drift.com/login=3FemailVerifyToken=
+=3D0e771d14343843e7910d3c511a014537&region=3DUS=0A=0AIf you didn=E2=80=99t =
+initiate this request, you can safely ignore this email.
+--_----ZHrRODAawCKBdK88bm/tPg===_24/81-03708-77498916
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>=0A<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"u=
+rn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:o=
+ffice">=0A  <head>=0A    <!--if gte mso 9=0A    xml=0A      o:officedocumen=
+tsettings=0A        o:allowpng=0A          o:pixelsperinch 96=0A    -->=0A =
+   <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"=
+>=0A    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">=0A    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=
+=0A    <meta name=3D"format-detection" content=3D"date=3Dno">=0A    <meta n=
+ame=3D"x-apple-disable-message-reformating">=0A    <title>Drift Notificatio=
+n</title>=0A    <style>.color-white{color:#fff}.color-white-off{color:#f8f8=
+f8}.color-gray-extra-light{color:#eee}.color-gray-light{color:#ccc}.color-g=
+ray{color:#9a9a9a}.color-gray-slight-dark{color:#777}.color-gray-dark{color=
+:#555}.color-gray-extra-dark{color:#333}.color-black{color:#000}.color-blue=
+-extra-light{color:#b9eff9}.color-blue-light{color:#7be1f5}.color-blue{colo=
+r:#3ce}.color-link-blue{color:#0a5bff}.color-messenger-blue{color:#0176ff}.=
+color-blue-dark{color:#22bce7}.color-blue-extra-dark{color:#0aa3de}.color-g=
+reen{color:#7ed321}.color-pink-extra-light{color:#ffd6dd}.color-pink-light{=
+color:#ffb0bd}.color-pink{color:#ff7f93}.color-pink-dark{color:#ff5f73}.col=
+or-pink-extra-dark{color:#ff455a}.color-orange{color:#f5a623}.color-teal{co=
+lor:#13ddb0}.color-messenger-yellow-extra-light{color:#fffcd9}.color-yellow=
+-extra-light{color:#fff1bc}.color-yellow-light{color:#fee27f}.color-yellow{=
+color:#ffcf33}.color-yellow-dark{color:#ffbb1e}.color-yellow-extra-dark{col=
+or:#ffab0e}.color-purple{color:#8a347f}.bg-primary{background-color:#0176ff=
+}.bg-light-grey{background-color:#eee}.bg-gray{background-color:#394f5a}.bg=
+-dark-gray{background-color:#444}.bg-white{background-color:#fff}.bg-black{=
+background-color:#000}.bg-navy-extra-light{background-color:#f2f6f8}.bg-nav=
+y-disabled{background-color:#d2e3ec}.branded-header-bg-image{background-pos=
+ition:top right;background-repeat:no-repeat}.branded-header-bg-image-tiled{=
+background-position:center top;background-repeat:repeat}.ultralight{font-we=
+ight:100}.light{font-weight:300}.medium{font-weight:500}.bold{font-weight:6=
+00}.heavy{font-weight:700}.icon{height:1em}.icon.task{height:100%;margin-to=
+p:50px}.paperclip{height:27px;width:12px}.share-icon{height:30px;width:30px=
+}.quote-icon{height:20px;width:20px}.file-icon{height:33px;width:26px}@medi=
+a screen and (max-width:450px){.cta a{width:auto!important}.button-col-left=
+,.button-col-right{padding-bottom:16px!important}.button-flex-width.button-=
+col-right{padding-bottom:0!important}.button-flex-width.button-col-left,.bu=
+tton-flex-width.button-col-right{padding-left:0!important;padding-right:0!i=
+mportant}.button-flex-width .cta,.button-flex-width .cta table{width:100%}}=
+.cta .cta-padding{padding:6px 24px}.cta .cta-white{background-color:#fff!i=
+mportant}.cta .cta-white table{border:1px solid #000!important}.cta .cta-wh=
+ite .cta-text-styles{color:#000!important}.cta .cta-black{background-color:=
+#000!important}.cta .cta-black table{border:1px solid #fff!important}.cta .=
+cta-black .cta-text-styles{color:#fff!important}.cta .cta-dark-grey-disable=
+d{background-color:#444!important}.cta .cta-black-disabled table{border:1px=
+ solid #444!important}.cta .cta-black-disabled .cta-text-styles{color:#444!=
+important}.cta .cta-light-grey-disabled{background-color:#eee!important}.ct=
+a .cta-light-grey-disabled table{border:1px solid #eee!important}.cta .cta-=
+light-grey-disabled .cta-text-styles{color:#ccc!important}.cta .cta-white-d=
+isabled{background-color:#fff!important}.cta .cta-white-disabled table{bord=
+er:1px solid #ccc!important}.cta .cta-white-disabled .cta-text-styles{color=
+:#ccc!important}.cta table,.cta td{border-radius:3px}.cta a,.cta span,.cta =
+.cta-text-styles{margin:0 auto;text-decoration:none!important;font-size:14=
+px;line-height:20px;font-weight:700;text-align:center}.cta .w-100{display:b=
+lock}.btn-secondary{display:inline-block;font-weight:700;color:#394f5a;padd=
+ing:5px 7px;border:1px solid #b5d2e1;border-radius:4px;text-decoration:none=
+}.button-col-left{padding-right:10px}.button-col-right{padding-left:10px}.b=
+utton-flex-width.button-col-left{padding-right:8px}.button-flex-width.butto=
+n-col-right{padding-left:8px}.btn.color-white,.btn.color-white[disabled]{ba=
+ckground-color:#fff}.btn.color-white:hover{background-color:#fff;box-shadow=
+:none}.btn.color-white-off{border:none;background-color:#f8f8f8;color:#fff}=
+.btn.color-white-off[disabled]{background-color:#fbfbfb}.btn.color-white-o=
+ff:hover{background-color:#f9f9f9;box-shadow:none}.btn.color-gray-extra-lig=
+ht{border:none;background-color:#eee;color:#fff}.btn.color-gray-extra-light=
+[disabled]{background-color:#f5f5f5}.btn.color-gray-extra-light:hover{backg=
+round-color:#f1f1f1;box-shadow:none}.btn.color-gray-light{border:none;backg=
+round-color:#ccc;color:#fff}.btn.color-gray-light[disabled]{background-colo=
+r:#e0e0e0}.btn.color-gray-light:hover{background-color:#d6d6d6;box-shadow:n=
+one}.btn.color-gray{border:none;background-color:#9a9a9a;color:#fff}.btn.co=
+lor-gray[disabled]{background-color:#c2c2c2}.btn.color-gray:hover{backgroun=
+d-color:#aeaeae;box-shadow:none}.btn.color-gray-slight-dark{border:none;bac=
+kground-color:#777;color:#fff}.btn.color-gray-slight-dark[disabled]{backgro=
+und-color:#adadad}.btn.color-gray-slight-dark:hover{background-color:#92929=
+2;box-shadow:none}.btn.color-gray-dark{border:none;background-color:#555;co=
+lor:#fff}.btn.color-gray-dark[disabled]{background-color:#999}.btn.color-gr=
+ay-dark:hover{background-color:#777;box-shadow:none}.btn.color-gray-extra-d=
+ark{border:none;background-color:#333;color:#fff}.btn.color-gray-extra-dark=
+[disabled]{background-color:#858585}.btn.color-gray-extra-dark:hover{backgr=
+ound-color:#5c5c5c;box-shadow:none}.btn.color-black{border:none;background-=
+color:#000;color:#fff}.btn.color-black[disabled]{background-color:#666}.btn=
+.color-black:hover{background-color:#333;box-shadow:none}.btn.color-blue-e=
+xtra-light{border:none;background-color:#b9eff9;color:#fff}.btn.color-blue-=
+extra-light[disabled]{background-color:#d5f5fb}.btn.color-blue-extra-light:=
+hover{background-color:#c7f2fa;box-shadow:none}.btn.color-blue-light{border=
+:none;background-color:#7be1f5;color:#fff}.btn.color-blue-light[disabled]{b=
+ackground-color:#b0edf9}.btn.color-blue-light:hover{background-color:#95e7f=
+7;box-shadow:none}.btn.color-blue{border:none;background-color:#3ce;color:#=
+fff}.btn.color-blue[disabled]{background-color:#85e0f5}.btn.color-blue:hove=
+r{background-color:#5cd6f1;box-shadow:none}.btn.color-link-blue{border:none=
+;background-color:#0a5bff;color:#fff}.btn.color-link-blue[disabled]{backgro=
+und-color:#6c9dff}.btn.color-link-blue:hover{background-color:#3b7cff;box-s=
+hadow:none}.btn.color-messenger-blue{border:none;background-color:#0176ff;c=
+olor:#fff}.btn.color-messenger-blue[disabled]{background-color:#67adff}.btn=
+.color-messenger-blue:hover{background-color:#3491ff;box-shadow:none}.btn.=
+color-blue-dark{border:none;background-color:#22bce7;color:#fff}.btn.color-=
+blue-dark[disabled]{background-color:#7ad7f1}.btn.color-blue-dark:hover{bac=
+kground-color:#4ec9ec;box-shadow:none}.btn.color-blue-extra-dark{border:non=
+e;background-color:#0aa3de;color:#fff}.btn.color-blue-extra-dark[disabled]{=
+background-color:#5fcdf8}.btn.color-blue-extra-dark:hover{background-color:=
+#2abdf5;box-shadow:none}.btn.color-green{border:none;background-color:#7ed3=
+21;color:#fff}.btn.color-green[disabled]{background-color:#b2e975}.btn.colo=
+r-green:hover{background-color:#98e247;box-shadow:none}.btn.color-pink-extr=
+a-light{border:none;background-color:#ffd6dd;color:#fff}.btn.color-pink-ext=
+ra-light[disabled]{background-color:#ffe6eb}.btn.color-pink-extra-light:hov=
+er{background-color:#ffdee4;box-shadow:none}.btn.color-pink-light{border:no=
+ne;background-color:#ffb0bd;color:#fff}.btn.color-pink-light[disabled]{back=
+ground-color:#ffd0d7}.btn.color-pink-light:hover{background-color:#ffc0ca;b=
+ox-shadow:none}.btn.color-pink{border:none;background-color:#ff7f93;color:#=
+fff}.btn.color-pink[disabled]{background-color:#ffb2be}.btn.color-pink:hove=
+r{background-color:#ff99a9;box-shadow:none}.btn.color-pink-dark{border:none=
+;background-color:#ff5f73;color:#fff}.btn.color-pink-dark[disabled]{backgro=
+und-color:#ff9fab}.btn.color-pink-dark:hover{background-color:#ff7f8f;box-s=
+hadow:none}.btn.color-pink-extra-dark{border:none;background-color:#ff455a;=
+color:#fff}.btn.color-pink-extra-dark[disabled]{background-color:#ff8f9c}.b=
+tn.color-pink-extra-dark:hover{background-color:#ff6a7b;box-shadow:none}.bt=
+n.color-orange{border:none;background-color:#f5a623;color:#fff}.btn.color-o=
+range[disabled]{background-color:#f9ca7b}.btn.color-orange:hover{background=
+-color:#f7b84f;box-shadow:none}.btn.color-teal{border:none;background-color=
+:#13ddb0;color:#fff}.btn.color-teal[disabled]{background-color:#6af2d4}.btn=
+.color-teal:hover{background-color:#38eec5;box-shadow:none}.btn.color-mess=
+enger-yellow-extra-light{border:none;background-color:#fffcd9;color:#fff}.b=
+tn.color-messenger-yellow-extra-light[disabled]{background-color:#fffde8}.b=
+tn.color-messenger-yellow-extra-light:hover{background-color:#fffde1;box-sh=
+adow:none}.btn.color-yellow-extra-light{border:none;background-color:#fff1b=
+c;color:#fff}.btn.color-yellow-extra-light[disabled]{background-color:#fff7=
+d7}.btn.color-yellow-extra-light:hover{background-color:#fff4c9;box-shadow:=
+none}.btn.color-yellow-light{border:none;background-color:#fee27f;color:#ff=
+f}.btn.color-yellow-light[disabled]{background-color:#feeeb2}.btn.color-yel=
+low-light:hover{background-color:#fee899;box-shadow:none}.btn.color-yellow{=
+border:none;background-color:#ffcf33;color:#fff}.btn.color-yellow[disabled]=
+{background-color:#ffe285}.btn.color-yellow:hover{background-color:#ffd95c;=
+box-shadow:none}.btn.color-yellow-dark{border:none;background-color:#ffbb1e=
+;color:#fff}.btn.color-yellow-dark[disabled]{background-color:#ffd678}.btn.=
+color-yellow-dark:hover{background-color:#ffc94b;box-shadow:none}.btn.color=
+-yellow-extra-dark{border:none;background-color:#ffab0e;color:#fff}.btn.col=
+or-yellow-extra-dark[disabled]{background-color:#ffcd6e}.btn.color-yellow-e=
+xtra-dark:hover{background-color:#ffbc3e;box-shadow:none}.btn.color-purple{=
+border:none;background-color:#8a347f;color:#fff}.btn.color-purple[disabled]=
+{background-color:#ca74bf}.btn.color-purple:hover{background-color:#b846aa;=
+box-shadow:none}.btn{border-radius:5px;background-color:#fff}.btn:active:fo=
+cus,.btn:focus{outline:none}.btn.fixed{min-width:200px;height:50px;padding:=
+.75em 2.25em}.btn.no-border{border:0}.btn.color-white{color:#3ce;border:1p=
+x solid #eee}.btn.color-white:hover{color:#5cd6f1;border-color:#ccc}.btn.da=
+rk{background-color:#000;color:#fff;border:none}.btn.dark:hover{background-=
+color:#333;color:#fff}.btn.dark:active,.btn.dark:focus{background-color:#1a=
+1a1a;color:#fff}.btn.btn-success{background-color:#fff;border-color:#555}.b=
+tn.btn-success:hover{background-color:#555;color:#fff}.btn.rounder{border-r=
+adius:25px;padding:.5rem 1.5rem}@media (-webkit-transform-2d) and (min-widt=
+h:600px){.desktop-apple-mail-plaintext-padding{padding-left:37px}}.overhang=
+-container{display:inline-block}.overhang-offset{padding-top:30px}.overhang=
+-offset-sm{padding-top:5px}@media screen and (max-width:450px){.half-col{wi=
+dth:100%!important}.half-col-margin{margin-left:0!important;margin-bottom:2=
+0px!important}.half-col-wide-margin{margin-right:0%;margin-bottom:10px!impo=
+rtant}.col{display:block!important;width:100%!important;padding-left:0!impo=
+rtant;padding-right:0!important}.col-left{padding-bottom:5px!important}.col=
+-right{padding-bottom:35px!important}}.half-col{width:45%;display:inline-bl=
+ock;vertical-align:top!important}.half-col-wide{width:48.5%}.half-col-margi=
+n{margin-right:9%;margin-bottom:0}.half-col-wide-margin{margin-right:1%;mar=
+gin-bottom:0}.col-left{padding-bottom:20px}.col-header{font-size:14px;line-=
+height:1.3;color:#b9b9b9;font-weight:700}.w-100{width:100%}table{mso-table-=
+lspace:0;mso-table-rspace:0;border-spacing:0}table td{border-collapse:colla=
+pse}table td *{font-family:Helvetica,Arial,sans-serif}td.top{vertical-align=
+:top}@media screen and (max-width:450px){.mobile-hidden{display:none!import=
+ant}.mobile-block{display:block!important}}.block{display:block;display:blo=
+ck!important}.inline-row{display:inline-block}.inline{display:inline}@media=
+ screen and (max-width:450px){.card,.card-with-bolts{padding:12px 16px!impo=
+rtant}.card-bolts{display:none}}.card{padding:12px 70px}.card-compact{paddi=
+ng-left:70px;padding-right:70px;border-radius:0!important}.card-with-bolts{=
+padding:0 70px 12px}.card-wide{padding:12px 20px}.card-wide-compact{padding=
+-left:20px;padding-right:20px;border-radius:0!important}.card-wide-with-bol=
+ts{padding:0 20px 12px}.card-bolts{padding-right:40px}.card-bolts,.card-wid=
+e-bolts{padding-top:30px}.card-container{padding:24px;border-radius:3px}.ca=
+rd-container-compact{padding:16px 24px 0}.card-header.card-header-divider{b=
+order-bottom:2px solid #f6f6f6}.card-header .card-title{margin:0!important;=
+padding:0 0 16px}.card-header .card-subheader{margin:0!important;padding:0 =
+0 24px;line-height:130%;line-height-rule:exactly}.card-content,.card-cta{pa=
+dding-top:24px}.border-top-linkedin-blue{border-top:2px solid #0073b2;borde=
+r-top-left-radius:0;border-top-right-radius:0}.border-top-twitter-blue{bord=
+er-top:2px solid #1da1f2;border-top-left-radius:0;border-top-right-radius:0=
+}.linkedin-icon-wrapper{background:#007bb5;border-radius:2px}.border-top-at=
+tention-orange{border-top:4px solid #fa7f76;border-top-left-radius:0;border=
+-top-right-radius:0}@media screen and (max-width:450px){.px-20-desktop{padd=
+ing:0!important}.px-20-mobile{padding-left:20px!important;padding-right:20p=
+x!important}.pad-me-bottom-mobile{padding-bottom:10px!important}}.p-0{paddi=
+ng:0}.p-5{padding:5px}.p-10{padding:10px}.p-15{padding:15px}.p-20{padding:2=
+0px}.p-30{padding:30px}.pt-0{padding-top:0!important}.pt-5{padding-top:5px!=
+important}.pt-8{padding-top:8px!important}.pt-10{padding-top:10px!important=
+}.pt-16{padding-top:16px!important}.pt-20{padding-top:20px!important}.pt-24=
+{padding-top:24px!important}.pr-0{padding-right:0!important}.pr-5{padding-r=
+ight:5px!important}.pr-10{padding-right:10px!important}.pr-20{padding-right=
+:20px!important}.pl-0{padding-right:0!important}.pl-5{padding-left:5px!impo=
+rtant}.pl-8{padding-left:8px!important}.pl-10{padding-left:10px!important}.=
+pl-20{padding-left:20px!important}.pl-50{padding-left:50px!important}.pb-0{=
+padding-bottom:0!important}.pad-me-bottom{padding-bottom:5px}.pb-2{padding-=
+bottom:2px!important}.pb-8{padding-bottom:8px!important}.pb-10{padding-bott=
+om:10px!important}.pb-16{padding-bottom:16px!important}.pb-18{padding-botto=
+m:18px!important}.pb-20{padding-bottom:20px!important}.pb-24{padding-bottom=
+:24px!important}.pb-30{padding-bottom:30px!important}.py-0{padding-top:0!im=
+portant;padding-bottom:0!important}.py-5{padding-top:5px!important;padding-=
+bottom:5px!important}.py-10{padding-top:10px!important;padding-bottom:10px!=
+important}.py-20{padding-top:20px!important;padding-bottom:20px!important}.=
+px-0{padding-left:0!important;padding-right:0!important}.px-5{padding-left:=
+5px!important;padding-right:5px!important}.px-10{padding-left:10px!importan=
+t;padding-right:10px!important}.px-20{padding-left:20px!important;padding-r=
+ight:20px!important}.px-20-desktop{padding:0 20px}.m-0{margin:0}.m-10{margi=
+n:10px}.m-20{margin:20px}.m-30{margin:30px}.mt-0{margin-top:0!important}.mt=
+-10{margin-top:10px!important}.mt-20{margin-top:20px!important}.mb-0{margin=
+-bottom:0!important}.ml-auto{margin-left:auto}.ml-8{margin-left:8px}.pull-l=
+eft{position:absolute;float:left}.pull-right{position:absolute;float:right}=
+.margin-centered{margin:auto}.pb-10-list{padding-bottom:10px}.pb-10-list:l=
+ast-child{padding-bottom:0!important}.pb-10-list.pb-30-list{padding-bottom:=
+30px}.no-wrap{white-space:nowrap}.miniscule{font-size:5px}.extra-minute{fon=
+t-size:7px}.minute{font-size:8px}.extra-tiny{font-size:10px}.tiny{font-size=
+:11px}.extra-small{font-size:12px}.small{font-size:13px}.large{font-size:17=
+px}.extra-large{font-size:18px}.huge{font-size:21px}.extra-huge{font-size:2=
+5px}.massive{font-size:28px}.colossal{font-size:37px}@media screen and (max=
+-width:450px){table td h1{font-size:34px!important;line-height:36px!importa=
+nt}table td h2{font-size:24px!important;line-height:28px!important}table td=
+ p p,table td span p,table td div p,table td a p,table td td p,table td tr =
+p,table td p span,table td span span,table td div span,table td a span,tabl=
+e td td span,table td tr span,table td p div,table td span div,table td div=
+ div,table td a div,table td td div,table td tr div,table td p a,table td s=
+pan a,table td div a,table td a a,table td td a,table td tr a,table td p td=
+,table td span td,table td div td,table td a td,table td td td,table td tr =
+td{font-size:16px!important;line-height:21px!important}table td h1 a{font-s=
+ize:34px!important;line-height:36px!important}table td .font-size-lg p,tabl=
+e td .font-size-lg span,table td .font-size-lg div,table td .font-size-lg a=
+,table td .font-size-lg td{font-size:18px!important}table td .footer-text p=
+,table td .footer-text span,table td .footer-text div,table td .footer-text=
+ a,table td .footer-text td{font-size:11px!important}}.text-white{color:#f7=
+fbfd!important}.text-black{color:#080c0e!important}.text-blue{color:#0a5bff=
+}.text-link-blue{color:#0071eb}.text-navy{color:#394f5a}.text-main-navy{col=
+or:#7695a5}.text-grey{color:#b9b9b9}.text-light-grey{color:#7a8a94}.text-da=
+rk-grey{color:#687882}.text-success{color:#13cb6e!important}.text-danger{co=
+lor:#e92e4b!important}.text-p1-10{color:#353f45}.text-p1-8{color:#4e5c65}.t=
+ext-p1-6{color:#687882}.text-p1-5-5{color:#9eabb3}.text-highlight{color:#08=
+0c0e;background-color:#ffee7b;padding:0 2px!important;font-weight:700}.text=
+-highlight-pink{color:#f7fbfd;background-color:#ed2190;padding:0 2px!import=
+ant;font-weight:700}.text-center{text-align:center}.text-left{text-align:le=
+ft}.text-right{text-align:right}.text-no-underline{text-decoration:none!imp=
+ortant}.text-underline{text-decoration:underline!important}.text-capitalize=
+{text-transform:capitalize!important}.font-size-subtle{font-size:12px;mso-l=
+ine-height-rule:exactly;line-height:120%}.font-size-copy{line-height:130%}.=
+font-size-copy,.font-size-copy-high{font-size:14px;mso-line-height-rule:exa=
+ctly}.font-size-copy-high{line-height:160%}.font-size-small{font-size:16px;=
+mso-line-height-rule:exactly;line-height:140%}.font-size-medium{font-size:2=
+1px}.font-size-large{font-size:32px}.font-italic{font-style:italic}.font-si=
+ze-lg{font-size:18px}.font-weight-normal{font-weight:400!important}.font-we=
+ight-bold{font-weight:700!important}.preview-text{display:none;font-size:1p=
+x;color:#333;line-height:1px;max-height:0;max-width:0;padding:0;margin:0;op=
+acity:0;overflow:hidden}.ellipsis{white-space:nowrap;overflow:hidden;text-o=
+verflow:ellipsis}.icon-spaced :first-child{margin-right:.5rem}.centered{tex=
+t-align:center}.left-aligned{text-align:left}h1{margin-bottom:.15em;letter-=
+spacing:-.03em}.remove-paragraph-margin p{margin:0!important}@media screen =
+and (max-width:450px){.container{width:100%!important}.container-padding{pa=
+dding-left:25px!important;padding-right:25px!important}.footer-td{padding:6=
+0px 20px 20px!important}.footer-meeting-management-button{display:block!imp=
+ortant;border:none!important}}body{margin:0;padding:0;-ms-text-size-adjust:=
+100%;-webkit-text-size-adjust:100%}a{color:#0a5bff}img{-ms-interpolation-mo=
+de:bicubic}a[href^=3D"x-apple-data-detectors:"],a[x-apple-data-detectors]{c=
+olor:inherit!important;text-decoration:none!important;font-size:inherit!imp=
+ortant;font-family:inherit!important;font-weight:inherit!important;line-hei=
+ght:inherit!important}.container{width:600px;max-width:600px!important}.con=
+tent{padding-left:24px;padding-right:24px;background-color:#fff}.body-text{=
+font-size:14px;line-height:1.3;text-align:center;color:#333}.plain-ul{list-=
+style:none;margin:0;padding:0}.icon{padding:10px 0}.masked-info{border-radi=
+us:10px}.separator{margin:0 10px;color:#9a9a9a}.social-icon{padding-right:1=
+0px;color:#0176ff;cursor:pointer!important}.social-icon img{margin:0 0 -1px=
+}.social-icon .salesforce-icon{margin:0 0 -3px!important}.round{border-radi=
+us:50%!important}.header{text-align:center;font-size:24px;font-weight:700;p=
+adding-top:20px;padding-left:24px;padding-right:24px;display:block}.header-=
+text-primary{font-size:40px;line-height:44px;letter-spacing:-1.2;font-weigh=
+t:700;margin:0!important}.header-text-secondary{font-size:28px;line-height:=
+1.1;font-weight:700;margin:0;padding-bottom:5px}.heavy-CTA-text{color:#0a5b=
+ff;text-decoration:none;font-weight:700;font-size:12px;display:block}.title=
+{font-size:21px;font-weight:600;color:#333}.title,.help{text-align:center}.=
+help{font-size:12px}.help a{color:#0176ff}.divider-top-white{border-top:1px=
+ solid #fff;padding-top:10px;padding-bottom:15px}.divider-top-black{border-=
+top:1px solid #000;padding-top:10px;padding-bottom:15px}.divider-top-gray{b=
+order-top:1px solid #d6dde1;padding:16px 0}.footer-td,.footer{color:#ccc}.f=
+ooter-td .branding-container,.footer .branding-container{text-align:center;=
+display:block}.footer-td .branding-container img,.footer .branding-containe=
+r img{vertical-align:middle;height:24px;width:103px;margin-right:.2rem;font=
+-size:18px;text-align:center;color:#ccc}.footer-td .footer-text,.footer .fo=
+oter-text{font-size:11px!important;font-weight:400;color:#9a9a9a;display:bl=
+ock}.footer-td .footer-link-grey,.footer .footer-link-grey{color:#7695a5!im=
+portant;text-decoration:underline}.footer-td .footer-link-blue,.footer .foo=
+ter-link-blue{color:#0078fb!important}.footer-td{padding:0 20%;font-size:12=
+px;line-height:16px}.footer-left{width:100%;padding-top:30px;padding-bottom=
+:120px;margin:0;font-size:11px;line-height:16px}.footer-meeting-management-=
+header{font-weight:700;color:#aaa;padding-bottom:20px;display:block}.footer=
+-meeting-management-button-row{display:block;width:100%;padding-top:15px;pa=
+dding-bottom:20px;border-top:1px solid #d6d6d6}.footer-meeting-management-b=
+utton-row .footer-meeting-management-button{display:inline;padding:5px 0}.f=
+ooter-meeting-management-button-row .footer-meeting-management-button .meet=
+ing-management-dot{color:#7695a5;font-size:14px}.avatar-fallback{display:bl=
+ock;font-family:Helvetica,Arial,sans-serif;text-align:center;color:#fff;fon=
+t-weight:400;border-radius:50%;text-decoration:none!important;text-transfor=
+m:capitalize!important}.avatar-container{margin:0 auto}.avatar-container .a=
+vatar{border-radius:50%;display:block}</style>=0A  </head>=0A  <body style=
+=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; =
+padding: 0;" bgcolor=3D"#FFFFFF" leftmargin=3D"0" topmargin=3D"0" marginwid=
+th=3D"0" marginheight=3D"0">=0A    <div class=3D"preview-text" style=3D"col=
+or: #333; display: none; font-size: 1px; line-height: 1px; margin: 0; max-h=
+eight: 0px; max-width: 0px; opacity: 0; overflow: hidden; padding: 0;">=0A =
+   </div>=0A    <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" bgcolor=3D"#f5f8fa" style=3D"border-spacing: 0; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt;">=0A      <tr>=0A        <td align=3D"center=
+" style=3D"border-collapse: collapse;">=0A          <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"600" class=3D"container" style=3D=
+"border-spacing: 0; font-family: Helvetica, Arial, sans-serif; max-width: 6=
+00px !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px=
+;">=0A            <tr style=3D"font-family: Helvetica, Arial, sans-serif;">=
+</tr>=0A            <td align=3D"right" class=3D"card-bolts" style=3D"borde=
+r-collapse: collapse; font-family: Helvetica, Arial, sans-serif; padding-ri=
+ght: 40px; padding-top: 30px;">=0A              <div style=3D"font-family: =
+Helvetica, Arial, sans-serif; height: 46px;">=0A                <div style=
+=3D"display: block; font-family: Helvetica, Arial, sans-serif;">=0A        =
+          <div class=3D"overhang-container" style=3D"display: inline-block;=
+ font-family: Helvetica, Arial, sans-serif;"><img src=3D"https://s3.amazona=
+ws.com/drift-static-assets/bolt-trio-blue.png" height=3D"46" width=3D"46" c=
+lass=3D"card-bolts-img overhang-offset-sm" style=3D"-ms-interpolation-mode:=
+ bicubic; font-family: Helvetica, Arial, sans-serif; padding-top: 5px;">=0A=
+                  </div>=0A                </div>=0A              </div>=0A=
+            </td>=0A            <tr style=3D"font-family: Helvetica, Arial,=
+ sans-serif;"></tr>=0A            <td class=3D"card-with-bolts" style=3D"bo=
+rder-collapse: collapse; font-family: Helvetica, Arial, sans-serif; padding=
+-bottom: 12px; padding-left: 70px; padding-right: 70px; padding-top: 0px;">=
+=0A              <table border=3D"0" width=3D"100%" height=3D"100%" cellpad=
+ding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" class=3D"card-container" s=
+tyle=3D"border-radius: 3px; border-spacing: 0; font-family: Helvetica, Aria=
+l, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 24px;=
+">=0A                <tr style=3D"font-family: Helvetica, Arial, sans-serif=
+;">=0A                  <td style=3D"border-collapse: collapse; font-family=
+: Helvetica, Arial, sans-serif;">=0A                    <table border=3D"0"=
+ width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"card-header" s=
+tyle=3D"border-spacing: 0; font-family: Helvetica, Arial, sans-serif; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt;">=0A                      <tr styl=
+e=3D"font-family: Helvetica, Arial, sans-serif;">=0A                       =
+ <td style=3D"border-collapse: collapse; font-family: Helvetica, Arial, san=
+s-serif;">=0A                          <h2 class=3D"card-title text-p1-10" =
+style=3D"color: #353f45; font-family: Helvetica, Arial, sans-serif; margin:=
+ 0 !important; padding: 0 0 16px;">Verify your email address</h2>=0A       =
+                 </td>=0A                      </tr>=0A                    =
+</table>=0A                    <table border=3D"0" width=3D"100%" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; font-family: Helveti=
+ca, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">=0A  =
+                    <tr style=3D"font-family: Helvetica, Arial, sans-serif;=
+">=0A                        <td class=3D"font-size-small text-p1-10" style=
+=3D"border-collapse: collapse; color: #353f45; font-family: Helvetica, Aria=
+l, sans-serif; font-size: 16px; line-height: 140%; mso-line-height-rule: ex=
+actly;">=0A                          Please click the button below to confi=
+rm=0A                          your new email address =F0=9F=91=87</td>=0A =
+                     </tr>=0A                    </table>=0A               =
+     <table border=3D"0" width=3D"100%" height=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"card-cta" style=3D"border-spacing: 0; font-family=
+: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; padding-top: 24px;">=0A                      <tr style=3D"font-family: H=
+elvetica, Arial, sans-serif;">=0A                        <td style=3D"borde=
+r-collapse: collapse; font-family: Helvetica, Arial, sans-serif;">=0A      =
+                    <table border=3D"0" width=3D"100%" height=3D"100%" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; font-family: He=
+lvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">=
+=0A                            <tr style=3D"font-family: Helvetica, Arial, =
+sans-serif;">=0A                              <td align=3D"left" valign=3D"=
+top" class=3D"col button-col-left button-flex-width" style=3D"border-collap=
+se: collapse; font-family: Helvetica, Arial, sans-serif; padding-right: 8px=
+;">=0A                                <table border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" class=3D"cta" style=3D"border-spacing: 0; font-family: H=
+elvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"=
+>=0A                                  <tr style=3D"font-family: Helvetica, =
+Arial, sans-serif;">=0A                                    <td align=3D"cen=
+ter" style=3D"border-collapse: collapse; border-radius: 3px; font-family: H=
+elvetica, Arial, sans-serif;"><a href=3D"https://start.drift.com/login=3Fem=
+ailVerifyToken=3D0e771d14343843e7910d3c511a014537&region=3DUS" target=3D"_b=
+lank" class=3D"cta-text-styles w-100" style=3D"color: #0a5bff; display: blo=
+ck; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight=
+: bold; line-height: 20px; margin: 0 auto; text-align: center; text-decorat=
+ion: none !important; width: 100%;">=0A                                    =
+    <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#0A5=
+BFF" style=3D"border: 2px solid #0A5BFF !important; border-radius: 3px; bor=
+der-spacing: 0; font-family: Helvetica, Arial, sans-serif; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt;">=0A                                         =
+ <tr style=3D"font-family: Helvetica, Arial, sans-serif;">=0A              =
+                              <td style=3D"border-collapse: collapse; borde=
+r-radius: 3px; color: #FFFFFF; font-family: Helvetica, Arial, sans-serif; f=
+ont-size: 14px; font-weight: bold; line-height: 20px; margin: 0 auto; paddi=
+ng: 6px 24px; text-align: center; text-decoration: none !important;" class=
+=3D"cta-text-styles cta-padding">=0A                                       =
+       <div class=3D"p-0 m-0" style=3D"font-family: Helvetica, Arial, sans-=
+serif; margin: 0px; padding: 0px;"><a target=3D"_blank" href=3D"https://sta=
+rt.drift.com/login=3FemailVerifyToken=3D0e771d14343843e7910d3c511a014537&re=
+gion=3DUS" style=3D"color: #FFFFFF; display: block; font-family: Helvetica,=
+ Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 20px; =
+margin: 0 auto; text-align: center; text-decoration: none !important; width=
+: 100%;" class=3D"cta-text-styles w-100">Verify&nbsp;email</a></div>=0A    =
+                                        </td>=0A                           =
+               </tr>=0A                                        </table></a>=
+</td>=0A                                  </tr>=0A                         =
+       </table>=0A                              </td>=0A                   =
+           <td align=3D"left" valign=3D"top" class=3D"col button-col-right =
+button-flex-width" style=3D"border-collapse: collapse; font-family: Helveti=
+ca, Arial, sans-serif; padding-left: 8px;">=0A                             =
+ </td>=0A                              <td align=3D"left" valign=3D"top" wi=
+dth=3D"100%" class=3D"mobile-hidden" style=3D"border-collapse: collapse; fo=
+nt-family: Helvetica, Arial, sans-serif;"></td>=0A                         =
+   </tr>=0A                          </table>=0A                        </t=
+d>=0A                      </tr>=0A                    </table>=0A         =
+           </td></tr><tr style=3D"font-family: Helvetica, Arial, sans-serif=
+;">=0A                      <td style=3D"border-collapse: collapse; font-fa=
+mily: Helvetica, Arial, sans-serif;"><br style=3D"font-family: Helvetica, A=
+rial, sans-serif;">=0A                        <div class=3D"font-size-subtl=
+e text-light-grey" style=3D"color: #7a8a94; font-family: Helvetica, Arial, =
+sans-serif; font-size: 12px; line-height: 120%; mso-line-height-rule: exact=
+ly;">If you didn=E2=80=99t initiate this request, you can safely ignore thi=
+s email.</div>=0A                      </td>=0A                    </tr>=0A=
+                    <tr style=3D"font-family: Helvetica, Arial, sans-serif;=
+">=0A                      <td style=3D"border-collapse: collapse; font-fam=
+ily: Helvetica, Arial, sans-serif;">=0A                      </td>=0A      =
+              </tr>=0A                  </table></td>=0A                </t=
+able></td></tr>=0A              </table>=0A            =0A          =0A    =
+    =0A      =0A    =0A    <table border=3D"0" width=3D"100%" height=3D"100=
+%" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f5f8fa" style=3D"border-=
+spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">=0A      <tr>=0A=
+        <td align=3D"center" style=3D"border-collapse: collapse;">=0A      =
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" c=
+lass=3D"container container-padding" style=3D"border-spacing: 0; font-famil=
+y: Helvetica, Arial, sans-serif; max-width: 600px !important; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; width: 600px;">=0A            <tr style=3D=
+"font-family: Helvetica, Arial, sans-serif;">=0A              <td style=3D"=
+border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;">=0A =
+               <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"border-spacing: 0; font-family: Helvetica, Arial, sans-=
+serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">=0A                  =
+<tr style=3D"font-family: Helvetica, Arial, sans-serif;">=0A               =
+     <td align=3D"center" valign=3D"top" width=3D"100%" class=3D"text-cente=
+r pb-20" style=3D"border-collapse: collapse; font-family: Helvetica, Arial,=
+ sans-serif; padding-bottom: 20px !important; text-align: center;">=0A     =
+                 <div class=3D"footer-td" style=3D"color: #ccc; font-family=
+: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 16px; padding=
+: 0 20%; padding-bottom: 20px; padding-top: 60px;">=0A                     =
+   <div class=3D"footer text-center" style=3D"color: #ccc; font-family: Hel=
+vetica, Arial, sans-serif; text-align: center;">=0A                        =
+  <div class=3D"footer" style=3D"color: #ccc; font-family: Helvetica, Arial=
+, sans-serif;">=0A                            <div class=3D"branding-contai=
+ner" style=3D"display: block; font-family: Helvetica, Arial, sans-serif; te=
+xt-align: center;"><img alt=3D"Drift" height=3D"26px" width=3D"115px" style=
+=3D"-ms-interpolation-mode: bicubic; color: #ccc; font-family: Helvetica, A=
+rial, sans-serif; font-size: 18px; height: 26px !important; margin-right: 0=
+.2rem; text-align: center; vertical-align: middle; width: 115px !important=
+;" src=3D"https://s3.amazonaws.com/driftt-email-assets/Drift-logo-grey-03-2=
+020@2x.png"></div><span class=3D"footer-text pt-20" style=3D"color: #9a9a9a=
+; display: block; font-family: Helvetica, Arial, sans-serif; font-size: 11p=
+x !important; font-weight: 400; padding-top: 20px !important;">Drift, Inc. =
+222 Berkeley St. Floor 6, MA 02116</span>=0A                          </div=
+><br style=3D"font-family: Helvetica, Arial, sans-serif;"><br style=3D"font=
+-family: Helvetica, Arial, sans-serif;"><span class=3D"footer-text text-no-=
+underline" style=3D"color: #9a9a9a; display: block; font-family: Helvetica,=
+ Arial, sans-serif; font-size: 11px !important; font-weight: 400; text-deco=
+ration: none !important;">We&rsquo;re =E2=9A=A1by&nbsp;<a href=3D"https://w=
+ww.drift.com=3Futm_campaign=3Demail-referral&utm_medium=3Demail" target=3D"=
+_blank" class=3D"footer-link-blue text-no-underline" style=3D"color: #0078f=
+b !important; font-family: Helvetica, Arial, sans-serif; text-decoration: n=
+one !important;">Drift</a></span>=0A                        </div>=0A      =
+                </div>=0A                    </td>=0A                  </tr=
+>=0A                </table>=0A              </td>=0A            </tr>=0A  =
+        </table>=0A        </td>=0A      </tr>=0A    </table>=0A  </body>=
+=0A</html>
+--_----ZHrRODAawCKBdK88bm/tPg===_24/81-03708-77498916--
+

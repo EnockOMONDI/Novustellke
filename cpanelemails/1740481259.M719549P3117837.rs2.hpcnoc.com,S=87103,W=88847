@@ -1,0 +1,1744 @@
+Return-Path: <v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id aKGAKuuivWcNky8AObGTvA
+	(envelope-from <v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com>)
+	for <novuste1@rs2.hpcnoc.com>; Tue, 25 Feb 2025 14:00:59 +0300
+Return-path: <v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com>
+Envelope-to: caleb@novustelltravel.com
+Delivery-date: Tue, 25 Feb 2025 14:00:59 +0300
+Received: from mail8777.mail5.enews-airfrance.com ([129.41.167.61]:43521)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com>)
+	id 1tmsgM-0000000D5T5-1aXx
+	for caleb@novustelltravel.com;
+	Tue, 25 Feb 2025 14:00:59 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=spop2048; d=enews-airfrance.com;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:
+ X-CSA-Complaints:List-Unsubscribe-Post:List-Unsubscribe;
+ i=contact-ke@enews-airfrance.com;
+ bh=ZKxnZI7y6vvcB+h8t+LyPA/JK9170TrNPPq2M3EgX2k=;
+ b=Yw/9KmwwhJ4WCIGC9B06uckMJy7OpiP1Sqgj+c7CVXiwu/nFblvBr6AAw1nqw4f71rFFURkw8tsC
+   P5Zi/oQo9/cD7UsGT1Pf7WL8qD1pK+V/0AOK7Vz4yjA4afsF/7dOuk/TSCZ2iQrbu4GJ4+7/iN4B
+   XnPvtez87hazreTbA65YdG+VKz52yJSS6z+VliRm2ahwhn/wewOloqvIeRgF+6XfbA4WaM+IubmY
+   gWerYImEuQSoW1VwljgZxVQaOBXoP8w3T5M+o4HmHILXLOjm7szaAC5PCRp24/wiJMHNZsZYOhB+
+   yq14SchUz7cYRNq4QPL88aVxRQwx3hSw2c62ZA==
+Received: by bg61-ca-ec1.prod.awspr id hnmhc42vq6go for <caleb@novustelltravel.com>; Tue, 25 Feb 2025 11:00:18 +0000 (envelope-from <v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com>)
+Date: Tue, 25 Feb 2025 11:00:18 +0000 (UTC)
+From: Air France Kenya <contact-ke@enews-airfrance.com>
+Reply-To: noreply-ke@enews-airfrance.com
+To: caleb@novustelltravel.com
+Message-ID: <2034399788.95112021740481218110.JavaMail.app@bg61-ca-ec1.prod.awspr>
+Subject: Last call for the Air France Rendez-Vous!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_518722_1031389880.1740481210824"
+x-mid: 30757974
+X-CSA-Complaints: csa-complaints@eco.de
+x-rpcampaign: sp30757974
+x-job: 30757974
+x-orgId: 23643
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://links.mail.enews-airfrance.com/luoo/v1/OVVaZXJlVmdyZ3VNdzMxQWdydmpWY25HaWxXSm13eDUreU1EUXptZ3NTTmR5M1pqejZOQzdXQno5eVFGUlJmZ2QzaFNKa3dsRjFDbWx5YWN2OGYvU3c3MUpoTzcxNkJHS0>, <mailto:v-bnffefg_blifaajcdcj_joapnfnc_joapnfnc_a@bounce.mail.enews-airfrance.com?subject=Unsubscribe>
+X-Spam-Status: No, score=2.3
+X-Spam-Score: 23
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  If you are unable to see the message below, click here to
+    view. Final call for our very best deals There are only 7 days left for you
+    to book a trip to your dream destination at the best price!* Discover new
+    horizons. 
+ Content analysis details:   (2.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mkt61.net]
+                             [URI: enews-airfrance.com]
+                             [URI: static-af.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [129.41.167.61 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [129.41.167.61 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [129.41.167.61 listed in sa-accredit.habeas.com]
+  0.0 MIME_HTML_ONLY_MULTI   Multipart message only has text/html MIME parts
+  2.0 MIXED_HREF_CASE        Has href in mixed case
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+ -0.4 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+------=_Part_518722_1031389880.1740481210824
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"><!--x-idmai=
+l_AIRFRANCECRM2_%%IDM%%-->
+<head><!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]--><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D9; IE=3D8;=
+ IE=3D7; IE=3DEDGE" /><meta name=3D"viewport" content=3D"width=3Ddevice-wid=
+th, initial-scale=3D1.0" />
+=09<title></title>
+=09<style type=3D"text/css">/* RESET CSS */
+
+        #outlook a {
+            padding: 0;
+            color: inherit;
+        }
+
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            color: #051039;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            display: block !important
+        }
+
+        .ExternalClass,
+        .ExternalClass *,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        div {
+            margin: 0 !important;
+        }
+
+        img {
+            display: block;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+       =20
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt
+        }
+
+       =20
+
+        .appleLinks,
+        .appleLinksWhite {
+            text-decoration: none !important
+        }
+
+       =20
+
+        .wca_module_pre_header {
+            background-color: #2c5697;
+        }
+
+        .wca_border {
+            border-right: 1px solid #14438b;
+        }
+
+        .wca_module_main_message_picto {
+            background-color: #14438b;
+        }
+
+        .wca_module_main_message_title {
+            background-color: #14438b;
+            color: #ffffff;
+        }
+
+        .wca_module_main_message_title_text {
+            color: #ffffff;
+        }
+
+        .wca_module_main_message_button {
+            background-color: #14438b;
+        }
+
+        .wca_module_mobileapp_checkin {
+            background-color: #14438b;
+        }
+
+        .jn {
+            color: #505875;
+        }
+
+        .os:not(#outlook),
+        .osb:not(#outlook) {
+            font-family: Arial, sans-serif !important
+        }
+
+        /* ELEMENT */
+
+        hr {
+            margin: 10px auto !important;
+            height: 1px !important;
+            background-color: #e8e5e5 !important;
+            border: none !important;
+        }
+
+
+        /* MAIN CSS STYLES */
+
+        body {
+            margin: 0 auto !important;
+            width: 100% !important;
+            max-width: 640px !important;
+            text-rendering: optimizeLegibility !important;
+        }
+
+        #af_main_wrapper {
+            margin: 0 auto !important;
+            width: 100% !important;
+            max-width: 640px !important;
+        }
+
+
+        /* PADDINGS */
+
+        .af_plr_20 {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+
+        .af_pl_15 {
+            padding-left: 15px !important;
+        }
+
+        .af_pr_15 {
+            padding-right: 15px !important;
+        }
+
+        /* FOOTER CONTACT */
+
+        .af_footer_marge_fb{
+            padding: 16px 20px !important;
+        }
+
+        .af_footer_marge_contact {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .af_contact_cells {
+            padding: 0 !important;
+        }
+
+        .af_float_right {
+            float: right !important;
+        }
+
+        .af_left {
+            text-align: left !important;
+        }
+
+        .af_right {
+            text-align: right !important;
+        }
+
+        .af_push_blue {
+            display: table-cell !important;
+            width: auto !important;
+            padding: 0 24px 0 24px !important;
+        }
+
+        .af_push_blue_image {
+            display: inline-block !important;
+        }
+
+        .af_push_blue_image img {
+            display: block !important;
+            height: auto !important;
+            width: 100% !important;
+            margin: 0;
+        }
+
+        .af_push_blue_content {
+            height: 212px !important;
+        }
+
+        @media screen and (max-width: 600px), (max-device-width: 600px) {
+            body {
+                margin: 0 auto !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            #af_main_wrapper {
+                margin: 0 auto !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .af_img_center {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+=09=09=09
+=09=09=09.resize60 {
+               =20
+                width: 60% !important;
+               =20
+            }
+
+
+            /* MEGA PUSH */
+            .af_push_blue {
+                display: inline-block !important;
+                width: auto !important;
+                padding: 20px 40px 32px 40px !important;
+            }
+
+            .af_push_blue.af_image_left {
+                display: block !important;
+                width: auto !important;
+                padding: 20px 40px 32px 40px !important;
+            }
+
+            .af_push_blue_image {
+                display: inline-block !important;
+                width: 100% !important;
+            }
+
+            .af_push_blue_image img {
+                display: block !important;
+                height: auto !important;
+                width: 100% !important;
+                margin: 0;
+            }
+
+            .af_push_blue_content {
+                height: auto !important;
+            }
+
+            /* PADDINGS */
+
+            .af_plr_20 {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            .af_pl_15 {
+                padding-left: 0 !important;
+                padding-right: 15px !important;
+            }
+
+            .af_pb_0 {
+                padding-bottom: 0 !important;
+            }
+
+            .af_pt_5 {
+                padding-top: 5px !important;
+            }
+
+            /* FOOTER CONTACT */
+
+            .af_footer_marge_contact {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .af_left {
+                text-align: left !important;
+            }
+
+            .af_right {
+                text-align: left !important;
+            }
+
+            .af_contact_cells {
+                display: block !important;
+                width: 100% !important;
+                padding-bottom: 30px !important;
+            }
+
+            .af_float_right {
+                float: left !important;
+            }
+        }
+=09</style>
+=09<style type=3D"text/css">@media screen and (max-width: 600px), (max-devi=
+ce-width: 600px) {
+=09.t_w100p{width:100%!important}
+=09.t_pl0px{padding-left:0px!important}
+=09.t_pr0px{padding-right:0px!important}
+=09.t_h0px{height:0px!important}
+=09.t_tacenter{text-align:center!important}
+=09.t_pt30px{padding-top:30px!important}
+=09.t_w35px{width:35px!important}
+=09.t_v{display:block!important;}
+=09}
+
+    @media screen and (max-width: 450px), (max-device-width: 450px) {
+=09.m_w100p{width:100%!important}
+=09.m_pl0px{padding-left:0px!important}
+=09.m_pr0px{padding-right:0px!important}
+=09.m_h0px{height:0px!important}
+=09.m_tacenter{text-align:center!important}
+=09.m_pt30px{padding-top:30px!important}
+=09.m_w35px{width:35px!important}
+=09.m_v{display:block!important;}
+=09}
+=09</style>
+</head>
+<body data-gr-ext-installed=3D"" data-new-gr-c-s-check-loaded=3D"14.1111.0"=
+ style=3D"background-color:#ffffff"><CENTER><FONT SIZE=3D"1" COLOR=3D"#0000=
+00" FACE=3D"ARIAL">If you are unable to see the message below, <A href=3D"h=
+ttps://links.mail.enews-airfrance.com/servlet/MailView?ms=3DMzA3NTc5NzQS1&r=
+=3DMTg5MTEyODM4NjM0NQS2&j=3DMjY1MTgzNzkwNgS2&mt=3D1&rt=3D0">click here to v=
+iew</A>.</FONT><font face=3D"ARIAL" color=3D"#808080" size=3D"2"><br></font=
+></CENTER>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"t_w100p m_w100p" role=3D"presentation" style=3D"width:640px" width=
+=3D"640">
+=09
+=09=09<tr><!--ancien pixe-->
+=09=09</tr>
+=09=09<tr class=3D"dn">
+=09=09=09<td height=3D"1" width=3D"640">&nbsp;</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td style=3D"background-color:#ffffff"><span class=3D"droppable" i=
+d=3D"01-PREHEADER"><!-- BEGIN AIRFRANCE LOGO BLOCK --><!-- DEBUT LOGO -->
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td class=3D"t_w100p m_w100p" height=3D"20">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center"><a href=3D"https://links.mail.enews-airfrance=
+.com/els/v2/grDrB-N9eaf6/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3=
+ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuT=
+zkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV=
+1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3=
+KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFd=
+nSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOU=
+ppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c=
+0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN0000532=
+5|s=3DBODY|z=3Dlogo" target=3D"blank" ><img alt=3D"Air France" class=3D"t_w=
+100p m_w100p" src=3D"https://img.static-af.com/images/media/1066A2C5-9B86-4=
+C75-AD0D9695477C201F/" style=3D"border:none" width=3D"300" /></a></td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td class=3D"t_w100p m_w100p" height=3D"22">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN LOGO --><!-- END AIRFRANCE LOGO BLOCK --><!-- BEGIN AIRFRANCE IMAG=
+E BLOCK --><!-- DEBUT VP -->
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" style=3D"padding:0px 20px 0px 20px"><a href=
+=3D"https://links.mail.enews-airfrance.com/els/v2/G8L8MA2bErsE/bkRkL3VRS2tW=
+cXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUV=
+GU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0=
+/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNm=
+VsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc=
+2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJE=
+SEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0V=
+lUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5Uj=
+ZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3Dimage" target=3D"blank=
+" ><img alt=3D"Air France" class=3D"t_w100p m_w100p" src=3D"https://img.sta=
+tic-af.com/images/media/1E4720DD-BB2B-4AD3-929607FE6DD06FC4/source/1060x530=
+-emailing" style=3D"border:none" width=3D"530" /></a></td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN VP --><!-- DEBUT EDITO -->
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:580px" width=3D"580">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" style=3D"padding:0px 30px 0px 30px">
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"t=
+_w100p m_w100p" role=3D"presentation" style=3D"width:520px" width=3D"520">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td class=3D"t_pl0px m_pl0px" style=3D"padding-left:20px;=
+color:#051039;font-family: Arial,sans-serif;font-size:24px;font-weight:400;=
+text-align:Left;line-height:24px;mso-line-height-rule:exactly;text-transfor=
+m:initial;"><a href=3D"https://links.mail.enews-airfrance.com/els/v2/G8L8MA=
+2bErsEE/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUkt=
+rMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0Vl=
+NoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW=
+93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK=
+3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16=
+SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE=
+5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiej=
+RUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DEd=
+ito" style=3D"text-decoration:none; color:#051039" target=3D"_blank" >Final=
+ call for our very best deals</a></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td class=3D"t_pl0px m_pl0px" style=3D"padding-left:20px;=
+ padding-top: 20px !important; color:#051039;font-family: Arial,sans-serif;=
+font-size:16px;font-weight:400;text-align:Left;line-height:24px;mso-line-he=
+ight-rule:exactly;"><a href=3D"https://links.mail.enews-airfrance.com/els/v=
+2/G8L8MA2bErsEE/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJ=
+hVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMG=
+RHa3o0VlNoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscW=
+ZKbEZibW93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHa=
+TArbXovK3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdr=
+ZnpnQk16SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd=
+5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZn=
+V6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBOD=
+Y|z=3DEdito" style=3D"text-decoration:none; color:#051039" target=3D"_blank=
+" >There are only 7 days left for you to book a trip to your dream destinat=
+ion at the best price!*<br />
+=09=09=09=09=09=09<br />
+=09=09=09=09=09=09Discover new horizons.<br />
+=09=09=09=09=09=09<br />
+=09=09=09=09=09=09Offer available until 4 March 2025.</a></td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+
+=09=09=09<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" =
+style=3D"width:580px" width=3D"580">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN EDITO --><!-- DEBUT CTA -->
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" style=3D"width:640px" width=3D"=
+640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td style=3D"padding:0px 30px 0px 30px">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td class=3D"t_w100p m_w100p t_pl0px m_pl0px t_pr0px m_pr=
+0px" style=3D"padding: 16px 56px;background-color:#0045B6;color:#ffffff"><a=
+ class=3D"t_w100p m_w100p" href=3D"https://links.mail.enews-airfrance.com/e=
+ls/v2/yADABd2vqaMk/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2=
+TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkU=
+xMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTF=
+scWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0=
+FHaTArbXovK3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCV=
+DdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80=
+dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXB=
+OZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3D=
+BODY|z=3DCTA" style=3D"line-height: 16px !important;border:none !important;=
+text-decoration:none !important;font-family: Arial,sans-serif !important;fo=
+nt-size: 16px !important; color: #ffffff !important;font-weight:700 !import=
+ant;display:block !important;text-align:center !important;" target=3D"_blan=
+k" >Discover our deals</a></td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN CTA --><!--HR-->
+
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px;border-top:1px solid #e8e5e5" width=3D"612">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!--HR--><!-- DEBUT Trigger -->
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"width:570px=
+" width=3D"570">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:0px 20px 0px 20px">
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"t_w100p m_w100p t_tacenter m_tacenter" role=3D"prese=
+ntation">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td class=3D"t_pr0px m_pr0px" style=3D"padding-r=
+ight:40px"><a href=3D"https://links.mail.enews-airfrance.com/els/v2/6LbLsG3=
+kE2Tj/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrM=
+UR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNo=
+VTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93=
+WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3l=
+ORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SF=
+NDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d=
+050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRU=
+ZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREM=
+IUM" style=3D"display:block;text-decoration:none;outline:0" ><img alt=3D"" =
+height=3D"300" src=3D"https://img.static-af.com/images/media/57168F7A-FA75-=
+44A2-8929AA126EE3D1A2/source/480x600-emailing-trigger-zone?extent=3Dtrue" s=
+tyle=3D"border:none;display:inline-block" width=3D"240" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+
+=09=09=09=09=09=09<table align=3D"right" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" width=3D"240=
+">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td class=3D"m_h0px t_h0px" height=3D"300" valig=
+n=3D"middle">
+=09=09=09=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter t_pt30=
+px t_pr20px t_pl20px m_tacenter m_pt30px m_pr20px m_pl20px" style=3D"paddin=
+g-top:0;padding-bottom:15px;color:#051039;font-family: Arial,sans-serif;fon=
+t-size:20px;font-weight:400;text-align:left;line-height:24px;mso-line-heigh=
+t-rule:exactly;text-transform:initial;"><a href=3D"https://links.mail.enews=
+-airfrance.com/els/v2/6LbLsG3kE2Tj/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9h=
+MHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t=
+4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1J=
+WWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOE=
+QwdVlYWHo3KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQV=
+ndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRF=
+SVRyRDhYOUppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk4=
+5LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE=
+_CN00005325|s=3DBODY|z=3DPREMIUM" style=3D"text-decoration:none;color:#0510=
+39"  |href=3D"https://www.airfrance.ke/exchange/deeplink?language=3Den&coun=
+try=3DKE&target=3D/deals&cabin=3DPREMIUM&tripType=3DALL&originCode=3DNBO&or=
+iginType=3DAIRPORT&utm_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NLT_=
+CNV_RendezVous_CN00005325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2=
+QZw%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263f1=
+f80359ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREMIUM" style=3D"text=
+-decoration:none;color:#051039"  |href=3D"https://www.airfrance.ke/exchange=
+/deeplink?language=3Den&country=3DKE&target=3D/deals&cabin=3DPREMIUM&tripTy=
+pe=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3DEML&utm_source=
+=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&utm_term=3DFB&GI=
+N_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135f=
+a9f882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN00005325|s=3DBO=
+DY|z=3DPREMIUM" style=3D"text-decoration:none;color:#051039"  >Our new Prem=
+ium cabin</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter t_pb25=
+px m_tacenter m_pb25px" style=3D"color:#051039;font-family: Arial,sans-seri=
+f;font-size:14px;font-weight:400;text-align:left;line-height:24px;mso-line-=
+height-rule:exactly;text-transform:initial;padding-bottom:15px"><a href=3D"=
+https://links.mail.enews-airfrance.com/els/v2/6LbLsG3kE2Tj/bkRkL3VRS2tWcXFp=
+bk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1d=
+VVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5=
+KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdj=
+VMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc2hSd=
+itZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdi=
+aytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJ=
+BZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1=
+dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREMIUM" style=3D"text-dec=
+oration:none;color:#051039"  |href=3D"https://www.airfrance.ke/exchange/dee=
+plink?language=3Den&country=3DKE&target=3D/deals&cabin=3DPREMIUM&tripType=
+=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3DEML&utm_source=3D=
+UNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&utm_term=3DFB&GIN_C=
+RYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f=
+882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|=
+z=3DPREMIUM" style=3D"text-decoration:none;color:#051039"  |href=3D"https:/=
+/www.airfrance.ke/exchange/deeplink?language=3Den&country=3DKE&target=3D/de=
+als&cabin=3DPREMIUM&tripType=3DALL&originCode=3DNBO&originType=3DAIRPORT&ut=
+m_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN0000=
+5325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=
+=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263f1f80359ea3283" name=
+=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREMIUM" style=3D"text-decoration:none;c=
+olor:#051039"  >Sit back and settle in with our reclining seats.</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter m_tace=
+nter"><a href=3D"https://links.mail.enews-airfrance.com/els/v2/6LbLsG3kE2Tj=
+/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1=
+ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsd=
+Gg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBd=
+nNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3lORURz=
+bkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXd=
+NK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d050YV=
+R1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvT=
+UluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREMIUM" =
+style=3D"display: inline-block;vertical-align: middle;color: #051039 !impor=
+tant;text-decoration:underline !important;font-family: Arial,sans-serif !im=
+portant;font-size:16px !important;line-height:16px !important;font-weight:7=
+00 !important;mso-line-height-rule:exactly;"  |href=3D"https://www.airfranc=
+e.ke/exchange/deeplink?language=3Den&country=3DKE&target=3D/deals&cabin=3DP=
+REMIUM&tripType=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3DEM=
+L&utm_source=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&utm_=
+term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a=
+87616937135fa9f882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN000=
+05325|s=3DBODY|z=3DPREMIUM" style=3D"display: inline-block;vertical-align: =
+middle;color: #051039 !important;text-decoration:underline !important;font-=
+family: Arial,sans-serif !important;font-size:16px !important;line-height:1=
+6px !important;font-weight:700 !important;mso-line-height-rule:exactly;"  |=
+href=3D"https://www.airfrance.ke/exchange/deeplink?language=3Den&country=3D=
+KE&target=3D/deals&cabin=3DPREMIUM&tripType=3DALL&originCode=3DNBO&originTy=
+pe=3DAIRPORT&utm_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NLT_CNV_Re=
+ndezVous_CN00005325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D=
+%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263f1f80359=
+ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DPREMIUM" style=3D"display: i=
+nline-block;vertical-align: middle;color: #051039 !important;text-decoratio=
+n:underline !important;font-family: Arial,sans-serif !important;font-size:1=
+6px !important;line-height:16px !important;font-weight:700 !important;mso-l=
+ine-height-rule:exactly;"  >Book now <img alt=3D"" height=3D"16" src=3D"htt=
+ps://img.static-af.com/images/media/82E4D2BE-9D5F-4F4A-8A647B8A241A3F01/" s=
+tyle=3D"display: inline-block;vertical-align: bottom;" width=3D"16" /></a><=
+/td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN Trigger --><!-- DEBUT Trigger -->
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"width:570px=
+" width=3D"570">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:0px 20px 0px 20px">
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"t_w100p m_w100p t_tacenter m_tacenter" role=3D"prese=
+ntation">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td class=3D"t_pr0px m_pr0px" style=3D"padding-r=
+ight:40px"><a href=3D"https://links.mail.enews-airfrance.com/els/v2/pNDNc2A=
+r6aJe/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrM=
+UR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNo=
+VTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93=
+WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3l=
+ORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SF=
+NDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d=
+050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRU=
+ZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSI=
+NESS" style=3D"display:block;text-decoration:none;outline:0" ><img alt=3D""=
+ height=3D"300" src=3D"https://img.static-af.com/images/media/46354CF6-FB70=
+-490E-A96422EB9D6B06F9/source/480x600-emailing-trigger-zone/?extent=3Dtrue"=
+ style=3D"border:none;display:inline-block" width=3D"240" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+
+=09=09=09=09=09=09<table align=3D"right" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" width=3D"240=
+">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td class=3D"m_h0px t_h0px" height=3D"300" valig=
+n=3D"middle">
+=09=09=09=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter t_pt30=
+px t_pr20px t_pl20px m_tacenter m_pt30px m_pr20px m_pl20px" style=3D"paddin=
+g-top:0;padding-bottom:15px;color:#051039;font-family: Arial,sans-serif;fon=
+t-size:20px;font-weight:400;text-align:left;line-height:24px;mso-line-heigh=
+t-rule:exactly;text-transform:initial;"><a href=3D"https://links.mail.enews=
+-airfrance.com/els/v2/pNDNc2Ar6aJe/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9h=
+MHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t=
+4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1J=
+WWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOE=
+QwdVlYWHo3KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQV=
+ndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRF=
+SVRyRDhYOUppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk4=
+5LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE=
+_CN00005325|s=3DBODY|z=3DBUSINESS" style=3D"text-decoration:none;color:#051=
+039"  |href=3D"https://www.airfrance.ke/exchange/deeplink?language=3Den&cou=
+ntry=3DKE&target=3D/deals&cabin=3DBUSINESS&tripType=3DALL&originCode=3DNBO&=
+originType=3DAIRPORT&utm_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NL=
+T_CNV_RendezVous_CN00005325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpc=
+M2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263=
+f1f80359ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSINESS" style=3D"t=
+ext-decoration:none;color:#051039"  |href=3D"https://www.airfrance.ke/excha=
+nge/deeplink?language=3Den&country=3DKE&target=3D/deals&cabin=3DBUSINESS&tr=
+ipType=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3DEML&utm_sou=
+rce=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&utm_term=3DFB=
+&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a876169371=
+35fa9f882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN00005325|s=
+=3DBODY|z=3DBUSINESS" style=3D"text-decoration:none;color:#051039"  >Your c=
+omfort, our priority</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter t_pb25=
+px m_tacenter m_pb25px" style=3D"color:#051039;font-family: Arial,sans-seri=
+f;font-size:14px;font-weight:400;text-align:left;line-height:24px;mso-line-=
+height-rule:exactly;text-transform:initial;padding-bottom:15px"><a href=3D"=
+https://links.mail.enews-airfrance.com/els/v2/pNDNc2Ar6aJe/bkRkL3VRS2tWcXFp=
+bk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1d=
+VVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cE5=
+KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBdnNIWUVZaG9hNmVsdj=
+VMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3lORURzbkJuVjVnNlczc2hSd=
+itZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXdNK2k0bjhIeXJESEdi=
+aytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d050YVR1R0ZiOW5uZ0VlUXJ=
+BZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvTUluRFNDMFZ5UjZTb1=
+dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSINESS" style=3D"text-de=
+coration:none;color:#051039"  |href=3D"https://www.airfrance.ke/exchange/de=
+eplink?language=3Den&country=3DKE&target=3D/deals&cabin=3DBUSINESS&tripType=
+=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3DEML&utm_source=3D=
+UNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&utm_term=3DFB&GIN_C=
+RYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f=
+882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|=
+z=3DBUSINESS" style=3D"text-decoration:none;color:#051039"  |href=3D"https:=
+//www.airfrance.ke/exchange/deeplink?language=3Den&country=3DKE&target=3D/d=
+eals&cabin=3DBUSINESS&tripType=3DALL&originCode=3DNBO&originType=3DAIRPORT&=
+utm_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00=
+005325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HAS=
+H=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263f1f80359ea3283" name=
+=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSINESS" style=3D"text-decoration:none;=
+color:#051039"  >In the Business cabin, your seat becomes full-flat bed to =
+ensure your utmost comfort.</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"t_tacenter m_tace=
+nter"><a href=3D"https://links.mail.enews-airfrance.com/els/v2/pNDNc2Ar6aJe=
+/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1=
+ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsd=
+Gg0citsZz09S0/cE5KMFhnU2dMNFA5QkZMTzlQN1JWWGVxSVBaV1ZnWTFscWZKbEZibW93WXpBd=
+nNIWUVZaG9hNmVsdjVMb2RscXlNRlpHVXZJSFQyOEQwdVlYWHo3KzRZS0FHaTArbXovK3lORURz=
+bkJuVjVnNlczc2hSditZZHBQempPdDJycWFHZGVQVndHaWpwaFdnSzhCVDdrZnpnQk16SFNDMXd=
+NK2k0bjhIeXJESEdiaytRTjVkNHNTS0E4K29TWnRFSVRyRDhYOUppTm80dUd5T3VyNmE5d050YV=
+R1R0ZiOW5uZ0VlUXJBZ1lBM2lLQ09LUkt4OW56Sk45LzV6VEl3c0QxaXBOZnV6UTRiejRUZUtvT=
+UluRFNDMFZ5UjZTb1dweVpoS0" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSINESS"=
+ style=3D"display: inline-block;vertical-align: middle;color: #051039 !impo=
+rtant;text-decoration:underline !important;font-family: Arial,sans-serif !i=
+mportant;font-size:16px !important;line-height:16px !important;font-weight:=
+700 !important;mso-line-height-rule:exactly;"  |href=3D"https://www.airfran=
+ce.ke/exchange/deeplink?language=3Den&country=3DKE&target=3D/deals&cabin=3D=
+BUSINESS&tripType=3DALL&originCode=3DNBO&originType=3DAIRPORT&utm_medium=3D=
+EML&utm_source=3DUNI&utm_campaign=3DKE_NLT_CNV_RendezVous_CN00005325_ECO&ut=
+m_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZw%3D%3D&EMAIL_HASH=3D1634b6a46=
+0a87616937135fa9f882b5cfdcc881f928e122263f1f80359ea3283" name=3D"I=3DKE_CN0=
+0005325|s=3DBODY|z=3DBUSINESS" style=3D"display: inline-block;vertical-alig=
+n: middle;color: #051039 !important;text-decoration:underline !important;fo=
+nt-family: Arial,sans-serif !important;font-size:16px !important;line-heigh=
+t:16px !important;font-weight:700 !important;mso-line-height-rule:exactly;"=
+  |href=3D"https://www.airfrance.ke/exchange/deeplink?language=3Den&country=
+=3DKE&target=3D/deals&cabin=3DBUSINESS&tripType=3DALL&originCode=3DNBO&orig=
+inType=3DAIRPORT&utm_medium=3DEML&utm_source=3DUNI&utm_campaign=3DKE_NLT_CN=
+V_RendezVous_CN00005325_ECO&utm_term=3DFB&GIN_CRYPT=3DflgCjViqISKwUsJpcM2QZ=
+w%3D%3D&EMAIL_HASH=3D1634b6a460a87616937135fa9f882b5cfdcc881f928e122263f1f8=
+0359ea3283" name=3D"I=3DKE_CN00005325|s=3DBODY|z=3DBUSINESS" style=3D"displ=
+ay: inline-block;vertical-align: middle;color: #051039 !important;text-deco=
+ration:underline !important;font-family: Arial,sans-serif !important;font-s=
+ize:16px !important;line-height:16px !important;font-weight:700 !important;=
+mso-line-height-rule:exactly;"  >Find out more <img alt=3D"" height=3D"16" =
+src=3D"https://img.static-af.com/images/media/82E4D2BE-9D5F-4F4A-8A647B8A24=
+1A3F01/" style=3D"display: inline-block;vertical-align: bottom;" width=3D"1=
+6" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"present=
+ation" style=3D"margin:auto;width:100%" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- FIN Trigger --><!--HR-->
+
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"=
+width:640px;border-top:1px solid #e8e5e5" width=3D"612">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td height=3D"40">&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!--HR-->
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"t_w100p m_w100p" id=3D"af_main_wrapper" style=3D"background-color: #=
+ffffff;margin-left:auto !important;margin-right :auto !important;" width=3D=
+"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td style=3D"padding-bottom: 10px">
+=09=09=09<div class=3D"droppable" id=3D"email_satisfaction">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" width=3D"640">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"auto">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"padding-bottom:8px=
+;"><a   name=3D"feedback_usabilla_com_index_ht" href=3D"https://links.mail.=
+enews-airfrance.com/els/v2/vNkNcd3WLDMb/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJ=
+pOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG=
+5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/NFgzV09FU3B4cVNlMzZPZn=
+grTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0U3aVdaYmJ5bEZRKzlzSEVLQUs2OWVLS=
+HNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" style=3D"color:#051039 !important;font-f=
+amily: Arial,sans-serif !important;font-size:13px !important;font-weight:70=
+0 !important;text-align:center !important;line-height:15px !important;mso-l=
+ine-height-rule:exactly !important;text-transform:initial !important;text-d=
+ecoration: none !important;" target=3D"_blank" title=3D"How do you rate thi=
+s email?">How do you rate this email? </a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"email_satisfaction=
+_usabilla">
+=09=09=09=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"auto">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td><a aria-label=3D"Ennuyant" href=3D"=
+https://links.mail.enews-airfrance.com/els/v2/rNPNce~GzRcr/bkRkL3VRS2tWcXFp=
+bk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1d=
+VVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/NFg=
+zV09FU3B4cVNlMzZPZngrTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0U3aVdaYmJ5bE=
+ZRKzlzSEVLQUs2OWVLSHNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" name=3D"I=3DKE_CN0000=
+5325|s=3DBODY|z=3Dusabillia_urlMood1" style=3D"font-size: 0 !important;" ><=
+img alt=3D"mood1" class=3D"t_w35px m_w35px" src=3D"https://img.static-af.co=
+m/images/media/D8E4733F-E3FC-4B21-B27690A359FA1187/" style=3D"display: inli=
+ne-block;vertical-align: middle" width=3D"24" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td><a aria-label=3D"Peu int=C3=A9ressa=
+nt" href=3D"https://links.mail.enews-airfrance.com/els/v2/j9D9trWXPas7/bkRk=
+L3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVV=
+PUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0ci=
+tsZz09S0/NFgzV09FU3B4cVNlMzZPZngrTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0=
+U3aVdaYmJ5bEZRKzlzSEVLQUs2OWVLSHNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" name=3D"I=
+=3DKE_CN00005325|s=3DBODY|z=3Dusabillia_urlMood2" style=3D"font-size: 0 !im=
+portant;" ><img alt=3D"Not really" class=3D"t_w35px m_w35px" src=3D"https:/=
+/img.static-af.com/images/media/949AC6D3-C5C5-47C5-B0701CD7E9C818E7/" style=
+=3D"display: inline-block;vertical-align: middle" width=3D"24" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td><a aria-label=3D"Neutre" href=3D"ht=
+tps://links.mail.enews-airfrance.com/els/v2/RZeZFbEy38sd/bkRkL3VRS2tWcXFpbk=
+9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVV=
+itHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/NFgzV=
+09FU3B4cVNlMzZPZngrTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0U3aVdaYmJ5bEZR=
+KzlzSEVLQUs2OWVLSHNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" name=3D"I=3DKE_CN000053=
+25|s=3DBODY|z=3Dusabillia_urlMood3" style=3D"font-size: 0 !important;" ><im=
+g alt=3D"Neutral" class=3D"t_w35px m_w35px" src=3D"https://img.static-af.co=
+m/images/media/753219D4-8714-4C5F-AD2FD65C5138A4DA/" style=3D"display: inli=
+ne-block;vertical-align: middle" width=3D"24" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td><a aria-label=3D"Satisfaisant" href=
+=3D"https://links.mail.enews-airfrance.com/els/v2/eb8bMkdveRTp/bkRkL3VRS2tW=
+cXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUV=
+GU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0=
+/NFgzV09FU3B4cVNlMzZPZngrTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0U3aVdaYm=
+J5bEZRKzlzSEVLQUs2OWVLSHNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" name=3D"I=3DKE_CN=
+00005325|s=3DBODY|z=3Dusabillia_urlMood4" style=3D"font-size: 0 !important;=
+" ><img alt=3D"Good" class=3D"t_w35px m_w35px" src=3D"https://img.static-af=
+.com/images/media/95A83772-3471-43B9-847F11ED5CA10860/" style=3D"display: i=
+nline-block;vertical-align: middle" width=3D"24" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td><a aria-label=3D"G=C3=A9nial" href=
+=3D"https://links.mail.enews-airfrance.com/els/v2/z9y9t~XAEVfD/bkRkL3VRS2tW=
+cXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUV=
+GU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0=
+/NFgzV09FU3B4cVNlMzZPZngrTEpFMXErdzBqM1VsSzMrTXJHYmQxOXpJdkFyZ044Z0U3aVdaYm=
+J5bEZRKzlzSEVLQUs2OWVLSHNSaEg5WUlhUVQrU0NQTWlZMUUreWNRS0" name=3D"I=3DKE_CN=
+00005325|s=3DBODY|z=3Dusabillia_urlMood5" style=3D"font-size: 0 !important;=
+" ><img alt=3D"Very good" class=3D"t_w35px m_w35px" src=3D"https://img.stat=
+ic-af.com/images/media/F12E9376-4CF0-476E-896F2C9A5ACF8C6D/" style=3D"displ=
+ay: inline-block;vertical-align: middle" width=3D"24" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</div>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<span class=3D"droppable" id=3D"14-FB">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"t_w100p m_w100p" style=3D"margin:auto;width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td>
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"margin:auto=
+;width:640px" width=3D"640">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>
+=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" id=3D"af_main_wrapper" style=3D"margin-left:auto !important=
+;margin-right :auto !important;background-color:#ffffff;background-image:li=
+near-gradient(#ffffff,#ffffff);" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td class=3D"af_plr_20" style=3D"padding-top: 24=
+px;padding-bottom: 34px"><!--MEGAPUSH-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"background-color: #032F54 !important;" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"af_push_mega" style=3D"margin: 0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_push_blue_imag=
+e" valign=3D"top" width=3D"300"><a href=3D"https://links.mail.enews-airfran=
+ce.com/els/v2/KyEyfrEbYRsV/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4=
+a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHV=
+uTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/VlZVRmpHZzBSN29mSExsZmhjaE0wOFNodjc=
+2dGJPWTZ6cG1DbUROeUZxZ1h4dWUvaTFlczZZeGlsNWxHZHRKYURnV3hoenJKd2ZDQzVXWG05Z2=
+dmbFR6dmxMSXZmd3hYZzFkTVU2OEEzUnlMZzBMVjd4TkJWUnZxdWc2SThlMWZMOFlOVTRHc2NsR=
+XlRb0dsajRJbVJ5L2RuUkk4eVhLWXk3a1lzS2k3MkloMXlkYktNLzIyaHBDSlFIaFhrcW1Vd3ly=
+YXBBb1plZDdLd0NXZWJRd2t4SG1GMW5FWnBLQXRLaW5IbDh0YWw5anp4bXNHRVJ2aFp3bkViM0V=
+oaFIvaS9HUDRxSUNuMmRBcXJkYkRWOGlWUFo5ZVl1ZEFhR3FGS0" name=3D"l=3DFR|s=3DFLY=
+INGBLUE|z=3DMember" style=3D"color:#000000;outline:none;border:none" ><img =
+alt=3D"" height=3D"260" src=3D"https://img.static-af.com/images/media/83DD8=
+F1A-9D7A-4CFD-A4CBC4B4BABB3B65/?extent=3Dtrue" width=3D"300" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_push_blue af_i=
+mage_left" style=3D"background-color: #032F54;width: 100%;" valign=3D"middl=
+e">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"background-color: #032F54" width=3D"10=
+0%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"m_dnone"=
+ style=3D"font-size: 0;height: 24px">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" cl=
+ass=3D"af_push_blue_content" style=3D"vertical-align: middle;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"margin: 0;" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D=
+"left" class=3D"af_push_mega__title_bis" style=3D"padding: 5px 0 0 0;color:=
+#FFFFFF;font-family: Arial,sans-serif;font-size:20px;font-weight:400;text-a=
+lign:left;line-height:23px;mso-line-height-rule:exactly;">Flying Blue Explo=
+rer</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D=
+"left" class=3D"af_push_mega__title" style=3D"padding:4px 0 4px 0;color:#FF=
+FFFF;font-family: Arial,sans-serif;font-size:10px;font-weight:700;text-alig=
+n:left;line-height:12px;mso-line-height-rule:exactly;letter-spacing: 0.85px=
+;text-transform: uppercase">XXXXXX0754</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D=
+"left" class=3D"af_push_mega__title_text" style=3D"padding: 14px 0 0 0;colo=
+r:#FFFFFF;font-family: Arial,sans-serif;font-size:13px;font-weight:400;text=
+-align:left;line-height:17px;mso-line-height-rule:exactly;letter-spacing: 0=
+.85px">MS Kariuki GRACE NYAWIRA<br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09To learn mor=
+e about your Flying Blue benefits and view your activity overview, please v=
+isit your profile page.</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D=
+"left" style=3D"padding: 16px 10px 0 0;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=
+=3D"left" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td=
+ align=3D"center" bgcolor=3D"#032F54" style=3D"padding: 0;border:1px solid =
+#ffffff !important;"><a href=3D"https://links.mail.enews-airfrance.com/els/=
+v2/KyEyfrEbYRsV/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJ=
+hVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMG=
+RHa3o0VlNoVTZsdGg0citsZz09S0/VlZVRmpHZzBSN29mSExsZmhjaE0wOFNodjc2dGJPWTZ6cG=
+1DbUROeUZxZ1h4dWUvaTFlczZZeGlsNWxHZHRKYURnV3hoenJKd2ZDQzVXWG05Z2dmbFR6dmxMS=
+XZmd3hYZzFkTVU2OEEzUnlMZzBMVjd4TkJWUnZxdWc2SThlMWZMOFlOVTRHc2NsRXlRb0dsajRJ=
+bVJ5L2RuUkk4eVhLWXk3a1lzS2k3MkloMXlkYktNLzIyaHBDSlFIaFhrcW1Vd3lyYXBBb1plZDd=
+Ld0NXZWJRd2t4SG1GMW5FWnBLQXRLaW5IbDh0YWw5anp4bXNHRVJ2aFp3bkViM0VoaFIvaS9HUD=
+RxSUNuMmRBcXJkYkRWOGlWUFo5ZVl1ZEFhR3FGS0" name=3D"l=3DFR|s=3DFLYINGBLUE|z=
+=3DMember" style=3D"display:inline-block !important;width:auto !important;b=
+ackground-color: #032F54 !important;border:1px solid #032F54 !important;pad=
+ding: 12px 12px !important;color:#ffffff !important; text-decoration:none !=
+important;font-family: Arial,sans-serif !important;font-size:13px !importan=
+t;font-weight:700 !important;text-align:center;line-height:15px !important;=
+mso-line-height-rule:exactly !important;text-transform:initial !important;"=
+ >View my profile</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-siz=
+e: 0;height: 24px">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td><!--FOOTER - CORPORATE -->
+=09=09=09=09=09=09=09=09=09<div class=3D"droppable" id=3D"email_footer">
+=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_plr_20">
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"padding:=
+ 32px 0; border-top: 1px solid #e8e5e5;border-bottom: 1px solid #e8e5e5;"><=
+a href=3D"https://links.mail.enews-airfrance.com/els/v2/k_D_s~j2eafp/bkRkL3=
+VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPU=
+XZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0cits=
+Zz09S0/VTdFZUs0VkRWWkc0clVncTRuNDdYbE1CNWNJTTlHb1oS1" name=3D"wwws_airfranc=
+e_fr_exchange_dee" target=3D"_blank" ><img alt=3D"AIR FRANCE" class=3D"af_i=
+mg_center" height=3D"21" src=3D"https://img.static-af.com/images/media/2123=
+C21F-3D8B-4261-BB98A25655C5D0EC/?extent=3Dtrue" width=3D"175" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_foote=
+r_marge_contact" style=3D"padding-top: 35px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"af_footer_contact_content" widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td=
+ class=3D"af_contact_cells af_left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td class=3D"af_left" style=3D"color:#051039;font-family: Arial,sans-=
+serif;font-size:13px;font-weight:700;text-align:left;line-height:24px;mso-l=
+ine-height-rule:exactly;text-transform:initial;padding-bottom: 0px">Follow =
+us</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td class=3D"af_left af_pt_5 af_pb_0" style=3D"padding: 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"left" class=3D"af_pr_15"><a href=3D"https://lin=
+ks.mail.enews-airfrance.com/els/v2/w_r_spaEgDBG/bkRkL3VRS2tWcXFpbk9MR3pUbnM=
+4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOG=
+F4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"www_=
+facebook_com_airfrance" ><img alt=3D"Facebook" height=3D"30" src=3D"https:/=
+/img.static-af.com/images/media/71216F50-9BF1-4679-B6892A1CB9FB9807/" width=
+=3D"30" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"left" class=3D"af_pr_15"><a href=3D"https://lin=
+ks.mail.enews-airfrance.com/els/v2/9z2zcXzpmkh7/bkRkL3VRS2tWcXFpbk9MR3pUbnM=
+4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOG=
+F4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"www_=
+youtube_com_airfrance" ><img alt=3D"Youtube" height=3D"30" src=3D"https://i=
+mg.static-af.com/images/media/75FE9F4A-E75A-4CAD-A88BDB9D20055C58/" width=
+=3D"30" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"left" class=3D"af_pr_15"><a href=3D"https://lin=
+ks.mail.enews-airfrance.com/els/v2/Zz4zcj2vKyh_/bkRkL3VRS2tWcXFpbk9MR3pUbnM=
+4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOG=
+F4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"www_=
+instagram_com_airfrance_" ><img alt=3D"Instagram" height=3D"30" src=3D"http=
+s://img.static-af.com/images/media/FCBCB261-CB25-48D6-A999E45CC802E64C/" wi=
+dth=3D"30" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"left" class=3D"af_pr_15"><a href=3D"https://lin=
+ks.mail.enews-airfrance.com/els/v2/~NANcqpR9VT3/bkRkL3VRS2tWcXFpbk9MR3pUbnM=
+4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOG=
+F4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"www_=
+tiktok_com__airfrance_lang" ><img alt=3D"Tiktok" height=3D"30" src=3D"https=
+://img.static-af.com/images/media/C1F88757-1864-4FC9-A6AB0D2EDBEEC88A/" wid=
+th=3D"30" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</t=
+able>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</t=
+d>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td=
+ class=3D"af_contact_cells af_right" style=3D"padding-bottom: 0 !important;=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td class=3D"af_right" style=3D"color:#051039;font-family: Arial,sans=
+-serif;font-size:13px;font-weight:700;text-align:left;line-height:24px;mso-=
+line-height-rule:exactly;text-transform:initial;padding-bottom: 0px">Contac=
+t us</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td class=3D"af_right af_pt_5 af_pb_0" style=3D"padding: 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<table cellpadding=3D"0" cellspacing=3D"0" class=3D"af_float_right">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"right" class=3D"af_pl_15"><a href=3D"https://li=
+nks.mail.enews-airfrance.com/els/v2/0424BzKbrjsg/bkRkL3VRS2tWcXFpbk9MR3pUbn=
+M4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtO=
+GF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/cHVjcS94MmpDS=
+3RYN0dOQlRDMWkwQkdHTFIxcWRTZE11WXVmd3lqMVJ5ekI2YnBoV1R6TVNFWVNSVUQwQmg4WUxQ=
+SktwdHdjdTN6eFNVMHZiZ3Naa0Z2UDFOemhxWWY3WDJRQjZ5ZmNLY2tTM2ZTeVpBaEJ5YVd3aEZ=
+TL3JueHB2a1gvS1dtK2tjbkRINTRxMTdPTmxQNUtBN1p0T29YaVFJdW5xb2lSVXowQ3FPVi8yeW=
+t0bHhsUW5wZk5KdUJEZWJDUHVUNjNhcmd0M1Q2a3VpS09RUVY0dVpBTGJqbGtwd3N1NjRZdkVLM=
+kg3TXozNEpwNWZlZ1NXeStVT3hyQ1hkNWF6L09LWDkxWkFYblRabXg2NEF1UjF6K3k4SUdBZzdH=
+MGRhTDZXNGhpRE9LY3pEM3B0eWhVNDJWcmRjQXlqVzdNOWRZdzNrdkc2SU9uT1ZPak83M0NZTzJ=
+jZ0d3dHNHTVdTRkV5M2ZKNFZEbGk5eUlZQnd6ZXdremYvZGk2S0" name=3D"__URL_CONTACT_=
+__utm_medium_EML" ><img alt=3D"Phone" height=3D"30" src=3D"https://img.stat=
+ic-af.com/images/media/BBFB7C74-2EF8-4D95-A31EB92DE56AE30C/" width=3D"30" /=
+> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"right" class=3D"af_pl_15"><a href=3D"https://li=
+nks.mail.enews-airfrance.com/els/v2/amvmfV_vg8Q9/bkRkL3VRS2tWcXFpbk9MR3pUbn=
+M4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtO=
+GF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"fly=
+ingbluecom" ><img alt=3D"Messenger" height=3D"30" src=3D"https://img.static=
+-af.com/images/media/A3EB67C0-B29F-4DDE-94A587DD63EA1B92/" width=3D"30" /> =
+</a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"right" class=3D"af_pl_15"><a href=3D"https://li=
+nks.mail.enews-airfrance.com/els/v2/Ap6pMAg79_sx/bkRkL3VRS2tWcXFpbk9MR3pUbn=
+M4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtO=
+GF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"api=
+_whatsapp_com_send_phone_33" ><img alt=3D"Whatsapp" height=3D"30" src=3D"ht=
+tps://img.static-af.com/images/media/B3680209-13E8-41B8-BA5E9C5A03B6B10D/" =
+width=3D"30" /> </a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"right" class=3D"af_pl_15"><a href=3D"https://li=
+nks.mail.enews-airfrance.com/els/v2/EZ0ZFvL-Y8Fx/bkRkL3VRS2tWcXFpbk9MR3pUbn=
+M4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtO=
+GF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/" name=3D"fly=
+ingbluecom_1" ><img alt=3D"" height=3D"30" src=3D"https://img.static-af.com=
+/images/media/B9A1E893-A347-484D-83CA348A009F0AC1/" width=3D"30" /> </a></t=
+d>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<!-- <td align=3D"right"
+                                                                           =
+                         class=3D"af_pl_15">
+                                                                           =
+                         <a   name=3D"wwws_airfrance_fr_" href=3D"https://l=
+inks.mail.enews-airfrance.com/els/v2/-L2LsdX~KDMK/bkRkL3VRS2tWcXFpbk9MR3pUb=
+nM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVHZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJt=
+OGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa3o0VlNoVTZsdGg0citsZz09S0/VTdFZUs0VkRW=
+Wkc0clVncTRuNDdYbE1CNWNJTTlHb1oS1"
+
+                                                                           =
+                            >
+                                                                           =
+                             <img src=3D"https://img.static-af.com/images/m=
+edia/6858340A-6C42-416D-A203B794C222136B/"
+                                                                           =
+                                  width=3D"30"
+                                                                           =
+                                  height=3D"30"
+                                                                           =
+                                  alt=3D"Wechat">
+                                                                           =
+                         </a>
+                                                                           =
+                     </td>
+
+                                                                           =
+                     <td align=3D"right"
+                                                                           =
+                         class=3D"af_pl_15">
+                                                                           =
+                         <a   name=3D"wwws_airfrance_fr_" href=3D"https://w=
+wws.airfrance.fr/exchange/deeplink?language=3Den&country=3DKE&target=3D/hom=
+e"
+
+                                                                           =
+                            >
+                                                                           =
+                             <img src=3D"https://img.static-af.com/images/m=
+edia/3879E196-C03C-4197-8021BE6E8B1A8A72/"
+                                                                           =
+                                  width=3D"30"
+                                                                           =
+                                  height=3D"30"
+                                                                           =
+                                  alt=3D"Kakaotalk">-->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</t=
+able>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</t=
+d>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+</span> <span class=3D"droppable" id=3D"15-TITLE_FOOTER">&nbsp;</span> <spa=
+n class=3D"droppable" id=3D"16-FOOTER"> &nbsp;</span> <!-- BEGIN AIRFRANCE =
+FOOTER BLOCK -->
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"t_w100p m_w100p" style=3D"margin:auto;width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td>
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"margin:auto=
+;width:640px" width=3D"640">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-family:Arial,Helvetica,sans-serif;color=
+:#666666;text-align:left;font-size:11px;padding-top:20px;padding-right:20px=
+;padding-bottom:20px;padding-left:20px;vertical-align:middle;line-height:18=
+px">* Terms &amp; Conditions</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- END AIRFRANCE FOOTER BLOCK --> <span class=3D"droppable" id=3D"18-CNIL=
+">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"t_w100p m_w100p" style=3D"margin:auto;width:640px" width=3D"640">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td>
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"t_w100p m_w100p" role=3D"presentation" style=3D"margin:auto=
+;width:640px" width=3D"640">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>
+=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" id=3D"af_main_wrapper" style=3D"margin-left:auto !important=
+;margin-right :auto !important;background-color:#ffffff;background-image:li=
+near-gradient(#ffffff,#ffffff);" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td><!--FOOTER - CORPORATE -->
+=09=09=09=09=09=09=09=09=09<div class=3D"droppable" id=3D"email_footer">
+=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_plr_20">
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"af_foote=
+r_marge_contact" style=3D"padding-top: 30px;padding-bottom: 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"margin:0;=
+color:#707070;font-family: Arial,sans-serif;font-size:11px;font-weight:400;=
+text-align:left;line-height:15px;mso-line-height-rule:exactly;text-transfor=
+m:initial;">This email has been sent automatically. Please do not reply.<br=
+ />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09In accordance with th=
+e regulations applicable to the protection of personal data, in particular,=
+ the provisions of the French Data Protection Act of January 6, 1978, as am=
+ended, and the General Data Protection Regulation (EU Regulation 2016/679),=
+ you have the right to access, rectify, delete, object to and limit the pro=
+cessing of your personal data. For more information on the processing of yo=
+ur personal data and how to exercise your rights, you can consult Air Franc=
+e&#39;s Privacy Policy. If you no longer wish to receive this type of email=
+ from Air France, <a href=3D"https://links.mail.enews-airfrance.com/els/v2/=
+_4E4BqaR3XT6/bkRkL3VRS2tWcXFpbk9MR3pUbnM4TzEwMHJpOU9hMHNVWUE4a3ZNeTF2TkJhVH=
+ZIUktrMUR4a1ZCQVVPUXZWNUVGU1dVVitHUFJtOGF4NHpuNG5IU0t4YmJmSHVuTzkxWkUxMGRHa=
+3o0VlNoVTZsdGg0citsZz09S0/bUpndnBjc01Ic2J4K0Y3YXhnM3FWK01WajczNWNQdFVxcUduU=
+mxTQXI2NDNjKy90MDZiZG81RU1Ob1BzVzVJbjlsRG9XWDRncDVQYXJ3aCtjSGpxYjdiVGJPcFIy=
+N2p0aFJqUEo4N0FLckdOdE05THNKU3JnM0tuUFFtcmJjMU5CdDJUMTV5RVB6bVF3V1pTMUJBTlV=
+hQU1CVVJlRWhMM0VwNWk4RlgzeXU0RVVZZGlyOE5LRDdoamR2SC9PalZWY2c3N3BSTi9yQnN5cF=
+pEbytvVDZWM0tmMGxabGkrZU9heXdqYUFTbjJFb293L2dTZjM5U0tFUForZUI5bWlaVzFXQWU2O=
+WVmNjUwPQS2" name=3D"l=3DFR|s=3DFOOTER|z=3DChurn" style=3D"color:#666666;te=
+xt-decoration:underline" >click here. </a><br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Soci=C3=A9t=C3=A9 Air=
+ France, Soci=C3=A9t=C3=A9 anonyme with capital of 300,219,278 euros RCS de=
+ Bobigny (France) 420 495 178 - 45, rue de Paris, 95747 Roissy CDG CEDEX. A=
+ll rights reserved.</p>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+</span></span></td>
+=09=09</tr>
+=09
+</table>
+<style data-ignore-inlining=3D"" litmus=3D"true" type=3D"text/css">@media (=
+prefers-color-scheme: dark) { #_t::before {content:url('https://o1xveyzn.em=
+ltrk.com/v2/o1xveyzn?rd&d=3DMTg5MTEyODM4NjM0NQS2:19062683:30757974:MjY1MTgz=
+NzkwNgS2');}} @media (prefers-color-scheme: light) { #_t::before {content:u=
+rl('https://o1xveyzn.emltrk.com/v2/o1xveyzn?rl&d=3DMTg5MTEyODM4NjM0NQS2:190=
+62683:30757974:MjY1MTgzNzkwNgS2');}} @media print{ #_t {background-image:ur=
+l('https://o1xveyzn.emltrk.com/v2/o1xveyzn?p&d=3DMTg5MTEyODM4NjM0NQS2:19062=
+683:30757974:MjY1MTgzNzkwNgS2');}} div.OutlookMessageHeader {background-ima=
+ge:url('https://o1xveyzn.emltrk.com/v2/o1xveyzn?f&d=3DMTg5MTEyODM4NjM0NQS2:=
+19062683:30757974:MjY1MTgzNzkwNgS2')} table.moz-email-headers-table {backgr=
+ound-image:url('https://o1xveyzn.emltrk.com/v2/o1xveyzn?f&d=3DMTg5MTEyODM4N=
+jM0NQS2:19062683:30757974:MjY1MTgzNzkwNgS2')} blockquote #_t {background-im=
+age:url('https://o1xveyzn.emltrk.com/v2/o1xveyzn?f&d=3DMTg5MTEyODM4NjM0NQS2=
+:19062683:30757974:MjY1MTgzNzkwNgS2')} #MailContainerBody #_t {background-i=
+mage:url('https://o1xveyzn.emltrk.com/v2/o1xveyzn?f&d=3DMTg5MTEyODM4NjM0NQS=
+2:19062683:30757974:MjY1MTgzNzkwNgS2')}
+</style>
+<div id=3D"_t">&nbsp;</div>
+<img alt=3D"" border=3D"0" height=3D"1"  src=3D"https://o1xveyzn.emltrk.com=
+/v2/o1xveyzn?d=3DMTg5MTEyODM4NjM0NQS2:19062683:30757974:MjY1MTgzNzkwNgS2" w=
+idth=3D"1" /><grammarly-desktop-integration data-grammarly-shadow-root=3D"t=
+rue"></grammarly-desktop-integration><IMG src=3D"https://open.mkt61.net/eos=
+/v1/ZVdORm1pKy9uUEJtUzVsWlEvTXdIdUNMYnRKSlBOUXV0Z21MMVFzQU9Fc0wyUXdsbmlFbUF=
+CMC9KZEMyTWhCcHJGWFdBdzVWWWRDR3FudU1XQWxrTnVxeWl0OUNybS9TS1ZRMko2NFdtL0RZbz=
+NRbGRPYUNaenF4RWFPUDFjNU9ZZjErdGZvcDVhR2E2T3dzOGR5eC8rTS9MQjFqcmNtbk9FZ211W=
+mRpSlpydHFoZGJkZTU2Z0E9PQS2" style=3D"display: none"></body>
+</html>
+
+
+
+------=_Part_518722_1031389880.1740481210824--
+

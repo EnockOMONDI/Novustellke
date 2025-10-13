@@ -1,0 +1,725 @@
+Return-Path: <SarovaAvailability@sarovahotels.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id WFJ6OhxAC2hx4ysAObGTvA
+	(envelope-from <SarovaAvailability@sarovahotels.com>)
+	for <novuste1@rs2.hpcnoc.com>; Fri, 25 Apr 2025 10:56:12 +0300
+Return-path: <SarovaAvailability@sarovahotels.com>
+Envelope-to: caleb@novustelltravel.com
+Delivery-date: Fri, 25 Apr 2025 10:56:12 +0300
+Received: from mail.sarovahotels.com ([41.139.240.170]:15399 helo=SHLTrustwave.sarova.co.ke)
+	by rs2.hpcnoc.com with smtp (Exim 4.98.1)
+	(envelope-from <SarovaAvailability@sarovahotels.com>)
+	id 1u8Dut-0000000C3al-1u9x;
+	Fri, 25 Apr 2025 10:56:12 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sarovahotels.com;
+	s=mm1024130924; t=1745567293;
+	bh=Oho/Gqq6GwOGLjdQTbnCbnqQWLIWVthOFQ0LyHkDq9M=;
+	h=From:Subject:Date:References:In-Reply-To:To;
+	b=EiBRC6P0gPcNL5wFku68QjeepCwooL5TIYZZPXqFiGmPhd9McwPs1U3/S80qb9uz5
+	 dp2+S3QoDQdBvSNMy/tZ/MIqDWHSRxgnKB8vYgT2nBs57DM7YnkUFJg6IyRmkCO5kc
+	 sHvt/Ylk0ekdURYymwNtu5nrmuq2+bvSdGdD6thM=
+Received: from shlhub.sarova.co.ke (Not Verified[10.110.120.206]) by SHLTrustwave.sarova.co.ke with Trustwave MailMarshal (v10,0,5,3470)
+	id <B680b3e3d0000>; Fri, 25 Apr 2025 10:48:13 +0300
+Received: from SHLE13SVR03.sarova.co.ke (10.110.120.155) by
+ SHL-MAIL.sarova.co.ke (10.110.120.206) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.1.2242.12; Fri, 25 Apr 2025 10:49:42 +0300
+Received: from SHL-MAIL.sarova.co.ke (10.110.120.206) by
+ SHLE13SVR03.sarova.co.ke (10.110.120.155) with Microsoft SMTP Server (TLS) id
+ 15.0.1473.3; Fri, 25 Apr 2025 10:49:40 +0300
+Received: from SHL-MAIL.sarova.co.ke ([::1]) by SHL-MAIL.sarova.co.ke ([::1])
+ with mapi id 15.01.2242.012; Fri, 25 Apr 2025 10:49:40 +0300
+From: Sarova Availability <SarovaAvailability@sarovahotels.com>
+Subject: Availability
+Thread-Topic: Availability
+Thread-Index: AQHbtCVc2hJX8Z5D7EibgrUcNuJgaLOw4wksgAAT/46AAABLUIAAADilgAAAR9mAAAgCPIAAAE3QgAAAfbGAAACeGIAAAzZ4gALeEc2AAAD1loAAAdefgAAAzWKAAACoV4AAFmpwgAABUQeAAAD/cIAAAK+dgAACu7I=
+Date: Fri, 25 Apr 2025 07:49:39 +0000
+Message-ID: <040f1f9c1da54868995049532fa66440@sarovahotels.com>
+References:
+	<0e55aa2be6b84e0ca5ab02e3b69acd13@sarovahotels.com>,<d158142a9d98494d807bde1b929d1015@sarovahotels.com>,<d66313141fd943fe9886069e804cb88e@sarovahotels.com>,<8dd500239bd34c0ead11dc4b84768ee1@sarovahotels.com>,<a6a26f29311b458daf888eb14da929a8@sarovahotels.com>,<e596d77b9248453fb39e37f1f4b2e541@sarovahotels.com>,<f72512b225384e4780f7b958872c1ac5@sarovahotels.com>,<cef71f31fdc74d0cb6a4303a34f5f998@sarovahotels.com>,<48fee47efc464e34953dcf5529362f9e@sarovahotels.com>,<a081a6937ab94b3c91c75f24fc44d711@sarovahotels.com>,<34088d4cabda4893862b14d0fcd7bea1@sarovahotels.com>,<6960c75107dc4e07a9f72807a381fa59@sarovahotels.com>,<a0adf250d2e447efabc06c14877dc45a@sarovahotels.com>,<65fc423d552d4c41b392f8743ec30cf6@sarovahotels.com>,<3d12cef74eaf4ce2bd9ef9b060a261db@sarovahotels.com>,<ac349bff197d4e4299ab6060c742a827@sarovahotels.com>,<5365b8ddf5d4487ebc362eca460f8004@sarovahotels.com>,<eaeee13bbba64880b62a0d0937b3e933@sarovahotels.com>,<3662aacea36d45ceb74fd9bcfde1fa2b@sarovahotels.com>,<07763b59
+	82c9474e9adf30fa19a9a96c@sarovahotels.com>
+In-Reply-To: <07763b5982c9474e9adf30fa19a9a96c@sarovahotels.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.110.120.41]
+Content-Type: multipart/alternative;
+	boundary="_000_040f1f9c1da54868995049532fa66440sarovahotelscom_"
+MIME-Version: 1.0
+To: Undisclosed recipients:;
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Partner, Greetings from Sarova Hotels! Please find the
+    links below for the availability chart and booking engine for Sarova Shaba,
+    Lion Hill, Mara, Imperial, Woodlands, and Whitesands for April, May and June
+    2025: 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [41.139.240.170 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: sarovahotels.com]
+                             [URI: sarova.co.ke]
+                             [URI: trustwave.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: sarovahotels.com]
+                             [URI: www.sarovahotels.com]
+                             [URI: shl-mail.sarova.co.ke]
+                             [URI: www.trustwave.com]
+                             [URI: bookings.sarovahotels.com]
+                             [URI: scanmail.trustwave.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [41.139.240.170 listed in bl.score.senderscore.com]
+  0.0 HTML_FONT_FACE_BAD     BODY: HTML font face is not a word
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.0 PDS_BAD_THREAD_QP_64   Bad thread header - short QP
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [41.139.240.170 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [41.139.240.170 listed in sa-accredit.habeas.com]
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+--_000_040f1f9c1da54868995049532fa66440sarovahotelscom_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Partner,
+
+Greetings from Sarova Hotels!
+
+Please find the links below for the availability chart and booking engine=
+=20for Sarova Shaba, Lion Hill, Mara, Imperial, Woodlands, and Whitesands=
+=20for April, May and June 2025:
+
+
+=20 *   Availability Chart Link: - https://www.sarovahotels.com/availabil=
+ity-chart
+=20 *   Agents Booking Engine:  https://bookings.sarovahotels.com/en/myac=
+count/corporate
+
+
+For booking Sarova properties and forward the reservation voucher to the =
+respective reservation email:
+
+=B7         Sarova Lion Hill Reservations lionhill@sarovahotels.com<mailt=
+o:lionhill@sarovahotels.com>
+=B7         Sarova Panafric Reservations panafric@sarovahotels.com<mailto=
+:panafric@sarovahotels.com>
+=B7         Sarova Shaba Reservations shaba@sarovahotels.com<mailto:shaba=
+@sarovahotels.com>
+=B7         Sarova Imperial imperial@sarovahotels.com<mailto:imperial@sar=
+ovahotels.com>
+=B7         Sarova Whitesands Reservations whitesands@sarovahotels.com<ma=
+ilto:whitesands@sarovahotels.com>
+=B7         Sarova Stanley - Reservations sarovastanley@sarovahotels.com<=
+mailto:sarovastanley@sarovahotels.com>
+=B7         Sarova Mara Reservations mara@sarovahotels.com<mailto:mara@sa=
+rovahotels.com>
+=B7         Sarova Woodlands woodlands@sarovahotels.com<mailto:woodlands@=
+sarovahotels.com>
+
+Happy selling!
+
+
+________________________________
+Kind Regards,
+
+Fridah Nandwa
+Central Reservations Representative
+DL: +254 20 2767214 | Reservations: +254 709 111 000
+E: centralreservations@sarovahotels.com<mailto:centralreservations@sarova=
+hotels.com>
+WWW.SAROVAHOTELS.COM<http://scanmail.trustwave.com/?c=3D5206&d=3Dz-6344gb=
+5BjtqIjaIual7e-J1o8XXw3HPwOF6d2J8A&u=3Dhttp%3a%2f%2fwww%2esarovahotels%2e=
+com%2f>
+
+[https://shl-mail.sarova.co.ke/owa/projection.aspx]  [https://shl-mail.sa=
+rova.co.ke/owa/projection.aspx]   [https://shl-mail.sarova.co.ke/owa/proj=
+ection.aspx]
+
+[/Users/sarovacreative/Library/Containers/com.microsoft.Outlook/Data/Libr=
+ary/Caches/Signatures/signature_1550843869]<http://scanmail.trustwave.com=
+/?c=3D5206&d=3Dz-6344gb5BjtqIjaIual7e-J1o8XXw3HPwOF6d2J8A&u=3Dhttp%3a%2f%=
+2fwww%2esarovahotels%2ecom%2f>
+
+
+
+
+DISCLAIMER: This email and any attachments are confidential and are inten=
+ded solely for the addressee. If you are not the addressee tell the sende=
+r immediately and destroy it. Do not open, read, copy, disclose, use or s=
+tore it in any way, or permit others to do so. Emails are not secure and =
+may suffer errors, viruses, delay, interception, and amendment. Sarova Ho=
+tels does not accept liability for damage caused by this email and may mo=
+nitor email traffic.
+
+#########################################################################=
+############
+Scanned by Trustwave MailMarshal - Trustwave's comprehensive email conten=
+t security solution.=20
+Download a free evaluation of Trustwave MailMarshal at www.trustwave.com
+#########################################################################=
+############
+
+--_000_040f1f9c1da54868995049532fa66440sarovahotelscom_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-885=
+9-1">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;mar=
+gin-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size: 12pt; co=
+lor: rgb(0, 0, 0); font-family: Calibri, Helvetica, sans-serif, EmojiFont=
+, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, NotoColorEmo=
+ji, &quot;Segoe UI Symbol&quot;, &quot;Android Emoji&quot;, EmojiSymbols;=
+">
+<p><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" co=
+lor=3D"#212121"><span style=3D"font-size:10pt">D</span></font><font face=3D=
+"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2"><span style=3D"fon=
+t-size:10pt">ear Partner,</span></font></p>
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<div style=3D"font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;Ap=
+ple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Seg=
+oe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols; font-size:16px=
+">
+<font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt"><font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt"><font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt"><font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt"><font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt">
+<div style=3D"margin-top:0px; margin-bottom:0px"><font face=3D"Century Go=
+thic,sans-serif,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D=
+"font-size:10pt"><br>
+</span></font></div>
+<div><font color=3D"black">
+<div id=3D"divtagdefaultwrapper"><font face=3D"Calibri,Helvetica,sans-ser=
+if,EmojiFont,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Sym=
+bol,Android Emoji,EmojiSymbols" size=3D"3" color=3D"black"><span id=3D"di=
+vtagdefaultwrapper" style=3D"font-size:12pt">
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">Greetings
+=20from Sarova Hotels!</span></font></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">&nbsp;</span></font></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">Please
+=20find the links below for the&nbsp;availability chart and booking engin=
+e for Sarova Shaba, Lion Hill, Mara, Imperial, Woodlands,&nbsp;and&nbsp;W=
+hitesands for&nbsp;April, May and June&nbsp;2025:</span></font></span></f=
+ont></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">&nbsp;</span></font></span></font></div>
+<ul style=3D"margin-top:0px; margin-bottom:0px">
+<font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe WP,Tahoma,Arial,sans-seri=
+f,serif,EmojiFont" size=3D"2" color=3D"#212121"><span style=3D"font-size:=
+15px"></span></font>
+<li style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe =
+WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#212121">=
+<font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" color=
+=3D"black"><span style=3D"font-size:10pt">Availability
+=20Chart Link: -&nbsp;</span></font><a href=3D"https://www.sarovahotels.c=
+om/availability-chart" target=3D"_blank" rel=3D"noopener noreferrer" id=3D=
+"LPlnk212536" previewremoved=3D"true"><font face=3D"Aptos,sans-serif,seri=
+f,EmojiFont" size=3D"3"><span id=3D"LPlnk212536" style=3D"font-size:12pt"=
+><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2"><spa=
+n style=3D"font-size:10pt">https://www.sarovahotels.com/availability-char=
+t</span></font></span></font></a></font></li><li style=3D"margin:0px"><fo=
+nt face=3D"wf_segoe-ui_normal,Segoe UI,Segoe WP,Tahoma,Arial,sans-serif,s=
+erif,EmojiFont" size=3D"2" color=3D"#212121"><font face=3D"Century Gothic=
+,sans-serif,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"fo=
+nt-size:10pt">Agents Booking
+=20Engine:&nbsp;&nbsp;</span></font><a href=3D"https://bookings.sarovahot=
+els.com/en/myaccount/corporate" target=3D"_blank" rel=3D"noopener norefer=
+rer" id=3D"LPlnk365640" previewremoved=3D"true"><font face=3D"Aptos,sans-=
+serif,serif,EmojiFont" size=3D"3"><span id=3D"LPlnk365640" style=3D"font-=
+size:12pt"><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D=
+"2"><span style=3D"font-size:10pt">https://bookings.sarovahotels.com/en/m=
+yaccount/corporate</span></font></span></font></a></font></li></ul>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">&nbsp;</span></font></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">For
+=20booking Sarova properties and forward the reservation voucher to the r=
+espective reservation email:</span></font></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Segoe UI,sans-serif,serif=
+,EmojiFont" size=3D"3" color=3D"#212121"><span style=3D"font-size:11.5pt"=
+>&nbsp;</span></font></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Lion Hill Reservations&nbsp;</span></font><a href=3D"mailto:lionhill@s=
+arovahotels.com" target=3D"_blank" rel=3D"noopener noreferrer"><font face=
+=3D"Aptos,sans-serif,serif,EmojiFont" size=3D"3"><span style=3D"font-size=
+:12pt"><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2=
+" color=3D"#0070C0"><span style=3D"font-size:10pt">lionhill@sarovahotels.=
+com</span></font></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Panafric Reservations&nbsp;</span></font><a href=3D"mailto:panafric@sa=
+rovahotels.com" target=3D"_blank" rel=3D"noopener noreferrer"><font face=3D=
+"Aptos,sans-serif,serif,EmojiFont" size=3D"3"><span style=3D"font-size:12=
+pt"><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" c=
+olor=3D"#0070C0"><span style=3D"font-size:10pt">panafric@sarovahotels.com=
+</span></font></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Shaba Reservations&nbsp;</span></font><a href=3D"mailto:shaba@sarovaho=
+tels.com" target=3D"_blank" rel=3D"noopener noreferrer"><font face=3D"Apt=
+os,sans-serif,serif,EmojiFont" size=3D"3"><span style=3D"font-size:12pt">=
+<font face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" color=
+=3D"#0070C0"><span style=3D"font-size:10pt">shaba@sarovahotels.com</span>=
+</font></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Imperial</span></font><font face=3D"Century Gothic,sans-serif,serif,Em=
+ojiFont" size=3D"2" color=3D"#0F9ED5"><span style=3D"font-size:10pt">&nbs=
+p;</span></font><a href=3D"mailto:imperial@sarovahotels.com" target=3D"_b=
+lank" rel=3D"noopener noreferrer" title=3D"mailto:imperial@sarovahotels.c=
+om=0ACtrl&#43;Click or tap to follow the link"><font face=3D"Aptos,sans-s=
+erif,serif,EmojiFont" size=3D"3"><span style=3D"font-size:12pt"><font fac=
+e=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#0070=
+C0"><span style=3D"font-size:10pt">imperial@sarovahotels.com</span></font=
+></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Whitesands Reservations&nbsp;</span></font><a href=3D"mailto:whitesand=
+s@sarovahotels.com" target=3D"_blank" rel=3D"noopener noreferrer" title=3D=
+"mailto:whitesands@sarovahotels.com=0ACtrl&#43;Click or tap to follow the=
+=20link"><font face=3D"Aptos,sans-serif,serif,EmojiFont" size=3D"3"><span=
+=20style=3D"font-size:12pt"><font face=3D"Century Gothic,sans-serif,serif=
+,EmojiFont" size=3D"2" color=3D"#0070C0"><span style=3D"font-size:10pt">w=
+hitesands@sarovahotels.com</span></font></span></font></a></span></font><=
+/div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Stanley - Reservations&nbsp;</span></font><a href=3D"mailto:sarovastan=
+ley@sarovahotels.com" target=3D"_blank" rel=3D"noopener noreferrer"><font=
+=20face=3D"Aptos,sans-serif,serif,EmojiFont" size=3D"3"><span style=3D"fo=
+nt-size:12pt"><font face=3D"Century Gothic,sans-serif,serif,EmojiFont" si=
+ze=3D"2" color=3D"#0070C0"><span style=3D"font-size:10pt">sarovastanley@s=
+arovahotels.com</span></font></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Mara Reservations&nbsp;</span></font><a href=3D"mailto:mara@sarovahote=
+ls.com" target=3D"_blank" rel=3D"noopener noreferrer"><font face=3D"Aptos=
+,sans-serif,serif,EmojiFont" size=3D"3"><span style=3D"font-size:12pt"><f=
+ont face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" color=3D=
+"#0070C0"><span style=3D"font-size:10pt">mara@sarovahotels.com</span></fo=
+nt></span></font></a></span></font></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarova
+=20Woodlands&nbsp;</span></font><a href=3D"mailto:woodlands@sarovahotels.=
+com" target=3D"_blank" rel=3D"noopener noreferrer"><font face=3D"Aptos,sa=
+ns-serif,serif,EmojiFont" size=3D"3"><span style=3D"font-size:12pt"><font=
+=20face=3D"Century Gothic,sans-serif,serif,EmojiFont" size=3D"2" color=3D=
+"#0070C0"><span style=3D"font-size:10pt">woodlands@sarovahotels.com</span=
+></font></span></font></a></span></font></div>
+<div style=3D"margin:0px"><span style=3D"font-size:10pt; color:rgb(0,112,=
+192); font-family:&quot;Century Gothic&quot;,sans-serif,serif,EmojiFont">=
+&nbsp;</span></div>
+<div style=3D"margin:0px"><font face=3D"wf_segoe-ui_normal,Segoe UI,Segoe=
+=20WP,Tahoma,Arial,sans-serif,serif,EmojiFont" size=3D"2" color=3D"#21212=
+1"><span style=3D"font-size:15px"><font face=3D"Century Gothic,sans-serif=
+,serif,EmojiFont" size=3D"2" color=3D"black"><span style=3D"font-size:10p=
+t">Happy
+=20selling!</span></font></span></font></div>
+<div style=3D"margin:0px"><br>
+</div>
+</span></font></div>
+</font></div>
+</span></font></div>
+</font></span></font></div>
+</font></span></font></div>
+</font></span></font></div>
+</font></span></font></div>
+</font></div>
+<p></p>
+<div id=3D"Signature">
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Se=
+goe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"654" style=3D"width:490.5pt; border-collapse:collapse">
+<tbody>
+<tr style=3D"height:108.85pt">
+<td width=3D"402" valign=3D"top" style=3D"width:301.25pt; padding:0in 5.4=
+pt 0in 5.4pt; height:108.85pt">
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><sp=
+an style=3D"font-size:11.0pt; color:#1F497D">
+<hr size=3D"1" width=3D"100%" align=3D"center">
+</span></div>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#AC0=
+000">Kind Regards,</span><span style=3D"font-size:10.0pt; font-family:&qu=
+ot;Century Gothic&quot;,sans-serif; color:#AC0000"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#AC0=
+000">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#AC0=
+000">Fridah Nandwa</span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#AC0=
+000">Central Reservations Representative</span><span style=3D"font-size:1=
+1.0pt; font-family:&quot;Calibri&quot;,sans-serif"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#AC0=
+000">DL: &#43;254 20 2767214 | Reservations: &#43;254 709 111 000</span><=
+span style=3D"font-size:11.0pt"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#B00=
+000">E:
+</span><span style=3D"font-size:11.0pt"><a href=3D"mailto:centralreservat=
+ions@sarovahotels.com" id=3D"LPNoLP"><span style=3D"font-size:10.0pt; fon=
+t-family:&quot;Century Gothic&quot;,sans-serif; color:#B00000">centralres=
+ervations@sarovahotels.com</span></a></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:11.0pt"><a href=3D"http://scanmail.trustwave.com/?c=3D5206&amp;d=3Dz-=
+6344gb5BjtqIjaIual7e-J1o8XXw3HPwOF6d2J8A&amp;u=3Dhttp%3a%2f%2fwww%2esarov=
+ahotels%2ecom%2f" id=3D"LPNoLP"><b><span style=3D"font-size:10.0pt; font-=
+family:&quot;Century Gothic&quot;,sans-serif; color:#AC0000">WWW.SAROVAHO=
+TELS.COM</span></b></a></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><b><span style=3D"fon=
+t-size:11.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#=
+AC0000">&nbsp;</span></b><span style=3D"font-size:11.0pt"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:11.0pt; color:#2F5496"><img border=3D"0" width=3D"24" height=3D"24" s=
+tyle=3D"user-select: none;" src=3D"https://shl-mail.sarova.co.ke/owa/proj=
+ection.aspx"></span><b><span style=3D"font-size:11.0pt; font-family:&quot=
+;Century Gothic&quot;,sans-serif; color:#2F5496">&nbsp;
+</span></b><span style=3D"font-size:11.0pt; color:#2F5496"><img border=3D=
+"0" width=3D"23" height=3D"23" style=3D"user-select: none;" src=3D"https:=
+//shl-mail.sarova.co.ke/owa/projection.aspx"></span><b><span style=3D"fon=
+t-size:11.0pt; font-family:&quot;Century Gothic&quot;,sans-serif; color:#=
+2F5496">&nbsp;&nbsp;</span></b><span style=3D"font-size:11.0pt; color:#2F=
+5496"><img border=3D"0" width=3D"25" height=3D"25" style=3D"user-select: =
+none;" src=3D"https://shl-mail.sarova.co.ke/owa/projection.aspx"></span><=
+span style=3D"font-size:11.0pt"></span></p>
+</td>
+<td width=3D"252" valign=3D"top" style=3D"width:189.25pt; padding:0in 5.4=
+pt 0in 5.4pt; height:108.85pt">
+<p class=3D"MsoNormal"><a href=3D"http://scanmail.trustwave.com/?c=3D5206=
+&amp;d=3Dz-6344gb5BjtqIjaIual7e-J1o8XXw3HPwOF6d2J8A&amp;u=3Dhttp%3a%2f%2f=
+www%2esarovahotels%2ecom%2f" id=3D"LPNoLP"><span style=3D"font-size:11pt;=
+=20color:rgb(68,114,196)"><img border=3D"0" width=3D"159" height=3D"85" a=
+lt=3D"/Users/sarovacreative/Library/Containers/com.microsoft.Outlook/Data=
+/Library/Caches/Signatures/signature_1550843869" style=3D"user-select: no=
+ne;" src=3D"https://shl-mail.sarova.co.ke/owa/projection.aspx"></span></a=
+><span style=3D"font-size:11.0pt"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt; color:#1F497D">&n=
+bsp;</span><span style=3D"font-size:11.0pt"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+DISCLAIMER: This email and any attachments are confidential and are inten=
+ded solely for the addressee. If you are not the addressee tell the sende=
+r immediately and destroy it. Do not open, read, copy, disclose, use or s=
+tore it in any way, or permit others to
+=20do so. Emails are not secure and may suffer errors, viruses, delay, in=
+terception, and amendment. Sarova Hotels does not accept liability for da=
+mage caused by this email and may monitor email traffic.
+
+<FONT face=3DArial><FONT size=3D2>
+<HR>
+<FONT color=3D#808080><BR>Scanned by</FONT> <FONT=20
+color=3D#4f1f91><STRONG>Trustwave MailMarshal</STRONG></FONT> <FONT color=
+=3D#808080>-=20
+Trustwave's comprehensive email content security solution. Download a fre=
+e=20
+evaluation of Trustwave MailMarshal at </FONT></FONT><A=20
+href=3D"http://www.trustwave.com"><FONT color=3D#808080=20
+size=3D2>www.trustwave.com</FONT></A><BR><BR><FONT=20
+color=3D#400080><STRONG></STRONG></FONT><FONT size=3D2>
+<HR>
+</FONT></FONT>
+</body>
+</html>
+
+--_000_040f1f9c1da54868995049532fa66440sarovahotelscom_--

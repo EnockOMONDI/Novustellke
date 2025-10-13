@@ -1,0 +1,405 @@
+Return-Path: <servicehub@doc.mail.amadeus.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id KNDYLveoeGgNTwgAObGTvA
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 17 Jul 2025 10:40:39 +0300
+Return-path: <servicehub@doc.mail.amadeus.com>
+Envelope-to: natahsa@novustelltravel.com
+Delivery-date: Thu, 17 Jul 2025 10:40:39 +0300
+Received: from relay.amadeus.net ([82.150.225.79]:16216)
+	by rs2.hpcnoc.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <servicehub@doc.mail.amadeus.com>)
+	id 1ucJEP-00000002H3G-0POg
+	for natahsa@novustelltravel.com;
+	Thu, 17 Jul 2025 10:40:39 +0300
+Received: from ociamashpapo01.doc.mail.amadeus.com (unknown [10.168.10.253])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay.amadeus.net (Postfix) with ESMTPS id 470212178E;
+	Thu, 17 Jul 2025 07:39:57 +0000 (GMT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 relay.amadeus.net 470212178E
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=doc.mail.amadeus.com; s=fnd2023q1; t=1752737997;
+	bh=cB0CdFqfe6Ko1pJ9dsrhhWfya0Yn7D31v2vsipvuBEc=;
+	h=Date:From:Subject;
+	b=Sql0T0X9IDWsZn8Be+Z/PG30Ru0koe9r3b3tqcz7p4paXOl9ONsKU2yeMJVUy4pKD
+	 vNkOkY9eLgLtESXXe3BVmigyiNzUDUEfldUvYcdqYJD/1Fi7HgXk5u5n2u7FXTQHTF
+	 8R3oSIKQuEvIl6MdOhmKQ6zB3i7XwJvBjhwFcRA/r0TwKklM3tuBXyjkhzNqSpVRi1
+	 ohMKTLMTTT2knGYRkY9RvSuLJvl3QQPPSdVJhAw3E88GzSHOwZlRyrxNSiuz0LKfWj
+	 fmqhI+0PCzxNYlI2fdh6Y30+oZTk0PAcBDQRdQzMm60N67WPchairjI4KuD+fO3wK2
+	 GUmvGDwqk9+qQ==
+Received: from localhost (localhost [127.0.0.1])
+	by ociamashpapo01.doc.mail.amadeus.com (Postfix) with ESMTP id 2C08782D35A;
+	Thu, 17 Jul 2025 07:39:56 +0000 (UTC)
+Date: Thu, 17 Jul 2025 07:39:56 +0000 (UTC)
+From: Amadeus Customer Service <servicehub@doc.mail.amadeus.com>
+Message-ID: <374521222.12236.1752737996179@localhost>
+Subject: AMADEUS Scheduled Maintenance Notification - 17JUL2025 - EOW - New
+ scheduled maintenance
+MIME-Version: 1.0
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Auto-Response-Suppress: AutoReply, DR, NDR, NRN, OOF, RN
+X-Spam-Status: No, score=1.7
+X-Spam-Score: 17
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, The following Scheduled Maintenance bulletin
+    has been published via Amadeus Critical Incident Center: AMADEUS Scheduled
+    Maintenance Notification - 17JUL2025 - EOW 
+ Content analysis details:   (1.7 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: amadeus.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in bl.score.senderscore.com]
+  1.2 MISSING_HEADERS        Missing To: header
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [82.150.225.79 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [82.150.225.79 listed in sa-accredit.habeas.com]
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+X-Spam-Flag: NO
+
+
+
+
+<center>
+    <table width=3D"100%" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"1=
+0" cellspacing=3D"0">
+        <tr>
+            <td align=3D"center" valign=3D"top">   =20
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td width=3D"694">
+                        <div style=3D"max-width: 694px; margin: 0 auto" ali=
+gn=3D"left">
+                            <img alt=3D"Amadeus Service Hub" src=3D"https:/=
+/servicehub.amadeus.com/documents/20195/1117748133/Email+Banner+-+Incident.=
+png/eb9b37fb-307d-70e2-3428-323c2d8ba7d9?t=3D1704357474209" />
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=3D"694" bgcolor=3D"#ffffff">
+                        <div style=3D"max-width: 694px; margin: 0 auto">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0">
+                                <td width=3D"10" bgcolor=3D"#ffffff"></td>
+                                <td width=3D"674" bgcolor=3D"#ffffff">
+                                    <div style=3D"max-width: 674px; margin:=
+ 0 auto" dir=3D"ltr" align=3D"left">
+                                        <p style=3D"font-family:'Source San=
+s Pro',Calibri, sans-serif;"><br/> Dear Customer,=20
+=09=09=09=09                            <br/><br/>
+                                            The following Scheduled Mainten=
+ance bulletin has been published via Amadeus Critical Incident Center:
+                                            <br/>
+                                                                           =
+                 <em><a href=3D"https://servicehub.amadeus.com/c/portal/vie=
+w-solution/1291093236/amadeus-scheduled-maintenance-notification-17jul2025-=
+eow">AMADEUS Scheduled Maintenance Notification - 17JUL2025 - EOW</a></em>
+                                                                           =
+             <br/><br/>
+
+                                            The following update was added:=
+<br/>
+                                            <table class=3D"predefinedField=
+s" style=3D"border:0px; width:100%">
+=09<tbody>
+=09=09<tr>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Change number</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+31096685</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Product</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">
+=09=09=09<p>Alt=C3=A9a Reservation System (RES)<br />
+=09=09=09PNR Access Platform (PAP)<br />
+=09=09=09Amadeus Altea Inventory (APK) Peak2<br />
+=09=09=09Amadeus Segment Sell Services (SES) Peak2<br />
+=09=09=09Amadeus Seating (SIT) Peak1</p>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Expected business impact</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+<u><strong><span style=3D"font-size:18px;">Impact for All Airlines &amp; Gr=
+ound Handlers:</span></strong></u>
+=09=09=09<p><br />
+=09=09=09<b data-olk-copy-source=3D"MessageBody">Alt=C3=A9a Reservation Sys=
+tem (RES) / PNR Access Platform (PAP)</b></p>
+
+=09=09=09<p>The outage will impact several functions of Reservation ecosyst=
+em.&nbsp;Please find below the expected business impact during the maintena=
+nce window.</p>
+
+=09=09=09<p>1. Alt=C3=A9a Reservation: PNR retrieve and update<br />
+=09=09=09There will be outage for one database which contains a part of the=
+ PNRs, so users will not be able to retrieve and update certain PNRs which =
+have been created before 3rd June.&nbsp;<br />
+=09=09=09There will be no impact on PNR creation.&nbsp;</p>
+
+=09=09=09<p>2. Alt=C3=A9a Departure Control System (DCS) to Alt=C3=A9a Rese=
+rvations (RES) flows:<br />
+=09=09=09All requests to update PNR's from DCS will be queued and sent to R=
+eservation and Departure Control Interface (RDI) to be processed after the =
+maintenance.<br />
+=09=09=09CPR Feed activity needs to re-triggered.</p>
+
+=09=09=09<p>3. Airlines Ground Handling on Alt=C3=A9a DCS (Incoming PNL's/A=
+DL's and TIA's):<br />
+=09=09=09The Incoming Passenger Name Lists (PNL's) and the Addition and Del=
+etion Lists (ADL's) will be delayed and processed after the maintenance wit=
+hout any traffic loss.</p>
+
+=09=09=09<p>4. Airlines handled in external DCS (Outgoing PNLs/ADLs, TIA's =
+and Incoming Handback):<br />
+=09=09=09The Outgoing Passenger Name Lists (PNL's) and the Addition and Del=
+etion Lists (ADL's) will be delayed and processed after the maintenance wit=
+hout any traffic loss. Incoming Handback messages will be processed with a =
+delay.</p>
+
+=09=09=09<p>5.Tour Operator Flows (Incoming PNL's/ADL's)<br />
+=09=09=09The Incoming Passenger Name Lists (PNL's) and the Addition and Del=
+etion Lists (ADL's) will be delayed and processed after the maintenance wit=
+hout any traffic loss.</p>
+
+=09=09=09<p>6. Shopping cart<br />
+=09=09=09Users of Amadeus e-Retail Engine (AeRE) and Digital Commerce / Dig=
+ital Experience Suite will be impacted, they will not be able to retrieve, =
+create or update shopping carts during the outage</p>
+
+=09=09=09<p>7. Massive Action Platform (MAP)<br />
+=09=09=09MAP users will not be able to trigger massive updates/actions on T=
+TRs.</p>
+
+=09=09=09<p>8. Quotation history<br />
+=09=09=09TST history and TSM history will not be accessible</p>
+
+=09=09=09<p>9. Reservation number<br />
+=09=09=09For airlines using reservation numbers, the generation of reservat=
+ion numbers for newly created PNRs won=E2=80=99t be available</p>
+
+=09=09=09<p>10. Passenger Lists by Airport (LPA)<br />
+=09=09=09Retrieving list of Passengers filtered based on Boarding or Drop A=
+irport code having specific SSR or SK and retrieving Chairman=E2=80=99s Lou=
+nge and Valet Parking (LB) functionalities will be impacted</p>
+
+=09=09=09<p>11. Passenger Lists by Office (LPO)<br />
+=09=09=09Retrieving list of indispensable information about the passengers =
+in PNRs under the control of an office will be impacted.</p>
+=09=09=09<u><strong><span style=3D"font-size:18px;">Impact for Altea Invent=
+ory Peak2 Airlines:</span></strong></u>
+
+=09=09=09<p><br />
+=09=09=09<b data-olk-copy-source=3D"MessageBody">Altea Inventory Service (A=
+PK) Peak2:</b></p>
+
+=09=09=09<p>Altea Inventory User Interface (UI) will not respond during the=
+ maintenance window. Users will experience "Link down" errors and will not =
+be able to process following actions during the maintenance window:</p>
+
+=09=09=09<p>1. Flight Data Services such as Schedule and Flight Data functi=
+onalities will not be available from Alt=C3=A9a Departure Control Customer =
+Management application during the maintenance window (MVT, FLIX, timing/rou=
+ting changes, flight creation)<br />
+=09=09=092. Business rule updates<br />
+=09=09=093. Time Initiated Actions (TIA)<br />
+=09=09=094. The maintenance activity may result in several flights being lo=
+cked. Amadeus teams will perform needed actions to unlock them: Customers a=
+re requested to report any remaining flight locked after the maintenance wi=
+ndow if they can't unlock them.</p>
+
+=09=09=09<p>Any actions triggered for these functionalities triggered a bit=
+ before the maintenance window will be queued and processed once the mainte=
+nance has concluded.<br />
+=09=09=09Amadeus Availability Service will run in degraded mode during the =
+maintenance window due to delay in processing of Inventory Messages.</p>
+
+=09=09=09<p>=C2=A0</p>
+
+=09=09=09<p><b>Amadeus Segment Sell Services (SES) Peak2:</b></p>
+
+=09=09=09<p>Segment Sell Services will be in "Link down" mode.</p>
+
+=09=09=09<p>As such Interactive Sell, Ignore, End of Transaction (EOT) comm=
+it and waitlist clearance are some of the flows for Passenger name Record (=
+PNR) creation and servicing that will be impacted during the maintenance wi=
+ndow.</p>
+
+=09=09=09<p>This may result to some discrepancies between Inventory and Res=
+ervation:<br />
+=09=09=09Amadeus teams will perform needed actions to solve some discrepanc=
+ies, however some may remain and Customers are requested to report any iden=
+tified discrepancies after the maintenance window.</p>
+=09=09=09<u><strong><span style=3D"font-size:18px;"></span><span style=3D"f=
+ont-size:18px;">Impact for Altea Inventory Peak1&nbsp;Airlines:</span><span=
+ style=3D"font-size:18px;"></span></strong></u>
+
+=09=09=09<p><br />
+=09=09=09<strong>Amadeus Seating (SIT) Peak1</strong></p>
+
+=09=09=09<p>During this window, there will be a service interruption for cu=
+stomers using the below mentioned functionalities in Amadeus Altea Inventor=
+y,&nbsp;Altea Departure Control Customer Management and&nbsp;Amadeus Reserv=
+ation applications.</p>
+
+=09=09=09<p><br />
+=09=09=091. Seat Map requests.<br />
+=09=09=092. Seat Allocation.<br />
+=09=09=093. Schedule for Codeshare related services.<br />
+=09=09=094. Reseating.<br />
+=09=09=095. Seat refresh from Alt=C3=A9a Departure Control Customer Managem=
+ent application.&nbsp;<br />
+=09=09=096. Standalone seating updates<br />
+=09=09=09<br />
+=09=09=09<u><strong><span style=3D"font-size:18px;">Impact for</span><span =
+style=3D"font-size:18px;"> </span>Travel Distribution Customers:</strong></=
+u><br />
+=09=09=09=C2=A0</p>
+
+=09=09=09<p><b data-olk-copy-source=3D"MessageBody">Alt=C3=A9a Reservation =
+System (RES) / PNR Access Platform (PAP)</b></p>
+
+=09=09=09<p>The outage will impact several functions of Reservation ecosyst=
+em.&nbsp;Please find below the expected business impact during the maintena=
+nce window.</p>
+
+=09=09=09<p>1. Alt=C3=A9a Reservation: PNR retrieve and update<br />
+=09=09=09There will be outage of one database which contains a part of the =
+PNRs, so users will not be able to retrieve and update certain PNRs which h=
+ave been created before 3rd June.&nbsp;<br />
+=09=09=09There will be no impact on PNR creation.&nbsp;</p>
+
+=09=09=09<p>2. Tour Operator Flows (Incoming PNL's/ADL's)<br />
+=09=09=09The Incoming Passenger Name Lists (PNL's) and the Addition and Del=
+etion Lists (ADL's) will be delayed and processed after the maintenance wit=
+hout any traffic loss.</p>
+
+=09=09=09<p>3. Shopping cart<br />
+=09=09=09Users of Amadeus e-Retail Engine (AeRE) and Digital Commerce / Dig=
+ital Experience Suite will be impacted, they will not be able to retrieve, =
+create or update shopping carts during the outage</p>
+
+=09=09=09<p>4. Massive Action Platform (MAP)<br />
+=09=09=09MAP users will not be able to trigger massive updates/actions on T=
+TRs.</p>
+
+=09=09=09<p>5. Quotation history<br />
+=09=09=09TST history and TSM history will not be accessible&nbsp;</p>
+
+=09=09=09<p>6. TTR attachments&nbsp;<br />
+=09=09=09Users of the TTR attachments product will be impacted, the attachm=
+ents will not be saved.&nbsp;</p>
+
+=09=09=09<p>7. Passenger Lists by Airport (LPA)<br />
+=09=09=09Retrieving list of Passengers filtered based on Boarding or Drop A=
+irport code having specific SSR or SK and retrieving Chairman=E2=80=99s Lou=
+nge and Valet Parking (LB) functionalities will be impacted</p>
+
+=09=09=09<p>8. Passenger Lists by Office (LPO)<br />
+=09=09=09Retrieving list of indispensable information about the passengers =
+in PNRs under the control of an office will be impacted</p>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Maintenance window</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+17JUL2025/ 07:00 GMT - 17JUL2025/ 07:15 GMT</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td class=3D"col_label" style=3D"width:30%;color:#cf0058;font-weig=
+ht:bold;padding-left: 10px;">Duration</td>
+=09=09=09<td class=3D"col_content" style=3D"width:70%; padding-left:10px;">=
+15 minutes</td>
+=09=09</tr>
+=09</tbody>
+</table>
+                                            <br/>
+
+                                                                           =
+                 <em>Note: If the link does not open, this means the conten=
+t has been removed. </em>
+                                                                           =
+             <br/><br/>
+                                            Best Regards,<br/>
+                                            <br/>
+                                            <strong style=3D"color:#000835;=
+font-size:1.2em">Amadeus Service Hub</strong><br/>
+                                            'Helping Amadeus Customers Succ=
+eed' <br/>
+                                        </p>
+                                        <p>
+                                            <img src=3D"https://servicehub.=
+amadeus.com/documents/20195/1117748133/Amadeus+Logo+-+White+Background.png/=
+7e5cd68b-bc75-93ed-1986-3a98c1e9c1fc?t=3D1704442648345" /> <!-- LOGO -->
+                                        </p><br/>
+                                        <a style=3D"color:#0c66e1" href=3Dh=
+ttps://servicehub.amadeus.com/en/home?login_panel=3Dtravel&default_option=
+=3Duserid%22>servicehub.amadeus.com</a>
+
+                                        <p style=3D"font-family:'Source San=
+s Pro',Calibri, sans-serif;font-size:11px;text-align:left;">You have receiv=
+ed this mail because you are subscribed to Amadeus Critical Incident Centre=
+ notifications.<br/>You can unsubscribe from Critical Incident notification=
+s or change your email preferences by visiting the  <a href=3D"https://serv=
+icehub.amadeus.com/group/control_panel/manage?p_p_id=3Dnotifpref&p_p_state=
+=3Dpop_up&manageSubscription=3Dtrue" target=3D"_blank">Subscriptions & Noti=
+fications</a> page.</p>
+                                        <p style=3D"font-size:12px;font-fam=
+ily:'Source Sans Pro',Calibri, sans-serif;">
+
+                                            This email is generated automat=
+ically; no reply will be processed.
+
+                                        </p>
+                                    </div>
+                                </td>
+                                <td width=3D"10" bgcolor=3D"#ffffff"></td>
+                            </table>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

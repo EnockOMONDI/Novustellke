@@ -1,0 +1,1414 @@
+Return-Path: <bounce-md_31105836.655ef715.v1-e8508e6108e747f49d339b7368891cc1@mandrillapp.com>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id MPhMCEH3XmWo8RgAkzNyDQ
+	(envelope-from <bounce-md_31105836.655ef715.v1-e8508e6108e747f49d339b7368891cc1@mandrillapp.com>)
+	for <novuste1@rs2b.noc254.com>; Thu, 23 Nov 2023 09:54:57 +0300
+Return-path: <bounce-md_31105836.655ef715.v1-e8508e6108e747f49d339b7368891cc1@mandrillapp.com>
+Envelope-to: faiith@novustelltravel.com
+Delivery-date: Thu, 23 Nov 2023 09:54:57 +0300
+Received: from mail177-6.suw61.mandrillapp.com ([198.2.177.6]:62550)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <bounce-md_31105836.655ef715.v1-e8508e6108e747f49d339b7368891cc1@mandrillapp.com>)
+	id 1r63c0-0071yc-2a
+	for faiith@novustelltravel.com;
+	Thu, 23 Nov 2023 09:54:57 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=flysafarilink.com;
+	s=mandrill; t=1700722453; x=1700982953; i=res@flysafarilink.com;
+	bh=ljKM6paFOH74q2SCoWgyj9GDppn4U8u8dohSge/jwH4=;
+	h=From:Subject:To:Feedback-ID:Message-Id:Date:MIME-Version:
+	 Content-Type:CC:Date:Subject:From;
+	b=LKYaEIXi7kfonsNOTHNOSVoXgS5OnFgVjLlTyxjBPGm1R7GbtSMMW82QQsabs72xx
+	 tZaV91GREyV70MzA7jNW0UXvyTXc2aRpytwkyMiIH8naq+oSoP5kaoHYvw83nNJAzo
+	 knjN0aYpsBjpKS+D5vbb7jgKkmQspubhLg1vH6Aw=
+Received: from pmta14.mandrill.prod.suw01.rsglab.com (localhost [127.0.0.1])
+	by mail177-6.suw61.mandrillapp.com (Mailchimp) with ESMTP id 4SbTP13VQ3z2K1rdv
+	for <faiith@novustelltravel.com>; Thu, 23 Nov 2023 06:54:13 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com;
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1700722453; h=from :
+ subject : to : message-id : date : mime-version : content-type : from
+ : x-mandrill-user : list-unsubscribe;
+ bh=ljKM6paFOH74q2SCoWgyj9GDppn4U8u8dohSge/jwH4=;
+ b=Po+34f/AWmUYAUEqHQVZAYjd6z7AN174+/YYxGo5mMDMSZtQRbtYQPmhUisiENyssAAuD
+ q8bDKcH3hFtciUGdanXDLEq21hTR32rqfin8la+maJeGzTF21E7E7sRf0SsJWwp9oCHW6rz
+ puNUG6k2Pb/Eiy7i61JsU8M+J5JyA7w=
+From: Safarilink <res@flysafarilink.com>
+Subject: =?utf-8?Q?E=20-=20Ticket=20pax=20copy=20PNR=20Ref:=204AEF0F?=
+Received: from [52.212.92.47] by mandrillapp.com id e8508e6108e747f49d339b7368891cc1; Thu, 23 Nov 2023 06:54:13 +0000
+To: faiith@novustelltravel.com
+X-Native-Encoded: 1
+X-Report-Abuse: =?UTF-8?Q?Please=20forward=20a=20copy=20of=20this=20message,=20including=20all=20headers,=20to=20abuse@mandrill.com.=20You=20can=20also=20report=20abuse=20here:=20https://mandrillapp.com/contact/abuse=3Fid=3D31105836.e8508e6108e747f49d339b7368891cc1?=
+X-Mandrill-User: md_31105836
+Feedback-ID: 31105836:31105836.20231123:md
+Message-Id: <31105836.20231123065413.655ef715382f80.28677375@mail177-6.suw61.mandrillapp.com>
+Date: Thu, 23 Nov 2023 06:54:13 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="_av-yRO_u4P2lEILwUToLBNlhg"
+X-Spam-Status: No, score=2.1
+X-Spam-Score: 21
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  <http://www.flysafarilink.com>Safarilink Wilson Airport P.O.Box
+    5616, Nairobi 00506, Kenya. res@flysafarilink.com Tel : +254730888000 / +2546690000
+    <https://clients.aerocrs.com//Go7pub/pnrBookingRef. [...] 
+ Content analysis details:   (2.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: aerocrs.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 HTML_TAG_BALANCE_BODY  BODY: HTML has unbalanced "body" tags
+  2.0 AC_HTML_NONSENSE_TAGS  RAW: Many consecutive multi-letter HTML
+                             tags, likely nonsense/spam
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+--_av-yRO_u4P2lEILwUToLBNlhg
+Content-Type: multipart/alternative; boundary="_av-zvDaEB68hH0bxIEkJZDkzw"
+
+--_av-zvDaEB68hH0bxIEkJZDkzw
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+ <http://www.flysafarilink.com>Safarilink
+Wilson Airport 
+P.O.Box 5616,
+Nairobi 00506, Kenya. 
+res@flysafarilink.com
+Tel : +254730888000 / +2546690000
+<https://clients.aerocrs.com//Go7pub/pnrBookingRef.asp?ID=3DAEF0F0A3-4C35-4=
+6A1-AC8F-ADA1DA6FD0FB>
+To
+*Novustell Travel Ltd*
+Howse & McGeorge Centre, Factory 
+Street 
+Nairobi 
+Kenya
+Phone: +254 721115572
+
+E - Ticket pax copy Pnr Ref. 4AEF0FValid for travel
+Ticket Number: 417347825
+
+*PLEASE CHECK BOOKING DETAILS, ESPECIALLY AIRSTRIPS ARE CORRECT. SAFARILINK
+WILL NOT BE HELD RESPONSIBLE FOR ANY ERRORS ONCE TICKETED.*
+
+*PLEASE NOTE CONDITIONS OF FLIGHTS - ESPECIALLY MIN 2 PAX RULE IF
+APPLICABLE. PLEASE CHECK FLIGHTS BOOKED ARE CORRECT*
+
+Flights:
+#DateFlightFromSTDToSTAClassBaggageCheckin TimeStatus127-Nov-23
+063Nairobi-Wilson13:00Mombasa
+14:10R20 Kg60 min.Confirmed201-Dec-23 044Mombasa12:00Nairobi-Wilson
+13:15T20 Kg60 min.Confirmed
+
+#DateTimeService
+DetailsStatus313-Sep-2300:00Miscellaneous-SafariLinkConfirmed413-Oct-2300:0=
+0Amendment
+fee-SafariLinkConfirmed
+Travellers:    (Count:Adult: 1)
+Traveller NameMISS. BUKHALA VALARIES
+
+Flight Remarks:
+*Notifications:*  - Flight 063: 
+ - FREE change of reservation up to 96hrs to flight departure time. Changes
+within 95hrs and 48hrs to flight departure time is allowed at a fee of $25
+per person. Any changes within 48hrs and 12hrs to flight departure time
+will attract a penalty of $30 per person while changes within 12hrs and
+6hrs to flight departure time will be subject to a penalty of $50 per
+person. Changes MUST be made NO later than 6 hours to the flight departure
+time, otherwise the entire ticket will be forfeited (charged 100% of the
+fare paid). All changes are subject to applicable fare difference if the
+initial booked fare class is unavailable. Name change permitted on fully
+unutilized tickets at $30 per person.
+
+  - Flight 044: 
+ - FREE change of reservation up to 96hrs to flight departure time. Changes
+within 95hrs and 48hrs to flight departure time is allowed at a fee of $25
+per person. Any changes within 48hrs and 12hrs to flight departure time
+will attract a penalty of $30 per person while changes within 12hrs and
+6hrs to flight departure time will be subject to a penalty of $50 per
+person. Changes MUST be made NO later than 6 hours to the flight departure
+time, otherwise the entire ticket will be forfeited (charged 100% of the
+fare paid). All changes are subject to applicable fare difference if the
+initial booked fare class is unavailable. Name change permitted on fully
+unutilized tickets at $30 per person.
+
+Terms & Conditions:
+*Please note flight timings and conditions - Especially min 2 passengers
+rule on applicable routes*
+
+*Please *click here*
+<https://qsysfeedbacksystem.qsys-ea.com/feedback-form/60d5d19c254a9>* to
+share your flight experience with us.*
+
+*Safarilink Reservations Phones: +254 20 6690 000 or, +254 730 888 000*,*
++254 720 888 111*
+
+*The following are some of our Terms & Conditions from the General
+Conditions of Carriage which you have viewed & accepted on the Safarilink
+website:*
+
+ - *All tickets are Non-Refundable.*
+ - *A minimum fee of $30 on change of reservations (date/time) will be
+charged and MUST be made NOT later than 12 hours to the flight departure
+time, otherwise the ticket will be marked as No-show.*
+ - *If the original fare is not available at the time of *changing,* a fare
+difference will be charged, plus the change fee.*
+ - *Cancellation fees of $75 will be charged per sector if the ticket is
+cancelled 60-days before departure and credit can be utilized within 12
+months. Within 60-days, cancellations will be charged 100%.*
+ - *Name Changes and Re-routing allowed at a fee* on fully unutilized
+tickets.*
+ - *No-shows are non-refundable and non-amendable*
+ - *FREE baggage allowance is STRICTLY limited to 15Kgs per person, except
+for Zanzibar, Kisumu, Kitale, Diani, Malindi, Lamu and Mombasa which is
+20Kgs, inclusive of hand luggage and in soft bags.*
+ - *Advance excess baggage can be purchased upto 48-hours before flight
+departure in batches of 10kgs, 20kgs, and 30kgs at discounted rates.*
+ - *Excess baggage at check-in will be charged at $3.50 per kilo on
+domestic flights and $10 per kilo for international flights *and will only
+be carried subject to space availability.*
+ - *Check-in-time is 90 minutes before flight time for International
+Flights and 60 minutes for domestic flights, in Wilson, Lamu, Diani,
+Mombasa, Malindi and Kisumu and 30-minutes out of our Safari destinations.
+Safarilink reserves the right to re-allocate seats or depart up to
+20-minutes ahead of scheduled time if passengers have not arrived at the
+point of departure by that time*
+ - *Check-in counters will CLOSE 45 minutes prior to departure time, after
+which passengers will not be allowed to check-in.*
+ - *Passengers who have checked-in online MUST still present their
+documents for verification before closure of check-in counters. *Passengers
+travelling with children, infants or requiring special assistance will need
+to Checkin at the Airport*
+ - *Safarilink reserves the right to* change departure times or carrier
+when so required for operational=E2=80=9A weather or safety reasons.*
+ - *At check-in, passengers will be required to show their passport=E2=80=
+=9A or
+national ID with a photograph=E2=80=9A for identification purposes. For chi=
+ldren
+and infants, a copy of either their birth certificate or passport will be
+required.*
+ - *All firearms and/or ammunition must be booked at least 4 hours prior to
+flight departure time and will be charged $10. They must be declared at
+Check-in or to the pilot when boarding at bush airstrips*
+ - *Safarilink is not responsible for any direct or consequential costs
+resulting from any delays to its services and particularly if a delay
+results in missing a connection to another carrier - domestic or
+international. Safarilink only guarantees a connection to another flight
+operated by Safarilink*
+ - *The liability of Safarilink Aviation Limited (Safarilink) in respect of
+carriage of passengers is subject to the rules and limitations relating to
+liability established by the Warsaw Convention as applied in Kenya and by
+the complete Terms and Conditions listed on the Safarilink website.*
+ - *Passengers paying by credit card will be required to show the credit
+card and authenticate their signatures. If the Card Holder is not the
+traveller the passenger needs to request permission. *
+ - *Consumption of alcohol on board Safarilink flights is not allowed.
+Safarilink reserves the right to offload/deny carriage at any
+airport/airstrip if in its sole discretion considered a passenger is
+intoxicated and/or causes disturbance or endanger other passengers.*
+ - *Expectant mothers from 28 weeks* must provide a medical certificate or
+fit to fly letter* from attendant gynaecologist clearing her of travel.*
+ - *For more details please visit our Terms & Conditions on the website
+*www.flysafarilink.com/travel-information/terms*
+<http://www.flysafarilink.com/travel-information/terms>*.*
+
+This email and any files transmitted with it are confidential and intended
+solely for the use of the individual or entity to whom they are addressed.
+If you have received this email in error please notify the system manager.
+This message contains confidential information and is intended only for the
+individual named. If you are not the named addressee you should not
+disseminate, distribute or copy this e-mail. Please notify the sender
+immediately by e-mail if you have received this e-mail by mistake and
+delete this e-mail from your system. If you are not the intended recipient
+you are notified that disclosing, copying, distributing or taking any
+action in reliance on the contents of this information is strictly
+prohibited.This E-mail is sent to you by AeroCRS system, the e-mail address
+is not monitored. Issued on 23-Nov-23 06:54, By user: Quinta Omondi
+<http://www.aerocrs.com/?ref=3Demail&comp=3D4>
+
+--_av-zvDaEB68hH0bxIEkJZDkzw
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><meta http-equiv=3D"Content-Type" content=3D"text/html;charset=3DUTF-=
+8"><body><font face=3D"arial"><table align=3D"center" style=3D"width:800px;=
+"><tr><td colspan=3D"2"><table width=3D"100%" border=3D"0"><tr><td align=3D=
+"left" valign=3D"top"><a href=3D"https://mandrillapp.com/track/click/311058=
+36/www.flysafarilink.com?p=3DeyJzIjoia1JEdU9NSkpzM1VmUE93dkJ6U1hPdXFKT2JJIi=
+widiI6MSwicCI6IntcInVcIjozMTEwNTgzNixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cX=
+Fwvd3d3LmZseXNhZmFyaWxpbmsuY29tXCIsXCJpZFwiOlwiZTg1MDhlNjEwOGU3NDdmNDlkMzM5=
+YjczNjg4OTFjYzFcIixcInVybF9pZHNcIjpbXCJkNGFiNjVmYjE1M2MwZjg0MmE5NGE3MzI4ZTE=
+2M2Q1NzJlMmI1ZDc5XCJdfSJ9"><img src=3D"https://storage.aerocrs.com/4/system=
+/SafarilinkLogo.png" border=3D"0"></a></td><td align=3D"left" style=3D"padd=
+ing-left:10px;"><span style=3D"font-size:15px;font-weight:bold">Safarilink<=
+/span><br /><span style=3D"font-size:12px;"><p>Wilson Airport <br />P.O.Box=
+ 5616,<br />Nairobi 00506, Kenya. <br />res@flysafarilink.com<br />Tel : +2=
+54730888000 / +2546690000</p></span><span style=3D"font-size:12px;"></span>=
+</td><td valign=3D"top" align=3D"right"><a href=3D"https://mandrillapp.com/=
+track/click/31105836/clients.aerocrs.com?p=3DeyJzIjoiTE1LejFoMlhXZVlmQUdJZE=
+5mRjBONFhiQWlVIiwidiI6MSwicCI6IntcInVcIjozMTEwNTgzNixcInZcIjoxLFwidXJsXCI6X=
+CJodHRwczpcXFwvXFxcL2NsaWVudHMuYWVyb2Nycy5jb21cXFwvXFxcL0dvN3B1YlxcXC9wbnJC=
+b29raW5nUmVmLmFzcD9JRD1BRUYwRjBBMy00QzM1LTQ2QTEtQUM4Ri1BREExREE2RkQwRkJcIix=
+cImlkXCI6XCJlODUwOGU2MTA4ZTc0N2Y0OWQzMzliNzM2ODg5MWNjMVwiLFwidXJsX2lkc1wiOl=
+tcImI4ZTZiZDUwN2JhMWM1MWRmZDc0NTk4OTRhNmIyODAzODBjNTEyYzhcIl19In0"><img src=
+=3D"https://connect.aerocrs.com/apps/qr.php?cht=3Dqr&chl=3Dhttps://clients.=
+aerocrs.com//Go7pub/pnrBookingRef.asp?ID=3DAEF0F0A3-4C35-46A1-AC8F-ADA1DA6F=
+D0FB&chs=3D95x95&chld=3DL|0" align=3D"right" border=3D"0"></a><br /></td></=
+tr></table></td></tr><tr><td colspan=3D"2"><span style=3D"font-size:15px;fo=
+nt-weight:bold">To</span><br><b>Novustell Travel Ltd</b><br />Howse & McGeo=
+rge Centre, Factory <br />Street <br />Nairobi&nbsp;<br />Kenya<br />Phone:=
+ &#43;254 721115572<br /><br /><br /></td></tr><tr><td colspan=3D"2"></td><=
+/tr><tr><td colspan=3D"2"><br /><br /><center><span style=3D"font-size:18px=
+;font-weight:bold;text-align:center">E - Ticket pax copy  Pnr Ref. 4AEF0F</=
+span></center><center><span style=3D"font-size:12px;font-weight:bold;text-a=
+lign:center">Valid for travel</span></center><br /><center>Ticket Number: 4=
+17347825</center><br /><br /><br /><p><strong style=3D"font-size: x-small;"=
+>PLEASE CHECK BOOKING DETAILS, ESPECIALLY AIRSTRIPS ARE CORRECT. SAFARILINK=
+ WILL NOT BE HELD RESPONSIBLE FOR ANY ERRORS ONCE TICKETED.</strong></p><p>=
+<span style=3D"font-size: x-small;"><strong><span>PLEASE NOTE CONDITIONS OF=
+ FLIGHTS - ESPECIALLY MIN 2 PAX RULE IF APPLICABLE. PLEASE CHECK FLIGHTS BO=
+OKED ARE CORRECT</span></strong></span></p><br /><br /></td></tr><tr><td co=
+lspan=3D"2"><span style=3D"font-size:15px;font-weight:bold">Flights:</span>=
+<br><table border=3D"1" cellspacing=3D"0" cellpadding=3D"0" bordercolor=3D"=
+#C6C3C6" style=3D"width:800px;"><tr><td width=3D"15" style=3D"font-family: =
+Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">#</=
+td><td width=3D"70" style=3D"font-family: Arial; font-size: 12; color: Blac=
+k;padding-left:5px;padding-right:5px;">Date</td><td style=3D"font-family: A=
+rial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Flig=
+ht</td><td style=3D"font-family: Arial; font-size: 12; color: Black;padding=
+-left:5px;padding-right:5px;">From</td><td style=3D"font-family: Arial; fon=
+t-size: 12; color: Black;padding-left:5px;padding-right:5px;">STD</td><td s=
+tyle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pa=
+dding-right:5px;">To</td><td style=3D"font-family: Arial; font-size: 12; co=
+lor: Black;padding-left:5px;padding-right:5px;">STA</td><td style=3D"font-f=
+amily: Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5p=
+x;">Class</td><td style=3D"font-family: Arial; font-size: 12; color: Black;=
+padding-left:5px;padding-right:5px;">Baggage</td><td style=3D"font-family: =
+Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Che=
+ckin Time</td><td width=3D"70" style=3D"font-family: Arial; font-size: 12; =
+color: Black;padding-left:5px;padding-right:5px;">Status</td></tr><tr><tr><=
+td style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5p=
+x;padding-right:5px;">1</td><td style=3D"font-family: Arial; font-size: 12;=
+ color: Black;padding-left:5px;padding-right:5px;">27-Nov-23</td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">&nbsp;063</td><td style=3D"font-family: Arial; font-size: 12;=
+ color: Black;padding-left:5px;padding-right:5px;">Nairobi-Wilson</td><td s=
+tyle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pa=
+dding-right:5px;">13:00</td><td style=3D"font-family: Arial; font-size: 12;=
+ color: Black;padding-left:5px;padding-right:5px;">Mombasa<br><span style=
+=3D"font-family: Arial; font-size: 10; color: Black;"></span></td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">14:10</td><td style=3D"text-align:center; font-family: Arial;=
+ font-size: 12; color: Black;padding-left:5px;padding-right:5px;">R</td><td=
+ style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;=
+padding-right:5px;">20 Kg</td><td style=3D"font-family: Arial; font-size: 1=
+2; color: Black;padding-left:5px;padding-right:5px;">60 min.</td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">Confirmed</td></tr><tr><tr><td style=3D"font-family: Arial; f=
+ont-size: 12; color: Black;padding-left:5px;padding-right:5px;">2</td><td s=
+tyle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pa=
+dding-right:5px;">01-Dec-23</td><td style=3D"font-family: Arial; font-size:=
+ 12; color: Black;padding-left:5px;padding-right:5px;">&nbsp;044</td><td st=
+yle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pad=
+ding-right:5px;">Mombasa</td><td style=3D"font-family: Arial; font-size: 12=
+; color: Black;padding-left:5px;padding-right:5px;">12:00</td><td style=3D"=
+font-family: Arial; font-size: 12; color: Black;padding-left:5px;padding-ri=
+ght:5px;">Nairobi-Wilson<br><span style=3D"font-family: Arial; font-size: 1=
+0; color: Black;"></span></td><td style=3D"font-family: Arial; font-size: 1=
+2; color: Black;padding-left:5px;padding-right:5px;">13:15</td><td style=3D=
+"text-align:center; font-family: Arial; font-size: 12; color: Black;padding=
+-left:5px;padding-right:5px;">T</td><td style=3D"font-family: Arial; font-s=
+ize: 12; color: Black;padding-left:5px;padding-right:5px;">20 Kg</td><td st=
+yle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pad=
+ding-right:5px;">60 min.</td><td style=3D"font-family: Arial; font-size: 12=
+; color: Black;padding-left:5px;padding-right:5px;">Confirmed</td></tr></ta=
+ble><br /><span style=3D"font-size:15px;font-weight:bold"></span><br><table=
+ border=3D"1" cellspacing=3D"0" cellpadding=3D"0" bordercolor=3D"#C6C3C6" w=
+idth=3D"800px"><tr><td width=3D"15" style=3D"font-family: Arial; font-size:=
+ 12; color: Black;padding-left:5px;padding-right:5px;">#</td><td width=3D"7=
+0" style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5p=
+x;padding-right:5px;">Date</td><td width=3D"40" style=3D"font-family: Arial=
+; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Time</td=
+><td style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:=
+5px;padding-right:5px;">Service Details</td><td width=3D"70" style=3D"font-=
+family: Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5=
+px;">Status</td></tr><tr><td style=3D"font-family: Arial; font-size: 12; co=
+lor: Black;padding-left:5px;padding-right:5px;">3</td><td style=3D"font-fam=
+ily: Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;=
+">13-Sep-23</td><td style=3D"font-family: Arial; font-size: 12; color: Blac=
+k;padding-left:5px;padding-right:5px;">00:00</td><td style=3D"font-family: =
+Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Mis=
+cellaneous-SafariLink</td><td style=3D"font-family: Arial; font-size: 12; c=
+olor: Black;padding-left:5px;padding-right:5px;">Confirmed</td></tr><tr><td=
+ style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;=
+padding-right:5px;">4</td><td style=3D"font-family: Arial; font-size: 12; c=
+olor: Black;padding-left:5px;padding-right:5px;">13-Oct-23</td><td style=3D=
+"font-family: Arial; font-size: 12; color: Black;padding-left:5px;padding-r=
+ight:5px;">00:00</td><td style=3D"font-family: Arial; font-size: 12; color:=
+ Black;padding-left:5px;padding-right:5px;">Amendment fee-SafariLink</td><t=
+d style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px=
+;padding-right:5px;">Confirmed</td></tr></table><br /><table border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0"></table></td></tr><tr><td colspan=3D"2">=
+<span style=3D"font-size:15px;font-weight:bold">Travellers:</span>&nbsp;&nb=
+sp;&nbsp;&nbsp;(Count:Adult:&nbsp;1)<br /><table cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td valign=3D"top"><table border=3D"1" cellspacing=3D"0" cell=
+padding=3D"0" bordercolor=3D"#C6C3C6"><tr><th style=3D"font-family: Arial; =
+font-size: 13; color: Black;">Traveller Name</th></tr><tr><td style=3D"font=
+-family: Arial; font-size: 12; color: Black;">MISS. BUKHALA VALARIES<br /><=
+/td></tr></table></td></tr></table></td></tr><tr><td colspan=3D"2"><br><br>=
+<span style=3D"font-size:15px;font-weight:bold">Flight Remarks:</span><br><=
+ul><b>Notifications:</b><ul> <li>Flight 063: </li><ul><li>FREE change of re=
+servation up to 96hrs to flight departure time. Changes within 95hrs and 48=
+hrs to flight departure time is allowed at a fee of $25 per person. Any cha=
+nges within 48hrs and 12hrs to flight departure time will attract a penalty=
+ of $30 per person while changes within 12hrs and 6hrs to flight departure =
+time will be subject to a penalty of $50 per person. Changes MUST be made N=
+O later than 6 hours to the flight departure time, otherwise the entire tic=
+ket will be forfeited (charged 100% of the fare paid). All changes are subj=
+ect to applicable fare difference if the initial booked fare class is unava=
+ilable. Name change permitted on fully unutilized tickets at $30 per person=
+.</li></ul></ul><ul> <li>Flight 044: </li><ul><li>FREE change of reservatio=
+n up to 96hrs to flight departure time. Changes within 95hrs and 48hrs to f=
+light departure time is allowed at a fee of $25 per person. Any changes wit=
+hin 48hrs and 12hrs to flight departure time will attract a penalty of $30 =
+per person while changes within 12hrs and 6hrs to flight departure time wil=
+l be subject to a penalty of $50 per person. Changes MUST be made NO later =
+than 6 hours to the flight departure time, otherwise the entire ticket will=
+ be forfeited (charged 100% of the fare paid). All changes are subject to a=
+pplicable fare difference if the initial booked fare class is unavailable. =
+Name change permitted on fully unutilized tickets at $30 per person.</li></=
+ul></ul></ul></td></tr><tr><td style=3D"width:400px;" valign=3D"top"></td><=
+td style=3D"width:400px;" valign=3D"top"></tr><tr><td colspan=3D"2"><br><sp=
+an style=3D"font-size:15px;font-weight:bold">Terms & Conditions:</span><br>=
+<span style=3D"font-size:9px;"><p><strong>Please note flight timings and co=
+nditions - Especially min 2 passengers rule on applicable routes</strong><s=
+trong></strong></p><p><strong>Please&nbsp;</strong><a href=3D"https://mandr=
+illapp.com/track/click/31105836/qsysfeedbacksystem.qsys-ea.com?p=3DeyJzIjoi=
+SmljRS1ZVkhaNWV5WXVGeTkwM3FKUVp2S0k4IiwidiI6MSwicCI6IntcInVcIjozMTEwNTgzNix=
+cInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3FzeXNmZWVkYmFja3N5c3RlbS5xc3lzLW=
+VhLmNvbVxcXC9mZWVkYmFjay1mb3JtXFxcLzYwZDVkMTljMjU0YTlcIixcImlkXCI6XCJlODUwO=
+GU2MTA4ZTc0N2Y0OWQzMzliNzM2ODg5MWNjMVwiLFwidXJsX2lkc1wiOltcImFkODY0Y2Q2MTEy=
+ZjZjYTQyZmFmYThjNjkwM2Y2YTBhZmE2NDdjYTNcIl19In0"><strong>click here</strong=
+></a><strong>&nbsp;to share your flight experience with us.</strong></p><p>=
+<strong>Safarilink Reservations Phones:&nbsp;+254 20 6690 000 or,&nbsp;+254=
+ 730 888 000</strong><strong>,</strong><strong>&nbsp;+254 720 888 111</stro=
+ng></p><p><strong>The following are some of our Terms &amp; Conditions from=
+ the General Conditions of Carriage which you have viewed &amp; accepted on=
+ the Safarilink website:</strong></p><ul><li><strong>All tickets are Non-Re=
+fundable.</strong></li><li style=3D"text-align: left;"><strong>A minimum fe=
+e of $30 on change of reservations (date/time) will be charged and MUST be =
+made NOT later than 12 hours to the flight departure time, otherwise the ti=
+cket will be marked as No-show.</strong><strong></strong></li><li style=3D"=
+text-align: left;"><strong>If the original fare is not available at the tim=
+e of </strong><strong>changing,</strong><strong> a fare difference will be =
+charged, plus the change fee.</strong></li><li><strong>Cancellation fees of=
+ $75 will be charged per sector if the ticket is cancelled 60-days before d=
+eparture and credit can be utilized within 12 months. Within 60-days, cance=
+llations will be charged 100%.</strong><strong></strong></li><li><strong>Na=
+me Changes and Re-routing allowed at a fee</strong><strong> on fully unutil=
+ized tickets.</strong></li><li><strong>No-shows are non-refundable and non-=
+amendable</strong><strong></strong></li><li><strong>FREE baggage allowance =
+is STRICTLY limited to 15Kgs per person, except for Zanzibar, Kisumu, Kital=
+e, Diani, Malindi, Lamu and Mombasa which is 20Kgs, inclusive of hand lugga=
+ge and in soft bags.</strong></li><li><strong>Advance excess baggage can be=
+ purchased upto 48-hours before flight departure in batches of 10kgs, 20kgs=
+, and 30kgs at discounted rates.</strong></li><li><strong>Excess baggage at=
+ check-in will be charged at $3.50 per kilo on domestic flights and $10 per=
+ kilo for international flights&nbsp;</strong><strong>and will only be carr=
+ied subject to space availability.</strong></li><li><strong>Check-in-time i=
+s 90 minutes before flight time&nbsp;for International Flights and 60 minut=
+es for domestic flights, in Wilson, Lamu, Diani, Mombasa, Malindi and Kisum=
+u and 30-minutes out of our Safari destinations. Safarilink reserves the ri=
+ght to re-allocate seats or depart up to 20-minutes ahead of scheduled time=
+ if passengers have not arrived at the point of departure by that time</str=
+ong><strong></strong></li><li><strong>Check-in counters will CLOSE 45 minut=
+es prior to departure time, after which passengers will not be allowed to c=
+heck-in.</strong><strong></strong></li><li><strong>Passengers who have chec=
+ked-in online MUST still present their documents for verification before cl=
+osure of check-in counters.&nbsp;<strong>Passengers travelling with childre=
+n, infants or requiring special assistance will need to Checkin at the Airp=
+ort</strong></strong><strong></strong></li><li><strong>Safarilink reserves =
+the right to</strong><strong> change departure times or carrier when so req=
+uired for operational&sbquo; weather or safety reasons.</strong><strong></s=
+trong></li><li><strong>At&nbsp;check-in, passengers will be required to sho=
+w their passport&sbquo; or national ID with a photograph&sbquo; for identif=
+ication purposes. For children and infants, a copy of either their birth ce=
+rtificate or passport will be required.</strong><strong></strong></li><li><=
+strong>All firearms and/or ammunition must be booked at least 4 hours prior=
+ to flight departure time and will be charged $10. They must be declared at=
+ Check-in or to the pilot when boarding at bush airstrips</strong><strong><=
+/strong></li><li><strong>Safarilink is not responsible for any direct or co=
+nsequential costs resulting from any delays to its services and particularl=
+y if a delay results in missing a connection to another carrier - domestic =
+or international. Safarilink only guarantees a connection to another flight=
+ operated by Safarilink</strong><strong></strong></li><li><strong>The liabi=
+lity of Safarilink Aviation Limited (Safarilink) in respect of carriage of =
+passengers is subject to the rules and limitations relating to liability es=
+tablished by the Warsaw Convention as applied in Kenya and by the complete =
+Terms and Conditions listed on the Safarilink website.</strong><strong></st=
+rong></li><li><strong>Passengers paying by credit card will be required to =
+show the credit card and authenticate their signatures. If the Card Holder =
+is not the traveller the passenger needs to request permission.&nbsp;</stro=
+ng><strong></strong></li><li><strong>Consumption of alcohol on board Safari=
+link flights is not allowed. Safarilink reserves the right to offload/deny =
+carriage at any airport/airstrip if in its sole discretion considered a pas=
+senger is intoxicated and/or causes disturbance or endanger other passenger=
+s.</strong><strong></strong></li><li><strong>Expectant mothers from 28 week=
+s</strong><strong>&nbsp;must provide a medical certificate or fit to fly le=
+tter</strong><strong>&nbsp;from attendant gynaecologist clearing her of tra=
+vel.</strong></li><li><strong>For more details please visit our Terms &amp;=
+ Conditions on the website </strong><a href=3D"https://mandrillapp.com/trac=
+k/click/31105836/www.flysafarilink.com?p=3DeyJzIjoiNkplUEJSZ2VmNU0xRjJpb25j=
+V2RKQVB0cWpVIiwidiI6MSwicCI6IntcInVcIjozMTEwNTgzNixcInZcIjoxLFwidXJsXCI6XCJ=
+odHRwOlxcXC9cXFwvd3d3LmZseXNhZmFyaWxpbmsuY29tXFxcL3RyYXZlbC1pbmZvcm1hdGlvbl=
+xcXC90ZXJtc1wiLFwiaWRcIjpcImU4NTA4ZTYxMDhlNzQ3ZjQ5ZDMzOWI3MzY4ODkxY2MxXCIsX=
+CJ1cmxfaWRzXCI6W1wiZTU0ODdhYzE1OWVhYTRhZTE5ZDk3NWJiYWQ5NTBhOGNkY2RkYThiNVwi=
+XX0ifQ"><strong>www.flysafarilink.com/travel-information/terms</strong></a>=
+<strong>.</strong><strong></strong></li></ul></span></td></tr><tr><td colsp=
+an=3D"2"><br><br><table width=3D"100%"><tr><td align=3D"left" style=3D"font=
+-size:9px;">This email and any files transmitted with it are confidential a=
+nd intended solely for the use of the individual or entity to whom they are=
+ addressed. If you have received this email in error please notify the syst=
+em manager. This message contains confidential information and is intended =
+only for the individual named. If you are not the named addressee you shoul=
+d not disseminate, distribute or copy this e-mail. Please notify the sender=
+ immediately by e-mail if you have received this e-mail by mistake and dele=
+te this e-mail from your system. If you are not the intended recipient you =
+are notified that disclosing, copying, distributing or taking any action in=
+ reliance on the contents of this information is strictly prohibited.</td><=
+/tr><tr><td align=3D"left" style=3D"font-size:9px;">This E-mail is sent to =
+you by AeroCRS system, the e-mail address is not monitored. </td></tr><tr><=
+td align=3D"left" style=3D"font-size:9px;">Issued on 23-Nov-23 06:54, By us=
+er: Quinta Omondi</td></tr><tr><td align=3D"right"><table><tr><td> <a href=
+=3D"https://mandrillapp.com/track/click/31105836/www.aerocrs.com?p=3DeyJzIj=
+oiR2t1VWZYMDhxaDFNRkE5dTAwVDd6VlhXUmVJIiwidiI6MSwicCI6IntcInVcIjozMTEwNTgzN=
+ixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvd3d3LmFlcm9jcnMuY29tXFxcLz9yZWY9=
+ZW1haWwmY29tcD00XCIsXCJpZFwiOlwiZTg1MDhlNjEwOGU3NDdmNDlkMzM5YjczNjg4OTFjYzF=
+cIixcInVybF9pZHNcIjpbXCI4OGM3MDY0NGUwMGZjY2NjNDY4M2U1NTAzOTNhMjVlNjA1ZWE5NW=
+Y0XCJdfSJ9"><img src=3D"https://storage.aerocrs.com/0/system/poweredbyaeroc=
+rs.png" border=3D"0"></a></td></tr></table></td></tr></table><!--bookingcon=
+firmation:AEF0F0A3-4C35-46A1-AC8F-ADA1DA6FD0FB--></td></tr></table><img src=
+=3D"https://mandrillapp.com/track/open.php?u=3D31105836&id=3De8508e6108e747=
+f49d339b7368891cc1" height=3D"1" width=3D"1" alt=3D"">
+
+--_av-zvDaEB68hH0bxIEkJZDkzw--
+
+--_av-yRO_u4P2lEILwUToLBNlhg
+Content-Type: 
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="4-E Ticket - Pax copy-4AEF0F.pdf"
+
+JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/KQovQ3JlYXRvciAo/v8A
+dwBrAGgAdABtAGwAdABvAHAAZABmACAAMAAuADEAMgAuADQpCi9Qcm9kdWNl
+ciAo/v8AUQB0ACAANAAuADgALgA3KQovQ3JlYXRpb25EYXRlIChEOjIwMjMx
+MTIzMDY1NDEwWikKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL0V4dEdT
+dGF0ZQovU0EgdHJ1ZQovU00gMC4wMgovY2EgMS4wCi9DQSAxLjAKL0FJUyBm
+YWxzZQovU01hc2sgL05vbmU+PgplbmRvYmoKNCAwIG9iagpbL1BhdHRlcm4g
+L0RldmljZVJHQl0KZW5kb2JqCjYgMCBvYmoKPDwKL1R5cGUgL1hPYmplY3QK
+L1N1YnR5cGUgL0ltYWdlCi9XaWR0aCA5NQovSGVpZ2h0IDk1Ci9CaXRzUGVy
+Q29tcG9uZW50IDgKL0NvbG9yU3BhY2UgL0RldmljZVJHQgovTGVuZ3RoIDcg
+MCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO1debSO1ds+
+siRDpTgkYxFqoUGmyNSAUy3pJKTTMZylDIWljCVDoZI0KuPBikxJylBUpFkk
+iwapTEmSainR8bzftZ5rda/77OF5n/Mev9+3vrW+64+z3Hvfe3iud+973/fe
++3mkpaWCQ4cOBUGQSCSCEJUqVUJikyZNKEq6/AP4/fffjUo+//xzrda4cWMk
+Vq5cmSldu3bVynfffTeVzzzzTIjXX3+9rv/dd9+l2tNPPw1x7969FAcMGECF
+008/PaUHTQUgJ6Eg5CT8cJKjFYQcijY5TBdydFlNDkRNDhUKQw6e7tYYuPDC
+CzU5mzZtmhLi7LPP1uQsXrx4isLHH3/sJGfIkCHIXbJkCUsNHz4cTdx1110G
+ObfccgvSp02bxvSsrCyId9xxh26CZYGVK1dC55dffqE4a9YsTU7FihXjPGbN
+mjV1P5FizwX9D/4bPdfkPProo7oSTiukt2jRQqc//PDDzmlFtGzZkpXLMDCm
+1fHjx3U6/+KpdSU1atTQfdb6/AfJuemmm3Q99j+of++99xrkBDGgyYHoJAco
+KDl2QwY5tkJScgx9gxxni/LXR06rVq0utHDppZc6ycHU3hAiPT0dicWLF6f+
+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
+7+1gQ80YOWj0YguNGjUK8m+TcuTMmDGDCjStBw8efCsEYhA9cjAFqHb06NGI
+kYPoDzqtW7c2Rg5iTKTLzXC4ZGgClbNLmC/Ibdq0KZves2ePHjnwZ+zHAWiC
+8JcimEfZdevWseng3zXdIKdA3yY1dgIT+Zd++5K2cainyQmUh2yQY8D5Xjkv
+L0nThXwZzR45FFP7NikGMyJcIzbfsWPHJfmBkaOnFdpCYnZ2NvW7dOkCsU2b
+Nsa0MoDhirZg5KkGxwal2rVrRxErIHJlBcTIYdNYtXUlWFl0xxYtWoSyWDLe
+zA8hJ3rkMDfmt0mdkN/FOH3wIbUXQ6JPHwTGoR6RdMsi/rRykhPkjwUSLufc
+IMcuEpOcoCDhg5McXTCanMJMq2HDhmHa4u8NLrz88ssJNZGN0wcsNFoZITx7
+u3btWtQ5adIkZ4dhn6nPi+Lbtm2jeN5551HhhRBwldkoAlWIcueEm12wirpp
+EM5SmNoGOdEjh7kxP79pwOfnnJJbFsblJcL+/Cbhu7xEJP2qLda1MyzIzkz0
+amWTw+ITJ07UhlrIwXNhJD/55JMGOVT76aefkCt7ekWLFmVtFOHNUuTnKzds
+2GD0+VsXHnnkEebOmzcPYm5urm66ePHiVOvVq5duy75N6jQdMb9NShi3SWWC
+p/amXvR/imF0NeLLS9Qp/NGMnVKgkaNvsDtHjo+cwHU0E71lYXQ1mpyggEcz
+NWvWvDcG5F5rHHJKlCjBUmvWrIkgp0qVKkMUxo8fTzUfOQ8++CDUIOqOoU7m
+zpw5E2LPnj1ZG3x7FsfPChF/qd+nT58hFnr37k3lBg0aUC2CwAjEmVaC6Bdg
+Y554+r4TSMj1fi7lYpCNF2B9l5cI31JeUBTos1QFIkfUYn4nkOC5lUFO4L9I
+ENPP+R8KUtNdCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago1NjQ0CmVuZG9i
+ago4IDAgb2JqCjw8Ci9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQov
+V2lkdGggMzAwCi9IZWlnaHQgMTAwCi9CaXRzUGVyQ29tcG9uZW50IDgKL0Nv
+bG9yU3BhY2UgL0RldmljZUdyYXkKL0xlbmd0aCA5IDAgUgovRmlsdGVyIC9G
+bGF0ZURlY29kZQo+PgpzdHJlYW0KeJztmntczOkex38zU5IVsRohKqtcVkqT
+lGJx2JfQEhEdElGa7rnEIrtrWdc9h1o6a1dyt5azizpOWLKxSZJcYuVSdG+q
+OUmjy/zOb57f8/zmN7+mMc2Ec16v5/3XfJ/785nn9/y+z/f5EQQGg8FgMBgM
+BoPBYDAYDAaDwWAwGAwGg8GoIrBdvPdKvqSqqrrgWmKgDa+t9XmmwyZO95rx
+2SRRF536t/ac4UUxc7I1MD+iTW8PK2DawNwp/bVqzN0LMGt8Z53Gohne5J+L
+amWNcpJC3iSrfXF0fNvqTzx4v7xGSlGT5qLTAIKKpICnQcAML6bNx4sVJn9Z
+CW0+D9OqtYt0aelVW13GohnHk6WvSRVkxXv7aV+/x85SGap5212XEfDEdXT1
+yqXAjIRm+RJgrnhFmzURWrWWBseSa6PLWDQyP7uRbMGrNK2XlulXtcp6N910
+GQJv6X/o6qWBwAyHZnEAMKNhB5WhWrV2EY7l1gBdxqKJ+Y9aKqUgY4SWDXxW
+waqVNUqXMfyfaOV4S71UJJnaVasGjHawK+WP02UQvBD4lElCgKmqFT+mnjal
+kVq19ta0OtzUmlZN2u0OtudQhaqMyxlHRLoMghcMV045vV9xtFoOt6/qcK1a
+e1taDS5htEmPWxm9Jv4Cs83L80y18R0m3IPlC4Ndh7vaa7cYOfDsI1Yup1gt
+HgZMVa0IUSSdGzpcq9bellZRUtjwyxP0ihgUW8QsrLEGWrTg9QIW39Fug+Jq
+1UbellaJ9ajhj1DSBvRaa17ZUVmwQy/b4S7u7q5OQy1V3c055bB4gJFKulHv
+QY6jqAqOQyw+aLV7gfkAWysTbmpbtDLsa+822sWuN+sRaFUrXkdCH043wIYv
+M0n219HC+p6ZpIVrWMK5nGdlFS8epB/9wsvWmE628/Hz/A7OizywyHee/whD
+kGFgPT5i7/k7RRUVhXcu71/1aX9D1JKZp988BQsGCQgTUeCe0+cOz6Y8c5/5
+ikQ/b+AScbUaMofOnTUQmON8QQv+Y/lEJ4eQg1kllc/++MF/INMFVyvRXLpL
+P39nvbQ6g3yr/OloWXTflpuu4GpaLPwfukw4ynKhKDIDe4KMTSSXH8EiEfqk
+yNip8vNze8DWP0GPbEwH4YoC8Gsv5XzCRFm4Gq14n6OFvkxh8i9D899G3UPy
+lWOagf5ZjlaDmTd9+TS9tNqPnkHy8V/NOtN/DV9goEBgIKDLmK7nuPUUJ8wV
+OetruOnxlFZ864QW5cldQvopcbsPExZ3T6J/1G6h3oNQnDJ170HeMvhPScAZ
+h58Mn4WDVvHsHiRLDNRp1TMdKf1wul5SETGs2d7dPLWvcQcB9+VnuL3lzMmm
+XztQWeuquelxlFb9DqmpQG7uBlobhV6bAejhrd3aNl+UfwZqdTFJtYd77mq0
+MjkLnSL5n576SUU4K30GUt7cXHxhw5RenCJBVeqmLl1IaRqrTivDFXJ1FZrH
+qGqVXErqp1Xza87ZTH6opVYGiWgzKPBtc/SEgyC5WaW/xvraFynLBrNKCM+g
+qb9KTUjMQMWbLlArflMDyWFvV8I5FxnlZ79LymOytnzI1kregJrVeV21IGcQ
+VyvBZnggIIv8DAl9ERW26LKxpuCUN+NazXxMpzb/MUpo2s3cIwuWqrDkEY4L
+g3y+R9v+MXHAkhA3ARGATgLHHc1Mu/cOfAbN323YWimp36GPVuyttMhPRasc
+KwLVJEsW6ecvAPjepWRLGotSPGCBrTCplnaaBYuguDJ3AWFgbGw4rwwWCO3W
+0biTIWGyE9p5tHPbSQzt5/YttSpMT3tYsUtnrRoPTHf5ZCmzjqUbVLS6Jpxe
+iXJCOukvFeVkTkEvClXyVtP5MXdyc3JycrN3w/JO0P2STaGX3iyklZh2OkzX
+5+couB8O/8mRSGxnrlbnfUWDBjqMdtBVK+k3FpRtZIearI9T0So3Cj4SZE1k
+C39XR4atf6BOLMnXILffCGcnJ6cRIhT8C4IhGJknrRXjt0fQf52BtZuTgpHd
+YYXVaCYuHK32DEEj0FGrZDO6+kZYvDFJRauXyJWriGovqQii49i1KWjGLGq9
+Vd8c/G42o32+Qv6RbCpHq/AWy1zw4ZDx/vEFMP8VR6vTVkxB3bSSLoPVPWAX
+8uMqWjFsaYe9isXgud/8klvL6eO2OcruMnxqwOfxh1KynjOZmrUyc5q2JHb3
+kdQcZSCQo1Xdp8rSuml1D7Xg9EizVv8wbVetKCwmhsYl36tnd+JFv2ftAnZf
+esp9UWvQiu8Suu/3Qm5gjKNVpqW+WmWi491wqFXzMfVayYI6tLdYFD0nxaaU
+KTuJU0SjzPxbdK5ZK4vom+oqcLQ6aqGvVjfQnZHoDVrpeGPCwcZR5KjAmYnI
+ECZhdxm/+1/U5tnja7Z7LC8vrn+DVtaJ7GE2lbxoVqvVkXeoFXmgm/5a/VxU
+Xqag7pixMnEa8h7Ji0JCsAp5vqSs/EnWqfBVeZq1+kB5fKwvfXz9cFBUg1qt
+jr1LrerD9ffaL6HGbnysTDRKRKmpQmJgNvzdVHwg0KELQYy7q1krTxRXbXy2
+z3cwNcS/kO9LK3lVMfqp212cCrvRybIkWOkfdD2CevilBxEJX2TyXCc6dzby
+29VrxVuHKv82jK6w8H1pJX+6YBqzfyTqvb0HMW5CWh8m0esJSvy2K7ETDqzc
+F+YGSzVqZfojksaeLm8Y8760KvInTFLQWb8iWF+tPmbcn6Yr8F3Bm3OHCT34
+diAOwJ+FyMneKdeoVe9j0LxHh04Ji4PvS6ubVgRfhOJz8qusXUYnDP6pPIcW
+X4pfG7Y2IUOCpJJXWBMEmmkxvCR1RnGGVrTq8xM0Jb3pCh4oHv/OtcruT512
+t6EJNiTqqRUxGs1EoU1ddWX1K6VNbqVmvwv21ZAMYoAO51AQBJ2dOVp13QfN
+5gShwp6SiVp751qBuKjwIeq/eIGeWhlsa/XemczrS+33Icg1fX1jZ+yXSbeZ
+dfja01CdVvxYVKD28vY1G396wjhrdapxhnekFeEHL61JeQbrpKAT5j+0JlU+
++FLGOptJaJCyFiH5er5arQgP1pGx5iWrQtPY96JVpzNoNTQk6KkVYf0tEl6V
+a5Po/BhOdhOcf8MqOl7lgxZeGK2V6TZOQ42ogZlAK+ieqZ5xgpBW9AdXYUir
+RcCMQlqBL0P4p1vV6igwL6hoRYxEgQ5S4q2vWD2C0YUbiyfxrjC753aVq77M
+WBQaTKWDQn5o7SyHZ5wBJ1RaStmExrpRcWE95im0fmV9DccLh7ugFNxq8VZA
+s0oMxFkNxamj7wd/gy3cQac8ZxQHPw1MdBd8n756JbYwE3hgr69YhMO65Hx2
+GKH06h4v5ZlHuOY62s+bHyS5CTZLKysoKh9ZAvd11uNqhVkhCUZVLP+GYlxk
+fXbcMPNTUlCg+qTif3a5XgOsmv1Kh47gBRRIQJE/6YUkLqTNPLAd88Oe0+YT
+cHvIP1EGBiC9xMQZssAQJJV0rC+5EuTXpMFDruUZiYQeYvXf9daKIHrN/DIp
+Nf3GrVs3rl44vm2xg2ruyC9OXrmZk5V2cpNiP3eNDgmmEIf2AVoNWBihMIND
+7ZRfikzeejb95q3MS8fXjaE2jPHRoEDEAkU4zHxOFLCiJrK/chgSFAqKLKJv
+kOyg6Q8uZnj2S2kzALhIPA+xWGFGzxbC2mbzwRBCxROA6RkCBhjpg77ZcQ8F
+9YPFIYHtoJWCzpZDRU52/dXGxXh9RS4OFnztG+to7eg81PzN5TAYDAaDwWAw
+GAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBjM/xz/BeFCo0kKZW5kc3Ry
+ZWFtCmVuZG9iago5IDAgb2JqCjI4NTIKZW5kb2JqCjEwIDAgb2JqCjw8Ci9U
+eXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQovV2lkdGggMzAwCi9IZWln
+aHQgMTAwCi9CaXRzUGVyQ29tcG9uZW50IDgKL0NvbG9yU3BhY2UgL0Rldmlj
+ZVJHQgovU01hc2sgOCAwIFIKL0xlbmd0aCAxMSAwIFIKL0ZpbHRlciAvRmxh
+dGVEZWNvZGUKPj4Kc3RyZWFtCnic7Z3bcto6FIb95ly0wXbTTqeXmabFskku
+eIk+2t46IyStJRkcwOT/xpNJiDE6/TqstSSaBgAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmcTg0YttMbSO6
+RrTNqC/1e6d/79Rlfn/rm//+u3VyE2SSdj+b4ZtOat8MOvFT34xb9fu0uXX6
+SozPtsBlav2lXtmqf0WobCY3D526dm18s6yv7JOnrnlLbv5o4jS7xMjrcPd1
+9HHI1isr2kjPqMzKsDte6l9OlaMT6Z0g02/T2dqOIrrki7K93TMyC4Mr/zTx
+QxffnM2muabTetlsjhUXX7pOrwyVbKF7m8/J1AfjXf0V1Olteft+7Dr41N4z
+qhvsyfRHjVPdTFeNSARr+8/cndPVNcgkW47XnxBT7/PUdzo4mhZ+K+Tk0w/N
+fDp3TzdLZA1mKpLtRkRSwnbcp25ONchW8ZUhU9KqVcNnQwrwbPXF3emNSk8O
+4tke/h4a2yygwU+oQTMFvVyAfqA5XL02f/2qzoJc+N/3PEfJipgxjsnSe5YG
+5XqQKqWbLCWgQc+YWF0u1OD1VxbUwBE2ML9uHe7GgpTFm1nyeUnWg/M0yDR7
+aPBGFCwYTla+JR9NpuzNcnV2TZ8FnyTTdI21bbzFMD0LMw5OWVn1yhMR31yt
+QclAF9RN7KLQoISxYxg7djpq7J5I81o4FP67ootnYA2hD8xcDd4V0KCBGz7a
+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
+/DfRYP3iMcV8ByglK5HKio7qFKlg2Xl+yIY5yOUsDWZithlNJa2I2r/p37J2
+40xjwsnoxlOlmo78+lR7Nl3dw/kBSOS2j/Gr1HysGvs1MWkV89PX8Ehw5mwQ
+ys4cwtics7KinGip75U/rlAkGmQ8SlQuuHNIkrcwlpb0wOGmdIIQ5VdaHWpe
+6sqhdnJoornaQmybHWpLe/GEO4w6Wo6Fa8Z9cqqnn83GQXf6LVTC9s9V2RTa
+a7/7dsxv/BGn/fbkshndaVLIu1yb06/zjj4o3QF0/NLeXMZFMr2MHnXy5za+
+2fc8US4Eu2+iMjFNc1rvYSkR4crH+spW9EPYSD3T18Au4Y2iuexP7D7BlHDb
+xUkH7krSr/Xs+SSnAjHtTTbjWIN6opI9RHrPHjZlPmgM9D66ZmaS58+WsUuS
+5Plm/2NYCEatGWmbVyqsB9NTZkCZCHftvsvfPCbRXHYumkzqTLml33Tvzz2I
+el3mezfMNsy0IszezIhjo4p69S353VjkRLd/kFVhlsNG9z9PeqrfqxpXRyRd
+to9S1u/fL3q/hm698ufm1kFHO326hdkzIjM7q2MBAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAADgU/E/846EZQplbmRzdHJlYW0KZW5kb2Jq
+CjExIDAgb2JqCjI4ODkKZW5kb2JqCjEzIDAgb2JqCjw8Ci9UeXBlIC9Bbm5v
+dAovU3VidHlwZSAvTGluawovUmVjdCBbNTguNTAwMDAwMCAgNzQ4LjI1MDAw
+MCAgMjM4LjUwMDAwMCAgNzU4IF0KL0JvcmRlciBbMCAwIDBdCi9BIDw8Ci9U
+eXBlIC9BY3Rpb24KL1MgL1VSSQovVVJJIChodHRwOi8vd3d3LmZseXNhZmFy
+aWxpbmsuY29tKQo+Pgo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL1R5cGUgL0Fu
+bm90Ci9TdWJ0eXBlIC9MaW5rCi9SZWN0IFsyOC41MDAwMDAwICA4MTMuNTAw
+MDAwICAyOC41MDAwMDAwICA4MTMuNTAwMDAwIF0KL0JvcmRlciBbMCAwIDBd
+Ci9BIDw8Ci9UeXBlIC9BY3Rpb24KL1MgL1VSSQovVVJJIChodHRwczovL2Ns
+aWVudHMuYWVyb2Nycy5jb20vL0dvN3B1Yi9wbnJCb29raW5nUmVmLmFzcD9J
+RD1BRUYwRjBBMy00QzM1LTQ2QTEtQUM4Ri1BREExREE2RkQwRkIpCj4+Cj4+
+CmVuZG9iagoxNSAwIG9iago8PAovVHlwZSAvQW5ub3QKL1N1YnR5cGUgL0xp
+bmsKL1JlY3QgWzc5LjUwMDAwMDAgIDM5LjUwMDAwMDAgIDEwOS41MDAwMDAg
+IDQ3Ljc1MDAwMDAgXQovQm9yZGVyIFswIDAgMF0KL0EgPDwKL1R5cGUgL0Fj
+dGlvbgovUyAvVVJJCi9VUkkgKGh0dHBzOi8vcXN5c2ZlZWRiYWNrc3lzdGVt
+LnFzeXMtZWEuY29tL2ZlZWRiYWNrLWZvcm0vNjBkNWQxOWMyNTRhOSkKPj4K
+Pj4KZW5kb2JqCjUgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAg
+UgovQ29udGVudHMgMTYgMCBSCi9SZXNvdXJjZXMgMTggMCBSCi9Bbm5vdHMg
+MTkgMCBSCi9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCj4+CmVuZG9iagoxOCAw
+IG9iago8PAovQ29sb3JTcGFjZSA8PAovUENTcCA0IDAgUgovQ1NwIC9EZXZp
+Y2VSR0IKL0NTcGcgL0RldmljZUdyYXkKPj4KL0V4dEdTdGF0ZSA8PAovR1Nh
+IDMgMCBSCj4+Ci9QYXR0ZXJuIDw8Cj4+Ci9Gb250IDw8Ci9GMTIgMTIgMCBS
+Cj4+Ci9YT2JqZWN0IDw8Ci9JbTYgNiAwIFIKL0ltMTAgMTAgMCBSCj4+Cj4+
+CmVuZG9iagoxOSAwIG9iagpbIDEzIDAgUiAxNCAwIFIgMTUgMCBSIF0KZW5k
+b2JqCjE2IDAgb2JqCjw8Ci9MZW5ndGggMTcgMCBSCi9GaWx0ZXIgL0ZsYXRl
+RGVjb2RlCj4+CnN0cmVhbQp4nO1d34/cthF+v79CzwVyFiWKlADDgO9sFy3Q
+AoYP6EPRh8BJGgRxGict2j+/EiXtaudbarR70ne7d/QBvl2exCGH8+PjkEO+
++uOnb7N//p69uv/0a/Z5+H3/6Sa/9VXe/8u6n2+mBUV9O3zOalMOn7PPX26+
+Zl9vPt58bP/vfn+9GWvt6/j98y83r3p6N33Jp/u/tp/+mxXZn9tvP2V//0f7
+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
+tmJubg6OL91BMeeQYVz0Ss+YaqlU9O7j9c/wBCR9QaWqd0QGLZ02zohlDAU+
+SoKwjsgO6TLe/TNmeHpYYcFEYuny3MxqQwGV6oYNKtXFUlfCpbGsk2Dy0rno
+Sb0FrkMaqQrGY9HUR4GL5KySs0rOKjmr5KySs2I4K8oMrB53TVGd2qP88NM0
+eTcaB+y+bcrhHx5QMfnbsrGLVDY7inV1wJLYasmjgp/oFPTwaGSh59TLle3R
+gb/0Xh5qrpCDI0eWtIPY9q7u+9odblMeFPy87RkyR+Wqa8KU5QsQXCRwPLOm
+hsDx7AXDubUM3SRH4tVPDpNx5c6ejL6wc7KlKy7BT7oPm6eXZgnNQTr9SBlz
+jp0x5WhoktAnob9Wod+5nfYn+zpr+9FpTNzRx+zjzf8BtmRTpwplbmRzdHJl
+YW0KZW5kb2JqCjE3IDAgb2JqCjQ5NzAKZW5kb2JqCjIxIDAgb2JqCjw8Ci9U
+eXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQovV2lkdGggMTIzCi9IZWln
+aHQgMTYKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNl
+R3JheQovTGVuZ3RoIDIyIDAgUgovRmlsdGVyIC9GbGF0ZURlY29kZQo+Pgpz
+dHJlYW0KeJy11b1KxTAUB/CzXUWXoE+QV8gkrnmFysVRIeIoDnmFuolbHkCF
+7OLQWVzCddXhrF6n4wcI6hJPW69coSnmcntKv0N+zb8NBVisNo6uHt/m6zmc
+bi3YV14dvMSOulgZXi67YK77taHlcUKO8Sa3Kyllz12lAISU4vfC6CNJx508
+2RCiT992jlduomcX9tJynGTSCIIKWVowRliwSjkD1vJaSjDO1zSCDdYIV8dz
+3kN/5dJSUYHWe1vZqEmh4cUr78qgyWAzaofWVprq2Kc99HsmzWnaAkGRIl+x
+QciSAUSM3reBI49ekWvey9MSaeSNIsk6YkGOU9Cipq3UJsAscIRARd1+qYHX
+Wx6rBlcJMuD5CZjW/PWJgG3gSPwVNHnDfg99l0dDO2/q6SNEcyLbnZDNsZhN
+rtI1DUefaXqcSf+zivAz/XeT8u0w8lydJOSH9cFpOHztki9Xh5cBNo+vp39/
+mpOz7bwuvgEOLg42CmVuZHN0cmVhbQplbmRvYmoKMjIgMCBvYmoKMzY2CmVu
+ZG9iagoyMyAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1h
+Z2UKL1dpZHRoIDEyMwovSGVpZ2h0IDE2Ci9CaXRzUGVyQ29tcG9uZW50IDgK
+L0NvbG9yU3BhY2UgL0RldmljZVJHQgovU01hc2sgMjEgMCBSCi9MZW5ndGgg
+MjQgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO2YW2hU
+ZxDHg/WWdq1rXLOJbjbuxWzucWe+b749G0wXtFUqiQGDtg+lQhEfCvWhEKWI
+RrQQbYy3YiuoKOq2FKQXMXiNRs1FIzYkBS+prpHGoihGxaBWOJ2zuy7NQ0zs
+y25g/wyHw+FwOPObYb6ZSUkZGXqky7Ye+v4nWbNFrqkXNVuGsDWbxeo6uXGX
++K1NPtBlvH9/hOnmU1q+QhQVYMZkSJ8EfB3aLGBNM152ZGFFJTa0SF1/L95+
+jAxdvuPT/F7TOCjIR+VDYlPDNX6fZbXAlEne74L0t/5+vL1JdIX6tdIAWt4F
+rdSgx+b1YlExShmGH0YKaDxBEX3CNzET0giQ5sdcD5pTvQcbKd4OJbR0fd7K
+WmEaA0yMYfo0tE9DTx76CKdlQmEBlgXQYUenCzWFdjt4ZqDS0O008ObnodMJ
+ebnIkeIo8BeybfwFuNrvi7dbiauOh8QpmpsTpu3HqemwZJm4ek+FHqrD5+mD
+D9H8DpQvFJdvqZt96mwXFRcb+X/yCjV20uFL1NRCX9UKtwMkGcw5Xmkm2PxD
+MskH1f4TwpaJEVxuB1Yuwj5d7QrSJ0vF8Uv00aeCU/qOrn49TZUf44Vu1fQn
+VVSJ1ttq6efCH8Ar96itl9LTosA5anyYfvaFiLdbiatNewQjihx/lonQ8Dsd
+7eT89Dqz0R9O+L1H5MVeGjcKzG9DhhW6/1FffyvfSgF7Fuw+SA+eq52HpC0z
+Cpwtx4ULqpLAB1Xdf4BPMcOhZmoJGcBLSrCpWR04RvuPyjPdNDYM3JoO3S9U
+9Vo5OgW67tOtx6pqoQAwjs5Y08LAK5LABxeXlKxXJcWTg4E52PtSNbbTlzXi
+RDv16Gr2XLz+TP18iioWi9ZrqqtPTUiF9dvkS93ncKHZBDNLjOIfaxGTJeX1
+6rhPQhgtB7PiZoPhzyvHpg7V3qPOddK+BrJlwNz5oqNHhfrUuT9oVgBN42Hd
+Nrk9KLmfUQM79sihuTWYBD6odN1dXStjbaG/FF0OnJoJXBlcTqM+cBSc2eBy
+Y6lmtIUzXDirDAsLkW8Y7wDa4bZQ+eDaExVvtxJat/tBKxORwScyY/LIE5tr
+ooMPYFFRdPBh405SiAG0OV55HpyY6g2eTC5VhlbnX4J8YgKP9gX/a7QXmBEe
+7XccoLvJdcrwdOOpWl6NhflojSyvLMMyY3llhuk2KF+AR85LXU/OmG+gxzq2
+huSOH0VNvVhdZ2xfh7B6seobuWGn/KWZEzuBUP8LlKl9FAplbmRzdHJlYW0K
+ZW5kb2JqCjI0IDAgb2JqCjk0MQplbmRvYmoKMjUgMCBvYmoKPDwKL1R5cGUg
+L0Fubm90Ci9TdWJ0eXBlIC9MaW5rCi9SZWN0IFsyODYuNTAwMDAwICA1MDAu
+NzUwMDAwICA0MzMuNTAwMDAwICA1MDkgXQovQm9yZGVyIFswIDAgMF0KL0Eg
+PDwKL1R5cGUgL0FjdGlvbgovUyAvVVJJCi9VUkkgKGh0dHA6Ly93d3cuZmx5
+c2FmYXJpbGluay5jb20vdHJhdmVsLWluZm9ybWF0aW9uL3Rlcm1zKQo+Pgo+
+PgplbmRvYmoKMjYgMCBvYmoKPDwKL1R5cGUgL0Fubm90Ci9TdWJ0eXBlIC9M
+aW5rCi9SZWN0IFs2MC43NTAwMDAwICAzOTkuNTAwMDAwICAxMzQuMjUwMDAw
+ICA0MDkuMjUwMDAwIF0KL0JvcmRlciBbMCAwIDBdCi9BIDw8Ci9UeXBlIC9B
+Y3Rpb24KL1MgL1VSSQovVVJJIChodHRwOi8vd3d3LmFlcm9jcnMuY29tLz9y
+ZWY9ZW1haWwmY29tcD00KQo+Pgo+PgplbmRvYmoKMjcgMCBvYmoKPDwKL1R5
+cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyMCAwIG9iago8
+PAovVHlwZSAvUGFnZQovUGFyZW50IDIgMCBSCi9Db250ZW50cyAyOCAwIFIK
+L1Jlc291cmNlcyAzMCAwIFIKL0Fubm90cyAzMSAwIFIKL01lZGlhQm94IFsw
+IDAgNTk1IDg0Ml0KPj4KZW5kb2JqCjMwIDAgb2JqCjw8Ci9Db2xvclNwYWNl
+IDw8Ci9QQ1NwIDQgMCBSCi9DU3AgL0RldmljZVJHQgovQ1NwZyAvRGV2aWNl
+R3JheQo+PgovRXh0R1N0YXRlIDw8Ci9HU2EgMyAwIFIKPj4KL1BhdHRlcm4g
+PDwKPj4KL0ZvbnQgPDwKL0YxMiAxMiAwIFIKPj4KL1hPYmplY3QgPDwKL0lt
+MjMgMjMgMCBSCj4+Cj4+CmVuZG9iagozMSAwIG9iagpbIDI1IDAgUiAyNiAw
+IFIgXQplbmRvYmoKMjggMCBvYmoKPDwKL0xlbmd0aCAyOSAwIFIKL0ZpbHRl
+ciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCnic7V1bj9y4lX7vX1HPAcbWhZIo
+YDCA3Z5ZZIFdYOAG8hDsw8DZJAjGszGSxebnb1VJ6i7xU9VHnjpUqbpPBoht
+qUjxci4fz43v/+3zL7u//GP3/vHz33dfxj8fPz8U77qmGP63O/z33emDyr8b
+/77zZT3+fffl68O33beHnx9+3v//t4epx6H9P7789vB++NbD8OTz43/u//Z/
+u2r37/t//W33x//a//GnsfnhB18furJ7d+i6bPb//PX0n2Xh2ndtX/Z+/7wI
+/3n48V8f/vC73W/7cRTvfFFUVV3V5TCW2b+/O2m6n4Bw0Piyenl5aSk+Pj28
+/6msdv3u6c+7YXzfDX88fX1wfv+Puty/+9Pu+8O8f9g9/e2hPbwcHlThg/r4
+wF34hQt/0Rwf1C8PWvqL7vige3ngw688Bk3qj0GT8lPY5MPxQXPhF+HQq0e6
+Hj/RuXwMm8DkwoHB5MoiaFLDetCv8PWoYG/DcVQu6KNqggdl+KBq2c5hHzAX
+WI+wU3hQhX1EdEqb8D5wG0KSKv1tFrkLm4QUxCdX9WEf9IF8kUNJ9f7z33/5
+bff997v3H778839/+fXpv//1z933P+x++GH38dPjg+ue9YUJNBNoJtBMoG1M
+oP34H48PPz7twWcmJFe0M8k3bkuqGC2aCWsvdJZ7CmUgvG9ESOnsq0JI4TjO
+PUje0n5pS21xFx/kJvHjectV08BD7QtqEJUcSGhQcrCiAE/gQdikHnCTf/kF
+RTR1uLM4UoqsImYL0CIcejUMvU/pFFaMAgf8LMVeSNjhekTgt3ByHGrVVYjO
+4Bdt+AuKvaqfwiZAH6vgSNwoWHVKH9hpOHQBV9YumAs24XgW5gIMBIz8mvY2
+nStxtvwwx093IKRBh3FyCOUpnnfCz1YF0w2o5X4Mf8GlFIwUvhJOH86QfPp4
+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
+Iq9zgOTGks2eOfkS3u+J8p6PZVR7cJl8Pzhc5fQjwDBZiC7Hzm32rMfXQ4U+
+wnFEnOOpZSxikRVIiksYyQmbm8kpFXKFUw6LnP0YUvZXrBX3QoR9jIE0l+Q1
+18UKZrQIzBgeLjWOVBpn/NHFnITmuA+KaqfyTMaCxmFbWbNs9nSsgCojwBtg
+pJA+JDqQH2U436aDWRAXEU1W4ZcIuGtG1DkV3o0RdR2CEZB2BPLgKhqGLhBs
+Cuf4CEnH9YsAKrwiCkIJQ23q3LYqEUpcJa1iJ7YTNtuGVcw6OY1p2Y9DdR29
+RXiEgKUB/xQchwRG5ddEoRw00RVTQQ3c/K1gWkCCAREPK3YmnPjCqqNnx9O5
+aByGswxsqzYJwWw1rBYCNKcyUo24WDiXANFlcTmlxy5EiD7gW346BpXHT1AC
+d1GW0EAFv69Ez3G/Xo54wzz+xftx0QqmryCCI4SBwBMK8Iuejzg5gLKIiK6M
+9Q1mR7dN1kSPsS7u7S1v6SSrgcMFIbIa0F1gRyq4I5FzShvCCMgnK+k41jEL
+UJipoSVvZQO6jStahQk1HLywplzl8cwgqpy3I9HbyX2Lpi26iSBb8oQwwZ6F
+540q5DZgnXLQLFDS4oKXA9mPfhZ5OvxK2YZ9gGcRvhI24eKorJMluiR9BxAn
+Rc/uMdgG/Gy6dRClIKxHWPJEwPXnLAkpOcjfnhlzYMJy17hd2Xf97svXC1xc
+VvXIuoev7//vy9fd+99/3T/dffqf/df3/+2+XZQDKEBORnVRuvy8+/nh/wG5
+nhdyCmVuZHN0cmVhbQplbmRvYmoKMjkgMCBvYmoKNzU4MwplbmRvYmoKMzIg
+MCBvYmoKPDwgL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvUUdC
+QUFBK05vdG9TYW5zQ0pLa3ItUmVndWxhcgovRmxhZ3MgNCAKL0ZvbnRCQm94
+IFstMTAwMiAtMTA0OCAyOTI4IDE4MDggXQovSXRhbGljQW5nbGUgMCAKL0Fz
+Y2VudCAxMTYwIAovRGVzY2VudCAtMzIwIAovQ2FwSGVpZ2h0IDExNjAgCi9T
+dGVtViA1MCAKL0ZvbnRGaWxlMiAzMyAwIFIKPj4KZW5kb2JqCjMzIDAgb2Jq
+Cjw8Ci9MZW5ndGgxIDEyNDQ4IAovTGVuZ3RoIDM2IDAgUgovRmlsdGVyIC9G
+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
++qIK01isypZgzA0Q3UZNppPin0h975YjJGi0GRgxoWoMEksEc90HE+OyW7r5
+aF8OQHR+baI0LyMcd0fLdjfWDtgWzlEWRqc06eNyN7z4u+yVS1NkqipFxlKN
+DAabc+2VsWCr1z/UiWafX2wOTcc4WrSiUTvLZ4auwZJRvXNZGvqtcVtlhqk6
+L9R3lr5tja7m4fZ0QeGMdJ0xJ2WxKgwf1BqUzz7g0kTqjAuXHc2QahZZCtPq
+s8N4G4dwuwRCcQ1/UsXvZEK2Mi1buF2SCzyiarFqImjByfwpBlZJEcqRSINF
+E78dHM2p42OxkgZqTAtMyBaTFMJz65U7DwUUP8UFZR7rXXZ2cDEDuq2vWRbv
+7c5Os+5ZuvTVXImqdVOBdmMCcx429RUXra5NAPj2i/YG18kc9Ij6C5D92XHw
+fbkO8jcct3Qf60mH5uqXvntYDRlKPkfxKMUcNYlH6YT8dOQqbHv9Sqh8uleo
+Ysb7Z4U1ri1lz5aUPFvG9OJzv0ZrS911r8hzQCPz9+QYemLAEPtLevHkvSej
+CszlHS1wAg6GQnv9EWHV8C25FouEHU8wz7uy/nhtpHIKRV8RjdRtlwQlrs7T
+B0TpvCatOJcS66EZZN4IrtzzhUzcxY6gCJMVisIoE5dUlUiFgbtP+ETkdSw1
+HN1crOo9/Mijv0qo7srL2ZifuyN0enTq3I3iBq7irdkJye4svv3Pj+n2wicX
+G57szARlpuuNkmKPhCIhSuhLIzkfDzCK8aUI839OnXJln2bOu9JF11zbmC66
+L8S4L0ftsD89gxjRr2BU0daPnggKD/AJlAUf+BSiX3o6UOrvPS0y4OhrR6Jk
+PlOlUw+9yVSU7K+q2lviOoxWWL3o8eLixxcxG12r9z5BG/yeqBD3ZiWItkkY
+0UtQhBGkyfgyLXBCGYAJR8FX7Qg/GcNnn5QJu2fUZcgERCIf3OmYy0ovLtfs
+Ksqylsa8BNrs6HDl3ACYn18nl4UL9qn6dTUbYo7kP9RxvjBzhSENonQdufq1
+dYnyhIxlZfHq3mdbN39YXfvCIuiv6s/qu9mYmgWRWpOgsGExVqYzY9Ol8sqS
+vLm5W1Q/fj5Vm9IFkwe44ddrrnbHLG1fpcuy6mMAUgzrdRXHaqMWm1cXLtnT
+mQFL9OrqaR7bHEfbzKG2oQvhK2+sz90xHG0FdDuGNfgRsZdY4NUDs9bCrG5v
+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
+1rFTy/G8HcjVQpHSRMd5TefgeBydxUhnK6LytVDrz0NN2FGKZdhrpprn8dOM
+s5spZ/4ePxePoF5qO34OI6XkOZiohcxjuqFS2NATjNTabl2652jBeZtHKd1a
+L0YaB9WtgaKGpRarwK8eEaclbOuknV+0N28fGifrRD6/hLGf6izqFyJS6zgf
+GYtJrXSV8fis29/i/4145qS6MmKrgmqSt04eldbpQYoJWz1U18ZRT3Yj2Uj9
+3x1DR+xkpz7e5vFXLVqQRf10euw5xrloAgfebj8XyxIpGv4dyVror5N6XBNK
+NRLj3TwN9O9ctFs5jR/l2GYxkqqprOVUjmpsVaBt9RgvKmhfjfYto7ivwLFc
++qyexvls/C1B1GrpCN92j+XRXFRCFlMsaylNDLWz2aMdO+2toDjhse+gMtrp
+Oqx4l9cwL3kcXauRrvDf1ytLo8Z4mzjoM81IZaKULPVAt/caKJJiqBfwElqp
+Lkcs4vDor8Vjfytdy1iscVDfG/GnDuptfGRxRxk7xYhbJne8d/4vrBp3D5Id
+KDFv2U7qJXFUNgv+8mtsxXFe80X/Y34m5P8C9KgtdgplbmRzdHJlYW0KZW5k
+b2JqCjM2IDAgb2JqCjg1MTUKZW5kb2JqCjM0IDAgb2JqCjw8IC9UeXBlIC9G
+b250Ci9TdWJ0eXBlIC9DSURGb250VHlwZTIKL0Jhc2VGb250IC9Ob3RvU2Fu
+c0NKS2tyLVJlZ3VsYXIKL0NJRFN5c3RlbUluZm8gPDwgL1JlZ2lzdHJ5IChB
+ZG9iZSkgL09yZGVyaW5nIChJZGVudGl0eSkgL1N1cHBsZW1lbnQgMCA+Pgov
+Rm9udERlc2NyaXB0b3IgMzIgMCBSCi9DSURUb0dJRE1hcCAvSWRlbnRpdHkK
+L1cgWzAgWzk5MiA1OTIgNTU5IDMyMyAzODUgMjczIDI4MyA2MDYgNTQ3IDg3
+MSA0NjQgNjAxIDIyMiA2MDIgNjE1IDM3NCA2MjcgMjc2IDczNiA2NTIgNDk0
+IDU1MSA1NTEgNTUxIDI3NiA3MTYgNjEzIDU1MSA2NDEgNTUwIDUxNyA5Mzgg
+NTA1IDkxOCA1OTQgMjc2IDU1MSA1NTEgNTUxIDU1MSA1NTEgNTUxIDM4OSA1
+NTEgNTE3IDYwMiA1MzggNjE1IDcyMiA3OTUgNjc1IDgwNiA2ODMgNTU4IDYz
+MyA1NDcgNjAyIDU4MyAzNDQgNjMwIDU3MSAyOTEgNjgyIDUyNyA1NjkgNzE1
+IDU1MSAzMzUgMzM1IDU1MSAyNzMgOTE0IDQ3MCA1OTggNjE1IDI3NiA3MzYg
+XQpdCj4+CmVuZG9iagozNSAwIG9iago8PCAvTGVuZ3RoIDg5NiA+PgpzdHJl
+YW0KL0NJREluaXQgL1Byb2NTZXQgZmluZHJlc291cmNlIGJlZ2luCjEyIGRp
+Y3QgYmVnaW4KYmVnaW5jbWFwCi9DSURTeXN0ZW1JbmZvIDw8IC9SZWdpc3Ry
+eSAoQWRvYmUpIC9PcmRlcmluZyAoVUNTKSAvU3VwcGxlbWVudCAwID4+IGRl
+ZgovQ01hcE5hbWUgL0Fkb2JlLUlkZW50aXR5LVVDUyBkZWYKL0NNYXBUeXBl
+IDIgZGVmCjEgYmVnaW5jb2Rlc3BhY2VyYW5nZQo8MDAwMD4gPEZGRkY+CmVu
+ZGNvZGVzcGFjZXJhbmdlCjIgYmVnaW5iZnJhbmdlCjwwMDAwPiA8MDAwMD4g
+PDAwMDA+CjwwMDAxPiA8MDA0Qz4gWzwwMDUzPiA8MDA2MT4gPDAwNjY+IDww
+MDcyPiA8MDA2OT4gPDAwNkM+IDwwMDZFPiA8MDA2Qj4gPDAwNTc+IDwwMDcz
+PiA8MDA2Rj4gPDAwMjA+IDwwMDQxPiA8MDA3MD4gPDAwNzQ+IDwwMDUwPiA8
+MDAyRT4gPDAwNEY+IDwwMDQyPiA8MDA3OD4gPDAwMzU+IDwwMDM2PiA8MDAz
+MT4gPDAwMkM+IDwwMDRFPiA8MDA2Mj4gPDAwMzA+IDwwMDRCPiA8MDA2NT4g
+PDAwNzk+IDwwMDQwPiA8MDA2Mz4gPDAwNkQ+IDwwMDU0PiA8MDAzQT4gPDAw
+MkI+IDwwMDMyPiA8MDAzND4gPDAwMzc+IDwwMDMzPiA8MDAzOD4gPDAwMkY+
+IDwwMDM5PiA8MDA3Nj4gPDAwNzU+IDwwMDRDPiA8MDA2ND4gPDAwNDg+IDww
+MDc3PiA8MDAyNj4gPDAwNEQ+IDwwMDQ3PiA8MDA2Nz4gPDAwNDM+IDwwMDQ2
+PiA8MDA2OD4gPDAwNDU+IDwwMDJEPiA8MDA1Mj4gPDAwNTY+IDwwMDQ5PiA8
+MDA0ND4gPDAwNTk+IDwwMDU4PiA8MDA1NT4gPDAwMjM+IDwwMDI4PiA8MDAy
+OT4gPDAwMjQ+IDwwMDZBPiA8MDAyNT4gPDAwN0E+IDwwMDVBPiA8MDA3MT4g
+PDIwMUE+IDwwMDUxPiBdCmVuZGJmcmFuZ2UKZW5kY21hcApDTWFwTmFtZSBj
+dXJyZW50ZGljdCAvQ01hcCBkZWZpbmVyZXNvdXJjZSBwb3AKZW5kCmVuZAoK
+ZW5kc3RyZWFtCmVuZG9iagoxMiAwIG9iago8PCAvVHlwZSAvRm9udAovU3Vi
+dHlwZSAvVHlwZTAKL0Jhc2VGb250IC9Ob3RvU2Fuc0NKS2tyLVJlZ3VsYXIK
+L0VuY29kaW5nIC9JZGVudGl0eS1ICi9EZXNjZW5kYW50Rm9udHMgWzM0IDAg
+Ul0KL1RvVW5pY29kZSAzNSAwIFI+PgplbmRvYmoKMiAwIG9iago8PAovVHlw
+ZSAvUGFnZXMKL0tpZHMgClsKNSAwIFIKMjAgMCBSCl0KL0NvdW50IDIKL1By
+b2NTZXQgWy9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDXQo+PgplbmRvYmoK
+eHJlZgowIDM3CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAwOSAwMDAw
+MCBuIAowMDAwMDM5MDAwIDAwMDAwIG4gCjAwMDAwMDAxNTcgMDAwMDAgbiAK
+MDAwMDAwMDI1MiAwMDAwMCBuIAowMDAwMDEyOTI1IDAwMDAwIG4gCjAwMDAw
+MDAyODkgMDAwMDAgbiAKMDAwMDAwNjEwMiAwMDAwMCBuIAowMDAwMDA2MTIy
+IDAwMDAwIG4gCjAwMDAwMDkxNDYgMDAwMDAgbiAKMDAwMDAwOTE2NiAwMDAw
+MCBuIAowMDAwMDEyMjQxIDAwMDAwIG4gCjAwMDAwMzg4NTIgMDAwMDAgbiAK
+MDAwMDAxMjI2MiAwMDAwMCBuIAowMDAwMDEyNDQ0IDAwMDAwIG4gCjAwMDAw
+MTI2OTggMDAwMDAgbiAKMDAwMDAxMzI3OSAwMDAwMCBuIAowMDAwMDE4MzI1
+IDAwMDAwIG4gCjAwMDAwMTMwNDYgMDAwMDAgbiAKMDAwMDAxMzIzOCAwMDAw
+MCBuIAowMDAwMDIwNTEwIDAwMDAwIG4gCjAwMDAwMTgzNDYgMDAwMDAgbiAK
+MDAwMDAxODg4NSAwMDAwMCBuIAowMDAwMDE4OTA1IDAwMDAwIG4gCjAwMDAw
+MjAwMzIgMDAwMDAgbiAKMDAwMDAyMDA1MiAwMDAwMCBuIAowMDAwMDIwMjU5
+IDAwMDAwIG4gCjAwMDAwMjA0NjAgMDAwMDAgbiAKMDAwMDAyMDg0NyAwMDAw
+MCBuIAowMDAwMDI4NTA2IDAwMDAwIG4gCjAwMDAwMjA2MzIgMDAwMDAgbiAK
+MDAwMDAyMDgxMyAwMDAwMCBuIAowMDAwMDI4NTI3IDAwMDAwIG4gCjAwMDAw
+Mjg3NDcgMDAwMDAgbiAKMDAwMDAzNzM3NSAwMDAwMCBuIAowMDAwMDM3OTA0
+IDAwMDAwIG4gCjAwMDAwMzczNTQgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6
+ZSAzNwovSW5mbyAxIDAgUgovUm9vdCAyNyAwIFIKPj4Kc3RhcnR4cmVmCjM5
+MTA1CiUlRU9GCg==
+
+--_av-yRO_u4P2lEILwUToLBNlhg--
+

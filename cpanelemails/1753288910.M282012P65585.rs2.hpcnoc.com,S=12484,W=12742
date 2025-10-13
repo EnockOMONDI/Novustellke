@@ -1,0 +1,258 @@
+Return-Path: <brian.persea@gmail.com>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id sPUSEM4QgWgxAAEAObGTvA
+	(envelope-from <brian.persea@gmail.com>)
+	for <novuste1@rs2.hpcnoc.com>; Wed, 23 Jul 2025 19:41:50 +0300
+Return-path: <brian.persea@gmail.com>
+Envelope-to: faith@novustelltravel.com
+Delivery-date: Wed, 23 Jul 2025 19:41:50 +0300
+Received: from mail-ej1-f43.google.com ([209.85.218.43]:53666)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <brian.persea@gmail.com>)
+	id 1uecXN-00000000HTi-0Bd1;
+	Wed, 23 Jul 2025 19:41:50 +0300
+Received: by mail-ej1-f43.google.com with SMTP id a640c23a62f3a-ae0de1c378fso1023566b.3;
+        Wed, 23 Jul 2025 09:40:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1753288826; x=1753893626; darn=novustelltravel.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=FxUBtESIjTA8+DEavo5DcTZECawQoMTEuW9t7Yoz860=;
+        b=cL6n696ll/9qcaUJ0t4F8veYGirGuqCztuNbQnv9JyEzU8Z/5OR9pP7bq8TL7bKaLv
+         NTxEEbBJIEjPjO4Q0xSLKCHP/qFyhclZxyL1SHXj/LQ3BqD05ixwZwA6F1Gqr2Jl+roo
+         o5wEH/8zIxk/n8MxRrF6E6iYlS9O+AiJRcjRVl09F5HOh5blpK2LhzTawC2L5kRkvjlf
+         0GuZG8oS+q36LdVlkF7q3g1shHCzSDIV76fYd2RAlUEiEE4AKguZ1RmdZxrOF9MuGBLf
+         D8Y3+LK8TOv9x4pmY2c+f/6L3X0Rx8o67RPOZJQhrK2ZTEZciU9JxrJR8VuRWkNGfh9B
+         zgCw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1753288826; x=1753893626;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=FxUBtESIjTA8+DEavo5DcTZECawQoMTEuW9t7Yoz860=;
+        b=I/vJ/Gx+5jXMyh9TogVsUKjBMvKMjWejRkZ8MMjjwQgmFbbJZm8FfXa9Zj0ZT29znK
+         E3DdNVaHMx7GEduugQbb7Y4JnjZVaCraR+lzBeeHXbFeLmxkmo0eJTM7u5Ud1cYJecmk
+         +bq95Ds70gSAGXYdBmfzE2ebKRuxIW9Zh/xiHb6ITTXt8LGrNQlY99fl7KtmT62Gw37n
+         OvXfZe9GHgF990J4D2O8GGvErZV7pXOsS5Mrn/6+b7OJ5TWGYNTEtqkjz3fSu8IkDYi4
+         IZtycivFF8fHm66RemF8uUV6DzHYM4hlnMmfboaXk2FUqumI3cf3gZ0dSCn2Pkz6eoM0
+         5I1w==
+X-Forwarded-Encrypted: i=1; AJvYcCXCIddsH6PPEAs0pcvnwx1YXAB90CJWQufV4aa4WNlgv5ZHEMvr2KWaGPYq0/ceJfNyGvrcEQ==@novustelltravel.com
+X-Gm-Message-State: AOJu0YzrgQCYpCS+6aArQX6q7rCwJB27X3KgtiGdvfK0Y4RpJddOh1CF
+	fk8q3M4RELrJAcpW6GtqUZTYEv7Z/mMYUpNB6j7w5x74oGrIZroRl6MuQat+GQfnPkG2P4hECp8
+	GQ8j21RifMSxyz2kerCEXXnHZtYeOVFHCew==
+X-Gm-Gg: ASbGncuvI+9IZzKtmTRrVoTVDxxKR7VeI2dZMuZ3gQjgDUhUUm0vBIyHf0qP19ug+dB
+	D5U0gENClOJZaeZZG0BO69lHntdfoSfe53vQP0QHJ4ZYxYpVaNT/sbauBdgTO1OjAc5Ja6JWG9I
+	/C+d5Xagh7SHtsDSaWe3cd/bTy86pheYxjS0VeRjy9snH7NziU4j5FPM0+M0Y5o6PUCYEExYXfv
+	OID6HZ4+4qKQmJHWWQ=
+X-Google-Smtp-Source: AGHT+IFYDoSuZmFAbtc2Z9A1990Q88JF14K8fZZBTA1fQP9oQnbnn0Sel8tkthoNHttyOnhAZxOtq6216FN/rwtUtTc=
+X-Received: by 2002:a17:907:9444:b0:ae3:5e70:330d with SMTP id
+ a640c23a62f3a-af2f66c1f64mr372849766b.12.1753288825681; Wed, 23 Jul 2025
+ 09:40:25 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAC6_GASS1vitaKpqkTusQN7BguALrST8-ucc=nhHGROT7T9u9g@mail.gmail.com>
+ <f913739190254ba995c640c95b938d69@novustelltravel.com>
+In-Reply-To: <f913739190254ba995c640c95b938d69@novustelltravel.com>
+From: Brian Benadict <brian.persea@gmail.com>
+Date: Wed, 23 Jul 2025 19:39:48 +0300
+X-Gm-Features: Ac12FXyqiHyUB7dJq3Uf3JmqkhVToZdGW31l9mvJ5S9LNSePlIh-9PMYchlaKi8
+Message-ID: <CAC6_GAS-1Fs0VYJzDwxDvz_s0HbeYi_B24CPbHoGVc3E5mk0oA@mail.gmail.com>
+Subject: Re: Flight booking for Mr. Henry and Mr. David
+To: natasha@novustelltravel.com
+Cc: "Quinta | Novustell travel" <quinta@novustelltravel.com>, Faith Novustell <faith@novustelltravel.com>, 
+	Aaron Ndegwa <aaron@perseaoils.com>, Martha Ondu <mondu.persea@gmail.com>, 
+	Oscar Moya Lerin <oscar@perseaoils.com>, david macharia <david.persea@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000a4bed0063a9b5dbf"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi Natasha, The individuals are travelling in opposite directions.
+    Mr Henry is travelling from Nairobi to Iringa on 4th August and returning
+    on 11th August. 
+ Content analysis details:   (-0.2 points, 10.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: perseaoils.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.218.43 listed in bl.score.senderscore.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [brian.persea(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.218.43 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.218.43 listed in sa-accredit.habeas.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Spam-Flag: NO
+
+--000000000000a4bed0063a9b5dbf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Natasha,
+
+The individuals are travelling in opposite directions.
+
+Mr Henry is travelling from Nairobi to Iringa on 4th August and returning
+on 11th August.
+
+Mr. David is travelling from Iringa to Nairobi on 4th August and returning
+on 10th August.
+
+Please review and resend.
+
+On Wed, Jul 23, 2025 at 5:10=E2=80=AFPM <natasha@novustelltravel.com> wrote=
+:
+
+> Dear Brian,
+>
+> Thank you for your email.
+>
+> Please see below available options as per your request. Kindly note that
+> there are no available flight from Iringa to Dar on 10th.
+>
+> AIR TANZANIA
+> GICHOHI/DAVID MACHARIA MR
+> NDUNGU/HENRY KARIUKI
+> TC  201   04AUG Nairobi    Dar es Salaam   0710   0840
+> TC  112   04AUG Dar es Salaam Iringa         1050   1200
+> TC  113   11AUG Iringa   Dar es Salaam       1230   1340
+> TC  202   11AUG Dar es Salaam  Nairobi      2050   2220
+> Return fare USD 707.00//2PC//23KG per person
+>
+>
+> KENYA AIRWAYS
+> GICHOHI/DAVID MACHARIA MR
+> NDUNGU/HENRY KARIUKI
+> KQ  484   04AUG Nairobi   Dar es Salaam     1250   1415
+> H1 6356   04AUG Dar es Salaam   Iringa      1600   1700
+> H1 6357   11AUG Iringa   Dar es Salaam       1730   1830
+> KQ  487   11AUG Dar es Salaam   Nairobi     2045   2205
+> Return fare USD 838.00 per person
+>
+>
+> Kind regards,
+> Natasha
+>
+>
+>
+>
+
+--=20
+Thank you.
+
+Regards,
+
+*Benadict Brian*
+*Logistics & W/M Coordinator*
+*Persea Oils & Orchards Ltd*
+*+254705135228*
+*www.perseaoils.com <http://www.perseaoils.com/>*
+
+--000000000000a4bed0063a9b5dbf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma,s=
+ans-serif">Hi Natasha,</div><div class=3D"gmail_default" style=3D"font-fami=
+ly:tahoma,sans-serif"><br></div><div class=3D"gmail_default" style=3D"font-=
+family:tahoma,sans-serif">The individuals are travelling in opposite direct=
+ions.</div><div class=3D"gmail_default" style=3D"font-family:tahoma,sans-se=
+rif"><br></div><div class=3D"gmail_default" style=3D"font-family:tahoma,san=
+s-serif">Mr Henry is travelling from Nairobi to Iringa on 4th August and re=
+turning on 11th August.</div><div class=3D"gmail_default" style=3D"font-fam=
+ily:tahoma,sans-serif"><br></div><div class=3D"gmail_default" style=3D"font=
+-family:tahoma,sans-serif">Mr. David is travelling from Iringa to Nairobi o=
+n 4th August and returning on 10th August.</div><div class=3D"gmail_default=
+" style=3D"font-family:tahoma,sans-serif"><br></div><div class=3D"gmail_def=
+ault" style=3D"font-family:tahoma,sans-serif">Please review and resend.</di=
+v></div><br><div class=3D"gmail_quote gmail_quote_container"><div dir=3D"lt=
+r" class=3D"gmail_attr">On Wed, Jul 23, 2025 at 5:10=E2=80=AFPM &lt;<a href=
+=3D"mailto:natasha@novustelltravel.com">natasha@novustelltravel.com</a>&gt;=
+ wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px =
+0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">Dear Bri=
+an,<br>
+<br>
+Thank you for your email.<br>
+<br>
+Please see below available options as per your request. Kindly note that <b=
+r>
+there are no available flight from Iringa to Dar on 10th.<br>
+<br>
+AIR TANZANIA<br>
+GICHOHI/DAVID MACHARIA MR<br>
+NDUNGU/HENRY KARIUKI<br>
+TC=C2=A0 201=C2=A0 =C2=A004AUG Nairobi=C2=A0 =C2=A0 Dar es Salaam=C2=A0 =C2=
+=A00710=C2=A0 =C2=A00840<br>
+TC=C2=A0 112=C2=A0 =C2=A004AUG Dar es Salaam Iringa=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A01050=C2=A0 =C2=A01200<br>
+TC=C2=A0 113=C2=A0 =C2=A011AUG Iringa=C2=A0 =C2=A0Dar es Salaam=C2=A0 =C2=
+=A0 =C2=A0 =C2=A01230=C2=A0 =C2=A01340<br>
+TC=C2=A0 202=C2=A0 =C2=A011AUG Dar es Salaam=C2=A0 Nairobi=C2=A0 =C2=A0 =C2=
+=A0 2050=C2=A0 =C2=A02220<br>
+Return fare USD 707.00//2PC//23KG per person<br>
+<br>
+<br>
+KENYA AIRWAYS<br>
+GICHOHI/DAVID MACHARIA MR<br>
+NDUNGU/HENRY KARIUKI<br>
+KQ=C2=A0 484=C2=A0 =C2=A004AUG Nairobi=C2=A0 =C2=A0Dar es Salaam=C2=A0 =C2=
+=A0 =C2=A01250=C2=A0 =C2=A01415<br>
+H1 6356=C2=A0 =C2=A004AUG Dar es Salaam=C2=A0 =C2=A0Iringa=C2=A0 =C2=A0 =C2=
+=A0 1600=C2=A0 =C2=A01700<br>
+H1 6357=C2=A0 =C2=A011AUG Iringa=C2=A0 =C2=A0Dar es Salaam=C2=A0 =C2=A0 =C2=
+=A0 =C2=A01730=C2=A0 =C2=A01830<br>
+KQ=C2=A0 487=C2=A0 =C2=A011AUG Dar es Salaam=C2=A0 =C2=A0Nairobi=C2=A0 =C2=
+=A0 =C2=A02045=C2=A0 =C2=A02205<br>
+Return fare USD 838.00 per person<br>
+<br>
+<br>
+Kind regards,<br>
+Natasha<br>
+<br>
+<br>
+<br>
+</blockquote></div><div><br clear=3D"all"></div><div><br></div><span class=
+=3D"gmail_signature_prefix">-- </span><br><div dir=3D"ltr" class=3D"gmail_s=
+ignature"><div dir=3D"ltr">Thank you.<div><span style=3D"color:rgb(34,34,34=
+)"><br></span></div><div><span style=3D"color:rgb(34,34,34)">Regards,</span=
+></div><div><br></div><div><div style=3D"color:rgb(34,34,34)"><div style=3D=
+"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><font face=3D"=
+arial narrow, sans-serif"><i><u>Benadict Brian</u></i></font></span></div><=
+div style=3D"color:rgb(136,136,136)"><span style=3D"color:rgb(34,34,34)"><f=
+ont face=3D"arial narrow, sans-serif"><i>Logistics &amp; W/M Coordinator</i=
+></font></span><div><div style=3D"color:rgb(34,34,34)"><font face=3D"arial =
+narrow, sans-serif"><i>Persea Oils &amp; Orchards Ltd</i></font></div><div =
+style=3D"color:rgb(34,34,34)"><font face=3D"arial narrow, sans-serif"><i>+2=
+54705135228</i></font></div><div style=3D"color:rgb(34,34,34)"><u><a href=
+=3D"http://www.perseaoils.com/" style=3D"color:rgb(17,85,204)" target=3D"_b=
+lank"><font face=3D"arial narrow, sans-serif"><i>www.perseaoils.com</i></fo=
+nt></a></u></div></div></div></div></div></div></div>
+
+--000000000000a4bed0063a9b5dbf--

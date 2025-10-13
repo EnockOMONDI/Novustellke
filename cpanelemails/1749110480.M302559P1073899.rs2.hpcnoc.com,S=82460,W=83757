@@ -1,0 +1,1297 @@
+Return-Path: <bounce-mc.us1_102466.4939106-de18c730d2@mail63.atl91.mcsv.net>
+Delivered-To: novuste1@rs2.hpcnoc.com
+Received: from rs2.hpcnoc.com
+	by rs2.hpcnoc.com with LMTP
+	id 0LSMEdBOQWjrYhAAObGTvA
+	(envelope-from <bounce-mc.us1_102466.4939106-de18c730d2@mail63.atl91.mcsv.net>)
+	for <novuste1@rs2.hpcnoc.com>; Thu, 05 Jun 2025 11:01:20 +0300
+Return-path: <bounce-mc.us1_102466.4939106-de18c730d2@mail63.atl91.mcsv.net>
+Envelope-to: caleb@novustelltravel.com
+Delivery-date: Thu, 05 Jun 2025 11:01:20 +0300
+Received: from mail63.atl91.mcsv.net ([198.2.130.63]:36158)
+	by rs2.hpcnoc.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <bounce-mc.us1_102466.4939106-de18c730d2@mail63.atl91.mcsv.net>)
+	id 1uN5XJ-00000004bdC-3KhN
+	for caleb@novustelltravel.com;
+	Thu, 05 Jun 2025 11:01:20 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kicheche.com; s=k3;
+	t=1749110434; x=1749380434; i=marketing@kicheche.com;
+	bh=U5GyCYwqiwfBwUL6zThK6ZOzuujB7ldQG0HRa0ES7qg=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=hUgafxAG1Ub6BnodPj0D/klJUcEtqFb7NB9LzO6CV6bTI/z/BLZIlv0pDmgmJ36Tg
+	 GqtQhIpdB+KopvDd7yhhmS4MUmhLquY7fgu2B7g691Sl23VwXCgINNZxPjlR73d9GR
+	 aNsjQB7LJsHkORGvIMEzBqdUCSTAp2tZUsyBaQryebl7GaH8xSqABjt8424caGx4uj
+	 wFfULR0qikYm2f9LNeLPJro3maZLuCLBgFgXA8YMJuvB7HEQLBaIF2lG6F6N+4GkIZ
+	 dRArA/m8fpVVUUowctqgz7zsrMvjrQ8Tu62ywOOiAH23BDtj10HfbpFnEDmkrgcQZ3
+	 qhPIEb0KD+KeA==
+Received: from localhost (localhost [127.0.0.1])
+	by mail63.atl91.mcsv.net (Mailchimp) with ESMTP id 4bCcM650j1zm01hm
+	for <caleb@novustelltravel.com>; Thu,  5 Jun 2025 08:00:34 +0000 (GMT)
+Subject: =?utf-8?Q?Kicheche=20Camps=202026=20Rates?=
+From: Kicheche Camps <marketing@kicheche.com>
+Reply-To: =?utf-8?Q?Kicheche=20Camps?= <marketing@kicheche.com>
+To: <caleb@novustelltravel.com>
+Date: Thu,  5 Jun 2025 08:00:32 +0000
+Message-ID: <7d96fa269bd7ce767a3c8624b.de18c730d2.20250605080027.20cae138f0.a69b16fc@mail63.atl91.mcsv.net>
+X-Mailer: Mailchimp Mailer - **CID20cae138f0de18c730d2**
+X-Campaign: mailchimp7d96fa269bd7ce767a3c8624b.20cae138f0
+X-campaignid: mailchimp7d96fa269bd7ce767a3c8624b.20cae138f0
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=7d96fa269bd7ce767a3c8624b&id=20cae138f0&e=de18c730d2
+X-MC-User: 7d96fa269bd7ce767a3c8624b
+Feedback-ID: 102466:102466.4939106:us1:mc
+List-ID: 7d96fa269bd7ce767a3c8624bmc list <7d96fa269bd7ce767a3c8624b.51777.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://kicheche.us1.list-manage.com/unsubscribe?u=7d96fa269bd7ce767a3c8624b&id=3e6c97abb8&t=h&e=de18c730d2&c=20cae138f0>, <mailto:unsubscribe-mc.us1_7d96fa269bd7ce767a3c8624b.20cae138f0-de18c730d2@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_881407790"
+MIME-Version: 1.0
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "rs2.hpcnoc.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  View this email in your browser (https://mailchi.mp/kicheche/2026-rates-4939106?e=de18c730d2)
+    https://kicheche.com/?utm_source=RACK+-+agents&utm_campaign=20cae138f0-2026+Rates_COPY_03&utm_medium=email
+    [...] 
+ Content analysis details:   (-0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [198.2.130.63 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: x.com]
+                             [URI: mailchi.mp]
+                             [URI: mailchimp.com]
+                             [URI: sharepoint.com]
+                             [URI: kicheche.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: resrequest.com]
+                             [URI: list-manage.com]
+                             [URI: mcusercontent.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage of an
+                              open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URI: x.com]
+                             [URI: mailchi.mp]
+                             [URI: cdn-images.mailchimp.com]
+                             [URI: kicheche4.sharepoint.com]
+                             [URI: www.kicheche.com]
+                             [URI: fonts.googleapis.com]
+                             [URI: kicheche.com]
+                             [URI: kicheche.resrequest.com]
+                             [URI: kicheche.us1.list-manage.com]
+                             [URI: mcusercontent.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.130.63 listed in bl.score.senderscore.com]
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                           [198.2.130.63 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.2.130.63 listed in sa-accredit.habeas.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
+  0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_881407790
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View this email in your browser (https://mailchi.mp/kicheche/2026-rates-49=
+39106?e=3Dde18c730d2)
+https://kicheche.com/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0=
+-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+
+
+KICHECHE BUSH OLARE (http://kicheche.com/kicheche-bush/?utm_source=3DRACK+=
+-+agents&utm_campaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&u=
+tm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052)   (http://)  KICHECHE MARA NORTH (http://kicheche.com/kichec=
+he-mara/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0-2026+Rates_C=
+OPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D=
+0_3e6c97abb8-20cae138f0-33796052)   (http://kicheche.com/kicheche-m=
+ara/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0-2026+Rates_COPY_=
+03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e=
+6c97abb8-20cae138f0-33796052)   (http://kicheche.com/kicheche-valle=
+y/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0-2026+Rates_COPY_03=
+&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c=
+97abb8-20cae138f0-33796052) KICHECHE VALLEY NABOISHO (http://kichec=
+he.com/kicheche-valley/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138=
+f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052)   KICHECHE LAIKIPI=
+A (http://kicheche.com/kicheche-laikipia/?utm_source=3DRACK+-+agents&utm_c=
+ampaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f=
+05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052)
+
+
+** 2026 Rates
+------------------------------------------------------------
+
+https://kicheche.com/kicheche-story/?utm_source=3DRACK+-+agents&utm_campai=
+gn=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b=
+5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+
+As we continue our journey of creating a positive impact on the environmen=
+t and local communities=2C we celebrate 10 years of membership with The Lo=
+ng Run and 25 years since opening our doors at the turn of the Millennium.
+https://www.kicheche.com?utm_source=3DRACK+-+agents&utm_campaign=3D20cae13=
+8f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+
+Over the past season=2C we have achieved the following: an upgrade of our=
+ Mara internet connections to Starlink=2C ensuring high-speed connections=
+ in each guest room; upgrades in our staff camps and facilities; improved=
+ power infrastructure; and three new vehicles to upgrade our game drive fl=
+eet.
+
+We thank all our agents for their unwavering support and are delighted to=
+ share our 2026 rates (https://kicheche4.sharepoint.com/:b:/s/SalesReserva=
+tions/EcpZYrRfZ-9Erj-96o8rU6sBILiwl27emoj1vQb5PcBnPA?e=3D8AleVf&utm_source=
+=3DRACK+-+agents&utm_campaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=
+=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20ca=
+e138f0-33796052) in a new format=2C which we hope you find easier t=
+o navigate.
+
+Changes from 2025:
+* Our rates have increased by 4.5% on average due to rises in operating co=
+sts. However=2C we have concentrated our increases into the peak season at=
+ our camps in the Mara=2C whereby the rates have been adjusted by 10%. Our=
+ Laikipia peak rates are=2C however=2C frozen for the second year.
+* Mid and Regular season rates for all camps have not been increased.
+* Our Conservancy Safari 6 for 5 offer has been expanded to include any of=
+ our camps in the Mara with Laikipia.
+* A reminder that our Ol Pejeta Conservancy fees include the Conservancy e=
+ntrance and the Wilderness zone bed night fees.
+* A reminder of the age limit introduced for children at Kicheche Bush Ola=
+re and Kicheche Valley Naboisho of 7+ years.
+
+
+We've sharpened our spears to mark a quarter of a century and hope you lik=
+e the updated logo.
+https://kicheche.com/kicheche-story/?utm_source=3DRACK+-+agents&utm_campai=
+gn=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b=
+5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+https://kicheche.com/kicheche-story/?utm_source=3DRACK+-+agents&utm_campai=
+gn=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b=
+5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+
+https://facebook.com/KichecheCamps/?utm_source=3DRACK+-+agents&utm_campaig=
+n=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5=
+b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+https://instagram.com/kicheche_safari_camps/?utm_source=3DRACK+-+agents&ut=
+m_campaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0=
+_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+https://x.com/@KichecheCamps?utm_source=3DRACK+-+agents&utm_campaign=3D20c=
+ae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+mailto:sales@kicheche.com
+https://kicheche.com/?utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0=
+-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+2026 RATES (https://kicheche4.sharepoint.com/:b:/s/SalesReservations/EcpZY=
+rRfZ-9Erj-96o8rU6sBILiwl27emoj1vQb5PcBnPA?e=3D8AleVf&utm_source=3DRACK+-+a=
+gents&utm_campaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_=
+term=3D0_-f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052)
+Check Availability (https://kicheche.resrequest.com/reservation.php?20++++=
++RS4+.shtm&utm_source=3DRACK+-+agents&utm_campaign=3D20cae138f0-2026+Rates=
+_COPY_03&utm_medium=3Demail&utm_term=3D0_-f05b0b5b7e-33796052&goal=
+=3D0_3e6c97abb8-20cae138f0-33796052)
+Book a Kicheche Product Training Webinar (mailto:marketing@kicheche.com?su=
+bject=3DKicheche%20Camps%20Product%20Training%20-%20Webinar&body=3D)
+https://kicheche.com/our-places-and-camps/?utm_source=3DRACK+-+agents&utm_=
+campaign=3D20cae138f0-2026+Rates_COPY_03&utm_medium=3Demail&utm_term=3D0_-=
+f05b0b5b7e-33796052&goal=3D0_3e6c97abb8-20cae138f0-33796052
+
+Copyright (C) 2025 Kicheche Camps. All rights reserved.
+You are receiving our Kicheche Agents Updates because you sell our camps.
+Our mailing address is:
+Kicheche Camps
+P.O Box 15236
+Nairobi 00509
+Kenya
+Want to change how you receive these emails?
+You can
+update your preferences (https://kicheche.us1.list-manage.com/profile?u=3D=
+7d96fa269bd7ce767a3c8624b&id=3D3e6c97abb8&e=3Dde18c730d2&c=3D20cae138f0) or=
+ unsubscribe (https://kicheche.us1.list-manage.com/unsubscribe?u=3D7d96fa2=
+69bd7ce767a3c8624b&id=3D3e6c97abb8&t=3Db&e=3Dde18c730d2&c=3D20cae138f0)
+--_----------=_MCPart_881407790
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head><meta name=3D"twitter:image:src" content=3D"https://mcusercont=
+ent.com/7d96fa269bd7ce767a3c8624b/images/44dfc5ed-14cc-2a3f-f9f3-da5308928=
+a91.jpg"><meta name=3D"twitter:description" content=3D"As we continue our=
+ journey of creating a positive impact on the environment and local commun=
+ities=2C we celebrate 10 years of membership with The Long Run and 25 year=
+s since opening our doors at the turn of the Millennium."><meta name=3D"tw=
+itter:title" content=3D"2026 Rates"><meta name=3D"twitter:card" content=3D=
+"summary_large_image"><meta property=3D"og:type" content=3D"article"><meta=
+ property=3D"og:description" content=3D"As we continue our journey of crea=
+ting a positive impact on the environment and local communities=2C we cele=
+brate 10 years of membership with The Long Run and 25 years since opening=
+ our doors at the turn of the Millennium."><meta property=3D"og:image" con=
+tent=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/44dfc5e=
+d-14cc-2a3f-f9f3-da5308928a91.jpg"><meta property=3D"og:title" content=3D"=
+2026 Rates"><meta property=3D"og:url" content=3D"http://eepurl.com/jf-1c-/=
+">
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1">
+<title>Kicheche Camps 2026 Rates</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com">
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"">
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DMontser=
+rat:400=2C400i=2C700=2C700i=2C900=2C900i"><!--<![endif]--><style>       =
+   img{-ms-interpolation-mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+                  .mceColumn .mceButtonLink=2C
+                  .mceColumn-1 .mceButtonLink=2C
+                  .mceColumn-2 .mceButtonLink=2C
+                  .mceColumn-3 .mceButtonLink=2C
+                  .mceColumn-4 .mceButtonLink {min-width:30px;}
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                                  .mceReverseStack {display:table; width:=
+ 100%;}
+                             .mceColumn-1 {display:table-footer-group; wid=
+th: 100% !important;}
+                             .mceColumn-2 {display: block !important; widt=
+h: 100% !important;}
+                             .mceColumn-3 {display:table-header-group; wid=
+th: 100% !important;}
+                             .mceColumn-4 {display:table-caption; width: 1=
+00% !important;}
+                             .mceKeepColumns .mceButtonLink {min-width:0px=
+;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(209=2C 209=2C 180); }.mceText=
+=2C .mcnTextContent=2C .mceLabel { font-family: "Helvetica Neue"=2C Helvet=
+ica=2C Arial=2C Verdana=2C sans-serif; }.mceText=2C .mcnTextContent=2C .mc=
+eLabel { color: rgb(0=2C 0=2C 0); }.mceText h1 { margin-bottom: 0px; }.mce=
+Text p { margin-bottom: 0px; }.mceText ul { margin-bottom: 0px; }.mceText=
+ label { margin-bottom: 0px; }.mceText input { margin-bottom: 0px; }.mceSp=
+acing-24 .mceInput + .mceErrorMessage { margin-top: -12px; }.mceText h1 {=
+ margin-bottom: 0px; }.mceText p { margin-bottom: 0px; }.mceText ul { marg=
+in-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText input { ma=
+rgin-bottom: 0px; }.mceSpacing-12 .mceInput + .mceErrorMessage { margin-to=
+p: -6px; }.mceInput { background-color: transparent; border: 2px solid rgb=
+(208=2C 208=2C 208); width: 60%; color: rgb(77=2C 77=2C 77); display: bloc=
+k; }.mceInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"] { float: l=
+eft; margin-right: 12px; display: inline; width: auto !important; }.mceLab=
+el > .mceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabel { display=
+: block; }.mceText p=2C .mcnTextContent p { color: rgb(0=2C 0=2C 0); font-=
+family: "Helvetica Neue"=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; f=
+ont-size: 16px; font-weight: normal; line-height: 1.5; mso-line-height-alt=
+: 150%; text-align: center; letter-spacing: 0px; direction: ltr; margin: 0=
+px; }.mceText h1=2C .mcnTextContent h1 { color: rgb(0=2C 0=2C 0); font-fam=
+ily: "Helvetica Neue"=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font=
+-size: 31px; font-weight: bold; line-height: 1.5; mso-line-height-alt: 150=
+%; text-align: center; letter-spacing: 0px; direction: ltr; }.mceText a=2C=
+ .mcnTextContent a { color: rgb(0=2C 0=2C 0); font-style: normal; font-wei=
+ght: normal; text-decoration: underline; direction: ltr; }.mceSectionBody=
+ .mceText h1=2C .mceSectionBody .mcnTextContent h1 { }.mceSectionBody .mce=
+Text p=2C .mceSectionBody .mcnTextContent p { }.mceSectionBody .mceText a=
+=2C .mceSectionBody .mcnTextContent a { font-style: normal; }.mceSectionBo=
+dy .mceText h1=2C .mceSectionBody .mcnTextContent h1 { }.mceSectionBody .m=
+ceText p=2C .mceSectionBody .mcnTextContent p { }.mceSectionBody .mceText=
+ a=2C .mceSectionBody .mcnTextContent a { font-style: normal; }.mceSection=
+Body .mceText h1=2C .mceSectionBody .mcnTextContent h1 { }.mceSectionBody=
+ .mceText p=2C .mceSectionBody .mcnTextContent p { }.mceSectionBody .mceTe=
+xt a=2C .mceSectionBody .mcnTextContent a { font-style: normal; }
+@media only screen and (max-width: 480px) {
+            .mceText p { margin: 0px; font-size: 16px !important; line-hei=
+ght: 1.5 !important; mso-line-height-alt: 150%; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceText h1 { font-size: 31px !important; line-height: 1.5 !im=
+portant; mso-line-height-alt: 150%; }
+          }
+@media only screen and (max-width: 480px) {
+            .bodyCell { padding-left: 16px !important; padding-right: 16px=
+ !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonContainer { width: fit-content !important; max-width=
+: fit-content !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceButtonLink { padding: 18px 28px !important; font-size: 16p=
+x !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerBlock { border-top-width: 2px !important; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceDividerContainer { width: 100% !important; }
+          }
+#dataBlockId-93 p=2C #dataBlockId-93 h1=2C #dataBlockId-93 h2=2C #dataBloc=
+kId-93 h3=2C #dataBlockId-93 h4=2C #dataBlockId-93 ul { text-align: center=
+; }</style></head>
+<body><div itemscope=3D"" itemtype=3D"http://schema.org/EmailMessage"><div=
+ itemprop=3D"publisher" itemscope=3D"" itemtype=3D"http://schema.org/Organ=
+ization"><meta itemprop=3D"name" content=3D"Kicheche Camps"><link itemprop=
+=3D"url" content=3D"http://www.kicheche.com"></div><div itemprop=3D"about"=
+ itemscope=3D"" itemtype=3D"http://schema.org/Offer"><link itemprop=3D"ima=
+ge" href=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/44d=
+fc5ed-14cc-2a3f-f9f3-da5308928a91.jpg"></div></div>
+<!--
+-->
+<div style=3D"display: none; max-height: 0px; overflow: hidden;">=CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD</div><div styl=
+e=3D"display:none;"><img src=3D"https://kicheche.us1.list-manage.com/track=
+/open.php?u=3D7d96fa269bd7ce767a3c8624b&id=3D20cae138f0&e=3Dde18c730d2" h=
+eight=3D"1" width=3D"1" style=3D"display:none;" alt=3D""></div>
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(209=2C 209=2C=
+ 180);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"5" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:#d1d1b4" valign=3D"top" align=3D"center" class=3D"mceSec=
+tionBody"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:660px;">=
+<tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><tbody><=
+tr><td style=3D"background-color:#ffffff" valign=3D"top" class=3D"mceWrapp=
+erInner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"4"><tbody><t=
+r class=3D"mceRow"><td style=3D"background-position:center;background-repe=
+at:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbo=
+dy><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=
+=3D"mceColumn" id=3D"mceColumnId--7" data-block-id=3D"-7" colspan=3D"12" w=
+idth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"background-color:=
+transparent;padding-top:13px;padding-bottom:13px;padding-right:13px;paddin=
+g-left:13px" valign=3D"top" class=3D"mceDividerBlockContainer" id=3D"block=
+ContainerId-1"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"background-color:transparent;width:1=
+00%" role=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"=
+1"><tbody><tr><td style=3D"min-width:100%;border-top-width:2px;border-top-=
+style:solid;border-top-color:#d0d0d0;line-height:0;font-size:0" valign=3D"=
+top" class=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><=
+tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-lef=
+t:0" valign=3D"top" id=3D"blockContainerId-2"><table width=3D"100%" style=
+=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr><td styl=
+e=3D"padding-left:24px;padding-right:24px;padding-top:5px;padding-bottom:5=
+px" class=3D"mceTextBlockContainer"><div data-block-id=3D"2" class=3D"mceT=
+ext" id=3D"dataBlockId-2" style=3D"width:100%"><p class=3D"last-child"><a=
+ href=3D"https://mailchi.mp/kicheche/2026-rates-4939106?e=3Dde18c730d2" styl=
+e=3D"color: #874b4b;"><span style=3D"font-size: 11px"><span style=3D"font-=
+family: Montserrat">View this email in your browser</span></span></a></p><=
+/div></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:12px=
+;padding-bottom:12px;padding-right:24px;padding-left:24px" valign=3D"top"=
+ class=3D"mceImageBlockContainer" align=3D"center" id=3D"blockContainerId-=
+3"><div><!--[if !mso]><!--></div><a href=3D"https://kicheche.us1.list-man=
+age.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Dbfc640b94c&e=3Dde18c730d2" style=3D"display:block" target=3D"_blank" data-block-id=3D"3"><ta=
+ble align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" style=3D"border-collapse:separate;margin:0;vertical-align:top;m=
+ax-width:251.89504373177843px;width:100%;height:auto" role=3D"presentation=
+" data-testid=3D"image-3"><tbody><tr><td style=3D"border:0;border-radius:0=
+;margin:0" valign=3D"top"><img alt=3D"" src=3D"https://mcusercontent.com/7=
+d96fa269bd7ce767a3c8624b/images/fb06f090-60c0-96d8-dc80-826388a8c828.png"=
+ width=3D"251.89504373177843" height=3D"auto" style=3D"display:block;max-w=
+idth:100%;height:auto;border-radius:0" class=3D"imageDropZone mceLogo"></t=
+d></tr></tbody></table></a><div><!--<![endif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://kicheche.com/"><span class=3D"mceImageBorder" style=3D"=
+border:0;vertical-align:top;margin:0"><img role=3D"presentation" class=3D"=
+imageDropZone mceLogo" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a=
+3c8624b/images/fb06f090-60c0-96d8-dc80-826388a8c828.png" alt=3D"" width=3D=
+"251.89504373177843" height=3D"auto" style=3D"display:block;max-width:251.=
+89504373177843px;width:251.89504373177843px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr><=
+/table><![endif]--></td></tr></tbody><tbody data-block-id=3D"91" class=3D=
+"mceWrapper"><tr><td style=3D"background-color:#d1d1b4" valign=3D"top" ali=
+gn=3D"center" class=3D"mceSectionBody"><!--[if (gte mso 9)|(IE)]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+660" style=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px" ro=
+le=3D"presentation"><tbody><tr><td style=3D"background-color:#ffffff" vali=
+gn=3D"top" class=3D"mceWrapperInner"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+ data-block-id=3D"90"><tbody><tr class=3D"mceRow"><td style=3D"background-=
+position:center;background-repeat:no-repeat;background-size:cover" valign=
+=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-=
+bottom:0" valign=3D"top" class=3D"mceColumn" id=3D"mceColumnId--8" data-bl=
+ock-id=3D"-8" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr>=
+<td style=3D"background-color:transparent;padding-top:5px;padding-bottom:5=
+px;padding-right:5px;padding-left:5px" valign=3D"top" class=3D"mceDividerB=
+lockContainer" id=3D"blockContainerId-155"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"backgro=
+und-color:transparent;width:100%" role=3D"presentation" class=3D"mceDivide=
+rContainer" data-block-id=3D"155"><tbody><tr><td style=3D"min-width:100%;b=
+order-top-width:2px;border-top-style:solid;border-top-color:#d0d0d0;line-h=
+eight:0;font-size:0" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</td><=
+/tr></tbody></table></td></tr><tr><td style=3D"background-color:transparen=
+t;padding-top:5px;padding-bottom:5px;padding-right:2px;padding-left:1px" v=
+align=3D"top" class=3D"mceDividerBlockContainer" id=3D"blockContainerId-6"=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"background-color:transparent;width:100%" role=3D"=
+presentation" class=3D"mceDividerContainer" data-block-id=3D"6"><tbody><tr=
+><td style=3D"min-width:100%;border-top-width:2px;border-top-style:solid;b=
+order-top-color:#d0d0d0;line-height:0;font-size:0" valign=3D"top" class=3D=
+"mceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td valign=
+=3D"top" id=3D"blockContainerId-7"><div data-block-id=3D"7" class=3D"mceCo=
+de"><div style=3D"text-align: center;"><span style=3D"font-size:12px"><spa=
+n style=3D"font-family:century gothic=2Clucida sans unicode=2Clucida grand=
+e=2Csans-serif"><a rel=3D"noopener noreferrer" href=3D"https://kicheche.us=
+1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D7a63dbc0a=
+7&e=3Dde18c730d2" target=3D"_blank"><span style=3D"color:#800000">KICHECH=
+E BUSH OLARE</span></a><a rel=3D"noopener noreferrer" target=3D"_blank" hr=
+ef=3D"http://"><span style=3D"color:#800000">=C2=A0</span></a><span style=
+=3D"color:#800000">=C2=A0</span><a rel=3D"noopener noreferrer" href=3D"htt=
+ps://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624=
+b&id=3D624018bfa7&e=3Dde18c730d2" target=3D"_blank"><span style=3D"color:=
+#800000">KICHECHE MARA NORTH</span></a><a rel=3D"noopener noreferrer" targ=
+et=3D"_blank" href=3D"https://kicheche.us1.list-manage.com/track/click?u=
+=3D7d96fa269bd7ce767a3c8624b&id=3D109c37b852&e=3Dde18c730d2"><span style=
+=3D"color:#800000">=C2=A0</span></a><a rel=3D"noopener noreferrer" href=3D=
+"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c=
+8624b&id=3D0c143b5e79&e=3Dde18c730d2" target=3D"_blank"><span style=3D"co=
+lor:#800000">=C2=A0</span></a><a rel=3D"noopener noreferrer" target=3D"_bl=
+ank" href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa26=
+9bd7ce767a3c8624b&id=3Ddc4573242b&e=3Dde18c730d2"><span style=3D"color:#8=
+00000">KICHECHE VALLEY NABOISHO</span></a><span style=3D"color:#800000">=
+=C2=A0=C2=A0</span><a rel=3D"noopener noreferrer" href=3D"https://kicheche=
+=2Eus1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D960cad=
+bc9d&e=3Dde18c730d2" target=3D"_blank"><span style=3D"color:#800000">KICH=
+ECHE LAIKIPIA</span></a></span></span></div></div></td></tr><tr><td style=
+=3D"background-color:transparent;padding-top:5px;padding-bottom:5px;paddin=
+g-right:5px;padding-left:5px" valign=3D"top" class=3D"mceDividerBlockConta=
+iner" id=3D"blockContainerId-145"><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:=
+transparent;width:100%" role=3D"presentation" class=3D"mceDividerContainer=
+" data-block-id=3D"145"><tbody><tr><td style=3D"min-width:100%;border-top-=
+width:2px;border-top-style:solid;border-top-color:#d0d0d0;line-height:0;fo=
+nt-size:0" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</td></tr></tbod=
+y></table></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;paddin=
+g-right:0;padding-left:0" valign=3D"top" id=3D"blockContainerId-144"><tabl=
+e width=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separat=
+e"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-to=
+p:6px;padding-bottom:6px" class=3D"mceTextBlockContainer"><div data-block-=
+id=3D"144" class=3D"mceText" id=3D"dataBlockId-144" style=3D"width:100%"><=
+h1 class=3D"last-child"><span style=3D"color:#790a10;"><span style=3D"font=
+-family: Montserrat">2026 Rates</span></span></h1></div></td></tr></tbody>=
+</table></td></tr><tr><td style=3D"background-color:transparent;padding-to=
+p:5px;padding-bottom:5px;padding-right:5px;padding-left:5px" valign=3D"top=
+" class=3D"mceDividerBlockContainer" id=3D"blockContainerId-9"><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"background-color:transparent;width:100%" role=3D"presentation"=
+ class=3D"mceDividerContainer" data-block-id=3D"9"><tbody><tr><td style=3D=
+"min-width:100%;border-top-width:2px;border-top-style:solid;border-top-col=
+or:#d0d0d0;line-height:0;font-size:0" valign=3D"top" class=3D"mceDividerBl=
+ock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top" class=
+=3D"mceImageBlockContainer" align=3D"left" id=3D"blockContainerId-8"><div>=
+<!--[if !mso]><!--></div><a href=3D"https://kicheche.us1.list-manage.com/=
+track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Da2c2279b0e&e=3Dde18c730d2"=
+ style=3D"display:block" target=3D"_blank" data-block-id=3D"8"><table alig=
+n=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"border-collapse:separate;margin:0;vertical-align:top;max-width:1=
+00%;width:100%;height:auto" role=3D"presentation" data-testid=3D"image-8">=
+<tbody><tr><td style=3D"border:0;border-radius:0;margin:0" valign=3D"top">=
+<img alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/i=
+mages/44dfc5ed-14cc-2a3f-f9f3-da5308928a91.jpg" width=3D"660" height=3D"au=
+to" style=3D"display:block;max-width:100%;height:auto;border-radius:0" cla=
+ss=3D"imageDropZone mceImage"></td></tr></tbody></table></a><div><!--<![e=
+ndif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://kicheche.com/kicheche-story/"><span class=3D"mceImageBo=
+rder" style=3D"border:0;vertical-align:top;margin:0"><img role=3D"presenta=
+tion" class=3D"imageDropZone mceImage" src=3D"https://mcusercontent.com/7d=
+96fa269bd7ce767a3c8624b/images/44dfc5ed-14cc-2a3f-f9f3-da5308928a91.jpg" a=
+lt=3D"" width=3D"660" height=3D"auto" style=3D"display:block;max-width:660=
+px;width:660px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-ri=
+ght:0;padding-left:0" valign=3D"top" id=3D"blockContainerId-12"><table wid=
+th=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate"><t=
+body><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:5px=
+;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=
+=3D"12" class=3D"mceText" id=3D"dataBlockId-12" style=3D"width:100%"><p cl=
+ass=3D"MsoNormal last-child" style=3D"margin-top: 12.0pt; margin-right: -5=
+=2E8pt; margin-bottom: .0001pt; margin-left: 0cm; text-align: justify;"><spa=
+n style=3D"color:rgb(40=2C 40=2C 43);"><span style=3D"font-size: 12px"><sp=
+an style=3D"font-family: Montserrat">As we continue our journey of creatin=
+g a positive impact on the environment and local communities=2C we celebra=
+te 10 years of membership with The Long Run and 25 years since opening our=
+ doors at the turn of the Millennium.</span></span></span></p></div></td><=
+/tr></tbody></table></td></tr><tr><td style=3D"padding-top:12px;padding-bo=
+ttom:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceImage=
+BlockContainer" align=3D"center" id=3D"blockContainerId-241"><div><!--[if=
+ !mso]><!--></div><a href=3D"https://kicheche.us1.list-manage.com/track/cl=
+ick?u=3D7d96fa269bd7ce767a3c8624b&id=3D701bbc1c0b&e=3Dde18c730d2" style=
+=3D"display:block" target=3D"_blank" data-block-id=3D"241"><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"25%" st=
+yle=3D"border-collapse:separate;margin:0;vertical-align:top;max-width:25%;=
+width:25%;height:auto" role=3D"presentation" data-testid=3D"image-241"><tb=
+ody><tr><td style=3D"border:0;border-radius:0;margin:0" valign=3D"top"><im=
+g alt=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/imag=
+es/c32ff10b-95ad-5af6-d283-7a46f329c59f.png" width=3D"165" height=3D"auto"=
+ style=3D"display:block;max-width:100%;height:auto;border-radius:0" class=
+=3D"imageDropZone mceImage"></td></tr></tbody></table></a><div><!--<![end=
+if]--></div><div>
+<!--[if mso]>
+<a href=3D"https://www.kicheche.com"><span class=3D"mceImageBorder" style=
+=3D"border:0;vertical-align:top;margin:0"><img role=3D"presentation" class=
+=3D"imageDropZone mceImage" src=3D"https://mcusercontent.com/7d96fa269bd7c=
+e767a3c8624b/images/c32ff10b-95ad-5af6-d283-7a46f329c59f.png" alt=3D"" wid=
+th=3D"165" height=3D"auto" style=3D"display:block;max-width:165px;width:16=
+5px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-ri=
+ght:0;padding-left:0" valign=3D"top" id=3D"blockContainerId-237"><table wi=
+dth=3D"100%" style=3D"border:0;border-radius:0;border-collapse:separate"><=
+tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:5p=
+x;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=
+=3D"237" class=3D"mceText" id=3D"dataBlockId-237" style=3D"width:100%"><p=
+ style=3D"text-align: justify;"><span style=3D"color:rgb(0=2C 0=2C 0);"><s=
+pan style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">Over=
+ the past season=2C we have achieved the following: an upgrade of our Mara=
+ internet connections to Starlink=2C ensuring high-speed connections in ea=
+ch guest room; upgrades in our staff camps and facilities; improved power=
+ infrastructure; and three new vehicles to upgrade our game drive fleet.</=
+span></span></span></p><p style=3D"text-align: justify;"><br></p><p style=
+=3D"margin-right: 1.3pt; text-align: justify;"><span style=3D"color:rgb(0=
+=2C 0=2C 0);"><span style=3D"font-size: 12px"><span style=3D"font-family:=
+ Montserrat">We thank all our agents for their unwavering support and are=
+ delighted to share our </span></span></span><a href=3D"https://kicheche.u=
+s1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D3ce743e0=
+d5&e=3Dde18c730d2" target=3D"_blank" style=3D"color: #79242f;"><strong><s=
+pan style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">2026=
+ rates</span></span></strong></a><strong><span style=3D"color:rgb(0=2C 0=
+=2C 0);"><span style=3D"font-size: 12px"><span style=3D"font-family: Monts=
+errat"> </span></span></span></strong><span style=3D"color:rgb(0=2C 0=2C 0=
+);"><span style=3D"font-size: 12px"><span style=3D"font-family: Montserrat=
+">in a new format=2C which we hope you find easier to navigate.</span></sp=
+an></span></p><p style=3D"text-align: justify;"><br></p><p style=3D"margin=
+-right: 1.3pt; text-align: justify;"><strong><span style=3D"color:#000000;=
+"><span style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">=
+Changes from 2025:</span></span></span></strong></p><ul class=3D"last-chil=
+d"><li style=3D"margin-right: 1.3pt; text-align: justify; color: #000000;=
+ line-height: 1.5; mso-line-height-alt: 150%;"><p style=3D"margin-right: 1=
+=2E3pt; text-align: justify; line-height: 1.5; mso-line-height-alt: 150%; ma=
+rgin-top: 0px; margin-bottom: 0px;"><span style=3D"color:#000000;"><span s=
+tyle=3D"font-size: 12px"><span style=3D"font-family: Montserrat">Our rates=
+ have increased by 4.5% on average due to rises in operating costs. Howeve=
+r=2C we have concentrated our increases into the peak season at our camps=
+ in the Mara=2C whereby the rates have been adjusted by 10%. Our Laikipia=
+ peak rates are=2C however=2C frozen for the second year.</span></span></s=
+pan></p></li><li style=3D"margin-right: 1.3pt; text-align: justify; color:=
+ #000000; line-height: 1.5; mso-line-height-alt: 150%;"><p style=3D"margin=
+-right: 1.3pt; text-align: justify; line-height: 1.5; mso-line-height-alt:=
+ 150%; margin-top: 0px; margin-bottom: 0px;"><span style=3D"color:#000000;=
+"><span style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">=
+Mid and Regular season rates for all camps have not been increased.</span>=
+</span></span></p></li><li style=3D"margin-right: 1.3pt; text-align: justi=
+fy; color: #000000; line-height: 1.5; mso-line-height-alt: 150%;"><p style=
+=3D"margin-right: 1.3pt; text-align: justify; line-height: 1.5; mso-line-h=
+eight-alt: 150%; margin-top: 0px; margin-bottom: 0px;"><span style=3D"colo=
+r:#000000;"><span style=3D"font-size: 12px"><span style=3D"font-family: Mo=
+ntserrat">Our Conservancy Safari 6 for 5 offer has been expanded to includ=
+e any of our camps in the Mara with Laikipia.</span></span></span></p></li=
+><li style=3D"margin-right: 1.3pt; text-align: justify; color: #000000; li=
+ne-height: 1.5; mso-line-height-alt: 150%;"><p style=3D"margin-right: 1.3p=
+t; text-align: justify; line-height: 1.5; mso-line-height-alt: 150%; margi=
+n-top: 0px; margin-bottom: 0px;"><span style=3D"color:#000000;"><span styl=
+e=3D"font-size: 12px"><span style=3D"font-family: Montserrat">A reminder t=
+hat our Ol Pejeta Conservancy fees include the Conservancy entrance and th=
+e Wilderness zone bed night fees.</span></span></span></p></li><li style=
+=3D"margin-right: 1.3pt; text-align: justify; color: #000000; line-height:=
+ 1.5; mso-line-height-alt: 150%;"><p style=3D"margin-right: 1.3pt; text-al=
+ign: justify; line-height: 1.5; mso-line-height-alt: 150%; margin-top: 0px=
+; margin-bottom: 0px;"><span style=3D"color:#000000;"><span style=3D"font-=
+size: 12px"><span style=3D"font-family: Montserrat">A reminder of the age=
+ limit introduced for children at Kicheche Bush Olare and Kicheche Valley=
+ Naboisho of 7+ years.</span></span></span></p></li></ul></div></td></tr><=
+/tbody></table></td></tr><tr><td style=3D"background-color:transparent;pad=
+ding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:5px" valign=
+=3D"top" class=3D"mceDividerBlockContainer" id=3D"blockContainerId-240"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" style=3D"background-color:transparent;width:100%" role=3D"pres=
+entation" class=3D"mceDividerContainer" data-block-id=3D"240"><tbody><tr><=
+td style=3D"min-width:100%;border-top-width:2px;border-top-style:solid;bor=
+der-top-color:#d0d0d0;line-height:0;font-size:0" valign=3D"top" class=3D"m=
+ceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D=
+"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"=
+top" id=3D"blockContainerId-239"><table width=3D"100%" style=3D"border:0;b=
+order-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padding-l=
+eft:24px;padding-right:24px;padding-top:5px;padding-bottom:12px" class=3D"=
+mceTextBlockContainer"><div data-block-id=3D"239" class=3D"mceText" id=3D"=
+dataBlockId-239" style=3D"width:100%"><p style=3D"margin-right: 1.3pt; tex=
+t-align: justify;" class=3D"last-child"><span style=3D"color:#000000;"><sp=
+an style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">We've=
+ sharpened our spears to mark a quarter of a century and hope you like the=
+ updated logo.</span></span></span></p></div></td></tr></tbody></table></t=
+d></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;pad=
+ding-left:0" valign=3D"top" class=3D"mceImageBlockContainer" align=3D"left=
+" id=3D"blockContainerId-236"><div><!--[if !mso]><!--></div><a href=3D"ht=
+tps://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c862=
+4b&id=3D4d8bd32986&e=3Dde18c730d2" style=3D"display:block" target=3D"_bla=
+nk" data-block-id=3D"236"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:separate;=
+margin:0;vertical-align:top;max-width:100%;width:100%;height:auto" role=3D=
+"presentation" data-testid=3D"image-236"><tbody><tr><td style=3D"border:0;=
+border-radius:0;margin:0" valign=3D"top"><img alt=3D"" src=3D"https://mcus=
+ercontent.com/7d96fa269bd7ce767a3c8624b/images/b20790b7-52d8-d713-a6c8-ea8=
+44d31e98d.jpg" width=3D"660" height=3D"auto" style=3D"display:block;max-wi=
+dth:100%;height:auto;border-radius:0" class=3D"imageDropZone mceImage"></t=
+d></tr></tbody></table></a><div><!--<![endif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://kicheche.com/kicheche-story/"><span class=3D"mceImageBo=
+rder" style=3D"border:0;vertical-align:top;margin:0"><img role=3D"presenta=
+tion" class=3D"imageDropZone mceImage" src=3D"https://mcusercontent.com/7d=
+96fa269bd7ce767a3c8624b/images/b20790b7-52d8-d713-a6c8-ea844d31e98d.jpg" a=
+lt=3D"" width=3D"660" height=3D"auto" style=3D"display:block;max-width:660=
+px;width:660px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-ri=
+ght:0;padding-left:0" valign=3D"top" class=3D"mceImageBlockContainer" alig=
+n=3D"left" id=3D"blockContainerId-238"><div><!--[if !mso]><!--></div><a h=
+ref=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce=
+767a3c8624b&id=3Dfa28265b33&e=3Dde18c730d2" style=3D"display:block" targe=
+t=3D"_blank" data-block-id=3D"238"><table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:se=
+parate;margin:0;vertical-align:top;max-width:100%;width:100%;height:auto"=
+ role=3D"presentation" data-testid=3D"image-238"><tbody><tr><td style=3D"b=
+order:0;border-radius:0;margin:0" valign=3D"top"><img alt=3D"" src=3D"http=
+s://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/5059d187-5374-7f5c-=
+9633-a597d9833b83.jpg" width=3D"660" height=3D"auto" style=3D"display:bloc=
+k;max-width:100%;height:auto;border-radius:0" class=3D"imageDropZone mceIm=
+age"></td></tr></tbody></table></a><div><!--<![endif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://kicheche.com/kicheche-story/"><span class=3D"mceImageBo=
+rder" style=3D"border:0;vertical-align:top;margin:0"><img role=3D"presenta=
+tion" class=3D"imageDropZone mceImage" src=3D"https://mcusercontent.com/7d=
+96fa269bd7ce767a3c8624b/images/5059d187-5374-7f5c-9633-a597d9833b83.jpg" a=
+lt=3D"" width=3D"660" height=3D"auto" style=3D"display:block;max-width:660=
+px;width:660px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr><tr><td style=3D"background-color:transparent;padding-top:=
+20px;padding-bottom:20px;padding-right:24px;padding-left:24px" valign=3D"t=
+op" class=3D"mceDividerBlockContainer" id=3D"blockContainerId-84"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"background-color:transparent;width:100%" role=3D"presentati=
+on" class=3D"mceDividerContainer" data-block-id=3D"84"><tbody><tr><td styl=
+e=3D"min-width:100%;border-top-width:2px;border-top-style:solid;border-top=
+-color:#000000;line-height:0;font-size:0" valign=3D"top" class=3D"mceDivid=
+erBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"paddin=
+g-top:12px;padding-bottom:12px;padding-right:0;padding-left:0" valign=3D"t=
+op" class=3D"mceLayoutContainer" id=3D"blockContainerId-85"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" role=3D"presentation" data-block-id=3D"85"><tbody><tr class=3D"mceRow"><=
+td style=3D"background-position:center;background-repeat:no-repeat;backgro=
+und-size:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"24" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=
+=3D"top" class=3D"mceColumn" id=3D"mceColumnId--6" data-block-id=3D"-6" co=
+lspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=3D"to=
+p" class=3D"mceSocialFollowBlockContainer" id=3D"blockContainerId--5"><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" class=3D"mceSocialFollowBlock" data-block-id=3D"-5"><tbo=
+dy><tr><td valign=3D"middle" align=3D"center"><!--[if mso]><table align=
+=3D"left" border=3D"0" cellspacing=3D "0" cellpadding=3D"0"><tr><![endif]=
+--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><table a=
+lign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"di=
+splay:inline;float:left" role=3D"presentation"><tbody><tr><td style=3D"pad=
+ding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12px" vali=
+gn=3D"top" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"32"><a=
+ href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7=
+ce767a3c8624b&id=3Dc95b93d4db&e=3Dde18c730d2" target=3D"_blank" rel=3D"no=
+referrer"><img class=3D"mceSocialFollowImage" width=3D"32" height=3D"32" a=
+lt=3D"Facebook icon" src=3D"https://cdn-images.mailchimp.com/icons/social-=
+block-v3/block-icons-v3/facebook-filled-gray-40.png"></a></td></tr></tbody=
+></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=3D"center=
+" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" role=3D"pre=
+sentation"><tbody><tr><td style=3D"padding-top:3px;padding-bottom:3px;padd=
+ing-left:12px;padding-right:12px" valign=3D"top" class=3D"mceSocialFollowI=
+con" align=3D"center" width=3D"32"><a href=3D"https://kicheche.us1.list-ma=
+nage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=3D8547aebe26&e=3Dde18c730d2" target=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFoll=
+owImage" width=3D"32" height=3D"32" alt=3D"Instagram icon" src=3D"https://=
+cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-fi=
+lled-gray-40.png"></a></td></tr></tbody></table><!--[if mso]></td><![end=
+if]--><!--[if mso]><td align=3D"center" valign=3D"top"><![endif]--><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"display:inline;float:left" role=3D"presentation"><tbody><tr><td style=3D"=
+padding-top:3px;padding-bottom:3px;padding-left:12px;padding-right:12px" v=
+align=3D"top" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"32">=
+<a href=3D"https://kicheche.us1.list-manage.com/track/click?u=3D7d96fa269b=
+d7ce767a3c8624b&id=3D01db974941&e=3Dde18c730d2" target=3D"_blank" rel=3D"=
+noreferrer"><img class=3D"mceSocialFollowImage" width=3D"32" height=3D"32"=
+ alt=3D"Twitter icon" src=3D"https://cdn-images.mailchimp.com/icons/social=
+-block-v3/block-icons-v3/twitter-filled-gray-40.png"></a></td></tr></tbody=
+></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=3D"center=
+" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" role=3D"pre=
+sentation"><tbody><tr><td style=3D"padding-top:3px;padding-bottom:3px;padd=
+ing-left:12px;padding-right:12px" valign=3D"top" class=3D"mceSocialFollowI=
+con" align=3D"center" width=3D"32"><a href=3D"mailto:sales@kicheche.com" t=
+arget=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" wi=
+dth=3D"32" height=3D"32" alt=3D"Email icon" src=3D"https://cdn-images.mail=
+chimp.com/icons/social-block-v3/block-icons-v3/email-filled-gray-40.png"><=
+/a></td></tr></tbody></table><!--[if mso]></td><![endif]--><!--[if mso]=
+><td align=3D"center" valign=3D"top"><![endif]--><table align=3D"left" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display:inline;flo=
+at:left" role=3D"presentation"><tbody><tr><td style=3D"padding-top:3px;pad=
+ding-bottom:3px;padding-left:12px;padding-right:12px" valign=3D"top" class=
+=3D"mceSocialFollowIcon" align=3D"center" width=3D"32"><a href=3D"https://=
+kicheche.us1.list-manage.com/track/click?u=3D7d96fa269bd7ce767a3c8624b&id=
+=3D8e2f349f81&e=3Dde18c730d2" target=3D"_blank" rel=3D"noreferrer"><img c=
+lass=3D"mceSocialFollowImage" width=3D"32" height=3D"32" alt=3D"Website ic=
+on" src=3D"https://cdn-images.mailchimp.com/icons/social-block-v3/block-ic=
+ons-v3/website-filled-gray-40.png"></a></td></tr></tbody></table><!--[if=
+ mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr><tr><td style=3D"padding-top:6px;padding-bot=
+tom:6px;padding-right:24px;padding-left:24px" valign=3D"top" class=3D"mceB=
+uttonBlockContainer" align=3D"center" id=3D"blockContainerId-242"><div><!-=
+-[if !mso]><!--></div><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"242" class=3D=
+"mceButtonContainer"><tbody><tr class=3D"mceStandardButton"><td style=3D"b=
+ackground-color:#790a10;border-radius:50px;text-align:center" valign=3D"to=
+p" class=3D"mceButton"><a href=3D"https://kicheche.us1.list-manage.com/tra=
+ck/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Daf9f954860&e=3Dde18c730d2" ta=
+rget=3D"_blank" class=3D"mceButtonLink" style=3D"background-color:#790a10;=
+border-radius:50px;border:2px solid #ffffff;color:#ffffff;display:block;fo=
+nt-family:Montserrat;font-size:14px;font-weight:bold;font-style:normal;pad=
+ding:16px 28px;text-decoration:none;text-align:center;direction:ltr;letter=
+-spacing:0px" rel=3D"noreferrer">2026 RATES</a></td></tr></tbody></table><=
+div><!--<![endif]--></div><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"242" clas=
+s=3D"mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://kicheche4.sharepoint.com/:b:/s/SalesReservations/EcpZYrRfZ=
+-9Erj-96o8rU6sBILiwl27emoj1vQb5PcBnPA?e=3D8AleVf"
+style=3D"v-text-anchor:middle; width:146.36px; height:54px;"
+arcsize=3D"34%"
+strokecolor=3D"#ffffff"
+strokeweight=3D"2px"
+fillcolor=3D"#790a10">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: Montserrat;
+font-size: 14;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+2026 RATES
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"padding-top:6px;padding-bo=
+ttom:6px;padding-right:24px;padding-left:24px" valign=3D"top" class=3D"mce=
+ButtonBlockContainer" align=3D"center" id=3D"blockContainerId-87"><div><!-=
+-[if !mso]><!--></div><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"87" class=3D"=
+mceButtonContainer"><tbody><tr class=3D"mceStandardButton"><td style=3D"ba=
+ckground-color:#790a10;border-radius:50px;text-align:center" valign=3D"top=
+" class=3D"mceButton"><a href=3D"https://kicheche.us1.list-manage.com/trac=
+k/click?u=3D7d96fa269bd7ce767a3c8624b&id=3Dbed5627ac3&e=3Dde18c730d2" tar=
+get=3D"_blank" class=3D"mceButtonLink" style=3D"background-color:#790a10;b=
+order-radius:50px;border:2px solid #ffffff;color:#ffffff;display:block;fon=
+t-family:Montserrat;font-size:14px;font-weight:bold;font-style:normal;padd=
+ing:16px 28px;text-decoration:none;text-align:center;direction:ltr;letter-=
+spacing:0px" rel=3D"noreferrer">Check Availability</a></td></tr></tbody></=
+table><div><!--<![endif]--></div><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"87=
+" class=3D"mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://kicheche.resrequest.com/reservation.php?20+++++RS4+.shtm"
+style=3D"v-text-anchor:middle; width:190.59px; height:54px;"
+arcsize=3D"26%"
+strokecolor=3D"#ffffff"
+strokeweight=3D"2px"
+fillcolor=3D"#790a10">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: Montserrat;
+font-size: 14;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Check Availability
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"padding-top:6px;padding-bo=
+ttom:6px;padding-right:24px;padding-left:24px" valign=3D"top" class=3D"mce=
+ButtonBlockContainer" align=3D"center" id=3D"blockContainerId-88"><div><!-=
+-[if !mso]><!--></div><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"88" class=3D"=
+mceButtonContainer"><tbody><tr class=3D"mceStandardButton"><td style=3D"ba=
+ckground-color:#790a10;border-radius:50px;text-align:center" valign=3D"top=
+" class=3D"mceButton"><a href=3D"mailto:marketing@kicheche.com?subject=3DK=
+icheche%20Camps%20Product%20Training%20-%20Webinar&body=3D" class=3D"mceBu=
+ttonLink" style=3D"background-color:#790a10;border-radius:50px;border:2px=
+ solid #ffffff;color:#ffffff;display:block;font-family:Montserrat;font-siz=
+e:14px;font-weight:bold;font-style:normal;padding:16px 28px;text-decoratio=
+n:none;text-align:center;direction:ltr;letter-spacing:0px" rel=3D"noreferr=
+er">Book a Kicheche Product Training Webinar</a></td></tr></tbody></table>=
+<div><!--<![endif]--></div><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"88" clas=
+s=3D"mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"mailto:marketing@kicheche.com?subject=3DKicheche%20Camps%20Product=
+%20Training%20-%20Webinar&body=3D"
+style=3D"v-text-anchor:middle; width:376.61px; height:54px;"
+arcsize=3D"13%"
+strokecolor=3D"#ffffff"
+strokeweight=3D"2px"
+fillcolor=3D"#790a10">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: Montserrat;
+font-size: 14;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Book a Kicheche Product Training Webinar
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"padding-top:12px;padding-b=
+ottom:12px;padding-right:0;padding-left:0" valign=3D"top" class=3D"mceImag=
+eBlockContainer" align=3D"left" id=3D"blockContainerId-89"><div><!--[if !=
+mso]><!--></div><a href=3D"https://kicheche.us1.list-manage.com/track/clic=
+k?u=3D7d96fa269bd7ce767a3c8624b&id=3D540dc8fd42&e=3Dde18c730d2" style=3D"=
+display:block" target=3D"_blank" data-block-id=3D"89"><table align=3D"left=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"border-collapse:separate;margin:0;vertical-align:top;max-width:100%;width=
+:100%;height:auto" role=3D"presentation" data-testid=3D"image-89"><tbody><=
+tr><td style=3D"border:0;border-radius:0;margin:0" valign=3D"top"><img alt=
+=3D"" src=3D"https://mcusercontent.com/7d96fa269bd7ce767a3c8624b/images/34=
+02c1e2-e1a0-68e9-25cc-bc3a47d7db8c.jpg" width=3D"660" height=3D"auto" styl=
+e=3D"display:block;max-width:100%;height:auto;border-radius:0" class=3D"im=
+ageDropZone mceImage"></td></tr></tbody></table></a><div><!--<![endif]-->=
+</div><div>
+<!--[if mso]>
+<a href=3D"https://kicheche.com/our-places-and-camps/"><span class=3D"mceI=
+mageBorder" style=3D"border:0;vertical-align:top;margin:0"><img role=3D"pr=
+esentation" class=3D"imageDropZone mceImage" src=3D"https://mcusercontent.=
+com/7d96fa269bd7ce767a3c8624b/images/3402c1e2-e1a0-68e9-25cc-bc3a47d7db8c.=
+jpg" alt=3D"" width=3D"660" height=3D"auto" style=3D"display:block;max-wid=
+th:660px;width:660px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr><=
+/table><![endif]--></td></tr></tbody><tbody data-block-id=3D"97" class=3D=
+"mceWrapper"><tr><td style=3D"background-color:transparent" valign=3D"top"=
+ align=3D"center" class=3D"mceSectionBody"><!--[if (gte mso 9)|(IE)]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"660" style=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px=
+" role=3D"presentation"><tbody><tr><td valign=3D"top" class=3D"mceWrapperI=
+nner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"96"><tbody><t=
+r class=3D"mceRow"><td style=3D"background-position:center;background-repe=
+at:no-repeat;background-size:cover" valign=3D"top"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbo=
+dy><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" class=
+=3D"mceColumn" id=3D"mceColumnId--9" data-block-id=3D"-9" colspan=3D"12" w=
+idth=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"background-color:=
+#790a10;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:=
+8px" valign=3D"top" id=3D"blockContainerId-95"><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"prese=
+ntation" data-block-id=3D"95" id=3D"section_1b71821741c2834aa57d8691c9cabe=
+09" class=3D"mceFooterSection"><tbody><tr class=3D"mceRow"><td style=3D"ba=
+ckground-color:#790a10;background-position:center;background-repeat:no-rep=
+eat;background-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"to=
+p"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"12" width=3D"100%"=
+ role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-botto=
+m:0" valign=3D"top" class=3D"mceColumn" id=3D"mceColumnId--3" data-block-i=
+d=3D"-3" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td s=
+tyle=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" val=
+ign=3D"top" align=3D"center" id=3D"blockContainerId-93"><table width=3D"10=
+0%" style=3D"border:0;border-radius:0;border-collapse:separate"><tbody><tr=
+><td style=3D"padding-left:16px;padding-right:16px;padding-top:12px;paddin=
+g-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"93" c=
+lass=3D"mceText" id=3D"dataBlockId-93" style=3D"display:inline-block;width=
+:100%"><p class=3D"last-child"><em><span style=3D"color:#ffffff;"><span st=
+yle=3D"font-size: 12px"><span style=3D"font-family: Montserrat">Copyright=
+ (C) 2025 Kicheche Camps. All rights reserved.</span></span></span></em><s=
+pan style=3D"color:#ffffff;"><span style=3D"font-family: Montserrat"><br><=
+/span><span style=3D"font-size: 12px"><span style=3D"font-family: Montserr=
+at">
+You are receiving our Kicheche Agents Updates because you sell our camps.
+</span></span><span style=3D"font-family: Montserrat"><br><br></span><span=
+ style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">Our mai=
+ling address is:</span></span><span style=3D"font-family: Montserrat"><br>=
+</span><span style=3D"font-size: 12px"><span style=3D"font-family: Montser=
+rat">
+Kicheche Camps
+P.O Box 15236
+Nairobi 00509
+Kenya
+</span></span><span style=3D"font-family: Montserrat"><br><br></span><span=
+ style=3D"font-size: 12px"><span style=3D"font-family: Montserrat">Want to=
+ change how you receive these emails?</span></span><span style=3D"font-fam=
+ily: Montserrat"><br></span><span style=3D"font-size: 12px"><span style=3D=
+"font-family: Montserrat">You can </span></span></span><a href=3D"https://=
+kicheche.us1.list-manage.com/profile?u=3D7d96fa269bd7ce767a3c8624b&id=3D3e=
+6c97abb8&e=3Dde18c730d2&c=3D20cae138f0" style=3D"color: #ffffff;"><span styl=
+e=3D"font-size: 12px"><span style=3D"font-family: Montserrat">update your=
+ preferences</span></span></a><span style=3D"color:#ffffff;"><span style=
+=3D"font-size: 12px"><span style=3D"font-family: Montserrat"> or </span></=
+span></span><a href=3D"https://kicheche.us1.list-manage.com/unsubscribe?u=
+=3D7d96fa269bd7ce767a3c8624b&id=3D3e6c97abb8&t=3Db&e=3Dde18c730d2&c=3D20cae1=
+38f0" style=3D"color: #ffffff;"><span style=3D"font-size: 12px"><span styl=
+e=3D"font-family: Montserrat">unsubscribe</span></span></a></p></div></td>=
+</tr></tbody></table></td></tr><tr><td valign=3D"top" class=3D"mceLayoutCo=
+ntainer" align=3D"center" id=3D"blockContainerId--2"><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D=
+"presentation" data-block-id=3D"-2"><tbody><tr class=3D"mceRow"><td style=
+=3D"background-position:center;background-repeat:no-repeat;background-size=
+:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"presentati=
+on"><tbody></tbody></table></td></tr></tbody></table></td></tr></tbody></t=
+able></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></t=
+d></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+</body></html>
+--_----------=_MCPart_881407790--

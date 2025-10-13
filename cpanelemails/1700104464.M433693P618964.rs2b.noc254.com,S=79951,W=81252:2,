@@ -1,0 +1,1301 @@
+Return-Path: <bounce-md_30264526.655588e3.v1-dd6af7ffb83141e68928a511c74d5cfb@track.aerocrs.com>
+Delivered-To: novuste1@rs2b.noc254.com
+Received: from rs2b.noc254.com
+	by rs2b.noc254.com with LMTP
+	id kDOWGRCJVWXUcQkAkzNyDQ
+	(envelope-from <bounce-md_30264526.655588e3.v1-dd6af7ffb83141e68928a511c74d5cfb@track.aerocrs.com>)
+	for <novuste1@rs2b.noc254.com>; Thu, 16 Nov 2023 06:14:24 +0300
+Return-path: <bounce-md_30264526.655588e3.v1-dd6af7ffb83141e68928a511c74d5cfb@track.aerocrs.com>
+Envelope-to: chrisrine@novustelltravel.com
+Delivery-date: Thu, 16 Nov 2023 06:14:24 +0300
+Received: from mail145-14.atl61.mandrillapp.com ([198.2.145.14]:62286)
+	by rs2b.noc254.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <bounce-md_30264526.655588e3.v1-dd6af7ffb83141e68928a511c74d5cfb@track.aerocrs.com>)
+	id 1r3Spj-002fNO-35
+	for chrisrine@novustelltravel.com;
+	Thu, 16 Nov 2023 06:14:24 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aerocrs.com;
+	s=mandrill; t=1700104420; x=1700364920; i=system+255@aerocrs.com;
+	bh=zY13q7p2XBQ9ZyYYHyPK2qZbxI0Cmm9RmA2VNvfap5k=;
+	h=From:Subject:To:Feedback-ID:Message-Id:Date:MIME-Version:
+	 Content-Type:CC:Date:Subject:From;
+	b=TR21+SOy0rwr110QOdXcVE1p/C7rWIzz5J1+ZtchuV+pEwIOjHB6fRXZBqjQUK3wh
+	 l+1Oe/GbeMJAnlVzXBOGq9p9UwWOeL9qrtSDMN7jBAZ32KT5uFLiIekcZre1eLrSG8
+	 I+CQSjh4+rUtFuSFTm8jc7LCRUHs+nOGpJy07q/U=
+Received: from pmta06.mandrill.prod.atl01.rsglab.com (localhost [127.0.0.1])
+	by mail145-14.atl61.mandrillapp.com (Mailchimp) with ESMTP id 4SW4qm0yr4z705ZyF
+	for <chrisrine@novustelltravel.com>; Thu, 16 Nov 2023 03:13:40 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com;
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1700104419; h=from :
+ subject : to : message-id : date : mime-version : content-type : from
+ : x-mandrill-user : list-unsubscribe;
+ bh=zY13q7p2XBQ9ZyYYHyPK2qZbxI0Cmm9RmA2VNvfap5k=;
+ b=Y7AC//6Xs5Qa4rXQlTMDt1Ehg+ETgcEfcVABHXPSq0iZt0+YdGqaZqdfWZwmB0I4pVxHR
+ IbU7c+nBv4fQT0HzX+vHmUGZkDq2g5ecHXIxHj8e5L9NKFJ7RfIEhYRYibJ+rVsrs5sXSBT
+ AO1KC1Delfe9hm9A1uP733UD+KxwmQY=
+From: Skyward Express <system+255@aerocrs.com>
+Subject: =?utf-8?Q?TICKET=20CONFIRMATION-NO=20REPLY=20PNR=20Ref:=202559F379?=
+Received: from [52.212.92.47] by mandrillapp.com id dd6af7ffb83141e68928a511c74d5cfb; Thu, 16 Nov 2023 03:13:39 +0000
+To: chrisrine@novustelltravel.com
+X-Native-Encoded: 1
+X-Report-Abuse: =?UTF-8?Q?Please=20forward=20a=20copy=20of=20this=20message,=20including=20all=20headers,=20to=20abuse@mandrill.com.=20You=20can=20also=20report=20abuse=20here:=20https://mandrillapp.com/contact/abuse=3Fid=3D30264526.dd6af7ffb83141e68928a511c74d5cfb?=
+X-Mandrill-User: md_30264526
+Feedback-ID: 30264526:30264526.20231116:md
+Message-Id: <30264526.20231116031339.655588e3d23573.13096217@mail145-14.atl61.mandrillapp.com>
+Date: Thu, 16 Nov 2023 03:13:39 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="_av-e2j6Qb53RL7rHAXwIb2kzg"
+X-Spam-Status: No, score=2.6
+X-Spam-Score: 26
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "rs2b.noc254.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Skyward Express *WILSON AIRPORT* *SKYWARD EXPRESS BULDING*
+    *P.O BOX 26314-00100* 
+ Content analysis details:   (2.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: mandrillapp.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 WEIRD_QUOTING          BODY: Weird repeated double-quotation marks
+  0.1 HTML_TAG_BALANCE_BODY  BODY: HTML has unbalanced "body" tags
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  2.0 AC_HTML_NONSENSE_TAGS  RAW: Many consecutive multi-letter HTML
+                             tags, likely nonsense/spam
+  0.2 KAM_TRACKIMAGE         RAW: Message has a remote image explicitly meant
+                             for tracking
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+--_av-e2j6Qb53RL7rHAXwIb2kzg
+Content-Type: multipart/alternative; boundary="_av-rCHxnR3-lKu4vrLa3jFIew"
+
+--_av-rCHxnR3-lKu4vrLa3jFIew
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Skyward Express
+*WILSON AIRPORT*
+
+*SKYWARD EXPRESS BULDING*
+
+*P.O BOX 26314-00100*
+
+*NAIROBI,KENYA*
+<https://clients.aerocrs.com//Go7pub/pnrBookingRef.asp?ID=3D9F3792A7-A0C1-4=
+01D-BCB0-EF522BC0039A>
+To
+*NOVUSTELL TRAVEL LTD*
+HOWSE AND MCGEORGE
+FACTORY STREET
+NAIROBI 
+Kenya
+Phone: 0721115572
+
+TICKET CONFIRMATION-NO REPLY Pnr Ref. 2559F379CONFIRMATION
+Ticket Number: 25517274168
+Booking details: Lilian
+
+*Dear Customer, *
+
+*Thank you for booking with us. Please check your booking details below to
+ensure that they are accurate. Your CHECK-IN will start 1 hr 30 min before
+departure time & close 40 min to departure time.*
+
+*CHECK-IN in NAIROBI will be at SKYWARD EXPRESS BUILDING, WILSON AIRPORT.*
+
+Flights:
+#DateFlightFromSTDToSTAClassBaggageCheckin TimeStatus120-Nov-23
+OW396NAIROBI-WILSON06:45KAKAMEGA
+07:30M20 Kg05:15Confirmed222-Nov-23 OW397KAKAMEGA07:50NAIROBI-WILSON
+Via KITALE09:15X20 Kg06:20Confirmed
+Travellers:    (Count:Adult: 1)
+Traveller NameMISS. WADUU ESTHER
+
+Terms & Conditions:
+*T*he following are extracts of our Ticket Terms & Conditions from our
+General Conditions of Carriage which can be viewed in details on our
+website* - www.skywardexpress.co.ke <http://www.skywardexpress.co.ke>*     
+  
+
+ - All fares are Non-refundable.
+ - Itinerary changes on a confirmed ticket must be made by sending an email
+to reservations@skywardexpress.co.ke
+ - Reservation changes must be done 12 hours prior to the flight departure
+time. If this is not done and the passenger doesn=E2=80=99t travel then the
+entire fare is forfeited.
+ - Change of reservation (Date & Time) is allowed at *USD 20* per person
+and if at the time of change the original fare is not available, the next
+higher fare will be applicable hence a fare difference charged.
+ - Name changes allowed at a fee of *USD 30* per person.
+ - Re-routing amendments allowed at *USD 35* per person and if there=E2=80=
+=99s
+fare difference, passenger will be required to top up.
+ - Check-in counter *Opens 1hr 30mins* prior to the flight departure time
+and *Closes 40mins* to the departure time.
+ - *No-show* tickets are Non-reusable and Non-refundable.
+ - At check-in, all Passengers are required to produce acceptable form of
+identification with a photograph i.e. National I.D card or Passport. For
+minors (below age of 18yrs) and infants (0-23months) a copy of either Birth
+Certificate or Birth Notification will be required.
+ - Baggage allowance is limited to *20Kgs* per person (*5Kgs* hand luggage
+& *15Kgs *checked-in luggage).
+ - Infants not paying for a seat, are not entitled to baggage allowance.
+ - Excess baggage will be charged at *Kes 350/-* per kilo and will only be
+carried subject to space availability.
+ - Skyward Express reserves the right to change departure times or carrier
+when so required for operational, weather or safety reasons.
+ - Skyward Express is not responsible for any direct or consequential costs
+resulting from any delays to its services and particularly if a delay
+results in missing a connection to another carrier-domestic or
+international. Skyward express only guarantees a connection to another
+flight operated by Skyward Express.
+ - Skyward Express ticket is valid for 3 months from the first date of
+service.
+ - All firearms and/or ammunition must be declared at the check-in counter
+ - Skyward Express is a Non-Approved Dangerous Goods Carrier
+ - Reprint of boarding passes shall attract a fee of *USD 20* per passenger
+ - *Expectant Mother=E2=80=99s Declaration Guide*.
+
+a) Uncomplicated Single or Multiple Pregnancy - 27weeks and earlier. No
+assessment certificate is required. However, an assessment certificate from
+your doctor must be           presented for your return flight if it is
+scheduled beyond the 28th week of your pregnancy.
+
+b) Uncomplicated Single 28 to 35weeks or Uncomplicated Multiple pregnancy
+(28 to 32 weeks) - Letter from the doctor required declaring the passenger
+fit to travel by air.        Passenger shall be required to fill Skyward
+Express Medical Declaration form.
+
+c) Complicated pregnancy - 0 to 35weeks. Doctor=E2=80=99s approval required
+declaring the passenger fit to travel by air. Passenger shall be required
+to fill Skyward Express                    Medical Declaration form.
+
+d) Miscarriage with active bleeding (Threatened or complete) - 0 to
+36weeks. Doctor=E2=80=99s approval certificate required declaring the passe=
+nger
+fit to travel by air. Passenger              shall be required to fill
+Skyward Express Medical Declaration form.
+
+e) Complicated or Uncomplicated pregnancy at 36. No acceptance for air
+travel.
+
+f) New Mothers =E2=80=93Within 7 days after birth. Doctor=E2=80=99s approva=
+l
+certificate required declaring the passenger fit to travel by air.
+Passenger shall be required to fill Skyward                Express Medical
+Declaration form.
+
+20. New born babies are *NOT *allowed to travel in pressurized cabins until
+7 days after their birth.
+
+*THANK YOU FOR CHOOSING TO FLY SKYWARD EXPRESS - WE WISH  YOU A PLEASANT
+FLIGHT!*
+
+This email and any files transmitted with it are confidential and intended
+solely for the use of the individual or entity to whom they are addressed.
+If you have received this email in error please notify the system manager.
+This message contains confidential information and is intended only for the
+individual named. If you are not the named addressee you should not
+disseminate, distribute or copy this e-mail. Please notify the sender
+immediately by e-mail if you have received this e-mail by mistake and
+delete this e-mail from your system. If you are not the intended recipient
+you are notified that disclosing, copying, distributing or taking any
+action in reliance on the contents of this information is strictly
+prohibited.This E-mail is sent to you by AeroCRS system, the e-mail address
+is not monitored. Issued on 16-Nov-23 03:13, By user: Quinta Omondi
+<http://www.aerocrs.com/?ref=3Demail&comp=3D255>
+
+--_av-rCHxnR3-lKu4vrLa3jFIew
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><meta http-equiv=3D"Content-Type" content=3D"text/html;charset=3DUTF-=
+8"><body><font face=3D"arial"><table align=3D"center" style=3D"width:800px;=
+"><tr><td colspan=3D"2"><table width=3D"100%" border=3D"0"><tr><td align=3D=
+"left" valign=3D"top"><img src=3D"https://storage.aerocrs.com/255/system/Sk=
+yward%20Express%20Logo300x150-01.png"></td><td align=3D"left" style=3D"padd=
+ing-left:10px;"><span style=3D"font-size:15px;font-weight:bold">Skyward Exp=
+ress</span><br /><span style=3D"font-size:12px;"><p><strong>WILSON AIRPORT<=
+/strong></p><p><strong>SKYWARD EXPRESS BULDING</strong></p><p><strong>P.O B=
+OX 26314-00100</strong></p><p><strong>NAIROBI,KENYA</strong></p></span><spa=
+n style=3D"font-size:12px;"></span></td><td valign=3D"top" align=3D"right">=
+<a href=3D"http://track.aerocrs.com/track/click/30264526/clients.aerocrs.co=
+m?p=3DeyJzIjoiMUZYRE1Hckk4Q0M3M2J5R2N5akxpY0JTTGd3IiwidiI6MSwicCI6IntcInVcI=
+jozMDI2NDUyNixcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2NsaWVudHMuYWVyb2Ny=
+cy5jb21cXFwvXFxcL0dvN3B1YlxcXC9wbnJCb29raW5nUmVmLmFzcD9JRD05RjM3OTJBNy1BMEM=
+xLTQwMUQtQkNCMC1FRjUyMkJDMDAzOUFcIixcImlkXCI6XCJkZDZhZjdmZmI4MzE0MWU2ODkyOG=
+E1MTFjNzRkNWNmYlwiLFwidXJsX2lkc1wiOltcImI4ZTZiZDUwN2JhMWM1MWRmZDc0NTk4OTRhN=
+mIyODAzODBjNTEyYzhcIl19In0"><img src=3D"https://connect.aerocrs.com/apps/qr=
+.php?cht=3Dqr&chl=3Dhttps://clients.aerocrs.com//Go7pub/pnrBookingRef.asp?I=
+D=3D9F3792A7-A0C1-401D-BCB0-EF522BC0039A&chs=3D95x95&chld=3DL|0" align=3D"r=
+ight" border=3D"0"></a><br /></td></tr></table></td></tr><tr><td colspan=3D=
+"2"><span style=3D"font-size:15px;font-weight:bold">To</span><br><b>NOVUSTE=
+LL TRAVEL LTD</b><br />HOWSE AND MCGEORGE<br />FACTORY STREET<br />NAIROBI&=
+nbsp;<br />Kenya<br />Phone: 0721115572<br /><br /><br /></td></tr><tr><td =
+colspan=3D"2"></td></tr><tr><td colspan=3D"2"><br /><br /><center><span sty=
+le=3D"font-size:18px;font-weight:bold;text-align:center">TICKET CONFIRMATIO=
+N-NO REPLY  Pnr Ref. 2559F379</span></center><center><span style=3D"font-si=
+ze:12px;font-weight:bold;text-align:center">CONFIRMATION</span></center><br=
+ /><center>Ticket Number: 25517274168</center><br /><center><span style=3D"=
+font-size:12px;font-weight:bold;text-align:center">Booking details: Lilian<=
+/span></center><br /><br /><p><span><strong>Dear Customer, </strong></span>=
+</p><p><span style=3D"background-color: #ffff00;"><strong><span style=3D"ba=
+ckground-color: #ffffff;">Thank you for booking with us.</span> Please chec=
+k your booking details below to ensure that they are accurate. Your CHECK-I=
+N will start 1 hr 30 min before departure time &amp; close 40 min to depart=
+ure time.</strong></span></p><p><span style=3D"background-color: #ffffff;">=
+<strong><strong>CHECK-IN in NAIROBI will be at SKYWARD EXPRESS BUILDING, WI=
+LSON AIRPORT.</strong></strong></span></p><br /><br /></td></tr><tr><td col=
+span=3D"2"><span style=3D"font-size:15px;font-weight:bold">Flights:</span><=
+br><table border=3D"1" cellspacing=3D"0" cellpadding=3D"0" bordercolor=3D"#=
+C6C3C6" style=3D"width:800px;"><tr><td width=3D"15" style=3D"font-family: A=
+rial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">#</t=
+d><td width=3D"70" style=3D"font-family: Arial; font-size: 12; color: Black=
+;padding-left:5px;padding-right:5px;">Date</td><td style=3D"font-family: Ar=
+ial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Fligh=
+t</td><td style=3D"font-family: Arial; font-size: 12; color: Black;padding-=
+left:5px;padding-right:5px;">From</td><td style=3D"font-family: Arial; font=
+-size: 12; color: Black;padding-left:5px;padding-right:5px;">STD</td><td st=
+yle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pad=
+ding-right:5px;">To</td><td style=3D"font-family: Arial; font-size: 12; col=
+or: Black;padding-left:5px;padding-right:5px;">STA</td><td style=3D"font-fa=
+mily: Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px=
+;">Class</td><td style=3D"font-family: Arial; font-size: 12; color: Black;p=
+adding-left:5px;padding-right:5px;">Baggage</td><td style=3D"font-family: A=
+rial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">Chec=
+kin Time</td><td width=3D"70" style=3D"font-family: Arial; font-size: 12; c=
+olor: Black;padding-left:5px;padding-right:5px;">Status</td></tr><tr><tr><t=
+d style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px=
+;padding-right:5px;">1</td><td style=3D"font-family: Arial; font-size: 12; =
+color: Black;padding-left:5px;padding-right:5px;">20-Nov-23</td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">&nbsp;OW396</td><td style=3D"font-family: Arial; font-size: 1=
+2; color: Black;padding-left:5px;padding-right:5px;">NAIROBI-WILSON</td><td=
+ style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;=
+padding-right:5px;">06:45</td><td style=3D"font-family: Arial; font-size: 1=
+2; color: Black;padding-left:5px;padding-right:5px;">KAKAMEGA<br><span styl=
+e=3D"font-family: Arial; font-size: 10; color: Black;"></span></td><td styl=
+e=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddi=
+ng-right:5px;">07:30</td><td style=3D"text-align:center; font-family: Arial=
+; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">M</td><t=
+d style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px=
+;padding-right:5px;">20 Kg</td><td style=3D"font-family: Arial; font-size: =
+12; color: Black;padding-left:5px;padding-right:5px;">05:15</td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">Confirmed</td></tr><tr><tr><td style=3D"font-family: Arial; f=
+ont-size: 12; color: Black;padding-left:5px;padding-right:5px;">2</td><td s=
+tyle=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;pa=
+dding-right:5px;">22-Nov-23</td><td style=3D"font-family: Arial; font-size:=
+ 12; color: Black;padding-left:5px;padding-right:5px;">&nbsp;OW397</td><td =
+style=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;p=
+adding-right:5px;">KAKAMEGA</td><td style=3D"font-family: Arial; font-size:=
+ 12; color: Black;padding-left:5px;padding-right:5px;">07:50</td><td style=
+=3D"font-family: Arial; font-size: 12; color: Black;padding-left:5px;paddin=
+g-right:5px;">NAIROBI-WILSON<br><span style=3D"font-family: Arial; font-siz=
+e: 10; color: Black;">Via KITALE</span></td><td style=3D"font-family: Arial=
+; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">09:15</t=
+d><td style=3D"text-align:center; font-family: Arial; font-size: 12; color:=
+ Black;padding-left:5px;padding-right:5px;">X</td><td style=3D"font-family:=
+ Arial; font-size: 12; color: Black;padding-left:5px;padding-right:5px;">20=
+ Kg</td><td style=3D"font-family: Arial; font-size: 12; color: Black;paddin=
+g-left:5px;padding-right:5px;">06:20</td><td style=3D"font-family: Arial; f=
+ont-size: 12; color: Black;padding-left:5px;padding-right:5px;">Confirmed</=
+td></tr></table><br /><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0"></table></td></tr><tr><td colspan=3D"2"><span style=3D"font-size:15px;fo=
+nt-weight:bold">Travellers:</span>&nbsp;&nbsp;&nbsp;&nbsp;(Count:Adult:&nbs=
+p;1)<br /><table cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"=
+><table border=3D"1" cellspacing=3D"0" cellpadding=3D"0" bordercolor=3D"#C6=
+C3C6"><tr><th style=3D"font-family: Arial; font-size: 13; color: Black;">Tr=
+aveller Name</th></tr><tr><td style=3D"font-family: Arial; font-size: 12; c=
+olor: Black;">MISS. WADUU ESTHER<br /></td></tr></table></td></tr></table><=
+/td></tr><tr><td colspan=3D"2"></td></tr><tr><td colspan=3D"2"></td></tr><t=
+r><td style=3D"width:400px;" valign=3D"top"></td><td style=3D"width:400px;"=
+ valign=3D"top"></tr><tr><td colspan=3D"2"><br><span style=3D"font-size:15p=
+x;font-weight:bold">Terms & Conditions:</span><br><span style=3D"font-size:=
+9px;"><p><span style=3D"font-family: " times new roman', times; font-size: =
+medium;'><strong style=3D"font-size: medium;"><span style=3D"background-col=
+or: #ffff00;"><strong>T<strong>he following are extracts of our Ticket Term=
+s &amp; Conditions from our General Conditions of Carriage which can be vie=
+wed in details on our website</strong></strong><strong> - <a href=3D"http:/=
+/track.aerocrs.com/track/click/30264526/www.skywardexpress.co.ke?p=3DeyJzIj=
+oiS2hJTFNfeFlwZW43V0NjTGwySW9reFV5c3p3IiwidiI6MSwicCI6IntcInVcIjozMDI2NDUyN=
+ixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvd3d3LnNreXdhcmRleHByZXNzLmNvLmtl=
+XCIsXCJpZFwiOlwiZGQ2YWY3ZmZiODMxNDFlNjg5MjhhNTExYzc0ZDVjZmJcIixcInVybF9pZHN=
+cIjpbXCI2OGYwNTBjMmNhMjNkYmRiNjIyMzM1ZTg2MTY3YjM2MDQ4ODFlNDM3XCJdfSJ9">www.=
+skywardexpress.co.ke</a></strong></span></strong></span>&nbsp; &nbsp; &nbsp=
+; &nbsp;<span style=3D"font-size: medium;">&nbsp;</span></p><ol><li><span s=
+tyle=3D"font-family: " times new roman', times; font-size: medium;'>All far=
+es are Non-refundable.</span></li><li><span style=3D"font-family: " times n=
+ew roman', times; font-size: medium;'>Itinerary changes on a confirmed tick=
+et must be made by sending an email to&nbsp;<span style=3D"background-color=
+: #ffff00;">reservations@skywardexpress.co.ke</span></span></li><li><span s=
+tyle=3D"font-family: " times new roman', times; font-size: medium;'>Reserva=
+tion changes must be done 12 hours prior to the flight&nbsp;departure&nbsp;=
+time. If this is not done and the passenger doesn&rsquo;t travel then the e=
+ntire fare is forfeited.</span></li><li><span style=3D"font-family: " times=
+ new roman', times; font-size: medium;'>Change of reservation (Date &amp; T=
+ime) is allowed at <strong>USD 20</strong> per person and if at the time of=
+ change the original fare is not available, the next higher fare will be ap=
+plicable hence a fare difference charged.</span></li><li><span style=3D"fon=
+t-family: " times new roman', times; font-size: medium;'>Name changes allow=
+ed at a fee of <strong>USD 30</strong> per person.</span></li><li><span sty=
+le=3D"font-family: " times new roman', times; font-size: medium;'>Re-routin=
+g amendments allowed at <strong>USD 35</strong> per person and if there&rsq=
+uo;s fare difference, passenger will be required to top up.</span></li><li>=
+<span style=3D"font-family: " times new roman', times; font-size: medium;'>=
+Check-in counter&nbsp;<strong>Opens 1hr 30mins</strong>&nbsp;prior to the f=
+light departure time and&nbsp;<strong>Closes 40mins</strong>&nbsp;to the de=
+parture time.</span></li><li><span style=3D"font-family: " times new roman'=
+, times; font-size: medium;'><strong>No-show</strong>&nbsp;tickets are Non-=
+reusable and Non-refundable.</span></li><li><span style=3D"font-family: " t=
+imes new roman', times; font-size: medium;'>At check-in, all Passengers are=
+ required to produce acceptable form of identification with a photograph i.=
+e. National I.D card or Passport. For minors (below age of 18yrs) and infan=
+ts (0-23months) a copy of either Birth Certificate or Birth Notification wi=
+ll be required.</span></li><li><span style=3D"font-family: " times new roma=
+n', times; font-size: medium;'>Baggage allowance is limited to <strong>20Kg=
+s</strong> per person&nbsp;(<strong><span style=3D"text-decoration: underli=
+ne;">5Kgs</span></strong>&nbsp;hand luggage &amp;&nbsp;<strong>15Kgs&nbsp;<=
+/strong>checked-in luggage).</span></li><li><span style=3D"font-family: " t=
+imes new roman', times; font-size: medium;'>Infants not paying for a seat, =
+are not entitled to baggage allowance.</span></li><li><span style=3D"font-f=
+amily: " times new roman', times; font-size: medium;'>Excess baggage will b=
+e charged at <strong>Kes 350/-</strong> per kilo and will only be carried s=
+ubject to space availability.</span></li><li><span style=3D"font-family: " =
+times new roman', times; font-size: medium;'>Skyward Express reserves the r=
+ight to change departure times or carrier when so required for operational,=
+ weather or safety reasons.</span></li><li><span style=3D"font-family: " ti=
+mes new roman', times; font-size: medium;'>Skyward Express is not responsib=
+le for any direct or consequential costs resulting from any delays to its s=
+ervices and particularly if a delay results in missing a connection to anot=
+her carrier-domestic or international. Skyward express only guarantees a co=
+nnection to another flight operated by Skyward Express.</span></li><li><spa=
+n style=3D"font-family: " times new roman', times; font-size: medium;'>Skyw=
+ard Express ticket is valid for 3 months from the first date of service.</s=
+pan></li><li><span style=3D"font-family: " times new roman', times; font-si=
+ze: medium;'>All firearms and/or ammunition must be declared at the check-i=
+n counter</span></li><li><span style=3D"font-family: " times new roman', ti=
+mes; font-size: medium;'>Skyward Express is a Non-Approved Dangerous Goods =
+Carrier</span></li><li><span style=3D"font-family: " times new roman', time=
+s; font-size: medium;'>Reprint of boarding passes shall attract a fee of <s=
+trong>USD 20</strong> per passenger</span></li><li><span style=3D"font-fami=
+ly: " times new roman', times; font-size: medium;'><strong>Expectant Mother=
+&rsquo;s Declaration Guide</strong>.</span></li></ol><p style=3D"text-align=
+: left;"><span style=3D"font-size: medium; font-family: " times new roman',=
+ times;'><span style=3D"font-family: " times new roman', times;'>a) <span s=
+tyle=3D"font-family: " times new roman', times;'>Uncomplicated Single or Mu=
+ltiple Pregnancy - 27weeks and earlier. No assessment certificate is requir=
+ed. However, an assessment certificate from your doctor must be&nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp;presented for your return flight if it is sche=
+duled beyond the 28th week of your pregnancy.</span></span></span></p><p st=
+yle=3D"text-align: left;"><span style=3D"font-family: " times new roman', t=
+imes; font-size: medium;'>b) Uncomplicated Single 28 to 35weeks or Uncompli=
+cated Multiple pregnancy (28 to 32 weeks) - Letter from the doctor required=
+ declaring the passenger fit to travel by air.&nbsp; &nbsp; &nbsp; &nbsp; P=
+assenger shall be required to fill Skyward Express Medical Declaration form=
+.</span></p><p style=3D"text-align: left;"><span style=3D"font-family: " ti=
+mes new roman', times; font-size: medium;'>c) Complicated pregnancy - 0 to =
+35weeks. Doctor&rsquo;s approval required declaring the passenger fit to tr=
+avel by air. Passenger shall be required to fill Skyward Express&nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Medical Declarat=
+ion form.</span></p><p style=3D"text-align: left;"><span style=3D"font-fami=
+ly: " times new roman', times; font-size: medium;'>d) Miscarriage with acti=
+ve bleeding (Threatened or complete) - 0 to 36weeks. Doctor&rsquo;s approva=
+l certificate required declaring the passenger fit to travel by air. Passen=
+ger&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; shall be required to fi=
+ll Skyward Express Medical Declaration form.</span></p><p style=3D"text-ali=
+gn: left;"><span style=3D"font-family: " times new roman', times; font-size=
+: medium;'>e) Complicated or Uncomplicated pregnancy at 36. No acceptance f=
+or air travel.</span></p><p style=3D"text-align: left;"><span style=3D"font=
+-family: " times new roman', times; font-size: medium;'>f) New Mothers &nda=
+sh;Within 7 days after birth. Doctor&rsquo;s approval certificate required =
+declaring the passenger fit to travel by air. Passenger shall be required t=
+o fill Skyward&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expre=
+ss Medical Declaration form.</span></p><p style=3D"text-align: left;"><span=
+ style=3D"font-size: medium; font-family: " times new roman', times;'>20. N=
+ew born babies are <strong>NOT </strong>allowed to travel in pressurized ca=
+bins until 7 days after their birth.</span></p></span></td></tr><tr><td col=
+span=3D"2"><p><strong>THANK YOU FOR CHOOSING TO FLY SKYWARD EXPRESS - WE WI=
+SH&nbsp; YOU A PLEASANT FLIGHT!</strong></p></td></tr><tr><td colspan=3D"2"=
+><br><br><table width=3D"100%"><tr><td align=3D"left" style=3D"font-size:9p=
+x;">This email and any files transmitted with it are confidential and inten=
+ded solely for the use of the individual or entity to whom they are address=
+ed. If you have received this email in error please notify the system manag=
+er. This message contains confidential information and is intended only for=
+ the individual named. If you are not the named addressee you should not di=
+sseminate, distribute or copy this e-mail. Please notify the sender immedia=
+tely by e-mail if you have received this e-mail by mistake and delete this =
+e-mail from your system. If you are not the intended recipient you are noti=
+fied that disclosing, copying, distributing or taking any action in relianc=
+e on the contents of this information is strictly prohibited.</td></tr><tr>=
+<td align=3D"left" style=3D"font-size:9px;">This E-mail is sent to you by A=
+eroCRS system, the e-mail address is not monitored. </td></tr><tr><td align=
+=3D"left" style=3D"font-size:9px;">Issued on 16-Nov-23 03:13, By user: Quin=
+ta Omondi</td></tr><tr><td align=3D"right"><table><tr><td> <a href=3D"http:=
+//track.aerocrs.com/track/click/30264526/www.aerocrs.com?p=3DeyJzIjoiNTI5UE=
+huYWhUT0JBcWRnb2pFcDVGMVFmWTNnIiwidiI6MSwicCI6IntcInVcIjozMDI2NDUyNixcInZcI=
+joxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvd3d3LmFlcm9jcnMuY29tXFxcLz9yZWY9ZW1haWwm=
+Y29tcD0yNTVcIixcImlkXCI6XCJkZDZhZjdmZmI4MzE0MWU2ODkyOGE1MTFjNzRkNWNmYlwiLFw=
+idXJsX2lkc1wiOltcIjg4YzcwNjQ0ZTAwZmNjY2M0NjgzZTU1MDM5M2EyNWU2MDVlYTk1ZjRcIl=
+19In0"><img src=3D"https://storage.aerocrs.com/0/system/poweredbyaerocrs.pn=
+g" border=3D"0"></a></td></tr></table></td></tr></table><!--bookingconfirma=
+tion:9F3792A7-A0C1-401D-BCB0-EF522BC0039A--></td></tr></table><img src=3D"h=
+ttp://track.aerocrs.com/track/open.php?u=3D30264526&id=3Ddd6af7ffb83141e689=
+28a511c74d5cfb" height=3D"1" width=3D"1" alt=3D"">
+
+--_av-rCHxnR3-lKu4vrLa3jFIew--
+
+--_av-e2j6Qb53RL7rHAXwIb2kzg
+Content-Type: 
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="255-PASSENGER TICKET-2559F379.pdf"
+
+JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/KQovQ3JlYXRvciAo/v8A
+dwBrAGgAdABtAGwAdABvAHAAZABmACAAMAAuADEAMgAuADQpCi9Qcm9kdWNl
+ciAo/v8AUQB0ACAANAAuADgALgA3KQovQ3JlYXRpb25EYXRlIChEOjIwMjMx
+MTE2MDMxMzM2WikKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL0V4dEdT
+dGF0ZQovU0EgdHJ1ZQovU00gMC4wMgovY2EgMS4wCi9DQSAxLjAKL0FJUyBm
+YWxzZQovU01hc2sgL05vbmU+PgplbmRvYmoKNCAwIG9iagpbL1BhdHRlcm4g
+L0RldmljZVJHQl0KZW5kb2JqCjYgMCBvYmoKPDwKL1R5cGUgL1hPYmplY3QK
+L1N1YnR5cGUgL0ltYWdlCi9XaWR0aCA5NQovSGVpZ2h0IDk1Ci9CaXRzUGVy
+Q29tcG9uZW50IDgKL0NvbG9yU3BhY2UgL0RldmljZVJHQgovTGVuZ3RoIDcg
+MCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO1cebSO1ds+
+WdVJqUiHkFBCVmRYGWKpqAwloajMHDJGS1mJT6aQommVWQcNHFNoEZmTVIak
+nyFSSamQylh43u/6nmt1r/vsvZ/9Pufl9/vW+tZ3/XHWufe+9372c7173/u+
+9/CkpaWCgwcPBkGQSCSCEMWKFUNijRo1KEq6/OOHrS///Prrr3xi165dmXL5
+5ZdDvOeee7Ta6tWrqfbqq69C/OGHHyj27t2bChdffHFKL5oiOQkFISdxvqHJ
+YYqQo9U0ORA1OVQ4F3Lwdg/GwPXXX6/J2bhx48shrrzySk3O7NmzX3bhr7/+
+Qu6nn37qzCWmTJmi3/qPP/7goydOnMiUNm3aQGzdurUu1b9/f6otXrwYOocO
+HaI4depUTU6RIkXivGbp0qU1OUhJRPdt1o9/HnvsMU3O888/ryvhsEJ6nTp1
+nD/Bn3/+idyhQ4d6fqZrr71WHi3P1f/wL95al7rhhht0m+2CJKdx48a6Hvsf
+6j/++OMGOXGMgyYHopMcwEMOcuOT40FScgx9gxwbumAUOXfcccf1Fm655RYn
+ORjaa0NkZGQgMT09nfqXXHIJxPz5869VWLJkScmSJZGLEbE2Ghh0fBbMBWv7
++++/9VtUrFgRiY0aNdKlxo0bR+WsrCzoHDhwgOKwYcMMcijCZNmvedNNNzHX
+Joc9SqyKBkwKc41hJWzTIBsoVKiQYT2Y3qFDB2fnN/DII49Qn5ZKYMxWhGe2
+0jZHeg54sBuM3zRqWLFUFDlsidFz9uzZsyhEwYIFkXjppZdWDpEvXz4hB2pb
+tmyBzqxZs9ADkdu2bdtFCuvXr2eTPvroI4gffvghn2WQs3PnTupXrVoVlXTv
+3p1qa9asQeLIkSOp3KVLF4hvvvmmJsceVrklhz3KQ449rPw2B+RQbN++PRWc
+Nuf222+nWvXq1dP+sTmAJgfiwIEDKe7YsUPbjUqVKtkNFhh+jgyrKHLO47Cy
+yaGakENRk5OwZiuQQzUhxzmsDHIEScmxhxWQwrDKLTnbtm17U2HAgAF3hYDX
+ARFdnWKvXr2oANOaAjn16tVDJZ06dWIlv//+OxU4rBYsWIDEp59+msqtWrWC
+OHbsWA85/5lhZWDOnDnMfeeddyBu3ryZ4vDhw6nAhjnJMYaVJoeQ8MG25IE3
+fDgvNofpsJlXWihevLiz58AR/VeIEydOQNTkQNy6dSuLv/DCCxDPnDlDZXQk
+mxwAPQTK8E6p1rx5c92Gdu3aMf3UqVNQPnLkyL8Upk2bxtqeeeYZiCtXrmQp
+9CjnsKpWrZr9mmIHosjxI8rmwDmxyTEgU7kBIYf45JNPmE5KBYbNMZxAAxdc
+cIHxdIMcP6Km8sDywAPlcHrIMYaVPEiqSpkc1pACOdoRssMHu4VBRPgAU/NY
+DMhQNaZymxyI+/btYykEgxCFHMwv/xUCflGasjmjRo2CMoYPczMzM1n89OnT
+9lQu5Dz88MNQhu9EsX79+hD79OnDsnCu9FReokSJOK958803e5hPijjkGAZZ
+e8hs8NVXX52Wkp8TqNjq/fff9xtkTc5/BnFsjiYnYYUPgJBDUcg5FaJly5bU
+h3cEUSZr2HmIEydOpAhyEip8wCSO3G+++YbiOa7nHEwJZ8+exc+BSYoiY0O0
+iiL+MXoOmocizD169CjH0eHDhyHSb5GeIxg8eDByETVQhCfJ4oxNECBTZL8S
+cgxIz8HEmsJr2u5KUtiG2qlg+zn+Cg1yYJCD3C+TRpET1XL/uzwfAy+//DI7
+59KlS+Pob9++XQ8rGEmmMxBApEnxl19+gQi3hCK8qbQwen00RI8ePZA4aNAg
+IYdtgKuMXFhglkLwi0QYIpZiJYLatWtTDX4R1BACU/z2228h4i/FL774IhH6
+ThRBNZ+VdNylucIHPwybIzBiKzbp7bff1jp2+GCQQ2iDrNObNWvmbBKsEHLH
+jRtHEbE/xGXLllEcP348RPBMsV+/frkiJ8i5ZOGHMVsJYpITRIQP2hsxZisZ
+FB5ykKvJgegnBwqf5oSxbIVejcTs7OxiIeAdaeWePXtqZbgHTIf1Q83Hjh0z
+KkcEgfT9+/dTLFOmDOpE1KB1srKy+Ky8efPqyi+77LJiCgUKFNDkCL7++mtU
+smjRIoOcwoULoxScQD4FswCU8ZciBjjEkydPUsTI5VMME2QEnohwkQizQBH+
+lWGvtLKs58SE4ecQ4iHHhEEOIX6OAVnP8UM8ZPbV3bt3zwkBhg1ykLt3794a
+IWAkqcbozyAHPWGOC/RpMd0b6bCWqLNJkyY6ccyYMXwWVxcBzGIQpUsjNK6h
+gKlQF8eL4O3QE5hbpEgRgxyOF8wsUMaw4uuvW7cO4rx584zwgSLmIyfV7Dky
+0v0rgVEwPGRBTJsTtdhFNWOxix6yKDz11FNOchgHlS9fnuK9996b5lqyYEeK
+Q06QbJk0BXKQ7iQnSLZMmpQcVpKUHKppcuxhBUf0HRcwoOgP1AmBYYXE6dOn
+16xZE2KpUqU8nFxxxRWs5KuvvuKwovjQQw9RoUqVKqikadOm+okgnM9C8Ahx
+woQJGH0Qr7vuOoMcYsmSJVATd4jbwQI4NrpycMXK8XtBxF+KmJ4goixFzIzU
+17+C/kdDG2SIMDjJOsv/wNiakZqjlkkJY8lCPGSB0XMII/B0vkuQcypPxPBz
+CLRhcwgJfDSEnM6dO0MHkx0mGrw7plemY2KFiK5ik4Pi33//PSvnVB61TLpr
+1y7ovPXWW4VCINKEuGLFioyMjEIKmKztH1TIwXttjsaQIUNYyaRJkyAieqWI
+JkFcuHAhK0EcR33WLzZn7dq1np4j8EflRs85L7sPfkTFVgaM3QcaZIA2x8b/
+k+Mhp32IatWqaXI4mhL/dF0h58477xwe4vjx43q2uu+++1AJcim2aNECOn37
+9mXl3bp1gwh71apVK4iVK1d2koOIAGpiUefPnw+xf//+iDHbW3jxxRedwwqv
+iVIYXM6XRVjK4jwzkz9/fopw9YcrYLpxFtfk2DbH7yEL/CuBBsTmaMjvYhtk
+IubJrpigQRa2jTVkAcgJLAg5+EX+CMHFrpjkgFIUQUjlVK5Vq9YfCtwylreO
+Iqdu3bq61OLFi5meGjmwKro2TOVM/zOEvKbT5mCWoVrHjh2pZticVatWIXfG
+jBlCji6F0cT0n376CaK4c+vXr4c4ZcoU3U6xOQR+BVYiI2Xjxo0Q33jjDedr
+clRKqd69e+vchg0bMr1s2bIQy5UrR7FBgwbO2vgzGQZZ+rZ0NqaksDVjGGQ9
+lUd5yMZPE+Rma+ZcwgcbQ0M0atRIyAnCwH+owujRo0nOtGnTOoSAOwQRnZki
+V0vwm1LcsGFDEJ4gYvHMzEwktm7dGi8IsV69enxW9+7dIT744IMGOXw7hIG6
+DTBNVIBBgAgT2sEFLtQIhBy45ch95ZVXmD5gwACIbdq0YeUImXUbKlSowNoM
+rthzjPUQWQnMFaJ2H/yIWgk0YJwmjYKQw5VAA+IhG4haCUxKTuCKL/6vkvNF
+TjB8wItQrFGjRlq4u3q1C9wRgH7FihUhwqzpidiYymGfWSdGk25J1apVdQMw
+M7Jh3333HUSYeqphXGi1kSNH6pbceuutfDTsm07HiKZ+4cKF7fbT27GRN29e
+KtgTt3Y27rrrLs/P9+ijj1LTOMFORG3NRMVWxqONqdw4ghJ1mtRYQz7HHc+3
+c4KrqQJ4uWg8fhcqlyhR4nYFGDSW4oquQQ6sOtWmT5/uJ0fnYh5kndu3b3eS
+k52djVyEpbol8jNFkYNf+XYL6PBUg0HW6c7zn2lqKtdGxvCQJSvqkLYTwbkt
+WdjH+53PssnxtMRYshB4POREztjKSQ7ToxbY7Zbo9ChyqKDJsXuOTY7R1Kie
+ozkR0SAnsMKHuSHE9TXCh169eiFYlu6H/lY9xJEjR4JwBWauwpAhQ6p7wXAV
+XpwuNWjQIK1Tp04dpsOvhlilSpVZs2ZB3LJlC5tEcmBLdanmzZszFy6Wrhxe
+q6c98JD5XqVKldLpsstArqKWLKIM8sGct2YIY8nCBpcsDCTd8XQe0jYAg2zX
+nFBTeWrwkwNDd60Lhw8fTkpOnjx5dBH0upUrV2LU0OWQvj1//nytBu/0kxAt
+WrRgCs+g7tu3j+k88pSens7ciy66yCAHdYJPKmMw6splKzAjI0On8z6CAPwz
+3UlOkBNGiq3AROdil+Tax/u1IZL/DZsjWRJbEWJzuPtgXAyxDy8Rxhqy6Bux
+FZxA3Tb/SmBMRK0EEvbhJSeSHpgUcpgu5Ghl++4DYZAjsMnRuYgZXwiBaiFu
+2rTpEYVOnTpRbfLkyUxxWg8/OadOneIjunXrxkrgA9uV/Pjjj1QDh1Q7ffq0
+JgdmBLmzZ8/W5OTLl083uEmTJlQuW7YsU3jcBa4yKzcebZCDmJ2ljLaxL9mx
+VWDteNoFo4aVrjlhnbIIXO5K4jwd7xdw3cD5IHtYCX7NCVo/JzmBWs/ZuXMn
+lDFS9Ig2yEFswjo5gwuM9RzBb7/9BmWe0NDkoC8h/YknntDknDx5kpXHPPlJ
+ck6cOMFS3EXFX4p33313nEro55w9e/avnGD70cPxP8YUlcVpN8iZMWMG1D77
+7DOKUbGVQY5xmpTPAjNGC43TpO+99x7Uli9fTnHs2LEQ9+7d6yQn6nzO66+/
+rl+2R48eUeQ4+56G7HiCHOewcp4mTTqsjK2ZIGKB3VgJNE6TGreDNTmJZCe7
+BPYh7a4hdu/enQi3zgeGwAsG4YmOgQpy6lV6jk1OEB7S7voPWJAHV4Sczp07
+62qLFi2aFu6w60QZTQLW1rhxY4otW7aEiBBYyOEI5XPFIqEzQK1hw4YU4X5D
+RPspNmrUCOLgwYNJDnxyFmeuvgCrbY5xeMlA1LAiOQL/ZbTzC/8pCz/klIWA
+6cbFEE1OwrXjSehhlYi+GOLf8Ty/ME5ZpECOxo4QiP4uD/Hxxx8j8ejRo0yv
+W7cuEuXAAFwUJG7dupWikAN3AmqIylkKs1givFLEOp988kkkfv755xQxDe2I
+xsyZM1k53supwMbUqlVLJ06fPl2Ts3//fj4rMzNTqz377LNUg8nS6Vy9t8kh
+YgaexhEUIcf5uYakx/udiPKQBal9roHwe8g2OVNDiFMBYztVoXz58ki88MIL
+7wnRvXt3JMq9AyEH/yC3WbNmLMWpQchhOqZL9EOoYZRRzYheMZa5Xc5n4b10
+S+QS8QMPPIDc/v3767JffvklS8GAQ3nMmDEGOdOmTUN63759qYYuBFEOAZIc
+xLBTcyLOYLSdQCHHY5Cd55Dj+zmea4we+NeQjdvBxrG31BB1SJvkyM8X5edo
+chKWnyOIOoIi5Bh9PnCFA1HLpM47nkmPoDiBIPd9hQ8++IAtQe/V6bI6h44K
+j6JBgwZMh1sbhEegtXJ2dnaFChWg1rZtW6ZI9JFQF0PQtyuFyJ8/v25SwYIF
+K7mgjWQQ7rrqh9LVATBGIGIwUkxPT9fkwJlHLsLqOORUrlw5Th8WOLdmDNiX
+0QwYt2ZiwnlIW6A39QIVPhAyrAg5E2gA8+MNIWB7Id54442rQxw4cADEHjt2
+bLUXPIsusxXGi62zePFi+OF4ROvWrZnCDUS43xTZ1dEAtoT3qpJi1KhR9rPW
+rFnDlgg57777LtIx27Jyrh+WLFlSl4I1oDI6LdUoRl2693vIBnL7/Zxc3ZrJ
+FeQCrP+URRSMvfKoS/cpkBPE/n6O55D2/zo5fBGK0nOysrJeVeC1MiGnfv36
+Ovf+++/XdV511VXNQnCUYVxQTYwJ9JFL3ykt/A4DRJCg6xwwYAAr6dmzJ8QR
+I0ZQuXbt2lSgLS1XrhxFmjs8UVcC/lkJ7AOLw7FBOiYvpsOdgyi79oheIcpJ
+7zJlylBNyPGYtdyeCSTsr6A4EXVrJs41xuCfr6DIAjvhXLIIvPetPAZZeg4s
+8A8KMMXsOReE6NOnD9PPnDmD9NGjRzM9ihz2YUxPFyjY5PDRsMyoeeHChVQb
+OHAgRAw9qrVp04aPBjnIRR9mKZJTokQJ3WxZZxMgZkS6fGYH9hkiLDCfBasO
+cd26dVHkeGxOIuJiiMDz5SW7H8b5fo7H5ujj/UGy7+f4EdND9pMjyC05NjMx
+yQms8EHAZVLBv5Wc3iHke3rDhg3rrcCj6YJZs2YxncNt1apVT4WgT3LNNdfo
+spmZmcxdvnx5IlwSpwiGtdprr73GyseOHatLdenSBSL+sp3wrqkP44PcSZMm
+sYNhaOvajE/8gbreLmDuSFMeMkJpnSuE6ziFNEb9Y6d7jqAE1qV75wfNpEJB
+CkdQdAs9R1C0vnGa1FDQl9EMy5CUHIHnCEoQ41sWNhLJjqAE1mxlNDUqKjc0
+DXKMXCHn4pRw6NChhDq8NH/+fMyViDd1H+A3JQBeeBdy8uTJw0q2bt2asIDR
+x1JNmzal2q5duyDKNiLJwRTjbNiQIUOgjLnJ6DkohVzUSZHkRFWCFqadA5y3
+ZvyIuuMZhVwdQRH4P9zq/6BZFIoUKdI4BuBOaHLmzp3LdPy4EPGTjQvB/R3o
+UNy0aRPE48ePU5lH6wE4w8hdsGABG4zaxim0a9eO+twrB/9M53GRjIwM3bDb
+brvNTw76DNQw3WhyMI+wOCbWtLBLG+/LSlL7LJUB/6aewH/fShDzlAURcw1Z
+4FzssteQhZwoI6lxjl97I/x+jiZHl3KezxEk/biQgajbwYaa0XPw0JssVKtW
+LXCdspg8eTIVaFpzux08YcIExDgbN25kOnz+DxV4SuTw4cN8BIPZtHBXBbnc
+ik2E4wW5NWvWZKl9+/bpngN/xn4dgCYIfymCeZRdsWIFWyJNNcjJ1bdJc/VZ
+KpscWWBPWD6DpCS9HawPL0kN53gZze45FFP7NqmTnO3bt5cPwZgXdnVZCHR1
+phuBwIYNG5ZZyM7ONhqD7op0GHmW4hqI3CwA4ciVNSL0HD7LCHgxs5RXwFNQ
+FlOG8XQhx99zmHtevhMYtamXqzXkqIsh/t0HgbGpRyRdsog/rBKpfidQH5jU
+CrklJ8hN+OAkx2iAh5xzH1bwc8aHaNGixb0KM2fOxKPhyzG3R48eTN+7d28Q
+TjQUuRdToECB8V7Qz4F9ZimYcVSybds2igh+2SQqw1VmyxGoQpQzJ1zsglXU
+7QThLFW3bl2DnHMfVgJjDTnKz/EvsEfB8JCNw0uE/flNIurwEpH0q7aY1y6x
+ICszUT1n3rx5exTklg2Ljxo1ShteIQfvBeWXXnrJIIdqP//8M2ujiDmdIk9Z
+wJtl5fx85dq1a40273HhueeeY+6MGTMgZmVl6Uenp6dTrVOnTlQTcgwTYcBv
+c5xwniYNYny9n/pRp0kJz009z1QeM7aK2poJXEsTkpKr7+fEXCa1yQlyLpMa
+388Rcuyag2R+TmpbM6VLl348BuRcq5OcokWL9guBF0wLLwOy1NKlSz3kFC9e
+vJ/CiBEjqCbkwICjki5dumi1rl276oahTpaaMmUKxI4dO1JNPkOBnxUi/lK/
+W7du/SzIqmPVqlWp5iHQA+ewMr7BLogKHwjjMpog5ncCCTnez6lcDLJxATbq
+8BIRNZWnQI7dc6K2g3NFjqjF/E6gkBMoP8fe8bT3rRIx/Jz/BnNxCyEKZW5k
+c3RyZWFtCmVuZG9iago3IDAgb2JqCjU2NzYKZW5kb2JqCjggMCBvYmoKPDwK
+L1R5cGUgL1hPYmplY3QKL1N1YnR5cGUgL0ltYWdlCi9XaWR0aCAzMDEKL0hl
+aWdodCAxNTEKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2
+aWNlR3JheQovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+
+CnN0cmVhbQp4nO1d0dmrLAx2BEdwhI7ACI7ACB2B+//GERjBERjBERzBDfqX
+QEJA2yq0td95eC/O+UoFkpckREDbNBUVFRUVFRUVFRUVFRUVFRW/gVYQurNl
++Vn0ajBmuaWYjVGqF2dL92Po9IoojsUMV3G2jD8EYZ7SZTHpf4CxTmzhcDNi
+eknXHUYdb/lUXIRQSo1mK8xwHG1XznvouhN2vXxCrbfCUjSanQrdMR3vQj1n
+P2DW/fsVfAuEvJO0myOCzOiqfR7pI4yyfbemRRDX4YWrPYbJ6/JyZFh+hK9W
+qHG/x21AZ6uxN3R5vk72R3Et4+kOIwr6b9WhvpbhpHjf9kNGdEowFUvfHRRi
++r479sOuVOcxFqPkm27q+oO2vegvmtflWmhRRvXdOwVqh8MSyHf2/xD9UBaj
+pkF8QKpD8yJgVp/2xl7nJgcOo+w+Jdr1sGSL/pgw72Dqo2PZjcdF+lDwEoVM
+fWMO6jNELMpbNtGpsjj1rezmeKB/O119hn1zzF9MbETOqL6NrrbQqD5g58/l
+zTGu9wj5Ygn3NT454TxAlnHdxlJBdyzf/hxVTa5xlQnb/02qLPKMa8lOU/et
+cj9BsV2XINO4FpnTWbEDfjmsr5GTc90xH5b7+I1W2qV8v/ZH0WYmPMc84sjS
+9ibyff+9kJn3HAfE371p8ginBqsIR5cFEfPO1ee8eSSjo+/g2JpzwJ4BL/bA
+2/AbHki4ZA7+ol61nDmDBEzi8+ofRG6cv01P7/2zmyWoLxFwDLlx/pmXiGKz
++tVDBZfc/Pph0pWX8jL8WrTiyFZuU6mu9OZmEd8m4BCyo/GGcRVHdvPDZgXI
+t4YhaSk3GyFcTyHgGLKzoigWFydX869G9hjZsyKzhbY0XP28CyKyZ0VSsSu9
+v1GnEnAI+Zkkzl/XIqqWn7oVfIl8ZZVrIN+XfzgRfYT81Nu74qW0gb+E/Bxi
+uRQ1oM/VOxP5k7+bFfMinzxX6WzIbLZG50nH757+WGjnyA9cPqU8GuaXvxba
+OQpuhZ0rHgvzU3euuoUoWLtzrngklZ/+3jSYIH9Jyrvi7nni73NVEua9K+5s
+QJ+r5puQn156V9y1GaJP1vJdKAjzzhXb1/uS+mQd34cdyj6Ec8VXK4H6XAXf
+i4KlPOeKz1M2fbJ6b0bBmotzxWe+PJ6t3btRMCl6V3ychHTnqvYBFEyKL1xR
+n6zZJ1DC1tNZUZys2EdQtAvxeFZcTlbrQyhi62GC+s+Fd4+i3UDviqs4r05W
+6nMo2jt1rphu66tzNfokig7G+GWbeN1HnazRB9AKv+JbknDhsk1kXP9WzBJS
+wVs7pPtYxNbGZsbyD6xjWdh3wLAZULrSMrb8ZgYzrr9wXOYZhH2t23qWl/7b
+opNX3hXDtLh0p+mZhYt0L+i6KqXNk2xK+svLzql5U6LHnr68oNwVPgS7OyOQ
+7vpCtrwr0psAjm/r9BqYnkZ1cPesu045Tx5x7NddugqFbOFRNcxyDz5mFr2G
+6Mh7TQROLGOBcR3QU7oahWxRVMeHxSa5W9j1/bjZt5HNOV7yp5ULBKyvskVj
+i0/2LGYntvY/djyKmD4Zaoq2v7udar6JrXBq9NjLvR7gxWNEpY96rIZsb0Vk
+q1RHSaq8gy5nmaMCpFyVjmwBvL8Xv56BvWlOlr9ijEEmXBWfyS+BRilE2buc
++InIS+GLabbEO9+uEnHaXo2H3vg4Mc8fo8Pzctwb5J8ifX6hObhoOb3uIoJ6
+hS4VyC5M/OXjVRUVFRUVFRUVFRUVFRUVFRUVFRUV/zhae4rjawu5dhM27avd
+KjyKduNHKqFsx/66kOkvNa5LoBT3DBe3nQRnpnyfcH5g+c/+S3vUAi6GvXLj
+i9yeqv8g2dVuUyp0KWm9f7qSCmGLYvMnxuI9n849ziKx58X3prDlZcTvGj2v
+y+IT4W4/QtBhFjzrQCXx70hE26vwhT3s5A+Ug1zLBbjAI4jt7MTjZGlOlv3e
+H8FzvLKtN37EBk9wiEj81asx2+jrxRfgr8LBaGgaFj8QXsHbRll8yEeiwgjR
+bJc4UfjWzkj9OxYkNjgxLgZ/pQ5l7cLIAt0VU4Wfi403kmQYEQYdkxVzaQWD
+4XW6g53AmazoKjdWYqMskeCS0DevCJ2ZKI7DSSl1V6yn8QD1etLoGigGCebW
+y9kEkfEDUwWlDeqDvvbHF5n8INpwL8TfYIrZgsZpX02iXODnF2jlgn9ppwY2
+AVLbvbaJNQviU3M0VpaBcXGtrkscwKT9+4Ra/0oAW2Rpc3uvMPrgh86/ZxwQ
+RtbMyOqYulZw+53B7gS27Rvvcaz9Ff50SuSJltfkMRNbd8Kq7uoQaAXJEmwf
+ZF3oW8kbm1mJO8e3rEr83zRIcdEl4spJNVG3V/or1Ijk6oiaWXBTvoYvr2TA
+YSA8NZHpNxHbDoNvZghVWaCFUtHweBLiyBXHGiFWtiwigRgUNpxIgnFc+kIc
+ODC7MVSFv6xQE35Y6AIoVyIYYKQShbZLNNYu/DFtWiI14OJGDP6bQl+GtWx1
+YkqbtbV5sAjzsISTJaMi160L/EEH/8l+6SMlkWWFg1/utB9k6AmEbkUwpkgl
+iR4kY9l0Qk7wXAZn6FMQpmG1sEE+ChOOEvN5xoBelWxZls8NeJG7NObKuYeO
+FOv5YMEpHxELY6BKy7lgKhHtQzzWfSIq89ykcGAtU6BtgvFgPMGvddCOwYU4
+pimb1xL4E3oqKZE6vd72PIOP4LXoXx0MmieLxc/ea8laYmMdDMgEX6JmTfis
+b6v4znIvDLd9QoxtIIyCe6i6a1Kfh6Zc2sNeJbsuQfj0K6SC0O2YMOjFG2/p
+zNY4q9VIllVtdt/PfjCnxEEu9mQRxBBHUeIGKVlRXkTP5ozJ5xBABU2z6POd
+ClOV5K05g/VpHjvkvC5BYOaLh1gVNWWi67x44ekYTxaMw8WT1YWBo7ncBDJ4
+YkyPWHIDadazU1RFYalzlfCEAJjn/S5QjkH0qKbXPJLAGyymoOEE/boEgfV9
+zyY0Fl3qx0TEWrnyqfFkqSACGhb0bJq0bToT3MetspQi9EKg69yQBk7jA3Cg
+SsdpwTs8LgFZA95ChNi9LiF5DK/rup1iWRoME4pVc2RZUiSSNdMlIUm0es2u
+CpcUPYjltgAwjTD7gdiUcNMRbq8LfubEoMn2vEg2QYKZ3w246p6BEDrXJQT/
+1jNB3Wp+N+xh0rqgJeacQFYfKkF9EGkmNqBtjfc6artZECV0nMyVXhU0JFSX
+EbNo4cpgFOhep4Oy1OcJ/gC9fFYS9z5gt9pbhkq5GdIClzcgWZouiQOpn6ho
+ygKZ50DOGBqFiiZ8NrdV/u7TLLqpYMSoq4hqwvcsc0tyOgaXV45PSxA9yohe
+AXF7ZlesJ10wgcXbkhUNk4UmXYPyAgaP03RlFw9KfN/QrOZKgEuw+I3LeFt7
+zII1QRXTkATbS4FdMkpbJVwo07DxGBKp00DsE6gby5Y0KQYj6A/qTmT6wUpC
+Y0mzmtmcxZbf+LS1Y6ZOs0miqqtpqE1zS248Nxh4VsKEUr7bkTpjl6aB2LeF
+I2W1nGioZy4U2Q6NNbuHicdaBzN02PAbCBl2jYhuYdzkk1AqQs0geuLzHO2K
+mjZ2ww7FcP7ZR7ethpl5sxHfcbrWQaBo0VDiddgnG+vgfCOj1b/imwfGdXwn
+UdnyMiOGwAaX/kx83rZG86720rUiLaGPBn43uZ/Q+lm3GOoZNeGThZ9duyAQ
+Vo0Mi9ZYuMeR1GTJAn9VPOoE/EYgaF0T+Ay2sLb6KIwpHHaQ4ErNwQrmdIVv
+oPNls8TTeosgmtgr5kBFZBYxWZoJ5KWLDcvdMicqYc1EhFt6ux9/p33bc0t8
+gIBb8Z2FMbIAFTfXphORbLZKuIJROfeKKJdex/d450aFNmD2WZLrEpVwcUIk
+VCUP0cbJpl3CWliflN7Y1pJQxMOYQNFM3Fea4ahmqwQJYCyaEJlH3h8qvWHp
+0LXh38/hT9YNegGfsiJrI4zpulWUhd9JcgGLjA/Tm6RDIkgwRVST3hSN8ZN7
+bpzWJUEYeInAZOhRapvY0SWSPVhj/07mG/gaK4pQE8pZMiN8M7xt4a+5/z9A
+gqF5PhlXDWguKmrbC9htPAAk+IX2b+n/D3DkKJvbzGag3tclFRUVFRUVFRUV
+FRUVFRUVFR/E/0wbahwKZW5kc3RyZWFtCmVuZG9iago5IDAgb2JqCjMxMTEK
+ZW5kb2JqCjEwIDAgb2JqCjw8Ci9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9J
+bWFnZQovV2lkdGggMzAxCi9IZWlnaHQgMTUxCi9CaXRzUGVyQ29tcG9uZW50
+IDgKL0NvbG9yU3BhY2UgL0RldmljZVJHQgovU01hc2sgOCAwIFIKL0xlbmd0
+aCAxMSAwIFIKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCnic7Z1b
+lusoDEUzG6fuT89/LHFWptJ+JI7RC0FiGzlnLz666xoHhARCYLhcAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIs8/vvv1nVGenTd0WUE4CTc/v7u
+3d/9eu27v378j5rUd6/sUxreeYORAuBmGNTutdbns9DJxq9XGCYANoONVA+F
+ZVZ5vQ5WD6sEX+Fhzps86egaCIzGOJjJ9saYjJUdPFjw5vHv32wg99ccZ5kx
+bTpSHF1vSj+OjLsa42KSQycwtMLRAgCbkxja08oOULm37l2vR4tEZtMJY84e
+r3Oc52gZgC8wzXe6xdwOtDVT5dr1xx7//XegMb7S0HbdUJKjhQFcvOY17Vqc
+ZIMBOvzBS2xDpLDH5pgXl18j3ZFeZX3q/gIp1VETRtEe4a8eyGq8a0QfKlMf
+MzbYho+a2CPiOTswDnl/f7H8TMv6pj4kuuY89lph9EsVzuoWPE1v3wWs76vH
+FIztT7r9cmij5nySwckP3sUdzhgHCD7q9a/tlOczOpHRR22vq5xWoH5C/l/k
+5XM215reRp/8zIgTvW/RTByVGOM1VgTsEF67+uOmaT7yw9ZHaHcG0f2Kc+Ln
+JNaHPlZi/FKjZWP8+WnjbeNPabZOiMX5mWYZjaag60QfMn/IFnfeN6Xw6wv7
+02bo5geNcQ68HC7wD1oKw9+n3BradfNbxjjvsmhZ+L/cOvvT+LB4vube+iCF
+PRJCatvQ+LA4pWv0pt/t8AQYYFzaHxbjqsG0nelo0f2k5IMSYViM9NnL/ieW
+bJDC+yERiTEstv0t9uUULujJZuURaXltcaUnLe5RbHPrYKlgG+/lfocow2I7
+XlN7H3tWpTg+/+8wnhR0uGJEUJ4zGGAzHRrgtPYRsZZGH/WIkzdixLWaFB0o
+JU5vv1+XfhIvdJAYvNA4TMGHIN3+9ufphYhi2Qn3IwQlTtxmw9PFAwnBShFO
+/gQGYeI2Y/qyx3WLVHc54fqD0zAfTHS4Rrm07nvLi2cYBDETPB2h1PIj9Xuc
+YVsadsWclkCRiuphMVAd9bpjUf7kRBspyu7nOsGSRLNXkoGvE0hdnTGKEywL
+Dg4AojG/RqgIamaMGGww1BAv2iAc0R8lUATVUNRH/P1pWBb8ccKtbotxm0Cd
+iVAjbBAFE8HUWBo7YvnYc8LSPCDE2nAiOqiDSh9esA+rAEC0tQzhAP8wVcBk
+EJjECvvzCGr7s12cWQE8RJtnCTvfmrVEBGSAn2hTRSHW0WBngoAMKCXMPGsx
+Ru6gNhO06XF0DKil/XkWS9RBbWGDTY/vlcDHxLJE0UE9MO4EGwTfosF5Vlb5
+m6gCFibAV2lnnuVOzEHd+Zgs2CDYgHhBG+agjlPFfRxU2CDYjP3U+IvGyBzU
+zaeKsEGwPbF22kyJOqgbLozCBsFexPJO76KDuomPjSMswK6EC5/eRQf1q5aI
+NXqwPwHDp38bOqhwR8FBRLTEjSKoOFkUHEgLG8ZqjPHbEdRDhA/AQlBL/OoS
+P4Iz4HiCnhQqOqg1cRtMDEEzRLTEu+SgFh/CDzMELRHri4xVEj6SKqgLzBAc
+waClt64TT3WIuKR4Vz6Scg+LmBuCPbiN52N3Q7dPYvviGUdBLfH+wTFT+K4Q
+fJ3F6AYNzEZBT2aJ4jFT2WERlzGBT5h9y6fFjYNdzeROtMRYR0ul1REc1Oyw
+iM1sYGFa/OpuLI2DWvc3p9Hcvh1LES0x4jabd42kAe6m7wnHkRdfZLokqIsr
+zyOPXjmdJWo3gFuW2N6YOHs7pMzT/449c1MnN85fvixFrb73+XCO1dvzWaJ2
+AaixY6Gdo7l7/8VzR9vjNIXRihrPzWhAb89miXc9AjNNAeTnjzXGuv3qQ5b9
+jxZ39hWxgmCDYtAp4f5Ke0ZLNPrkm65IfXdUqm/30Rh36UNK9bM/esiu5nFQ
+uPKUlmjfUF/gAcZIG85zAx5GTTShOB1XVNkSo+uq7W2ezBiZLr3j7UsqtsHg
+vXG4JPrzc3Ajtq7m7gmdjPHoQu6SSqfAxdvmkb6S9N5yDo4FtUfPrdljt39u
+YywcCjEOttxY40bx1U6e4wv8DHVmvX3X/fVT0LK7O14YK1VsaG/q83BPE+8q
+z+1T9WR//pQjaHwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAgDMfp7DcqIKjFapZH0dcKsPn/aS12VuDVqfkrA+ad6/z4d+35k1n
+dDtPBq7LRd5gnU3KDrsjd/OJsuUnbvGrOszyJHnJGey9coYSP/tXfIyUXyxJ
+z8pvC7Y3D1ier/8wFIn/XJK9u94/OLbdf7bb3JS0pZSKc2kvkuQ3s6TJOjk/
+dzhkJq/7yCPa6LfnhZW6FUhdYj6Xwx69V7WmryJZ+Gt5EwxVYK2m3HowntMl
+GKzHDLlAxMfI+4VLM6WjvO0DJ50K8OFFh+MNPoXGODWxVznFLFqHSbuOVaPY
+vcryWrkD98hBy+s2w95UaTHxfrguF28g34FstBVsi+D32C5V7nP2K1Xt3cHa
+eUV9449RnZcsWtYi8xhD/9F23BKLj8UrOf2yxMbfryWtwHWeNAcZ6/11IX1g
+0dWrvP/0S3I9tHmMd+gAbQk4c3G4LZOrNuc/8u7XUAl+5vBa64iUeEdBWmG8
+E+El6qwZimLJ1pormKoJpvITfX4ffigpBtEfVvLrOrusWm5LpPZiHQX5FgVp
+RzIg8lNt11pN/3UlDaF/SytCK7vOy+XAhECUx6is+oupFSzNRyRQl4vDxw5u
+FPNwSf+YCnltpLx1SM+f9Uupu6h3WbxG4oSCFr5wKFy/U/OEL8xyScfFxUIe
+WLep+CvizT5O7zQ7g9AzqmZIu1NSHTN0wHu55EfNVrYnHawPdwVJ6AxIysXv
+1bX1XMslPmPI2Z9xsZSsDT6zr1Uu/VHu5xj/apfK2Y72UDhfpbr+X1UmuRGW
+d/JJqcyuafUYURhXkzl7kuzPLZXSZg1axuyb1/1/NgJgzGtoKziCzJ4ZSj7X
+BxcLEoX0x1dFIQtxFeWFWlfJrDjjirPXJvarmmFOeonXNK3a2BplyGSN0dyk
+4kYfzh2Y/CURJEuJGdKCTeIS/0jImhJ1HlZVLmugkpFUJDtL+mIuETZl8L6K
+C5mHevy69I7ekHGKjeaGkNNmTW55SEuutr70nr953UrsNLIyYQ+oXmu2VIYQ
+smZle8tZuOtCRxzJ6cqWUKuyp0dyjobOcb9UnnKuD0ZDcU3BVQZWAL8Nvt5w
+JRX3qCIJGiQvTKwgubHrpgSIFGOhLUI6Dc1GHIqndjJFczcWAcsoQNZbLspu
+OJMLRuhgQetRtfmO9vI6334Nn6h6xiM7DlmEfMtt9mohNguuGFX7dMLldJw0
+//DB/i6aYXb+TmS7mgplapftw+0ul7jTtuhYLTLtVeGnJVXT1xy1olIx5kzJ
+WCWhGVmcat2r+H17RwWtjRbVuTTEWLq9QMx74yIrVmpRE41814INYaIZpiOm
+OOmgY/Tz72zsZhmVmNV0GxoZB7n2Fgmw1Azd62jeuFD+edPw+eiT+udy1R7S
+ThViaFqMjifiEmgiytxZXJVLfZu6BCmbtr1k6Q/EadsPjP5ENENi0bMJcDPk
+gziTgzoH5J6qsy4eqXoiHoYQsmbrLZjR+3EHzL0rb3hy2RHaSxsme8urtDWt
+ZkPLWnOSvIpWa3t1Psmlvk2za0na2U1KzgKIfZcdnRDNMPFvXzrMzbBszZHo
+Rj784lEb14Q3G3OzFz5siRnJ+F1B2dzbGDIySRVMniXxpOzS9LSC1oKCYNcq
+rcdM6nJp3JSLyHmZRWH622hB8K4L/bGnHJJFMSHoOiuYYWWX3HJz1pv1aZ08
+zJXO3WiQxIx8stCZmrTRTTNk7XmvKU0CodvYfHe+a15f+oyxf0aP4WtWYLoo
+dbkMsiOUIOTnXCwfxJZ+rrjMRGO1tXVihjRoIAzxtrpm4gZEIOoetuyOHYcQ
+nObwerhy/4xcNYctuExJcQx4IEvbw8ZHw1Lf3mAakrjznPFS6nJpSJJ/14gK
+uRM8Q03fONqvOLNc2DrF8hgxw7R9+fa5gr3Ed+ZsGIFBFrvLjqS51YfS+Izj
+mxQre7poaGx/eldHMaXZmnJfiql2lF3dK1p7zSJ98pDXz7pcGnRP7zqerHhQ
+bEXeUeaq8HKi8CQ4sxoXEjNUliFWD5d93XDTXdY737Rj7p3zbHB9P+zepySK
+q2j/zEXab+bZKnZ3mGpFaZmC5eT88QfCLKbnm2pV5dLQXmX1V4Ur+KWhCalg
+qyrrK3F8OSN9km6sFWYT5tfK9ohjV7NICGx9Nrd1/wM/Tdwk4Plc1J6DW6XN
+7XAm++2L/rWOOoP6lhkaGxXS3jj98mWXZWXyE1rvd0+7i/djrANPIzzG2plq
+y8Y/XXJ7yfx9OA9X5mOqtX4aa8p3LMX+XNT5sbCIsct0JuN15PqHUrLjryeX
+XZLHtI6jvUf7hiW714Xu1zIDthXxmYsWk8y5KJok2VRLD9orss324bbbme5b
+UM4i+PdPiooXf0yaff75c7oCXHK7FrOmZJW28GPSpMxVoYl5c4WzPEvLztuM
+S3MZD8/B2/VsZdzyoX9KkxWyFsCRy1Aut4uyNpT9MFwrsHMoZE++S+vxKo2a
+Gt7FPBeT18J84iJ+2vpsJZLM79BTn8ccIz7ZOJedVFLPYVVm/oWyVdn0K/Ln
+GUHp27jYP8zFKTqZJPkCxeFB0ZUL31FCJZ86unRS2PiUC5Bmdi4pCuZRPK20
+RQ2h2YVBwTuViPfaHV29Vm3iT+Iz2Uml9W2Ub+Ge6K0/NJcG4euPOknE6C6z
+cWaONnY4l/Lr4jMXyQxdK1CsLtwEin73/UMOxdM+6yg6dOX+GtGcgipZRpc/
+JNRkayxOpa1fYIaeSaWxM9+5f2attwWrVElspCaXyDR6Ziy6l86CMzwoTZ6a
+eld7L3SbtO98tvxhPoUBpUU4nsCgcyQ1U/FpbM4dKYu5Fa15abItEmlSWsek
+0ghN+Gu6VGo6bzNrBbTfq8tlVXxsput6i8hzJqIcxniZ1eaVjB9aTkydk7L9
+7/1MkfdCX64U9ZY+Js0K0/fklpluSqU8MqF5X7/1/jtbJXGud/sLbKfLPBSm
+fzQ3bwvSeDja3Vla7afXz/TEKfUlblb3dE1q3gV3NyVflwsAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAQ/gc3CXINCmVuZHN0cmVhbQplbmRvYmoK
+MTEgMCBvYmoKMzkwMgplbmRvYmoKMTMgMCBvYmoKPDwKL1R5cGUgL0Fubm90
+Ci9TdWJ0eXBlIC9MaW5rCi9SZWN0IFsyOC41MDAwMDAwICA4MTMuNTAwMDAw
+ICAyOC41MDAwMDAwICA4MTMuNTAwMDAwIF0KL0JvcmRlciBbMCAwIDBdCi9B
+IDw8Ci9UeXBlIC9BY3Rpb24KL1MgL1VSSQovVVJJIChodHRwczovL2NsaWVu
+dHMuYWVyb2Nycy5jb20vL0dvN3B1Yi9wbnJCb29raW5nUmVmLmFzcD9JRD05
+RjM3OTJBNy1BMEMxLTQwMUQtQkNCMC1FRjUyMkJDMDAzOUEpCj4+Cj4+CmVu
+ZG9iagoxNCAwIG9iago8PAovVHlwZSAvQW5ub3QKL1N1YnR5cGUgL0xpbmsK
+L1JlY3QgWzM0NS43NTAwMDAgIDIzMyAgNDgzICAyNDggXQovQm9yZGVyIFsw
+IDAgMF0KL0EgPDwKL1R5cGUgL0FjdGlvbgovUyAvVVJJCi9VUkkgKGh0dHA6
+Ly93d3cuc2t5d2FyZGV4cHJlc3MuY28ua2UpCj4+Cj4+CmVuZG9iago1IDAg
+b2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL0NvbnRlbnRzIDE1
+IDAgUgovUmVzb3VyY2VzIDE3IDAgUgovQW5ub3RzIDE4IDAgUgovTWVkaWFC
+b3ggWzAgMCA1OTUgODQyXQo+PgplbmRvYmoKMTcgMCBvYmoKPDwKL0NvbG9y
+U3BhY2UgPDwKL1BDU3AgNCAwIFIKL0NTcCAvRGV2aWNlUkdCCi9DU3BnIC9E
+ZXZpY2VHcmF5Cj4+Ci9FeHRHU3RhdGUgPDwKL0dTYSAzIDAgUgo+PgovUGF0
+dGVybiA8PAo+PgovRm9udCA8PAovRjEyIDEyIDAgUgo+PgovWE9iamVjdCA8
+PAovSW02IDYgMCBSCi9JbTEwIDEwIDAgUgo+Pgo+PgplbmRvYmoKMTggMCBv
+YmoKWyAxMyAwIFIgMTQgMCBSIF0KZW5kb2JqCjE1IDAgb2JqCjw8Ci9MZW5n
+dGggMTYgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO1d
+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
+x9Xhhz0HqtHKWYoo9DzSAsFhanSBgBYsedTzB9Tj7M/zenTKp/KLQrBfv0c5
+HE/x3nVALQ1/IyQg0PI4WGS1hMczERHaini8hx4vp5HyOnFT3IrsA3VjoOlU
+Sz/RUKPs6Ba497p3Y5br3jIQJr67bVR7s5U0d7dTKIhwZ+VAW9w4m9oKvVi1
+QHCYLZ4hyMEhheb97EPUhvZAmDQpXHSBw/F64ytUOPUI2MYLhTAHvm4NLSDo
+VwqzLgSgry2tAXqFR9ADhyB8h5tFMr4ACxVMFOu4F6CLw1kBdwa2/5R3KU/+
+PPkzNX+KNGQBVT+s2P3KfmxOjTBZ7Wk/Z58v/w9mKrK+CmVuZHN0cmVhbQpl
+bmRvYmoKMTYgMCBvYmoKNjU2MgplbmRvYmoKMjAgMCBvYmoKPDwKL1R5cGUg
+L1hPYmplY3QKL1N1YnR5cGUgL0ltYWdlCi9XaWR0aCAxMjMKL0hlaWdodCAx
+NgovQml0c1BlckNvbXBvbmVudCA4Ci9Db2xvclNwYWNlIC9EZXZpY2VHcmF5
+Ci9MZW5ndGggMjEgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVh
+bQp4nLXVvUrFMBQH8LNdRZegT5BXyCSueYXKxVEh4igOeYW6iVseQIXs4tBZ
+XMJ11eGsXqfjBwjqEk9br1yhKeZye0q/Q37Nvw0FWKw2jq4e3+brOZxuLdhX
+Xh28xI66WBleLrtgrvu1oeVxQo7xJrcrKWXPXaUAhJTi98LoI0nHnTzZEKJP
+33aOV26iZxf20nKcZNIIggpZWjBGWLBKOQPW8lpKMM7XNIIN1ghXx3PeQ3/l
+0lJRgdZ7W9moSaHhxSvvyqDJYDNqh9ZWmurYpz30eybNadoCQZEiX7FByJIB
+RIzet4Ejj16Ra97L0xJp5I0iyTpiQY5T0KKmrdQmwCxwhEBF3X6pgddbHqsG
+Vwky4PkJmNb89YmAbeBI/BU0ecN+D32XR0M7b+rpI0RzItudkM2xmE2u0jUN
+R59pepxJ/7OK8DP9d5Py7TDyXJ0k5If1wWk4fO2SL1eHlwE2j6+nf3+ak7Pt
+vC6+AQ4uDjYKZW5kc3RyZWFtCmVuZG9iagoyMSAwIG9iagozNjYKZW5kb2Jq
+CjIyIDAgb2JqCjw8Ci9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQov
+V2lkdGggMTIzCi9IZWlnaHQgMTYKL0JpdHNQZXJDb21wb25lbnQgOAovQ29s
+b3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayAyMCAwIFIKL0xlbmd0aCAyMyAw
+IFIKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCnic7ZhbaFRnEMeD
+9ZZ2rWtcs4luNu7FbO5xZ75vvj0bTBe0VSqJAYO2D6VCER8K9aEQpYhGtBBt
+jLdiK6go6rYUpBcxeI1GzUUjNiQFL6mukcaiKEbFoFY4nbO7Ls1DTOzLbmD/
+DIfD4XA485thvplJSRkZeqTLth76/idZs0WuqRc1W4awNZvF6jq5cZf4rU0+
+0GW8f3+E6eZTWr5CFBVgxmRInwR8HdosYE0zXnZkYUUlNrRIXX8v3n6MDF2+
+49P8XtM4KMhH5UNiU8M1fp9ltcCUSd7vgvS3/n68vUl0hfq10gBa3gWt1KDH
+5vViUTFKGYYfRgpoPEERfcI3MRPSCJDmx1wPmlO9Bxsp3g4ltHR93spaYRoD
+TIxh+jS0T0NPHvoIp2VCYQGWBdBhR6cLNYV2O3hmoNLQ7TTw5ueh0wl5uciR
+4ijwF7Jt/AW42u+Lt1uJq46HxCmamxOm7cep6bBkmbh6T4UeqsPn6YMP0fwO
+lC8Ul2+pm33qbBcVFxv5f/IKNXbS4UvU1EJf1Qq3AyQZzDleaSbY/EMyyQfV
+/hPClokRXG4HVi7CPl3tCtInS8XxS/TRp4JT+o6ufj1NlR/jhW7V9CdVVInW
+22rp58IfwCv3qK2X0tOiwDlqfJh+9oWIt1uJq017BCOKHH+WidDwOx3t5Pz0
+OrPRH074vUfkxV4aNwrMb0OGFbr/UV9/K99KAXsW7D5ID56rnYekLTMKnC3H
+hQuqksAHVd1/gE8xw6FmagkZwEtKsKlZHThG+4/KM900Ngzcmg7dL1T1Wjk6
+Bbru063HqmqhADCOzljTwsArksAHF5eUrFclxZODgTnY+1I1ttOXNeJEO/Xo
+avZcvP5M/XyKKhaL1muqq09NSIX12+RL3edwodkEM0uM4h9rEZMl5fXquE9C
+GC0Hs+Jmg+HPK8emDtXeo8510r4GsmXA3Pmio0eF+tS5P2hWAE3jYd02uT0o
+uZ9RAzv2yKG5NZgEPqh03V1dK2Ntob8UXQ6cmglcGVxOoz5wFJzZ4HJjqWa0
+hTNcOKsMCwuRbxjvANrhtlD54NoTFW+3Elq3+0ErE5HBJzJj8sgTm2uigw9g
+UVF08GHjTlKIAbQ5XnkenJjqDZ5MLlWGVudfgnxiAo/2Bf9rtBeYER7tdxyg
+u8l1yvB046laXo2F+WiNLK8swzJjeWWG6TYoX4BHzktdT86Yb6DHOraG5I4f
+RU29WF1nbF+HsHqx6hu5Yaf8pZkTO4FQ/wuUqX0UCmVuZHN0cmVhbQplbmRv
+YmoKMjMgMCBvYmoKOTQxCmVuZG9iagoyNCAwIG9iago8PAovVHlwZSAvQW5u
+b3QKL1N1YnR5cGUgL0xpbmsKL1JlY3QgWzYwLjc1MDAwMDAgIDUzNy41MDAw
+MDAgIDEzNC4yNTAwMDAgIDU0Ny4yNTAwMDAgXQovQm9yZGVyIFswIDAgMF0K
+L0EgPDwKL1R5cGUgL0FjdGlvbgovUyAvVVJJCi9VUkkgKGh0dHA6Ly93d3cu
+YWVyb2Nycy5jb20vP3JlZj1lbWFpbCZjb21wPTI1NSkKPj4KPj4KZW5kb2Jq
+CjI1IDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+Pgpl
+bmRvYmoKMTkgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgov
+Q29udGVudHMgMjYgMCBSCi9SZXNvdXJjZXMgMjggMCBSCi9Bbm5vdHMgMjkg
+MCBSCi9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCj4+CmVuZG9iagoyOCAwIG9i
+ago8PAovQ29sb3JTcGFjZSA8PAovUENTcCA0IDAgUgovQ1NwIC9EZXZpY2VS
+R0IKL0NTcGcgL0RldmljZUdyYXkKPj4KL0V4dEdTdGF0ZSA8PAovR1NhIDMg
+MCBSCj4+Ci9QYXR0ZXJuIDw8Cj4+Ci9Gb250IDw8Ci9GMTIgMTIgMCBSCj4+
+Ci9YT2JqZWN0IDw8Ci9JbTIyIDIyIDAgUgo+Pgo+PgplbmRvYmoKMjkgMCBv
+YmoKWyAyNCAwIFIgXQplbmRvYmoKMjYgMCBvYmoKPDwKL0xlbmd0aCAyNyAw
+IFIKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCnic7V1tb9s2EP7u
+X8HPA5qIkmzZQBAgcZJhAzYgSIB9GPahSPeCoukadMP28ydHSmLfI+k53ki/
+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
+cmVhbQplbmRvYmoKMjcgMCBvYmoKMjc1MAplbmRvYmoKMzAgMCBvYmoKPDwg
+L1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvUUVCQUFBK05vdG9T
+YW5zQ0pLa3ItUmVndWxhcgovRmxhZ3MgNCAKL0ZvbnRCQm94IFstMTAwMiAt
+MTA0OCAyOTI4IDE4MDggXQovSXRhbGljQW5nbGUgMCAKL0FzY2VudCAxMTYw
+IAovRGVzY2VudCAtMzIwIAovQ2FwSGVpZ2h0IDExNjAgCi9TdGVtViA1MCAK
+L0ZvbnRGaWxlMiAzMSAwIFIKPj4KZW5kb2JqCjMxIDAgb2JqCjw8Ci9MZW5n
+dGgxIDEyMDMyIAovTGVuZ3RoIDM0IDAgUgovRmlsdGVyIC9GbGF0ZURlY29k
+ZQo+PgpzdHJlYW0KeJydeglAU1fa9nnvTcLiUhYBbVRuDIvITgiRRSFhDQGi
+7IIgAQJEEoJJgCJaa7W1bkW7oKXWWm2tba3dnC7qT0cdx7YO43ScTsfxd2z/
+1pkuzve3M06/qSXX7z0nAdF2/u+bP3hzz7nn3Pe86/O+50QChBBfch/hCTFW
+JKY83RL2H/hkG15N7db+tj/v4h/B9jVC5lzrMJtazdeKJYTM/QM+S+vAB1PU
+IT8QEh6A/YgOm+ueEsW8s9hPJQTirPYW03RuxnuECE04vttmuqebLCVt2P8n
+9oUuk81c9WflQ4QoZhIy7Srh+Quwg0gJ4bZwtTjD4LlDI0mBfHw6BYfYJ4kQ
+PvZKFl01lPYLjcZCkkPIzZt8902kJ3kIcpoSwIeOceHcZboakSHl0Zv+Piof
+f5TWh0whd5EgQsIUgQoABYRBIOBHwQOMytq+H+ZV7h5pqLtHx21197hV3FZu
+642vWOc7XzJWyReMHcOv73v4/LF2vI7LrowdGztOgDTdvCqxSW8QNSHSlLS0
+NE0UfqKj6beadkNDw/BRtAw/ITNCsRcWSr+x64OPfUIlnL3n+ANFAIlVq3I+
+jq/Rx4K9Q9v2Un7r0s8ebH95XUFaXWfaxdS6vGiAuNWP9X1cvsoEU+Va55P1
+FWsbC+csD1yQXrbQXCMAGLT3VLRxkNW5s6Zi7fKckMaZiZlLFi5cbgJoqVlv
+6UNuT6C2qmWNZCohKlWgBlQASlAGKk+88yHknxProOe8qJS8A5HX3X/hhmHE
+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
+x4sX9oQdOQhC8YB8VsC2qYHlS9ScbRdoxPf9t7t3VW02pSLll9EjFZ4TCunE
+eYqnfmSlZChHHK8aZdP3HI8pslR0tcIxOCCHzobDkuqxayo9pq3tT3IvunN+
+f9kb27JjqJsIT2yHeQL79gj3iZqMHE+ss7QdL92itbQde/6ltjeq5j16b2pD
+TVkEg5CXgMU7H11VdSvwuZ7G5lUc4kl+9H52IoISbEY8CbuVo8aPHiiUBKro
+vk/DDkQm5aiDnrOQVc91JjY8YJAdHwqQFT+XlL69eO/2icMQuXH4k53rzg/h
+ZmuWNvd9GPl+vzNfv4edhezmbh2F8GQ58hAkvY61RiYp/VEtdWfSDAuZaAZH
+3ZY/Q2Q+/DzP0eskXjMtRwbyAGIL65IVBVmRAOkrdzXVDdkXhWuKY9OajQn5
+97/ym9zVK9KU2dXqrBU6JQy35Duq4sHeYHy4G113QalFnmnZXllyT5N+jv8s
+Q6M1q2bHygz0NfPWqqy2mgL5lDnGjnsNtY90ZvLFszIN5ry0ZdkR+KLepHn+
+Ibcu2mBetPJIlkK31Fqc0ZAbQXdBbe6bkja09SKsslu9uEvP9Fg0YNRrbpW3
+0Sq14icVQBsePfxEHaEMpuc4jI5nz42qSF3/60exZDh18mJ6SVwwRCkiq2Mr
+d65CGVOir4oD4caEmiGnbub81LlhcZEhCxOMNbrVL7anVGsjInKqVUlVOVEA
+UbqqBPnwCwALsyKLFSftLkSyho0iyercaty0PkCInx2XfXdwCKhbd9QV9c4f
+9A/CqR2P1KvqDItCfQNjUxfN09XP8k1dX1jcbYjmP4nINy1e1JSL6orIa8pa
+bMqPGNsHlvqkpjh/P4AcQ1xlTiTGxvGbn8N/oJ/exXZqLIZlbIcmC4X1SnWI
+PCBQFjb3ODTKwc9vECvRyDjp9hvr7qG/dhTfvCotQ1SdhhmuDHU9jqhKWk4G
+3/Iez7G8miI5wqySo7GWdtvpIFX6bciLdHAfaSlfcm6VbmdJjm1J3Kugz42N
+1MwLggWF9SplJL83e9BQe3/c4cKHu84UL77HlAExhq5847r6ZFVS1sryRG3/
+8+0PfFxT99JSGKwezBm42pSeA9H6Nr64cRlG0uz4TIWqqqxgXv6m7B/+EqBP
+64HpQ+LY27UXe+NWdK4x5NiMcQBppvWGytfqYpZZ1hYv392dBcuN2poZGN90
+DxcrPU/knnosWMGrgjE3sUvJK/BShqjopcGh8/3pkKgZ0Fw4HXvmTVWfRvxQ
+1a/+EDtHt8ZASixcEOPhwgaoXA/PisvptV48vAH74mH6KwHN7YiF0yYqzfGD
+gsMXYevbF+Sqmb5y9awPT0lq3ZvKny8re76c66eoJ9q4RtlWEkDPmVDRnJoL
+ovbl+KAg+LInryUnHNY/2FNkxwr7KdGmsV67AZINIIN//Ent+ka8T/y9+FuR
+ndXUija44aEUnBYUzHE0/wcFyjhk5dzgXo7rXVXgRH4VWpNOtH0GNyEBFsB9
+37jUfxKniDc2iGM3rlnpDlTc4zNHepaUkHokGzqeMDh1WtBtzkJRPljJpJRN
+9gp2VuY9WMZkHREtkxAOOQmVBI//eJASGoYK4oe/ei/Z+G77Y//5Tits+Oyj
+3aXDf32mAjT1trQV2Yr6AblEaEhPrV/tXBRdYs4ssWrnyCTzm5pK922q4MBy
+Rvz68CnxkPjPXQCrL0PE/fpa3O6WWPPjChTazJXiXq7XnrCw/mfAv/Ae5H/R
+gEVs0+Gvtqx6pR8DfsMWeH9FugZAXrjn7folq8sXgDZTEa/LLn3i86FDEPJB
+F8BO8R/itqvvi7/+jYUzcy1d2k1OPSSkiI8WalHbg/wleFuWTX9Xm9gp4RZX
+RfdJMp8zPWsBSnPTtJCfPMWP02XH8Jfy3ttisuJOLT0jE/jm1szZ9FcJMVai
+QRwMJZH0dDDwljonYswn8vafJPi1xx4NlhXubvT+FrGy6aV8f/GzSb9IiLGy
+RKs2/9ZPEVCTd+7cHT9HAAkTd/ISWS3biaLHhm3mWjeJO33OYl68eVCcDnux
+xgmk582eKhjBJnTi2HtSxVO8pKdQeRwyyueqQyJnV4KPupjjitVY/ojTVabN
+1ZKPf4hpd8JU38GpgT6Jd9RDjSDy17j1E7th/uExB4gbcKQI08ROjCc/z14d
+aKUMRbzevZ8rdvtz/u63dvPLW3eNHUAtnsYa/kOpSKTstFYVrFGGIc+a8Soe
+/NfPko3IajMMHGfIYLU6nOFbP/roxolSbY6R8574cKRP3CQdZjtwDdK5I6HQ
+JAOeO4XFOw+42S8D6PQaSL/t/LqVnmhLsuaWpWR3P5zad2pb6a0D77KdH6wJ
+b9vyiiW3O4K7fus0e+cXB2pqDnwx9gf/qWGl5uA178OUA5NPwJ8Xv31vdYDx
+fpNqxjSqRXYt2PL5L1bclfUP+iP3nZ+bB9032a/BQE+2vR+gvx6LPye4mbrZ
+J/5fHxWjNPljQEqjkrOkSbKSnJDEErlsJdFINpA+Xo7974gNziGNo2SUHyPh
+2D8hsZMOfoRk+8iIiqvFd6vJqPQb0odoMiq5RGTSGdifju1zJFsai/fsm6J0
+Hd6HiFKqw7Ez5KwU6XPpZEiyipTj5cQrE6+jeMVwZ0kj3ltx3Ca5SDokw4ST
+XiCjMqQhlZM+5HNU8hnycYmc8NJoxSudGyZ5eK/jVGRYEoQ8SlCOS+SITwfO
+/Rteq8hyyXrSxhWRE9JVpJitjfJyR5HOUVLrs5M4kd4glRn33WGc6uZBSTFp
+5M+RIm6InKYyor5SyGbyHLkIQdAKD8EH+Pcp588t4R7lvuBn8/N5DT/AP83/
+gv9PiRL3xeUSh+Rpya+kQdJs6QbpM9L/LUuWbZEdkP1KdtFH7qP12eDznM8J
+n7/7JvjqfDt9H/P9wPdLvxS/Or+X/c75S/1T/Jf5P+r/0RTjlL9MlU7dMPXt
+qb+b+v20OdNenXZheuD08OkV05um904fnv4ds6qBmIl03Oo/+gjw4MTz4ok5
+gI5R7G1zxIc0e9s8iSIWb1syaY6UZJBBb1uGe4L3vW0fMo/8ydv2JXfDOH0/
+chru9rb9yX1w2dueQsK5Bm97KrmbW+NtTwMD6trTnk7u5j/1tgNIAP8DcgUS
+xArymGSKtw0kSfK0t82R6ZLz3jZPSiSXvW3JpDlS4pLGeNsyskD6lLftQ/LQ
+fz1tX5IqG6fvB8cQ/z1tf/D3+d7bnkIW+/He9lSS6qf1tqdxQ3493vZ0kjp1
+nE4AEaZm59q7+x2W9g6X8IKQkpScGke/1YK21d5sFir6nS6zzSnou1rsjm67
+w+QytwrzO1yu7ozExL6+vgQTnZbQYrclxiSU2V12ocLU5RRyiw2CoVwoN7f3
+WE0O7y05ISkpNZP+N5JMOpNOxHmdjnjveKY2z6jLrzY7nBZ7l+CZvaTC2+iw
+u1rsXb20l7AwJdNm6jTbXW0JVktzSoI6IU2VmpT2k0QZTxanYBJcDlOr2WZy
+dAr2NqHQbm+3mqlYCf9a0PJ+e6ddKNNXFOnrqgxaYX6nqcskRAmWVrO93WHq
+7nDGZApLTD1WIS9BKOrpcgnzS0wuS1ecUOgwmztxZi5q1mq1tOC8GnOX1d7V
+LtQVacsKhfnN9m67zd5mxxHkudVutQq5dputp8vSgiTsSKPCbo/vt/fgK8X0
+jSihmD4wo2oMjEKHqQslFMxWs83c5XLGCVazy4XKw5nOfqvV1Gw1O2PyHAmC
+wdwllPR0tZqF+d0O+0pzi0swOVo6LC5sxQnt1v7uDsFpdgmt5jZLl4UujiTs
+vWaHCZnCN1p7WuhD5LTU5DS5TJ0moUhbWWks1zOC3uHJeplgKmaSp7QzlTNX
+aTe7ErvQMIk/6Uiu/m5zYmUHGq3AjjqtsLe5+kwOM7UiqtLc5UQXpOI4BFcH
+Gk5fIhi7UUQ2ucQzIU645UbJCcJPE2u1OF0OS3MPdWmcaeoS5mkrBH3FPEGn
+rdBXxAk1+soiY1WlUKMtL9eWVerzKwRjuZBrLMvTV+qNZdgrELRlywSDviwv
+TjBbkB2HYL6n22F2OgW7Q7DYuq0Wc2uCUGE2/2tehTa7RxJnt7nF0mZpEazU
+sqZ2lKLb7LBZnFQQ9OCuVpTfZnEx/3AK7dREXRb0D/QSh9CDlNCxXT8SNcGr
+ZGeLw9LtciY4LdYEu6M90VhQcmfAklxiJ92knzgQZttJB3ERgbyAVwpJIskk
+lcRNtNXY0uIG2o7gbMZ2Bb7lxPlmYsO7QPSki7TgqAPp0W8TG2vFkfmMrguf
+Z5BE/Otjfwk4Y5xaAnvThmMx2C7DtgsvuoYJqVLquQj9BrwbcJsl4GVGbnuI
+Fccdd/SSkUIS/qWSTFJIjPhXiK1xmuMUPfQ6cX78He9nopR5+JaO5JNqHHHg
+bAu+2YXrTqa9BGnd/qSDrdHC5vZOjCWQhajBTJTOhOuZ2Zw2fGpFqs04koCa
+TSBpRIU0kvD+P+f0lp4sTEcmvFxM863MKnROJz6z43oCasGOf+34rnnCWgn/
+XxYtx3l2pExXLsNZFVhA60kdqUI+tUTYvK62znaifgmzfCeTgnIWxfhsZRpo
+Z9S6UWNOdhQloDZNTC4BdZ+A30XY62LeOB83h3RlC/bjmBwOpGFmkkUxz/B4
+r5VptMVLrwZndOETaot27NchRS1yW0iEFYJ509NPMMrNzPup51Ed2b3vejRP
+9WJlHOWyGTbGEV3Bww3ziJ+/+savfv358Wdff+88Oes6Wcs4rGCajmda6vGu
+Xzy++tnnTs38JXh5L56YafZ6mGF83uGQ98bOfOONHhOj4tGPmVnQxuRzof7o
+ivSJi1nHwSxHaTuRqpV5SjMbp5rOw/EEtoqZrVbC+Gtl1p+PmnAgFyux18I0
+T/2nBVe3MMr0GV2LelA/sx1dw8xmUgptzEKWW7phXNgxEszM2h5detZoxXVb
+JmZ6tF6Kc5xMtybmNQKzWCX+GdHj9ERon7bji86WbUcn8Xo7nX/lYz/WWcy/
+QKT2STFyC5PamZSJ+K4n3hL/DTxzMV2ZsVXJNEmtU8C4dXk9pQ1bfUzX5olI
+9niymcW/B0PH7eRgMd7hjVc9WlBA/XR77XmLcsltFKjdfgrLkpk3/DuctbK7
+i0VcM3I1jvEemib2PQ/tVsHwowLbAiKplvFawfiowVYl2taIeFHJ+lq0bznz
++0ocy2fvGhnO5+K9DL1Wz0Zo2zNWwHJRGVnGfFnP5sQxO1u82nGw3j3MT6jv
+OxmPDiaHDZ9SDVPOE5isZibhv69XgaHGZJs42TstOKuNzRRYBHqi18Q8KY5F
+AeXQxnQ5bhGnV3+tXvvbmCy3sMbJYm88nrpYtFFk8aCMg/mIhycP3rv+B1ZN
+uMOTncgxtWw3i5IExpsV71TGdhynmi/5b/MzIf8FWKi5rwplbmRzdHJlYW0K
+ZW5kb2JqCjM0IDAgb2JqCjgyMTIKZW5kb2JqCjMyIDAgb2JqCjw8IC9UeXBl
+IC9Gb250Ci9TdWJ0eXBlIC9DSURGb250VHlwZTIKL0Jhc2VGb250IC9Ob3Rv
+U2Fuc0NKS2tyLVJlZ3VsYXIKL0NJRFN5c3RlbUluZm8gPDwgL1JlZ2lzdHJ5
+IChBZG9iZSkgL09yZGVyaW5nIChJZGVudGl0eSkgL1N1cHBsZW1lbnQgMCA+
+PgovRm9udERlc2NyaXB0b3IgMzAgMCBSCi9DSURUb0dJRE1hcCAvSWRlbnRp
+dHkKL1cgWzAgWzk5MiA1OTIgNTQ3IDUxNyA3OTUgNTU5IDM4NSA2MTUgMjIy
+IDU4MyA0OTQgNjE1IDU1MCA0NjQgODcxIDI5MSA1MzggNzM2IDcxNiA2MDIg
+NjMwIDYyNyA1OTQgNjQxIDUyNyA2ODIgNTY5IDY1MiA3MTUgNjgzIDI3NiA1
+NTEgNTUxIDU1MSA1NTEgNTUxIDM0NCA1NTEgMjc2IDYwMSA1NzEgNzIyIDgw
+NiA2MzMgNTQ3IDYwNiA2MDIgMjc2IDU1MSA1NTEgMzIzIDU1MSAyNzMgNTA1
+IDM3NCA2MDIgOTE4IDYxMyA1NTEgNTU4IDI4MyA2NzUgNTUxIDUxNyAzMzUg
+MzM1IDkzOCAyNzYgNjE1IDM4OSAyNzMgNTMyIDQ3MCAzMjEgNzM2IF0KXQo+
+PgplbmRvYmoKMzMgMCBvYmoKPDwgL0xlbmd0aCA4ODIgPj4Kc3RyZWFtCi9D
+SURJbml0IC9Qcm9jU2V0IGZpbmRyZXNvdXJjZSBiZWdpbgoxMiBkaWN0IGJl
+Z2luCmJlZ2luY21hcAovQ0lEU3lzdGVtSW5mbyA8PCAvUmVnaXN0cnkgKEFk
+b2JlKSAvT3JkZXJpbmcgKFVDUykgL1N1cHBsZW1lbnQgMCA+PiBkZWYKL0NN
+YXBOYW1lIC9BZG9iZS1JZGVudGl0eS1VQ1MgZGVmCi9DTWFwVHlwZSAyIGRl
+ZgoxIGJlZ2luY29kZXNwYWNlcmFuZ2UKPDAwMDA+IDxGRkZGPgplbmRjb2Rl
+c3BhY2VyYW5nZQoyIGJlZ2luYmZyYW5nZQo8MDAwMD4gPDAwMDA+IDwwMDAw
+Pgo8MDAwMT4gPDAwNEE+IFs8MDA1Mz4gPDAwNkI+IDwwMDc5PiA8MDA3Nz4g
+PDAwNjE+IDwwMDcyPiA8MDA2ND4gPDAwMjA+IDwwMDQ1PiA8MDA3OD4gPDAw
+NzA+IDwwMDY1PiA8MDA3Mz4gPDAwNTc+IDwwMDQ5PiA8MDA0Qz4gPDAwNEY+
+IDwwMDRFPiA8MDA0MT4gPDAwNTI+IDwwMDUwPiA8MDA1ND4gPDAwNEI+IDww
+MDU5PiA8MDA0ND4gPDAwNTg+IDwwMDQyPiA8MDA1NT4gPDAwNDc+IDwwMDJF
+PiA8MDAzMj4gPDAwMzY+IDwwMDMzPiA8MDAzMT4gPDAwMzQ+IDwwMDJEPiA8
+MDAzMD4gPDAwMkM+IDwwMDZGPiA8MDA1Nj4gPDAwNDg+IDwwMDREPiA8MDA0
+Mz4gPDAwNDY+IDwwMDZFPiA8MDA2OD4gPDAwM0E+IDwwMDM3PiA8MDAzNT4g
+PDAwNjY+IDwwMDM5PiA8MDA2OT4gPDAwNjM+IDwwMDc0PiA8MDA3NT4gPDAw
+NkQ+IDwwMDYyPiA8MDAzOD4gPDAwNjc+IDwwMDZDPiA8MDAyNj4gPDAwMjM+
+IDwwMDc2PiA8MDAyOD4gPDAwMjk+IDwwMDQwPiA8MjAxOT4gPDAwNzE+IDww
+MDJGPiA8MDA2QT4gPDIwMTI+IDwwMDdBPiA8MDAyMT4gPDAwNTE+IF0KZW5k
+YmZyYW5nZQplbmRjbWFwCkNNYXBOYW1lIGN1cnJlbnRkaWN0IC9DTWFwIGRl
+ZmluZXJlc291cmNlIHBvcAplbmQKZW5kCgplbmRzdHJlYW0KZW5kb2JqCjEy
+IDAgb2JqCjw8IC9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMAovQmFzZUZv
+bnQgL05vdG9TYW5zQ0pLa3ItUmVndWxhcgovRW5jb2RpbmcgL0lkZW50aXR5
+LUgKL0Rlc2NlbmRhbnRGb250cyBbMzIgMCBSXQovVG9Vbmljb2RlIDMzIDAg
+Uj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyAKWwo1
+IDAgUgoxOSAwIFIKXQovQ291bnQgMgovUHJvY1NldCBbL1BERiAvVGV4dCAv
+SW1hZ2VCIC9JbWFnZUNdCj4+CmVuZG9iagp4cmVmCjAgMzUKMDAwMDAwMDAw
+MCA2NTUzNSBmIAowMDAwMDAwMDA5IDAwMDAwIG4gCjAwMDAwMzYyODEgMDAw
+MDAgbiAKMDAwMDAwMDE1NyAwMDAwMCBuIAowMDAwMDAwMjUyIDAwMDAwIG4g
+CjAwMDAwMTM5OTEgMDAwMDAgbiAKMDAwMDAwMDI4OSAwMDAwMCBuIAowMDAw
+MDA2MTM0IDAwMDAwIG4gCjAwMDAwMDYxNTQgMDAwMDAgbiAKMDAwMDAwOTQz
+NyAwMDAwMCBuIAowMDAwMDA5NDU3IDAwMDAwIG4gCjAwMDAwMTM1NDUgMDAw
+MDAgbiAKMDAwMDAzNjEzMyAwMDAwMCBuIAowMDAwMDEzNTY2IDAwMDAwIG4g
+CjAwMDAwMTM4MjAgMDAwMDAgbiAKMDAwMDAxNDMzOCAwMDAwMCBuIAowMDAw
+MDIwOTc2IDAwMDAwIG4gCjAwMDAwMTQxMTIgMDAwMDAgbiAKMDAwMDAxNDMw
+NCAwMDAwMCBuIAowMDAwMDIyOTU2IDAwMDAwIG4gCjAwMDAwMjA5OTcgMDAw
+MDAgbiAKMDAwMDAyMTUzNiAwMDAwMCBuIAowMDAwMDIxNTU2IDAwMDAwIG4g
+CjAwMDAwMjI2ODMgMDAwMDAgbiAKMDAwMDAyMjcwMyAwMDAwMCBuIAowMDAw
+MDIyOTA2IDAwMDAwIG4gCjAwMDAwMjMyODYgMDAwMDAgbiAKMDAwMDAyNjEx
+MiAwMDAwMCBuIAowMDAwMDIzMDc4IDAwMDAwIG4gCjAwMDAwMjMyNTkgMDAw
+MDAgbiAKMDAwMDAyNjEzMyAwMDAwMCBuIAowMDAwMDI2MzUzIDAwMDAwIG4g
+CjAwMDAwMzQ2NzggMDAwMDAgbiAKMDAwMDAzNTE5OSAwMDAwMCBuIAowMDAw
+MDM0NjU3IDAwMDAwIG4gCnRyYWlsZXIKPDwKL1NpemUgMzUKL0luZm8gMSAw
+IFIKL1Jvb3QgMjUgMCBSCj4+CnN0YXJ0eHJlZgozNjM4NgolJUVPRgo=
+
+--_av-e2j6Qb53RL7rHAXwIb2kzg--
+
