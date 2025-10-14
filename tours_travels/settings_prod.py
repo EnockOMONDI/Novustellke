@@ -24,9 +24,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_TIMEOUT = 30  # 30 seconds timeout to prevent worker timeouts
+
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'eoie dhrq cioh gxhz')  # Updated app password
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # No fallback default
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <novustellke@gmail.com>')
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
 JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')

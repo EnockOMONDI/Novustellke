@@ -72,8 +72,7 @@ services:
         value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
         sync: false  # Set manually: eoie dhrq cioh gxhz
-      - key: EMAIL_TIMEOUT
-        value: 30
+
       - key: DEFAULT_FROM_EMAIL
         value: Novustell Travel <novustellke@gmail.com>
       - key: ADMIN_EMAIL
@@ -170,7 +169,7 @@ services:
     env: python
     region: oregon
     plan: starter
-    branch: wearelive
+    branch: novustell4
     buildCommand: |
       echo "🔧 Building background worker..."
       pip install --upgrade pip
@@ -195,8 +194,7 @@ services:
         value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
         sync: false
-      - key: EMAIL_TIMEOUT
-        value: 30
+
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
       - key: JOBS_EMAIL
