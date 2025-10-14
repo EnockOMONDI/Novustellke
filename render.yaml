@@ -1,7 +1,7 @@
 services:
   # Web service for Novustell Travel
   - type: web
-    name: novustell-travel
+    name: novustellke
     env: python
     region: oregon
     plan: starter
