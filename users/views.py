@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.http import Http404
+from django.views.decorators.csrf import csrf_exempt
 import os
 import smtplib
 from django.shortcuts import render, redirect, get_object_or_404
@@ -918,8 +919,8 @@ def documentation(request):
         'stats': stats,
         'recent_posts': recent_posts,
         'recent_packages': recent_packages,
-        'page_title': 'Project Documentation',
-        'page_description': 'Comprehensive documentation for the Novustell Travel Django project including architecture, user guides, and technical specifications.',
+        'page_title': 'Novustell Travel System Guide',
+        'page_description': 'Complete guide to using and managing the Novustell Travel website - from customer bookings to admin management, explained in simple terms for business users.',
     }
 
     return render(request, 'users/documentation.html', context)
@@ -1248,3 +1249,89 @@ def test_500_error(request):
 
 # Test views removed - custom error pages are working correctly
 # Error handlers are configured in tours_travels/urls.py and work when DEBUG=False
+
+
+def get_active_popup(request):
+    """
+    API endpoint to get the active promotional popup
+    Returns JSON data for the popup modal
+    """
+    from django.http import JsonResponse
+    from .models import PromotionalPopup
+
+    try:
+        # Get the first active popup ordered by display_order
+        popup = PromotionalPopup.objects.filter(is_active=True).first()
+
+        if popup:
+            # Increment view count
+            popup.increment_view_count()
+
+            return JsonResponse({
+                'success': True,
+                'popup': {
+                    'id': popup.id,
+                    'title': popup.title,
+                    'image_url': popup.image.url if popup.image else '/static/images/novustelltravelplaceholder.svg',
+                    'inquiry_button_text': popup.inquiry_button_text,
+                    'inquiry_url': popup.get_inquiry_url(),
+                }
+            })
+        else:
+            return JsonResponse({
+                'success': False,
+                'message': 'No active popup available'
+            })
+
+    except Exception as e:
+        return JsonResponse({
+            'success': False,
+            'message': f'Error loading popup: {str(e)}'
+        })
+
+
+@csrf_exempt
+def track_popup_click(request):
+    """
+    API endpoint to track popup inquiry button clicks
+    """
+    from django.http import JsonResponse
+    from django.views.decorators.csrf import csrf_exempt
+    from django.views.decorators.http import require_POST
+    from .models import PromotionalPopup
+    import json
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            popup_id = data.get('popup_id')
+
+            if popup_id:
+                popup = PromotionalPopup.objects.get(id=popup_id, is_active=True)
+                popup.increment_click_count()
+
+                return JsonResponse({
+                    'success': True,
+                    'message': 'Click tracked successfully'
+                })
+            else:
+                return JsonResponse({
+                    'success': False,
+                    'message': 'Popup ID required'
+                })
+
+        except PromotionalPopup.DoesNotExist:
+            return JsonResponse({
+                'success': False,
+                'message': 'Popup not found'
+            })
+        except Exception as e:
+            return JsonResponse({
+                'success': False,
+                'message': f'Error tracking click: {str(e)}'
+            })
+
+    return JsonResponse({
+        'success': False,
+        'message': 'POST method required'
+    })

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from django.db.models import BigAutoField
 from django_ckeditor_5.fields import CKEditor5Field
+from pyuploadcare.dj.models import ImageField
 import uuid
 from decimal import Decimal
 from django.db.models.signals import post_save
@@ -658,3 +659,87 @@ def save_user_profile(sender, instance, **kwargs):
         instance.profile.save()
     else:
         UserProfile.objects.create(user=instance)
+
+
+class PromotionalPopup(models.Model):
+    """
+    Model for managing promotional popup advertisements on the homepage
+    """
+    title = models.CharField(
+        max_length=200,
+        help_text="Campaign title/heading for the popup"
+    )
+
+    image = ImageField(
+        blank=False,
+        null=False,
+        manual_crop="16:9",
+        help_text="Promotional poster/advertisement image (recommended size: 800x450px)"
+    )
+
+    inquiry_button_text = models.CharField(
+        max_length=50,
+        default="Inquire Now",
+        help_text="Text for the inquiry/action button"
+    )
+
+    inquiry_url = models.URLField(
+        blank=True,
+        null=True,
+        help_text="URL to redirect when inquiry button is clicked (leave blank for contact page)"
+    )
+
+    is_active = models.BooleanField(
+        default=True,
+        help_text="Whether this popup is currently active"
+    )
+
+    display_order = models.PositiveIntegerField(
+        default=1,
+        help_text="Display priority (lower numbers show first)"
+    )
+
+    click_count = models.PositiveIntegerField(
+        default=0,
+        help_text="Number of times the inquiry button has been clicked"
+    )
+
+    view_count = models.PositiveIntegerField(
+        default=0,
+        help_text="Number of times this popup has been displayed"
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['display_order', '-created_at']
+        verbose_name = "Promotional Popup"
+        verbose_name_plural = "Promotional Popups"
+
+    def __str__(self):
+        status = "Active" if self.is_active else "Inactive"
+        return f"{self.title} ({status})"
+
+    def increment_view_count(self):
+        """Increment the view count when popup is displayed"""
+        self.view_count += 1
+        self.save(update_fields=['view_count'])
+
+    def increment_click_count(self):
+        """Increment the click count when inquiry button is clicked"""
+        self.click_count += 1
+        self.save(update_fields=['click_count'])
+
+    @property
+    def click_through_rate(self):
+        """Calculate click-through rate as percentage"""
+        if self.view_count == 0:
+            return 0
+        return round((self.click_count / self.view_count) * 100, 2)
+
+    def get_inquiry_url(self):
+        """Get the inquiry URL or default to contact page"""
+        if self.inquiry_url:
+            return self.inquiry_url
+        return '/contactus/'  # Default to contact page

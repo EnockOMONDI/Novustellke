@@ -5,17 +5,22 @@
 
 {% block meta_description %}{{ page_description }}{% endblock %}
 
+{% block extra_head %}
+<!-- Mermaid.js for flowcharts -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+{% endblock %}
+
 {% block extra_css %}
 <style>
-    /* Documentation specific styles */
+    /* Documentation specific styles with Novustell branding */
     .doc-hero {
-        background: linear-gradient(135deg, #0f238d 0%, #0f238d 100%);
+        background: linear-gradient(135deg, #0f238d 0%, #1a3ba8 100%);
         color: white;
         padding: 80px 0;
         position: relative;
         overflow: hidden;
     }
-    
+
     .doc-hero::before {
         content: '';
         position: absolute;
@@ -313,18 +318,18 @@
         <div class="row align-items-center">
             <div class="col-lg-8">
                 <h1 class="display-4 fw-bold mb-4" style="font-family: 'Fonarto', sans-serif;">
-                    <i class="fas fa-book-open me-3"></i>Project Documentation
+                    <i class="fas fa-book-open me-3"></i>Novustell Travel System Guide
                 </h1>
                 <p class="lead mb-4">
-                    Comprehensive guide to the Novustell Travel Django project architecture, 
-                    user flows, and administrative features.
+                    Complete guide to using and managing the Novustell Travel website -
+                    from customer bookings to admin management, explained in simple terms.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="#architecture" class="btn btn-warning btn-lg">
-                        <i class="fas fa-sitemap me-2"></i>Architecture
+                    <a href="#overview" class="btn btn-warning btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>System Overview
                     </a>
                     <a href="#user-journey" class="btn btn-outline-light btn-lg">
-                        <i class="fas fa-route me-2"></i>User Journey
+                        <i class="fas fa-route me-2"></i>How It Works
                     </a>
                     <a href="#admin-guide" class="btn btn-outline-light btn-lg">
                         <i class="fas fa-cog me-2"></i>Admin Guide
@@ -355,98 +360,95 @@
         <div class="col-lg-3">
             <div class="doc-nav">
                 <h5 class="mb-3" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
-                    <i class="fas fa-list me-2"></i>Contents
+                    <i class="fas fa-list me-2"></i>Quick Navigation
                 </h5>
-                <a href="#overview" class="active">Project Overview</a>
-                <a href="#user-flows">Complete User Flows</a>
-                <a href="#flowchart">Visual Flow Chart</a>
+                <a href="#overview" class="active">System Overview</a>
+                <a href="#user-journey">How Customers Use the Site</a>
+                <a href="#flowchart">Visual Process Flow</a>
                 <a href="#guest-booking">Guest Booking Process</a>
-                <a href="#user-conversion">Guest-to-User Conversion</a>
-                <a href="#cart-persistence">Cart & Form Persistence</a>
-                <a href="#admin-workflows">Admin Workflows</a>
-                <a href="#security-assessment">Security Assessment</a>
-                <a href="#architecture">Architecture</a>
-                <a href="#apps">Django Apps</a>
-                <a href="#tech-stack">Technology Stack</a>
-                <a href="#environment-config">Environment Configuration</a>
-                <a href="#improvements">Improvement Recommendations</a>
-                <a href="#deployment">Deployment Guide</a>
+                <a href="#admin-guide">Admin Management Guide</a>
+                <a href="#marketing-features">Marketing Features</a>
+                <a href="#apps">System Components</a>
+                <a href="#tech-stack">Technology Used</a>
+                <a href="#deployment">Website Hosting</a>
+                <a href="#troubleshooting">Common Issues & Solutions</a>
             </div>
         </div>
         
         <!-- Main Documentation Content -->
         <div class="col-lg-9">
-            <!-- Project Overview -->
+            <!-- System Overview -->
             <section id="overview" class="doc-section">
                 <div class="doc-card p-4">
                     <h2 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
-                        <i class="fas fa-info-circle me-3"></i>Project Overview
+                        <i class="fas fa-info-circle me-3"></i>What is Novustell Travel?
                     </h2>
                     <p class="lead">
-                        Novustell Travel is a comprehensive Django-based travel booking platform 
-                        designed for East African tourism, featuring destination management, 
-                        package booking, and specialized travel services.
+                        Novustell Travel is a complete online travel booking website that helps customers
+                        discover and book amazing travel experiences across East Africa. The website handles
+                        everything from browsing destinations to completing bookings automatically.
                     </p>
                     
                     <div class="row mt-4">
                         <div class="col-md-6">
-                            <h5><i class="fas fa-chart-bar me-2 text-warning"></i>Project Statistics</h5>
+                            <h5><i class="fas fa-chart-bar me-2 text-warning"></i>Current Content</h5>
                             <ul class="list-unstyled">
-                                <li><strong>{{ stats.total_destinations }}</strong> Destinations</li>
+                                <li><strong>{{ stats.total_destinations }}</strong> Travel Destinations</li>
                                 <li><strong>{{ stats.total_packages }}</strong> Travel Packages</li>
-                                <li><strong>{{ stats.total_accommodations }}</strong> Accommodations</li>
-                                <li><strong>{{ stats.total_blog_posts }}</strong> Blog Posts</li>
-                                <li><strong>{{ stats.total_users }}</strong> Registered Users</li>
+                                <li><strong>{{ stats.total_accommodations }}</strong> Hotels & Lodges</li>
+                                <li><strong>{{ stats.total_blog_posts }}</strong> Travel Articles</li>
+                                <li><strong>{{ stats.total_users }}</strong> Registered Customers</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <h5><i class="fas fa-target me-2 text-warning"></i>Key Objectives</h5>
+                            <h5><i class="fas fa-star me-2 text-warning"></i>Main Features</h5>
                             <ul class="feature-list">
-                                <li>Streamlined travel booking experience</li>
-                                <li>Comprehensive destination showcase</li>
-                                <li>Specialized travel services (MICE, Student, NGO)</li>
-                                <li>Content management for travel blogs</li>
-                                <li>Administrative dashboard for operations</li>
+                                <li>Easy online booking for guests and registered users</li>
+                                <li>Beautiful destination galleries and information</li>
+                                <li>Specialized services for businesses, students, and NGOs</li>
+                                <li>Travel blog with tips and destination guides</li>
+                                <li>Promotional popup system for marketing campaigns</li>
+                                <li>Complete admin dashboard for managing everything</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Complete User Flows Section -->
-            <section id="user-flows" class="doc-section">
+            <!-- How Customers Use the Site -->
+            <section id="user-journey" class="doc-section">
                 <div class="doc-card p-4">
                     <h2 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
-                        <i class="fas fa-route me-3"></i>Complete User Flows Documentation
+                        <i class="fas fa-route me-3"></i>How Customers Use the Website
                     </h2>
 
                     <div class="alert alert-info">
                         <i class="fas fa-info-circle me-2"></i>
-                        <strong>Overview:</strong> This section documents all user journeys from entry point to completion,
-                        including step-by-step actions, form interactions, validation rules, and error handling.
+                        <strong>Simple Overview:</strong> This explains how customers find, book, and manage their travel
+                        experiences on the Novustell Travel website, from first visit to completed booking.
                     </div>
 
-                    <!-- Guest User Flow -->
+                    <!-- New Customer Journey -->
                     <div class="mt-4">
-                        <h4><i class="fas fa-user-circle me-2 text-primary"></i>1. Guest User Journey</h4>
+                        <h4><i class="fas fa-user-circle me-2 text-primary"></i>1. New Customer Experience</h4>
                         <div class="row">
                             <div class="col-md-6">
-                                <h5>Entry Points</h5>
+                                <h5>How They Find Us</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">🏠 Homepage → Browse destinations/packages</li>
-                                    <li class="list-group-item">🔍 Search → Direct package discovery</li>
-                                    <li class="list-group-item">📱 Social Media → Targeted landing pages</li>
-                                    <li class="list-group-item">📧 Email Marketing → Package promotions</li>
-                                    <li class="list-group-item">🌐 SEO → Organic search results</li>
+                                    <li class="list-group-item">🏠 Visit homepage and see promotional popup</li>
+                                    <li class="list-group-item">🔍 Google search for Kenya travel packages</li>
+                                    <li class="list-group-item">📱 Social media posts and recommendations</li>
+                                    <li class="list-group-item">📧 Email newsletters and promotions</li>
+                                    <li class="list-group-item">👥 Word of mouth from previous customers</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h5>Browsing Actions</h5>
+                                <h5>What They Do First</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">📍 View destination details and galleries</li>
-                                    <li class="list-group-item">📦 Browse package listings with filters</li>
-                                    <li class="list-group-item">💰 Compare prices and inclusions</li>
-                                    <li class="list-group-item">📖 Read blog posts and travel guides</li>
+                                    <li class="list-group-item">📍 Browse beautiful destination photos</li>
+                                    <li class="list-group-item">📦 Look at travel packages and prices</li>
+                                    <li class="list-group-item">💰 Compare what's included in each package</li>
+                                    <li class="list-group-item">📖 Read travel tips and destination guides</li>
                                     <li class="list-group-item">📞 Access contact information</li>
                                 </ul>
                             </div>
@@ -1676,92 +1678,159 @@ session['booking_form_data'] = {
                 </div>
             </section>
 
-            <!-- Django Apps Section -->
+            <!-- System Components Section -->
             <section id="apps" class="doc-section">
                 <div class="doc-card p-4">
                     <h2 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
-                        <i class="fas fa-puzzle-piece me-3"></i>Django Apps Overview
+                        <i class="fas fa-puzzle-piece me-3"></i>System Components
                     </h2>
 
-                    <!-- Adminside App -->
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Overview:</strong> The Novustell Travel website is built using several specialized
+                        components that work together to provide a complete travel booking experience.
+                    </div>
+
+                    <!-- Travel Content Management -->
                     <div class="mb-5">
-                        <h4><i class="fas fa-map-marked-alt me-2 text-warning"></i>adminside App</h4>
-                        <p><strong>Purpose:</strong> Manages travel-related content including destinations, packages, and accommodations.</p>
+                        <h4><i class="fas fa-map-marked-alt me-2 text-warning"></i>Travel Content Management</h4>
+                        <p><strong>What it does:</strong> Manages all travel-related content including destinations, packages, and accommodations.</p>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <h6>Models:</h6>
+                                <h6>What it manages:</h6>
                                 <ul class="feature-list">
-                                    <li><strong>Destination:</strong> Hierarchical destinations (Country → City → Place)</li>
-                                    <li><strong>Package:</strong> Travel packages with pricing and itineraries</li>
-                                    <li><strong>Accommodation:</strong> Hotels and lodging options</li>
-                                    <li><strong>TravelMode:</strong> Transportation options</li>
-                                    <li><strong>PackageBooking:</strong> Booking management</li>
+                                    <li><strong>Destinations:</strong> Countries, cities, and specific places</li>
+                                    <li><strong>Travel Packages:</strong> Complete travel experiences with pricing</li>
+                                    <li><strong>Hotels & Lodges:</strong> Accommodation options for each destination</li>
+                                    <li><strong>Transportation:</strong> Flights, buses, cars, and other travel modes</li>
+                                    <li><strong>Bookings:</strong> Customer reservations and payments</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h6>Key Features:</h6>
+                                <h6>Key capabilities:</h6>
                                 <ul class="feature-list">
-                                    <li>Hierarchical destination management</li>
-                                    <li>Rich text content with CKEditor</li>
-                                    <li>Image management with Uploadcare</li>
-                                    <li>SEO optimization fields</li>
-                                    <li>Advanced filtering and search</li>
+                                    <li>Easy content creation with rich text editor</li>
+                                    <li>Professional image uploads and management</li>
+                                    <li>Search engine optimization for better Google ranking</li>
+                                    <li>Advanced filtering to help customers find what they want</li>
+                                    <li>Complete booking management from inquiry to confirmation</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Blog App -->
+                    <!-- Travel Blog System -->
                     <div class="mb-5">
-                        <h4><i class="fas fa-blog me-2 text-warning"></i>blog App</h4>
-                        <p><strong>Purpose:</strong> Content management system for travel blogs and articles.</p>
+                        <h4><i class="fas fa-blog me-2 text-warning"></i>Travel Blog System</h4>
+                        <p><strong>What it does:</strong> Manages travel articles, destination guides, and customer engagement through comments.</p>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <h6>Models:</h6>
+                                <h6>Content types:</h6>
                                 <ul class="feature-list">
-                                    <li><strong>Post:</strong> Blog articles with rich content</li>
-                                    <li><strong>Category:</strong> Content categorization</li>
-                                    <li><strong>Comment:</strong> User engagement system</li>
+                                    <li><strong>Travel Articles:</strong> Destination guides and travel tips</li>
+                                    <li><strong>Categories:</strong> Organize content by topics</li>
+                                    <li><strong>Customer Comments:</strong> Engagement and feedback system</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h6>Key Features:</h6>
+                                <h6>Key capabilities:</h6>
                                 <ul class="feature-list">
-                                    <li>Rich text editing with CKEditor</li>
-                                    <li>Tag management system</li>
-                                    <li>Comment moderation</li>
-                                    <li>Publishing workflow</li>
-                                    <li>SEO-friendly URLs</li>
+                                    <li>Professional article creation with rich formatting</li>
+                                    <li>Tag system for easy content discovery</li>
+                                    <li>Comment moderation to maintain quality</li>
+                                    <li>Publishing workflow (draft → review → published)</li>
+                                    <li>SEO-optimized URLs for better search ranking</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Users App -->
+                    <!-- Customer Management System -->
                     <div class="mb-5">
-                        <h4><i class="fas fa-users me-2 text-warning"></i>users App</h4>
-                        <p><strong>Purpose:</strong> User management, authentication, and booking system.</p>
+                        <h4><i class="fas fa-users me-2 text-warning"></i>Customer Management System</h4>
+                        <p><strong>What it does:</strong> Handles customer accounts, bookings, inquiries, and all customer-facing features.</p>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <h6>Models:</h6>
+                                <h6>Customer features:</h6>
                                 <ul class="feature-list">
-                                    <li><strong>UserBookings:</strong> Package booking records</li>
-                                    <li><strong>MICEInquiry:</strong> Corporate event inquiries</li>
-                                    <li><strong>StudentTravelInquiry:</strong> Educational travel</li>
-                                    <li><strong>NGOTravelInquiry:</strong> Non-profit travel</li>
+                                    <li><strong>Guest Bookings:</strong> Book without creating an account</li>
+                                    <li><strong>User Accounts:</strong> Register and manage personal profiles</li>
+                                    <li><strong>Business Inquiries:</strong> MICE (corporate events) requests</li>
+                                    <li><strong>Student Travel:</strong> Educational group travel inquiries</li>
+                                    <li><strong>NGO Services:</strong> Non-profit organization travel</li>
+                                    <li><strong>Job Applications:</strong> Career opportunities</li>
+                                    <li><strong>Newsletter:</strong> Travel tips and offers subscription</li>
+                                    <li><strong>Promotional Popups:</strong> Marketing campaigns and special offers</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h6>Key Features:</h6>
+                                <h6>Key capabilities:</h6>
                                 <ul class="feature-list">
-                                    <li>User registration and authentication</li>
-                                    <li>Email verification system</li>
-                                    <li>Booking management</li>
-                                    <li>Specialized inquiry forms</li>
-                                    <li>Email notifications</li>
+                                    <li>Secure customer registration and login</li>
+                                    <li>Email verification for account security</li>
+                                    <li>Complete booking management from inquiry to confirmation</li>
+                                    <li>Specialized inquiry forms for different customer types</li>
+                                    <li>Automated email notifications and confirmations</li>
+                                    <li>Customer dashboard for managing bookings and profile</li>
+                                    <li>Marketing popup system with analytics tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Marketing System -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-envelope me-2 text-warning"></i>Email Marketing System</h4>
+                        <p><strong>What it does:</strong> Manages email campaigns, newsletters, and automated customer communications.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Email features:</h6>
+                                <ul class="feature-list">
+                                    <li><strong>Email Templates:</strong> Professional branded email designs</li>
+                                    <li><strong>Campaigns:</strong> Targeted marketing campaigns</li>
+                                    <li><strong>Recipients:</strong> Customer email list management</li>
+                                    <li><strong>Tracking:</strong> Email delivery and engagement analytics</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Automated emails:</h6>
+                                <ul class="feature-list">
+                                    <li>Booking confirmations and receipts</li>
+                                    <li>Welcome emails for new customers</li>
+                                    <li>Newsletter subscription confirmations</li>
+                                    <li>Job application acknowledgments</li>
+                                    <li>Contact form inquiry notifications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Monitoring -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-heartbeat me-2 text-warning"></i>System Monitoring</h4>
+                        <p><strong>What it does:</strong> Monitors website health, performance, and tracks system status.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Monitoring features:</h6>
+                                <ul class="feature-list">
+                                    <li>Website uptime monitoring</li>
+                                    <li>Performance tracking</li>
+                                    <li>Error logging and alerts</li>
+                                    <li>Database health checks</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Benefits:</h6>
+                                <ul class="feature-list">
+                                    <li>Early detection of website issues</li>
+                                    <li>Performance optimization insights</li>
+                                    <li>Proactive maintenance alerts</li>
+                                    <li>Customer experience protection</li>
                                 </ul>
                             </div>
                         </div>
@@ -1848,6 +1917,109 @@ session['booking_form_data'] = {
                 </div>
             </section>
 
+            <!-- Marketing Features Section -->
+            <section id="marketing-features" class="doc-section">
+                <div class="doc-card p-4">
+                    <h2 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
+                        <i class="fas fa-bullhorn me-3"></i>Marketing & Promotional Features
+                    </h2>
+
+                    <div class="alert alert-success">
+                        <i class="fas fa-star me-2"></i>
+                        <strong>New Feature:</strong> The promotional popup system helps you showcase special offers
+                        and drive customer engagement right on the homepage.
+                    </div>
+
+                    <!-- Promotional Popup System -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-window-restore me-2 text-warning"></i>Promotional Popup System</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>What It Does</h6>
+                                <ul class="feature-list">
+                                    <li>Shows special offers when customers first visit the homepage</li>
+                                    <li>Displays beautiful promotional images with your campaigns</li>
+                                    <li>Includes call-to-action buttons that lead to contact forms</li>
+                                    <li>Tracks how many people see and click on your promotions</li>
+                                    <li>Remembers customers who don't want to see it again today</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>How to Manage It</h6>
+                                <ul class="feature-list">
+                                    <li>Go to Admin → Promotional Popups to create campaigns</li>
+                                    <li>Upload promotional images using the image uploader</li>
+                                    <li>Write campaign titles and button text</li>
+                                    <li>Set which campaigns are active or inactive</li>
+                                    <li>View analytics showing views, clicks, and success rates</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-3">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Best Practice:</strong> Use eye-catching images and clear, action-oriented button text
+                            like "Get This Deal" or "Book Now" to maximize customer engagement.
+                        </div>
+                    </div>
+
+                    <!-- Email Marketing -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-envelope me-2 text-warning"></i>Email Marketing System</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Automated Emails</h6>
+                                <ul class="feature-list">
+                                    <li>Booking confirmation emails sent automatically</li>
+                                    <li>Welcome emails for new customer accounts</li>
+                                    <li>Newsletter subscription confirmations</li>
+                                    <li>Job application notifications</li>
+                                    <li>Contact form inquiry notifications</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Newsletter Management</h6>
+                                <ul class="feature-list">
+                                    <li>Collect email subscriptions from website visitors</li>
+                                    <li>Manage subscriber preferences (tips, offers, updates)</li>
+                                    <li>Track subscription confirmations and activity</li>
+                                    <li>Easy unsubscribe system for customers</li>
+                                    <li>Admin dashboard for subscriber management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Integration -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-share-alt me-2 text-warning"></i>Social Media & Sharing</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Built-in Features</h6>
+                                <ul class="feature-list">
+                                    <li>WhatsApp chat widget for instant customer support</li>
+                                    <li>Social sharing buttons on blog posts</li>
+                                    <li>SEO-optimized content for social media sharing</li>
+                                    <li>Contact forms that capture social media referrals</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Analytics & Tracking</h6>
+                                <ul class="feature-list">
+                                    <li>Google Analytics 4 integration for detailed insights</li>
+                                    <li>Popup click tracking for campaign performance</li>
+                                    <li>Email open and click tracking</li>
+                                    <li>Website visitor behavior analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Admin Guide Section -->
             <section id="admin-guide" class="doc-section">
                 <div class="doc-card p-4">
@@ -1857,32 +2029,33 @@ session['booking_form_data'] = {
 
                     <div class="alert alert-info">
                         <i class="fas fa-info-circle me-2"></i>
-                        <strong>Admin Access:</strong> Use the Django admin interface at <code>/admin/</code> with your administrator credentials.
+                        <strong>Admin Access:</strong> Log in to the admin dashboard at <code>/admin/</code> using your
+                        administrator username and password to manage all website content.
                     </div>
 
                     <!-- Content Management -->
                     <div class="mb-5">
-                        <h4><i class="fas fa-edit me-2 text-warning"></i>Content Management</h4>
+                        <h4><i class="fas fa-edit me-2 text-warning"></i>Managing Website Content</h4>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <h6>Destination Management</h6>
+                                <h6>Travel Destinations</h6>
                                 <ul class="feature-list">
-                                    <li>Create hierarchical destinations (Country → City → Place)</li>
-                                    <li>Upload and manage destination images</li>
-                                    <li>Write rich text descriptions with CKEditor</li>
-                                    <li>Set SEO meta tags and descriptions</li>
-                                    <li>Control visibility and featured status</li>
+                                    <li>Add new countries, cities, and specific places</li>
+                                    <li>Upload beautiful destination photos</li>
+                                    <li>Write detailed descriptions with formatting</li>
+                                    <li>Set which destinations appear on the homepage</li>
+                                    <li>Control which destinations are visible to customers</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h6>Package Management</h6>
+                                <h6>Travel Packages</h6>
                                 <ul class="feature-list">
-                                    <li>Create comprehensive travel packages</li>
-                                    <li>Set pricing and duration</li>
-                                    <li>Configure itineraries and inclusions</li>
-                                    <li>Manage accommodation options</li>
-                                    <li>Control publishing status</li>
+                                    <li>Create new travel packages with all details</li>
+                                    <li>Set prices for adults and children</li>
+                                    <li>Add day-by-day itineraries</li>
+                                    <li>Choose available hotels and transportation</li>
+                                    <li>Publish or hide packages from customers</li>
                                 </ul>
                             </div>
                         </div>
@@ -2653,6 +2826,141 @@ EMAIL_USE_TLS=True
                     </div>
                 </div>
             </section>
+
+            <!-- Troubleshooting Section -->
+            <section id="troubleshooting" class="doc-section">
+                <div class="doc-card p-4">
+                    <h2 class="mb-4" style="color: #0f238d; font-family: 'Fonarto', sans-serif;">
+                        <i class="fas fa-tools me-3"></i>Common Issues & Solutions
+                    </h2>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Quick Help:</strong> Here are solutions to the most common issues you might encounter
+                        while using the Novustell Travel website admin system.
+                    </div>
+
+                    <!-- Website Issues -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-globe me-2 text-warning"></i>Website Not Loading</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Possible Causes:</h6>
+                                <ul class="feature-list">
+                                    <li>Server maintenance or downtime</li>
+                                    <li>Internet connection issues</li>
+                                    <li>Browser cache problems</li>
+                                    <li>DNS propagation delays</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Solutions:</h6>
+                                <ul class="feature-list">
+                                    <li>Wait 5-10 minutes and try again</li>
+                                    <li>Check your internet connection</li>
+                                    <li>Clear browser cache and cookies</li>
+                                    <li>Try accessing from a different device</li>
+                                    <li>Contact technical support if issue persists</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admin Access Issues -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-lock me-2 text-warning"></i>Can't Access Admin Dashboard</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Common Problems:</h6>
+                                <ul class="feature-list">
+                                    <li>Forgotten username or password</li>
+                                    <li>Account permissions changed</li>
+                                    <li>Browser not saving login credentials</li>
+                                    <li>Session timeout</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Solutions:</h6>
+                                <ul class="feature-list">
+                                    <li>Use the "Forgot Password" link</li>
+                                    <li>Contact system administrator for permission reset</li>
+                                    <li>Try logging in from an incognito/private window</li>
+                                    <li>Clear browser data and try again</li>
+                                    <li>Ensure you're using the correct admin URL: /admin/</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Issues -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-envelope me-2 text-warning"></i>Emails Not Sending</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Possible Issues:</h6>
+                                <ul class="feature-list">
+                                    <li>Email server configuration problems</li>
+                                    <li>Recipient email address invalid</li>
+                                    <li>Emails going to spam folder</li>
+                                    <li>Daily sending limits reached</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Solutions:</h6>
+                                <ul class="feature-list">
+                                    <li>Check email settings in admin dashboard</li>
+                                    <li>Verify recipient email addresses are correct</li>
+                                    <li>Ask customers to check spam/junk folders</li>
+                                    <li>Contact hosting provider about sending limits</li>
+                                    <li>Test with a different email address</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Upload Issues -->
+                    <div class="mb-5">
+                        <h4><i class="fas fa-image me-2 text-warning"></i>Image Upload Problems</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Common Issues:</h6>
+                                <ul class="feature-list">
+                                    <li>Image file too large</li>
+                                    <li>Unsupported file format</li>
+                                    <li>Slow internet connection</li>
+                                    <li>Browser compatibility issues</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Solutions:</h6>
+                                <ul class="feature-list">
+                                    <li>Resize images to under 5MB before uploading</li>
+                                    <li>Use JPG or PNG format only</li>
+                                    <li>Wait for stable internet connection</li>
+                                    <li>Try uploading from a different browser</li>
+                                    <li>Refresh the page and try again</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="alert alert-success">
+                        <h5><i class="fas fa-phone me-2"></i>Need More Help?</h5>
+                        <p class="mb-2">If you can't resolve the issue using these solutions, contact our technical support team:</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>Email:</strong> info@novustelltravel.com</li>
+                            <li><strong>Phone:</strong> +254 701 363 551</li>
+                            <li><strong>WhatsApp:</strong> +254 701 363 551</li>
+                            <li><strong>Office:</strong> New Peoples Media Center, Kilimani</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </div>
@@ -2678,7 +2986,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // User Journey Flowchart
     const userJourneyDiagram = `
     flowchart TD
-        A[🏠 Homepage] --> B{User Type?}
+        A[🏠 Homepage] --> A1[📢 Promotional Popup]
+        A1 --> A2{Popup Action?}
+        A2 -->|Inquire| F[Contact Us]
+        A2 -->|Close| B{User Type?}
+        A2 -->|Don't Show Again| B
 
         %% Guest User Journey
         B -->|Guest| C[Browse Destinations]

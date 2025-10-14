@@ -1,0 +1,107 @@
+/* Promotional Popup Admin Styling */
+
+.field-image_preview img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.field-image_preview img:hover {
+    transform: scale(1.05);
+}
+
+.field-click_through_rate_display {
+    font-weight: bold;
+}
+
+/* Admin list view enhancements */
+.admin-popup-stats {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-popup-stats .badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.admin-popup-stats .badge-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.admin-popup-stats .badge-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.admin-popup-stats .badge-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Fieldset styling */
+.fieldset-campaign-information {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fieldset-analytics {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Form field enhancements */
+.field-title input {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f238d;
+}
+
+.field-is_active input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.field-display_order input {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Help text styling */
+.help {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Action buttons styling */
+.actions select {
+    background: linear-gradient(135deg, #0f238d, #1a3ba8);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.actions button {
+    background: linear-gradient(135deg, #ff9d00, #ffb84d);
+    color: #0f238d;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.actions button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 157, 0, 0.3);
+}

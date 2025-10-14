@@ -3,7 +3,7 @@ from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
 from django.utils.html import format_html
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing, ContactInquiry
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing, ContactInquiry, PromotionalPopup
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -489,3 +489,96 @@ class ContactInquiryAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         # Prevent manual creation of contact inquiries in admin
         return False
+
+
+@admin.register(PromotionalPopup)
+class PromotionalPopupAdmin(admin.ModelAdmin):
+    list_display = ('title', 'is_active', 'display_order', 'view_count', 'click_count', 'click_through_rate_display', 'created_at')
+    list_filter = ('is_active', 'created_at', 'updated_at')
+    search_fields = ('title', 'inquiry_button_text')
+    readonly_fields = ('view_count', 'click_count', 'click_through_rate_display', 'created_at', 'updated_at', 'image_preview')
+    list_editable = ('is_active', 'display_order')
+    ordering = ('display_order', '-created_at')
+    actions = ['activate_popups', 'deactivate_popups', 'reset_statistics']
+
+    fieldsets = (
+        ('Campaign Information', {
+            'fields': ('title', 'image', 'image_preview'),
+            'description': 'Basic campaign information and promotional image'
+        }),
+        ('Action Button', {
+            'fields': ('inquiry_button_text', 'inquiry_url'),
+            'description': 'Configure the call-to-action button'
+        }),
+        ('Display Settings', {
+            'fields': ('is_active', 'display_order'),
+            'description': 'Control when and how this popup appears'
+        }),
+        ('Analytics', {
+            'fields': ('view_count', 'click_count', 'click_through_rate_display'),
+            'description': 'Campaign performance metrics',
+            'classes': ('collapse',)
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def image_preview(self, obj):
+        """Display image preview in admin"""
+        if obj.image:
+            return format_html(
+                '<div style="margin: 10px 0;">'
+                '<img src="{}" style="max-width: 300px; max-height: 200px; border: 1px solid #ddd; border-radius: 5px;">'
+                '<br><small style="color: #666;">Promotional Image Preview</small>'
+                '</div>',
+                obj.image.url
+            )
+        return format_html('<span style="color: #999;">No image uploaded</span>')
+    image_preview.short_description = "Image Preview"
+    image_preview.allow_tags = True
+
+    def click_through_rate_display(self, obj):
+        """Display click-through rate with formatting"""
+        ctr = obj.click_through_rate
+        if ctr == 0:
+            return format_html('<span style="color: #999;">0%</span>')
+        elif ctr < 1:
+            return format_html('<span style="color: #d63384;">{:.2f}%</span>', ctr)
+        elif ctr < 3:
+            return format_html('<span style="color: #fd7e14;">{:.2f}%</span>', ctr)
+        else:
+            return format_html('<span style="color: #198754;">{:.2f}%</span>', ctr)
+    click_through_rate_display.short_description = "CTR"
+    click_through_rate_display.admin_order_field = 'click_count'
+
+    def activate_popups(self, request, queryset):
+        """Bulk activate popups"""
+        updated = queryset.update(is_active=True)
+        self.message_user(request, f'{updated} popups activated.')
+    activate_popups.short_description = 'Activate selected popups'
+
+    def deactivate_popups(self, request, queryset):
+        """Bulk deactivate popups"""
+        updated = queryset.update(is_active=False)
+        self.message_user(request, f'{updated} popups deactivated.')
+    deactivate_popups.short_description = 'Deactivate selected popups'
+
+    def reset_statistics(self, request, queryset):
+        """Reset view and click statistics"""
+        updated = queryset.update(view_count=0, click_count=0)
+        self.message_user(request, f'Statistics reset for {updated} popups.')
+    reset_statistics.short_description = 'Reset statistics'
+
+    def get_queryset(self, request):
+        """Optimize queryset for admin list view"""
+        return super().get_queryset(request).select_related()
+
+    class Media:
+        css = {
+            'all': ('admin/css/promotional-popup-admin.css',)
+        }
+        js = (
+            'admin/js/promotional-popup-admin.js',
+        )

@@ -49,4 +49,8 @@ urlpatterns = [
 
     # Test Error Pages (for development/testing only)
     path('test-500-error/', views.test_500_error, name='test_500_error'),
+
+    # Promotional Popup API endpoints
+    path('api/popup/active/', views.get_active_popup, name='get_active_popup'),
+    path('api/popup/track-click/', views.track_popup_click, name='track_popup_click'),
 ]

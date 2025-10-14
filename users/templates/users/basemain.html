@@ -139,6 +139,11 @@
         {% if SHOULD_LOAD_ANALYTICS %}
         <script defer src="{% static 'assets/js/analytics-travel.js' %}"></script>
         {% endif %}
+
+        <!--====== Promotional Popup Modal (Homepage Only) ======-->
+        {% if request.resolver_match.url_name == 'users-home' %}
+        {% include 'users/promotional_popup.html' %}
+        {% endif %}
     </body>
 
 <!-- End Novustell Travel Website -->

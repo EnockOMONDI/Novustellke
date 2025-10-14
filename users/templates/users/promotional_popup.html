@@ -1,0 +1,392 @@
+{% load static %}
+
+<!-- Promotional Popup Modal -->
+<div id="promotionalPopupModal" class="promotional-popup-overlay" style="display: none;">
+    <div class="promotional-popup-container">
+        <div class="promotional-popup-content">
+            <!-- Close Button -->
+            <button type="button" class="promotional-popup-close" id="closePopupBtn" aria-label="Close popup">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <!-- Popup Content -->
+            <div class="promotional-popup-body">
+                <div class="promotional-popup-image">
+                    <img id="popupImage" src="{% static 'images/novustelltravelplaceholder.svg' %}" alt="Promotional Offer" class="popup-img">
+                </div>
+                
+                <div class="promotional-popup-text">
+                    <h3 id="popupTitle" class="popup-title">Special Travel Offer</h3>
+                    
+                    <div class="promotional-popup-actions">
+                        <button type="button" id="inquireBtn" class="btn-inquire">
+                            <i class="fas fa-paper-plane me-2"></i>
+                            <span id="inquireBtnText">Inquire Now</span>
+                        </button>
+                        
+                        <button type="button" id="dontShowTodayBtn" class="btn-dont-show">
+                            Don't show today
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Promotional Popup Styles -->
+<style>
+.promotional-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 35, 141, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.promotional-popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.promotional-popup-container {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transform: scale(0.8) translateY(50px);
+    transition: all 0.3s ease;
+}
+
+.promotional-popup-overlay.show .promotional-popup-container {
+    transform: scale(1) translateY(0);
+}
+
+.promotional-popup-content {
+    position: relative;
+    padding: 0;
+}
+
+.promotional-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    color: #0f238d;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.promotional-popup-close:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+    color: #ff9d00;
+}
+
+.promotional-popup-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.promotional-popup-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.popup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.promotional-popup-text {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f3fc 0%, #ffffff 100%);
+}
+
+.popup-title {
+    font-family: 'Fonarto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f238d;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.promotional-popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-inquire {
+    background: linear-gradient(135deg, #ff9d00, #ffb84d);
+    color: #0f238d;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 157, 0, 0.3);
+    min-width: 200px;
+}
+
+.btn-inquire:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(255, 157, 0, 0.4);
+    background: linear-gradient(135deg, #ffb84d, #ff9d00);
+}
+
+.btn-dont-show {
+    background: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-dont-show:hover {
+    background: #f5f5f5;
+    color: #0f238d;
+    border-color: #0f238d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .promotional-popup-container {
+        width: 95%;
+        max-width: 400px;
+    }
+    
+    .promotional-popup-image {
+        height: 200px;
+    }
+    
+    .promotional-popup-text {
+        padding: 20px;
+    }
+    
+    .popup-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-inquire {
+        padding: 12px 25px;
+        font-size: 16px;
+        min-width: 180px;
+    }
+    
+    .promotional-popup-body {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .promotional-popup-container {
+        width: 98%;
+        margin: 10px;
+    }
+    
+    .promotional-popup-image {
+        height: 180px;
+    }
+    
+    .popup-title {
+        font-size: 20px;
+    }
+    
+    .btn-inquire {
+        padding: 10px 20px;
+        font-size: 15px;
+        min-width: 160px;
+    }
+}
+
+/* Animation for popup appearance */
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.promotional-popup-overlay.animate-in .promotional-popup-container {
+    animation: popupFadeIn 0.4s ease-out;
+}
+</style>
+
+<!-- Promotional Popup JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if popup should be shown (not shown today)
+    const popupShownToday = localStorage.getItem('novustell_popup_shown_' + new Date().toDateString());
+    
+    if (!popupShownToday) {
+        // Delay popup appearance to not interfere with page load
+        setTimeout(function() {
+            loadAndShowPopup();
+        }, 2000); // Show after 2 seconds
+    }
+    
+    function loadAndShowPopup() {
+        // Fetch active popup data
+        fetch('/api/popup/active/')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.popup) {
+                    showPopup(data.popup);
+                }
+            })
+            .catch(error => {
+                console.log('Popup load error:', error);
+            });
+    }
+    
+    function showPopup(popupData) {
+        const modal = document.getElementById('promotionalPopupModal');
+        const title = document.getElementById('popupTitle');
+        const image = document.getElementById('popupImage');
+        const inquireBtn = document.getElementById('inquireBtn');
+        const inquireBtnText = document.getElementById('inquireBtnText');
+        
+        // Update popup content
+        title.textContent = popupData.title;
+        image.src = popupData.image_url;
+        image.alt = popupData.title;
+        inquireBtnText.textContent = popupData.inquiry_button_text;
+        
+        // Store popup data for tracking
+        modal.dataset.popupId = popupData.id;
+        modal.dataset.inquiryUrl = popupData.inquiry_url;
+        
+        // Show popup with animation
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('show', 'animate-in');
+        }, 10);
+        
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function hidePopup() {
+        const modal = document.getElementById('promotionalPopupModal');
+        modal.classList.remove('show');
+        
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    }
+    
+    // Close button event
+    document.getElementById('closePopupBtn').addEventListener('click', hidePopup);
+    
+    // Don't show today button event
+    document.getElementById('dontShowTodayBtn').addEventListener('click', function() {
+        localStorage.setItem('novustell_popup_shown_' + new Date().toDateString(), 'true');
+        hidePopup();
+    });
+    
+    // Inquire button event
+    document.getElementById('inquireBtn').addEventListener('click', function() {
+        const modal = document.getElementById('promotionalPopupModal');
+        const popupId = modal.dataset.popupId;
+        const inquiryUrl = modal.dataset.inquiryUrl;
+        
+        // Track click
+        if (popupId) {
+            fetch('/api/popup/track-click/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    popup_id: popupId
+                })
+            }).catch(error => {
+                console.log('Click tracking error:', error);
+            });
+        }
+        
+        // Redirect to inquiry URL
+        if (inquiryUrl) {
+            window.open(inquiryUrl, '_blank');
+        }
+        
+        hidePopup();
+    });
+    
+    // Close on overlay click
+    document.getElementById('promotionalPopupModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            hidePopup();
+        }
+    });
+    
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const modal = document.getElementById('promotionalPopupModal');
+            if (modal.classList.contains('show')) {
+                hidePopup();
+            }
+        }
+    });
+    
+    // Helper function to get CSRF token
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+});
+</script>
