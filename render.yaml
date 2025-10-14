@@ -71,7 +71,9 @@ services:
       - key: EMAIL_HOST_USER
         value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: iagt yans hoyd pavg
+        sync: false  # Set manually: eoie dhrq cioh gxhz
+      - key: EMAIL_TIMEOUT
+        value: 30
       - key: DEFAULT_FROM_EMAIL
         value: Novustell Travel <novustellke@gmail.com>
       - key: ADMIN_EMAIL
@@ -193,6 +195,8 @@ services:
         value: novustellke@gmail.com
       - key: EMAIL_HOST_PASSWORD
         sync: false
+      - key: EMAIL_TIMEOUT
+        value: 30
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
       - key: JOBS_EMAIL
@@ -229,7 +233,7 @@ databases:
 # For production media files, consider AWS S3 integration
 
 # Environment-specific notes:
-# 1. Set EMAIL_HOST_PASSWORD manually in Render dashboard: iagt yans hoyd pavg
+# 1. Set EMAIL_HOST_PASSWORD manually in Render dashboard: eoie dhrq cioh gxhz
 # 2. Set UPLOADCARE_PUBLIC_KEY and UPLOADCARE_SECRET_KEY manually
 # 3. Optional: Set SENTRY_DSN for error monitoring
 # 4. Optional: Set GOOGLE_ANALYTICS_ID for analytics
