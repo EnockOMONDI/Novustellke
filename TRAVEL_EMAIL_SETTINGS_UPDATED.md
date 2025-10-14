@@ -90,7 +90,7 @@ ALLOWED_HOSTS=127.0.0.1,localhost,0.0.0.0
 
 # Email Configuration (Same credentials for testing)
 EMAIL_HOST_USER=novustellke@gmail.com
-EMAIL_HOST_PASSWORD=vsmw vdut tanu gtdg
+EMAIL_HOST_PASSWORD=eoie dhrq cioh gxhz
 DEFAULT_FROM_EMAIL=Novustell Travel <novustellke@gmail.com>
 ADMIN_EMAIL=info@novustelltravel.com
 JOBS_EMAIL=careers@novustelltravel.com

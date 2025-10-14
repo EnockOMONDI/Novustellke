@@ -254,10 +254,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_TIMEOUT = 30  # 30 seconds timeout to prevent worker timeouts
 
 # Novustell Travel email credentials
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'vsmw vdut tanu gtdg')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'eoie dhrq cioh gxhz')  # Updated app password
 DEFAULT_FROM_EMAIL = 'NOVUSTELL TRAVEL'
 
 # Admin email for notifications

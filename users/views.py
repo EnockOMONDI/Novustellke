@@ -413,48 +413,64 @@ def send_job_application_emails(job_application):
 
 def send_newsletter_subscription_emails(subscription):
     """
-    Send email notifications for newsletter subscriptions
+    Send email notifications for newsletter subscriptions with timeout protection
     """
+    import logging
     from django.core.mail import send_mail
     from django.template.loader import render_to_string
     from django.conf import settings
 
-    # Email to admin
-    admin_subject = f'New Newsletter Subscription - {subscription.email}'
-    admin_message = render_to_string('users/emails/newsletter_admin.html', {
-        'subscription': subscription
-    })
+    logger = logging.getLogger(__name__)
 
-    newsletter_email = getattr(settings, 'NEWSLETTER_EMAIL', 'news@novustelltravel.com')
+    try:
+        # Email to admin
+        admin_subject = f'New Newsletter Subscription - {subscription.email}'
+        admin_message = render_to_string('users/emails/newsletter_admin.html', {
+            'subscription': subscription
+        })
 
-    send_mail(
-        subject=admin_subject,
-        message='',  # Plain text version
-        html_message=admin_message,
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[newsletter_email],
-        fail_silently=False,
-    )
+        newsletter_email = getattr(settings, 'NEWSLETTER_EMAIL', 'news@novustelltravel.com')
 
-    # Email to subscriber
-    subscriber_subject = 'Welcome to Novustell Travel Newsletter!'
-    subscriber_message = render_to_string('users/emails/newsletter_confirmation.html', {
-        'subscription': subscription
-    })
+        # Send admin email with timeout protection
+        logger.info(f"Sending admin notification for subscription: {subscription.email}")
+        send_mail(
+            subject=admin_subject,
+            message='',  # Plain text version
+            html_message=admin_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[newsletter_email],
+            fail_silently=False,
+        )
+        logger.info("Admin notification sent successfully")
 
-    send_mail(
-        subject=subscriber_subject,
-        message='',  # Plain text version
-        html_message=subscriber_message,
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[subscription.email],
-        fail_silently=False,
-    )
+        # Email to subscriber
+        subscriber_subject = 'Welcome to Novustell Travel Newsletter!'
+        subscriber_message = render_to_string('users/emails/newsletter_confirmation.html', {
+            'subscription': subscription
+        })
 
-    # Update email tracking
-    subscription.admin_notification_sent = True
-    subscription.confirmation_email_sent = True
-    subscription.save()
+        # Send subscriber email with timeout protection
+        logger.info(f"Sending confirmation email to subscriber: {subscription.email}")
+        send_mail(
+            subject=subscriber_subject,
+            message='',  # Plain text version
+            html_message=subscriber_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[subscription.email],
+            fail_silently=False,
+        )
+        logger.info("Subscriber confirmation sent successfully")
+
+        # Update email tracking
+        subscription.admin_notification_sent = True
+        subscription.confirmation_email_sent = True
+        subscription.save()
+        logger.info(f"Email tracking updated for subscription: {subscription.email}")
+
+    except Exception as e:
+        logger.error(f"Failed to send newsletter subscription emails for {subscription.email}: {str(e)}")
+        # Re-raise the exception to be handled by the calling view
+        raise
 
 
 def careers(request):
@@ -597,7 +613,7 @@ def newsletter_subscribe(request):
                 destination_updates=True
             )
 
-            # Send email notifications
+            # Send email notifications with timeout protection
             try:
                 send_newsletter_subscription_emails(subscription)
                 if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
@@ -608,6 +624,11 @@ def newsletter_subscribe(request):
                 else:
                     messages.success(request, 'Thank you for subscribing! Please check your email to confirm your subscription.')
             except Exception as e:
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.error(f"Newsletter subscription email failed for {subscription.email}: {str(e)}")
+
+                # Still show success to user but log the error for admin investigation
                 if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
                     return JsonResponse({
                         'success': True,

@@ -278,7 +278,7 @@ class EmailConfigurationTests:
             required_vars = [
                 'DEBUG=True',
                 'EMAIL_HOST_USER=novustellke@gmail.com',
-                'EMAIL_HOST_PASSWORD=vsmw vdut tanu gtdg'
+                'EMAIL_HOST_PASSWORD=eoie dhrq cioh gxhz'
             ]
             
             for var in required_vars:

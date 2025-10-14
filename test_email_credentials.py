@@ -15,7 +15,7 @@ import sys
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'novustellke@gmail.com'
-EMAIL_HOST_PASSWORD = 'vsmw vdut tanu gtdg'
+EMAIL_HOST_PASSWORD = 'eoie dhrq cioh gxhz'
 
 def test_smtp_connection():
     """Test SMTP connection without sending email"""
@@ -138,7 +138,7 @@ def test_django_email_backend():
                 EMAIL_PORT=EMAIL_PORT,
                 EMAIL_USE_TLS=True,
                 EMAIL_HOST_USER=EMAIL_HOST_USER,
-                EMAIL_HOST_PASSWORD=EMAIL_HOST_PASSWORD,
+                EMAIL_HOST_PASSWORD='eoie dhrq cioh gxhz',
                 DEFAULT_FROM_EMAIL='NOVUSTELL TRAVEL',
             )
         
