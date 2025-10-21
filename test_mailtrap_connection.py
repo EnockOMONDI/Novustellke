@@ -12,7 +12,7 @@ from email.mime.multipart import MIMEMultipart
 # Mailtrap configuration
 MAILTRAP_HOST = 'live.smtp.mailtrap.io'
 MAILTRAP_USER = 'api'
-MAILTRAP_PASSWORD = '8bb7b380023874b3e33598387811489'
+MAILTRAP_PASSWORD = 'd766975d57a7ef1acf2f750a36247a37'
 
 def test_mailtrap_connection(port, use_tls=True, use_ssl=False):
     """Test Mailtrap connection with different configurations"""
@@ -112,7 +112,7 @@ def test_all_configurations():
         print(f"   EMAIL_USE_TLS = {use_tls}")
         print(f"   EMAIL_USE_SSL = {use_ssl}")
         print(f"   EMAIL_HOST_USER = 'api'")
-        print(f"   EMAIL_HOST_PASSWORD = '8bb7b380023874b3e33598387811489'")
+        print(f"   EMAIL_HOST_PASSWORD = 'd766975d57a7ef1acf2f750a36247a37'")
         
     else:
         print("❌ No working configurations found!")

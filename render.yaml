@@ -235,7 +235,7 @@ databases:
 # For production media files, consider AWS S3 integration
 
 # Environment-specific notes:
-# 1. Set MAILTRAP_API_TOKEN manually in Render dashboard: 8bb7b380023874b3e33598387811489
+# 1. Set MAILTRAP_API_TOKEN manually in Render dashboard:d766975d57a7ef1acf2f750a36247a37
 # 2. Set UPLOADCARE_PUBLIC_KEY and UPLOADCARE_SECRET_KEY manually
 # 3. Optional: Set SENTRY_DSN for error monitoring
 # 4. Optional: Set GOOGLE_ANALYTICS_ID for analytics
