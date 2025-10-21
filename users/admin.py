@@ -542,14 +542,24 @@ class PromotionalPopupAdmin(admin.ModelAdmin):
     def click_through_rate_display(self, obj):
         """Display click-through rate with formatting"""
         ctr = obj.click_through_rate
-        if ctr == 0:
-            return format_html('<span style="color: #999;">0%</span>')
-        elif ctr < 1:
-            return format_html('<span style="color: #d63384;">{:.2f}%</span>', ctr)
-        elif ctr < 3:
-            return format_html('<span style="color: #fd7e14;">{:.2f}%</span>', ctr)
+        # Coerce value to float safely (handles SafeString or values with %)
+        try:
+            value = float(ctr)
+        except (TypeError, ValueError):
+            try:
+                value = float(str(ctr).replace('%', '').strip())
+            except Exception:
+                value = 0.0
+
+        formatted = f"{value:.2f}%"
+        if value == 0:
+            return format_html('<span style="color: #999;">{}</span>', formatted)
+        elif value < 1:
+            return format_html('<span style="color: #d63384;">{}</span>', formatted)
+        elif value < 3:
+            return format_html('<span style="color: #fd7e14;">{}</span>', formatted)
         else:
-            return format_html('<span style="color: #198754;">{:.2f}%</span>', ctr)
+            return format_html('<span style="color: #198754;">{}</span>', formatted)
     click_through_rate_display.short_description = "CTR"
     click_through_rate_display.admin_order_field = 'click_count'
 
