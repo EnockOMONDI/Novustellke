@@ -1,5 +1,5 @@
-# Core Django & Extensions
 Django==5.0.14
+mailtrap>=2.0.0
 django-crispy-forms>=2.1.0
 django-import-export>=3.3.7
 django-taggit>=5.0.1
@@ -45,3 +45,7 @@ shortuuid>=1.0.13
 coverage>=7.4.1
 pytest>=8.0.0
 pytest-django>=4.7.0
+
+
+django-cors-headers>=4.3.1
+sentry-sdk>=1.40.0

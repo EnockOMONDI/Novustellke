@@ -116,46 +116,16 @@ def micepage(request):
             inquiry = form.save()
 
             try:
-                # Email to admin using template
-                admin_subject = f'New MICE Inquiry from {inquiry.company_name}'
-                admin_message_html = render_to_string('users/emails/mice_inquiry_admin.html', {
-                    'inquiry': inquiry
-                })
-                admin_message_txt = render_to_string('users/emails/mice_inquiry_admin.txt', {
-                    'inquiry': inquiry
-                })
 
-                # Send to admin email
-                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
+                # Send email notifications using Mailtrap HTTP API
+                from .tasks import send_mice_inquiry_emails
+                result = send_mice_inquiry_emails(inquiry)
 
-                send_mail(
-                    subject=admin_subject,
-                    message=admin_message_txt,  # Plain text version
-                    html_message=admin_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[admin_email],
-                    fail_silently=False,
-                )
+                if result.get('success'):
+                    messages.success(request, f'Thank you! Your MICE inquiry has been submitted successfully. We will contact you within 2 hours. Reference ID: MICE-{inquiry.id:05d}')
+                else:
+                    messages.warning(request, f'Your MICE inquiry has been submitted (Ref: MICE-{inquiry.id:05d}), but there was an issue sending email notifications. We will still contact you within 2 hours.')
 
-                # Email to user using template
-                user_subject = f'MICE Inquiry Received - {inquiry.company_name}'
-                user_message_html = render_to_string('users/emails/mice_inquiry_confirmation.html', {
-                    'inquiry': inquiry
-                })
-                user_message_txt = render_to_string('users/emails/mice_inquiry_confirmation.txt', {
-                    'inquiry': inquiry
-                })
-
-                send_mail(
-                    subject=user_subject,
-                    message=user_message_txt,  # Plain text version
-                    html_message=user_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[inquiry.email],
-                    fail_silently=False,
-                )
-
-                messages.success(request, f'Thank you! Your MICE inquiry has been submitted successfully. We will contact you within 2 hours. Reference ID: MICE-{inquiry.id:05d}')
                 return redirect('users:micepage')
 
             except Exception as e:
@@ -174,46 +144,15 @@ def student_travel(request):
             inquiry = form.save()
 
             try:
-                # Email to admin using template
-                admin_subject = f'New Student Travel Inquiry from {inquiry.school_name}'
-                admin_message_html = render_to_string('users/emails/student_travel_admin.html', {
-                    'inquiry': inquiry
-                })
-                admin_message_txt = render_to_string('users/emails/student_travel_admin.txt', {
-                    'inquiry': inquiry
-                })
+                # Send email notifications using Mailtrap HTTP API
+                from .tasks import send_student_travel_emails
+                result = send_student_travel_emails(inquiry)
 
-                # Send to admin email
-                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
+                if result.get('success'):
+                    messages.success(request, f'Thank you! Your student travel inquiry has been submitted successfully. We will contact you within 4 hours. Reference ID: STU-{inquiry.id:05d}')
+                else:
+                    messages.warning(request, f'Your student travel inquiry has been submitted (Ref: STU-{inquiry.id:05d}), but there was an issue sending email notifications. We will still contact you within 4 hours.')
 
-                send_mail(
-                    subject=admin_subject,
-                    message=admin_message_txt,  # Plain text version
-                    html_message=admin_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[admin_email],
-                    fail_silently=False,
-                )
-
-                # Email to user using template
-                user_subject = f'Student Travel Inquiry Received - {inquiry.school_name}'
-                user_message_html = render_to_string('users/emails/student_travel_confirmation.html', {
-                    'inquiry': inquiry
-                })
-                user_message_txt = render_to_string('users/emails/student_travel_confirmation.txt', {
-                    'inquiry': inquiry
-                })
-
-                send_mail(
-                    subject=user_subject,
-                    message=user_message_txt,  # Plain text version
-                    html_message=user_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[inquiry.email],
-                    fail_silently=False,
-                )
-
-                messages.success(request, f'Thank you! Your student travel inquiry has been submitted successfully. We will contact you within 4 hours. Reference ID: STU-{inquiry.id:05d}')
                 return redirect('users:student-travel')
 
             except Exception as e:
@@ -232,46 +171,15 @@ def ngo_travel(request):
             inquiry = form.save()
 
             try:
-                # Email to admin using template
-                admin_subject = f'New NGO Travel Inquiry from {inquiry.organization_name}'
-                admin_message_html = render_to_string('users/emails/ngo_travel_admin.html', {
-                    'inquiry': inquiry
-                })
-                admin_message_txt = render_to_string('users/emails/ngo_travel_admin.txt', {
-                    'inquiry': inquiry
-                })
+                # Send email notifications using Mailtrap HTTP API
+                from .tasks import send_ngo_travel_emails
+                result = send_ngo_travel_emails(inquiry)
 
-                # Send to admin email
-                admin_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
+                if result.get('success'):
+                    messages.success(request, f'Thank you! Your NGO travel inquiry has been submitted successfully. We will contact you within 24 hours. Reference ID: NGO-{inquiry.id:05d}')
+                else:
+                    messages.warning(request, f'Your NGO travel inquiry has been submitted (Ref: NGO-{inquiry.id:05d}), but there was an issue sending email notifications. We will still contact you within 24 hours.')
 
-                send_mail(
-                    subject=admin_subject,
-                    message=admin_message_txt,  # Plain text version
-                    html_message=admin_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[admin_email],
-                    fail_silently=False,
-                )
-
-                # Email to user using template
-                user_subject = f'NGO Travel Inquiry Received - {inquiry.organization_name}'
-                user_message_html = render_to_string('users/emails/ngo_travel_confirmation.html', {
-                    'inquiry': inquiry
-                })
-                user_message_txt = render_to_string('users/emails/ngo_travel_confirmation.txt', {
-                    'inquiry': inquiry
-                })
-
-                send_mail(
-                    subject=user_subject,
-                    message=user_message_txt,  # Plain text version
-                    html_message=user_message_html,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[inquiry.email],
-                    fail_silently=False,
-                )
-
-                messages.success(request, f'Thank you! Your NGO travel inquiry has been submitted successfully. We will contact you within 24 hours. Reference ID: NGO-{inquiry.id:05d}')
                 return redirect('users:ngo-travel')
 
             except Exception as e:
@@ -290,10 +198,7 @@ def holidays(request):
 def contactus(request):
     if request.method == 'POST':
         from .forms import ContactForm
-        from django.core.mail import EmailMultiAlternatives
-        from django.template.loader import render_to_string
         from django.contrib import messages
-        from django.conf import settings
         import logging
 
         logger = logging.getLogger(__name__)
@@ -304,44 +209,20 @@ def contactus(request):
                 # Save the contact inquiry
                 inquiry = form.save()
 
-                # Prepare email context
-                email_context = {
-                    'inquiry': inquiry,
-                }
+                # Send email notifications using Mailtrap HTTP API
+                from .tasks import send_contact_inquiry_emails
+                result = send_contact_inquiry_emails(inquiry)
 
-                # Admin notification email
-                admin_subject = f"New Contact Inquiry: {inquiry.subject} - {inquiry.full_name}"
-                admin_html_content = render_to_string('users/emails/contact_inquiry_admin.html', email_context)
-                admin_text_content = render_to_string('users/emails/contact_inquiry_admin.txt', email_context)
-
-                admin_email = EmailMultiAlternatives(
-                    subject=admin_subject,
-                    body=admin_text_content,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    to=['Info@novustelltravel.com'],
-                    reply_to=[inquiry.email]
-                )
-                admin_email.attach_alternative(admin_html_content, "text/html")
-                admin_email.send()
-
-                # Client confirmation email
-                client_subject = f"Thank You for Your Inquiry - Novustell Travel (Ref: NVT-{inquiry.id:05d})"
-                client_html_content = render_to_string('users/emails/contact_inquiry_confirmation.html', email_context, request=request)
-                client_text_content = render_to_string('users/emails/contact_inquiry_confirmation.txt', email_context, request=request)
-
-                client_email = EmailMultiAlternatives(
-                    subject=client_subject,
-                    body=client_text_content,
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    to=[inquiry.email],
-                    reply_to=['Info@novustelltravel.com']
-                )
-                client_email.attach_alternative(client_html_content, "text/html")
-                client_email.send()
-
-                messages.success(request,
-                    f'Thank you for your inquiry! We have received your message about "{inquiry.subject}" and will respond within 24 hours. '
-                    f'Your reference number is NVT-{inquiry.id:05d}. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
+                if result.get('success'):
+                    logger.info(f"Contact inquiry emails sent successfully for inquiry {inquiry.id}")
+                    messages.success(request,
+                        f'Thank you for your inquiry! We have received your message about "{inquiry.subject}" and will respond within 24 hours. '
+                        f'Your reference number is NVT-{inquiry.id:05d}. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
+                else:
+                    logger.warning(f"Some contact inquiry emails failed for inquiry {inquiry.id}: {result}")
+                    messages.warning(request,
+                        f'Your inquiry has been submitted (Ref: NVT-{inquiry.id:05d}), but there was an issue sending email notifications. '
+                        f'We will still respond to your inquiry. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
 
                 logger.info(f"Contact inquiry submitted successfully: {inquiry.full_name} - {inquiry.subject}")
 
@@ -362,115 +243,10 @@ def contactus(request):
     return render(request, 'users/contactus.html', {'form': form})
 
 
-def send_job_application_emails(job_application):
-    """
-    Send email notifications for job applications
-    """
-    from django.core.mail import send_mail
-    from django.template.loader import render_to_string
-    from django.conf import settings
-
-    # Email to admin (send to both careers and info email addresses)
-    admin_subject = f'New Job Application - {job_application.get_position_display()}'
-    admin_message = render_to_string('users/emails/job_application_admin.html', {
-        'application': job_application
-    })
-
-    # Send to both careers and info email addresses
-    careers_email = getattr(settings, 'JOBS_EMAIL', 'careers@novustelltravel.com')
-    info_email = getattr(settings, 'ADMIN_EMAIL', 'info@novustelltravel.com')
-    recipient_list = [careers_email, info_email]
-
-    send_mail(
-        subject=admin_subject,
-        message='',  # Plain text version
-        html_message=admin_message,
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=recipient_list,
-        fail_silently=False,
-    )
-
-    # Email to applicant
-    applicant_subject = f'Application Received - {job_application.get_position_display()}'
-    applicant_message = render_to_string('users/emails/job_application_confirmation.html', {
-        'application': job_application
-    })
-
-    send_mail(
-        subject=applicant_subject,
-        message='',  # Plain text version
-        html_message=applicant_message,
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[job_application.email],
-        fail_silently=False,
-    )
-
-    # Update email tracking
-    job_application.admin_notification_sent = True
-    job_application.applicant_confirmation_sent = True
-    job_application.save()
+# Job application emails are now handled in users/tasks.py using Mailtrap HTTP API
 
 
-def send_newsletter_subscription_emails(subscription):
-    """
-    Send email notifications for newsletter subscriptions with timeout protection
-    """
-    import logging
-    from django.core.mail import send_mail
-    from django.template.loader import render_to_string
-    from django.conf import settings
-
-    logger = logging.getLogger(__name__)
-
-    try:
-        # Email to admin
-        admin_subject = f'New Newsletter Subscription - {subscription.email}'
-        admin_message = render_to_string('users/emails/newsletter_admin.html', {
-            'subscription': subscription
-        })
-
-        newsletter_email = getattr(settings, 'NEWSLETTER_EMAIL', 'news@novustelltravel.com')
-
-        # Send admin email with timeout protection
-        logger.info(f"Sending admin notification for subscription: {subscription.email}")
-        send_mail(
-            subject=admin_subject,
-            message='',  # Plain text version
-            html_message=admin_message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[newsletter_email],
-            fail_silently=False,
-        )
-        logger.info("Admin notification sent successfully")
-
-        # Email to subscriber
-        subscriber_subject = 'Welcome to Novustell Travel Newsletter!'
-        subscriber_message = render_to_string('users/emails/newsletter_confirmation.html', {
-            'subscription': subscription
-        })
-
-        # Send subscriber email with timeout protection
-        logger.info(f"Sending confirmation email to subscriber: {subscription.email}")
-        send_mail(
-            subject=subscriber_subject,
-            message='',  # Plain text version
-            html_message=subscriber_message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[subscription.email],
-            fail_silently=False,
-        )
-        logger.info("Subscriber confirmation sent successfully")
-
-        # Update email tracking
-        subscription.admin_notification_sent = True
-        subscription.confirmation_email_sent = True
-        subscription.save()
-        logger.info(f"Email tracking updated for subscription: {subscription.email}")
-
-    except Exception as e:
-        logger.error(f"Failed to send newsletter subscription emails for {subscription.email}: {str(e)}")
-        # Re-raise the exception to be handled by the calling view
-        raise
+# Newsletter subscription emails are now handled in users/tasks.py using Mailtrap HTTP API
 
 
 def careers(request):
@@ -498,10 +274,15 @@ def careers(request):
         if form.is_valid():
             job_application = form.save()
 
-            # Send email notifications
+            # Send email notifications using Mailtrap HTTP API
             try:
-                send_job_application_emails(job_application)
-                messages.success(request, 'Your job application has been submitted successfully! We will review your application and get back to you soon.')
+                from .tasks import send_job_application_emails
+                result = send_job_application_emails(job_application)
+
+                if result.get('success'):
+                    messages.success(request, 'Your job application has been submitted successfully! We will review your application and get back to you soon.')
+                else:
+                    messages.warning(request, 'Your application was submitted, but there was an issue sending email notifications. We will still review your application.')
             except Exception as e:
                 messages.warning(request, 'Your application was submitted, but there was an issue sending email notifications. We will still review your application.')
                 print(f"Email error: {e}")
@@ -613,16 +394,27 @@ def newsletter_subscribe(request):
                 destination_updates=True
             )
 
-            # Send email notifications with timeout protection
+            # Send email notifications using Mailtrap HTTP API
             try:
-                send_newsletter_subscription_emails(subscription)
-                if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-                    return JsonResponse({
-                        'success': True,
-                        'message': 'Thank you for subscribing! Please check your email to confirm your subscription.'
-                    })
+                from .tasks import send_newsletter_subscription_emails
+                result = send_newsletter_subscription_emails(subscription)
+
+                if result.get('success'):
+                    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+                        return JsonResponse({
+                            'success': True,
+                            'message': 'Thank you for subscribing! Please check your email to confirm your subscription.'
+                        })
+                    else:
+                        messages.success(request, 'Thank you for subscribing! Please check your email to confirm your subscription.')
                 else:
-                    messages.success(request, 'Thank you for subscribing! Please check your email to confirm your subscription.')
+                    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+                        return JsonResponse({
+                            'success': True,
+                            'message': 'You have been subscribed, but there was an issue sending the confirmation email.'
+                        })
+                    else:
+                        messages.warning(request, 'You have been subscribed, but there was an issue sending the confirmation email.')
             except Exception as e:
                 import logging
                 logger = logging.getLogger(__name__)

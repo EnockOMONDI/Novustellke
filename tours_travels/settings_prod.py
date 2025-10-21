@@ -19,15 +19,14 @@ DATABASES = {
     )
 }
 
-# Production email backend - SMTP
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# Production email backend - Mailtrap HTTP API
+# NOTE: Using Mailtrap HTTP API instead of SMTP for better reliability
+MAILTRAP_API_TOKEN = os.getenv('MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
 
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # No fallback default
-DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <novustellke@gmail.com>')
+# Email addresses configuration
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'api')  # Keep for compatibility
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD','d766975d57a7ef1acf2f750a36247a37')  # Keep for compatibility
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
 JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')
 NEWSLETTER_EMAIL = os.getenv('NEWSLETTER_EMAIL', 'news@novustelltravel.com')
@@ -247,6 +246,6 @@ if SENTRY_DSN:
 
 print("🚀 Production settings loaded")
 print(f"🌐 Site URL: {SITE_URL}")
-print(f"📧 Email host: {EMAIL_HOST}")
+print(f"📧 Mailtrap API Token: {MAILTRAP_API_TOKEN[:8]}...")
 print(f"🔒 SSL redirect: {SECURE_SSL_REDIRECT}")
 print(f"📊 Debug mode: {DEBUG}")

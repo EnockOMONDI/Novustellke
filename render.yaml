@@ -67,14 +67,16 @@ services:
       - key: RENDER_EXTERNAL_HOSTNAME
         generateValue: true
 
-      # Email Configuration
+      # Email Configuration - Mailtrap HTTP API
+      - key: MAILTRAP_API_TOKEN
+        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
       - key: EMAIL_HOST_USER
-        value: novustellke@gmail.com
+        value: api
       - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: eoie dhrq cioh gxhz
+        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
 
       - key: DEFAULT_FROM_EMAIL
-        value: Novustell Travel <novustellke@gmail.com>
+        value: Novustell Travel <info@novustelltravel.com>
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
       - key: JOBS_EMAIL
@@ -190,10 +192,12 @@ services:
           type: web
           name: novustell-travel
           envVarKey: SECRET_KEY
+      - key: MAILTRAP_API_TOKEN
+        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
       - key: EMAIL_HOST_USER
-        value: novustellke@gmail.com
+        value: api
       - key: EMAIL_HOST_PASSWORD
-        sync: false
+        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
 
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
@@ -231,7 +235,7 @@ databases:
 # For production media files, consider AWS S3 integration
 
 # Environment-specific notes:
-# 1. Set EMAIL_HOST_PASSWORD manually in Render dashboard: eoie dhrq cioh gxhz
+# 1. Set MAILTRAP_API_TOKEN manually in Render dashboard: 8bb7b380023874b3e33598387811489
 # 2. Set UPLOADCARE_PUBLIC_KEY and UPLOADCARE_SECRET_KEY manually
 # 3. Optional: Set SENTRY_DSN for error monitoring
 # 4. Optional: Set GOOGLE_ANALYTICS_ID for analytics

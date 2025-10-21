@@ -249,17 +249,14 @@ TEMPLATE_DIRS = (
 )
 
 
-# Email settings for Novustell Travel
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_TIMEOUT = 30  # 30 seconds timeout to prevent worker timeouts
+# Email settings for Novustell Travel - Mailtrap HTTP API
+# NOTE: Using Mailtrap HTTP API instead of SMTP for better reliability
+MAILTRAP_API_TOKEN = os.getenv('MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
 
-# Novustell Travel email credentials
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'novustellke@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'eoie dhrq cioh gxhz')  # Updated app password
-DEFAULT_FROM_EMAIL = 'NOVUSTELL TRAVEL'
+# Email addresses configuration
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'api')  # Keep for compatibility
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'd766975d57a7ef1acf2f750a36247a37')  # Keep for compatibility
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
 
 # Admin email for notifications
 ADMIN_EMAIL = 'info@novustelltravel.com'
