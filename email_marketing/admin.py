@@ -136,7 +136,7 @@ class EmailCampaignAdmin(admin.ModelAdmin):
     list_display = ['name', 'status', 'email_template', 'total_recipients', 'emails_sent', 'emails_opened', 'scheduled_at', 'created_by']
     list_filter = ['status', 'created_at', 'scheduled_at', 'email_template__template_type']
     search_fields = ['name', 'description', 'email_template__name']
-    readonly_fields = ['created_at', 'updated_at', 'sent_at', 'total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked']
+    readonly_fields = ['created_at', 'updated_at', 'sent_at', 'total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked', 'celery_task_id', 'task_status', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at']
     filter_horizontal = ['recipient_lists']
     inlines = [EmailLogInline]
 
@@ -157,6 +157,10 @@ class EmailCampaignAdmin(admin.ModelAdmin):
             'fields': ('total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked'),
             'classes': ('collapse',)
         }),
+        ('Task Management', {
+            'fields': ('celery_task_id', 'task_status', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at'),
+            'classes': ('collapse',)
+        }),
         ('Metadata', {
             'fields': ('created_by', 'created_at', 'updated_at'),
             'classes': ('collapse',)
@@ -171,13 +175,52 @@ class EmailCampaignAdmin(admin.ModelAdmin):
     actions = ['send_campaign', 'pause_campaign', 'cancel_campaign']
 
     def send_campaign(self, request, queryset):
+        """Send selected campaigns using Celery background tasks"""
+        from .tasks import send_campaign_emails_task
+
+        sent_count = 0
+
         for campaign in queryset:
             if campaign.status == 'draft':
-                campaign.status = 'scheduled'
-                campaign.scheduled_at = timezone.now()
-                campaign.save()
-        self.message_user(request, f"{queryset.count()} campaigns scheduled for sending.")
-    send_campaign.short_description = "Schedule selected campaigns for sending"
+                try:
+                    # Start background task
+                    task = send_campaign_emails_task.delay(campaign.id)
+
+                    # Update campaign with task info
+                    campaign.status = 'scheduled'
+                    campaign.celery_task_id = task.id
+                    campaign.task_status = 'queued'
+                    campaign.scheduled_at = timezone.now()
+                    campaign.save()
+
+                    sent_count += 1
+
+                    self.message_user(
+                        request,
+                        f"Campaign '{campaign.name}' queued for sending. Task ID: {task.id}",
+                        level=messages.SUCCESS
+                    )
+
+                except Exception as e:
+                    self.message_user(
+                        request,
+                        f"Failed to queue campaign '{campaign.name}': {e}",
+                        level=messages.ERROR
+                    )
+            else:
+                self.message_user(
+                    request,
+                    f"Campaign '{campaign.name}' is not in draft status (current: {campaign.get_status_display()})",
+                    level=messages.WARNING
+                )
+
+        if sent_count > 0:
+            self.message_user(
+                request,
+                f"Successfully queued {sent_count} campaign(s) for background sending",
+                level=messages.SUCCESS
+            )
+    send_campaign.short_description = "Send selected campaigns (background processing)"
 
     def pause_campaign(self, request, queryset):
         queryset.update(status='paused')

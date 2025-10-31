@@ -166,6 +166,14 @@ class EmailCampaign(models.Model):
     track_opens = models.BooleanField(default=True)
     track_clicks = models.BooleanField(default=True)
 
+    # Task management fields for Celery background processing
+    celery_task_id = models.CharField(max_length=255, blank=True, null=True, help_text="Celery task ID for background processing")
+    task_status = models.CharField(max_length=20, default='pending', help_text="Status of the background task")
+    emails_sent_count = models.IntegerField(default=0, help_text="Number of emails successfully sent")
+    emails_failed_count = models.IntegerField(default=0, help_text="Number of emails that failed to send")
+    started_at = models.DateTimeField(null=True, blank=True, help_text="When the campaign started sending")
+    completed_at = models.DateTimeField(null=True, blank=True, help_text="When the campaign finished sending")
+
     class Meta:
         ordering = ['-created_at']
         verbose_name = "Email Campaign"

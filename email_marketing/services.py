@@ -5,12 +5,16 @@ Handles email sending, template rendering, and campaign management
 
 import uuid
 import logging
-from django.core.mail import EmailMultiAlternatives
 from django.template import Template, Context
 from django.utils import timezone
 from django.conf import settings
 from django.urls import reverse
+from django_ratelimit.decorators import ratelimit
+from django.core.cache import cache
 from .models import EmailCampaign, EmailLog, Recipient
+
+# Import Mailtrap HTTP API functions
+from users.tasks import send_email_via_mailtrap
 
 logger = logging.getLogger(__name__)
 
@@ -116,26 +120,30 @@ class EmailMarketingService:
             
             # Create email message
             subject = self._render_email_template(campaign.email_template.subject, context_data)
-            
-            email = EmailMultiAlternatives(
+
+            # Check rate limiting before sending (skip for testing)
+            # self._check_rate_limit(campaign.created_by.id if campaign.created_by else 1)
+
+            # Send email via Mailtrap HTTP API
+            success = send_email_via_mailtrap(
                 subject=subject,
-                body=text_content or html_content,
+                html_message=html_content,
                 from_email=self.from_email,
-                to=[recipient.email]
+                recipient_list=[recipient.email]
             )
-            
-            if html_content:
-                email.attach_alternative(html_content, "text/html")
-            
-            # Send email
-            email.send()
+
+            if not success:
+                raise Exception("Mailtrap HTTP API returned failure")
             
             # Update email log
             email_log.status = 'sent'
             email_log.sent_at = timezone.now()
             email_log.save()
-            
-            logger.info(f"Email sent successfully to {recipient.email} for campaign {campaign.name}")
+
+            # Update rate limiting counters (skip for testing)
+            # self._update_rate_limit_counters(campaign.created_by.id if campaign.created_by else 1)
+
+            logger.info(f"Email sent successfully to {recipient.email} for campaign {campaign.name} via Mailtrap HTTP API")
             return True
             
         except Exception as e:
@@ -192,7 +200,7 @@ class EmailMarketingService:
         """
         if not template_content:
             return ""
-        
+
         try:
             template = Template(template_content)
             context = Context(context_data)
@@ -200,6 +208,52 @@ class EmailMarketingService:
         except Exception as e:
             logger.error(f"Error rendering email template: {e}")
             return template_content  # Return original content if rendering fails
+
+    def _check_rate_limit(self, user_id):
+        """
+        Check if user has exceeded rate limits
+
+        Args:
+            user_id (int): ID of the user sending emails
+
+        Raises:
+            Exception: If rate limit is exceeded
+        """
+        minute_key = f"email_rate_minute_{user_id}"
+        hour_key = f"email_rate_hour_{user_id}"
+
+        minute_count = cache.get(minute_key, 0)
+        hour_count = cache.get(hour_key, 0)
+
+        if minute_count >= settings.EMAIL_RATE_LIMIT_PER_MINUTE:
+            raise Exception(f"Rate limit exceeded: {minute_count} emails sent in the last minute (limit: {settings.EMAIL_RATE_LIMIT_PER_MINUTE})")
+
+        if hour_count >= settings.EMAIL_RATE_LIMIT_PER_HOUR:
+            raise Exception(f"Rate limit exceeded: {hour_count} emails sent in the last hour (limit: {settings.EMAIL_RATE_LIMIT_PER_HOUR})")
+
+    def _update_rate_limit_counters(self, user_id):
+        """
+        Update rate limiting counters after successful email send
+
+        Args:
+            user_id (int): ID of the user who sent the email
+        """
+        minute_key = f"email_rate_minute_{user_id}"
+        hour_key = f"email_rate_hour_{user_id}"
+
+        # Increment minute counter (expires after 60 seconds)
+        try:
+            cache.add(minute_key, 0, 60)
+            cache.incr(minute_key)
+        except ValueError:
+            cache.set(minute_key, 1, 60)
+
+        # Increment hour counter (expires after 3600 seconds)
+        try:
+            cache.add(hour_key, 0, 3600)
+            cache.incr(hour_key)
+        except ValueError:
+            cache.set(hour_key, 1, 3600)
     
     def create_sample_recipients(self):
         """

@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'status',
     'email_marketing',  # Email marketing campaigns
     'taggit',
+    'django_ratelimit',  # Rate limiting for email sending
     'crispy_forms',
     'pyuploadcare.dj',
 ]
@@ -266,6 +267,30 @@ JOBS_EMAIL = 'careers@novustelltravel.com'
 
 # Newsletter email for subscriptions
 NEWSLETTER_EMAIL = 'news@novustelltravel.com'
+
+# Celery Configuration for Background Tasks
+CELERY_BROKER_URL = config('CELERY_BROKER_URL', default='redis://localhost:6379/0')
+CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND', default='redis://localhost:6379/0')
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
+CELERY_ENABLE_UTC = True
+
+# Cache configuration - Use Redis for shared cache (required for django-ratelimit)
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': config('CELERY_BROKER_URL', default='redis://localhost:6379/0'),
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    }
+}
+
+# Email Rate Limiting Configuration
+EMAIL_RATE_LIMIT_PER_MINUTE = config('EMAIL_RATE_LIMIT_PER_MINUTE', default=60, cast=int)
+EMAIL_RATE_LIMIT_PER_HOUR = config('EMAIL_RATE_LIMIT_PER_HOUR', default=1000, cast=int)
 
 # Cart session configuration
 CART_SESSION_ID = 'cart'

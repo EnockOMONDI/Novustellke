@@ -69,11 +69,21 @@ services:
 
       # Email Configuration - Mailtrap HTTP API
       - key: MAILTRAP_API_TOKEN
-        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
+        value: d766975d57a7ef1acf2f750a36247a37
       - key: EMAIL_HOST_USER
         value: api
       - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
+        value: d766975d57a7ef1acf2f750a36247a37
+
+      # Celery Configuration for Email Marketing
+      - key: CELERY_BROKER_URL
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      - key: CELERY_RESULT_BACKEND
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      - key: EMAIL_RATE_LIMIT_PER_MINUTE
+        value: 60
+      - key: EMAIL_RATE_LIMIT_PER_HOUR
+        value: 1000
 
       - key: DEFAULT_FROM_EMAIL
         value: Novustell Travel <info@novustelltravel.com>
@@ -165,21 +175,21 @@ services:
       mountPath: /opt/render/project/src/media
       sizeGB: 1
 
-  # Background worker for email and tasks (optional)
+  # Celery Worker for Email Marketing Background Tasks
   - type: worker
-    name: novustell-worker
+    name: novustell-celery-worker
     env: python
     region: oregon
     plan: starter
     branch: novustell4
     buildCommand: |
-      echo "🔧 Building background worker..."
+      echo "🔧 Building Celery worker for email marketing..."
       pip install --upgrade pip
       pip install -r requirements.txt
-      echo "✅ Worker build completed"
+      echo "✅ Celery worker build completed"
     startCommand: |
-      echo "⚡ Starting background worker..."
-      python manage.py process_tasks --settings=tours_travels.settings_prod
+      echo "⚡ Starting Celery worker for email campaigns..."
+      celery -A tours_travels worker --loglevel=info --concurrency=2 --queues=email_marketing,celery
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: tours_travels.settings_prod
@@ -190,25 +200,59 @@ services:
       - key: SECRET_KEY
         fromService:
           type: web
-          name: novustell-travel
+          name: novustellke
           envVarKey: SECRET_KEY
       - key: MAILTRAP_API_TOKEN
-        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
-      - key: EMAIL_HOST_USER
-        value: api
-      - key: EMAIL_HOST_PASSWORD
-        sync: false  # Set manually: 8bb7b380023874b3e33598387811489
-
+        value: d766975d57a7ef1acf2f750a36247a37
+      - key: CELERY_BROKER_URL
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      - key: CELERY_RESULT_BACKEND
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      - key: EMAIL_RATE_LIMIT_PER_MINUTE
+        value: 60
+      - key: EMAIL_RATE_LIMIT_PER_HOUR
+        value: 1000
       - key: ADMIN_EMAIL
         value: info@novustelltravel.com
       - key: JOBS_EMAIL
         value: careers@novustelltravel.com
       - key: NEWSLETTER_EMAIL
         value: news@novustelltravel.com
-      - key: UPLOADCARE_PUBLIC_KEY
-        sync: false
-      - key: UPLOADCARE_SECRET_KEY
-        sync: false
+      - key: TIME_ZONE
+        value: Africa/Nairobi
+    autoDeploy: true
+
+  # Celery Beat for Scheduled Email Campaigns
+  - type: worker
+    name: novustell-celery-beat
+    env: python
+    region: oregon
+    plan: starter
+    branch: novustell4
+    buildCommand: |
+      echo "🔧 Building Celery beat scheduler..."
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      echo "✅ Celery beat build completed"
+    startCommand: |
+      echo "⏰ Starting Celery beat for scheduled campaigns..."
+      celery -A tours_travels beat --loglevel=info
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: tours_travels.settings_prod
+      - key: DATABASE_URL
+        fromDatabase:
+          name: novustell-db
+          property: connectionString
+      - key: SECRET_KEY
+        fromService:
+          type: web
+          name: novustellke
+          envVarKey: SECRET_KEY
+      - key: CELERY_BROKER_URL
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      - key: CELERY_RESULT_BACKEND
+        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
       - key: TIME_ZONE
         value: Africa/Nairobi
     autoDeploy: true
