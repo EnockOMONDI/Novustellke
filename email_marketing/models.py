@@ -102,7 +102,8 @@ class Recipient(models.Model):
     # Additional data for personalization
     custom_data = models.JSONField(
         default=dict,
-        help_text="Additional data for email personalization (JSON format)"
+        blank=True,
+        help_text="Additional data for email personalization (JSON format). Leave empty if not needed."
     )
 
     class Meta:

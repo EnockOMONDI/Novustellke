@@ -2,7 +2,39 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.urls import reverse
 from django.utils import timezone
+from django import forms
+from django.contrib import messages
 from .models import EmailTemplate, RecipientList, Recipient, EmailCampaign, EmailLog
+
+
+class RecipientAdminForm(forms.ModelForm):
+    """Custom form for Recipient admin with improved JSON field handling"""
+
+    custom_data = forms.JSONField(
+        required=False,
+        initial=dict,
+        help_text="""
+        Optional JSON data for email personalization. Examples:<br>
+        <code>{"school_type": "public", "student_count": 500}</code><br>
+        <code>{"interests": ["model_un", "debate"], "budget_range": "medium"}</code><br>
+        Leave empty if not needed.
+        """,
+        widget=forms.Textarea(attrs={
+            'rows': 4,
+            'cols': 60,
+            'placeholder': '{\n  "key": "value",\n  "interests": ["item1", "item2"]\n}'
+        })
+    )
+
+    class Meta:
+        model = Recipient
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Make custom_data field truly optional
+        if 'custom_data' in self.fields:
+            self.fields['custom_data'].required = False
 
 
 @admin.register(EmailTemplate)
@@ -72,6 +104,7 @@ class RecipientListAdmin(admin.ModelAdmin):
 
 @admin.register(Recipient)
 class RecipientAdmin(admin.ModelAdmin):
+    form = RecipientAdminForm
     list_display = ['email', 'full_name', 'organization', 'position', 'subscribed', 'is_active', 'created_at']
     list_filter = ['subscribed', 'is_active', 'created_at', 'recipient_lists']
     search_fields = ['email', 'first_name', 'last_name', 'organization', 'position']
@@ -83,7 +116,12 @@ class RecipientAdmin(admin.ModelAdmin):
             'fields': ('email', 'first_name', 'last_name', 'organization', 'position')
         }),
         ('Additional Details', {
-            'fields': ('phone', 'location', 'custom_data')
+            'fields': ('phone', 'location')
+        }),
+        ('Personalization Data (Optional)', {
+            'fields': ('custom_data',),
+            'classes': ('collapse',),
+            'description': 'Optional JSON data for email personalization. Can be left empty for basic recipients.'
         }),
         ('List Membership', {
             'fields': ('recipient_lists',)
