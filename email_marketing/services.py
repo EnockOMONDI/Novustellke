@@ -58,11 +58,11 @@ class MailtrapEmailMarketingService:
                 campaign.save()
                 return False
 
-            # Prepare email data for bulk sending
-            email_data = self._prepare_bulk_email_data(campaign, recipients)
+            # Prepare personalized email data for each recipient
+            emails_data = self._prepare_bulk_email_data(campaign, recipients)
 
-            # Send via Mailtrap Email Marketing API
-            success = self._send_bulk_email(email_data)
+            # Send personalized emails via Mailtrap Email Marketing API
+            success = self._send_bulk_email(emails_data)
 
             if success:
                 # Update campaign status
@@ -111,7 +111,12 @@ class MailtrapEmailMarketingService:
         return recipients
 
     def _prepare_bulk_email_data(self, campaign, recipients):
-        """Prepare email data for Mailtrap bulk sending"""
+        """
+        Prepare email data for Mailtrap bulk sending with proper personalization.
+
+        Since Mailtrap Bulk Stream API doesn't support per-recipient template variables,
+        we'll send individual personalized emails to each recipient.
+        """
         # Parse from email
         if '<' in self.from_email and '>' in self.from_email:
             from_name = self.from_email.split('<')[0].strip()
@@ -120,69 +125,82 @@ class MailtrapEmailMarketingService:
             from_name = "Novustell Travel"
             from_email_addr = self.from_email.strip()
 
-        # For bulk emails, we'll send the same content to all recipients
-        # Individual personalization can be added later using Mailtrap's template variables
+        # Prepare individual emails for each recipient with personalized content
+        emails_data = []
 
-        # Get the first recipient to render the template (or use default context)
-        if recipients:
-            context_data = self._prepare_template_context(recipients[0])
-        else:
-            context_data = {
-                'recipient_name': 'Valued Customer',
-                'company_name': 'Novustell Travel',
-                'unsubscribe_url': 'https://novustelltravel.com/unsubscribe/',
-                'website_url': 'https://novustelltravel.com',
+        for recipient in recipients:
+            # Prepare personalized context for this recipient
+            context_data = self._prepare_template_context(recipient)
+
+            # Render the email template with recipient-specific context
+            rendered_html = self._render_email_template(campaign.email_template.html_content, context_data)
+            rendered_subject = self._render_email_template(campaign.email_template.subject, context_data)
+
+            # Create individual email data for this recipient
+            email_data = {
+                "from": {
+                    "email": from_email_addr,
+                    "name": from_name
+                },
+                "to": [{
+                    "email": recipient.email,
+                    "name": recipient.full_name or recipient.email.split('@')[0]
+                }],
+                "subject": rendered_subject,
+                "html": rendered_html,
+                "category": f"campaign_{campaign.id}",
+                "custom_variables": {
+                    "recipient_id": str(recipient.id),
+                    "campaign_id": str(campaign.id),
+                    "recipient_name": recipient.full_name or recipient.email
+                }
             }
 
-        # Render the email template with context
-        rendered_html = self._render_email_template(campaign.email_template.html_content, context_data)
-        rendered_subject = self._render_email_template(campaign.email_template.subject, context_data)
+            emails_data.append(email_data)
 
-        # Prepare recipients list (simple format for bulk sending)
-        recipients_data = []
-        for recipient in recipients:
-            recipients_data.append({
-                "email": recipient.email,
-                "name": recipient.full_name or recipient.email.split('@')[0]
-            })
+        return emails_data
 
-        # Prepare the bulk email payload (correct format for Mailtrap Bulk Stream API)
-        email_data = {
-            "from": {
-                "email": from_email_addr,
-                "name": from_name
-            },
-            "to": recipients_data,
-            "subject": rendered_subject,
-            "html": rendered_html,
-            "category": f"campaign_{campaign.id}"
-        }
+    def _send_bulk_email(self, emails_data):
+        """
+        Send personalized emails via Mailtrap Email Marketing API.
 
-        return email_data
+        Since we need per-recipient personalization, we send individual emails
+        rather than using bulk sending with the same content.
+        """
+        successful_sends = 0
+        total_emails = len(emails_data)
 
-    def _send_bulk_email(self, email_data):
-        """Send bulk email via Mailtrap Email Marketing API"""
-        try:
-            response = requests.post(
-                f"{self.base_url}/api/send",
-                headers=self.headers,
-                json=email_data,
-                timeout=30
-            )
+        logger.info(f"Sending {total_emails} personalized emails via Mailtrap Email Marketing API")
 
-            if response.status_code == 200:
-                logger.info("Bulk email sent successfully via Mailtrap Email Marketing API")
-                return True
-            else:
-                logger.error(f"Mailtrap API error: {response.status_code} - {response.text}")
-                return False
+        for i, email_data in enumerate(emails_data, 1):
+            try:
+                response = requests.post(
+                    f"{self.base_url}/api/send",
+                    headers=self.headers,
+                    json=email_data,
+                    timeout=30
+                )
 
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Request error sending bulk email: {e}")
-            return False
-        except Exception as e:
-            logger.error(f"Unexpected error sending bulk email: {e}")
-            return False
+                if response.status_code == 200:
+                    successful_sends += 1
+                    recipient_email = email_data['to'][0]['email']
+                    recipient_name = email_data['to'][0]['name']
+                    logger.info(f"Email {i}/{total_emails} sent successfully to {recipient_name} ({recipient_email})")
+                else:
+                    recipient_email = email_data['to'][0]['email']
+                    logger.error(f"Failed to send email {i}/{total_emails} to {recipient_email}: {response.status_code} - {response.text}")
+
+            except requests.exceptions.RequestException as e:
+                recipient_email = email_data['to'][0]['email']
+                logger.error(f"Request error sending email {i}/{total_emails} to {recipient_email}: {e}")
+            except Exception as e:
+                recipient_email = email_data['to'][0]['email'] if email_data.get('to') else 'unknown'
+                logger.error(f"Unexpected error sending email {i}/{total_emails} to {recipient_email}: {e}")
+
+        logger.info(f"Email sending completed: {successful_sends}/{total_emails} emails sent successfully")
+
+        # Return True if at least one email was sent successfully
+        return successful_sends > 0
 
     def _create_email_logs(self, campaign, recipients):
         """Create email logs for tracking purposes"""
