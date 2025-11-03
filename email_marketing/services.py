@@ -144,7 +144,7 @@ class MailtrapEmailMarketingService:
                 },
                 "to": [{
                     "email": recipient.email,
-                    "name": recipient.full_name or recipient.email.split('@')[0]
+                    "name": recipient.first_name or recipient.email.split('@')[0]
                 }],
                 "subject": rendered_subject,
                 "html": rendered_html,
@@ -152,7 +152,7 @@ class MailtrapEmailMarketingService:
                 "custom_variables": {
                     "recipient_id": str(recipient.id),
                     "campaign_id": str(campaign.id),
-                    "recipient_name": recipient.full_name or recipient.email
+                    "recipient_name": recipient.first_name or recipient.email.split('@')[0]
                 }
             }
 
@@ -224,8 +224,8 @@ class MailtrapEmailMarketingService:
         base_url = getattr(settings, 'BASE_URL', 'https://www.novustelltravel.com')
 
         context_data = {
-            # Recipient information
-            'recipient_name': recipient.full_name or recipient.email,
+            # Recipient information - using first name only for personalization
+            'recipient_name': recipient.first_name or recipient.email.split('@')[0],
             'first_name': recipient.first_name,
             'last_name': recipient.last_name,
             'email': recipient.email,
