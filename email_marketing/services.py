@@ -143,15 +143,20 @@ class MailtrapEmailMarketingService:
 
     def _prepare_newsletter_data(self, campaign, recipients_data):
         """
-        Prepare newsletter API payload for all recipients in a single request
+        Prepare bulk email data for all recipients in a single request
+
+        Since Mailtrap Bulk Stream API doesn't support template variables,
+        we need to send individual personalized emails to each recipient.
 
         Args:
             campaign: EmailCampaign instance
             recipients_data: List of tuples [(email, first_name), ...]
 
         Returns:
-            Dict: Newsletter API payload
+            Dict: Bulk email API payload with all recipients
         """
+        from django.template import Context, Template
+
         # Parse from email
         if '<' in self.from_email and '>' in self.from_email:
             from_name = self.from_email.split('<')[0].strip()
@@ -160,34 +165,45 @@ class MailtrapEmailMarketingService:
             from_name = "Novustell Travel"
             from_email_addr = self.from_email.strip()
 
-        # Prepare recipients list for Newsletter API
+        # Prepare recipients list with personalized content
         to_list = []
-        for email, first_name in recipients_data:
-            to_list.append({
-                "email": email,
-                "name": first_name
-            })
 
-        # Prepare template context for Newsletter API (using template variables)
+        # Get base template context
         base_url = getattr(settings, 'BASE_URL', 'https://www.novustelltravel.com')
 
-        # Render subject and HTML with template variables (Mailtrap will substitute per recipient)
-        subject_template = campaign.email_template.subject
-        html_template = campaign.email_template.html_content
+        # Create Django templates for subject and HTML
+        subject_template = Template(campaign.email_template.subject)
+        html_template = Template(campaign.email_template.html_content)
 
-        # Replace Django template syntax with Mailtrap template variables
-        subject_with_vars = subject_template.replace('{{ recipient_name }}', '{{recipient_name}}')
-        html_with_vars = html_template.replace('{{ recipient_name }}', '{{recipient_name}}')
+        # Render personalized content for each recipient
+        for email, first_name in recipients_data:
+            # Create context for this recipient
+            context = Context({
+                'recipient_name': first_name,
+                'organization': '',  # We don't have organization data in recipients_data
+                'tracking_pixel_url': '',  # Add tracking pixel URL if needed
+                'unsubscribe_url': f'{base_url}/email-marketing/unsubscribe/?email={email}',
+                'base_url': base_url,
+            })
 
-        # Newsletter API payload
+            # Render personalized subject and HTML for this recipient
+            personalized_subject = subject_template.render(context)
+            personalized_html = html_template.render(context)
+
+            to_list.append({
+                "email": email,
+                "name": first_name,
+                "subject": personalized_subject,
+                "html": personalized_html
+            })
+
+        # Bulk email API payload (we'll send individual emails in the _send_newsletter method)
         newsletter_data = {
             "from": {
                 "email": from_email_addr,
                 "name": from_name
             },
-            "to": to_list,
-            "subject": subject_with_vars,
-            "html": html_with_vars,
+            "to": to_list,  # Contains personalized content for each recipient
             "category": f"campaign_{campaign.id}",
             "custom_variables": {
                 "campaign_id": str(campaign.id),
@@ -199,39 +215,63 @@ class MailtrapEmailMarketingService:
 
     def _send_newsletter(self, newsletter_data):
         """
-        Send newsletter via Mailtrap Bulk Stream API (single request for all recipients)
+        Send personalized emails to all recipients via Mailtrap Bulk Stream API
 
-        Uses the standard Bulk Stream API but with all recipients in a single request
-        to minimize memory usage and API calls.
+        Since Mailtrap Bulk Stream API doesn't support template variables,
+        we send individual personalized emails to each recipient.
 
         Args:
-            newsletter_data: Newsletter API payload
+            newsletter_data: Contains personalized content for each recipient
 
         Returns:
             bool: True if successful, False otherwise
         """
         try:
-            logger.info(f"Sending newsletter to {len(newsletter_data['to'])} recipients via Bulk Stream API")
+            recipients = newsletter_data['to']
+            logger.info(f"Sending personalized emails to {len(recipients)} recipients via Bulk Stream API")
 
-            response = requests.post(
-                f"{self.base_url}/api/send",  # Use standard Bulk Stream API endpoint
-                headers=self.headers,
-                json=newsletter_data,
-                timeout=60  # Longer timeout for large recipient lists
-            )
+            sent_count = 0
+            failed_count = 0
 
-            if response.status_code == 200:
-                logger.info(f"Newsletter sent successfully to {len(newsletter_data['to'])} recipients")
-                return True
-            else:
-                logger.error(f"Failed to send newsletter: {response.status_code} - {response.text}")
-                return False
+            for recipient in recipients:
+                try:
+                    # Prepare individual email payload
+                    email_payload = {
+                        "from": newsletter_data["from"],
+                        "to": [{"email": recipient["email"], "name": recipient["name"]}],
+                        "subject": recipient["subject"],
+                        "html": recipient["html"],
+                        "category": newsletter_data["category"],
+                        "custom_variables": newsletter_data["custom_variables"]
+                    }
 
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Request error sending newsletter: {e}")
-            return False
+                    # Send individual email
+                    response = requests.post(
+                        f"{self.base_url}/api/send",
+                        headers=self.headers,
+                        json=email_payload,
+                        timeout=30
+                    )
+
+                    if response.status_code == 200:
+                        sent_count += 1
+                        logger.debug(f"Email sent to {recipient['name']} ({recipient['email']})")
+                    else:
+                        failed_count += 1
+                        logger.error(f"Failed to send email to {recipient['email']}: {response.status_code}")
+
+                except Exception as e:
+                    failed_count += 1
+                    logger.error(f"Error sending email to {recipient['email']}: {e}")
+
+            success_rate = sent_count / len(recipients) if recipients else 0
+            logger.info(f"Campaign completed: {sent_count} sent, {failed_count} failed (success rate: {success_rate:.1%})")
+
+            # Consider successful if at least 80% of emails were sent
+            return success_rate >= 0.8
+
         except Exception as e:
-            logger.error(f"Unexpected error sending newsletter: {e}")
+            logger.error(f"Unexpected error in _send_newsletter: {e}")
             return False
 
     def _prepare_bulk_email_data(self, campaign, recipients):
