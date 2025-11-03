@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add responsive behavior
     handleResponsiveNavigation();
+
+    // Enhance admin actions
+    enhanceAdminActions();
 });
 
 function initializeNovustellAdmin() {
@@ -208,20 +211,188 @@ function enhanceFormValidation() {
 function handleResponsiveNavigation() {
     const toggleBtn = document.querySelector('.navbar-toggler');
     const sidebar = document.querySelector('.unfold-sidebar');
-    
+
     if (toggleBtn && sidebar) {
         toggleBtn.addEventListener('click', function() {
             sidebar.classList.toggle('show');
         });
-        
+
         // Close sidebar when clicking outside on mobile
         document.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768 && 
-                !sidebar.contains(e.target) && 
+            if (window.innerWidth <= 768 &&
+                !sidebar.contains(e.target) &&
                 !toggleBtn.contains(e.target)) {
                 sidebar.classList.remove('show');
             }
         });
+    }
+}
+
+function enhanceAdminActions() {
+    // Only run on admin pages
+    if (!window.location.pathname.includes('/admin/')) {
+        return;
+    }
+
+    console.log('🔧 Enhancing admin actions...');
+
+    // Try multiple selectors to find the actions container
+    const actionsContainer = document.querySelector('.actions') ||
+                            document.querySelector('.changelist-actions') ||
+                            document.querySelector('.admin-actions') ||
+                            document.querySelector('[class*="action"]');
+
+    // Try multiple selectors for action select
+    const actionSelect = document.querySelector('select[name="action"]') ||
+                        document.querySelector('.actions select') ||
+                        document.querySelector('.changelist-actions select');
+
+    // Try multiple selectors for submit button
+    const submitButton = document.querySelector('button[name="index"]') ||
+                        document.querySelector('input[name="index"]') ||
+                        document.querySelector('.actions button[type="submit"]') ||
+                        document.querySelector('.actions input[type="submit"]') ||
+                        document.querySelector('.changelist-actions button[type="submit"]') ||
+                        document.querySelector('.changelist-actions input[type="submit"]');
+
+    const checkboxes = document.querySelectorAll('input[name="_selected_action"]');
+
+    console.log('🔍 Found elements:', {
+        actionsContainer: !!actionsContainer,
+        actionSelect: !!actionSelect,
+        submitButton: !!submitButton,
+        checkboxes: checkboxes.length
+    });
+
+    if (!actionsContainer || !actionSelect || !submitButton) {
+        console.warn('⚠️ Could not find all required admin action elements');
+
+        // Force create a visible button if one doesn't exist
+        if (actionSelect && !submitButton) {
+            const newButton = document.createElement('button');
+            newButton.type = 'submit';
+            newButton.name = 'index';
+            newButton.value = '0';
+            newButton.textContent = 'GO';
+            newButton.className = 'btn-submit novustell-go-button';
+
+            // Insert after the select element
+            actionSelect.parentNode.insertBefore(newButton, actionSelect.nextSibling);
+            console.log('✅ Created missing GO button');
+        }
+
+        return;
+    }
+
+    // Force the button to be visible
+    submitButton.style.display = 'inline-block';
+    submitButton.style.visibility = 'visible';
+    submitButton.style.opacity = '1';
+
+    // Add our custom class for styling
+    submitButton.classList.add('novustell-go-button');
+
+    console.log('✅ Admin actions enhancement applied');
+
+    // Function to update action button state
+    function updateActionButton() {
+        const selectedAction = actionSelect.value;
+        const selectedItems = Array.from(checkboxes).filter(cb => cb.checked).length;
+
+        console.log('🔄 Updating button state:', { selectedAction, selectedItems });
+
+        if (selectedAction && selectedAction !== '---------' && selectedItems > 0) {
+            submitButton.style.display = 'inline-block';
+            submitButton.textContent = `Execute Action (${selectedItems} selected)`;
+            if (actionsContainer) {
+                actionsContainer.classList.add('has-selection');
+            }
+
+            // Add action counter
+            let counter = actionsContainer ? actionsContainer.querySelector('.action-counter') : null;
+            if (!counter && actionsContainer) {
+                counter = document.createElement('span');
+                counter.className = 'action-counter';
+                submitButton.parentNode.insertBefore(counter, submitButton.nextSibling);
+            }
+            if (counter) {
+                counter.textContent = `${selectedItems} item${selectedItems !== 1 ? 's' : ''}`;
+            }
+        } else {
+            submitButton.style.display = 'inline-block'; // Always keep visible
+            submitButton.textContent = 'GO';
+            if (actionsContainer) {
+                actionsContainer.classList.remove('has-selection');
+            }
+
+            const counter = actionsContainer ? actionsContainer.querySelector('.action-counter') : null;
+            if (counter) {
+                counter.remove();
+            }
+        }
+
+        // Force visibility
+        submitButton.style.visibility = 'visible';
+        submitButton.style.opacity = '1';
+    }
+
+    // Listen for action selection changes
+    actionSelect.addEventListener('change', updateActionButton);
+
+    // Listen for checkbox changes
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateActionButton);
+    });
+
+    // Listen for "select all" checkbox
+    const selectAllCheckbox = document.querySelector('#action-toggle') ||
+                             document.querySelector('input[type="checkbox"][onclick*="toggle"]');
+    if (selectAllCheckbox) {
+        selectAllCheckbox.addEventListener('change', function() {
+            setTimeout(updateActionButton, 10); // Small delay to ensure checkboxes are updated
+        });
+    }
+
+    // Initial state
+    updateActionButton();
+
+    // Add confirmation for destructive actions
+    submitButton.addEventListener('click', function(e) {
+        const selectedAction = actionSelect.value;
+        const selectedItems = Array.from(checkboxes).filter(cb => cb.checked).length;
+
+        console.log('🖱️ Button clicked:', { selectedAction, selectedItems });
+
+        if (selectedItems === 0) {
+            e.preventDefault();
+            alert('Please select at least one item to perform this action.');
+            return;
+        }
+
+        // Add confirmation for potentially destructive actions
+        const destructiveActions = ['delete_selected', 'cancel_campaign', 'mark_unsubscribed'];
+        if (destructiveActions.some(action => selectedAction.includes(action))) {
+            const actionText = actionSelect.options[actionSelect.selectedIndex].text;
+            if (!confirm(`Are you sure you want to ${actionText.toLowerCase()} ${selectedItems} item${selectedItems !== 1 ? 's' : ''}?`)) {
+                e.preventDefault();
+                return;
+            }
+        }
+
+        // Add loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<span class="loading-spinner"></span> Processing...';
+
+        // Re-enable after a delay (in case of errors)
+        setTimeout(() => {
+            submitButton.disabled = false;
+            updateActionButton();
+        }, 5000);
+    });
+
+    // Add a visual indicator that the enhancement is active
+    if (actionsContainer) {
+        actionsContainer.setAttribute('data-novustell-enhanced', 'true');
     }
 }
 

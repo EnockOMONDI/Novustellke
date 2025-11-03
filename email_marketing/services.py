@@ -5,164 +5,206 @@ Handles email sending, template rendering, and campaign management
 
 import uuid
 import logging
+import requests
+import json
 from django.template import Template, Context
 from django.utils import timezone
 from django.conf import settings
 from django.urls import reverse
-from django_ratelimit.decorators import ratelimit
+# from django_ratelimit.decorators import ratelimit  # DEPRECATED - no longer needed with Email Marketing API
 from django.core.cache import cache
 from .models import EmailCampaign, EmailLog, Recipient
 
-# Import Mailtrap HTTP API functions
+# Import Mailtrap HTTP API functions for transactional emails
 from users.tasks import send_email_via_mailtrap
 
 logger = logging.getLogger(__name__)
 
 
-class EmailMarketingService:
-    """Service class for handling email marketing operations"""
-    
+class MailtrapEmailMarketingService:
+    """Service class for Mailtrap Email Marketing API (Bulk Stream)"""
+
     def __init__(self):
-        self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'info@novustelltravel.com')
-    
+        self.api_token = getattr(settings, 'MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
+        self.base_url = 'https://bulk.api.mailtrap.io'
+        self.headers = {
+            'Authorization': f'Bearer {self.api_token}',
+            'Content-Type': 'application/json'
+        }
+        self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
+
     def send_campaign(self, campaign_id):
         """
-        Send an email marketing campaign
+        Send an email marketing campaign using Mailtrap Email Marketing API
         """
         try:
             campaign = EmailCampaign.objects.get(id=campaign_id)
-            
+
             if campaign.status not in ['draft', 'scheduled']:
                 logger.warning(f"Campaign {campaign.name} is not in sendable status: {campaign.status}")
                 return False
-            
+
             # Update campaign status
             campaign.status = 'sending'
+            campaign.started_at = timezone.now()
             campaign.save()
-            
+
             # Get all unique recipients
             recipients = self._get_campaign_recipients(campaign)
-            
-            sent_count = 0
-            failed_count = 0
-            
-            for recipient in recipients:
-                try:
-                    success = self._send_email_to_recipient(campaign, recipient)
-                    if success:
-                        sent_count += 1
-                    else:
-                        failed_count += 1
-                except Exception as e:
-                    logger.error(f"Error sending email to {recipient.email}: {e}")
-                    failed_count += 1
-            
-            # Update campaign status
-            campaign.status = 'sent'
-            campaign.sent_at = timezone.now()
-            campaign.save()
-            
-            logger.info(f"Campaign {campaign.name} completed: {sent_count} sent, {failed_count} failed")
-            return True
-            
+
+            if not recipients:
+                logger.warning(f"No recipients found for campaign {campaign.name}")
+                campaign.status = 'cancelled'
+                campaign.save()
+                return False
+
+            # Prepare email data for bulk sending
+            email_data = self._prepare_bulk_email_data(campaign, recipients)
+
+            # Send via Mailtrap Email Marketing API
+            success = self._send_bulk_email(email_data)
+
+            if success:
+                # Update campaign status
+                campaign.status = 'sent'
+                campaign.sent_at = timezone.now()
+                campaign.completed_at = timezone.now()
+                campaign.emails_sent_count = len(recipients)
+                campaign.save()
+
+                # Create email logs for tracking
+                self._create_email_logs(campaign, recipients)
+
+                logger.info(f"Campaign {campaign.name} sent successfully to {len(recipients)} recipients")
+                return True
+            else:
+                campaign.status = 'failed'
+                campaign.completed_at = timezone.now()
+                campaign.save()
+                return False
+
         except EmailCampaign.DoesNotExist:
             logger.error(f"Campaign with ID {campaign_id} not found")
             return False
         except Exception as e:
             logger.error(f"Error sending campaign {campaign_id}: {e}")
+            try:
+                campaign = EmailCampaign.objects.get(id=campaign_id)
+                campaign.status = 'failed'
+                campaign.completed_at = timezone.now()
+                campaign.save()
+            except:
+                pass
             return False
-    
+
     def _get_campaign_recipients(self, campaign):
-        """
-        Get all unique recipients for a campaign
-        """
+        """Get all unique recipients for a campaign"""
         recipient_emails = set()
         recipients = []
-        
+
         for recipient_list in campaign.recipient_lists.all():
             for recipient in recipient_list.recipients.filter(is_active=True, subscribed=True):
                 if recipient.email not in recipient_emails:
                     recipient_emails.add(recipient.email)
                     recipients.append(recipient)
-        
+
         return recipients
-    
-    def _send_email_to_recipient(self, campaign, recipient):
-        """
-        Send email to a single recipient
-        """
+
+    def _prepare_bulk_email_data(self, campaign, recipients):
+        """Prepare email data for Mailtrap bulk sending"""
+        # Parse from email
+        if '<' in self.from_email and '>' in self.from_email:
+            from_name = self.from_email.split('<')[0].strip()
+            from_email_addr = self.from_email.split('<')[1].split('>')[0].strip()
+        else:
+            from_name = "Novustell Travel"
+            from_email_addr = self.from_email.strip()
+
+        # For bulk emails, we'll send the same content to all recipients
+        # Individual personalization can be added later using Mailtrap's template variables
+
+        # Get the first recipient to render the template (or use default context)
+        if recipients:
+            context_data = self._prepare_template_context(recipients[0])
+        else:
+            context_data = {
+                'recipient_name': 'Valued Customer',
+                'company_name': 'Novustell Travel',
+                'unsubscribe_url': 'https://novustelltravel.com/unsubscribe/',
+                'website_url': 'https://novustelltravel.com',
+            }
+
+        # Render the email template with context
+        rendered_html = self._render_email_template(campaign.email_template.html_content, context_data)
+        rendered_subject = self._render_email_template(campaign.email_template.subject, context_data)
+
+        # Prepare recipients list (simple format for bulk sending)
+        recipients_data = []
+        for recipient in recipients:
+            recipients_data.append({
+                "email": recipient.email,
+                "name": recipient.full_name or recipient.email.split('@')[0]
+            })
+
+        # Prepare the bulk email payload (correct format for Mailtrap Bulk Stream API)
+        email_data = {
+            "from": {
+                "email": from_email_addr,
+                "name": from_name
+            },
+            "to": recipients_data,
+            "subject": rendered_subject,
+            "html": rendered_html,
+            "category": f"campaign_{campaign.id}"
+        }
+
+        return email_data
+
+    def _send_bulk_email(self, email_data):
+        """Send bulk email via Mailtrap Email Marketing API"""
         try:
-            # Generate tracking token
+            response = requests.post(
+                f"{self.base_url}/api/send",
+                headers=self.headers,
+                json=email_data,
+                timeout=30
+            )
+
+            if response.status_code == 200:
+                logger.info("Bulk email sent successfully via Mailtrap Email Marketing API")
+                return True
+            else:
+                logger.error(f"Mailtrap API error: {response.status_code} - {response.text}")
+                return False
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Request error sending bulk email: {e}")
+            return False
+        except Exception as e:
+            logger.error(f"Unexpected error sending bulk email: {e}")
+            return False
+
+    def _create_email_logs(self, campaign, recipients):
+        """Create email logs for tracking purposes"""
+        for recipient in recipients:
             tracking_token = str(uuid.uuid4())
-            
-            # Create or get email log
-            email_log, created = EmailLog.objects.get_or_create(
+
+            EmailLog.objects.get_or_create(
                 campaign=campaign,
                 recipient=recipient,
                 defaults={
                     'subject': campaign.email_template.subject,
                     'sent_to': recipient.email,
                     'tracking_token': tracking_token,
-                    'status': 'pending'
+                    'status': 'sent',
+                    'sent_at': timezone.now()
                 }
             )
-            
-            if not created and email_log.status == 'sent':
-                logger.info(f"Email already sent to {recipient.email} for campaign {campaign.name}")
-                return True
-            
-            # Prepare template context
-            context_data = self._prepare_template_context(recipient, tracking_token)
-            
-            # Render email content
-            html_content = self._render_email_template(campaign.email_template.html_content, context_data)
-            text_content = self._render_email_template(campaign.email_template.text_content, context_data) if campaign.email_template.text_content else None
-            
-            # Create email message
-            subject = self._render_email_template(campaign.email_template.subject, context_data)
 
-            # Check rate limiting before sending (skip for testing)
-            # self._check_rate_limit(campaign.created_by.id if campaign.created_by else 1)
-
-            # Send email via Mailtrap HTTP API
-            success = send_email_via_mailtrap(
-                subject=subject,
-                html_message=html_content,
-                from_email=self.from_email,
-                recipient_list=[recipient.email]
-            )
-
-            if not success:
-                raise Exception("Mailtrap HTTP API returned failure")
-            
-            # Update email log
-            email_log.status = 'sent'
-            email_log.sent_at = timezone.now()
-            email_log.save()
-
-            # Update rate limiting counters (skip for testing)
-            # self._update_rate_limit_counters(campaign.created_by.id if campaign.created_by else 1)
-
-            logger.info(f"Email sent successfully to {recipient.email} for campaign {campaign.name} via Mailtrap HTTP API")
-            return True
-            
-        except Exception as e:
-            # Update email log with error
-            if 'email_log' in locals():
-                email_log.status = 'failed'
-                email_log.error_message = str(e)
-                email_log.save()
-            
-            logger.error(f"Failed to send email to {recipient.email}: {e}")
-            return False
-    
-    def _prepare_template_context(self, recipient, tracking_token):
-        """
-        Prepare context data for template rendering
-        """
-        # Base URL for tracking
+    def _prepare_template_context(self, recipient):
+        """Prepare context data for template rendering"""
         base_url = getattr(settings, 'BASE_URL', 'https://www.novustelltravel.com')
-        
+
         context_data = {
             # Recipient information
             'recipient_name': recipient.full_name or recipient.email,
@@ -173,13 +215,7 @@ class EmailMarketingService:
             'position': recipient.position,
             'phone': recipient.phone,
             'location': recipient.location,
-            
-            # Tracking URLs
-            'tracking_token': tracking_token,
-            'tracking_pixel_url': f"{base_url}/email-marketing/track/open/{tracking_token}/",
-            'click_tracking_url': f"{base_url}/email-marketing/track/click/{tracking_token}/",
-            'unsubscribe_url': f"{base_url}/email-marketing/unsubscribe/{recipient.id}/",
-            
+
             # Company information
             'company_name': 'Novustell Travel',
             'company_tagline': 'Think Convenience, Think Novustell',
@@ -187,17 +223,18 @@ class EmailMarketingService:
             'company_email': 'Info@novustelltravel.com',
             'company_phone': '+254 721 115 572',
             'company_whatsapp': '+254 701 363 551',
-            
+
+            # Unsubscribe URL
+            'unsubscribe_url': f"{base_url}/email-marketing/unsubscribe/{recipient.id}/",
+
             # Custom data from recipient
             **recipient.custom_data
         }
-        
+
         return context_data
-    
+
     def _render_email_template(self, template_content, context_data):
-        """
-        Render email template with context data
-        """
+        """Render email template with context data"""
         if not template_content:
             return ""
 
@@ -208,6 +245,33 @@ class EmailMarketingService:
         except Exception as e:
             logger.error(f"Error rendering email template: {e}")
             return template_content  # Return original content if rendering fails
+
+
+class EmailMarketingService:
+    """Service class for handling email marketing operations (Hybrid approach)"""
+
+    def __init__(self):
+        self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'info@novustelltravel.com')
+        self.mailtrap_marketing_service = MailtrapEmailMarketingService()
+
+    def send_campaign(self, campaign_id):
+        """
+        Send an email marketing campaign using Mailtrap Email Marketing API
+        """
+        logger.info(f"Sending campaign {campaign_id} via Mailtrap Email Marketing API")
+        return self.mailtrap_marketing_service.send_campaign(campaign_id)
+
+    def send_transactional_email(self, subject, html_message, from_email, recipient_list):
+        """
+        Send transactional emails using the existing Mailtrap HTTP API
+        This method preserves the existing transactional email functionality
+        """
+        return send_email_via_mailtrap(
+            subject=subject,
+            html_message=html_message,
+            from_email=from_email,
+            recipient_list=recipient_list
+        )
 
     def _check_rate_limit(self, user_id):
         """

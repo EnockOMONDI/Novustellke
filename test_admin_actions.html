@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Admin Actions - Novustell Travel</title>
+    <link rel="stylesheet" href="/static/assets/css/unfold-custom.css">
+    <style>
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0f238d 0%, #170b2c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .test-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+        }
+        .test-section h3 {
+            color: #0f238d;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        .checkbox-column {
+            width: 40px;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.2);
+        }
+        .status-draft {
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-sent {
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Admin Actions Test Page</h1>
+            <p>Testing the enhanced "Go" button styling and functionality</p>
+        </div>
+
+        <div class="test-section">
+            <h3>📧 Email Marketing Campaigns</h3>
+            <p>Select campaigns and choose an action to test the enhanced "Go" button:</p>
+
+            <!-- Admin Actions Area -->
+            <div class="actions">
+                <label for="action-select">Action:</label>
+                <select name="action" id="action-select">
+                    <option value="---------">---------</option>
+                    <option value="send_campaign">Send selected campaigns (Email Marketing API)</option>
+                    <option value="cancel_campaign">Cancel selected campaigns</option>
+                    <option value="delete_selected">Delete selected campaigns</option>
+                </select>
+                <button type="submit" name="index" value="0">Go</button>
+            </div>
+
+            <!-- Campaign List Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="checkbox-column">
+                            <input type="checkbox" id="action-toggle" onclick="toggleAll()">
+                        </th>
+                        <th>Campaign Name</th>
+                        <th>Status</th>
+                        <th>Recipients</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="_selected_action" value="1"></td>
+                        <td>Welcome Newsletter Campaign</td>
+                        <td><span class="status-draft">Draft</span></td>
+                        <td>150</td>
+                        <td>2025-11-03</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="_selected_action" value="2"></td>
+                        <td>Holiday Special Offers</td>
+                        <td><span class="status-sent">Sent</span></td>
+                        <td>320</td>
+                        <td>2025-11-02</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="_selected_action" value="3"></td>
+                        <td>Travel Tips Weekly</td>
+                        <td><span class="status-draft">Draft</span></td>
+                        <td>89</td>
+                        <td>2025-11-01</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="_selected_action" value="4"></td>
+                        <td>Destination Spotlight</td>
+                        <td><span class="status-draft">Draft</span></td>
+                        <td>245</td>
+                        <td>2025-10-30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="test-section">
+            <h3>✅ Expected Behavior</h3>
+            <ul>
+                <li><strong>Go Button Styling:</strong> Should have yellow/gold gradient background (#ff9d00)</li>
+                <li><strong>Dynamic Text:</strong> Should show "Execute Action (X selected)" when items are selected</li>
+                <li><strong>Action Counter:</strong> Should display a badge showing selected item count</li>
+                <li><strong>Hover Effects:</strong> Should have shimmer animation and elevation on hover</li>
+                <li><strong>Visibility:</strong> Button should always be visible and prominent</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h3>🔧 Debug Information</h3>
+            <div id="debug-info">
+                <p>JavaScript will populate debug information here...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/assets/js/unfold-custom.js"></script>
+    <script>
+        // Simulate admin page detection
+        window.location.pathname = '/admin/email_marketing/emailcampaign/';
+        
+        // Toggle all checkboxes
+        function toggleAll() {
+            const toggle = document.getElementById('action-toggle');
+            const checkboxes = document.querySelectorAll('input[name="_selected_action"]');
+            checkboxes.forEach(cb => cb.checked = toggle.checked);
+            
+            // Trigger change event to update button
+            checkboxes.forEach(cb => cb.dispatchEvent(new Event('change')));
+        }
+        
+        // Debug information
+        function updateDebugInfo() {
+            const debugDiv = document.getElementById('debug-info');
+            const actionsContainer = document.querySelector('.actions');
+            const actionSelect = document.querySelector('select[name="action"]');
+            const submitButton = document.querySelector('button[type="submit"]');
+            const checkboxes = document.querySelectorAll('input[name="_selected_action"]');
+            const selectedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+            
+            debugDiv.innerHTML = `
+                <p><strong>Actions Container:</strong> ${actionsContainer ? '✅ Found' : '❌ Not found'}</p>
+                <p><strong>Action Select:</strong> ${actionSelect ? '✅ Found' : '❌ Not found'} (Value: ${actionSelect ? actionSelect.value : 'N/A'})</p>
+                <p><strong>Submit Button:</strong> ${submitButton ? '✅ Found' : '❌ Not found'}</p>
+                <p><strong>Button Text:</strong> ${submitButton ? submitButton.textContent : 'N/A'}</p>
+                <p><strong>Button Visibility:</strong> ${submitButton ? submitButton.style.display || 'default' : 'N/A'}</p>
+                <p><strong>Selected Items:</strong> ${selectedCount}</p>
+                <p><strong>Enhanced:</strong> ${actionsContainer && actionsContainer.getAttribute('data-novustell-enhanced') ? '✅ Yes' : '❌ No'}</p>
+                <p><strong>CSS Loaded:</strong> ${document.querySelector('link[href*="unfold-custom.css"]') ? '✅ Yes' : '❌ No'}</p>
+                <p><strong>JS Loaded:</strong> ${typeof enhanceAdminActions === 'function' ? '✅ Yes' : '❌ No'}</p>
+            `;
+        }
+        
+        // Update debug info periodically
+        setInterval(updateDebugInfo, 1000);
+        
+        // Initial update
+        setTimeout(updateDebugInfo, 500);
+    </script>
+</body>
+</html>

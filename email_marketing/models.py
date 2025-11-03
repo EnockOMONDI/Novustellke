@@ -204,6 +204,11 @@ class EmailCampaign(models.Model):
     def emails_clicked(self):
         return self.email_logs.filter(clicked_at__isnull=False).count()
 
+    def save(self, *args, **kwargs):
+        """Custom save method"""
+        # Just save normally - send_immediately logic is handled in admin
+        super().save(*args, **kwargs)
+
 
 class EmailLog(models.Model):
     """Model for tracking individual email sends and interactions"""

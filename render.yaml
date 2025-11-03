@@ -75,11 +75,11 @@ services:
       - key: EMAIL_HOST_PASSWORD
         value: d766975d57a7ef1acf2f750a36247a37
 
-      # Celery Configuration for Email Marketing
-      - key: CELERY_BROKER_URL
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
-      - key: CELERY_RESULT_BACKEND
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      # Removed Celery configuration - migrated to Mailtrap Email Marketing API
+      # - key: CELERY_BROKER_URL
+      #   value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
+      # - key: CELERY_RESULT_BACKEND
+      #   value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
       - key: EMAIL_RATE_LIMIT_PER_MINUTE
         value: 60
       - key: EMAIL_RATE_LIMIT_PER_HOUR
@@ -175,87 +175,42 @@ services:
       mountPath: /opt/render/project/src/media
       sizeGB: 1
 
-  # Celery Worker for Email Marketing Background Tasks
-  - type: worker
-    name: novustell-celery-worker
-    env: python
-    region: oregon
-    plan: starter
-    branch: novustell4
-    buildCommand: |
-      echo "🔧 Building Celery worker for email marketing..."
-      pip install --upgrade pip
-      pip install -r requirements.txt
-      echo "✅ Celery worker build completed"
-    startCommand: |
-      echo "⚡ Starting Celery worker for email campaigns..."
-      celery -A tours_travels worker --loglevel=info --concurrency=2 --queues=email_marketing,celery
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: tours_travels.settings_prod
-      - key: DATABASE_URL
-        fromDatabase:
-          name: novustell-db
-          property: connectionString
-      - key: SECRET_KEY
-        fromService:
-          type: web
-          name: novustellke
-          envVarKey: SECRET_KEY
-      - key: MAILTRAP_API_TOKEN
-        value: d766975d57a7ef1acf2f750a36247a37
-      - key: CELERY_BROKER_URL
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
-      - key: CELERY_RESULT_BACKEND
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
-      - key: EMAIL_RATE_LIMIT_PER_MINUTE
-        value: 60
-      - key: EMAIL_RATE_LIMIT_PER_HOUR
-        value: 1000
-      - key: ADMIN_EMAIL
-        value: info@novustelltravel.com
-      - key: JOBS_EMAIL
-        value: careers@novustelltravel.com
-      - key: NEWSLETTER_EMAIL
-        value: news@novustelltravel.com
-      - key: TIME_ZONE
-        value: Africa/Nairobi
-    autoDeploy: true
+  # Removed Celery services - migrated to Mailtrap Email Marketing API
+  # Email campaigns are now sent directly via API without background workers
 
-  # Celery Beat for Scheduled Email Campaigns
-  - type: worker
-    name: novustell-celery-beat
-    env: python
-    region: oregon
-    plan: starter
-    branch: novustell4
-    buildCommand: |
-      echo "🔧 Building Celery beat scheduler..."
-      pip install --upgrade pip
-      pip install -r requirements.txt
-      echo "✅ Celery beat build completed"
-    startCommand: |
-      echo "⏰ Starting Celery beat for scheduled campaigns..."
-      celery -A tours_travels beat --loglevel=info
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: tours_travels.settings_prod
-      - key: DATABASE_URL
-        fromDatabase:
-          name: novustell-db
-          property: connectionString
-      - key: SECRET_KEY
-        fromService:
-          type: web
-          name: novustellke
-          envVarKey: SECRET_KEY
-      - key: CELERY_BROKER_URL
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
-      - key: CELERY_RESULT_BACKEND
-        value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
-      - key: TIME_ZONE
-        value: Africa/Nairobi
-    autoDeploy: true
+  # # Celery Worker for Email Marketing Background Tasks (DEPRECATED)
+  # - type: worker
+  #   name: novustell-celery-worker
+  #   env: python
+  #   region: oregon
+  #   plan: starter
+  #   branch: novustell4
+  #   buildCommand: |
+  #     echo "🔧 Building Celery worker for email marketing..."
+  #     pip install --upgrade pip
+  #     pip install -r requirements.txt
+  #     echo "✅ Celery worker build completed"
+  #   startCommand: |
+  #     echo "⚡ Starting Celery worker for email campaigns..."
+  #     celery -A tours_travels worker --loglevel=info --concurrency=2 --queues=email_marketing,celery
+  #   autoDeploy: true
+
+  # # Celery Beat for Scheduled Email Campaigns (DEPRECATED)
+  # - type: worker
+  #   name: novustell-celery-beat
+  #   env: python
+  #   region: oregon
+  #   plan: starter
+  #   branch: novustell4
+  #   buildCommand: |
+  #     echo "🔧 Building Celery beat scheduler..."
+  #     pip install --upgrade pip
+  #     pip install -r requirements.txt
+  #     echo "✅ Celery beat build completed"
+  #   startCommand: |
+  #     echo "⏰ Starting Celery beat for scheduled campaigns..."
+  #     celery -A tours_travels beat --loglevel=info
+  #   autoDeploy: true
 
 databases:
   # NeonDB PostgreSQL database

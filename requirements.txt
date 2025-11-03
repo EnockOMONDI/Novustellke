@@ -14,7 +14,8 @@ psycopg2-binary>=2.9.6
 
 # Image & File Processing
 Pillow>=10.2.0
-pyuploadcare>=4.1.0
+pyuploadcare>=6.0.0
+pydantic>=2.5.0
 
 # Server
 gunicorn>=21.2.0
@@ -42,16 +43,16 @@ html5lib>=1.1
 shortuuid>=1.0.13
 bleach>=6.0.0
 
-# Background Task Processing
-celery>=5.3.0
-redis>=4.5.0
-django-redis>=6.0.0
+# Background Task Processing (DEPRECATED - migrated to Mailtrap Email Marketing API)
+# celery>=5.3.0
+# redis>=4.5.0
+# django-redis>=6.0.0
 
-# Rate Limiting
-django-ratelimit>=4.1.0
+# Rate Limiting (DEPRECATED - no longer needed without Celery)
+# django-ratelimit>=4.1.0
 
-# Monitoring & Logging
-flower>=2.0.0
+# Monitoring & Logging (DEPRECATED - no longer needed without Celery)
+# flower>=2.0.0
 
 # Testing
 coverage>=7.4.1

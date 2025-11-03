@@ -171,10 +171,10 @@ class EmailLogInline(admin.TabularInline):
 
 @admin.register(EmailCampaign)
 class EmailCampaignAdmin(admin.ModelAdmin):
-    list_display = ['name', 'status', 'email_template', 'total_recipients', 'emails_sent', 'emails_opened', 'scheduled_at', 'created_by']
+    list_display = ['name', 'status', 'email_template', 'total_recipients', 'emails_sent_count', 'started_at', 'completed_at', 'created_by']
     list_filter = ['status', 'created_at', 'scheduled_at', 'email_template__template_type']
     search_fields = ['name', 'description', 'email_template__name']
-    readonly_fields = ['created_at', 'updated_at', 'sent_at', 'total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked', 'celery_task_id', 'task_status', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at']
+    readonly_fields = ['created_at', 'updated_at', 'sent_at', 'total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at']
     filter_horizontal = ['recipient_lists']
     inlines = [EmailLogInline]
 
@@ -186,18 +186,20 @@ class EmailCampaignAdmin(admin.ModelAdmin):
             'fields': ('email_template', 'recipient_lists')
         }),
         ('Scheduling', {
-            'fields': ('send_immediately', 'scheduled_at', 'sent_at')
+            'fields': ('send_immediately', 'scheduled_at', 'sent_at'),
+            'description': 'Check "Send immediately" to send the campaign right after saving. Otherwise, save as draft and use the "Send selected campaigns" action later.'
         }),
         ('Tracking Settings', {
             'fields': ('track_opens', 'track_clicks')
         }),
-        ('Statistics', {
-            'fields': ('total_recipients', 'emails_sent', 'emails_opened', 'emails_clicked'),
+        ('Campaign Statistics', {
+            'fields': ('total_recipients', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at'),
             'classes': ('collapse',)
         }),
-        ('Task Management', {
-            'fields': ('celery_task_id', 'task_status', 'emails_sent_count', 'emails_failed_count', 'started_at', 'completed_at'),
-            'classes': ('collapse',)
+        ('Email Analytics (Legacy)', {
+            'fields': ('emails_sent', 'emails_opened', 'emails_clicked'),
+            'classes': ('collapse',),
+            'description': 'Legacy analytics from individual email tracking'
         }),
         ('Metadata', {
             'fields': ('created_by', 'created_at', 'updated_at'),
@@ -208,41 +210,117 @@ class EmailCampaignAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         if not change:  # If creating new object
             obj.created_by = request.user
+
+        # Store send_immediately flag for later use in save_related
+        self._send_immediately = getattr(obj, 'send_immediately', False)
+
+        # Always disable send_immediately in the model to prevent auto-send
+        obj.send_immediately = False
+
         super().save_model(request, obj, form, change)
+
+    def save_related(self, request, form, formsets, change):
+        """Called after save_model and handles ManyToMany relationships"""
+        # Save all related objects first (including recipient lists)
+        super().save_related(request, form, formsets, change)
+
+        # Now handle send_immediately after all relationships are saved
+        obj = form.instance
+        send_immediately = getattr(self, '_send_immediately', False)
+
+        if send_immediately and not change:  # New campaign with send_immediately
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.info(f"Processing send_immediately for campaign: {obj.name}")
+
+            try:
+                from .services import EmailMarketingService
+                service = EmailMarketingService()
+
+                # Check if we have recipients first
+                from .services import MailtrapEmailMarketingService
+                mailtrap_service = MailtrapEmailMarketingService()
+                recipients = mailtrap_service._get_campaign_recipients(obj)
+
+                logger.info(f"Found {len(recipients)} recipients for campaign {obj.name}")
+                for r in recipients:
+                    logger.info(f"  - {r.email}")
+
+                if not recipients:
+                    self.message_user(
+                        request,
+                        f"❌ Campaign '{obj.name}' cannot be sent: No active recipients found in the selected recipient lists. Please add recipients to your lists or select different lists.",
+                        level=messages.ERROR
+                    )
+                    return
+
+                # Send the campaign
+                logger.info(f"Attempting to send campaign {obj.name}")
+                success = service.send_campaign(obj.id)
+
+                # Refresh the object to get updated status
+                obj.refresh_from_db()
+
+                if success and obj.status == 'sent':
+                    self.message_user(
+                        request,
+                        f"✅ Campaign '{obj.name}' was created and sent immediately via Mailtrap Email Marketing API! ({obj.emails_sent_count} emails sent to {len(recipients)} recipients)",
+                        level=messages.SUCCESS
+                    )
+                elif obj.status == 'sending':
+                    self.message_user(
+                        request,
+                        f"📤 Campaign '{obj.name}' was created and is currently being sent via Mailtrap Email Marketing API to {len(recipients)} recipients.",
+                        level=messages.INFO
+                    )
+                else:
+                    self.message_user(
+                        request,
+                        f"❌ Campaign '{obj.name}' failed to send immediately (Status: {obj.get_status_display()}). You can try sending it manually using the 'Send selected campaigns' action.",
+                        level=messages.ERROR
+                    )
+
+            except Exception as e:
+                logger.error(f"Failed to send campaign {obj.name} immediately: {e}")
+                self.message_user(
+                    request,
+                    f"❌ Campaign '{obj.name}' failed to send immediately: {str(e)}. You can try sending it manually using the 'Send selected campaigns' action.",
+                    level=messages.ERROR
+                )
 
     actions = ['send_campaign', 'pause_campaign', 'cancel_campaign']
 
     def send_campaign(self, request, queryset):
-        """Send selected campaigns using Celery background tasks"""
-        from .tasks import send_campaign_emails_task
+        """Send selected campaigns using Mailtrap Email Marketing API"""
+        from .services import EmailMarketingService
 
+        service = EmailMarketingService()
         sent_count = 0
 
         for campaign in queryset:
             if campaign.status == 'draft':
                 try:
-                    # Start background task
-                    task = send_campaign_emails_task.delay(campaign.id)
+                    # Send campaign via Email Marketing API
+                    success = service.send_campaign(campaign.id)
 
-                    # Update campaign with task info
-                    campaign.status = 'scheduled'
-                    campaign.celery_task_id = task.id
-                    campaign.task_status = 'queued'
-                    campaign.scheduled_at = timezone.now()
-                    campaign.save()
-
-                    sent_count += 1
-
-                    self.message_user(
-                        request,
-                        f"Campaign '{campaign.name}' queued for sending. Task ID: {task.id}",
-                        level=messages.SUCCESS
-                    )
+                    if success:
+                        sent_count += 1
+                        self.message_user(
+                            request,
+                            f"Campaign '{campaign.name}' sent successfully via Mailtrap Email Marketing API",
+                            level=messages.SUCCESS
+                        )
+                    else:
+                        self.message_user(
+                            request,
+                            f"Failed to send campaign '{campaign.name}' - check logs for details",
+                            level=messages.ERROR
+                        )
 
                 except Exception as e:
                     self.message_user(
                         request,
-                        f"Failed to queue campaign '{campaign.name}': {e}",
+                        f"Failed to send campaign '{campaign.name}': {e}",
                         level=messages.ERROR
                     )
             else:
@@ -255,10 +333,10 @@ class EmailCampaignAdmin(admin.ModelAdmin):
         if sent_count > 0:
             self.message_user(
                 request,
-                f"Successfully queued {sent_count} campaign(s) for background sending",
+                f"Successfully sent {sent_count} campaign(s) via Email Marketing API",
                 level=messages.SUCCESS
             )
-    send_campaign.short_description = "Send selected campaigns (background processing)"
+    send_campaign.short_description = "Send selected campaigns (Email Marketing API)"
 
     def pause_campaign(self, request, queryset):
         queryset.update(status='paused')

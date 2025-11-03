@@ -31,23 +31,20 @@ ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
 JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')
 NEWSLETTER_EMAIL = os.getenv('NEWSLETTER_EMAIL', 'news@novustelltravel.com')
 
-# Celery Configuration for Background Tasks (Production)
-CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
-CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'UTC'
-CELERY_ENABLE_UTC = True
+# Celery Configuration (DEPRECATED - migrated to Mailtrap Email Marketing API)
+# CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
+# CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
+# CELERY_ACCEPT_CONTENT = ['json']
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_TIMEZONE = 'UTC'
+# CELERY_ENABLE_UTC = True
 
-# Cache configuration - Use Redis for shared cache (required for django-ratelimit)
+# Cache configuration - Use database cache instead of Redis
 CACHES = {
     'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0'),
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'django_cache_table',
     }
 }
 

@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'status',
     'email_marketing',  # Email marketing campaigns
     'taggit',
-    'django_ratelimit',  # Rate limiting for email sending
+    # 'django_ratelimit',  # Rate limiting (DEPRECATED - no longer needed with Email Marketing API)
     'crispy_forms',
     'pyuploadcare.dj',
 ]
@@ -277,13 +277,14 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 CELERY_ENABLE_UTC = True
 
-# Cache configuration - Use Redis for shared cache (required for django-ratelimit)
+# Cache configuration - Use database cache (Redis no longer needed without Celery)
 CACHES = {
     'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': config('CELERY_BROKER_URL', default='redis://localhost:6379/0'),
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'cache_table',
+        'TIMEOUT': 300,
         'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'MAX_ENTRIES': 1000,
         }
     }
 }
