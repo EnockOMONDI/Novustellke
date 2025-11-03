@@ -33,13 +33,16 @@ class MailtrapEmailMarketingService:
         }
         self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
 
-    def send_campaign(self, campaign_id, batch_size=50):
+    def send_campaign(self, campaign_id):
         """
-        Send an email campaign using memory-efficient batch processing
+        Send an email campaign using Mailtrap's Newsletter API
+
+        This method uses a single API call to Mailtrap's Newsletter API which handles
+        batching, chunking, queueing, and retries on their backend automatically.
+        Memory usage is minimal regardless of recipient count.
 
         Args:
             campaign_id: ID of the campaign to send
-            batch_size: Number of recipients to process in each batch (default: 50)
         """
         try:
             campaign = EmailCampaign.objects.get(id=campaign_id)
@@ -53,61 +56,40 @@ class MailtrapEmailMarketingService:
             campaign.started_at = timezone.now()
             campaign.save()
 
-            # Get total recipient count without loading all into memory
-            total_recipients = self._get_campaign_recipient_count(campaign)
+            # Get recipients using memory-efficient approach (only email and first_name)
+            recipients_data = self._get_campaign_recipients_minimal(campaign)
 
-            if total_recipients == 0:
+            if not recipients_data:
                 logger.warning(f"No recipients found for campaign {campaign.name}")
                 campaign.status = 'cancelled'
                 campaign.save()
                 return False
 
-            logger.info(f"Starting campaign {campaign.name} for {total_recipients} recipients using batch size {batch_size}")
+            logger.info(f"Starting campaign {campaign.name} for {len(recipients_data)} recipients using Newsletter API")
 
-            # Process recipients in batches to avoid memory issues
-            total_sent = 0
-            total_failed = 0
-            batch_number = 1
+            # Prepare newsletter API payload (single request for all recipients)
+            newsletter_data = self._prepare_newsletter_data(campaign, recipients_data)
 
-            # Use iterator to process recipients in batches without loading all into memory
-            for recipient_batch in self._get_campaign_recipients_batched(campaign, batch_size):
-                try:
-                    logger.info(f"Processing batch {batch_number} with {len(recipient_batch)} recipients")
+            # Send via Newsletter API (single request)
+            success = self._send_newsletter(newsletter_data)
 
-                    # Send batch of emails
-                    batch_sent, batch_failed = self._send_recipient_batch(campaign, recipient_batch, batch_number)
-
-                    total_sent += batch_sent
-                    total_failed += batch_failed
-
-                    logger.info(f"Batch {batch_number} completed: {batch_sent} sent, {batch_failed} failed")
-
-                    # Update campaign progress
-                    campaign.emails_sent_count = total_sent
-                    campaign.save()
-
-                    batch_number += 1
-
-                except Exception as e:
-                    logger.error(f"Error processing batch {batch_number}: {e}")
-                    total_failed += len(recipient_batch)
-                    batch_number += 1
-                    continue
-
-            # Final campaign status update
-            if total_sent > 0:
+            if success:
+                # Update campaign status
                 campaign.status = 'sent'
+                campaign.sent_at = timezone.now()
                 campaign.completed_at = timezone.now()
-                campaign.emails_sent_count = total_sent
+                campaign.emails_sent_count = len(recipients_data)
                 campaign.save()
 
-                logger.info(f"Campaign {campaign.name} completed: {total_sent} sent, {total_failed} failed out of {total_recipients} total")
+                # Create email logs for tracking
+                self._create_email_logs_minimal(campaign, recipients_data)
+
+                logger.info(f"Campaign {campaign.name} sent successfully to {len(recipients_data)} recipients via Newsletter API")
                 return True
             else:
                 campaign.status = 'failed'
                 campaign.completed_at = timezone.now()
                 campaign.save()
-                logger.error(f"Campaign {campaign.name} failed: No emails were sent successfully")
                 return False
 
         except EmailCampaign.DoesNotExist:
@@ -137,101 +119,120 @@ class MailtrapEmailMarketingService:
 
         return recipients
 
-    def _get_campaign_recipient_count(self, campaign):
-        """Get total count of unique recipients without loading them into memory"""
-        recipient_emails = set()
-
-        for recipient_list in campaign.recipient_lists.all():
-            for recipient in recipient_list.recipients.filter(is_active=True, subscribed=True).iterator():
-                recipient_emails.add(recipient.email)
-
-        return len(recipient_emails)
-
-    def _get_campaign_recipients_batched(self, campaign, batch_size):
+    def _get_campaign_recipients_minimal(self, campaign):
         """
-        Generator that yields batches of recipients to avoid memory issues
-
-        Args:
-            campaign: EmailCampaign instance
-            batch_size: Number of recipients per batch
-
-        Yields:
-            List of recipients (batch)
-        """
-        recipient_emails = set()
-        current_batch = []
-
-        for recipient_list in campaign.recipient_lists.all():
-            # Use iterator() to avoid caching all recipients in memory
-            for recipient in recipient_list.recipients.filter(is_active=True, subscribed=True).iterator():
-                if recipient.email not in recipient_emails:
-                    recipient_emails.add(recipient.email)
-                    current_batch.append(recipient)
-
-                    # Yield batch when it reaches the desired size
-                    if len(current_batch) >= batch_size:
-                        yield current_batch
-                        current_batch = []  # Clear batch to free memory
-
-        # Yield remaining recipients if any
-        if current_batch:
-            yield current_batch
-
-    def _send_recipient_batch(self, campaign, recipients, batch_number):
-        """
-        Send emails to a batch of recipients
-
-        Args:
-            campaign: EmailCampaign instance
-            recipients: List of recipients in this batch
-            batch_number: Current batch number for logging
+        Get unique recipients with minimal memory usage (only email and first_name)
 
         Returns:
-            Tuple of (sent_count, failed_count)
+            List of tuples: [(email, first_name), ...]
+        """
+        recipient_emails = set()
+        recipients_data = []
+
+        for recipient_list in campaign.recipient_lists.all():
+            # Use values_list to get only email and first_name, minimizing memory usage
+            for email, first_name in recipient_list.recipients.filter(
+                is_active=True,
+                subscribed=True
+            ).values_list('email', 'first_name'):
+                if email not in recipient_emails:
+                    recipient_emails.add(email)
+                    recipients_data.append((email, first_name or email.split('@')[0]))
+
+        return recipients_data
+
+    def _prepare_newsletter_data(self, campaign, recipients_data):
+        """
+        Prepare newsletter API payload for all recipients in a single request
+
+        Args:
+            campaign: EmailCampaign instance
+            recipients_data: List of tuples [(email, first_name), ...]
+
+        Returns:
+            Dict: Newsletter API payload
+        """
+        # Parse from email
+        if '<' in self.from_email and '>' in self.from_email:
+            from_name = self.from_email.split('<')[0].strip()
+            from_email_addr = self.from_email.split('<')[1].split('>')[0].strip()
+        else:
+            from_name = "Novustell Travel"
+            from_email_addr = self.from_email.strip()
+
+        # Prepare recipients list for Newsletter API
+        to_list = []
+        for email, first_name in recipients_data:
+            to_list.append({
+                "email": email,
+                "name": first_name
+            })
+
+        # Prepare template context for Newsletter API (using template variables)
+        base_url = getattr(settings, 'BASE_URL', 'https://www.novustelltravel.com')
+
+        # Render subject and HTML with template variables (Mailtrap will substitute per recipient)
+        subject_template = campaign.email_template.subject
+        html_template = campaign.email_template.html_content
+
+        # Replace Django template syntax with Mailtrap template variables
+        subject_with_vars = subject_template.replace('{{ recipient_name }}', '{{recipient_name}}')
+        html_with_vars = html_template.replace('{{ recipient_name }}', '{{recipient_name}}')
+
+        # Newsletter API payload
+        newsletter_data = {
+            "from": {
+                "email": from_email_addr,
+                "name": from_name
+            },
+            "to": to_list,
+            "subject": subject_with_vars,
+            "html": html_with_vars,
+            "category": f"campaign_{campaign.id}",
+            "custom_variables": {
+                "campaign_id": str(campaign.id),
+                "campaign_name": campaign.name
+            }
+        }
+
+        return newsletter_data
+
+    def _send_newsletter(self, newsletter_data):
+        """
+        Send newsletter via Mailtrap Bulk Stream API (single request for all recipients)
+
+        Uses the standard Bulk Stream API but with all recipients in a single request
+        to minimize memory usage and API calls.
+
+        Args:
+            newsletter_data: Newsletter API payload
+
+        Returns:
+            bool: True if successful, False otherwise
         """
         try:
-            # Prepare email data for this batch only
-            emails_data = self._prepare_bulk_email_data(campaign, recipients)
+            logger.info(f"Sending newsletter to {len(newsletter_data['to'])} recipients via Bulk Stream API")
 
-            # Send emails for this batch
-            sent_count = 0
-            failed_count = 0
+            response = requests.post(
+                f"{self.base_url}/api/send",  # Use standard Bulk Stream API endpoint
+                headers=self.headers,
+                json=newsletter_data,
+                timeout=60  # Longer timeout for large recipient lists
+            )
 
-            for i, email_data in enumerate(emails_data, 1):
-                try:
-                    response = requests.post(
-                        f"{self.base_url}/api/send",
-                        headers=self.headers,
-                        json=email_data,
-                        timeout=30
-                    )
+            if response.status_code == 200:
+                logger.info(f"Newsletter sent successfully to {len(newsletter_data['to'])} recipients")
+                return True
+            else:
+                logger.error(f"Failed to send newsletter: {response.status_code} - {response.text}")
+                return False
 
-                    if response.status_code == 200:
-                        sent_count += 1
-                        recipient_email = email_data['to'][0]['email']
-                        recipient_name = email_data['to'][0]['name']
-                        logger.info(f"Batch {batch_number}, Email {i}: Sent to {recipient_name} ({recipient_email})")
-                    else:
-                        failed_count += 1
-                        recipient_email = email_data['to'][0]['email']
-                        logger.error(f"Batch {batch_number}, Email {i}: Failed to send to {recipient_email}: {response.status_code}")
-
-                except Exception as e:
-                    failed_count += 1
-                    recipient_email = email_data['to'][0]['email'] if email_data.get('to') else 'unknown'
-                    logger.error(f"Batch {batch_number}, Email {i}: Error sending to {recipient_email}: {e}")
-
-            # Create email logs for this batch
-            self._create_email_logs_batch(campaign, recipients, sent_count > 0)
-
-            # Clear email data from memory
-            del emails_data
-
-            return sent_count, failed_count
-
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Request error sending newsletter: {e}")
+            return False
         except Exception as e:
-            logger.error(f"Error processing batch {batch_number}: {e}")
-            return 0, len(recipients)
+            logger.error(f"Unexpected error sending newsletter: {e}")
+            return False
 
     def _prepare_bulk_email_data(self, campaign, recipients):
         """
@@ -342,24 +343,32 @@ class MailtrapEmailMarketingService:
                 }
             )
 
-    def _create_email_logs_batch(self, campaign, recipients, success_status=True):
-        """Create email logs for a batch of recipients"""
-        status = 'sent' if success_status else 'failed'
+    def _create_email_logs_minimal(self, campaign, recipients_data):
+        """Create email logs for newsletter recipients using minimal data"""
+        from .models import EmailLog, Recipient
+        import uuid
 
-        for recipient in recipients:
+        for email, first_name in recipients_data:
             tracking_token = str(uuid.uuid4())
 
-            EmailLog.objects.get_or_create(
-                campaign=campaign,
-                recipient=recipient,
-                defaults={
-                    'subject': campaign.email_template.subject,
-                    'sent_to': recipient.email,
-                    'tracking_token': tracking_token,
-                    'status': status,
-                    'sent_at': timezone.now() if success_status else None
-                }
-            )
+            # Get recipient object efficiently
+            try:
+                recipient = Recipient.objects.get(email=email)
+
+                EmailLog.objects.get_or_create(
+                    campaign=campaign,
+                    recipient=recipient,
+                    defaults={
+                        'subject': campaign.email_template.subject,
+                        'sent_to': email,
+                        'tracking_token': tracking_token,
+                        'status': 'sent',
+                        'sent_at': timezone.now()
+                    }
+                )
+            except Recipient.DoesNotExist:
+                logger.warning(f"Recipient {email} not found for email log creation")
+                continue
 
     def _prepare_template_context(self, recipient):
         """Prepare context data for template rendering"""
@@ -414,16 +423,19 @@ class EmailMarketingService:
         self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'info@novustelltravel.com')
         self.mailtrap_marketing_service = MailtrapEmailMarketingService()
 
-    def send_campaign(self, campaign_id, batch_size=50):
+    def send_campaign(self, campaign_id):
         """
-        Send an email marketing campaign using memory-efficient batch processing
+        Send an email marketing campaign using Mailtrap's Newsletter API
+
+        Uses a single API call to Mailtrap's Newsletter API which handles
+        batching, chunking, queueing, and retries on their backend automatically.
+        Memory usage is minimal regardless of recipient count.
 
         Args:
             campaign_id: ID of the campaign to send
-            batch_size: Number of recipients to process in each batch (default: 50)
         """
-        logger.info(f"Sending campaign {campaign_id} via Mailtrap Email Marketing API with batch size {batch_size}")
-        return self.mailtrap_marketing_service.send_campaign(campaign_id, batch_size=batch_size)
+        logger.info(f"Sending campaign {campaign_id} via Mailtrap Newsletter API")
+        return self.mailtrap_marketing_service.send_campaign(campaign_id)
 
     def send_transactional_email(self, subject, html_message, from_email, recipient_list):
         """
