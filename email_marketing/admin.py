@@ -237,16 +237,14 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                 from .services import EmailMarketingService
                 service = EmailMarketingService()
 
-                # Check if we have recipients first
+                # Check if we have recipients first (using memory-efficient count)
                 from .services import MailtrapEmailMarketingService
                 mailtrap_service = MailtrapEmailMarketingService()
-                recipients = mailtrap_service._get_campaign_recipients(obj)
+                recipient_count = mailtrap_service._get_campaign_recipient_count(obj)
 
-                logger.info(f"Found {len(recipients)} recipients for campaign {obj.name}")
-                for r in recipients:
-                    logger.info(f"  - {r.email}")
+                logger.info(f"Found {recipient_count} recipients for campaign {obj.name}")
 
-                if not recipients:
+                if recipient_count == 0:
                     self.message_user(
                         request,
                         f"❌ Campaign '{obj.name}' cannot be sent: No active recipients found in the selected recipient lists. Please add recipients to your lists or select different lists.",
@@ -254,9 +252,10 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                     )
                     return
 
-                # Send the campaign
-                logger.info(f"Attempting to send campaign {obj.name}")
-                success = service.send_campaign(obj.id)
+                # Send the campaign using batch processing (50 recipients per batch for memory efficiency)
+                batch_size = 50 if recipient_count > 100 else 25  # Smaller batches for large lists
+                logger.info(f"Attempting to send campaign {obj.name} with batch size {batch_size}")
+                success = service.send_campaign(obj.id, batch_size=batch_size)
 
                 # Refresh the object to get updated status
                 obj.refresh_from_db()
@@ -264,7 +263,7 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                 if success and obj.status == 'sent':
                     self.message_user(
                         request,
-                        f"✅ Campaign '{obj.name}' was created and sent immediately via Mailtrap Email Marketing API! ({obj.emails_sent_count} emails sent to {len(recipients)} recipients)",
+                        f"✅ Campaign '{obj.name}' was created and sent immediately via Mailtrap Email Marketing API! ({obj.emails_sent_count} emails sent to {recipient_count} recipients using batch processing)",
                         level=messages.SUCCESS
                     )
                 elif obj.status == 'sending':
@@ -300,14 +299,35 @@ class EmailCampaignAdmin(admin.ModelAdmin):
         for campaign in queryset:
             if campaign.status == 'draft':
                 try:
-                    # Send campaign via Email Marketing API
-                    success = service.send_campaign(campaign.id)
+                    # Check recipient count to determine batch size
+                    from .services import MailtrapEmailMarketingService
+                    mailtrap_service = MailtrapEmailMarketingService()
+                    recipient_count = mailtrap_service._get_campaign_recipient_count(campaign)
+
+                    if recipient_count == 0:
+                        self.message_user(
+                            request,
+                            f"Campaign '{campaign.name}' has no active recipients",
+                            level=messages.WARNING
+                        )
+                        continue
+
+                    # Determine optimal batch size based on recipient count
+                    if recipient_count > 500:
+                        batch_size = 25  # Small batches for very large lists
+                    elif recipient_count > 100:
+                        batch_size = 50  # Medium batches for large lists
+                    else:
+                        batch_size = 25  # Small batches for smaller lists
+
+                    # Send campaign with batch processing
+                    success = service.send_campaign(campaign.id, batch_size=batch_size)
 
                     if success:
                         sent_count += 1
                         self.message_user(
                             request,
-                            f"Campaign '{campaign.name}' sent successfully via Mailtrap Email Marketing API",
+                            f"Campaign '{campaign.name}' sent successfully to {recipient_count} recipients using batch processing (batch size: {batch_size})",
                             level=messages.SUCCESS
                         )
                     else:
@@ -333,10 +353,10 @@ class EmailCampaignAdmin(admin.ModelAdmin):
         if sent_count > 0:
             self.message_user(
                 request,
-                f"Successfully sent {sent_count} campaign(s) via Email Marketing API",
+                f"Successfully sent {sent_count} campaign(s) using memory-efficient batch processing",
                 level=messages.SUCCESS
             )
-    send_campaign.short_description = "Send selected campaigns (Email Marketing API)"
+    send_campaign.short_description = "Send selected campaigns (Batch Processing)"
 
     def pause_campaign(self, request, queryset):
         queryset.update(status='paused')
