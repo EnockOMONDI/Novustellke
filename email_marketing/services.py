@@ -414,12 +414,16 @@ class EmailMarketingService:
         self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'info@novustelltravel.com')
         self.mailtrap_marketing_service = MailtrapEmailMarketingService()
 
-    def send_campaign(self, campaign_id):
+    def send_campaign(self, campaign_id, batch_size=50):
         """
-        Send an email marketing campaign using Mailtrap Email Marketing API
+        Send an email marketing campaign using memory-efficient batch processing
+
+        Args:
+            campaign_id: ID of the campaign to send
+            batch_size: Number of recipients to process in each batch (default: 50)
         """
-        logger.info(f"Sending campaign {campaign_id} via Mailtrap Email Marketing API")
-        return self.mailtrap_marketing_service.send_campaign(campaign_id)
+        logger.info(f"Sending campaign {campaign_id} via Mailtrap Email Marketing API with batch size {batch_size}")
+        return self.mailtrap_marketing_service.send_campaign(campaign_id, batch_size=batch_size)
 
     def send_transactional_email(self, subject, html_message, from_email, recipient_list):
         """
