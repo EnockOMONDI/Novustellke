@@ -422,6 +422,7 @@ class JobApplication(models.Model):
         ('travel_consultant', 'Travel Consultant'),
         ('graphic_designer', 'Graphic Designer'),
         ('marketing_specialist', 'Marketing Specialist'),
+        ('sales_marketing_executive', 'Sales & Marketing Executive'),
         ('customer_service', 'Customer Service Representative'),
         ('tour_guide', 'Tour Guide'),
         ('operations_manager', 'Operations Manager'),
