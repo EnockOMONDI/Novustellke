@@ -217,7 +217,12 @@
                         {% endfor %}
                     {% endif %}
 
-                    <form class="contact-form premium-form" method="post" action="{% url 'users:contactus' %}">
+                    <form id="contactForm"
+                          class="contact-form premium-form"
+                          method="post"
+                          action="{% url 'users:contactus' %}"
+                          data-form-type="contact"
+                          data-form-name="contact_us">
                         {% csrf_token %}
                         <div class="row">
                             <!-- Name Field -->

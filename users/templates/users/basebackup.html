@@ -30,9 +30,12 @@
 <link rel="stylesheet" href="{% static 'assets2/css/font-awesome.min.css' %}">
 <link rel="stylesheet" href="{% static 'assets2/css/all.min.css' %}">
 <link rel="stylesheet" href="{% static 'assets2/fonts/line-icons.css' %}" type="text/css">
+
+{% include 'users/analytics.html' %}
 </head>
 
 <body class="" style="background-color: #f8f3fc !important;">
+    {% include 'users/analytics_noscript.html' %}
     <div id="preloader">
         <div id="status"></div>
         </div>

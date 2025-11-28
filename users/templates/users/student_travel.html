@@ -500,7 +500,11 @@
                     </div>
                     {% endif %}
 
-                    <form class="student-contact-form" method="POST">
+                    <form class="student-contact-form"
+                          id="studentTravelForm"
+                          method="POST"
+                          data-form-type="student_travel"
+                          data-form-name="student_travel_inquiry">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">

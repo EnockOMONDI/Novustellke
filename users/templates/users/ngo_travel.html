@@ -235,7 +235,11 @@
                     </div>
                     {% endif %}
 
-                    <form class="ngo-contact-form" method="POST">
+                    <form class="ngo-contact-form"
+                          id="ngoTravelForm"
+                          method="POST"
+                          data-form-type="ngo_travel"
+                          data-form-name="ngo_travel_inquiry">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">

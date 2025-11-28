@@ -59,7 +59,10 @@ border-bottom-right-radius: .3rem;
 	  
 			<br>
 	  
-						<form method="POST">
+						<form method="POST"
+                              id="registrationForm"
+                              data-form-type="registration"
+                              data-form-name="user_registration">
 							{% csrf_token%}
 							<fieldset class="form-group">
 								{{form}}

@@ -39,8 +39,11 @@
         <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
         <!--====== Style css ======-->
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+        {% include 'users/analytics.html' %}
     </head>
     <body style="background-color: #f8f3fc !important;" >
+        {% include 'users/analytics_noscript.html' %}
           <!--====== Start Preloader ======-->
           <div class="preloader">
             <div class="loader">

@@ -286,7 +286,13 @@
                     {% endif %}
 
                     <!-- Application Form -->
-                    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    <form method="post"
+                          enctype="multipart/form-data"
+                          class="needs-validation"
+                          novalidate
+                          id="jobApplicationForm"
+                          data-form-type="job_application"
+                          data-form-name="careers_application">
                         {% csrf_token %}
 
                         <div class="row g-4">

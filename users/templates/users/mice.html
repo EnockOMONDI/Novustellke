@@ -181,7 +181,11 @@
                     </div>
                     {% endif %}
 
-                    <form class="mice-contact-form" method="POST">
+                    <form class="mice-contact-form"
+                          id="miceInquiryForm"
+                          method="POST"
+                          data-form-type="mice_inquiry"
+                          data-form-name="mice_inquiry">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
@@ -1373,6 +1377,5 @@
 </style>
 
 {% endblock %}
-
 
 

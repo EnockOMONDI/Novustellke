@@ -65,7 +65,11 @@
                                         </div>
                                     </div>
 
-                                    <form id="newsletter-form" method="post" action="{% url 'users:newsletter_subscribe' %}">
+                                    <form id="newsletter-form"
+                                          method="post"
+                                          action="{% url 'users:newsletter_subscribe' %}"
+                                          data-form-type="newsletter"
+                                          data-form-name="footer_newsletter">
                                         {% csrf_token %}
                                         <div class="form_group">
                                             <label><i class="far fa-paper-plane"></i></label>

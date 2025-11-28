@@ -296,7 +296,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Store popup data for tracking
         modal.dataset.popupId = popupData.id;
         modal.dataset.inquiryUrl = popupData.inquiry_url;
+        modal.dataset.promotionDestination = popupData.destination || 'general';
         
+        // Store title for analytics
+        modal.dataset.popupTitle = popupData.title || 'Promotional Offer';
+
         // Show popup with animation
         modal.style.display = 'flex';
         setTimeout(() => {
@@ -305,6 +309,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Prevent body scroll
         document.body.style.overflow = 'hidden';
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'promotion_view', {
+                promotion_id: popupData.id || 'popup',
+                promotion_name: popupData.title || 'Promotional Offer',
+                creative_name: 'homepage_modal',
+                location_id: 'homepage_popup'
+            });
+        }
     }
     
     function hidePopup() {
@@ -318,11 +331,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Close button event
-    document.getElementById('closePopupBtn').addEventListener('click', hidePopup);
+    document.getElementById('closePopupBtn').addEventListener('click', function() {
+        const modal = document.getElementById('promotionalPopupModal');
+        if (typeof gtag === 'function') {
+            gtag('event', 'promotion_dismiss', {
+                promotion_name: modal.dataset.popupTitle || 'Promotional Offer',
+                action: 'close_button'
+            });
+        }
+        hidePopup();
+    });
     
     // Don't show today button event
     document.getElementById('dontShowTodayBtn').addEventListener('click', function() {
         localStorage.setItem('novustell_popup_shown_' + new Date().toDateString(), 'true');
+        const modal = document.getElementById('promotionalPopupModal');
+        if (typeof gtag === 'function') {
+            gtag('event', 'promotion_dismiss', {
+                promotion_name: modal.dataset.popupTitle || 'Promotional Offer',
+                action: 'snooze_today'
+            });
+        }
         hidePopup();
     });
     
@@ -348,6 +377,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
+        if (typeof trackCTAClick === 'function') {
+            trackCTAClick('Popup Inquiry', 'promotional_popup');
+        }
+        if (typeof trackInquiry === 'function') {
+            const destination = modal.dataset.promotionDestination || 'general';
+            trackInquiry('popup_inquiry', destination, 'N/A');
+        }
+
         // Redirect to inquiry URL
         if (inquiryUrl) {
             window.open(inquiryUrl, '_blank');

@@ -127,7 +127,7 @@ def site_settings(request):
     Context processor to provide common site settings in all templates.
     """
     return {
-        'SITE_URL': getattr(settings, 'SITE_URL', 'http://localhost:8000'),
+        'SITE_URL': getattr(settings, 'SITE_URL', 'https://www.novustelltravel.com'),
         'DEBUG': getattr(settings, 'DEBUG', False),
     }
 
