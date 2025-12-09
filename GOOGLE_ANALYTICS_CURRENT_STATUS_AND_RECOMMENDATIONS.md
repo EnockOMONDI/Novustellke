@@ -264,14 +264,6 @@ gtag('event', 'view_item', {
 
 ---
 
-#### 3. **Booking Flow Tracking** ⚠️ ENHANCEMENT OPPORTUNITY
-**Current:** General form tracking exists
-**Missing:** Specific ecommerce funnel tracking for bookings
-
-**Recommendation:** Implement GA4 ecommerce events:
-- `begin_checkout` - When user starts booking
-- `add_payment_info` - When payment details entered
-- `purchase` - When booking confirmed
 
 ---
 
@@ -330,16 +322,7 @@ gtag('event', 'view_item', {
 
 ### Priority 2: Medium-Value Enhancements ⭐⭐
 
-#### D. Ecommerce Tracking for Bookings
-**Effort:** 1-2 hours
-**Impact:** Complete booking funnel visibility
-
-**Implementation:**
-- Add `begin_checkout` event to booking form
-- Add `add_payment_info` event to payment step
-- Add `purchase` event to confirmation page
-
----
+#
 
 #### E. Enhanced Blog Tracking
 **Effort:** 30 minutes
@@ -353,16 +336,7 @@ gtag('event', 'view_item', {
 
 ---
 
-#### F. User Journey Tracking
-**Effort:** 1 hour
-**Impact:** Understand user paths to conversion
 
-**Implementation:**
-- Track "Add to Wishlist" (if feature exists)
-- Track "Compare Packages" (if feature exists)
-- Track "Download Itinerary" (if feature exists)
-
----
 
 ### Priority 3: Advanced Features ⭐
 
@@ -390,14 +364,6 @@ gtag('event', 'view_item', {
 
 ---
 
-#### I. A/B Testing Integration
-**Effort:** 4 hours
-**Impact:** Data-driven optimization
-
-**Tools:** Google Optimize (deprecated) or custom implementation
-**Alternative:** Use GA4 experiments feature
-
----
 
 ## 📋 TESTING CHECKLIST
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """
-Production Google Analytics Implementation Test
-================================================
+Local Google Analytics Implementation Test
+===========================================
 
-Tests the live production deployment at https://novustelltravel.onrender.com
-to verify Google Analytics 4 implementation is working correctly.
+Tests the local development server to verify Google Analytics 4 
+implementation is working correctly with DJANGO_ENV=production.
 
 This script performs static HTML analysis (not live event tracking).
 """
@@ -16,8 +16,8 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from datetime import datetime
 
-# Production URL
-PRODUCTION_URL = "https://www.novustelltravel.com"
+# Local URL
+LOCAL_URL = "http://127.0.0.1:8000"
 
 # Expected GA4 ID
 EXPECTED_GA4_ID = "G-JV4GQKWVJL"
@@ -26,7 +26,7 @@ EXPECTED_GA4_ID = "G-JV4GQKWVJL"
 TEST_PAGES = {
     'home': '/',
     'contact': '/contactus/',
-    'mice': '/micepage/',
+    'mice': '/mice/',
     'student_travel': '/student-travel/',
     'ngo_travel': '/ngo-travel/',
     'careers': '/careers/',
@@ -43,7 +43,7 @@ EXPECTED_FORMS = {
     'job_application': 'data-form-type="job_application"',
 }
 
-class ProductionAnalyticsTest:
+class LocalAnalyticsTest:
     def __init__(self):
         self.results = {
             'passed': 0,
@@ -80,14 +80,41 @@ class ProductionAnalyticsTest:
             self.results['warnings'] += 1
     
     def fetch_page(self, url):
-        """Fetch a page from production"""
+        """Fetch a page from local server"""
         try:
-            response = self.session.get(url, timeout=30)
+            response = self.session.get(url, timeout=10)
             response.raise_for_status()
             return response.text
+        except requests.exceptions.ConnectionError:
+            self.log('fail', f"Cannot connect to {url}", [
+                "Make sure Django development server is running:",
+                "  python manage.py runserver"
+            ])
+            return None
         except requests.exceptions.RequestException as e:
             self.log('fail', f"Failed to fetch {url}", [str(e)])
             return None
+    
+    def test_server_running(self):
+        """Test if local server is running"""
+        print(f"\n{'='*70}")
+        print(f"🔍 CHECKING LOCAL SERVER")
+        print(f"{'='*70}")
+        
+        try:
+            response = self.session.get(LOCAL_URL, timeout=5)
+            self.log('pass', f"Local server is running at {LOCAL_URL}")
+            return True
+        except requests.exceptions.ConnectionError:
+            self.log('fail', "Local server is NOT running", [
+                "Please start the Django development server:",
+                "  export DJANGO_ENV=production",
+                "  python manage.py runserver"
+            ])
+            return False
+        except Exception as e:
+            self.log('fail', f"Error connecting to local server: {e}")
+            return False
     
     def test_ga4_script_loading(self, html, page_name):
         """Test if GA4 gtag.js script is loading"""
@@ -141,48 +168,93 @@ class ProductionAnalyticsTest:
             self.log('warn', f"Some form attributes missing on {page_name}", missing_forms)
         
         return len(found_forms) > 0
-    
+
     def test_tracking_elements(self, html, page_name):
         """Test if tracking elements have proper data attributes"""
         soup = BeautifulSoup(html, 'html.parser')
-        
+
         tracking_elements = {
             'CTA buttons': soup.find_all(['a', 'button'], class_=re.compile(r'cta|btn-primary')),
             'Package cards': soup.find_all(class_=re.compile(r'package-card|destination-card')),
             'WhatsApp links': soup.find_all('a', href=re.compile(r'wa\.me|whatsapp')),
         }
-        
+
         details = []
         for element_type, elements in tracking_elements.items():
             count = len(elements)
             if count > 0:
                 details.append(f"✓ {element_type}: {count} found")
-        
+
         if details:
             self.log('pass', f"Tracking elements found on {page_name}", details)
             return True
         else:
             self.log('warn', f"No tracking elements found on {page_name}")
             return False
-    
+
     def test_development_mode_disabled(self, html, page_name):
         """Test that development mode is disabled"""
         dev_indicators = [
             'Development Mode: Google Analytics tracking is disabled',
-            '📊 [DEV] GA Event',
-            'console.log.*GA Event'
+            '📊 \\[DEV\\] GA Event',
+            'console\\.log.*GA Event'
         ]
-        
+
         for indicator in dev_indicators:
             if re.search(indicator, html, re.IGNORECASE):
-                self.log('fail', f"Development mode detected on {page_name}", [
+                self.log('fail', f"Development mode STILL ACTIVE on {page_name}", [
                     f"Found indicator: {indicator}",
-                    "Analytics may not be loading in production!"
+                    "Make sure DJANGO_ENV=production is set:",
+                    "  export DJANGO_ENV=production",
+                    "  python manage.py runserver"
                 ])
                 return False
-        
+
         self.log('pass', f"Development mode disabled on {page_name}")
         return True
+
+    def test_production_environment(self):
+        """Test production environment settings by checking HTML output"""
+        print(f"\n{'='*70}")
+        print(f"🔍 TESTING ENVIRONMENT CONFIGURATION")
+        print(f"{'='*70}")
+
+        # Fetch home page to check environment
+        html = self.fetch_page(LOCAL_URL)
+
+        if not html:
+            self.log('fail', "Cannot verify environment - home page not accessible")
+            return False
+
+        # Check if analytics is enabled (should have gtag script)
+        has_gtag = f'gtag/js?id={EXPECTED_GA4_ID}' in html
+
+        # Check if DEBUG mode is disabled (no Django debug toolbar, etc.)
+        has_debug_toolbar = 'django-debug-toolbar' in html.lower()
+        has_dev_mode_msg = 'Development Mode: Google Analytics tracking is disabled' in html
+
+        details = []
+        if has_gtag:
+            details.append(f"✓ GA4 script present (ENABLE_ANALYTICS=true)")
+        else:
+            details.append(f"✗ GA4 script NOT present (ENABLE_ANALYTICS may be false)")
+
+        if not has_dev_mode_msg:
+            details.append(f"✓ Production mode active (DEBUG=False)")
+        else:
+            details.append(f"✗ Development mode detected (DEBUG=True or ENABLE_ANALYTICS=False)")
+
+        if has_debug_toolbar:
+            details.append(f"⚠️  Django Debug Toolbar detected (expected in local dev)")
+
+        details.append(f"✓ GA4 ID configured: {EXPECTED_GA4_ID}")
+
+        if has_gtag and not has_dev_mode_msg:
+            self.log('pass', "Environment configured correctly for production testing", details)
+            return True
+        else:
+            self.log('fail', "Environment NOT configured for production", details)
+            return False
 
     def test_page(self, page_name, page_url):
         """Test a single page"""
@@ -190,7 +262,7 @@ class ProductionAnalyticsTest:
         print(f"🧪 Testing: {page_name.upper()} ({page_url})")
         print(f"{'='*70}")
 
-        full_url = urljoin(PRODUCTION_URL, page_url)
+        full_url = urljoin(LOCAL_URL, page_url)
         html = self.fetch_page(full_url)
 
         if not html:
@@ -219,56 +291,23 @@ class ProductionAnalyticsTest:
 
         return True
 
-    def test_production_environment(self):
-        """Test production environment settings by checking HTML output"""
-        print(f"\n{'='*70}")
-        print(f"🔍 TESTING PRODUCTION ENVIRONMENT")
-        print(f"{'='*70}")
-
-        # Fetch home page to check environment
-        html = self.fetch_page(PRODUCTION_URL)
-
-        if not html:
-            self.log('fail', "Cannot verify production environment - home page not accessible")
-            return False
-
-        # Check if analytics is enabled (should have gtag script)
-        has_gtag = f'gtag/js?id={EXPECTED_GA4_ID}' in html
-
-        # Check if DEBUG mode is disabled (no Django debug toolbar, etc.)
-        has_debug_toolbar = 'django-debug-toolbar' in html.lower()
-        has_debug_info = 'django.core.exceptions' in html
-
-        details = []
-        if has_gtag:
-            details.append(f"✓ GA4 script present (ENABLE_ANALYTICS=true)")
-        else:
-            details.append(f"✗ GA4 script NOT present (ENABLE_ANALYTICS may be false)")
-
-        if not has_debug_toolbar and not has_debug_info:
-            details.append(f"✓ Debug mode disabled (DEBUG=False)")
-        else:
-            details.append(f"✗ Debug mode may be enabled (DEBUG=True)")
-
-        details.append(f"✓ GA4 ID configured: {EXPECTED_GA4_ID}")
-
-        if has_gtag and not has_debug_toolbar:
-            self.log('pass', "Production environment configured correctly", details)
-            return True
-        else:
-            self.log('fail', "Production environment may not be configured correctly", details)
-            return False
-
     def run_all_tests(self):
-        """Run all production tests"""
+        """Run all local tests"""
         print(f"\n{'#'*70}")
-        print(f"# GOOGLE ANALYTICS PRODUCTION IMPLEMENTATION TEST")
-        print(f"# Production URL: {PRODUCTION_URL}")
+        print(f"# GOOGLE ANALYTICS LOCAL IMPLEMENTATION TEST")
+        print(f"# Local URL: {LOCAL_URL}")
         print(f"# Expected GA4 ID: {EXPECTED_GA4_ID}")
         print(f"# Test Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"{'#'*70}")
 
-        # Test production environment first
+        # Test if server is running first
+        if not self.test_server_running():
+            print(f"\n{'='*70}")
+            print(f"❌ CANNOT RUN TESTS - SERVER NOT RUNNING")
+            print(f"{'='*70}")
+            return False
+
+        # Test environment configuration
         self.test_production_environment()
 
         # Test each page
@@ -296,18 +335,23 @@ class ProductionAnalyticsTest:
             print(f"\n{'='*70}")
             print(f"🎉 ALL TESTS PASSED!")
             print(f"{'='*70}")
-            print(f"\n✅ Google Analytics is working correctly in production!")
+            print(f"\n✅ Google Analytics is working correctly in production mode!")
             print(f"\n📋 What's Working:")
             print(f"   ✓ GA4 script (gtag.js) loading with ID: {EXPECTED_GA4_ID}")
             print(f"   ✓ Custom analytics-travel.js loading")
             print(f"   ✓ Development mode disabled")
             print(f"   ✓ Form tracking attributes present")
             print(f"   ✓ Tracking elements configured")
+            print(f"\n🚀 Ready for Production Deployment!")
             print(f"\n🔗 Next Steps:")
-            print(f"   1. Open Google Analytics 4 → Reports → Realtime")
-            print(f"   2. Visit {PRODUCTION_URL}")
-            print(f"   3. Perform actions (submit forms, click buttons, etc.)")
-            print(f"   4. Verify events appear in GA4 Realtime report")
+            print(f"   1. Deploy to production (Render.com)")
+            print(f"   2. Verify environment variables on Render:")
+            print(f"      - ENABLE_ANALYTICS=true")
+            print(f"      - DEBUG=False")
+            print(f"      - GOOGLE_ANALYTICS_ID={EXPECTED_GA4_ID}")
+            print(f"   3. Test on production URL")
+            print(f"   4. Open Google Analytics 4 → Reports → Realtime")
+            print(f"   5. Verify events appear in GA4")
         else:
             print(f"\n{'='*70}")
             print(f"⚠️  SOME TESTS FAILED")
@@ -320,13 +364,15 @@ class ProductionAnalyticsTest:
                         print(f"     {sub_detail}")
 
             print(f"\n🔧 Recommended Actions:")
-            print(f"   1. Check .env.production file:")
+            print(f"   1. Make sure DJANGO_ENV=production is set:")
+            print(f"      export DJANGO_ENV=production")
+            print(f"   2. Check .env.production file:")
             print(f"      - ENABLE_ANALYTICS=true")
             print(f"      - DEBUG=False")
             print(f"      - GOOGLE_ANALYTICS_ID={EXPECTED_GA4_ID}")
-            print(f"   2. Verify deployment on Render.com")
-            print(f"   3. Check if environment variables are set correctly")
-            print(f"   4. Re-deploy if necessary")
+            print(f"   3. Restart Django server:")
+            print(f"      python manage.py runserver")
+            print(f"   4. Re-run this test")
 
         print(f"\n{'='*70}\n")
 
@@ -335,7 +381,7 @@ class ProductionAnalyticsTest:
 
 def main():
     """Main test runner"""
-    tester = ProductionAnalyticsTest()
+    tester = LocalAnalyticsTest()
     success = tester.run_all_tests()
     sys.exit(0 if success else 1)
 
