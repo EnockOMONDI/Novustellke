@@ -5,7 +5,7 @@ services:
     env: python
     region: oregon
     plan: starter
-    branch: novustell4
+    branch: googleanalytics
     buildCommand: |
       echo "🚀 Starting Novustell Travel build process..."
       pip install --upgrade pip
@@ -142,6 +142,10 @@ services:
       - key: ENABLE_CHAT_SUPPORT
         value: False
 
+      # Google Analytics Configuration
+      - key: GOOGLE_ANALYTICS_ID
+        value: G-JV4GQKWVJL
+
       # Business Configuration
       - key: DEFAULT_BOOKING_EXPIRY_HOURS
         value: 24
@@ -164,8 +168,6 @@ services:
 
       # Monitoring (Optional - set manually if needed)
       # - key: SENTRY_DSN
-      #   sync: false
-      # - key: GOOGLE_ANALYTICS_ID
       #   sync: false
 
     healthCheckPath: /health/
@@ -237,7 +239,7 @@ databases:
 # 1. Set MAILTRAP_API_TOKEN manually in Render dashboard:d766975d57a7ef1acf2f750a36247a37
 # 2. Set UPLOADCARE_PUBLIC_KEY and UPLOADCARE_SECRET_KEY manually
 # 3. Optional: Set SENTRY_DSN for error monitoring
-# 4. Optional: Set GOOGLE_ANALYTICS_ID for analytics
+# 4. ✅ GOOGLE_ANALYTICS_ID configured (G-JV4GQKWVJL)
 # 5. Consider upgrading to paid plans for production workloads
 
 # Deployment checklist:
