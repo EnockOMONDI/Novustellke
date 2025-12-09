@@ -162,14 +162,19 @@ def test_admin_user_tracking():
     try:
         from tours_travels.context_processors import analytics_settings
         
-        # Create admin user
-        admin_user = User.objects.create_user(
+        # Create or reuse admin user for testing
+        admin_user, created = User.objects.get_or_create(
             username='testadmin',
-            email='admin@test.com',
-            password='testpass123',
-            is_staff=True,
-            is_superuser=True
+            defaults={
+                'email': 'admin@test.com',
+                'is_staff': True,
+                'is_superuser': True,
+            }
         )
+        admin_user.is_staff = True
+        admin_user.is_superuser = True
+        admin_user.set_password('testpass123')
+        admin_user.save()
         
         # Create test requests
         factory = RequestFactory()
@@ -188,8 +193,9 @@ def test_admin_user_tracking():
         print(f"   Anonymous user should load analytics: {anon_context.get('SHOULD_LOAD_ANALYTICS', False)}")
         print(f"   Admin user should load analytics: {admin_context.get('SHOULD_LOAD_ANALYTICS', False)}")
         
-        # Cleanup
-        admin_user.delete()
+        # Cleanup only if we created the user in this test
+        if created:
+            admin_user.delete()
         
         return True
         
