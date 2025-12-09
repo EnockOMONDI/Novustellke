@@ -31,6 +31,16 @@ ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
 JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')
 NEWSLETTER_EMAIL = os.getenv('NEWSLETTER_EMAIL', 'news@novustelltravel.com')
 
+
+ENABLE_ANALYTICS = True
+
+# Google Analytics Configuration (Production)
+# Override settings from base settings.py to use os.getenv() instead of python-decouple
+# This ensures environment variables from render.yaml are properly read on Render.com
+GOOGLE_ANALYTICS_ID = os.getenv('GOOGLE_ANALYTICS_ID', 'G-JV4GQKWVJL')
+GOOGLE_TAG_MANAGER_ID = os.getenv('GOOGLE_TAG_MANAGER_ID', '')
+ANALYTICS_TRACK_ADMIN = os.getenv('ANALYTICS_TRACK_ADMIN', 'False').lower() == 'true'
+
 # Celery Configuration (DEPRECATED - migrated to Mailtrap Email Marketing API)
 # CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
 # CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
