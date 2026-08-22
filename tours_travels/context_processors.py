@@ -3,8 +3,25 @@ Context processors for Novustell Travel Django project.
 Provides global template variables and default image management.
 """
 
+import logging
+
 from django.conf import settings
 from django.templatetags.static import static
+
+
+logger = logging.getLogger(__name__)
+_missing_manifest_paths = set()
+
+
+def _safe_static(path):
+    """Return a usable URL even when an optional asset is absent from the manifest."""
+    try:
+        return static(path)
+    except ValueError:
+        if path not in _missing_manifest_paths:
+            logger.warning("Static manifest entry missing for %s", path)
+            _missing_manifest_paths.add(path)
+        return f"{settings.STATIC_URL.rstrip('/')}/{str(path).lstrip('/')}"
 
 
 def default_images(request):
@@ -26,7 +43,7 @@ def default_images(request):
     # Convert relative paths to full static URLs
     default_images_urls = {}
     for key, path in default_images_config.items():
-        default_images_urls[key] = static(path)
+        default_images_urls[key] = _safe_static(path)
     
     # Helper function to get default image for content type
     def get_default_for_content_type(content_type):
@@ -65,7 +82,10 @@ def default_images(request):
         if config_key in default_images_urls:
             return default_images_urls[config_key]
         else:
-            return default_images_urls.get('DEFAULT', static('assets/images/logo/defaultimagenovustell.png'))
+            return default_images_urls.get(
+                'DEFAULT',
+                _safe_static('assets/images/logo/defaultimagenovustell.png'),
+            )
     
     # Helper function to get image URL with fallback
     def get_image_url_with_fallback(image_field, content_type='default', use_placeholder=False):
@@ -97,7 +117,10 @@ def default_images(request):
         
         # Use placeholder SVG if requested
         if use_placeholder:
-            return default_images_urls.get('PLACEHOLDER_SVG', static('images/novustelltravelplaceholder.svg'))
+            return default_images_urls.get(
+                'PLACEHOLDER_SVG',
+                _safe_static('images/novustelltravelplaceholder.svg'),
+            )
         
         # Use content-type specific default
         return get_default_for_content_type(content_type)
