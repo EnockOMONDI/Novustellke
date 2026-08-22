@@ -9,6 +9,7 @@ from .health_check import (
     health_check, health_detailed, readiness_check,
     liveness_check, metrics, csp_report, version_info
 )
+from .environment_diagnostics import environment_diagnostics
 
 
 
@@ -16,6 +17,11 @@ from .health_check import (
 
 
 urlpatterns = [
+    path(
+        'admin/environment/',
+        environment_diagnostics,
+        name='environment_diagnostics',
+    ),
     path('admin/', admin.site.urls),
     path("ckeditor5/", include('django_ckeditor_5.urls')),  # CKEditor 5 file uploads
 

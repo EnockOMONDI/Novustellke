@@ -1,0 +1,71 @@
+{% extends "admin/base_site.html" %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    .env-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 20px 0; }
+    .env-card { border: 1px solid var(--border-color, #d8d8d8); border-radius: 8px; padding: 16px; background: var(--body-bg, #fff); }
+    .env-card strong { display: block; font-size: 24px; margin-bottom: 4px; }
+    .env-group { margin: 24px 0; }
+    .env-table { width: 100%; border-collapse: collapse; }
+    .env-table th, .env-table td { padding: 10px 12px; border-bottom: 1px solid var(--hairline-color, #e8e8e8); text-align: left; }
+    .env-table code { overflow-wrap: anywhere; }
+    .env-status { display: inline-block; border-radius: 999px; padding: 3px 9px; font-weight: 600; }
+    .env-status.present { background: #dcfce7; color: #166534; }
+    .env-status.missing { background: #fee2e2; color: #991b1b; }
+    .env-status.optional { background: #f1f5f9; color: #475569; }
+    .env-warning { border-left: 4px solid #d97706; padding: 12px 16px; background: #fffbeb; color: #78350f; }
+    .env-runtime { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <p class="env-warning">
+        This page reports configuration presence only. Environment values and secrets are never displayed or logged.
+    </p>
+
+    <div class="env-summary">
+        <div class="env-card"><strong>{{ present_count }}</strong>Present</div>
+        <div class="env-card"><strong>{{ missing_required_count }}</strong>Required missing</div>
+        <div class="env-card"><strong>{{ optional_count }}</strong>Optional/default not set</div>
+    </div>
+
+    <div class="env-card">
+        <h2>Resolved runtime</h2>
+        <dl class="env-runtime">
+            <dt>Settings module</dt><dd><code>{{ runtime.settings_module }}</code></dd>
+            <dt>Debug mode</dt><dd>{{ runtime.debug|yesno:"Enabled,Disabled" }}</dd>
+            <dt>Email backend</dt><dd><code>{{ runtime.email_backend }}</code></dd>
+            <dt>Database engine</dt><dd><code>{{ runtime.database_engine }}</code></dd>
+        </dl>
+    </div>
+
+    {% if missing_required %}
+    <div class="env-group">
+        <h2>Required variables to add</h2>
+        <p><code>{{ missing_required|join:", " }}</code></p>
+    </div>
+    {% endif %}
+
+    {% for group in groups %}
+    <section class="env-group">
+        <h2>{{ group.name }}</h2>
+        <table class="env-table">
+            <thead>
+                <tr><th>Variable</th><th>Requirement</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+                {% for variable in group.variables %}
+                <tr>
+                    <td><code>{{ variable.name }}</code></td>
+                    <td>{{ variable.required|yesno:"Required,Optional" }}</td>
+                    <td><span class="env-status {{ variable.status_class }}">{{ variable.status }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    {% endfor %}
+</div>
+{% endblock %}

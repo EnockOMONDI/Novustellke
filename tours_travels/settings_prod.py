@@ -136,6 +136,11 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False,
         },
+        'tours_travels.environment_diagnostics': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
     },
 }
 
