@@ -38,7 +38,24 @@
             <dt>Debug mode</dt><dd>{{ runtime.debug|yesno:"Enabled,Disabled" }}</dd>
             <dt>Email backend</dt><dd><code>{{ runtime.email_backend }}</code></dd>
             <dt>Database engine</dt><dd><code>{{ runtime.database_engine }}</code></dd>
+            <dt>Allowed hosts</dt><dd><code>{{ runtime.allowed_hosts|join:", " }}</code></dd>
         </dl>
+    </div>
+
+    <div class="env-card">
+        <h2>Last email provider error</h2>
+        {% if last_email_failure %}
+        <dl class="env-runtime">
+            <dt>Code</dt><dd><code>{{ last_email_failure.code }}</code></dd>
+            <dt>Provider</dt><dd><code>{{ last_email_failure.provider }}</code></dd>
+            <dt>Status</dt><dd><code>{{ last_email_failure.status_code }}</code></dd>
+            <dt>Exception</dt><dd><code>{{ last_email_failure.exception }}</code></dd>
+            <dt>Recorded</dt><dd><code>{{ last_email_failure.recorded_at }}</code></dd>
+            <dt>Detail</dt><dd><code>{{ last_email_failure.detail }}</code></dd>
+        </dl>
+        {% else %}
+        <p>No email provider failure has been recorded on this running instance yet.</p>
+        {% endif %}
     </div>
 
     {% if missing_required %}

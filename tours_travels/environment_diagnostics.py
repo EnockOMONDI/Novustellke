@@ -9,6 +9,8 @@ from django.shortcuts import render
 from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_GET
 
+from users.email_diagnostics import get_last_email_failure
+
 
 logger = logging.getLogger(__name__)
 
@@ -124,6 +126,7 @@ def _environment_status():
 def environment_diagnostics(request):
     """Show an allowlisted presence check without revealing environment values."""
     groups, present, missing_required, absent_optional = _environment_status()
+    last_email_failure = get_last_email_failure()
 
     logger.info(
         "Environment diagnostics user_id=%s present=%s missing_required=%s "
@@ -151,7 +154,9 @@ def environment_diagnostics(request):
                 "debug": settings.DEBUG,
                 "email_backend": getattr(settings, "EMAIL_BACKEND", "Not set"),
                 "database_engine": settings.DATABASES["default"]["ENGINE"],
+                "allowed_hosts": settings.ALLOWED_HOSTS,
             },
+            "last_email_failure": last_email_failure,
         },
     )
     response["X-Robots-Tag"] = "noindex, nofollow"

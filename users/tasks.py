@@ -8,10 +8,14 @@ from django.template.loader import render_to_string
 from django.conf import settings
 from django.utils.html import strip_tags
 
+from .email_diagnostics import build_email_error_details, record_last_email_failure
+
 logger = logging.getLogger(__name__)
 
 
-def send_email_via_mailtrap(subject, html_message, from_email, recipient_list):
+def send_email_via_mailtrap(
+    subject, html_message, from_email, recipient_list, return_details=False
+):
     """
     Send email using Django's mail layer.
 
@@ -22,7 +26,7 @@ def send_email_via_mailtrap(subject, html_message, from_email, recipient_list):
         recipient_list (list): List of recipient email addresses
 
     Returns:
-        bool: True if email sent successfully, False otherwise
+        bool or dict: True/False by default, or diagnostic details when requested.
     """
     try:
         logger.info("Sending transactional email: subject='%s', recipients=%s", subject, recipient_list)
@@ -38,10 +42,24 @@ def send_email_via_mailtrap(subject, html_message, from_email, recipient_list):
         message.send(fail_silently=False)
 
         logger.info("Transactional email sent successfully")
+        if return_details:
+            return {"success": True}
         return True
 
     except Exception as e:
-        logger.error("Failed to send transactional email: %s", e)
+        details = build_email_error_details(e)
+        record_last_email_failure(details)
+        logger.error(
+            "Failed to send transactional email: code=%s provider=%s "
+            "status=%s exception=%s detail=%s",
+            details["code"],
+            details["provider"],
+            details["status_code"],
+            details["exception"],
+            details["detail"],
+        )
+        if return_details:
+            return {"success": False, "error": details}
         return False
 
 
@@ -61,6 +79,7 @@ def send_contact_inquiry_emails(inquiry):
         # Track email sending status
         admin_sent = False
         user_sent = False
+        errors = []
 
         # Send admin notification email
         try:
@@ -69,12 +88,16 @@ def send_contact_inquiry_emails(inquiry):
                 'inquiry': inquiry
             })
 
-            admin_sent = send_email_via_mailtrap(
+            admin_result = send_email_via_mailtrap(
                 subject=admin_subject,
                 html_message=admin_message_html,
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[settings.ADMIN_EMAIL],
+                return_details=True,
             )
+            admin_sent = admin_result.get("success", False)
+            if not admin_sent:
+                errors.append(admin_result.get("error"))
 
             if admin_sent:
                 logger.info(f"Admin notification sent for contact inquiry {inquiry.id}")
@@ -91,12 +114,16 @@ def send_contact_inquiry_emails(inquiry):
                 'inquiry': inquiry
             })
 
-            user_sent = send_email_via_mailtrap(
+            user_result = send_email_via_mailtrap(
                 subject=user_subject,
                 html_message=user_message_html,
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[inquiry.email],
+                return_details=True,
             )
+            user_sent = user_result.get("success", False)
+            if not user_sent:
+                errors.append(user_result.get("error"))
 
             if user_sent:
                 logger.info(f"User confirmation sent for contact inquiry {inquiry.id}")
@@ -115,6 +142,7 @@ def send_contact_inquiry_emails(inquiry):
             'success': success,
             'admin_email_sent': admin_sent,
             'user_email_sent': user_sent,
+            'errors': [error for error in errors if error],
         }
 
     except Exception as e:

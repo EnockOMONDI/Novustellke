@@ -60,9 +60,33 @@ class EnvironmentDiagnosticsTests(SimpleTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("Environment diagnostics", content)
         self.assertIn("RESEND_API_KEY", content)
+        self.assertIn("Allowed hosts", content)
         self.assertIn("Present", content)
         self.assertNotIn("must-not-appear", content)
         self.assertEqual(response["X-Robots-Tag"], "noindex, nofollow")
+
+    @patch(
+        "tours_travels.environment_diagnostics.get_last_email_failure",
+        return_value={
+            "code": "resend-403-AnymailRequestsAPIError",
+            "provider": "Resend",
+            "exception": "AnymailRequestsAPIError",
+            "status_code": 403,
+            "detail": "domain is not verified",
+            "recorded_at": "2026-08-22T00:00:00+00:00",
+        },
+    )
+    def test_staff_page_shows_last_email_failure(self, _mock_failure):
+        request = self.request_factory.get(self.url)
+        request.user = StaffUser()
+
+        response = environment_diagnostics(request)
+        content = response.content.decode()
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Last email provider error", content)
+        self.assertIn("resend-403-AnymailRequestsAPIError", content)
+        self.assertIn("domain is not verified", content)
 
     def test_non_staff_user_is_redirected(self):
         request = self.request_factory.get(self.url)

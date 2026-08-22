@@ -241,9 +241,22 @@ def contactus(request):
                         f'Your reference number is NVT-{inquiry.id:05d}. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
                 else:
                     logger.warning(f"Some contact inquiry emails failed for inquiry {inquiry.id}: {result}")
+                    first_error = next(
+                        (
+                            error
+                            for error in result.get("errors", [])
+                            if error and error.get("code")
+                        ),
+                        None,
+                    )
+                    diagnostic_suffix = (
+                        f' Diagnostic code: {first_error["code"]}.'
+                        if first_error
+                        else ''
+                    )
                     messages.warning(request,
                         f'Your inquiry has been submitted (Ref: NVT-{inquiry.id:05d}), but there was an issue sending email notifications. '
-                        f'We will still respond to your inquiry. For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
+                        f'We will still respond to your inquiry.{diagnostic_suffix} For immediate assistance, contact us via WhatsApp at +254 701 363 551.')
 
                 logger.info(f"Contact inquiry submitted successfully: {inquiry.full_name} - {inquiry.subject}")
 
