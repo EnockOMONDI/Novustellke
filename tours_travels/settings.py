@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'anymail',
     'django_ckeditor_5',  # CKEditor 5 for modern rich text editing
     'import_export',
     'adminside',
@@ -250,13 +251,13 @@ TEMPLATE_DIRS = (
 )
 
 
-# Email settings for Novustell Travel - Mailtrap HTTP API
-# NOTE: Using Mailtrap HTTP API instead of SMTP for better reliability
-MAILTRAP_API_TOKEN = os.getenv('MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
+# Email settings for Novustell Travel
+RESEND_API_KEY = os.getenv('RESEND_API_KEY', '')
+ANYMAIL = {
+    "RESEND_API_KEY": RESEND_API_KEY,
+}
 
 # Email addresses configuration
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'api')  # Keep for compatibility
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'd766975d57a7ef1acf2f750a36247a37')  # Keep for compatibility
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
 
 # Admin email for notifications
@@ -292,6 +293,7 @@ CACHES = {
 # Email Rate Limiting Configuration
 EMAIL_RATE_LIMIT_PER_MINUTE = config('EMAIL_RATE_LIMIT_PER_MINUTE', default=60, cast=int)
 EMAIL_RATE_LIMIT_PER_HOUR = config('EMAIL_RATE_LIMIT_PER_HOUR', default=1000, cast=int)
+EMAIL_MARKETING_BATCH_LIMIT = config('EMAIL_MARKETING_BATCH_LIMIT', default=99, cast=int)
 
 # Cart session configuration
 CART_SESSION_ID = 'cart'
@@ -538,4 +540,3 @@ def environment_callback(request):
 def dashboard_callback(request, context):
     """Return dashboard data for Unfold admin"""
     return context
-

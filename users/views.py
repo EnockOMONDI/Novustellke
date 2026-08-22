@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.http import Http404
 from django.views.decorators.csrf import csrf_exempt
 import os
-import smtplib
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -11,11 +10,8 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.db.models import Q
 from django.http import JsonResponse
-
-
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-
+from urllib.parse import quote
+import json
 
 from adminside.models import *
 from users.models import *
@@ -106,6 +102,31 @@ def corporate(request):
 
     return render(request, 'users/corporate.html')
 
+
+def document_workflow(request):
+    """
+    Client document workflow page using Sejda's public PDF editor integration.
+    """
+    document_url = request.GET.get('document_url', '').strip()
+    return_email = request.GET.get('return_email', 'Info@novustelltravel.com').strip()
+    mode = request.GET.get('mode', 'fill-sign')
+
+    sejda_link = ''
+    if document_url:
+        files_payload = json.dumps([{'downloadUrl': document_url}], separators=(',', ':'))
+        sejda_link = f'https://www.sejda.com/pdf-editor?files={quote(files_payload, safe="")}'
+        if return_email:
+            sejda_link += f'&returnEmail={quote(return_email, safe="")}'
+
+    context = {
+        'document_url': document_url,
+        'return_email': return_email,
+        'mode': mode,
+        'sejda_link': sejda_link,
+    }
+
+    return render(request, 'users/document_workflow.html', context)
+
 # users/views.py
 
 
@@ -117,7 +138,7 @@ def micepage(request):
 
             try:
 
-                # Send email notifications using Mailtrap HTTP API
+                # Send email notifications through the configured transactional email backend
                 from .tasks import send_mice_inquiry_emails
                 result = send_mice_inquiry_emails(inquiry)
 
@@ -144,7 +165,7 @@ def student_travel(request):
             inquiry = form.save()
 
             try:
-                # Send email notifications using Mailtrap HTTP API
+                # Send email notifications through the configured transactional email backend
                 from .tasks import send_student_travel_emails
                 result = send_student_travel_emails(inquiry)
 
@@ -171,7 +192,7 @@ def ngo_travel(request):
             inquiry = form.save()
 
             try:
-                # Send email notifications using Mailtrap HTTP API
+                # Send email notifications through the configured transactional email backend
                 from .tasks import send_ngo_travel_emails
                 result = send_ngo_travel_emails(inquiry)
 
@@ -209,7 +230,7 @@ def contactus(request):
                 # Save the contact inquiry
                 inquiry = form.save()
 
-                # Send email notifications using Mailtrap HTTP API
+                # Send email notifications through the configured transactional email backend
                 from .tasks import send_contact_inquiry_emails
                 result = send_contact_inquiry_emails(inquiry)
 
@@ -243,10 +264,10 @@ def contactus(request):
     return render(request, 'users/contactus.html', {'form': form})
 
 
-# Job application emails are now handled in users/tasks.py using Mailtrap HTTP API
+# Job application emails are handled in users/tasks.py through the configured email backend
 
 
-# Newsletter subscription emails are now handled in users/tasks.py using Mailtrap HTTP API
+# Newsletter subscription emails are handled in users/tasks.py through the configured email backend
 
 
 def careers(request):
@@ -274,7 +295,7 @@ def careers(request):
         if form.is_valid():
             job_application = form.save()
 
-            # Send email notifications using Mailtrap HTTP API
+            # Send email notifications through the configured transactional email backend
             try:
                 from .tasks import send_job_application_emails
                 result = send_job_application_emails(job_application)
@@ -394,7 +415,7 @@ def newsletter_subscribe(request):
                 destination_updates=True
             )
 
-            # Send email notifications using Mailtrap HTTP API
+            # Send email notifications through the configured transactional email backend
             try:
                 from .tasks import send_newsletter_subscription_emails
                 result = send_newsletter_subscription_emails(subscription)
@@ -642,21 +663,7 @@ def bookings(request, package_id):
 def send_booking_email(booking):
     """Send an email notification about the new booking."""
     try:
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-
-        # Use email credentials from settings
-        sender_email = settings.EMAIL_HOST_USER
-        password = settings.EMAIL_HOST_PASSWORD
-
-        s.login(sender_email, password)
-
-        # Email content
-        msg = MIMEMultipart()
-        msg['From'] = f"Novustell Travel <{sender_email}>"
-        msg['To'] = "info@novustelltravel.com"
-        msg['Subject'] = f"New Booking: {booking.full_name} for {booking.package.name}"
-
+        subject = f"New Booking: {booking.full_name} for {booking.package.name}"
         message = f"""
         <p><strong>New Booking Alert</strong></p>
         <p><strong>Customer Name:</strong> {booking.full_name}</p>
@@ -667,12 +674,14 @@ def send_booking_email(booking):
         <p><strong>Rooms:</strong> {booking.number_of_rooms}</p>
         <p><strong>Include Travelling:</strong> {'Yes' if booking.include_travelling else 'No'}</p>
         """
-
-        msg.attach(MIMEText(message, 'html'))
-
-        # Send the email
-        s.send_message(msg)
-        s.quit()
+        send_mail(
+            subject,
+            message,
+            settings.DEFAULT_FROM_EMAIL,
+            [settings.ADMIN_EMAIL],
+            html_message=message,
+            fail_silently=False,
+        )
         print("Booking email sent successfully!")
         return True
 

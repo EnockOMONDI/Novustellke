@@ -67,15 +67,15 @@ services:
       - key: RENDER_EXTERNAL_HOSTNAME
         generateValue: true
 
-      # Email Configuration - Mailtrap HTTP API
-      - key: MAILTRAP_API_TOKEN
-        value: d766975d57a7ef1acf2f750a36247a37
-      - key: EMAIL_HOST_USER
-        value: api
-      - key: EMAIL_HOST_PASSWORD
-        value: d766975d57a7ef1acf2f750a36247a37
+      # Email Configuration - Resend API
+      - key: EMAIL_BACKEND
+        value: anymail.backends.resend.EmailBackend
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_MARKETING_BATCH_LIMIT
+        value: 99
 
-      # Removed Celery configuration - migrated to Mailtrap Email Marketing API
+      # Removed worker/cron configuration - free Render web service only
       # - key: CELERY_BROKER_URL
       #   value: rediss://default:AWAXAAIncDI4ZTNlNjRkMDEyOWI0OTdkODI4Nzk0ZTZlMTc1ZmQxOXAyMjQ1OTk@popular-condor-24599.upstash.io:6379
       # - key: CELERY_RESULT_BACKEND
@@ -177,8 +177,8 @@ services:
       mountPath: /opt/render/project/src/media
       sizeGB: 1
 
-  # Removed Celery services - migrated to Mailtrap Email Marketing API
-  # Email campaigns are now sent directly via API without background workers
+  # Removed Celery services - email campaigns are sent directly via the Resend API
+  # Manual campaign batches run without background workers
 
   # # Celery Worker for Email Marketing Background Tasks (DEPRECATED)
   # - type: worker
@@ -236,11 +236,11 @@ databases:
 # For production media files, consider AWS S3 integration
 
 # Environment-specific notes:
-# 1. Set MAILTRAP_API_TOKEN manually in Render dashboard:d766975d57a7ef1acf2f750a36247a37
+# 1. Set RESEND_API_KEY manually in the Render dashboard
 # 2. Set UPLOADCARE_PUBLIC_KEY and UPLOADCARE_SECRET_KEY manually
 # 3. Optional: Set SENTRY_DSN for error monitoring
-# 4. ✅ GOOGLE_ANALYTICS_ID configured (G-JV4GQKWVJL)
-# 5. Consider upgrading to paid plans for production workloads
+# 4. GOOGLE_ANALYTICS_ID is configured in the environment
+# 5. Consider upgrading to paid plans for heavier production workloads
 
 # Deployment checklist:
 # ✅ Environment variables configured

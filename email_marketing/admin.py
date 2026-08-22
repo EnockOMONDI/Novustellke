@@ -238,9 +238,9 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                 service = EmailMarketingService()
 
                 # Check if we have recipients first (using memory-efficient approach)
-                from .services import MailtrapEmailMarketingService
-                mailtrap_service = MailtrapEmailMarketingService()
-                recipients_data = mailtrap_service._get_campaign_recipients_minimal(obj)
+                from .services import ResendEmailMarketingService
+                resend_service = ResendEmailMarketingService()
+                recipients_data = resend_service._get_campaign_recipients_minimal(obj)
 
                 logger.info(f"Found {len(recipients_data)} recipients for campaign {obj.name}")
 
@@ -252,8 +252,8 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                     )
                     return
 
-                # Send the campaign using Newsletter API (single request, Mailtrap handles everything)
-                logger.info(f"Attempting to send campaign {obj.name} via Newsletter API")
+                # Send the campaign using Resend batch API
+                logger.info(f"Attempting to send campaign {obj.name} via Resend batch API")
                 success = service.send_campaign(obj.id)
 
                 # Refresh the object to get updated status
@@ -262,13 +262,13 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                 if success and obj.status == 'sent':
                     self.message_user(
                         request,
-                        f"✅ Campaign '{obj.name}' was created and sent immediately via Mailtrap Newsletter API! ({obj.emails_sent_count} emails sent to {len(recipients_data)} recipients)",
+                        f"✅ Campaign '{obj.name}' was created and sent immediately via Resend batch API! ({obj.emails_sent_count} emails sent to {len(recipients_data)} recipients)",
                         level=messages.SUCCESS
                     )
                 elif obj.status == 'sending':
                     self.message_user(
                         request,
-                        f"📤 Campaign '{obj.name}' was created and is currently being sent via Mailtrap Email Marketing API to {len(recipients)} recipients.",
+                        f"📤 Campaign '{obj.name}' was created and is currently being sent via Resend batch API to {len(recipients_data)} recipients.",
                         level=messages.INFO
                     )
                 else:
@@ -289,7 +289,7 @@ class EmailCampaignAdmin(admin.ModelAdmin):
     actions = ['send_campaign', 'pause_campaign', 'cancel_campaign']
 
     def send_campaign(self, request, queryset):
-        """Send selected campaigns using Mailtrap Email Marketing API"""
+        """Send selected campaigns using Resend batch API"""
         from .services import EmailMarketingService
 
         service = EmailMarketingService()
@@ -299,9 +299,9 @@ class EmailCampaignAdmin(admin.ModelAdmin):
             if campaign.status == 'draft':
                 try:
                     # Check if campaign has recipients
-                    from .services import MailtrapEmailMarketingService
-                    mailtrap_service = MailtrapEmailMarketingService()
-                    recipients_data = mailtrap_service._get_campaign_recipients_minimal(campaign)
+                    from .services import ResendEmailMarketingService
+                    resend_service = ResendEmailMarketingService()
+                    recipients_data = resend_service._get_campaign_recipients_minimal(campaign)
 
                     if not recipients_data:
                         self.message_user(
@@ -311,14 +311,14 @@ class EmailCampaignAdmin(admin.ModelAdmin):
                         )
                         continue
 
-                    # Send campaign via Newsletter API (single request)
+                    # Send campaign via Resend batch API
                     success = service.send_campaign(campaign.id)
 
                     if success:
                         sent_count += 1
                         self.message_user(
                             request,
-                            f"Campaign '{campaign.name}' sent successfully to {len(recipients_data)} recipients via Newsletter API",
+                            f"Campaign '{campaign.name}' sent successfully to {len(recipients_data)} recipients via Resend batch API",
                             level=messages.SUCCESS
                         )
                     else:
@@ -344,10 +344,10 @@ class EmailCampaignAdmin(admin.ModelAdmin):
         if sent_count > 0:
             self.message_user(
                 request,
-                f"Successfully sent {sent_count} campaign(s) via Newsletter API",
+                f"Successfully sent {sent_count} campaign(s) via Resend batch API",
                 level=messages.SUCCESS
             )
-    send_campaign.short_description = "Send selected campaigns (Newsletter API)"
+    send_campaign.short_description = "Send selected campaigns (Resend batch API)"
 
     def pause_campaign(self, request, queryset):
         queryset.update(status='paused')

@@ -1,18 +1,18 @@
 """
-Django management command to test the new Mailtrap Email Marketing API integration
+Django management command to test the Resend email marketing integration.
 """
 
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 from email_marketing.models import EmailTemplate, RecipientList, Recipient, EmailCampaign
-from email_marketing.services import MailtrapEmailMarketingService, EmailMarketingService
+from email_marketing.services import EmailMarketingService
 import logging
 
 logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
-    help = 'Test the Mailtrap Email Marketing API integration'
+    help = 'Test the Resend email marketing integration'
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -34,7 +34,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.stdout.write(
-            self.style.SUCCESS('🚀 Testing Mailtrap Email Marketing API Integration')
+            self.style.SUCCESS('🚀 Testing Resend Email Marketing Integration')
         )
 
         if options['create_test_data']:
@@ -47,7 +47,7 @@ class Command(BaseCommand):
             self.show_usage()
 
     def create_test_data(self, test_email):
-        """Create test data for Email Marketing API testing"""
+        """Create test data for email marketing API testing"""
         self.stdout.write('📝 Creating test data...')
 
         # Get or create admin user
@@ -77,7 +77,7 @@ class Command(BaseCommand):
     <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
         <h1 style="color: #0f238d;">Hello {{recipient_name}}!</h1>
         
-        <p>This is a test email from the new <strong>Mailtrap Email Marketing API</strong> integration.</p>
+        <p>This is a test email from the <strong>Resend batch email</strong> integration.</p>
         
         <div style="background: #f8f3fc; padding: 15px; border-radius: 5px; margin: 20px 0;">
             <h3 style="color: #ff9d00; margin-top: 0;">Email Marketing API Features:</h3>
@@ -114,7 +114,7 @@ class Command(BaseCommand):
                 'text_content': '''
 Hello {{recipient_name}}!
 
-This is a test email from the new Mailtrap Email Marketing API integration.
+This is a test email from the Resend batch email integration.
 
 Email Marketing API Features:
 - Bulk email sending
@@ -181,7 +181,7 @@ Unsubscribe: {{unsubscribe_url}}
         campaign, created = EmailCampaign.objects.get_or_create(
             name='Email Marketing API Test Campaign',
             defaults={
-                'description': 'Test campaign for the new Email Marketing API integration',
+                'description': 'Test campaign for the Resend batch email integration',
                 'email_template': template,
                 'status': 'draft',
                 'created_by': admin_user,

@@ -1,18 +1,19 @@
 """
-Email sending functions using Mailtrap HTTP API
-Synchronous email delivery for production - Novustell Travel
+Email sending functions using Django mail.
+Production delivery is handled by Resend via the configured Django backend.
 """
 import logging
-from mailtrap import Mail, Address, MailtrapClient
+from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.conf import settings
+from django.utils.html import strip_tags
 
 logger = logging.getLogger(__name__)
 
 
 def send_email_via_mailtrap(subject, html_message, from_email, recipient_list):
     """
-    Send email using Mailtrap HTTP API
+    Send email using Django's mail layer.
 
     Args:
         subject (str): Email subject
@@ -24,35 +25,23 @@ def send_email_via_mailtrap(subject, html_message, from_email, recipient_list):
         bool: True if email sent successfully, False otherwise
     """
     try:
-        logger.info(f"Sending email via Mailtrap API: subject='{subject}', recipients={recipient_list}")
+        logger.info("Sending transactional email: subject='%s', recipients=%s", subject, recipient_list)
 
-        # Initialize Mailtrap client
-        client = MailtrapClient(token=settings.MAILTRAP_API_TOKEN)
-
-        # Parse from_email to extract name and email
-        if '<' in from_email and '>' in from_email:
-            from_name = from_email.split('<')[0].strip()
-            from_email_addr = from_email.split('<')[1].split('>')[0].strip()
-        else:
-            from_name = "Novustell Travel"
-            from_email_addr = from_email.strip()
-
-        # Create mail object
-        mail = Mail(
-            sender=Address(email=from_email_addr, name=from_name),
-            to=[Address(email=email.strip()) for email in recipient_list],
+        plain_message = strip_tags(html_message)
+        message = EmailMultiAlternatives(
             subject=subject,
-            html=html_message,
+            body=plain_message,
+            from_email=from_email,
+            to=[email.strip() for email in recipient_list],
         )
+        message.attach_alternative(html_message, "text/html")
+        message.send(fail_silently=False)
 
-        # Send email
-        response = client.send(mail)
-
-        logger.info(f"Email sent successfully via Mailtrap API: {response}")
+        logger.info("Transactional email sent successfully")
         return True
 
     except Exception as e:
-        logger.error(f"Failed to send email via Mailtrap API: {e}")
+        logger.error("Failed to send transactional email: %s", e)
         return False
 
 

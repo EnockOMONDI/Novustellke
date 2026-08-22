@@ -6,40 +6,34 @@ Handles email sending, template rendering, and campaign management
 import uuid
 import logging
 import requests
-import json
 from django.template import Template, Context
 from django.utils import timezone
 from django.conf import settings
-from django.urls import reverse
 # from django_ratelimit.decorators import ratelimit  # DEPRECATED - no longer needed with Email Marketing API
 from django.core.cache import cache
 from .models import EmailCampaign, EmailLog, Recipient
 
-# Import Mailtrap HTTP API functions for transactional emails
 from users.tasks import send_email_via_mailtrap
 
 logger = logging.getLogger(__name__)
 
 
-class MailtrapEmailMarketingService:
-    """Service class for Mailtrap Email Marketing API (Bulk Stream)"""
+class ResendEmailMarketingService:
+    """Service class for small manual campaign sends via Resend batch API."""
 
     def __init__(self):
-        self.api_token = getattr(settings, 'MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
-        self.base_url = 'https://bulk.api.mailtrap.io'
+        self.api_token = getattr(settings, 'RESEND_API_KEY', '')
+        self.base_url = 'https://api.resend.com'
         self.headers = {
             'Authorization': f'Bearer {self.api_token}',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         }
         self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
+        self.batch_limit = getattr(settings, 'EMAIL_MARKETING_BATCH_LIMIT', 99)
 
     def send_campaign(self, campaign_id):
         """
-        Send an email campaign using Mailtrap's Newsletter API
-
-        This method uses a single API call to Mailtrap's Newsletter API which handles
-        batching, chunking, queueing, and retries on their backend automatically.
-        Memory usage is minimal regardless of recipient count.
+        Send an email campaign via Resend's batch API.
 
         Args:
             campaign_id: ID of the campaign to send
@@ -65,13 +59,21 @@ class MailtrapEmailMarketingService:
                 campaign.save()
                 return False
 
-            logger.info(f"Starting campaign {campaign.name} for {len(recipients_data)} recipients using Newsletter API")
+            if len(recipients_data) > self.batch_limit:
+                raise ValueError(
+                    f"Campaign '{campaign.name}' has {len(recipients_data)} recipients. "
+                    f"This deployment only supports manual sends up to {self.batch_limit} recipients."
+                )
 
-            # Prepare newsletter API payload (single request for all recipients)
-            newsletter_data = self._prepare_newsletter_data(campaign, recipients_data)
+            logger.info(
+                "Starting campaign %s for %s recipients using Resend batch API",
+                campaign.name,
+                len(recipients_data),
+            )
 
-            # Send via Newsletter API (single request)
-            success = self._send_newsletter(newsletter_data)
+            batch_payload = self._prepare_newsletter_data(campaign, recipients_data)
+
+            success = self._send_newsletter(batch_payload)
 
             if success:
                 # Update campaign status
@@ -84,7 +86,11 @@ class MailtrapEmailMarketingService:
                 # Create email logs for tracking
                 self._create_email_logs_minimal(campaign, recipients_data)
 
-                logger.info(f"Campaign {campaign.name} sent successfully to {len(recipients_data)} recipients via Newsletter API")
+                logger.info(
+                    "Campaign %s sent successfully to %s recipients via Resend batch API",
+                    campaign.name,
+                    len(recipients_data),
+                )
                 return True
             else:
                 campaign.status = 'failed'
@@ -143,228 +149,74 @@ class MailtrapEmailMarketingService:
 
     def _prepare_newsletter_data(self, campaign, recipients_data):
         """
-        Prepare bulk email data for all recipients in a single request
-
-        Since Mailtrap Bulk Stream API doesn't support template variables,
-        we need to send individual personalized emails to each recipient.
+        Prepare Resend batch email payload.
 
         Args:
             campaign: EmailCampaign instance
             recipients_data: List of tuples [(email, first_name), ...]
 
         Returns:
-            Dict: Bulk email API payload with all recipients
+            list[dict]: Batch payload for Resend's /emails/batch endpoint
         """
-        from django.template import Context, Template
-
-        # Parse from email
-        if '<' in self.from_email and '>' in self.from_email:
-            from_name = self.from_email.split('<')[0].strip()
-            from_email_addr = self.from_email.split('<')[1].split('>')[0].strip()
-        else:
-            from_name = "Novustell Travel"
-            from_email_addr = self.from_email.strip()
-
-        # Prepare recipients list with personalized content
-        to_list = []
-
-        # Get base template context
         base_url = getattr(settings, 'BASE_URL', 'https://www.novustelltravel.com')
-
-        # Create Django templates for subject and HTML
         subject_template = Template(campaign.email_template.subject)
         html_template = Template(campaign.email_template.html_content)
+        payload = []
 
-        # Render personalized content for each recipient
         for email, first_name in recipients_data:
-            # Create context for this recipient
             context = Context({
                 'recipient_name': first_name,
-                'organization': '',  # We don't have organization data in recipients_data
-                'tracking_pixel_url': '',  # Add tracking pixel URL if needed
+                'organization': '',
+                'tracking_pixel_url': '',
                 'unsubscribe_url': f'{base_url}/email-marketing/unsubscribe/?email={email}',
                 'base_url': base_url,
             })
 
-            # Render personalized subject and HTML for this recipient
             personalized_subject = subject_template.render(context)
             personalized_html = html_template.render(context)
-
-            to_list.append({
-                "email": email,
-                "name": first_name,
+            payload.append({
+                "from": self.from_email,
+                "to": [email],
                 "subject": personalized_subject,
-                "html": personalized_html
+                "html": personalized_html,
+                "tags": [
+                    {"name": "campaign_id", "value": str(campaign.id)},
+                    {"name": "campaign_name", "value": campaign.name[:256]},
+                ],
             })
 
-        # Bulk email API payload (we'll send individual emails in the _send_newsletter method)
-        newsletter_data = {
-            "from": {
-                "email": from_email_addr,
-                "name": from_name
-            },
-            "to": to_list,  # Contains personalized content for each recipient
-            "category": f"campaign_{campaign.id}",
-            "custom_variables": {
-                "campaign_id": str(campaign.id),
-                "campaign_name": campaign.name
-            }
-        }
+        return payload
 
-        return newsletter_data
-
-    def _send_newsletter(self, newsletter_data):
+    def _send_newsletter(self, batch_payload):
         """
-        Send personalized emails to all recipients via Mailtrap Bulk Stream API
-
-        Since Mailtrap Bulk Stream API doesn't support template variables,
-        we send individual personalized emails to each recipient.
+        Send a small manual campaign batch via Resend.
 
         Args:
-            newsletter_data: Contains personalized content for each recipient
+            batch_payload: Personalized payload for each recipient
 
         Returns:
             bool: True if successful, False otherwise
         """
         try:
-            recipients = newsletter_data['to']
-            logger.info(f"Sending personalized emails to {len(recipients)} recipients via Bulk Stream API")
+            logger.info(
+                "Sending manual campaign batch via Resend: %s recipients",
+                len(batch_payload),
+            )
 
-            sent_count = 0
-            failed_count = 0
-
-            for recipient in recipients:
-                try:
-                    # Prepare individual email payload
-                    email_payload = {
-                        "from": newsletter_data["from"],
-                        "to": [{"email": recipient["email"], "name": recipient["name"]}],
-                        "subject": recipient["subject"],
-                        "html": recipient["html"],
-                        "category": newsletter_data["category"],
-                        "custom_variables": newsletter_data["custom_variables"]
-                    }
-
-                    # Send individual email
-                    response = requests.post(
-                        f"{self.base_url}/api/send",
-                        headers=self.headers,
-                        json=email_payload,
-                        timeout=30
-                    )
-
-                    if response.status_code == 200:
-                        sent_count += 1
-                        logger.debug(f"Email sent to {recipient['name']} ({recipient['email']})")
-                    else:
-                        failed_count += 1
-                        logger.error(f"Failed to send email to {recipient['email']}: {response.status_code}")
-
-                except Exception as e:
-                    failed_count += 1
-                    logger.error(f"Error sending email to {recipient['email']}: {e}")
-
-            success_rate = sent_count / len(recipients) if recipients else 0
-            logger.info(f"Campaign completed: {sent_count} sent, {failed_count} failed (success rate: {success_rate:.1%})")
-
-            # Consider successful if at least 80% of emails were sent
-            return success_rate >= 0.8
+            response = requests.post(
+                f"{self.base_url}/emails/batch",
+                headers=self.headers,
+                json=batch_payload,
+                timeout=30,
+            )
+            response.raise_for_status()
+            data = response.json()
+            logger.info("Resend batch API accepted %s emails", len(data.get("data", [])))
+            return True
 
         except Exception as e:
-            logger.error(f"Unexpected error in _send_newsletter: {e}")
+            logger.error("Unexpected error in Resend batch send: %s", e)
             return False
-
-    def _prepare_bulk_email_data(self, campaign, recipients):
-        """
-        Prepare email data for Mailtrap bulk sending with proper personalization.
-
-        Since Mailtrap Bulk Stream API doesn't support per-recipient template variables,
-        we'll send individual personalized emails to each recipient.
-        """
-        # Parse from email
-        if '<' in self.from_email and '>' in self.from_email:
-            from_name = self.from_email.split('<')[0].strip()
-            from_email_addr = self.from_email.split('<')[1].split('>')[0].strip()
-        else:
-            from_name = "Novustell Travel"
-            from_email_addr = self.from_email.strip()
-
-        # Prepare individual emails for each recipient with personalized content
-        emails_data = []
-
-        for recipient in recipients:
-            # Prepare personalized context for this recipient
-            context_data = self._prepare_template_context(recipient)
-
-            # Render the email template with recipient-specific context
-            rendered_html = self._render_email_template(campaign.email_template.html_content, context_data)
-            rendered_subject = self._render_email_template(campaign.email_template.subject, context_data)
-
-            # Create individual email data for this recipient
-            email_data = {
-                "from": {
-                    "email": from_email_addr,
-                    "name": from_name
-                },
-                "to": [{
-                    "email": recipient.email,
-                    "name": recipient.first_name or recipient.email.split('@')[0]
-                }],
-                "subject": rendered_subject,
-                "html": rendered_html,
-                "category": f"campaign_{campaign.id}",
-                "custom_variables": {
-                    "recipient_id": str(recipient.id),
-                    "campaign_id": str(campaign.id),
-                    "recipient_name": recipient.first_name or recipient.email.split('@')[0]
-                }
-            }
-
-            emails_data.append(email_data)
-
-        return emails_data
-
-    def _send_bulk_email(self, emails_data):
-        """
-        Send personalized emails via Mailtrap Email Marketing API.
-
-        Since we need per-recipient personalization, we send individual emails
-        rather than using bulk sending with the same content.
-        """
-        successful_sends = 0
-        total_emails = len(emails_data)
-
-        logger.info(f"Sending {total_emails} personalized emails via Mailtrap Email Marketing API")
-
-        for i, email_data in enumerate(emails_data, 1):
-            try:
-                response = requests.post(
-                    f"{self.base_url}/api/send",
-                    headers=self.headers,
-                    json=email_data,
-                    timeout=30
-                )
-
-                if response.status_code == 200:
-                    successful_sends += 1
-                    recipient_email = email_data['to'][0]['email']
-                    recipient_name = email_data['to'][0]['name']
-                    logger.info(f"Email {i}/{total_emails} sent successfully to {recipient_name} ({recipient_email})")
-                else:
-                    recipient_email = email_data['to'][0]['email']
-                    logger.error(f"Failed to send email {i}/{total_emails} to {recipient_email}: {response.status_code} - {response.text}")
-
-            except requests.exceptions.RequestException as e:
-                recipient_email = email_data['to'][0]['email']
-                logger.error(f"Request error sending email {i}/{total_emails} to {recipient_email}: {e}")
-            except Exception as e:
-                recipient_email = email_data['to'][0]['email'] if email_data.get('to') else 'unknown'
-                logger.error(f"Unexpected error sending email {i}/{total_emails} to {recipient_email}: {e}")
-
-        logger.info(f"Email sending completed: {successful_sends}/{total_emails} emails sent successfully")
-
-        # Return True if at least one email was sent successfully
-        return successful_sends > 0
 
     def _create_email_logs(self, campaign, recipients):
         """Create email logs for tracking purposes"""
@@ -457,30 +309,25 @@ class MailtrapEmailMarketingService:
 
 
 class EmailMarketingService:
-    """Service class for handling email marketing operations (Hybrid approach)"""
+    """Service class for handling email marketing operations."""
 
     def __init__(self):
         self.from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'info@novustelltravel.com')
-        self.mailtrap_marketing_service = MailtrapEmailMarketingService()
+        self.resend_marketing_service = ResendEmailMarketingService()
 
     def send_campaign(self, campaign_id):
         """
-        Send an email marketing campaign using Mailtrap's Newsletter API
-
-        Uses a single API call to Mailtrap's Newsletter API which handles
-        batching, chunking, queueing, and retries on their backend automatically.
-        Memory usage is minimal regardless of recipient count.
+        Send an email marketing campaign using Resend's batch API.
 
         Args:
             campaign_id: ID of the campaign to send
         """
-        logger.info(f"Sending campaign {campaign_id} via Mailtrap Newsletter API")
-        return self.mailtrap_marketing_service.send_campaign(campaign_id)
+        logger.info("Sending campaign %s via Resend batch API", campaign_id)
+        return self.resend_marketing_service.send_campaign(campaign_id)
 
     def send_transactional_email(self, subject, html_message, from_email, recipient_list):
         """
-        Send transactional emails using the existing Mailtrap HTTP API
-        This method preserves the existing transactional email functionality
+        Send transactional emails using the configured Django backend.
         """
         return send_email_via_mailtrap(
             subject=subject,

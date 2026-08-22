@@ -19,13 +19,14 @@ DATABASES = {
     )
 }
 
-# Production email backend - Mailtrap HTTP API
-# NOTE: Using Mailtrap HTTP API instead of SMTP for better reliability
-MAILTRAP_API_TOKEN = os.getenv('MAILTRAP_API_TOKEN', 'd766975d57a7ef1acf2f750a36247a37')
+# Production email backend - Resend API via Anymail
+RESEND_API_KEY = os.getenv('RESEND_API_KEY', '')
+ANYMAIL = {
+    "RESEND_API_KEY": RESEND_API_KEY,
+}
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'anymail.backends.resend.EmailBackend')
 
 # Email addresses configuration
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'api')  # Keep for compatibility
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD','d766975d57a7ef1acf2f750a36247a37')  # Keep for compatibility
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'Novustell Travel <info@novustelltravel.com>')
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'info@novustelltravel.com')
 JOBS_EMAIL = os.getenv('JOBS_EMAIL', 'careers@novustelltravel.com')
@@ -41,7 +42,7 @@ GOOGLE_ANALYTICS_ID = os.getenv('GOOGLE_ANALYTICS_ID', 'G-JV4GQKWVJL')
 GOOGLE_TAG_MANAGER_ID = os.getenv('GOOGLE_TAG_MANAGER_ID', '')
 ANALYTICS_TRACK_ADMIN = os.getenv('ANALYTICS_TRACK_ADMIN', 'False').lower() == 'true'
 
-# Celery Configuration (DEPRECATED - migrated to Mailtrap Email Marketing API)
+# Celery Configuration (DEPRECATED - email delivery now uses direct API calls)
 # CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
 # CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
 # CELERY_ACCEPT_CONTENT = ['json']
@@ -61,6 +62,7 @@ CACHES = {
 # Email Rate Limiting Configuration (Production)
 EMAIL_RATE_LIMIT_PER_MINUTE = int(os.getenv('EMAIL_RATE_LIMIT_PER_MINUTE', '60'))
 EMAIL_RATE_LIMIT_PER_HOUR = int(os.getenv('EMAIL_RATE_LIMIT_PER_HOUR', '1000'))
+EMAIL_MARKETING_BATCH_LIMIT = int(os.getenv('EMAIL_MARKETING_BATCH_LIMIT', '99'))
 
 # Production allowed hosts
 ALLOWED_HOSTS = [
@@ -277,6 +279,6 @@ if SENTRY_DSN:
 
 print("🚀 Production settings loaded")
 print(f"🌐 Site URL: {SITE_URL}")
-print(f"📧 Mailtrap API Token: {MAILTRAP_API_TOKEN[:8]}...")
+print(f"📧 Resend API configured: {'yes' if bool(RESEND_API_KEY) else 'no'}")
 print(f"🔒 SSL redirect: {SECURE_SSL_REDIRECT}")
 print(f"📊 Debug mode: {DEBUG}")

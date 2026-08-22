@@ -1,4 +1,4 @@
-# Celery import removed - migrated to Mailtrap Email Marketing API
+# Celery import removed - email delivery now uses direct API calls
 # This will make sure the app is always imported when
 # Django starts so that shared_task will use this app.
 # from .celery import app as celery_app

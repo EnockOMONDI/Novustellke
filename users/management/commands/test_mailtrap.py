@@ -1,5 +1,5 @@
 """
-Django management command to test Mailtrap email integration
+Django management command to test Resend email integration.
 Usage: python manage.py test_mailtrap
 """
 from django.core.management.base import BaseCommand
@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
-    help = 'Test Mailtrap email integration by sending a test email'
+    help = 'Test Resend email integration by sending a test email'
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -25,12 +25,12 @@ class Command(BaseCommand):
         recipient_email = options['email']
         
         self.stdout.write(self.style.SUCCESS('=' * 70))
-        self.stdout.write(self.style.SUCCESS('🧪 MAILTRAP EMAIL INTEGRATION TEST'))
+        self.stdout.write(self.style.SUCCESS('🧪 RESEND EMAIL INTEGRATION TEST'))
         self.stdout.write(self.style.SUCCESS('=' * 70))
         self.stdout.write('')
 
         # Step 1: Validate Configuration
-        self.stdout.write(self.style.WARNING('📋 Step 1: Validating Mailtrap Configuration...'))
+        self.stdout.write(self.style.WARNING('📋 Step 1: Validating Resend Configuration...'))
         self.stdout.write('')
         
         config_valid = self.validate_configuration()
@@ -62,20 +62,17 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS('=' * 70))
 
     def validate_configuration(self):
-        """Validate Mailtrap configuration settings"""
+        """Validate Resend configuration settings"""
         all_valid = True
         
-        # Check MAILTRAP_API_TOKEN
-        api_token = getattr(settings, 'MAILTRAP_API_TOKEN', None)
+        # Check RESEND_API_KEY
+        api_token = getattr(settings, 'RESEND_API_KEY', None)
         if not api_token:
-            self.stdout.write(self.style.ERROR('   ❌ MAILTRAP_API_TOKEN not configured'))
-            all_valid = False
-        elif api_token == 'your-token-here':
-            self.stdout.write(self.style.ERROR('   ❌ MAILTRAP_API_TOKEN is set to default value'))
+            self.stdout.write(self.style.ERROR('   ❌ RESEND_API_KEY not configured'))
             all_valid = False
         else:
             masked_token = f"{api_token[:8]}...{api_token[-4:]}" if len(api_token) > 12 else "***"
-            self.stdout.write(self.style.SUCCESS(f'   ✅ MAILTRAP_API_TOKEN: {masked_token}'))
+            self.stdout.write(self.style.SUCCESS(f'   ✅ RESEND_API_KEY: {masked_token}'))
         
         # Check DEFAULT_FROM_EMAIL
         from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', None)
@@ -90,20 +87,21 @@ class Command(BaseCommand):
         if admin_email:
             self.stdout.write(self.style.SUCCESS(f'   ✅ ADMIN_EMAIL: {admin_email}'))
         
-        # Check mailtrap package
+        # Check the configured backend
         try:
-            from mailtrap import Mail, Address, MailtrapClient
-            self.stdout.write(self.style.SUCCESS('   ✅ Mailtrap package installed'))
-        except ImportError:
-            self.stdout.write(self.style.ERROR('   ❌ Mailtrap package not installed'))
+            from django.core.mail import get_connection
+            connection = get_connection()
+            self.stdout.write(self.style.SUCCESS(f'   ✅ Email backend loaded: {connection.__class__.__module__}.{connection.__class__.__name__}'))
+        except Exception as exc:
+            self.stdout.write(self.style.ERROR(f'   ❌ Email backend failed to load: {exc}'))
             all_valid = False
         
         return all_valid
 
     def send_test_email(self, recipient_email):
-        """Send a test email using the Mailtrap integration"""
+        """Send a test email using the configured email backend"""
         
-        subject = "🧪 Mailtrap Integration Test - Novustell Travel"
+        subject = "Resend Integration Test - Novustell Travel"
         
         html_message = f"""
         <!DOCTYPE html>
@@ -126,18 +124,18 @@ class Command(BaseCommand):
                 </div>
                 <div class="content">
                     <h2 class="success">✅ Success!</h2>
-                    <p>This is a test email from <strong>Novustell Travel</strong> to verify that the Mailtrap HTTP API integration is working correctly.</p>
+                    <p>This is a test email from <strong>Novustell Travel</strong> to verify that the Resend API integration is working correctly.</p>
                     
                     <h3>📋 Test Details:</h3>
                     <ul>
-                        <li><strong>Sent via:</strong> Mailtrap HTTP API</li>
+                        <li><strong>Sent via:</strong> Resend API through Django Anymail</li>
                         <li><strong>From:</strong> {settings.DEFAULT_FROM_EMAIL}</li>
                         <li><strong>To:</strong> {recipient_email}</li>
                         <li><strong>Purpose:</strong> Integration Testing</li>
                         <li><strong>Status:</strong> <span class="success">Delivered Successfully</span></li>
                     </ul>
                     
-                    <p>If you're reading this email, it means the Mailtrap integration is working perfectly! 🎉</p>
+                    <p>If you're reading this email, it means the Resend integration is working correctly.</p>
                 </div>
                 <div class="footer">
                     <p><em>Novustell Travel - Think Convenience, Think Novustell</em></p>
@@ -162,7 +160,7 @@ class Command(BaseCommand):
             )
             
             if result:
-                self.stdout.write(self.style.SUCCESS('   ✅ Email sent successfully via Mailtrap API'))
+                self.stdout.write(self.style.SUCCESS('   ✅ Email sent successfully via Resend API'))
                 return True
             else:
                 self.stdout.write(self.style.ERROR('   ❌ Email sending failed (returned False)'))
@@ -172,4 +170,3 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR(f'   ❌ Exception occurred: {str(e)}'))
             logger.exception("Error sending test email")
             return False
-
