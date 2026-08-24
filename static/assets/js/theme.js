@@ -114,13 +114,13 @@
             // Remove from DOM after transition completes
             setTimeout(function() {
                 preloader.remove();
-            }, 300);
+            }, 240);
         }
     }
 
     // Hide preloader when page is fully loaded
     $(window).on('load', function(event) {
-        setTimeout(hidePreloader, 200);
+        setTimeout(hidePreloader, 80);
     });
 
     // Fallback timeout to ensure preloader doesn't stay forever
@@ -129,14 +129,11 @@
             console.warn('Preloader fallback timeout triggered');
             hidePreloader();
         }
-    }, 5000);
+    }, 1200);
 
-    // Early hide for fast connections (when DOM is ready and basic assets loaded)
+    // Hide on DOM ready so slow images do not block the page.
     $(document).ready(function() {
-        // Check if critical resources are already loaded
-        if (document.readyState === 'complete') {
-            setTimeout(hidePreloader, 100);
-        }
+        setTimeout(hidePreloader, 180);
     });
     
     //===== Sticky
