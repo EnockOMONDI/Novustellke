@@ -1,0 +1,630 @@
+{% extends 'users/basemain.html' %}
+{% load static %}
+
+{% block title %}Trip Feedback - Novustell Travel{% endblock %}
+
+{% block meta_description %}Share post-trip feedback with Novustell Travel. Tell us what worked, what can improve, and where you would like to travel next.{% endblock %}
+
+{% block content %}
+<main class="feedback-page">
+    <section class="feedback-hero">
+        <div class="feedback-hero__media"></div>
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <span class="feedback-kicker">Traveler Feedback</span>
+                    <h1>Share Your Trip Experience</h1>
+                    <p>Tell us what felt seamless, what can improve, and what destination should be next. Your feedback helps Novustell design better journeys for every traveler.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feedback-hero-card">
+                        <strong>Quick notes</strong>
+                        <span>Name, email, and consent are required.</span>
+                        <span>All ratings and story fields are optional.</span>
+                        <span>If you have photos or videos, let us know and our team will follow up.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-section">
+        <div class="container">
+            {% if messages %}
+            <div class="feedback-messages">
+                {% for message in messages %}
+                <div class="feedback-alert feedback-alert--{{ message.tags }}">
+                    <i class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-triangle{% else %}info-circle{% endif %}"></i>
+                    <span>{{ message }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="feedback-shell">
+                <aside class="feedback-side">
+                    <div class="feedback-side-card">
+                        <span class="feedback-side-card__eyebrow">Post-trip form</span>
+                        <h2>Tell us about the journey.</h2>
+                        <p>Short answers are enough. The form is designed for mobile first, so you can complete it comfortably after travel.</p>
+                        <div class="feedback-side-metric">
+                            <strong>10</strong>
+                            <span>rating sections, all optional</span>
+                        </div>
+                        <a href="https://wa.me/254701363551?text=Hello%20Novustell%20Travel!%20I%20would%20like%20to%20share%20trip%20feedback."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="feedback-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp us instead
+                        </a>
+                    </div>
+                </aside>
+
+                <form method="post" class="feedback-form" novalidate>
+                    {% csrf_token %}
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>01</span>
+                            <div>
+                                <h3>Trip Context</h3>
+                                <p>Help us identify the travel experience you are reviewing.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-grid feedback-grid--3">
+                            {% include 'users/partials/feedback_field.html' with field=form.trip_name %}
+                            {% include 'users/partials/feedback_field.html' with field=form.destination %}
+                            {% include 'users/partials/feedback_field.html' with field=form.travel_date %}
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>02</span>
+                            <div>
+                                <h3>Customer Info</h3>
+                                <p>We only use these details to match feedback to the right trip.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-grid feedback-grid--2">
+                            {% include 'users/partials/feedback_field.html' with field=form.full_name %}
+                            {% include 'users/partials/feedback_field.html' with field=form.email %}
+                            {% include 'users/partials/feedback_field.html' with field=form.phone %}
+                            {% include 'users/partials/feedback_field.html' with field=form.public_review_permission %}
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>03</span>
+                            <div>
+                                <h3>Overall Experience</h3>
+                                <p>Use 1-10 for overall rating and 0-10 for likelihood to recommend.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-grid feedback-grid--2">
+                            {% include 'users/partials/feedback_field.html' with field=form.overall_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.recommend_score %}
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>04</span>
+                            <div>
+                                <h3>Trip Touchpoints</h3>
+                                <p>Rate the areas that mattered most. Leave blank if a category does not apply.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-rating-grid">
+                            {% include 'users/partials/feedback_field.html' with field=form.transport_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.accommodation_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.guide_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.communication_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.activities_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.value_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.logistics_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.timeliness_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.professionalism_rating %}
+                            {% include 'users/partials/feedback_field.html' with field=form.coordination_rating %}
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>05</span>
+                            <div>
+                                <h3>What Stood Out</h3>
+                                <p>Select the moments or service areas that stood out most.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-checks">
+                            {% for checkbox in form.highlights %}
+                            <label class="feedback-chip" for="{{ checkbox.id_for_label }}">
+                                {{ checkbox.tag }}
+                                <span>{{ checkbox.choice_label }}</span>
+                            </label>
+                            {% endfor %}
+                        </div>
+                        {% if form.highlights.errors %}
+                        <div class="feedback-error">{{ form.highlights.errors|join:", " }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>06</span>
+                            <div>
+                                <h3>Tell Us More</h3>
+                                <p>Your comments help the team understand the details behind the scores.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-grid feedback-grid--2">
+                            {% include 'users/partials/feedback_field.html' with field=form.enjoyed_most %}
+                            {% include 'users/partials/feedback_field.html' with field=form.improvement_suggestions %}
+                        </div>
+                        {% include 'users/partials/feedback_field.html' with field=form.short_testimonial %}
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__header">
+                            <span>07</span>
+                            <div>
+                                <h3>Future Travel</h3>
+                                <p>Tell us whether the trip matched expectations and what should come next.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-grid feedback-grid--3">
+                            {% include 'users/partials/feedback_field.html' with field=form.expectations %}
+                            {% include 'users/partials/feedback_field.html' with field=form.travel_again %}
+                            {% include 'users/partials/feedback_field.html' with field=form.has_media_to_share %}
+                        </div>
+                        {% include 'users/partials/feedback_field.html' with field=form.future_destinations %}
+                    </div>
+
+                    <div class="feedback-submit-card">
+                        <label class="feedback-consent" for="{{ form.privacy_consent.id_for_label }}">
+                            {{ form.privacy_consent }}
+                            <span>{{ form.privacy_consent.label }}</span>
+                        </label>
+                        {% if form.privacy_consent.errors %}
+                        <div class="feedback-error">{{ form.privacy_consent.errors|join:", " }}</div>
+                        {% endif %}
+                        <button type="submit" class="feedback-submit">
+                            Submit Feedback
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<style>
+    .feedback-page {
+        --feedback-blue: #0f238d;
+        --feedback-ink: #14213d;
+        --feedback-muted: #64748b;
+        --feedback-line: #dbe3f0;
+        --feedback-soft: #f5f8ff;
+        --feedback-gold: #ff9d00;
+        background: #f7f9fc;
+        color: var(--feedback-ink);
+    }
+
+    .feedback-hero {
+        position: relative;
+        min-height: 62vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 150px 0 70px;
+        overflow: hidden;
+        background: #08185f;
+    }
+
+    .feedback-hero__media {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(90deg, rgba(8, 24, 95, 0.92), rgba(15, 35, 141, 0.72), rgba(15, 35, 141, 0.4)),
+            url("{% static 'assets/images/bg/page-bg.jpg' %}") center / cover;
+        transform: scale(1.04);
+    }
+
+    .feedback-hero .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .feedback-kicker {
+        display: inline-flex;
+        margin-bottom: 18px;
+        padding: 8px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+    }
+
+    .feedback-hero h1 {
+        color: #fff;
+        font-size: clamp(2.4rem, 6vw, 5.5rem);
+        line-height: 0.95;
+        max-width: 760px;
+        margin-bottom: 22px;
+        font-weight: 800;
+    }
+
+    .feedback-hero p {
+        color: rgba(255, 255, 255, 0.88);
+        max-width: 680px;
+        font-size: 1.12rem;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .feedback-hero-card {
+        display: grid;
+        gap: 12px;
+        padding: 24px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+    }
+
+    .feedback-hero-card strong {
+        color: var(--feedback-blue);
+        font-size: 1.05rem;
+    }
+
+    .feedback-hero-card span {
+        color: var(--feedback-muted);
+        line-height: 1.5;
+    }
+
+    .feedback-section {
+        padding: 56px 0 80px;
+    }
+
+    .feedback-messages {
+        margin-bottom: 24px;
+    }
+
+    .feedback-alert {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 16px 18px;
+        border-radius: 10px;
+        background: #ecfdf5;
+        border: 1px solid #bbf7d0;
+        color: #14532d;
+        line-height: 1.5;
+    }
+
+    .feedback-alert--error {
+        background: #fef2f2;
+        border-color: #fecaca;
+        color: #991b1b;
+    }
+
+    .feedback-shell {
+        display: grid;
+        grid-template-columns: minmax(240px, 0.34fr) minmax(0, 1fr);
+        gap: 28px;
+        align-items: start;
+    }
+
+    .feedback-side {
+        position: sticky;
+        top: 96px;
+    }
+
+    .feedback-side-card,
+    .feedback-card,
+    .feedback-submit-card {
+        border: 1px solid var(--feedback-line);
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 18px 50px rgba(15, 35, 141, 0.08);
+    }
+
+    .feedback-side-card {
+        padding: 28px;
+    }
+
+    .feedback-side-card__eyebrow {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--feedback-gold);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+
+    .feedback-side-card h2 {
+        color: var(--feedback-blue);
+        font-weight: 800;
+        margin-bottom: 14px;
+    }
+
+    .feedback-side-card p {
+        color: var(--feedback-muted);
+        line-height: 1.65;
+    }
+
+    .feedback-side-metric {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 22px 0;
+        padding: 16px;
+        border-radius: 10px;
+        background: var(--feedback-soft);
+    }
+
+    .feedback-side-metric strong {
+        color: var(--feedback-blue);
+        font-size: 2.1rem;
+        line-height: 1;
+    }
+
+    .feedback-side-metric span {
+        color: var(--feedback-muted);
+        line-height: 1.35;
+    }
+
+    .feedback-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 13px 16px;
+        border-radius: 999px;
+        background: #22c55e;
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .feedback-whatsapp:hover {
+        color: #fff;
+        background: #16a34a;
+        text-decoration: none;
+    }
+
+    .feedback-form {
+        display: grid;
+        gap: 22px;
+    }
+
+    .feedback-card,
+    .feedback-submit-card {
+        padding: 28px;
+    }
+
+    .feedback-card__header {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 22px;
+    }
+
+    .feedback-card__header > span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 42px;
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: var(--feedback-blue);
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .feedback-card__header h3 {
+        margin: 0 0 6px;
+        color: var(--feedback-blue);
+        font-weight: 800;
+    }
+
+    .feedback-card__header p {
+        color: var(--feedback-muted);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .feedback-grid {
+        display: grid;
+        gap: 16px;
+    }
+
+    .feedback-grid--2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .feedback-grid--3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .feedback-rating-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .feedback-field {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .feedback-grid .feedback-field,
+    .feedback-rating-grid .feedback-field {
+        margin-bottom: 0;
+    }
+
+    .feedback-label {
+        color: var(--feedback-ink);
+        font-weight: 700;
+        font-size: 0.92rem;
+    }
+
+    .feedback-input {
+        width: 100%;
+        min-height: 48px;
+        border: 1px solid var(--feedback-line);
+        border-radius: 8px;
+        padding: 12px 14px;
+        color: var(--feedback-ink);
+        background: #fff;
+    }
+
+    textarea.feedback-input {
+        min-height: 118px;
+        resize: vertical;
+    }
+
+    .feedback-input:focus {
+        border-color: var(--feedback-blue);
+        box-shadow: 0 0 0 4px rgba(15, 35, 141, 0.1);
+        outline: none;
+    }
+
+    .feedback-error {
+        color: #b91c1c;
+        font-size: 0.86rem;
+        line-height: 1.5;
+    }
+
+    .feedback-checks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .feedback-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 13px;
+        border-radius: 999px;
+        border: 1px solid var(--feedback-line);
+        background: #fff;
+        color: var(--feedback-ink);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .feedback-chip input {
+        accent-color: var(--feedback-blue);
+    }
+
+    .feedback-submit-card {
+        display: grid;
+        gap: 18px;
+    }
+
+    .feedback-consent {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        color: var(--feedback-muted);
+        line-height: 1.55;
+        cursor: pointer;
+    }
+
+    .feedback-consent input {
+        margin-top: 5px;
+        accent-color: var(--feedback-blue);
+    }
+
+    .feedback-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 54px;
+        border: 0;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--feedback-blue), #173bd4);
+        color: #fff;
+        font-weight: 800;
+        box-shadow: 0 16px 36px rgba(15, 35, 141, 0.24);
+    }
+
+    .feedback-submit:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 20px 44px rgba(15, 35, 141, 0.28);
+    }
+
+    @media (max-width: 991px) {
+        .feedback-hero {
+            min-height: auto;
+            padding: 128px 0 44px;
+        }
+
+        .feedback-hero-card {
+            margin-top: 28px;
+        }
+
+        .feedback-shell {
+            grid-template-columns: 1fr;
+        }
+
+        .feedback-side {
+            position: static;
+        }
+
+        .feedback-rating-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 767px) {
+        .feedback-section {
+            padding: 30px 0 56px;
+        }
+
+        .feedback-card,
+        .feedback-submit-card,
+        .feedback-side-card {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .feedback-grid--2,
+        .feedback-grid--3,
+        .feedback-rating-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .feedback-card__header {
+            gap: 12px;
+        }
+
+        .feedback-card__header > span {
+            flex-basis: 36px;
+            width: 36px;
+            height: 36px;
+        }
+
+        .feedback-chip {
+            width: 100%;
+        }
+
+        .feedback-submit {
+            width: 100%;
+        }
+    }
+</style>
+
+{% include 'users/footer.html' %}
+{% endblock %}

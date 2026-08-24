@@ -1,0 +1,7 @@
+<div class="feedback-field">
+    <label class="feedback-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+    {{ field }}
+    {% if field.errors %}
+    <div class="feedback-error">{{ field.errors|join:", " }}</div>
+    {% endif %}
+</div>

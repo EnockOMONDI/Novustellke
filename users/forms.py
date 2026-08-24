@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import UserBookings
 from django import forms
 from django.contrib.auth.models import User
-from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, ContactInquiry
+from .models import MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, JobApplication, NewsletterSubscription, ContactInquiry, TripFeedback
 import re
 
 
@@ -335,4 +335,113 @@ class ContactForm(forms.ModelForm):
         privacy_consent = self.cleaned_data.get('privacy_consent')
         if not privacy_consent:
             raise forms.ValidationError('You must agree to the privacy policy to submit this form.')
+        return privacy_consent
+
+
+class TripFeedbackForm(forms.ModelForm):
+    highlights = forms.MultipleChoiceField(
+        choices=TripFeedback.HIGHLIGHT_CHOICES,
+        required=False,
+        widget=forms.CheckboxSelectMultiple,
+    )
+
+    class Meta:
+        model = TripFeedback
+        fields = [
+            'trip_name', 'destination', 'travel_date', 'full_name', 'email',
+            'phone', 'public_review_permission', 'overall_rating',
+            'recommend_score', 'transport_rating', 'accommodation_rating',
+            'guide_rating', 'communication_rating', 'activities_rating',
+            'value_rating', 'logistics_rating', 'timeliness_rating',
+            'professionalism_rating', 'coordination_rating', 'highlights',
+            'enjoyed_most', 'improvement_suggestions', 'short_testimonial',
+            'expectations', 'travel_again', 'future_destinations',
+            'has_media_to_share', 'privacy_consent',
+        ]
+        widgets = {
+            'travel_date': forms.DateInput(attrs={'type': 'date'}),
+            'public_review_permission': forms.Select(),
+            'expectations': forms.Select(),
+            'travel_again': forms.Select(),
+            'has_media_to_share': forms.Select(),
+            'enjoyed_most': forms.Textarea(attrs={'rows': 4}),
+            'improvement_suggestions': forms.Textarea(attrs={'rows': 4}),
+            'short_testimonial': forms.Textarea(attrs={'rows': 3}),
+            'future_destinations': forms.Textarea(attrs={'rows': 3}),
+        }
+
+    rating_fields = {
+        'overall_rating': (1, 10),
+        'recommend_score': (0, 10),
+        'transport_rating': (1, 10),
+        'accommodation_rating': (1, 10),
+        'guide_rating': (1, 10),
+        'communication_rating': (1, 10),
+        'activities_rating': (1, 10),
+        'value_rating': (1, 10),
+        'logistics_rating': (1, 10),
+        'timeliness_rating': (1, 10),
+        'professionalism_rating': (1, 10),
+        'coordination_rating': (1, 10),
+    }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        placeholders = {
+            'trip_name': 'e.g. Maasai Mara Safari',
+            'destination': 'e.g. Diani, Dubai, Kigali',
+            'full_name': 'Your full name',
+            'email': 'your@email.com',
+            'phone': '+254 7XX XXX XXX (optional)',
+            'future_destinations': 'Tell us where you would like to travel next',
+        }
+
+        for field_name, field in self.fields.items():
+            if field_name == 'privacy_consent':
+                field.widget.attrs.update({'class': 'form-check-input', 'required': True})
+                continue
+            if field_name == 'highlights':
+                field.widget.attrs.update({'class': 'feedback-check-input'})
+                continue
+
+            field.widget.attrs.update({
+                'class': 'form-control feedback-input',
+                'placeholder': placeholders.get(field_name, ''),
+            })
+
+        for field_name, limits in self.rating_fields.items():
+            min_value, max_value = limits
+            self.fields[field_name].widget.attrs.update({
+                'type': 'number',
+                'min': str(min_value),
+                'max': str(max_value),
+                'inputmode': 'numeric',
+                'placeholder': f'{min_value} - {max_value}',
+            })
+
+        self.fields['full_name'].label = 'Name *'
+        self.fields['email'].label = 'Email *'
+        self.fields['privacy_consent'].label = 'I consent to Novustell Travel storing this feedback and contacting me if clarification is needed.'
+
+    def clean(self):
+        cleaned_data = super().clean()
+        for field_name, limits in self.rating_fields.items():
+            value = cleaned_data.get(field_name)
+            if value is None:
+                continue
+
+            min_value, max_value = limits
+            if value < min_value or value > max_value:
+                label = self.fields[field_name].label or field_name.replace('_', ' ')
+                self.add_error(
+                    field_name,
+                    f'{label} must be between {min_value} and {max_value}.',
+                )
+        return cleaned_data
+
+    def clean_privacy_consent(self):
+        privacy_consent = self.cleaned_data.get('privacy_consent')
+        if not privacy_consent:
+            raise forms.ValidationError('You must agree before submitting feedback.')
         return privacy_consent

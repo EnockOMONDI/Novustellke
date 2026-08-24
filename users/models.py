@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db.models import BigAutoField
 from django_ckeditor_5.fields import CKEditor5Field
 from pyuploadcare.dj.models import ImageField
@@ -285,6 +286,114 @@ class ContactInquiry(models.Model):
     class Meta:
         verbose_name = "Contact Inquiry"
         verbose_name_plural = "Contact Inquiries"
+        ordering = ['-created_at']
+
+
+class TripFeedback(models.Model):
+    PUBLIC_REVIEW_CHOICES = [
+        ('yes', 'Yes, with my name'),
+        ('anonymous', 'Yes, anonymously'),
+        ('no', 'No, keep it internal'),
+    ]
+
+    EXPECTATIONS_CHOICES = [
+        ('exceeded', 'Exceeded expectations'),
+        ('met', 'Met expectations'),
+        ('partly', 'Partly met expectations'),
+        ('not_met', 'Did not meet expectations'),
+    ]
+
+    YES_NO_CHOICES = [
+        ('yes', 'Yes'),
+        ('maybe', 'Maybe'),
+        ('no', 'No'),
+    ]
+
+    HIGHLIGHT_CHOICES = [
+        ('scenery', 'Scenery'),
+        ('comfort', 'Comfort'),
+        ('organization', 'Organization'),
+        ('fun', 'Fun and vibe'),
+        ('customer_service', 'Customer service'),
+        ('food', 'Food'),
+        ('activities', 'Activities'),
+        ('guide', 'Guide or driver'),
+        ('value', 'Value for money'),
+    ]
+
+    trip_name = models.CharField(max_length=200, blank=True)
+    destination = models.CharField(max_length=200, blank=True)
+    travel_date = models.DateField(blank=True, null=True)
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=20, blank=True)
+    public_review_permission = models.CharField(
+        max_length=20,
+        choices=PUBLIC_REVIEW_CHOICES,
+        default='no',
+    )
+    overall_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    recommend_score = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(0), MaxValueValidator(10)]
+    )
+    transport_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    accommodation_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    guide_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    communication_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    activities_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    value_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    logistics_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    timeliness_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    professionalism_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    coordination_rating = models.PositiveSmallIntegerField(
+        blank=True, null=True, validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    highlights = models.JSONField(default=list, blank=True)
+    enjoyed_most = models.TextField(blank=True)
+    improvement_suggestions = models.TextField(blank=True)
+    short_testimonial = models.TextField(blank=True)
+    expectations = models.CharField(
+        max_length=20,
+        choices=EXPECTATIONS_CHOICES,
+        blank=True,
+    )
+    travel_again = models.CharField(max_length=10, choices=YES_NO_CHOICES, blank=True)
+    future_destinations = models.TextField(blank=True)
+    has_media_to_share = models.CharField(
+        max_length=10,
+        choices=YES_NO_CHOICES,
+        blank=True,
+    )
+    privacy_consent = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        trip_label = self.trip_name or self.destination or "Trip feedback"
+        return f"{self.full_name} - {trip_label}"
+
+    class Meta:
+        verbose_name = "Trip Feedback"
+        verbose_name_plural = "Trip Feedback"
         ordering = ['-created_at']
 
 

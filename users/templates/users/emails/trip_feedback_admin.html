@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<body style="margin:0; padding:0; background:#f6f8fb; font-family:Arial, sans-serif; color:#14213d;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f6f8fb; padding:24px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:720px; background:#ffffff; border-radius:12px; overflow:hidden;">
+          <tr>
+            <td style="background:#0f238d; color:#ffffff; padding:24px 28px;">
+              <h1 style="margin:0; font-size:24px;">New Trip Feedback</h1>
+              <p style="margin:8px 0 0; opacity:.9;">Submitted via novustelltravel.com/trip-feedback/</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:26px 28px;">
+              <h2 style="margin:0 0 14px; color:#0f238d;">Traveler</h2>
+              <p><strong>Name:</strong> {{ feedback.full_name }}</p>
+              <p><strong>Email:</strong> {{ feedback.email }}</p>
+              <p><strong>Phone:</strong> {{ feedback.phone|default:"Not provided" }}</p>
+              <p><strong>Public review permission:</strong> {{ feedback.get_public_review_permission_display }}</p>
+
+              <h2 style="margin:28px 0 14px; color:#0f238d;">Trip</h2>
+              <p><strong>Trip name:</strong> {{ feedback.trip_name|default:"Not provided" }}</p>
+              <p><strong>Destination:</strong> {{ feedback.destination|default:"Not provided" }}</p>
+              <p><strong>Travel date:</strong> {{ feedback.travel_date|default:"Not provided" }}</p>
+
+              <h2 style="margin:28px 0 14px; color:#0f238d;">Scores</h2>
+              <p><strong>Overall:</strong> {{ feedback.overall_rating|default:"Not provided" }}</p>
+              <p><strong>Recommend:</strong> {{ feedback.recommend_score|default:"Not provided" }}</p>
+              <p><strong>Transport:</strong> {{ feedback.transport_rating|default:"-" }} | <strong>Accommodation:</strong> {{ feedback.accommodation_rating|default:"-" }} | <strong>Guide:</strong> {{ feedback.guide_rating|default:"-" }}</p>
+              <p><strong>Communication:</strong> {{ feedback.communication_rating|default:"-" }} | <strong>Activities:</strong> {{ feedback.activities_rating|default:"-" }} | <strong>Value:</strong> {{ feedback.value_rating|default:"-" }}</p>
+              <p><strong>Logistics:</strong> {{ feedback.logistics_rating|default:"-" }} | <strong>Timeliness:</strong> {{ feedback.timeliness_rating|default:"-" }} | <strong>Professionalism:</strong> {{ feedback.professionalism_rating|default:"-" }} | <strong>Coordination:</strong> {{ feedback.coordination_rating|default:"-" }}</p>
+
+              <h2 style="margin:28px 0 14px; color:#0f238d;">Comments</h2>
+              <p><strong>Highlights:</strong> {{ feedback.highlights|join:", "|default:"Not provided" }}</p>
+              <p><strong>Enjoyed most:</strong><br>{{ feedback.enjoyed_most|linebreaksbr|default:"Not provided" }}</p>
+              <p><strong>Can improve:</strong><br>{{ feedback.improvement_suggestions|linebreaksbr|default:"Not provided" }}</p>
+              <p><strong>Short testimonial:</strong><br>{{ feedback.short_testimonial|linebreaksbr|default:"Not provided" }}</p>
+              <p><strong>Expectations:</strong> {{ feedback.get_expectations_display|default:"Not provided" }}</p>
+              <p><strong>Travel again:</strong> {{ feedback.get_travel_again_display|default:"Not provided" }}</p>
+              <p><strong>Future destinations:</strong><br>{{ feedback.future_destinations|linebreaksbr|default:"Not provided" }}</p>
+              <p><strong>Has media to share:</strong> {{ feedback.get_has_media_to_share_display|default:"Not provided" }}</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

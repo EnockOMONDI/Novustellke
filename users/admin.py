@@ -3,7 +3,7 @@ from django import forms
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
 from django.utils.html import format_html
-from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing, ContactInquiry, PromotionalPopup
+from .models import UserBookings, MICEInquiry, StudentTravelInquiry, NGOTravelInquiry, UserProfile, BucketList, Booking, JobApplication, NewsletterSubscription, JobListing, ContactInquiry, PromotionalPopup, TripFeedback
 from django_ckeditor_5.widgets import CKEditor5Widget
 
 class UserBookingsAdminForm(forms.ModelForm):
@@ -488,6 +488,80 @@ class ContactInquiryAdmin(admin.ModelAdmin):
 
     def has_add_permission(self, request):
         # Prevent manual creation of contact inquiries in admin
+        return False
+
+
+@admin.register(TripFeedback)
+class TripFeedbackAdmin(admin.ModelAdmin):
+    list_display = (
+        'full_name',
+        'email',
+        'trip_name',
+        'destination',
+        'overall_rating',
+        'recommend_score',
+        'public_review_permission',
+        'created_at',
+    )
+    list_filter = (
+        'public_review_permission',
+        'expectations',
+        'travel_again',
+        'has_media_to_share',
+        'created_at',
+    )
+    search_fields = (
+        'full_name',
+        'email',
+        'phone',
+        'trip_name',
+        'destination',
+        'short_testimonial',
+    )
+    readonly_fields = ('created_at',)
+    ordering = ('-created_at',)
+
+    fieldsets = (
+        ('Trip Context', {
+            'fields': ('trip_name', 'destination', 'travel_date')
+        }),
+        ('Customer Info', {
+            'fields': ('full_name', 'email', 'phone', 'public_review_permission')
+        }),
+        ('Scores', {
+            'fields': (
+                'overall_rating',
+                'recommend_score',
+                'transport_rating',
+                'accommodation_rating',
+                'guide_rating',
+                'communication_rating',
+                'activities_rating',
+                'value_rating',
+                'logistics_rating',
+                'timeliness_rating',
+                'professionalism_rating',
+                'coordination_rating',
+            )
+        }),
+        ('Feedback Details', {
+            'fields': (
+                'highlights',
+                'enjoyed_most',
+                'improvement_suggestions',
+                'short_testimonial',
+                'expectations',
+                'travel_again',
+                'future_destinations',
+                'has_media_to_share',
+            )
+        }),
+        ('Consent & Metadata', {
+            'fields': ('privacy_consent', 'created_at')
+        }),
+    )
+
+    def has_add_permission(self, request):
         return False
 
 

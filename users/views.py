@@ -36,7 +36,7 @@ from .forms import UserRegisterForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .utils import send_booking_confirmation_email
-from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm, JobApplicationForm, NewsletterSubscriptionSimpleForm
+from .forms import MICEInquiryForm, StudentTravelInquiryForm, NGOTravelInquiryForm, JobApplicationForm, NewsletterSubscriptionSimpleForm, TripFeedbackForm
 from django.contrib.auth.models import User
 from blog.models import Post, Category
 from adminside.models import Destination, Package, Accommodation
@@ -126,6 +126,45 @@ def document_workflow(request):
     }
 
     return render(request, 'users/document_workflow.html', context)
+
+
+def trip_feedback(request):
+    if request.method == 'POST':
+        form = TripFeedbackForm(request.POST)
+        if form.is_valid():
+            feedback = form.save()
+
+            try:
+                from .tasks import send_email_via_mailtrap
+
+                admin_message_html = render_to_string(
+                    'users/emails/trip_feedback_admin.html',
+                    {'feedback': feedback},
+                )
+                send_email_via_mailtrap(
+                    subject=f'New Trip Feedback from {feedback.full_name}',
+                    html_message=admin_message_html,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[settings.ADMIN_EMAIL],
+                )
+            except Exception as e:
+                import logging
+                logging.getLogger(__name__).error(
+                    "Trip feedback notification failed for feedback %s: %s",
+                    feedback.id,
+                    e,
+                )
+
+            messages.success(
+                request,
+                'Thank you for sharing your trip feedback. Our team has received it and will use it to improve future travel experiences.',
+            )
+            return redirect('users:trip-feedback')
+        messages.error(request, 'Please correct the highlighted fields and submit again.')
+    else:
+        form = TripFeedbackForm()
+
+    return render(request, 'users/trip_feedback.html', {'form': form})
 
 # users/views.py
 
